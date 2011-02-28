@@ -488,7 +488,7 @@ class Popup(Gtk.Dialog):
                         return self._move_selection(move_mapping[event.keyval], event.state & Gdk.ModifierType.CONTROL_MASK, event.state & Gdk.ModifierType.SHIFT_MASK)
                 elif event.keyval in [Gdk.KEY_Return, Gdk.KEY_KP_Enter, Gdk.KEY_Tab, Gdk.KEY_ISO_Left_Tab]:
                         return self._activate()
-                elif event.keyval == Gdk.KEY_space and event.state & Gtk.gdk.CONTROL_MASK:
+                elif event.keyval == Gdk.KEY_space and event.state & Gdk.ModifierType.CONTROL_MASK:
                         self.toggle_cursor()
 
                 return False
