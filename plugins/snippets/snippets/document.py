@@ -790,7 +790,7 @@ class Document:
         def on_view_key_press(self, view, event):
                 library = Library()
 
-                _, state = event.get_state()
+                state = event.get_state()
 
                 if not (state & Gdk.ModifierType.CONTROL_MASK) and \
                                 not (state & Gdk.ModifierType.MOD1_MASK) and \
@@ -988,7 +988,7 @@ class Document:
                 return start_rect.y <= area.y + area.height and \
                        end_rect.y + end_rect.height >= area.y
 
-        def draw_placeholder_rect(self, ctx, placeholder, col):
+        def draw_placeholder_rect(self, ctx, placeholder):
                 start = placeholder.begin_iter()
                 start_rect = self.iter_coords(start)
                 start_line = start.get_line()
@@ -1026,7 +1026,7 @@ class Document:
                         if not line.forward_line():
                                 break
 
-        def draw_placeholder_bar(self, ctx, placeholder, col):
+        def draw_placeholder_bar(self, ctx, placeholder):
                 start = placeholder.begin_iter()
                 start_rect = self.iter_coords(start)
 
@@ -1043,17 +1043,13 @@ class Document:
                 ctx.rel_line_to(extend_width * 2, 0)
                 ctx.stroke()
 
-        def from_color(self, col):
-                return [col.red / 0x10000, col.green / 0x10000, col.blue / 0x10000]
-
         def draw_placeholder(self, ctx, placeholder):
                 if isinstance(placeholder, PlaceholderEnd):
                         return
 
-                buf = self.view.get_buffer()
-
-                col = self.from_color(self.view.get_style().text[Gtk.StateType.INSENSITIVE])
-                ctx.set_source_rgba(col[0], col[1], col[2], 0.5)
+                col = self.view.get_style_context().get_color(Gtk.StateFlags.INSENSITIVE)
+                col.alpha = 0.5
+                Gdk.cairo_set_source_rgba(ctx, col)
 
                 if placeholder.tabstop > 0:
                         ctx.set_dash([], 0)
@@ -1064,33 +1060,33 @@ class Document:
                 end = placeholder.end_iter()
 
                 if start.equal(end):
-                        self.draw_placeholder_bar(ctx, placeholder, col)
+                        self.draw_placeholder_bar(ctx, placeholder)
                 else:
-                        self.draw_placeholder_rect(ctx, placeholder, col)
+                        self.draw_placeholder_rect(ctx, placeholder)
 
         def on_draw(self, view, ctx):
-#                window = view.get_window(Gtk.TextWindowType.TEXT)
+                window = view.get_window(Gtk.TextWindowType.TEXT)
 
-#                if not Gtk.cairo_should_draw_window(ctx, window):
-#                        return False
+                if not Gtk.cairo_should_draw_window(ctx, window):
+                        return False
 
-#                # Draw something
-#                ctx.set_line_width(1.0)
+                # Draw something
+                ctx.set_line_width(1.0)
 
-#                Gtk.cairo_transform_to_window(ctx, view, window)
+                Gtk.cairo_transform_to_window(ctx, view, window)
 
-#                clipped, clip = Gdk.cairo_get_clip_rectangle(ctx)
+                clipped, clip = Gdk.cairo_get_clip_rectangle(ctx)
 
-#                if not clipped:
-#                        return False
+                if not clipped:
+                        return False
 
-#                for placeholder in self.ordered_placeholders:
-#                        if not self.placeholder_in_area(placeholder, clipped):
-#                                continue
+                for placeholder in self.ordered_placeholders:
+                        if not self.placeholder_in_area(placeholder, clip):
+                                continue
 
-#                        ctx.save()
-#                        self.draw_placeholder(ctx, placeholder)
-#                        ctx.restore()
+                        ctx.save()
+                        self.draw_placeholder(ctx, placeholder)
+                        ctx.restore()
 
                 return False
 
