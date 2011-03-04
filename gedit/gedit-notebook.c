@@ -666,7 +666,7 @@ gedit_notebook_collapse_border (GeditNotebook *nb,
 	gchar *modified_style;
 	const gchar style[] =
 		".notebook {\n"
-		"	padding: %d 0 %d 0;\n"
+		"	padding: %d 0 %d %d;\n"
 		"}";
 
 	g_return_if_fail (GEDIT_IS_NOTEBOOK (nb));
@@ -677,7 +677,7 @@ gedit_notebook_collapse_border (GeditNotebook *nb,
 	gtk_style_context_get_padding (context, gtk_style_context_get_state (context),
 	                               &padding);
 
-	modified_style = g_strdup_printf (style, padding.top, padding.bottom);
+	modified_style = g_strdup_printf (style, padding.top, padding.bottom, padding.left);
 
 	if (collapse)
 	{
