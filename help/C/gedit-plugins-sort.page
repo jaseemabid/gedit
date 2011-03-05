@@ -4,14 +4,31 @@
 
 <info>
   <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
-  <desc>*Sorts a document or selected text.</desc>
   <revision pkgversion="3.0" version="0.1" date="2010-12-5" status="stub"/>
   <credit type="author">
     <name>Daniel Neel</name>
     <email>dneelyep@gmail.com</email>
   </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
 </info>
 
-<title>*Sort</title>
+<title>Sort text into alphabetical order</title>
+
+<p>The Sort plugin arranges selected lines of text into alphabetical order.</p>
+
+<note style="warning"><p>You cannot undo the Sort operation, so you should save the file before performing the sort. To revert to the saved version of the file after the sort operation, choose <guiseq><gui>File</gui><gui>Revert</gui></guiseq>.</p></note>
+
+<p>To use the Sort plugin, perform the following steps:
+Select the lines of text you want to sort.
+Choose Edit ▸ Sort. The Sort dialog opens.
+Choose the options you want for the sort:
+To arrange the text in reverse order, select Reverse order.
+To delete duplicate lines, select Remove duplicates.
+To ignore case sensitivity, select Ignore case.
+To have the sort ignore the characters at the start of the lines, set the first character that should be used for sorting in the Start at column spin box.
+To perform the sort operation, click Sort.</p>     				
 
 </page>
