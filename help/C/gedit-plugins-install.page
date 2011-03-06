@@ -36,23 +36,18 @@
       <item>
         <p>Install the plugin files:</p>
         <list>
-          <item><p>To make the plugin available for all users of the system: copy the plugin into <file>/usr/lib/help/C/gedit-2/plugins/</file></p></item>
-          <item><p>For just the current user: copy the plugin into <file>/home/<var>username</var>/.gnome/gedit/plugins</file></p></item>
-          <item><p>You will need to copy the plugin files with elevated permissions.</p></item>
-	  <!-- 'elevated permissions' - awkward phrase, explain better -->
-          <!-- Also, the '/username/' section is currently (12/12/10) displaying incorrectly - should just be emphasizing the 'username' portion, not the /'s also. -->
+          <item><p>Copy the plugin into <file>/home/<var>username</var>/.local/share/gedit/plugins</file></p></item>
         </list>
       </item>
     </steps>
     <p>After you have moved the plugin files into the correct directory, the plugin will appear in the Preferences menu (<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui></guiseq>). From there, the plugin needs to be enabled to be used.</p>
 
     <note style="tip">
-      <p>You will need to have hidden files displayed to view the <file>/.gnome</file> directory. To display hidden files, click <guiseq><gui>View</gui><gui>Show Hidden Files</gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+      <p>You will need to have hidden files displayed to view the <file>.local</file> directory. To display hidden files, click <guiseq><gui>View</gui><gui>Show Hidden Files</gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
     </note>
 
     <note style="important">
-      <!-- Find out under what cases the directory might not be installed. Explain that if possible. -->
-      <p>The <file>.gnome2/gedit/plugins/</file> directory may not be installed on your system. If it is not, you will need to create it.</p>
+      <p>If the directory <file>.local/share/gedit/plugins/</file> is not present on your system, you will need to create it.</p>
     </note>
   </section>
 
