@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-03-05 19:40+0000\n"
-"PO-Revision-Date: 2011-03-06 12:49+0100\n"
+"POT-Creation-Date: 2011-03-06 13:11+0000\n"
+"PO-Revision-Date: 2011-03-06 15:56+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,6 @@ msgstr ""
 "@@image: 'figures/gedit-icon.png'; md5=a7174de2671462e1ac4f80a82ad09184"
 
 #: C/index.page:7(title) C/index.page:8(title)
-#| msgid "text editor"
 msgid "gedit Text Editor"
 msgstr "editor de textos gedit"
 
@@ -87,6 +86,8 @@ msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/gedit-icon.png\"></"
 "media> gedit Text Editor"
 msgstr ""
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gedit-icon.png\"></"
+"media> Editor de textos gedit"
 
 #: C/index.page:31(p)
 msgid ""
@@ -119,7 +120,6 @@ msgid "Printing with gedit"
 msgstr "Imprimir con gedit"
 
 #: C/index.page:52(title)
-#| msgid "Adding Snippets"
 msgid "gedit Snippets"
 msgstr "Recortes de gedit"
 
@@ -158,7 +158,7 @@ msgstr "dneelyep@gmail.com"
 
 #: C/gedit-view-open-files-in-sidepane.page:20(title)
 msgid "View a list of open files in a side pane"
-msgstr ""
+msgstr "Ver una lista de los archivos abiertos en un panel lateral"
 
 #: C/gedit-view-open-files-in-sidepane.page:22(p)
 msgid ""
@@ -167,6 +167,10 @@ msgid ""
 "panes allow you to view more files at a time than is possible using tabs "
 "alone."
 msgstr ""
+"Mantener un seguimiento de un gran número de archivos usando pestañas puede "
+"ser difícil. Una forma de gestionar grandes números de archivos es verlos en "
+"un panel lateral. Los paneles laterales le permiten ver más archivos al "
+"mismo tiempo que sólo usando pestañas."
 
 #: C/gedit-view-open-files-in-sidepane.page:24(p)
 msgid ""
@@ -192,7 +196,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-undo-recent-action.page:20(title)
-#| msgid "Undo the last action."
 msgid "Undo a recent action"
 msgstr "Deshacer una acción reciente"
 
@@ -251,6 +254,9 @@ msgid ""
 "To add a new tab, create a new file with <keyseq><key>Ctrl</key><key>N</"
 "key></keyseq>. The tab will be added to the right side of any other tabs."
 msgstr ""
+"Para añadir una pestaña nueva, cree un archivo nuevo con <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq>. Se añadirá la pestaña a la derecha de cualquier "
+"otra pestaña."
 
 #: C/gedit-tabs.page:36(title)
 msgid "Removing tabs"
@@ -262,6 +268,9 @@ msgid ""
 "side. Or, to remove all open tabs, press <keyseq><key>Ctrl</key><key>Shift</"
 "key><key>W</key></keyseq>"
 msgstr ""
+"Para quitar una pestaña pulse la <guiseq><gui>X</gui></guiseq> en la parte "
+"derecha de la pestaña. Para quitar todas las pestañas abiertas pulse "
+"<keyseq><key>Ctrl</key><key>Mayús</key><key>W</key></keyseq>."
 
 #: C/gedit-tabs.page:41(title)
 msgid "Organizing tabs:"
@@ -271,6 +280,7 @@ msgstr "Organizar pestañas:"
 msgid ""
 "There are several different ways to organize your tabs in <app>gedit</app>."
 msgstr ""
+"Existen diferentes maneras de organizar sus pestañas en <app>gedit</app>."
 
 #: C/gedit-tabs.page:44(p)
 msgid "To drag a tab into a new window:"
@@ -391,13 +401,11 @@ msgid "Ignacio Casal Quinteiro"
 msgstr "Ignacio Casal Quinteiro"
 
 #: C/gedit-shortcut-keys.page:26(title)
-#, fuzzy
 #| msgid "Shortcut key"
 msgid "Shortcut keys"
-msgstr "Tecla rápida"
+msgstr "Teclas rápidas"
 
 #: C/gedit-shortcut-keys.page:28(p)
-#, fuzzy
 #| msgid ""
 #| "Use shortcut keys to perform common tasks more quickly than with the "
 #| "mouse and menus. The following tables list all of <application>gedit</"
@@ -407,15 +415,14 @@ msgid ""
 "the mouse and menus. The following tables list all of <app>gedit's</app> "
 "shortcut keys."
 msgstr ""
-"Use las teclas rápidas para realizar tareas comunes más rápidamente que con "
-"el ratón y los menús. Las siguientes tablas listan todas las teclas rápidas "
-"de <application>gedit</application>."
+"Use las <gui>teclas rápidas</gui> para realizar tareas comunes más "
+"rápidamente que con el ratón y los menús. Las siguientes tablas listan todas "
+"las teclas rápidas de <application>gedit</application>."
 
 #: C/gedit-shortcut-keys.page:46(title)
-#, fuzzy
 #| msgid "Shortcut key"
 msgid "Tab-related Shortcut keys"
-msgstr "Tecla rápida"
+msgstr "Tecla rápidas relacionadas con las pestañas"
 
 #: C/gedit-shortcut-keys.page:53(p) C/gedit-shortcut-keys.page:88(p)
 #: C/gedit-shortcut-keys.page:126(p) C/gedit-shortcut-keys.page:167(p)
@@ -429,23 +436,21 @@ msgstr ""
 #: C/gedit-shortcut-keys.page:187(p) C/gedit-shortcut-keys.page:219(p)
 #: C/gedit-shortcut-keys.page:245(p)
 msgid "Press This"
-msgstr ""
+msgstr "Pulsar esto"
 
 #: C/gedit-shortcut-keys.page:58(p) C/gedit-shortcut-keys.page:61(p)
-#, fuzzy
 #| msgid "Switches to the next tab to the left."
 msgid "Switch to the next tab to the left"
-msgstr "Cambia a la siguiente pestaña a la izquierda."
+msgstr "Cambiar a la siguiente pestaña a la izquierda"
 
 #: C/gedit-shortcut-keys.page:58(p) C/gedit-shortcut-keys.page:61(p)
 msgid "Ctrl + Alt + PageUp"
 msgstr "Ctrl + Alt + RePág"
 
 #: C/gedit-shortcut-keys.page:64(p)
-#, fuzzy
 #| msgid "Switches to the next tab to the right."
 msgid "Switch to the next tab to the right"
-msgstr "Cambia a la siguiente pestaña a la derecha."
+msgstr "Cambiar a la siguiente pestaña a la derecha"
 
 #: C/gedit-shortcut-keys.page:64(p)
 msgid "Ctrl + Alt + PageDown"
@@ -484,10 +489,9 @@ msgid "Alt + <var>n</var>"
 msgstr "Alt + <var>n</var>"
 
 #: C/gedit-shortcut-keys.page:83(title)
-#, fuzzy
 #| msgid "Shortcuts for working with files:"
 msgid "Shortcut keys for working with files"
-msgstr "Teclas rápidas para trabajar con archivos:"
+msgstr "Teclas rápidas para trabajar con archivos"
 
 #: C/gedit-shortcut-keys.page:93(p)
 msgid "Create a new document"
@@ -514,10 +518,9 @@ msgid "Ctrl + S"
 msgstr "Ctrl + S"
 
 #: C/gedit-shortcut-keys.page:102(p)
-#, fuzzy
 #| msgid "Save the current document with a new filename."
 msgid "Save the current document with a new filename"
-msgstr "Guardar el documento actual con un nuevo nombre de archivo."
+msgstr "Guardar el documento actual con un nombre de archivo nuevo"
 
 #: C/gedit-shortcut-keys.page:102(p)
 msgid "Ctrl + Shift + S"
@@ -552,10 +555,9 @@ msgid "Ctrl + Q"
 msgstr "Ctrl + Q"
 
 #: C/gedit-shortcut-keys.page:121(title)
-#, fuzzy
 #| msgid "Shortcuts for editing documents:"
 msgid "Shortcut keys for editing files"
-msgstr "Teclas rápidas para editar documentos:"
+msgstr "Teclas rápidas para editar archivos"
 
 #: C/gedit-shortcut-keys.page:131(p)
 msgid "Undo the last action"
@@ -574,20 +576,18 @@ msgid "Ctrl + Shift + Z"
 msgstr "Ctrl + Mayús. + Z"
 
 #: C/gedit-shortcut-keys.page:137(p)
-#, fuzzy
 #| msgid "Cut the selected text or region and place it on the clipboard."
 msgid "Cut the selected text or region and place it on the clipboard"
-msgstr "Copiar el texto o región seleccionado y ubicarlo en el portapapeles."
+msgstr "Cortar el texto o región seleccionada y ubicarlo en el portapapeles"
 
 #: C/gedit-shortcut-keys.page:137(p)
 msgid "Ctrl + X"
 msgstr "Ctrl + X"
 
 #: C/gedit-shortcut-keys.page:140(p)
-#, fuzzy
 #| msgid "Copy the selected text or region onto the clipboard."
 msgid "Copy the selected text or region onto the clipboard"
-msgstr "Copiar el texto o región seleccionado al portapapeles."
+msgstr "Copiar el texto o región seleccionado al portapapeles"
 
 #: C/gedit-shortcut-keys.page:140(p)
 msgid "Ctrl + C"
@@ -603,7 +603,7 @@ msgstr "Ctrl + V"
 
 #: C/gedit-shortcut-keys.page:146(p)
 msgid "Select all text in the file"
-msgstr ""
+msgstr "Seleccionar todo el texto en el archivo"
 
 #: C/gedit-shortcut-keys.page:146(p)
 msgid "Ctrl + A"
@@ -1437,10 +1437,6 @@ msgid "textwidth"
 msgstr "Anchura de la sangría"
 
 #: C/gedit-plugins-modelines.page:79(p)
-#| msgid ""
-#| "For more information on creating plugins, see the <ulink type=\"http\" "
-#| "url=\"http://live.gnome.org/Gedit/Plugins\"><application>gedit</"
-#| "application> website</ulink>."
 msgid ""
 "For more information on <app>Vim</app> modelines, visit the <link href="
 "\"http://www.vim.org/\">Vim website</link>."
@@ -1498,21 +1494,11 @@ msgstr ""
 
 #: C/gedit-plugins-install.page:39(p)
 msgid ""
-"To make the plugin available for all users of the system: copy the plugin "
-"into <file>/usr/lib/help/C/gedit-2/plugins/</file>"
+"Copy the plugin into <file>/home/<var>username</var>/.local/share/gedit/"
+"plugins</file>"
 msgstr ""
 
-#: C/gedit-plugins-install.page:40(p)
-msgid ""
-"For just the current user: copy the plugin into <file>/home/<var>username</"
-"var>/.gnome/gedit/plugins</file>"
-msgstr ""
-
-#: C/gedit-plugins-install.page:41(p)
-msgid "You will need to copy the plugin files with elevated permissions."
-msgstr ""
-
-#: C/gedit-plugins-install.page:47(p)
+#: C/gedit-plugins-install.page:43(p)
 msgid ""
 "After you have moved the plugin files into the correct directory, the plugin "
 "will appear in the Preferences menu (<guiseq><gui>Edit</"
@@ -1520,19 +1506,18 @@ msgid ""
 "plugin needs to be enabled to be used."
 msgstr ""
 
-#: C/gedit-plugins-install.page:50(p)
+#: C/gedit-plugins-install.page:46(p)
 msgid ""
-"You will need to have hidden files displayed to view the <file>/.gnome</"
-"file> directory. To display hidden files, click <guiseq><gui>View</"
-"gui><gui>Show Hidden Files</gui></guiseq> or press <keyseq><key>Ctrl</"
-"key><key>H</key></keyseq>."
+"You will need to have hidden files displayed to view the <file>.local</file> "
+"directory. To display hidden files, click <guiseq><gui>View</gui><gui>Show "
+"Hidden Files</gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></"
+"keyseq>."
 msgstr ""
 
-#. Find out under what cases the directory might not be installed. Explain that if possible.
-#: C/gedit-plugins-install.page:55(p)
+#: C/gedit-plugins-install.page:50(p)
 msgid ""
-"The <file>.gnome2/gedit/plugins/</file> directory may not be installed on "
-"your system. If it is not, you will need to create it."
+"If the directory <file>.local/share/gedit/plugins/</file> is not present on "
+"your system, you will need to create it."
 msgstr ""
 
 #: C/gedit-plugins-insert-date-time.page:20(title)
@@ -1578,7 +1563,6 @@ msgstr ""
 "nuevos, monitorizar cambios en carpetas, etc.)"
 
 #: C/gedit-plugins-file-browser.page:16(title)
-#| msgid "File Browser Plugin"
 msgid "File browser"
 msgstr "Examinador de archivos"
 
@@ -1608,7 +1592,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-external-tools.page:28(title)
-#| msgid "External Tools Plugin"
 msgid "Configure the external tools plugin"
 msgstr "Configurar el complemento de herramientas externas"
 
@@ -1664,7 +1647,6 @@ msgid "*Check update"
 msgstr ""
 
 #: C/gedit-plugins-change-case.page:7(desc)
-#| msgid "The currently selected text."
 msgid "Changes the case of selected text."
 msgstr "Cambia la capitalización del texto seleccionado."
 
@@ -1721,7 +1703,6 @@ msgid "Do more with gedit by using gedit plugins."
 msgstr ""
 
 #: C/gedit-plugin-guide.page:15(title)
-#| msgid "Configuring the Insert Date/Time Plugin"
 msgid "Configure and use gedit Plugins"
 msgstr "Configurar y usar los complementos de gedit"
 
