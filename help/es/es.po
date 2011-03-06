@@ -1,17 +1,17 @@
-# translation of gedit.help.HEAD.po to Español
+# translation of gedit.help.master.po to Español
 # translation of gedit manual to Spanish
 #
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
 # María Majadas <maria.majadas@hispalinux.es>, 2005.
-# Jorge González <jorgegonz@svn.gnome.org>, 2006, 2007, 2009, 2010.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
+# Jorge González <jorgegonz@svn.gnome.org>, 2006, 2007, 2009, 2010, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gedit.help.HEAD\n"
-"POT-Creation-Date: 2011-03-02 17:35+0000\n"
-"PO-Revision-Date: 2011-03-04 10:43+0100\n"
-"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"Project-Id-Version: gedit.help.master\n"
+"POT-Creation-Date: 2011-03-05 19:40+0000\n"
+"PO-Revision-Date: 2011-03-06 12:49+0100\n"
+"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,19 +21,22 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/index.page:24(None)
-#| msgid ""
-#| "@@image: 'figures/gedit_window.png'; md5=a1daf2ed54a551bb590a172bc730594c"
+#: C/index.page:27(None)
 msgid "@@image: 'figures/gedit-icon.png'; md5=a7174de2671462e1ac4f80a82ad09184"
 msgstr ""
 "@@image: 'figures/gedit-icon.png'; md5=a7174de2671462e1ac4f80a82ad09184"
 
-#: C/index.page:9(name) C/gedit-view-open-files-in-sidepane.page:9(name)
+#: C/index.page:7(title) C/index.page:8(title)
+#| msgid "text editor"
+msgid "gedit Text Editor"
+msgstr "editor de textos gedit"
+
+#: C/index.page:12(name) C/gedit-view-open-files-in-sidepane.page:9(name)
 #: C/gedit-undo-recent-action.page:9(name) C/gedit-tabs.page:9(name)
 #: C/gedit-syntax-highlighting.page:9(name) C/gedit-spellcheck.page:8(name)
 #: C/gedit-shortcut-keys.page:9(name) C/gedit-replace.page:10(name)
 #: C/gedit-quickstart.page:9(name) C/gedit-printing.page:9(name)
-#: C/gedit-plugins-terminal.page:10(name)
+#: C/gedit-plugins-terminal.page:9(name) C/gedit-plugins-sort.page:13(name)
 #: C/gedit-plugins-pyconsole.page:9(name)
 #: C/gedit-plugins-modelines.page:13(name)
 #: C/gedit-plugins-install.page:9(name)
@@ -49,12 +52,12 @@ msgstr ""
 msgid "Jim Campbell"
 msgstr "Jim Campbell"
 
-#: C/index.page:10(email) C/gedit-view-open-files-in-sidepane.page:10(email)
+#: C/index.page:13(email) C/gedit-view-open-files-in-sidepane.page:10(email)
 #: C/gedit-undo-recent-action.page:10(email) C/gedit-tabs.page:10(email)
 #: C/gedit-syntax-highlighting.page:10(email) C/gedit-spellcheck.page:8(email)
 #: C/gedit-shortcut-keys.page:10(email) C/gedit-replace.page:11(email)
 #: C/gedit-quickstart.page:10(email) C/gedit-printing.page:10(email)
-#: C/gedit-plugins-terminal.page:11(email)
+#: C/gedit-plugins-terminal.page:10(email) C/gedit-plugins-sort.page:14(email)
 #: C/gedit-plugins-pyconsole.page:10(email)
 #: C/gedit-plugins-modelines.page:14(email)
 #: C/gedit-plugins-install.page:10(email)
@@ -71,23 +74,21 @@ msgstr "Jim Campbell"
 msgid "jwcampbell@gmail.com"
 msgstr "jwcampbell@gmail.com"
 
-#: C/index.page:14(year)
-#| msgid "2007"
+#: C/index.page:17(year)
 msgid "2010"
 msgstr "2010"
 
-#: C/index.page:15(name)
-#| msgid "GNOME Documentation Project"
+#: C/index.page:18(name)
 msgid "The GNOME Documentation Project"
 msgstr "El Proyecto de documentación de GNOME"
 
-#: C/index.page:23(title)
+#: C/index.page:26(title)
 msgid ""
-"<media type=\"image\" mime=\"image/png\" src=\"figures/gedit-icon.png\"> "
-"gedit logo </media> gedit Text Editor"
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gedit-icon.png\"></"
+"media> gedit Text Editor"
 msgstr ""
 
-#: C/index.page:29(p)
+#: C/index.page:31(p)
 msgid ""
 "Welcome to the <app>gedit</app> help guide. For a quick introduction into "
 "both <app>gedit's</app> most basic features, as well as some advanced "
@@ -95,42 +96,38 @@ msgid ""
 "link> and <link xref=\"gedit-shortcut-keys\">Shortcut keys</link> pages."
 msgstr ""
 
-#: C/index.page:31(p)
+#: C/index.page:33(p)
 msgid ""
 "Other help topics are grouped together into sections below. Enjoy using "
 "<app>gedit</app>!"
 msgstr ""
 
-#: C/index.page:34(title)
-#| msgid "Working with Files"
+#: C/index.page:36(title)
 msgid "Working With Files"
 msgstr "Trabajar con archivos"
 
-#: C/index.page:38(title)
+#: C/index.page:40(title)
 msgid "Configure gedit"
 msgstr "Configurar gedit"
 
-#: C/index.page:42(title) C/gedit-printing.page:14(title)
-#| msgid "Starting gedit"
-msgid "Printing with gedit"
-msgstr "Imprimir con gedit"
-
-#: C/index.page:46(title)
-#| msgid "Tag List Plugin"
+#: C/index.page:44(title)
 msgid "gedit Plugins"
 msgstr "Complementos de gedit"
 
-#: C/index.page:50(title)
-#, fuzzy
+#: C/index.page:48(title) C/gedit-printing.page:14(title)
+msgid "Printing with gedit"
+msgstr "Imprimir con gedit"
+
+#: C/index.page:52(title)
 #| msgid "Adding Snippets"
 msgid "gedit Snippets"
-msgstr "Adición de recortes"
+msgstr "Recortes de gedit"
 
 #: C/gedit-view-open-files-in-sidepane.page:15(name)
 #: C/gedit-undo-recent-action.page:15(name) C/gedit-tabs.page:15(name)
 #: C/gedit-replace.page:16(name) C/gedit-plugins-tag-list.page:10(name)
 #: C/gedit-plugins-spell-checker.page:10(name)
-#: C/gedit-plugins-sort.page:10(name) C/gedit-plugins-snippets.page:10(name)
+#: C/gedit-plugins-sort.page:9(name) C/gedit-plugins-snippets.page:10(name)
 #: C/gedit-plugins-quick-open:10(name) C/gedit-plugins-modelines.page:9(name)
 #: C/gedit-plugins-install.page:15(name)
 #: C/gedit-plugins-insert-date-time.page:9(name)
@@ -146,7 +143,7 @@ msgstr "Daniel Neel"
 #: C/gedit-undo-recent-action.page:16(email) C/gedit-tabs.page:16(email)
 #: C/gedit-replace.page:17(email) C/gedit-plugins-tag-list.page:11(email)
 #: C/gedit-plugins-spell-checker.page:11(email)
-#: C/gedit-plugins-sort.page:11(email) C/gedit-plugins-snippets.page:11(email)
+#: C/gedit-plugins-sort.page:10(email) C/gedit-plugins-snippets.page:11(email)
 #: C/gedit-plugins-quick-open:11(email)
 #: C/gedit-plugins-modelines.page:10(email)
 #: C/gedit-plugins-install.page:16(email)
@@ -195,10 +192,9 @@ msgid ""
 msgstr ""
 
 #: C/gedit-undo-recent-action.page:20(title)
-#, fuzzy
 #| msgid "Undo the last action."
 msgid "Undo a recent action"
-msgstr "Deshacer la última acción."
+msgstr "Deshacer una acción reciente"
 
 #. TODO: Maybe include a note about how gedit undoes sequences of "similar" actions, rather than every individual keystroke? For example, whole words are deleted rather than letters.
 #. I think we should also include a note about how many "undo's" you can do, and that you can't
@@ -247,7 +243,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-tabs.page:31(title)
-#| msgid "Adding Snippets"
 msgid "Adding tabs"
 msgstr "Añadir pestañas"
 
@@ -258,7 +253,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-tabs.page:36(title)
-#| msgid "Remove Trailing Spaces"
 msgid "Removing tabs"
 msgstr "Quitar pestañas"
 
@@ -340,7 +334,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-syntax-highlighting.page:14(title)
-#| msgid "Print syntax highlighting"
 msgid "Turn on syntax highlighting"
 msgstr "Activar el resaltado de sintaxis"
 
@@ -459,7 +452,6 @@ msgid "Ctrl + Alt + PageDown"
 msgstr "Ctrl + Alt + AvPág"
 
 #: C/gedit-shortcut-keys.page:67(p)
-#| msgid "Close tab."
 msgid "Close tab"
 msgstr "Cerrar pestaña"
 
@@ -468,7 +460,6 @@ msgid "Ctrl + W"
 msgstr "Ctrl + W"
 
 #: C/gedit-shortcut-keys.page:70(p)
-#| msgid "Save all tabs."
 msgid "Save all tabs"
 msgstr "Guardar todas las pestañas."
 
@@ -477,7 +468,6 @@ msgid "Ctrl + Shift + L"
 msgstr "Ctrl + Mayús. + L"
 
 #: C/gedit-shortcut-keys.page:73(p)
-#| msgid "Close all tabs."
 msgid "Close all tabs"
 msgstr "Cerrar todas las pestañas."
 
@@ -486,7 +476,6 @@ msgid "Ctrl + Shift + W"
 msgstr "Ctrl + Mayús. + W"
 
 #: C/gedit-shortcut-keys.page:76(p)
-#| msgid "Jump to nth tab."
 msgid "Jump to <var>n</var>th tab"
 msgstr "Saltar a la <var>n</var>a pestaña."
 
@@ -501,7 +490,6 @@ msgid "Shortcut keys for working with files"
 msgstr "Teclas rápidas para trabajar con archivos:"
 
 #: C/gedit-shortcut-keys.page:93(p)
-#| msgid "Create a new document."
 msgid "Create a new document"
 msgstr "Crear un documento nuevo"
 
@@ -510,7 +498,6 @@ msgid "Ctrl + N"
 msgstr "Ctrl + N"
 
 #: C/gedit-shortcut-keys.page:96(p)
-#| msgid "Open a document."
 msgid "Open a document"
 msgstr "Abrir un documento"
 
@@ -519,7 +506,6 @@ msgid "Ctrl + O"
 msgstr "Ctrl + O"
 
 #: C/gedit-shortcut-keys.page:99(p)
-#| msgid "Save the current document to disk."
 msgid "Save the current document"
 msgstr "Guardar el documento actual"
 
@@ -538,7 +524,6 @@ msgid "Ctrl + Shift + S"
 msgstr "Ctrl + Mayús. + S"
 
 #: C/gedit-shortcut-keys.page:105(p)
-#| msgid "Print the current document."
 msgid "Print the current document"
 msgstr "Imprimir el documento actual"
 
@@ -547,7 +532,6 @@ msgid "Ctrl + P"
 msgstr "Ctrl + P"
 
 #: C/gedit-shortcut-keys.page:108(p)
-#| msgid "Print preview."
 msgid "Print preview"
 msgstr "Vista previa de impresión"
 
@@ -556,12 +540,10 @@ msgid "Ctrl + Shift + P"
 msgstr "Ctrl + Mayús. + P"
 
 #: C/gedit-shortcut-keys.page:111(p)
-#| msgid "Close the current document."
 msgid "Close the current document"
 msgstr "Cerrar el documento actual"
 
 #: C/gedit-shortcut-keys.page:114(p)
-#| msgid "Quit Gedit."
 msgid "Quit gedit"
 msgstr "Salir de Gedit"
 
@@ -576,7 +558,6 @@ msgid "Shortcut keys for editing files"
 msgstr "Teclas rápidas para editar documentos:"
 
 #: C/gedit-shortcut-keys.page:131(p)
-#| msgid "Undo the last action."
 msgid "Undo the last action"
 msgstr "Deshacer la última acción"
 
@@ -585,7 +566,6 @@ msgid "Ctrl + Z"
 msgstr "Ctrl + Z"
 
 #: C/gedit-shortcut-keys.page:134(p)
-#| msgid "Redo the last undone action ."
 msgid "Redo the last undone action"
 msgstr "Rehacer la última acción deshecha"
 
@@ -614,7 +594,6 @@ msgid "Ctrl + C"
 msgstr "Ctrl + C"
 
 #: C/gedit-shortcut-keys.page:143(p)
-#| msgid "Paste the contents of the clipboard."
 msgid "Paste the contents of the clipboard"
 msgstr "Pegar el contenido del portapapeles"
 
@@ -631,7 +610,6 @@ msgid "Ctrl + A"
 msgstr "Ctrl + A"
 
 #: C/gedit-shortcut-keys.page:149(p)
-#| msgid "Delete current line."
 msgid "Delete the current line"
 msgstr "Eliminar la línea actual"
 
@@ -640,7 +618,6 @@ msgid "Ctrl + D"
 msgstr "Ctrl + D"
 
 #: C/gedit-shortcut-keys.page:152(p)
-#| msgid "Move the selected line up one line."
 msgid "Move the selected line up one line"
 msgstr "Mover la línea seleccionada una línea arriba"
 
@@ -651,7 +628,6 @@ msgid "Alt + Up Arrow"
 msgstr "Alt + Arriba"
 
 #: C/gedit-shortcut-keys.page:155(p)
-#| msgid "Move the selected line down one line."
 msgid "Move the selected line down one line"
 msgstr "Mover la línea seleccionada una línea abajo"
 
@@ -662,12 +638,10 @@ msgid "Alt + Down Arrow"
 msgstr "Alt + Abajo"
 
 #: C/gedit-shortcut-keys.page:162(title)
-#| msgid "Shortcuts for showing and hiding panes:"
 msgid "Shortcut keys for showing and hiding panes"
 msgstr "Teclas rápidas para mostrar y ocultar paneles"
 
 #: C/gedit-shortcut-keys.page:172(p)
-#| msgid "Show/hide the side pane."
 msgid "Show / hide the side pane"
 msgstr "Mostrar/ocultar el panel lateral"
 
@@ -676,7 +650,6 @@ msgid "F9"
 msgstr "F9"
 
 #: C/gedit-shortcut-keys.page:175(p)
-#| msgid "Show/hide the bottom pane."
 msgid "Show / hide the bottom pane."
 msgstr "Mostrar/ocultar el panel inferior"
 
@@ -691,7 +664,6 @@ msgid "Shortcut keys for searching"
 msgstr "Teclas rápidas para búsquedas:"
 
 #: C/gedit-shortcut-keys.page:192(p)
-#| msgid "Find a string."
 msgid "Find a string"
 msgstr "Buscar una cadena"
 
@@ -720,7 +692,6 @@ msgid "Ctrl + Shift + G"
 msgstr "Ctrl + Mayús. + G"
 
 #: C/gedit-shortcut-keys.page:201(p)
-#| msgid "Search and replace."
 msgid "Search and Replace"
 msgstr "Buscar y reemplazar"
 
@@ -729,7 +700,6 @@ msgid "Ctrl + H"
 msgstr "Ctrl + H"
 
 #: C/gedit-shortcut-keys.page:204(p)
-#| msgid "Clear highlight."
 msgid "Clear highlight"
 msgstr "Limpiar el resaltado"
 
@@ -738,7 +708,6 @@ msgid "Ctrl + Shift + K"
 msgstr "Ctrl + Mayús. + K"
 
 #: C/gedit-shortcut-keys.page:207(p)
-#| msgid "Goto line."
 msgid "Goto line"
 msgstr "Ir a la línea"
 
@@ -753,7 +722,6 @@ msgid "Shortcut keys for tools"
 msgstr "Teclas rápidas para las herramientas:"
 
 #: C/gedit-shortcut-keys.page:224(p)
-#| msgid "Check spelling (with plugin)."
 msgid "Check spelling"
 msgstr "Comprobar ortografía"
 
@@ -806,7 +774,6 @@ msgid "F1"
 msgstr "F1"
 
 #: C/gedit-replace.page:21(title)
-#| msgid "Find and Replace Options"
 msgid "Find and replace text"
 msgstr "Buscar y reemplazar texto"
 
@@ -819,7 +786,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-replace.page:25(title)
-#| msgid "Finding Text"
 msgid "Find text"
 msgstr "Buscar texto"
 
@@ -830,7 +796,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-replace.page:28(title)
-#| msgid "Finding Text"
 msgid "Finding text"
 msgstr "Buscar texto"
 
@@ -869,7 +834,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-replace.page:42(title)
-#| msgid "Replacing Text"
 msgid "Replace text"
 msgstr "Reemplazar texto"
 
@@ -897,7 +861,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-replace.page:49(p)
-#| msgid "Replacing Text"
 msgid "Replace the text:"
 msgstr "Reemplazar el texto:"
 
@@ -985,7 +948,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-replace.page:79(title)
-#| msgid "Clear highlight."
 msgid "Clear Highlight"
 msgstr "Limpiar el resaltado"
 
@@ -998,7 +960,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-replace.page:85(title)
-#| msgid "Find and Replace Options"
 msgid "Find/Replace options"
 msgstr "Opciones de buscar/reemplazar"
 
@@ -1054,11 +1015,13 @@ msgstr "?"
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/gedit-quickstart.page:17(None)
+#, fuzzy
 #| msgid ""
-#| "@@image: 'figures/gedit_format_bold.png'; "
-#| "md5=950264711a3f0808bef134fa94b0a582"
+#| "@@image: 'figures/gedit-screenshot.png'; "
+#| "md5=fbf9b949b5fa64aef8080e7079b3f340"
 msgid ""
-"@@image: 'figures/gedit-screenshot.png'; md5=fbf9b949b5fa64aef8080e7079b3f340"
+"@@image: 'figures/gedit3-screenshot.png'; "
+"md5=174aac884967f8e4226ab33d9498c60b"
 msgstr ""
 "@@image: 'figures/gedit-screenshot.png'; md5=fbf9b949b5fa64aef8080e7079b3f340"
 
@@ -1098,7 +1061,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-printing.page:19(title)
-#| msgid "Printing"
 msgid "Printing to paper"
 msgstr "Imprimir en papel"
 
@@ -1133,14 +1095,29 @@ msgid ""
 "file from gedit, click Restore Default Fonts."
 msgstr ""
 
-#: C/gedit-plugins-terminal.page:7(desc)
-#, fuzzy
-#| msgid "Description"
-msgid "Short description"
-msgstr "Descripción"
+#: C/gedit-plugins-terminal.page:14(title)
+msgid "Add a Terminal console to the bottom panel"
+msgstr ""
 
-#: C/gedit-plugins-terminal.page:15(title)
-msgid "*Add a Terminal"
+#: C/gedit-plugins-terminal.page:16(p)
+msgid ""
+"<app>gedit</app> makes it possible to include an embedded version of "
+"<app>Gnome Terminal</app>, the Gnome command-line application, in the bottom "
+"panel of the <app>gedit</app> window. This will let you run scripts, install "
+"needed software, or test your program without leaving <app>gedit</app>."
+msgstr ""
+
+#: C/gedit-plugins-terminal.page:18(p)
+msgid ""
+"To enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</"
+"gui><gui>Plugins</gui><gui>Embedded Terminal</gui></guiseq>."
+msgstr ""
+
+#: C/gedit-plugins-terminal.page:20(p)
+msgid ""
+"Once you have enabled the plugin, add the terminal to the bottom panel by "
+"selecting <guiseq><gui>View</gui><gui>Bottom Panel</gui></guiseq>, or just "
+"press <guiseq><gui>Ctrl</gui><gui>F9</gui></guiseq>."
 msgstr ""
 
 #: C/gedit-plugins-tag-list.page:7(desc)
@@ -1165,15 +1142,85 @@ msgstr "Cerrar el documento actual."
 msgid "*Spell checker"
 msgstr "Complemento Corrector ortográfico"
 
-#: C/gedit-plugins-sort.page:7(desc)
-#, fuzzy
-#| msgid "The currently selected text."
-msgid "*Sorts a document or selected text."
-msgstr "El texto actualmente seleccionado."
-
-#: C/gedit-plugins-sort.page:15(title)
-msgid "*Sort"
+#: C/gedit-plugins-sort.page:18(title)
+msgid "Sort text into alphabetical order"
 msgstr ""
+
+#: C/gedit-plugins-sort.page:20(p)
+#, fuzzy
+#| msgid ""
+#| "The <application>Sort</application> plugin arranges selected lines of "
+#| "text into alphabetical order."
+msgid ""
+"The Sort plugin arranges selected lines of text into alphabetical order."
+msgstr ""
+"El complemento <application>Ordenar</application> coloca las líneas "
+"seleccionadas en orden alfabético."
+
+#: C/gedit-plugins-sort.page:22(p)
+#, fuzzy
+#| msgid ""
+#| "You cannot undo the Sort operation, so you should save the file before "
+#| "performing the sort. To revert to the saved version of the file after the "
+#| "sort operation, choose <menuchoice><guimenu>File</"
+#| "guimenu><guimenuitem>Revert</guimenuitem></menuchoice>."
+msgid ""
+"You cannot undo the Sort operation, so you should save the file before "
+"performing the sort. To revert to the saved version of the file after the "
+"sort operation, choose <guiseq><gui>File</gui><gui>Revert</gui></guiseq>."
+msgstr ""
+"La operación de Ordenar no se puede deshacer, por lo que es recomendable "
+"guardar el archivo antes de llevarla a cabo. Para volver a la versión "
+"guardada del archivo después de efectuar la operación de ordenar, seleccione "
+"<menuchoice><guimenu>Archivo</guimenu><guimenuitem>Revertir</guimenuitem></"
+"menuchoice>."
+
+#: C/gedit-plugins-sort.page:24(p)
+msgid ""
+"To use the <app>Sort</app> plugin, select the lines of text you want to "
+"sort, and then <guiseq><gui>Edit</gui><gui>Sort</gui></guiseq>."
+msgstr ""
+
+#: C/gedit-plugins-sort.page:26(p)
+msgid ""
+"The Sort dialog will open, and you will can choose between several sorting "
+"options:"
+msgstr ""
+
+#: C/gedit-plugins-sort.page:28(p)
+msgid ""
+"<em>Reverse order</em> will arrange the text in reverse alphabetical order."
+msgstr ""
+
+#: C/gedit-plugins-sort.page:29(p)
+msgid "<em>Remove duplicates</em> will remove duplicate values from the list."
+msgstr ""
+
+#: C/gedit-plugins-sort.page:30(p)
+msgid "<em>Ignore case</em> will ignore case sensitivity."
+msgstr ""
+
+#: C/gedit-plugins-sort.page:31(p)
+#, fuzzy
+#| msgid ""
+#| "To have the sort ignore the characters at the start of the lines, set the "
+#| "first character that should be used for sorting in the <guilabel>Start at "
+#| "column</guilabel> spin box."
+msgid ""
+"To have the sort ignore the characters at the start of the lines, set the "
+"first character that should be used for sorting in the <em>Start at</em> "
+"column spin box."
+msgstr ""
+"Para que la ordenación ignore los caracteres al principio de las líneas, "
+"establezca el primer carácter que debería usarse para ordenar en el marcador "
+"incrementable <guilabel>Empezar en la columna</guilabel>."
+
+#: C/gedit-plugins-sort.page:33(p)
+#, fuzzy
+#| msgid "To perform the sort operation, click <guibutton>Sort</guibutton>."
+msgid "To perform the sort operation, click <gui>Sort</gui>."
+msgstr ""
+"Para efectuar la ordenación, pulse el botón <guibutton>Ordenar</guibutton>."
 
 #: C/gedit-plugins-snippets.page:7(desc)
 msgid "*Insert often used pieces of text in a fast way."
@@ -1390,7 +1437,6 @@ msgid "textwidth"
 msgstr "Anchura de la sangría"
 
 #: C/gedit-plugins-modelines.page:79(p)
-#, fuzzy
 #| msgid ""
 #| "For more information on creating plugins, see the <ulink type=\"http\" "
 #| "url=\"http://live.gnome.org/Gedit/Plugins\"><application>gedit</"
@@ -1399,9 +1445,8 @@ msgid ""
 "For more information on <app>Vim</app> modelines, visit the <link href="
 "\"http://www.vim.org/\">Vim website</link>."
 msgstr ""
-"Para obtener más información acerca de cómo crear complementos, consulte el "
-"<ulink type=\"http\" url=\"http://live.gnome.org/Gedit/Plugins\">sitio web "
-"de <application>gedit</application></ulink>."
+"Para obtener más información acerca de <app>Vim</app> visite el <link href="
+"\"http://www.vim.org/\">sitio web de Vim</link>."
 
 #: C/gedit-plugins-install.page:20(title)
 msgid "Install Additional gedit Plugins"
@@ -1429,7 +1474,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-install.page:30(title)
-#| msgid "Italic"
 msgid "Install"
 msgstr "Instalar"
 
@@ -1441,7 +1485,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-install.page:34(title)
-#| msgid "Enabling a Plugin"
 msgid "Installing a Plugin"
 msgstr "Instalar un complemento"
 
@@ -1530,19 +1573,20 @@ msgid ""
 "remote mounts, creating new files/directories, monitor directories for "
 "changes, etc.)"
 msgstr ""
+"* Un complemento de examinador de archivos que permite acceso fácil a su "
+"sistema de archivos (incluye montajes remotos, crear archivos y directorios "
+"nuevos, monitorizar cambios en carpetas, etc.)"
 
 #: C/gedit-plugins-file-browser.page:16(title)
-#, fuzzy
 #| msgid "File Browser Plugin"
-msgid "*File browser"
-msgstr "Complemento del examinador de archivos"
+msgid "File browser"
+msgstr "Examinador de archivos"
 
 #: C/gedit-plugins-external-tools.page:7(desc)
 msgid "Execute external commands and shell scripts."
-msgstr ""
+msgstr "Ejecutar comandos externos y «shell scripts»."
 
 #: C/gedit-plugins-external-tools.page:21(title)
-#| msgid "External Tools Plugin"
 msgid "External tools"
 msgstr "Herramientas externas"
 
@@ -1564,10 +1608,9 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-external-tools.page:28(title)
-#, fuzzy
 #| msgid "External Tools Plugin"
 msgid "Configure the external tools plugin"
-msgstr "Complemento de herramientas externas"
+msgstr "Configurar el complemento de herramientas externas"
 
 #: C/gedit-plugins-external-tools.page:30(p)
 msgid ""
@@ -1583,7 +1626,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-doc-stats.page:19(title)
-#| msgid "Document Statistics Plugin"
 msgid "Document statistics"
 msgstr "Estadísticas del documento"
 
@@ -1622,13 +1664,11 @@ msgid "*Check update"
 msgstr ""
 
 #: C/gedit-plugins-change-case.page:7(desc)
-#, fuzzy
 #| msgid "The currently selected text."
 msgid "Changes the case of selected text."
-msgstr "El texto actualmente seleccionado."
+msgstr "Cambia la capitalización del texto seleccionado."
 
 #: C/gedit-plugins-change-case.page:20(title)
-#| msgid "Change Case"
 msgid "Change case"
 msgstr "Cambiar capitalización"
 
@@ -1681,10 +1721,9 @@ msgid "Do more with gedit by using gedit plugins."
 msgstr ""
 
 #: C/gedit-plugin-guide.page:15(title)
-#, fuzzy
 #| msgid "Configuring the Insert Date/Time Plugin"
 msgid "Configure and use gedit Plugins"
-msgstr "Para configurar el complemento Insertar fecha/hora"
+msgstr "Configurar y usar los complementos de gedit"
 
 #: C/gedit-plugin-guide.page:16(p)
 msgid ""
@@ -1692,6 +1731,9 @@ msgid ""
 "installed by default, but a large number of other plugins are available "
 "separately."
 msgstr ""
+"Puede hacer más con <app>gedit</app> usando los complementos. Varios "
+"complementos están instalados de forma predeterminada, pero existe un gran "
+"número de complementos disponibles de forma separada."
 
 #: C/gedit-plugin-guide.page:17(p)
 msgid ""
@@ -1701,7 +1743,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugin-guide.page:20(title)
-#| msgid "Tag List Plugin"
 msgid "Default gedit Plugins"
 msgstr "Complementos predeterminados de gedit"
 
@@ -1711,11 +1752,11 @@ msgstr "Complementos adicionales de gedit"
 
 #: C/gedit-plugin-guide.page:28(title)
 msgid "Create your own gedit Plugins"
-msgstr ""
+msgstr "Crear sus propios complementos de gedit"
 
 #: C/gedit-open-recent.page:14(title)
 msgid "Re-open a recently-used file"
-msgstr ""
+msgstr "Reabrir un archivo usado recientemente"
 
 #: C/gedit-open-recent.page:16(p)
 msgid ""
@@ -1723,6 +1764,9 @@ msgid ""
 "recently-used files. To open a recently-used file, complete the following "
 "steps."
 msgstr ""
+"De forma predeterminada, <app>gedit</app> proporciona acceso fácil a cinco "
+"de los archivos más recientemente usados. Para abrir un archivo "
+"recientemente usado, complete los siguientes pasos."
 
 #: C/gedit-open-recent.page:18(title)
 msgid "Open a recently-used file"
@@ -1750,8 +1794,9 @@ msgstr ""
 
 #: C/gedit-open-recent.page:26(p)
 msgid ""
-"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</gui><gui>gedit-"
-"2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq>."
+"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</"
+"gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></"
+"guiseq>."
 msgstr ""
 
 #: C/gedit-open-recent.page:27(p)
@@ -1765,7 +1810,6 @@ msgid "Open a file that is located on a server"
 msgstr ""
 
 #: C/gedit-open-on-server.page:16(p)
-#| msgid "To search a file for a string of text, perform the following steps:"
 msgid "To open a file from a server, perform the following steps:"
 msgstr "Para abrir un archivo desde un servidor, realice estos pasos:"
 
@@ -1802,7 +1846,6 @@ msgstr ""
 "para seleccionar la codificación de caracteres apropiada."
 
 #: C/gedit-open-on-server.page:22(p)
-#| msgid "Click <guibutton>Open</guibutton>."
 msgid "Click <gui>Open</gui>."
 msgstr "Pulse </gui>Abrir<gui>."
 
@@ -1859,8 +1902,6 @@ msgstr ""
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/gedit-open-files-from-sidepane.page:36(None)
-#| msgid ""
-#| "@@image: 'figures/gedit_window.png'; md5=a1daf2ed54a551bb590a172bc730594c"
 msgid ""
 "@@image: 'figures/gedit-side-pane1.png'; md5=ac9c80cb0552d63b593c71f23be69b53"
 msgstr ""
@@ -1869,8 +1910,6 @@ msgstr ""
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/gedit-open-files-from-sidepane.page:51(None)
-#| msgid ""
-#| "@@image: 'figures/gedit_window.png'; md5=a1daf2ed54a551bb590a172bc730594c"
 msgid ""
 "@@image: 'figures/gedit-side-pane2.png'; md5=e7a12a43adc9c9cb8c992ad22a815a57"
 msgstr ""
@@ -1903,7 +1942,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-open-files-from-sidepane.page:30(title)
-#| msgid "Opening a File from a URI"
 msgid "Opening files from the side pane"
 msgstr "Abrir archivos desde el panel lateral"
 
@@ -1966,7 +2004,6 @@ msgstr ""
 
 #: C/gedit-edit-as-root.page:19(code)
 #, no-wrap
-#| msgid "gedit"
 msgid "sudo gedit"
 msgstr "sudo gedit"
 
@@ -1999,7 +2036,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-change-color-scheme.page:14(title)
-#| msgid "Color Scheme"
 msgid "Change the Color Scheme"
 msgstr "Cambiar el esquema de color"
 
@@ -2032,7 +2068,6 @@ msgid "The new color scheme will be applied immediately."
 msgstr ""
 
 #: C/gedit-change-color-scheme.page:27(title)
-#| msgid "Color Scheme"
 msgid "Use a Custom Color Scheme"
 msgstr "Usar un esquema de color personalizado"
 
@@ -2054,8 +2089,18 @@ msgstr ""
 #: C/index.page:0(None)
 msgid "translator-credits"
 msgstr ""
-"Jorge González <jorgegonz@svn.gnome.org>, 2006-2009\n"
+"Jorge González <jorgegonz@svn.gnome.org>, 2006-2011\n"
 "María Majadas <maria.majadas@hispalinux.es>, 2005"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "Short description"
+#~ msgstr "Descripción"
+
+#, fuzzy
+#~| msgid "The currently selected text."
+#~ msgid "*Sorts a document or selected text."
+#~ msgstr "El texto actualmente seleccionado."
 
 #~ msgid ""
 #~ "Permission is granted to copy, distribute and/or modify this document "
@@ -2328,9 +2373,6 @@ msgstr ""
 #~ "básicas pero robustas, tales como impresión, corrección ortográfica, "
 #~ "busqueda y reemplazo y resaltado de sintaxis. Existen características más "
 #~ "avanzadas como complementos."
-
-#~ msgid "text editor"
-#~ msgstr "editor de textos"
 
 #~ msgid "Introduction"
 #~ msgstr "Introducción"
@@ -5086,25 +5128,6 @@ msgstr ""
 #~ msgid "Sort Plugin"
 #~ msgstr "Complemento Ordenar"
 
-#~ msgid ""
-#~ "The <application>Sort</application> plugin arranges selected lines of "
-#~ "text into alphabetical order."
-#~ msgstr ""
-#~ "El complemento <application>Ordenar</application> coloca las líneas "
-#~ "seleccionadas en orden alfabético."
-
-#~ msgid ""
-#~ "You cannot undo the Sort operation, so you should save the file before "
-#~ "performing the sort. To revert to the saved version of the file after the "
-#~ "sort operation, choose <menuchoice><guimenu>File</"
-#~ "guimenu><guimenuitem>Revert</guimenuitem></menuchoice>."
-#~ msgstr ""
-#~ "La operación de Ordenar no se puede deshacer, por lo que es recomendable "
-#~ "guardar el archivo antes de llevarla a cabo. Para volver a la versión "
-#~ "guardada del archivo después de efectuar la operación de ordenar, "
-#~ "seleccione <menuchoice><guimenu>Archivo</guimenu><guimenuitem>Revertir</"
-#~ "guimenuitem></menuchoice>."
-
 #~ msgid "Select the lines of text you want to sort."
 #~ msgstr "Seleccione las líneas de texto que quiere ordenar."
 
@@ -5136,20 +5159,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Para no distinguir entre mayúsculas y minúsculas, seleccione la opción "
 #~ "<guilabel>Ignorar capitalización</guilabel>."
-
-#~ msgid ""
-#~ "To have the sort ignore the characters at the start of the lines, set the "
-#~ "first character that should be used for sorting in the <guilabel>Start at "
-#~ "column</guilabel> spin box."
-#~ msgstr ""
-#~ "Para que la ordenación ignore los caracteres al principio de las líneas, "
-#~ "establezca el primer carácter que debería usarse para ordenar en el "
-#~ "marcador incrementable <guilabel>Empezar en la columna</guilabel>."
-
-#~ msgid "To perform the sort operation, click <guibutton>Sort</guibutton>."
-#~ msgstr ""
-#~ "Para efectuar la ordenación, pulse el botón <guibutton>Ordenar</"
-#~ "guibutton>."
 
 #~ msgid ""
 #~ "The <application>Spell Checker</application> plugin checks the spelling "
@@ -5369,8 +5378,8 @@ msgstr ""
 #~ "pane to show the tag list tab."
 #~ msgstr ""
 #~ "Por omisión, el panel lateral muestra una pestaña conteniendo una lista "
-#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en la "
-#~ "parte de abajo del panel lateral para mostrar la pestaña de listas de "
+#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en "
+#~ "la parte de abajo del panel lateral para mostrar la pestaña de listas de "
 #~ "etiquetas."
 
 #~ msgid ""
