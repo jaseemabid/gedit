@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-27 18:12+0100\n"
-"PO-Revision-Date: 2011-02-27 18:12+0100\n"
+"POT-Creation-Date: 2011-03-07 17:07+0100\n"
+"PO-Revision-Date: 2011-03-07 17:13+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -295,7 +295,6 @@ msgid "Whether gedit should highlight all the occurrences of the searched text."
 msgstr "Huruvida gedit ska färgmarkera alla förekomster av söktexten."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
-#, fuzzy
 msgid "Whether gedit should highlight matching brackets."
 msgstr "Huruvida gedit ska färgmarkera matchande klammer."
 
@@ -320,7 +319,6 @@ msgid "Whether gedit should restore the previous cursor position when a file is 
 msgstr "Huruvida gedit ska återställa den tidigare markörpositionen när en fil läses in."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
-#, fuzzy
 msgid "Whether the side panel at the left of editing windows should be visible."
 msgstr "Huruvida sidopanelen till vänster i redigeringsfönstret ska vara synlig."
 
@@ -557,12 +555,10 @@ msgid "Highlight current _line"
 msgstr "Färgmarkera a_ktuell rad"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
-#, fuzzy
 msgid "Highlight matching _brackets"
-msgstr "Färgmarkera matchande _klammer"
+msgstr "Färgmarkera matchande _klammrar"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:13
-#, fuzzy
 msgid "Highlighting"
 msgstr "Färgmarkering"
 
@@ -604,7 +600,7 @@ msgid "_Autosave files every"
 msgstr "Spara filer _automatiskt var"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23
-#: ../gedit/gedit-view.c:603
+#: ../gedit/gedit-view.c:588
 msgid "_Display line numbers"
 msgstr "_Visa radnummer"
 
@@ -769,7 +765,7 @@ msgstr "Spara filen med komprimering?"
 #: ../gedit/gedit-commands-file.c:615
 #, c-format
 msgid "The file \"%s\" was previously saved as plain text and will now be saved using compression."
-msgstr ""
+msgstr "Filen \"%s\" sparades tidigare som vanlig text och kommer nu att sparas med komprimering."
 
 #: ../gedit/gedit-commands-file.c:617
 msgid "_Save Using Compression"
@@ -782,7 +778,7 @@ msgstr "Spara filen som vanlig text?"
 #: ../gedit/gedit-commands-file.c:622
 #, c-format
 msgid "The file \"%s\" was previously saved using compression and will now be saved as plain text."
-msgstr ""
+msgstr "Filen \"%s\" sparades tidigare med komprimering och kommer nu att sparas som vanlig text."
 
 #: ../gedit/gedit-commands-file.c:624
 msgid "_Save As Plain Text"
@@ -897,13 +893,13 @@ msgstr "Osparat dokument %d"
 
 #: ../gedit/gedit-documents-panel.c:118
 #: ../gedit/gedit-documents-panel.c:132
-#: ../gedit/gedit-window.c:2403
-#: ../gedit/gedit-window.c:2410
+#: ../gedit/gedit-window.c:2406
+#: ../gedit/gedit-window.c:2413
 msgid "Read-Only"
 msgstr "Skrivskyddad"
 
 #: ../gedit/gedit-documents-panel.c:1089
-#: ../gedit/gedit-window.c:3835
+#: ../gedit/gedit-window.c:3838
 msgid "Documents"
 msgstr "Dokument"
 
@@ -1202,9 +1198,8 @@ msgid "There was a problem opening the file %s."
 msgstr "Ett fel inträffade vid öppnandet av filen %s."
 
 #: ../gedit/gedit-io-error-info-bar.c:629
-#, fuzzy
 msgid "The file you opened has some invalid characters. If you continue editing this file you could corrupt this document."
-msgstr "Filen som du öppnat innehåller ogiltiga tecken. Om du fortsätter att redigera denna fil så kanske du förstör dokumentet."
+msgstr "Filen som du öppnat innehåller ogiltiga tecken. Om du fortsätter att redigera denna fil så kanske du skadar dokumentet."
 
 #: ../gedit/gedit-io-error-info-bar.c:632
 msgid "You can also choose another character encoding and try again."
@@ -1356,11 +1351,11 @@ msgstr "_Läs om"
 #: ../gedit/gedit-io-error-info-bar.c:1278
 #, c-format
 msgid "Some invalid chars have been detected while saving %s"
-msgstr ""
+msgstr "Några ogiltiga tecken har upptäckts under sparning av %s"
 
 #: ../gedit/gedit-io-error-info-bar.c:1294
 msgid "If you continue saving this file you can corrupt the document.  Save anyway?"
-msgstr ""
+msgstr "Om du fortsätter med att spara denna fil kan du skada dokumentet. Spara ändå?"
 
 #: ../gedit/gedit-panel.c:339
 #: ../gedit/gedit-panel.c:511
@@ -1570,38 +1565,38 @@ msgid "Saving %s"
 msgstr "Sparar %s"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1827
+#: ../gedit/gedit-tab.c:1832
 msgid "RO"
 msgstr "SKRIVSK"
 
-#: ../gedit/gedit-tab.c:1874
+#: ../gedit/gedit-tab.c:1879
 #, c-format
 msgid "Error opening file %s"
 msgstr "Fel vid öppning av filen %s"
 
-#: ../gedit/gedit-tab.c:1879
+#: ../gedit/gedit-tab.c:1884
 #, c-format
 msgid "Error reverting file %s"
 msgstr "Fel vid återställning av filen %s"
 
-#: ../gedit/gedit-tab.c:1884
+#: ../gedit/gedit-tab.c:1889
 #, c-format
 msgid "Error saving file %s"
 msgstr "Fel vid sparande av filen %s"
 
-#: ../gedit/gedit-tab.c:1905
+#: ../gedit/gedit-tab.c:1910
 msgid "Unicode (UTF-8)"
 msgstr "Unicode (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1912
+#: ../gedit/gedit-tab.c:1917
 msgid "Name:"
 msgstr "Namn:"
 
-#: ../gedit/gedit-tab.c:1913
+#: ../gedit/gedit-tab.c:1918
 msgid "MIME Type:"
 msgstr "MIME-typ:"
 
-#: ../gedit/gedit-tab.c:1914
+#: ../gedit/gedit-tab.c:1919
 msgid "Encoding:"
 msgstr "Kodning:"
 
@@ -1958,7 +1953,7 @@ msgstr "Använd färgmarkeringsläge för %s"
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
 #: ../gedit/gedit-window.c:1088
-#: ../gedit/gedit-window.c:2100
+#: ../gedit/gedit-window.c:2103
 #: ../plugins/externaltools/tools/manager.py:120
 #: ../plugins/externaltools/tools/manager.py:416
 #: ../plugins/externaltools/tools/manager.py:527
@@ -1997,35 +1992,34 @@ msgid "Find"
 msgstr "Sök"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1745
+#: ../gedit/gedit-window.c:1748
 #, c-format
 msgid "Activate '%s'"
 msgstr "Aktivera \"%s\""
 
-#: ../gedit/gedit-window.c:2078
+#: ../gedit/gedit-window.c:2081
 msgid "Use Spaces"
 msgstr "Använd blanksteg"
 
-#: ../gedit/gedit-window.c:2151
+#: ../gedit/gedit-window.c:2154
 msgid "Tab Width"
 msgstr "Tabulatorbredd"
 
-#: ../gedit/gedit-window.c:2260
+#: ../gedit/gedit-window.c:2263
 #, fuzzy
 msgid "Bracket match is out of range"
 msgstr "Klammermatchning"
 
-#: ../gedit/gedit-window.c:2265
-#, fuzzy
+#: ../gedit/gedit-window.c:2268
 msgid "Bracket match not found"
-msgstr "Klammermatchning"
+msgstr "Klammermatchning hittades inte"
 
-#: ../gedit/gedit-window.c:2270
+#: ../gedit/gedit-window.c:2273
 #, c-format
 msgid "Bracket match found on line: %d"
-msgstr ""
+msgstr "Klammarmatchning hittades på rad: %d"
 
-#: ../gedit/gedit-window.c:4041
+#: ../gedit/gedit-window.c:4044
 msgid "About gedit"
 msgstr "Om gedit"
 
@@ -2201,7 +2195,7 @@ msgstr "Externa verktyg"
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
-msgstr ""
+msgstr "Ett Pango-typsnittsnamn. Exempel är \"Sans 12\" eller \"Monospace Bold 14\"."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
 msgid "If true, the external tools will use the desktop-global standard font if it's monospace (and the most similar font it can come up with otherwise)."
@@ -2210,7 +2204,7 @@ msgstr ""
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
 msgid "Whether to use the system font"
-msgstr ""
+msgstr "Huruvida systemtypsnittet ska användas"
 
 #: ../plugins/externaltools/tools/capture.py:92
 #, python-format
@@ -2749,14 +2743,12 @@ msgid "Modelines"
 msgstr "Lägesrader"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:2
-#, fuzzy
 msgid "Command Color Text"
-msgstr "Färg för k_ommandon:"
+msgstr "Textfärg för kommando"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:3
-#, fuzzy
 msgid "Error Color Text"
-msgstr "Färg för _fel:"
+msgstr "Textfärg för fel"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:5
 msgid "If true, the terminal will use the desktop-global standard font if it's monospace (and the most similar font it can come up with otherwise)."
@@ -3152,9 +3144,8 @@ msgid "Set the language of the current document"
 msgstr "Ställ in språket på det aktuella dokumentet"
 
 #: ../plugins/spell/gedit-spell-plugin.c:124
-#, fuzzy
 msgid "_Highlight Misspelled Words"
-msgstr "_Färgmarkeringsläge"
+msgstr "Färgmarkera f_elstavade ord"
 
 #: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "Automatically spell-check the current document"
@@ -3267,9 +3258,8 @@ msgid "If the user should be prompted for a format or if the selected or custom 
 msgstr ""
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
-#, fuzzy
 msgid "Prompt Type"
-msgstr "Frågemeddelande"
+msgstr "Frågetyp"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
 msgid "Selected Format"
