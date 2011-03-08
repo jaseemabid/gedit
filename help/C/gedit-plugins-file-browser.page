@@ -4,15 +4,40 @@
 
 <info>
   <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
-  <desc>*A file browser plugin allowing to easily access your file system (includes remote mounts, creating new files/directories, monitor directories for changes, etc.)</desc>
   <revision pkgversion="3.0" version="0.1" date="2010-12-5" status="stub"/>
   <credit type="author">
     <name>Daniel Neel</name>
     <email>dneelyep@gmail.com</email>
   </credit>
-  <!--INFOAT: http://live.gnome.org/Gedit/Plugins/FileBrowser-->
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
 </info>
 
-<title>File browser</title>
+<title>Use the side panel to browse and open files</title>
+
+  <p>If you find that you need to frequently open files while using <app>gedit</app>, you may find it helpful to use the <app>File Browser Panel</app> plugin. This plugin embeds a Gnome file browser in the side panel.</p>
+  <p>To use this plugin, you will need to do three things:
+
+
+
+select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>File Browser Panel</gui></guiseq>. To activate the side panel, select <guiseq><gui>View</gui><gui>Side Panel</gui></guiseq>, or just press<key>F9</key></p>.
+
+  <section id="sidepane-open">
+    <title>Opening files from the side pane</title>
+    <p>
+      To open files from the <app>side pane</app>, first open the <app>side pane</app> by selecting <guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, then click on the <gui>file-browser</gui> icon at the bottom of the pane.
+    </p>
+
+    <p>
+      <media type="image" mime="image/png" src="figures/gedit-side-pane1.png"/>
+    </p>
+
+    <p>
+      This will activate the <em>file-browser</em> mode of the <app>side pane</app>. You can then use the navigation buttons at the top of the pane to locate and open your desired files.
+    </p>
+  </section>
+
 
 </page>
