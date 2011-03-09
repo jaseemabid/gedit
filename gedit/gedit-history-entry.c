@@ -179,17 +179,6 @@ gedit_history_entry_load_history (GeditHistoryEntry *entry)
 }
 
 static void
-gedit_history_entry_constructed (GObject *object)
-{
-	/* We must load the history after the object has been constructed,
-	 * to ensure that the model is set properly.
-	 */
-	gedit_history_entry_load_history (GEDIT_HISTORY_ENTRY (object));
-
-	G_OBJECT_CLASS (gedit_history_entry_parent_class)->constructed (object);
-}
-
-static void
 gedit_history_entry_class_init (GeditHistoryEntryClass *klass)
 {
 	GObjectClass   *object_class = G_OBJECT_CLASS (klass);
@@ -198,7 +187,6 @@ gedit_history_entry_class_init (GeditHistoryEntryClass *klass)
 	object_class->get_property = gedit_history_entry_get_property;
 	object_class->dispose = gedit_history_entry_dispose;
 	object_class->finalize = gedit_history_entry_finalize;
-	object_class->constructed = gedit_history_entry_constructed;
 
 	g_object_class_install_property (object_class,
 					 PROP_HISTORY_ID,
@@ -512,17 +500,26 @@ GtkWidget *
 gedit_history_entry_new (const gchar *history_id,
 			 gboolean     enable_completion)
 {
+	GeditHistoryEntry *entry;
+
 	g_return_val_if_fail (history_id != NULL, NULL);
 
 	enable_completion = (enable_completion != FALSE);
 
-	return g_object_new (GEDIT_TYPE_HISTORY_ENTRY,
-	                     "has-entry", TRUE,
-	                     "entry-text-column", 0,
-	                     "id-column", 1,
-	                     "history-id", history_id,
-	                     "enable-completion", enable_completion,
-	                     NULL);
+	entry = g_object_new (GEDIT_TYPE_HISTORY_ENTRY,
+	                      "has-entry", TRUE,
+	                      "entry-text-column", 0,
+	                      "id-column", 1,
+	                      "history-id", history_id,
+	                      "enable-completion", enable_completion,
+	                      NULL);
+
+	/* We must load the history after the object has been constructed,
+	 * to ensure that the model is set properly.
+	 */
+	gedit_history_entry_load_history (entry);
+
+	return GTK_WIDGET (entry);
 }
 
 /*
