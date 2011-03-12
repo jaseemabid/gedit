@@ -20,14 +20,13 @@ SUBDIRS = \
 	modelines	\
 	pythonconsole	\
 	quickopen	\
+	snippets	\
 	sort		\
 	time
 
-#	snippets
-
-#if !OS_WIN32
-#SUBDIRS      += externaltools
-#endif
+if !OS_WIN32
+SUBDIRS      += externaltools
+endif
 
 if ENABLE_ENCHANT
 SUBDIRS      += spell
