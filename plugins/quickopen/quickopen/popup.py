@@ -44,6 +44,8 @@ class Popup(Gtk.Dialog):
                 self._cursor = None
                 self._shift_start = None
 
+                self._busy_cursor = Gdk.Cursor(Gdk.CursorType.WATCH)
+
                 accel_group = Gtk.AccelGroup()
                 accel_group.connect(Gdk.KEY_l, Gdk.ModifierType.CONTROL_MASK, 0, self.on_focus_entry)
 
@@ -297,6 +299,13 @@ class Popup(Gtk.Dialog):
                                 for entry in d.enumerate_children("standard::*", 0, None):
                                         self._append_to_store((entry[1].get_icon(), xml.sax.saxutils.escape(entry[1].get_name()), entry[0], entry[1].get_file_type()))
 
+        def _set_busy(self, busy):
+                if busy:
+                        self.get_window().set_cursor(self._busy_cursor)
+                else:
+                        self.get_window().set_cursor(None)
+                Gdk.flush()
+
         def _remove_cursor(self):
                 if self._cursor:
                         path = self._cursor.get_path()
@@ -305,8 +314,7 @@ class Popup(Gtk.Dialog):
                         self._store.row_changed(path, self._store.get_iter(path))
 
         def do_search(self):
-                cursor = Gdk.Cursor.new(Gdk.CursorType.WATCH)
-                self.get_window().set_cursor(cursor)
+                self._set_busy(True)
                 self._remove_cursor()
 
                 text = self._entry.get_text().strip()
@@ -327,7 +335,7 @@ class Popup(Gtk.Dialog):
                 if piter:
                         self._treeview.get_selection().select_path(self._store.get_path(piter))
 
-                self.get_window().set_cursor(None)
+                self._set_busy(False)
 
         #FIXME: override doesn't work anymore for some reason, if we override
         # the widget is not realized
