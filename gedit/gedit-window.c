@@ -159,6 +159,8 @@ save_panels_state (GeditWindow *window)
 		g_settings_set_int (window->priv->window_settings,
 				    GEDIT_SETTINGS_BOTTOM_PANEL_ACTIVE_PAGE, panel_page);
 	}
+
+	g_settings_apply (window->priv->window_settings);
 }
 
 #ifdef OS_OSX
@@ -4093,7 +4095,11 @@ gedit_window_init (GeditWindow *window)
 	window->priv->fullscreen_animation_timeout_id = 0;
 	window->priv->editor_settings = g_settings_new ("org.gnome.gedit.preferences.editor");
 	window->priv->ui_settings = g_settings_new ("org.gnome.gedit.preferences.ui");
+
+	/* window settings are applied only once the window is closed. We do not
+	   want to keep writing to disk when the window is dragged around */
 	window->priv->window_settings = g_settings_new ("org.gnome.gedit.state.window");
+	g_settings_delay (window->priv->window_settings);
 
 	window->priv->message_bus = gedit_message_bus_new ();
 
