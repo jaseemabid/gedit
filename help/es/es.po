@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-03-06 13:11+0000\n"
-"PO-Revision-Date: 2011-03-06 15:56+0100\n"
+"POT-Creation-Date: 2011-03-11 22:34+0000\n"
+"PO-Revision-Date: 2011-03-13 14:37+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/index.page:27(None)
+#: C/index.page:22(None)
 msgid "@@image: 'figures/gedit-icon.png'; md5=a7174de2671462e1ac4f80a82ad09184"
 msgstr ""
 "@@image: 'figures/gedit-icon.png'; md5=a7174de2671462e1ac4f80a82ad09184"
@@ -35,13 +35,16 @@ msgstr "editor de textos gedit"
 #: C/gedit-syntax-highlighting.page:9(name) C/gedit-spellcheck.page:8(name)
 #: C/gedit-shortcut-keys.page:9(name) C/gedit-replace.page:10(name)
 #: C/gedit-quickstart.page:9(name) C/gedit-printing.page:9(name)
-#: C/gedit-plugins-terminal.page:9(name) C/gedit-plugins-sort.page:13(name)
+#: C/gedit-plugins-terminal.page:9(name)
+#: C/gedit-plugins-tag-list.page:13(name) C/gedit-plugins-sort.page:13(name)
 #: C/gedit-plugins-pyconsole.page:9(name)
 #: C/gedit-plugins-modelines.page:13(name)
 #: C/gedit-plugins-install.page:9(name)
 #: C/gedit-plugins-insert-date-time.page:14(name)
+#: C/gedit-plugins-file-browser.page:13(name)
 #: C/gedit-plugins-external-tools.page:15(name)
 #: C/gedit-plugins-doc-stats.page:14(name)
+#: C/gedit-plugins-check-update.page:13(name)
 #: C/gedit-plugins-change-case.page:15(name)
 #: C/gedit-plugins-bracket-comp.page:9(name)
 #: C/gedit-plugin-guide.page:10(name) C/gedit-open-recent.page:9(name)
@@ -56,13 +59,16 @@ msgstr "Jim Campbell"
 #: C/gedit-syntax-highlighting.page:10(email) C/gedit-spellcheck.page:8(email)
 #: C/gedit-shortcut-keys.page:10(email) C/gedit-replace.page:11(email)
 #: C/gedit-quickstart.page:10(email) C/gedit-printing.page:10(email)
-#: C/gedit-plugins-terminal.page:10(email) C/gedit-plugins-sort.page:14(email)
+#: C/gedit-plugins-terminal.page:10(email)
+#: C/gedit-plugins-tag-list.page:14(email) C/gedit-plugins-sort.page:14(email)
 #: C/gedit-plugins-pyconsole.page:10(email)
 #: C/gedit-plugins-modelines.page:14(email)
 #: C/gedit-plugins-install.page:10(email)
 #: C/gedit-plugins-insert-date-time.page:15(email)
+#: C/gedit-plugins-file-browser.page:14(email)
 #: C/gedit-plugins-external-tools.page:16(email)
 #: C/gedit-plugins-doc-stats.page:15(email)
+#: C/gedit-plugins-check-update.page:14(email)
 #: C/gedit-plugins-change-case.page:16(email)
 #: C/gedit-plugins-bracket-comp.page:10(email)
 #: C/gedit-plugin-guide.page:11(email) C/gedit-open-recent.page:10(email)
@@ -73,15 +79,7 @@ msgstr "Jim Campbell"
 msgid "jwcampbell@gmail.com"
 msgstr "jwcampbell@gmail.com"
 
-#: C/index.page:17(year)
-msgid "2010"
-msgstr "2010"
-
-#: C/index.page:18(name)
-msgid "The GNOME Documentation Project"
-msgstr "El Proyecto de documentación de GNOME"
-
-#: C/index.page:26(title)
+#: C/index.page:21(title)
 msgid ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/gedit-icon.png\"></"
 "media> gedit Text Editor"
@@ -89,7 +87,7 @@ msgstr ""
 "<media type=\"image\" mime=\"image/png\" src=\"figures/gedit-icon.png\"></"
 "media> Editor de textos gedit"
 
-#: C/index.page:31(p)
+#: C/index.page:26(p)
 msgid ""
 "Welcome to the <app>gedit</app> help guide. For a quick introduction into "
 "both <app>gedit's</app> most basic features, as well as some advanced "
@@ -97,61 +95,66 @@ msgid ""
 "link> and <link xref=\"gedit-shortcut-keys\">Shortcut keys</link> pages."
 msgstr ""
 
-#: C/index.page:33(p)
+#: C/index.page:28(p)
 msgid ""
 "Other help topics are grouped together into sections below. Enjoy using "
 "<app>gedit</app>!"
 msgstr ""
 
-#: C/index.page:36(title)
+#: C/index.page:31(title)
 msgid "Working With Files"
 msgstr "Trabajar con archivos"
 
-#: C/index.page:40(title)
+#: C/index.page:35(title)
 msgid "Configure gedit"
 msgstr "Configurar gedit"
 
-#: C/index.page:44(title)
+#: C/index.page:39(title)
 msgid "gedit Plugins"
 msgstr "Complementos de gedit"
 
-#: C/index.page:48(title) C/gedit-printing.page:14(title)
+#: C/index.page:43(title) C/gedit-printing.page:14(title)
 msgid "Printing with gedit"
 msgstr "Imprimir con gedit"
 
-#: C/index.page:52(title)
-msgid "gedit Snippets"
-msgstr "Recortes de gedit"
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gedit-view-open-files-in-sidepane.page:26(None)
+#: C/gedit-open-files-from-sidepane.page:51(None)
+msgid ""
+"@@image: 'figures/gedit-side-pane2.png'; md5=e7a12a43adc9c9cb8c992ad22a815a57"
+msgstr ""
+"@@image: 'figures/gedit-side-pane2.png'; md5=e7a12a43adc9c9cb8c992ad22a815a57"
 
 #: C/gedit-view-open-files-in-sidepane.page:15(name)
 #: C/gedit-undo-recent-action.page:15(name) C/gedit-tabs.page:15(name)
-#: C/gedit-replace.page:16(name) C/gedit-plugins-tag-list.page:10(name)
+#: C/gedit-replace.page:16(name) C/gedit-plugins-tag-list.page:9(name)
 #: C/gedit-plugins-spell-checker.page:10(name)
 #: C/gedit-plugins-sort.page:9(name) C/gedit-plugins-snippets.page:10(name)
 #: C/gedit-plugins-quick-open:10(name) C/gedit-plugins-modelines.page:9(name)
 #: C/gedit-plugins-install.page:15(name)
 #: C/gedit-plugins-insert-date-time.page:9(name)
-#: C/gedit-plugins-file-browser.page:10(name)
+#: C/gedit-plugins-file-browser.page:9(name)
 #: C/gedit-plugins-external-tools.page:11(name)
 #: C/gedit-plugins-doc-stats.page:10(name)
-#: C/gedit-plugins-check-update.page:10(name)
+#: C/gedit-plugins-check-update.page:9(name)
 #: C/gedit-plugins-change-case.page:10(name)
 msgid "Daniel Neel"
 msgstr "Daniel Neel"
 
 #: C/gedit-view-open-files-in-sidepane.page:16(email)
 #: C/gedit-undo-recent-action.page:16(email) C/gedit-tabs.page:16(email)
-#: C/gedit-replace.page:17(email) C/gedit-plugins-tag-list.page:11(email)
+#: C/gedit-replace.page:17(email) C/gedit-plugins-tag-list.page:10(email)
 #: C/gedit-plugins-spell-checker.page:11(email)
 #: C/gedit-plugins-sort.page:10(email) C/gedit-plugins-snippets.page:11(email)
 #: C/gedit-plugins-quick-open:11(email)
 #: C/gedit-plugins-modelines.page:10(email)
 #: C/gedit-plugins-install.page:16(email)
 #: C/gedit-plugins-insert-date-time.page:10(email)
-#: C/gedit-plugins-file-browser.page:11(email)
+#: C/gedit-plugins-file-browser.page:10(email)
 #: C/gedit-plugins-external-tools.page:12(email)
 #: C/gedit-plugins-doc-stats.page:11(email)
-#: C/gedit-plugins-check-update.page:11(email)
+#: C/gedit-plugins-check-update.page:10(email)
 #: C/gedit-plugins-change-case.page:11(email)
 msgid "dneelyep@gmail.com"
 msgstr "dneelyep@gmail.com"
@@ -184,8 +187,9 @@ msgstr ""
 msgid ""
 "The side pane also contains a <app>File Browser</app> view. If the pane "
 "displays a file directory instead of currently open files, click <media type="
-"\"image\" mime=\"image/png\" src=\"\">documents icon</media> at the bottom "
-"of the pane to switch to the <app>Documents</app> view."
+"\"image\" mime=\"image/png\" src=\"figures/gedit-side-pane2.png\">documents "
+"icon</media> at the bottom of the pane to switch to the <app>Documents</app> "
+"view."
 msgstr ""
 
 #: C/gedit-view-open-files-in-sidepane.page:29(p)
@@ -224,9 +228,8 @@ msgstr "Añadir y quitar pestañas"
 #: C/gedit-tabs.page:21(p)
 msgid ""
 "Working with tabs in <app>gedit</app> allows you to keep an eye on several "
-"files in a single window. Tabs in <app>gedit</app> behave similarly to tabs "
-"in other programs such as web browsers. When you start <app>gedit</app>, a "
-"single tab will be displayed above the contents of the current file."
+"files in a single window. When you start <app>gedit</app>, a single tab will "
+"be displayed above the contents of the current file."
 msgstr ""
 
 #: C/gedit-tabs.page:23(p)
@@ -241,8 +244,7 @@ msgstr ""
 msgid ""
 "To view the contents of a specific tab, click the tab itself. The contents "
 "of the file will be displayed below the currently open tabs. Clicking the "
-"<guiseq><gui>X</gui></guiseq> on the side of the tab will close it, removing "
-"it from the list of available tabs."
+"<guiseq><gui>X</gui></guiseq> on the side of the tab will close that file."
 msgstr ""
 
 #: C/gedit-tabs.page:31(title)
@@ -263,9 +265,13 @@ msgid "Removing tabs"
 msgstr "Quitar pestañas"
 
 #: C/gedit-tabs.page:37(p)
+#| msgid ""
+#| "To remove a tab, click the <guiseq><gui>X</gui></guiseq> on the tab's "
+#| "right side. Or, to remove all open tabs, press <keyseq><key>Ctrl</"
+#| "key><key>Shift</key><key>W</key></keyseq>"
 msgid ""
 "To remove a tab, click the <guiseq><gui>X</gui></guiseq> on the tab's right "
-"side. Or, to remove all open tabs, press <keyseq><key>Ctrl</key><key>Shift</"
+"side. To remove all open tabs, press <keyseq><key>Ctrl</key><key>Shift</"
 "key><key>W</key></keyseq>"
 msgstr ""
 "Para quitar una pestaña pulse la <guiseq><gui>X</gui></guiseq> en la parte "
@@ -353,16 +359,16 @@ msgstr "Resaltado de sintaxis"
 
 #: C/gedit-syntax-highlighting.page:18(p)
 msgid ""
-"gedit includes syntax highlighting for a wide range of markup, programming, "
-"and scientific languages. If gedit recognizes the syntax being used when you "
-"open a file, it will provide appropriate syntax highlighting without "
-"requiring any intervention."
+"<app>gedit</app> provides syntax highlighting for a wide range of markup, "
+"programming, and scientific languages. If <app>gedit</app> recognizes the "
+"syntax being used when you open a file, it will automatically highlight the "
+"text."
 msgstr ""
 
 #: C/gedit-syntax-highlighting.page:20(p)
 msgid ""
-"If your syntax is not highlighted upon startup, you can select the "
-"appropriate syntax or language by clicking <guiseq><gui>View</"
+"If your syntax or language is not highlighted upon startup, you can select "
+"the appropriate syntax or language by clicking <guiseq><gui>View</"
 "gui><gui>Highlight Mode</gui></guiseq>, and then choosing the desired syntax."
 msgstr ""
 
@@ -372,16 +378,16 @@ msgstr ""
 
 #: C/gedit-spellcheck.page:13(p)
 msgid ""
-"Enabling spell-check in <app>gedit</app> requires that you first enable the "
-"spell-check plugin. To enable the plugin, click <guiseq><gui>Edit</"
-"gui><gui>Preferences</gui><gui>Plugins</gui></guiseq>, and then select "
-"<gui>Spell Checker</gui>."
+"Using the spell-check feature in <app>gedit</app> requires that you first "
+"enable the spell-check plugin. To enable the plugin, select "
+"<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Spell "
+"Checker</gui></guiseq>."
 msgstr ""
 
-#: C/gedit-spellcheck.page:18(p)
+#: C/gedit-spellcheck.page:17(p)
 msgid ""
-"To allow for spelling errors to be highlighted while you type, select "
-"<guiseq><gui>Tools</gui><gui>Autocheck Spelling</gui></guiseq>"
+"Select <guiseq><gui>Tools</gui><gui>Autocheck Spelling</gui></guiseq> to "
+"make <app>gedit</app> highlight spelling errors while you type."
 msgstr ""
 
 #: C/gedit-shortcut-keys.page:13(name)
@@ -401,15 +407,10 @@ msgid "Ignacio Casal Quinteiro"
 msgstr "Ignacio Casal Quinteiro"
 
 #: C/gedit-shortcut-keys.page:26(title)
-#| msgid "Shortcut key"
 msgid "Shortcut keys"
 msgstr "Teclas rápidas"
 
 #: C/gedit-shortcut-keys.page:28(p)
-#| msgid ""
-#| "Use shortcut keys to perform common tasks more quickly than with the "
-#| "mouse and menus. The following tables list all of <application>gedit</"
-#| "application>'s shortcut keys."
 msgid ""
 "Use <gui>shortcut keys</gui> to perform common tasks more quickly than with "
 "the mouse and menus. The following tables list all of <app>gedit's</app> "
@@ -420,7 +421,6 @@ msgstr ""
 "las teclas rápidas de <application>gedit</application>."
 
 #: C/gedit-shortcut-keys.page:46(title)
-#| msgid "Shortcut key"
 msgid "Tab-related Shortcut keys"
 msgstr "Tecla rápidas relacionadas con las pestañas"
 
@@ -439,7 +439,6 @@ msgid "Press This"
 msgstr "Pulsar esto"
 
 #: C/gedit-shortcut-keys.page:58(p) C/gedit-shortcut-keys.page:61(p)
-#| msgid "Switches to the next tab to the left."
 msgid "Switch to the next tab to the left"
 msgstr "Cambiar a la siguiente pestaña a la izquierda"
 
@@ -448,7 +447,6 @@ msgid "Ctrl + Alt + PageUp"
 msgstr "Ctrl + Alt + RePág"
 
 #: C/gedit-shortcut-keys.page:64(p)
-#| msgid "Switches to the next tab to the right."
 msgid "Switch to the next tab to the right"
 msgstr "Cambiar a la siguiente pestaña a la derecha"
 
@@ -489,7 +487,6 @@ msgid "Alt + <var>n</var>"
 msgstr "Alt + <var>n</var>"
 
 #: C/gedit-shortcut-keys.page:83(title)
-#| msgid "Shortcuts for working with files:"
 msgid "Shortcut keys for working with files"
 msgstr "Teclas rápidas para trabajar con archivos"
 
@@ -518,7 +515,6 @@ msgid "Ctrl + S"
 msgstr "Ctrl + S"
 
 #: C/gedit-shortcut-keys.page:102(p)
-#| msgid "Save the current document with a new filename."
 msgid "Save the current document with a new filename"
 msgstr "Guardar el documento actual con un nombre de archivo nuevo"
 
@@ -555,7 +551,6 @@ msgid "Ctrl + Q"
 msgstr "Ctrl + Q"
 
 #: C/gedit-shortcut-keys.page:121(title)
-#| msgid "Shortcuts for editing documents:"
 msgid "Shortcut keys for editing files"
 msgstr "Teclas rápidas para editar archivos"
 
@@ -576,7 +571,6 @@ msgid "Ctrl + Shift + Z"
 msgstr "Ctrl + Mayús. + Z"
 
 #: C/gedit-shortcut-keys.page:137(p)
-#| msgid "Cut the selected text or region and place it on the clipboard."
 msgid "Cut the selected text or region and place it on the clipboard"
 msgstr "Cortar el texto o región seleccionada y ubicarlo en el portapapeles"
 
@@ -585,7 +579,6 @@ msgid "Ctrl + X"
 msgstr "Ctrl + X"
 
 #: C/gedit-shortcut-keys.page:140(p)
-#| msgid "Copy the selected text or region onto the clipboard."
 msgid "Copy the selected text or region onto the clipboard"
 msgstr "Copiar el texto o región seleccionado al portapapeles"
 
@@ -622,20 +615,18 @@ msgid "Move the selected line up one line"
 msgstr "Mover la línea seleccionada una línea arriba"
 
 #: C/gedit-shortcut-keys.page:152(p)
-#, fuzzy
 #| msgid "Alt + Up"
 msgid "Alt + Up Arrow"
-msgstr "Alt + Arriba"
+msgstr "Alt + flecha arriba"
 
 #: C/gedit-shortcut-keys.page:155(p)
 msgid "Move the selected line down one line"
 msgstr "Mover la línea seleccionada una línea abajo"
 
 #: C/gedit-shortcut-keys.page:155(p)
-#, fuzzy
 #| msgid "Alt + Down"
 msgid "Alt + Down Arrow"
-msgstr "Alt + Abajo"
+msgstr "Alt + flecha abajo"
 
 #: C/gedit-shortcut-keys.page:162(title)
 msgid "Shortcut keys for showing and hiding panes"
@@ -658,10 +649,9 @@ msgid "Ctrl + F9"
 msgstr "Ctrl + F9"
 
 #: C/gedit-shortcut-keys.page:182(title)
-#, fuzzy
 #| msgid "Shortcuts for searching:"
 msgid "Shortcut keys for searching"
-msgstr "Teclas rápidas para búsquedas:"
+msgstr "Teclas rápidas para búsquedas"
 
 #: C/gedit-shortcut-keys.page:192(p)
 msgid "Find a string"
@@ -672,20 +662,18 @@ msgid "Ctrl + F"
 msgstr "Ctrl + F"
 
 #: C/gedit-shortcut-keys.page:195(p)
-#, fuzzy
 #| msgid "Find the next instance of the string."
 msgid "Find the next instance of the string"
-msgstr "Buscar la siguiente instancia de una cadena."
+msgstr "Buscar la siguiente instancia de la cadena"
 
 #: C/gedit-shortcut-keys.page:195(p)
 msgid "Ctrl + G"
 msgstr "Ctrl + G"
 
 #: C/gedit-shortcut-keys.page:198(p)
-#, fuzzy
 #| msgid "Find the previous instance of the string."
 msgid "Find the previous instance of the string"
-msgstr "Buscar la instancia anterior de una cadena."
+msgstr "Buscar la instancia anterior de la cadena"
 
 #: C/gedit-shortcut-keys.page:198(p)
 msgid "Ctrl + Shift + G"
@@ -716,10 +704,9 @@ msgid "Ctrl + I"
 msgstr "Ctrl + I"
 
 #: C/gedit-shortcut-keys.page:214(title)
-#, fuzzy
 #| msgid "Shortcuts for tools:"
 msgid "Shortcut keys for tools"
-msgstr "Teclas rápidas para las herramientas:"
+msgstr "Teclas rápidas para las herramientas"
 
 #: C/gedit-shortcut-keys.page:224(p)
 msgid "Check spelling"
@@ -767,7 +754,7 @@ msgstr "Teclas rápidas para la ayuda:"
 
 #: C/gedit-shortcut-keys.page:250(p)
 msgid "Open the gedit user guide"
-msgstr ""
+msgstr "Abrir la guía de usuario de gedit"
 
 #: C/gedit-shortcut-keys.page:250(p)
 msgid "F1"
@@ -929,7 +916,7 @@ msgstr ""
 
 #: C/gedit-replace.page:74(title)
 msgid "Find Next/Find Previous"
-msgstr ""
+msgstr "Buscar siguiente/Buscar anterior"
 
 #: C/gedit-replace.page:75(p)
 msgid ""
@@ -1015,7 +1002,6 @@ msgstr "?"
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/gedit-quickstart.page:17(None)
-#, fuzzy
 #| msgid ""
 #| "@@image: 'figures/gedit-screenshot.png'; "
 #| "md5=fbf9b949b5fa64aef8080e7079b3f340"
@@ -1023,7 +1009,8 @@ msgid ""
 "@@image: 'figures/gedit3-screenshot.png'; "
 "md5=174aac884967f8e4226ab33d9498c60b"
 msgstr ""
-"@@image: 'figures/gedit-screenshot.png'; md5=fbf9b949b5fa64aef8080e7079b3f340"
+"@@image: 'figures/gedit3-screenshot.png'; "
+"md5=174aac884967f8e4226ab33d9498c60b"
 
 #: C/gedit-quickstart.page:14(title)
 #, fuzzy
@@ -1117,17 +1104,140 @@ msgstr ""
 msgid ""
 "Once you have enabled the plugin, add the terminal to the bottom panel by "
 "selecting <guiseq><gui>View</gui><gui>Bottom Panel</gui></guiseq>, or just "
-"press <guiseq><gui>Ctrl</gui><gui>F9</gui></guiseq>."
+"press <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
 msgstr ""
 
-#: C/gedit-plugins-tag-list.page:7(desc)
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gedit-plugins-tag-list.page:33(None)
+#| msgid ""
+#| "@@image: 'figures/gedit-side-pane1.png'; "
+#| "md5=ac9c80cb0552d63b593c71f23be69b53"
 msgid ""
-"*Provides a method to easily insert into a document commonly used tags/"
-"strings without having to type them."
+"@@image: 'figures/gedit-side-pane3.png'; md5=4b800d370193ac0ed8db9eb33b86e11c"
+msgstr ""
+"@@image: 'figures/gedit-side-pane3.png'; md5=4b800d370193ac0ed8db9eb33b86e11c"
+
+#: C/gedit-plugins-tag-list.page:18(title)
+msgid ""
+"Automatically insert tags, strings and special characters into a document"
+msgstr ""
+"Insertar automáticamente etiquetas, cadenas y caracteres especiales en un "
+"documento"
+
+#: C/gedit-plugins-tag-list.page:19(p)
+msgid ""
+"The <app>Tag List</app> plugin allows you to insert common tags and special "
+"characters from a list in the side pane. By default, the plugin can insert "
+"tags and special characters for HTML, XHTML, XSLT, XUL and LaTeX."
+msgstr ""
+"El complemento <app>Lista de etiquetas</app> le permite insertar etiquetas "
+"comunes y caracteres especiales de una lista en el panel lateral. De forma "
+"predeterminada el complemento puede insertar etiquetas y caracteres "
+"especiales para HTML, XHTML, XSLT, XUL y LaTeX."
+
+#: C/gedit-plugins-tag-list.page:22(title)
+msgid "Using the Tag List plugin"
+msgstr "Usar el complemento de lista de etiquetas"
+
+#: C/gedit-plugins-tag-list.page:24(p)
+msgid ""
+"To use the <app>Tag List</app> plugin, you will need to enable the plugin, "
+"and then activate the tag-list portion of the side pane."
+msgstr ""
+"Para usar el complemento <app>Lista de etiquetas</app> deberá activar el "
+"complemento y después activar la parte de la lista de etiquetas en el panel "
+"lateral."
+
+#: C/gedit-plugins-tag-list.page:27(title)
+#| msgid "Disabling a Plugin"
+msgid "Enabling the Plugin"
+msgstr "Activar el complemento"
+
+#: C/gedit-plugins-tag-list.page:28(p)
+msgid ""
+"You can activate the plugin by selecting <guiseq><gui>Edit</"
+"gui><gui>Preferences</gui><gui>Plugins</gui><gui>Tag List</gui></guiseq>. "
+"Once you have activated the plugin, access it by selecting "
+"<guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, or by pressing "
+"<key>F9</key>."
 msgstr ""
 
-#: C/gedit-plugins-tag-list.page:15(title)
-msgid "*Tag list"
+#: C/gedit-plugins-tag-list.page:30(p)
+msgid ""
+"The side pane initially shows a list of open documents, so to view and use "
+"the <app>tag list</app>, you will need to click on the tab showing the \"plus"
+"\" icon at the bottom of the side pane. The icon will look similar to this:"
+msgstr ""
+
+#: C/gedit-plugins-tag-list.page:37(title)
+#| msgid "Special Characters"
+msgid "Inserting Tags and Special Characters"
+msgstr "Insertar etiquetas y caracteres especiales"
+
+#: C/gedit-plugins-tag-list.page:39(p)
+msgid ""
+"The <app>tag list</app> uses a drop-down menu to let you choose from the "
+"different types of tags. For example, one tag option is <gui>HTML - Tags</"
+"gui>."
+msgstr ""
+
+#: C/gedit-plugins-tag-list.page:41(p)
+#| msgid "To use the Sort plugin, perform the following steps:"
+msgid "To start inserting tags, complete the following:"
+msgstr "Para insertar etiquetas, complete lo siguiente:"
+
+#: C/gedit-plugins-tag-list.page:44(p)
+msgid ""
+"Move the cursor to where you will want to insert the tag or special "
+"character."
+msgstr ""
+
+#: C/gedit-plugins-tag-list.page:45(p)
+msgid ""
+"Select the desired tag type from the drop-down menu at the top of the side "
+"pane."
+msgstr ""
+
+#: C/gedit-plugins-tag-list.page:46(p)
+#, fuzzy
+#| msgid "Scroll through the tag list to find the required tag."
+msgid "Scroll through the list to find the desired tag or character."
+msgstr "Desplácese en la lista hasta encontrar la etiqueta deseada."
+
+#: C/gedit-plugins-tag-list.page:47(p)
+msgid "Double-click on the tag in the tag list."
+msgstr ""
+
+#: C/gedit-plugins-tag-list.page:50(p)
+msgid ""
+"The tag or special character you've chosen will then be displayed in your "
+"document."
+msgstr ""
+
+#: C/gedit-plugins-tag-list.page:54(title)
+msgid "Tag List Tips"
+msgstr ""
+
+#: C/gedit-plugins-tag-list.page:55(p)
+msgid ""
+"You can also insert a tag by pressing <key>Return</key> or "
+"<keyseq><key>Shift</key><key>Return</key></keyseq>."
+msgstr ""
+
+#: C/gedit-plugins-tag-list.page:56(p)
+msgid ""
+"Pressing the <key>Return</key> key will insert the tag at the cursor "
+"position, and then return focus to the document. Pressing "
+"<keyseq><key>Shift</key><key>Return</key></keyseq> will insert the tag at "
+"the cursor position, but will keep the focus on the <app>tag-list</app>."
+msgstr ""
+
+#: C/gedit-plugins-tag-list.page:58(p)
+msgid ""
+"You can see a preview of what text will be inserted for each tag and special "
+"character by clicking on the word the <gui>Preview</gui> at the bottom of "
+"the side pane."
 msgstr ""
 
 #: C/gedit-plugins-spell-checker.page:7(desc)
@@ -1552,19 +1662,75 @@ msgid ""
 "><placeholder-8/>."
 msgstr ""
 
-#: C/gedit-plugins-file-browser.page:7(desc)
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gedit-plugins-file-browser.page:34(None)
+#: C/gedit-open-files-from-sidepane.page:36(None)
 msgid ""
-"*A file browser plugin allowing to easily access your file system (includes "
-"remote mounts, creating new files/directories, monitor directories for "
-"changes, etc.)"
+"@@image: 'figures/gedit-side-pane1.png'; md5=ac9c80cb0552d63b593c71f23be69b53"
 msgstr ""
-"* Un complemento de examinador de archivos que permite acceso fácil a su "
-"sistema de archivos (incluye montajes remotos, crear archivos y directorios "
-"nuevos, monitorizar cambios en carpetas, etc.)"
+"@@image: 'figures/gedit-side-pane1.png'; md5=ac9c80cb0552d63b593c71f23be69b53"
 
-#: C/gedit-plugins-file-browser.page:16(title)
-msgid "File browser"
-msgstr "Examinador de archivos"
+#: C/gedit-plugins-file-browser.page:18(title)
+#, fuzzy
+#| msgid "Use the specified command to print the file."
+msgid "Use the side panel to browse and open files"
+msgstr "Use el comando especificado para imprimir el archivo."
+
+#: C/gedit-plugins-file-browser.page:20(p)
+msgid ""
+"If you find that you need to frequently open files while using <app>gedit</"
+"app>, you may find it helpful to use the <app>File Browser Panel</app> "
+"plugin. This plugin embeds a Gnome file browser in the side panel."
+msgstr ""
+
+#: C/gedit-plugins-file-browser.page:21(p)
+msgid ""
+"To use this plugin, you will need to do three things: select "
+"<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>File "
+"Browser Panel</gui></guiseq>. To activate the side panel, select "
+"<guiseq><gui>View</gui><gui>Side Panel</gui></guiseq>, or just press<key>F9</"
+"key>"
+msgstr ""
+
+#: C/gedit-plugins-file-browser.page:28(title)
+#: C/gedit-open-files-from-sidepane.page:30(title)
+msgid "Opening files from the side pane"
+msgstr "Abrir archivos desde el panel lateral"
+
+#: C/gedit-plugins-file-browser.page:29(p)
+#: C/gedit-open-files-from-sidepane.page:31(p)
+#, fuzzy
+#| msgid ""
+#| "To view the File Browser, choose <menuchoice><guimenu>View</"
+#| "guimenu><guimenuitem>Side Pane</guimenuitem></menuchoice> and then click "
+#| "on the tab showing the File Browser icon at the bottom of the side pane."
+msgid ""
+"To open files from the <app>side pane</app>, first open the <app>side pane</"
+"app> by selecting <guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, then "
+"click on the <gui>file-browser</gui> icon at the bottom of the pane."
+msgstr ""
+"Para ver el examinador de archivos, elija <menuchoice><guimenu>Ver</"
+"guimenu><guimenuitem>Panel lateral</guimenuitem></menuchoice> y después "
+"pulse en la pestaña que muestra el icono del examinador de archivos en la "
+"parte inferior del panel lateral."
+
+#: C/gedit-plugins-file-browser.page:37(p)
+msgid ""
+"This will activate the <em>file-browser</em> mode of the <app>side pane</"
+"app>. You can then use the navigation buttons at the top of the pane to "
+"locate and open your desired files."
+msgstr ""
+
+#: C/gedit-plugins-file-browser.page:3(page)
+msgid ""
+"<info><placeholder-1/><revision pkgversion=\"3.0\" version=\"0.1\" date="
+"\"2010-12-5\" status=\"stub\"/><credit type=\"author\"><placeholder-2/"
+"><placeholder-3/></credit><credit type=\"author\"><placeholder-4/"
+"><placeholder-5/></credit></info><placeholder-6/><placeholder-7/"
+"><placeholder-8/>. <section id=\"sidepane-open\"><placeholder-9/"
+"><placeholder-10/><placeholder-11/><placeholder-12/></section>"
+msgstr ""
 
 #: C/gedit-plugins-external-tools.page:7(desc)
 msgid "Execute external commands and shell scripts."
@@ -1638,12 +1804,8 @@ msgid ""
 "portion of text that you highlighted."
 msgstr ""
 
-#: C/gedit-plugins-check-update.page:7(desc)
-msgid "*Check for latest version of gedit (Win32 and OS X only)."
-msgstr ""
-
-#: C/gedit-plugins-check-update.page:15(title)
-msgid "*Check update"
+#: C/gedit-plugins-check-update.page:18(title)
+msgid "Check for updates to gedit (Windows and Mac OS X only)"
 msgstr ""
 
 #: C/gedit-plugins-change-case.page:7(desc)
@@ -1880,22 +2042,6 @@ msgstr ""
 "ulink>, estableciendo la clave <systemitem>/apps/gedit-2/preferences/editor/"
 "save/writable_vfs_schemes</systemitem>, pero puede causar errores."
 
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/gedit-open-files-from-sidepane.page:36(None)
-msgid ""
-"@@image: 'figures/gedit-side-pane1.png'; md5=ac9c80cb0552d63b593c71f23be69b53"
-msgstr ""
-"@@image: 'figures/gedit-side-pane1.png'; md5=ac9c80cb0552d63b593c71f23be69b53"
-
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/gedit-open-files-from-sidepane.page:51(None)
-msgid ""
-"@@image: 'figures/gedit-side-pane2.png'; md5=e7a12a43adc9c9cb8c992ad22a815a57"
-msgstr ""
-"@@image: 'figures/gedit-side-pane2.png'; md5=e7a12a43adc9c9cb8c992ad22a815a57"
-
 #: C/gedit-open-files-from-sidepane.page:14(title)
 msgid "View and open files from the side pane"
 msgstr ""
@@ -1922,29 +2068,9 @@ msgid ""
 "key> at any time."
 msgstr ""
 
-#: C/gedit-open-files-from-sidepane.page:30(title)
-msgid "Opening files from the side pane"
-msgstr "Abrir archivos desde el panel lateral"
-
-#: C/gedit-open-files-from-sidepane.page:31(p)
-#, fuzzy
-#| msgid ""
-#| "To view the File Browser, choose <menuchoice><guimenu>View</"
-#| "guimenu><guimenuitem>Side Pane</guimenuitem></menuchoice> and then click "
-#| "on the tab showing the File Browser icon at the bottom of the side pane."
-msgid ""
-"To open files from the <app>side pane</app>, first open the <app>side pane</"
-"app> by selecting <guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, then "
-"click on the <gui>file-browser</gui> icon at the bottom of the pane."
-msgstr ""
-"Para ver el examinador de archivos, elija <menuchoice><guimenu>Ver</"
-"guimenu><guimenuitem>Panel lateral</guimenuitem></menuchoice> y después "
-"pulse en la pestaña que muestra el icono del examinador de archivos en la "
-"parte inferior del panel lateral."
-
 #: C/gedit-open-files-from-sidepane.page:39(p)
 msgid ""
-"This will activate the <em>file-browser</em> mode of the <app>side pane</"
+"This will activate the <em>file-browser</em> mode of the <app>side panel</"
 "app>. You can then use the navigation buttons at the top of the pane to "
 "locate and open your desired files."
 msgstr ""
@@ -2072,6 +2198,27 @@ msgid "translator-credits"
 msgstr ""
 "Jorge González <jorgegonz@svn.gnome.org>, 2006-2011\n"
 "María Majadas <maria.majadas@hispalinux.es>, 2005"
+
+#~ msgid "2010"
+#~ msgstr "2010"
+
+#~ msgid "The GNOME Documentation Project"
+#~ msgstr "El Proyecto de documentación de GNOME"
+
+#~ msgid "gedit Snippets"
+#~ msgstr "Recortes de gedit"
+
+#~ msgid ""
+#~ "*A file browser plugin allowing to easily access your file system "
+#~ "(includes remote mounts, creating new files/directories, monitor "
+#~ "directories for changes, etc.)"
+#~ msgstr ""
+#~ "* Un complemento de examinador de archivos que permite acceso fácil a su "
+#~ "sistema de archivos (incluye montajes remotos, crear archivos y "
+#~ "directorios nuevos, monitorizar cambios en carpetas, etc.)"
+
+#~ msgid "File browser"
+#~ msgstr "Examinador de archivos"
 
 #, fuzzy
 #~| msgid "Description"
@@ -3023,9 +3170,6 @@ msgstr ""
 #~ "para buscar hasta el final del documento y entonces continuar la búsqueda "
 #~ "desde el principio del documento."
 
-#~ msgid "Special Characters"
-#~ msgstr "Caracteres especiales"
-
 #~ msgid ""
 #~ "You can include the following escape sequences in the text to find or "
 #~ "replace to represent special characters:"
@@ -3394,9 +3538,6 @@ msgstr ""
 
 #~ msgid "Custom"
 #~ msgstr "Personalizado"
-
-#~ msgid "Use the specified command to print the file."
-#~ msgstr "Use el comando especificado para imprimir el archivo."
 
 #~ msgid ""
 #~ "Type the name of the command in the text box. Include all command-line "
@@ -3923,9 +4064,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Pulse en <guibutton>Cerrar</guibutton> para cerrar el cuadro de diálogo "
 #~ "<guilabel>Preferencias</guilabel>."
-
-#~ msgid "Disabling a Plugin"
-#~ msgstr "Desactivación de un complemento"
 
 #~ msgid ""
 #~ "A plugin remains enabled when you quit <application>gedit</application>."
@@ -5369,9 +5507,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Seleccione la categoría de etiquetas apropiada en la lista desplegable; "
 #~ "por ejemplo, <literal>Etiquetas HTML</literal>."
-
-#~ msgid "Scroll through the tag list to find the required tag."
-#~ msgstr "Desplácese en la lista hasta encontrar la etiqueta deseada."
 
 #~ msgid ""
 #~ "To insert a tag at the cursor position in the current file, double-click "
