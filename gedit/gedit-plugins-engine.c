@@ -66,7 +66,7 @@ gedit_plugins_engine_init (GeditPluginsEngine *engine)
 	                                            GEDIT_TYPE_PLUGINS_ENGINE,
 	                                            GeditPluginsEnginePrivate);
 
-  peas_engine_enable_loader (PEAS_ENGINE (engine), "python");
+	peas_engine_enable_loader (PEAS_ENGINE (engine), "python");
 
 	engine->priv->plugin_settings = g_settings_new ("org.gnome.gedit.plugins");
 	
