@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
 "POT-Creation-Date: 2011-03-11 22:34+0000\n"
-"PO-Revision-Date: 2011-03-13 17:26+0100\n"
+"PO-Revision-Date: 2011-03-13 19:42+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -94,12 +94,19 @@ msgid ""
 "keyboard shortcuts, see the <link xref=\"gedit-quickstart\">Get started</"
 "link> and <link xref=\"gedit-shortcut-keys\">Shortcut keys</link> pages."
 msgstr ""
+"Bienvenido a la guía de ayuda de <app>gedit</app>. Para una rápida "
+"introducción tanto en las características básicas de <app>gedit</app> como "
+"de los atajos de teclado avanzados, consulte las páginas <link xref=\"gedit-"
+"quickstart\">Inicio</link> y <link xref=\"gedit-shortcut-keys\">Teclas de "
+"atajos</link>."
 
 #: C/index.page:28(p)
 msgid ""
 "Other help topics are grouped together into sections below. Enjoy using "
 "<app>gedit</app>!"
 msgstr ""
+"Otros temas de ayuda están agrupados en secciones más abajo. Disfrute usando "
+"<app>gedit</app>."
 
 #: C/index.page:31(title)
 msgid "Working With Files"
@@ -984,10 +991,13 @@ msgid ""
 "This command behaves identically to the Find Previous command. If you wish "
 "to step through search results from end to beginning, select this option."
 msgstr ""
+"Este comando se comporta de forma idéntica al comando Buscar anterior. "
+"Seleccione esta opción si quiere pasar a través de los resultados de la "
+"búsqueda desde el final al principio."
 
 #: C/gedit-replace.page:102(title)
 msgid "Wrap around"
-msgstr ""
+msgstr "Ajustar aproximadamente"
 
 #: C/gedit-replace.page:103(p)
 msgid "?"
@@ -1009,7 +1019,7 @@ msgstr ""
 #: C/gedit-quickstart.page:14(title)
 #| msgid "Starting gedit"
 msgid "Get started with gedit"
-msgstr ""
+msgstr "Inicio"
 
 #: C/gedit-quickstart.page:15(p)
 msgid ""
@@ -1193,10 +1203,9 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-tag-list.page:46(p)
-#, fuzzy
 #| msgid "Scroll through the tag list to find the required tag."
 msgid "Scroll through the list to find the desired tag or character."
-msgstr "Desplácese en la lista hasta encontrar la etiqueta deseada."
+msgstr "Desplácese en la lista hasta encontrar la etiqueta o carácter deseado."
 
 #: C/gedit-plugins-tag-list.page:47(p)
 msgid "Double-click on the tag in the tag list."
@@ -1298,7 +1307,6 @@ msgid "<em>Ignore case</em> will ignore case sensitivity."
 msgstr "<em>Ignorar capitalización</em> ignorará la capitalización."
 
 #: C/gedit-plugins-sort.page:31(p)
-#, fuzzy
 #| msgid ""
 #| "To have the sort ignore the characters at the start of the lines, set the "
 #| "first character that should be used for sorting in the <guilabel>Start at "
@@ -1309,19 +1317,17 @@ msgid ""
 "column spin box."
 msgstr ""
 "Para que la ordenación ignore los caracteres al principio de las líneas, "
-"establezca el primer carácter que debería usarse para ordenar en el marcador "
-"incrementable <guilabel>Empezar en la columna</guilabel>."
+"establezca el primer carácter que debería usarse para ordenar en la columna "
+"del marcador incrementable <em>Empezar en</em>."
 
 #: C/gedit-plugins-sort.page:33(p)
-#, fuzzy
 #| msgid "To perform the sort operation, click <guibutton>Sort</guibutton>."
 msgid "To perform the sort operation, click <gui>Sort</gui>."
-msgstr ""
-"Para efectuar la ordenación, pulse el botón <guibutton>Ordenar</guibutton>."
+msgstr "Para efectuar la ordenación pulse el botón <gui>Ordenar</gui>."
 
 #: C/gedit-plugins-snippets.page:7(desc)
 msgid "*Insert often used pieces of text in a fast way."
-msgstr ""
+msgstr "* Insertar de forma rápida trozos de texto comúnmente usados."
 
 #: C/gedit-plugins-snippets.page:16(title)
 #| msgid "Snippets Plugin"
@@ -1339,10 +1345,13 @@ msgstr "* Apertura rápida"
 #: C/gedit-plugins-pyconsole.page:14(title)
 msgid "Add an interactive Python console to the bottom panel"
 msgstr ""
+"Añadir una consola interactiva de Python en la parte inferior del panel."
 
 #: C/gedit-plugins-modelines.page:18(title)
 msgid "Emacs, Kate and Vim-style modelines support for gedit"
 msgstr ""
+"Soporte para gedit para los estilos de los modos de líneas de Emacs, Kate y "
+"Vim."
 
 #: C/gedit-plugins-modelines.page:20(p)
 msgid ""
@@ -1358,21 +1367,22 @@ msgid ""
 "To enable the <app>Modelines</app> plugin, select <guiseq><gui>Edit</"
 "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Modelines</gui></guiseq>."
 msgstr ""
+"Para activar el complemento <app>Modos de líneas</app> seleccione "
+"<guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Complementos</"
+"gui><gui>Modos de líneas</gui></guiseq>."
 
 #: C/gedit-plugins-modelines.page:25(title)
-#, fuzzy
 #| msgid "General Tabbed Section"
 msgid "General Modeline Options"
-msgstr "Sección de la pestaña General"
+msgstr "Opciones generales de los modos de líneas"
 
 #: C/gedit-plugins-modelines.page:26(p)
-#, fuzzy
 #| msgid ""
 #| "The following plugins come built-in with <application>gedit</application>:"
 msgid "The following options can be set using <app>gedit</app> modelines:"
 msgstr ""
-"Los siguientes complementos vienen integrados con <application>gedit</"
-"application>:"
+"Se pueden configurar las siguientes opciones usando los modos de líneas de "
+"<app>gedit</app>:"
 
 #: C/gedit-plugins-modelines.page:28(p)
 msgid "Tab width"
@@ -1750,6 +1760,10 @@ msgid ""
 "needs. The configuration options are available by selecting "
 "<guiseq><gui>Tools</gui><gui>Manage External Tools</gui></guiseq>."
 msgstr ""
+"Una vez que haya activado el complemento, tendrá que configurarlo para "
+"ajustarlo a sus necesidades. Las opciones de configuración están disponibles "
+"seleccionando <guiseq><gui>Herramientas</gui><gui>Gestionar herramientas "
+"externas</gui></guiseq>."
 
 #: C/gedit-plugins-doc-stats.page:7(desc)
 msgid ""
