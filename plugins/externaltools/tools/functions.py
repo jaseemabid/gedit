@@ -17,7 +17,7 @@
 #    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 import os
-from gi.repository import Gio, Gtk, Gdk, Gedit
+from gi.repository import Gio, Gtk, Gdk, GtkSource, Gedit
 from outputpanel import OutputPanel
 from capture import *
 
@@ -164,7 +164,7 @@ def run_external_tool(window, panel, node):
             if not end.ends_word():
                 end.forward_word_end()
 
-        input_text = document.get_text(start, end)
+        input_text = document.get_text(start, end, False)
         capture.set_input(input_text)
 
     # Assign the standard output to the chosen "file"
@@ -275,9 +275,9 @@ def capture_end_execute_panel(capture, exit_code, panel, view, output_type):
         end.forward_chars(300)
         uri = ''
 
-        mtype = Gio.content_type_guess(data=doc.get_text(start, end))
-        lmanager = Gedit.get_language_manager()
-        
+        mtype, uncertain = Gio.content_type_guess(None, doc.get_text(start, end, False))
+        lmanager = GtkSource.LanguageManager.get_default()
+
         location = doc.get_location()
         if location:
             uri = location.get_uri()
