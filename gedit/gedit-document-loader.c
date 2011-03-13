@@ -41,7 +41,6 @@
 #include "gedit-document-loader.h"
 #include "gedit-document-output-stream.h"
 #include "gedit-debug.h"
-#include "gedit-metadata-manager.h"
 #include "gedit-utils.h"
 #include "gedit-marshal.h"
 #include "gedit-enum-types.h"
