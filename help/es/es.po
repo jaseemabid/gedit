@@ -3,15 +3,15 @@
 #
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
 # María Majadas <maria.majadas@hispalinux.es>, 2005.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
 # Jorge González <jorgegonz@svn.gnome.org>, 2006, 2007, 2009, 2010, 2011.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-03-13 18:43+0000\n"
-"PO-Revision-Date: 2011-03-13 23:24+0100\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"POT-Creation-Date: 2011-03-14 03:37+0000\n"
+"PO-Revision-Date: 2011-03-14 13:54+0100\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,10 +31,11 @@ msgid "gedit Text Editor"
 msgstr "editor de textos gedit"
 
 #: C/index.page:12(name) C/gedit-view-open-files-in-sidepane.page:9(name)
-#: C/gedit-undo-recent-action.page:9(name) C/gedit-tabs.page:9(name)
+#: C/gedit-undo-recent-action.page:9(name)
+#: C/gedit-undo-recent-action.page:19(name) C/gedit-tabs.page:9(name)
 #: C/gedit-syntax-highlighting.page:9(name) C/gedit-spellcheck.page:8(name)
 #: C/gedit-shortcut-keys.page:9(name) C/gedit-replace.page:10(name)
-#: C/gedit-quickstart.page:9(name) C/gedit-printing.page:9(name)
+#: C/gedit-quickstart.page:11(name) C/gedit-printing.page:9(name)
 #: C/gedit-plugins-terminal.page:9(name)
 #: C/gedit-plugins-tag-list.page:13(name) C/gedit-plugins-sort.page:13(name)
 #: C/gedit-plugins-pyconsole.page:9(name)
@@ -55,10 +56,11 @@ msgid "Jim Campbell"
 msgstr "Jim Campbell"
 
 #: C/index.page:13(email) C/gedit-view-open-files-in-sidepane.page:10(email)
-#: C/gedit-undo-recent-action.page:10(email) C/gedit-tabs.page:10(email)
+#: C/gedit-undo-recent-action.page:10(email)
+#: C/gedit-undo-recent-action.page:20(email) C/gedit-tabs.page:10(email)
 #: C/gedit-syntax-highlighting.page:10(email) C/gedit-spellcheck.page:8(email)
 #: C/gedit-shortcut-keys.page:10(email) C/gedit-replace.page:11(email)
-#: C/gedit-quickstart.page:10(email) C/gedit-printing.page:10(email)
+#: C/gedit-quickstart.page:12(email) C/gedit-printing.page:10(email)
 #: C/gedit-plugins-terminal.page:10(email)
 #: C/gedit-plugins-tag-list.page:14(email) C/gedit-plugins-sort.page:14(email)
 #: C/gedit-plugins-pyconsole.page:10(email)
@@ -88,16 +90,22 @@ msgstr ""
 "media> Editor de textos gedit"
 
 #: C/index.page:26(p)
+#| msgid ""
+#| "Welcome to the <app>gedit</app> help guide. For a quick introduction into "
+#| "both <app>gedit's</app> most basic features, as well as some advanced "
+#| "keyboard shortcuts, see the <link xref=\"gedit-quickstart\">Get started</"
+#| "link> and <link xref=\"gedit-shortcut-keys\">Shortcut keys</link> pages."
 msgid ""
 "Welcome to the <app>gedit</app> help guide. For a quick introduction into "
 "both <app>gedit's</app> most basic features, as well as some advanced "
-"keyboard shortcuts, see the <link xref=\"gedit-quickstart\">Get started</"
-"link> and <link xref=\"gedit-shortcut-keys\">Shortcut keys</link> pages."
+"keyboard shortcuts, see the <link xref=\"gedit-quickstart\">Get started with "
+"gedit</link> and <link xref=\"gedit-shortcut-keys\">Shortcut keys</link> "
+"pages."
 msgstr ""
 "Bienvenido a la guía de ayuda de <app>gedit</app>. Para una rápida "
 "introducción tanto en las características básicas de <app>gedit</app> como "
-"de los atajos de teclado avanzados, consulte las páginas <link xref=\"gedit-"
-"quickstart\">Inicio</link> y <link xref=\"gedit-shortcut-keys\">Teclas de "
+"en los atajos de teclado avanzados, consulte las páginas <link xref=\"gedit-"
+"quickstart\">inicio</link> y <link xref=\"gedit-shortcut-keys\">teclas de "
 "atajos</link>."
 
 #: C/index.page:28(p)
@@ -206,26 +214,33 @@ msgid ""
 "displayed in the side pane."
 msgstr ""
 
-#: C/gedit-undo-recent-action.page:20(title)
+#: C/gedit-undo-recent-action.page:24(title)
 msgid "Undo a recent action"
 msgstr "Deshacer una acción reciente"
 
 #. TODO: Maybe include a note about how gedit undoes sequences of "similar" actions, rather than every individual keystroke? For example, whole words are deleted rather than letters.
 #. I think we should also include a note about how many "undo's" you can do, and that you can't
 #. undo something once you've saved the file.
-#: C/gedit-undo-recent-action.page:25(p)
+#: C/gedit-undo-recent-action.page:29(p)
 msgid ""
-"Undoing actions in <app>gedit</app> allows you to recover from mistakes. To "
-"undo an action, press the key sequence <keyseq><key>Ctrl</key><key>Z</key></"
+"We all make mistakes. Even <app>gedit</app> users make mistakes. "
+"Fortunately, <app>gedit</app> can help you recover from mistakes. To undo an "
+"action in <app>gedit</app>, press <keyseq><key>Ctrl</key><key>Z</key></"
 "keyseq>, or click <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq>."
 msgstr ""
 
-#: C/gedit-undo-recent-action.page:27(p)
+#: C/gedit-undo-recent-action.page:31(p)
 msgid ""
-"<app>gedit</app> will undo one action every time <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> or <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq> "
-"is pressed, so you can undo multiple actions by repeating these sequences "
-"multiple times in a row."
+"<app>gedit</app> will undo one action every time you press "
+"<keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</"
+"gui><gui>Undo</gui></guiseq> is pressed."
+msgstr ""
+
+#: C/gedit-undo-recent-action.page:33(p)
+msgid ""
+"Be careful. If you make a mistake outside of <app>gedit</app> (e.g., If you "
+"say something mean to your friend) <app>gedit</app> will not be able to help "
+"you undo that mistake."
 msgstr ""
 
 #: C/gedit-tabs.page:20(title)
@@ -297,7 +312,7 @@ msgstr "Arrastrar una pestaña a una ventana nueva:"
 
 #: C/gedit-tabs.page:47(p) C/gedit-tabs.page:62(p) C/gedit-tabs.page:71(p)
 msgid "Click and hold the mouse button on the tab"
-msgstr ""
+msgstr "Pulse y mantenga pulsado el botón del ratón en la pestaña"
 
 #: C/gedit-tabs.page:48(p)
 msgid "Drag the tab out of the space it occupies"
@@ -985,7 +1000,7 @@ msgstr "?"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gedit-quickstart.page:17(None)
+#: C/gedit-quickstart.page:19(None)
 msgid ""
 "@@image: 'figures/gedit3-screenshot.png'; "
 "md5=174aac884967f8e4226ab33d9498c60b"
@@ -993,25 +1008,25 @@ msgstr ""
 "@@image: 'figures/gedit3-screenshot.png'; "
 "md5=174aac884967f8e4226ab33d9498c60b"
 
-#: C/gedit-quickstart.page:14(title)
+#: C/gedit-quickstart.page:16(title)
 msgid "Get started with gedit"
 msgstr "Inicio"
 
-#: C/gedit-quickstart.page:15(p)
+#: C/gedit-quickstart.page:17(p)
 msgid ""
 "<app>gedit</app> is a full-featured text editor for the GNOME desktop "
-"environment. You can use it to prepare simple notes and documents or you can "
-"use some of its advanced features, making it your own software development "
-"environment."
+"environment. You can use it to prepare simple notes and documents, or you "
+"can use some of its advanced features, making it your own software "
+"development environment."
 msgstr ""
 
-#: C/gedit-quickstart.page:19(p)
+#: C/gedit-quickstart.page:21(p)
 msgid ""
 "Once <app>gedit</app> launches, you can start writing right away. To save "
 "your text, just click <gui>Save</gui>."
 msgstr ""
 
-#: C/gedit-quickstart.page:21(p)
+#: C/gedit-quickstart.page:23(p)
 msgid ""
 "To learn about additional <app>gedit</app> features and to get assistance "
 "with performing additional tasks, explore <link xref=\"index\">the other "
@@ -1367,7 +1382,6 @@ msgid "Emacs Modelines"
 msgstr "Líneas de modo Emacs"
 
 #: C/gedit-plugins-modelines.page:41(p)
-#, fuzzy
 #| msgid ""
 #| "The first two lines of a document are scanned for <application>Emacs</"
 #| "application> modelines."
@@ -1377,7 +1391,8 @@ msgid ""
 "modeline options:"
 msgstr ""
 "Las primeras dos líneas de un documento se analizan buscando líneas de modos "
-"<application>Emacs</application>."
+"<app>Emacs</app>, y <app>gedit</app> soporta las siguientes opciones de "
+"líneas de modos <app>Emacs</app>:"
 
 #: C/gedit-plugins-modelines.page:43(p)
 msgid "Tab-width"
@@ -1407,7 +1422,6 @@ msgid "Kate Modelines"
 msgstr "Líneas de modo Kate"
 
 #: C/gedit-plugins-modelines.page:54(p)
-#, fuzzy
 #| msgid ""
 #| "The first and last ten lines a document are scanned for "
 #| "<application>Kate</application> modelines."
@@ -1416,15 +1430,15 @@ msgid ""
 "modelines, and <app>gedit</app> supports the following <app>Kate</app> "
 "modeline options:"
 msgstr ""
-"La primera y las últimas diez líneas de un documento se analizan buscando "
-"líneas de modo <application>Kate</application>."
+"La primera y las diez últimas líneas de un documento se analizan buscando "
+"líneas de modo <application>Kate</application>, y <app>gedit</app> soporta "
+"las siguientes opciones de líneas de modos <app>Kate</app>:"
 
 #: C/gedit-plugins-modelines.page:57(p)
 msgid "tab-width"
 msgstr "Ancho de tabulación"
 
 #: C/gedit-plugins-modelines.page:58(p)
-#, fuzzy
 #| msgid "Indent width"
 msgid "indent-width"
 msgstr "Anchura de la sangría"
@@ -1452,7 +1466,6 @@ msgid "Vim Modelines"
 msgstr "Líneas de modo Vim"
 
 #: C/gedit-plugins-modelines.page:69(p)
-#, fuzzy
 #| msgid ""
 #| "The first and last three lines a document are scanned for "
 #| "<application>Vim</application> modelines."
@@ -1461,8 +1474,9 @@ msgid ""
 "modelines, and <app>gedit</app> supports the following <app>Vim</app> "
 "modeline options:"
 msgstr ""
-"La primera y las últimas tres líneas de un documento se escanean buscando "
-"líneas de modo <application>Vim</application>."
+"La primera y las 3 últimas líneas de un documento se analizan buscando "
+"líneas de modo <application>Vim</application>, y <app>gedit</app> soporta "
+"las siguientes opciones de líneas de modos <app>Vim</app>:"
 
 #: C/gedit-plugins-modelines.page:72(p)
 msgid "et (expandtab)"
@@ -1481,10 +1495,9 @@ msgid "wrap"
 msgstr ""
 
 #: C/gedit-plugins-modelines.page:76(p)
-#, fuzzy
 #| msgid "Indent width"
 msgid "textwidth"
-msgstr "Anchura de la sangría"
+msgstr "Anchura del texto"
 
 #: C/gedit-plugins-modelines.page:79(p)
 msgid ""
@@ -1496,7 +1509,7 @@ msgstr ""
 
 #: C/gedit-plugins-install.page:20(title)
 msgid "Install Additional gedit Plugins"
-msgstr ""
+msgstr "Instalar complementos adicionales de gedit"
 
 #: C/gedit-plugins-install.page:22(p)
 msgid ""
@@ -1612,10 +1625,9 @@ msgstr ""
 "@@image: 'figures/gedit-side-pane1.png'; md5=ac9c80cb0552d63b593c71f23be69b53"
 
 #: C/gedit-plugins-file-browser.page:18(title)
-#, fuzzy
 #| msgid "Use the specified command to print the file."
 msgid "Use the side panel to browse and open files"
-msgstr "Use el comando especificado para imprimir el archivo."
+msgstr "Use el panel lateral para explorar y abrir archivos"
 
 #: C/gedit-plugins-file-browser.page:20(p)
 msgid ""
@@ -1640,7 +1652,6 @@ msgstr "Abrir archivos desde el panel lateral"
 
 #: C/gedit-plugins-file-browser.page:29(p)
 #: C/gedit-open-files-from-sidepane.page:31(p)
-#, fuzzy
 #| msgid ""
 #| "To view the File Browser, choose <menuchoice><guimenu>View</"
 #| "guimenu><guimenuitem>Side Pane</guimenuitem></menuchoice> and then click "
@@ -1650,10 +1661,10 @@ msgid ""
 "app> by selecting <guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, then "
 "click on the <gui>file-browser</gui> icon at the bottom of the pane."
 msgstr ""
-"Para ver el examinador de archivos, elija <menuchoice><guimenu>Ver</"
-"guimenu><guimenuitem>Panel lateral</guimenuitem></menuchoice> y después "
-"pulse en la pestaña que muestra el icono del examinador de archivos en la "
-"parte inferior del panel lateral."
+"Para abrir archivos desde el <app>panel lateral</app>, primero abra el "
+"<app>panel lateral</app> seleccionando <guiseq><gui>Ver</gui><gui>Panel "
+"lateral</gui></guiseq>, y entonces pulse en el icono <gui>Examinador de "
+"archivos</gui> en la parte inferior del panel."
 
 #: C/gedit-plugins-file-browser.page:37(p)
 msgid ""
@@ -1806,7 +1817,7 @@ msgstr ""
 
 #: C/gedit-plugin-guide.page:7(desc)
 msgid "Do more with gedit by using gedit plugins."
-msgstr ""
+msgstr "Hacer más con gedit usando los complementos de gedit."
 
 #: C/gedit-plugin-guide.page:15(title)
 msgid "Configure and use gedit Plugins"
@@ -1868,6 +1879,8 @@ msgstr ""
 msgid ""
 "<app>gedit</app> will display a list of the five most-recently used files."
 msgstr ""
+"<app>gedit</app> mostrará una lista de los cinco archivos más recientemente "
+"usados."
 
 #: C/gedit-open-recent.page:21(p)
 msgid "Select the desired file, and it will open in the next available tab."
@@ -1878,13 +1891,16 @@ msgid ""
 "To adjust the number of recently-used files that gedit displays, you will "
 "need to use the <app>gconf-editor</app> application."
 msgstr ""
+"Para ajustar el número de archivos usados recientemente que muestra gedit, "
+"debe usar la aplicación <app>gconf-editor</app>."
 
 #: C/gedit-open-recent.page:26(p)
 msgid ""
-"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</"
-"gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></"
-"guiseq>."
+"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</gui><gui>gedit-"
+"2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq>."
 msgstr ""
+"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</gui><gui>gedit-"
+"2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</gui></guiseq>."
 
 #: C/gedit-open-recent.page:27(p)
 msgid ""
@@ -1894,32 +1910,57 @@ msgstr ""
 
 #: C/gedit-open-on-server.page:14(title)
 msgid "Open a file that is located on a server"
-msgstr ""
+msgstr "Abrir un archivo ubicado en un servidor"
 
 #: C/gedit-open-on-server.page:16(p)
-msgid "To open a file from a server, perform the following steps:"
-msgstr "Para abrir un archivo desde un servidor, realice estos pasos:"
-
-#: C/gedit-open-on-server.page:19(p)
-#| msgid ""
-#| "Choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open Location</"
-#| "guimenuitem></menuchoice> to display the <guilabel>Open Location</"
-#| "guilabel> dialog."
 msgid ""
-"Choose <guiseq><gui>File</gui><gui>Open</gui></guiseq> to display the "
-"<em>Open</em> dialog."
+"Prior to opening a file on a server from within <app>gedit</app>, you need "
+"to know some technical information about the server. For example, you will "
+"need to know the IP Address or URL of the server, and may need to know what "
+"kind of server it is (e.g., HTTP, FTP, etc.)."
 msgstr ""
-"Seleccione <guiseq><gui>Archivo</gui><gui>Abrir</gui></guiseq> para mostrar "
-"el diálogo <em>Abrir</em>."
+
+#: C/gedit-open-on-server.page:18(p)
+msgid ""
+"Also, some types of servers impose restrictions on what you can do with "
+"files stored on the server. For example, you may be able to open a file from "
+"a server, but may need to save any changes to the file locally, on your own "
+"computer."
+msgstr ""
 
 #: C/gedit-open-on-server.page:20(p)
-#, fuzzy
-#| msgid "Enter the URI of the file that you want to open."
-msgid "Select the Enter the URI of the file that you want to open."
-msgstr "Introduzca la URI del archivo que quiere abrir."
+msgid ""
+"With these caveats in mind, perform the following steps to open a file from "
+"a server using <app>gedit</app>:"
+msgstr ""
 
-#: C/gedit-open-on-server.page:21(p)
-#, fuzzy
+#: C/gedit-open-on-server.page:23(p)
+#| msgid ""
+#| "Choose <guiseq><gui>File</gui><gui>Open</gui></guiseq> to display the "
+#| "<em>Open</em> dialog."
+msgid ""
+"Choose <guiseq><gui>File</gui><gui>Open</gui></guiseq> to display the "
+"<gui>Open Files</gui> dialog."
+msgstr ""
+"Seleccione <guiseq><gui>Archivo</gui><gui>Abrir</gui></guiseq> para mostrar "
+"el diálogo <gui>Abrir archivos</gui>."
+
+#: C/gedit-open-on-server.page:24(p)
+msgid ""
+"Select the <gui>Pencil</gui> icon near the top of the <gui>Open Files</gui> "
+"dialog."
+msgstr ""
+
+#: C/gedit-open-on-server.page:25(p)
+msgid "Enter the IP Address or URL of the appropriate server."
+msgstr "Introduzca la dirección IP o el URL del servidor apropiado."
+
+#: C/gedit-open-on-server.page:26(p)
+#| msgid "Enter the URI of the file that you want to open."
+msgid "Find and select the file that you wish to open."
+msgstr "Buscar y seleccionar el archivo que quiere abrir."
+
+#: C/gedit-open-on-server.page:27(p)
 #| msgid ""
 #| "Use the <guilabel>Character coding</guilabel> drop-down list to select "
 #| "the appropriate character coding."
@@ -1927,27 +1968,25 @@ msgid ""
 "Use the Character coding drop-down list to select the appropriate character "
 "coding."
 msgstr ""
-"Use la lista desplegable <guilabel>Codificación de caracteres</guilabel> "
-"para seleccionar la codificación de caracteres apropiada."
+"Use la lista desplegable «Codificación de caracteres» para seleccionar la "
+"codificación de caracteres apropiada."
 
-#: C/gedit-open-on-server.page:22(p)
+#: C/gedit-open-on-server.page:28(p)
 msgid "Click <gui>Open</gui>."
 msgstr "Pulse </gui>Abrir<gui>."
 
-#: C/gedit-open-on-server.page:25(p)
+#: C/gedit-open-on-server.page:31(p)
 #| msgid ""
-#| "Valid types of <replaceable>URI</replaceable> include <literal>http:</"
-#| "literal>, <literal>ftp:</literal>, <literal>file:</literal>, and all of "
-#| "the methods supported by <literal>gnome-vfs</literal>."
+#| "Valid types of URI include http:, ftp:, file:, and all of the methods "
+#| "supported by gnome-vfs."
 msgid ""
 "Valid types of URI include http:, ftp:, file:, and all of the methods "
-"supported by gnome-vfs."
+"supported by <app>gnome-vfs</app>."
 msgstr ""
 "Los tipos de URI válidos incluyen http:, ftp:, file: y todos los métodos "
-"admitidos por gnome-vfs."
+"soportados por <app>gnome-vfs</app>."
 
-#: C/gedit-open-on-server.page:27(p)
-#, fuzzy
+#: C/gedit-open-on-server.page:33(p)
 #| msgid ""
 #| "Files from some types of URI are opened as read-only, and any changes you "
 #| "make must be saved to a different location. HTTP only allows files to be "
@@ -1960,17 +1999,12 @@ msgid ""
 "all FTP servers may correctly work with saving remote files."
 msgstr ""
 "Archivos desde algunos tipos de URI se abren como sólo lectura, y cualquier "
-"cambio que realice deberá guardarlo en una ubicación diferente. HTTP sólo "
-"permite lectura de archivos. Los archivos abiertos desde FTP son de sólo "
-"lectura porque no todos los servidores FTP trabajan correctamente con "
-"guardado remoto de archivos."
+"cambio que realice deberá guardarlo en una ubicación diferente. Por ejemplo, "
+"HTTP sólo permite lectura de archivos. Los archivos abiertos desde FTP son "
+"de sólo lectura porque no todos los servidores FTP trabajan correctamente "
+"con guardado remoto de archivos."
 
-#: C/gedit-open-on-server.page:29(p)
-#| msgid ""
-#| "Saving to FTP servers can be enabled with <ulink type=\"help\" url="
-#| "\"ghelp:gconf-editor\"><application>Configuration Editor</application></"
-#| "ulink>, setting the key <systemitem>/apps/gedit-2/preferences/editor/save/"
-#| "writable_vfs_schemes</systemitem>, but this may cause errors."
+#: C/gedit-open-on-server.page:35(p)
 msgid ""
 "Saving to FTP servers can be enabled with Configuration Editor, setting the "
 "key /apps/gedit-2/preferences/editor/save/writable_vfs_schemes, but this may "
@@ -1982,7 +2016,7 @@ msgstr ""
 
 #: C/gedit-open-files-from-sidepane.page:14(title)
 msgid "View and open files from the side pane"
-msgstr ""
+msgstr "Ver y abrir archivos desde el panel lateral"
 
 #: C/gedit-open-files-from-sidepane.page:15(p)
 msgid ""
@@ -2005,6 +2039,8 @@ msgid ""
 "You can toggle the <gui>side pane</gui> open or closed by pressing <key>F9</"
 "key> at any time."
 msgstr ""
+"Puede abrir o cerrar el <gui>panel lateral</gui> pulsando <key>F9</key> en "
+"cualquier momento."
 
 #: C/gedit-open-files-from-sidepane.page:39(p)
 msgid ""
@@ -2033,7 +2069,7 @@ msgstr ""
 
 #: C/gedit-edit-as-root.page:14(title)
 msgid "Edit a file as the root (administative) user"
-msgstr ""
+msgstr "Editar un archivo como usuario root (administrador)"
 
 #: C/gedit-edit-as-root.page:16(p)
 msgid ""
@@ -2102,7 +2138,6 @@ msgstr ""
 "apariencia del área principal de edición de texto."
 
 #: C/gedit-change-color-scheme.page:18(p)
-#| msgid "To use the Sort plugin, perform the following steps:"
 msgid "To change the color scheme, complete the following steps:"
 msgstr "Para cambiar el esquema de colores complete los siguientes pasos:"
 
@@ -2115,7 +2150,6 @@ msgstr ""
 "colores</gui></guiseq>."
 
 #: C/gedit-change-color-scheme.page:21(p)
-#| msgid "Blue based color scheme."
 msgid "Choose your desired color scheme."
 msgstr "Elija el esquema de color que quiera."
 
@@ -2153,6 +2187,9 @@ msgid "translator-credits"
 msgstr ""
 "Jorge González <jorgegonz@svn.gnome.org>, 2006-2011\n"
 "María Majadas <maria.majadas@hispalinux.es>, 2005"
+
+#~ msgid "To open a file from a server, perform the following steps:"
+#~ msgstr "Para abrir un archivo desde un servidor, realice estos pasos:"
 
 #~ msgid "2010"
 #~ msgstr "2010"
@@ -5452,8 +5489,8 @@ msgstr ""
 #~ "pane to show the tag list tab."
 #~ msgstr ""
 #~ "Por omisión, el panel lateral muestra una pestaña conteniendo una lista "
-#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en "
-#~ "la parte de abajo del panel lateral para mostrar la pestaña de listas de "
+#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en la "
+#~ "parte de abajo del panel lateral para mostrar la pestaña de listas de "
 #~ "etiquetas."
 
 #~ msgid ""
