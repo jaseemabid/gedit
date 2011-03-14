@@ -558,7 +558,6 @@ gedit_file_browser_store_get_iter (GtkTreeModel *tree_model,
 	gint *indices, depth, i;
 	FileBrowserNode *node;
 	GeditFileBrowserStore *model;
-	gint num;
 
 	g_assert (GEDIT_IS_FILE_BROWSER_STORE (tree_model));
 	g_assert (path != NULL);
@@ -571,11 +570,10 @@ gedit_file_browser_store_get_iter (GtkTreeModel *tree_model,
 	for (i = 0; i < depth; ++i)
 	{
 		GSList *item;
+		gint num = 0;
 
 		if (node == NULL)
 			return FALSE;
-
-		num = 0;
 
 		if (!NODE_IS_DIR (node))
 			return FALSE;
@@ -882,8 +880,7 @@ gedit_file_browser_store_iter_nth_child (GtkTreeModel *tree_model,
 	if (!NODE_IS_DIR (node))
 		return FALSE;
 
-	for (item = FILE_BROWSER_NODE_DIR (node)->children; item;
-	     item = item->next)
+	for (item = FILE_BROWSER_NODE_DIR (node)->children; item; item = item->next)
 	{
 		if (model_node_inserted (model, (FileBrowserNode *) (item->data)))
 		{
@@ -1363,24 +1360,19 @@ file_browser_node_free_children (GeditFileBrowserStore *model,
 {
 	GSList *item;
 
-	if (node == NULL)
+	if (node == NULL || !NODE_IS_DIR (node))
 		return;
 
-	if (NODE_IS_DIR (node))
+	for (item = FILE_BROWSER_NODE_DIR (node)->children; item; item = item->next)
 	{
-		for (item = FILE_BROWSER_NODE_DIR (node)->children; item;
-		     item = item->next)
-		{
-			file_browser_node_free (model,
-						(FileBrowserNode *) (item->data));
-		}
-
-		g_slist_free (FILE_BROWSER_NODE_DIR (node)->children);
-		FILE_BROWSER_NODE_DIR (node)->children = NULL;
-
-		/* This node is no longer loaded */
-		node->flags &= ~GEDIT_FILE_BROWSER_STORE_FLAG_LOADED;
+		file_browser_node_free (model, (FileBrowserNode *) (item->data));
 	}
+
+	g_slist_free (FILE_BROWSER_NODE_DIR (node)->children);
+	FILE_BROWSER_NODE_DIR (node)->children = NULL;
+
+	/* This node is no longer loaded */
+	node->flags &= ~GEDIT_FILE_BROWSER_STORE_FLAG_LOADED;
 }
 
 static void
@@ -1419,7 +1411,6 @@ file_browser_node_free (GeditFileBrowserStore *model,
 	if (node->file)
 	{
 		g_signal_emit (model, model_signals[UNLOAD], 0, node->file);
-
 		g_object_unref (node->file);
 	}
 
@@ -1575,8 +1566,6 @@ model_clear (GeditFileBrowserStore *model,
 	     gboolean               free_nodes)
 {
 	GtkTreePath *path;
-	FileBrowserNodeDir *dir;
-	FileBrowserNode *dummy;
 
 	path = gtk_tree_path_new ();
 	model_remove_node_children (model, model->priv->virtual_root, path,
@@ -1586,10 +1575,14 @@ model_clear (GeditFileBrowserStore *model,
 	/* Remove the dummy if there is one */
 	if (model->priv->virtual_root)
 	{
+		FileBrowserNodeDir *dir;
+
 		dir = FILE_BROWSER_NODE_DIR (model->priv->virtual_root);
 
 		if (dir->children != NULL)
 		{
+			FileBrowserNode *dummy;
+
 			dummy = (FileBrowserNode *) (dir->children->data);
 
 			if (NODE_IS_DUMMY (dummy) &&
@@ -1791,8 +1784,7 @@ model_check_dummy (GeditFileBrowserStore *model,
 
 		if (!filter_tree_model_iter_has_child_real (model, node))
 		{
-			dummy->flags &=
-			    ~GEDIT_FILE_BROWSER_STORE_FLAG_IS_HIDDEN;
+			dummy->flags &= ~GEDIT_FILE_BROWSER_STORE_FLAG_IS_HIDDEN;
 
 			if (FILE_IS_HIDDEN (flags))
 			{
@@ -1952,12 +1944,10 @@ model_add_nodes_batch (GeditFileBrowserStore *model,
 
 			model_check_dummy (model, node);
 
-			/* Try again at the same l position with the
-			   next child */
+			/* Try again at the same l position with the next child */
 		}
 		else
 		{
-
 			/* Move to the next item in the list */
 			prev = l;
 			l = l->next;
@@ -2601,8 +2591,7 @@ model_fill (GeditFileBrowserStore  *model,
 		/* Go to the first child */
 		gtk_tree_path_down (*path);
 
-		for (item = FILE_BROWSER_NODE_DIR (node)->children; item;
-		     item = item->next)
+		for (item = FILE_BROWSER_NODE_DIR (node)->children; item; item = item->next)
 		{
 			child = (FileBrowserNode *) (item->data);
 
@@ -2664,8 +2653,7 @@ set_virtual_root_from_node (GeditFileBrowserStore *model,
 			else if (check != prev)
 			{
 				/* Only free when the node is not in the chain */
-				dir->children =
-				    g_slist_remove (dir->children, check);
+				dir->children = g_slist_remove (dir->children, check);
 				file_browser_node_free (model, check);
 			}
 		}
@@ -2679,15 +2667,13 @@ set_virtual_root_from_node (GeditFileBrowserStore *model,
 	}
 
 	/* Free all the nodes up that we don't need in cache */
-	for (item = FILE_BROWSER_NODE_DIR (node)->children; item;
-	     item = item->next)
+	for (item = FILE_BROWSER_NODE_DIR (node)->children; item; item = item->next)
 	{
 		check = (FileBrowserNode *) (item->data);
 
 		if (NODE_IS_DIR (check))
 		{
-			for (copy = FILE_BROWSER_NODE_DIR (check)->children;
-			     copy; copy = copy->next)
+			for (copy = FILE_BROWSER_NODE_DIR (check)->children; copy; copy = copy->next)
 			{
 				file_browser_node_free_children (model,
 								 (FileBrowserNode*) (copy->data));
@@ -3386,16 +3372,14 @@ static void
 reparent_node (FileBrowserNode *node,
 	       gboolean         reparent)
 {
-	FileBrowserNodeDir *dir;
-	GSList *child;
-	GFile *parent;
-	gchar *base;
-
 	if (!node->file)
 		return;
 
 	if (reparent)
 	{
+		GFile *parent;
+		gchar *base;
+
 		parent = node->parent->file;
 		base = g_file_get_basename (node->file);
 		g_object_unref (node->file);
@@ -3406,10 +3390,15 @@ reparent_node (FileBrowserNode *node,
 
 	if (NODE_IS_DIR (node))
 	{
+		FileBrowserNodeDir *dir;
+		GSList *child;
+
 		dir = FILE_BROWSER_NODE_DIR (node);
 
 		for (child = dir->children; child; child = child->next)
+		{
 			reparent_node ((FileBrowserNode *)child->data, TRUE);
+		}
 	}
 }
 
