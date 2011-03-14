@@ -15,6 +15,10 @@
       <name>Daniel Neel</name>
       <email>dneelyep@gmail.com</email>
     </credit>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
   </info>
 
   <title>Undo a recent action</title>
@@ -22,8 +26,10 @@
   <!-- TODO: Maybe include a note about how gedit undoes sequences of "similar" actions, rather than every individual keystroke? For example, whole words are deleted rather than letters.
 I think we should also include a note about how many "undo's" you can do, and that you can't
 undo something once you've saved the file.-->
-  <p>Undoing actions in <app>gedit</app> allows you to recover from mistakes. To undo an action, press the key sequence <keyseq><key>Ctrl</key><key>Z</key></keyseq>, or click <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq>.</p>
+  <p>We all make mistakes. Even <app>gedit</app> users make mistakes. Fortunately, <app>gedit</app> can help you recover from mistakes. To undo an action in <app>gedit</app>, press <keyseq><key>Ctrl</key><key>Z</key></keyseq>, or click <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq>.</p>
 
-  <p><app>gedit</app> will undo one action every time <keyseq><key>Ctrl</key><key>Z</key></keyseq> or <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq> is pressed, so you can undo multiple actions by repeating these sequences multiple times in a row.</p>
+  <p><app>gedit</app> will undo one action every time you press <keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq> is pressed.</p>
+
+  <note style="warning"><p>Be careful. If you make a mistake outside of <app>gedit</app> (e.g., If you say something mean to your friend) <app>gedit</app> will not be able to help you undo that mistake.</p></note>
 
 </page>
