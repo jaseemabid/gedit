@@ -21,8 +21,8 @@ msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&component=general\n"
-"POT-Creation-Date: 2011-02-01 16:46+0000\n"
-"PO-Revision-Date: 2011-02-04 19:40+0100\n"
+"POT-Creation-Date: 2011-02-15 17:17+0000\n"
+"PO-Revision-Date: 2011-03-14 19:06+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -1134,7 +1134,7 @@ msgstr "Neuložený dokument %d"
 msgid "Read-Only"
 msgstr "Pouze ke čtení"
 
-#: ../gedit/gedit-documents-panel.c:1090 ../gedit/gedit-window.c:3836
+#: ../gedit/gedit-documents-panel.c:1089 ../gedit/gedit-window.c:3835
 msgid "Documents"
 msgstr "Dokumenty"
 
@@ -1423,9 +1423,6 @@ msgid "There was a problem opening the file %s."
 msgstr "Došlo k problému při otevírání souboru %s."
 
 #: ../gedit/gedit-io-error-info-bar.c:629
-#| msgid ""
-#| "The file you opened has some invalid characters. If you continue editing "
-#| "this file you could make this document useless."
 msgid ""
 "The file you opened has some invalid characters. If you continue editing "
 "this file you could corrupt this document."
@@ -1485,13 +1482,13 @@ msgstr ""
 
 #: ../gedit/gedit-io-error-info-bar.c:873
 #: ../gedit/gedit-io-error-info-bar.c:971
-#: ../gedit/gedit-io-error-info-bar.c:1259
+#: ../gedit/gedit-io-error-info-bar.c:1260
 msgid "S_ave Anyway"
 msgstr "_Přesto uložit"
 
 #: ../gedit/gedit-io-error-info-bar.c:877
 #: ../gedit/gedit-io-error-info-bar.c:975
-#: ../gedit/gedit-io-error-info-bar.c:1263
+#: ../gedit/gedit-io-error-info-bar.c:1264
 msgid "D_on't Save"
 msgstr "Neuklá_dat"
 
@@ -1557,7 +1554,7 @@ msgstr ""
 "%s není platné umístění. Zkontrolujte prosím, že jste umístění napsali "
 "správně, a zkuste to znovu."
 
-#: ../gedit/gedit-io-error-info-bar.c:1103
+#: ../gedit/gedit-io-error-info-bar.c:1104
 msgid ""
 "You do not have the permissions necessary to save the file. Please check "
 "that you typed the location correctly and try again."
@@ -1565,7 +1562,7 @@ msgstr ""
 "Nemáte oprávnění pro uložení souboru. Zkontrolujte prosím, že jste umístění "
 "napsali správně, a zkuste to znovu."
 
-#: ../gedit/gedit-io-error-info-bar.c:1109
+#: ../gedit/gedit-io-error-info-bar.c:1110
 msgid ""
 "There is not enough disk space to save the file. Please free some disk space "
 "and try again."
@@ -1573,7 +1570,7 @@ msgstr ""
 "Pro uložení souboru není dostatek místa na disku. Uvolněte prosím nějaké "
 "místo a zkuste to znovu."
 
-#: ../gedit/gedit-io-error-info-bar.c:1114
+#: ../gedit/gedit-io-error-info-bar.c:1115
 msgid ""
 "You are trying to save the file on a read-only disk. Please check that you "
 "typed the location correctly and try again."
@@ -1581,11 +1578,11 @@ msgstr ""
 "Pokoušíte se soubor uložit na disk určený pouze pro čtení. Zkontrolujte "
 "prosím, že jste umístění napsali správně, a zkuste to znovu."
 
-#: ../gedit/gedit-io-error-info-bar.c:1120
+#: ../gedit/gedit-io-error-info-bar.c:1121
 msgid "A file with the same name already exists. Please use a different name."
 msgstr "Soubor se stejným jménem již existuje. Použijte prosím jiné jméno."
 
-#: ../gedit/gedit-io-error-info-bar.c:1125
+#: ../gedit/gedit-io-error-info-bar.c:1126
 msgid ""
 "The disk where you are trying to save the file has a limitation on length of "
 "the file names. Please use a shorter name."
@@ -1593,7 +1590,7 @@ msgstr ""
 "Disk, na který se snažíte uložit tento soubor, má omezenu délku názvu "
 "souboru. Použijte prosím kratší název."
 
-#: ../gedit/gedit-io-error-info-bar.c:1132
+#: ../gedit/gedit-io-error-info-bar.c:1133
 msgid ""
 "The disk where you are trying to save the file has a limitation on file "
 "sizes. Please try saving a smaller file or saving it to a disk that does not "
@@ -1603,7 +1600,7 @@ msgstr ""
 "Zkuste prosím uložit menší soubor, nebo uložit tento soubor na disk, který "
 "nemá toto omezení."
 
-#: ../gedit/gedit-io-error-info-bar.c:1148
+#: ../gedit/gedit-io-error-info-bar.c:1149
 #, c-format
 msgid "Could not save the file %s."
 msgstr "Nelze uložit soubor %s."
@@ -1612,29 +1609,29 @@ msgstr "Nelze uložit soubor %s."
 #. * could be interpreted as the changes he made in the document. beside "reading" is
 #. * not accurate (since last load/save)
 #.
-#: ../gedit/gedit-io-error-info-bar.c:1193
+#: ../gedit/gedit-io-error-info-bar.c:1194
 #, c-format
 msgid "The file %s changed on disk."
 msgstr "Soubor %s byl změněn na disku."
 
-#: ../gedit/gedit-io-error-info-bar.c:1198
+#: ../gedit/gedit-io-error-info-bar.c:1199
 msgid "Do you want to drop your changes and reload the file?"
 msgstr "Chcete zahodit provedené změny a soubor načíst znovu?"
 
-#: ../gedit/gedit-io-error-info-bar.c:1200
+#: ../gedit/gedit-io-error-info-bar.c:1201
 msgid "Do you want to reload the file?"
 msgstr "Chcete soubor znovu načíst?"
 
-#: ../gedit/gedit-io-error-info-bar.c:1205
+#: ../gedit/gedit-io-error-info-bar.c:1206
 msgid "_Reload"
 msgstr "_Znovu načíst"
 
-#: ../gedit/gedit-io-error-info-bar.c:1277
+#: ../gedit/gedit-io-error-info-bar.c:1278
 #, c-format
 msgid "Some invalid chars have been detected while saving %s"
 msgstr "Při ukládání %s byly zjištěny některé neplatné znaky"
 
-#: ../gedit/gedit-io-error-info-bar.c:1293
+#: ../gedit/gedit-io-error-info-bar.c:1294
 msgid ""
 "If you continue saving this file you can corrupt the document.  Save anyway?"
 msgstr ""
@@ -1848,38 +1845,38 @@ msgid "Saving %s"
 msgstr "Ukládá se %s"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1831
+#: ../gedit/gedit-tab.c:1827
 msgid "RO"
 msgstr "RO"
 
-#: ../gedit/gedit-tab.c:1878
+#: ../gedit/gedit-tab.c:1874
 #, c-format
 msgid "Error opening file %s"
 msgstr "Chyba při otevírání souboru %s"
 
-#: ../gedit/gedit-tab.c:1883
+#: ../gedit/gedit-tab.c:1879
 #, c-format
 msgid "Error reverting file %s"
 msgstr "Chyba při vrácení souboru %s do původního stavu"
 
-#: ../gedit/gedit-tab.c:1888
+#: ../gedit/gedit-tab.c:1884
 #, c-format
 msgid "Error saving file %s"
 msgstr "Chyba při ukládání souboru %s"
 
-#: ../gedit/gedit-tab.c:1909
+#: ../gedit/gedit-tab.c:1905
 msgid "Unicode (UTF-8)"
 msgstr "Unicode (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1916
+#: ../gedit/gedit-tab.c:1912
 msgid "Name:"
 msgstr "Název:"
 
-#: ../gedit/gedit-tab.c:1917
+#: ../gedit/gedit-tab.c:1913
 msgid "MIME Type:"
 msgstr "Typ MIME:"
 
-#: ../gedit/gedit-tab.c:1918
+#: ../gedit/gedit-tab.c:1914
 msgid "Encoding:"
 msgstr "Kódování:"
 
@@ -2297,7 +2294,7 @@ msgstr "Odpovídající závorka nenalezena"
 msgid "Bracket match found on line: %d"
 msgstr "Odpovídající závorka nalezena na řádku: %d"
 
-#: ../gedit/gedit-window.c:4042
+#: ../gedit/gedit-window.c:4041
 msgid "About gedit"
 msgstr "O aplikaci gedit"
 
@@ -3663,6 +3660,15 @@ msgstr "Při vkládání data a času…"
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "_Prompt for a format"
 msgstr "Ze_ptat se na formát"
+
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
+msgid "Logs access and leave event for documents used with gedit"
+msgstr ""
+"Evidovat přístup a odesílat události pro dokumenty použité v aplikaci gedit"
+
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
+msgid "Zeitgeist dataprovider"
+msgstr "Poskytovatel dat Zeitgeist"
 
 #~ msgid "Quick open"
 #~ msgstr "Rychle otevřít"
