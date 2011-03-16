@@ -4,7 +4,6 @@
 
 <info>
   <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
-  <desc>Changes the case of selected text.</desc>
   <revision pkgversion="3.0" version="0.1" date="2010-12-5" status="stub"/>
   <credit type="author">
     <name>Daniel Neel</name>
@@ -17,12 +16,22 @@
   </credit>
 </info>
 
-<title>Change case</title>
+<title>Change the case of selected text</title>
 
-<p>This plugin helps you to change the case of selected chunks of text. You can use it to change portions of text to be all lower case, all upper case, invert case, or title case.  To enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Change Case</gui></guiseq>.</p>
+<p>This plugin helps you to change the case of selected portions of text. You can use it to change text to be all lower case, all upper case, to invert the case, or apply title case.  To enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Change Case</gui></guiseq>.</p>
 
-<p>Once the <em>Change Case</em> plugin is enabled, you can use it by highlighting a portion of text, and then selecting <guiseq><gui>Edit</gui><gui>Change Case</gui></guiseq>, and then choosing your desired text-formatting option. The updates to the text formatting will take place immediately.</p>
+<p>Once the <em>Change Case</em> plugin is enabled, you can use it by completing the following steps:</p>
+  <steps>
+    <item><p>Highlight the portion of text that you want to change.</p></item>
+    <item><p>Select <guiseq><gui>Edit</gui><gui>Change Case</gui></guiseq></p></item>
+    <item><p>Choose your desired text-formatting option.</p></item> 
+  </steps>
 
-<note><p>If you have not highlighted any text, the <em>Change Case</em> feature will be grayed-out. You need to select a portion of text prior to using the <em>Change Case</em> feature.</p></note>
+  <p>The updates to the text formatting will take place immediately.</p>
+
+<note style="tip"><p>The <gui>Invert Case</gui> option will convert all lower case letters to upper case, and will convert all upper case letters to lower case.</p>
+<p>The <gui>Title Case</gui> option will convert the first letter of each word to upper case. All other letters will be converted to lower case.</p></note>
+
+<note><p>If you have not highlighted any text, the <em>Change Case</em> feature will be grayed-out. You need to select a portion of text before you use the <em>Change Case</em> feature.</p></note>
 
 </page>
