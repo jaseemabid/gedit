@@ -4,20 +4,20 @@
 # Dan Damian <dand@ubuntu.ro>, 2005-2007.
 # Mișu Moldovan <dumol@gnome.ro>, 2003, 2004, 2008.
 # Adi Roiban https://launchpad.net/~adiroiban, 2008, 2009
-# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009, 2010
+# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=gedit&component=general\n"
+"Report-Msgid-Bugs-To: "
+"http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&component=general\n"
 "POT-Creation-Date: 2011-02-16 12:04+0000\n"
-"PO-Revision-Date: 2010-08-02 20:02+0300\n"
+"PO-Revision-Date: 2011-03-17 00:00+0200\n"
 "Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
 "Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ro\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
 "X-Generator: Virtaal 0.6.1\n"
@@ -898,9 +898,11 @@ msgstr ""
 msgid "Create a new document in an existing instance of gedit"
 msgstr "Creează un document nou într-o instanță gedit deja existentă"
 
+
+# LG: nu sunt foarte sigur pe traducerea asta
 #: ../gedit/gedit-command-line.c:293
 msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
-msgstr ""
+msgstr "Setează dimensiunea geometriei X a ferestrei (WIDTHxHEIGHT+X+Y)"
 
 #: ../gedit/gedit-command-line.c:294
 msgid "GEOMETRY"
@@ -1461,7 +1463,6 @@ msgid "There was a problem opening the file %s."
 msgstr "A apărut o problemă la deschiderea fișierului %s."
 
 #: ../gedit/gedit-io-error-info-bar.c:629
-#, fuzzy
 #| msgid ""
 #| "The file you opened has some invalid characters. If you continue editing "
 #| "this file you could make this document useless."
@@ -1469,8 +1470,8 @@ msgid ""
 "The file you opened has some invalid characters. If you continue editing "
 "this file you could corrupt this document."
 msgstr ""
-"Unele caractere din fișierul pe care l-ați deschis nu sunt valide. Dacă veți "
-"continua să editați acest fișier, documentul ar putea deveni inutilizabil."
+"Fișierul pe care l-ați deschis conține caractere nevalide. Dacă veți "
+"continua să editați acest fișier, riscați să corupeți documentul."
 
 #: ../gedit/gedit-io-error-info-bar.c:632
 msgid "You can also choose another character encoding and try again."
@@ -1678,12 +1679,13 @@ msgstr "Reî_ncarcă"
 #: ../gedit/gedit-io-error-info-bar.c:1278
 #, c-format
 msgid "Some invalid chars have been detected while saving %s"
-msgstr ""
+msgstr "S-au detectat caractere nevalide în timp ce se salva %s"
 
 #: ../gedit/gedit-io-error-info-bar.c:1294
 msgid ""
 "If you continue saving this file you can corrupt the document.  Save anyway?"
 msgstr ""
+"Dacă salvați acest fișier riscați să corupeți documentul. Salvați oricum?"
 
 #: ../gedit/gedit-panel.c:339 ../gedit/gedit-panel.c:511
 msgid "Empty"
@@ -2521,18 +2523,21 @@ msgstr "Unelte externe"
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
-msgstr ""
+msgstr "Un nume de font Pango. De ex. „Sans 12” sau „Monospace Bold 14”."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
 msgid ""
 "If true, the external tools will use the desktop-global standard font if "
 "it's monospace (and the most similar font it can come up with otherwise)."
 msgstr ""
+"Dacă este adevărat, instrumentele externe vor utiliza fontul standard al "
+"desktopului în cazul în care este monospațiat (sau fontul cel mai asemănător "
+"pe care îl poate găsi)."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
 msgid "Whether to use the system font"
-msgstr ""
+msgstr "Dacă să se utilizeze fontul sistemului"
 
 #: ../plugins/externaltools/tools/capture.py:92
 #, python-format
@@ -3132,6 +3137,9 @@ msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
 msgstr ""
+"Dacă este adevărat, terminalul va utiliza fontul standard al desktopului în "
+"cazul în care este monospațiat (sau fontul cel mai asemănător pe care îl "
+"poate găsi)."
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid "The command color text"
@@ -3650,7 +3658,7 @@ msgstr ""
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
 msgid "Prompt Type"
-msgstr ""
+msgstr "Tip prompt"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
 msgid "Selected Format"
@@ -3710,10 +3718,12 @@ msgstr "_Solicită un format"
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
 msgid "Logs access and leave event for documents used with gedit"
 msgstr ""
+"Păstrează un jurnal al deschiderilor și închiderilor documentelor utilizate "
+"cu gedit"
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
-msgstr ""
+msgstr "Furnizor de date Zeitgeist"
 
 #~ msgid ""
 #~ "Style for the toolbar buttons. Possible values are \"system\" to use the "
