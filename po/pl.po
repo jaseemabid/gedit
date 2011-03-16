@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-09 20:04+0100\n"
-"PO-Revision-Date: 2011-03-09 20:05+0100\n"
+"POT-Creation-Date: 2011-03-16 14:45+0100\n"
+"PO-Revision-Date: 2011-03-16 14:46+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -739,7 +739,7 @@ msgstr "W edytor_ze: "
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:7
 #: ../gedit/gedit-print-preferences.ui.h:2
 msgid "Enable text _wrapping"
-msgstr "_Wyświetlanie"
+msgstr "Za_wijanie tekstu"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:8
 msgid "File Saving"
@@ -757,7 +757,7 @@ msgstr "Czcionki i kolory"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:11
 msgid "Highlight current _line"
-msgstr "Wyróż_nianie"
+msgstr "Wyróż_nianie bieżącego wiersza"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
 msgid "Highlight matching _brackets"
@@ -806,11 +806,11 @@ msgstr "_Automatyczne co"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:588
 msgid "_Display line numbers"
-msgstr "Wyświetla_nie"
+msgstr "Wyświetla_nie numerów wierszy"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:24
 msgid "_Enable automatic indentation"
-msgstr "_Tworzenie"
+msgstr "Au_tomatyczne wcięcia"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:25
 msgid "_Tab width:"
@@ -821,7 +821,7 @@ msgid "_minutes"
 msgstr "mi_nut"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1590
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1592
 msgid "Replace"
 msgstr "Zmień"
 
@@ -1145,11 +1145,11 @@ msgid "Unsaved Document %d"
 msgstr "Niezapisany dokument %d"
 
 #: ../gedit/gedit-documents-panel.c:118 ../gedit/gedit-documents-panel.c:132
-#: ../gedit/gedit-window.c:2406 ../gedit/gedit-window.c:2413
+#: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
 msgid "Read-Only"
 msgstr "Tylko do odczytu"
 
-#: ../gedit/gedit-documents-panel.c:1089 ../gedit/gedit-window.c:3838
+#: ../gedit/gedit-documents-panel.c:1089 ../gedit/gedit-window.c:3840
 msgid "Documents"
 msgstr "Dokumenty"
 
@@ -1945,7 +1945,7 @@ msgstr "Tworzy nowy dokument"
 msgid "_Open..."
 msgstr "_Otwórz..."
 
-#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1518
+#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1520
 msgid "Open a file"
 msgstr "Otwiera plik"
 
@@ -2245,7 +2245,7 @@ msgstr "Poszukiwane wyrażenie"
 msgid "Line you want to move the cursor to"
 msgstr "Numer wiersza, do którego ma zostać przeniesiony kursor"
 
-#: ../gedit/gedit-window.c:1021
+#: ../gedit/gedit-window.c:1023
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Używa trybu wyróżniania elementów składni %s"
@@ -2253,7 +2253,7 @@ msgstr "Używa trybu wyróżniania elementów składni %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1088 ../gedit/gedit-window.c:2103
+#: ../gedit/gedit-window.c:1090 ../gedit/gedit-window.c:2105
 #: ../plugins/externaltools/tools/manager.py:120
 #: ../plugins/externaltools/tools/manager.py:416
 #: ../plugins/externaltools/tools/manager.py:527
@@ -2261,64 +2261,64 @@ msgstr "Używa trybu wyróżniania elementów składni %s"
 msgid "Plain Text"
 msgstr "Zwykły tekst"
 
-#: ../gedit/gedit-window.c:1089
+#: ../gedit/gedit-window.c:1091
 msgid "Disable syntax highlighting"
 msgstr "Wyłącza wyróżnianie elementów składni"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1411
+#: ../gedit/gedit-window.c:1413
 #, c-format
 msgid "Open '%s'"
 msgstr "Otwórz \"%s\""
 
-#: ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-window.c:1522
 msgid "Open a recently used file"
 msgstr "Otwiera ostatnio używany plik"
 
-#: ../gedit/gedit-window.c:1526
+#: ../gedit/gedit-window.c:1528
 msgid "Open"
 msgstr "Otwórz"
 
-#: ../gedit/gedit-window.c:1584
+#: ../gedit/gedit-window.c:1586
 msgid "Save"
 msgstr "Zapisz"
 
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1588
 msgid "Print"
 msgstr "Wydrukuj"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1590
 msgid "Find"
 msgstr "Znajdź"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1748
+#: ../gedit/gedit-window.c:1750
 #, c-format
 msgid "Activate '%s'"
 msgstr "Aktywuje \"%s\""
 
-#: ../gedit/gedit-window.c:2081
+#: ../gedit/gedit-window.c:2083
 msgid "Use Spaces"
 msgstr "Spacje zamiast Tab"
 
-#: ../gedit/gedit-window.c:2154
+#: ../gedit/gedit-window.c:2156
 msgid "Tab Width"
 msgstr "Szerokość tabulacji"
 
-#: ../gedit/gedit-window.c:2263
+#: ../gedit/gedit-window.c:2265
 msgid "Bracket match is out of range"
 msgstr "Parowanie nawiasów jest poza zakresem"
 
-#: ../gedit/gedit-window.c:2268
+#: ../gedit/gedit-window.c:2270
 msgid "Bracket match not found"
 msgstr "Nie odnaleziono pasującego nawiasu"
 
-#: ../gedit/gedit-window.c:2273
+#: ../gedit/gedit-window.c:2275
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Odnaleziono pasujący nawias w wierszu: %d"
 
-#: ../gedit/gedit-window.c:4044
+#: ../gedit/gedit-window.c:4046
 msgid "About gedit"
 msgstr "O programie gedit"
 
@@ -2814,11 +2814,11 @@ msgstr "Trwale usunąć zaznaczone pliki?"
 msgid "If you delete an item, it is permanently lost."
 msgstr "Usunięcie elementu spowoduje jego trwałą utratę."
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:1728
+#: ../plugins/filebrowser/gedit-file-browser-store.c:1721
 msgid "(Empty)"
 msgstr "(Pusty)"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3474
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3464
 msgid ""
 "The renamed file is currently filtered out.You need to adjust your filter "
 "settings to make the file visible"
@@ -2827,11 +2827,11 @@ msgstr ""
 "widoczny, należy zmienić ustawienia filtra"
 
 #. Translators: This is the default name of new files created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3718
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3708
 msgid "file"
 msgstr "plik"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3746
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3736
 msgid ""
 "The new file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
@@ -2840,11 +2840,11 @@ msgstr ""
 "należy zmienić ustawienia filtra"
 
 #. Translators: This is the default name of new directories created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3777
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3767
 msgid "directory"
 msgstr "katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3802
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3792
 msgid ""
 "The new directory is currently filtered out. You need to adjust your filter "
 "settings to make the directory visible"
