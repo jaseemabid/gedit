@@ -1,0 +1,37 @@
+<page xmlns="http://projectmallard.org/1.0/" 
+  type="topic" style="task" 
+  id="gedit-search">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" />
+    <link type="seealso" xref="gedit-replace" />
+    <revision pkgversion="program_version" version="document_version" date="2010-10-09" status="incomplete" />
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+
+    <revision pkgversion="0.3" version="0.2" date="2010-12-16" status="draft" />
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Search for text</title>
+    <p>The Find tool can help you find specific sequences of text within in your file.</p>
+    <steps>
+      <title>Finding text</title>
+      <item><p>Open the <gui style="menu">search window</gui> by clicking <guiseq><gui>Search</gui><gui>Find</gui></guiseq> or pressing <keyseq><key>Ctrl</key><key>F</key></keyseq>. This will move your cursor to the start of the <gui>search window</gui>.</p></item>
+      <item><p>Type the text you wish to search for in the <gui>search window</gui>.</p></item>
+      <item><p>As you type, <app>gedit</app> will begin highlighting the portions of text that match what you have entered.</p></item>
+      <item><p>Use the <gui>up</gui> or <gui>down</gui> facing arrows next to the <gui>search window</gui> (or <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>) to scroll up or down through the highlighted text.</p></item>
+    </steps>
+
+  <p>To close the <gui>search window</gui>, press <key>Esc</key>.</p>
+
+    <note>
+      <p>The text that you've searched for will remain highlighted by gedit, even after you have completed your search.  To remove the highlight, click <guiseq><gui>Search</gui><gui>Clear Highlight</gui></guiseq>, or press <keyseq><key>Shift</key><key>Ctrl</key><key>K</key></keyseq>.</p>
+    </note>
+
+</page>

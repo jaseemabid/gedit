@@ -18,38 +18,20 @@
     </credit>
   </info>
 
-  <title>Find and replace text</title>
-  <p><app>gedit</app> includes features that help you find and replace text in your files. Using these features, you can search for text, highlight all occurrences of that text in the current document, and then (optionally) replace that text with other text.</p>
+  <title>Replace text</title>
 
-  <section>
-    <title>Find text</title>
-    <p>The Find tool can help you find where specific sequences of characters appear in your file.</p>
+    <p>Editing text can be time consuming. To save time, <app>gedit</app> includes a <app>Replace</app> function that helps you to find and replace portions of text.</p>
+
     <steps>
-      <title>Finding text</title>
-      <item><p>Open the <gui style="menu">Find</gui> menu by clicking <guiseq><gui>Search</gui><gui>Find</gui></guiseq> or pressing <keyseq><key>Ctrl</key><key>F</key></keyseq>.</p></item>
-      <item><p>Type the text you wish to search for in the 'Search for' field. Note that <app>gedit</app> keeps a short history of searched-for items to the right of the 'Search for' field.</p></item>
-      <item><p>Click <gui>Find</gui> or press <keyseq><key>Alt</key><key>F</key></keyseq>.</p></item>
-    </steps>
-    <p>All occurrences of the text you searched for will be highlighted in the currently open file. <app>gedit</app> will scroll the file to display the currently selected text.</p>
-
-    <note>
-      <p>The text that you've searched for will remain highlighted by gedit, even after you've completed your search.  To remove the highlight, click <guiseq><gui>Search</gui><gui>Clear Highlight</gui></guiseq>, or just press <keyseq><key>Shift</key><key>Ctrl</key><key>K</key></keyseq>.</p>
-    </note>
-
-  </section>
-
-  <section>
-    <title>Replace text</title>
-    <p>Finding text is useful, but what if you also want to replace some of the text that you find with new text? That's what the Replace tool is for.</p>
-    <steps>
+      <title>Replace text in <app>gedit</app></title>
       <item><p>Open the Replace tool by clicking <guiseq><gui>Search</gui><gui>Replace</gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p></item>
-      <item><p>Type the <em>old</em> text you wish to replace into the 'Search for' field.</p></item>
-      <item><p>Fill in the 'Replace with' field with the <em>new</em> text you want to replace the <em>old</em> text.</p></item>
+      <item><p>Enter the text that you wish to replace into the 'Search for:' field.</p></item>
+      <item><p>Enter the new, replacement text into the 'Replace with:' field.</p></item>
       <item>
-        <p>Replace the text:</p>
+        <p>Once you have entered the original and replacement text, select your desired replacement options:</p>
         <list>
-          <item><p>To replace <em>only</em> the currently-selected section of text, click <gui>Replace</gui>.</p></item>
-          <item><p>To replace all occurrences of the searched-for text, click <gui>Replace All</gui>.</p></item>
+          <item><p>To replace <em>only</em> the next matching portion of text, click <gui>Replace</gui>.</p></item>
+          <item><p>To replace <em>all occurrences</em> of the searched-for text, click <gui>Replace All</gui>.</p></item>
         </list>
       </item>
     </steps>
@@ -57,30 +39,10 @@
     <note style="warning">
       <p>Use the <gui>Replace All</gui> function with care. <gui>Replace All</gui> works on the entirety of your text file, and does not allow you to highlight portions of text where the replace function will be performed.</p>
     </note>
-  </section>
 
   <section>
     <title>More options</title>
-    <p>The following section provides options that can help you search and replace more efficiently with <app>gedit</app></p>
-
-    <terms>
-      <item>
-        <title>Incremental Search</title>
-        <!-- Include headings with Key Combos? -->
-        <p>The Incremental Search feature searches the text of the current document instantly. Results are highlighted as you type them, rather than after you click a button.</p>
-        <p>To use Incremental Search, press <keyseq><key>Ctrl</key><key>K</key></keyseq>. A small input field will pop up. Type your search terms in this field. Results are highlighted and scrolled to in the currently open file. To navigate to the next occurrence of the item you searched for press the 'down arrow', or the 'up arrow' for the previous occurrence. To close the window, press <key>Enter</key> or <key>Escape</key>.</p>
-      </item>
-      <item>
-        <title>Find Next/Find Previous</title>
-        <p>The Find Next and Find Previous commands are used to step through search results after you've searched for text. They work after using the Find, Replace, and Incremental Search features and behave identically to using the up or down arrows in an Incremental Search.</p>
-        <p>The Find Next/Previous commands can be accessed by clicking the <gui>Search</gui> menu or pressing <keyseq><key>Ctrl</key><key>G</key></keyseq> for Find Next and <keyseq><key>Shift</key><key>Ctrl</key><key>G</key></keyseq> for Find Previous.</p>
-      </item>
-      <item>
-        <title>Clear Highlight</title>
-        <p>The Clear Highlight command is used to clear highlights left over after performing a text search. To use the command click <guiseq><gui>Search</gui><gui>Clear Highlight</gui></guiseq> or press <keyseq><key>Shift</key><key>Ctrl</key><key>K</key></keyseq>.</p>
-      </item>
-    </terms>
-
+    <p>The following section provides options that can help you replace text more efficiently with <app>gedit</app>.</p>
     <terms>
       <title>Find/Replace options</title>
       <item>
@@ -88,11 +50,11 @@
       </item>
       <item>
         <title>Match case</title>
-        <p>The 'Match case' option allows you to specify whether you want your search to be case-specific. If this option is selected, searches will be case-specific. If not, searches will not be case-specific.</p>
+        <p>The <em>Match case</em> option allows you to specify whether you want your search to be case-sensitive. If this option is selected, searches will be case-sensitive. If not, searches will not be case-sensitive.</p>
       </item>
       <item>
         <title>Match entire word only</title>
-        <p>Use this option to search for a specific word without including fragments of other words. For example, if you searched for the word 'and' with this option selected, only times when the individual word 'and' showed up in the file would appear. Other words such as 'b<em>and</em>' or comm<em>and</em> would not be included in the search results.</p>
+        <p>Use this option to search for a specific word without including fragments of other words. For example, if you searched for the word 'and' with this option selected, the word 'and' would be matched, but the words 's<em>and</em>' and 'comm<em>and</em>er' would not be matched.</p>
       </item>
       <item>
         <title>Search backwards</title>
@@ -100,7 +62,7 @@
       </item>
       <item>
         <title>Wrap around</title>
-        <p><!-- FIXME -->?</p>
+        <p>With the <app>wrap around</app> option enabled, <app>gedit</app> will re-start the search/replace action at the top of the file after it has reached the bottom of the file. This ensures that your search/replace action is made across your entire file.</p>
       </item>
     </terms>
   </section>
