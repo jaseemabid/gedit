@@ -64,7 +64,7 @@ struct _GeditNotebookPrivate
 
 	GtkCssProvider *css;
 
-	guint          close_buttons_sensitive : 1;
+	gboolean close_buttons_sensitive;
 };
 
 G_DEFINE_TYPE(GeditNotebook, gedit_notebook, GTK_TYPE_NOTEBOOK)
@@ -665,11 +665,11 @@ remove_right_padding (GeditNotebook *nb)
 	GError *error = NULL;
 	const gchar style[] =
 		".notebook {\n"
-		"	padding: %d 0 %d %d;\n"
+		  "padding: %d 0 %d %d;\n"
 		"}";
 
 	/* FIXME: find out a css like way to do this, right now padding-right/left
-         doesn't work */
+	  doesn't work */
 	context = gtk_widget_get_style_context (GTK_WIDGET (nb));
 	gtk_style_context_get_padding (context, gtk_style_context_get_state (context),
 	                               &padding);
