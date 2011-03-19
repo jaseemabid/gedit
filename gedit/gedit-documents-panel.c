@@ -37,6 +37,7 @@
 #include "gedit-utils.h"
 #include "gedit-multi-notebook.h"
 #include "gedit-notebook.h"
+#include "gedit-cell-renderer-button.h"
 
 #include <glib/gi18n.h>
 
@@ -1010,6 +1011,40 @@ treeview_row_inserted (GtkTreeModel        *tree_model,
 */
 
 static void
+close_button_clicked (GtkCellRenderer     *cell,
+                      const gchar         *path,
+                      GeditDocumentsPanel *panel)
+{
+        GtkTreeIter iter;
+        GeditTab *tab;
+        GeditNotebook *notebook;
+
+        if (!gtk_tree_model_get_iter_from_string (panel->priv->model,
+                                                  &iter, path))
+        {
+                return;
+        }
+
+        gtk_tree_model_get (panel->priv->model,
+		            &iter,
+		            NOTEBOOK_COLUMN, &notebook,
+		            TAB_COLUMN, &tab,
+		            -1);
+
+	if (tab == NULL)
+	{
+		gedit_notebook_remove_all_tabs (notebook);
+	}
+	else
+	{
+		gedit_notebook_remove_tab (notebook, tab);
+		g_object_unref (tab);
+	}
+
+	g_object_unref (notebook);
+}
+
+static void
 pixbuf_data_func (GtkTreeViewColumn   *column,
 		  GtkCellRenderer     *cell,
 		  GtkTreeModel        *model,
@@ -1100,6 +1135,14 @@ gedit_documents_panel_init (GeditDocumentsPanel *panel)
 	gtk_tree_view_column_add_attribute (column, cell, "markup", NAME_COLUMN);
 	gtk_tree_view_append_column (GTK_TREE_VIEW (panel->priv->treeview),
 				     column);
+
+	cell = gedit_cell_renderer_button_new ();
+	g_object_set (cell, "stock-id", GTK_STOCK_CLOSE, NULL);
+	gtk_tree_view_column_pack_end (column, cell, FALSE);
+	g_signal_connect (cell,
+	                  "clicked",
+	                  G_CALLBACK (close_button_clicked),
+	                  panel);
 
 	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (panel->priv->treeview));
 

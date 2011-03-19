@@ -102,7 +102,8 @@ BUILT_SOURCES = 			\
 
 NOINST_H_FILES =			\
 	gedit-animatable.h		\
-	gedit-animated-overlay.h	\
+	gedit-animated-overlay.h        \
+	gedit-cell-renderer-button.h	\
 	gedit-close-button.h		\
 	gedit-command-line.h		\
 	gedit-dbus.h			\
@@ -173,7 +174,8 @@ libgedit_private_la_SOURCES =		\
 libgedit_c_files =			\
 	gedit-animatable.c		\
 	gedit-animated-overlay.c	\
-	gedit-app.c			\
+	gedit-app.c               	\
+	gedit-cell-renderer-button.c	\
 	gedit-close-button.c		\
 	gedit-command-line.c		\
 	gedit-commands-documents.c	\
