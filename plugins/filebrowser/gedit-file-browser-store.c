@@ -985,6 +985,7 @@ gedit_file_browser_store_drag_data_get (GtkTreeDragSource *drag_source,
 	ret = gtk_selection_data_set_uris (selection_data, uris);
 
 	g_free (uris[0]);
+	g_object_unref (location);
 
 	return ret;
 }

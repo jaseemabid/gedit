@@ -2506,6 +2506,9 @@ file_open  (GeditFileBrowserWidget *obj,
 
 	if (!FILE_IS_DIR (flags) && !FILE_IS_DUMMY (flags))
 		g_signal_emit (obj, signals[LOCATION_ACTIVATED], 0, location);
+
+	if (location)
+		g_object_unref (location);
 }
 
 static gboolean
@@ -2541,6 +2544,7 @@ directory_open (GeditFileBrowserWidget *obj,
 		}
 
 		g_free (uri);
+		g_object_unref (location);
 	}
 
 	return result;
@@ -2588,11 +2592,6 @@ on_virtual_root_changed (GeditFileBrowserStore  *model,
 			 GeditFileBrowserWidget *obj)
 {
 	GtkTreeIter iter;
-	GFile *location;
-	GtkTreeIter root;
-	GtkAction *action;
-	Location *loc;
-	GdkPixbuf *pixbuf;
 
 	if (gtk_tree_view_get_model (GTK_TREE_VIEW (obj->priv->treeview)) !=
 	    GTK_TREE_MODEL (obj->priv->file_store))
@@ -2602,14 +2601,22 @@ on_virtual_root_changed (GeditFileBrowserStore  *model,
 
 	if (gedit_file_browser_store_get_iter_virtual_root (model, &iter))
 	{
+		GFile *location;
+		GtkTreeIter root;
+
 		gtk_tree_model_get (GTK_TREE_MODEL (model), &iter,
 				    GEDIT_FILE_BROWSER_STORE_COLUMN_LOCATION,
 				    &location, -1);
 
 		if (gedit_file_browser_store_get_iter_root (model, &root))
 		{
+			GtkAction *action;
+
 			if (!obj->priv->changing_location)
 			{
+				Location *loc;
+				GdkPixbuf *pixbuf;
+
 				/* Remove all items from obj->priv->current_location on */
 				if (obj->priv->current_location)
 					clear_next_locations (obj);
@@ -2648,7 +2655,6 @@ on_virtual_root_changed (GeditFileBrowserStore  *model,
 
 				if (pixbuf)
 					g_object_unref (pixbuf);
-
 			}
 
 			action = gtk_action_group_get_action (obj->priv->action_group,
@@ -2670,6 +2676,9 @@ on_virtual_root_changed (GeditFileBrowserStore  *model,
 		}
 
 		check_current_item (obj, TRUE);
+
+		if (location)
+			g_object_unref (location);
 	}
 	else
 	{

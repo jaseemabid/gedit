@@ -154,7 +154,6 @@ row_expanded (GtkTreeView *tree_view,
 	      GtkTreePath *path)
 {
 	GeditFileBrowserView *view = GEDIT_FILE_BROWSER_VIEW (tree_view);
-	GFile *location;
 
 	if (GTK_TREE_VIEW_CLASS (gedit_file_browser_view_parent_class)->row_expanded)
 		GTK_TREE_VIEW_CLASS (gedit_file_browser_view_parent_class)->row_expanded (tree_view, iter, path);
@@ -164,6 +163,8 @@ row_expanded (GtkTreeView *tree_view,
 
 	if (view->priv->restore_expand_state)
 	{
+		GFile *location;
+
 		gtk_tree_model_get (view->priv->model,
 				    iter,
 				    GEDIT_FILE_BROWSER_STORE_COLUMN_LOCATION,
@@ -171,6 +172,9 @@ row_expanded (GtkTreeView *tree_view,
 				    -1);
 
 		add_expand_state (view, location);
+
+		if (location)
+			g_object_unref (location);
 	}
 
 	_gedit_file_browser_store_iter_expanded (GEDIT_FILE_BROWSER_STORE (view->priv->model),
@@ -183,7 +187,6 @@ row_collapsed (GtkTreeView *tree_view,
 	       GtkTreePath *path)
 {
 	GeditFileBrowserView *view = GEDIT_FILE_BROWSER_VIEW (tree_view);
-	GFile *location;
 
 	if (GTK_TREE_VIEW_CLASS (gedit_file_browser_view_parent_class)->row_collapsed)
 		GTK_TREE_VIEW_CLASS (gedit_file_browser_view_parent_class)->row_collapsed (tree_view, iter, path);
@@ -193,6 +196,8 @@ row_collapsed (GtkTreeView *tree_view,
 
 	if (view->priv->restore_expand_state)
 	{
+		GFile *location;
+
 		gtk_tree_model_get (view->priv->model,
 				    iter,
 				    GEDIT_FILE_BROWSER_STORE_COLUMN_LOCATION,
@@ -200,6 +205,9 @@ row_collapsed (GtkTreeView *tree_view,
 				    -1);
 
 		remove_expand_state (view, location);
+
+		if (location)
+			g_object_unref (location);
 	}
 
 	_gedit_file_browser_store_iter_collapsed (GEDIT_FILE_BROWSER_STORE (view->priv->model),
@@ -711,7 +719,6 @@ fill_expand_state (GeditFileBrowserView *view,
 {
 	GtkTreePath *path;
 	GtkTreeIter child;
-	GFile *location;
 
 	if (!gtk_tree_model_iter_has_child (view->priv->model, iter))
 		return;
@@ -720,6 +727,8 @@ fill_expand_state (GeditFileBrowserView *view,
 
 	if (gtk_tree_view_row_expanded (GTK_TREE_VIEW (view), path))
 	{
+		GFile *location;
+
 		gtk_tree_model_get (view->priv->model,
 				    iter,
 				    GEDIT_FILE_BROWSER_STORE_COLUMN_LOCATION,
@@ -727,6 +736,9 @@ fill_expand_state (GeditFileBrowserView *view,
 				    -1);
 
 		add_expand_state (view, location);
+
+		if (location)
+			g_object_unref (location);
 	}
 
 	if (gtk_tree_model_iter_children (view->priv->model, &child, iter))
@@ -1249,7 +1261,6 @@ restore_expand_state (GeditFileBrowserView  *view,
 		      GtkTreeIter           *iter)
 {
 	GFile *location;
-	GtkTreePath *path;
 
 	gtk_tree_model_get (GTK_TREE_MODEL (model),
 			    iter,
@@ -1257,19 +1268,23 @@ restore_expand_state (GeditFileBrowserView  *view,
 			    &location,
 			    -1);
 
-	if (!location)
-		return;
-
-	path = gtk_tree_model_get_path (GTK_TREE_MODEL (model), iter);
-
-	if (g_hash_table_lookup (view->priv->expand_state, location))
+	if (location)
 	{
-		gtk_tree_view_expand_row (GTK_TREE_VIEW (view),
-					  path,
-					  FALSE);
-	}
+		GtkTreePath *path;
 
-	gtk_tree_path_free (path);
+		path = gtk_tree_model_get_path (GTK_TREE_MODEL (model), iter);
+
+		if (g_hash_table_lookup (view->priv->expand_state, location))
+		{
+			gtk_tree_view_expand_row (GTK_TREE_VIEW (view),
+						  path,
+						  FALSE);
+		}
+
+		gtk_tree_path_free (path);
+
+		g_object_unref (location);
+	}
 }
 
 static void
