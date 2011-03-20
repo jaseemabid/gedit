@@ -88,7 +88,7 @@ def run_external_tool(window, panel, node):
             capture.set_env(GEDIT_CURRENT_DOCUMENT_URI    = location.get_uri(),
                             GEDIT_CURRENT_DOCUMENT_NAME   = name,
                             GEDIT_CURRENT_DOCUMENT_SCHEME = scheme)
-            if Gedit.utils.location_has_file_scheme(location):
+            if location.has_uri_scheme('file'):
                 path = location.get_path()
                 cwd = os.path.dirname(path)
                 capture.set_cwd(cwd)
@@ -103,7 +103,7 @@ def run_external_tool(window, panel, node):
                          if location.get_uri() is not None]
         documents_path = [location.get_path()
                           for location in documents_location
-                          if Gedit.utils.location_has_file_scheme(location)]
+                          if location.has_uri_scheme('file')]
         capture.set_env(GEDIT_DOCUMENTS_URI  = ' '.join(documents_uri),
                         GEDIT_DOCUMENTS_PATH = ' '.join(documents_path))
 
