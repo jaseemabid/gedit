@@ -180,7 +180,7 @@ enum {
 
 static guint document_signals[LAST_SIGNAL] = { 0 };
 
-G_DEFINE_TYPE(GeditDocument, gedit_document, GTK_TYPE_SOURCE_BUFFER)
+G_DEFINE_TYPE(GeditDocument, gedit_document, GTK_SOURCE_TYPE_BUFFER)
 
 GQuark
 gedit_document_error_quark (void)

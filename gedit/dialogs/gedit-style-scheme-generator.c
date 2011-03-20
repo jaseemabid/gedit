@@ -138,7 +138,7 @@ gedit_style_scheme_generator_new (GtkSourceStyleScheme *scheme)
 {
 	GeditStyleSchemeGenerator *generator;
 
-	g_return_val_if_fail (GTK_IS_SOURCE_STYLE_SCHEME (scheme), NULL);
+	g_return_val_if_fail (GTK_SOURCE_IS_STYLE_SCHEME (scheme), NULL);
 	
 	generator = g_object_new (GEDIT_TYPE_STYLE_SCHEME_GENERATOR, NULL);
 	g_return_val_if_fail (generator != NULL, NULL);
@@ -287,7 +287,7 @@ ensure_style (GeditStyleSchemeGenerator *generator, const gchar *style_id)
 	if (style != NULL)
 		return style;
 		
-	return GTK_SOURCE_STYLE (g_object_new (GTK_TYPE_SOURCE_STYLE, NULL));
+	return GTK_SOURCE_STYLE (g_object_new (GTK_SOURCE_TYPE_STYLE, NULL));
 }
 
 gboolean

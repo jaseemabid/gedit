@@ -556,7 +556,7 @@ create_compositor (GeditPrintJob *job)
 					 GEDIT_SETTINGS_PRINT_WRAP_MODE);
 	
 	job->priv->compositor = GTK_SOURCE_PRINT_COMPOSITOR (
-					g_object_new (GTK_TYPE_SOURCE_PRINT_COMPOSITOR,
+					g_object_new (GTK_SOURCE_TYPE_PRINT_COMPOSITOR,
 						     "buffer", GTK_SOURCE_BUFFER (job->priv->doc),
 						     "tab-width", gtk_source_view_get_tab_width (GTK_SOURCE_VIEW (job->priv->view)),
 						     "highlight-syntax", gtk_source_buffer_get_highlight_syntax (GTK_SOURCE_BUFFER (job->priv->doc)) &&

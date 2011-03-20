@@ -263,7 +263,7 @@ on_scheme_changed (GSettings     *settings,
 	docs = gedit_app_get_documents (gedit_app_get_default ());
 	for (l = docs; l != NULL; l = g_list_next (l))
 	{
-		g_return_if_fail (GTK_IS_SOURCE_BUFFER (l->data));
+		g_return_if_fail (GTK_SOURCE_IS_BUFFER (l->data));
 
 		gtk_source_buffer_set_style_scheme (GTK_SOURCE_BUFFER (l->data),
 						    style);

@@ -74,7 +74,7 @@ gedit_language_manager_list_languages_sorted (GtkSourceLanguageManager *lm,
 		GtkSourceLanguage *lang;
 
 		lang = gtk_source_language_manager_get_language (lm, *ids);
-		g_return_val_if_fail (GTK_IS_SOURCE_LANGUAGE (lang), NULL);
+		g_return_val_if_fail (GTK_SOURCE_IS_LANGUAGE (lang), NULL);
 		++ids;
 
 		if (include_hidden || !gtk_source_language_get_hidden (lang))

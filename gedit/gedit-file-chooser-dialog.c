@@ -304,7 +304,7 @@ all_text_files_filter (const GtkFileFilterInfo *filter_info,
 			GtkSourceLanguage *lang;
 
 			lang = gtk_source_language_manager_get_language (lm, *languages);
-			g_return_val_if_fail (GTK_IS_SOURCE_LANGUAGE (lang), FALSE);
+			g_return_val_if_fail (GTK_SOURCE_IS_LANGUAGE (lang), FALSE);
 			++languages;
 
 			mime_types = gtk_source_language_get_mime_types (lang);

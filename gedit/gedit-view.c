@@ -75,7 +75,7 @@ struct _GeditViewPrivate
 	PeasExtensionSet *extensions;
 };
 
-G_DEFINE_TYPE(GeditView, gedit_view, GTK_TYPE_SOURCE_VIEW)
+G_DEFINE_TYPE(GeditView, gedit_view, GTK_SOURCE_TYPE_VIEW)
 
 /* Signals */
 enum
