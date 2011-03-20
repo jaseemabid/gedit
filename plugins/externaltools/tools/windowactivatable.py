@@ -109,7 +109,6 @@ class ToolMenu(object):
     def on_accelmap_changed(self, accelmap, path, key, mod, tool):
         tool.shortcut = Gtk.accelerator_name(key, mod)
         tool.save()
-        
         self._window.get_data("ExternalToolsPluginWindowData").update_manager(tool)
 
     def update(self):
@@ -154,7 +153,8 @@ class ToolMenu(object):
             if item is not None:
                 action.set_visible(states[item.applicability] and self.filter_language(language, item))
 
-class WindowActivatable(GObject.Object, Gedit.WindowActivatable, PeasGtk.Configurable):
+# FIXME: restore the launch of the manager on configure using PeasGtk.Configurable
+class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
     __gtype_name__ = "ExternalToolsWindowActivatable"
 
     window = GObject.property(type=Gedit.Window)
@@ -228,14 +228,6 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable, PeasGtk.Configu
         bottom = self.window.get_bottom_panel()
         bottom.remove_item(self._output_buffer.panel)
 
-    def update_manager(self, tool):
-        self.update_manager(tool)
-
-    def do_create_configure_widget(self):
-        #FIXME
-        #return self.open_dialog()
-        pass
-
     def open_dialog(self):
         if not self._manager:
             self._manager = Manager(self.plugin_info.get_data_dir())
@@ -251,10 +243,8 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable, PeasGtk.Configu
         return self._manager.dialog
 
     def update_manager(self, tool):
-        if not self._manager:
-            return
-
-        self._manager.tool_changed(tool, True)
+        if self._manager:
+            self._manager.tool_changed(tool, True)
 
     def on_manager_destroy(self, dialog):
         alloc = dialog.get_allocation()
