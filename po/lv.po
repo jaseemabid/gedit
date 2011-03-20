@@ -7,18 +7,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
-"cgi?product=gedit&component=general\n"
-"POT-Creation-Date: 2011-02-01 16:46+0000\n"
-"PO-Revision-Date: 2011-02-06 23:00+0200\n"
+"Report-Msgid-Bugs-To: "
+"http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&component=general\n"
+"POT-Creation-Date: 2011-03-05 12:23+0000\n"
+"PO-Revision-Date: 2011-03-10 21:59+0200\n"
 "Last-Translator: Rudolfs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
+"X-Generator: Lokalize 1.1\n"
 
 #: ../data/gedit.desktop.in.in.h:1
 msgid "Edit text files"
@@ -105,7 +105,6 @@ msgid "Highlight Current Line"
 msgstr "Iekrāsot aktīvo rindu"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:17
-#| msgid "Highlight Matching Bracket"
 msgid "Highlight Matching Brackets"
 msgstr "Izcelt savstarpēji saistītās iekavas"
 
@@ -167,8 +166,8 @@ msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
 "\" for unlimited number of actions."
 msgstr ""
-"Maksimums darbību, ko gedit var atsaukt vai atcelt atsaukšanu. Lietojiet \"-1"
-"\" neierobežotam darbību skaitam."
+"Maksimums darbību, ko gedit var atsaukt vai atcelt atsaukšanu. Lietojiet "
+"\"-1\" neierobežotam darbību skaitam."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
 msgid ""
@@ -215,7 +214,6 @@ msgid "Right Margin Position"
 msgstr "Labās malas pozīcija"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
-#| msgid "Side Pane is Visible"
 msgid "Side panel is Visible"
 msgstr "Sānu rūts ir redzama"
 
@@ -234,14 +232,6 @@ msgstr ""
 "izmantoti tikai atpazīti kodējumi."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
-#| msgid ""
-#| "Specifies how the cursor moves when the HOME and END keys are pressed. "
-#| "Use \"DISABLED\" to always move at the start/end of the line, \"AFTER\" "
-#| "to move to the start/end of the line the first time the keys are pressed "
-#| "and to the start/end of the text ignoring whitespaces the second time the "
-#| "keys are pressed, \"BEFORE\" to move to the start/end of the text before "
-#| "moving to the start/end of the line and \"ALWAYS\" to always move to the "
-#| "start/end of the text instead of the start/end of the line."
 msgid ""
 "Specifies how the cursor moves when the HOME and END keys are pressed. Use "
 "\"disabled\" to always move at the start/end of the line, \"after\" to move "
@@ -252,38 +242,26 @@ msgid ""
 "the text instead of the start/end of the line."
 msgstr ""
 "Nosaka, kā pārvietosies kursors nospiežot HOME un END pogas. Izmantojiet "
-"\"disabled\", lai vienmēr pārvietotos uz rindiņas sākumu/beigām; \"after\", "
-"lai pārvietotos uz rindiņas sākumu pirmo reizi, kad tiek nospiesta poga un "
-"uz teksta sākumu, ignorējot tukšos simbolus, kad poga tiek nospiesta otro "
+"\"disabled\", lai vienmēr pārvietotos uz rindiņas sākumu/beigām; \"after\", lai "
+"pārvietotos uz rindiņas sākumu pirmo reizi, kad tiek nospiesta poga un uz "
+"teksta sākumu, ignorējot tukšos simbolus, kad poga tiek nospiesta otro "
 "reizi; \"before\", lai vispirms pārietu uz teksta sākumu un tikai pēc tam uz "
 "rindiņas sākumu. Izmantojiet \"always\", lai vienmēr pārietu uz teksta "
 "sākumu/beigām, nevis rindiņas sākumu/beigām."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
-#| msgid ""
-#| "Specifies how to wrap long lines for printing. Use \"GTK_WRAP_NONE\" for "
-#| "no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
-#| "\"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. Note "
-#| "that the values are case-sensitive, so make sure they appear exactly as "
-#| "mentioned here."
 msgid ""
 "Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
 "\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
 "individual character boundaries. Note that the values are case-sensitive, so "
 "make sure they appear exactly as mentioned here."
 msgstr ""
-"Nosaka, kā aplauzt garas rindas drukājot. Lietojiet \"none\" "
-"neaplaušanai, \"word\" aplaušanai vārdu robežās, un \"char\" "
-"aplaušanai atsevišķu rakstzīmju robežās. Atceries, ka vērtības ir "
-"reģistrjutīgas, tāpēc pārliecinies, ka tās parādās tieši tāpat kā šeit."
+"Nosaka, kā aplauzt garas rindas drukājot. Lietojiet \"none\" neaplaušanai, "
+"\"word\" aplaušanai vārdu robežās, un \"char\" aplaušanai atsevišķu rakstzīmju "
+"robežās. Atceries, ka vērtības ir reģistrjutīgas, tāpēc pārliecinies, ka tās "
+"parādās tieši tāpat kā šeit."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
-#| msgid ""
-#| "Specifies how to wrap long lines in the editing area. Use \"GTK_WRAP_NONE"
-#| "\" for no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, "
-#| "and \"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. "
-#| "Note that the values are case-sensitive, so make sure they appear exactly "
-#| "as mentioned here."
 msgid ""
 "Specifies how to wrap long lines in the editing area. Use \"none\" for no "
 "wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
@@ -292,8 +270,8 @@ msgid ""
 msgstr ""
 "Nosaka, kā aplauzt garas rindas rediģēšanas laukā. Lietojiet \"none\" "
 "neaplaušanai, \"word\" aplaušanai vārdu robežās, un \"char\" aplaušanai "
-"atsevišķu rakstzīmju robežās. Atceries, ka vērtības ir reģistrjutīgas, "
-"tāpēc pārliecinies, ka tās parādās tieši tāpat kā šeit."
+"atsevišķu rakstzīmju robežās. Atceries, ka vērtības ir reģistrjutīgas, tāpēc "
+"pārliecinies, ka tās parādās tieši tāpat kā šeit."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
 msgid ""
@@ -335,12 +313,6 @@ msgid "Specifies the position of the right margin."
 msgstr "Norāda labās malas atrašanās vietu."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
-#| msgid ""
-#| "Specifies how to wrap long lines for printing. Use \"GTK_WRAP_NONE\" for "
-#| "no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
-#| "\"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. Note "
-#| "that the values are case-sensitive, so make sure they appear exactly as "
-#| "mentioned here."
 msgid ""
 "Specifies when to show the notebook tabs. Use \"never\" to never show the "
 "tabs, \"always\" to always show the tabs, and \"auto\" to show the tabs only "
@@ -348,12 +320,9 @@ msgid ""
 "make sure they appear exactly as mentioned here."
 msgstr ""
 "Nosaka, kad rādīt piezīmju bloka cilnes. Lietojiet \"never\" , lai nekad "
-"nerādītu cilnes,"
-"\"always\", lai vienmēr rādītu cilnes, un \"auto\", lai rādītu cilnes tikai "
-"tad, kad to ir "
-"vairāk kā viena. Atceries, ka vērtības ir reģistrjutīgas, tāpēc "
-"pārliecinies, ka tās "
-"parādās tieši tāpat kā šeit."
+"nerādītu cilnes,\"always\", lai vienmēr rādītu cilnes, un \"auto\", lai rādītu "
+"cilnes tikai tad, kad to ir vairāk kā viena. Atceries, ka vērtības ir "
+"reģistrjutīgas, tāpēc pārliecinies, ka tās parādās tieši tāpat kā šeit."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
 msgid "Status Bar is Visible"
@@ -424,7 +393,6 @@ msgid ""
 msgstr "Vai gedit gūtu jāiekrāso visi atrastie meklējamā teksta fragmenti."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
-#| msgid "Whether gedit should highlight matching bracket."
 msgid "Whether gedit should highlight matching brackets."
 msgstr "Vai gedit būtu jāizceļ savstarpēji atbilstošas iekavas."
 
@@ -442,8 +410,7 @@ msgstr "Vai gedit būtu jāievieto atstarpes tabulāciju vietā."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
 msgid "Whether gedit should print syntax highlighting when printing documents."
-msgstr ""
-"Vai drukājot dokumentus gedit būtu jārāda teksta sintakses iekrāsojumi."
+msgstr "Vai drukājot dokumentus gedit būtu jārāda teksta sintakses iekrāsojumi."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
 msgid ""
@@ -454,8 +421,6 @@ msgstr ""
 "kādu failu."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
-#| msgid ""
-#| "Whether the side pane at the left of editing windows should be visible."
 msgid ""
 "Whether the side panel at the left of editing windows should be visible."
 msgstr "Vai rūtij rediģēšanas loga kreisajā malā būtu jābūt redzamai."
@@ -725,7 +690,6 @@ msgid "Create a _backup copy of files before saving"
 msgstr "Pirms saglabāšanas izveidot faila _rezerves kopiju"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:3
-#| msgid "Display right _margin"
 msgid "Display right _margin at column:"
 msgstr "Rādīt labo _malu pie kolonnas:"
 
@@ -767,12 +731,10 @@ msgid "Highlight current _line"
 msgstr "Izcelt aktīvo _rindu"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
-#| msgid "Highlight matching _bracket"
 msgid "Highlight matching _brackets"
 msgstr "Izcelt atbilstošās _iekavas"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:13
-#| msgid "Syntax Highlighting"
 msgid "Highlighting"
 msgstr "Izcelšana"
 
@@ -813,7 +775,7 @@ msgstr "_Pievienot..."
 msgid "_Autosave files every"
 msgstr "Saglabāt failus _automātiski katras"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:599
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:588
 msgid "_Display line numbers"
 msgstr "_Rādīt rindu numurus"
 
@@ -985,8 +947,8 @@ msgid ""
 "The file \"%s\" was previously saved as plain text and will now be saved "
 "using compression."
 msgstr ""
-"Fails \"%s\" pirmīt tika saglabāts kā vienkārša teksta fails un tagad "
-"tiks saglabāts, izmantojot saspiešanu."
+"Fails \"%s\" pirmīt tika saglabāts kā vienkārša teksta fails un tagad tiks "
+"saglabāts, izmantojot saspiešanu."
 
 #: ../gedit/gedit-commands-file.c:617
 msgid "_Save Using Compression"
@@ -1002,11 +964,10 @@ msgid ""
 "The file \"%s\" was previously saved using compression and will now be saved "
 "as plain text."
 msgstr ""
-"Fails \"%s\" pirmīt tika saglabāts, izmantojot saspiešanu, un tagad "
-"tiks saglabāts ka vienkāršs teksts."
+"Fails \"%s\" pirmīt tika saglabāts, izmantojot saspiešanu, un tagad tiks "
+"saglabāts ka vienkāršs teksts."
 
 #: ../gedit/gedit-commands-file.c:624
-#| msgid "Plain Text"
 msgid "_Save As Plain Text"
 msgstr "_Saglabāt kā vienkāršu tekstu"
 
@@ -1016,7 +977,6 @@ msgid "Saving file '%s'…"
 msgstr "Saglabā failu '%s'…"
 
 #: ../gedit/gedit-commands-file.c:847
-#| msgid "Save As…"
 msgid "Save As"
 msgstr "Saglabāt kā"
 
@@ -1047,8 +1007,7 @@ msgstr[2] ""
 #: ../gedit/gedit-commands-file.c:1238
 msgid ""
 "Changes made to the document in the last minute will be permanently lost."
-msgstr ""
-"Pēdējās minūtes laikā veiktās izmaiņas tiks neatgriezeniski pazaudētas."
+msgstr "Pēdējās minūtes laikā veiktās izmaiņas tiks neatgriezeniski pazaudētas."
 
 #: ../gedit/gedit-commands-file.c:1244
 #, c-format
@@ -1084,8 +1043,7 @@ msgstr[2] ""
 
 #: ../gedit/gedit-commands-file.c:1269
 msgid "Changes made to the document in the last hour will be permanently lost."
-msgstr ""
-"Pēdējās stundas laikā veiktās izmaiņas tiks neatgriezeniski pazaudētas."
+msgstr "Pēdējās stundas laikā veiktās izmaiņas tiks neatgriezeniski pazaudētas."
 
 #: ../gedit/gedit-commands-file.c:1275
 #, c-format
@@ -1159,7 +1117,7 @@ msgstr "Nesaglabāts dokuments nr.%d"
 msgid "Read-Only"
 msgstr "Tikai lasāms"
 
-#: ../gedit/gedit-documents-panel.c:1090 ../gedit/gedit-window.c:3836
+#: ../gedit/gedit-documents-panel.c:1089 ../gedit/gedit-window.c:3835
 msgid "Documents"
 msgstr "Dokumenti"
 
@@ -1450,9 +1408,6 @@ msgid "There was a problem opening the file %s."
 msgstr "Gadījās problēma, atverot failu %s."
 
 #: ../gedit/gedit-io-error-info-bar.c:629
-#| msgid ""
-#| "The file you opened has some invalid characters. If you continue editing "
-#| "this file you could make this document useless."
 msgid ""
 "The file you opened has some invalid characters. If you continue editing "
 "this file you could corrupt this document."
@@ -1513,13 +1468,13 @@ msgstr ""
 
 #: ../gedit/gedit-io-error-info-bar.c:873
 #: ../gedit/gedit-io-error-info-bar.c:971
-#: ../gedit/gedit-io-error-info-bar.c:1259
+#: ../gedit/gedit-io-error-info-bar.c:1260
 msgid "S_ave Anyway"
 msgstr "S_aglabāt tāpat"
 
 #: ../gedit/gedit-io-error-info-bar.c:877
 #: ../gedit/gedit-io-error-info-bar.c:975
-#: ../gedit/gedit-io-error-info-bar.c:1263
+#: ../gedit/gedit-io-error-info-bar.c:1264
 msgid "D_on't Save"
 msgstr "_Nesaglabāt"
 
@@ -1555,9 +1510,9 @@ msgid ""
 "while saving, you could lose the old copy of the file. Save anyway?"
 msgstr ""
 "gedit nevar saglabāt veco faila versiju pirms jaunās saglabāšanas. Jūs varat "
-"ignorēt šo brīdinājumu un saglabāt failu, bet ņemiet vērā, ka, ja saglabājot "
-"jauno versiju radīsies kāda kļūme, jūs varat zaudēt arī veco versiju. Vai "
-"tomēr vēlaties saglabāt?"
+"ignorēt šo brīdinājumu un saglabāt failu, bet ņemiet vērā, ka, ja "
+"saglabājot jauno versiju radīsies kāda kļūme, jūs varat zaudēt arī veco "
+"versiju. Vai tomēr vēlaties saglabāt?"
 
 #. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
 #: ../gedit/gedit-io-error-info-bar.c:1080
@@ -1586,7 +1541,7 @@ msgstr ""
 "%s nav derīga atrašanās vieta. Lūdzu, pārbaudiet vai jūs esat pareizi "
 "ievadījuši atrašanās vietu un mēģiniet vēlreiz."
 
-#: ../gedit/gedit-io-error-info-bar.c:1103
+#: ../gedit/gedit-io-error-info-bar.c:1104
 msgid ""
 "You do not have the permissions necessary to save the file. Please check "
 "that you typed the location correctly and try again."
@@ -1594,7 +1549,7 @@ msgstr ""
 "Jums nav vajadzīgo atļauju, lai saglabātu failu. Lūdzu, pārbaudiet vai jūs "
 "esat pareizi ievadījuši atrašanās vietu un mēģiniet vēlreiz."
 
-#: ../gedit/gedit-io-error-info-bar.c:1109
+#: ../gedit/gedit-io-error-info-bar.c:1110
 msgid ""
 "There is not enough disk space to save the file. Please free some disk space "
 "and try again."
@@ -1602,7 +1557,7 @@ msgstr ""
 "Nepietiek diska vietas, lai saglabātu failu. Lūdzu, atbrīvojiet vietu uz "
 "diska un mēģiniet vēlreiz."
 
-#: ../gedit/gedit-io-error-info-bar.c:1114
+#: ../gedit/gedit-io-error-info-bar.c:1115
 msgid ""
 "You are trying to save the file on a read-only disk. Please check that you "
 "typed the location correctly and try again."
@@ -1610,11 +1565,11 @@ msgstr ""
 "Jūs mēģināt saglabāt failu tikai lasīšanai paredzētā vietā. Lūdzu, "
 "pārbaudiet vai esat pareizi ievadījuši atrašanās vietu un mēģiniet vēlreiz."
 
-#: ../gedit/gedit-io-error-info-bar.c:1120
+#: ../gedit/gedit-io-error-info-bar.c:1121
 msgid "A file with the same name already exists. Please use a different name."
 msgstr "Fails ar šādu vārdu jau eksistē. Lūdzu, izvēlieties citu faila vārdu."
 
-#: ../gedit/gedit-io-error-info-bar.c:1125
+#: ../gedit/gedit-io-error-info-bar.c:1126
 msgid ""
 "The disk where you are trying to save the file has a limitation on length of "
 "the file names. Please use a shorter name."
@@ -1622,7 +1577,7 @@ msgstr ""
 "Diskam, uz kura jūs mēģināt saglabāt failu, ir ierobežojums uz failu "
 "nosaukumu garumu. Lūdzu, izvēlieties īsāku faila nosaukumu."
 
-#: ../gedit/gedit-io-error-info-bar.c:1132
+#: ../gedit/gedit-io-error-info-bar.c:1133
 msgid ""
 "The disk where you are trying to save the file has a limitation on file "
 "sizes. Please try saving a smaller file or saving it to a disk that does not "
@@ -1632,7 +1587,7 @@ msgstr ""
 "izmēriem. Lūdzu, mēģiniet saglabāt mazāku failu vai arī saglabāt to uz "
 "diska, kuram nav šāda ierobežojuma."
 
-#: ../gedit/gedit-io-error-info-bar.c:1148
+#: ../gedit/gedit-io-error-info-bar.c:1149
 #, c-format
 msgid "Could not save the file %s."
 msgstr "Nevar saglabāt failu %s."
@@ -1641,29 +1596,29 @@ msgstr "Nevar saglabāt failu %s."
 #. * could be interpreted as the changes he made in the document. beside "reading" is
 #. * not accurate (since last load/save)
 #.
-#: ../gedit/gedit-io-error-info-bar.c:1193
+#: ../gedit/gedit-io-error-info-bar.c:1194
 #, c-format
 msgid "The file %s changed on disk."
 msgstr "Fails %s ir mainījies uz diska."
 
-#: ../gedit/gedit-io-error-info-bar.c:1198
+#: ../gedit/gedit-io-error-info-bar.c:1199
 msgid "Do you want to drop your changes and reload the file?"
 msgstr "Vai vēlaties atmest izmaiņas un no jauna atvērt failu?"
 
-#: ../gedit/gedit-io-error-info-bar.c:1200
+#: ../gedit/gedit-io-error-info-bar.c:1201
 msgid "Do you want to reload the file?"
 msgstr "Vai vēlaties vēlreiz ielādēt šo failu?"
 
-#: ../gedit/gedit-io-error-info-bar.c:1205
+#: ../gedit/gedit-io-error-info-bar.c:1206
 msgid "_Reload"
 msgstr "_Ielādēt"
 
-#: ../gedit/gedit-io-error-info-bar.c:1277
+#: ../gedit/gedit-io-error-info-bar.c:1278
 #, c-format
 msgid "Some invalid chars have been detected while saving %s"
 msgstr "Saglabājot %s, tika atrastas dažas nederīgas rakstzīmes."
 
-#: ../gedit/gedit-io-error-info-bar.c:1293
+#: ../gedit/gedit-io-error-info-bar.c:1294
 msgid ""
 "If you continue saving this file you can corrupt the document.  Save anyway?"
 msgstr ""
@@ -1876,38 +1831,38 @@ msgid "Saving %s"
 msgstr "Saglabā %s"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1831
+#: ../gedit/gedit-tab.c:1832
 msgid "RO"
 msgstr "TL"
 
-#: ../gedit/gedit-tab.c:1878
+#: ../gedit/gedit-tab.c:1879
 #, c-format
 msgid "Error opening file %s"
 msgstr "Kļūda atverot failu %s"
 
-#: ../gedit/gedit-tab.c:1883
+#: ../gedit/gedit-tab.c:1884
 #, c-format
 msgid "Error reverting file %s"
 msgstr "Kļūda atkārtoti atverot failu %s"
 
-#: ../gedit/gedit-tab.c:1888
+#: ../gedit/gedit-tab.c:1889
 #, c-format
 msgid "Error saving file %s"
 msgstr "Kļūda saglabājot failu %s"
 
-#: ../gedit/gedit-tab.c:1909
+#: ../gedit/gedit-tab.c:1910
 msgid "Unicode (UTF-8)"
 msgstr "Unikods (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1916
+#: ../gedit/gedit-tab.c:1917
 msgid "Name:"
 msgstr "Nosaukums:"
 
-#: ../gedit/gedit-tab.c:1917
+#: ../gedit/gedit-tab.c:1918
 msgid "MIME Type:"
 msgstr "MIME tips:"
 
-#: ../gedit/gedit-tab.c:1918
+#: ../gedit/gedit-tab.c:1919
 msgid "Encoding:"
 msgstr "Kodējums:"
 
@@ -2122,17 +2077,14 @@ msgid "_New Tab Group"
 msgstr "Jau_na ciļņu grupa"
 
 #: ../gedit/gedit-ui.h:135
-#| msgid "Create a new document"
 msgid "Create a new tab group"
 msgstr "Izveidot jaunu ciļņu grupu"
 
 #: ../gedit/gedit-ui.h:136
-#| msgid "Previous location"
 msgid "P_revious Tab Group"
 msgstr "Iep_riekšējā ciļņu grupa"
 
 #: ../gedit/gedit-ui.h:137
-#| msgid "Show the previous page"
 msgid "Switch to the previous tab group"
 msgstr "Pārslēgties uz iepriekšējo ciļņu grupu"
 
@@ -2141,7 +2093,6 @@ msgid "Nex_t Tab Group"
 msgstr "Nā_kamā ciļņu grupa"
 
 #: ../gedit/gedit-ui.h:139
-#| msgid "Show the next page"
 msgid "Switch to the next tab group"
 msgstr "Pārslēgties uz nākošo ciļņu grupu"
 
@@ -2154,7 +2105,6 @@ msgid "Activate previous document"
 msgstr "Aktivēt iepriekšējo dokumentu"
 
 #: ../gedit/gedit-ui.h:142
-#| msgid "_Next Document"
 msgid "N_ext Document"
 msgstr "Nākamais dokum_ents"
 
@@ -2199,22 +2149,18 @@ msgid "Edit text in fullscreen"
 msgstr "Rediģēt tekstu pa visu ekrānu"
 
 #: ../gedit/gedit-ui.h:178
-#| msgid "Side _Pane"
 msgid "Side _Panel"
 msgstr "Sānu _rūts"
 
 #: ../gedit/gedit-ui.h:179
-#| msgid "Show or hide the side pane in the current window"
 msgid "Show or hide the side panel in the current window"
 msgstr "Rādīt vai slēpt sānu rūti pašreizējā logā"
 
 #: ../gedit/gedit-ui.h:181
-#| msgid "_Bottom Pane"
 msgid "_Bottom Panel"
 msgstr "_Apakšējā rūts"
 
 #: ../gedit/gedit-ui.h:182
-#| msgid "Show or hide the bottom pane in the current window"
 msgid "Show or hide the bottom panel in the current window"
 msgstr "Rādīt vai paslēpt pašreizējā loga apakšējo rūti"
 
@@ -2239,25 +2185,25 @@ msgid "/ on %s"
 msgstr "/ uz %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:610
+#: ../gedit/gedit-view-frame.c:596
 msgid "_Wrap Around"
 msgstr "Apliekt"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:620
+#: ../gedit/gedit-view-frame.c:606
 msgid "Match _Entire Word Only"
 msgstr "Atlasīt tikai v_eselus vārdus"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:630
+#: ../gedit/gedit-view-frame.c:616
 msgid "_Match Case"
 msgstr "Precīzs _meklējums"
 
-#: ../gedit/gedit-view-frame.c:889
+#: ../gedit/gedit-view-frame.c:875
 msgid "String you want to search for"
 msgstr "Simbolu virkne kuru vēlaties meklēt"
 
-#: ../gedit/gedit-view-frame.c:898
+#: ../gedit/gedit-view-frame.c:884
 msgid "Line you want to move the cursor to"
 msgstr "Rindiņa uz kuru vēlaties pārcelt kursoru"
 
@@ -2322,12 +2268,10 @@ msgid "Tab Width"
 msgstr "Tabulācijas platums"
 
 #: ../gedit/gedit-window.c:2260
-#| msgid "Bracket Matching"
 msgid "Bracket match is out of range"
 msgstr "Iekavas pāris ir ārpus apgabala"
 
 #: ../gedit/gedit-window.c:2265
-#| msgid "Bracket Matching"
 msgid "Bracket match not found"
 msgstr "Iekavu pāris nav atrasts"
 
@@ -2336,7 +2280,7 @@ msgstr "Iekavu pāris nav atrasts"
 msgid "Bracket match found on line: %d"
 msgstr "Iekāvu pāris atrasts rindā: %d"
 
-#: ../gedit/gedit-window.c:4042
+#: ../gedit/gedit-window.c:4041
 msgid "About gedit"
 msgstr "Par gedit"
 
@@ -2425,7 +2369,6 @@ msgstr "Versija, kuru ignorēt"
 
 #. This is releated to the next gedit version to be released
 #: ../plugins/checkupdate/org.gnome.gedit.plugins.checkupdate.gschema.xml.in.in.h:3
-#| msgid "Version to ignore until the next version is released"
 msgid "Version to ignore until a newer version is released."
 msgstr "Versija, kuru ignorēt līdz jaunākas versijas izlaišanai."
 
@@ -2732,12 +2675,10 @@ msgid "Run command"
 msgstr "Palaist komandu"
 
 #: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:1
-#| msgid "Easy file access from the side pane"
 msgid "Easy file access from the side panel"
 msgstr "Viegla piekļuve failiem no sānu rūts"
 
 #: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:2
-#| msgid "File Browser Pane"
 msgid "File Browser Panel"
 msgstr "Failu pārlūka rūts"
 
@@ -2832,9 +2773,6 @@ msgid "(Empty)"
 msgstr "(Tukšs)"
 
 #: ../plugins/filebrowser/gedit-file-browser-store.c:3474
-#| msgid ""
-#| "The renamed file is currently filtered out. You need to adjust your "
-#| "filter settings to make the file visible"
 msgid ""
 "The renamed file is currently filtered out.You need to adjust your filter "
 "settings to make the file visible"
@@ -3098,19 +3036,14 @@ msgstr ""
 "filter_mode."
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:14
-#| msgid ""
-#| "This value determines what files get filtered from the file browser. "
-#| "Valid values are: none (filter nothing), hidden (filter hidden files), "
-#| "binary (filter binary files) and hidden_and_binary (filter both hidden "
-#| "and binary files)."
 msgid ""
 "This value determines what files get filtered from the file browser. Valid "
 "values are: none (filter nothing), hide-hidden (filter hidden files) and "
 "hide-binary (filter binary files)."
 msgstr ""
 "Šī vērtība nosaka kādi faili tiks atlasīti failu pārlūkā. Pieļaujamās "
-"vērtības: none (nefiltrē neko), hide-hidden (filtrē slēptos failus), "
-"hide-binary (filtrē bināros failus)."
+"vērtības: none (nefiltrē neko), hide-hidden (filtrē slēptos failus), hide-"
+"binary (filtrē bināros failus)."
 
 #: ../plugins/modelines/modelines.plugin.desktop.in.h:1
 msgid "Emacs, Kate and Vim-style modelines support for gedit."
@@ -3121,12 +3054,10 @@ msgid "Modelines"
 msgstr "Modelines"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:2
-#| msgid "C_ommand color:"
 msgid "Command Color Text"
 msgstr "Komandas krāsas teksts"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:3
-#| msgid "_Error color:"
 msgid "Error Color Text"
 msgstr "Kļūdas krāsas teksts"
 
@@ -3139,12 +3070,10 @@ msgstr ""
 "monospace (vai arī vistuvāko pēc līdzības, kādu tas var atrast)."
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
-#| msgid "C_ommand color:"
 msgid "The command color text"
 msgstr "Komandas krāsas teksts"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
-#| msgid "_Error color:"
 msgid "The error color text"
 msgstr "Kļūdas krāsas teksts"
 
@@ -3537,7 +3466,6 @@ msgid "Set the language of the current document"
 msgstr "Iestatīt pašreizējā dokumenta valodu"
 
 #: ../plugins/spell/gedit-spell-plugin.c:124
-#| msgid "_Highlight Mode"
 msgid "_Highlight Misspelled Words"
 msgstr "_Iekrāsot nepareizos vārdus"
 
@@ -3644,7 +3572,6 @@ msgid "Inserts current date and time at the cursor position."
 msgstr "Ievietot pašreizējo datumu un laiku kursora pozīcijā."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:1
-#| msgid "_Use custom format"
 msgid "Custom Format"
 msgstr "Pielāgots formāts"
 
@@ -3656,17 +3583,14 @@ msgstr ""
 "Vai lietotājam vaicāt formātu, vai izmantot izvēlēto vai pielāgoto formātu."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
-#| msgid "Prompt message"
 msgid "Prompt Type"
 msgstr "Uzvednes veids"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
-#| msgid "Selected"
 msgid "Selected Format"
 msgstr "Izvēlēties formātu"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
-#| msgid "When inserting date/time..."
 msgid "The custom format used when inserting the date/time."
 msgstr "Pielāgotais formāts, ko izmantot, ievietojot datumu/laiku."
 
@@ -3717,6 +3641,15 @@ msgstr "Kad ievieto datumu/laiku..."
 msgid "_Prompt for a format"
 msgstr "_Prasīt formātu"
 
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
+msgid "Logs access and leave event for documents used with gedit"
+msgstr ""
+"Reģistrē pieejas un pamešanas notikumus dokumentiem, kas izmantoti ar gedit"
+
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
+msgid "Zeitgeist dataprovider"
+msgstr "Zeitgeist datu piegādātājs"
+
 #~ msgid "Bottom Panel is Visible"
 #~ msgstr "Apakšējais panelis ir redzams"
 
@@ -3749,1381 +3682,3 @@ msgstr "_Prasīt formātu"
 
 #~ msgid "Toolbar Buttons Style"
 #~ msgstr "Rīkjoslas pogu stils"
-
-#~| msgid "Whether gedit should highlight the current line."
-#~ msgid ""
-#~ "Whether gedit should highlight the bracket matching the selected one."
-#~ msgstr "Vai gedit būtu jāizceļ izvēlētais iekavu pāris."
-
-#~ msgid ""
-#~ "Whether the bottom panel at the bottom of editing windows should be "
-#~ "visible."
-#~ msgstr ""
-#~ "Vai apakšējajam panelim rediģēšanas loga apakšā būtu jābūt redzamam."
-
-#~ msgid "[ISO-8859-15]"
-#~ msgstr "[ISO-8859-15]"
-
-#~ msgid "[UTF-8,CURRENT,ISO-8859-15,UTF-16]"
-#~ msgstr "[UTF-8,CURRENT,ISO-8859-15,UTF-16]"
-
-#~| msgid "<b>Automatic Indentation</b>"
-#~ msgid "Automatic Indentation"
-#~ msgstr "Automātiskā atkāpe"
-
-#~| msgid "Current line"
-#~ msgid "Current Line"
-#~ msgstr "Pašreizējā rindiņa"
-
-#~| msgid "<b>Right Margin</b>"
-#~ msgid "Right Margin"
-#~ msgstr "Labā mala"
-
-#~ msgid "_Right margin at column:"
-#~ msgstr "_Labās malas atrašanās kolonna:"
-
-#~ msgid "[FILE...]"
-#~ msgstr "[FAILS...]"
-
-#~ msgid "Plugin"
-#~ msgstr "Spraudnis"
-
-#~ msgid "Enabled"
-#~ msgstr "Aktivizēts"
-
-#~ msgid "_About"
-#~ msgstr "P_ar"
-
-#~ msgid "C_onfigure"
-#~ msgstr "K_onfigurēt"
-
-#~ msgid "A_ctivate"
-#~ msgstr "_Aktivizēt"
-
-#~ msgid "Ac_tivate All"
-#~ msgstr "Ak_tivizēt visus"
-
-#~ msgid "_Deactivate All"
-#~ msgstr "_Deaktivizēt visus"
-
-#~ msgid "Active _Plugins:"
-#~ msgstr "Aktīvie s_praudņi"
-
-#~ msgid "_About Plugin"
-#~ msgstr "P_ar spraudni"
-
-#~ msgid "C_onfigure Plugin"
-#~ msgstr "K_onfigurēt spraudni"
-
-#~ msgid "Cannot initialize preferences manager."
-#~ msgstr "Nevaru inicializēt iestatījumu pārvaldnieku."
-
-#~| msgid "Expected `%s' got `%s' for key %s"
-#~ msgid "Expected `%s', got `%s' for key %s"
-#~ msgstr "Gaidīju '%s', dabūju '%s' atslēgai %s"
-
-#~| msgid "Display list of possible values for the encoding option"
-#~ msgid "It is not possible to detect the encoding automatically"
-#~ msgstr "Neizdevās noteikt kodējumu automātiski"
-
-#~ msgid "Page Set_up..."
-#~ msgstr "Lapas iestatīj_umi..."
-
-#~| msgid "Setup the page settings"
-#~ msgid "Set up the page settings"
-#~ msgstr "Iestatīt lapas iestatījumus"
-
-#~ msgid "_Incremental Search..."
-#~ msgstr "_Ātrā meklēšana..."
-
-#~ msgid "Incrementally search for text"
-#~ msgstr "Meklēt tekstu inkrementāli"
-
-#~ msgid "Quick open"
-#~ msgstr "Ātri atvērt"
-
-#~| msgid "Close document"
-#~ msgid "Quickly open documents"
-#~ msgstr "Ātri atvērt dokumentus"
-
-#~ msgid "Snippets Manager"
-#~ msgstr "Atgriezumu pārvaldnieks"
-
-#~ msgid "_Autocheck Spelling"
-#~ msgstr "_Automātiski pārbaudīt pareizrakstību"
-
-#~ msgid "Tags"
-#~ msgstr "Birkas"
-
-#~ msgid "Select the group of tags you want to use"
-#~ msgstr "Izvēlieties birku grupu, ko vēlaties lietot"
-
-#~ msgid "_Preview"
-#~ msgstr "_Priekšskatījums"
-
-#~ msgid "Available Tag Lists"
-#~ msgstr "Pieejamo birku saraksts"
-
-#~ msgid "Abbreviated form"
-#~ msgstr "Saīsinātā forma"
-
-#~ msgid "Abbreviation"
-#~ msgstr "Saīsinājums"
-
-#~ msgid "Above"
-#~ msgstr "Virs"
-
-#~ msgid "Accessibility key character"
-#~ msgstr "Pieejamības taustiņš"
-
-#~ msgid "Acronym"
-#~ msgstr "Akronīms"
-
-#~ msgid "Align"
-#~ msgstr "Līdzināt"
-
-#~ msgid "Alignment character"
-#~ msgstr "Līdzinājuma rakstzīme"
-
-#~ msgid "Alternative"
-#~ msgstr "Alternatīvā"
-
-#~ msgid "Anchor"
-#~ msgstr "Enkurs"
-
-#~ msgid "Anchor URI"
-#~ msgstr "Enkura URI"
-
-#~ msgid "Applet class file code"
-#~ msgstr "Sīklietotnes klases faila kods"
-
-#~ msgid "Applet class file code (deprecated)"
-#~ msgstr "Paneļprogrammas klases faila kods"
-
-#~ msgid "Array"
-#~ msgstr "Masīvs"
-
-#~ msgid "Associated information"
-#~ msgstr "Piesaistītā informācija"
-
-#~ msgid "Author info"
-#~ msgstr "Informācija par autoru"
-
-#~ msgid "Axis related headers"
-#~ msgstr "Ar asi saistītās galvas"
-
-#~ msgid "Background color"
-#~ msgstr "Fona krāsa"
-
-#~ msgid "Background color (deprecated)"
-#~ msgstr "Fona krāsa"
-
-#~ msgid "Background texture tile"
-#~ msgstr "Fona tekstūra"
-
-#~ msgid "Background texture tile (deprecated)"
-#~ msgstr "Fona tekstūra"
-
-#~ msgid "Base URI"
-#~ msgstr "Bāzes URI"
-
-#~ msgid "Base font"
-#~ msgstr "Pamatfonts"
-
-#~ msgid "Base font (deprecated)"
-#~ msgstr "Pamatfonts"
-
-#~ msgid "Bold"
-#~ msgstr "Treknraksts"
-
-#~ msgid "Border"
-#~ msgstr "Mala"
-
-#~ msgid "Border (deprecated)"
-#~ msgstr "Mala"
-
-#~ msgid "Border color"
-#~ msgstr "Malas krāsa"
-
-#~ msgid "Cell rowspan"
-#~ msgstr "Apvienotas rindas šūnas"
-
-#~ msgid "Center"
-#~ msgstr "Centrēt"
-
-#~ msgid "Center (deprecated)"
-#~ msgstr "Centrs"
-
-#~ msgid "Character encoding of linked resource"
-#~ msgstr "Saistītā resursa rakstzīmju kodējums"
-
-#~ msgid "Checked (state)"
-#~ msgstr "Atzīmēts (stāvoklis)"
-
-#~ msgid "Checked state"
-#~ msgstr "Atzīmēts stāvoklis"
-
-#~ msgid "Citation"
-#~ msgstr "Citāts"
-
-#~ msgid "Cite reason for change"
-#~ msgstr "Citēt izmaiņu iemeslu"
-
-#~ msgid "Class implementation ID"
-#~ msgstr "Klases implementācijas ID"
-
-#~ msgid "Class list"
-#~ msgstr "Klašu saraksts"
-
-#~ msgid "Clear text flow control"
-#~ msgstr "Attīrīt teksta plūsmas kontroli"
-
-#~ msgid "Code content type"
-#~ msgstr "Code satura tips"
-
-#~ msgid "Color of selected links"
-#~ msgstr "Izvēlēto saišu krāsa"
-
-#~ msgid "Color of selected links (deprecated)"
-#~ msgstr "Izvēlēto saišu krāsa"
-
-#~ msgid "Column span"
-#~ msgstr "Kolonnu apvienojums"
-
-#~ msgid "Columns"
-#~ msgstr "Kolonnas"
-
-#~ msgid "Comment"
-#~ msgstr "Piezīme"
-
-#~ msgid "Computer code fragment"
-#~ msgstr "Datora koda fragments"
-
-#~ msgid "Content scheme"
-#~ msgstr "Satura stils"
-
-#~ msgid "Content type"
-#~ msgstr "Satura tips"
-
-#~ msgid "Content type (deprecated)"
-#~ msgstr "Satura tips"
-
-#~ msgid "Coordinates"
-#~ msgstr "Koordinātas"
-
-#~ msgid "DIV Style container"
-#~ msgstr "DIV stila konteineris"
-
-#~ msgid "DIV container"
-#~ msgstr "DIV konteineris"
-
-#~ msgid "Date and time of change"
-#~ msgstr "Izmaiņu datums un laiks"
-
-#~ msgid "Declare flag"
-#~ msgstr "Deklarēt karodziņu"
-
-#~ msgid "Defer attribute"
-#~ msgstr "Defer atribūts"
-
-#~ msgid "Definition description"
-#~ msgstr "Definīcijas apraksts"
-
-#~ msgid "Definition list"
-#~ msgstr "Definīciju saraksts"
-
-#~ msgid "Definition term"
-#~ msgstr "Definīcijas terms"
-
-#~ msgid "Deleted text"
-#~ msgstr "Dzēstais teksts"
-
-#~ msgid "Direction"
-#~ msgstr "Virziens"
-
-#~ msgid "Directionality"
-#~ msgstr "Virziens"
-
-#~ msgid "Directionality (deprecated)"
-#~ msgstr "Virziens"
-
-#~ msgid "Directory list"
-#~ msgstr "Direktoriju saraksts"
-
-#~ msgid "Disabled"
-#~ msgstr "Atslēgts"
-
-#~ msgid "Document base"
-#~ msgstr "Dokumenta bāze"
-
-#~ msgid "Document body"
-#~ msgstr "Dokumenta rumpis"
-
-#~ msgid "Document head"
-#~ msgstr "Dokumenta galva"
-
-#~ msgid "Document title"
-#~ msgstr "Dokumenta virsraksts"
-
-#~ msgid "Document type"
-#~ msgstr "Dokumenta tips"
-
-#~ msgid "Element ID"
-#~ msgstr "Elementa ID"
-
-#~ msgid "Embedded object"
-#~ msgstr "Iegultais objekts"
-
-#~ msgid "Emphasis"
-#~ msgstr "Izcēlums"
-
-#~ msgid "Encode type"
-#~ msgstr "Kodējuma tips"
-
-#~ msgid "Figure"
-#~ msgstr "Attēls"
-
-#~ msgid "Font face"
-#~ msgstr "Fonts"
-
-#~ msgid "Font face (deprecated)"
-#~ msgstr "Fonta tips"
-
-#~ msgid "For label"
-#~ msgstr "Etiķetei"
-
-#~ msgid "Forced line break"
-#~ msgstr "Piespiedu līnijas pārtraukums"
-
-#~ msgid "Form"
-#~ msgstr "Forma"
-
-#~ msgid "Form action handler"
-#~ msgstr "Formas darbības apdarinātājs"
-
-#~ msgid "Form control group"
-#~ msgstr "Formas kontroles grupa"
-
-#~ msgid "Form field label text"
-#~ msgstr "Formas lauka etiķetes teksts"
-
-#~ msgid "Form input"
-#~ msgstr "Formas ievads"
-
-#~ msgid "Form input type"
-#~ msgstr "Formas ievada tips"
-
-#~ msgid "Form method"
-#~ msgstr "Formas metode"
-
-#~ msgid "Forward link"
-#~ msgstr "Saite uz priekšu"
-
-#~ msgid "Frame"
-#~ msgstr "Ietvars"
-
-#~| msgid "Frameborder"
-#~ msgid "Frame border"
-#~ msgstr "Ietvara robeža"
-
-#~ msgid "Frame render parts"
-#~ msgstr "Ietvara renderēšanas daļas"
-
-#~ msgid "Frame source"
-#~ msgstr "Ietvara pirmkods"
-
-#~| msgid "Framespacing"
-#~ msgid "Frame spacing"
-#~ msgstr "Ietvaru atstatumi"
-
-#~ msgid "Frame target"
-#~ msgstr "Ietvara mērķis"
-
-#~ msgid "Frameborder"
-#~ msgstr "Ietvara robeža"
-
-#~ msgid "Frameset"
-#~ msgstr "Ietvaru kopa"
-
-#~ msgid "Frameset columns"
-#~ msgstr "Ietvaru kopas kolonnas"
-
-#~ msgid "Frameset rows"
-#~ msgstr "Ietvaru kopas rindas"
-
-#~ msgid "Framespacing"
-#~ msgstr "Ietvaru atstatumi"
-
-#~ msgid "Generic embedded object"
-#~ msgstr "Vispārējais iekļautais objekts"
-
-#~ msgid "Generic metainformation"
-#~ msgstr "Vispārīga meta informācija"
-
-#~ msgid "Generic span"
-#~ msgstr "Vispārējais intervāls"
-
-#~ msgid "HREF URI"
-#~ msgstr "HREF URI"
-
-#~ msgid "HTML - Special Characters"
-#~ msgstr "HTML - Speciālās rakstzīmes"
-
-#~ msgid "HTML - Tags"
-#~ msgstr "HTML - Birkas"
-
-#~ msgid "HTML root element"
-#~ msgstr "HTML saknes elements"
-
-#~ msgid "HTML version"
-#~ msgstr "HTML versija"
-
-#~ msgid "HTTP header name"
-#~ msgstr "HTTP galvas vārds"
-
-#~| msgid "Header cell ID's"
-#~ msgid "Header cell IDs"
-#~ msgstr "Galvas šūnas ID"
-
-#~ msgid "Heading"
-#~ msgstr "Virsraksts"
-
-#~ msgid "Heading 1"
-#~ msgstr "Virsraksts 1"
-
-#~ msgid "Heading 2"
-#~ msgstr "Virsraksts 2"
-
-#~ msgid "Heading 3"
-#~ msgstr "Virsraksts 3"
-
-#~ msgid "Heading 4"
-#~ msgstr "Virsraksts 4"
-
-#~ msgid "Heading 5"
-#~ msgstr "Virsraksts 5"
-
-#~ msgid "Heading 6"
-#~ msgstr "Virsraksts 6"
-
-#~ msgid "Height"
-#~ msgstr "Augstums"
-
-#~ msgid "Horizontal rule"
-#~ msgstr "Horizontālā līnija"
-
-#~ msgid "Horizontal space"
-#~ msgstr "Horizontālā telpa"
-
-#~ msgid "Horizontal space (deprecated)"
-#~ msgstr "Horizontālā telpa"
-
-#~| msgid "I18N BiDi over-ride"
-#~ msgid "I18N BiDi override"
-#~ msgstr "I18N BiDi aizstājums"
-
-#~ msgid "Image"
-#~ msgstr "Attēls"
-
-#~ msgid "Image map"
-#~ msgstr "Attēla karte"
-
-#~ msgid "Image map area"
-#~ msgstr "Attēla kartes apgabals"
-
-#~ msgid "Image map name"
-#~ msgstr "Attēla kartes vārds"
-
-#~ msgid "Image source"
-#~ msgstr "Attēla avots"
-
-#~ msgid "Inline frame"
-#~ msgstr "Iekļautais kadrs"
-
-#~ msgid "Inline layer"
-#~ msgstr "Iekļautais slānis"
-
-#~ msgid "Inserted text"
-#~ msgstr "Ievietotais teksts"
-
-#~ msgid "Instance definition"
-#~ msgstr "Instances definīcija"
-
-#~ msgid "Italic text"
-#~ msgstr "Teksts kursīvā"
-
-#~ msgid "Java applet"
-#~ msgstr "Java sīklietotne"
-
-#~ msgid "Java applet (deprecated)"
-#~ msgstr "Java sīklietotne"
-
-#~ msgid "Label"
-#~ msgstr "Etiķete"
-
-#~ msgid "Language code"
-#~ msgstr "Valodas kods"
-
-#~ msgid "Large text style"
-#~ msgstr "Liela teksta stils"
-
-#~ msgid "Layer"
-#~ msgstr "Slānis"
-
-#~ msgid "Link color"
-#~ msgstr "Saites krāsa"
-
-#~ msgid "Link color (deprecated)"
-#~ msgstr "Saites krāsa"
-
-#~ msgid "List item"
-#~ msgstr "Saraksta elements"
-
-#~ msgid "List of MIME types for file upload"
-#~ msgstr "Failu augšupielādes MIME tipu saraksts"
-
-#~ msgid "List of supported character sets"
-#~ msgstr "Atbalstīto rakstzīmju kopu saraksts"
-
-#~ msgid "Listing"
-#~ msgstr "Uzskaitījums"
-
-#~ msgid "Local change to font"
-#~ msgstr "Vietējā fonta maiņa"
-
-#~ msgid "Long description link"
-#~ msgstr "Gara apraksta saite"
-
-#~ msgid "Long quotation"
-#~ msgstr "Garš citāts"
-
-#~ msgid "Mail link"
-#~ msgstr "Pasta saite"
-
-#~ msgid "Margin pixel height"
-#~ msgstr "Apmales augstums pikseļos"
-
-#~ msgid "Margin pixel width"
-#~ msgstr "Apmales platums pikseļos"
-
-#~ msgid "Marquee"
-#~ msgstr "Slīdjosla"
-
-#~ msgid "Maximum length of text field"
-#~ msgstr "Teksta lauka maksimālais garums"
-
-#~ msgid "Media-independent link"
-#~ msgstr "No datiem neatkarīga saite"
-
-#~ msgid "Menu list"
-#~ msgstr "Izvēlne"
-
-#~ msgid "Menu list (deprecated)"
-#~ msgstr "Izvēlnes"
-
-#~ msgid "Multi-line text field"
-#~ msgstr "Vairāklīniju teksta lauks"
-
-#~ msgid "Multicolumn"
-#~ msgstr "Vairākkolonnu"
-
-#~ msgid "Multiple"
-#~ msgstr "Daudzkārtējs"
-
-#~ msgid "Name"
-#~ msgstr "Nosaukums"
-
-#~ msgid "Named property value"
-#~ msgstr "Vārdā nosaukta vērtība"
-
-#~ msgid "Next ID"
-#~ msgstr "Nākamais ID"
-
-#~ msgid "No URI"
-#~ msgstr "Nav URI"
-
-#~ msgid "No embedded objects"
-#~ msgstr "Nav iegultu objektu"
-
-#~ msgid "No frames"
-#~ msgstr "Nav ietvaru"
-
-#~ msgid "No layers"
-#~ msgstr "Nav slāņu"
-
-#~ msgid "No line break"
-#~ msgstr "Nav līniju pārtraukumu"
-
-#~ msgid "No resize"
-#~ msgstr "Nevar mainīt izmēru"
-
-#~ msgid "No script"
-#~ msgstr "Nav skriptu"
-
-#~ msgid "No shade"
-#~ msgstr "Nav ēnojums"
-
-#~ msgid "No shade (deprecated)"
-#~ msgstr "Nav ēnojums"
-
-#~ msgid "No word wrap"
-#~ msgstr "Nav vārdu aplieces"
-
-#~ msgid "No word wrap (deprecated)"
-#~ msgstr "Nav vārdu aplieces"
-
-#~ msgid "Non-breaking space"
-#~ msgstr "Nedalāmā atstarpe"
-
-#~ msgid "Note"
-#~ msgstr "Piezīme"
-
-#~ msgid "Object applet file"
-#~ msgstr "Objekta sīklietotnes fails"
-
-#~ msgid "Object applet file (deprecated)"
-#~ msgstr "Objekta sīklietotnes fails"
-
-#~ msgid "Object data reference"
-#~ msgstr "Atsauce uz objekta datiem"
-
-#~ msgid "Offset for alignment character"
-#~ msgstr "Līdzinājuma rakstzīmes nobīde"
-
-#~ msgid "OnBlur event"
-#~ msgstr "OnBlur notikums"
-
-#~ msgid "OnChange event"
-#~ msgstr "OnChange notikums"
-
-#~ msgid "OnClick event"
-#~ msgstr "OnClick notikums"
-
-#~ msgid "OnDblClick event"
-#~ msgstr "OnDblClick notikums"
-
-#~ msgid "OnFocus event"
-#~ msgstr "OnFocus notikums"
-
-#~ msgid "OnKeyDown event"
-#~ msgstr "OnKeyDown notikums"
-
-#~ msgid "OnKeyPress event"
-#~ msgstr "OnKeyPress notikums"
-
-#~ msgid "OnKeyUp event"
-#~ msgstr "OnKeyUp notikums"
-
-#~ msgid "OnLoad event"
-#~ msgstr "OnLoad notikums"
-
-#~ msgid "OnMouseDown event"
-#~ msgstr "OnMouseDown notikums"
-
-#~ msgid "OnMouseMove event"
-#~ msgstr "OnMouseMove notikums"
-
-#~ msgid "OnMouseOut event"
-#~ msgstr "OnMouseOut notikums"
-
-#~ msgid "OnMouseOver event"
-#~ msgstr "OnMouseOver notikums"
-
-#~ msgid "OnMouseUp event"
-#~ msgstr "OnMouseUp notikums"
-
-#~ msgid "OnReset event"
-#~ msgstr "OnReset notikums"
-
-#~ msgid "OnSelect event"
-#~ msgstr "OnSelect notikums"
-
-#~ msgid "OnSubmit event"
-#~ msgstr "OnSubmit notikums"
-
-#~ msgid "OnUnload event"
-#~ msgstr "OnUnload notikums"
-
-#~ msgid "Option group"
-#~ msgstr "Opciju grupa"
-
-#~ msgid "Option selector"
-#~ msgstr "Opcijas izvēle"
-
-#~ msgid "Ordered list"
-#~ msgstr "Sakārtots saraksts"
-
-#~ msgid "Output media"
-#~ msgstr "Izvades datu nesējs"
-
-#~ msgid "Paragraph"
-#~ msgstr "Rindkopa"
-
-#~ msgid "Paragraph class"
-#~ msgstr "Rindkopas klase"
-
-#~ msgid "Paragraph style"
-#~ msgstr "Rindkopas stils"
-
-#~ msgid "Preformatted listing"
-#~ msgstr "Iepriekšformatēts saraksts"
-
-#~ msgid "Preformatted text"
-#~ msgstr "Iepriekšformatēts teksts"
-
-#~ msgid "Profile metainfo dictionary"
-#~ msgstr "Profila metadatu vārdnīca"
-
-#~ msgid "Push button"
-#~ msgstr "Nospiest pogu"
-
-#~ msgid "Quote"
-#~ msgstr "Citāts"
-
-#~ msgid "Range"
-#~ msgstr "Apgabals"
-
-#~ msgid "ReadOnly text and password"
-#~ msgstr "Tikai-lasāms teksts un parole"
-
-#~ msgid "Reduced spacing"
-#~ msgstr "Samazinātas atstarpes"
-
-#~ msgid "Reduced spacing (deprecated)"
-#~ msgstr "Samazinātas atstarpes"
-
-#~ msgid "Reverse link"
-#~ msgstr "Apgrieztā saite"
-
-#~ msgid "Root"
-#~ msgstr "Sakne"
-
-#~ msgid "Rows"
-#~ msgstr "Rindas"
-
-#~ msgid "Rulings between rows and columns"
-#~ msgstr "Rindu un kolonu likumsakarības"
-
-#~ msgid "Sample program output, scripts"
-#~ msgstr "Paraugprogrammas izvads, skripts"
-
-#~ msgid "Scope covered by header cells"
-#~ msgstr "Galvas šūnu aptvertais apgabals"
-
-#~ msgid "Script language name"
-#~ msgstr "Skripta valoda"
-
-#~ msgid "Script statements"
-#~ msgstr "Skripta deklarācijas"
-
-#~ msgid "Scrollbar"
-#~ msgstr "Ritjosla"
-
-#~ msgid "Selectable option"
-#~ msgstr "Izvēlama iespēja"
-
-#~ msgid "Server-side image map"
-#~ msgstr "Servera puses attēla karte"
-
-#~ msgid "Shape"
-#~ msgstr "Forma"
-
-#~ msgid "Short inline quotation"
-#~ msgstr "Īss iekļauts citāts"
-
-#~ msgid "Single line prompt"
-#~ msgstr "Vienas līnijas uzvedne"
-
-#~ msgid "Size"
-#~ msgstr "Izmērs"
-
-#~ msgid "Size (deprecated)"
-#~ msgstr "Izmērs"
-
-#~ msgid "Small text style"
-#~ msgstr "Mazā teksta stils"
-
-#~ msgid "Soft line break"
-#~ msgstr "Neuzstājīgs līnijas pārtraukums"
-
-#~ msgid "Sound"
-#~ msgstr "Skaņa"
-
-#~ msgid "Source"
-#~ msgstr "Pirmkods"
-
-#~| msgid "Space separated archive list"
-#~ msgid "Space-separated archive list"
-#~ msgstr "Ar atstarpēm atdalīts arhīvu saraksts"
-
-#~ msgid "Spacer"
-#~ msgstr "Atdalītājs"
-
-#~ msgid "Spacing between cells"
-#~ msgstr "Atstarpes starp šūnām"
-
-#~ msgid "Spacing within cells"
-#~ msgstr "Atstarpes šūnās"
-
-#~ msgid "Span"
-#~ msgstr "Intervāls"
-
-#~ msgid "Square root"
-#~ msgstr "Kvadrātsakne"
-
-#~| msgid "Standby load msg"
-#~ msgid "Standby load message"
-#~ msgstr "Gaidstāves ielādes ziņa"
-
-#~ msgid "Starting sequence number"
-#~ msgstr "Sākuma virknes numurs"
-
-#~ msgid "Starting sequence number (deprecated)"
-#~ msgstr "Sākuma virknes numurs"
-
-#~ msgid "Strike-through text"
-#~ msgstr "Pārsvītrots teksts"
-
-#~ msgid "Strike-through text (deprecated)"
-#~ msgstr "Pārsvītrots teksts"
-
-#~ msgid "Strike-through text style"
-#~ msgstr "Pārsvītrota teksta stils"
-
-#~ msgid "Strike-through text style (deprecated)"
-#~ msgstr "Pārsvītrota teksta stils"
-
-#~ msgid "Strong emphasis"
-#~ msgstr "Spēcīgs uzsvars"
-
-#~ msgid "Style info"
-#~ msgstr "Stila info"
-
-#~ msgid "Subscript"
-#~ msgstr "Apakšraksts"
-
-#~ msgid "Superscript"
-#~ msgstr "Augšraksts"
-
-#~ msgid "Tab order position"
-#~ msgstr "Cilņu secības pozīcija"
-
-#~ msgid "Table"
-#~ msgstr "Tabula"
-
-#~ msgid "Table body"
-#~ msgstr "Tabulas rumpis"
-
-#~ msgid "Table caption"
-#~ msgstr "Tabulas virsraksts"
-
-#~ msgid "Table column group properties"
-#~ msgstr "Tabulas kolonu grupas īpašības"
-
-#~ msgid "Table column properties"
-#~ msgstr "Tabulas kolonas īpašības"
-
-#~ msgid "Table data cell"
-#~ msgstr "Tabulas datu šūna"
-
-#~ msgid "Table footer"
-#~ msgstr "Tabulas pēda"
-
-#~ msgid "Table header"
-#~ msgstr "Tabulas galva"
-
-#~ msgid "Table header cell"
-#~ msgstr "Tabulas galvas šūna"
-
-#~ msgid "Table row"
-#~ msgstr "Tabulas rinda"
-
-#~ msgid "Table summary"
-#~ msgstr "Tabulas kopsavilkums"
-
-#~ msgid "Target - Blank"
-#~ msgstr "Mērķis - Tukšs"
-
-#~ msgid "Target - Parent"
-#~ msgstr "Mērķis - Vecāks"
-
-#~ msgid "Target - Self"
-#~ msgstr "Mērķis - Pats"
-
-#~ msgid "Target - Top"
-#~ msgstr "Mērķis - Augšējais"
-
-#~ msgid "Teletype or monospace text style"
-#~ msgstr "Rakstāmmašīnas tipa teksta stils"
-
-#~ msgid "Text"
-#~ msgstr "Teksts"
-
-#~ msgid "Text color"
-#~ msgstr "Teksta krāsa"
-
-#~ msgid "Text color (deprecated)"
-#~ msgstr "Teksta krāsa"
-
-#~ msgid "Text entered by user"
-#~ msgstr "Lietotāja ievadītais teksts"
-
-#~ msgid "Title"
-#~ msgstr "Virsraksts"
-
-#~| msgid "Topmargin in pixels"
-#~ msgid "Top margin in pixels"
-#~ msgstr "Augšējā apmale pikseļos"
-
-#~ msgid "URL"
-#~ msgstr "URL"
-
-#~ msgid "Underlined text style"
-#~ msgstr "Pasvītrota teksta stils"
-
-#~ msgid "Unordered list"
-#~ msgstr "Nesakārtots saraksts"
-
-#~ msgid "Use image map"
-#~ msgstr "Lietot attēla karti"
-
-#~ msgid "Value"
-#~ msgstr "Vērtība"
-
-#~ msgid "Value interpretation"
-#~ msgstr "Vērtības interpretācija"
-
-#~ msgid "Variable or program argument"
-#~ msgstr "Mainīgais vai programmas arguments"
-
-#~ msgid "Vertical cell alignment"
-#~ msgstr "Vertikāla šūnu līdzināšana"
-
-#~ msgid "Vertical space"
-#~ msgstr "Vertikālā atstarpe"
-
-#~ msgid "Vertical space (deprecated)"
-#~ msgstr "Vertikālā atstarpe"
-
-#~ msgid "Visited link color"
-#~ msgstr "Apmeklēto saišu krāsa"
-
-#~ msgid "Visited link color (deprecated)"
-#~ msgstr "Apmeklēto saišu krāsa"
-
-#~ msgid "Width"
-#~ msgstr "Platums"
-
-#~ msgid "XHTML 1.0 - Tags"
-#~ msgstr "XHTML 1.0 - Birkas"
-
-#~ msgid "Bibliography (cite)"
-#~ msgstr "Bibliogrāfija (citāts)"
-
-#~ msgid "Bibliography (item)"
-#~ msgstr "Bibliogrāfija (elements)"
-
-#~ msgid "Bibliography (shortcite)"
-#~ msgstr "Bibliogrāfija (īss citāts)"
-
-#~ msgid "Bibliography (thebibliography)"
-#~ msgstr "Bibliogrāfija (bibliogrāfija)"
-
-#~ msgid "Brackets ()"
-#~ msgstr "Iekavas ()"
-
-#~ msgid "Brackets <>"
-#~ msgstr "Iekavas <>"
-
-#~ msgid "Brackets []"
-#~ msgstr "Iekavas []"
-
-#~ msgid "Brackets {}"
-#~ msgstr "Iekavas {}"
-
-#~ msgid "File input"
-#~ msgstr "Ievietojamais fails"
-
-#~ msgid "Footnote"
-#~ msgstr "Vēre"
-
-#~| msgid "Function cosin"
-#~ msgid "Function cosine"
-#~ msgstr "Kosinusa funkcija"
-
-#~ msgid "Function e^"
-#~ msgstr "Funkcija e^"
-
-#~ msgid "Function exp"
-#~ msgstr "Eksponente"
-
-#~ msgid "Function log"
-#~ msgstr "Logaritms"
-
-#~ msgid "Function log10"
-#~ msgstr "Decimālais logaritms"
-
-#~ msgid "Function sine"
-#~ msgstr "Sinusa funkcija"
-
-#~ msgid "Greek alpha"
-#~ msgstr "Grieķu alfa"
-
-#~ msgid "Greek beta"
-#~ msgstr "Grieķu beta"
-
-#~ msgid "Greek epsilon"
-#~ msgstr "Grieķu epsilons"
-
-#~ msgid "Greek gamma"
-#~ msgstr "Grieķu gamma"
-
-#~ msgid "Greek lambda"
-#~ msgstr "Grieķu lambda"
-
-#~ msgid "Greek rho"
-#~ msgstr "Grieķu ro"
-
-#~ msgid "Greek tau"
-#~ msgstr "Grieķu tau"
-
-#~ msgid "Header 0 (chapter)"
-#~ msgstr "Virsraksts 0 (nodaļa)"
-
-#~ msgid "Header 0 (chapter*)"
-#~ msgstr "Virsraksts 0 (nodaļa*)"
-
-#~ msgid "Header 1 (section)"
-#~ msgstr "Virsraksts 1 (sadaļa)"
-
-#~ msgid "Header 1 (section*)"
-#~ msgstr "Virsraksts 1 (sadaļa*)"
-
-#~ msgid "Header 2 (subsection)"
-#~ msgstr "Virsraksts 2 (apakšsadaļa)"
-
-#~ msgid "Header 2 (subsection*)"
-#~ msgstr "Virsraksts 2 (apakšsadaļa*)"
-
-#~ msgid "Header 3 (subsubsection)"
-#~ msgstr "Virsraksts 3 (apakšapakšsadaļa)"
-
-#~ msgid "Header 3 (subsubsection*)"
-#~ msgstr "Virsraksts 3 (apakšapakšsadaļa*)"
-
-#~ msgid "Header 4 (paragraph)"
-#~ msgstr "Virsraksts 4 (paragrāfs)"
-
-#~ msgid "Header appendix"
-#~ msgstr "Virsraksta pielikums"
-
-#~ msgid "Item"
-#~ msgstr "Elements"
-
-#~ msgid "Item with label"
-#~ msgstr "Elements ar etiķeti"
-
-#~ msgid "Latex - Tags"
-#~ msgstr "Latex - Birkas"
-
-#~ msgid "List description"
-#~ msgstr "Saraksta apraksts"
-
-#~ msgid "List enumerate"
-#~ msgstr "Saraksta numerācija"
-
-#~ msgid "List itemize"
-#~ msgstr "Saraksta elements"
-
-#~ msgid "Maths (display)"
-#~ msgstr "Formulas (savā rindkopā)"
-
-#~ msgid "Maths (inline)"
-#~ msgstr "Formulas (tekstā)"
-
-#~ msgid "Operator fraction"
-#~ msgstr "Dalīšanas operators"
-
-#~ msgid "Operator integral (display)"
-#~ msgstr "Integrāļa operators (savā rindkopā)"
-
-#~ msgid "Operator integral (inline)"
-#~ msgstr "Integrāļa operators (tekstā)"
-
-#~ msgid "Operator sum (display)"
-#~ msgstr "Summas operators (savā rindkopā)"
-
-#~ msgid "Operator sum (inline)"
-#~ msgstr "Summas operators (tekstā)"
-
-#~ msgid "Reference label"
-#~ msgstr "Atsauces etiķete"
-
-#~ msgid "Reference ref"
-#~ msgstr "Atsauces avots"
-
-#~ msgid "Symbol <<"
-#~ msgstr "Simbols <<"
-
-#~ msgid "Symbol <="
-#~ msgstr "Simbols <="
-
-#~ msgid "Symbol >="
-#~ msgstr "Simbols >="
-
-#~ msgid "Symbol >>"
-#~ msgstr "Simbols >>"
-
-#~ msgid "Symbol and"
-#~ msgstr "Simbols un"
-
-#~ msgid "Symbol const"
-#~ msgstr "Simbols const"
-
-#~ msgid "Symbol d-by-dt"
-#~ msgstr "Simbols d-pret-dt"
-
-#~ msgid "Symbol d-by-dt-partial"
-#~ msgstr "Simbols d-by-dt-partial"
-
-#~ msgid "Symbol d2-by-dt2-partial"
-#~ msgstr "Simbols d2-by-dt2-partial"
-
-#~ msgid "Symbol dagger"
-#~ msgstr "Krustiņa simbols"
-
-#~| msgid "Symbol hyphen ---"
-#~ msgid "Symbol em-dash ---"
-#~ msgstr "Domuzīme ---"
-
-#~| msgid "Symbol hyphen --"
-#~ msgid "Symbol en-dash --"
-#~ msgstr "Domuzīme --"
-
-#~ msgid "Symbol equiv"
-#~ msgstr "Ekvivalence"
-
-#~ msgid "Symbol infinity"
-#~ msgstr "Bezgalība"
-
-#~ msgid "Symbol mathspace ,"
-#~ msgstr "Simbols ,"
-
-#~ msgid "Symbol mathspace ."
-#~ msgstr "Simbols ."
-
-#~ msgid "Symbol mathspace _"
-#~ msgstr "Simbols _"
-
-#~ msgid "Symbol mathspace __"
-#~ msgstr "Simbols __"
-
-#~ msgid "Symbol simeq"
-#~ msgstr "Aproksimācijas simbols"
-
-#~ msgid "Symbol star"
-#~ msgstr "Zvaigznīte"
-
-#~ msgid "Typeface bold"
-#~ msgstr "Burtveidols treknraksts"
-
-#~ msgid "Typeface italic"
-#~ msgstr "Burtveidols slīpraksts"
-
-#~ msgid "Typeface slanted"
-#~ msgstr "Burtveidols vienpusīgs"
-
-#~ msgid "Typeface type"
-#~ msgstr "Burtveidola tips"
-
-#~ msgid "Unbreakable text"
-#~ msgstr "Nedalāms teksts"
-
-#~| msgid ""
-#~| "Provides a method to easily insert into a document commonly used tags/"
-#~| "strings without having to type them."
-#~ msgid ""
-#~ "Provides a method to easily insert commonly used tags/strings into a "
-#~ "document without having to type them."
-#~ msgstr ""
-#~ "Piedāvā veidu, kā ērti ievietot dokumentā biežāk lietotos birkas/virknes "
-#~ "bez vajadzības tos rakstīt."
-
-#~ msgid "Tag list"
-#~ msgstr "Birku saraksts"
-
-#~ msgid "XSLT - Axes"
-#~ msgstr "XSLT - Asis"
-
-#~ msgid "XSLT - Elements"
-#~ msgstr "XSLT - Elementi"
-
-#~ msgid "XSLT - Functions"
-#~ msgstr "XSLT - Funkcijas"
-
-#~ msgid "ancestor"
-#~ msgstr "priekštecis"
-
-#~ msgid "ancestor-or-self"
-#~ msgstr "priekštecis vai pats"
-
-#~ msgid "attribute"
-#~ msgstr "atribūts"
-
-#~ msgid "child"
-#~ msgstr "bērns"
-
-#~ msgid "descendant"
-#~ msgstr "pēctecis"
-
-#~ msgid "descendant-or-self"
-#~ msgstr "pēctecis vai pats"
-
-#~ msgid "following"
-#~ msgstr "sekojošs"
-
-#~ msgid "following-sibling"
-#~ msgstr "sekojošs-kaimiņš"
-
-#~ msgid "namespace"
-#~ msgstr "vārdtelpa"
-
-#~ msgid "parent"
-#~ msgstr "vecāks"
-
-#~ msgid "preceding"
-#~ msgstr "iepriekšējais"
-
-#~ msgid "preceding-sibling"
-#~ msgstr "iepriekšējais kaimiņš"
-
-#~ msgid "self"
-#~ msgstr "pats"
-
-#~ msgid "XUL - Tags"
-#~ msgstr "XUL - Birkas"
-
-#~ msgid "Configure insert date/time plugin..."
-#~ msgstr "Konfigurēt datuma/laika spraudni..."
-
-#~ msgid "Backup Copy Extension"
-#~ msgstr "Rezerves kopijas paplašinājums"
-
-#~ msgid ""
-#~ "Extension or suffix to use for backup file names. This will only take "
-#~ "effect if the \"Create Backup Copies\" option is turned on."
-#~ msgstr ""
-#~ "Paplašinājums vai piedēklis, ko izmantot rezerves failu nosaukumos. Šī "
-#~ "iespēja darbosies tikai tad, ja būs ieslēgta opcija \"Izveidot Rezerves "
-#~ "Kopijas\"."
-
-#~ msgid "Character Codings"
-#~ msgstr "Rakstzīmju kodējumi"
-
-#~ msgid "<b>Current Line</b>"
-#~ msgstr "<b>Tekošā rindiņa</b>"
-
-#~ msgid "<b>Font</b>"
-#~ msgstr "<b>Fonts</b>"
-
-#~ msgid "<b>Line Numbers</b>"
-#~ msgstr "<b>Rindu numuri</b>"
-
-#~ msgid "<span weight=\"bold\">Color Scheme</span>"
-#~ msgstr "<span weight=\"bold\">Krāsu stili</span>"
-
-#~ msgid "Ch_aracter Coding:"
-#~ msgstr "R_akstzīmju kodējums:"
-
-#~ msgid "Could not obtain backup filename"
-#~ msgstr "Nevar iegūt rezerves faila vārdu"
-
-#~ msgid "<b>Fonts</b>"
-#~ msgstr "<b>Fonti</b>"
-
-#~ msgid "<b>Page header</b>"
-#~ msgstr "<b>Lapas galva</b>"
-
-#~ msgid "<b>Syntax Highlighting</b>"
-#~ msgstr "<b>Sintakses iekrāsošana</b>"
-
-#~ msgid "0"
-#~ msgstr "0"
-
-#~ msgid "<span weight=\"bold\">File Name</span>"
-#~ msgstr "<span weight=\"bold\">Faila vārds</span>"
-
-#~ msgid "_Indent"
-#~ msgstr "_Atkāpe"
-
-#~ msgid "U_nindent"
-#~ msgstr "_Neatkāpe"
-
-#~ msgid "Unindent selected lines"
-#~ msgstr "Neatkāpe izvēlētajām rindiņām"
-
-#~ msgid "Indent Lines"
-#~ msgstr "Atkāpināt rindiņas"
-
-#~ msgid "Indents or un-indents selected lines."
-#~ msgstr "Izveido vai noņem atkāpi izvēlētajām rindiņām."
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "<b>Language</b>"
-#~ msgstr "<b>Valoda</b>"
-
-#~ msgid "<b>word</b>"
-#~ msgstr "<b>vārds</b>"
-
-#~ msgid "HttP header name"
-#~ msgstr "HTTP galvas vārds"
-
-#~ msgid "<span size=\"small\">01/11/2002 17:52:00</span>"
-#~ msgstr "<span size=\"small\">01/11/2002 17:52:00</span>"
-
-#~ msgid "<span weight=\"bold\"> When inserting date/time...</span>"
-#~ msgstr "<span weight=\"bold\"> Kad ievieto datumu/laiku...</span>"
-
-#~ msgid "Open Location"
-#~ msgstr "Atvērt atrašanās vietu"
-
-#~ msgid "Enter the _location (URI) of the file you would like to open:"
-#~ msgstr "Ievadiet vietu (URI) failam, kuru jūs vē_laties atvērt:"
-
-#~ msgid "%s: malformed file name or URI.\n"
-#~ msgstr "%s: nepareizi noforēts faila vārds vai URI \n"
-
-#~ msgid "Open _Location..."
-#~ msgstr "Atvērt _vietu..."
-
-#~ msgid "Open a file from a specified location"
-#~ msgstr "Atvērt failu no norādītās vietas"
-
-#~ msgid "Edit tool <i>%s</i>:"
-#~ msgstr "Rediģēšanas rīks <i>%s</i>:"
-
-#~ msgid "A Brand New Tool"
-#~ msgstr "Pavisam jauns rīks"
-
-#~ msgid "Co_mmand(s):"
-#~ msgstr "Ko_manda:"
-
-#~ msgid "Edit tool <i>make</i>:"
-#~ msgstr "Rediģēšanas rīks <i>make</i>:"
-
-#~ msgid "_Description:"
-#~ msgstr "_Apraksts:"
-
-#~ msgid "Insert User Na_me"
-#~ msgstr "Ievietot Lietotāja _Vārdu"
-
-#~ msgid "Insert the user name at the cursor position"
-#~ msgstr "Ievietot lietotāja vārdu kursora pozīcijā"
-
-#~ msgid "Inserts the user name at the cursor position."
-#~ msgstr "Ievieto lietotāja vārdu kursora pozīcijā."
-
-#~ msgid "User name"
-#~ msgstr "Lietotāja vārds"
