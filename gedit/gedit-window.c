@@ -4403,7 +4403,7 @@ gedit_window_create_tab (GeditWindow *window,
  * gedit_window_create_tab_from_location:
  * @window: a #GeditWindow
  * @location: the location of the document
- * @encoding: a #GeditEncoding
+ * @encoding: (allow-none): a #GeditEncoding, or %NULL
  * @line_pos: the line position to visualize
  * @column_pos: the column position to visualize
  * @create: %TRUE to create a new document in case @uri does exist
@@ -4445,7 +4445,7 @@ gedit_window_create_tab_from_location (GeditWindow         *window,
  * gedit_window_create_tab_from_stream:
  * @window: a #GeditWindow
  * @stream: a #GInputStream
- * @encoding: a #GeditEncoding
+ * @encoding: (allow-none): a #GeditEncoding, or %NULL
  * @line_pos: the line position to visualize
  * @column_pos: the column position to visualize
  * @jump_to: %TRUE to set the new #GeditTab as active
