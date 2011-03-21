@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-03-20 13:59+0000\n"
-"PO-Revision-Date: 2011-03-20 21:20+0100\n"
+"POT-Creation-Date: 2011-03-20 20:22+0000\n"
+"PO-Revision-Date: 2011-03-21 22:31+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -924,6 +924,10 @@ msgid ""
 "search to be case-sensitive. If this option is selected, searches will be "
 "case-sensitive. If not, searches will not be case-sensitive."
 msgstr ""
+"La opción <em>Coincidir con capitalización</em> le permite especificar si "
+"quiere que su búsqueda sea sensible a mayúsculas/minúsculas. Si se "
+"selecciona esta opción, las búsquedas serán sensibles a mayúsculas/"
+"minúsculas. De lo contrario no lo serán."
 
 #: C/gedit-replace.page:56(title)
 msgid "Match entire word only"
@@ -936,6 +940,10 @@ msgid ""
 "option selected, the word 'and' would be matched, but the words 's<em>and</"
 "em>' and 'comm<em>and</em>er' would not be matched."
 msgstr ""
+"Use esta opción para buscar una palabra específica sin incluir partes de "
+"otras palabras. Por ejemplo, si buscó el término «por» con la opción "
+"seleccionada, se encontrará la palabra «por», pero no así las palabras "
+"<em>por</em>tal, <em>por</em>que y estu<em>por</em>."
 
 #: C/gedit-replace.page:60(title)
 msgid "Search backwards"
@@ -961,6 +969,10 @@ msgid ""
 "the bottom of the file. This ensures that your search/replace action is made "
 "across your entire file."
 msgstr ""
+"Con la opción <app>Ajustar aproximadamente</app> activada, <app>gedit</app> "
+"reiniciará la acción de buscar/reemplazar en la parte superior del archivo, "
+"después de haber llegado al final. Esto le asegura que su acción de buscar/"
+"reemplazar se realiza en todo el archivo."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
@@ -983,12 +995,18 @@ msgid ""
 "can use some of its advanced features, making it your own software "
 "development environment."
 msgstr ""
+"<app>gedit</app> es un editor de textos lleno de características para el "
+"entorno de escritorio GNOME. Puede usarlo para preparar simples notas y "
+"documentos, o puede usar algunas de sus características avanzadas, haciendo "
+"que sea su entorno de desarrollo de software."
 
 #: C/gedit-quickstart.page:21(p)
 msgid ""
 "Once <app>gedit</app> launches, you can start writing right away. To save "
 "your text, just click <gui>Save</gui>."
 msgstr ""
+"Una vez que lance <app>gedit</app> podrá comenzar a escribir de inmediato. "
+"Para guardar su texto, simplemente pulse <gui>Guardar</gui>."
 
 #: C/gedit-quickstart.page:23(p)
 msgid ""
@@ -996,6 +1014,9 @@ msgid ""
 "with performing additional tasks, explore <link xref=\"index\">the other "
 "portions</link> of the <app>gedit</app> help."
 msgstr ""
+"Para aprender más acerca de las características de <app>gedit</app> y para "
+"obtener ayuda para realizar tareas adicionales, explore <link xref=\"index"
+"\">las otras partes</link> de la ayuda de <app>gedit</app>."
 
 #: C/gedit-printing.page:16(p)
 msgid ""
@@ -1004,6 +1025,10 @@ msgid ""
 "preview how the printed document will look by using the <app>Print Preview</"
 "app> feature."
 msgstr ""
+"<app>gedit</app> le permite tanto imprimir la salida a un archivo así como "
+"hacerlo en papel. Antes de imprimir su documento, también puede "
+"previsualizar cómo quedará el documento imprimido usando la característica "
+"de <app>Vista previa de impresión</app>."
 
 #: C/gedit-printing.page:19(title)
 msgid "Printing to paper"
@@ -1015,6 +1040,9 @@ msgid ""
 "configured your printer. If you have not done this, please consult the "
 "printing help documentation for your desktop environment."
 msgstr ""
+"Imprimir con <app>gedit</app> requiere que tenga conectada y configurada una "
+"impresora. Si no lo ha hecho, consulte la documentación acerca de la "
+"impresión en su entorno de escritorio."
 
 #: C/gedit-printing.page:26(p)
 msgid ""
@@ -1042,7 +1070,7 @@ msgstr ""
 
 #: C/gedit-plugins-terminal.page:14(title)
 msgid "Add a Terminal console to the bottom panel"
-msgstr ""
+msgstr "Añadir una consola de terminal en el panel inferior"
 
 #: C/gedit-plugins-terminal.page:16(p)
 msgid ""
@@ -1057,6 +1085,9 @@ msgid ""
 "To enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</"
 "gui><gui>Plugins</gui><gui>Embedded Terminal</gui></guiseq>."
 msgstr ""
+"Para activar este complemento, seleccione <guiseq><gui>Editar</"
+"gui><gui>Preferencias</gui><gui>complementos</gui><gui>Terminal empotrado</"
+"gui></guiseq>."
 
 #: C/gedit-plugins-terminal.page:20(p)
 msgid ""
