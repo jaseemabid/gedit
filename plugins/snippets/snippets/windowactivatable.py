@@ -199,7 +199,7 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
 
                 self.do_update_state()
 
-        def on_action_snippets_activate(self, item):
+        def on_action_snippets_activate(self, action, data):
                 #self.plugin.create_configure_dialog()
                 pass
 

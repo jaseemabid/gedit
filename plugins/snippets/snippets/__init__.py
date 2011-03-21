@@ -75,7 +75,6 @@ class AppActivatable(GObject.Object, Gedit.AppActivatable, PeasGtk.Configurable)
                 dirs.append(self.plugin_info.get_data_dir())
                 return dirs
 
-
         def do_create_configure_widget(self):
                 builder = Gtk.Builder()
                 builder.add_from_file(os.path.join(self.plugin_info.get_data_dir(), 'ui', 'snippets.ui'))
