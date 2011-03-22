@@ -139,19 +139,28 @@ class Popup(Gtk.Dialog):
         entries = []
 
         try:
-            entries = gfile.enumerate_children("standard::*", Gio.FileQueryInfoFlags.NONE, None)
-        except GObject.Error:
+            ret = gfile.enumerate_children("standard::*", Gio.FileQueryInfoFlags.NONE, None)
+        except GObject.Error as e:
             pass
+
+        if isinstance(ret, Gio.FileEnumerator):
+            while True:
+                entry = ret.next_file(None)
+
+                if not entry:
+                    break
+
+                entries.append((gfile.get_child(entry.get_name()), entry))
+        else:
+            entries = ret
 
         children = []
 
         for entry in entries:
-            if isinstance(gfile, VirtualDirectory):
-                child = entry
-            else:
-                child = gfile.get_child(entry.get_name())
-
-            children.append((child, entry.get_name(), entry.get_file_type(), entry.get_icon()))
+            children.append((entry[0],
+                             entry[1].get_name(),
+                             entry[1].get_file_type(),
+                             entry[1].get_icon()))
 
         return children
 
