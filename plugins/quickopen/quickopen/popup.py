@@ -244,7 +244,9 @@ class Popup(Gtk.Dialog):
                 return os.sep.join(out)
 
         def _get_icon(self, f):
-                query = f.query_info(Gio.FILE_ATTRIBUTE_STANDARD_ICON)
+                query = f.query_info(Gio.FILE_ATTRIBUTE_STANDARD_ICON,
+                                                         Gio.FileQueryInfoFlags.NONE,
+                                                         None)
 
                 if not query:
                         return None

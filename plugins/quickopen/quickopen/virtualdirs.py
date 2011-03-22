@@ -38,15 +38,19 @@ class VirtualDirectory(object):
                         return
 
                 try:
-                        info = child.query_info("standard::*")
+                        info = child.query_info("standard::*",
+                                                                        Gio.FileQueryInfoFlags.NONE,
+                                                                        None)
+
                         if info:
                                 self._children.append((child, info))
-                except:
-                        pass
+                except StandardError as e:
+                        print e
 
 class RecentDocumentsDirectory(VirtualDirectory):
         def __init__(self, maxitems=10):
                 VirtualDirectory.__init__(self, 'recent')
+
                 self._maxitems = maxitems
                 self.fill()
 

@@ -142,8 +142,11 @@ class QuickOpenPlugin(GObject.Object, Gedit.WindowActivatable):
                         f = Gio.file_new_for_uri(uri)
 
                         if f.is_native():
-                                try:    
-                                        info = f.query_info("standard::type", 0, None)
+                                try:
+                                        info = f.query_info(Gio.FILE_ATTRIBUTE_STANDARD_TYPE,
+                                                                                Gio.FileQueryInfoFlags.NONE,
+                                                                                None)
+
                                         if info and info.get_file_type() == Gio.FileType.DIRECTORY:
                                                 paths.append(f)
                                 except:
