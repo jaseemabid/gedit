@@ -146,6 +146,9 @@ GeditDocumentCompressionType
 		 gedit_utils_get_compression_type_from_content_type
 		 					(const gchar      *content_type);
 
+void             gedit_utils_text_iter_assign           (GtkTextIter       *iter,
+                                                         GtkTextIter const *other);
+
 G_END_DECLS
 
 #endif /* __GEDIT_UTILS_H__ */
