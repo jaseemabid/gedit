@@ -16,7 +16,7 @@ pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = gedit.pc
 
 bugreportdir = $(libexecdir)/gedit
-bugreport_SCRIPTS = gedit-bugreport.sh
+dist_bugreport_SCRIPTS = gedit-bugreport.sh
 
 gsettings_ENUM_NAMESPACE = org.gnome.gedit
 gsettings_ENUM_FILES = $(top_srcdir)/gedit/*.h
@@ -34,7 +34,6 @@ EXTRA_DIST = 					\
 	$(service_in_files)			\
 	$(man_MANS)				\
 	gedit.pc.in				\
-	gedit-bugreport.sh.in			\
 	org.gnome.gedit.gschema.xml.in.in	\
 	gedit.convert
 
