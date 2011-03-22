@@ -231,18 +231,20 @@ class Manager(Gtk.VBox, Gtk.Buildable):
         def build_dnd(self):
                 tv = self.tree_view
 
-                # Set it as a drag source for exporting snippets
-                Gtk.drag_source_set(tv, Gdk.ModifierType.BUTTON1_MASK, self.dnd_target_list, Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
+#                # Set it as a drag source for exporting snippets
+#                # TODO: fix this
+#                Gtk.drag_source_set(tv, Gdk.ModifierType.BUTTON1_MASK, self.dnd_target_list, Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
 
-                # Set it as a drag destination for importing snippets
-                Gtk.drag_dest_set(tv, Gtk.DestDefaults.HIGHLIGHT | Gtk.DestDefaults.DROP,
-                                 self.dnd_target_list, Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
+#                # Set it as a drag destination for importing snippets
+#                # TODO: fix this
+#                Gtk.drag_dest_set(tv, Gtk.DestDefaults.HIGHLIGHT | Gtk.DestDefaults.DROP,
+#                                 self.dnd_target_list, Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
 
-                tv.connect('drag_data_get', self.on_tree_view_drag_data_get)
-                tv.connect('drag_begin', self.on_tree_view_drag_begin)
-                tv.connect('drag_end', self.on_tree_view_drag_end)
-                tv.connect('drag_data_received', self.on_tree_view_drag_data_received)
-                tv.connect('drag_motion', self.on_tree_view_drag_motion)
+#                tv.connect('drag_data_get', self.on_tree_view_drag_data_get)
+#                tv.connect('drag_begin', self.on_tree_view_drag_begin)
+#                tv.connect('drag_end', self.on_tree_view_drag_end)
+#                tv.connect('drag_data_received', self.on_tree_view_drag_data_received)
+#                tv.connect('drag_motion', self.on_tree_view_drag_motion)
 
                 theme = Gtk.IconTheme.get_for_screen(tv.get_screen())
 
