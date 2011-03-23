@@ -20,9 +20,16 @@ import os
 import gettext
 
 from gi.repository import Gtk, Gdk, Gedit, GObject
+import gobject
 
 from document import Document
 from library import Library
+
+class Activate(Gedit.Message):
+        view = GObject.property(type=Gedit.View)
+# FIXME: fix as soon as fix lands in pygobject
+#        iter = GObject.property(type=Gtk.TextIter)
+        trigger = GObject.property(type=str)
 
 class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
         __gtype_name__ = "GeditSnippetsWindowActivatable"
@@ -82,51 +89,46 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
         def register_messages(self):
                 bus = self.window.get_message_bus()
 
-#                self.messages = {
-#                        'activate': bus.register('/plugins/snippets', 'activate', ('view', 'iter'), trigger=str, view=Gedit.View, iter=Gtk.TextIter),
-#                        'parse-and-activate': bus.register('/plugins/snippets', 'parse-and-activate', ('view', 'iter'), snippet=str, view=Gedit.View, iter=Gtk.TextIter)
-#                }
+                bus.register(Activate, '/plugins/snippets', 'activate')
+                bus.register(Activate, '/plugins/snippets', 'parse-and-activate')
 
-#                bus.connect('/plugins/snippets', 'activate', self.on_message_activate)
-#                bus.connect('/plugins/snippets', 'parse-and-activate', self.on_message_parse_and_activate)
+                bus.connect('/plugins/snippets', 'activate', self.on_message_activate, None)
+                bus.connect('/plugins/snippets', 'parse-and-activate', self.on_message_parse_and_activate, None)
 
         def unregister_messages(self):
                 bus = self.window.get_message_bus()
+                bus.unregister_all('/plugins/snippets')
 
-#                for name in self.messages:
-#                        bus.unregister(self.messages[name])
+        def on_message_activate(self, bus, message, userdata):
+                view = message.props.view
 
-                self.messages = {}
-
-        def on_message_activate(self, bus, message):
-                if message.has_key('view'):
-                        view = message.view
-                else:
+                if not view:
                         view = self.window.get_active_view()
 
                 if not self.has_controller(view):
                         return
 
-                if message.has_key('iter'):
-                        iter = message.iter
-                else:
-                        iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
+                # TODO: fix me as soon as the property fix lands in pygobject
+                #iter = message.props.iter
+
+                #if not iter:
+                iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
 
                 controller = view._snippet_controller
-                controller.run_snippet_trigger(message.trigger, (iter, iter))
+                controller.run_snippet_trigger(message.props.trigger, (iter, iter))
 
-        def on_message_parse_and_activate(self, bus, message):
-                if message.has_key('view'):
-                        view = message.view
-                else:
+        def on_message_parse_and_activate(self, bus, message, userdata):
+                view = message.props.view
+
+                if not view:
                         view = self.window.get_active_view()
 
                 if not self.has_controller(view):
                         return
 
-                if message.has_key('iter'):
-                        iter = message.iter
-                else:
+                iter = message.props.iter
+
+                if not iter:
                         iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
 
                 controller = view._snippet_controller

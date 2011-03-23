@@ -92,18 +92,17 @@ class QuickOpenPlugin(GObject.Object, Gedit.WindowActivatable):
         # File browser root directory
         bus = self.window.get_message_bus()
 
-        #try:
-            #FIXME
-            #msg = bus.send_sync('/plugins/filebrowser', 'get_root')
+        try:
+            msg = bus.send_sync('/plugins/filebrowser', 'get_root')
 
-            #if msg:
-            #    gfile = msg.get_value('location')
+            if msg:
+                gfile = msg.props.location
 
-            #    if gfile and gfile.is_native():
-            #        paths.append(gfile)
+                if gfile and gfile.is_native():
+                    paths.append(gfile)
 
-        #except StandardError:
-        #    pass
+        except StandardError as e:
+            print e
 
         # Recent documents
         paths.append(RecentDocumentsDirectory())

@@ -24,7 +24,6 @@
 #define __GEDIT_MESSAGE_H__
 
 #include <glib-object.h>
-#include <stdarg.h>
 
 G_BEGIN_DECLS
 
@@ -36,14 +35,15 @@ G_BEGIN_DECLS
 #define GEDIT_IS_MESSAGE_CLASS(klass)		(G_TYPE_CHECK_CLASS_TYPE ((klass), GEDIT_TYPE_MESSAGE))
 #define GEDIT_MESSAGE_GET_CLASS(obj)		(G_TYPE_INSTANCE_GET_CLASS ((obj), GEDIT_TYPE_MESSAGE, GeditMessageClass))
 
-typedef struct _GeditMessage		GeditMessage;
-typedef struct _GeditMessageClass	GeditMessageClass;
-typedef struct _GeditMessagePrivate	GeditMessagePrivate;
+typedef struct _GeditMessage             GeditMessage;
+typedef struct _GeditMessageClass        GeditMessageClass;
+typedef struct _GeditMessagePrivate      GeditMessagePrivate;
+typedef struct _GeditMessageClassPrivate GeditMessageClassPrivate;
 
 struct _GeditMessage
 {
 	GObject parent;
-	
+
 	GeditMessagePrivate *priv;
 };
 
@@ -52,40 +52,24 @@ struct _GeditMessageClass
 	GObjectClass parent_class;
 };
 
-GType		 gedit_message_get_type			(void) G_GNUC_CONST;
+GType        gedit_message_get_type             (void) G_GNUC_CONST;
 
-struct _GeditMessageType *gedit_message_get_message_type (GeditMessage  *message);
+const gchar *gedit_message_get_object_path      (GeditMessage *message);
+const gchar *gedit_message_get_method           (GeditMessage *message);
 
-void		 gedit_message_get			(GeditMessage  *message,
-							 ...) G_GNUC_NULL_TERMINATED;
-void		 gedit_message_get_valist		(GeditMessage  *message,
-							 va_list        var_args);
-void		 gedit_message_get_value		(GeditMessage  *message,
-							 const gchar   *key,
-							 GValue        *value);
+gboolean     gedit_message_type_has             (GType         gtype,
+                                                 const gchar  *propname);
 
-void		 gedit_message_set			(GeditMessage  *message,
-							 ...) G_GNUC_NULL_TERMINATED;
-void		 gedit_message_set_valist		(GeditMessage  *message,
-							 va_list        var_args);
-void		 gedit_message_set_value		(GeditMessage  *message,
-							 const gchar   *key,
-							 GValue        *value);
-void		 gedit_message_set_valuesv		(GeditMessage  *message,
-							 const gchar  **keys,
-							 GValue        *values,
-							 gint           n_values);
+gboolean     gedit_message_type_check           (GType         gtype,
+                                                 const gchar  *propname,
+                                                 GType         value_type);
 
-const gchar	*gedit_message_get_object_path		(GeditMessage  *message);
-const gchar	*gedit_message_get_method		(GeditMessage  *message);
+gboolean     gedit_message_has                  (GeditMessage *message,
+                                                 const gchar  *propname);
 
-gboolean	 gedit_message_has_key			(GeditMessage  *message,
-							 const gchar   *key);
-
-GType		 gedit_message_get_key_type 		(GeditMessage  *message,
-							 const gchar   *key);
-
-gboolean	 gedit_message_validate			(GeditMessage  *message);
+gboolean     gedit_message_is_valid_object_path (const gchar  *object_path);
+gchar       *gedit_message_type_identifier      (const gchar  *object_path,
+                                                 const gchar  *method);
 
 G_END_DECLS
 

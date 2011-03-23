@@ -145,7 +145,6 @@ INST_H_FILES =				\
 	gedit-encodings.h		\
 	gedit-encodings-combo-box.h	\
 	gedit-message-bus.h		\
-	gedit-message-type.h		\
 	gedit-message.h			\
 	gedit-panel.h			\
 	gedit-progress-info-bar.h	\
@@ -202,7 +201,6 @@ libgedit_c_files =			\
 	gedit-io-error-info-bar.c	\
 	gedit-language-manager.c	\
 	gedit-message-bus.c		\
-	gedit-message-type.c		\
 	gedit-message.c			\
 	gedit-multi-notebook.c		\
 	gedit-notebook.c		\
@@ -263,6 +261,12 @@ uidir = $(datadir)/gedit/ui/
 ui_DATA = 				\
 	gedit-ui.xml			\
 	gedit-print-preferences.ui
+
+if ENABLE_PYTHON
+overridesdir = $(pyoverridesdir)
+overrides_DATA =			\
+	Gedit.py
+endif
 
 EXTRA_DIST = 				\
 	$(ui_DATA)			\

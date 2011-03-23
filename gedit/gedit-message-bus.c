@@ -21,6 +21,7 @@
  */
 
 #include "gedit-message-bus.h"
+#include "gedit-marshal.h"
 
 #include <string.h>
 #include <stdarg.h>
@@ -68,8 +69,8 @@
  *
  * // Register 'method' at '/plugins/example' with one required
  * // string argument 'arg1'
- * GeditMessageType *message_type = gedit_message_bus_register ("/plugins/example", "method", 
- *                                                              0, 
+ * GeditMessageType *message_type = gedit_message_bus_register ("/plugins/example", "method",
+ *                                                              0,
  *                                                              "arg1", G_TYPE_STRING,
  *                                                              NULL);
  * </programlisting>
@@ -83,20 +84,20 @@
  *                    gpointer         user_data)
  * {
  * 	gchar *arg1 = NULL;
- *	
+ *
  * 	gedit_message_get (message, "arg1", &arg1, NULL);
  * 	g_message ("Evoked /plugins/example.method with: %s", arg1);
  * 	g_free (arg1);
  * }
  *
  * GeditMessageBus *bus = gedit_message_bus_get_default ();
- * 
- * guint id = gedit_message_bus_connect (bus, 
+ *
+ * guint id = gedit_message_bus_connect (bus,
  *                                       "/plugins/example", "method",
  *                                       example_method_cb,
  *                                       NULL,
  *                                       NULL);
- *                                        
+ *
  * </programlisting>
  * </example>
  * <example>
@@ -104,9 +105,9 @@
  * <programlisting>
  * GeditMessageBus *bus = gedit_message_bus_get_default ();
  *
- * gedit_message_bus_send (bus, 
- *                         "/plugins/example", "method", 
- *                         "arg1", "Hello World", 
+ * gedit_message_bus_send (bus,
+ *                         "/plugins/example", "method",
+ *                         "arg1", "Hello World",
  *                         NULL);
  * </programlisting>
  * </example>
@@ -114,13 +115,20 @@
  * Since: 2.25.3
  *
  */
- 
+
 #define GEDIT_MESSAGE_BUS_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE((object), GEDIT_TYPE_MESSAGE_BUS, GeditMessageBusPrivate))
 
 typedef struct
 {
 	gchar *object_path;
 	gchar *method;
+
+	gchar *identifier;
+} MessageIdentifier;
+
+typedef struct
+{
+	MessageIdentifier *identifier;
 
 	GList *listeners;
 } Message;
@@ -150,7 +158,7 @@ struct _GeditMessageBusPrivate
 	guint idle_id;
 
 	guint next_id;
-	
+
 	GHashTable *types; /* mapping from identifier to GeditMessageType */
 };
 
@@ -166,26 +174,68 @@ enum
 static guint message_bus_signals[LAST_SIGNAL];
 
 static void gedit_message_bus_dispatch_real (GeditMessageBus *bus,
-				 	     GeditMessage    *message);
+                                             GeditMessage    *message);
 
 G_DEFINE_TYPE(GeditMessageBus, gedit_message_bus, G_TYPE_OBJECT)
+
+static MessageIdentifier *
+message_identifier_new (const gchar *object_path,
+                        const gchar *method)
+{
+	MessageIdentifier *ret;
+
+	ret = g_slice_new (MessageIdentifier);
+
+	ret->object_path = g_strdup (object_path);
+	ret->method = g_strdup (method);
+
+	ret->identifier = gedit_message_type_identifier (object_path, method);
+
+	return ret;
+}
+
+static void
+message_identifier_free (MessageIdentifier *identifier)
+{
+	g_free (identifier->object_path);
+	g_free (identifier->method);
+	g_free (identifier->identifier);
+
+	g_slice_free (MessageIdentifier, identifier);
+}
+
+static guint
+message_identifier_hash (gconstpointer id)
+{
+	return g_str_hash (((MessageIdentifier *)id)->identifier);
+}
+
+static gboolean
+message_identifier_equal (gconstpointer id1,
+                          gconstpointer id2)
+{
+	return g_str_equal (((MessageIdentifier *)id1)->identifier,
+	                    ((MessageIdentifier *)id2)->identifier);
+}
 
 static void
 listener_free (Listener *listener)
 {
 	if (listener->destroy_data)
+	{
 		listener->destroy_data (listener->user_data);
+	}
 
-	g_free (listener);
+	g_slice_free (Listener, listener);
 }
 
 static void
 message_free (Message *message)
 {
-	g_free (message->method);
-	g_free (message->object_path);
+	message_identifier_free (message->identifier);
+
 	g_list_free_full (message->listeners, (GDestroyNotify) listener_free);
-	g_free (message);
+	g_slice_free (Message, message);
 }
 
 static void
@@ -198,16 +248,18 @@ static void
 gedit_message_bus_finalize (GObject *object)
 {
 	GeditMessageBus *bus = GEDIT_MESSAGE_BUS (object);
-	
+
 	if (bus->priv->idle_id != 0)
+	{
 		g_source_remove (bus->priv->idle_id);
-	
+	}
+
 	message_queue_free (bus->priv->message_queue);
 
 	g_hash_table_destroy (bus->priv->messages);
 	g_hash_table_destroy (bus->priv->idmap);
 	g_hash_table_destroy (bus->priv->types);
-	
+
 	G_OBJECT_CLASS (gedit_message_bus_parent_class)->finalize (object);
 }
 
@@ -215,9 +267,9 @@ static void
 gedit_message_bus_class_init (GeditMessageBusClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
-	
+
 	object_class->finalize = gedit_message_bus_finalize;
-	
+
 	klass->dispatch = gedit_message_bus_dispatch_real;
 
 	/**
@@ -226,21 +278,22 @@ gedit_message_bus_class_init (GeditMessageBusClass *klass)
 	 * @message: the #GeditMessage to dispatch
 	 *
 	 * The "dispatch" signal is emitted when a message is to be dispatched.
-	 * The message is dispatched in the default handler of this signal. 
+	 * The message is dispatched in the default handler of this signal.
 	 * Primary use of this signal is to customize the dispatch of a message
 	 * (for instance to automatically dispatch all messages over DBus).
-	 *2
+	 *
 	 */
 	message_bus_signals[DISPATCH] =
-   		g_signal_new ("dispatch",
-			      G_OBJECT_CLASS_TYPE (object_class),
-			      G_SIGNAL_RUN_LAST,
-			      G_STRUCT_OFFSET (GeditMessageBusClass, dispatch),
-			      NULL, NULL,
-			      g_cclosure_marshal_VOID__OBJECT,
-			      G_TYPE_NONE,
-			      1,
-			      GEDIT_TYPE_MESSAGE);
+		g_signal_new ("dispatch",
+		              G_OBJECT_CLASS_TYPE (object_class),
+		              G_SIGNAL_RUN_LAST,
+		              G_STRUCT_OFFSET (GeditMessageBusClass, dispatch),
+		              NULL,
+		              NULL,
+		              g_cclosure_marshal_VOID__OBJECT,
+		              G_TYPE_NONE,
+		              1,
+		              GEDIT_TYPE_MESSAGE);
 
 	/**
 	 * GeditMessageBus::registered:
@@ -252,89 +305,97 @@ gedit_message_bus_class_init (GeditMessageBusClass *klass)
 	 *
 	 */
 	message_bus_signals[REGISTERED] =
-   		g_signal_new ("registered",
-			      G_OBJECT_CLASS_TYPE (object_class),
-			      G_SIGNAL_RUN_LAST,
-			      G_STRUCT_OFFSET (GeditMessageBusClass, registered),
-			      NULL, NULL,
-			      g_cclosure_marshal_VOID__BOXED,
-			      G_TYPE_NONE,
-			      1,
-			      GEDIT_TYPE_MESSAGE_TYPE);
+		g_signal_new ("registered",
+		              G_OBJECT_CLASS_TYPE (object_class),
+		              G_SIGNAL_RUN_LAST,
+		              G_STRUCT_OFFSET (GeditMessageBusClass, registered),
+		              NULL,
+		              NULL,
+		              gedit_marshal_VOID__STRING_STRING,
+		              G_TYPE_NONE,
+		              2,
+		              G_TYPE_STRING,
+		              G_TYPE_STRING);
 
 	/**
 	 * GeditMessageBus::unregistered:
 	 * @bus: a #GeditMessageBus
 	 * @message_type: the unregistered #GeditMessageType
 	 *
-	 * The "unregistered" signal is emitted when a message has been 
+	 * The "unregistered" signal is emitted when a message has been
 	 * unregistered from the bus.
 	 *
 	 */
 	message_bus_signals[UNREGISTERED] =
-   		g_signal_new ("unregistered",
-			      G_OBJECT_CLASS_TYPE (object_class),
-			      G_SIGNAL_RUN_LAST,
-			      G_STRUCT_OFFSET (GeditMessageBusClass, unregistered),
-			      NULL, NULL,
-			      g_cclosure_marshal_VOID__BOXED,
-			      G_TYPE_NONE,
-			      1,
-			      GEDIT_TYPE_MESSAGE_TYPE);
+		g_signal_new ("unregistered",
+		              G_OBJECT_CLASS_TYPE (object_class),
+		              G_SIGNAL_RUN_LAST,
+		              G_STRUCT_OFFSET (GeditMessageBusClass, unregistered),
+		              NULL,
+		              NULL,
+		              gedit_marshal_VOID__STRING_STRING,
+		              G_TYPE_NONE,
+		              2,
+		              G_TYPE_STRING,
+		              G_TYPE_STRING);
 
 	g_type_class_add_private (object_class, sizeof (GeditMessageBusPrivate));
 }
 
 static Message *
 message_new (GeditMessageBus *bus,
-	     const gchar     *object_path,
-	     const gchar     *method)
+             const gchar     *object_path,
+             const gchar     *method)
 {
-	Message *message = g_new (Message, 1);
-	
-	message->object_path = g_strdup (object_path);
-	message->method = g_strdup (method);
+	Message *message = g_slice_new (Message);
+
+	message->identifier = message_identifier_new (object_path, method);
 	message->listeners = NULL;
 
-	g_hash_table_insert (bus->priv->messages, 
-			     gedit_message_type_identifier (object_path, method),
-			     message);
+	g_hash_table_insert (bus->priv->messages,
+	                     message->identifier,
+	                     message);
+
 	return message;
 }
 
 static Message *
 lookup_message (GeditMessageBus *bus,
-	       const gchar      *object_path,
-	       const gchar      *method,
-	       gboolean          create)
+                const gchar      *object_path,
+                const gchar      *method,
+                gboolean          create)
 {
-	gchar *identifier;
+	MessageIdentifier *identifier;
 	Message *message;
-	
-	identifier = gedit_message_type_identifier (object_path, method);
-	message = (Message *)g_hash_table_lookup (bus->priv->messages, identifier);
-	g_free (identifier);
+
+	identifier = message_identifier_new (object_path, method);
+	message = g_hash_table_lookup (bus->priv->messages, identifier);
+	message_identifier_free (identifier);
 
 	if (!message && !create)
+	{
 		return NULL;
-	
+	}
+
 	if (!message)
+	{
 		message = message_new (bus, object_path, method);
-	
+	}
+
 	return message;
 }
 
 static guint
 add_listener (GeditMessageBus      *bus,
-	      Message		   *message,
-	      GeditMessageCallback  callback,
-	      gpointer		    user_data,
-	      GDestroyNotify        destroy_data)
+              Message		   *message,
+              GeditMessageCallback  callback,
+              gpointer		    user_data,
+              GDestroyNotify        destroy_data)
 {
 	Listener *listener;
 	IdMap *idmap;
-	
-	listener = g_new (Listener, 1);
+
+	listener = g_slice_new (Listener);
 	listener->id = ++bus->priv->next_id;
 	listener->callback = callback;
 	listener->user_data = user_data;
@@ -342,31 +403,32 @@ add_listener (GeditMessageBus      *bus,
 	listener->destroy_data = destroy_data;
 
 	message->listeners = g_list_append (message->listeners, listener);
-	
+
 	idmap = g_new (IdMap, 1);
 	idmap->message = message;
 	idmap->listener = g_list_last (message->listeners);
 
-	g_hash_table_insert (bus->priv->idmap, GINT_TO_POINTER (listener->id), idmap);	
+	g_hash_table_insert (bus->priv->idmap, GINT_TO_POINTER (listener->id), idmap);
+
 	return listener->id;
 }
 
 static void
 remove_listener (GeditMessageBus *bus,
-		 Message         *message,
-		 GList		 *listener)
+                 Message         *message,
+                 GList		 *listener)
 {
 	Listener *lst;
-	
+
 	lst = (Listener *)listener->data;
-	
+
 	/* remove from idmap */
 	g_hash_table_remove (bus->priv->idmap, GINT_TO_POINTER (lst->id));
 	listener_free (lst);
 
 	/* remove from list of listeners */
 	message->listeners = g_list_delete_link (message->listeners, listener);
-	
+
 	if (!message->listeners)
 	{
 		/* remove message because it does not have any listeners */
@@ -376,64 +438,71 @@ remove_listener (GeditMessageBus *bus,
 
 static void
 block_listener (GeditMessageBus *bus,
-		Message		*message,
-		GList		*listener)
+                Message         *message,
+                GList           *listener)
 {
 	Listener *lst;
-	
-	lst = (Listener *)listener->data;
+
+	lst = listener->data;
 	lst->blocked = TRUE;
 }
 
 static void
 unblock_listener (GeditMessageBus *bus,
-		  Message	  *message,
-		  GList		  *listener)
+                  Message         *message,
+                  GList           *listener)
 {
 	Listener *lst;
-	
-	lst = (Listener *)listener->data;
+
+	lst = listener->data;
 	lst->blocked = FALSE;
 }
 
 static void
 dispatch_message_real (GeditMessageBus *bus,
-		       Message         *msg,
-		       GeditMessage    *message)
+                       Message         *msg,
+                       GeditMessage    *message)
 {
 	GList *item;
-	
+
 	for (item = msg->listeners; item; item = item->next)
 	{
 		Listener *listener = (Listener *)item->data;
-		
+
 		if (!listener->blocked)
+		{
 			listener->callback (bus, message, listener->user_data);
+		}
 	}
 }
 
 static void
 gedit_message_bus_dispatch_real (GeditMessageBus *bus,
-				 GeditMessage    *message)
+                                 GeditMessage    *message)
 {
 	const gchar *object_path;
 	const gchar *method;
 	Message *msg;
-	
+
 	object_path = gedit_message_get_object_path (message);
 	method = gedit_message_get_method (message);
 
+	g_return_if_fail (object_path != NULL);
+	g_return_if_fail (method != NULL);
+
 	msg = lookup_message (bus, object_path, method, FALSE);
-	
+
 	if (msg)
+	{
 		dispatch_message_real (bus, msg, message);
+	}
 }
 
 static void
 dispatch_message (GeditMessageBus *bus,
-		  GeditMessage    *message)
+                  GeditMessage    *message)
 {
-	g_signal_emit (bus, message_bus_signals[DISPATCH], 0, message);	
+	g_signal_emit (bus, message_bus_signals[DISPATCH], 0, message);
 }
 
 static gboolean
@@ -441,7 +510,7 @@ idle_dispatch (GeditMessageBus *bus)
 {
 	GList *list;
 	GList *item;
-	
+
 	/* make sure to set idle_id to 0 first so that any new async messages
 	   will be queued properly */
 	bus->priv->idle_id = 0;
@@ -449,14 +518,14 @@ idle_dispatch (GeditMessageBus *bus)
 	/* reverse queue to get correct delivery order */
 	list = g_list_reverse (bus->priv->message_queue);
 	bus->priv->message_queue = NULL;
-	
+
 	for (item = list; item; item = item->next)
 	{
 		GeditMessage *msg = GEDIT_MESSAGE (item->data);
-		
+
 		dispatch_message (bus, msg);
 	}
-	
+
 	message_queue_free (list);
 	return FALSE;
 }
@@ -464,76 +533,82 @@ idle_dispatch (GeditMessageBus *bus)
 typedef void (*MatchCallback) (GeditMessageBus *, Message *, GList *);
 
 static void
-process_by_id (GeditMessageBus  *bus,
-	       guint	         id,
-	       MatchCallback     processor)
+process_by_id (GeditMessageBus *bus,
+               guint            id,
+               MatchCallback    processor)
 {
 	IdMap *idmap;
-	
+
 	idmap = (IdMap *)g_hash_table_lookup (bus->priv->idmap, GINT_TO_POINTER (id));
-	
+
 	if (idmap == NULL)
 	{
 		g_warning ("No handler registered with id `%d'", id);
 		return;
 	}
-		
+
 	processor (bus, idmap->message, idmap->listener);
 }
 
 static void
 process_by_match (GeditMessageBus      *bus,
-	          const gchar          *object_path,
-	          const gchar          *method,
-	          GeditMessageCallback  callback,
-	          gpointer              user_data,
-	          MatchCallback         processor)
+                  const gchar          *object_path,
+                  const gchar          *method,
+                  GeditMessageCallback  callback,
+                  gpointer              user_data,
+                  MatchCallback         processor)
 {
 	Message *message;
 	GList *item;
-	
+
 	message = lookup_message (bus, object_path, method, FALSE);
-	
+
 	if (!message)
 	{
 		g_warning ("No such handler registered for %s.%s", object_path, method);
 		return;
 	}
-	
+
 	for (item = message->listeners; item; item = item->next)
 	{
 		Listener *listener = (Listener *)item->data;
-		
-		if (listener->callback == callback && 
+
+		if (listener->callback == callback &&
 		    listener->user_data == user_data)
 		{
 			processor (bus, message, item);
 			return;
 		}
 	}
-	
+
 	g_warning ("No such handler registered for %s.%s", object_path, method);
+}
+
+static void
+free_type (gpointer data)
+{
+	g_slice_free (GType, data);
 }
 
 static void
 gedit_message_bus_init (GeditMessageBus *self)
 {
 	self->priv = GEDIT_MESSAGE_BUS_GET_PRIVATE (self);
-	
-	self->priv->messages = g_hash_table_new_full (g_str_hash,
-						      g_str_equal,
-						      (GDestroyNotify)g_free,
-						      (GDestroyNotify)message_free);
+
+	self->priv->messages = g_hash_table_new_full (message_identifier_hash,
+	                                              message_identifier_equal,
+	                                              NULL,
+	                                              (GDestroyNotify) message_free);
 
 	self->priv->idmap = g_hash_table_new_full (g_direct_hash,
-	 					   g_direct_equal,
-	 					   NULL,
-	 					   (GDestroyNotify)g_free);
-	 					   
-	self->priv->types = g_hash_table_new_full (g_str_hash,
-						   g_str_equal,
-						   (GDestroyNotify)g_free,
-						   (GDestroyNotify)gedit_message_type_unref);
+	                                           g_direct_equal,
+	                                           NULL,
+	                                           (GDestroyNotify) g_free);
+
+	self->priv->types = g_hash_table_new_full (message_identifier_hash,
+	                                           message_identifier_equal,
+	                                           (GDestroyNotify) message_identifier_free,
+	                                           (GDestroyNotify) free_type);
 }
 
 /**
@@ -548,20 +623,21 @@ GeditMessageBus *
 gedit_message_bus_get_default (void)
 {
 	static GeditMessageBus *default_bus = NULL;
-	
+
 	if (G_UNLIKELY (default_bus == NULL))
 	{
 		default_bus = g_object_new (GEDIT_TYPE_MESSAGE_BUS, NULL);
+
 		g_object_add_weak_pointer (G_OBJECT (default_bus),
-				           (gpointer) &default_bus);
+		                           (gpointer) &default_bus);
 	}
-	
+
 	return default_bus;
 }
 
 /**
  * gedit_message_bus_new:
- * 
+ *
  * Create a new message bus. Use gedit_message_bus_get_default() to get the
  * default, application wide, message bus. Creating a new bus is useful for
  * associating a specific bus with for instance a #GeditWindow.
@@ -581,124 +657,119 @@ gedit_message_bus_new (void)
  * @object_path: the object path
  * @method: the method
  *
- * Get the registered #GeditMessageType for @method at @object_path. The 
+ * Get the registered #GeditMessageType for @method at @object_path. The
  * returned #GeditMessageType is owned by the bus and should not be unreffed.
  *
  * Return value: the registered #GeditMessageType or %NULL if no message type
  *               is registered for @method at @object_path
  *
  */
-GeditMessageType *
+GType
 gedit_message_bus_lookup (GeditMessageBus *bus,
-			  const gchar	  *object_path,
-			  const gchar	  *method)
+                          const gchar	  *object_path,
+                          const gchar	  *method)
 {
-	gchar *identifier;
-	GeditMessageType *message_type;
-	
-	g_return_val_if_fail (GEDIT_IS_MESSAGE_BUS (bus), NULL);
-	g_return_val_if_fail (object_path != NULL, NULL);
-	g_return_val_if_fail (method != NULL, NULL);
+	MessageIdentifier *identifier;
+	GType *message_type;
 
-	identifier = gedit_message_type_identifier (object_path, method);
-	message_type = GEDIT_MESSAGE_TYPE (g_hash_table_lookup (bus->priv->types, identifier));
-	
-	g_free (identifier);
-	return message_type;
+	g_return_val_if_fail (GEDIT_IS_MESSAGE_BUS (bus), G_TYPE_INVALID);
+	g_return_val_if_fail (object_path != NULL, G_TYPE_INVALID);
+	g_return_val_if_fail (method != NULL, G_TYPE_INVALID);
+
+	identifier = message_identifier_new (object_path, method);
+	message_type = g_hash_table_lookup (bus->priv->types, identifier);
+	message_identifier_free (identifier);
+
+	if (!message_type)
+	{
+		return G_TYPE_INVALID;
+	}
+	else
+	{
+		return *message_type;
+	}
 }
 
 /**
  * gedit_message_bus_register:
  * @bus: a #GeditMessageBus
+ * @message_type: the message type
  * @object_path: the object path
  * @method: the method to register
- * @num_optional: the number of optional arguments
- * @...: NULL terminated list of key/gtype method argument pairs
  *
  * Register a message on the bus. A message must be registered on the bus before
- * it can be send. This function registers the type arguments for @method at 
- * @object_path. The arguments are specified with the variable arguments which 
- * should contain pairs of const gchar *key and GType terminated by %NULL. The 
- * last @num_optional arguments are registered as optional (and are thus not
- * required when sending a message).
+ * it can be send. This function registers the type for @method at
+ * @object_path.
  *
  * This function emits a #GeditMessageBus::registered signal.
  *
- * Return value: the registered #GeditMessageType. The returned reference is
- *               owned by the bus. If you want to keep it alive after
- *               unregistering, use gedit_message_type_ref().
- *
  */
-GeditMessageType *
+void
 gedit_message_bus_register (GeditMessageBus *bus,
-			    const gchar     *object_path,
-			    const gchar	    *method,
-			    guint	     num_optional,
-			    ...)
+                            GType            message_type,
+                            const gchar     *object_path,
+                            const gchar	    *method)
 {
-	gchar *identifier;
-	va_list var_args;
-	GeditMessageType *message_type;
+	MessageIdentifier *identifier;
+	GType *ntype;
 
-	g_return_val_if_fail (GEDIT_IS_MESSAGE_BUS (bus), NULL);
-	g_return_val_if_fail (gedit_message_type_is_valid_object_path (object_path), NULL);
-	
+	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
+	g_return_if_fail (gedit_message_is_valid_object_path (object_path));
+	g_return_if_fail (g_type_is_a (message_type, GEDIT_TYPE_MESSAGE));
+
 	if (gedit_message_bus_is_registered (bus, object_path, method))
 	{
-		g_warning ("Message type for '%s.%s' is already registered", object_path, method);
-		return NULL;
+		g_warning ("Message type for '%s.%s' is already registered",
+		           object_path,
+		           method);
 	}
 
-	identifier = gedit_message_type_identifier (object_path, method);
-	
-	va_start (var_args, num_optional);
-	message_type = gedit_message_type_new_valist (object_path, 
-						      method,
-						      num_optional,
-						      var_args);
-	va_end (var_args);
-	
-	if (message_type)
-	{
-		g_hash_table_insert (bus->priv->types, identifier, message_type);
-		g_signal_emit (bus, message_bus_signals[REGISTERED], 0, message_type);
-	}
-	else
-	{
-		g_free (identifier);
-	}
-	
-	return message_type;	
+	identifier = message_identifier_new (object_path, method);
+	ntype = g_slice_new (GType);
+
+	*ntype = message_type;
+
+	g_hash_table_insert (bus->priv->types,
+	                     identifier,
+	                     ntype);
+
+	g_signal_emit (bus,
+	               message_bus_signals[REGISTERED],
+	               0,
+	               object_path,
+	               method);
 }
 
 static void
 gedit_message_bus_unregister_real (GeditMessageBus  *bus,
-				   GeditMessageType *message_type,
-				   gboolean          remove_from_store)
+                                   const gchar      *object_path,
+                                   const gchar      *method,
+                                   gboolean          remove_from_store)
 {
-	gchar *identifier;
-	
-	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
+	MessageIdentifier *identifier;
 
-	identifier = gedit_message_type_identifier (gedit_message_type_get_object_path (message_type), 
-						    gedit_message_type_get_method (message_type));
-	
-	/* Keep message type alive for signal emission */
-	gedit_message_type_ref (message_type);
+	identifier = message_identifier_new (object_path, method);
 
-	if (!remove_from_store || g_hash_table_remove (bus->priv->types, identifier))
-		g_signal_emit (bus, message_bus_signals[UNREGISTERED], 0, message_type);
-	
-	gedit_message_type_unref (message_type);
-	g_free (identifier);
+	if (!remove_from_store || g_hash_table_remove (bus->priv->types,
+	                                               identifier))
+	{
+		g_signal_emit (bus,
+		               message_bus_signals[UNREGISTERED],
+		               0,
+		               object_path,
+		               method);
+	}
+
+	message_identifier_free (identifier);
 }
 
 /**
  * gedit_message_bus_unregister:
  * @bus: a #GeditMessageBus
- * @message_type: the #GeditMessageType to unregister
+ * @object_path: the object path
+ * @method: the method
  *
- * Unregisters a previously registered message type. This is especially useful 
+ * Unregisters a previously registered message type. This is especially useful
  * for plugins which should unregister message types when they are deactivated.
  *
  * This function emits the #GeditMessageBus::unregistered signal.
@@ -706,30 +777,40 @@ gedit_message_bus_unregister_real (GeditMessageBus  *bus,
  */
 void
 gedit_message_bus_unregister (GeditMessageBus  *bus,
-			      GeditMessageType *message_type)
+                              const gchar      *object_path,
+                              const gchar      *method)
 {
 	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
-	gedit_message_bus_unregister_real (bus, message_type, TRUE);
+	g_return_if_fail (object_path != NULL);
+	g_return_if_fail (method != NULL);
+
+	gedit_message_bus_unregister_real (bus,
+	                                   object_path,
+	                                   method,
+	                                   TRUE);
 }
 
-typedef struct 
+typedef struct
 {
 	GeditMessageBus *bus;
 	const gchar *object_path;
 } UnregisterInfo;
 
 static gboolean
-unregister_each (const gchar      *identifier,
-		 GeditMessageType *message_type,
-		 UnregisterInfo   *info)
+unregister_each (MessageIdentifier *identifier,
+                 GType             *gtype,
+                 UnregisterInfo    *info)
 {
-	if (strcmp (gedit_message_type_get_object_path (message_type),
-		    info->object_path) == 0)
-	{	
-		gedit_message_bus_unregister_real (info->bus, message_type, FALSE);
+	if (g_strcmp0 (identifier->object_path, info->object_path) == 0)
+	{
+		gedit_message_bus_unregister_real (info->bus,
+		                                   identifier->object_path,
+		                                   identifier->method,
+		                                   FALSE);
+
 		return TRUE;
 	}
-	
+
 	return FALSE;
 }
 
@@ -747,16 +828,16 @@ unregister_each (const gchar      *identifier,
  */
 void
 gedit_message_bus_unregister_all (GeditMessageBus *bus,
-			          const gchar     *object_path)
+                                  const gchar     *object_path)
 {
 	UnregisterInfo info = {bus, object_path};
 
 	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
 	g_return_if_fail (object_path != NULL);
 
-	g_hash_table_foreach_remove (bus->priv->types, 
-				     (GHRFunc)unregister_each,
-				     &info);
+	g_hash_table_foreach_remove (bus->priv->types,
+	                             (GHRFunc)unregister_each,
+	                             &info);
 }
 
 /**
@@ -765,29 +846,29 @@ gedit_message_bus_unregister_all (GeditMessageBus *bus,
  * @object_path: the object path
  * @method: the method
  *
- * Check whether a message type @method at @object_path is registered on the 
+ * Check whether a message type @method at @object_path is registered on the
  * bus.
  *
- * Return value: %TRUE if the @method at @object_path is a registered message 
+ * Return value: %TRUE if the @method at @object_path is a registered message
  *               type on the bus
  *
  */
 gboolean
 gedit_message_bus_is_registered (GeditMessageBus  *bus,
-				 const gchar	  *object_path,
-				 const gchar      *method)
+                                 const gchar	  *object_path,
+                                 const gchar      *method)
 {
-	gchar *identifier;
+	MessageIdentifier *identifier;
 	gboolean ret;
-	
+
 	g_return_val_if_fail (GEDIT_IS_MESSAGE_BUS (bus), FALSE);
 	g_return_val_if_fail (object_path != NULL, FALSE);
 	g_return_val_if_fail (method != NULL, FALSE);
 
-	identifier = gedit_message_type_identifier (object_path, method);
+	identifier = message_identifier_new (object_path, method);
 	ret = g_hash_table_lookup (bus->priv->types, identifier) != NULL;
-	
-	g_free(identifier);
+	message_identifier_free (identifier);
+
 	return ret;
 }
 
@@ -798,13 +879,13 @@ typedef struct
 } ForeachInfo;
 
 static void
-foreach_type (const gchar      *key,
-	      GeditMessageType *message_type,
-	      ForeachInfo      *info)
+foreach_type (MessageIdentifier *identifier,
+              GType              *message_type,
+              ForeachInfo       *info)
 {
-	gedit_message_type_ref (message_type);
-	info->func (message_type, info->user_data);
-	gedit_message_type_unref (message_type);
+	info->func (identifier->object_path,
+	            identifier->method,
+	            info->user_data);
 }
 
 /**
@@ -816,13 +897,13 @@ foreach_type (const gchar      *key,
  * Calls @func for each message type registered on the bus
  *
  */
-void 
+void
 gedit_message_bus_foreach (GeditMessageBus        *bus,
-			   GeditMessageBusForeach  func,
-			   gpointer		   user_data)
+                           GeditMessageBusForeach  func,
+                           gpointer		   user_data)
 {
 	ForeachInfo info = {func, user_data};
-	
+
 	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
 	g_return_if_fail (func != NULL);
 
@@ -835,8 +916,8 @@ gedit_message_bus_foreach (GeditMessageBus        *bus,
  * @object_path: the object path
  * @method: the method
  * @callback: function to be called when message @method at @object_path is sent
- * @user_data: user_data to use for the callback
- * @destroy_data: function to evoke with @user_data as argument when @user_data
+ * @user_data: (allow-none): user_data to use for the callback
+ * @destroy_data: (allow-none): function to evoke with @user_data as argument when @user_data
  *                needs to be freed
  *
  * Connect a callback handler to be evoked when message @method at @object_path
@@ -846,12 +927,12 @@ gedit_message_bus_foreach (GeditMessageBus        *bus,
  *
  */
 guint
-gedit_message_bus_connect (GeditMessageBus	*bus, 
-		           const gchar		*object_path,
-		           const gchar		*method,
-		           GeditMessageCallback  callback,
-		           gpointer		 user_data,
-		           GDestroyNotify	 destroy_data)
+gedit_message_bus_connect (GeditMessageBus	*bus,
+                           const gchar		*object_path,
+                           const gchar		*method,
+                           GeditMessageCallback  callback,
+                           gpointer		 user_data,
+                           GDestroyNotify	 destroy_data)
 {
 	Message *message;
 
@@ -859,10 +940,10 @@ gedit_message_bus_connect (GeditMessageBus	*bus,
 	g_return_val_if_fail (object_path != NULL, 0);
 	g_return_val_if_fail (method != NULL, 0);
 	g_return_val_if_fail (callback != NULL, 0);
-	
+
 	/* lookup the message and create if it does not exist yet */
 	message = lookup_message (bus, object_path, method, TRUE);
-	
+
 	return add_listener (bus, message, callback, user_data, destroy_data);
 }
 
@@ -876,10 +957,10 @@ gedit_message_bus_connect (GeditMessageBus	*bus,
  */
 void
 gedit_message_bus_disconnect (GeditMessageBus *bus,
-			      guint            id)
+                              guint            id)
 {
 	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
-	
+
 	process_by_id (bus, id, remove_listener);
 }
 
@@ -891,21 +972,26 @@ gedit_message_bus_disconnect (GeditMessageBus *bus,
  * @callback: (scope call): the connected callback
  * @user_data: the user_data with which the callback was connected
  *
- * Disconnects a previously connected message callback by matching the 
- * provided callback function and user_data. See also 
+ * Disconnects a previously connected message callback by matching the
+ * provided callback function and user_data. See also
  * gedit_message_bus_disconnect().
  *
  */
 void
 gedit_message_bus_disconnect_by_func (GeditMessageBus      *bus,
-				      const gchar	   *object_path,
-				      const gchar	   *method,
-				      GeditMessageCallback  callback,
-				      gpointer		    user_data)
+                                      const gchar	   *object_path,
+                                      const gchar	   *method,
+                                      GeditMessageCallback  callback,
+                                      gpointer		    user_data)
 {
 	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
-	
-	process_by_match (bus, object_path, method, callback, user_data, remove_listener);
+
+	process_by_match (bus,
+	                  object_path,
+	                  method,
+	                  callback,
+	                  user_data,
+	                  remove_listener);
 }
 
 /**
@@ -919,10 +1005,10 @@ gedit_message_bus_disconnect_by_func (GeditMessageBus      *bus,
  */
 void
 gedit_message_bus_block (GeditMessageBus *bus,
-			 guint		  id)
+                         guint		  id)
 {
 	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
-	
+
 	process_by_id (bus, id, block_listener);
 }
 
@@ -940,14 +1026,19 @@ gedit_message_bus_block (GeditMessageBus *bus,
  */
 void
 gedit_message_bus_block_by_func (GeditMessageBus      *bus,
-				 const gchar	      *object_path,
-				 const gchar	      *method,
-				 GeditMessageCallback  callback,
-				 gpointer	       user_data)
+                                 const gchar	      *object_path,
+                                 const gchar	      *method,
+                                 GeditMessageCallback  callback,
+                                 gpointer	       user_data)
 {
 	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
-	
-	process_by_match (bus, object_path, method, callback, user_data, block_listener);
+
+	process_by_match (bus,
+	                  object_path,
+	                  method,
+	                  callback,
+	                  user_data,
+	                  block_listener);
 }
 
 /**
@@ -960,10 +1051,10 @@ gedit_message_bus_block_by_func (GeditMessageBus      *bus,
  */
 void
 gedit_message_bus_unblock (GeditMessageBus *bus,
-			   guint	    id)
+                           guint	    id)
 {
 	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
-	
+
 	process_by_id (bus, id, unblock_listener);
 }
 
@@ -980,47 +1071,34 @@ gedit_message_bus_unblock (GeditMessageBus *bus,
  */
 void
 gedit_message_bus_unblock_by_func (GeditMessageBus      *bus,
-				   const gchar	        *object_path,
-				   const gchar	        *method,
-				   GeditMessageCallback  callback,
-				   gpointer	         user_data)
+                                   const gchar	        *object_path,
+                                   const gchar	        *method,
+                                   GeditMessageCallback  callback,
+                                   gpointer	         user_data)
 {
 	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
-	
-	process_by_match (bus, object_path, method, callback, user_data, unblock_listener);
-}
 
-static gboolean
-validate_message (GeditMessage *message)
-{
-	if (!gedit_message_validate (message))
-	{
-		g_warning ("Message '%s.%s' is invalid", gedit_message_get_object_path (message),
-							 gedit_message_get_method (message));
-		return FALSE;
-	}
-	
-	return TRUE;
+	process_by_match (bus,
+	                  object_path,
+	                  method,
+	                  callback,
+	                  user_data,
+	                  unblock_listener);
 }
 
 static void
 send_message_real (GeditMessageBus *bus,
-		   GeditMessage    *message)
+                   GeditMessage    *message)
 {
-	if (!validate_message (message))
-	{
-		return;
-	}
-	
-	bus->priv->message_queue = g_list_prepend (bus->priv->message_queue, 
-						   g_object_ref (message));
+	bus->priv->message_queue = g_list_prepend (bus->priv->message_queue,
+	                                           g_object_ref (message));
 
 	if (bus->priv->idle_id == 0)
 	{
 		bus->priv->idle_id = g_idle_add_full (G_PRIORITY_HIGH,
-						      (GSourceFunc)idle_dispatch,
-						      bus,
-						      NULL);
+		                                      (GSourceFunc)idle_dispatch,
+		                                      bus,
+		                                      NULL);
 	}
 }
 
@@ -1030,31 +1108,19 @@ send_message_real (GeditMessageBus *bus,
  * @message: the message to send
  *
  * This sends the provided @message asynchronously over the bus. To send
- * a message synchronously, use gedit_message_bus_send_message_sync(). The 
+ * a message synchronously, use gedit_message_bus_send_message_sync(). The
  * convenience function gedit_message_bus_send() can be used to easily send
  * a message without constructing the message object explicitly first.
  *
  */
 void
 gedit_message_bus_send_message (GeditMessageBus *bus,
-			        GeditMessage    *message)
+                                GeditMessage    *message)
 {
 	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
 	g_return_if_fail (GEDIT_IS_MESSAGE (message));
-	
-	send_message_real (bus, message);
-}
 
-static void
-send_message_sync_real (GeditMessageBus *bus,
-                        GeditMessage    *message)
-{
-	if (!validate_message (message))
-	{
-		return;
-	}
-	
-	dispatch_message (bus, message);
+	send_message_real (bus, message);
 }
 
 /**
@@ -1063,39 +1129,57 @@ send_message_sync_real (GeditMessageBus *bus,
  * @message: the message to send
  *
  * This sends the provided @message synchronously over the bus. To send
- * a message asynchronously, use gedit_message_bus_send_message(). The 
+ * a message asynchronously, use gedit_message_bus_send_message(). The
  * convenience function gedit_message_bus_send_sync() can be used to easily send
  * a message without constructing the message object explicitly first.
  *
  */
 void
 gedit_message_bus_send_message_sync (GeditMessageBus *bus,
-			             GeditMessage    *message)
+                                     GeditMessage    *message)
 {
 	g_return_if_fail (GEDIT_IS_MESSAGE_BUS (bus));
 	g_return_if_fail (GEDIT_IS_MESSAGE (message));
 
-	send_message_sync_real (bus, message);	
+	dispatch_message (bus, message);
 }
 
 static GeditMessage *
 create_message (GeditMessageBus *bus,
-		const gchar     *object_path,
-		const gchar     *method,
-		va_list          var_args)
+                const gchar     *object_path,
+                const gchar     *method,
+                const gchar     *first_property,
+                va_list          var_args)
 {
-	GeditMessageType *message_type;
-	
+	GType message_type;
+	GeditMessage *msg;
+
 	message_type = gedit_message_bus_lookup (bus, object_path, method);
-	
-	if (!message_type)
+
+	if (message_type == G_TYPE_INVALID)
 	{
-		g_warning ("Could not find message type for '%s.%s'", object_path, method);
+		g_warning ("Could not find message type for '%s.%s'",
+		           object_path,
+		           method);
+
 		return NULL;
 	}
 
-	return gedit_message_type_instantiate_valist (message_type, 
-						      var_args);
+	msg = GEDIT_MESSAGE (g_object_new_valist (message_type,
+	                                          first_property,
+	                                          var_args));
+
+	if (msg)
+	{
+		g_object_set (msg,
+		              "object_path",
+		              object_path,
+		              "method",
+		              method,
+		              NULL);
+	}
+
+	return msg;
 }
 
 /**
@@ -1105,25 +1189,30 @@ create_message (GeditMessageBus *bus,
  * @method: the method
  * @...: NULL terminated list of key/value pairs
  *
- * This provides a convenient way to quickly send a message @method at 
- * @object_path asynchronously over the bus. The variable argument list 
- * specifies key (string) value pairs used to construct the message arguments. 
+ * This provides a convenient way to quickly send a message @method at
+ * @object_path asynchronously over the bus. The variable argument list
+ * specifies key (string) value pairs used to construct the message arguments.
  * To send a message synchronously use gedit_message_bus_send_sync().
  *
  */
 void
 gedit_message_bus_send (GeditMessageBus *bus,
-			const gchar     *object_path,
-			const gchar     *method,
-			...)
+                        const gchar     *object_path,
+                        const gchar     *method,
+                        const gchar     *first_property,
+                        ...)
 {
 	va_list var_args;
 	GeditMessage *message;
-	
-	va_start (var_args, method);
 
-	message = create_message (bus, object_path, method, var_args);
-	
+	va_start (var_args, first_property);
+
+	message = create_message (bus,
+	                          object_path,
+	                          method,
+	                          first_property,
+	                          var_args);
+
 	if (message)
 	{
 		send_message_real (bus, message);
@@ -1144,9 +1233,9 @@ gedit_message_bus_send (GeditMessageBus *bus,
  * @method: the method
  * @...: (allow-none): %NULL terminated list of key/value pairs
  *
- * This provides a convenient way to quickly send a message @method at 
- * @object_path synchronously over the bus. The variable argument list 
- * specifies key (string) value pairs used to construct the message 
+ * This provides a convenient way to quickly send a message @method at
+ * @object_path synchronously over the bus. The variable argument list
+ * specifies key (string) value pairs used to construct the message
  * arguments. To send a message asynchronously use gedit_message_bus_send().
  *
  * Return value: (allow-none) (transfer full): the constructed #GeditMessage.
@@ -1155,21 +1244,28 @@ gedit_message_bus_send (GeditMessageBus *bus,
  */
 GeditMessage *
 gedit_message_bus_send_sync (GeditMessageBus *bus,
-			     const gchar     *object_path,
-			     const gchar     *method,
-			     ...)
+                             const gchar     *object_path,
+                             const gchar     *method,
+                             const gchar     *first_property,
+                             ...)
 {
 	va_list var_args;
 	GeditMessage *message;
-	
-	va_start (var_args, method);
-	message = create_message (bus, object_path, method, var_args);
-	
+
+	va_start (var_args, first_property);
+	message = create_message (bus,
+	                          object_path,
+	                          method,
+	                          first_property,
+	                          var_args);
+
 	if (message)
-		send_message_sync_real (bus, message);
+	{
+		dispatch_message (bus, message);
+	}
 
 	va_end (var_args);
-	
+
 	return message;
 }
 

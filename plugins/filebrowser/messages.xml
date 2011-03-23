@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<messages>
+  <message namespace="Gedit" name="FileBrowserMessageGetRoot">
+    <include>gio/gio.h</include>
+    <property name="location" type="object" gtype="G_TYPE_FILE"/>
+  </message>
+  <message namespace="Gedit" name="FileBrowserMessageSetRoot">
+    <include>gio/gio.h</include>
+    <property name="location" type="object" gtype="G_TYPE_FILE"/>
+    <property name="virtual" type="string"/>
+  </message>
+  <message namespace="Gedit" name="FileBrowserMessageSetEmblem">
+    <property name="id" type="string"/>
+    <property name="emblem" type="string"/>
+  </message>
+  <message namespace="Gedit" name="FileBrowserMessageAddFilter">
+    <property name="object_path" type="string"/>
+    <property name="method" type="string"/>
+    <property name="id" type="uint"/>
+  </message>
+  <message namespace="Gedit" name="FileBrowserMessageId">
+    <property name="id" type="uint"/>
+  </message>
+  <message namespace="Gedit" name="FileBrowserMessageAddContextItem">
+    <include system="yes">gtk/gtk.h</include>
+    <property name="action" type="object" gtype="GTK_TYPE_ACTION"/>
+    <property name="path" type="string"/>
+    <property name="id" type="uint"/>
+  </message>
+    <message namespace="Gedit" name="FileBrowserMessageActivation">
+    <property name="active" type="boolean"/>
+  </message>
+  <message namespace="Gedit" name="FileBrowserMessageGetView">
+    <include>plugins/filebrowser/gedit-file-browser-view.h</include>
+    <property name="view" type="object" gtype="GEDIT_TYPE_FILE_BROWSER_VIEW"/>
+  </message>
+  <message namespace="Gedit" name="FileBrowserMessageIdLocation">
+    <include>gio/gio.h</include>
+    <property name="id" type="string"/>
+    <property name="location" type="object" gtype="G_TYPE_FILE"/>
+    <property name="is-directory" type="boolean"/>
+  </message>
+</messages>
+<!-- vi:ex:ts=2:et -->

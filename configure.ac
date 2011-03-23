@@ -294,6 +294,27 @@ fi
 
 AM_CONDITIONAL(ENABLE_ZEITGEIST, test x"$enable_zeitgeist" = "xyes")
 
+PYGOBJECT_REQUIRED=2.28
+
+AC_ARG_ENABLE([python],
+              AS_HELP_STRING([--enable-python[=@<:@no/auto/yes@:>@]],[Build with python support]),
+              [enable_python=$enableval],
+              [enable_python="auto"])
+
+if test "x$enable_python" = "xauto"; then
+	PKG_CHECK_EXISTS([pygobject-2.0 >= $PYGOBJECT_REQUIRED],
+	                 [enable_python=yes],[enable_python=no])
+fi
+
+if test "x$enable_python" = "xyes"; then
+	PKG_CHECK_MODULES(PYTHON, [pygobject-2.0 >= $PYGOBJECT_REQUIRED])
+
+	pyoverridesdir=`$PKG_CONFIG --variable=overridesdir pygobject-2.0`
+	AC_SUBST(pyoverridesdir)
+fi
+
+AM_CONDITIONAL(ENABLE_PYTHON, test x"$enable_python" = "xyes")
+
 dnl ================================================================
 dnl Start of pkg-config checks
 dnl ================================================================
@@ -488,6 +509,7 @@ Configuration:
 	GObject Introspection:	$enable_introspection
 	GDK Backend:            $gdk_windowing
 	Zeitgeist support:      $enable_zeitgeist
+	Python support:         $enable_python
 "
 
 if expr ${GEDIT_MINOR_VERSION} % 2 > /dev/null; then

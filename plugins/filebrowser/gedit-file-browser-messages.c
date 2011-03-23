@@ -20,6 +20,8 @@
 
 #include "gedit-file-browser-messages.h"
 #include "gedit-file-browser-store.h"
+#include "messages/messages.h"
+
 #include <gedit/gedit-message.h>
 
 #define MESSAGE_OBJECT_PATH 	"/plugins/filebrowser"
@@ -205,7 +207,7 @@ message_get_root_cb (GeditMessageBus *bus,
 
 	if (location)
 	{
-		gedit_message_set (message, "location", location, NULL);
+		g_object_set (message, "location", location, NULL);
 		g_object_unref (location);
 	}
 }
@@ -218,18 +220,23 @@ message_set_root_cb (GeditMessageBus *bus,
 	GFile *root;
 	GFile *virtual = NULL;
 
-	gedit_message_get (message, "location", &root, NULL);
+	g_object_get (message, "location", &root, NULL);
 
 	if (!root)
+	{
 		return;
+	}
 
-	if (gedit_message_has_key (message, "virtual"))
-		gedit_message_get (message, "virtual", &virtual, NULL);
+	g_object_get (message, "virtual", &virtual, NULL);
 
 	if (virtual)
+	{
 		gedit_file_browser_widget_set_root_and_virtual_root (data->widget, root, virtual);
+	}
 	else
+	{
 		gedit_file_browser_widget_set_root (data->widget, root, TRUE);
+	}
 }
 
 static void
@@ -242,7 +249,7 @@ message_set_emblem_cb (GeditMessageBus *bus,
 	GtkTreePath *path;
 	GeditFileBrowserStore *store;
 
-	gedit_message_get (message, "id", &id, "emblem", &emblem, NULL);
+	g_object_get (message, "id", &id, "emblem", &emblem, NULL);
 
 	if (!id || !emblem)
 	{
@@ -352,19 +359,26 @@ set_item_message (WindowData   *data,
 		gchar *track_id;
 
 		if (path && gtk_tree_path_get_depth (path) != 0)
+		{
 			track_id = track_row (data, store, path, location);
+		}
 		else
+		{
 			track_id = NULL;
+		}
 
-		gedit_message_set (message,
-				   "id", track_id,
-				   "location", location,
-				   NULL);
+		g_object_set (message,
+		              "id", track_id,
+		              "location", location,
+		              NULL);
 
-		if (gedit_message_has_key (message, "is_directory"))
-			gedit_message_set (message,
-					   "is_directory", FILE_IS_DIR (flags),
-					   NULL);
+		if (gedit_message_has (message, "is_directory"))
+		{
+			g_object_set (message,
+			              "is_directory",
+			              FILE_IS_DIR (flags),
+			              NULL);
+		}
 
 		g_free (track_id);
 		g_object_unref (location);
@@ -395,10 +409,10 @@ custom_message_filter_func (GeditFileBrowserWidget *widget,
 	set_item_message (wdata, iter, path, data->message);
 	gtk_tree_path_free (path);
 
-	gedit_message_set (data->message, "filter", filter, NULL);
+	g_object_set (data->message, "filter", filter, NULL);
 
 	gedit_message_bus_send_message_sync (wdata->bus, data->message);
-	gedit_message_get (data->message, "filter", &filter, NULL);
+	g_object_get (data->message, "filter", &filter, NULL);
 
 	g_object_unref (location);
 
@@ -407,61 +421,54 @@ custom_message_filter_func (GeditFileBrowserWidget *widget,
 
 static void
 message_add_filter_cb (GeditMessageBus *bus,
-		       GeditMessage    *message,
-		       GeditWindow     *window)
+                       GeditMessage    *message,
+                       GeditWindow     *window)
 {
-	gchar *object_path = NULL;
-	gchar *method = NULL;
+	const gchar *object_path = NULL;
+	const gchar *method = NULL;
 	gulong id;
-	GeditMessageType *message_type;
 	GeditMessage *cbmessage;
 	FilterData *filter_data;
-	WindowData *data = get_window_data (window);
+	WindowData *data;
+	GType message_type;
 
-	gedit_message_get (message,
-			   "object_path", &object_path,
-			   "method", &method,
-			   NULL);
+	data = get_window_data (window);
 
-	/* Check if there exists such a 'callback' message */
-	if (!object_path || !method)
-	{
-		g_free (object_path);
-		g_free (method);
-
-		return;
-	}
+	object_path = gedit_message_get_object_path (message);
+	method = gedit_message_get_method (message);
 
 	message_type = gedit_message_bus_lookup (bus, object_path, method);
 
-	if (!message_type)
+	if (message_type == G_TYPE_INVALID)
 	{
-		g_free (object_path);
-		g_free (method);
-
 		return;
 	}
 
 	/* Check if the message type has the correct arguments */
-	if (gedit_message_type_lookup (message_type, "id") != G_TYPE_STRING ||
-	    gedit_message_type_lookup (message_type, "location") != G_TYPE_FILE ||
-	    gedit_message_type_lookup (message_type, "is_directory") != G_TYPE_BOOLEAN ||
-	    gedit_message_type_lookup (message_type, "filter") != G_TYPE_BOOLEAN)
+	if (!gedit_message_type_check (message_type, "id", G_TYPE_STRING) ||
+	    !gedit_message_type_check (message_type, "location", G_TYPE_FILE) ||
+	    !gedit_message_type_check (message_type, "is-directory", G_TYPE_BOOLEAN) ||
+	    !gedit_message_type_check (message_type, "filter", G_TYPE_BOOLEAN))
+	{
 		return;
+	}
 
-	cbmessage = gedit_message_type_instantiate (message_type,
-						    "id", NULL,
-						    "location", NULL,
-						    "is_directory", FALSE,
-						    "filter", FALSE,
-						    NULL);
+	cbmessage = g_object_new (message_type,
+	                          "object-path", object_path,
+	                          "method", method,
+	                          "id", NULL,
+	                          "location", NULL,
+	                          "is-directory", FALSE,
+	                          "filter", FALSE,
+	                          NULL);
 
 	/* Register the custom filter on the widget */
 	filter_data = filter_data_new (window, cbmessage);
+
 	id = gedit_file_browser_widget_add_filter (data->widget,
-						   (GeditFileBrowserWidgetFilterFunc)custom_message_filter_func,
-						   filter_data,
-						   (GDestroyNotify)filter_data_free);
+	                                           (GeditFileBrowserWidgetFilterFunc)custom_message_filter_func,
+	                                           filter_data,
+	                                           (GDestroyNotify)filter_data_free);
 
 	filter_data->id = id;
 }
@@ -473,7 +480,7 @@ message_remove_filter_cb (GeditMessageBus *bus,
 {
 	gulong id = 0;
 
-	gedit_message_get (message, "id", &id, NULL);
+	g_object_get (message, "id", &id, NULL);
 
 	if (!id)
 		return;
@@ -524,7 +531,7 @@ message_set_show_hidden_cb (GeditMessageBus *bus,
 	GeditFileBrowserStore *store;
 	GeditFileBrowserStoreFilterMode mode;
 
-	gedit_message_get (message, "active", &active, NULL);
+	g_object_get (message, "active", &active, NULL);
 
 	store = gedit_file_browser_widget_get_browser_store (data->widget);
 	mode = gedit_file_browser_store_get_filter_mode (store);
@@ -546,7 +553,7 @@ message_set_show_binary_cb (GeditMessageBus *bus,
 	GeditFileBrowserStore *store;
 	GeditFileBrowserStoreFilterMode mode;
 
-	gedit_message_get (message, "active", &active, NULL);
+	g_object_get (message, "active", &active, NULL);
 
 	store = gedit_file_browser_widget_get_browser_store (data->widget);
 	mode = gedit_file_browser_store_get_filter_mode (store);
@@ -586,7 +593,7 @@ message_add_context_item_cb (GeditMessageBus *bus,
 	GtkUIManager *manager;
 	guint merge_id;
 
-	gedit_message_get (message,
+	g_object_get (message,
 			   "action", &action,
 			   "path", &path,
 			   NULL);
@@ -616,11 +623,11 @@ message_add_context_item_cb (GeditMessageBus *bus,
 	if (gtk_ui_manager_get_widget (manager, path))
 	{
 		data->merge_ids = g_list_prepend (data->merge_ids, GINT_TO_POINTER (merge_id));
-		gedit_message_set (message, "id", merge_id, NULL);
+		g_object_set (message, "id", merge_id, NULL);
 	}
 	else
 	{
-		gedit_message_set (message, "id", 0, NULL);
+		g_object_set (message, "id", 0, NULL);
 	}
 
 	g_object_unref (action);
@@ -636,7 +643,7 @@ message_remove_context_item_cb (GeditMessageBus *bus,
 	guint merge_id = 0;
 	GtkUIManager *manager;
 
-	gedit_message_get (message, "id", &merge_id, NULL);
+	g_object_get (message, "id", &merge_id, NULL);
 
 	if (merge_id == 0)
 		return;
@@ -655,7 +662,7 @@ message_get_view_cb (GeditMessageBus *bus,
 	GeditFileBrowserView *view;
 	view = gedit_file_browser_widget_get_browser_view (data->widget);
 
-	gedit_message_set (message, "view", view, NULL);
+	g_object_set (message, "view", view, NULL);
 }
 
 static void
@@ -667,79 +674,84 @@ register_methods (GeditWindow            *window,
 
 	/* Register method calls */
 	gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "get_root",
-				    1,
-				    "location", G_TYPE_FILE,
-				    NULL);
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_GET_ROOT,
+	                            MESSAGE_OBJECT_PATH,
+	                            "get_root");
 
 	gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "set_root",
-				    1,
-				    "location", G_TYPE_FILE,
-				    "virtual", G_TYPE_STRING,
-				    NULL);
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_SET_ROOT,
+	                            MESSAGE_OBJECT_PATH,
+	                            "set_root");
 
 	gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "set_emblem",
-				    0,
-				    "id", G_TYPE_STRING,
-				    "emblem", G_TYPE_STRING,
-				    NULL);
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_SET_EMBLEM,
+	                            MESSAGE_OBJECT_PATH,
+	                            "set_emblem");
 
 	gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "add_filter",
-				    1,
-				    "object_path", G_TYPE_STRING,
-				    "method", G_TYPE_STRING,
-				    "id", G_TYPE_ULONG,
-				    NULL);
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_ADD_FILTER,
+	                            MESSAGE_OBJECT_PATH,
+	                            "add_filter");
 
 	gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "remove_filter",
-				    0,
-				    "id", G_TYPE_ULONG,
-				    NULL);
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID,
+	                            MESSAGE_OBJECT_PATH,
+	                            "remove_filter");
 
 	gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "add_context_item",
-				    1,
-				    "action", GTK_TYPE_ACTION,
-				    "path", G_TYPE_STRING,
-				    "id", G_TYPE_UINT,
-				    NULL);
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_ADD_CONTEXT_ITEM,
+	                            MESSAGE_OBJECT_PATH,
+	                            "add_context_item");
 
 	gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "remove_context_item",
-				    0,
-				    "id", G_TYPE_UINT,
-				    NULL);
-
-	gedit_message_bus_register (bus, MESSAGE_OBJECT_PATH, "up", 0, NULL);
-
-	gedit_message_bus_register (bus, MESSAGE_OBJECT_PATH, "history_back", 0, NULL);
-	gedit_message_bus_register (bus, MESSAGE_OBJECT_PATH, "history_forward", 0, NULL);
-
-	gedit_message_bus_register (bus, MESSAGE_OBJECT_PATH, "refresh", 0, NULL);
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID,
+	                            MESSAGE_OBJECT_PATH,
+	                            "remove_context_item");
 
 	gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "set_show_hidden",
-				    0,
-				    "active", G_TYPE_BOOLEAN,
-				    NULL);
-	gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "set_show_binary",
-				    0,
-				    "active", G_TYPE_BOOLEAN,
-				    NULL);
-
-	gedit_message_bus_register (bus, MESSAGE_OBJECT_PATH, "show_bookmarks", 0, NULL);
-	gedit_message_bus_register (bus, MESSAGE_OBJECT_PATH, "show_files", 0, NULL);
+	                            GEDIT_TYPE_MESSAGE,
+	                            MESSAGE_OBJECT_PATH,
+	                            "up");
 
 	gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "get_view",
-				    1,
-				    "view", GEDIT_TYPE_FILE_BROWSER_VIEW,
-				    NULL);
+	                            GEDIT_TYPE_MESSAGE,
+	                            MESSAGE_OBJECT_PATH,
+	                            "history_back");
+
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_MESSAGE,
+	                            MESSAGE_OBJECT_PATH,
+	                            "history_forward");
+
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_MESSAGE,
+	                            MESSAGE_OBJECT_PATH,
+	                            "refresh");
+
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_ACTIVATION,
+	                            MESSAGE_OBJECT_PATH,
+	                            "set_show_hidden");
+
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_ACTIVATION,
+	                            MESSAGE_OBJECT_PATH,
+	                            "set_show_binary");
+
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_MESSAGE,
+	                            MESSAGE_OBJECT_PATH,
+	                            "show_bookmarks");
+
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_MESSAGE,
+	                            MESSAGE_OBJECT_PATH,
+	                            "show_files");
+
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_GET_VIEW,
+	                            MESSAGE_OBJECT_PATH,
+	                            "get_view");
 
 	BUS_CONNECT (bus, get_root, data);
 	BUS_CONNECT (bus, set_root, data);
@@ -821,11 +833,13 @@ store_virtual_root_changed (GeditFileBrowserStore *store,
 	vroot = gedit_file_browser_store_get_virtual_root (store);
 
 	if (!vroot)
+	{
 		return;
+	}
 
-	gedit_message_set (data->message,
-			   "location", vroot,
-			   NULL);
+	g_object_set (data->message,
+	              "location", vroot,
+	              NULL);
 
 	gedit_message_bus_send_message_sync (wdata->bus, data->message);
 
@@ -870,142 +884,134 @@ register_signals (GeditWindow            *window,
 {
 	GeditMessageBus *bus = gedit_window_get_message_bus (window);
 	GeditFileBrowserStore *store;
-	GeditMessageType *inserted_type;
-	GeditMessageType *deleted_type;
-	GeditMessageType *begin_loading_type;
-	GeditMessageType *end_loading_type;
-	GeditMessageType *root_changed_type;
 
 	GeditMessage *message;
 	WindowData *data;
 
 	/* Register signals */
-	root_changed_type = gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "root_changed",
-				    0,
-				    "id", G_TYPE_STRING,
-				    "location", G_TYPE_FILE,
-				    NULL);
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID_LOCATION,
+	                            MESSAGE_OBJECT_PATH,
+	                            "root_changed");
 
-	begin_loading_type = gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "begin_loading",
-				    0,
-				    "id", G_TYPE_STRING,
-				    "location", G_TYPE_FILE,
-				    NULL);
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID_LOCATION,
+	                            MESSAGE_OBJECT_PATH,
+	                            "begin_loading");
 
-	end_loading_type = gedit_message_bus_register (bus,
-				    MESSAGE_OBJECT_PATH, "end_loading",
-				    0,
-				    "id", G_TYPE_STRING,
-				    "location", G_TYPE_FILE,
-				    NULL);
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID_LOCATION,
+	                            MESSAGE_OBJECT_PATH,
+	                            "end_loading");
 
-	inserted_type = gedit_message_bus_register (bus,
-						    MESSAGE_OBJECT_PATH, "inserted",
-						    0,
-						    "id", G_TYPE_STRING,
-						    "location", G_TYPE_FILE,
-						    "is_directory", G_TYPE_BOOLEAN,
-						    NULL);
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID_LOCATION,
+	                            MESSAGE_OBJECT_PATH,
+	                            "inserted");
 
-	deleted_type = gedit_message_bus_register (bus,
-						   MESSAGE_OBJECT_PATH, "deleted",
-						   0,
-						   "id", G_TYPE_STRING,
-						   "location", G_TYPE_FILE,
-						   "is_directory", G_TYPE_BOOLEAN,
-						   NULL);
+	gedit_message_bus_register (bus,
+	                            GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID_LOCATION,
+	                            MESSAGE_OBJECT_PATH,
+	                            "deleted");
 
 	store = gedit_file_browser_widget_get_browser_store (widget);
 
-	message = gedit_message_type_instantiate (inserted_type,
-						  "id", NULL,
-						  "location", NULL,
-						  "is_directory", FALSE,
-						  NULL);
+	message = g_object_new (GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID_LOCATION,
+	                        "object-path", MESSAGE_OBJECT_PATH,
+	                        "method", "inserted",
+	                        NULL);
 
 	data = get_window_data (window);
 
 	data->row_inserted_id =
 		g_signal_connect_data (store,
-				       "row-inserted",
-				       G_CALLBACK (store_row_inserted),
-				       message_cache_data_new (window, message),
-				       (GClosureNotify)message_cache_data_free,
-				       0);
+		                       "row-inserted",
+		                       G_CALLBACK (store_row_inserted),
+		                       message_cache_data_new (window, message),
+		                       (GClosureNotify)message_cache_data_free,
+		                       0);
 
-	message = gedit_message_type_instantiate (deleted_type,
-						  "id", NULL,
-						  "location", NULL,
-						  "is_directory", FALSE,
-						  NULL);
+	message = g_object_new (GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID_LOCATION,
+	                        "object-path", MESSAGE_OBJECT_PATH,
+	                        "method", "deleted",
+	                        NULL);
+
 	data->row_deleted_id =
 		g_signal_connect_data (store,
-				       "row-deleted",
-				       G_CALLBACK (store_row_deleted),
-				       message_cache_data_new (window, message),
-				       (GClosureNotify)message_cache_data_free,
-				       0);
+		                       "row-deleted",
+		                       G_CALLBACK (store_row_deleted),
+		                       message_cache_data_new (window, message),
+		                       (GClosureNotify)message_cache_data_free,
+		                       0);
 
-	message = gedit_message_type_instantiate (root_changed_type,
-						  "id", NULL,
-						  "location", NULL,
-						  NULL);
+	message = g_object_new (GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID_LOCATION,
+	                        "object-path", MESSAGE_OBJECT_PATH,
+	                        "method", "root_changed",
+	                        NULL);
+
 	data->root_changed_id =
 		g_signal_connect_data (store,
-				       "notify::virtual-root",
-				       G_CALLBACK (store_virtual_root_changed),
-				       message_cache_data_new (window, message),
-				       (GClosureNotify)message_cache_data_free,
-				       0);
+		                       "notify::virtual-root",
+		                       G_CALLBACK (store_virtual_root_changed),
+		                       message_cache_data_new (window, message),
+		                       (GClosureNotify)message_cache_data_free,
+		                       0);
 
-	message = gedit_message_type_instantiate (begin_loading_type,
-						  "id", NULL,
-						  "location", NULL,
-						  NULL);
+	message = g_object_new (GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID_LOCATION,
+	                        "object-path", MESSAGE_OBJECT_PATH,
+	                        "method", "begin_loading",
+	                        NULL);
+
 	data->begin_loading_id =
 		g_signal_connect_data (store,
-				      "begin_loading",
-				       G_CALLBACK (store_begin_loading),
-				       message_cache_data_new (window, message),
-				       (GClosureNotify)message_cache_data_free,
-				       0);
+		                       "begin_loading",
+		                       G_CALLBACK (store_begin_loading),
+		                       message_cache_data_new (window, message),
+		                       (GClosureNotify)message_cache_data_free,
+		                       0);
 
-	message = gedit_message_type_instantiate (end_loading_type,
-						  "id", NULL,
-						  "location", NULL,
-						  NULL);
+	message = g_object_new (GEDIT_TYPE_FILE_BROWSER_MESSAGE_ID_LOCATION,
+	                        "object-path", MESSAGE_OBJECT_PATH,
+	                        "method", "end_loading",
+	                        NULL);
+
 	data->end_loading_id =
 		g_signal_connect_data (store,
-				       "end_loading",
-				       G_CALLBACK (store_end_loading),
-				       message_cache_data_new (window, message),
-				       (GClosureNotify)message_cache_data_free,
-				       0);
+		                       "end_loading",
+		                       G_CALLBACK (store_end_loading),
+		                       message_cache_data_new (window, message),
+		                       (GClosureNotify)message_cache_data_free,
+		                       0);
 }
 
 static void
-message_unregistered (GeditMessageBus  *bus,
-		      GeditMessageType *message_type,
-		      GeditWindow      *window)
+message_unregistered (GeditMessageBus *bus,
+		      const gchar     *object_path,
+		      const gchar     *method,
+		      GeditWindow     *window)
 {
-	gchar *identifier = gedit_message_type_identifier (gedit_message_type_get_object_path (message_type),
-							   gedit_message_type_get_method (message_type));
+	gchar *identifier;
 	FilterData *data;
-	WindowData *wdata = get_window_data (window);
+	WindowData *wdata;
+
+	wdata = get_window_data (window);
+
+	identifier = gedit_message_type_identifier (object_path, method);
 
 	data = g_hash_table_lookup (wdata->filters, identifier);
 
 	if (data)
-		gedit_file_browser_widget_remove_filter (wdata->widget, data->id);
+	{
+		gedit_file_browser_widget_remove_filter (wdata->widget,
+		                                         data->id);
+	}
 
 	g_free (identifier);
 }
 
 void
 gedit_file_browser_messages_register (GeditWindow            *window,
-				      GeditFileBrowserWidget *widget)
+                                      GeditFileBrowserWidget *widget)
 {
 	window_data_new (window, widget);
 
@@ -1013,9 +1019,9 @@ gedit_file_browser_messages_register (GeditWindow            *window,
 	register_signals (window, widget);
 
 	g_signal_connect (gedit_window_get_message_bus (window),
-			  "unregistered",
-			  G_CALLBACK (message_unregistered),
-			  window);
+	                  "unregistered",
+	                  G_CALLBACK (message_unregistered),
+	                  window);
 }
 
 static void

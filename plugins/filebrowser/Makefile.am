@@ -35,6 +35,15 @@ libfilebrowser_la_SOURCES = \
 	gedit-file-browser-utils.c 		\
 	gedit-file-browser-plugin.c		\
 	gedit-file-browser-messages.c		\
+	messages/gedit-file-browser-message-activation.c \
+	messages/gedit-file-browser-message-add-context-item.c \
+	messages/gedit-file-browser-message-add-filter.c \
+	messages/gedit-file-browser-message-get-root.c \
+	messages/gedit-file-browser-message-get-view.c \
+	messages/gedit-file-browser-message-id.c \
+	messages/gedit-file-browser-message-id-location.c \
+	messages/gedit-file-browser-message-set-emblem.c \
+	messages/gedit-file-browser-message-set-root.c \
 	$(NOINST_H_FILES)
 
 libfilebrowser_la_LDFLAGS = $(PLUGIN_LIBTOOL_FLAGS)
@@ -72,6 +81,9 @@ gsettings_SCHEMAS = org.gnome.gedit.plugins.filebrowser.gschema.xml
 @INTLTOOL_XML_NOMERGE_RULE@
 
 @GSETTINGS_RULES@
+
+update-messages:
+	$(top_srcdir)/tools/generate-message.py --output-directory $(builddir)/messages/  --gpl --program gedit $(srcdir)/messages.xml
 
 EXTRA_DIST = \
 	$(ui_DATA)					\
