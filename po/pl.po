@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-16 14:45+0100\n"
-"PO-Revision-Date: 2011-03-16 14:46+0100\n"
+"POT-Creation-Date: 2011-03-23 22:38+0100\n"
+"PO-Revision-Date: 2011-03-23 22:39+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -1144,12 +1144,12 @@ msgstr "Wyrażenie \"%s\" nie zostało odnalezione"
 msgid "Unsaved Document %d"
 msgstr "Niezapisany dokument %d"
 
-#: ../gedit/gedit-documents-panel.c:118 ../gedit/gedit-documents-panel.c:132
+#: ../gedit/gedit-documents-panel.c:119 ../gedit/gedit-documents-panel.c:133
 #: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
 msgid "Read-Only"
 msgstr "Tylko do odczytu"
 
-#: ../gedit/gedit-documents-panel.c:1089 ../gedit/gedit-window.c:3840
+#: ../gedit/gedit-documents-panel.c:1124 ../gedit/gedit-window.c:3840
 msgid "Documents"
 msgstr "Dokumenty"
 
@@ -1804,7 +1804,7 @@ msgstr "Podgląd strony dokumentu do wydrukowania"
 
 #: ../gedit/gedit-statusbar.c:69 ../gedit/gedit-statusbar.c:75
 msgid "OVR"
-msgstr "NAD"
+msgstr "ZAS"
 
 #: ../gedit/gedit-statusbar.c:69 ../gedit/gedit-statusbar.c:75
 msgid "INS"
@@ -1815,7 +1815,7 @@ msgstr "WST"
 #: ../gedit/gedit-statusbar.c:247
 #, c-format
 msgid "  Ln %d, Col %d"
-msgstr "  Wrsz %d, Kol %d"
+msgstr "  Wrsz %d, kol %d"
 
 #: ../gedit/gedit-statusbar.c:346
 #, c-format
@@ -2732,59 +2732,59 @@ msgstr "Panel przeglądarki plików"
 msgid "File System"
 msgstr "System plików"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:585
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:596
 msgid "_Set root to active document"
 msgstr "U_staw położenie bieżącego dokumentu jako katalog główny"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:587
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:598
 msgid "Set the root to the active document location"
 msgstr "Ustawia położenie bieżącego dokumentu jako ścieżkę katalogu głównego"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:592
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:603
 msgid "_Open terminal here"
 msgstr "_Otwórz terminal w tym miejscu"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:594
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:605
 msgid "Open a terminal at the currently opened directory"
 msgstr "Otwiera terminal w obecnie otwartym katalogu"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:732
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:743
 msgid "File Browser"
 msgstr "Przeglądarka plików"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:875
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:886
 msgid "An error occurred while creating a new directory"
 msgstr "Wystąpił błąd podczas tworzenia nowego katalogu"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:878
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:889
 msgid "An error occurred while creating a new file"
 msgstr "Wystąpił błąd podczas tworzenia nowego pliku"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:881
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:892
 msgid "An error occurred while renaming a file or directory"
 msgstr "Wystąpił błąd podczas zmieniania nazwy pliku lub katalogu"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:884
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:895
 msgid "An error occurred while deleting a file or directory"
 msgstr "Wystąpił błąd podczas usuwania pliku lub katalogu"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:887
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:898
 msgid "An error occurred while opening a directory in the file manager"
 msgstr "Wystąpił błąd podczas otwierania katalogu w menedżerze plików"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:890
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:901
 msgid "An error occurred while setting a root directory"
 msgstr "Wystąpił błąd podczas ustawiania katalogu głównego"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:893
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:904
 msgid "An error occurred while loading a directory"
 msgstr "Wystąpił błąd podczas wczytywania katalogu"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:896
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:907
 msgid "An error occurred"
 msgstr "Wystąpił błąd"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1105
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1123
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
@@ -2792,33 +2792,33 @@ msgstr ""
 "Nie można przenieść pliku do kosza.\n"
 "Usunąć go trwale?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1110
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1128
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr "Plik \"%s\" nie może zostać przeniesiony do kosza."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1115
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1133
 msgid "The selected files cannot be moved to the trash."
 msgstr "Zaznaczone pliki nie mogą być przeniesione do kosza."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1147
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1165
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr "Trwale usunąć plik \"%s\"?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1152
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1170
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr "Trwale usunąć zaznaczone pliki?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1155
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1173
 msgid "If you delete an item, it is permanently lost."
 msgstr "Usunięcie elementu spowoduje jego trwałą utratę."
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:1721
+#: ../plugins/filebrowser/gedit-file-browser-store.c:1722
 msgid "(Empty)"
 msgstr "(Pusty)"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3464
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3467
 msgid ""
 "The renamed file is currently filtered out.You need to adjust your filter "
 "settings to make the file visible"
@@ -2827,11 +2827,11 @@ msgstr ""
 "widoczny, należy zmienić ustawienia filtra"
 
 #. Translators: This is the default name of new files created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3708
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3711
 msgid "file"
 msgstr "plik"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3736
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3739
 msgid ""
 "The new file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
@@ -2840,11 +2840,11 @@ msgstr ""
 "należy zmienić ustawienia filtra"
 
 #. Translators: This is the default name of new directories created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3767
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3770
 msgid "directory"
 msgstr "katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3792
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3795
 msgid ""
 "The new directory is currently filtered out. You need to adjust your filter "
 "settings to make the directory visible"
@@ -3144,7 +3144,7 @@ msgstr "K_olor polecenia:"
 msgid "_Error color:"
 msgstr "Kolor _błędu:"
 
-#. ex:ts=8:et:
+#. ex:ts=4:et:
 #: ../plugins/quickopen/quickopen/popup.py:31
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:1
 msgid "Quick Open"
@@ -3173,7 +3173,7 @@ msgid "Create new snippet"
 msgstr "Tworzy nową wstawkę kodu"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/manager.py:398
+#: ../plugins/snippets/snippets/manager.py:400
 msgid "Delete selected snippet"
 msgstr "Usuwa zaznaczoną wstawkę kodu"
 
@@ -3182,7 +3182,7 @@ msgid "Export selected snippets"
 msgstr "Eksportuje zaznaczoną wstawkę kodu"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/manager.py:769
+#: ../plugins/snippets/snippets/manager.py:771
 msgid "Import snippets"
 msgstr "Importuje wstawki kodu"
 
@@ -3196,7 +3196,7 @@ msgstr "Klawisz skrótu aktywujący wstawkę kodu"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:657
+#: ../plugins/snippets/snippets/manager.py:659
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Słowo aktywujące wstawkę kodu po naciśnięciu klawisza Tab"
 
@@ -3232,12 +3232,12 @@ msgstr "Dodaj nową wstawkę..."
 msgid "Global"
 msgstr "Globalna"
 
-#: ../plugins/snippets/snippets/manager.py:395
+#: ../plugins/snippets/snippets/manager.py:397
 msgid "Revert selected snippet"
 msgstr "Przywraca zaznaczoną wstawkę"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:650
+#: ../plugins/snippets/snippets/manager.py:652
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
@@ -3245,75 +3245,75 @@ msgstr ""
 "To nie jest prawidłowy wyzwalacz tabulatora. Wyzwalacz może zawierać litery "
 "lub pojedynczy znak niealfanumeryczny. Np. {, [ itp."
 
-#: ../plugins/snippets/snippets/manager.py:748
+#: ../plugins/snippets/snippets/manager.py:750
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "Wystąpił następujący błąd podczas importowania: %s"
 
-#: ../plugins/snippets/snippets/manager.py:755
+#: ../plugins/snippets/snippets/manager.py:757
 msgid "Import successfully completed"
 msgstr "Import ukończony powodzeniem"
-
-#: ../plugins/snippets/snippets/manager.py:774
-#: ../plugins/snippets/snippets/manager.py:860
-#: ../plugins/snippets/snippets/manager.py:923
-msgid "All supported archives"
-msgstr "Wszystkie obsługiwane archiwa"
-
-#: ../plugins/snippets/snippets/manager.py:775
-#: ../plugins/snippets/snippets/manager.py:861
-#: ../plugins/snippets/snippets/manager.py:924
-msgid "Gzip compressed archive"
-msgstr "Archiwum skompresowane programem Gzip"
 
 #: ../plugins/snippets/snippets/manager.py:776
 #: ../plugins/snippets/snippets/manager.py:862
 #: ../plugins/snippets/snippets/manager.py:925
-msgid "Bzip2 compressed archive"
-msgstr "Archiwum skompresowane programem Bzip2"
+msgid "All supported archives"
+msgstr "Wszystkie obsługiwane archiwa"
 
 #: ../plugins/snippets/snippets/manager.py:777
-msgid "Single snippets file"
-msgstr "Pojedynczy plik wstawek"
+#: ../plugins/snippets/snippets/manager.py:863
+#: ../plugins/snippets/snippets/manager.py:926
+msgid "Gzip compressed archive"
+msgstr "Archiwum skompresowane programem Gzip"
 
 #: ../plugins/snippets/snippets/manager.py:778
 #: ../plugins/snippets/snippets/manager.py:864
 #: ../plugins/snippets/snippets/manager.py:927
+msgid "Bzip2 compressed archive"
+msgstr "Archiwum skompresowane programem Bzip2"
+
+#: ../plugins/snippets/snippets/manager.py:779
+msgid "Single snippets file"
+msgstr "Pojedynczy plik wstawek"
+
+#: ../plugins/snippets/snippets/manager.py:780
+#: ../plugins/snippets/snippets/manager.py:866
+#: ../plugins/snippets/snippets/manager.py:929
 msgid "All files"
 msgstr "Wszystkie pliki"
 
-#: ../plugins/snippets/snippets/manager.py:790
+#: ../plugins/snippets/snippets/manager.py:792
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "Wystąpił następujący błąd podczas eksportowania: %s"
 
-#: ../plugins/snippets/snippets/manager.py:794
+#: ../plugins/snippets/snippets/manager.py:796
 msgid "Export successfully completed"
 msgstr "Eksport ukończony powodzeniem"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:834
-#: ../plugins/snippets/snippets/manager.py:901
+#: ../plugins/snippets/snippets/manager.py:836
+#: ../plugins/snippets/snippets/manager.py:903
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr "Dołączyć zaznaczone wstawki <b>systemowe</b> do eksportu?"
 
-#: ../plugins/snippets/snippets/manager.py:849
-#: ../plugins/snippets/snippets/manager.py:919
+#: ../plugins/snippets/snippets/manager.py:851
+#: ../plugins/snippets/snippets/manager.py:921
 msgid "There are no snippets selected to be exported"
 msgstr "Nie zaznaczono wstawek kodu do eksportowania"
 
-#: ../plugins/snippets/snippets/manager.py:854
-#: ../plugins/snippets/snippets/manager.py:892
+#: ../plugins/snippets/snippets/manager.py:856
+#: ../plugins/snippets/snippets/manager.py:894
 msgid "Export snippets"
 msgstr "Eksportuje wstawki"
 
-#: ../plugins/snippets/snippets/manager.py:1031
+#: ../plugins/snippets/snippets/manager.py:1033
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr ""
 "Proszę wprowadzić skrót klawiszowy albo nacisnąć klawisz Backspace, aby "
 "usunąć obecny"
 
-#: ../plugins/snippets/snippets/manager.py:1033
+#: ../plugins/snippets/snippets/manager.py:1035
 msgid "Type a new shortcut"
 msgstr "Nowy skrót klawiszowy"
 
