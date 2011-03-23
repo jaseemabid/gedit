@@ -149,7 +149,7 @@ class PythonConsole(Gtk.ScrolledWindow):
 
     def __key_press_event_cb(self, view, event):
         modifier_mask = Gtk.accelerator_get_default_mod_mask()
-        event_state = event.key.state & modifier_mask
+        event_state = event.state & modifier_mask
 
         if event.keyval == Gdk.KEY_D and event_state == Gdk.ModifierType.CONTROL_MASK:
             self.destroy()
