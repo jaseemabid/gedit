@@ -29,7 +29,6 @@ DOC_PAGES = \
 	gedit-plugins-quick-open \
 	gedit-plugins-snippets.page \
 	gedit-plugins-sort.page \
-	gedit-plugins-spell-checker.page \
 	gedit-plugins-tag-list.page \
 	gedit-plugins-terminal.page \
 	gedit-printing.page \
