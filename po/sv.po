@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-07 17:07+0100\n"
-"PO-Revision-Date: 2011-03-07 17:13+0100\n"
+"POT-Creation-Date: 2011-03-24 20:58+0100\n"
+"PO-Revision-Date: 2011-03-24 21:08+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -152,7 +152,7 @@ msgstr "Maximalt antal åtgärder som gedit kan ångra eller göra om. Använd \
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
 msgid "Notebook Show Tabs Mode"
-msgstr ""
+msgstr "Visningsläge för specialflikar"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
 msgid "Number of minutes after which gedit will automatically save modified files. This will only take effect if the \"Autosave\" option is turned on."
@@ -195,19 +195,16 @@ msgid "Sorted list of encodings used by gedit for automatically detecting the en
 msgstr "Sorterad lista över teckenkodningar som används av gedit för automatisk identifiering av filens kodning. \"CURRENT\" är kodningen för den aktuella lokalanpassningen. Endast kända kodningar används."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
-#, fuzzy
 msgid "Specifies how the cursor moves when the HOME and END keys are pressed. Use \"disabled\" to always move at the start/end of the line, \"after\" to move to the start/end of the line the first time the keys are pressed and to the start/end of the text ignoring whitespaces the second time the keys are pressed, \"before\" to move to the start/end of the text before moving to the start/end of the line and \"always\" to always move to the start/end of the text instead of the start/end of the line."
-msgstr "Anger hur markören flyttas när tangenterna HOME och END används. Använd \"DISABLED\" för att alltid flytta till början/slutet av raden, \"AFTER\" för att flytta till början/slutet av raden första gången tangenterna används och till början/slutet av texten samt ignorera tomrum andra gången som tangenterna används, \"BEFORE\" för att flytta till början/slutet av texten innan flytt till början/slutet av raden och \"ALWAYS\" för att alltid flytta till början/slutet av texten istället för början/slutet av raden."
+msgstr "Anger hur markören flyttas när tangenterna HOME och END används. Använd \"disabled\" för att alltid flytta till början/slutet av raden, \"after\" för att flytta till början/slutet av raden första gången tangenterna används och till början/slutet av texten samt ignorera tomrum andra gången som tangenterna används, \"before\" för att flytta till början/slutet av texten innan flytt till början/slutet av raden och \"always\" för att alltid flytta till början/slutet av texten istället för början/slutet av raden."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
-#, fuzzy
 msgid "Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, \"word\" for wrapping at word boundaries, and \"char\" for wrapping at individual character boundaries. Note that the values are case-sensitive, so make sure they appear exactly as mentioned here."
-msgstr "Anger hur långa rader ska radbrytas vid utskrift. Använd \"GTK_WRAP_NONE\" för ingen radbrytning, \"GTK_WRAP_WORD\" för radbrytning vid ordgränser och \"GTK_WRAP_CHAR\" för radbrytning vid enskilda teckengränser. Observera att det görs skillnad på versaler och gemener i värdena, så försäkra dig om att de visas exakt som de visas här."
+msgstr "Anger hur långa rader ska radbrytas vid utskrift. Använd \"none\" för ingen radbrytning, \"word\" för radbrytning vid ordgränser och \"char\" för radbrytning vid enskilda teckengränser. Observera att det görs skillnad på versaler och gemener i värdena, så försäkra dig om att de visas exakt som de visas här."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
-#, fuzzy
 msgid "Specifies how to wrap long lines in the editing area. Use \"none\" for no wrapping, \"word\" for wrapping at word boundaries, and \"char\" for wrapping at individual character boundaries. Note that the values are case-sensitive, so make sure they appear exactly as mentioned here."
-msgstr "Anger hur långa rader ska radbrytas i redigeringsytan. Använd \"GTK_WRAP_NONE\" för ingen radbrytning, \"GTK_WRAP_WORD\" för radbrytning vid ordgränser och \"GTK_WRAP_CHAR\" för radbrytning vid enskilda teckengränser. Observera att det görs skillnad på versaler och gemener i värdena, så försäkra dig om att de visas exakt som de visas här."
+msgstr "Anger hur långa rader ska radbrytas i redigeringsytan. Använd \"none\" för ingen radbrytning, \"word\" för radbrytning vid ordgränser och \"char\" för radbrytning vid enskilda teckengränser. Observera att det görs skillnad på versaler och gemener i värdena, så försäkra dig om att de visas exakt som de visas här."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
 msgid "Specifies the font to use for a document's body when printing documents."
@@ -234,9 +231,8 @@ msgid "Specifies the position of the right margin."
 msgstr "Anger positionen för högermarginalen."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
-#, fuzzy
 msgid "Specifies when to show the notebook tabs. Use \"never\" to never show the tabs, \"always\" to always show the tabs, and \"auto\" to show the tabs only when there is more than one tab. Note that the values are case-sensitive, so make sure they appear exactly as mentioned here."
-msgstr "Anger hur långa rader ska radbrytas vid utskrift. Använd \"GTK_WRAP_NONE\" för ingen radbrytning, \"GTK_WRAP_WORD\" för radbrytning vid ordgränser och \"GTK_WRAP_CHAR\" för radbrytning vid enskilda teckengränser. Observera att det görs skillnad på versaler och gemener i värdena, så försäkra dig om att de visas exakt som de visas här."
+msgstr "Anger när specialflikar ska visas. Använd \"never\" för att aldrig visa flikarna, \"always\" för att alltid visa flikarna och \"auto\" för att visa flikarna endast när det finns fler än en flik. Observera att det görs skillnad på versaler och gemener i värdena, så försäkra dig om att de visas exakt som de visas här."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
 msgid "Status Bar is Visible"
@@ -619,7 +615,7 @@ msgstr "_minut"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
 #: ../gedit/dialogs/gedit-replace-dialog.ui.h:2
-#: ../gedit/gedit-window.c:1590
+#: ../gedit/gedit-window.c:1592
 msgid "Replace"
 msgstr "Ersätt"
 
@@ -696,7 +692,7 @@ msgstr "Skapa ett nytt dokument i en befintlig instans av gedit"
 
 #: ../gedit/gedit-command-line.c:293
 msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
-msgstr ""
+msgstr "Ställ in X-geometri för fönsterstorlek (BREDDxHÖJD+X+Y)"
 
 #: ../gedit/gedit-command-line.c:294
 msgid "GEOMETRY"
@@ -704,7 +700,7 @@ msgstr "GEOMETRI"
 
 #: ../gedit/gedit-command-line.c:301
 msgid "Open files and block process until files are closed"
-msgstr ""
+msgstr "Öppna filer och blockera processen tills filer har stängts"
 
 #: ../gedit/gedit-command-line.c:309
 msgid "Run gedit in the background"
@@ -851,11 +847,11 @@ msgstr[1] "Ändringar i dokumentet gjorda under de senaste %d timmarna kommer at
 msgid "_Revert"
 msgstr "_Återställ"
 
-#: ../gedit/gedit-commands-help.c:86
+#: ../gedit/gedit-commands-help.c:88
 msgid "gedit is a small and lightweight text editor for the GNOME Desktop"
 msgstr "gedit är en liten och enkel textredigerare för GNOME-skrivbordet"
 
-#: ../gedit/gedit-commands-help.c:111
+#: ../gedit/gedit-commands-help.c:113
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
@@ -891,15 +887,15 @@ msgstr "\"%s\" hittades inte"
 msgid "Unsaved Document %d"
 msgstr "Osparat dokument %d"
 
-#: ../gedit/gedit-documents-panel.c:118
-#: ../gedit/gedit-documents-panel.c:132
-#: ../gedit/gedit-window.c:2406
-#: ../gedit/gedit-window.c:2413
+#: ../gedit/gedit-documents-panel.c:119
+#: ../gedit/gedit-documents-panel.c:133
+#: ../gedit/gedit-window.c:2408
+#: ../gedit/gedit-window.c:2415
 msgid "Read-Only"
 msgstr "Skrivskyddad"
 
-#: ../gedit/gedit-documents-panel.c:1089
-#: ../gedit/gedit-window.c:3838
+#: ../gedit/gedit-documents-panel.c:1124
+#: ../gedit/gedit-window.c:3840
 msgid "Documents"
 msgstr "Dokument"
 
@@ -1642,7 +1638,7 @@ msgid "_Open..."
 msgstr "_Öppna..."
 
 #: ../gedit/gedit-ui.h:59
-#: ../gedit/gedit-window.c:1518
+#: ../gedit/gedit-window.c:1520
 msgid "Open a file"
 msgstr "Öppna en fil"
 
@@ -1944,7 +1940,7 @@ msgstr "Sträng du vill söka efter"
 msgid "Line you want to move the cursor to"
 msgstr "Rad du vill flytta markören till"
 
-#: ../gedit/gedit-window.c:1021
+#: ../gedit/gedit-window.c:1023
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Använd färgmarkeringsläge för %s"
@@ -1952,8 +1948,8 @@ msgstr "Använd färgmarkeringsläge för %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1088
-#: ../gedit/gedit-window.c:2103
+#: ../gedit/gedit-window.c:1090
+#: ../gedit/gedit-window.c:2105
 #: ../plugins/externaltools/tools/manager.py:120
 #: ../plugins/externaltools/tools/manager.py:416
 #: ../plugins/externaltools/tools/manager.py:527
@@ -1961,65 +1957,64 @@ msgstr "Använd färgmarkeringsläge för %s"
 msgid "Plain Text"
 msgstr "Oformaterad text"
 
-#: ../gedit/gedit-window.c:1089
+#: ../gedit/gedit-window.c:1091
 msgid "Disable syntax highlighting"
 msgstr "Inaktivera syntaxmarkering"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1411
+#: ../gedit/gedit-window.c:1413
 #, c-format
 msgid "Open '%s'"
 msgstr "Öppna \"%s\""
 
-#: ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-window.c:1522
 msgid "Open a recently used file"
 msgstr "Öppna en nyligen använd fil"
 
-#: ../gedit/gedit-window.c:1526
+#: ../gedit/gedit-window.c:1528
 msgid "Open"
 msgstr "Öppna"
 
-#: ../gedit/gedit-window.c:1584
+#: ../gedit/gedit-window.c:1586
 msgid "Save"
 msgstr "Spara"
 
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1588
 msgid "Print"
 msgstr "Skriv ut"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1590
 msgid "Find"
 msgstr "Sök"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1748
+#: ../gedit/gedit-window.c:1750
 #, c-format
 msgid "Activate '%s'"
 msgstr "Aktivera \"%s\""
 
-#: ../gedit/gedit-window.c:2081
+#: ../gedit/gedit-window.c:2083
 msgid "Use Spaces"
 msgstr "Använd blanksteg"
 
-#: ../gedit/gedit-window.c:2154
+#: ../gedit/gedit-window.c:2156
 msgid "Tab Width"
 msgstr "Tabulatorbredd"
 
-#: ../gedit/gedit-window.c:2263
-#, fuzzy
+#: ../gedit/gedit-window.c:2265
 msgid "Bracket match is out of range"
-msgstr "Klammermatchning"
+msgstr "Klammermatchning är utanför intervallet"
 
-#: ../gedit/gedit-window.c:2268
+#: ../gedit/gedit-window.c:2270
 msgid "Bracket match not found"
 msgstr "Klammermatchning hittades inte"
 
-#: ../gedit/gedit-window.c:2273
+#: ../gedit/gedit-window.c:2275
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Klammarmatchning hittades på rad: %d"
 
-#: ../gedit/gedit-window.c:4044
+#: ../gedit/gedit-window.c:4046
 msgid "About gedit"
 msgstr "Om gedit"
 
@@ -2199,7 +2194,7 @@ msgstr "Ett Pango-typsnittsnamn. Exempel är \"Sans 12\" eller \"Monospace Bold 
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
 msgid "If true, the external tools will use the desktop-global standard font if it's monospace (and the most similar font it can come up with otherwise)."
-msgstr ""
+msgstr "Om true kommer externa verktyg att använda standardtypsnittet desktop-global om det är monospace (annars det mest liknande typsnittet som kan hittas)."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
@@ -2417,59 +2412,59 @@ msgstr "Filbläddrarpanel"
 msgid "File System"
 msgstr "Filsystem"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:585
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:596
 msgid "_Set root to active document"
 msgstr "_Ställ in rot till aktivt dokument"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:587
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:598
 msgid "Set the root to the active document location"
 msgstr "Ställ in roten till platsen för det aktiva dokumentet"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:592
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:603
 msgid "_Open terminal here"
 msgstr "_Öppna en terminal här"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:594
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:605
 msgid "Open a terminal at the currently opened directory"
 msgstr "Öppna en terminal vid för närvarande öppnad katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:732
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:743
 msgid "File Browser"
 msgstr "Filbläddrare"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:875
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:886
 msgid "An error occurred while creating a new directory"
 msgstr "Ett fel uppstod vid skapandet av en ny katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:878
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:889
 msgid "An error occurred while creating a new file"
 msgstr "Ett fel uppstod vid skapandet av en ny fil"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:881
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:892
 msgid "An error occurred while renaming a file or directory"
 msgstr "Ett fel uppstod vid namnbyte av en fil eller katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:884
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:895
 msgid "An error occurred while deleting a file or directory"
 msgstr "Ett fel uppstod vid borttagning av en fil eller katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:887
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:898
 msgid "An error occurred while opening a directory in the file manager"
 msgstr "Ett fel uppstod vid öppnandet av en katalog i filhanteraren"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:890
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:901
 msgid "An error occurred while setting a root directory"
 msgstr "Ett fel uppstod vid inställning av en rotkatalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:893
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:904
 msgid "An error occurred while loading a directory"
 msgstr "Ett fel uppstod vid inläsning av en katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:896
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:907
 msgid "An error occurred"
 msgstr "Ett fel inträffade"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1105
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1123
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
@@ -2477,51 +2472,51 @@ msgstr ""
 "Kan inte flytta filen till papperskorgen.\n"
 "Vill du ta bort den permanent?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1110
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1128
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr "Filen (%s) kan inte flyttas till papperskorgen."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1115
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1133
 msgid "The selected files cannot be moved to the trash."
 msgstr "De markerade filerna kan inte flyttas till papperskorgen."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1147
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1165
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr "Är du säker på att du vill ta bort \"%s\" permanent?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1152
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1170
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr "Är du säker på att du vill ta bort de markerade filerna permanent?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1155
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1173
 msgid "If you delete an item, it is permanently lost."
 msgstr "Om du tar bort ett objekt är det borta för alltid."
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:1728
+#: ../plugins/filebrowser/gedit-file-browser-store.c:1722
 msgid "(Empty)"
 msgstr "(Tom)"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3474
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3467
 msgid "The renamed file is currently filtered out.You need to adjust your filter settings to make the file visible"
 msgstr "Filen med det nya namnet är för närvarande bortfiltrerad. Du behöver justera dina filterinställningar för att göra filen synlig"
 
 #. Translators: This is the default name of new files created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3718
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3711
 msgid "file"
 msgstr "fil"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3746
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3739
 msgid "The new file is currently filtered out. You need to adjust your filter settings to make the file visible"
 msgstr "Den nya filen är för närvarande bortfiltrerad. Du behöver justera dina filterinställningar för att göra filen synlig"
 
 #. Translators: This is the default name of new directories created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3777
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3770
 msgid "directory"
 msgstr "katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3802
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3795
 msgid "The new directory is currently filtered out. You need to adjust your filter settings to make the directory visible"
 msgstr "Den nya katalogen är för närvarande bortfiltrerad. Du behöver justera dina filterinställningar för att göra katalogen synlig"
 
@@ -2752,17 +2747,15 @@ msgstr "Textfärg för fel"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:5
 msgid "If true, the terminal will use the desktop-global standard font if it's monospace (and the most similar font it can come up with otherwise)."
-msgstr ""
+msgstr "Om true kommer terminalen att använda standardtypsnittet desktop-global om det är monospace (annars det mest liknande typsnittet som kan hittas)."
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
-#, fuzzy
 msgid "The command color text"
-msgstr "Färg för k_ommandon:"
+msgstr "Textfärgen för kommando"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
-#, fuzzy
 msgid "The error color text"
-msgstr "Färg för _fel:"
+msgstr "Textfärgen för fel"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
 msgid "Interactive Python console standing in the bottom panel"
@@ -2782,7 +2775,7 @@ msgstr "Färg för k_ommandon:"
 msgid "_Error color:"
 msgstr "Färg för _fel:"
 
-#. ex:ts=8:et:
+#. ex:ts=4:et:
 #: ../plugins/quickopen/quickopen/popup.py:31
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:1
 msgid "Quick Open"
@@ -2810,7 +2803,7 @@ msgid "Create new snippet"
 msgstr "Skapa ny textsnutt"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/manager.py:398
+#: ../plugins/snippets/snippets/manager.py:399
 msgid "Delete selected snippet"
 msgstr "Ta bort markerad textsnutt"
 
@@ -2819,7 +2812,7 @@ msgid "Export selected snippets"
 msgstr "Exportera markerade textsnuttar"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/manager.py:769
+#: ../plugins/snippets/snippets/manager.py:770
 msgid "Import snippets"
 msgstr "Importera textsnuttar"
 
@@ -2833,7 +2826,7 @@ msgstr "Snabbtangent med vilken textsnutten aktiveras"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:657
+#: ../plugins/snippets/snippets/manager.py:658
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Ett ord med vilket textsnutten aktiveras efter att tabulatortangenten tryckts"
 
@@ -2861,90 +2854,90 @@ msgstr "Hantera textsnuttar"
 msgid "Snippets archive"
 msgstr "Textsnuttsarkiv"
 
-#: ../plugins/snippets/snippets/manager.py:65
+#: ../plugins/snippets/snippets/manager.py:66
 msgid "Add a new snippet..."
 msgstr "Lägg till en ny textsnutt..."
 
-#: ../plugins/snippets/snippets/manager.py:118
+#: ../plugins/snippets/snippets/manager.py:119
 msgid "Global"
 msgstr "Global"
 
-#: ../plugins/snippets/snippets/manager.py:395
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Revert selected snippet"
 msgstr "Återställ markerad textsnutt"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:650
+#: ../plugins/snippets/snippets/manager.py:651
 msgid "This is not a valid Tab trigger. Triggers can either contain letters or a single (non-alphanumeric) character like: {, [, etc."
 msgstr "Detta är inte en giltig tabulatorutlösare. Utlösare kan antingen innehålla bokstäver eller ett enda (icke-alfabetiskt) tecken som: {, [, etc."
 
-#: ../plugins/snippets/snippets/manager.py:748
+#: ../plugins/snippets/snippets/manager.py:749
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "Följande fel inträffade vid importering: %s"
 
-#: ../plugins/snippets/snippets/manager.py:755
+#: ../plugins/snippets/snippets/manager.py:756
 msgid "Import successfully completed"
 msgstr "Importeringen lyckades"
-
-#: ../plugins/snippets/snippets/manager.py:774
-#: ../plugins/snippets/snippets/manager.py:860
-#: ../plugins/snippets/snippets/manager.py:923
-msgid "All supported archives"
-msgstr "Alla arkiv som stöds"
 
 #: ../plugins/snippets/snippets/manager.py:775
 #: ../plugins/snippets/snippets/manager.py:861
 #: ../plugins/snippets/snippets/manager.py:924
-msgid "Gzip compressed archive"
-msgstr "Gzip-komprimerat arkiv"
+msgid "All supported archives"
+msgstr "Alla arkiv som stöds"
 
 #: ../plugins/snippets/snippets/manager.py:776
 #: ../plugins/snippets/snippets/manager.py:862
 #: ../plugins/snippets/snippets/manager.py:925
+msgid "Gzip compressed archive"
+msgstr "Gzip-komprimerat arkiv"
+
+#: ../plugins/snippets/snippets/manager.py:777
+#: ../plugins/snippets/snippets/manager.py:863
+#: ../plugins/snippets/snippets/manager.py:926
 msgid "Bzip2 compressed archive"
 msgstr "Bzip2-komprimerat arkiv"
 
-#: ../plugins/snippets/snippets/manager.py:777
+#: ../plugins/snippets/snippets/manager.py:778
 msgid "Single snippets file"
 msgstr "En textsnuttsfil"
 
-#: ../plugins/snippets/snippets/manager.py:778
-#: ../plugins/snippets/snippets/manager.py:864
-#: ../plugins/snippets/snippets/manager.py:927
+#: ../plugins/snippets/snippets/manager.py:779
+#: ../plugins/snippets/snippets/manager.py:865
+#: ../plugins/snippets/snippets/manager.py:928
 msgid "All files"
 msgstr "Alla filer"
 
-#: ../plugins/snippets/snippets/manager.py:790
+#: ../plugins/snippets/snippets/manager.py:791
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "Följande fel inträffade vid exportering: %s"
 
-#: ../plugins/snippets/snippets/manager.py:794
+#: ../plugins/snippets/snippets/manager.py:795
 msgid "Export successfully completed"
 msgstr "Exporteringen lyckades"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:834
-#: ../plugins/snippets/snippets/manager.py:901
+#: ../plugins/snippets/snippets/manager.py:835
+#: ../plugins/snippets/snippets/manager.py:902
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr "Vill du inkludera markerade <b>system</b>textsnuttar i din exportering?"
 
-#: ../plugins/snippets/snippets/manager.py:849
-#: ../plugins/snippets/snippets/manager.py:919
+#: ../plugins/snippets/snippets/manager.py:850
+#: ../plugins/snippets/snippets/manager.py:920
 msgid "There are no snippets selected to be exported"
 msgstr "Det finns inga textsnuttar markerade att exportera"
 
-#: ../plugins/snippets/snippets/manager.py:854
-#: ../plugins/snippets/snippets/manager.py:892
+#: ../plugins/snippets/snippets/manager.py:855
+#: ../plugins/snippets/snippets/manager.py:893
 msgid "Export snippets"
 msgstr "Exportera textsnuttar"
 
-#: ../plugins/snippets/snippets/manager.py:1031
+#: ../plugins/snippets/snippets/manager.py:1032
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "Ange en ny snabbtangent, eller tryck Backsteg för att rensa"
 
-#: ../plugins/snippets/snippets/manager.py:1033
+#: ../plugins/snippets/snippets/manager.py:1034
 msgid "Type a new shortcut"
 msgstr "Ange en ny snabbtangent"
 
@@ -3255,7 +3248,7 @@ msgstr "Anpassat format"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:2
 msgid "If the user should be prompted for a format or if the selected or custom format should be used."
-msgstr ""
+msgstr "Om användaren ska tillfrågas efter ett format eller om det valda eller anpassade formatet ska användas."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
 msgid "Prompt Type"
@@ -3271,7 +3264,7 @@ msgstr "Anpassat format för när datum/tid infogas."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
 msgid "The selected format used when inserting the date/time."
-msgstr ""
+msgstr "Det valda formatet som används när datum/tid infogas."
 
 #. Translators: Use the more common date format in your locale
 #: ../plugins/time/gedit-time-dialog.ui.h:3
@@ -3318,11 +3311,11 @@ msgstr "_Fråga efter ett format"
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
 msgid "Logs access and leave event for documents used with gedit"
-msgstr ""
+msgstr "Loggar åtkomst och lämna händelser för dokument som används med gedit"
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
-msgstr ""
+msgstr "Zeitgeist-dataleverantör"
 
 #~ msgid "Quick open"
 #~ msgstr "Snabböppna"
