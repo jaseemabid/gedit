@@ -49,9 +49,10 @@ class Manager(Gtk.VBox, Gtk.Buildable):
                 self._temp_export = None
                 self.snippets_doc = None
                 self.manager = None
-                self.default_size = None
 
                 self.key_press_id = 0
+
+                self.set_size_request(600, 400)
 
         def get_language_snippets(self, path, name = None):
                 library = Library()
@@ -231,20 +232,18 @@ class Manager(Gtk.VBox, Gtk.Buildable):
         def build_dnd(self):
                 tv = self.tree_view
 
-#                # Set it as a drag source for exporting snippets
-#                # TODO: fix this
-#                Gtk.drag_source_set(tv, Gdk.ModifierType.BUTTON1_MASK, self.dnd_target_list, Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
+                # Set it as a drag source for exporting snippets
+                tv.drag_source_set(Gdk.ModifierType.BUTTON1_MASK, self.dnd_target_list, Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
 
-#                # Set it as a drag destination for importing snippets
-#                # TODO: fix this
-#                Gtk.drag_dest_set(tv, Gtk.DestDefaults.HIGHLIGHT | Gtk.DestDefaults.DROP,
-#                                 self.dnd_target_list, Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
+                # Set it as a drag destination for importing snippets
+                tv.drag_dest_set(Gtk.DestDefaults.HIGHLIGHT | Gtk.DestDefaults.DROP,
+                                 self.dnd_target_list, Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
 
-#                tv.connect('drag_data_get', self.on_tree_view_drag_data_get)
-#                tv.connect('drag_begin', self.on_tree_view_drag_begin)
-#                tv.connect('drag_end', self.on_tree_view_drag_end)
-#                tv.connect('drag_data_received', self.on_tree_view_drag_data_received)
-#                tv.connect('drag_motion', self.on_tree_view_drag_motion)
+                tv.connect('drag_data_get', self.on_tree_view_drag_data_get)
+                tv.connect('drag_begin', self.on_tree_view_drag_begin)
+                tv.connect('drag_end', self.on_tree_view_drag_end)
+                tv.connect('drag_data_received', self.on_tree_view_drag_data_received)
+                tv.connect('drag_motion', self.on_tree_view_drag_motion)
 
                 theme = Gtk.IconTheme.get_for_screen(tv.get_screen())
 
@@ -320,7 +319,7 @@ class Manager(Gtk.VBox, Gtk.Buildable):
                 entry.connect('focus-out-event', self.on_entry_drop_targets_focus_out)
                 entry.connect('drag-data-received', self.on_entry_drop_targets_drag_data_received)
 
-                lst = Gtk.drag_dest_get_target_list(entry)
+                lst = entry.drag_dest_get_target_list()
                 lst.add_uri_targets(self.TARGET_URI)
 
         def __getitem__(self, key):
@@ -540,11 +539,11 @@ class Manager(Gtk.VBox, Gtk.Buildable):
                         True, 0.5, 0.5)
 
         def get_language(self, path):
-                if path[0] == 0:
+                if path.get_indices()[0] == 0:
                         return None
                 else:
-                        return self.model.get_value(self.model.get_iter( \
-                                        (path[0],)), self.LANG_COLUMN).get_id()
+                        return self.model.get_value(self.model.get_iter(path),
+                                                    self.LANG_COLUMN).get_id()
 
         def new_snippet(self, properties=None):
                 if not self.language_path:
