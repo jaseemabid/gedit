@@ -8,7 +8,7 @@ DOC_FIGURES = \
 	figures/gedit3-screenshot.png \
 	figures/gedit-side-pane1.png \
 	figures/gedit-side-pane2.png \
-        figures/gedit-side-pane3.png
+	figures/gedit-side-pane3.png
 
 DOC_PAGES = \
 	gedit-change-color-scheme.page \
@@ -45,7 +45,7 @@ DOC_PAGES = \
 	gedit-tabs.page \
 	gedit-undo-recent-action.page \
 	gedit-view-open-files-in-sidepane.page \
-        index.page
+	index.page
 
 DOC_LINGUAS = ar bg ca cs da de el es fi fr hu it ja ko oc pt_BR ru sl sv th uk zh_CN zh_HK zh_TW
 dist-hook: doc-dist-hook
