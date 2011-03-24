@@ -64,7 +64,8 @@ struct _GeditNotebookPrivate
 
 	GtkCssProvider *css;
 
-	gboolean close_buttons_sensitive;
+	guint close_buttons_sensitive : 1;
+	guint ignore_focused_page_update : 1;
 };
 
 G_DEFINE_TYPE(GeditNotebook, gedit_notebook, GTK_TYPE_NOTEBOOK)
@@ -252,16 +253,19 @@ gedit_notebook_switch_page (GtkNotebook *notebook,
 
 	GTK_NOTEBOOK_CLASS (gedit_notebook_parent_class)->switch_page (notebook, page, page_num);
 
-	/* Remove the old page, we dont want to grow unnecessarily
-	 * the list */
-	if (nb->priv->focused_pages)
+	if (!nb->priv->ignore_focused_page_update)
 	{
-		nb->priv->focused_pages =
-			g_list_remove (nb->priv->focused_pages, page);
-	}
+		/* Remove the old page, we dont want to grow unnecessarily
+		 * the list */
+		if (nb->priv->focused_pages)
+		{
+			nb->priv->focused_pages =
+				g_list_remove (nb->priv->focused_pages, page);
+		}
 
-	nb->priv->focused_pages = g_list_append (nb->priv->focused_pages,
-	                                         page);
+		nb->priv->focused_pages = g_list_append (nb->priv->focused_pages,
+		                                         page);
+	}
 
 	/* give focus to the tab */
 	gtk_widget_grab_focus (page);
@@ -305,8 +309,10 @@ smart_tab_switching_on_closure (GeditNotebook *nb,
 		/* activate the last focused tab */
 		l = g_list_last (nb->priv->focused_pages);
 		child = GTK_WIDGET (l->data);
+
 		page_num = gtk_notebook_page_num (GTK_NOTEBOOK (nb),
 		                                  child);
+
 		gtk_notebook_set_current_page (GTK_NOTEBOOK (nb),
 		                               page_num);
 	}
@@ -388,11 +394,32 @@ gedit_notebook_page_added (GtkNotebook *notebook,
 }
 
 static void
+gedit_notebook_remove (GtkContainer *container,
+                       GtkWidget    *widget)
+{
+	GeditNotebook *nb;
+
+	/* This is where GtkNotebook will remove the page. By doing so, it
+	   will also switch to a new page, messing up our focus list. So we
+	   set a flag here to ignore the switch temporarily */
+
+	nb = GEDIT_NOTEBOOK (container);
+
+	nb->priv->ignore_focused_page_update = TRUE;
+
+	GTK_CONTAINER_CLASS (gedit_notebook_parent_class)->remove (container,
+	                                                           widget);
+
+	nb->priv->ignore_focused_page_update = FALSE;
+}
+
+static void
 gedit_notebook_class_init (GeditNotebookClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
 	GtkWidgetClass *gtkwidget_class = GTK_WIDGET_CLASS (klass);
 	GtkNotebookClass *notebook_class = GTK_NOTEBOOK_CLASS (klass);
+	GtkContainerClass *container_class = GTK_CONTAINER_CLASS (klass);
 
 	object_class->dispose = gedit_notebook_dispose;
 	object_class->finalize = gedit_notebook_finalize;
@@ -405,6 +432,8 @@ gedit_notebook_class_init (GeditNotebookClass *klass)
 	notebook_class->switch_page = gedit_notebook_switch_page;
 	notebook_class->page_removed = gedit_notebook_page_removed;
 	notebook_class->page_added = gedit_notebook_page_added;
+
+	container_class->remove = gedit_notebook_remove;
 
 	g_object_class_install_property (object_class, PROP_SHOW_TABS_MODE,
 					 g_param_spec_enum ("show-tabs-mode",
