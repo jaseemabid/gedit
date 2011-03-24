@@ -71,8 +71,8 @@ _gedit_cmd_help_about (GtkAction   *action,
 	};
 
 	static const gchar * const documenters[] = {
-                "Jim Campbell <jwcampbell@gmail.com",
-                "Daniel Neel <dneelyep@gmail.com",
+		"Jim Campbell <jwcampbell@gmail.com>",
+		"Daniel Neel <dneelyep@gmail.com>",
 		"Sun GNOME Documentation Team <gdocteam@sun.com>",
 		"Eric Baudais <baudais@okstate.edu>",
 		NULL
