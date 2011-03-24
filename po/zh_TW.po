@@ -9,10 +9,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gedit 2.91.6\n"
+"Project-Id-Version: gedit 2.91.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-03 14:21+0800\n"
-"PO-Revision-Date: 2011-02-02 14:35+0800\n"
+"POT-Creation-Date: 2011-03-24 18:45+0800\n"
+"PO-Revision-Date: 2011-03-24 08:45+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (Taiwan) <zh-l10n@lists.linux.org.tw>\n"
 "Language: \n"
@@ -725,7 +725,7 @@ msgstr "加入(_A)…"
 msgid "_Autosave files every"
 msgstr "每隔指定時間自動儲存檔案(_A):"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:599
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:588
 msgid "_Display line numbers"
 msgstr "顯示列號(_D)"
 
@@ -742,7 +742,7 @@ msgid "_minutes"
 msgstr "分鐘(_M)"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1590
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1592
 msgid "Replace"
 msgstr "取代"
 
@@ -1035,12 +1035,12 @@ msgstr "找不到「%s」"
 msgid "Unsaved Document %d"
 msgstr "未儲存文件 %d"
 
-#: ../gedit/gedit-documents-panel.c:118 ../gedit/gedit-documents-panel.c:132
-#: ../gedit/gedit-window.c:2403 ../gedit/gedit-window.c:2410
+#: ../gedit/gedit-documents-panel.c:119 ../gedit/gedit-documents-panel.c:133
+#: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
 msgid "Read-Only"
 msgstr "唯讀"
 
-#: ../gedit/gedit-documents-panel.c:1089 ../gedit/gedit-window.c:3835
+#: ../gedit/gedit-documents-panel.c:1124 ../gedit/gedit-window.c:3840
 msgid "Documents"
 msgstr "文件"
 
@@ -1378,13 +1378,13 @@ msgstr "gedit 會以「不能編輯」的方式開啟此檔案。但是否仍然
 
 #: ../gedit/gedit-io-error-info-bar.c:873
 #: ../gedit/gedit-io-error-info-bar.c:971
-#: ../gedit/gedit-io-error-info-bar.c:1259
+#: ../gedit/gedit-io-error-info-bar.c:1260
 msgid "S_ave Anyway"
 msgstr "仍然儲存(_A)"
 
 #: ../gedit/gedit-io-error-info-bar.c:877
 #: ../gedit/gedit-io-error-info-bar.c:975
-#: ../gedit/gedit-io-error-info-bar.c:1263
+#: ../gedit/gedit-io-error-info-bar.c:1264
 msgid "D_on't Save"
 msgstr "不要儲存(_O)"
 
@@ -1441,35 +1441,35 @@ msgid ""
 "correctly and try again."
 msgstr "%s 並不是一個有效的位置。檢查所輸入的位置是否正確後再試一次。"
 
-#: ../gedit/gedit-io-error-info-bar.c:1103
+#: ../gedit/gedit-io-error-info-bar.c:1104
 msgid ""
 "You do not have the permissions necessary to save the file. Please check "
 "that you typed the location correctly and try again."
 msgstr "您沒有足夠的權限來儲存檔案。檢查所輸入的位置是否正確後再試一次。"
 
-#: ../gedit/gedit-io-error-info-bar.c:1109
+#: ../gedit/gedit-io-error-info-bar.c:1110
 msgid ""
 "There is not enough disk space to save the file. Please free some disk space "
 "and try again."
 msgstr "剩餘的磁碟空間不足以儲存檔案。請先騰空部份磁碟空間後再試一次。"
 
-#: ../gedit/gedit-io-error-info-bar.c:1114
+#: ../gedit/gedit-io-error-info-bar.c:1115
 msgid ""
 "You are trying to save the file on a read-only disk. Please check that you "
 "typed the location correctly and try again."
 msgstr "嘗試將檔案寫入唯讀的磁碟上。檢查所輸入的位置是否正確後再試一次。"
 
-#: ../gedit/gedit-io-error-info-bar.c:1120
+#: ../gedit/gedit-io-error-info-bar.c:1121
 msgid "A file with the same name already exists. Please use a different name."
 msgstr "相同名稱的檔案已經存在，請使用其它名稱。"
 
-#: ../gedit/gedit-io-error-info-bar.c:1125
+#: ../gedit/gedit-io-error-info-bar.c:1126
 msgid ""
 "The disk where you are trying to save the file has a limitation on length of "
 "the file names. Please use a shorter name."
 msgstr "準備用來儲存檔案的磁碟有檔案長度的限制。請使用較短的名稱。"
 
-#: ../gedit/gedit-io-error-info-bar.c:1132
+#: ../gedit/gedit-io-error-info-bar.c:1133
 msgid ""
 "The disk where you are trying to save the file has a limitation on file "
 "sizes. Please try saving a smaller file or saving it to a disk that does not "
@@ -1478,7 +1478,7 @@ msgstr ""
 "準備用來儲存檔案的磁碟加上了有關檔案大小的限制。請嘗試儲存較小的檔案，或儲存"
 "至另一個沒有檔案大小限制的磁碟。"
 
-#: ../gedit/gedit-io-error-info-bar.c:1148
+#: ../gedit/gedit-io-error-info-bar.c:1149
 #, c-format
 msgid "Could not save the file %s."
 msgstr "無法儲存檔案 %s。"
@@ -1487,29 +1487,29 @@ msgstr "無法儲存檔案 %s。"
 #. * could be interpreted as the changes he made in the document. beside "reading" is
 #. * not accurate (since last load/save)
 #.
-#: ../gedit/gedit-io-error-info-bar.c:1193
+#: ../gedit/gedit-io-error-info-bar.c:1194
 #, c-format
 msgid "The file %s changed on disk."
 msgstr "磁碟上的檔案 %s 已變更"
 
-#: ../gedit/gedit-io-error-info-bar.c:1198
+#: ../gedit/gedit-io-error-info-bar.c:1199
 msgid "Do you want to drop your changes and reload the file?"
 msgstr "是否要丟棄所有變更及重新載入檔案？"
 
-#: ../gedit/gedit-io-error-info-bar.c:1200
+#: ../gedit/gedit-io-error-info-bar.c:1201
 msgid "Do you want to reload the file?"
 msgstr "要重新載入檔案？"
 
-#: ../gedit/gedit-io-error-info-bar.c:1205
+#: ../gedit/gedit-io-error-info-bar.c:1206
 msgid "_Reload"
 msgstr "重新載入(_R)"
 
-#: ../gedit/gedit-io-error-info-bar.c:1277
+#: ../gedit/gedit-io-error-info-bar.c:1278
 #, c-format
 msgid "Some invalid chars have been detected while saving %s"
 msgstr "當儲存 %s 時偵測到一些無效的字元"
 
-#: ../gedit/gedit-io-error-info-bar.c:1293
+#: ../gedit/gedit-io-error-info-bar.c:1294
 msgid ""
 "If you continue saving this file you can corrupt the document.  Save anyway?"
 msgstr "如果您繼續儲存這個檔案可能會損毀這份文件。要強制儲存嗎？"
@@ -1724,38 +1724,38 @@ msgid "Saving %s"
 msgstr "正在儲存 %s"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1827
+#: ../gedit/gedit-tab.c:1832
 msgid "RO"
 msgstr "唯讀"
 
-#: ../gedit/gedit-tab.c:1874
+#: ../gedit/gedit-tab.c:1879
 #, c-format
 msgid "Error opening file %s"
 msgstr "開啟 %s 時出現錯誤"
 
-#: ../gedit/gedit-tab.c:1879
+#: ../gedit/gedit-tab.c:1884
 #, c-format
 msgid "Error reverting file %s"
 msgstr "還原檔案 %s 時出現錯誤"
 
-#: ../gedit/gedit-tab.c:1884
+#: ../gedit/gedit-tab.c:1889
 #, c-format
 msgid "Error saving file %s"
 msgstr "儲存檔案 %s 時出現錯誤"
 
-#: ../gedit/gedit-tab.c:1905
+#: ../gedit/gedit-tab.c:1910
 msgid "Unicode (UTF-8)"
 msgstr "萬國碼 (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1912
+#: ../gedit/gedit-tab.c:1917
 msgid "Name:"
 msgstr "名稱:"
 
-#: ../gedit/gedit-tab.c:1913
+#: ../gedit/gedit-tab.c:1918
 msgid "MIME Type:"
 msgstr "MIME 類型："
 
-#: ../gedit/gedit-tab.c:1914
+#: ../gedit/gedit-tab.c:1919
 msgid "Encoding:"
 msgstr "編碼："
 
@@ -1800,7 +1800,7 @@ msgstr "新增文件"
 msgid "_Open..."
 msgstr "開啟(_O)…"
 
-#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1518
+#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1520
 msgid "Open a file"
 msgstr "開啟檔案"
 
@@ -2079,29 +2079,29 @@ msgid "/ on %s"
 msgstr "/ 於 %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:610
+#: ../gedit/gedit-view-frame.c:596
 msgid "_Wrap Around"
 msgstr "回到檔案開始部份再搜尋(_W)"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:620
+#: ../gedit/gedit-view-frame.c:606
 msgid "Match _Entire Word Only"
 msgstr "只符合整個字詞(_E)"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:630
+#: ../gedit/gedit-view-frame.c:616
 msgid "_Match Case"
 msgstr "符合大小寫(_M)"
 
-#: ../gedit/gedit-view-frame.c:889
+#: ../gedit/gedit-view-frame.c:875
 msgid "String you want to search for"
 msgstr "要搜尋的字串"
 
-#: ../gedit/gedit-view-frame.c:898
+#: ../gedit/gedit-view-frame.c:884
 msgid "Line you want to move the cursor to"
 msgstr "游標要移至的行"
 
-#: ../gedit/gedit-window.c:1021
+#: ../gedit/gedit-window.c:1023
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "使用 %s 標示模式"
@@ -2109,7 +2109,7 @@ msgstr "使用 %s 標示模式"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1088 ../gedit/gedit-window.c:2100
+#: ../gedit/gedit-window.c:1090 ../gedit/gedit-window.c:2105
 #: ../plugins/externaltools/tools/manager.py:120
 #: ../plugins/externaltools/tools/manager.py:416
 #: ../plugins/externaltools/tools/manager.py:527
@@ -2117,64 +2117,64 @@ msgstr "使用 %s 標示模式"
 msgid "Plain Text"
 msgstr "純文字"
 
-#: ../gedit/gedit-window.c:1089
+#: ../gedit/gedit-window.c:1091
 msgid "Disable syntax highlighting"
 msgstr "停用語法標示"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1411
+#: ../gedit/gedit-window.c:1413
 #, c-format
 msgid "Open '%s'"
 msgstr "開啟「%s」"
 
-#: ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-window.c:1522
 msgid "Open a recently used file"
 msgstr "開啟最近使用過的檔案"
 
-#: ../gedit/gedit-window.c:1526
+#: ../gedit/gedit-window.c:1528
 msgid "Open"
 msgstr "開啟"
 
-#: ../gedit/gedit-window.c:1584
+#: ../gedit/gedit-window.c:1586
 msgid "Save"
 msgstr "儲存"
 
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1588
 msgid "Print"
 msgstr "列印"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1590
 msgid "Find"
 msgstr "尋找"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1745
+#: ../gedit/gedit-window.c:1750
 #, c-format
 msgid "Activate '%s'"
 msgstr "開啟‘%s’"
 
-#: ../gedit/gedit-window.c:2078
+#: ../gedit/gedit-window.c:2083
 msgid "Use Spaces"
 msgstr "使用空格"
 
-#: ../gedit/gedit-window.c:2151
+#: ../gedit/gedit-window.c:2156
 msgid "Tab Width"
 msgstr "Tab 字元寬度"
 
-#: ../gedit/gedit-window.c:2260
+#: ../gedit/gedit-window.c:2265
 msgid "Bracket match is out of range"
 msgstr "對稱括號超出範圍"
 
-#: ../gedit/gedit-window.c:2265
+#: ../gedit/gedit-window.c:2270
 msgid "Bracket match not found"
 msgstr "找不到成對括弧"
 
-#: ../gedit/gedit-window.c:2270
+#: ../gedit/gedit-window.c:2275
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "對稱括弧於行：%d"
 
-#: ../gedit/gedit-window.c:4041
+#: ../gedit/gedit-window.c:4046
 msgid "About gedit"
 msgstr "關於 gedit"
 
@@ -2577,59 +2577,59 @@ msgstr "檔案瀏覽器面板"
 msgid "File System"
 msgstr "檔案系統"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:585
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:596
 msgid "_Set root to active document"
 msgstr "設定正在編輯文件的位置為根資料夾(_S)"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:587
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:598
 msgid "Set the root to the active document location"
 msgstr "設定正在編輯文件的位置為根資料夾"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:592
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:603
 msgid "_Open terminal here"
 msgstr "在這裡開啟終端機(_O)"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:594
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:605
 msgid "Open a terminal at the currently opened directory"
 msgstr "在目前的目錄中開啟終端機"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:732
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:743
 msgid "File Browser"
 msgstr "檔案瀏覽器"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:875
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:886
 msgid "An error occurred while creating a new directory"
 msgstr "建構新的資料夾時發生錯誤"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:878
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:889
 msgid "An error occurred while creating a new file"
 msgstr "建構新的檔案時發生錯誤"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:881
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:892
 msgid "An error occurred while renaming a file or directory"
 msgstr "變更檔案或資料夾名稱時發生錯誤"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:884
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:895
 msgid "An error occurred while deleting a file or directory"
 msgstr "刪除檔案或資料夾時發生錯誤"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:887
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:898
 msgid "An error occurred while opening a directory in the file manager"
 msgstr "在檔案管理員中開啟資料夾時發生錯誤"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:890
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:901
 msgid "An error occurred while setting a root directory"
 msgstr "設定根資料夾時發生錯誤"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:893
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:904
 msgid "An error occurred while loading a directory"
 msgstr "載入資料夾時發生錯誤"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:896
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:907
 msgid "An error occurred"
 msgstr "發生錯誤"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1105
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1123
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
@@ -2637,55 +2637,55 @@ msgstr ""
 "檔案無法移至回收筒，\n"
 "要把它永久地刪除嗎？"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1110
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1128
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr "檔案“%s”無法移至回收筒。"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1115
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1133
 msgid "The selected files cannot be moved to the trash."
 msgstr "所選的檔案無法移至回收筒。"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1147
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1165
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr "確定要永遠刪除“%s”嗎？"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1152
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1170
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr "確定要永久刪除已選的檔案嗎？"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1155
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1173
 msgid "If you delete an item, it is permanently lost."
 msgstr "如果將項目刪除，它將會永久失去。"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:1728
+#: ../plugins/filebrowser/gedit-file-browser-store.c:1722
 msgid "(Empty)"
 msgstr "（空的）"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3474
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3467
 msgid ""
 "The renamed file is currently filtered out.You need to adjust your filter "
 "settings to make the file visible"
 msgstr "目前重新命名的檔案已被過濾。您需要調整過濾器設定來使檔案重新顯示"
 
 #. Translators: This is the default name of new files created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3718
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3711
 msgid "file"
 msgstr "檔案"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3746
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3739
 msgid ""
 "The new file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
 msgstr "目前新的檔案已被過濾。您需要調整過濾器設定來使檔案重新顯示"
 
 #. Translators: This is the default name of new directories created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3777
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3770
 msgid "directory"
 msgstr "資料夾"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3802
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3795
 msgid ""
 "The new directory is currently filtered out. You need to adjust your filter "
 "settings to make the directory visible"
@@ -2974,7 +2974,7 @@ msgstr "指令顏色(_O):"
 msgid "_Error color:"
 msgstr "錯誤顏色(_E):"
 
-#. ex:ts=8:et:
+#. ex:ts=4:et:
 #: ../plugins/quickopen/quickopen/popup.py:31
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:1
 msgid "Quick Open"
@@ -3002,7 +3002,7 @@ msgid "Create new snippet"
 msgstr "建立新的文字片段"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/manager.py:398
+#: ../plugins/snippets/snippets/manager.py:400
 msgid "Delete selected snippet"
 msgstr "刪除選定的文字片段"
 
@@ -3011,7 +3011,7 @@ msgid "Export selected snippets"
 msgstr "匯出選定的文字片段"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/manager.py:769
+#: ../plugins/snippets/snippets/manager.py:771
 msgid "Import snippets"
 msgstr "匯入文字片段"
 
@@ -3025,7 +3025,7 @@ msgstr "該文字片段的捷徑鍵已在使用中"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:657
+#: ../plugins/snippets/snippets/manager.py:659
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "按下 tab 鍵後使用文字片段的單字"
 
@@ -3061,12 +3061,12 @@ msgstr "加入新的文字片段…"
 msgid "Global"
 msgstr "全域"
 
-#: ../plugins/snippets/snippets/manager.py:395
+#: ../plugins/snippets/snippets/manager.py:397
 msgid "Revert selected snippet"
 msgstr "回復選定的文字片段"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:650
+#: ../plugins/snippets/snippets/manager.py:652
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
@@ -3074,73 +3074,73 @@ msgstr ""
 "這不是有效的切換標籤。切換標籤可以是多個字母，或是單一、非字母數字的字元，如 "
 "{, [ 等"
 
-#: ../plugins/snippets/snippets/manager.py:748
+#: ../plugins/snippets/snippets/manager.py:750
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "匯入時發生下列錯誤：%s"
 
-#: ../plugins/snippets/snippets/manager.py:755
+#: ../plugins/snippets/snippets/manager.py:757
 msgid "Import successfully completed"
 msgstr "匯入成功"
-
-#: ../plugins/snippets/snippets/manager.py:774
-#: ../plugins/snippets/snippets/manager.py:860
-#: ../plugins/snippets/snippets/manager.py:923
-msgid "All supported archives"
-msgstr "所有支援的壓縮檔"
-
-#: ../plugins/snippets/snippets/manager.py:775
-#: ../plugins/snippets/snippets/manager.py:861
-#: ../plugins/snippets/snippets/manager.py:924
-msgid "Gzip compressed archive"
-msgstr "Gzip 壓縮檔"
 
 #: ../plugins/snippets/snippets/manager.py:776
 #: ../plugins/snippets/snippets/manager.py:862
 #: ../plugins/snippets/snippets/manager.py:925
-msgid "Bzip2 compressed archive"
-msgstr "Bzip2 壓縮檔"
+msgid "All supported archives"
+msgstr "所有支援的壓縮檔"
 
 #: ../plugins/snippets/snippets/manager.py:777
-msgid "Single snippets file"
-msgstr "單一文字片段檔"
+#: ../plugins/snippets/snippets/manager.py:863
+#: ../plugins/snippets/snippets/manager.py:926
+msgid "Gzip compressed archive"
+msgstr "Gzip 壓縮檔"
 
 #: ../plugins/snippets/snippets/manager.py:778
 #: ../plugins/snippets/snippets/manager.py:864
 #: ../plugins/snippets/snippets/manager.py:927
+msgid "Bzip2 compressed archive"
+msgstr "Bzip2 壓縮檔"
+
+#: ../plugins/snippets/snippets/manager.py:779
+msgid "Single snippets file"
+msgstr "單一文字片段檔"
+
+#: ../plugins/snippets/snippets/manager.py:780
+#: ../plugins/snippets/snippets/manager.py:866
+#: ../plugins/snippets/snippets/manager.py:929
 msgid "All files"
 msgstr "所有檔案"
 
-#: ../plugins/snippets/snippets/manager.py:790
+#: ../plugins/snippets/snippets/manager.py:792
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "匯出時發生下列錯誤：%s"
 
-#: ../plugins/snippets/snippets/manager.py:794
+#: ../plugins/snippets/snippets/manager.py:796
 msgid "Export successfully completed"
 msgstr "匯出成功"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:834
-#: ../plugins/snippets/snippets/manager.py:901
+#: ../plugins/snippets/snippets/manager.py:836
+#: ../plugins/snippets/snippets/manager.py:903
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr "是否一併匯出選定的 <b>系統</b> 文字片段？"
 
-#: ../plugins/snippets/snippets/manager.py:849
-#: ../plugins/snippets/snippets/manager.py:919
+#: ../plugins/snippets/snippets/manager.py:851
+#: ../plugins/snippets/snippets/manager.py:921
 msgid "There are no snippets selected to be exported"
 msgstr "沒有選擇要匯出的文字片段"
 
-#: ../plugins/snippets/snippets/manager.py:854
-#: ../plugins/snippets/snippets/manager.py:892
+#: ../plugins/snippets/snippets/manager.py:856
+#: ../plugins/snippets/snippets/manager.py:894
 msgid "Export snippets"
 msgstr "匯出文字片段"
 
-#: ../plugins/snippets/snippets/manager.py:1031
+#: ../plugins/snippets/snippets/manager.py:1033
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "輸入新的捷徑，或按後退鍵清除"
 
-#: ../plugins/snippets/snippets/manager.py:1033
+#: ../plugins/snippets/snippets/manager.py:1035
 msgid "Type a new shortcut"
 msgstr "輸入新的捷徑"
 
@@ -3515,6 +3515,14 @@ msgstr "當加入日期及時間…"
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "_Prompt for a format"
 msgstr "提示可使用的格式(_P)"
+
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
+msgid "Logs access and leave event for documents used with gedit"
+msgstr "使用 gedit 時記錄文件的存取與離開事件"
+
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
+msgid "Zeitgeist dataprovider"
+msgstr "Zeitgeist 資料提供者"
 
 #~ msgid "Quick open"
 #~ msgstr "快速開啟"
