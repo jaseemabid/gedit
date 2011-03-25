@@ -4,13 +4,18 @@
 
 <info>
   <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
-  <revision pkgversion="3.0" version="0.1" date="2010-10-10" status="incomplete"/>
+    <revision pkgversion="3.0" version="1.0" date="2011-03-25" status="final"/>
   <credit type="author">
     <name>Jim Campbell</name>
     <email>jwcampbell@gmail.com</email>
   </credit>
 </info>
 
-  <title>Add an interactive Python console to the bottom panel</title>
+  <title>Add an interactive Python console to the bottom pane</title>
 
+  <p>You can add a Python console to the bottom pane, allowing you to test Python scripts without leaving <app>gedit</app>. To enable the Python console, select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Python Console</gui></guiseq>.</p>
+
+  <p>Once the Python console is enabled, you can open it by selecting <guiseq><gui>View</gui><gui>Bottom Pane</gui></guiseq>, or just press <keyseq><key>Shift</key><key>F9</key></keyseq>.</p>
+
+  <note style="tip"><p>If you have also enabled the <gui>Embeded Terminal</gui> plugin, the <gui>Python Console</gui> will appear as a separate tab in the bottom pane.</p></note>
 </page>
