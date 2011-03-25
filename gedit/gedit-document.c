@@ -669,10 +669,10 @@ gedit_document_class_init (GeditDocumentClass *klass)
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GeditDocumentClass, loaded),
 			      NULL, NULL,
-			      g_cclosure_marshal_VOID__POINTER,
+			      g_cclosure_marshal_VOID__BOXED,
 			      G_TYPE_NONE,
 			      1,
-			      G_TYPE_POINTER);
+			      G_TYPE_ERROR);
 
 	/**
 	 * GeditDocument::save:
@@ -720,10 +720,10 @@ gedit_document_class_init (GeditDocumentClass *klass)
 			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GeditDocumentClass, saved),
 			      NULL, NULL,
-			      g_cclosure_marshal_VOID__POINTER,
+			      g_cclosure_marshal_VOID__BOXED,
 			      G_TYPE_NONE,
 			      1,
-			      G_TYPE_POINTER);
+			      G_TYPE_ERROR);
 
 	document_signals[SEARCH_HIGHLIGHT_UPDATED] =
 		g_signal_new ("search-highlight-updated",
