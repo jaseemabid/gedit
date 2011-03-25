@@ -29,7 +29,7 @@ from exporter import *
 from document import Document
 from languagemanager import get_language_manager
 
-class Manager(Gtk.VBox, Gtk.Buildable):
+class Manager(Gtk.Dialog, Gtk.Buildable):
         NAME_COLUMN = 0
         SORT_COLUMN = 1
         LANG_COLUMN = 2
@@ -48,11 +48,8 @@ class Manager(Gtk.VBox, Gtk.Buildable):
                 self.snippet = None
                 self._temp_export = None
                 self.snippets_doc = None
-                self.manager = None
 
                 self.key_press_id = 0
-
-                self.set_size_request(600, 400)
 
         def get_language_snippets(self, path, name = None):
                 library = Library()
@@ -579,6 +576,11 @@ class Manager(Gtk.VBox, Gtk.Buildable):
 
         # Callbacks
         def do_destroy(self):
+                Gtk.Dialog.do_destroy(self)
+
+                if not self.model:
+                        return
+
                 # Remove temporary drag export
                 if self._temp_export:
                       shutil.rmtree(os.path.dirname(self._temp_export))
@@ -587,10 +589,16 @@ class Manager(Gtk.VBox, Gtk.Buildable):
                 if self.snippets_doc:
                         self.snippets_doc.stop()
 
-                self.manager = None
                 self.unref_languages()
                 self.snippet = None
                 self.model = None
+
+        def do_response(self, resp):
+                if resp == Gtk.ResponseType.HELP:
+                        Gedit.App.get_default().show_help(self, 'gedit', 'gedit-plugins-snippets')
+                        return
+
+                self.destroy()
 
         def on_cell_editing_started(self, renderer, editable, path):
                 piter = self.model.get_iter(path)
@@ -945,11 +953,12 @@ class Manager(Gtk.VBox, Gtk.Buildable):
                 parent = self.model.iter_parent(piter)
 
                 Library().remove_snippet(node)
+                idx = path.get_indices()
 
                 if self.model.remove(piter):
                         return piter
-                elif path[-1] != 0:
-                        self.select_iter(self.model.get_iter((path[0], path[1] - 1)))
+                elif idx[-1] != 0:
+                        self.select_iter(self.model.get_iter((idx[0], idx[1] - 1)))
                 else:
                         dummy = self.add_new_snippet_node(parent)
                         self.tree_view.expand_row(self.model.get_path(parent), False)
@@ -974,7 +983,8 @@ class Manager(Gtk.VBox, Gtk.Buildable):
                 # Create tree row references
                 references = []
                 for path in paths:
-                        references.append(Gtk.TreeRowReference(self.model, path))
+                        # FIXME: this should be fixed in pygobject or something
+                        references.append(Gtk.TreeRowReference.new(self.model, path))
 
                 # Remove/revert snippets
                 select = None
@@ -1016,10 +1026,10 @@ class Manager(Gtk.VBox, Gtk.Buildable):
 
                         self.snippet_changed()
                         return True
-                elif Library().valid_accelerator(event.keyval, event.get_state()[1]):
+                elif Library().valid_accelerator(event.keyval, event.get_state()):
                         # New accelerator
                         self.set_accelerator(event.keyval, \
-                                        event.get_state()[1] & Gtk.accelerator_get_default_mod_mask())
+                                        event.get_state() & Gtk.accelerator_get_default_mod_mask())
                         entry.set_text(self.snippet.accelerator_display())
                         self.snippet_changed()
                         self.tree_view.grab_focus()

@@ -20,10 +20,10 @@ import os
 import gettext
 
 from gi.repository import Gtk, Gdk, Gedit, GObject
-import gobject
 
 from document import Document
 from library import Library
+from shareddata import SharedData
 
 class Activate(Gedit.Message):
         view = GObject.property(type=Gedit.View)
@@ -44,6 +44,9 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
         def do_activate(self):
                 self.insert_menu()
                 self.register_messages()
+
+                library = Library()
+                library.add_accelerator_callback(self.accelerator_activated)
 
                 self.accel_group = Library().get_accel_group(None)
 
@@ -73,6 +76,9 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
                         if isinstance(view, Gedit.View) and self.has_controller(view):
                                 view._snippet_controller.stop()
                                 view._snippet_controller = None
+
+                library = Library()
+                library.remove_accelerator_callback(self.accelerator_activated)
 
         def do_update_state(self):
                 view = self.window.get_active_view()
@@ -201,11 +207,16 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
 
                 self.do_update_state()
 
-        def on_action_snippets_activate(self, action, data):
-                #self.plugin.create_configure_dialog()
-                pass
+        def create_configure_dialog(self):
+                SharedData().show_manager(self.window, self.plugin_info.get_data_dir())
 
-        def accelerator_activated(self, keyval, mod):
-                return self.current_controller.accelerator_activate(keyval, mod)
+        def on_action_snippets_activate(self, action, data):
+                self.create_configure_dialog()
+
+        def accelerator_activated(self, group, obj, keyval, mod):
+                if obj == self.window:
+                        return self.current_controller.accelerator_activate(keyval, mod)
+                else:
+                        return False
 
 # ex:ts=8:et:

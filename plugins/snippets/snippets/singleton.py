@@ -1,5 +1,5 @@
 #    Gedit snippets plugin
-#    Copyright (C) 2005-2006  Jesse van den Kieboom <jesse@icecrew.nl>
+#    Copyright (C) 2011  Jesse van den Kieboom <jessevdk@gnome.org>
 #
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -15,7 +15,13 @@
 #    along with this program; if not, write to the Free Software
 #    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-from appactivatable import AppActivatable
-from windowactivatable import WindowActivatable
+class Singleton(type):
+    def __init__(cls, name, bases, dict):
+        super(Singleton, cls).__init__(name, bases, dict)
+        cls.instance = None
 
-# ex:ts=8:et:
+    def __call__(cls, *args, **kw):
+        if cls.instance is None:
+            cls.instance = super(Singleton, cls).__call__(*args, **kw)
+
+        return cls.instance

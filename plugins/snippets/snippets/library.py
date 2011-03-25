@@ -641,7 +641,7 @@ class Singleton(object):
 
 class Library(Singleton):
         def __init_once__(self):
-                self._accelerator_activated_cb = None
+                self._accelerator_activated_cb = []
                 self.loaded = False
                 self.check_buffer = Gtk.TextBuffer()
 
@@ -656,14 +656,20 @@ class Library(Singleton):
 
                 self.loaded = False
 
-        def set_accelerator_callback(self, cb):
-                self._accelerator_activated_cb = cb
+        def add_accelerator_callback(self, cb):
+                self._accelerator_activated_cb.append(cb)
+
+        def remove_accelerator_callback(self, cb):
+                self._accelerator_activated_cb.remove(cb)
 
         def accelerator_activated(self, group, obj, keyval, mod):
                 ret = False
 
-                if self._accelerator_activated_cb:
-                        ret = self._accelerator_activated_cb(group, obj, keyval, mod)
+                for cb in self._accelerator_activated_cb:
+                        ret = cb(group, obj, keyval, mod)
+
+                        if ret:
+                                break
 
                 return ret
 

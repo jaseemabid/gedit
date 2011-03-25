@@ -3,6 +3,7 @@ plugindir = $(GEDIT_PLUGINS_LIBS_DIR)/snippets
 
 plugin_PYTHON = \
 	__init__.py \
+	appactivatable.py \
 	windowactivatable.py \
 	document.py \
 	library.py \
@@ -11,6 +12,8 @@ plugin_PYTHON = \
 	placeholder.py \
 	manager.py \
 	helper.py \
+	singleton.py \
+	shareddata.py \
 	substitutionparser.py \
 	importer.py \
 	exporter.py \
