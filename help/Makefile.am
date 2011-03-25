@@ -24,7 +24,6 @@ DOC_PAGES = \
 	gedit-plugin-guide.page \
 	gedit-plugins-bracket-comp.page \
 	gedit-plugins-change-case.page \
-	gedit-plugins-check-update.page \
 	gedit-plugins-doc-stats.page \
 	gedit-plugins-external-tools.page \
 	gedit-plugins-file-browser.page \
