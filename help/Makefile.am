@@ -15,6 +15,7 @@ DOC_PAGES = \
 	gedit-close-file.page \
 	gedit-create-new-file.page \
 	gedit-edit-as-root.page \
+	gedit-files-basic.page \
 	gedit-full-screen.page \
 	gedit-open-files-from-sidepane.page \
 	gedit-open-files.page \
@@ -38,10 +39,12 @@ DOC_PAGES = \
 	gedit-printing.page \
 	gedit-quickstart.page \
 	gedit-replace.page \
+	gedit-save-file.page \
 	gedit-search.page \
 	gedit-shortcut-keys.page \
 	gedit-spellcheck.page \
 	gedit-syntax-highlighting.page \
+	gedit-tabs-moving.page \
 	gedit-tabs.page \
 	gedit-undo-recent-action.page \
 	gedit-view-open-files-in-sidepane.page \
