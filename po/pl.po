@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-23 22:38+0100\n"
-"PO-Revision-Date: 2011-03-23 22:39+0100\n"
+"POT-Creation-Date: 2011-03-25 15:24+0100\n"
+"PO-Revision-Date: 2011-03-25 15:25+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -1112,11 +1112,11 @@ msgstr[2] ""
 msgid "_Revert"
 msgstr "_Przywróć"
 
-#: ../gedit/gedit-commands-help.c:86
+#: ../gedit/gedit-commands-help.c:88
 msgid "gedit is a small and lightweight text editor for the GNOME Desktop"
 msgstr "gedit to niewielki i szybki edytor tekstu dla środowiska GNOME"
 
-#: ../gedit/gedit-commands-help.c:111
+#: ../gedit/gedit-commands-help.c:113
 msgid "translator-credits"
 msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2010, 2011"
 
@@ -2651,7 +2651,7 @@ msgid "_Applicability:"
 msgstr "Stosow_alność:"
 
 #: ../plugins/externaltools/tools/tools.ui.h:22
-#: ../plugins/snippets/snippets/snippets.ui.h:11
+#: ../plugins/snippets/snippets/snippets.ui.h:12
 msgid "_Edit:"
 msgstr "_Edycja:"
 
@@ -3173,7 +3173,7 @@ msgid "Create new snippet"
 msgstr "Tworzy nową wstawkę kodu"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/manager.py:400
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Delete selected snippet"
 msgstr "Usuwa zaznaczoną wstawkę kodu"
 
@@ -3182,7 +3182,7 @@ msgid "Export selected snippets"
 msgstr "Eksportuje zaznaczoną wstawkę kodu"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/manager.py:771
+#: ../plugins/snippets/snippets/manager.py:778
 msgid "Import snippets"
 msgstr "Importuje wstawki kodu"
 
@@ -3196,27 +3196,31 @@ msgstr "Klawisz skrótu aktywujący wstawkę kodu"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:659
+#: ../plugins/snippets/snippets/manager.py:666
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Słowo aktywujące wstawkę kodu po naciśnięciu klawisza Tab"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:10
+msgid "Snippets Manager"
+msgstr "Menedżer wstawek"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:11
 msgid "_Drop targets:"
 msgstr "Cele _upuszczania:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:12
+#: ../plugins/snippets/snippets/snippets.ui.h:13
 msgid "_Snippets:"
 msgstr "_Wstawki:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:13
+#: ../plugins/snippets/snippets/snippets.ui.h:14
 msgid "_Tab trigger:"
 msgstr "Wyzwalacz _Tab:"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:141
+#: ../plugins/snippets/snippets/windowactivatable.py:149
 msgid "Manage _Snippets..."
 msgstr "Zarządzaj _wstawkami..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:142
+#: ../plugins/snippets/snippets/windowactivatable.py:150
 msgid "Manage snippets"
 msgstr "Zarządzanie wstawkami"
 
@@ -3224,20 +3228,20 @@ msgstr "Zarządzanie wstawkami"
 msgid "Snippets archive"
 msgstr "Archiwum wstawek kodu"
 
-#: ../plugins/snippets/snippets/manager.py:65
+#: ../plugins/snippets/snippets/manager.py:63
 msgid "Add a new snippet..."
 msgstr "Dodaj nową wstawkę..."
 
-#: ../plugins/snippets/snippets/manager.py:118
+#: ../plugins/snippets/snippets/manager.py:116
 msgid "Global"
 msgstr "Globalna"
 
-#: ../plugins/snippets/snippets/manager.py:397
+#: ../plugins/snippets/snippets/manager.py:393
 msgid "Revert selected snippet"
 msgstr "Przywraca zaznaczoną wstawkę"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:652
+#: ../plugins/snippets/snippets/manager.py:659
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
@@ -3245,75 +3249,75 @@ msgstr ""
 "To nie jest prawidłowy wyzwalacz tabulatora. Wyzwalacz może zawierać litery "
 "lub pojedynczy znak niealfanumeryczny. Np. {, [ itp."
 
-#: ../plugins/snippets/snippets/manager.py:750
+#: ../plugins/snippets/snippets/manager.py:757
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "Wystąpił następujący błąd podczas importowania: %s"
 
-#: ../plugins/snippets/snippets/manager.py:757
+#: ../plugins/snippets/snippets/manager.py:764
 msgid "Import successfully completed"
 msgstr "Import ukończony powodzeniem"
 
-#: ../plugins/snippets/snippets/manager.py:776
-#: ../plugins/snippets/snippets/manager.py:862
-#: ../plugins/snippets/snippets/manager.py:925
+#: ../plugins/snippets/snippets/manager.py:783
+#: ../plugins/snippets/snippets/manager.py:869
+#: ../plugins/snippets/snippets/manager.py:932
 msgid "All supported archives"
 msgstr "Wszystkie obsługiwane archiwa"
 
-#: ../plugins/snippets/snippets/manager.py:777
-#: ../plugins/snippets/snippets/manager.py:863
-#: ../plugins/snippets/snippets/manager.py:926
+#: ../plugins/snippets/snippets/manager.py:784
+#: ../plugins/snippets/snippets/manager.py:870
+#: ../plugins/snippets/snippets/manager.py:933
 msgid "Gzip compressed archive"
 msgstr "Archiwum skompresowane programem Gzip"
 
-#: ../plugins/snippets/snippets/manager.py:778
-#: ../plugins/snippets/snippets/manager.py:864
-#: ../plugins/snippets/snippets/manager.py:927
+#: ../plugins/snippets/snippets/manager.py:785
+#: ../plugins/snippets/snippets/manager.py:871
+#: ../plugins/snippets/snippets/manager.py:934
 msgid "Bzip2 compressed archive"
 msgstr "Archiwum skompresowane programem Bzip2"
 
-#: ../plugins/snippets/snippets/manager.py:779
+#: ../plugins/snippets/snippets/manager.py:786
 msgid "Single snippets file"
 msgstr "Pojedynczy plik wstawek"
 
-#: ../plugins/snippets/snippets/manager.py:780
-#: ../plugins/snippets/snippets/manager.py:866
-#: ../plugins/snippets/snippets/manager.py:929
+#: ../plugins/snippets/snippets/manager.py:787
+#: ../plugins/snippets/snippets/manager.py:873
+#: ../plugins/snippets/snippets/manager.py:936
 msgid "All files"
 msgstr "Wszystkie pliki"
 
-#: ../plugins/snippets/snippets/manager.py:792
+#: ../plugins/snippets/snippets/manager.py:799
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "Wystąpił następujący błąd podczas eksportowania: %s"
 
-#: ../plugins/snippets/snippets/manager.py:796
+#: ../plugins/snippets/snippets/manager.py:803
 msgid "Export successfully completed"
 msgstr "Eksport ukończony powodzeniem"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:836
-#: ../plugins/snippets/snippets/manager.py:903
+#: ../plugins/snippets/snippets/manager.py:843
+#: ../plugins/snippets/snippets/manager.py:910
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr "Dołączyć zaznaczone wstawki <b>systemowe</b> do eksportu?"
 
-#: ../plugins/snippets/snippets/manager.py:851
-#: ../plugins/snippets/snippets/manager.py:921
+#: ../plugins/snippets/snippets/manager.py:858
+#: ../plugins/snippets/snippets/manager.py:928
 msgid "There are no snippets selected to be exported"
 msgstr "Nie zaznaczono wstawek kodu do eksportowania"
 
-#: ../plugins/snippets/snippets/manager.py:856
-#: ../plugins/snippets/snippets/manager.py:894
+#: ../plugins/snippets/snippets/manager.py:863
+#: ../plugins/snippets/snippets/manager.py:901
 msgid "Export snippets"
 msgstr "Eksportuje wstawki"
 
-#: ../plugins/snippets/snippets/manager.py:1033
+#: ../plugins/snippets/snippets/manager.py:1042
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr ""
 "Proszę wprowadzić skrót klawiszowy albo nacisnąć klawisz Backspace, aby "
 "usunąć obecny"
 
-#: ../plugins/snippets/snippets/manager.py:1035
+#: ../plugins/snippets/snippets/manager.py:1044
 msgid "Type a new shortcut"
 msgstr "Nowy skrót klawiszowy"
 
