@@ -4,7 +4,7 @@
 
   <info>
     <link type="guide" xref="index#gedit-printing-guide"/>
-    <revision pkgversion="3.0" version="0.1" date="2010-10-10" status="incomplete"/>
+    <revision pkgversion="3.0" version="0.3" date="2011-03-25" status="incomplete"/>
     <credit type="author">
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
@@ -22,54 +22,5 @@
       <p>Printing with <app>gedit</app> requires that you have connected and configured your printer. If you have not done this, please consult the printing help documentation for your desktop environment.</p>
     </note>
   </section>
-
-  <p>
-To set the page options, choose File Page Setup to display the Page Setup dialog.
-
-The Page Setup dialog enables you to specify the following print options:
-
-General Tabbed Section
-Fonts
-
-General Tabbed Section
-
-Print syntax highlighting 
-
-    				
-Select this option to print syntax highlighting. For more information about syntax highlighting, see Section 7.1 ― Syntax Highlighting.  
-
-    			 
-Print page headers 
-
-Select this option to include a header on each page that you print. You cannot configure the header.
-
-Line Numbers
-			 
-Select the Print line numbers option to include line numbers when you print a file. 
-    				
-Use the Number every ... lines  spin box to specify how often to print the line numbers, for example every 5 lines, every 10 lines, and so on. 
-    			 
-Text Wrapping 
-                                
-Select the Enable text wrapping option to wrap text onto the next line, at a character level, when you print a file. The application counts wrapped lines as one line for line numbering purposes.
-    				
-Select the Do not split words over two lines option to wrap text onto the next line, at a word level, when you print a file.
-
-Fonts
-
-Body 
-
-Click on this button to select the font to use to print the body text of a file.
-    			 
-Line numbers
-			 
-Click on this button to select the font to use to print line numbers.
-    			 
-Headers and footers 
-
-Click on this button to select the font to use to print the headers and footers in a file.  
-
-To reset the fonts to the default fonts for printing a file from gedit, click Restore Default Fonts.
-  </p>
 
 </page>
