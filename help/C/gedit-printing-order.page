@@ -1,0 +1,55 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="gedit-print-order">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-to-paper"/>
+
+    <revision pkgversion="3.0" version="1.0" date="2011-03-25" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+<title>Getting Copies To Print In The Correct Order</title>
+
+<section>
+ <title>
+  Reverse
+ </title>
+ <p>
+  Printers usually print the first page first, and the last page last, so the pages end up in reverse order when you pick them up.
+ </p>
+ <p>
+  To reverse the order:
+ </p>
+ <steps>
+  <item><p><guiseq><gui>File</gui><gui>Print</gui></guiseq></p></item>
+  <item><p>In the <gui>General</gui> tab of the Print window under <em>Copies</em>, check <gui>Reverse</gui>. The last page will be printed first, and so on.</p></item>
+ </steps>
+</section>
+
+<section>
+ <title>
+  Collate
+ </title>
+ <p>
+  If you are printing more than one copy of the document, the print outs will be grouped by page number by default. (e.g. The copies of page one come out, then the copies of page two, etc.) Collating will make each copy come out with
+its pages grouped together.
+ </p>
+
+ <p>
+  To Collate:
+ </p>
+ <steps>
+  <item><p>Click <guiseq><gui>File</gui><gui>Print</gui></guiseq></p></item>
+  <item><p>In the <gui>General</gui> tab of the Print window under <em>Copies</em> check <gui>Collate</gui>. </p></item>
+ </steps>
+ <media type="image" src="reverse-collate.png"/>
+</section>
+
+</page>

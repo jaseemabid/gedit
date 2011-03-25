@@ -1,10 +1,12 @@
 <page xmlns="http://projectmallard.org/1.0/"
-      type="topic" style="task"
+      type="guide" style="task"
       id="gedit-printing">
+
+<!-- TODO: include more complex printing options -->
 
   <info>
     <link type="guide" xref="index#gedit-printing-guide"/>
-    <revision pkgversion="3.0" version="0.3" date="2011-03-25" status="incomplete"/>
+    <revision pkgversion="3.0" version="0.3" date="2011-03-25" status="final"/>
     <credit type="author">
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
@@ -12,15 +14,28 @@
   </info>
 
   <title>Printing with gedit</title>
-  
-  <p><app>gedit</app> allows you to both print output to a file, as well as printing output to paper.  Prior to printing your document, you can also preview how the printed document will look by using the <app>Print Preview</app> feature.</p>
-    
-  <section id="printing-to-paper">
-    <title>Printing to paper</title>
 
     <note stye="important">
       <p>Printing with <app>gedit</app> requires that you have connected and configured your printer. If you have not done this, please consult the printing help documentation for your desktop environment.</p>
     </note>
+  
+  <p><app>gedit</app> allows you to both print output to a file, as well as printing output to paper.  Prior to printing your document, you can also preview how the printed document will look by using the <app>Print Preview</app> feature.</p>
+    
+  <section id="printing-to-paper" style="2column">
+    <title>Printing to paper</title>
+  </section>
+
+  <section id="printing-to-file" style="2column">
+    <title>Printing output to a file</title>
+
+ <p>You can also use <app>gedit</app> to print to a file. To do so, select <guiseq><gui>File</gui><gui>Print</gui><gui>Print to File</gui></guiseq>.</p>
+    <p>Printing is enabled for the following file formats:</p>
+   <list>
+    <item><p>Portable Document Format (.pdf)</p></item>
+    <item><p>PostScript (.ps)</p></item>
+    <item><p>Scalable Vector Graphic (.svg)</p></item>
+   </list>
+
   </section>
 
 </page>
