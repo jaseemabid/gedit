@@ -90,7 +90,6 @@ void			 gedit_settings_set_list			(GSettings     *settings,
 #define GEDIT_SETTINGS_DISPLAY_RIGHT_MARGIN		"display-right-margin"
 #define GEDIT_SETTINGS_RIGHT_MARGIN_POSITION		"right-margin-position"
 #define GEDIT_SETTINGS_SMART_HOME_END			"smart-home-end"
-#define GEDIT_SETTINGS_WRITABLE_VFS_SCHEMES		"writable-vfs-schemes"
 #define GEDIT_SETTINGS_RESTORE_CURSOR_POSITION		"restore-cursor-position"
 #define GEDIT_SETTINGS_SYNTAX_HIGHLIGHTING		"syntax-highlighting"
 #define GEDIT_SETTINGS_SEARCH_HIGHLIGHTING		"search-highlighting"

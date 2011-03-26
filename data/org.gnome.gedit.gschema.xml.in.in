@@ -126,11 +126,6 @@
       <_summary>Smart Home End</_summary>
       <_description>Specifies how the cursor moves when the HOME and END keys are pressed. Use "disabled" to always move at the start/end of the line, "after" to move to the start/end of the line the first time the keys are pressed and to the start/end of the text ignoring whitespaces the second time the keys are pressed, "before" to move to the start/end of the text before moving to the start/end of the line and "always" to always move to the start/end of the text instead of the start/end of the line.</_description>
     </key>
-    <key name="writable-vfs-schemes" type="as">
-      <default>['dav', 'davs', 'ftp', 'sftp', 'smb', 'ssh']</default>
-      <_summary>Writable VFS schemes</_summary>
-      <_description>List of VFS schemes gedit supports in write mode. The 'file' scheme is writable by default.</_description>
-    </key>
     <key name="restore-cursor-position" type="b">
       <default>true</default>
       <_summary>Restore Previous Cursor Position</_summary>
