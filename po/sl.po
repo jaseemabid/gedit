@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gedit master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-03-14 03:37+0000\n"
-"PO-Revision-Date: 2011-03-14 15:27+0100\n"
-"Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
+"PO-Revision-Date: 2011-03-26 20:18+0100\n"
+"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -25,12 +25,12 @@ msgstr ""
 
 #: ../data/gedit.desktop.in.in.h:1
 msgid "Edit text files"
-msgstr "Urejanje besedilnih datotek"
+msgstr "Enostavni urejevalnik besedilnih datotek"
 
 #: ../data/gedit.desktop.in.in.h:2
 #: ../gedit/gedit-print-job.c:805
 msgid "Text Editor"
-msgstr "Urejevalnik besedil"
+msgstr "Gedit - urejevalnik besedil"
 
 #: ../data/gedit.desktop.in.in.h:3
 msgid "gedit"
@@ -38,7 +38,7 @@ msgstr "gedit"
 
 #: ../data/gedit.desktop.in.in.h:4
 msgid "gedit Text Editor"
-msgstr "Urejevalnik besedil Gedit"
+msgstr "Gedit urejevalnik besedil "
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:1
 msgid "A custom font that will be used for the editing area. This will only take effect if the \"Use Default Font\" option is turned off."
@@ -3341,31 +3341,22 @@ msgstr "Ponudnik podatkov Zeitgeist"
 
 #~ msgid "It is not possible to detect the encoding automatically"
 #~ msgstr "Ni mogoče samodejno zaznati nabora znakov."
-
 #~ msgid "Quick open"
 #~ msgstr "Hitro odpiranje"
-
 #~ msgid "Quickly open documents"
 #~ msgstr "Hitro odpiranje dokumentov"
-
 #~ msgid "Snippets Manager"
 #~ msgstr "Upravljalnik izrezkov"
-
 #~ msgid "Bottom Panel is Visible"
 #~ msgstr "Spodnji pladenj je viden"
-
 #~ msgid "Monospace 12"
 #~ msgstr "Monospace 12"
-
 #~ msgid "Monospace 9"
 #~ msgstr "Monospace 9"
-
 #~ msgid "Sans 11"
 #~ msgstr "Sans 11"
-
 #~ msgid "Sans 8"
 #~ msgstr "Sans 8"
-
 #~ msgid ""
 #~ "Style for the toolbar buttons. Possible values are \"GEDIT_TOOLBAR_SYSTEM"
 #~ "\" to use the system's default style, \"GEDIT_TOOLBAR_ICONS\" to display "
@@ -3380,1229 +3371,824 @@ msgstr "Ponudnik podatkov Zeitgeist"
 #~ "tako ikone kot besedilo in \"GEDIT_TOOLBAR_ICONS_BOTH_HORIZ\", da se "
 #~ "prikaže pomembnejše besedilo ob ikonah. Te vrednosti so občutljive na "
 #~ "velikost črk, zato bodite pazljivi."
-
 #~ msgid "Toolbar Buttons Style"
 #~ msgstr "Slog gumbov orodne vrstice"
-
 #~ msgid ""
 #~ "Whether gedit should highlight the bracket matching the selected one."
 #~ msgstr ""
 #~ "Ali naj gedit poudari oklepaj, ki pripada dvojici izbranega oklepaja."
-
 #~ msgid ""
 #~ "Whether the bottom panel at the bottom of editing windows should be "
 #~ "visible."
 #~ msgstr "Ali naj bo spodnji pladenj pod urejevalnim oknom viden."
-
 #~ msgid "[ISO-8859-15]"
 #~ msgstr "[ISO-8859-2,UTF-8]"
-
 #~ msgid "[UTF-8,CURRENT,ISO-8859-15,UTF-16]"
 #~ msgstr "[UTF-8,CURRENT,ISO-8859-2,UTF-16]"
-
 #~ msgid "Automatic Indentation"
 #~ msgstr "Samodejno zamikanje"
-
 #~ msgid "Current Line"
 #~ msgstr "Trenutna vrstica"
-
 #~ msgid "Right Margin"
 #~ msgstr "Desni rob"
-
 #~ msgid "_Right margin at column:"
 #~ msgstr "_Desni odmik pri stolpcu:"
-
 #~ msgid "[FILE...]"
 #~ msgstr "[DATOTEKA ...]"
-
 #~ msgid "Plugin"
 #~ msgstr "Vstavek"
-
 #~ msgid "Enabled"
 #~ msgstr "Omogočeno"
-
 #~ msgid "_About"
 #~ msgstr "_O programu"
-
 #~ msgid "C_onfigure"
 #~ msgstr "_Nastavitve"
-
 #~ msgid "A_ctivate"
 #~ msgstr "_Pokaži"
-
 #~ msgid "Ac_tivate All"
 #~ msgstr "_Pokaži vse"
-
 #~ msgid "_Deactivate All"
 #~ msgstr "_Skrij vse"
-
 #~ msgid "Active _Plugins:"
 #~ msgstr "Dejavni _vstavki:"
-
 #~ msgid "_About Plugin"
 #~ msgstr "_O vstavku"
-
 #~ msgid "C_onfigure Plugin"
 #~ msgstr "_Nastavitve vstavka"
-
 #~ msgid "Cannot initialize preferences manager."
 #~ msgstr "Ni mogoče zagnati upravljalnika nastavitev."
-
 #~ msgid "Expected `%s', got `%s' for key %s"
 #~ msgstr "Pričakovano `%s', dobljeno `%s' za ključ %s"
-
 #~ msgid "Page Set_up..."
 #~ msgstr "Nastavitve _strani ..."
-
 #~ msgid "Set up the page settings"
 #~ msgstr "Nastavi nastavitve strani"
-
 #~ msgid "_Incremental Search..."
 #~ msgstr "_Postopno iskanje ..."
-
 #~ msgid "Incrementally search for text"
 #~ msgstr "Postopno iskanje besedila"
-
 #~ msgid "_Autocheck Spelling"
 #~ msgstr "_Samodejno preveri črkovanje"
-
 #~ msgid "Tags"
 #~ msgstr "Oznake"
-
 #~ msgid "Select the group of tags you want to use"
 #~ msgstr "Izbor skupine oznak za uporabo"
-
 #~ msgid "_Preview"
 #~ msgstr "_Predogled"
-
 #~ msgid "Available Tag Lists"
 #~ msgstr "Seznam oznak, ki so na voljo"
-
 #~ msgid "Abbreviated form"
 #~ msgstr "Skrajšana oblika"
-
 #~ msgid "Abbreviation"
 #~ msgstr "Okrajšava"
-
 #~ msgid "Above"
 #~ msgstr "Nad"
-
 #~ msgid "Accessibility key character"
 #~ msgstr "Tipke dostopnosti"
-
 #~ msgid "Acronym"
 #~ msgstr "Kratica"
-
 #~ msgid "Align"
 #~ msgstr "Poravnaj"
-
 #~ msgid "Alignment character"
 #~ msgstr "Znak poravnave"
-
 #~ msgid "Alternative"
 #~ msgstr "Alternativna"
-
 #~ msgid "Anchor"
 #~ msgstr "Sidro"
-
 #~ msgid "Anchor URI"
 #~ msgstr "URI sidra"
-
 #~ msgid "Applet class file code"
 #~ msgstr "Datoteka kode razreda vstavkov"
-
 #~ msgid "Applet class file code (deprecated)"
 #~ msgstr "Datoteka kode razreda vstavkov (opuščeno)"
-
 #~ msgid "Array"
 #~ msgstr "Polje"
-
 #~ msgid "Associated information"
 #~ msgstr "Povezani podatki"
-
 #~ msgid "Author info"
 #~ msgstr "Podatki o avtorju"
-
 #~ msgid "Axis related headers"
 #~ msgstr "Glave, povezane z osjo"
-
 #~ msgid "Background color"
 #~ msgstr "Barva ozadja"
-
 #~ msgid "Background color (deprecated)"
 #~ msgstr "Barva ozadja (opuščeno)"
-
 #~ msgid "Background texture tile"
 #~ msgstr "Slika tlakovanja ozadja"
-
 #~ msgid "Background texture tile (deprecated)"
 #~ msgstr "Slika tlakovanja ozadja (opuščeno)"
-
 #~ msgid "Base URI"
 #~ msgstr "Osnovni URI"
-
 #~ msgid "Base font"
 #~ msgstr "Osnovna pisava"
-
 #~ msgid "Base font (deprecated)"
 #~ msgstr "Osnovna pisava (opuščeno)"
-
 #~ msgid "Bold"
 #~ msgstr "Krepko"
-
 #~ msgid "Border"
 #~ msgstr "Obroba"
-
 #~ msgid "Border (deprecated)"
 #~ msgstr "Rob (opuščeno)"
-
 #~ msgid "Border color"
 #~ msgstr "Barva robu"
-
 #~ msgid "Cell rowspan"
 #~ msgstr "Vrstično podaljšanje celice"
-
 #~ msgid "Center"
 #~ msgstr "Sredinsko"
-
 #~ msgid "Center (deprecated)"
 #~ msgstr "Središče (opuščeno)"
-
 #~ msgid "Character encoding of linked resource"
 #~ msgstr "Kodiranje znakov povezanega vira"
-
 #~ msgid "Checked (state)"
 #~ msgstr "Označeno (stanje)"
-
 #~ msgid "Checked state"
 #~ msgstr "Označeno stanje"
-
 #~ msgid "Citation"
 #~ msgstr "Navedek"
-
 #~ msgid "Cite reason for change"
 #~ msgstr "Navedba razloga za spremembo"
-
 #~ msgid "Class implementation ID"
 #~ msgstr "ID implementacije razreda"
-
 #~ msgid "Class list"
 #~ msgstr "Seznam razredov"
-
 #~ msgid "Clear text flow control"
 #~ msgstr "Lomljenje čistega besedila"
-
 #~ msgid "Code content type"
 #~ msgstr "Koda vrste vsebine"
-
 #~ msgid "Color of selected links"
 #~ msgstr "Barva izbranih povezav"
-
 #~ msgid "Color of selected links (deprecated)"
 #~ msgstr "Barva izbranih povezav (opuščeno)"
-
 #~ msgid "Column span"
 #~ msgstr "Dolžina stolpca"
-
 #~ msgid "Columns"
 #~ msgstr "Stolpci"
-
 #~ msgid "Comment"
 #~ msgstr "Opomba"
-
 #~ msgid "Computer code fragment"
 #~ msgstr "Odsek programske izvorne kode"
-
 #~ msgid "Content scheme"
 #~ msgstr "Shema vsebine"
-
 #~ msgid "Content type"
 #~ msgstr "Vrsta vsebine"
-
 #~ msgid "Content type (deprecated)"
 #~ msgstr "Vrsta vsebine (opuščeno)"
-
 #~ msgid "Coordinates"
 #~ msgstr "Koordinate"
-
 #~ msgid "DIV Style container"
 #~ msgstr "Hranilnik sloga DIV"
-
 #~ msgid "DIV container"
 #~ msgstr "Hranilnik DIV"
-
 #~ msgid "Date and time of change"
 #~ msgstr "Datum in ura spremembe"
-
 #~ msgid "Declare flag"
 #~ msgstr "Deklariranje zastavice"
-
 #~ msgid "Defer attribute"
 #~ msgstr "Odloži lastnost"
-
 #~ msgid "Definition description"
 #~ msgstr "Opis definicije"
-
 #~ msgid "Definition list"
 #~ msgstr "Seznam definicij"
-
 #~ msgid "Definition term"
 #~ msgstr "Ime definicije"
-
 #~ msgid "Deleted text"
 #~ msgstr "Izbrisano besedilo"
-
 #~ msgid "Direction"
 #~ msgstr "Smer"
-
 #~ msgid "Directionality"
 #~ msgstr "Usmerjenost"
-
 #~ msgid "Directionality (deprecated)"
 #~ msgstr "Usmerjenost (opuščeno)"
-
 #~ msgid "Directory list"
 #~ msgstr "Seznam imenikov"
-
 #~ msgid "Disabled"
 #~ msgstr "Onemogočeno"
-
 #~ msgid "Document base"
 #~ msgstr "Osnova dokumenta"
-
 #~ msgid "Document body"
 #~ msgstr "Telo dokumenta"
-
 #~ msgid "Document head"
 #~ msgstr "Glava dokumenta"
-
 #~ msgid "Document title"
 #~ msgstr "Naziv dokumenta"
-
 #~ msgid "Document type"
 #~ msgstr "Vrsta dokumenta"
-
 #~ msgid "Element ID"
 #~ msgstr "ID predmeta"
-
 #~ msgid "Embedded object"
 #~ msgstr "Vgrajen predmet"
-
 #~ msgid "Emphasis"
 #~ msgstr "Poudarek"
-
 #~ msgid "Encode type"
 #~ msgstr "Vrsta kodiranja"
-
 #~ msgid "Figure"
 #~ msgstr "Skica"
-
 #~ msgid "Font face"
 #~ msgstr "Ime pisave"
-
 #~ msgid "Font face (deprecated)"
 #~ msgstr "Ime pisave (opuščeno)"
-
 #~ msgid "For label"
 #~ msgstr "Za oznako"
-
 #~ msgid "Forced line break"
 #~ msgstr "Zahtevan prelom vrstice"
-
 #~ msgid "Form"
 #~ msgstr "Obrazec"
-
 #~ msgid "Form action handler"
 #~ msgstr "Obravnalnik dejanja obrazca"
-
 #~ msgid "Form control group"
 #~ msgstr "Nadzorna skupina obrazca"
-
 #~ msgid "Form field label text"
 #~ msgstr "Besedilo v polju oznake obrazca"
-
 #~ msgid "Form input"
 #~ msgstr "Vnos obrazca"
-
 #~ msgid "Form input type"
 #~ msgstr "Vrsta vnosa v obrazec"
-
 #~ msgid "Form method"
 #~ msgstr "Metoda obrazca"
-
 #~ msgid "Forward link"
 #~ msgstr "Povezava naprej"
-
 #~ msgid "Frame"
 #~ msgstr "Okvir"
-
 #~ msgid "Frame border"
 #~ msgstr "Rob okvirja"
-
 #~ msgid "Frame render parts"
 #~ msgstr "Deli izrisa okvirja"
-
 #~ msgid "Frame source"
 #~ msgstr "Izvor okvirja"
-
 #~ msgid "Frame spacing"
 #~ msgstr "Razmik med okvirji"
-
 #~ msgid "Frame target"
 #~ msgstr "Cilj okvirja"
-
 #~ msgid "Frameborder"
 #~ msgstr "Rob okvirja"
-
 #~ msgid "Frameset"
 #~ msgstr "Nabor okvirjev"
-
 #~ msgid "Frameset columns"
 #~ msgstr "Stolpci nabora okvirjev"
-
 #~ msgid "Frameset rows"
 #~ msgstr "Vrstice nabora okvirjev"
-
 #~ msgid "Framespacing"
 #~ msgstr "Prostor med okvirji"
-
 #~ msgid "Generic embedded object"
 #~ msgstr "Izvorni vgrajeni predmet"
-
 #~ msgid "Generic metainformation"
 #~ msgstr "Generični metapodatki"
-
 #~ msgid "Generic span"
 #~ msgstr "Generičen odsek"
-
 #~ msgid "HREF URI"
 #~ msgstr "URI HREF"
-
 #~ msgid "HTML - Special Characters"
 #~ msgstr "HTML - Posebni znaki"
-
 #~ msgid "HTML - Tags"
 #~ msgstr "HTML - Oznake"
-
 #~ msgid "HTML root element"
 #~ msgstr "Korenski predmet HTML"
-
 #~ msgid "HTML version"
 #~ msgstr "Različica HTML"
-
 #~ msgid "HTTP header name"
 #~ msgstr "Ime glave HTTP"
-
 #~ msgid "Header cell IDs"
 #~ msgstr "ID-ji celice glave"
-
 #~ msgid "Heading"
 #~ msgstr "Naslov"
-
 #~ msgid "Heading 1"
 #~ msgstr "Naslov 1"
-
 #~ msgid "Heading 2"
 #~ msgstr "Naslov 2"
-
 #~ msgid "Heading 3"
 #~ msgstr "Naslov 3"
-
 #~ msgid "Heading 4"
 #~ msgstr "Naslov 4"
-
 #~ msgid "Heading 5"
 #~ msgstr "Naslov 5"
-
 #~ msgid "Heading 6"
 #~ msgstr "Naslov 6"
-
 #~ msgid "Height"
 #~ msgstr "Višina"
-
 #~ msgid "Horizontal rule"
 #~ msgstr "Vodoravna črta"
-
 #~ msgid "Horizontal space"
 #~ msgstr "Vodoravni prostor"
-
 #~ msgid "Horizontal space (deprecated)"
 #~ msgstr "Vodoravni prostor (opuščeno)"
-
 #~ msgid "I18N BiDi override"
 #~ msgstr "Prednostni I18N BiDi"
-
 #~ msgid "Image"
 #~ msgstr "Slika"
-
 #~ msgid "Image map"
 #~ msgstr "Karta slike"
-
 #~ msgid "Image map area"
 #~ msgstr "Področje karte slike"
-
 #~ msgid "Image map name"
 #~ msgstr "Ime karte slike"
-
 #~ msgid "Image source"
 #~ msgstr "Vir slike"
-
 #~ msgid "Inline frame"
 #~ msgstr "Vključen okvir"
-
 #~ msgid "Inline layer"
 #~ msgstr "Vključena plast"
-
 #~ msgid "Inserted text"
 #~ msgstr "Vstavljeno besedilo"
-
 #~ msgid "Instance definition"
 #~ msgstr "Navedba primerka"
-
 #~ msgid "Italic text"
 #~ msgstr "Poševno besedilo"
-
 #~ msgid "Java applet"
 #~ msgstr "Java aplet"
-
 #~ msgid "Java applet (deprecated)"
 #~ msgstr "Programček java (opuščeno)"
-
 #~ msgid "Label"
 #~ msgstr "Oznaka"
-
 #~ msgid "Language code"
 #~ msgstr "Šifra jezika"
-
 #~ msgid "Large text style"
 #~ msgstr "Slog velikega besedila"
-
 #~ msgid "Layer"
 #~ msgstr "Plast"
-
 #~ msgid "Link color"
 #~ msgstr "Barva povezave"
-
 #~ msgid "Link color (deprecated)"
 #~ msgstr "Barva povezave (opuščeno)"
-
 #~ msgid "List item"
 #~ msgstr "Predmet seznama"
-
 #~ msgid "List of MIME types for file upload"
 #~ msgstr "Seznam vrst MIME za pošiljanje"
-
 #~ msgid "List of supported character sets"
 #~ msgstr "Seznam podprtih naborov znakov"
-
 #~ msgid "Listing"
 #~ msgstr "Seznam"
-
 #~ msgid "Local change to font"
 #~ msgstr "Krajevna sprememba pisave"
-
 #~ msgid "Long description link"
 #~ msgstr "Dolg opis povezave"
-
 #~ msgid "Long quotation"
 #~ msgstr "Dolg navedek"
-
 #~ msgid "Mail link"
 #~ msgstr "Povezava na poštni naslov"
-
 #~ msgid "Margin pixel height"
 #~ msgstr "Višina odmika v točkah"
-
 #~ msgid "Margin pixel width"
 #~ msgstr "Širina odmika v točkah"
-
 #~ msgid "Marquee"
 #~ msgstr "Markiza"
-
 #~ msgid "Maximum length of text field"
 #~ msgstr "Največja dolžina polja besedila"
-
 #~ msgid "Media-independent link"
 #~ msgstr "Povezava neodvisna od medija"
-
 #~ msgid "Menu list"
 #~ msgstr "Seznam menija"
-
 #~ msgid "Menu list (deprecated)"
 #~ msgstr "Seznam menija (opuščeno)"
-
 #~ msgid "Multi-line text field"
 #~ msgstr "Večvrstično polje besedila"
-
 #~ msgid "Multicolumn"
 #~ msgstr "Večstolpično"
-
 #~ msgid "Multiple"
 #~ msgstr "Večkratno"
-
 #~ msgid "Name"
 #~ msgstr "Ime"
-
 #~ msgid "Named property value"
 #~ msgstr "Poimenovana vrednost lastnosti"
-
 #~ msgid "Next ID"
 #~ msgstr "Naslednji ID"
-
 #~ msgid "No URI"
 #~ msgstr "Ni naslova URI"
-
 #~ msgid "No embedded objects"
 #~ msgstr "Ni vgrajenih predmetov"
-
 #~ msgid "No frames"
 #~ msgstr "Ni okvirjev"
-
 #~ msgid "No layers"
 #~ msgstr "Ni plasti"
-
 #~ msgid "No line break"
 #~ msgstr "Ni preloma vrstice"
-
 #~ msgid "No resize"
 #~ msgstr "Ni spremembe velikosti"
-
 #~ msgid "No script"
 #~ msgstr "Ni skripte"
-
 #~ msgid "No shade"
 #~ msgstr "Ni senčenja"
-
 #~ msgid "No shade (deprecated)"
 #~ msgstr "Ni senčenja (opuščeno)"
-
 #~ msgid "No word wrap"
 #~ msgstr "Ni preloma besed"
-
 #~ msgid "No word wrap (deprecated)"
 #~ msgstr "Ni preloma besed (opuščeno)"
-
 #~ msgid "Non-breaking space"
 #~ msgstr "Nedeljivi presledek"
-
 #~ msgid "Note"
 #~ msgstr "Opomba"
-
 #~ msgid "Object applet file"
 #~ msgstr "Datoteka predmeta vstavka"
-
 #~ msgid "Object applet file (deprecated)"
 #~ msgstr "Datoteka predmeta vstavka (opuščeno)"
-
 #~ msgid "Object data reference"
 #~ msgstr "Navezovanje na podatke predmeta"
-
 #~ msgid "Offset for alignment character"
 #~ msgstr "Odmik za znak poravnave"
-
 #~ msgid "OnBlur event"
 #~ msgstr "Dogodek OnBlur"
-
 #~ msgid "OnChange event"
 #~ msgstr "Dogodek OnChange"
-
 #~ msgid "OnClick event"
 #~ msgstr "Dogodek OnClick"
-
 #~ msgid "OnDblClick event"
 #~ msgstr "Dogodek OnDblClick"
-
 #~ msgid "OnFocus event"
 #~ msgstr "Dogodek OnFocus"
-
 #~ msgid "OnKeyDown event"
 #~ msgstr "Dogodek OnKezDown"
-
 #~ msgid "OnKeyPress event"
 #~ msgstr "Dogodek OnKeyPress"
-
 #~ msgid "OnKeyUp event"
 #~ msgstr "Dogodek OnKeyUp"
-
 #~ msgid "OnLoad event"
 #~ msgstr "Dogodek OnLoad"
-
 #~ msgid "OnMouseDown event"
 #~ msgstr "Dogodek OnMouseDown"
-
 #~ msgid "OnMouseMove event"
 #~ msgstr "Dogodek OnMouseMove"
-
 #~ msgid "OnMouseOut event"
 #~ msgstr "Dogodek OnMouseOut"
-
 #~ msgid "OnMouseOver event"
 #~ msgstr "Dogodek OnMouseOver"
-
 #~ msgid "OnMouseUp event"
 #~ msgstr "Dogodek OnMouseUp"
-
 #~ msgid "OnReset event"
 #~ msgstr "Dogodek OnReset"
-
 #~ msgid "OnSelect event"
 #~ msgstr "Dogodek OnSelect"
-
 #~ msgid "OnSubmit event"
 #~ msgstr "Dogodek OnSubmit"
-
 #~ msgid "OnUnload event"
 #~ msgstr "Dogodek OnUnload"
-
 #~ msgid "Option group"
 #~ msgstr "Skupina možnosti"
-
 #~ msgid "Option selector"
 #~ msgstr "Izbirnik možnosti"
-
 #~ msgid "Ordered list"
 #~ msgstr "Urejen seznam"
-
 #~ msgid "Output media"
 #~ msgstr "Izhodni medij"
-
 #~ msgid "Paragraph"
 #~ msgstr "Odstavek"
-
 #~ msgid "Paragraph class"
 #~ msgstr "Razred odstavka"
-
 #~ msgid "Paragraph style"
 #~ msgstr "Slog odstavka"
-
 #~ msgid "Preformatted listing"
 #~ msgstr "Predoblikovan seznam"
-
 #~ msgid "Preformatted text"
 #~ msgstr "Predoblikovano besedilo"
-
 #~ msgid "Profile metainfo dictionary"
 #~ msgstr "Slovar metapodatkov profila"
-
 #~ msgid "Push button"
 #~ msgstr "Gumb"
-
 #~ msgid "Quote"
 #~ msgstr "Navedek"
-
 #~ msgid "Range"
 #~ msgstr "Območje"
-
 #~ msgid "ReadOnly text and password"
 #~ msgstr "Le berljivo besedilo in geslo"
-
 #~ msgid "Reduced spacing"
 #~ msgstr "Zmanjšan prazen prostor"
-
 #~ msgid "Reduced spacing (deprecated)"
 #~ msgstr "Zmanjšan prazen prostor (opuščeno)"
-
 #~ msgid "Reverse link"
 #~ msgstr "Obrnjena povezava"
-
 #~ msgid "Root"
 #~ msgstr "Koren"
-
 #~ msgid "Rows"
 #~ msgstr "Vrstice"
-
 #~ msgid "Rulings between rows and columns"
 #~ msgstr "Ravnilo med vrsticami in stolpci"
-
 #~ msgid "Sample program output, scripts"
 #~ msgstr "Primer izhoda programa, skripte"
-
 #~ msgid "Scope covered by header cells"
 #~ msgstr "Območje pokrito s celicami glave"
-
 #~ msgid "Script language name"
 #~ msgstr "Ime skriptnega jezika"
-
 #~ msgid "Script statements"
 #~ msgstr "Zahteve skripta"
-
 #~ msgid "Scrollbar"
 #~ msgstr "Drsnik"
-
 #~ msgid "Selectable option"
 #~ msgstr "Izbirna možnost"
-
 #~ msgid "Server-side image map"
 #~ msgstr "Karta slike na strežniku"
-
 #~ msgid "Shape"
 #~ msgstr "Oblika"
-
 #~ msgid "Short inline quotation"
 #~ msgstr "Kratek vmesni navedek"
-
 #~ msgid "Single line prompt"
 #~ msgstr "Enovrstično vprašanje"
-
 #~ msgid "Size"
 #~ msgstr "Velikost"
-
 #~ msgid "Size (deprecated)"
 #~ msgstr "Velikost (opuščeno)"
-
 #~ msgid "Small text style"
 #~ msgstr "Slog majhnega besedila"
-
 #~ msgid "Soft line break"
 #~ msgstr "Mehak prelom vrstice"
-
 #~ msgid "Sound"
 #~ msgstr "Zvok"
-
 #~ msgid "Source"
 #~ msgstr "Izvor"
-
 #~ msgid "Space-separated archive list"
 #~ msgstr "Seznam arhiva ločen s presledki"
-
 #~ msgid "Spacer"
 #~ msgstr "Preslednik"
-
 #~ msgid "Spacing between cells"
 #~ msgstr "Prostor med celicami"
-
 #~ msgid "Spacing within cells"
 #~ msgstr "Prostor znotraj celic"
-
 #~ msgid "Span"
 #~ msgstr "Razmik"
-
 #~ msgid "Square root"
 #~ msgstr "Kvadratni koren"
-
 #~ msgid "Standby load message"
 #~ msgstr "Sprotno sporočilo o nalaganju"
-
 #~ msgid "Starting sequence number"
 #~ msgstr "Številka začetka zaporedja"
-
 #~ msgid "Starting sequence number (deprecated)"
 #~ msgstr "Številka začetka zaporedja (opuščeno)"
-
 #~ msgid "Strike-through text"
 #~ msgstr "Prečrtano besedilo"
-
 #~ msgid "Strike-through text (deprecated)"
 #~ msgstr "Prečrtano besedilo (opuščeno)"
-
 #~ msgid "Strike-through text style"
 #~ msgstr "Slog prečrtanega besedila"
-
 #~ msgid "Strike-through text style (deprecated)"
 #~ msgstr "Slog prečrtanega besedila (opuščeno)"
-
 #~ msgid "Strong emphasis"
 #~ msgstr "Močan poudarek"
-
 #~ msgid "Style info"
 #~ msgstr "Podatki o slogu"
-
 #~ msgid "Subscript"
 #~ msgstr "Podpisano"
-
 #~ msgid "Superscript"
 #~ msgstr "Nadpisano"
-
 #~ msgid "Tab order position"
 #~ msgstr "Položaj zaporedja zavihkov"
-
 #~ msgid "Table"
 #~ msgstr "Razpredelnica"
-
 #~ msgid "Table body"
 #~ msgstr "Telo razpredelnice"
-
 #~ msgid "Table caption"
 #~ msgstr "Naziv razpredelnice"
-
 #~ msgid "Table column group properties"
 #~ msgstr "Lastnosti skupine stolpcev razpredelnice"
-
 #~ msgid "Table column properties"
 #~ msgstr "Lastnosti stolpca razpredelnice"
-
 #~ msgid "Table data cell"
 #~ msgstr "Podatkovna celica razpredelnice"
-
 #~ msgid "Table footer"
 #~ msgstr "Noga razpredelnice"
-
 #~ msgid "Table header"
 #~ msgstr "Glava razpredelnice"
-
 #~ msgid "Table header cell"
 #~ msgstr "Celica glave razpredelnice"
-
 #~ msgid "Table row"
 #~ msgstr "Vrstica razpredelnice"
-
 #~ msgid "Table summary"
 #~ msgstr "Povzetek razpredelnice"
-
 #~ msgid "Target - Blank"
 #~ msgstr "Cilj - Prazno"
-
 #~ msgid "Target - Parent"
 #~ msgstr "Cilj - nadrejeni predmet"
-
 #~ msgid "Target - Self"
 #~ msgstr "Cilj - Sam"
-
 #~ msgid "Target - Top"
 #~ msgstr "Cilj - Na vrhu"
-
 #~ msgid "Teletype or monospace text style"
 #~ msgstr "Enopresledni slog besedila"
-
 #~ msgid "Text"
 #~ msgstr "Besedilo"
-
 #~ msgid "Text color"
 #~ msgstr "Barva besedila"
-
 #~ msgid "Text color (deprecated)"
 #~ msgstr "Barva besedila (opuščeno)"
-
 #~ msgid "Text entered by user"
 #~ msgstr "Besedilo, ki ga vpiše uporabnik"
-
 #~ msgid "Title"
 #~ msgstr "Naziv"
-
 #~ msgid "Top margin in pixels"
 #~ msgstr "Vrhnji rob v točkah"
-
 #~ msgid "URL"
 #~ msgstr "Naslov URL"
-
 #~ msgid "Underlined text style"
 #~ msgstr "Nedoločen slog besedila"
-
 #~ msgid "Unordered list"
 #~ msgstr "Neurejen seznam"
-
 #~ msgid "Use image map"
 #~ msgstr "Uporabi karto slike"
-
 #~ msgid "Value"
 #~ msgstr "Vrednost"
-
 #~ msgid "Value interpretation"
 #~ msgstr "Razlaga vrednosti"
-
 #~ msgid "Variable or program argument"
 #~ msgstr "Spremenljivka ali argument programa"
-
 #~ msgid "Vertical cell alignment"
 #~ msgstr "Navpična poravnava celic"
-
 #~ msgid "Vertical space"
 #~ msgstr "Navpični prostor"
-
 #~ msgid "Vertical space (deprecated)"
 #~ msgstr "Navpični prostor (opuščeno)"
-
 #~ msgid "Visited link color"
 #~ msgstr "Barva obiskane povezave"
-
 #~ msgid "Visited link color (deprecated)"
 #~ msgstr "Barva obiskane povezave (opuščeno)"
-
 #~ msgid "Width"
 #~ msgstr "Širina"
-
 #~ msgid "XHTML 1.0 - Tags"
 #~ msgstr "XHTML 1.0 - Oznake"
-
 #~ msgid "Bibliography (cite)"
 #~ msgstr "Bibliografija (citat)"
-
 #~ msgid "Bibliography (item)"
 #~ msgstr "Bibliografija (predmet)"
-
 #~ msgid "Bibliography (shortcite)"
 #~ msgstr "Bibliografija (kratki citat)"
-
 #~ msgid "Bibliography (thebibliography)"
 #~ msgstr "Bibliografija (bibliografija)"
-
 #~ msgid "Brackets ()"
 #~ msgstr "Oklepaja ()"
-
 #~ msgid "Brackets <>"
 #~ msgstr "Oklepaja <>"
-
 #~ msgid "Brackets []"
 #~ msgstr "Oklepaja []"
-
 #~ msgid "Brackets {}"
 #~ msgstr "Oklepaja {}"
-
 #~ msgid "File input"
 #~ msgstr "Datotečni dovod"
-
 #~ msgid "Footnote"
 #~ msgstr "Opomba noge"
-
 #~ msgid "Function cosine"
 #~ msgstr "Funkcija cosinus"
-
 #~ msgid "Function e^"
 #~ msgstr "Funkcija e^"
-
 #~ msgid "Function exp"
 #~ msgstr "Funkcija exp"
-
 #~ msgid "Function log"
 #~ msgstr "Funkcija log"
-
 #~ msgid "Function log10"
 #~ msgstr "Funkcija log10"
-
 #~ msgid "Function sine"
 #~ msgstr "Funkcija sine"
-
 #~ msgid "Greek alpha"
 #~ msgstr "Grška alfa"
-
 #~ msgid "Greek beta"
 #~ msgstr "Grška beta"
-
 #~ msgid "Greek epsilon"
 #~ msgstr "Grški epsilon"
-
 #~ msgid "Greek gamma"
 #~ msgstr "Grška gama"
-
 #~ msgid "Greek lambda"
 #~ msgstr "Grška lambda"
-
 #~ msgid "Greek rho"
 #~ msgstr "Grška ro"
-
 #~ msgid "Greek tau"
 #~ msgstr "Grška tau"
-
 #~ msgid "Header 0 (chapter)"
 #~ msgstr "Naslov 0 (poglavje)"
-
 #~ msgid "Header 0 (chapter*)"
 #~ msgstr "Naslov 0 (poglavje*)"
-
 #~ msgid "Header 1 (section)"
 #~ msgstr "Naslov 1 (odsek)"
-
 #~ msgid "Header 1 (section*)"
 #~ msgstr "Naslov 1 (odsek*)"
-
 #~ msgid "Header 2 (subsection)"
 #~ msgstr "Naslov 2 (pododsek)"
-
 #~ msgid "Header 2 (subsection*)"
 #~ msgstr "Naslov 2 (pododsek*)"
-
 #~ msgid "Header 3 (subsubsection)"
 #~ msgstr "Naslov 3 (podpododsek)"
-
 #~ msgid "Header 3 (subsubsection*)"
 #~ msgstr "Naslov 3 (podpododsek*)"
-
 #~ msgid "Header 4 (paragraph)"
 #~ msgstr "Naslov 4 (odstavek)"
-
 #~ msgid "Header appendix"
 #~ msgstr "Pripona glavi"
-
 #~ msgid "Item"
 #~ msgstr "Predmet"
-
 #~ msgid "Item with label"
 #~ msgstr "Predmet z oznako"
-
 #~ msgid "Latex - Tags"
 #~ msgstr "Latex - oznake"
-
 #~ msgid "List description"
 #~ msgstr "Opis seznama"
-
 #~ msgid "List enumerate"
 #~ msgstr "Oštevilčenje seznama"
-
 #~ msgid "List itemize"
 #~ msgstr "Opredmetenje seznama"
-
 #~ msgid "Maths (display)"
 #~ msgstr "Matematika (prikaz)"
-
 #~ msgid "Maths (inline)"
 #~ msgstr "Matematika (vključeno)"
-
 #~ msgid "Operator fraction"
 #~ msgstr "Operator ostanek"
-
 #~ msgid "Operator integral (display)"
 #~ msgstr "Operator integral (prikaz)"
-
 #~ msgid "Operator integral (inline)"
 #~ msgstr "Operator integral (vključeno)"
-
 #~ msgid "Operator sum (display)"
 #~ msgstr "Operator vsota (prikaz)"
-
 #~ msgid "Operator sum (inline)"
 #~ msgstr "Operator vsota (vključeno)"
-
 #~ msgid "Reference label"
 #~ msgstr "Oznaka navezave"
-
 #~ msgid "Reference ref"
 #~ msgstr "Vsebina navezave"
-
 #~ msgid "Symbol <<"
 #~ msgstr "Simbol <<"
-
 #~ msgid "Symbol <="
 #~ msgstr "Simbol <="
-
 #~ msgid "Symbol >="
 #~ msgstr "Simbol >="
-
 #~ msgid "Symbol >>"
 #~ msgstr "Simbol >>"
-
 #~ msgid "Symbol and"
 #~ msgstr "Simbol in"
-
 #~ msgid "Symbol const"
 #~ msgstr "Simbol konstante"
-
 #~ msgid "Symbol d-by-dt"
 #~ msgstr "Simbol d-by-dt"
-
 #~ msgid "Symbol d-by-dt-partial"
 #~ msgstr "Simbol d-by-dt-partial"
-
 #~ msgid "Symbol d2-by-dt2-partial"
 #~ msgstr "Simbol d2-by-dt2-partial"
-
 #~ msgid "Symbol dagger"
 #~ msgstr "Simbol bodala"
-
 #~ msgid "Symbol em-dash ---"
 #~ msgstr "Simbol pomišljaj (em-dash) ---"
-
 #~ msgid "Symbol en-dash --"
 #~ msgstr "Simbol pomišljaj (en-dash) --"
-
 #~ msgid "Symbol equiv"
 #~ msgstr "Simbol enakost"
-
 #~ msgid "Symbol infinity"
 #~ msgstr "Simbol neskončnosti"
-
 #~ msgid "Symbol mathspace ,"
 #~ msgstr "Simbol matematičnega prostora ,"
-
 #~ msgid "Symbol mathspace ."
 #~ msgstr "Simbol matematičnega prostora ."
-
 #~ msgid "Symbol mathspace _"
 #~ msgstr "Simbol matematičnega prostora _"
-
 #~ msgid "Symbol mathspace __"
 #~ msgstr "Simbol matematičnega prostora __"
-
 #~ msgid "Symbol simeq"
 #~ msgstr "Simbol simeq"
-
 #~ msgid "Symbol star"
 #~ msgstr "Simbol zvezdica"
-
 #~ msgid "Typeface bold"
 #~ msgstr "Krepka pisava"
-
 #~ msgid "Typeface italic"
 #~ msgstr "Poševna pisava"
-
 #~ msgid "Typeface slanted"
 #~ msgstr "Nagnjena pisava"
-
 #~ msgid "Typeface type"
 #~ msgstr "Vrsta pisave"
-
 #~ msgid "Unbreakable text"
 #~ msgstr "Nelomljiva pisava"
-
 #~ msgid ""
 #~ "Provides a method to easily insert commonly used tags/strings into a "
 #~ "document without having to type them."
 #~ msgstr ""
 #~ "Omogoča enostavno vstavljanje pogosto uporabljenih oznak/nizov v dokument "
 #~ "brez tipkanja."
-
 #~ msgid "Tag list"
 #~ msgstr "Seznam oznak"
-
 #~ msgid "XSLT - Axes"
 #~ msgstr "XLST - Osi"
-
 #~ msgid "XSLT - Elements"
 #~ msgstr "XSLT - Predmeti"
-
 #~ msgid "XSLT - Functions"
 #~ msgstr "XSLT - Funkcije"
-
 #~ msgid "ancestor"
 #~ msgstr "predhodnik"
-
 #~ msgid "ancestor-or-self"
 #~ msgstr "predhodnik-ali-jaz"
-
 #~ msgid "attribute"
 #~ msgstr "atribut"
-
 #~ msgid "child"
 #~ msgstr "podrejeni predmet"
-
 #~ msgid "descendant"
 #~ msgstr "naslednik"
-
 #~ msgid "descendant-or-self"
 #~ msgstr "naslednik-ali-sam"
-
 #~ msgid "following"
 #~ msgstr "sledi"
-
 #~ msgid "following-sibling"
 #~ msgstr "sledi-brat-ali-sestra"
-
 #~ msgid "namespace"
 #~ msgstr "imenski prostor"
-
 #~ msgid "parent"
 #~ msgstr "nadrejeni predmet"
-
 #~ msgid "preceding"
 #~ msgstr "na vrsti pred"
-
 #~ msgid "preceding-sibling"
 #~ msgstr "na vrsti pred - brat-ali-sestra"
-
 #~ msgid "self"
 #~ msgstr "sam"
-
 #~ msgid "XUL - Tags"
 #~ msgstr "XUL - Oznake"
-
 #~ msgid "Configure insert date/time plugin..."
 #~ msgstr "Nastavi vstavek vstavljanja datuma/ure ..."
+
