@@ -28,6 +28,8 @@
 
 #define GEDIT_STATUS_COMBO_BOX_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE((object), GEDIT_TYPE_STATUS_COMBO_BOX, GeditStatusComboBoxPrivate))
 
+static void	menu_deactivate		(GtkMenu *menu, GeditStatusComboBox *combo);
+
 struct _GeditStatusComboBoxPrivate
 {
 	GtkWidget *frame;
@@ -111,6 +113,22 @@ gedit_status_combo_box_set_property (GObject      *object,
 }
 
 static void
+gedit_status_combo_box_destroy (GtkWidget *widget)
+{
+	GeditStatusComboBox *combo = GEDIT_STATUS_COMBO_BOX (widget);
+
+	if (combo->priv->menu)
+	{
+		g_signal_handlers_disconnect_by_func (combo->priv->menu,
+						      menu_deactivate,
+						      combo);
+		gtk_menu_detach (GTK_MENU (combo->priv->menu));
+	}
+
+	GTK_WIDGET_CLASS (gedit_status_combo_box_parent_class)->destroy (widget);
+}
+
+static void
 gedit_status_combo_box_changed (GeditStatusComboBox *combo,
 				GtkMenuItem         *item)
 {
@@ -129,6 +147,7 @@ static void
 gedit_status_combo_box_class_init (GeditStatusComboBoxClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
+	GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 	static const gchar style[] =
 		"* {\n"
 		  "-GtkButton-default-border : 0;\n"
@@ -138,11 +157,12 @@ gedit_status_combo_box_class_init (GeditStatusComboBoxClass *klass)
 		  "-GtkWidget-focus-padding : 0;\n"
 		  "padding: 0;\n"
 		"}";
-	
+
 	object_class->finalize = gedit_status_combo_box_finalize;
 	object_class->get_property = gedit_status_combo_box_get_property;
 	object_class->set_property = gedit_status_combo_box_set_property;
-	
+	widget_class->destroy = gedit_status_combo_box_destroy;
+
 	klass->changed = gedit_status_combo_box_changed;
 
 	signals[CHANGED] =
@@ -244,6 +264,17 @@ show_menu (GeditStatusComboBox *combo,
 	}
 }
 
+static void
+menu_detached (GtkWidget *widget,
+	       GtkMenu   *menu)
+{
+	GeditStatusComboBox *combo = GEDIT_STATUS_COMBO_BOX (widget);
+
+	g_return_if_fail (GTK_MENU (combo->priv->menu) == menu);
+
+	combo->priv->menu = NULL;
+}
+
 static gboolean
 button_press_event (GtkWidget           *widget,
 		    GdkEventButton      *event,
@@ -337,9 +368,11 @@ gedit_status_combo_box_init (GeditStatusComboBox *self)
 	gtk_misc_set_alignment (GTK_MISC (self->priv->arrow), 0.5, 0.5);
 	
 	gtk_box_pack_start (GTK_BOX (self->priv->hbox), self->priv->arrow, FALSE, TRUE, 0);
-	
+
 	self->priv->menu = gtk_menu_new ();
-	g_object_ref_sink (self->priv->menu);
+	gtk_menu_attach_to_widget (GTK_MENU (self->priv->menu),
+				   GTK_WIDGET (self),
+				   menu_detached);
 
 	g_signal_connect (self->priv->button,
 			  "button-press-event",
