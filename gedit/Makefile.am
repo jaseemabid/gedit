@@ -264,7 +264,7 @@ ui_DATA = 				\
 
 if ENABLE_PYTHON
 overridesdir = $(pyoverridesdir)
-overrides_DATA =			\
+overrides_PYTHON =			\
 	Gedit.py
 endif
 

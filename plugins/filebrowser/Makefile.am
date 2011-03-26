@@ -24,7 +24,17 @@ NOINST_H_FILES = \
 	gedit-file-browser-error.h		\
 	gedit-file-browser-utils.h		\
 	gedit-file-browser-plugin.h		\
-	gedit-file-browser-messages.h
+	gedit-file-browser-messages.h		\
+	messages/gedit-file-browser-message-activation.h \
+	messages/gedit-file-browser-message-add-context-item.h \
+	messages/gedit-file-browser-message-add-filter.h \
+	messages/gedit-file-browser-message-get-root.h \
+	messages/gedit-file-browser-message-get-view.h \
+	messages/gedit-file-browser-message-id.h \
+	messages/gedit-file-browser-message-id-location.h \
+	messages/gedit-file-browser-message-set-emblem.h \
+	messages/gedit-file-browser-message-set-root.h \
+	messages/messages.h
 
 libfilebrowser_la_SOURCES = \
 	$(BUILT_SOURCES) 			\
