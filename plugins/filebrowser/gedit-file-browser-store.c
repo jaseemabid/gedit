@@ -3464,9 +3464,9 @@ gedit_file_browser_store_rename (GeditFileBrowserStore  *model,
 			{
 				*error = g_error_new_literal (gedit_file_browser_store_error_quark (),
 							      GEDIT_FILE_BROWSER_ERROR_RENAME,
-				       			      _("The renamed file is currently filtered out."
-				       			        "You need to adjust your filter settings to "
-				       			        "make the file visible"));
+							      _("The renamed file is currently filtered out. "
+							        "You need to adjust your filter settings to "
+							        "make the file visible"));
 			}
 
 			return FALSE;
