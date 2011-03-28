@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mr\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-03-28 08:24+0000\n"
-"PO-Revision-Date: 2011-03-28 13:54+0530\n"
+"POT-Creation-Date: 2011-03-28 08:27+0000\n"
+"PO-Revision-Date: 2011-03-28 14:04+0530\n"
 "Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
 "Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -163,6 +163,10 @@ msgid ""
 msgstr ""
 "gedit जास्तीत जास्त एवढ्या क्रिया रद्द करु शकतो किंवा पुनः करु शकतो. अमर्यादित "
 "क्रियांसाठी  \"-1\" वापरा. 2.12.0 पासून नापसंत"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
+msgid "Notebook Show Tabs Mode"
+msgstr "नोटबूक टॅब्स् मोड दाखवते"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
 msgid ""
@@ -2233,6 +2237,16 @@ msgstr ""
 "डाऊनलोड बटनावर क्लिक करून gedit ची नवीन आवृत्ती डाऊनलोड करणे शक्य आहे किंवा त्या "
 "आवृत्तीकडे दुर्लक्ष करा व नवीनकरीता वाट पहा"
 
+#. ex:set ts=8 noet:
+#: ../plugins/checkupdate/org.gnome.gedit.plugins.checkupdate.gschema.xml.in.in.h:1
+msgid "Version to Ignore"
+msgstr "वगळण्याजोगी आवृत्ती"
+
+#. This is releated to the next gedit version to be released
+#: ../plugins/checkupdate/org.gnome.gedit.plugins.checkupdate.gschema.xml.in.in.h:3
+msgid "Version to ignore until a newer version is released."
+msgstr "नवीन आवृत्ती प्रकाशीत होईपर्यंत वगळण्याजोगी आवृत्ती."
+
 #: ../plugins/docinfo/docinfo.plugin.desktop.in.h:1
 msgid ""
 "Analyzes the current document and reports the number of words, lines, "
@@ -2317,6 +2331,22 @@ msgstr "बाह्य आदेश आणि शेल स्क्रिप�
 #: ../plugins/externaltools/externaltools.plugin.desktop.in.h:2
 msgid "External Tools"
 msgstr "बाह्य साधन"
+
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
+msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
+msgstr "Pango फाँट नाव. उदाहरणार्थ \"Sans 12\" किंवा \"Monospace Bold 14\"."
+
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
+msgid ""
+"If true, the external tools will use the desktop-global standard font if "
+"it's monospace (and the most similar font it can come up with otherwise)."
+msgstr "खरे असल्यास, तसेच monospace असल्यास बाहेरील साधने desktop-global standard फाँटचा वापर करेल (व इतर काही वापरले असल्यास सर्वात जवळचे जुळणारे फाँट)."
+
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
+msgid "Whether to use the system font"
+msgstr "प्रणाली फाँटचा वापर करायचे"
 
 #: ../plugins/externaltools/tools/capture.py:92
 #, python-format
@@ -2902,6 +2932,12 @@ msgstr "आदेश रंग मजकूर"
 msgid "Error Color Text"
 msgstr "त्रुटी रंग मजकूर"
 
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:5
+msgid ""
+"If true, the terminal will use the desktop-global standard font if it's "
+"monospace (and the most similar font it can come up with otherwise)."
+msgstr "खरे असल्यास, तसेच monospace असल्यास टर्मिनल desktop-global standard फाँटचा वापर करेल (व इतर काही वापरले असल्यास सर्वात जवळचे जुळणारे फाँट)."
+
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid "The command color text"
 msgstr "आदेश रंग मजकूर"
@@ -3405,6 +3441,12 @@ msgstr "कर्सर स्थितीत चालू दिनांक �
 msgid "Custom Format"
 msgstr "पसंतीचे स्वरूप"
 
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:2
+msgid ""
+"If the user should be prompted for a format or if the selected or custom "
+"format should be used."
+msgstr "वापरकर्त्याला स्वरूपकरीता प्रॉमप्ट करायचे असल्यास किंवा नीवडलेले किंवा पसंतीच्या स्वरूपचे वापर करायचे."
+
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
 msgid "Prompt Type"
 msgstr "प्रॉम्प्ट प्रकार"
@@ -3414,8 +3456,12 @@ msgid "Selected Format"
 msgstr "निवडलेले स्वरूप"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
-#| msgid "When inserting date/time..."
 msgid "The custom format used when inserting the date/time."
+msgstr "दिनांक/वेळ समाविष्ट करतेवेळी वापरण्याजोगी पसंतीचे स्वरूप."
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
+#| msgid "The custom format used when inserting the date/time."
+msgid "The selected format used when inserting the date/time."
 msgstr "दिनांक/वेळ समाविष्ट करतेवेळी वापरण्याजोगी पसंतीचे स्वरूप."
 
 #. Translators: Use the more common date format in your locale
