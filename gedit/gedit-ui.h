@@ -31,10 +31,6 @@
 #ifndef __GEDIT_UI_H__
 #define __GEDIT_UI_H__
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
-
 #include <gtk/gtk.h>
 
 #include "gedit-commands.h"

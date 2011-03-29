@@ -28,6 +28,10 @@
  * $Id$
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include "gedit-panel.h"
 
 #include <glib/gi18n.h>

@@ -20,13 +20,13 @@
  * Boston, MA  02110-1301  USA
  */
 
-#include <stdlib.h>
-#include <string.h>
-#include <errno.h>
-
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
+
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
 
 #include <glib/gi18n.h>
 #include <gio/gio.h>
