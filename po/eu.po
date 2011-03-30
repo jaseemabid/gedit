@@ -1,4 +1,4 @@
-# translation of eu_to_be_translate.po to Basque
+# translation of eu.po to Basque
 # Copyright (C) 2001, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
 #
 # Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2004.
@@ -6,17 +6,17 @@
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2007, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: eu_to_be_translate\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-10 23:20+0100\n"
-"PO-Revision-Date: 2011-02-10 23:25+0100\n"
+"Project-Id-Version: eu\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-27 22:23+0000\n"
+"PO-Revision-Date: 2011-03-30 20:03+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 
 #: ../data/gedit.desktop.in.in.h:1
 msgid "Edit text files"
@@ -138,21 +138,13 @@ msgstr "Lerroaren itzulbiratze-modua"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
 msgid ""
-"List of VFS schemes gedit supports in write mode. The 'file' scheme is "
-"writable by default."
-msgstr ""
-"Gedit-ek idazteko moduan onartzen dituen VFS eskemen zerrenda. 'fitxategia' "
-"eskema idazgarria da lehenetsi gisa."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
-msgid ""
 "List of active plugins. It contains the \"Location\" of the active plugins. "
 "See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
 msgstr ""
 "Plugin aktiboen zerrenda. Plugin aktiboen \"Helbidea\" dauka. Ikusi .gedit-"
 "plugin fitxategia plugin zehatz baten kokalekua jakiteko."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
 msgid ""
 "List of encodings shown in the Character Encoding menu in open/save file "
 "selector. Only recognized encodings are used."
@@ -160,15 +152,15 @@ msgstr ""
 "'Karaktereak kodetzea' menuan agertzen diren kodeketen zerrenda, ireki/gorde "
 "fitxategi-hautatzailean. Ezagutzen diren kodeketak bakarrik erabiltzen dira."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
 msgid "Maximum Number of Undo Actions"
 msgstr "Gehiengo desegite-ekintza kopurua"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
 msgid "Maximum Recent Files"
 msgstr "Fitxategi berrienen gehienezko kopurua"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
 msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
 "\" for unlimited number of actions."
@@ -176,7 +168,7 @@ msgstr ""
 "Gedit-ek desegin edo berregin ditzakeen ekintzen gehienezko kopurua. Erabili "
 "\"-1\" ekintza kopurua ez mugatzeko."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
 msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
 "\" for unlimited number of actions. Deprecated since 2.12.0"
@@ -184,11 +176,11 @@ msgstr ""
 "Gedit-ek desegin edo berregin ditzakeen ekintzen gehienezko kopurua. Erabili "
 "\"-1\" ekintza kopurua ez mugatzeko."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
 msgid "Notebook Show Tabs Mode"
 msgstr "Fitxak bistaratzeko modua 'Netbook'-entzako"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
 msgid ""
 "Number of minutes after which gedit will automatically save modified files. "
 "This will only take effect if the \"Autosave\" option is turned on."
@@ -198,40 +190,40 @@ msgstr ""
 "aktibatuta egon behar du."
 
 #
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
 msgid "Print Header"
 msgstr "Inprimatu goiburua"
 
 #
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
 msgid "Print Line Numbers"
 msgstr "Inprimatu lerro-zenbakiak"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
 msgid "Print Syntax Highlighting"
 msgstr "Inprimatu sintaxiaren nabarmentzea"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
 msgid "Printing Line Wrapping Mode"
 msgstr "Lerroaren itzulbiratze-modua inprimatzen"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
 msgid "Restore Previous Cursor Position"
 msgstr "Leheneratu kurtsorearen aurreko posizioa"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
 msgid "Right Margin Position"
 msgstr "Eskuineko marjinaren kokalekua"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
 msgid "Side panel is Visible"
 msgstr "Alboko panela ikusgai dago"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
 msgid "Smart Home End"
 msgstr "Hasiera Amaiera azkarra"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
 msgid ""
 "Sorted list of encodings used by gedit for automatically detecting the "
 "encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
@@ -241,7 +233,7 @@ msgstr ""
 "kodeketen zerrenda ordenatua. \"CURRENT\" uneko locale-aren kodeketa da. "
 "Kodeketa ezagunak bakarrik erabiltzen dira."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
 msgid ""
 "Specifies how the cursor moves when the HOME and END keys are pressed. Use "
 "\"disabled\" to always move at the start/end of the line, \"after\" to move "
@@ -261,7 +253,7 @@ msgstr ""
 "testuaren hasierara/amaierara beti mugitzeko, lerroaren hasierara/amaierara "
 "mugitu ordez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
 msgid ""
 "Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
 "\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
@@ -274,7 +266,7 @@ msgstr ""
 "itzulbiratzeko. Kontuan hartu balioek maiuskulak/minuskulak desberdintzen "
 "dituztela; beraz, ziurtatu hemen aipatu bezalaxe agertzen direla."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
 msgid ""
 "Specifies how to wrap long lines in the editing area. Use \"none\" for no "
 "wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
@@ -287,14 +279,13 @@ msgstr ""
 "itzulbiratzeko. Kontuan hartu balioek maiuskulak/minuskulak desberdintzen "
 "dituztela; beraz, ziurtatu hemen aipatu bezalaxe agertzen direla."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
-msgid ""
-"Specifies the font to use for a document's body when printing documents."
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
+msgid "Specifies the font to use for a document's body when printing documents."
 msgstr ""
 "Dokumentuak inprimatzean dokumentuaren testuan zein letra-tipo erabili behar "
 "den zehazten du."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
 msgid ""
 "Specifies the font to use for line numbers when printing. This will only "
 "take effect if the \"Print Line Numbers\" option is non-zero."
@@ -302,7 +293,7 @@ msgstr ""
 "Inprimatzean lerro-zenbakietan erabili beharreko letra-tipoa zehazten du. "
 "\"Inprimatu lerro-zenbakiak\" aukera zero ez denean bakarrik du eragina."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
 msgid ""
 "Specifies the font to use for page headers when printing a document. This "
 "will only take effect if the \"Print Header\" option is turned on."
@@ -311,7 +302,7 @@ msgstr ""
 "behar den zehazten du. \"Inprimatu goiburua\" aukera aktibatuta dagoenean "
 "bakarrik du eragina."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
 msgid ""
 "Specifies the maximum number of recently opened files that will be displayed "
 "in the \"Recent Files\" submenu."
@@ -319,7 +310,7 @@ msgstr ""
 "\"Fitxategi berrienak\" azpimenuan bistaratuko diren fitxategi ireki berrien "
 "gehienezko kopurua zehazten du."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
 msgid ""
 "Specifies the number of spaces that should be displayed instead of Tab "
 "characters."
@@ -327,11 +318,11 @@ msgstr ""
 "Tabuladore-karaktereen ordez bistaratu behar diren zuriune-kopurua zehazten "
 "du."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
 msgid "Specifies the position of the right margin."
 msgstr "Eskuineko marjinaren kokalekua zehazten du."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
 msgid ""
 "Specifies when to show the notebook tabs. Use \"never\" to never show the "
 "tabs, \"always\" to always show the tabs, and \"auto\" to show the tabs only "
@@ -344,36 +335,36 @@ msgstr ""
 "itzulbiratzeko. Kontuan hartu balioek maiuskulak/minuskulak desberdintzen "
 "dituztela; beraz, ziurtatu hemen aipatu bezalaxe agertzen direla."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
 msgid "Status Bar is Visible"
 msgstr "Egoera-barra ikusgai dago"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
 msgid "Style Scheme"
 msgstr "Estilo-eskema"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
 msgid "Tab Size"
 msgstr "Tabuladorearen tamaina"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
 msgid "The ID of a GtkSourceView Style Scheme used to color the text."
 msgstr "Testuaren kolorean erabilitako GtkSourceView estilo-eskemaren IDa."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
 msgid "Toolbar is Visible"
 msgstr "Tresna-barra ikusgai dago"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
 msgid "Undo Actions Limit (DEPRECATED)"
 msgstr "Desegin ekintzen muga (ZAHARKITUA)"
 
 #
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
 msgid "Use Default Font"
 msgstr "Erabili letra-tipo lehenetsia"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
 msgid ""
 "Whether gedit should automatically save modified files after a time "
 "interval. You can set the time interval with the \"Autosave Interval\" "
@@ -383,7 +374,7 @@ msgstr ""
 "gorde behar dituen ala ez. Denbora-tartea ezar dezakezu \"Automatikoki "
 "gordetzeko bitartea\" aukeraren bidez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
 msgid ""
 "Whether gedit should create backup copies for the files it saves. You can "
 "set the backup file extension with the \"Backup Copy Extension\" option."
@@ -392,56 +383,53 @@ msgstr ""
 "Babeskopiaren luzapena ezar dezakezu \"Babeskopiaren luzapena\" aukeraren "
 "bidez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
 msgid "Whether gedit should display line numbers in the editing area."
-msgstr ""
-"Gedit-ek editatzeko arean lerro-zenbakiak bistaratu behar dituen ala ez."
+msgstr "Gedit-ek editatzeko arean lerro-zenbakiak bistaratu behar dituen ala ez."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
+msgid "Whether gedit should display the right margin in the editing area."
+msgstr "Gedit-ek editatzeko arean eskuineko marjina bistaratu behar duen ala ez."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
-msgid "Whether gedit should display the right margin in the editing area."
-msgstr ""
-"Gedit-ek editatzeko arean eskuineko marjina bistaratu behar duen ala ez."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
 msgid "Whether gedit should enable automatic indentation."
 msgstr "Gedit-ek koska automatikoa gaitu behar duen ala ez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
 msgid "Whether gedit should enable syntax highlighting."
 msgstr "Gedit-ek sintaxiaren nabarmentzea gaitu behar duen ala ez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
-msgid ""
-"Whether gedit should highlight all the occurrences of the searched text."
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
+msgid "Whether gedit should highlight all the occurrences of the searched text."
 msgstr ""
 "Gedit-ek bilaketako testuaren gertaera guztiak nabarmendu behar dituen ala "
 "ez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
 msgid "Whether gedit should highlight matching brackets."
 msgstr "Gedit-ek bat datozten parentesiak nabarmendu behar dituen edo ez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
 msgid "Whether gedit should highlight the current line."
 msgstr "Gedit-ek uneko lerroa nabarmendu behar duen ala ez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
 msgid "Whether gedit should include a document header when printing documents."
 msgstr ""
 "Gedit-ek dokumentuak inprimatzean dokumentuaren goiburua sartu behar duen "
 "ala ez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
 msgid "Whether gedit should insert spaces instead of tabs."
 msgstr "Gedit-ek tabuladoreen ordez zuriuneak sartu behar dituen ala ez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
 msgid "Whether gedit should print syntax highlighting when printing documents."
 msgstr ""
 "gedit-ek dokumentuak inprimatzean sintaxiaren nabarmentzea inprimatu behar "
 "duen ala ez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
 msgid ""
 "Whether gedit should restore the previous cursor position when a file is "
 "loaded."
@@ -449,23 +437,19 @@ msgstr ""
 "Fitxategi bat kargatzean Gedit-ek kurtsorearen aurreko posizioa leheneratu "
 "behar duen ala ez."
 
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
+msgid "Whether the side panel at the left of editing windows should be visible."
+msgstr "Editatzeko leihoen ezkerreko albo-panelak ikusgai egon behar duen ala ez."
+
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
-msgid ""
-"Whether the side panel at the left of editing windows should be visible."
-msgstr ""
-"Editatzeko leihoen ezkerreko albo-panelak ikusgai egon behar duen ala ez."
+msgid "Whether the status bar at the bottom of editing windows should be visible."
+msgstr "Editatzeko leihoen beheko egoera-barrak ikusgai egon behar duen ala ez."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
-msgid ""
-"Whether the status bar at the bottom of editing windows should be visible."
-msgstr ""
-"Editatzeko leihoen beheko egoera-barrak ikusgai egon behar duen ala ez."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
 msgid "Whether the toolbar should be visible in editing windows."
 msgstr "Tresna-barrak editatzeko leihoetan ikusgai egon behar duen ala ez."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:73
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
 msgid ""
 "Whether to use the system's default fixed width font for editing text "
 "instead of a font specific to gedit. If this option is turned off, then the "
@@ -476,10 +460,6 @@ msgstr ""
 "tipo lehenetsia erabiliko den ala ez. Aukera hori desaktibatuta badago, "
 "\"Editorearen letra-tipoa\" aukeran adierazitako letra-tipoa erabiliko da "
 "sistemaren letra-tipoaren ordez."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:74
-msgid "Writable VFS schemes"
-msgstr "VFS eskema idazgarriak"
 
 #
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
@@ -501,19 +481,15 @@ msgstr "Galdera"
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:414
 #, c-format
-msgid ""
-"If you don't save, changes from the last %ld second will be permanently lost."
+msgid "If you don't save, changes from the last %ld second will be permanently lost."
 msgid_plural ""
 "If you don't save, changes from the last %ld seconds will be permanently "
 "lost."
-msgstr[0] ""
-"Ez baduzu gordetzen, azken %ld segundoko aldaketak betirako galduko dira."
-msgstr[1] ""
-"Ez baduzu gordetzen, azken %ld segundotako aldaketak betirako galduko dira."
+msgstr[0] "Ez baduzu gordetzen, azken %ld segundoko aldaketak betirako galduko dira."
+msgstr[1] "Ez baduzu gordetzen, azken %ld segundotako aldaketak betirako galduko dira."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:423
-msgid ""
-"If you don't save, changes from the last minute will be permanently lost."
+msgid "If you don't save, changes from the last minute will be permanently lost."
 msgstr "Ez baduzu gordetzen, azken minutuko aldaketak betirako galduko dira."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:429
@@ -533,15 +509,12 @@ msgstr[1] ""
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:439
 #, c-format
-msgid ""
-"If you don't save, changes from the last %ld minute will be permanently lost."
+msgid "If you don't save, changes from the last %ld minute will be permanently lost."
 msgid_plural ""
 "If you don't save, changes from the last %ld minutes will be permanently "
 "lost."
-msgstr[0] ""
-"Ez baduzu gordetzen, azken %ld minutuko aldaketak betirako galduko dira."
-msgstr[1] ""
-"Ez baduzu gordetzen, azken %ld minututako aldaketak betirako galduko dira."
+msgstr[0] "Ez baduzu gordetzen, azken %ld minutuko aldaketak betirako galduko dira."
+msgstr[1] "Ez baduzu gordetzen, azken %ld minututako aldaketak betirako galduko dira."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:454
 msgid "If you don't save, changes from the last hour will be permanently lost."
@@ -564,14 +537,10 @@ msgstr[1] ""
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:475
 #, c-format
-msgid ""
-"If you don't save, changes from the last %d hour will be permanently lost."
-msgid_plural ""
-"If you don't save, changes from the last %d hours will be permanently lost."
-msgstr[0] ""
-"Ez baduzu gordetzen, azken orduko (%d) aldaketak betirako galduko dira."
-msgstr[1] ""
-"Ez baduzu gordetzen, azken %d orduko aldaketak betirako galduko dira."
+msgid "If you don't save, changes from the last %d hour will be permanently lost."
+msgid_plural "If you don't save, changes from the last %d hours will be permanently lost."
+msgstr[0] "Ez baduzu gordetzen, azken orduko (%d) aldaketak betirako galduko dira."
+msgstr[1] "Ez baduzu gordetzen, azken %d orduko aldaketak betirako galduko dira."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:519
 #, c-format
@@ -598,12 +567,9 @@ msgstr[1] "%d dokumentutan egindako aldaketak betirako galduko dira."
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:714
 #, c-format
 msgid "There is %d document with unsaved changes. Save changes before closing?"
-msgid_plural ""
-"There are %d documents with unsaved changes. Save changes before closing?"
-msgstr[0] ""
-"Aldatutako  dokumentu %d gorde gabe dago. Aldaketak gorde itxi aurretik?"
-msgstr[1] ""
-"Aldatutako %d dokumentu gorde gabe daude. Aldaketak gorde itxi aurretik?"
+msgid_plural "There are %d documents with unsaved changes. Save changes before closing?"
+msgstr[0] "Aldatutako  dokumentu %d gorde gabe dago. Aldaketak gorde itxi aurretik?"
+msgstr[1] "Aldatutako %d dokumentu gorde gabe daude. Aldaketak gorde itxi aurretik?"
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:733
 msgid "Docum_ents with unsaved changes:"
@@ -791,7 +757,7 @@ msgid "_Autosave files every"
 msgstr "_Autogorde fitxategia maiztasun honekin"
 
 #
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:599
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:588
 msgid "_Display line numbers"
 msgstr "B_istaratu lerro-zenbakiak"
 
@@ -810,7 +776,7 @@ msgid "_minutes"
 msgstr "_minutuz behin"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1590
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1592
 msgid "Replace"
 msgstr "Ordeztu"
 
@@ -888,8 +854,7 @@ msgstr "KODEKETA"
 
 #: ../gedit/gedit-command-line.c:277
 msgid "Create a new top-level window in an existing instance of gedit"
-msgstr ""
-"Sortu goi-mailako leiho berri bat lehendik dagoen gedit-en instantzia batean"
+msgstr "Sortu goi-mailako leiho berri bat lehendik dagoen gedit-en instantzia batean"
 
 #: ../gedit/gedit-command-line.c:285
 msgid "Create a new document in an existing instance of gedit"
@@ -1017,19 +982,15 @@ msgstr "Leheneratu '%s' dokumentuko gorde ez diren aldaketak?"
 
 #: ../gedit/gedit-commands-file.c:1229
 #, c-format
-msgid ""
-"Changes made to the document in the last %ld second will be permanently lost."
+msgid "Changes made to the document in the last %ld second will be permanently lost."
 msgid_plural ""
 "Changes made to the document in the last %ld seconds will be permanently "
 "lost."
-msgstr[0] ""
-"Azken %ld segundoan dokumentuan egin diren aldaketak betirako galduko dira."
-msgstr[1] ""
-"Azken %ld segundotan dokumentuan egin diren aldaketak betirako galduko dira."
+msgstr[0] "Azken %ld segundoan dokumentuan egin diren aldaketak betirako galduko dira."
+msgstr[1] "Azken %ld segundotan dokumentuan egin diren aldaketak betirako galduko dira."
 
 #: ../gedit/gedit-commands-file.c:1238
-msgid ""
-"Changes made to the document in the last minute will be permanently lost."
+msgid "Changes made to the document in the last minute will be permanently lost."
 msgstr "Azken minutuan dokumentuan egin diren aldaketak betirako galduko dira."
 
 #: ../gedit/gedit-commands-file.c:1244
@@ -1049,15 +1010,12 @@ msgstr[1] ""
 
 #: ../gedit/gedit-commands-file.c:1254
 #, c-format
-msgid ""
-"Changes made to the document in the last %ld minute will be permanently lost."
+msgid "Changes made to the document in the last %ld minute will be permanently lost."
 msgid_plural ""
 "Changes made to the document in the last %ld minutes will be permanently "
 "lost."
-msgstr[0] ""
-"Azken %ld minutuan dokumentuan egin diren aldaketak betirako galduko dira."
-msgstr[1] ""
-"Azken %ld minututan dokumentuan egin diren aldaketak betirako galduko dira."
+msgstr[0] "Azken %ld minutuan dokumentuan egin diren aldaketak betirako galduko dira."
+msgstr[1] "Azken %ld minututan dokumentuan egin diren aldaketak betirako galduko dira."
 
 #: ../gedit/gedit-commands-file.c:1269
 msgid "Changes made to the document in the last hour will be permanently lost."
@@ -1080,25 +1038,21 @@ msgstr[1] ""
 
 #: ../gedit/gedit-commands-file.c:1290
 #, c-format
-msgid ""
-"Changes made to the document in the last %d hour will be permanently lost."
-msgid_plural ""
-"Changes made to the document in the last %d hours will be permanently lost."
-msgstr[0] ""
-"Azken orduan (%d) dokumentuan egin diren aldaketak betirako galduko dira."
-msgstr[1] ""
-"Azken %d ordutan dokumentuan egin diren aldaketak betirako galduko dira."
+msgid "Changes made to the document in the last %d hour will be permanently lost."
+msgid_plural "Changes made to the document in the last %d hours will be permanently lost."
+msgstr[0] "Azken orduan (%d) dokumentuan egin diren aldaketak betirako galduko dira."
+msgstr[1] "Azken %d ordutan dokumentuan egin diren aldaketak betirako galduko dira."
 
 #: ../gedit/gedit-commands-file.c:1316
 msgid "_Revert"
 msgstr "_Leheneratu"
 
 #
-#: ../gedit/gedit-commands-help.c:86
+#: ../gedit/gedit-commands-help.c:88
 msgid "gedit is a small and lightweight text editor for the GNOME Desktop"
 msgstr "gedit testu-editore txikia eta sinplea da, GNOME mahaigainerako."
 
-#: ../gedit/gedit-commands-help.c:111
+#: ../gedit/gedit-commands-help.c:113
 msgid "translator-credits"
 msgstr ""
 "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>\n"
@@ -1127,12 +1081,12 @@ msgstr "\"%s\" ez da aurkitu"
 msgid "Unsaved Document %d"
 msgstr "Gorde gabeko %d dokumentua"
 
-#: ../gedit/gedit-documents-panel.c:118 ../gedit/gedit-documents-panel.c:132
-#: ../gedit/gedit-window.c:2403 ../gedit/gedit-window.c:2410
+#: ../gedit/gedit-documents-panel.c:119 ../gedit/gedit-documents-panel.c:133
+#: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
 msgid "Read-Only"
 msgstr "Irakurtzeko soilik"
 
-#: ../gedit/gedit-documents-panel.c:1089 ../gedit/gedit-window.c:3835
+#: ../gedit/gedit-documents-panel.c:1124 ../gedit/gedit-window.c:3840
 msgid "Documents"
 msgstr "Dokumentuak"
 
@@ -1372,8 +1326,7 @@ msgstr "Ustekabeko errorea: %s."
 
 #: ../gedit/gedit-io-error-info-bar.c:417
 msgid "gedit cannot find the file. Perhaps it has recently been deleted."
-msgstr ""
-"gedit-ek ezin du fitxategia aurkitu. Baliteke duela gutxi ezabatu izana."
+msgstr "gedit-ek ezin du fitxategia aurkitu. Baliteke duela gutxi ezabatu izana."
 
 #: ../gedit/gedit-io-error-info-bar.c:427
 #, c-format
@@ -1484,14 +1437,14 @@ msgstr ""
 #
 #: ../gedit/gedit-io-error-info-bar.c:873
 #: ../gedit/gedit-io-error-info-bar.c:971
-#: ../gedit/gedit-io-error-info-bar.c:1259
+#: ../gedit/gedit-io-error-info-bar.c:1260
 msgid "S_ave Anyway"
 msgstr "_Gorde dena den"
 
 #
 #: ../gedit/gedit-io-error-info-bar.c:877
 #: ../gedit/gedit-io-error-info-bar.c:975
-#: ../gedit/gedit-io-error-info-bar.c:1263
+#: ../gedit/gedit-io-error-info-bar.c:1264
 msgid "D_on't Save"
 msgstr "_Ez gorde"
 
@@ -1558,7 +1511,7 @@ msgstr ""
 "%s ez da baliozko helbidea. Egiaztatu helbidea ondo idatzi duzula eta saiatu "
 "berriro."
 
-#: ../gedit/gedit-io-error-info-bar.c:1103
+#: ../gedit/gedit-io-error-info-bar.c:1104
 msgid ""
 "You do not have the permissions necessary to save the file. Please check "
 "that you typed the location correctly and try again."
@@ -1566,7 +1519,7 @@ msgstr ""
 "Ez dituzu nahikoa baimen fitxategia gordetzeko. Egiaztatu helbidea ondo "
 "idatzi duzula eta saiatu berriro."
 
-#: ../gedit/gedit-io-error-info-bar.c:1109
+#: ../gedit/gedit-io-error-info-bar.c:1110
 msgid ""
 "There is not enough disk space to save the file. Please free some disk space "
 "and try again."
@@ -1574,7 +1527,7 @@ msgstr ""
 "Diskoan ez dago fitxategia gordetzeko behar adina leku. Libratu lekua "
 "diskoan eta saiatu berriro."
 
-#: ../gedit/gedit-io-error-info-bar.c:1114
+#: ../gedit/gedit-io-error-info-bar.c:1115
 msgid ""
 "You are trying to save the file on a read-only disk. Please check that you "
 "typed the location correctly and try again."
@@ -1582,11 +1535,11 @@ msgstr ""
 "Irakurtzeko soilik den diskoan fitxategia gordetzen saiatzen ari zara. "
 "Egiaztatu helbidea ondo idatzi duzula eta saiatu berriro."
 
-#: ../gedit/gedit-io-error-info-bar.c:1120
+#: ../gedit/gedit-io-error-info-bar.c:1121
 msgid "A file with the same name already exists. Please use a different name."
 msgstr "Izen berdineko fitxategia badago lehendik ere. Erabili beste izen bat."
 
-#: ../gedit/gedit-io-error-info-bar.c:1125
+#: ../gedit/gedit-io-error-info-bar.c:1126
 msgid ""
 "The disk where you are trying to save the file has a limitation on length of "
 "the file names. Please use a shorter name."
@@ -1594,7 +1547,7 @@ msgstr ""
 "Fitxategia gordetzeko erabili nahi duzun diskoak fitxategi-izenaren muga du. "
 "Saiatu izen laburragoa erabiltzen."
 
-#: ../gedit/gedit-io-error-info-bar.c:1132
+#: ../gedit/gedit-io-error-info-bar.c:1133
 msgid ""
 "The disk where you are trying to save the file has a limitation on file "
 "sizes. Please try saving a smaller file or saving it to a disk that does not "
@@ -1604,7 +1557,7 @@ msgstr ""
 "du. Saiatu fitxategia tamaina txikiagoan gordetzen edo muga hori ez duen "
 "disko batean gordetzen."
 
-#: ../gedit/gedit-io-error-info-bar.c:1148
+#: ../gedit/gedit-io-error-info-bar.c:1149
 #, c-format
 msgid "Could not save the file %s."
 msgstr "Ezin izan da %s fitxategia gorde."
@@ -1613,32 +1566,31 @@ msgstr "Ezin izan da %s fitxategia gorde."
 #. * could be interpreted as the changes he made in the document. beside "reading" is
 #. * not accurate (since last load/save)
 #.
-#: ../gedit/gedit-io-error-info-bar.c:1193
+#: ../gedit/gedit-io-error-info-bar.c:1194
 #, c-format
 msgid "The file %s changed on disk."
 msgstr "%s fitxategia diskoan aldatu da."
 
-#: ../gedit/gedit-io-error-info-bar.c:1198
+#: ../gedit/gedit-io-error-info-bar.c:1199
 msgid "Do you want to drop your changes and reload the file?"
 msgstr "Nahi duzu aldaketak jaregin eta fitxategia berriro kargatzea?"
 
-#: ../gedit/gedit-io-error-info-bar.c:1200
+#: ../gedit/gedit-io-error-info-bar.c:1201
 msgid "Do you want to reload the file?"
 msgstr "Nahi duzu fitxategia berriro kargatzea?"
 
 #
-#: ../gedit/gedit-io-error-info-bar.c:1205
+#: ../gedit/gedit-io-error-info-bar.c:1206
 msgid "_Reload"
 msgstr "_Birkargatu"
 
-#: ../gedit/gedit-io-error-info-bar.c:1277
+#: ../gedit/gedit-io-error-info-bar.c:1278
 #, c-format
 msgid "Some invalid chars have been detected while saving %s"
 msgstr "Baliogabeko karaktere batzuk hauteman dira %s gordetzean"
 
-#: ../gedit/gedit-io-error-info-bar.c:1293
-msgid ""
-"If you continue saving this file you can corrupt the document.  Save anyway?"
+#: ../gedit/gedit-io-error-info-bar.c:1294
+msgid "If you continue saving this file you can corrupt the document.  Save anyway?"
 msgstr ""
 "Fitxategi hau gordetzen jarraitzen baduzu, dokumentua honda dezakezu. Gorde "
 "dena den?"
@@ -1820,8 +1772,7 @@ msgstr[1] "Erroreak dituzten %d fitxa daude"
 #: ../gedit/gedit-style-scheme-manager.c:206
 #, c-format
 msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
-msgstr ""
-"Ezin izan da '%s' direktorioa sortu: g_mkdir_with_parents() huts egin du: %s"
+msgstr "Ezin izan da '%s' direktorioa sortu: g_mkdir_with_parents() huts egin du: %s"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
@@ -1860,38 +1811,38 @@ msgid "Saving %s"
 msgstr "%s gordetzen"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1827
+#: ../gedit/gedit-tab.c:1832
 msgid "RO"
 msgstr "IS"
 
-#: ../gedit/gedit-tab.c:1874
+#: ../gedit/gedit-tab.c:1879
 #, c-format
 msgid "Error opening file %s"
 msgstr "Errorea %s fitxategia irekitzean."
 
-#: ../gedit/gedit-tab.c:1879
+#: ../gedit/gedit-tab.c:1884
 #, c-format
 msgid "Error reverting file %s"
 msgstr "Errorea %s fitxategia leheneratzean."
 
-#: ../gedit/gedit-tab.c:1884
+#: ../gedit/gedit-tab.c:1889
 #, c-format
 msgid "Error saving file %s"
 msgstr "Errorea %s fitxategia gordetzean."
 
-#: ../gedit/gedit-tab.c:1905
+#: ../gedit/gedit-tab.c:1910
 msgid "Unicode (UTF-8)"
 msgstr "Unicode (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1912
+#: ../gedit/gedit-tab.c:1917
 msgid "Name:"
 msgstr "Izena:"
 
-#: ../gedit/gedit-tab.c:1913
+#: ../gedit/gedit-tab.c:1918
 msgid "MIME Type:"
 msgstr "MIME mota:"
 
-#: ../gedit/gedit-tab.c:1914
+#: ../gedit/gedit-tab.c:1919
 msgid "Encoding:"
 msgstr "Kodeketa:"
 
@@ -1941,7 +1892,7 @@ msgstr "Dokumentu berria sortzen du"
 msgid "_Open..."
 msgstr "_Ireki..."
 
-#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1518
+#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1520
 msgid "Open a file"
 msgstr "Fitxategi bat irekitzen du"
 
@@ -2243,29 +2194,29 @@ msgid "/ on %s"
 msgstr "/ %s(e)n"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:610
+#: ../gedit/gedit-view-frame.c:596
 msgid "_Wrap Around"
 msgstr "_Doitu"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:620
+#: ../gedit/gedit-view-frame.c:606
 msgid "Match _Entire Word Only"
 msgstr "_Hitz osoak soilik"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:630
+#: ../gedit/gedit-view-frame.c:616
 msgid "_Match Case"
 msgstr "_Maiuskula/minuskula"
 
-#: ../gedit/gedit-view-frame.c:889
+#: ../gedit/gedit-view-frame.c:875
 msgid "String you want to search for"
 msgstr "Bilatzea nahi duzun katea"
 
-#: ../gedit/gedit-view-frame.c:898
+#: ../gedit/gedit-view-frame.c:884
 msgid "Line you want to move the cursor to"
 msgstr "Lerroa kurtsorea kokatzeko"
 
-#: ../gedit/gedit-window.c:1021
+#: ../gedit/gedit-window.c:1023
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Erabili %s nabarmentze-modua"
@@ -2274,7 +2225,7 @@ msgstr "Erabili %s nabarmentze-modua"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1088 ../gedit/gedit-window.c:2100
+#: ../gedit/gedit-window.c:1090 ../gedit/gedit-window.c:2105
 #: ../plugins/externaltools/tools/manager.py:120
 #: ../plugins/externaltools/tools/manager.py:416
 #: ../plugins/externaltools/tools/manager.py:527
@@ -2282,68 +2233,68 @@ msgstr "Erabili %s nabarmentze-modua"
 msgid "Plain Text"
 msgstr "Testu arrunta"
 
-#: ../gedit/gedit-window.c:1089
+#: ../gedit/gedit-window.c:1091
 msgid "Disable syntax highlighting"
 msgstr "Desgaitu sintaxiaren nabarmentzea"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1411
+#: ../gedit/gedit-window.c:1413
 #, c-format
 msgid "Open '%s'"
 msgstr "Ireki '%s'"
 
 #
-#: ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-window.c:1522
 msgid "Open a recently used file"
 msgstr "Erabili berri duzun fitxategi bat irekitzen du"
 
-#: ../gedit/gedit-window.c:1526
+#: ../gedit/gedit-window.c:1528
 msgid "Open"
 msgstr "Ireki"
 
-#: ../gedit/gedit-window.c:1584
+#: ../gedit/gedit-window.c:1586
 msgid "Save"
 msgstr "Gorde"
 
 #
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1588
 msgid "Print"
 msgstr "Inprimatu"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1590
 msgid "Find"
 msgstr "Bilatu"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1745
+#: ../gedit/gedit-window.c:1750
 #, c-format
 msgid "Activate '%s'"
 msgstr "Aktibatu '%s'"
 
 #
-#: ../gedit/gedit-window.c:2078
+#: ../gedit/gedit-window.c:2083
 msgid "Use Spaces"
 msgstr "Erabili zuriuneak"
 
-#: ../gedit/gedit-window.c:2151
+#: ../gedit/gedit-window.c:2156
 msgid "Tab Width"
 msgstr "Tabulazio-zabalera"
 
-#: ../gedit/gedit-window.c:2260
+#: ../gedit/gedit-window.c:2265
 msgid "Bracket match is out of range"
 msgstr "Parentesien bat-etortzea barrutitik kanpo"
 
-#: ../gedit/gedit-window.c:2265
+#: ../gedit/gedit-window.c:2270
 msgid "Bracket match not found"
 msgstr "Parentesien bat-etortzea ez da aurkitu"
 
-#: ../gedit/gedit-window.c:2270
+#: ../gedit/gedit-window.c:2275
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Bat datorren parentesia honako lerroan aurkituta: %d"
 
 #
-#: ../gedit/gedit-window.c:4041
+#: ../gedit/gedit-window.c:4046
 msgid "About gedit"
 msgstr "Gedit-i buruz"
 
@@ -2752,8 +2703,7 @@ msgstr "Kendu erabiltzen ez diren zuriuneak fitxategitik"
 
 #: ../plugins/externaltools/data/run-command.desktop.in.h:1
 msgid "Execute a custom command and put its output in a new document"
-msgstr ""
-"Exekutatu komando pertsonalizatua eta jarri bere irteera dokumentu berrian"
+msgstr "Exekutatu komando pertsonalizatua eta jarri bere irteera dokumentu berrian"
 
 #: ../plugins/externaltools/data/run-command.desktop.in.h:2
 msgid "Run command"
@@ -2772,60 +2722,60 @@ msgid "File System"
 msgstr "Fitxategi-sistema"
 
 #
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:585
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:596
 msgid "_Set root to active document"
 msgstr "_Ezarri dokumentu aktiboaren erroa"
 
 #
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:587
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:598
 msgid "Set the root to the active document location"
 msgstr "Ezarri dokumentu aktiboaren kokalekuaren erroa"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:592
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:603
 msgid "_Open terminal here"
 msgstr "_Ireki terminala hemen"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:594
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:605
 msgid "Open a terminal at the currently opened directory"
 msgstr "Ireki terminala unean irekitako direktorioan"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:732
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:743
 msgid "File Browser"
 msgstr "Fitxategi-arakatzailea"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:875
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:886
 msgid "An error occurred while creating a new directory"
 msgstr "Errorea gertatu da direktorio berria sortzean"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:878
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:889
 msgid "An error occurred while creating a new file"
 msgstr "Errorea gertatu da fitxategi berria sortzean"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:881
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:892
 msgid "An error occurred while renaming a file or directory"
 msgstr "Errorea gertatu da fitxategia/direktorioa izenez aldatzean"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:884
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:895
 msgid "An error occurred while deleting a file or directory"
 msgstr "Errorea gertatu da fitxategia/direktorioa ezabatzean"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:887
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:898
 msgid "An error occurred while opening a directory in the file manager"
 msgstr "Errorea gertatu da direktorioa fitxategi-kudeatzailearekin irekitzean"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:890
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:901
 msgid "An error occurred while setting a root directory"
 msgstr "Errorea gertatu da erroko direktorioa ezartzean"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:893
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:904
 msgid "An error occurred while loading a directory"
 msgstr "Errorea gertatu da direktorioa kargatzean"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:896
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:907
 msgid "An error occurred"
 msgstr "Errorea gertatu da"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1105
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1123
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
@@ -2833,33 +2783,33 @@ msgstr ""
 "Ezin da fitxategia zakarrontzira bota.\n"
 "Betirako ezabatzea nahi duzu?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1110
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1128
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr "\"%s\" fitxategia ezin da zakarrontzira bota."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1115
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1133
 msgid "The selected files cannot be moved to the trash."
 msgstr "Hautatutako fitxategia ezin da zakarrontzira bota."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1147
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1165
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr "Ziur zaude \"%s\" betirako ezabatzea nahi duzula?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1152
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1170
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr "Ziur zaude hautatutako fitxategiak betirako ezabatzea nahi dituzula?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1155
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1173
 msgid "If you delete an item, it is permanently lost."
 msgstr "Elementu bat ezabatzen baduzu betirako galduko da."
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:1728
+#: ../plugins/filebrowser/gedit-file-browser-store.c:1722
 msgid "(Empty)"
 msgstr "(Hutsa)"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3474
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3467
 msgid ""
 "The renamed file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
@@ -2869,11 +2819,11 @@ msgstr ""
 
 #
 #. Translators: This is the default name of new files created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3718
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3711
 msgid "file"
 msgstr "fitxategia"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3746
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3739
 msgid ""
 "The new file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
@@ -2882,11 +2832,11 @@ msgstr ""
 "behar dituzu fitxategia ikusgai egiteko."
 
 #. Translators: This is the default name of new directories created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3777
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3770
 msgid "directory"
 msgstr "direktorioa"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3802
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3795
 msgid ""
 "The new directory is currently filtered out. You need to adjust your filter "
 "settings to make the directory visible"
@@ -3194,7 +3144,7 @@ msgstr "_Komando-kolorea:"
 msgid "_Error color:"
 msgstr "_Errore-kolorea:"
 
-#. ex:ts=8:et:
+#. ex:ts=4:et:
 #: ../plugins/quickopen/quickopen/popup.py:31
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:1
 msgid "Quick Open"
@@ -3224,7 +3174,7 @@ msgid "Create new snippet"
 msgstr "Sortu mozkin berria"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/manager.py:398
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Delete selected snippet"
 msgstr "Ezabatu hautatutako mozkina"
 
@@ -3233,7 +3183,7 @@ msgid "Export selected snippets"
 msgstr "Esportatu hautatutako mozkinak"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/manager.py:769
+#: ../plugins/snippets/snippets/manager.py:778
 msgid "Import snippets"
 msgstr "Inportatu mozkinak"
 
@@ -3247,7 +3197,7 @@ msgstr "Laster-tekla mozkina aktibatzeko"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:657
+#: ../plugins/snippets/snippets/manager.py:666
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Hitz bakuna mozkina aktibatzeko tabuladorea sakatu ondoren"
 
@@ -3264,11 +3214,11 @@ msgid "_Tab trigger:"
 msgstr "_Fitxa-abiarazlea:"
 
 #
-#: ../plugins/snippets/snippets/windowactivatable.py:141
+#: ../plugins/snippets/snippets/windowactivatable.py:149
 msgid "Manage _Snippets..."
 msgstr "Kudeatu _mozkinak..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:142
+#: ../plugins/snippets/snippets/windowactivatable.py:150
 msgid "Manage snippets"
 msgstr "Kudeatu mozkinak"
 
@@ -3276,20 +3226,20 @@ msgstr "Kudeatu mozkinak"
 msgid "Snippets archive"
 msgstr "Mozkinen artxiboa"
 
-#: ../plugins/snippets/snippets/manager.py:65
+#: ../plugins/snippets/snippets/manager.py:63
 msgid "Add a new snippet..."
 msgstr "Gehitu mozkin berria..."
 
-#: ../plugins/snippets/snippets/manager.py:118
+#: ../plugins/snippets/snippets/manager.py:116
 msgid "Global"
 msgstr "Globala"
 
-#: ../plugins/snippets/snippets/manager.py:395
+#: ../plugins/snippets/snippets/manager.py:393
 msgid "Revert selected snippet"
 msgstr "Alderantzikatu hautatutako mozkina"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:650
+#: ../plugins/snippets/snippets/manager.py:659
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
@@ -3298,74 +3248,73 @@ msgstr ""
 "karaktere bakarra (ez alfanumerikoa, {, [ bezalako karaktereak) eduki "
 "dezakete."
 
-#: ../plugins/snippets/snippets/manager.py:748
+#: ../plugins/snippets/snippets/manager.py:757
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "Honako errorea gertatu da inportatzean: %s"
 
-#: ../plugins/snippets/snippets/manager.py:755
+#: ../plugins/snippets/snippets/manager.py:764
 msgid "Import successfully completed"
 msgstr "Ongi inportatu da"
 
-#: ../plugins/snippets/snippets/manager.py:774
-#: ../plugins/snippets/snippets/manager.py:860
-#: ../plugins/snippets/snippets/manager.py:923
+#: ../plugins/snippets/snippets/manager.py:783
+#: ../plugins/snippets/snippets/manager.py:869
+#: ../plugins/snippets/snippets/manager.py:932
 msgid "All supported archives"
 msgstr "Onartzen diren artxibo guztiak"
 
-#: ../plugins/snippets/snippets/manager.py:775
-#: ../plugins/snippets/snippets/manager.py:861
-#: ../plugins/snippets/snippets/manager.py:924
+#: ../plugins/snippets/snippets/manager.py:784
+#: ../plugins/snippets/snippets/manager.py:870
+#: ../plugins/snippets/snippets/manager.py:933
 msgid "Gzip compressed archive"
 msgstr "Gzip-ekin konprimitutako artxiboa"
 
-#: ../plugins/snippets/snippets/manager.py:776
-#: ../plugins/snippets/snippets/manager.py:862
-#: ../plugins/snippets/snippets/manager.py:925
+#: ../plugins/snippets/snippets/manager.py:785
+#: ../plugins/snippets/snippets/manager.py:871
+#: ../plugins/snippets/snippets/manager.py:934
 msgid "Bzip2 compressed archive"
 msgstr "Bzip2-rekin konprimitutako artxiboa"
 
-#: ../plugins/snippets/snippets/manager.py:777
+#: ../plugins/snippets/snippets/manager.py:786
 msgid "Single snippets file"
 msgstr "Mozkinen fitxategi bakarra"
 
-#: ../plugins/snippets/snippets/manager.py:778
-#: ../plugins/snippets/snippets/manager.py:864
-#: ../plugins/snippets/snippets/manager.py:927
+#: ../plugins/snippets/snippets/manager.py:787
+#: ../plugins/snippets/snippets/manager.py:873
+#: ../plugins/snippets/snippets/manager.py:936
 msgid "All files"
 msgstr "Fitxategi denak"
 
-#: ../plugins/snippets/snippets/manager.py:790
+#: ../plugins/snippets/snippets/manager.py:799
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "Honako errorea gertatu da esportatzean: %s"
 
-#: ../plugins/snippets/snippets/manager.py:794
+#: ../plugins/snippets/snippets/manager.py:803
 msgid "Export successfully completed"
 msgstr "Ongi esportatu da"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:834
-#: ../plugins/snippets/snippets/manager.py:901
+#: ../plugins/snippets/snippets/manager.py:843
+#: ../plugins/snippets/snippets/manager.py:910
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
-msgstr ""
-"Nahi duzu hautatutako <b>sistemako</b> mozkinak esportazioan txertatzea?"
+msgstr "Nahi duzu hautatutako <b>sistemako</b> mozkinak esportazioan txertatzea?"
 
-#: ../plugins/snippets/snippets/manager.py:849
-#: ../plugins/snippets/snippets/manager.py:919
+#: ../plugins/snippets/snippets/manager.py:858
+#: ../plugins/snippets/snippets/manager.py:928
 msgid "There are no snippets selected to be exported"
 msgstr "Ez da mozkinik hautatu esportatzeko"
 
-#: ../plugins/snippets/snippets/manager.py:854
-#: ../plugins/snippets/snippets/manager.py:892
+#: ../plugins/snippets/snippets/manager.py:863
+#: ../plugins/snippets/snippets/manager.py:901
 msgid "Export snippets"
 msgstr "Esportatu mozkinak"
 
-#: ../plugins/snippets/snippets/manager.py:1031
+#: ../plugins/snippets/snippets/manager.py:1042
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "Sakatu laster-tekla berria, edo sakatu Atzera-tekla garbitzeko"
 
-#: ../plugins/snippets/snippets/manager.py:1033
+#: ../plugins/snippets/snippets/manager.py:1044
 msgid "Type a new shortcut"
 msgstr "Sakatu laster-tekla berria"
 
@@ -3524,6 +3473,35 @@ msgstr "(ortografia zuzena)"
 #: ../plugins/spell/gedit-spell-checker-dialog.c:699
 msgid "Completed spell checking"
 msgstr "Ortografia-egiaztapena bukatuta"
+
+#. Translators: the first %s is the language name, and
+#. * the second %s is the locale name. Example:
+#. * "French (France)"
+#.
+#: ../plugins/spell/gedit-spell-checker-language.c:285
+#: ../plugins/spell/gedit-spell-checker-language.c:291
+#, c-format
+msgctxt "language"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. Translators: this refers to an unknown language code
+#. * (one which isn't in our built-in list).
+#.
+#: ../plugins/spell/gedit-spell-checker-language.c:300
+#, c-format
+msgctxt "language"
+msgid "Unknown (%s)"
+msgstr "Ezezaguna (%s)"
+
+#
+#. Translators: this refers the Default language used by the
+#. * spell checker
+#.
+#: ../plugins/spell/gedit-spell-checker-language.c:406
+msgctxt "language"
+msgid "Default"
+msgstr "Lehenetsia"
 
 #: ../plugins/spell/gedit-spell-language-dialog.c:142
 #: ../plugins/spell/languages-dialog.ui.h:2
@@ -3746,1462 +3724,11 @@ msgstr "Data/ordua txertatzean..."
 msgid "_Prompt for a format"
 msgstr "Eskatu _formatu bat"
 
-#~ msgid "Quick open"
-#~ msgstr "Azkar ireki"
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
+msgid "Logs access and leave event for documents used with gedit"
+msgstr "Gedit-ekin erabilitako dokumentuen atzipenak eta uzteko gertaerak erregistratu"
 
-#~ msgid "Quickly open documents"
-#~ msgstr "Dokumentuak azkar irekitzen ditu"
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
+msgid "Zeitgeist dataprovider"
+msgstr "Zeitgeist datu-hornitzailea"
 
-#~ msgctxt "language"
-#~ msgid "%s (%s)"
-#~ msgstr "%s (%s)"
-
-#~ msgctxt "language"
-#~ msgid "Unknown (%s)"
-#~ msgstr "Ezezaguna (%s)"
-
-#
-#~ msgctxt "language"
-#~ msgid "Default"
-#~ msgstr "Lehenetsia"
-
-#~ msgid "Bottom Panel is Visible"
-#~ msgstr "Beheko panela ikusgai dago"
-
-#~ msgid "Highlight Matching Bracket"
-#~ msgstr "Nabarmendu bat-datorren parentesia"
-
-#~ msgid "Monospace 12"
-#~ msgstr "Monospace 12"
-
-#~ msgid "Monospace 9"
-#~ msgstr "Monospace 9"
-
-#~ msgid "Sans 11"
-#~ msgstr "Sans 11"
-
-#~ msgid "Sans 8"
-#~ msgstr "Sans 8"
-
-#~ msgid "Side Pane is Visible"
-#~ msgstr "Alboko panela ikusgai dago"
-
-#~ msgid ""
-#~ "Specifies how the cursor moves when the HOME and END keys are pressed. "
-#~ "Use \"DISABLED\" to always move at the start/end of the line, \"AFTER\" "
-#~ "to move to the start/end of the line the first time the keys are pressed "
-#~ "and to the start/end of the text ignoring whitespaces the second time the "
-#~ "keys are pressed, \"BEFORE\" to move to the start/end of the text before "
-#~ "moving to the start/end of the line and \"ALWAYS\" to always move to the "
-#~ "start/end of the text instead of the start/end of the line."
-#~ msgstr ""
-#~ "Kurtsorea nola mugitzen den zehazten du HASIERA eta AMAIERA teklak "
-#~ "sakatzen direnean. Erabili \"DESGAITUTA\" beti lerroaren hasierara/"
-#~ "amaierara mugitzeko. \"ONDOREN\"  lerroaren hasierara/amaierara mugitzeko "
-#~ "teklak aurreneko aldiz sakatzen direnean eta testuaren hasierara/"
-#~ "amaierara (zuriuneei ez ikusi eginez) mugitzeko teklak bigarren aldiz "
-#~ "sakatzean. \"AURRETIK\" testuaren hasierara/amaierara mugitzeko lerroaren "
-#~ "hasierara/amaierara mugitu aurretik. Edo erabili \"BETI\" testuaren "
-#~ "hasierara/amaierara beti mugitzeko, lerroaren hasierara/amaierara mugitu "
-#~ "ordez."
-
-#~ msgid ""
-#~ "Specifies how to wrap long lines for printing. Use \"GTK_WRAP_NONE\" for "
-#~ "no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
-#~ "\"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. Note "
-#~ "that the values are case-sensitive, so make sure they appear exactly as "
-#~ "mentioned here."
-#~ msgstr ""
-#~ "Lerro luzeak inprimatzeko nola itzulbiratu zehazten du. Erabili "
-#~ "\"GTK_WRAP_NONE\" ez itzulbiratzeko, \"GTK_WRAP_WORD\" hitzaren mugetan "
-#~ "itzulbiratzeko eta \"GTK_WRAP_CHAR\"  karaktere indibidualen mugetan "
-#~ "itzulbiratzeko. Kontuan hartu balioek maiuskulak/minuskulak desberdintzen "
-#~ "dituztela; beraz, ziurtatu hemen aipatu bezalaxe agertzen direla."
-
-#~ msgid ""
-#~ "Specifies how to wrap long lines in the editing area. Use \"GTK_WRAP_NONE"
-#~ "\" for no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, "
-#~ "and \"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. "
-#~ "Note that the values are case-sensitive, so make sure they appear exactly "
-#~ "as mentioned here."
-#~ msgstr ""
-#~ "Lerro luzeak editatzeko arean nola itzulbiratu zehazten du. Erabili "
-#~ "\"GTK_WRAP_NONE\" ez itzulbiratzeko, \"GTK_WRAP_WORD\" hitzaren mugetan "
-#~ "itzulbiratzeko eta \"GTK_WRAP_CHAR\" karaktere indibidualen mugetan "
-#~ "itzulbiratzeko. Kontuan hartu balioek maiuskulak/minuskulak desberdintzen "
-#~ "dituztela; beraz, ziurtatu hemen aipatu bezalaxe agertzen direla."
-
-#~ msgid ""
-#~ "Style for the toolbar buttons. Possible values are \"GEDIT_TOOLBAR_SYSTEM"
-#~ "\" to use the system's default style, \"GEDIT_TOOLBAR_ICONS\" to display "
-#~ "icons only, \"GEDIT_TOOLBAR_ICONS_AND_TEXT\" to display both icons and "
-#~ "text, and \"GEDIT_TOOLBAR_ICONS_BOTH_HORIZ\" to display prioritized text "
-#~ "beside icons. Note that the values are case-sensitive, so make sure they "
-#~ "appear exactly as mentioned here."
-#~ msgstr ""
-#~ "Tresna-barrako botoien estiloa. Balio posibleak hauek dira: "
-#~ "\"GEDIT_TOOLBAR_SYSTEM\" sistemaren estilo lehenetsia erabiltzeko, "
-#~ "\"GEDIT_TOOLBAR_ICONS\" ikonoak bakarrik bistaratzeko "
-#~ "\"GEDIT_TOOLBAR_ICONS_AND_TEXT\" ikonoak eta testua bistaratzeko, eta "
-#~ "\"GEDIT_TOOLBAR_ICONS_BOTH_HORIZ\" ikonoen ondoko testu lehenetsia "
-#~ "bistaratzeko. Kontuan hartu balioek maiuskulak/minuskulak desberdintzen "
-#~ "dituztela; beraz, ziurtatu hemen aipatu bezalaxe agertzen direla."
-
-#~ msgid "Toolbar Buttons Style"
-#~ msgstr "Tresna-barrako botoien estiloa"
-
-#~ msgid ""
-#~ "Whether gedit should highlight the bracket matching the selected one."
-#~ msgstr ""
-#~ "Gedit-ek hautatutako parentesiari dagokion bikotea nabarmendu behar duen "
-#~ "ala ez."
-
-#~ msgid ""
-#~ "Whether the bottom panel at the bottom of editing windows should be "
-#~ "visible."
-#~ msgstr "Editatzeko leihoen beheko panelak ikusgai egon behar duen ala ez."
-
-#~ msgid ""
-#~ "Whether the side pane at the left of editing windows should be visible."
-#~ msgstr "Editatzeko leihoen alboko panelak ikusgai egon behar duen ala ez."
-
-#~ msgid "[ISO-8859-15]"
-#~ msgstr "[ISO-8859-15]"
-
-#~ msgid "[UTF-8,CURRENT,ISO-8859-15,UTF-16]"
-#~ msgstr "[UTF-8,CURRENT,ISO-8859-15,UTF-16]"
-
-#
-#~ msgid "Automatic Indentation"
-#~ msgstr "Koska automatikoa"
-
-#~ msgid "Bracket Matching"
-#~ msgstr "Parentesien bat-etortzea"
-
-#~ msgid "Current Line"
-#~ msgstr "Uneko lerroa"
-
-#~ msgid "Display right _margin"
-#~ msgstr "_Bistaratu eskuineko marjina"
-
-#~ msgid "Highlight matching _bracket"
-#~ msgstr "Nabarmendu itxierako parentesia"
-
-#~ msgid "Right Margin"
-#~ msgstr "Eskuineko marjina"
-
-#
-#~ msgid "_Right margin at column:"
-#~ msgstr "E_skuineko marjina zutabe honetan:"
-
-#~ msgid "[FILE...]"
-#~ msgstr "[FITXATEGIA...]"
-
-#
-#~ msgid "Save As…"
-#~ msgstr "Gorde honela..."
-
-#
-#~ msgid "Plugin"
-#~ msgstr "Plugina"
-
-#~ msgid "Enabled"
-#~ msgstr "Gaituta"
-
-#
-#~ msgid "_About"
-#~ msgstr "_Honi buruz"
-
-#
-#~ msgid "C_onfigure"
-#~ msgstr "K_onfiguratu"
-
-#~ msgid "A_ctivate"
-#~ msgstr "_Aktibatu"
-
-#~ msgid "Ac_tivate All"
-#~ msgstr "A_ktibatu denak"
-
-#
-#~ msgid "_Deactivate All"
-#~ msgstr "_Desaktibatu denak"
-
-#~ msgid "Active _Plugins:"
-#~ msgstr "_Plugin aktiboak:"
-
-#
-#~ msgid "_About Plugin"
-#~ msgstr "_Pluginari buruz"
-
-#
-#~ msgid "C_onfigure Plugin"
-#~ msgstr "K_onfiguratu plugina"
-
-#
-#~ msgid "Cannot initialize preferences manager."
-#~ msgstr "Ezin da hobespenen kudeatzailea abiarazi."
-
-#~ msgid "Expected `%s', got `%s' for key %s"
-#~ msgstr "'%s' espero zen, baina '%s' eskuratu da %s gakoarentzat"
-
-#~ msgid "It is not possible to detect the encoding automatically"
-#~ msgstr "Ezin izan da kodeketa automatikoki detektatu"
-
-#
-#~ msgid "Page Set_up..."
-#~ msgstr "Orrialdearen _konfigurazioa..."
-
-#~ msgid "Set up the page settings"
-#~ msgstr "Konfiguratu orriaren ezarpenak"
-
-#~ msgid "_Incremental Search..."
-#~ msgstr "Bilaketa _inkrementala..."
-
-#~ msgid "Incrementally search for text"
-#~ msgstr "Testuaren bilaketa inkrementala"
-
-#~ msgid "_Next Document"
-#~ msgstr "_Hurrengo dokumentua"
-
-#~ msgid "Side _Pane"
-#~ msgstr "_Alboko panela"
-
-#~ msgid "Show or hide the side pane in the current window"
-#~ msgstr "Uneko leihoko alboko panela erakusten/ezkutatzen du"
-
-#~ msgid "_Bottom Pane"
-#~ msgstr "_Beheko panela"
-
-#~ msgid "Show or hide the bottom pane in the current window"
-#~ msgstr "Erakutsi edo ezkutatu beheko panela uneko leihoan"
-
-#~ msgid "Version to ignore until the next version is released"
-#~ msgstr "Ezikusi egingo den bertsioa hurrengoa kaleratu arte"
-
-#~ msgid "Easy file access from the side pane"
-#~ msgstr "Fitxategiak erraz sarbidetu albo-paneletik"
-
-#~ msgid "File Browser Pane"
-#~ msgstr "Fitxategi-arakatzailearen panela"
-
-#~ msgid ""
-#~ "This value determines what files get filtered from the file browser. "
-#~ "Valid values are: none (filter nothing), hidden (filter hidden files), "
-#~ "binary (filter binary files) and hidden_and_binary (filter both hidden "
-#~ "and binary files)."
-#~ msgstr ""
-#~ "Balio honek fitxategi-arakatzailetik iragaziko diren fitxategiak zehazten "
-#~ "du. Balio posibleak: 'none' (ez du iragazten), 'hidden' (iragazi ezkutuko "
-#~ "fitxategiak), 'binary' (iragazi fitxategi bitarrak) eta "
-#~ "'hidden_and_binary' (iragazi bai ezkutukoak bai bitarrak)."
-
-#~ msgid "Snippets Manager"
-#~ msgstr "Mozkin-kudeatzailea"
-
-#~ msgid "_Autocheck Spelling"
-#~ msgstr "_Ortografiaren egiaztapen automatikoa"
-
-#
-#~ msgid "Tags"
-#~ msgstr "Etiketak"
-
-#~ msgid "Select the group of tags you want to use"
-#~ msgstr "Hautatu erabili nahi duzun etiketa-taldea"
-
-#
-#~ msgid "_Preview"
-#~ msgstr "_Aurrebista"
-
-#~ msgid "Available Tag Lists"
-#~ msgstr "Erabil dauden etiketen zerrenda"
-
-#~ msgid "Abbreviated form"
-#~ msgstr "Forma laburrak"
-
-#~ msgid "Abbreviation"
-#~ msgstr "Laburdurak"
-
-#~ msgid "Above"
-#~ msgstr "Gainean"
-
-#~ msgid "Accessibility key character"
-#~ msgstr "Erabilerraztasunaren tekla karakterea"
-
-#~ msgid "Acronym"
-#~ msgstr "Akronimo"
-
-#
-#~ msgid "Align"
-#~ msgstr "Lerrokatu"
-
-#~ msgid "Alignment character"
-#~ msgstr "Lerrokatze-karakterea"
-
-#~ msgid "Alternative"
-#~ msgstr "Alternatiba"
-
-#~ msgid "Anchor"
-#~ msgstr "Ainguratu"
-
-#~ msgid "Anchor URI"
-#~ msgstr "Ainguratu URIa"
-
-#
-#~ msgid "Applet class file code"
-#~ msgstr "Miniaplikazioaren klase-fitxategiaren kodea"
-
-#
-#~ msgid "Applet class file code (deprecated)"
-#~ msgstr "Miniaplikazioaren klase-fitxategiaren kodea (zaharkitua)"
-
-#~ msgid "Array"
-#~ msgstr "Array-a"
-
-#~ msgid "Associated information"
-#~ msgstr "Elkartutako informazioa"
-
-#
-#~ msgid "Author info"
-#~ msgstr "Egilearen datuak"
-
-#~ msgid "Axis related headers"
-#~ msgstr "Ardatzarekin zerikusia duten goiburuak"
-
-#
-#~ msgid "Background color"
-#~ msgstr "Atzeko planoaren kolorea"
-
-#
-#~ msgid "Background color (deprecated)"
-#~ msgstr "Atzeko planoaren kolorea (zaharkitua)"
-
-#
-#~ msgid "Background texture tile"
-#~ msgstr "Atzeko planoaren testuraren mosaikoa"
-
-#
-#~ msgid "Background texture tile (deprecated)"
-#~ msgstr "Atzeko planoaren testuraren mosaikoa (zaharkitua)"
-
-#~ msgid "Base URI"
-#~ msgstr "Oinarrizko URIa"
-
-#~ msgid "Base font"
-#~ msgstr "Oinarriko letra-tipoa"
-
-#~ msgid "Base font (deprecated)"
-#~ msgstr "Oinarrizko letra-tipoa (zaharkitua)"
-
-#
-#~ msgid "Bold"
-#~ msgstr "Lodia"
-
-#
-#~ msgid "Border"
-#~ msgstr "Ertza"
-
-#~ msgid "Border (deprecated)"
-#~ msgstr "Ertza (zaharkitua)"
-
-#
-#~ msgid "Border color"
-#~ msgstr "Ertzaren kolorea"
-
-#~ msgid "Cell rowspan"
-#~ msgstr "Gelaxkaren errenkada hedatzea"
-
-#~ msgid "Center"
-#~ msgstr "Zentratu"
-
-#~ msgid "Center (deprecated)"
-#~ msgstr "Zentratua (zaharkitua)"
-
-#
-#~ msgid "Character encoding of linked resource"
-#~ msgstr "Karaktere-kodeketa (estekatutako baliabidearena)"
-
-#~ msgid "Checked (state)"
-#~ msgstr "Egiaztatua (egoera)"
-
-#~ msgid "Checked state"
-#~ msgstr "Egoera egiaztatua"
-
-#
-#~ msgid "Citation"
-#~ msgstr "Aipua"
-
-#~ msgid "Cite reason for change"
-#~ msgstr "Aipuaren arrazoia aldaketarako"
-
-#~ msgid "Class implementation ID"
-#~ msgstr "Klase-inplementazioaren IDa"
-
-#~ msgid "Class list"
-#~ msgstr "Klase-zerrenda"
-
-#~ msgid "Clear text flow control"
-#~ msgstr "Garbitu testu-fluxuaren kontrola"
-
-#~ msgid "Code content type"
-#~ msgstr "Kodearen eduki-mota"
-
-#
-#~ msgid "Color of selected links"
-#~ msgstr "Kolorea (hautatutako estekena)"
-
-#
-#~ msgid "Color of selected links (deprecated)"
-#~ msgstr "Hautatutako esteken kolorea (zaharkitua)"
-
-#~ msgid "Column span"
-#~ msgstr "Zutabea hedatzea"
-
-#~ msgid "Columns"
-#~ msgstr "Zutabeak"
-
-#
-#~ msgid "Comment"
-#~ msgstr "Iruzkina"
-
-#~ msgid "Computer code fragment"
-#~ msgstr "Ordenagailuaren kode-zatia"
-
-#
-#~ msgid "Content scheme"
-#~ msgstr "Edukiaren eskema"
-
-#
-#~ msgid "Content type"
-#~ msgstr "Eduki-mota"
-
-#
-#~ msgid "Content type (deprecated)"
-#~ msgstr "Eduki-mota (zaharkitua)"
-
-#
-#~ msgid "Coordinates"
-#~ msgstr "Koordinatuak"
-
-#~ msgid "DIV Style container"
-#~ msgstr "DIV estiloko edukitzailea"
-
-#~ msgid "DIV container"
-#~ msgstr "DIV edukitzailea"
-
-#~ msgid "Date and time of change"
-#~ msgstr "Aldaketaren data eta ordua"
-
-#~ msgid "Declare flag"
-#~ msgstr "Deklarazioaren bandera"
-
-#~ msgid "Defer attribute"
-#~ msgstr "Geroratu atributua"
-
-#
-#~ msgid "Definition description"
-#~ msgstr "Definizioaren azalpena"
-
-#~ msgid "Definition list"
-#~ msgstr "Definizio-zerrenda"
-
-#~ msgid "Definition term"
-#~ msgstr "Definizioaren terminoa"
-
-#~ msgid "Deleted text"
-#~ msgstr "Ezabatutako testua"
-
-#~ msgid "Direction"
-#~ msgstr "Norabidea"
-
-#~ msgid "Directionality"
-#~ msgstr "Norabidetasuna"
-
-#~ msgid "Directionality (deprecated)"
-#~ msgstr "Norabidetasuna (zaharkitua)"
-
-#~ msgid "Directory list"
-#~ msgstr "Direktorio-zerrenda"
-
-#~ msgid "Disabled"
-#~ msgstr "Desgaituta"
-
-#~ msgid "Document base"
-#~ msgstr "Dokumentuaren oinarria"
-
-#~ msgid "Document body"
-#~ msgstr "Dokumentuaren gorputza"
-
-#~ msgid "Document head"
-#~ msgstr "Dokumentuaren goiburua"
-
-#
-#~ msgid "Document title"
-#~ msgstr "Dokumentuaren titulua"
-
-#~ msgid "Document type"
-#~ msgstr "Dokumentu-mota"
-
-#~ msgid "Element ID"
-#~ msgstr "Elementuaren IDa"
-
-#~ msgid "Embedded object"
-#~ msgstr "Objektu kapsulatua"
-
-#~ msgid "Emphasis"
-#~ msgstr "Enfasia"
-
-#~ msgid "Encode type"
-#~ msgstr "Kodeketa-mota"
-
-#~ msgid "Figure"
-#~ msgstr "Irudia"
-
-#
-#~ msgid "Font face"
-#~ msgstr "Letra-tipoaren izena"
-
-#~ msgid "Font face (deprecated)"
-#~ msgstr "Letra-tipoa (zaharkitua)"
-
-#~ msgid "For label"
-#~ msgstr "Etiketarena"
-
-#~ msgid "Forced line break"
-#~ msgstr "Derrigortu lerro-jauzia"
-
-#~ msgid "Form"
-#~ msgstr "Inprimakia"
-
-#~ msgid "Form action handler"
-#~ msgstr "Inprimaki-ekintzaren kudeatzailea"
-
-#~ msgid "Form control group"
-#~ msgstr "Inprimakiaren kontrol-taldea"
-
-#~ msgid "Form field label text"
-#~ msgstr "Inprimakiaren eremuaren etiketa-testua"
-
-#~ msgid "Form input"
-#~ msgstr "Inprimakiaren sarrera"
-
-#~ msgid "Form input type"
-#~ msgstr "Inprimakiaren sarrera-mota"
-
-#~ msgid "Form method"
-#~ msgstr "Inprimakiaren metodoa"
-
-#~ msgid "Forward link"
-#~ msgstr "Birbidali esteka"
-
-#~ msgid "Frame"
-#~ msgstr "Markoa"
-
-#~ msgid "Frame border"
-#~ msgstr "Markoaren ertza"
-
-#~ msgid "Frame render parts"
-#~ msgstr "Markoaren errendatze-zatiak"
-
-#~ msgid "Frame source"
-#~ msgstr "Markoaren iturburua"
-
-#~ msgid "Frame spacing"
-#~ msgstr "Marko-tartea"
-
-#~ msgid "Frame target"
-#~ msgstr "Markoaren helburua"
-
-#~ msgid "Frameborder"
-#~ msgstr "Markoaren ertza"
-
-#
-#~ msgid "Frameset"
-#~ msgstr "Marko-multzoa"
-
-#
-#~ msgid "Frameset columns"
-#~ msgstr "Marko-multzoaren zutabeak"
-
-#~ msgid "Frameset rows"
-#~ msgstr "Marko-multzoaren errenkadak"
-
-#~ msgid "Framespacing"
-#~ msgstr "Marko-tartea"
-
-#~ msgid "Generic embedded object"
-#~ msgstr "Objektu kapsulatu generikoa"
-
-#~ msgid "Generic metainformation"
-#~ msgstr "Metadatu generikoak"
-
-#~ msgid "Generic span"
-#~ msgstr "Hedapen generikoa"
-
-#~ msgid "HREF URI"
-#~ msgstr "HREF URI"
-
-#~ msgid "HTML - Special Characters"
-#~ msgstr "HTML - Karaktere bereziak"
-
-#~ msgid "HTML - Tags"
-#~ msgstr "HTML - Etiketak"
-
-#~ msgid "HTML root element"
-#~ msgstr "HTMLko erroko elementua"
-
-#~ msgid "HTML version"
-#~ msgstr "HTML bertsioa"
-
-#~ msgid "HTTP header name"
-#~ msgstr "HTTP goiburuko izena"
-
-#~ msgid "Header cell IDs"
-#~ msgstr "Goiburuko gelaxkaren IDak"
-
-#~ msgid "Heading"
-#~ msgstr "Izenburua"
-
-#~ msgid "Heading 1"
-#~ msgstr "Izenburua 1"
-
-#~ msgid "Heading 2"
-#~ msgstr "Izenburua 2"
-
-#~ msgid "Heading 3"
-#~ msgstr "Izenburua 3"
-
-#~ msgid "Heading 4"
-#~ msgstr "Izenburua 4"
-
-#~ msgid "Heading 5"
-#~ msgstr "Izenburua 5"
-
-#~ msgid "Heading 6"
-#~ msgstr "Izenburua 6"
-
-#~ msgid "Height"
-#~ msgstr "Altuera"
-
-#~ msgid "Horizontal rule"
-#~ msgstr "Erregela horizontala"
-
-#~ msgid "Horizontal space"
-#~ msgstr "Tarte horizontala"
-
-#~ msgid "Horizontal space (deprecated)"
-#~ msgstr "Tarte horizontala (zaharkitua)"
-
-#~ msgid "I18N BiDi override"
-#~ msgstr "Gainidatzi l18n BiDi"
-
-#~ msgid "Image"
-#~ msgstr "Irudia"
-
-#~ msgid "Image map"
-#~ msgstr "Irudi-mapa"
-
-#~ msgid "Image map area"
-#~ msgstr "Irudi-maparen area"
-
-#~ msgid "Image map name"
-#~ msgstr "Irudi-maparen izena"
-
-#~ msgid "Image source"
-#~ msgstr "Irudiaren iturburua"
-
-#
-#~ msgid "Inline frame"
-#~ msgstr "Markoa lerroan"
-
-#~ msgid "Inline layer"
-#~ msgstr "Geruza lerroan"
-
-#
-#~ msgid "Inserted text"
-#~ msgstr "Txertatutako testua"
-
-#~ msgid "Instance definition"
-#~ msgstr "Instantziaren definizioa"
-
-#~ msgid "Italic text"
-#~ msgstr "Testu etzana"
-
-#~ msgid "Java applet"
-#~ msgstr "Java miniaplikazioa"
-
-#~ msgid "Java applet (deprecated)"
-#~ msgstr "Java miniaplikazioa (zaharkitua)"
-
-#~ msgid "Label"
-#~ msgstr "Etiketa"
-
-#~ msgid "Language code"
-#~ msgstr "Hizkuntzaren kodea"
-
-#~ msgid "Large text style"
-#~ msgstr "Testu handiaren estiloa"
-
-#~ msgid "Layer"
-#~ msgstr "Geruza"
-
-#
-#~ msgid "Link color"
-#~ msgstr "Estekaren kolorea"
-
-#
-#~ msgid "Link color (deprecated)"
-#~ msgstr "Estekaren kolorea (zaharkitua)"
-
-#~ msgid "List item"
-#~ msgstr "Elementuen zerrenda"
-
-#~ msgid "List of MIME types for file upload"
-#~ msgstr "MIME moten zerrenda fitxategia kargatzeko"
-
-#~ msgid "List of supported character sets"
-#~ msgstr "Onartutako karaktere-multzoaren zerrenda"
-
-#~ msgid "Listing"
-#~ msgstr "Zerrendatzea"
-
-#
-#~ msgid "Local change to font"
-#~ msgstr "Letra-tipoaren aldaketa lokala"
-
-#
-#~ msgid "Long description link"
-#~ msgstr "Azalpen luzeko esteka"
-
-#~ msgid "Long quotation"
-#~ msgstr "Aipu luzea"
-
-#~ msgid "Mail link"
-#~ msgstr "Postaren esteka"
-
-#~ msgid "Margin pixel height"
-#~ msgstr "Marjinaren altuera (pixeletan)"
-
-#~ msgid "Margin pixel width"
-#~ msgstr "Marjinaren zabalera (pixeletan)"
-
-#~ msgid "Marquee"
-#~ msgstr "Markesina"
-
-#~ msgid "Maximum length of text field"
-#~ msgstr "Testu-eremuaren gehienezko luzera"
-
-#~ msgid "Media-independent link"
-#~ msgstr "Esteka euskarritik independentea"
-
-#~ msgid "Menu list"
-#~ msgstr "Menu-zerrenda"
-
-#~ msgid "Menu list (deprecated)"
-#~ msgstr "Menu-zerrenda (zaharkitua)"
-
-#~ msgid "Multi-line text field"
-#~ msgstr "Lerro anitzeko testu-eremua"
-
-#~ msgid "Multicolumn"
-#~ msgstr "Zutabe-anitza"
-
-#~ msgid "Multiple"
-#~ msgstr "Hainbat"
-
-#~ msgid "Name"
-#~ msgstr "Izena"
-
-#~ msgid "Named property value"
-#~ msgstr "Propietatearen balioa izenarekin"
-
-#~ msgid "Next ID"
-#~ msgstr "Hurrengo IDa"
-
-#~ msgid "No URI"
-#~ msgstr "URIrik ez"
-
-#~ msgid "No embedded objects"
-#~ msgstr "Objektu kapsulaturik ez"
-
-#~ msgid "No frames"
-#~ msgstr "Markorik ez"
-
-#~ msgid "No layers"
-#~ msgstr "Geruzarik ez"
-
-#~ msgid "No line break"
-#~ msgstr "Lerro-jauzirik ez"
-
-#~ msgid "No resize"
-#~ msgstr "Tamainaz aldatu gabe"
-
-#~ msgid "No script"
-#~ msgstr "Script-ik ez"
-
-#~ msgid "No shade"
-#~ msgstr "Itzalik ez"
-
-#~ msgid "No shade (deprecated)"
-#~ msgstr "Itzalik ez (zaharkitua)"
-
-#~ msgid "No word wrap"
-#~ msgstr "Hitzaren aingurarik ez"
-
-#~ msgid "No word wrap (deprecated)"
-#~ msgstr "Hitzaren aingurarik ez (zaharkitua)"
-
-#~ msgid "Non-breaking space"
-#~ msgstr "Zuriune zatiezina"
-
-#~ msgid "Note"
-#~ msgstr "Oharra"
-
-#~ msgid "Object applet file"
-#~ msgstr "Miniaplikazioaren objektu-fitxategia"
-
-#~ msgid "Object applet file (deprecated)"
-#~ msgstr "Miniaplikazioaren objektu-fitxategia (zaharkitua)"
-
-#~ msgid "Object data reference"
-#~ msgstr "Objektuaren datuen erreferentzia"
-
-#~ msgid "Offset for alignment character"
-#~ msgstr "Desplazamendua karakterea lerrokatzeko"
-
-#~ msgid "OnBlur event"
-#~ msgstr "OnBlur gertaera"
-
-#
-#~ msgid "OnChange event"
-#~ msgstr "OnChange gertaera"
-
-#~ msgid "OnClick event"
-#~ msgstr "OnKlik gertaera"
-
-#~ msgid "OnDblClick event"
-#~ msgstr "OnDblCklik gertaera"
-
-#~ msgid "OnFocus event"
-#~ msgstr "OnFocus gertaera"
-
-#~ msgid "OnKeyDown event"
-#~ msgstr "OnKeyDown gertaera"
-
-#~ msgid "OnKeyPress event"
-#~ msgstr "OnKeyPress gertaera"
-
-#~ msgid "OnKeyUp event"
-#~ msgstr "OnKeyUp gertaera"
-
-#~ msgid "OnLoad event"
-#~ msgstr "OnLoad gertaera"
-
-#~ msgid "OnMouseDown event"
-#~ msgstr "OnMouseDown gertaera"
-
-#~ msgid "OnMouseMove event"
-#~ msgstr "OnMouseMove gertaera"
-
-#~ msgid "OnMouseOut event"
-#~ msgstr "OnMouseOut gertaera"
-
-#~ msgid "OnMouseOver event"
-#~ msgstr "OnMouseOver gertaera"
-
-#~ msgid "OnMouseUp event"
-#~ msgstr "OnMouseUp gertaera"
-
-#~ msgid "OnReset event"
-#~ msgstr "OnReset gertaera"
-
-#~ msgid "OnSelect event"
-#~ msgstr "OnSelect gertaera"
-
-#~ msgid "OnSubmit event"
-#~ msgstr "OnSubmit gertaera"
-
-#~ msgid "OnUnload event"
-#~ msgstr "OnUnload gertaera"
-
-#~ msgid "Option group"
-#~ msgstr "Aukera-taldea"
-
-#
-#~ msgid "Option selector"
-#~ msgstr "Aukeren hautatzailea"
-
-#~ msgid "Ordered list"
-#~ msgstr "Zerrenda ordenatua"
-
-#~ msgid "Output media"
-#~ msgstr "Irteerako euskarria"
-
-#~ msgid "Paragraph"
-#~ msgstr "Paragrafoa"
-
-#~ msgid "Paragraph class"
-#~ msgstr "Paragrafo-klasea"
-
-#~ msgid "Paragraph style"
-#~ msgstr "Paragrafo-estiloa"
-
-#~ msgid "Preformatted listing"
-#~ msgstr "Aurrez formateatutako zerrenda"
-
-#
-#~ msgid "Preformatted text"
-#~ msgstr "Aurrez formateatutako testua"
-
-#~ msgid "Profile metainfo dictionary"
-#~ msgstr "Profilaren metadatuen hiztegia"
-
-#~ msgid "Prompt message"
-#~ msgstr "Gonbitearen mezua"
-
-#~ msgid "Push button"
-#~ msgstr "Sakatze-botoia"
-
-#~ msgid "Quote"
-#~ msgstr "Aipua"
-
-#
-#~ msgid "Range"
-#~ msgstr "Barrutia"
-
-#~ msgid "ReadOnly text and password"
-#~ msgstr "Testua eta pasahitza irakurtzeko soilik"
-
-#~ msgid "Reduced spacing"
-#~ msgstr "Tarte gutxitua"
-
-#~ msgid "Reduced spacing (deprecated)"
-#~ msgstr "Tarte gutxitua (zaharkitua)"
-
-#
-#~ msgid "Reverse link"
-#~ msgstr "Alderantzizko esteka"
-
-#~ msgid "Root"
-#~ msgstr "Erroa"
-
-#~ msgid "Rows"
-#~ msgstr "Errenkadak"
-
-#~ msgid "Rulings between rows and columns"
-#~ msgstr "Erregelak errenkaden eta zutabeen artean"
-
-#~ msgid "Sample program output, scripts"
-#~ msgstr "Irteerako programen adibideak, script-ak"
-
-#~ msgid "Scope covered by header cells"
-#~ msgstr "Gelaxken goiburuek betetzen duten esparrua"
-
-#~ msgid "Script language name"
-#~ msgstr "Script hizkuntzaren izena"
-
-#~ msgid "Script statements"
-#~ msgstr "Script-aren sententziak"
-
-#~ msgid "Scrollbar"
-#~ msgstr "Korritze-barra"
-
-#
-#~ msgid "Selectable option"
-#~ msgstr "Aukera hautagarria"
-
-#
-#~ msgid "Selected"
-#~ msgstr "Hautatuta"
-
-#~ msgid "Server-side image map"
-#~ msgstr "Zerbitzari-aldeko irudi-mapa"
-
-#~ msgid "Shape"
-#~ msgstr "Itzala"
-
-#~ msgid "Short inline quotation"
-#~ msgstr "Lineako aipu laburra"
-
-#~ msgid "Single line prompt"
-#~ msgstr "Lerroko bakarreko gonbitea"
-
-#~ msgid "Size"
-#~ msgstr "Tamaina"
-
-#~ msgid "Size (deprecated)"
-#~ msgstr "Tamaina (zaharkitua)"
-
-#~ msgid "Small text style"
-#~ msgstr "Testu-estilo txikia"
-
-#~ msgid "Soft line break"
-#~ msgstr "Lerro-jauzi biguna"
-
-#~ msgid "Sound"
-#~ msgstr "Soinua"
-
-#
-#~ msgid "Source"
-#~ msgstr "Iturburua"
-
-#~ msgid "Space-separated archive list"
-#~ msgstr "Zuriunez bereizitako artxibo-zerrenda"
-
-#~ msgid "Spacer"
-#~ msgstr "Bereizgailua"
-
-#~ msgid "Spacing between cells"
-#~ msgstr "Gelaxken arteko tartea"
-
-#~ msgid "Spacing within cells"
-#~ msgstr "Gelaxken barruko tartea"
-
-#~ msgid "Span"
-#~ msgstr "Hedatu"
-
-#~ msgid "Square root"
-#~ msgstr "Erro karratua"
-
-#~ msgid "Standby load message"
-#~ msgstr "Mezua kargatu bitartean"
-
-#
-#~ msgid "Starting sequence number"
-#~ msgstr "Zenbaki sekuentzia hastea"
-
-#
-#~ msgid "Starting sequence number (deprecated)"
-#~ msgstr "Zenbaki sekuentzia hastea (zaharkitua)"
-
-#~ msgid "Strike-through text"
-#~ msgstr "Testu-marratua"
-
-#~ msgid "Strike-through text (deprecated)"
-#~ msgstr "Testu-marratuaren estiloa (zaharkitua)"
-
-#~ msgid "Strike-through text style"
-#~ msgstr "Testu-marratuaren estiloa"
-
-#~ msgid "Strike-through text style (deprecated)"
-#~ msgstr "Testu-marratuaren estiloa (zaharkitua)"
-
-#~ msgid "Strong emphasis"
-#~ msgstr "Enfasi lodia"
-
-#~ msgid "Style info"
-#~ msgstr "Estiloaren datuak"
-
-#~ msgid "Subscript"
-#~ msgstr "Azpi-indizea"
-
-#
-#~ msgid "Superscript"
-#~ msgstr "Goi-indizea"
-
-#~ msgid "Tab order position"
-#~ msgstr "Fitxen ordena"
-
-#~ msgid "Table"
-#~ msgstr "Taula"
-
-#~ msgid "Table body"
-#~ msgstr "Taularen gorputza"
-
-#
-#~ msgid "Table caption"
-#~ msgstr "Taularen epigrafea"
-
-#~ msgid "Table column group properties"
-#~ msgstr "Taulako zutabe-taldearen propietateak"
-
-#~ msgid "Table column properties"
-#~ msgstr "Taulako zutabearen propietateak"
-
-#~ msgid "Table data cell"
-#~ msgstr "Taulako datuen gelaxka"
-
-#~ msgid "Table footer"
-#~ msgstr "Taulako orri-oina"
-
-#~ msgid "Table header"
-#~ msgstr "Taulako goiburua"
-
-#~ msgid "Table header cell"
-#~ msgstr "Taulako goiburuaren gelaxka"
-
-#~ msgid "Table row"
-#~ msgstr "Taulako errenkada"
-
-#~ msgid "Table summary"
-#~ msgstr "Taulako laburpena"
-
-#~ msgid "Target - Blank"
-#~ msgstr "Helburua - Hutsa"
-
-#~ msgid "Target - Parent"
-#~ msgstr "Helburua - Gurasoa"
-
-#~ msgid "Target - Self"
-#~ msgstr "Helburua - Bera"
-
-#~ msgid "Target - Top"
-#~ msgstr "Helburua - Goian"
-
-#~ msgid "Teletype or monospace text style"
-#~ msgstr "Faxa edo tarte bakarreko testu-estiloa"
-
-#~ msgid "Text"
-#~ msgstr "Testua"
-
-#
-#~ msgid "Text color"
-#~ msgstr "Testuaren kolorea"
-
-#
-#~ msgid "Text color (deprecated)"
-#~ msgstr "Testuaren kolorea (zaharkitua)"
-
-#~ msgid "Text entered by user"
-#~ msgstr "Erabiltzaileak sartutako testua"
-
-#
-#~ msgid "Title"
-#~ msgstr "Izenburua"
-
-#~ msgid "Top margin in pixels"
-#~ msgstr "Goiko marjina (pixeletan)"
-
-#~ msgid "URL"
-#~ msgstr "URLa"
-
-#
-#~ msgid "Underlined text style"
-#~ msgstr "Azpimarratutako testuaren estilo"
-
-#
-#~ msgid "Unordered list"
-#~ msgstr "Ordenatu gabeko zerrenda"
-
-#~ msgid "Use image map"
-#~ msgstr "Erabili irudi-mapa"
-
-#~ msgid "Value"
-#~ msgstr "Balioa"
-
-#~ msgid "Value interpretation"
-#~ msgstr "Balioaren interpretazioa"
-
-#~ msgid "Variable or program argument"
-#~ msgstr "Aldagaia edo programaren argumentua"
-
-#~ msgid "Vertical cell alignment"
-#~ msgstr "Gelaxkaren lerrokadura bertikala"
-
-#
-#~ msgid "Vertical space"
-#~ msgstr "Tarte bertikala"
-
-#
-#~ msgid "Vertical space (deprecated)"
-#~ msgstr "Tarte bertikala (zaharkitua)"
-
-#
-#~ msgid "Visited link color"
-#~ msgstr "Bisitatutako esteken kolorea"
-
-#
-#~ msgid "Visited link color (deprecated)"
-#~ msgstr "Bisitatutako esteken kolorea (zaharkitua)"
-
-#~ msgid "Width"
-#~ msgstr "Zabalera"
-
-#~ msgid "XHTML 1.0 - Tags"
-#~ msgstr "XHTML 1.0 - Etiketak"
-
-#~ msgid "Bibliography (cite)"
-#~ msgstr "Bibliografia (aipua)"
-
-#~ msgid "Bibliography (item)"
-#~ msgstr "Bibliografia (elementua)"
-
-#~ msgid "Bibliography (shortcite)"
-#~ msgstr "Bibliografia (aipu laburra)"
-
-#~ msgid "Bibliography (thebibliography)"
-#~ msgstr "Bibliografia (bibliografia)"
-
-#~ msgid "Brackets ()"
-#~ msgstr "Parentesiak ()"
-
-#~ msgid "Brackets <>"
-#~ msgstr "Parentesiak <>"
-
-#~ msgid "Brackets []"
-#~ msgstr "Parentesiak []"
-
-#~ msgid "Brackets {}"
-#~ msgstr "Parentesiak {}"
-
-#~ msgid "File input"
-#~ msgstr "Sarrerako fitxategia"
-
-#
-#~ msgid "Footnote"
-#~ msgstr "Orri-oina"
-
-#~ msgid "Function cosine"
-#~ msgstr "Funtzioa: kosinua"
-
-#~ msgid "Function e^"
-#~ msgstr "Funtzioa: e^"
-
-#~ msgid "Function exp"
-#~ msgstr "Funtzioa: ber"
-
-#~ msgid "Function log"
-#~ msgstr "Funtzioa: log"
-
-#~ msgid "Function log10"
-#~ msgstr "Funtzioa: log10"
-
-#~ msgid "Function sine"
-#~ msgstr "Funtzioa: sinua"
-
-#~ msgid "Greek alpha"
-#~ msgstr "Grekoa: alfa"
-
-#~ msgid "Greek beta"
-#~ msgstr "Grekoa: beta"
-
-#~ msgid "Greek epsilon"
-#~ msgstr "Grekoa: epsilon"
-
-#~ msgid "Greek gamma"
-#~ msgstr "Grekoa: gamma"
-
-#~ msgid "Greek lambda"
-#~ msgstr "Grekoa: lambda"
-
-#~ msgid "Greek rho"
-#~ msgstr "Grekoa: rho"
-
-#~ msgid "Greek tau"
-#~ msgstr "Grekoa: tau"
-
-#~ msgid "Header 0 (chapter)"
-#~ msgstr "Goiburua 0 (kapitulua)"
-
-#~ msgid "Header 0 (chapter*)"
-#~ msgstr "Goiburua 0 (kapitulua*)"
-
-#~ msgid "Header 1 (section)"
-#~ msgstr "Goiburua 1 (atala)"
-
-#~ msgid "Header 1 (section*)"
-#~ msgstr "Goiburua 1 (atala*)"
-
-#~ msgid "Header 2 (subsection)"
-#~ msgstr "Goiburua 2 (azpiatala)"
-
-#~ msgid "Header 2 (subsection*)"
-#~ msgstr "Goiburua 2 (azpiatala*)"
-
-#~ msgid "Header 3 (subsubsection)"
-#~ msgstr "Goiburua 2 (azpiazpiatala)"
-
-#~ msgid "Header 3 (subsubsection*)"
-#~ msgstr "Goiburua 3 (azpiazpiatala*)"
-
-#~ msgid "Header 4 (paragraph)"
-#~ msgstr "Goiburua 4 (paragrafoa)"
-
-#~ msgid "Header appendix"
-#~ msgstr "Goiburuaren eranskina"
-
-#~ msgid "Item"
-#~ msgstr "Elementua"
-
-#~ msgid "Item with label"
-#~ msgstr "Elementua etiketarekin"
-
-#~ msgid "Latex - Tags"
-#~ msgstr "Latex - Etiketak"
-
-#
-#~ msgid "List description"
-#~ msgstr "Zerrendaren azalpena"
-
-#~ msgid "List enumerate"
-#~ msgstr "Zenbatutako zerrenda"
-
-#~ msgid "List itemize"
-#~ msgstr "Elementuen zerrenda"
-
-#~ msgid "Maths (display)"
-#~ msgstr "Matematikak (adierazpena)"
-
-#~ msgid "Maths (inline)"
-#~ msgstr "Matematikak (lerroan)"
-
-#
-#~ msgid "Operator fraction"
-#~ msgstr "Eragilea: zatikia"
-
-#~ msgid "Operator integral (display)"
-#~ msgstr "Eragilea: integrala (adierazpena)"
-
-#~ msgid "Operator integral (inline)"
-#~ msgstr "Eragilea: integrala (lerroan)"
-
-#~ msgid "Operator sum (display)"
-#~ msgstr "Eragilea: batuketa (adierazpena)"
-
-#~ msgid "Operator sum (inline)"
-#~ msgstr "Eragilea: batuketa (lerroan)"
-
-#~ msgid "Reference label"
-#~ msgstr "Erreferentzia-etiketa"
-
-#~ msgid "Reference ref"
-#~ msgstr "Erreferentziaren erref."
-
-#~ msgid "Symbol <<"
-#~ msgstr "Ikurra: <<"
-
-#~ msgid "Symbol <="
-#~ msgstr "Ikurra: <="
-
-#~ msgid "Symbol >="
-#~ msgstr "Ikurra: >="
-
-#~ msgid "Symbol >>"
-#~ msgstr "Ikurra: >>"
-
-#~ msgid "Symbol and"
-#~ msgstr "Ikurra: and"
-
-#~ msgid "Symbol const"
-#~ msgstr "Ikurra: konst"
-
-#~ msgid "Symbol d-by-dt"
-#~ msgstr "Ikurra: deribatua"
-
-#~ msgid "Symbol d-by-dt-partial"
-#~ msgstr "Ikurra: deribatu partziala"
-
-#~ msgid "Symbol d2-by-dt2-partial"
-#~ msgstr "Ikurra: 2. deribatu partziala"
-
-#~ msgid "Symbol dagger"
-#~ msgstr "Ikurra: ezpata"
-
-#~ msgid "Symbol em-dash ---"
-#~ msgstr "Ikurra: hipenazioa ---"
-
-#~ msgid "Symbol en-dash --"
-#~ msgstr "Ikurra: hipenazioa --"
-
-#~ msgid "Symbol equiv"
-#~ msgstr "Ikurra: baliokidetasuna"
-
-#~ msgid "Symbol infinity"
-#~ msgstr "Ikurra: infinitua"
-
-#~ msgid "Symbol mathspace ,"
-#~ msgstr "Ikurra: bereizlea ,"
-
-#~ msgid "Symbol mathspace ."
-#~ msgstr "Ikurra: bereizlea ."
-
-#~ msgid "Symbol mathspace _"
-#~ msgstr "Ikurra: bereizlea _"
-
-#~ msgid "Symbol mathspace __"
-#~ msgstr "Ikurra: bereizlea __"
-
-#~ msgid "Symbol simeq"
-#~ msgstr "Ikurra: 'simeq'"
-
-#~ msgid "Symbol star"
-#~ msgstr "Ikurra: izarra"
-
-#~ msgid "Typeface bold"
-#~ msgstr "Letra-tipo lodia"
-
-#~ msgid "Typeface italic"
-#~ msgstr "Letra-tipo etzana"
-
-#~ msgid "Typeface slanted"
-#~ msgstr "Letra-tipo okerra"
-
-#~ msgid "Typeface type"
-#~ msgstr "Letra-tipo mota"
-
-#~ msgid "Unbreakable text"
-#~ msgstr "Apurtu ezineko testua"
-
-#~ msgid ""
-#~ "Provides a method to easily insert commonly used tags/strings into a "
-#~ "document without having to type them."
-#~ msgstr ""
-#~ "Sarri erabiltzen diren etiketak/kateak dokumentu batean erraz sartzeko, "
-#~ "idatzi gabe, metodoa eskaintzen du."
-
-#~ msgid "Tag list"
-#~ msgstr "Etiketa-zerrenda"
-
-#~ msgid "XSLT - Axes"
-#~ msgstr "XSLT - Ardatzak"
-
-#~ msgid "XSLT - Elements"
-#~ msgstr "XSLT - Elementuak"
-
-#~ msgid "XSLT - Functions"
-#~ msgstr "XSLT - Funtzioak"
-
-#~ msgid "ancestor"
-#~ msgstr "asaba"
-
-#~ msgid "ancestor-or-self"
-#~ msgstr "asaba-edo-bera"
-
-#~ msgid "attribute"
-#~ msgstr "atributua"
-
-#~ msgid "child"
-#~ msgstr "umea"
-
-#~ msgid "descendant"
-#~ msgstr "ondorengoa"
-
-#~ msgid "descendant-or-self"
-#~ msgstr "ondorengoa-edo-bera"
-
-#~ msgid "following"
-#~ msgstr "hurrengoa"
-
-#~ msgid "following-sibling"
-#~ msgstr "hurrengoa-senidea"
-
-#
-#~ msgid "namespace"
-#~ msgstr "izen-lekua"
-
-#~ msgid "parent"
-#~ msgstr "gurasoa"
-
-#~ msgid "preceding"
-#~ msgstr "aurrekoa"
-
-#~ msgid "preceding-sibling"
-#~ msgstr "aurrekoa-senidea"
-
-#~ msgid "self"
-#~ msgstr "bera"
-
-#~ msgid "XUL - Tags"
-#~ msgstr "XUL - Etiketak"
-
-#~ msgid "Configure insert date/time plugin..."
-#~ msgstr "Konfiguratu data/ordua txertatzeko plugina..."
