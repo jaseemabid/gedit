@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gedit master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-09 09:36+0100\n"
-"PO-Revision-Date: 2011-03-09 02:48+0100\n"
+"PO-Revision-Date: 2011-04-01 20:28+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome at fsf dot hu>\n"
 "Language: \n"
@@ -171,7 +171,7 @@ msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use "
 "\"-1\" for unlimited number of actions."
 msgstr ""
-"A gedit által visszavonható/újra elvégezhető műveletek maximális száma. "
+"A gedit által visszavonható/mégis elvégezhető műveletek maximális száma. "
 "Végtelen műveletszám engedélyezéséhez használja a „-1” értéket."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
@@ -179,7 +179,7 @@ msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use "
 "\"-1\" for unlimited number of actions. Deprecated since 2.12.0"
 msgstr ""
-"A gedit által visszavonható/újra elvégezhető műveletek maximális száma. "
+"A gedit által visszavonható/mégis elvégezhető műveletek maximális száma. "
 "Végtelen műveletszám engedélyezéséhez használja a „-1” értéket. A 2.12. óta "
 "elavult."
 
@@ -282,10 +282,8 @@ msgstr ""
 "használja őket, ahogy itt vannak."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
-msgid ""
-"Specifies the font to use for a document's body when printing documents."
-msgstr ""
-"Meghatározza nyomtatáskor a dokumentum törzséhez használt betűkészletet."
+msgid "Specifies the font to use for a document's body when printing documents."
+msgstr "Meghatározza nyomtatáskor a dokumentum törzséhez használt betűkészletet."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
 msgid ""
@@ -307,8 +305,7 @@ msgstr ""
 msgid ""
 "Specifies the maximum number of recently opened files that will be displayed "
 "in the \"Recent Files\" submenu."
-msgstr ""
-"Meghatározza a „Legutóbbi fájlok” almenüben megjelenített fájlok számát."
+msgstr "Meghatározza a „Legutóbbi fájlok” almenüben megjelenített fájlok számát."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
 msgid ""
@@ -395,8 +392,7 @@ msgid "Whether gedit should enable syntax highlighting."
 msgstr "Szintaxiskiemelés engedélyezésének ki/bekapcsolása."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
-msgid ""
-"Whether gedit should highlight all the occurrences of the searched text."
+msgid "Whether gedit should highlight all the occurrences of the searched text."
 msgstr "A gedit kiemelje-e a keresett szöveg összes előfordulását."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
@@ -426,13 +422,11 @@ msgid ""
 msgstr "Az utolsó kurzorpozíció visszaállítás egy fájl betöltésekor."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
-msgid ""
-"Whether the side panel at the left of editing windows should be visible."
+msgid "Whether the side panel at the left of editing windows should be visible."
 msgstr "Megjelenjen-e a szerkesztőablakok bal oldalán az oldalpanel."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
-msgid ""
-"Whether the status bar at the bottom of editing windows should be visible."
+msgid "Whether the status bar at the bottom of editing windows should be visible."
 msgstr "A szerkesztőablak alján található állapotsor ki/bekapcsolása."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
@@ -473,8 +467,7 @@ msgstr "Kérdés"
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:414
 #, c-format
-msgid ""
-"If you don't save, changes from the last %ld second will be permanently lost."
+msgid "If you don't save, changes from the last %ld second will be permanently lost."
 msgid_plural ""
 "If you don't save, changes from the last %ld seconds will be permanently "
 "lost."
@@ -486,8 +479,7 @@ msgstr[1] ""
 "elvesznek."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:423
-msgid ""
-"If you don't save, changes from the last minute will be permanently lost."
+msgid "If you don't save, changes from the last minute will be permanently lost."
 msgstr ""
 "Ha nem menti, akkor az elmúlt percben történt változások véglegesen "
 "elvesznek."
@@ -509,8 +501,7 @@ msgstr[1] ""
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:439
 #, c-format
-msgid ""
-"If you don't save, changes from the last %ld minute will be permanently lost."
+msgid "If you don't save, changes from the last %ld minute will be permanently lost."
 msgid_plural ""
 "If you don't save, changes from the last %ld minutes will be permanently "
 "lost."
@@ -523,8 +514,7 @@ msgstr[1] ""
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:454
 msgid "If you don't save, changes from the last hour will be permanently lost."
-msgstr ""
-"Ha nem menti, akkor az elmúlt órában történt változások véglegesen elvesznek."
+msgstr "Ha nem menti, akkor az elmúlt órában történt változások véglegesen elvesznek."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:460
 #, c-format
@@ -543,10 +533,8 @@ msgstr[1] ""
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:475
 #, c-format
-msgid ""
-"If you don't save, changes from the last %d hour will be permanently lost."
-msgid_plural ""
-"If you don't save, changes from the last %d hours will be permanently lost."
+msgid "If you don't save, changes from the last %d hour will be permanently lost."
+msgid_plural "If you don't save, changes from the last %d hours will be permanently lost."
 msgstr[0] ""
 "Ha nem menti, akkor az elmúlt %d órában történt változások véglegesen "
 "elvesznek."
@@ -579,8 +567,7 @@ msgstr[1] "%d dokumentum változásai véglegesen elvesznek."
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:714
 #, c-format
 msgid "There is %d document with unsaved changes. Save changes before closing?"
-msgid_plural ""
-"There are %d documents with unsaved changes. Save changes before closing?"
+msgid_plural "There are %d documents with unsaved changes. Save changes before closing?"
 msgstr[0] "%d mentetlen dokumentum van. Menti a változásokat, mielőtt bezárja?"
 msgstr[1] "%d mentetlen dokumentum van. Menti a változásokat, mielőtt bezárja?"
 
@@ -625,8 +612,7 @@ msgstr "A kódolás jele_njen meg a menüben:"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.c:423
 msgid "Click on this button to select the font to be used by the editor"
-msgstr ""
-"Nyomja meg ezt a gombot a szerkesztőben használt betűkészlet kiválasztásához"
+msgstr "Nyomja meg ezt a gombot a szerkesztőben használt betűkészlet kiválasztásához"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.c:438
 #, c-format
@@ -974,19 +960,15 @@ msgstr "Visszaállítja „%s” dokumentum nem mentett változásait?"
 
 #: ../gedit/gedit-commands-file.c:1229
 #, c-format
-msgid ""
-"Changes made to the document in the last %ld second will be permanently lost."
+msgid "Changes made to the document in the last %ld second will be permanently lost."
 msgid_plural ""
 "Changes made to the document in the last %ld seconds will be permanently "
 "lost."
-msgstr[0] ""
-"A dokumentum elmúlt %ld másodpercben történt változásai véglegesen elvesznek."
-msgstr[1] ""
-"A dokumentum elmúlt %ld másodpercben történt változásai véglegesen elvesznek."
+msgstr[0] "A dokumentum elmúlt %ld másodpercben történt változásai véglegesen elvesznek."
+msgstr[1] "A dokumentum elmúlt %ld másodpercben történt változásai véglegesen elvesznek."
 
 #: ../gedit/gedit-commands-file.c:1238
-msgid ""
-"Changes made to the document in the last minute will be permanently lost."
+msgid "Changes made to the document in the last minute will be permanently lost."
 msgstr "A dokumentum elmúlt percben történt változásai véglegesen elvesznek."
 
 #: ../gedit/gedit-commands-file.c:1244
@@ -1006,15 +988,12 @@ msgstr[1] ""
 
 #: ../gedit/gedit-commands-file.c:1254
 #, c-format
-msgid ""
-"Changes made to the document in the last %ld minute will be permanently lost."
+msgid "Changes made to the document in the last %ld minute will be permanently lost."
 msgid_plural ""
 "Changes made to the document in the last %ld minutes will be permanently "
 "lost."
-msgstr[0] ""
-"A dokumentum elmúlt %ld percben történt változásai véglegesen elvesznek."
-msgstr[1] ""
-"A dokumentum elmúlt %ld percben történt változásai véglegesen elvesznek."
+msgstr[0] "A dokumentum elmúlt %ld percben történt változásai véglegesen elvesznek."
+msgstr[1] "A dokumentum elmúlt %ld percben történt változásai véglegesen elvesznek."
 
 #: ../gedit/gedit-commands-file.c:1269
 msgid "Changes made to the document in the last hour will be permanently lost."
@@ -1037,14 +1016,10 @@ msgstr[1] ""
 
 #: ../gedit/gedit-commands-file.c:1290
 #, c-format
-msgid ""
-"Changes made to the document in the last %d hour will be permanently lost."
-msgid_plural ""
-"Changes made to the document in the last %d hours will be permanently lost."
-msgstr[0] ""
-"A dokumentum elmúlt %d órában történt változásai véglegesen elvesznek."
-msgstr[1] ""
-"A dokumentum elmúlt %d órában történt változásai véglegesen elvesznek."
+msgid "Changes made to the document in the last %d hour will be permanently lost."
+msgid_plural "Changes made to the document in the last %d hours will be permanently lost."
+msgstr[0] "A dokumentum elmúlt %d órában történt változásai véglegesen elvesznek."
+msgstr[1] "A dokumentum elmúlt %d órában történt változásai véglegesen elvesznek."
 
 #: ../gedit/gedit-commands-file.c:1316
 msgid "_Revert"
@@ -1052,8 +1027,7 @@ msgstr "_Visszaállítás"
 
 #: ../gedit/gedit-commands-help.c:86
 msgid "gedit is a small and lightweight text editor for the GNOME Desktop"
-msgstr ""
-"A gedit egy kicsi és könnyű szövegszerkesztő a GNOME asztali környezethez"
+msgstr "A gedit egy kicsi és könnyű szövegszerkesztő a GNOME asztali környezethez"
 
 #: ../gedit/gedit-commands-help.c:111
 msgid "translator-credits"
@@ -1595,8 +1569,7 @@ msgid "Some invalid chars have been detected while saving %s"
 msgstr "Érvénytelen karakterek észlelve a következő mentésekor: %s"
 
 #: ../gedit/gedit-io-error-info-bar.c:1294
-msgid ""
-"If you continue saving this file you can corrupt the document.  Save anyway?"
+msgid "If you continue saving this file you can corrupt the document.  Save anyway?"
 msgstr ""
 "Ha folytatja a fájl mentését, azzal kárt okozhat a dokumentumban. Mindenképp "
 "menti?"
@@ -1952,7 +1925,7 @@ msgstr "Az utolsó művelet visszavonása"
 
 #: ../gedit/gedit-ui.h:95
 msgid "Redo the last undone action"
-msgstr "A visszavont művelet ismételt végrehajtása"
+msgstr "A visszavont művelet végrehajtása mégis"
 
 #: ../gedit/gedit-ui.h:97
 msgid "Cut the selection"
@@ -1972,7 +1945,7 @@ msgstr "A kijelölt szöveg törlése"
 
 #: ../gedit/gedit-ui.h:104
 msgid "Select _All"
-msgstr "Mind_ent kijelöl"
+msgstr "Ö_sszes kijelölése"
 
 #: ../gedit/gedit-ui.h:105
 msgid "Select the entire document"
@@ -2646,8 +2619,7 @@ msgstr "Fölösleges befejező szóközök eltávolítása a fájlból"
 
 #: ../plugins/externaltools/data/run-command.desktop.in.h:1
 msgid "Execute a custom command and put its output in a new document"
-msgstr ""
-"Egyéni parancs végrehajtása és kimenetének elhelyezése új dokumentumban"
+msgstr "Egyéni parancs végrehajtása és kimenetének elhelyezése új dokumentumban"
 
 #: ../plugins/externaltools/data/run-command.desktop.in.h:2
 msgid "Run command"
@@ -2978,8 +2950,7 @@ msgstr "Megnyitás fanézettel"
 msgid ""
 "Open the tree view when the file browser plugin gets loaded instead of the "
 "bookmarks view"
-msgstr ""
-"A fanézet megnyitása a fájlböngésző bővítménnyel a könyvjelzők nézet helyett"
+msgstr "A fanézet megnyitása a fájlböngésző bővítménnyel a könyvjelzők nézet helyett"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:9
 msgid "Set Location to First Document"
@@ -3129,8 +3100,7 @@ msgstr "A töredéket aktiváló gyorsbillentyű"
 #: ../plugins/snippets/snippets/snippets.ui.h:9
 #: ../plugins/snippets/snippets/manager.py:657
 msgid "Single word the snippet is activated with after pressing Tab"
-msgstr ""
-"Az a szó, amely után a Tab billentyűt lenyomva a töredék aktiválásra kerül"
+msgstr "Az a szó, amely után a Tab billentyűt lenyomva a töredék aktiválásra kerül"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:10
 msgid "_Drop targets:"
@@ -3227,8 +3197,7 @@ msgstr "Az exportálás sikeresen befejeződött"
 #: ../plugins/snippets/snippets/manager.py:834
 #: ../plugins/snippets/snippets/manager.py:901
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
-msgstr ""
-"Fel kívánja venni a kiválasztott <b>rendszertöredékeket</b> az exportálásba?"
+msgstr "Fel kívánja venni a kiválasztott <b>rendszertöredékeket</b> az exportálásba?"
 
 #: ../plugins/snippets/snippets/manager.py:849
 #: ../plugins/snippets/snippets/manager.py:919
@@ -3626,9 +3595,9 @@ msgstr "_Formátum bekérése"
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
 msgid "Logs access and leave event for documents used with gedit"
-msgstr ""
-"Hozzáférés naplózása, és esemény hagyása a geditben használt dokumentumokhoz"
+msgstr "Hozzáférés naplózása, és esemény hagyása a geditben használt dokumentumokhoz"
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
 msgstr "Zeitgeist adatszolgáltató"
+
