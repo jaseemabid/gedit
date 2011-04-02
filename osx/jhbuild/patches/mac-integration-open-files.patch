@@ -1,0 +1,184 @@
+diff -ud pkgs/gtk-mac-integration-1.0.1/src/GtkApplicationDelegate.c gtk-mac-integration-1.0.1/src/GtkApplicationDelegate.c
+--- a/src/GtkApplicationDelegate.c	2011-05-01 07:20:54.000000000 +0200
++++ b/GtkApplicationDelegate.c	2012-01-10 21:27:16.000000000 +0100
+@@ -25,19 +25,43 @@
+ #include "gtkosxapplication.h"
+ 
+ @implementation GtkApplicationDelegate
+--(BOOL) application:(NSApplication*) theApplication openFile:(NSString*) file
++-(void) application:(NSApplication*) theApplication openFiles:(NSArray*) files
+ {
+-  const gchar *utf8_path =  [file UTF8String];
+-  GtkOSXApplication *app = g_object_new(GTK_TYPE_OSX_APPLICATION, NULL);
+-  guint sig = g_signal_lookup("NSApplicationOpenFile", 
+-			      GTK_TYPE_OSX_APPLICATION);
+-  gboolean result = FALSE;
+-  if (sig)
+-      g_signal_emit(app, sig, 0, utf8_path, &result);
+-  g_object_unref(app);
+-  return result;
+-}
++	guint i;
++	gchar **paths;
++
++	paths = g_new0 (gchar *, [files count] + 1);
+ 
++	for (i = 0; i < [files count]; ++i)
++	{
++		const gchar *path =  [[files objectAtIndex:i] UTF8String];
++		paths[i] = g_strdup (path);
++	}
++	
++	GtkOSXApplication *app = g_object_new (GTK_TYPE_OSX_APPLICATION, NULL);
++	
++	guint sig = g_signal_lookup ("NSApplicationOpenFiles", 
++			                     GTK_TYPE_OSX_APPLICATION);
++	gboolean result = FALSE;
++  
++	if (sig)
++	{
++         g_signal_emit (app, sig, 0, paths, &result);
++	}
++	
++	g_strfreev (paths);
++	
++	if (result)
++	{
++		[theApplication replyToOpenOrPrint:NSApplicationDelegateReplySuccess];
++	}
++	else
++	{
++		[theApplication replyToOpenOrPrint:NSApplicationDelegateReplyFailure];
++	}
++		
++	g_object_unref (app);
++}
+ 
+ - (NSApplicationTerminateReply) applicationShouldTerminate:(NSApplication *)sender
+ {
+Only in gtk-mac-integration-1.0.1/src/: Makefile
+diff -ud pkgs/gtk-mac-integration-1.0.1/src/cocoa_menu_item.c gtk-mac-integration-1.0.1/src/cocoa_menu_item.c
+--- a/src/cocoa_menu_item.c	2011-05-01 07:20:54.000000000 +0200
++++ b/src/cocoa_menu_item.c	2012-01-06 17:07:50.000000000 +0100
+@@ -274,7 +274,7 @@
+ 		modifiers |= NSControlKeyMask;
+ 	      }
+ 
+-	      /* gdk/quartz maps Alt/Option to Mod5 */
+-	      if (key->accel_mods & (GDK_MOD5_MASK)) {
++	      /* gdk/quartz maps Alt/Option to Mod1 */
++	      if (key->accel_mods & GDK_MOD1_MASK) {
+ 		modifiers |= NSAlternateKeyMask;
+ 	      }
+--- a/src/gtkosxapplication_quartz.c	2011-10-03 21:41:14.000000000 +0200
++++ b/src/gtkosxapplication_quartz.c	2012-01-12 07:53:32.000000000 +0100
+@@ -38,6 +38,8 @@
+ #include "getlabel.h"
+ #include "gtk-mac-image-utils.h"
+ 
++#include <gdk/gdkquartz.h>
++
+ /* This is a private function in libgdk; we need to have is so that we
+    can force new windows onto the Window menu */
+ extern NSWindow* gdk_quartz_window_get_nswindow(GdkWindow*);
+@@ -338,23 +340,23 @@
+ 
+ 
+ /*
+- * g_cclosure_marshal_BOOLEAN__STRING:
++ * g_cclosure_marshal_BOOLEAN__STRV:
+  *
+- * A private marshaller for handlers which take a string parameter and
++ * A private marshaller for handlers which take a stringv parameter and
+  * return a boolean.
+  */
+ static void
+-g_cclosure_marshal_BOOLEAN__STRING (GClosure     *closure,
++g_cclosure_marshal_BOOLEAN__STRV (GClosure     *closure,
+                                GValue       *return_value G_GNUC_UNUSED,
+                                guint         n_param_values,
+                                const GValue *param_values,
+                                gpointer      invocation_hint G_GNUC_UNUSED,
+                                gpointer      marshal_data)
+ {
+-  typedef gboolean (*GMarshalFunc_BOOLEAN__STRING) (gpointer     data1,
++  typedef gboolean (*GMarshalFunc_BOOLEAN__STRV) (gpointer     data1,
+ 						    const char     *arg1,
+ 						    gpointer     data2);
+-  register GMarshalFunc_BOOLEAN__STRING callback;
++  register GMarshalFunc_BOOLEAN__STRV callback;
+   register GCClosure *cc = (GCClosure*) closure;
+   register gpointer data1, data2;
+   gboolean v_return;
+@@ -371,10 +373,10 @@
+       data1 = g_value_peek_pointer (param_values + 0);
+       data2 = closure->data;
+     }
+-  callback = (GMarshalFunc_BOOLEAN__STRING) (marshal_data ? marshal_data : cc->callback);
++  callback = (GMarshalFunc_BOOLEAN__STRV) (marshal_data ? marshal_data : cc->callback);
+ 
+     v_return = callback (data1,            
+-			 g_value_get_string (param_values + 1),
++			 g_value_get_boxed (param_values + 1),
+ 			 data2);
+     g_value_set_boolean (return_value, v_return);
+ }
+@@ -448,7 +450,7 @@
+     WillResignActive,
+     BlockTermination,
+     WillTerminate,
+-    OpenFile,
++    OpenFiles,
+     LastSignal
+ };
+ 
+@@ -561,9 +563,9 @@
+ 	       G_TYPE_NONE, 0);
+ 
+ /**
+- * GtkOSXApplication::NSApplicationOpenFile:
++ * GtkOSXApplication::NSApplicationOpenFiles:
+  * @app: The application object
+- * @path: A UTF8-encoded file path to open.
++ * @paths: UTF8-encoded file paths to open.
+  * @user_data: Data attached at connection
+  *
+  * Emitted when a OpenFile, OpenFiles, or OpenEmptyFile event is
+@@ -573,13 +575,13 @@
+  *
+  * Returns: Boolean indicating success at opening the file.
+  */
+-gtk_osxapplication_signals[OpenFile] =
+-    g_signal_new("NSApplicationOpenFile",
++gtk_osxapplication_signals[OpenFiles] =
++    g_signal_new("NSApplicationOpenFiles",
+ 	       GTK_TYPE_OSX_APPLICATION,
+ 	       G_SIGNAL_NO_RECURSE | G_SIGNAL_ACTION,
+ 	       0, NULL, NULL,
+-	       g_cclosure_marshal_BOOLEAN__STRING,
+-	       G_TYPE_BOOLEAN, 1, G_TYPE_STRING);
++	       g_cclosure_marshal_BOOLEAN__STRV,
++	       G_TYPE_BOOLEAN, 1, G_TYPE_STRV);
+ 
+ }
+ 
+@@ -661,6 +663,7 @@
+     [cocoa_menubar setAutoenablesItems:NO];
+ 
+   }
++
+   if (cocoa_menubar != [NSApp mainMenu])
+     [NSApp setMainMenu: cocoa_menubar];
+ 
+@@ -684,10 +687,9 @@
+   cocoa_menu_item_add_submenu (menu_shell, cocoa_menubar, TRUE, FALSE);
+   /* Stupid hack to force the menubar to look right when a window is
+      opened after starting the main loop. */
+-  if (old_menubar != NULL) {
++
+     [NSApp setMainMenu: old_menubar];
+     [NSApp setMainMenu: cocoa_menubar];
+-  }
+ }
+ 
+ /**

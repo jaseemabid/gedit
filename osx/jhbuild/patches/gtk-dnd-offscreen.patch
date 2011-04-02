@@ -1,0 +1,11 @@
+--- a/gtk/gtkdnd-quartz.c	2011-12-18 17:18:55.000000000 +0100
++++ b/gtk/gtkdnd-quartz.c	2012-01-12 07:57:04.000000000 +0100
+@@ -413,7 +413,7 @@
+   GtkWidget *toplevel = gtk_widget_get_toplevel (widget);
+   GdkWindow *window = gtk_widget_get_window (toplevel);
+   
+-  if (gtk_widget_is_toplevel (toplevel) && window)
++  if (gtk_widget_is_toplevel (toplevel) && !GTK_IS_OFFSCREEN_WINDOW (toplevel) && window)
+     return [gdk_quartz_window_get_nsview (window) window];
+   else
+     return NULL;

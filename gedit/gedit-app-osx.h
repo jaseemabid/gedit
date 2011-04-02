@@ -24,7 +24,6 @@
 #define __GEDIT_APP_OSX_H__
 
 #include "gedit-app.h"
-#include <ige-mac-integration.h>
 
 G_BEGIN_DECLS
 
@@ -51,14 +50,14 @@ struct _GeditAppOSXClass
 };
 
 GType		 gedit_app_osx_get_type		(void) G_GNUC_CONST;
+
 void		 gedit_app_osx_set_window_title	(GeditAppOSX   *app,
 						 GeditWindow   *window,
 						 const gchar   *title,
 						 GeditDocument *document);
-gboolean	 gedit_app_osx_show_url		(GeditAppOSX   *app,
-						 const gchar   *url);
-gboolean	 gedit_app_osx_show_help	(GeditAppOSX   *app,
-						 const gchar   *link_id);
+
+gboolean         gedit_app_osx_show_url         (GeditAppOSX *app,
+                                                 const gchar *url);
 
 G_END_DECLS
 

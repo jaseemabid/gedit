@@ -39,7 +39,7 @@
 #include "gedit-multi-notebook.h"
 
 #ifdef OS_OSX
-#include <ige-mac-integration.h>
+#include <gtkosxapplication.h>
 #endif
 
 G_BEGIN_DECLS
@@ -63,7 +63,7 @@ struct _GeditWindowPrivate
 	GtkWidget      *tab_width_combo;
 	GtkWidget      *language_combo;
 	
-	GeditMessageBus *message_bus;	
+	GeditMessageBus *message_bus;
 	PeasExtensionSet *extensions;
 
 	/* Widgets for fullscreen mode */
@@ -121,7 +121,7 @@ struct _GeditWindowPrivate
 	GFile          *default_location;
 
 #ifdef OS_OSX
-	IgeMacMenuGroup *mac_menu_group;
+	GtkOSXApplicationMenuGroup *mac_menu_group;
 #endif
 
 	gboolean        removing_tabs : 1;

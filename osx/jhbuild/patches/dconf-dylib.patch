@@ -1,0 +1,126 @@
+diff --git a/bin/Makefile.am b/bin/Makefile.am
+index d3252cc..a832d5a 100644
+--- a/bin/Makefile.am
++++ b/bin/Makefile.am
+@@ -5,7 +5,7 @@ INCLUDES = -I$(top_srcdir)/common -I$(top_srcdir)/engine -I$(top_srcdir)/client
+ bin_PROGRAMS = dconf
+ 
+ dconf_VALAFLAGS = --vapidir ../client --pkg=gio-2.0 --pkg=posix --pkg=dconf
+-dconf_LDADD = $(gio_LIBS) ../client/libdconf.so.0
++dconf_LDADD = $(gio_LIBS) ../client/libdconf.dylib
+ dconf_SOURCES = dconf.vala dconf-update.vala dconf-dump.vala ../gvdb/gvdb-builder.c gvdb.vapi fixes.vapi
+ 
+ completiondir = $(sysconfdir)/bash_completion.d
+diff --git a/client/Makefile.am b/client/Makefile.am
+index a6c9212..3700c69 100644
+--- a/client/Makefile.am
++++ b/client/Makefile.am
+@@ -3,36 +3,24 @@ CFLAGS += -Wno-error
+ INCLUDES = -I$(top_srcdir)/common -I$(top_srcdir)/gvdb -I$(top_srcdir)/engine $(gio_CFLAGS)
+ 
+ shlibdir=$(libdir)
+-shlib_PROGRAMS = libdconf.so.0.0.0
+-nodist_noinst_DATA = libdconf.so.0 libdconf.so
+-
+-libdconf.so.0 libdconf.so: libdconf.so.0.0.0
+-	$(AM_V_GEN) ln -fs libdconf.so.0.0.0 $@
+-
+-install-data-hook:
+-	ln -fs libdconf.so.0.0.0 $(DESTDIR)$(shlibdir)/libdconf.so.0
+-	ln -fs libdconf.so.0.0.0 $(DESTDIR)$(shlibdir)/libdconf.so
+-
+-uninstall-hook:
+-	rm -f $(DESTDIR)$(shlibdir)/libdconf.so.0
+-	rm -f $(DESTDIR)$(shlibdir)/libdconf.so
++shlib_PROGRAMS = libdconf.dylib
+ 
+ dconfinclude_HEADERS = \
+ 	dconf-client.h	\
+ 	dconf.h
+ 
+-libdconf_so_0_0_0_LDADD = $(gio_LIBS)
+-libdconf_so_0_0_0_LDFLAGS = -shared -Wl,-soname=libdconf.so.0
+-libdconf_so_0_0_0_SOURCES = \
++libdconf_dylib_LDADD = $(gio_LIBS)
++libdconf_dylib_LDFLAGS = -dynamiclib
++libdconf_dylib_SOURCES = \
+ 	../common/dconf-shmdir.c	\
+ 	../common/dconf-paths.c		\
+ 	../engine/dconf-engine.c	\
+ 	../gvdb/gvdb-reader.c		\
+ 	dconf-client.vala engine.vapi
+-libdconf_so_0_0_0_VALAFLAGS = --library dconf --pkg=gio-2.0
++libdconf_dylib_VALAFLAGS = --library dconf --pkg=gio-2.0
+ 
+ EXTRA_DIST = dconf.vapi extra-docs.c
+-dconf.vapi: libdconf.so.0
++dconf.vapi: libdconf.dylib
+ 
+ dconf.deps:
+ 	$(AM_V_GEN) echo gio-2.0 > dconf.deps
+@@ -43,4 +31,4 @@ vapidir = $(datadir)/vala/vapi
+ pkgconfigdir = $(libdir)/pkgconfig
+ pkgconfig_DATA = dconf.pc
+ 
+-CLEANFILES = dconf.deps libdconf.so.0 libdconf.so
++CLEANFILES = dconf.deps
+diff --git a/dbus-1/Makefile.am b/dbus-1/Makefile.am
+index 6e740f1..a5e6f1d 100644
+--- a/dbus-1/Makefile.am
++++ b/dbus-1/Makefile.am
+@@ -8,27 +8,12 @@ pkgconfigdir = $(libdir)/pkgconfig
+ pkgconfig_DATA = dconf-dbus-1.pc
+ 
+ shlibdir = $(libdir)
+-shlib_PROGRAMS = libdconf-dbus-1.so.0.0.0
++shlib_PROGRAMS = libdconf-dbus-1.dylib
+ 
+-libdconf_dbus_1_so_0_0_0_LDADD = $(glib_LIBS) $(dbus_LIBS)
+-libdconf_dbus_1_so_0_0_0_LDFLAGS = -shared -Wl,-soname=libdconf-dbus-1.so.0
+-libdconf_dbus_1_so_0_0_0_SOURCES = \
++libdconf_dbus_1_dylib_LDADD = $(glib_LIBS) $(dbus_LIBS)
++libdconf_dbus_1_dylib_LDFLAGS = -dynamiclib
++libdconf_dbus_1_dylib_SOURCES = \
+ 	../engine/dconf-engine.c	\
+ 	../common/dconf-shmdir.c	\
+ 	../gvdb/gvdb-reader.c		\
+ 	dconf-dbus-1.c
+-
+-noinst_DATA = libdconf-dbus-1.so libdconf-dbus-1.so.0
+-
+-libdconf-dbus-1.so.0 libdconf-dbus-1.so: libdconf-dbus-1.so.0.0.0
+-	$(AM_V_GEN) ln -fs libdconf-dbus-1.so.0.0.0 $@
+-
+-install-data-hook:
+-	ln -fs libdconf-dbus-1.so.0.0.0 $(DESTDIR)$(shlibdir)/libdconf-dbus-1.so.0
+-	ln -fs libdconf-dbus-1.so.0.0.0 $(DESTDIR)$(shlibdir)/libdconf-dbus-1.so
+-
+-uninstall-hook:
+-	rm -f $(DESTDIR)$(shlibdir)/libdconf-dbus-1.so.0
+-	rm -f $(DESTDIR)$(shlibdir)/libdconf-dbus-1.so
+-
+-CLEANFILES = libdconf-dbus-1.so.0 libdconf-dbus-1.so
+
+--- a/editor/Makefile.am	2011-12-29 17:44:02.000000000 +0100
++++ b/editor/Makefile.am	2011-12-29 17:43:50.000000000 +0100
+@@ -3,7 +3,7 @@
+ AM_CFLAGS = $(gtk_CFLAGS) $(gmodule_CFLAGS) $(libxml_CFLAGS) -I$(top_srcdir)/common -I$(top_srcdir)/client -DPKGDATADIR=\"@datadir@/dconf-editor\"
+ AM_VALAFLAGS = --vapidir ../client --pkg gtk+-3.0 --pkg gmodule-2.0 --pkg libxml-2.0 --pkg dconf
+ CFLAGS += -Wno-error
+-dconf_editor_LDADD = ../client/libdconf.so.0 $(gtk_LIBS) $(gmodule_LIBS) $(gee_LIBS) $(libxml_LIBS)
++dconf_editor_LDADD = ../client/libdconf.dylib $(gtk_LIBS) $(gmodule_LIBS) $(gee_LIBS) $(libxml_LIBS)
+ dconf_editor_SOURCES = config.vapi dconf-editor.vala dconf-model.vala dconf-schema.vala dconf-view.vala
+ 
+ desktopdir = $(datadir)/applications
+
+--- a/gsettings/Makefile.am	2011-08-04 00:07:20.000000000 +0200
++++ b/gsettings/Makefile.am	2012-01-10 17:00:21.000000000 +0100
+@@ -4,7 +4,7 @@
+ giomodules_PROGRAMS = libdconfsettings.so
+
+ libdconfsettings_so_LDADD = $(gio_LIBS)
+-libdconfsettings_so_LDFLAGS = -shared
++libdconfsettings_so_LDFLAGS = -dynamiclib
+ libdconfsettings_so_SOURCES = \
+ 	../engine/dconf-engine.c	\
+ 	../common/dconf-shmdir.c	\

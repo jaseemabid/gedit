@@ -1,0 +1,25 @@
+From b1f1cf5c9d2a1fce8837cc448abac80727522fff Mon Sep 17 00:00:00 2001
+From: Jesse van den Kieboom <jessevdk@gnome.org>
+Date: Mon, 15 Aug 2011 23:05:01 +0200
+Subject: [PATCH 2/3] Do not import pygobject API twice
+
+---
+ loaders/python/peas-plugin-loader-python.c |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+diff --git a/loaders/python/peas-plugin-loader-python.c b/loaders/python/peas-plugin-loader-python.c
+index 2d713fd..96de2f3 100644
+--- a/loaders/python/peas-plugin-loader-python.c
++++ b/loaders/python/peas-plugin-loader-python.c
+@@ -27,6 +27,8 @@
+ #include "peas-extension-python.h"
+ #include "peas-plugin-loader-python.h"
+ 
++#define NO_IMPORT_PYGOBJECT
++
+ /* _POSIX_C_SOURCE is defined in Python.h and in limits.h included by
+  * glib-object.h, so we unset it here to avoid a warning. Yep, that's bad. */
+ #undef _POSIX_C_SOURCE
+-- 
+1.7.4.1
+

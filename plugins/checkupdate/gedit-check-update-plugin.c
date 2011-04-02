@@ -45,7 +45,7 @@
 #endif
 
 #ifdef OS_OSX
-#include "gedit/osx/gedit-osx.h"
+#include "gedit/gedit-app-osx.h"
 #endif
 
 #define GEDIT_CHECK_UPDATE_PLUGIN_GET_PRIVATE(object) \
@@ -238,7 +238,8 @@ on_response_cb (GtkWidget              *infobar,
 		GError *error = NULL;
 
 #ifdef OS_OSX
-		gedit_osx_show_url (plugin->priv->url);
+		gedit_app_osx_show_url (GEDIT_APP_OSX (gedit_app_get_default ()),
+		                        plugin->priv->url);
 #else
 		gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (plugin->priv->window)),
 			      plugin->priv->url,

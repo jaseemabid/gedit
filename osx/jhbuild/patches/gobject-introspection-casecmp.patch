@@ -1,0 +1,11 @@
+--- a/giscanner/sourcescanner.c	2012-01-05 17:55:08.000000000 +0100
++++ b/giscanner/sourcescanner.c	2011-08-25 21:49:38.000000000 +0200
+@@ -246,7 +246,7 @@
+   g_assert (scanner->current_filename);
+   for (l = scanner->filenames; l != NULL; l = l->next)
+     {
+-      if (strcmp (l->data, scanner->current_filename) == 0)
++      if (g_ascii_strcasecmp (l->data, scanner->current_filename) == 0)
+ 	{
+ 	  found_filename = TRUE;
+ 	  break;

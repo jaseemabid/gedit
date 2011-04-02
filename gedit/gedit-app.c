@@ -162,7 +162,8 @@ gedit_app_constructor (GType                  gtype,
 }
 
 static gboolean
-gedit_app_last_window_destroyed_impl (GeditApp *app)
+gedit_app_last_window_destroyed_impl (GeditApp    *app,
+                                      GeditWindow *window)
 {
 	return TRUE;
 }
@@ -247,34 +248,6 @@ gedit_app_set_window_title_impl (GeditApp    *app,
 	gtk_window_set_title (GTK_WINDOW (window), title);
 }
 
-static void
-gedit_app_class_init (GeditAppClass *klass)
-{
-	GObjectClass *object_class = G_OBJECT_CLASS (klass);
-
-	object_class->finalize = gedit_app_finalize;
-	object_class->dispose = gedit_app_dispose;
-	object_class->get_property = gedit_app_get_property;
-	object_class->constructor = gedit_app_constructor;
-
-	klass->last_window_destroyed = gedit_app_last_window_destroyed_impl;
-	klass->show_help = gedit_app_show_help_impl;
-	klass->help_link_id = gedit_app_help_link_id_impl;
-	klass->set_window_title = gedit_app_set_window_title_impl;
-
-	g_object_class_install_property (object_class,
-					 PROP_LOCKDOWN,
-					 g_param_spec_flags ("lockdown",
-							     "Lockdown",
-							     "The lockdown mask",
-							     GEDIT_TYPE_LOCKDOWN_MASK,
-							     0,
-							     G_PARAM_READABLE |
-							     G_PARAM_STATIC_STRINGS));
-
-	g_type_class_add_private (object_class, sizeof (GeditAppPrivate));
-}
-
 static gboolean
 ensure_user_config_dir (void)
 {
@@ -297,22 +270,6 @@ ensure_user_config_dir (void)
 	}
 
 	return ret;
-}
-
-static void
-load_accels (void)
-{
-	gchar *filename;
-
-	filename = g_build_filename (gedit_dirs_get_user_config_dir (),
-				     "accels",
-				     NULL);
-	if (filename != NULL)
-	{
-		gedit_debug_message (DEBUG_APP, "Loading keybindings from %s\n", filename);
-		gtk_accel_map_load (filename);
-		g_free (filename);
-	}
 }
 
 static void
@@ -347,37 +304,6 @@ get_page_setup_file (void)
 	}
 
 	return setup;
-}
-
-static void
-load_page_setup (GeditApp *app)
-{
-	gchar *filename;
-	GError *error = NULL;
-
-	g_return_if_fail (app->priv->page_setup == NULL);
-
-	filename = get_page_setup_file ();
-
-	app->priv->page_setup = gtk_page_setup_new_from_file (filename,
-							      &error);
-	if (error)
-	{
-		/* Ignore file not found error */
-		if (error->domain != G_FILE_ERROR ||
-		    error->code != G_FILE_ERROR_NOENT)
-		{
-			g_warning ("%s", error->message);
-		}
-
-		g_error_free (error);
-	}
-
-	g_free (filename);
-
-	/* fall back to default settings */
-	if (app->priv->page_setup == NULL)
-		app->priv->page_setup = gtk_page_setup_new ();
 }
 
 static void
@@ -422,6 +348,253 @@ get_print_settings_file (void)
 }
 
 static void
+save_print_settings (GeditApp *app)
+{
+	gchar *filename;
+	GError *error = NULL;
+
+	if (app->priv->print_settings == NULL)
+		return;
+
+	filename = get_print_settings_file ();
+
+	gtk_print_settings_to_file (app->priv->print_settings,
+				    filename,
+				    &error);
+	if (error)
+	{
+		g_warning ("%s", error->message);
+		g_error_free (error);
+	}
+
+	g_free (filename);
+}
+
+static void
+gedit_app_quit_impl (GeditApp *app)
+{
+	gedit_debug_message (DEBUG_APP, "Quitting\n");
+
+	/* Last window is gone... save some settings and exit */
+	ensure_user_config_dir ();
+
+	save_accels ();
+	save_page_setup (app);
+	save_print_settings (app);
+
+	gtk_main_quit ();
+}
+
+static void
+load_accels (void)
+{
+	gchar *filename;
+
+	filename = g_build_filename (gedit_dirs_get_user_config_dir (),
+				     "accels",
+				     NULL);
+	if (filename != NULL)
+	{
+		gedit_debug_message (DEBUG_APP, "Loading keybindings from %s\n", filename);
+		gtk_accel_map_load (filename);
+		g_free (filename);
+	}
+}
+
+static void
+gedit_app_constructed (GObject *object)
+{
+	load_accels ();
+}
+
+static void
+set_active_window (GeditApp    *app,
+                   GeditWindow *window)
+{
+	app->priv->active_window = window;
+}
+
+static gboolean
+window_focus_in_event (GeditWindow   *window, 
+		       GdkEventFocus *event, 
+		       GeditApp      *app)
+{
+	/* updates active_view and active_child when a new toplevel receives focus */
+	g_return_val_if_fail (GEDIT_IS_WINDOW (window), FALSE);
+
+	set_active_window (app, window);
+
+	return FALSE;
+}
+
+static gboolean 
+window_delete_event (GeditWindow *window,
+                     GdkEvent    *event,
+                     GeditApp    *app)
+{
+	GeditWindowState ws;
+
+	ws = gedit_window_get_state (window);
+
+	if (ws & 
+	    (GEDIT_WINDOW_STATE_SAVING |
+	     GEDIT_WINDOW_STATE_PRINTING |
+	     GEDIT_WINDOW_STATE_SAVING_SESSION))
+	{
+		return TRUE;
+	}
+
+	_gedit_cmd_file_quit (NULL, window);
+
+	/* Do not destroy the window */
+	return TRUE;
+}
+
+void
+_gedit_app_quit (GeditApp *app)
+{
+	GEDIT_APP_GET_CLASS (app)->quit (app);
+}
+
+static void
+window_destroy (GeditWindow *window, 
+		GeditApp    *app)
+{
+	app->priv->windows = g_list_remove (app->priv->windows,
+					    window);
+
+	if (window == app->priv->active_window)
+	{
+		set_active_window (app, app->priv->windows != NULL ? app->priv->windows->data : NULL);
+	}
+
+/* CHECK: I don't think we have to disconnect this function, since windows
+   is being destroyed */
+/*					     
+	g_signal_handlers_disconnect_by_func (window, 
+					      G_CALLBACK (window_focus_in_event),
+					      app);
+	g_signal_handlers_disconnect_by_func (window, 
+					      G_CALLBACK (window_destroy),
+					      app);
+*/
+	if (app->priv->windows == NULL)
+	{
+		if (!GEDIT_APP_GET_CLASS (app)->last_window_destroyed (app, window))
+		{
+			return;
+		}
+
+		_gedit_app_quit (app);
+	}
+}
+
+static GeditWindow *
+gedit_app_create_window_impl (GeditApp *app)
+{
+	GeditWindow *window;
+	gboolean isfirst;
+	
+	/*
+	 * We need to be careful here, there is a race condition:
+	 * when another gedit is launched it checks active_window,
+	 * so we must do our best to ensure that active_window
+	 * is never NULL when at least a window exists.
+	 */
+
+	isfirst = (app->priv->windows == NULL);
+	
+	window = g_object_new (GEDIT_TYPE_WINDOW, NULL);
+
+	if (isfirst)
+	{
+		set_active_window (app, window);
+	}
+
+	app->priv->windows = g_list_prepend (app->priv->windows,
+					     window);
+
+	gedit_debug_message (DEBUG_APP, "Window created");
+
+	g_signal_connect (window, 
+			  "focus_in_event",
+			  G_CALLBACK (window_focus_in_event), 
+			  app);
+	g_signal_connect (window,
+			  "delete_event",
+			  G_CALLBACK (window_delete_event),
+			  app);			  
+	g_signal_connect (window, 
+			  "destroy",
+			  G_CALLBACK (window_destroy),
+			  app);
+
+	return window;
+}
+
+static void
+gedit_app_class_init (GeditAppClass *klass)
+{
+	GObjectClass *object_class = G_OBJECT_CLASS (klass);
+
+	object_class->finalize = gedit_app_finalize;
+	object_class->dispose = gedit_app_dispose;
+	object_class->get_property = gedit_app_get_property;
+	object_class->constructor = gedit_app_constructor;
+	object_class->constructed = gedit_app_constructed;
+
+	klass->last_window_destroyed = gedit_app_last_window_destroyed_impl;
+	klass->show_help = gedit_app_show_help_impl;
+	klass->help_link_id = gedit_app_help_link_id_impl;
+	klass->set_window_title = gedit_app_set_window_title_impl;
+	klass->quit = gedit_app_quit_impl;
+	klass->create_window = gedit_app_create_window_impl;
+
+	g_object_class_install_property (object_class,
+					 PROP_LOCKDOWN,
+					 g_param_spec_flags ("lockdown",
+							     "Lockdown",
+							     "The lockdown mask",
+							     GEDIT_TYPE_LOCKDOWN_MASK,
+							     0,
+							     G_PARAM_READABLE |
+							     G_PARAM_STATIC_STRINGS));
+
+	g_type_class_add_private (object_class, sizeof (GeditAppPrivate));
+}
+
+static void
+load_page_setup (GeditApp *app)
+{
+	gchar *filename;
+	GError *error = NULL;
+
+	g_return_if_fail (app->priv->page_setup == NULL);
+
+	filename = get_page_setup_file ();
+
+	app->priv->page_setup = gtk_page_setup_new_from_file (filename,
+							      &error);
+	if (error)
+	{
+		/* Ignore file not found error */
+		if (error->domain != G_FILE_ERROR ||
+		    error->code != G_FILE_ERROR_NOENT)
+		{
+			g_warning ("%s", error->message);
+		}
+
+		g_error_free (error);
+	}
+
+	g_free (filename);
+
+	/* fall back to default settings */
+	if (app->priv->page_setup == NULL)
+		app->priv->page_setup = gtk_page_setup_new ();
+}
+
+static void
 load_print_settings (GeditApp *app)
 {
 	gchar *filename;
@@ -453,29 +626,6 @@ load_print_settings (GeditApp *app)
 }
 
 static void
-save_print_settings (GeditApp *app)
-{
-	gchar *filename;
-	GError *error = NULL;
-
-	if (app->priv->print_settings == NULL)
-		return;
-
-	filename = get_print_settings_file ();
-
-	gtk_print_settings_to_file (app->priv->print_settings,
-				    filename,
-				    &error);
-	if (error)
-	{
-		g_warning ("%s", error->message);
-		g_error_free (error);
-	}
-
-	g_free (filename);
-}
-
-static void
 extension_added (PeasExtensionSet *extensions,
 		 PeasPluginInfo   *info,
 		 PeasExtension    *exten,
@@ -497,8 +647,6 @@ static void
 gedit_app_init (GeditApp *app)
 {
 	app->priv = GEDIT_APP_GET_PRIVATE (app);
-
-	load_accels ();
 
 	/* Load settings */
 	app->priv->settings = gedit_settings_new ();
@@ -558,89 +706,6 @@ gedit_app_get_default (void)
 	return GEDIT_APP (g_object_new (type, NULL));
 }
 
-static void
-set_active_window (GeditApp    *app,
-                   GeditWindow *window)
-{
-	app->priv->active_window = window;
-}
-
-static gboolean
-window_focus_in_event (GeditWindow   *window, 
-		       GdkEventFocus *event, 
-		       GeditApp      *app)
-{
-	/* updates active_view and active_child when a new toplevel receives focus */
-	g_return_val_if_fail (GEDIT_IS_WINDOW (window), FALSE);
-
-	set_active_window (app, window);
-
-	return FALSE;
-}
-
-static gboolean 
-window_delete_event (GeditWindow *window,
-                     GdkEvent    *event,
-                     GeditApp    *app)
-{
-	GeditWindowState ws;
-
-	ws = gedit_window_get_state (window);
-
-	if (ws & 
-	    (GEDIT_WINDOW_STATE_SAVING |
-	     GEDIT_WINDOW_STATE_PRINTING |
-	     GEDIT_WINDOW_STATE_SAVING_SESSION))
-	{
-		return TRUE;
-	}
-
-	_gedit_cmd_file_quit (NULL, window);
-
-	/* Do not destroy the window */
-	return TRUE;
-}
-
-static void
-window_destroy (GeditWindow *window, 
-		GeditApp    *app)
-{
-	app->priv->windows = g_list_remove (app->priv->windows,
-					    window);
-
-	if (window == app->priv->active_window)
-	{
-		set_active_window (app, app->priv->windows != NULL ? app->priv->windows->data : NULL);
-	}
-
-/* CHECK: I don't think we have to disconnect this function, since windows
-   is being destroyed */
-/*					     
-	g_signal_handlers_disconnect_by_func (window, 
-					      G_CALLBACK (window_focus_in_event),
-					      app);
-	g_signal_handlers_disconnect_by_func (window, 
-					      G_CALLBACK (window_destroy),
-					      app);
-*/
-	if (app->priv->windows == NULL)
-	{
-		if (!GEDIT_APP_GET_CLASS (app)->last_window_destroyed (app))
-		{
-			return;
-		}
-
-		/* Last window is gone... save some settings and exit */
-		ensure_user_config_dir ();
-
-		save_accels ();
-		save_page_setup (app);
-		save_print_settings (app);
-
-		gtk_main_quit ();
-	}
-}
-
 /* Generates a unique string for a window role */
 static gchar *
 gen_role (void)
@@ -663,27 +728,8 @@ gedit_app_create_window_real (GeditApp    *app,
 			      const gchar *role)
 {
 	GeditWindow *window;
-
-	/*
-	 * We need to be careful here, there is a race condition:
-	 * when another gedit is launched it checks active_window,
-	 * so we must do our best to ensure that active_window
-	 * is never NULL when at least a window exists.
-	 */
-	if (app->priv->windows == NULL)
-	{
-		window = g_object_new (GEDIT_TYPE_WINDOW, NULL);
-		set_active_window (app, window);
-	}
-	else
-	{
-		window = g_object_new (GEDIT_TYPE_WINDOW, NULL);
-	}
-
-	app->priv->windows = g_list_prepend (app->priv->windows,
-					     window);
-
-	gedit_debug_message (DEBUG_APP, "Window created");
+	
+	window = GEDIT_APP_GET_CLASS (app)->create_window (app);
 
 	if (role != NULL)
 	{
@@ -709,31 +755,27 @@ gedit_app_create_window_real (GeditApp    *app,
 		g_settings_get (app->priv->window_settings,
 				GEDIT_SETTINGS_WINDOW_SIZE,
 				"(ii)", &w, &h);
+
 		gtk_window_set_default_size (GTK_WINDOW (window), w, h);
 
 		if ((state & GDK_WINDOW_STATE_MAXIMIZED) != 0)
+		{
 			gtk_window_maximize (GTK_WINDOW (window));
+		}
 		else
+		{
 			gtk_window_unmaximize (GTK_WINDOW (window));
+		}
 
 		if ((state & GDK_WINDOW_STATE_STICKY ) != 0)
+		{
 			gtk_window_stick (GTK_WINDOW (window));
+		}
 		else
+		{
 			gtk_window_unstick (GTK_WINDOW (window));
+		}
 	}
-
-	g_signal_connect (window, 
-			  "focus_in_event",
-			  G_CALLBACK (window_focus_in_event), 
-			  app);
-	g_signal_connect (window,
-			  "delete_event",
-			  G_CALLBACK (window_delete_event),
-			  app);			  
-	g_signal_connect (window, 
-			  "destroy",
-			  G_CALLBACK (window_destroy),
-			  app);
 
 	return window;
 }
@@ -758,7 +800,9 @@ gedit_app_create_window (GeditApp  *app,
 	window = gedit_app_create_window_real (app, TRUE, NULL);
 
 	if (screen != NULL)
+	{
 		gtk_window_set_screen (GTK_WINDOW (window), screen);
+	}
 
 	return window;
 }
@@ -1017,7 +1061,24 @@ gedit_app_set_window_title (GeditApp    *app,
                             GeditWindow *window,
                             const gchar *title)
 {
+	g_return_if_fail (GEDIT_IS_APP (app));
+	g_return_if_fail (GEDIT_IS_WINDOW (window));
+
 	GEDIT_APP_GET_CLASS (app)->set_window_title (app, window, title);
+}
+
+gboolean
+gedit_app_process_window_event (GeditApp    *app,
+                                GeditWindow *window,
+                                GdkEvent    *event)
+{
+	g_return_val_if_fail (GEDIT_IS_APP (app), FALSE);
+	g_return_val_if_fail (GEDIT_IS_WINDOW (window), FALSE);
+
+	if (GEDIT_APP_GET_CLASS (app)->process_window_event)
+	{
+		GEDIT_APP_GET_CLASS (app)->process_window_event (app, window, event);
+	}
 }
 
 static void

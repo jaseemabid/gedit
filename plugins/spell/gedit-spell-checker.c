@@ -42,6 +42,10 @@
 #include "gedit-spell-utils.h"
 #include "gedit-spell-marshal.h"
 
+#ifdef OS_OSX
+#include "gedit-spell-osx.h"
+#endif
+
 struct _GeditSpellChecker
 {
 	GObject parent_instance;
@@ -249,6 +253,22 @@ lazy_init (GeditSpellChecker               *spell,
 			i++;
 		}
 	}
+
+#ifdef OS_OSX
+	if (spell->active_lang == NULL)
+	{
+		gchar *key;
+
+		key = gedit_spell_osx_get_preferred_spell_language ();
+		
+		if (key)
+		{
+			spell->active_lang = gedit_spell_checker_language_from_key (key);
+		}
+
+		g_free (key);
+	}
+#endif
 
 	/* Second try to get a default language */
 	if (spell->active_lang == NULL)

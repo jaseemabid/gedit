@@ -26,8 +26,17 @@ gsettings_SCHEMAS = org.gnome.gedit.gschema.xml
 
 @GSETTINGS_RULES@
 
+if OS_OSX
+gsettingsschema_DATA = gedit-osx.gschema.override
+endif
+
 convertdir = $(datadir)/GConf/gsettings
 convert_DATA = gedit.convert
+
+if OS_OSX
+geditdatadir = $(datadir)/gedit
+geditdata_DATA = osx.accels osx.css
+endif
 
 EXTRA_DIST = 					\
 	$(desktop_in_files)			\
@@ -35,7 +44,10 @@ EXTRA_DIST = 					\
 	$(man_MANS)				\
 	gedit.pc.in				\
 	org.gnome.gedit.gschema.xml.in.in	\
-	gedit.convert
+	gedit.convert				\
+	osx.accels				\
+	osx.css					\
+	gedit-osx.gschema.override
 
 CLEANFILES =	 			\
 	$(desktop_DATA)			\

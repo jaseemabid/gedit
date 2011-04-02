@@ -1,0 +1,11 @@
+--- a/configure	2012-01-12 18:50:47.000000000 +0100
++++ b/configure	2012-01-12 18:53:06.000000000 +0100
+@@ -14292,7 +14292,7 @@
+ $as_echo "#define FFI_EXEC_TRAMPOLINE_TABLE 1" >>confdefs.h
+ 
+      ;;
+-     *-apple-darwin10* | *-*-freebsd* | *-*-openbsd* | *-pc-solaris*)
++     *-apple-darwin* | *-*-freebsd* | *-*-openbsd* | *-pc-solaris*)
+ 
+ $as_echo "#define FFI_MMAP_EXEC_WRIT 1" >>confdefs.h
+ 

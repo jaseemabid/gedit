@@ -84,7 +84,7 @@ class Capture(GObject.Object):
         self.tried_killing = False
         self.idle_write_id = 0
         self.read_buffer = ''
-        
+
         try:
             self.pipe = subprocess.Popen(self.command, **popen_args)
         except OSError, e:
@@ -101,7 +101,7 @@ class Capture(GObject.Object):
             fcntl.fcntl(self.pipe.stdout.fileno(), fcntl.F_SETFL, flags)
 
             GObject.io_add_watch(self.pipe.stdout,
-                                 GObject.IO_IN | GObject.IO_HUP,
+                                 GObject.IO_IN | GObject.IO_HUP | GObject.IO_ERR,
                                  self.on_output)
 
         if self.flags & self.CAPTURE_STDERR:
@@ -110,7 +110,7 @@ class Capture(GObject.Object):
             fcntl.fcntl(self.pipe.stderr.fileno(), fcntl.F_SETFL, flags)
 
             GObject.io_add_watch(self.pipe.stderr,
-                                 GObject.IO_IN | GObject.IO_HUP,
+                                 GObject.IO_IN | GObject.IO_HUP | GObject.IO_ERR,
                                  self.on_output)
 
         # IO
@@ -132,7 +132,7 @@ class Capture(GObject.Object):
         try:
             l = len(self.write_buffer)
             m = min(l, self.WRITE_BUFFER_SIZE)
-         
+
             self.pipe.stdin.write(self.write_buffer[:m])
             
             if m == l:
@@ -150,6 +150,15 @@ class Capture(GObject.Object):
             self.idle_write_id = 0
 
             return False
+
+    def process_read_buffer(self):
+        if self.read_buffer:
+            if source == self.pipe.stdout:
+                self.emit('stdout-line', self.read_buffer)
+            else:
+                self.emit('stderr-line', self.read_buffer)
+
+            self.read_buffer = ''
 
     def on_output(self, source, condition):
         if condition & (GObject.IO_IN | GObject.IO_PRI):
@@ -177,16 +186,15 @@ class Capture(GObject.Object):
                         self.emit('stdout-line', line)
                     else:
                         self.emit('stderr-line', line)
+            else:
+                source.close()
+                self.process_read_buffer()
+                self.pipe = None
+
+                return False
 
         if condition & ~(GObject.IO_IN | GObject.IO_PRI):
-            if self.read_buffer:
-                if source == self.pipe.stdout:
-                    self.emit('stdout-line', self.read_buffer)
-                else:
-                    self.emit('stderr-line', self.read_buffer)
-
-                self.read_buffer = ''
-
+            self.process_read_buffer()
             self.pipe = None
 
             return False

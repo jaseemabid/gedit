@@ -72,7 +72,8 @@ struct _GeditAppClass
 {
 	GObjectClass parent_class;
 
-	gboolean (*last_window_destroyed)	(GeditApp    *app);
+	gboolean (*last_window_destroyed)	(GeditApp    *app,
+	                                         GeditWindow *window);
 
 	gboolean (*show_help)			(GeditApp    *app,
 	                                         GtkWindow   *parent,
@@ -86,6 +87,14 @@ struct _GeditAppClass
 	void (*set_window_title)		(GeditApp    *app,
 	                                         GeditWindow *window,
 	                                         const gchar *title);
+
+	void (*quit)                            (GeditApp    *app);
+
+	GeditWindow *(*create_window)		(GeditApp    *app);
+
+	gboolean (*process_window_event)	(GeditApp    *app,
+						 GeditWindow *window,
+						 GdkEvent    *event);
 };
 
 /*
@@ -132,6 +141,9 @@ gboolean	 gedit_app_show_help			(GeditApp    *app,
 void		 gedit_app_set_window_title		(GeditApp    *app,
                                                          GeditWindow *window,
                                                          const gchar *title);
+gboolean	gedit_app_process_window_event		(GeditApp    *app,
+							 GeditWindow *window,
+							 GdkEvent    *event);
 
 /*
  * Non exported functions
@@ -164,6 +176,7 @@ void			 _gedit_app_set_default_print_settings	(GeditApp         *app,
 								 GtkPrintSettings *settings);
 
 GObject			*_gedit_app_get_settings		(GeditApp  *app);
+void                     _gedit_app_quit                        (GeditApp  *app);
 
 G_END_DECLS
 

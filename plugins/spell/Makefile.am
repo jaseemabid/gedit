@@ -6,7 +6,8 @@ INCLUDES = 							\
 	$(GEDIT_CFLAGS) 					\
 	$(ENCHANT_CFLAGS)					\
 	$(WARN_CFLAGS)						\
-	$(DISABLE_DEPRECATED_CFLAGS)	
+	$(DISABLE_DEPRECATED_CFLAGS)				\
+	$(GTK_MAC_CFLAGS)
 
 BUILT_SOURCES = 					\
 	gedit-spell-marshal.c				\
@@ -33,6 +34,21 @@ libspell_la_SOURCES = \
 
 libspell_la_LDFLAGS = $(PLUGIN_LIBTOOL_FLAGS) 
 libspell_la_LIBADD  = $(GEDIT_LIBS) $(ENCHANT_LIBS)
+
+# Mac OSX convenience library and ldflags
+if OS_OSX
+noinst_LTLIBRARIES = libosx.la
+
+libosx_la_LDFLAGS = -framework Cocoa
+libosx_la_LIBADD = -lobjc
+libosx_la_CFLAGS = -xobjective-c
+
+libosx_la_SOURCES = 		\
+	gedit-spell-osx.c		\
+	gedit-spell-osx.h
+
+libspell_la_LIBADD += libosx.la  $(GTK_MAC_LIBS)
+endif
 
 uidir = $(GEDIT_PLUGINS_DATA_DIR)/spell
 ui_DATA = spell-checker.ui languages-dialog.ui

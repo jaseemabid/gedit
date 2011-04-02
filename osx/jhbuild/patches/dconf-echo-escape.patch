@@ -1,0 +1,12 @@
+--- a/service/Makefile.in	2011-09-26 23:20:36.000000000 +0200
++++ b/service/Makefile.in	2012-01-06 18:08:55.000000000 +0100
+@@ -636,7 +638,7 @@
+ 
+ 
+ ca.desrt.dconf.service: Makefile
+-	$(AM_V_GEN) echo -e '[D-BUS Service]\nName=ca.desrt.dconf\nExec=${libexecdir}/dconf-service' > $@
++	$(AM_V_GEN) bash -c "echo -e '[D-BUS Service]\nName=ca.desrt.dconf\nExec=${libexecdir}/dconf-service'" > $@
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+ # Otherwise a system limit (for SysV at least) may be exceeded.
+

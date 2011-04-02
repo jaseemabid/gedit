@@ -134,10 +134,10 @@ AC_SUBST(DEFAULT_PRINT_FONT)
 if test "$os_osx" = "yes"; then
 	AC_DEFINE([OS_OSX],[1],[Defined if os is Mac OSX])
 
-	PKG_CHECK_MODULES(IGE_MAC, ige-mac-integration)
+	PKG_CHECK_MODULES(GTK_MAC, gtk-mac-integration)
 
-	AC_SUBST(IGE_MAC_CFLAGS)
-	AC_SUBST(IGE_MAC_LIBS)
+	AC_SUBST(GTK_MAC_CFLAGS)
+	AC_SUBST(GTK_MAC_LIBS)
 fi
 
 dnl ===============================================================
@@ -174,7 +174,7 @@ dnl ================================================================
 dnl Use gvfs metadata or the old xml file store.
 dnl ================================================================
 
-if test "x$os_osx" != "xno" || test "x$os_win32" != "xno"; then
+if test "x$os_win32" != "xno"; then
 	gvfs_metadata_default="no"
 else
 	gvfs_metadata_default="yes"

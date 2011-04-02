@@ -12,7 +12,7 @@ INCLUDES =								\
 	-I$(srcdir)							\
 	-I$(srcdir)/smclient						\
 	$(GEDIT_CFLAGS)							\
-	$(IGE_MAC_CFLAGS)						\
+	$(GTK_MAC_CFLAGS)						\
 	$(WARN_CFLAGS)							\
 	$(DISABLE_DEPRECATED_CFLAGS)					\
 	$(INTROSPECTION_CFLAGS)						\
@@ -26,7 +26,7 @@ gedit_LDADD =			\
 	libgedit.la		\
 	libgedit-private.la	\
 	$(GEDIT_LIBS)		\
-	$(IGE_MAC_LIBS)		\
+	$(GTK_MAC_LIBS)		\
 	$(EGG_SMCLIENT_LIBS)	\
 	$(INTROSPECTION_LIBS)
 
@@ -44,23 +44,19 @@ libgedit_la_LIBADD = \
 	theatrics/libtheatrics.la
 
 # GEDIT_LIBS must be the last to ensure correct order on some platforms
-libgedit_la_LIBADD += $(GEDIT_LIBS)
+libgedit_la_LIBADD += $(GEDIT_LIBS) $(GTK_MAC_LIBS)
 
 # Mac OSX convenience library and ldflags
 if OS_OSX
-gedit_LDFLAGS += -framework Carbon
-
 noinst_LTLIBRARIES += libosx.la
 
-libosx_la_LDFLAGS = -framework Carbon -framework ApplicationServices -framework Cocoa
+libosx_la_LDFLAGS = -framework Cocoa
 libosx_la_LIBADD = -lobjc
 libosx_la_CFLAGS = -xobjective-c
 
 libosx_la_SOURCES = 		\
 	gedit-app-osx.c		\
-	gedit-app-osx.h		\
-	gedit-osx-delegate.m 	\
-	gedit-osx-delegate.h
+	gedit-app-osx.h
 
 libgedit_la_LIBADD += libosx.la
 endif

@@ -1,0 +1,39 @@
+--- a/gtk/gtksettings.c	2011-12-19 14:58:28.000000000 +0100
++++ b/gtk/gtksettings.c	2012-01-09 18:17:38.000000000 +0100
+@@ -255,6 +255,7 @@
+   GParamSpec **pspecs, **p;
+   guint i = 0;
+   gchar *path;
++  gchar const *xdgdirs;
+ 
+   priv = G_TYPE_INSTANCE_GET_PRIVATE (settings,
+                                       GTK_TYPE_SETTINGS,
+@@ -297,6 +298,28 @@
+     gtk_settings_load_from_key_file (settings, path, GTK_SETTINGS_SOURCE_DEFAULT);
+   g_free (path);
+ 
++  xdgdirs = g_getenv ("XDG_CONFIG_DIRS");
++
++  if (xdgdirs)
++    {
++      gchar **dirs;
++      gchar **ptr;
++
++      dirs = g_strsplit_set (xdgdirs, ":", -1);
++
++      for (ptr = dirs; ptr && *ptr; ++ptr)
++        {
++          path = g_build_filename (*ptr, "gtk-3.0", "settings.ini", NULL);
++
++          if (g_file_test (path, G_FILE_TEST_EXISTS))
++            gtk_settings_load_from_key_file (settings, path, GTK_SETTINGS_SOURCE_DEFAULT);
++
++          g_free (path);
++        }
++
++      g_strfreev (dirs);
++    }
++
+   path = g_build_filename (g_get_user_config_dir (), "gtk-3.0", "settings.ini", NULL);
+   if (g_file_test (path, G_FILE_TEST_EXISTS))
+     gtk_settings_load_from_key_file (settings, path, GTK_SETTINGS_SOURCE_DEFAULT);

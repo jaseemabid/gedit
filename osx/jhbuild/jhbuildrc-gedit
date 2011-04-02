@@ -1,0 +1,37 @@
+# -*- mode: python -*-
+
+import sys
+
+_gsdk = os.environ.get('GEDIT_SDK', None)
+
+if not _gsdk:
+    sys.stderr.write("No GEDIT_SDK environment given. Please provide 10.x\n")
+    sys.exit(1)
+
+_sdkversion = _gsdk
+_architecture = _default_arch
+
+if _gsdk == '10.4':
+    _sdkversion = "10.4u"
+    _architecture = "i386"
+else:
+    skip.append("python")
+
+checkoutroot = os.path.expanduser("~/gedit/" + _gsdk + "/source")
+prefix = os.path.expanduser("~/gedit/" + _gsdk + "/inst")
+tarballdir = os.path.expanduser("~/gedit" + _gsdk + "/pkgs")
+
+# Main setup
+setup_sdk(target=_gsdk, sdk_version=_sdkversion, architectures=[_architecture])
+
+# Set OBJCFLAGS
+_sdkdir = get_sdkdir(make_sdk_name(_sdkversion))
+
+environ_prepend("OBJCFLAGS", "-I" + _sdkdir + "/usr/include")
+environ_append("OBJCFLAGS", "-isysroot " + _sdkdir)
+environ_prepend("OBJCFLAGS", "-arch " + _architecture)
+environ_append("OBJCFLAGS", "-mmacosx-version-min=" + _gsdk)
+
+# Main module set
+moduleset = "http://git.gnome.org/browse/gedit/plain/osx/jhbuild/gedit.modules"
+

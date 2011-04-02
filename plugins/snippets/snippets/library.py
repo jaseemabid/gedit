@@ -458,23 +458,32 @@ class SnippetsSystemFile:
 
                 try:
                         f = open(self.path, "r")
-
-                        while True:
-                                data = f.read(readsize)
-
-                                if not data:
-                                        break
-
-                                parser.feed(data)
-
-                                for element in elements:
-                                        yield element
-
-                                del elements[:]
-
-                        f.close()
                 except IOError:
                         self.ok = False
+                        return
+
+                while True:
+                        try:
+                                data = f.read(readsize)
+                        except IOError:
+                                self.ok = False
+                                break
+
+                        if not data:
+                                break
+
+                        try:
+                                parser.feed(data)
+                        except Exception:
+                                self.ok = False
+                                break
+
+                        for element in elements:
+                                yield element
+
+                        del elements[:]
+
+                f.close()
 
         def load(self):
                 if not self.ok:

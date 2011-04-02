@@ -62,10 +62,6 @@
 #include "gedit-settings.h"
 #include "gedit-marshal.h"
 
-#ifdef OS_OSX
-#include "osx/gedit-osx.h"
-#endif
-
 #define LANGUAGE_NONE (const gchar *)"LangNone"
 #define GEDIT_UIFILE "gedit-ui.xml"
 #define TAB_WIDTH_DATA "GeditWindowTabWidthData"
@@ -163,60 +159,6 @@ save_panels_state (GeditWindow *window)
 
 	g_settings_apply (window->priv->window_settings);
 }
-
-#ifdef OS_OSX
-static GtkMenuItem *
-ui_manager_menu_item (GtkUIManager *uimanager,
-                      const gchar  *path)
-{
-	return GTK_MENU_ITEM (gtk_ui_manager_get_widget (uimanager, path));
-}
-
-static void
-add_mac_root_menu (GeditWindow *window)
-{
-	if (window->priv->mac_menu_group != NULL)
-	{
-		return;
-	}
-	
-	window->priv->mac_menu_group = ige_mac_menu_add_app_menu_group ();
-
-	ige_mac_menu_add_app_menu_item (window->priv->mac_menu_group,
-	                                ui_manager_menu_item (window->priv->manager, "/ui/MenuBar/HelpMenu/HelpAboutMenu"),
-	                                NULL);
-}
-
-static void
-remove_mac_root_menu (GeditWindow *window)
-{
-	if (window->priv->mac_menu_group == NULL)
-	{
-		return;
-	}
-	
-	ige_mac_menu_remove_app_menu_group (window->priv->mac_menu_group);
-	window->priv->mac_menu_group = NULL;
-}
-
-static gboolean
-gedit_window_focus_in_event (GtkWidget     *widget,
-                             GdkEventFocus *event)
-{
-	add_mac_root_menu (GEDIT_WINDOW (widget));
-
-	return GTK_WIDGET_CLASS (gedit_window_parent_class)->focus_in_event (widget, event);
-}
-
-static gboolean
-gedit_window_focus_out_event (GtkWidget     *widget,
-                              GdkEventFocus *event)
-{
-	remove_mac_root_menu (GEDIT_WINDOW (widget));
-
-	return GTK_WIDGET_CLASS (gedit_window_parent_class)->focus_out_event (widget, event);
-}
-#endif
 
 static void
 save_window_state (GtkWidget *widget)
@@ -322,10 +264,6 @@ gedit_window_dispose (GObject *object)
 	 */
 	peas_engine_garbage_collect (PEAS_ENGINE (gedit_plugins_engine_get_default ()));
 
-#ifdef OS_OSX
-	remove_mac_root_menu (window);
-#endif
-
 	G_OBJECT_CLASS (gedit_window_parent_class)->dispose (object);
 }
 
@@ -395,25 +333,41 @@ gedit_window_key_press_event (GtkWidget   *widget,
 			      GdkEventKey *event)
 {
 	static gpointer grand_parent_class = NULL;
+	
 	GtkWindow *window = GTK_WINDOW (widget);
 	gboolean handled = FALSE;
 
 	if (grand_parent_class == NULL)
+	{
 		grand_parent_class = g_type_class_peek_parent (gedit_window_parent_class);
+	}
 
 	/* handle focus widget key events */
 	if (!handled)
+	{
 		handled = gtk_window_propagate_key_event (window, event);
+	}
 
 	/* handle mnemonics and accelerators */
 	if (!handled)
+	{
 		handled = gtk_window_activate_key (window, event);
+	}
 
-	/* Chain up, invokes binding set */
+	/* Chain up, invokes binding set on window */
 	if (!handled)
+	{
 		handled = GTK_WIDGET_CLASS (grand_parent_class)->key_press_event (widget, event);
+	}
 
-	return handled;
+	if (!handled)
+	{
+		return gedit_app_process_window_event (gedit_app_get_default (),
+		                                       GEDIT_WINDOW (widget),
+		                                       (GdkEvent *)event);
+	}
+	
+	return TRUE;
 }
 
 static void
@@ -438,11 +392,6 @@ gedit_window_class_init (GeditWindowClass *klass)
 	widget_class->window_state_event = gedit_window_window_state_event;
 	widget_class->configure_event = gedit_window_configure_event;
 	widget_class->key_press_event = gedit_window_key_press_event;
-
-#ifdef OS_OSX
-	widget_class->focus_in_event = gedit_window_focus_in_event;
-	widget_class->focus_out_event = gedit_window_focus_out_event;
-#endif
 
 	signals[TAB_ADDED] =
 		g_signal_new ("tab-added",
@@ -1880,8 +1829,15 @@ update_documents_list_menu_idle (GeditWindow *window)
 			if (active_notebook)
 			{
 				gchar *accel;
+				gchar const *mod;
 
-				accel = (j < 10) ? g_strdup_printf ("<alt>%d", (j + 1) % 10) : NULL;
+#ifndef OS_OSX
+				mod = "alt";
+#else
+				mod = "meta";
+#endif
+
+				accel = (j < 10) ? g_strdup_printf ("<%s>%d", mod, (j + 1) % 10) : NULL;
 
 				gtk_action_group_add_action_with_accel (p->documents_list_action_group,
 									GTK_ACTION (action),
@@ -4101,27 +4057,6 @@ check_window_is_active (GeditWindow *window,
 	}
 }
 
-#ifdef OS_OSX
-static void
-setup_mac_menu (GeditWindow *window)
-{
-	GtkAction *action;
-
-	gtk_widget_hide (window->priv->menubar);
-	action = gtk_ui_manager_get_action (window->priv->manager, "/ui/MenuBar/HelpMenu/HelpAboutMenu");
-
-	gtk_action_set_label (action, _("About gedit"));
-
-	ige_mac_menu_set_menu_bar (GTK_MENU_SHELL (window->priv->menubar));
-	ige_mac_menu_set_quit_menu_item (ui_manager_menu_item (window->priv->manager, "/ui/MenuBar/FileMenu/FileQuitMenu"));
-
-	ige_mac_menu_set_preferences_menu_item (ui_manager_menu_item (window->priv->manager, "/ui/MenuBar/EditMenu/EditPreferencesMenu"));
-	
-	add_mac_root_menu (window);
-	ige_mac_menu_connect_window_key_handler (GTK_WINDOW (window));
-}
-#endif
-
 static void
 extension_added (PeasExtensionSet *extensions,
 		 PeasPluginInfo   *info,
@@ -4344,10 +4279,6 @@ gedit_window_init (GeditWindow *window)
 
 	/* When we initiate we have 1 notebook and 1 tab */
 	update_sensitivity_according_to_open_tabs (window, 1, 1);
-
-#ifdef OS_OSX
-	setup_mac_menu (window);
-#endif
 
 	gedit_debug_message (DEBUG_WINDOW, "END");
 }

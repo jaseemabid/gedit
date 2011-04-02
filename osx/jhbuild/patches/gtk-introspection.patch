@@ -1,0 +1,14 @@
+--- a/gtk/Makefile.am	2011-12-19 14:58:28.000000000 +0100
++++ b/gtk/Makefile.am	2012-01-12 13:10:42.000000000 +0100
+@@ -1028,6 +1028,11 @@
+     gtkplug.c
+ endif
+ 
++if USE_QUARTZ
++introspection_files += \
++    gtkdnd.c
++endif
++
+ Gtk-3.0.gir: $(INTROSPECTION_SCANNER) libgtk-3.la $(top_builddir)/gdk/Gdk-3.0.gir Makefile
+ Gtk_3_0_gir_SCANNERFLAGS = 			\
+ 	--add-include-path=$(top_builddir)/gdk	\

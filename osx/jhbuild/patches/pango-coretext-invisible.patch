@@ -1,0 +1,32 @@
+--- a/modules/basic/basic-coretext.c	2011-08-16 03:11:08.000000000 +0200
++++ b/modules/basic/basic-coretext.c	2012-01-09 14:13:32.000000000 +0100
+@@ -123,10 +123,25 @@
+   /* Since Pango divides things into runs already, we assume there is
+    * only a single run in this line.
+    */
+-  run = CFArrayGetValueAtIndex (runs, 0);
+-  run_status = CTRunGetStatus (run);
+-  glyph_count = CTRunGetGlyphCount (run);
+-  cgglyphs = CTRunGetGlyphsPtr (run);
++  if (CFArrayGetCount (runs) != 0)
++    {
++      run = CFArrayGetValueAtIndex (runs, 0);
++      run_status = CTRunGetStatus (run);
++      glyph_count = CTRunGetGlyphCount (run);
++      cgglyphs = CTRunGetGlyphsPtr (run);
++    }
++  else
++    {
++      run = NULL;
++      run_status = 0;
++      glyph_count = g_utf8_strlen (text, length);
++      cgglyphs = NULL;
++
++      if (glyph_count > 0 && g_utf8_get_char (text) == 8207)
++        {
++          run_status = kCTRunStatusRightToLeft;
++        }
++    }
+ 
+   p = text;
+   pango_glyph_string_set_size (glyphs, glyph_count);
