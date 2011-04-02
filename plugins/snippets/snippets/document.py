@@ -863,7 +863,7 @@ class Document:
 
         def apply_uri_snippet(self, snippet, mime, uri):
                 # Remove file scheme
-                gfile = Gio.File(uri)
+                gfile = Gio.file_new_for_uri(uri)
                 pathname = ''
                 dirname = ''
                 ruri = ''

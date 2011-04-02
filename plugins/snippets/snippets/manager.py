@@ -173,7 +173,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                 cell.set_property('markup', model.get_value(iter, self.NAME_COLUMN))
 
         def on_tree_view_drag_data_get(self, widget, context, selection_data, info, time):
-                gfile = Gio.File(self._temp_export)
+                gfile = Gio.file_new_for_path(self._temp_export)
                 selection_data.set_uris([gfile.get_uri()])
 
         def on_tree_view_drag_begin(self, widget, context):
@@ -199,7 +199,9 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
         def on_tree_view_drag_data_received(self, widget, context, x, y, selection, info, timestamp):
                 uris = selection.get_uris()
 
-                self.import_snippets(uris)
+                files = [Gio.file_new_for_uri(x) for x in uris]
+
+                self.import_snippets(files)
 
         def on_tree_view_drag_motion(self, widget, context, x, y, timestamp):
                 # Return False if we are dragging
@@ -738,12 +740,10 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
 
                 return fil
 
-        def import_snippets(self, filenames):
+        def import_snippets(self, files):
                 success = True
 
-                for filename in filenames:
-                        gfile = Gio.File(filename)
-
+                for gfile in files:
                         if not Gedit.utils_location_has_file_scheme(gfile):
                                 continue
 
@@ -769,7 +769,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                         dialog.destroy()
                         return
 
-                f = dialog.get_uris()
+                f = dialog.get_files()
                 dialog.destroy()
 
                 self.import_snippets(f)

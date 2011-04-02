@@ -42,12 +42,12 @@ class EvalUtilities:
                 return len(s.expandtabs(tablen))
 
         def _filename_to_uri(self, filename):
-                gfile = Gio.File(filename)
+                gfile = Gio.file_new_for_path(filename)
 
                 return gfile.get_uri()
 
         def util_readfile(self, filename):
-                stream = Gio.File(filename).read()
+                stream = Gio.file_new_for_path(filename).read()
 
                 if not stream:
                         return ''
@@ -58,7 +58,7 @@ class EvalUtilities:
                 return res
 
         def util_filesize(self, filename):
-                gfile = Gio.File(filename)
+                gfile = Gio.file_new_for_path(filename)
                 info = gfile.query_info(Gio.FILE_ATTRIBUTE_STANDARD_SIZE)
 
                 if not info:
