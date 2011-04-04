@@ -125,7 +125,7 @@ gedit_progress_info_bar_init (GeditProgressInfoBar *bar)
 
 	hbox = gtk_hbox_new (FALSE, 4);
 	gtk_widget_show (hbox);
-	gtk_box_pack_start (GTK_BOX (vbox), hbox, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (vbox), hbox, FALSE, TRUE, 0);
 
 	bar->priv->image = gtk_image_new_from_icon_name (GTK_STOCK_MISSING_IMAGE, 
 							 GTK_ICON_SIZE_SMALL_TOOLBAR);
@@ -135,15 +135,16 @@ gedit_progress_info_bar_init (GeditProgressInfoBar *bar)
 	
 	bar->priv->label = gtk_label_new ("");
 	gtk_widget_show (bar->priv->label);
-	gtk_box_pack_start (GTK_BOX (hbox), bar->priv->label, TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX (hbox), bar->priv->label, FALSE, TRUE, 0);
 	gtk_label_set_use_markup (GTK_LABEL (bar->priv->label), TRUE);
 	gtk_misc_set_alignment (GTK_MISC (bar->priv->label), 0, 0.5);
 	gtk_label_set_ellipsize (GTK_LABEL (bar->priv->label), 
 				 PANGO_ELLIPSIZE_END);
 
 	bar->priv->progress = gtk_progress_bar_new ();
+	gtk_widget_set_hexpand (bar->priv->progress, TRUE);
 	gtk_widget_show (bar->priv->progress);
-	gtk_box_pack_start (GTK_BOX (vbox), bar->priv->progress, TRUE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (vbox), bar->priv->progress, FALSE, TRUE, 0);
 	gtk_widget_set_size_request (bar->priv->progress, -1, 15);
 	
 	content = gtk_info_bar_get_content_area (GTK_INFO_BAR (bar));
