@@ -36,6 +36,10 @@
 #include <config.h>
 #endif
 
+#ifdef OS_OSX
+#include <ige-mac-bundle.h>
+#endif
+
 #include <string.h>
 
 #include <enchant.h>
@@ -50,12 +54,10 @@
 #define ISO_639_DOMAIN	"iso_639"
 #define ISO_3166_DOMAIN	"iso_3166"
 
-#define ISOCODESLOCALEDIR	ISO_CODES_PREFIX "/share/locale"
-
 struct _GeditSpellCheckerLanguage 
 {
 	gchar *abrev;
-	gchar *name;	
+	gchar *name;
 };
 
 static gboolean available_languages_initialized = FALSE;
@@ -64,6 +66,86 @@ static GSList *available_languages = NULL;
 static GHashTable *iso_639_table = NULL;
 static GHashTable *iso_3166_table = NULL;
 
+static gchar *
+get_iso_codes_locale_dir ()
+{
+	gchar *locale_dir = NULL;
+
+#ifdef G_OS_WIN32
+	gchar *win32_dir;
+
+	win32_dir = g_win32_get_package_installation_directory_of_module (NULL);
+
+	locale_dir = g_build_filename (win32_dir,
+				       "share",
+				       "locale",
+				       NULL);
+#else
+#if OS_OSX
+	IgeMacBundle *bundle = ige_mac_bundle_get_default ();
+
+	if (ige_mac_bundle_get_is_app_bundle (bundle))
+	{
+		locale_dir = g_strdup (ige_mac_bundle_get_localedir (bundle));
+	}
+#endif
+	if (locale_dir == NULL)
+	{
+		locale_dir = g_build_filename (ISO_CODES_PREFIX,
+		                               "share",
+		                               "locale",
+		                               NULL);
+	}
+#endif
+
+	return locale_dir;
+}
+
+static gchar *
+get_iso_codes_xml_name (gint iso)
+{
+	gchar *share_dir = NULL;
+	gchar *filename;
+	gchar *xml;
+
+#ifdef G_OS_WIN32
+	gchar *win32_dir;
+
+	win32_dir = g_win32_get_package_installation_directory_of_module (NULL);
+
+	share_dir = g_build_filename (win32_dir,
+				      "share",
+				      NULL);
+#else
+#if OS_OSX
+	IgeMacBundle *bundle = ige_mac_bundle_get_default ();
+
+	if (ige_mac_bundle_get_is_app_bundle (bundle))
+	{
+		share_dir = g_strdup (ige_mac_bundle_get_datadir (bundle));
+	}
+#endif
+	if (share_dir == NULL)
+	{
+		share_dir = g_build_filename (ISO_CODES_PREFIX,
+		                              "share",
+		                              NULL);
+	}
+#endif
+	xml = g_strdup_printf ("iso_%d.xml", iso);
+
+	filename = g_build_filename (share_dir,
+	                             "xml",
+	                             "iso-codes",
+	                             xml,
+	                             NULL);
+
+	g_free (xml);
+	g_free (share_dir);
+
+	return filename;
+}
+
 static void
 bind_iso_domains (void)
 {
@@ -71,11 +153,17 @@ bind_iso_domains (void)
 
 	if (bound == FALSE)
 	{
-	        bindtextdomain (ISO_639_DOMAIN, ISOCODESLOCALEDIR);
-	        bind_textdomain_codeset (ISO_639_DOMAIN, "UTF-8");
+		gchar *locale_dir;
 
-	        bindtextdomain(ISO_3166_DOMAIN, ISOCODESLOCALEDIR);
-	        bind_textdomain_codeset (ISO_3166_DOMAIN, "UTF-8");
+		locale_dir = get_iso_codes_locale_dir ();
+
+		bindtextdomain (ISO_639_DOMAIN, locale_dir);
+		bind_textdomain_codeset (ISO_639_DOMAIN, "UTF-8");
+
+		bindtextdomain(ISO_3166_DOMAIN, locale_dir);
+		bind_textdomain_codeset (ISO_3166_DOMAIN, "UTF-8");
+
+		g_free (locale_dir);
 
 		bound = TRUE;
 	}
@@ -156,7 +244,7 @@ load_iso_entries (int iso,
 
 	gedit_debug_message (DEBUG_PLUGINS, "Loading ISO-%d codes", iso);
 
-	filename = g_strdup_printf (ISO_CODES_PREFIX "/share/xml/iso-codes/iso_%d.xml", iso);
+	filename = get_iso_codes_xml_name (iso);
 	reader = xmlNewTextReaderFilename (filename);
 	if (reader == NULL) goto out;
 
