@@ -38,8 +38,8 @@ typedef struct _GeditFileBrowserViewClass   GeditFileBrowserViewClass;
 typedef struct _GeditFileBrowserViewPrivate GeditFileBrowserViewPrivate;
 
 typedef enum {
-	GEDIT_FILE_BROWSER_VIEW_CLICK_POLICY_DOUBLE,
-	GEDIT_FILE_BROWSER_VIEW_CLICK_POLICY_SINGLE
+	GEDIT_FILE_BROWSER_VIEW_CLICK_POLICY_SINGLE,
+	GEDIT_FILE_BROWSER_VIEW_CLICK_POLICY_DOUBLE
 } GeditFileBrowserViewClickPolicy;
 
 struct _GeditFileBrowserView

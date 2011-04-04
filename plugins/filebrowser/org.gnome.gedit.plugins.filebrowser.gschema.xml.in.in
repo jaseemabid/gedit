@@ -36,8 +36,14 @@
       <_description>The filter pattern to filter the file browser with. This filter works on top of the filter_mode.</_description>
     </key>
   </schema>
+
+  <enum id="org.gnome.gedit.plugins.filebrowser.nautilus.ClickPolicy">
+    <value value="0" nick="single"/>
+    <value value="1" nick="double"/>
+  </enum>
+
   <schema id="org.gnome.gedit.plugins.filebrowser.nautilus" path="/org/gnome/gedit/plugins/filebrowser/nautilus/">
-    <key name="click-policy" type="s">
+    <key name="click-policy" enum="org.gnome.gedit.plugins.filebrowser.nautilus.ClickPolicy">
       <default>'double'</default>
     </key>
     <key name="enable-delete" type="b">

@@ -340,28 +340,16 @@ restore_default_location (GeditFileBrowserPlugin *plugin)
 	g_free (virtual_root);
 }
 
-static GeditFileBrowserViewClickPolicy
-click_policy_from_string (gchar const *click_policy)
-{
-	if (click_policy && strcmp (click_policy, "single") == 0)
-		return GEDIT_FILE_BROWSER_VIEW_CLICK_POLICY_SINGLE;
-	else
-		return GEDIT_FILE_BROWSER_VIEW_CLICK_POLICY_DOUBLE;
-}
-
 static void
 on_click_policy_changed (GSettings              *settings,
 			 const gchar            *key,
 			 GeditFileBrowserPlugin *plugin)
 {
 	GeditFileBrowserPluginPrivate *priv = plugin->priv;
-	gchar *click_policy;
-	GeditFileBrowserViewClickPolicy policy = GEDIT_FILE_BROWSER_VIEW_CLICK_POLICY_DOUBLE;
+	GeditFileBrowserViewClickPolicy policy;
 	GeditFileBrowserView *view;
 
-	click_policy = g_settings_get_string (settings, key);
-	policy = click_policy_from_string (click_policy);
-	g_free (click_policy);
+	policy = g_settings_get_enum (settings, key);
 
 	view = gedit_file_browser_widget_get_browser_view (priv->tree_widget);
 	gedit_file_browser_view_set_click_policy (view, policy);
@@ -379,29 +367,22 @@ static void
 install_nautilus_prefs (GeditFileBrowserPlugin *plugin)
 {
 	GeditFileBrowserPluginPrivate *priv = plugin->priv;
-	gchar *pref;
 	gboolean prefb;
 	GeditFileBrowserViewClickPolicy policy;
 	GeditFileBrowserView *view;
 
 	/* Get click_policy */
-	pref = g_settings_get_string (priv->nautilus_settings,
+	policy = g_settings_get_enum (priv->nautilus_settings,
 				      NAUTILUS_CLICK_POLICY_KEY);
-
-	policy = click_policy_from_string (pref);
 
 	view = gedit_file_browser_widget_get_browser_view (priv->tree_widget);
 	gedit_file_browser_view_set_click_policy (view, policy);
 
-	if (pref)
-	{
-		priv->click_policy_handle =
-			g_signal_connect (priv->nautilus_settings,
-					  "changed::" NAUTILUS_CLICK_POLICY_KEY,
-					  G_CALLBACK (on_click_policy_changed),
-					  plugin);
-		g_free (pref);
-	}
+	priv->click_policy_handle =
+		g_signal_connect (priv->nautilus_settings,
+				  "changed::" NAUTILUS_CLICK_POLICY_KEY,
+				  G_CALLBACK (on_click_policy_changed),
+				  plugin);
 
 	/* Bind enable-delete */
 	g_settings_bind (priv->nautilus_settings,
