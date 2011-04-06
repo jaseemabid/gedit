@@ -2866,13 +2866,16 @@ on_treeview_key_press_event (GeditFileBrowserView   *treeview,
 			     GdkEventKey            *event,
 			     GeditFileBrowserWidget *obj)
 {
+	GtkTreeModel *model;
 	guint modifiers;
 
 	if (do_change_directory (obj, event))
+	{
 		return TRUE;
+	}
 
-	if (!GEDIT_IS_FILE_BROWSER_STORE
-	    (gtk_tree_view_get_model (GTK_TREE_VIEW (treeview))))
+	model = gtk_tree_view_get_model (GTK_TREE_VIEW (treeview));
+	if (!GEDIT_IS_FILE_BROWSER_STORE (model))
 	{
 		return FALSE;
 	}
