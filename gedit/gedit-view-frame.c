@@ -1272,8 +1272,6 @@ start_interactive_search_real (GeditViewFrame *frame)
 	GtkTextMark *mark;
 	GtkTextIter iter;
 
-	/* FIXME: it enters here twice, why? */
-
 	if (gtk_widget_get_visible (frame->priv->slider))
 	{
 		if (frame->priv->search_mode != frame->priv->request_search_mode)
@@ -1482,7 +1480,11 @@ gedit_view_frame_clear_search (GeditViewFrame *frame)
 	doc = gedit_view_frame_get_document (frame);
 
 	gedit_document_set_search_text (doc, "", GEDIT_SEARCH_DONT_SET_FLAGS);
+	g_signal_handler_block (frame->priv->search_entry,
+	                        frame->priv->search_entry_changed_id);
 	gtk_entry_set_text (GTK_ENTRY (frame->priv->search_entry), "");
+	g_signal_handler_unblock (frame->priv->search_entry,
+	                          frame->priv->search_entry_changed_id);
 
 	gtk_widget_grab_focus (frame->priv->view);
 }
