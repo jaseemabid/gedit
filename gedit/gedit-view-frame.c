@@ -1228,6 +1228,8 @@ init_search_entry (GeditViewFrame *frame)
 
 		gtk_entry_set_text (GTK_ENTRY (frame->priv->search_entry),
 		                    line_str);
+		gtk_editable_select_region (GTK_EDITABLE (frame->priv->search_entry),
+		                            0, -1);
 
 		g_free (line_str);
 
@@ -1246,24 +1248,6 @@ init_search_entry (GeditViewFrame *frame)
 
 		old_find_text = gedit_document_get_search_text (GEDIT_DOCUMENT (buffer),
 		                                                &old_find_flags);
-		if (old_find_text != NULL)
-		{
-			frame->priv->old_search_text = old_find_text;
-			add_search_completion_entry (old_find_text);
-			g_signal_handler_block (frame->priv->search_entry,
-			                        frame->priv->search_entry_changed_id);
-
-			gtk_entry_set_text (GTK_ENTRY (frame->priv->search_entry),
-			                    old_find_text);
-
-			g_signal_handler_unblock (frame->priv->search_entry,
-			                          frame->priv->search_entry_changed_id);
-		}
-		else
-		{
-			gtk_entry_set_text (GTK_ENTRY (frame->priv->search_entry),
-			                    "");
-		}
 
 		if (old_find_flags != 0)
 		{
@@ -1278,6 +1262,23 @@ init_search_entry (GeditViewFrame *frame)
 		{
 			gtk_entry_set_text (GTK_ENTRY (frame->priv->search_entry),
 			                    find_text);
+			gtk_editable_set_position (GTK_EDITABLE (frame->priv->search_entry),
+			                           -1);
+		}
+		else if (old_find_text != NULL)
+		{
+			frame->priv->old_search_text = old_find_text;
+			add_search_completion_entry (old_find_text);
+			g_signal_handler_block (frame->priv->search_entry,
+			                        frame->priv->search_entry_changed_id);
+
+			gtk_entry_set_text (GTK_ENTRY (frame->priv->search_entry),
+			                    old_find_text);
+			gtk_editable_select_region (GTK_EDITABLE (frame->priv->search_entry),
+			                            0, -1);
+
+			g_signal_handler_unblock (frame->priv->search_entry,
+			                          frame->priv->search_entry_changed_id);
 		}
 
 		g_free (find_text);
@@ -1342,6 +1343,20 @@ start_interactive_search_real (GeditViewFrame *frame)
 	              "animation-state", GEDIT_THEATRICS_ANIMATION_STATE_COMING,
 	              NULL);
 
+	/* NOTE: we must be very careful here to not have any text before
+	   focusing the entry because when the entry is focused the text is
+	   selected, and gtk+ doesn't allow us to have more than one selection
+	   active */
+	g_signal_handler_block (frame->priv->search_entry,
+	                        frame->priv->search_entry_changed_id);
+	gtk_entry_set_text (GTK_ENTRY (frame->priv->search_entry),
+	                    "");
+	g_signal_handler_unblock (frame->priv->search_entry,
+	                          frame->priv->search_entry_changed_id);
+
+	/* We need to grab the focus after the widget has been added */
+	gtk_widget_grab_focus (frame->priv->search_entry);
+
 	init_search_entry (frame);
 
 	/* Manage the scroll also for the view */
@@ -1354,9 +1369,6 @@ start_interactive_search_real (GeditViewFrame *frame)
 		g_timeout_add (GEDIT_VIEW_FRAME_SEARCH_DIALOG_TIMEOUT,
 		               (GSourceFunc) search_entry_flush_timeout,
 		               frame);
-
-	/* We need to grab the focus after the widget has been added */
-	gtk_widget_grab_focus (frame->priv->search_entry);
 }
 
 static void
