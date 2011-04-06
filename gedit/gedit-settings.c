@@ -235,8 +235,12 @@ on_scheme_changed (GSettings     *settings,
 
 	scheme = g_settings_get_string (settings, key);
 
-	if (gs->priv->old_scheme != NULL && (strcmp (scheme, gs->priv->old_scheme) == 0))
+	if (gs->priv->old_scheme != NULL &&
+	    (strcmp (scheme, gs->priv->old_scheme) == 0))
+	{
+		g_free (scheme);
 		return;
+	}
 
 	g_free (gs->priv->old_scheme);
 	gs->priv->old_scheme = scheme;
