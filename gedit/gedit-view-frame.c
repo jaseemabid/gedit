@@ -1288,8 +1288,8 @@ static void
 start_interactive_search_real (GeditViewFrame *frame)
 {
 	GtkTextBuffer *buffer;
-	GtkTextMark *mark;
 	GtkTextIter iter;
+	GtkTextMark *mark;
 
 	if (gtk_widget_get_visible (frame->priv->slider))
 	{
@@ -1309,14 +1309,31 @@ start_interactive_search_real (GeditViewFrame *frame)
 
 	if (frame->priv->search_mode == SEARCH)
 	{
-		mark = gtk_text_buffer_get_selection_bound (buffer);
+		GtkTextIter start, end;
+
+		if (gtk_text_buffer_get_selection_bounds (buffer, &start, &end))
+		{
+			if (gtk_text_iter_compare (&start, &end) == -1)
+			{
+				iter = start;
+			}
+			else
+			{
+				iter = end;
+			}
+		}
+		else
+		{
+			mark = gtk_text_buffer_get_selection_bound (buffer);
+			gtk_text_buffer_get_iter_at_mark (buffer, &iter, mark);
+		}
 	}
 	else
 	{
 		mark = gtk_text_buffer_get_insert (buffer);
+		gtk_text_buffer_get_iter_at_mark (buffer, &iter, mark);
 	}
 
-	gtk_text_buffer_get_iter_at_mark (buffer, &iter, mark);
 	frame->priv->start_mark = gtk_text_buffer_create_mark (buffer, NULL,
 	                                                       &iter, FALSE);
 
