@@ -570,9 +570,38 @@ search_widget_key_press_event (GtkWidget      *widget,
 }
 
 static void
+update_search (GeditViewFrame *frame)
+{
+	if (frame->priv->search_mode == SEARCH)
+	{
+		GeditDocument *doc;
+		const gchar *entry_text;
+		gchar *search_text;
+		guint  search_flags;
+
+		doc = gedit_view_frame_get_document (frame);
+
+		entry_text = gtk_entry_get_text (GTK_ENTRY (frame->priv->search_entry));
+
+		search_text = gedit_document_get_search_text (doc, &search_flags);
+
+		if ((search_text == NULL) ||
+		    (strcmp (search_text, entry_text) != 0) ||
+		     search_flags != frame->priv->search_flags)
+		{
+			gedit_document_set_search_text (doc,
+			                                entry_text,
+			                                frame->priv->search_flags);
+		}
+
+		g_free (search_text);
+	}
+}
+
+static void
 wrap_around_menu_item_toggled (GtkCheckMenuItem *checkmenuitem,
                                GeditViewFrame   *frame)
-{	
+{
 	frame->priv->wrap_around = gtk_check_menu_item_get_active (checkmenuitem);
 }
 
@@ -582,6 +611,7 @@ match_entire_word_menu_item_toggled (GtkCheckMenuItem *checkmenuitem,
 {
 	GEDIT_SEARCH_SET_ENTIRE_WORD (frame->priv->search_flags,
 	                              gtk_check_menu_item_get_active (checkmenuitem));
+	update_search (frame);
 }
 
 static void
@@ -590,6 +620,7 @@ match_case_menu_item_toggled (GtkCheckMenuItem *checkmenuitem,
 {
 	GEDIT_SEARCH_SET_CASE_SENSITIVE (frame->priv->search_flags,
 	                                 gtk_check_menu_item_get_active (checkmenuitem));
+	update_search (frame);
 }
 
 static void
@@ -895,7 +926,6 @@ static void
 search_init (GtkWidget      *entry,
              GeditViewFrame *frame)
 {
-	GeditDocument *doc;
 	const gchar *entry_text;
 
 	/* renew the flush timeout */
@@ -908,27 +938,11 @@ search_init (GtkWidget      *entry,
 			               frame);
 	}
 
-	doc = gedit_view_frame_get_document (frame);
-
 	entry_text = gtk_entry_get_text (GTK_ENTRY (entry));
 
 	if (frame->priv->search_mode == SEARCH)
 	{
-		gchar *search_text;
-		guint  search_flags;
-
-		search_text = gedit_document_get_search_text (doc, &search_flags);
-
-		if ((search_text == NULL) ||
-		    (strcmp (search_text, entry_text) != 0) ||
-		     search_flags != frame->priv->search_flags)
-		{
-			gedit_document_set_search_text (doc,
-			                                entry_text,
-			                                frame->priv->search_flags);
-		}
-
-		g_free (search_text);
+		update_search (frame);
 
 		run_search (frame,
 		            entry_text,
@@ -947,6 +961,9 @@ search_init (GtkWidget      *entry,
 			gchar **split_text = NULL;
 			const gchar *text;
 			GtkTextIter iter;
+			GeditDocument *doc;
+
+			doc = gedit_view_frame_get_document (frame);
 
 			gtk_text_buffer_get_iter_at_mark (GTK_TEXT_BUFFER (doc),
 			                                  &iter,
