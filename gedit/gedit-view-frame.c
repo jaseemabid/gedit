@@ -482,12 +482,14 @@ search_widget_scroll_event (GtkWidget      *widget,
 		return retval;
 
 	/* SEARCH mode */
-	if (event->direction == GDK_SCROLL_UP)
+	if ((event->state & GDK_CONTROL_MASK) &&
+	    event->direction == GDK_SCROLL_UP)
 	{
 		search_again (frame, TRUE);
 		retval = TRUE;
 	}
-	else if (event->direction == GDK_SCROLL_DOWN)
+	else if ((event->state & GDK_CONTROL_MASK) &&
+	         event->direction == GDK_SCROLL_DOWN)
 	{
 		search_again (frame, FALSE);
 		retval = TRUE;
