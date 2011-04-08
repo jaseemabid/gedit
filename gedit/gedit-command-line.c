@@ -62,7 +62,7 @@ struct _GeditCommandLinePrivate
 	const GeditEncoding *encoding;
 };
 
-G_DEFINE_TYPE (GeditCommandLine, gedit_command_line, G_TYPE_INITIALLY_UNOWNED)
+G_DEFINE_TYPE (GeditCommandLine, gedit_command_line, G_TYPE_OBJECT)
 
 static void
 gedit_command_line_finalize (GObject *object)
@@ -92,11 +92,11 @@ gedit_command_line_constructor (GType                  gtype,
 		                                                                              construct_params);
 
 		g_object_add_weak_pointer (command_line, (gpointer *) &command_line);
-		return command_line;
 	}
 
-	return g_object_ref (command_line);
+	return command_line;
 }
+
 static void
 gedit_command_line_class_init (GeditCommandLineClass *klass)
 {
@@ -117,20 +117,7 @@ gedit_command_line_init (GeditCommandLine *self)
 GeditCommandLine *
 gedit_command_line_get_default (void)
 {
-	GeditCommandLine *command_line;
-
-	command_line = g_object_new (GEDIT_TYPE_COMMAND_LINE, NULL);
-
-	if (g_object_is_floating (command_line))
-	{
-		g_object_ref_sink (command_line);
-	}
-	else
-	{
-		g_object_unref (command_line);
-	}
-
-	return command_line;
+	return g_object_new (GEDIT_TYPE_COMMAND_LINE, NULL);
 }
 
 static void

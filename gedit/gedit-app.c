@@ -87,7 +87,7 @@ struct _GeditAppPrivate
 	PeasExtensionSet  *extensions;
 };
 
-G_DEFINE_ABSTRACT_TYPE(GeditApp, gedit_app, G_TYPE_INITIALLY_UNOWNED)
+G_DEFINE_ABSTRACT_TYPE(GeditApp, gedit_app, G_TYPE_OBJECT)
 
 static void
 gedit_app_finalize (GObject *object)
@@ -165,11 +165,9 @@ gedit_app_constructor (GType                  gtype,
 		                                                            construct_params);
 
 		g_object_add_weak_pointer (app, (gpointer *) &app);
-
-		return app;
 	}
 
-	return g_object_ref (app);
+	return app;
 }
 
 static gboolean
@@ -560,18 +558,7 @@ gedit_app_get_default (void)
 #endif
 #endif
 
-	app = GEDIT_APP (g_object_new (type, NULL));
-
-	if (g_object_is_floating (app))
-	{
-		g_object_ref_sink (app);
-	}
-	else
-	{
-		g_object_unref (app);
-	}
-
-	return app;
+	return GEDIT_APP (g_object_new (type, NULL));
 }
 
 static void
