@@ -97,6 +97,7 @@ gedit_command_line_constructor (GType                  gtype,
 
 	return g_object_ref (command_line);
 }
+
 static void
 gedit_command_line_class_init (GeditCommandLineClass *klass)
 {
@@ -309,7 +310,7 @@ gedit_command_line_parse (GeditCommandLine   *command_line,
 			N_("Run gedit in the background"),
 			NULL
 		},
-		
+
 		/* Wait for closing documents */
 		{
 			"standalone", 's', 0, G_OPTION_ARG_NONE,
