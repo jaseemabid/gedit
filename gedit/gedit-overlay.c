@@ -26,6 +26,12 @@
 
 #define GEDIT_OVERLAY_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE((object), GEDIT_TYPE_OVERLAY, GeditOverlayPrivate))
 
+typedef struct
+{
+	GtkWidget *child;
+	GtkWidget *original;
+} ChildContainer;
+
 struct _GeditOverlayPrivate
 {
 	GtkWidget *main_widget;
@@ -44,6 +50,25 @@ enum
 };
 
 G_DEFINE_TYPE (GeditOverlay, gedit_overlay, GTK_TYPE_CONTAINER)
+
+static ChildContainer *
+child_container_new (GtkWidget *child,
+                     GtkWidget *original)
+{
+	ChildContainer *ret;
+
+	ret = g_slice_new (ChildContainer);
+	ret->child = child;
+	ret->original = original;
+
+	return ret;
+}
+
+static void
+child_container_free (ChildContainer *container)
+{
+	g_slice_free (ChildContainer, container);
+}
 
 static void
 enable_compositing (GeditOverlay *overlay,
@@ -71,12 +96,17 @@ on_child_realized (GtkWidget    *child,
 
 static void
 add_toplevel_widget (GeditOverlay *overlay,
-                     GtkWidget    *child)
+                     GtkWidget    *child,
+                     GtkWidget    *original)
 {
+	ChildContainer *container;
+
 	gtk_widget_set_parent (child, GTK_WIDGET (overlay));
 
+	container = child_container_new (child, original);
+
 	overlay->priv->children = g_slist_append (overlay->priv->children,
-	                                          child);
+	                                          container);
 
 	enable_compositing (overlay, child, overlay->priv->composited);
 
@@ -108,9 +138,9 @@ set_enable_compositing (GeditOverlay *overlay,
 	/* Enable/disable compositing on all the children */
 	for (item = overlay->priv->children; item; item = g_slist_next (item))
 	{
-		GtkWidget *child = item->data;
+		ChildContainer *container = item->data;
 
-		enable_compositing (overlay, child, enabled);
+		enable_compositing (overlay, container->child, enabled);
 	}
 
 	g_object_notify (G_OBJECT (overlay), "composited");
@@ -207,7 +237,8 @@ gedit_overlay_set_property (GObject      *object,
 			                                          FALSE);
 
 			add_toplevel_widget (overlay,
-			                     priv->main_widget);
+			                     priv->main_widget,
+			                     g_value_get_object (value));
 			break;
 		}
 		case PROP_RELATIVE_WIDGET:
@@ -319,7 +350,8 @@ gedit_overlay_size_allocate (GtkWidget     *widget,
 
 	for (l = priv->children; l != NULL; l = g_slist_next (l))
 	{
-		GtkWidget *child = GTK_WIDGET (l->data);
+		ChildContainer *container = l->data;
+		GtkWidget *child = container->child;
 		GtkRequisition req;
 		GtkAllocation alloc;
 		guint offset;
@@ -366,43 +398,20 @@ static GeditOverlayChild *
 get_overlay_child (GeditOverlay *overlay,
                    GtkWidget    *widget)
 {
-	GeditOverlayChild *overlay_child = NULL;
 	GSList *l;
 
 	for (l = overlay->priv->children; l != NULL; l = g_slist_next (l))
 	{
-		GtkWidget *child = GTK_WIDGET (l->data);
+		ChildContainer *container = l->data;
 
-		/* skip the main widget as it is not a OverlayChild */
-		if (child == overlay->priv->main_widget)
-			continue;
-
-		if (child == widget)
+		if (container->original == widget &&
+		    GEDIT_IS_OVERLAY_CHILD (container->child))
 		{
-			overlay_child = GEDIT_OVERLAY_CHILD (child);
-			break;
-		}
-		else
-		{
-			GtkWidget *in_widget;
-
-			/* let's try also with the internal widget */
-			g_object_get (child, "widget", &in_widget, NULL);
-			g_assert (in_widget != NULL);
-
-			if (in_widget == widget)
-			{
-				overlay_child = GEDIT_OVERLAY_CHILD (child);
-				g_object_unref (in_widget);
-
-				break;
-			}
-
-			g_object_unref (in_widget);
+			return GEDIT_OVERLAY_CHILD (container->child);
 		}
 	}
 
-	return overlay_child;
+	return NULL;
 }
 
 static void
@@ -417,7 +426,8 @@ overlay_add (GtkContainer *overlay,
 	if (child == NULL)
 	{
 		add_toplevel_widget (GEDIT_OVERLAY (overlay),
-		                     wrap_child_if_needed (widget, TRUE));
+		                     wrap_child_if_needed (widget, TRUE),
+		                     widget);
 	}
 }
 
@@ -430,19 +440,30 @@ gedit_overlay_remove (GtkContainer *overlay,
 
 	for (l = priv->children; l != NULL; l = g_slist_next (l))
 	{
-		GtkWidget *child = l->data;
+		ChildContainer *container = l->data;
+		GtkWidget *original = container->original;
 
-		if (child == widget)
+		if (original == widget)
 		{
-			g_signal_handlers_disconnect_by_func (child,
+			g_signal_handlers_disconnect_by_func (container->child,
 			                                      on_child_realized,
 			                                      overlay);
 
 			gtk_widget_unparent (widget);
-			priv->children = g_slist_remove_link (priv->children,
+
+			if (original != container->child)
+			{
+				g_signal_handlers_disconnect_by_func (original,
+				                                      gtk_widget_destroy,
+				                                      container->child);
+
+				gtk_widget_destroy (container->child);
+			}
+
+			child_container_free (container);
+			priv->children = g_slist_delete_link (priv->children,
 			                                      l);
 
-			g_slist_free (l);
 			break;
 		}
 	}
@@ -458,9 +479,11 @@ gedit_overlay_forall (GtkContainer *overlay,
 	GSList *children;
 
 	children = priv->children;
+
 	while (children)
 	{
-		GtkWidget *child = GTK_WIDGET (children->data);
+		ChildContainer *container = children->data;
+		GtkWidget *child = container->child;
 		children = children->next;
 
 		(* callback) (child, callback_data);
@@ -501,7 +524,8 @@ gedit_overlay_draw (GtkWidget *widget,
 
 	for (item = overlay->priv->children; item; item = g_slist_next (item))
 	{
-		GtkWidget *child = item->data;
+		ChildContainer *container = item->data;
+		GtkWidget *child = container->child;
 		GdkWindow *window;
 		GtkAllocation allocation;
 		GdkRectangle childrect;
