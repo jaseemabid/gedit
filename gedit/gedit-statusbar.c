@@ -66,13 +66,14 @@ G_DEFINE_TYPE(GeditStatusbar, gedit_statusbar, GTK_TYPE_STATUSBAR)
 static gchar *
 get_overwrite_mode_string (gboolean overwrite)
 {
-	return g_strconcat ("  ", overwrite ? _("OVR") :  _("INS"), NULL);
+	/* Use spaces to leave padding proportional to the font size */
+	return g_strdup_printf ("  %s  ", overwrite ? _("OVR") : _("INS"));
 }
 
 static gint
 get_overwrite_mode_length (void)
 {
-	return 2 + MAX (g_utf8_strlen (_("OVR"), -1), g_utf8_strlen (_("INS"), -1));
+	return 4 + MAX (g_utf8_strlen (_("OVR"), -1), g_utf8_strlen (_("INS"), -1));
 }
 
 static void
