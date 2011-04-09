@@ -70,7 +70,7 @@ typedef struct _GeditAppClass GeditAppClass;
 
 struct _GeditAppClass 
 {
-	GObjectClass parent_class;
+	GInitiallyUnownedClass parent_class;
 
 	gboolean (*last_window_destroyed)	(GeditApp    *app);
 
