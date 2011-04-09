@@ -87,7 +87,9 @@ struct _GeditAppPrivate
 	PeasExtensionSet  *extensions;
 };
 
-G_DEFINE_ABSTRACT_TYPE(GeditApp, gedit_app, G_TYPE_INITIALLY_UNOWNED)
+static GeditApp *app_instance = NULL;
+
+G_DEFINE_ABSTRACT_TYPE(GeditApp, gedit_app, G_TYPE_OBJECT)
 
 static void
 gedit_app_finalize (GObject *object)
@@ -156,20 +158,20 @@ gedit_app_constructor (GType                  gtype,
                        guint                  n_construct_params,
                        GObjectConstructParam *construct_params)
 {
-	static GObject *app = NULL;
-
-	if (!app)
+	if (!app_instance)
 	{
-		app = G_OBJECT_CLASS (gedit_app_parent_class)->constructor (gtype,
-		                                                            n_construct_params,
-		                                                            construct_params);
+		GObject *obj = G_OBJECT_CLASS (
+			gedit_app_parent_class)->constructor (gtype,
+			                                      n_construct_params,
+			                                      construct_params);
 
-		g_object_add_weak_pointer (app, (gpointer *) &app);
+		app_instance = GEDIT_APP (obj);
+		g_object_add_weak_pointer (obj, (gpointer *) &app_instance);
 
-		return app;
+		return obj;
 	}
 
-	return g_object_ref (app);
+	return g_object_ref (app_instance);
 }
 
 static gboolean
@@ -547,8 +549,12 @@ gedit_app_init (GeditApp *app)
 GeditApp *
 gedit_app_get_default (void)
 {
-	GeditApp *app;
 	GType type;
+
+	if (app_instance != NULL)
+	{
+		return app_instance;
+	}
 
 #ifdef OS_OSX
 	type = GEDIT_TYPE_APP_OSX;
@@ -560,18 +566,7 @@ gedit_app_get_default (void)
 #endif
 #endif
 
-	app = GEDIT_APP (g_object_new (type, NULL));
-
-	if (g_object_is_floating (app))
-	{
-		g_object_ref_sink (app);
-	}
-	else
-	{
-		g_object_unref (app);
-	}
-
-	return app;
+	return GEDIT_APP (g_object_new (type, NULL));
 }
 
 static void

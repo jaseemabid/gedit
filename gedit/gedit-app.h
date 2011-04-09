@@ -2,7 +2,7 @@
  * gedit-app.h
  * This file is part of gedit
  *
- * Copyright (C) 2005 - Paolo Maggi 
+ * Copyright (C) 2005 - Paolo Maggi
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,14 +16,14 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, 
+ * Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA 02111-1307, USA.
  */
- 
+
 /*
- * Modified by the gedit Team, 2005. See the AUTHORS file for a 
- * list of people on the gedit Team.  
- * See the ChangeLog files for a list of changes. 
+ * Modified by the gedit Team, 2005. See the AUTHORS file for a
+ * list of people on the gedit Team.
+ * See the ChangeLog files for a list of changes.
  *
  * $Id$
  */
@@ -55,9 +55,9 @@ typedef struct _GeditAppPrivate GeditAppPrivate;
  */
 typedef struct _GeditApp GeditApp;
 
-struct _GeditApp 
+struct _GeditApp
 {
-	GInitiallyUnowned parent;
+	GObject parent;
 
 	/*< private > */
 	GeditAppPrivate *priv;
@@ -68,9 +68,9 @@ struct _GeditApp
  */
 typedef struct _GeditAppClass GeditAppClass;
 
-struct _GeditAppClass 
+struct _GeditAppClass
 {
-	GInitiallyUnownedClass parent_class;
+	GObjectClass parent_class;
 
 	gboolean (*last_window_destroyed)	(GeditApp    *app);
 
