@@ -545,6 +545,7 @@ gedit_app_init (GeditApp *app)
 GeditApp *
 gedit_app_get_default (void)
 {
+	GeditApp *app;
 	GType type;
 
 #ifdef OS_OSX
