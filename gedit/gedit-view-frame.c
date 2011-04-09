@@ -1090,6 +1090,7 @@ create_search_widget (GeditViewFrame *frame)
 
 	hbox = gtk_hbox_new (FALSE, 3);
 	gtk_widget_show (hbox);
+
 	gtk_container_add (GTK_CONTAINER (search_widget), hbox);
 	gtk_container_set_border_width (GTK_CONTAINER (hbox), 3);
 
@@ -1417,6 +1418,8 @@ gedit_view_frame_init (GeditViewFrame *frame)
 	GeditDocument *doc;
 	GtkWidget *sw;
 	GeditOverlayChildPosition position;
+	GtkStyleContext *context;
+	GdkRGBA bg_color;
 
 	frame->priv = GEDIT_VIEW_FRAME_GET_PRIVATE (frame);
 
@@ -1448,6 +1451,8 @@ gedit_view_frame_init (GeditViewFrame *frame)
 	gtk_widget_show (sw);
 
 	frame->priv->overlay = gedit_animated_overlay_new (sw, frame->priv->view);
+
+	gedit_overlay_set_composited (GEDIT_OVERLAY (frame->priv->overlay), TRUE);
 	gtk_widget_show (frame->priv->overlay);
 
 	gtk_box_pack_start (GTK_BOX (frame), frame->priv->overlay, TRUE, TRUE, 0);
@@ -1471,6 +1476,18 @@ gedit_view_frame_init (GeditViewFrame *frame)
 	              "blocking", GEDIT_THEATRICS_CHOREOGRAPHER_BLOCKING_DOWNSTAGE,
 	              "orientation", GTK_ORIENTATION_VERTICAL,
 	              NULL);
+
+	/* Force search widget slider to be transparent */
+	context = gtk_widget_get_style_context (frame->priv->slider);
+	gtk_style_context_get_background_color (context,
+	                                        GTK_STATE_NORMAL,
+	                                        &bg_color);
+
+	bg_color.alpha = 0;
+
+	gtk_widget_override_background_color (frame->priv->slider,
+	                                      GTK_STATE_NORMAL,
+	                                      &bg_color);
 
 	gedit_animated_overlay_add (GEDIT_ANIMATED_OVERLAY (frame->priv->overlay),
 	                            GEDIT_ANIMATABLE (frame->priv->slider));

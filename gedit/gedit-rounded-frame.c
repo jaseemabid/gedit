@@ -242,7 +242,7 @@ gedit_rounded_frame_init (GeditRoundedFrame *frame)
 	frame->priv->frame_width = 3; /* Make it a prop */
 
 	gtk_widget_set_has_window (GTK_WIDGET (frame), FALSE);
-	gtk_widget_set_app_paintable (GTK_WIDGET (frame), FALSE);
+	gtk_widget_set_app_paintable (GTK_WIDGET (frame), TRUE);
 }
 
 GtkWidget *
