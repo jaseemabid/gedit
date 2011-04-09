@@ -233,4 +233,3 @@ sm_client_osx_end_session (EggSMClient         *client,
 
   return err == noErr;
 }
-/* ex:set ts=8 noet: */
