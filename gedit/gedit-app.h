@@ -57,7 +57,7 @@ typedef struct _GeditApp GeditApp;
 
 struct _GeditApp 
 {
-	GObject parent;
+	GInitiallyUnowned parent;
 
 	/*< private > */
 	GeditAppPrivate *priv;

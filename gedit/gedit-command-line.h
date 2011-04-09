@@ -44,14 +44,14 @@ typedef struct _GeditCommandLineGeometry GeditCommandLineGeometry;
 
 struct _GeditCommandLine
 {
-	GObject parent;
+	GInitiallyUnowned parent;
 
 	GeditCommandLinePrivate *priv;
 };
 
 struct _GeditCommandLineClass
 {
-	GObjectClass parent_class;
+	GInitiallyUnownedClass parent_class;
 };
 
 GType			 gedit_command_line_get_type		(void) G_GNUC_CONST;
