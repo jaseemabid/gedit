@@ -31,10 +31,7 @@
 
 struct _GeditRoundedFramePrivate
 {
-	GtkWidget *child;
-
 	GtkAllocation child_allocation;
-	guint frame_width;
 };
 
 G_DEFINE_TYPE (GeditRoundedFrame, gedit_rounded_frame, GTK_TYPE_BIN)
@@ -46,33 +43,75 @@ gedit_rounded_frame_finalize (GObject *object)
 }
 
 static void
+gedit_rounded_frame_get_preferred_size (GtkWidget      *widget,
+                                        GtkOrientation  orientation,
+                                        gint           *minimum_size,
+                                        gint           *natural_size)
+{
+	GtkStyleContext *context;
+	GtkStateFlags state;
+	GtkBorder padding;
+	GtkWidget *child;
+	gint child_min, child_nat;
+	gint minimum, natural;
+	guint border_width;
+
+	context = gtk_widget_get_style_context (widget);
+	state = gtk_widget_get_state_flags (widget);
+
+	gtk_style_context_save (context);
+	gtk_style_context_add_class (context, GTK_STYLE_CLASS_FRAME);
+	gtk_style_context_get_padding (context, state, &padding);
+
+	minimum = 0;
+	natural = 0;
+
+	child = gtk_bin_get_child (GTK_BIN (widget));
+	if (child && gtk_widget_get_visible (child))
+	{
+		if (orientation == GTK_ORIENTATION_HORIZONTAL)
+		{
+			gtk_widget_get_preferred_width (child,
+			                                &child_min, &child_nat);
+		}
+		else
+		{
+			gtk_widget_get_preferred_height (child,
+			                                 &child_min, &child_nat);
+		}
+
+		minimum += child_min;
+		natural += child_nat;
+	}
+
+	border_width = gtk_container_get_border_width (GTK_CONTAINER (widget));
+
+	if (orientation == GTK_ORIENTATION_HORIZONTAL)
+	{
+		minimum += (border_width * 2) + padding.left + padding.right;
+		natural += (border_width * 2) + padding.left + padding.right;
+	}
+	else
+	{
+		minimum += (border_width * 2) + padding.top + padding.bottom;
+		natural += (border_width * 2) + padding.top + padding.bottom;
+	}
+
+	if (minimum_size)
+		*minimum_size = minimum;
+
+	if (natural_size)
+		*natural_size = natural;
+
+	gtk_style_context_restore (context);
+}
+
+static void
 gedit_rounded_frame_get_preferred_width (GtkWidget *widget,
                                          gint      *minimum,
                                          gint      *natural)
 {
-	GeditRoundedFrame *frame = GEDIT_ROUNDED_FRAME (widget);
-	gint border_width;
-
-	if (frame->priv->child != NULL &&
-	    gtk_widget_get_visible (frame->priv->child))
-	{
-		gint child_min, child_nat;
-
-		gtk_widget_get_preferred_width (frame->priv->child, &child_min,
-		                                &child_nat);
-
-		*minimum = MAX (0, child_min);
-		*natural = MAX (0, child_nat);
-	}
-	else
-	{
-		*minimum = *natural = 0;
-	}
-
-	/* Add the border */
-	border_width = gtk_container_get_border_width (GTK_CONTAINER (widget));
-	*minimum += (border_width + frame->priv->frame_width) * 2;
-	*natural += (border_width + frame->priv->frame_width) * 2;
+	gedit_rounded_frame_get_preferred_size (widget, GTK_ORIENTATION_HORIZONTAL, minimum, natural);
 }
 
 static void
@@ -80,67 +119,76 @@ gedit_rounded_frame_get_preferred_height (GtkWidget *widget,
                                           gint      *minimum,
                                           gint      *natural)
 {
-	GeditRoundedFrame *frame = GEDIT_ROUNDED_FRAME (widget);
-	gint border_width;
-
-	if (frame->priv->child != NULL &&
-	    gtk_widget_get_visible (frame->priv->child))
-	{
-		gint child_min, child_nat;
-
-		gtk_widget_get_preferred_height (frame->priv->child, &child_min,
-		                                 &child_nat);
-
-		*minimum = MAX (0, child_min);
-		*natural = MAX (0, child_nat);
-	}
-	else
-	{
-		*minimum = *natural = 0;
-	}
-
-	/* Add the border */
-	border_width = gtk_container_get_border_width (GTK_CONTAINER (widget));
-	*minimum += (border_width + frame->priv->frame_width) * 2;
-	*natural += (border_width + frame->priv->frame_width) * 2;
+	gedit_rounded_frame_get_preferred_size (widget, GTK_ORIENTATION_VERTICAL, minimum, natural);
 }
 
 static void
 gedit_rounded_frame_size_allocate (GtkWidget     *widget,
                                    GtkAllocation *allocation)
 {
-	GeditRoundedFrame *frame = GEDIT_ROUNDED_FRAME (widget);
-	GtkAllocation *child_allocation;
-	int border;
-
-	child_allocation = &frame->priv->child_allocation;
+	GeditRoundedFramePrivate *priv = GEDIT_ROUNDED_FRAME (widget)->priv;
+	GtkAllocation child_allocation;
+	GtkStyleContext *context;
+	GtkStateFlags state;
+	GtkBorder padding;
+	gint border_width;
+	GtkWidget *child;
 
 	GTK_WIDGET_CLASS (gedit_rounded_frame_parent_class)->size_allocate (widget, allocation);
 
-	if (frame->priv->child == NULL ||
-	    !gtk_widget_get_visible (frame->priv->child))
+	/* If the child allocation changed, that means that the frame is drawn
+	 * in a new place, so we must redraw the entire widget.
+	 */
+	if (gtk_widget_get_mapped (widget))
 	{
-		return;
+		gdk_window_invalidate_rect (gtk_widget_get_window (widget),
+		                            allocation, FALSE);
 	}
 
-	border = gtk_container_get_border_width (GTK_CONTAINER (widget)) + 
-	         frame->priv->frame_width;
-	child_allocation->x = allocation->x + border;
-	child_allocation->y = allocation->y + border;
-	child_allocation->width = MAX (1, allocation->width - border * 2);
-	child_allocation->height = MAX (1, allocation->height - border * 2);
+	context = gtk_widget_get_style_context (widget);
+	state = gtk_widget_get_state_flags (widget);
 
-	gtk_widget_size_allocate (frame->priv->child, child_allocation);
+	gtk_style_context_save (context);
+	gtk_style_context_add_class (context, GTK_STYLE_CLASS_FRAME);
+
+	gtk_style_context_get_padding (context, state, &padding);
+
+	border_width = gtk_container_get_border_width (GTK_CONTAINER (widget));
+
+	child_allocation.x = border_width + padding.left;
+	child_allocation.y = border_width + padding.top;
+	child_allocation.width = MAX (1, allocation->width - (border_width * 2) -
+	                              padding.left - padding.right);
+	child_allocation.height = MAX (1, (allocation->height - child_allocation.y -
+	                                   border_width - padding.bottom));
+
+	child_allocation.x += allocation->x;
+	child_allocation.y += allocation->y;
+
+	gtk_style_context_restore (context);
+
+	child = gtk_bin_get_child (GTK_BIN (widget));
+
+	if (child && gtk_widget_get_visible (child))
+	{
+		gtk_widget_size_allocate (child, &child_allocation);
+	}
+
+	priv->child_allocation = child_allocation;
 }
 
 static void
-draw_frame (GeditRoundedFrame *frame,
-            cairo_t           *cr,
-            GdkRectangle      *area)
+draw_frame (GtkWidget    *frame,
+            cairo_t      *cr,
+            GdkRectangle *area)
 {
 	GtkStyleContext *context;
 	GdkRGBA bg_color;
 	GdkRGBA border_color;
+
+	context = gtk_widget_get_style_context (frame);
+	gtk_style_context_save (context);
+	gtk_style_context_add_class (context, GTK_STYLE_CLASS_FRAME);
 
 	gedit_theatrics_utils_draw_round_rectangle (cr,
 	                                            FALSE,
@@ -153,7 +201,6 @@ draw_frame (GeditRoundedFrame *frame,
 	                                            area->width,
 	                                            area->height);
 
-	context = gtk_widget_get_style_context (GTK_WIDGET (frame));
 	gtk_style_context_get_background_color (context, GTK_STATE_FLAG_NORMAL,
 	                                        &bg_color);
 	gtk_style_context_get_border_color (context, GTK_STATE_FLAG_ACTIVE,
@@ -163,55 +210,48 @@ draw_frame (GeditRoundedFrame *frame,
 	cairo_fill_preserve (cr);
 
 	gdk_cairo_set_source_rgba (cr, &border_color);
-	cairo_set_line_width (cr, frame->priv->frame_width / 2);
+	/* TODO: get the size from the theme? */
+	cairo_set_line_width (cr, 1.5);
 	cairo_stroke (cr);
+
+	gtk_style_context_restore (context);
 }
 
 static gboolean
 gedit_rounded_frame_draw (GtkWidget      *widget,
                           cairo_t        *cr)
 {
-	GeditRoundedFrame *frame = GEDIT_ROUNDED_FRAME (widget);
+	GeditRoundedFramePrivate *priv = GEDIT_ROUNDED_FRAME (widget)->priv;
 	GdkRectangle area;
+	GtkAllocation allocation;
+	GtkStyleContext *context;
+	GtkStateFlags state;
+	GtkBorder padding;
 
 	if (!gtk_widget_is_drawable (widget))
 	{
 		return FALSE;
 	}
 
-	area.x = frame->priv->child_allocation.x - frame->priv->frame_width;
-	area.y = frame->priv->child_allocation.y - 2 * frame->priv->frame_width - 1;
-	area.width = frame->priv->child_allocation.width + 2 * frame->priv->frame_width;
-	area.height = frame->priv->child_allocation.height + 3 * frame->priv->frame_width;
+	context = gtk_widget_get_style_context (widget);
+	state = gtk_widget_get_state_flags (widget);
+	gtk_widget_get_allocation (widget, &allocation);
 
-	draw_frame (frame, cr, &area);
+	gtk_style_context_save (context);
+	gtk_style_context_add_class (context, GTK_STYLE_CLASS_FRAME);
+
+	gtk_style_context_get_padding (context, state, &padding);
+
+	area.x = priv->child_allocation.x - allocation.x - padding.left;
+	area.y = priv->child_allocation.y - allocation.y - padding.top;
+	area.width = priv->child_allocation.width + padding.left + padding.right;
+	area.height =  priv->child_allocation.height + padding.top + padding.bottom;
+
+	draw_frame (widget, cr, &area);
+
+	gtk_style_context_restore (context);
 
 	return GTK_WIDGET_CLASS (gedit_rounded_frame_parent_class)->draw (widget, cr);
-}
-
-static void
-gedit_rounded_frame_add (GtkContainer *container,
-                         GtkWidget    *widget)
-{
-	GeditRoundedFrame *frame = GEDIT_ROUNDED_FRAME (container);
-
-	frame->priv->child = widget;
-
-	GTK_CONTAINER_CLASS (gedit_rounded_frame_parent_class)->add (container, widget);
-}
-
-static void
-gedit_rounded_frame_remove (GtkContainer *container,
-                            GtkWidget    *widget)
-{
-	GeditRoundedFrame *frame = GEDIT_ROUNDED_FRAME (container);
-
-	if (frame->priv->child == widget)
-	{
-		frame->priv->child = NULL;
-	}
-
-	GTK_CONTAINER_CLASS (gedit_rounded_frame_parent_class)->remove (container, widget);
 }
 
 static void
@@ -219,7 +259,6 @@ gedit_rounded_frame_class_init (GeditRoundedFrameClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
 	GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
-	GtkContainerClass *container_class = GTK_CONTAINER_CLASS (klass);
 
 	object_class->finalize = gedit_rounded_frame_finalize;
 
@@ -228,9 +267,6 @@ gedit_rounded_frame_class_init (GeditRoundedFrameClass *klass)
 	widget_class->size_allocate = gedit_rounded_frame_size_allocate;
 	widget_class->draw = gedit_rounded_frame_draw;
 
-	container_class->add = gedit_rounded_frame_add;
-	container_class->remove = gedit_rounded_frame_remove;
-
 	g_type_class_add_private (object_class, sizeof (GeditRoundedFramePrivate));
 }
 
@@ -238,8 +274,6 @@ static void
 gedit_rounded_frame_init (GeditRoundedFrame *frame)
 {
 	frame->priv = GEDIT_ROUNDED_FRAME_GET_PRIVATE (frame);
-
-	frame->priv->frame_width = 3; /* Make it a prop */
 
 	gtk_widget_set_has_window (GTK_WIDGET (frame), FALSE);
 	gtk_widget_set_app_paintable (GTK_WIDGET (frame), TRUE);
