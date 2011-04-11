@@ -533,7 +533,8 @@ gedit_overlay_draw (GtkWidget *widget,
 
 		window = gtk_widget_get_window (child);
 
-		if (window == NULL || window == mywindow)
+		if (window == NULL || window == mywindow ||
+		    !gdk_window_is_visible (window))
 		{
 			continue;
 		}
