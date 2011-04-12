@@ -1301,6 +1301,8 @@ start_interactive_search_real (GeditViewFrame *frame)
 		}
 		else
 		{
+			gtk_editable_select_region (GTK_EDITABLE (frame->priv->search_entry),
+			                            0, -1);
 			return;
 		}
 	}
