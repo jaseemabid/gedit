@@ -1448,8 +1448,6 @@ gedit_view_frame_init (GeditViewFrame *frame)
 					GTK_POLICY_AUTOMATIC,
 					GTK_POLICY_AUTOMATIC);
 
-	gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (sw),
-					     GTK_SHADOW_IN);
 	gtk_widget_show (sw);
 
 	frame->priv->overlay = gedit_animated_overlay_new (sw, frame->priv->view);
