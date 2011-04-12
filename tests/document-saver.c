@@ -705,6 +705,7 @@ int main (int   argc,
 
 	g_type_init ();
 	g_test_init (&argc, &argv, NULL);
+	gtk_init (&argc, &argv);
 
 	g_printf ("\n***\n");
 	have_unowned = check_unowned_directory ();
