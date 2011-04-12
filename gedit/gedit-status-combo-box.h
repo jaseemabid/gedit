@@ -50,8 +50,6 @@ struct _GeditStatusComboBox
 struct _GeditStatusComboBoxClass
 {
 	GtkEventBoxClass parent_class;
-
-	GeditStatusComboBoxClassPrivate *priv;
 	
 	void (*changed) (GeditStatusComboBox *combo,
 			 GtkMenuItem         *item);

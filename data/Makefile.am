@@ -29,13 +29,17 @@ gsettings_SCHEMAS = org.gnome.gedit.gschema.xml
 convertdir = $(datadir)/GConf/gsettings
 convert_DATA = gedit.convert
 
+cssdir = $(datadir)/gedit/css
+css_DATA = gedit.css
+
 EXTRA_DIST = 					\
 	$(desktop_in_files)			\
 	$(service_in_files)			\
 	$(man_MANS)				\
 	gedit.pc.in				\
 	org.gnome.gedit.gschema.xml.in.in	\
-	gedit.convert
+	gedit.convert				\
+	gedit.css
 
 CLEANFILES =	 			\
 	$(desktop_DATA)			\

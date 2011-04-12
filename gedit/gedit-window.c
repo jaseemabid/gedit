@@ -382,8 +382,18 @@ gedit_window_window_state_event (GtkWidget           *widget,
 		show = !(event->new_window_state &
 			(GDK_WINDOW_STATE_MAXIMIZED | GDK_WINDOW_STATE_FULLSCREEN));
 
-		gedit_multi_notebook_collapse_notebook_border (window->priv->multi_notebook,
-							       !show);
+		if (show)
+		{
+			gtk_style_context_remove_class (gtk_widget_get_style_context (widget),
+			                                "fullscreen");
+		}
+		else
+		{
+			gtk_style_context_add_class (gtk_widget_get_style_context (widget),
+			                             "fullscreen");
+		}
+
+		gtk_widget_reset_style (widget);
 	}
 
 	if (GTK_WIDGET_CLASS (gedit_window_parent_class)->window_state_event)

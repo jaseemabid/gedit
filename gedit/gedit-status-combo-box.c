@@ -43,11 +43,6 @@ struct _GeditStatusComboBoxPrivate
 	GtkWidget *current_item;
 };
 
-struct _GeditStatusComboBoxClassPrivate
-{
-	GtkCssProvider *css;
-};
-
 /* Signals */
 enum
 {
@@ -65,8 +60,7 @@ enum
 
 static guint signals[NUM_SIGNALS] = { 0 };
 
-G_DEFINE_TYPE_WITH_CODE (GeditStatusComboBox, gedit_status_combo_box, GTK_TYPE_EVENT_BOX,
-                         g_type_add_class_private (g_define_type_id, sizeof (GeditStatusComboBoxClassPrivate)))
+G_DEFINE_TYPE (GeditStatusComboBox, gedit_status_combo_box, GTK_TYPE_EVENT_BOX)
 
 static void
 gedit_status_combo_box_finalize (GObject *object)
@@ -148,15 +142,6 @@ gedit_status_combo_box_class_init (GeditStatusComboBoxClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
 	GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
-	static const gchar style[] =
-		"* {\n"
-		  "-GtkButton-default-border : 0;\n"
-		  "-GtkButton-default-outside-border : 0;\n"
-		  "-GtkButton-inner-border: 0;\n"
-		  "-GtkWidget-focus-line-width : 0;\n"
-		  "-GtkWidget-focus-padding : 0;\n"
-		  "padding: 0;\n"
-		"}";
 
 	object_class->finalize = gedit_status_combo_box_finalize;
 	object_class->get_property = gedit_status_combo_box_get_property;
@@ -182,11 +167,6 @@ gedit_status_combo_box_class_init (GeditStatusComboBoxClass *klass)
 					 		      G_PARAM_READWRITE));
 
 	g_type_class_add_private (object_class, sizeof (GeditStatusComboBoxPrivate));
-
-	klass->priv = G_TYPE_CLASS_GET_PRIVATE (klass, GEDIT_TYPE_STATUS_COMBO_BOX, GeditStatusComboBoxClassPrivate);
-
-	klass->priv->css = gtk_css_provider_new ();
-	gtk_css_provider_load_from_data (klass->priv->css, style, -1, NULL);
 }
 
 static void
@@ -325,8 +305,6 @@ set_shadow_type (GeditStatusComboBox *combo)
 static void
 gedit_status_combo_box_init (GeditStatusComboBox *self)
 {
-	GtkStyleContext *context;
-
 	self->priv = GEDIT_STATUS_COMBO_BOX_GET_PRIVATE (self);
 
 	gtk_event_box_set_visible_window (GTK_EVENT_BOX (self), TRUE);
@@ -386,16 +364,6 @@ gedit_status_combo_box_init (GeditStatusComboBox *self)
 			  "deactivate",
 			  G_CALLBACK (menu_deactivate),
 			  self);
-
-	/* make it as small as possible */
-	context = gtk_widget_get_style_context (GTK_WIDGET (self->priv->button));
-	gtk_style_context_add_provider (context,
-	                                GTK_STYLE_PROVIDER (GEDIT_STATUS_COMBO_BOX_GET_CLASS (self)->priv->css),
-	                                GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
-	context = gtk_widget_get_style_context (GTK_WIDGET (self->priv->frame));
-	gtk_style_context_add_provider (context,
-	                                GTK_STYLE_PROVIDER (GEDIT_STATUS_COMBO_BOX_GET_CLASS (self)->priv->css),
-	                                GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 }
 
 /* public functions */

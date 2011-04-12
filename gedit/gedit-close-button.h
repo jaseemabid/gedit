@@ -36,7 +36,6 @@ G_BEGIN_DECLS
 
 typedef struct _GeditCloseButton		GeditCloseButton;
 typedef struct _GeditCloseButtonClass		GeditCloseButtonClass;
-typedef struct _GeditCloseButtonClassPrivate	GeditCloseButtonClassPrivate;
 
 struct _GeditCloseButton
 {
@@ -46,8 +45,6 @@ struct _GeditCloseButton
 struct _GeditCloseButtonClass
 {
 	GtkButtonClass parent_class;
-
-	GeditCloseButtonClassPrivate *priv;
 };
 
 GType		  gedit_close_button_get_type (void) G_GNUC_CONST;

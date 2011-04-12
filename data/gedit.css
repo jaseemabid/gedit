@@ -1,0 +1,19 @@
+/* Make buttons as small as possible */
+GeditStatusComboBox GtkButton, GeditCloseButton {
+	-GtkButton-default-border : 0;
+	-GtkButton-default-outside-border : 0;
+	-GtkButton-inner-border: 0;
+	-GtkWidget-focus-line-width : 0;
+	-GtkWidget-focus-padding : 0;
+	padding: 0;
+}
+
+/* Apply style to the last notebook when the main window is in fullscreen mode
+   (is set both when in maximized and in fullscreen mode), to remove the
+   right padding from the notebook */
+GeditWindow.fullscreen GeditMultiNotebook GeditNotebook.last {
+	/* Note that top/bottom/left padding is hard coded for now to 2px
+	   because we can't set only the right padding. See:
+	   https://bugzilla.gnome.org/show_bug.cgi?id=647605 */
+	padding: 2px 0 2px 2px;
+}
