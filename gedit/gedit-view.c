@@ -73,6 +73,8 @@ struct _GeditViewPrivate
 	GSettings *editor_settings;
 	GtkTextBuffer *current_buffer;
 	PeasExtensionSet *extensions;
+
+	guint view_realized : 1;
 };
 
 G_DEFINE_TYPE(GeditView, gedit_view, GTK_SOURCE_TYPE_VIEW)
@@ -640,10 +642,14 @@ gedit_view_realize (GtkWidget *widget)
 {
 	GeditView *view = GEDIT_VIEW (widget);
 
-	/* We only activate the extensions when the view is realized,
-	 * because most plugins will expect this behaviour, and we won't
-	 * change the buffer later anyway. */
-	peas_extension_set_call (view->priv->extensions, "activate");
+	if (!view->priv->view_realized)
+	{
+		/* We only activate the extensions when the view is realized,
+		 * because most plugins will expect this behaviour, and we won't
+		 * change the buffer later anyway. */
+		peas_extension_set_call (view->priv->extensions, "activate");
+		view->priv->view_realized = TRUE;
+	}
 
 	GTK_WIDGET_CLASS (gedit_view_parent_class)->realize (widget);
 }
