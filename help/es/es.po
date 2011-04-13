@@ -3,15 +3,15 @@
 #
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
 # María Majadas <maria.majadas@hispalinux.es>, 2005.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
 # Jorge González <jorgegonz@svn.gnome.org>, 2006, 2007, 2009, 2010, 2011.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-04-02 11:55+0000\n"
-"PO-Revision-Date: 2011-04-02 21:06+0200\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"POT-Creation-Date: 2011-04-12 16:58+0000\n"
+"PO-Revision-Date: 2011-04-13 11:37+0200\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1251,8 +1251,8 @@ msgid ""
 msgstr ""
 "El panel lateral muestra inicialmente una lista de documentos abiertos, por "
 "lo que para ver y usar la <app>Lista de etiquetas</app>, deberá pulsar en la "
-"pestaña que muestra el icono «más» en la parte inferior del panel lateral. "
-"El icono se parece a esto:"
+"pestaña que muestra el icono «más» en la parte inferior del panel lateral. El "
+"icono se parece a esto:"
 
 #: C/gedit-plugins-tag-list.page:37(title)
 msgid "Inserting Tags and Special Characters"
@@ -1385,8 +1385,8 @@ msgid ""
 "The Sort dialog will open, allowing you to choose between several sorting "
 "options:"
 msgstr ""
-"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones "
-"de ordenación:"
+"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones de "
+"ordenación:"
 
 #: C/gedit-plugins-sort.page:30(p)
 msgid ""
@@ -1891,8 +1891,7 @@ msgid ""
 msgstr ""
 "Este complemento es para usuarios avanzados y para usarlo correctamente "
 "requiere conocimientos de «script». Use este complemento con cuidado, ya que "
-"errores con sus «script» pueden afectar a su trabajo de forma no "
-"intencionada."
+"errores con sus «script» pueden afectar a su trabajo de forma no intencionada."
 
 #: C/gedit-plugins-doc-stats.page:18(title)
 msgid "View document statistics"
@@ -2116,13 +2115,11 @@ msgstr ""
 
 #: C/gedit-open-recent.page:25(p)
 msgid ""
-"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</"
-"gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></"
-"guiseq>."
+"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</gui><gui>gedit-"
+"2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq>."
 msgstr ""
-"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</"
-"gui><gui>gedit-2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</"
-"gui></guiseq>."
+"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</gui><gui>gedit-"
+"2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</gui></guiseq>."
 
 #: C/gedit-open-recent.page:26(p)
 msgid ""
@@ -2212,12 +2209,17 @@ msgstr ""
 "Los tipos de URI válidos incluyen http:, ftp:, file: y todos los métodos "
 "soportados por <app>gnome-vfs</app>."
 
-#: C/gedit-open-on-server.page:33(p)
+#: C/gedit-open-on-server.page:34(p)
+#| msgid ""
+#| "Files from some types of URI are opened as read-only, and any changes you "
+#| "make must be saved to a different location. For example, HTTP only allows "
+#| "files to be read. Files opened from FTP are read-only because because not "
+#| "all FTP servers may correctly work with saving remote files."
 msgid ""
 "Files from some types of URI are opened as read-only, and any changes you "
 "make must be saved to a different location. For example, HTTP only allows "
-"files to be read. Files opened from FTP are read-only because because not "
-"all FTP servers may correctly work with saving remote files."
+"files to be read. Files opened from FTP are read-only because not all FTP "
+"servers may correctly work with saving remote files."
 msgstr ""
 "Archivos desde algunos tipos de URI se abren como sólo lectura, y cualquier "
 "cambio que realice deberá guardarlo en una ubicación diferente. Por ejemplo, "
@@ -6042,8 +6044,8 @@ msgstr ""
 #~ "pane to show the tag list tab."
 #~ msgstr ""
 #~ "Por omisión, el panel lateral muestra una pestaña conteniendo una lista "
-#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en "
-#~ "la parte de abajo del panel lateral para mostrar la pestaña de listas de "
+#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en la "
+#~ "parte de abajo del panel lateral para mostrar la pestaña de listas de "
 #~ "etiquetas."
 
 #~ msgid ""
