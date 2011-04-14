@@ -1,6 +1,6 @@
 # Vietnamese translation for GEdit.
 # Copyright © 2009 GNOME i18n Project for Vietnamese.
-# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2002-2004,2007,2010.
+# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2002-2004,2007,2010-2011.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
 #
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-03-27 22:23+0000\n"
-"PO-Revision-Date: 2010-12-21 20:50+0700\n"
+"PO-Revision-Date: 2011-04-14 19:03+0700\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -1312,16 +1312,13 @@ msgid "There was a problem opening the file %s."
 msgstr "Có một lỗi khi mở tập tin %s."
 
 #: ../gedit/gedit-io-error-info-bar.c:629
-#, fuzzy
 #| msgid ""
 #| "The file you opened has some invalid characters. If you continue editing "
 #| "this file you could make this document useless."
 msgid ""
 "The file you opened has some invalid characters. If you continue editing "
 "this file you could corrupt this document."
-msgstr ""
-"Tập tin mà bạn đã mở có một số kí tự không hợp lệ. Nếu bạn muốn tiếp tục "
-"chỉnh sửa tập tin này bạn có thể làm cho tài liệu không thể sử dụng được nữa."
+msgstr "Tập tin mà bạn đã mở có một số kí tự không hợp lệ. Nếu bạn vẫn tiếp tục chỉnh sửa, bạn có thể làm hỏng tập tin này."
 
 #: ../gedit/gedit-io-error-info-bar.c:632
 msgid "You can also choose another character encoding and try again."
@@ -1522,12 +1519,12 @@ msgstr "_Nạp lại"
 #: ../gedit/gedit-io-error-info-bar.c:1278
 #, c-format
 msgid "Some invalid chars have been detected while saving %s"
-msgstr ""
+msgstr "Phát hiện vài ký tự không hợp lệ khi lưu %s"
 
 #: ../gedit/gedit-io-error-info-bar.c:1294
 msgid ""
 "If you continue saving this file you can corrupt the document.  Save anyway?"
-msgstr ""
+msgstr "Nếu bạn tiếp tục, bạn có thể làm hỏng tài liệu. Vẫn lưu chứ?"
 
 #: ../gedit/gedit-panel.c:339 ../gedit/gedit-panel.c:511
 msgid "Empty"
@@ -2363,18 +2360,18 @@ msgstr "Công cụ bên ngoài"
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
-msgstr ""
+msgstr "Tên phông Pango. Ví dụ \"Sans 12\" hoặc \"Monospace Bold 14\"."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
 msgid ""
 "If true, the external tools will use the desktop-global standard font if "
 "it's monospace (and the most similar font it can come up with otherwise)."
-msgstr ""
+msgstr "Nếu đúng, công cụ bên ngoài sẽ dùng phông chuẩn của hệ thống nếu là phông monospace (hoặc phông giống nhất nếu khác)."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
 msgid "Whether to use the system font"
-msgstr ""
+msgstr "Có dùng phông hệ thống không"
 
 #: ../plugins/externaltools/tools/capture.py:92
 #, python-format
@@ -2966,7 +2963,7 @@ msgstr "Mô tả màu cho lỗi:"
 msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
-msgstr ""
+msgstr "Nếu đúng, cửa sổ dòng lệnh sẽ dùng phông chuẩn của hệ thống nếu là phông monospace (hoặc phông gần giống nhất nếu khác)."
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid "The command color text"
@@ -3542,11 +3539,11 @@ msgstr "Nhắc _hỏi định dạng"
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
 msgid "Logs access and leave event for documents used with gedit"
-msgstr ""
+msgstr "Lưu lại sự kiện truy cập hoặc rời khỏi tài liệu khi dùng gedit"
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
-msgstr ""
+msgstr "Nguồn dữ liệu Zeitgeist"
 
 #~ msgid ""
 #~ "List of VFS schemes gedit supports in write mode. The 'file' scheme is "
