@@ -97,30 +97,19 @@ gedit_overlay_child_realize (GtkWidget *widget)
 	GdkWindow *parent_window;
 	GdkWindow *window;
 	GtkStyleContext *context;
-	GdkScreen *screen;
-	GdkVisual *visual;
 
 	gtk_widget_set_realized (widget, TRUE);
 
 	parent_window = gtk_widget_get_parent_window (widget);
 	context = gtk_widget_get_style_context (widget);
 
-	screen = gtk_widget_get_screen (gtk_widget_get_parent (widget));
-	visual = gdk_screen_get_rgba_visual (screen);
-
-	if (visual == NULL)
-	{
-		visual = gdk_screen_get_system_visual (screen);
-	}
-
 	attributes.window_type = GDK_WINDOW_CHILD;
 	attributes.wclass = GDK_INPUT_OUTPUT;
 	attributes.event_mask = GDK_EXPOSURE_MASK;
 	attributes.width = 0;
 	attributes.height = 0;
-	attributes.visual = visual;
 
-	window = gdk_window_new (parent_window, &attributes, GDK_WA_VISUAL);
+	window = gdk_window_new (parent_window, &attributes, 0);
 	gdk_window_set_user_data (window, widget);
 	gtk_widget_set_window (widget, window);
 	gtk_style_context_set_state (context, GTK_STATE_FLAG_NORMAL);
@@ -212,29 +201,6 @@ gedit_overlay_child_remove (GtkContainer *container,
 }
 
 static void
-gedit_overlay_child_screen_changed (GtkWidget *widget,
-                                    GdkScreen *prev)
-{
-	GdkScreen *screen;
-	GdkVisual *visual;
-
-	if (GTK_WIDGET_CLASS (gedit_overlay_child_parent_class)->screen_changed)
-	{
-		GTK_WIDGET_CLASS (gedit_overlay_child_parent_class)->screen_changed (widget, prev);
-	}
-
-	screen = gtk_widget_get_screen (widget);
-	visual = gdk_screen_get_rgba_visual (screen);
-
-	if (visual == NULL)
-	{
-		visual = gdk_screen_get_system_visual (screen);
-	}
-
-	gtk_widget_set_visual (widget, visual);
-}
-
-static void
 gedit_overlay_child_class_init (GeditOverlayChildClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
@@ -248,7 +214,6 @@ gedit_overlay_child_class_init (GeditOverlayChildClass *klass)
 	widget_class->get_preferred_width = gedit_overlay_child_get_preferred_width;
 	widget_class->get_preferred_height = gedit_overlay_child_get_preferred_height;
 	widget_class->size_allocate = gedit_overlay_child_size_allocate;
-	widget_class->screen_changed = gedit_overlay_child_screen_changed;
 
 	container_class->add = gedit_overlay_child_add;
 	container_class->remove = gedit_overlay_child_remove;

@@ -37,16 +37,13 @@ struct _GeditOverlayPrivate
 	GtkWidget *main_widget;
 	GtkWidget *relative_widget;
 	GSList    *children;
-
-	guint composited : 1;
 };
 
 enum
 {
 	PROP_0,
 	PROP_MAIN_WIDGET,
-	PROP_RELATIVE_WIDGET,
-	PROP_COMPOSITED
+	PROP_RELATIVE_WIDGET
 };
 
 G_DEFINE_TYPE (GeditOverlay, gedit_overlay, GTK_TYPE_CONTAINER)
@@ -70,28 +67,21 @@ child_container_free (ChildContainer *container)
 	g_slice_free (ChildContainer, container);
 }
 
-static void
-enable_compositing (GeditOverlay *overlay,
-                    GtkWidget    *child,
-                    gboolean      enable)
+static GtkWidget *
+child_container_get_child (ChildContainer *container)
 {
-	GdkWindow *window;
-	GdkWindow *mywindow;
+	GtkWidget *child;
 
-	mywindow = gtk_widget_get_window (GTK_WIDGET (overlay));
-	window = gtk_widget_get_window (child);
-
-	if (window != NULL && window != mywindow)
+	if (container->child != NULL)
 	{
-		gdk_window_set_composited (window, enable);
+		child = container->child;
 	}
-}
+	else
+	{
+		child = container->original;
+	}
 
-static void
-on_child_realized (GtkWidget    *child,
-                   GeditOverlay *overlay)
-{
-	enable_compositing (overlay, child, overlay->priv->composited);
+	return child;
 }
 
 static void
@@ -101,49 +91,25 @@ add_toplevel_widget (GeditOverlay *overlay,
 {
 	ChildContainer *container;
 
-	gtk_widget_set_parent (child, GTK_WIDGET (overlay));
+	if (child != NULL)
+	{
+		gtk_widget_set_parent (child, GTK_WIDGET (overlay));
+	}
+	else
+	{
+		gtk_widget_set_parent (original, GTK_WIDGET (overlay));
+	}
 
 	container = child_container_new (child, original);
 
 	overlay->priv->children = g_slist_append (overlay->priv->children,
 	                                          container);
-
-	enable_compositing (overlay, child, overlay->priv->composited);
-
-	g_signal_connect_after (child,
-	                        "realize",
-	                        G_CALLBACK (on_child_realized),
-	                        overlay);
 }
 
 static void
 gedit_overlay_dispose (GObject *object)
 {
 	G_OBJECT_CLASS (gedit_overlay_parent_class)->dispose (object);
-}
-
-static void
-set_enable_compositing (GeditOverlay *overlay,
-                        gboolean      enabled)
-{
-	GSList *item;
-
-	if (overlay->priv->composited == enabled)
-	{
-		return;
-	}
-
-	overlay->priv->composited = enabled;
-
-	/* Enable/disable compositing on all the children */
-	for (item = overlay->priv->children; item; item = g_slist_next (item))
-	{
-		ChildContainer *container = item->data;
-
-		enable_compositing (overlay, container->child, enabled);
-	}
-
-	g_object_notify (G_OBJECT (overlay), "composited");
 }
 
 static void
@@ -165,37 +131,14 @@ gedit_overlay_get_property (GObject    *object,
 			g_value_set_object (value, priv->relative_widget);
 			break;
 
-		case PROP_COMPOSITED:
-			g_value_set_boolean (value, priv->composited);
-			break;
-
 		default:
 			G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
 			break;
 	}
 }
 
-static void
-set_transparent_background_color (GtkWidget *widget)
-{
-	GtkStyleContext *context;
-	GdkRGBA bg_color;
-
-	context = gtk_widget_get_style_context (widget);
-	gtk_style_context_get_background_color (context,
-	                                        GTK_STATE_NORMAL,
-	                                        &bg_color);
-
-	bg_color.alpha = 0;
-
-	gtk_widget_override_background_color (widget,
-	                                      GTK_STATE_FLAG_NORMAL,
-	                                      &bg_color);
-}
-
 static GtkWidget *
-wrap_child_if_needed (GtkWidget *widget,
-                      gboolean   make_transparent)
+wrap_child_if_needed (GtkWidget *widget)
 {
 	GtkWidget *child;
 
@@ -206,11 +149,6 @@ wrap_child_if_needed (GtkWidget *widget,
 
 	child = GTK_WIDGET (gedit_overlay_child_new (widget));
 	gtk_widget_show (child);
-
-	if (make_transparent)
-	{
-		set_transparent_background_color (child);
-	}
 
 	g_signal_connect_swapped (widget,
 	                          "destroy",
@@ -233,21 +171,15 @@ gedit_overlay_set_property (GObject      *object,
 	{
 		case PROP_MAIN_WIDGET:
 		{
-			priv->main_widget = wrap_child_if_needed (g_value_get_object (value),
-			                                          FALSE);
+			priv->main_widget = g_value_get_object (value);
 
 			add_toplevel_widget (overlay,
-			                     priv->main_widget,
-			                     g_value_get_object (value));
+			                     NULL,
+			                     priv->main_widget);
 			break;
 		}
 		case PROP_RELATIVE_WIDGET:
 			priv->relative_widget = g_value_get_object (value);
-			break;
-
-		case PROP_COMPOSITED:
-			set_enable_compositing (overlay,
-			                        g_value_get_boolean (value));
 			break;
 
 		default:
@@ -279,7 +211,7 @@ gedit_overlay_realize (GtkWidget *widget)
 	attributes.event_mask = gtk_widget_get_events (widget);
 	attributes.event_mask |= GDK_EXPOSURE_MASK | GDK_BUTTON_PRESS_MASK;
 
-	attributes_mask = GDK_WA_X | GDK_WA_Y | GDK_WA_VISUAL;
+	attributes_mask = GDK_WA_X | GDK_WA_Y;
 
 	window = gdk_window_new (gtk_widget_get_parent_window (widget),
 	                         &attributes, attributes_mask);
@@ -351,10 +283,12 @@ gedit_overlay_size_allocate (GtkWidget     *widget,
 	for (l = priv->children; l != NULL; l = g_slist_next (l))
 	{
 		ChildContainer *container = l->data;
-		GtkWidget *child = container->child;
+		GtkWidget *child;
 		GtkRequisition req;
 		GtkAllocation alloc;
 		guint offset;
+
+		child = child_container_get_child (container);
 
 		if (child == priv->main_widget)
 			continue;
@@ -426,7 +360,7 @@ overlay_add (GtkContainer *overlay,
 	if (child == NULL)
 	{
 		add_toplevel_widget (GEDIT_OVERLAY (overlay),
-		                     wrap_child_if_needed (widget, TRUE),
+		                     wrap_child_if_needed (widget),
 		                     widget);
 	}
 }
@@ -445,13 +379,10 @@ gedit_overlay_remove (GtkContainer *overlay,
 
 		if (original == widget)
 		{
-			g_signal_handlers_disconnect_by_func (container->child,
-			                                      on_child_realized,
-			                                      overlay);
-
 			gtk_widget_unparent (widget);
 
-			if (original != container->child)
+			if (container->child != NULL &&
+			    original != container->child)
 			{
 				g_signal_handlers_disconnect_by_func (original,
 				                                      gtk_widget_destroy,
@@ -483,8 +414,10 @@ gedit_overlay_forall (GtkContainer *overlay,
 	while (children)
 	{
 		ChildContainer *container = children->data;
-		GtkWidget *child = container->child;
 		children = children->next;
+		GtkWidget *child;
+
+		child = child_container_get_child (container);
 
 		(* callback) (child, callback_data);
 	}
@@ -494,84 +427,6 @@ static GType
 gedit_overlay_child_type (GtkContainer *overlay)
 {
 	return GTK_TYPE_WIDGET;
-}
-
-static gboolean
-gedit_overlay_draw (GtkWidget *widget,
-                    cairo_t   *cr)
-{
-	GeditOverlay *overlay;
-	GSList *item;
-	GdkWindow *mywindow;
-	GdkRectangle cliprect;
-	gboolean isclipped;
-
-	GTK_WIDGET_CLASS (gedit_overlay_parent_class)->draw (widget, cr);
-
-	overlay = GEDIT_OVERLAY (widget);
-
-	/* Draw composited children if necessary */
-	if (!overlay->priv->composited ||
-	    !gdk_display_supports_composite (gtk_widget_get_display (widget)))
-	{
-		return FALSE;
-	}
-
-	mywindow = gtk_widget_get_window (widget);
-	isclipped = gdk_cairo_get_clip_rectangle (cr, &cliprect);
-
-	cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
-
-	for (item = overlay->priv->children; item; item = g_slist_next (item))
-	{
-		ChildContainer *container = item->data;
-		GtkWidget *child = container->child;
-		GdkWindow *window;
-		GtkAllocation allocation;
-		GdkRectangle childrect;
-		GdkRectangle cliparea;
-
-		window = gtk_widget_get_window (child);
-
-		if (window == NULL || window == mywindow ||
-		    !gdk_window_is_visible (window))
-		{
-			continue;
-		}
-
-		gtk_widget_get_allocation (child, &allocation);
-
-		childrect.x = allocation.x;
-		childrect.y = allocation.y;
-		childrect.width = allocation.width;
-		childrect.height = allocation.height;
-
-		if (isclipped)
-		{
-			gdk_rectangle_intersect (&cliprect,
-			                         &childrect,
-			                         &cliparea);
-		}
-		else
-		{
-			cliparea = childrect;
-		}
-
-		cairo_save (cr);
-
-		gdk_cairo_rectangle (cr, &cliparea);
-		cairo_clip (cr);
-
-		gdk_cairo_set_source_window (cr,
-		                             window,
-		                             allocation.x,
-		                             allocation.y);
-
-		cairo_paint (cr);
-		cairo_restore (cr);
-	}
-
-	return FALSE;
 }
 
 static void
@@ -589,7 +444,6 @@ gedit_overlay_class_init (GeditOverlayClass *klass)
 	widget_class->get_preferred_width = gedit_overlay_get_preferred_width;
 	widget_class->get_preferred_height = gedit_overlay_get_preferred_height;
 	widget_class->size_allocate = gedit_overlay_size_allocate;
-	widget_class->draw = gedit_overlay_draw;
 
 	container_class->add = overlay_add;
 	container_class->remove = gedit_overlay_remove;
@@ -612,15 +466,6 @@ gedit_overlay_class_init (GeditOverlayClass *klass)
 	                                                      GTK_TYPE_WIDGET,
 	                                                      G_PARAM_READWRITE |
 	                                                      G_PARAM_STATIC_STRINGS));
-
-	g_object_class_install_property (object_class,
-	                                 PROP_COMPOSITED,
-	                                 g_param_spec_boolean ("composited",
-	                                                       "Composited",
-	                                                       "Whether the overlay composites its children",
-	                                                       FALSE,
-	                                                       G_PARAM_READWRITE |
-	                                                       G_PARAM_STATIC_STRINGS));
 
 	g_type_class_add_private (object_class, sizeof (GeditOverlayPrivate));
 }
@@ -684,13 +529,4 @@ gedit_overlay_add (GeditOverlay             *overlay,
 
 	gedit_overlay_child_set_position (child, position);
 	gedit_overlay_child_set_offset (child, offset);
-}
-
-void
-gedit_overlay_set_composited (GeditOverlay *overlay,
-                              gboolean      enabled)
-{
-	g_return_if_fail (GEDIT_IS_OVERLAY (overlay));
-
-	set_enable_compositing (overlay, enabled);
 }

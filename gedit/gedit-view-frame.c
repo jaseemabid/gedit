@@ -1473,25 +1473,6 @@ gedit_view_frame_init (GeditViewFrame *frame)
 	              "orientation", GTK_ORIENTATION_VERTICAL,
 	              NULL);
 
-#if 0
-	FIXME: For some reason scrolling is really slow with composition. See:
-	https://bugzilla.gnome.org/show_bug.cgi?id=647802
-
-	gedit_overlay_set_composited (GEDIT_OVERLAY (frame->priv->overlay), TRUE);
-
-	/* Force search widget slider to be transparent */
-	context = gtk_widget_get_style_context (frame->priv->slider);
-	gtk_style_context_get_background_color (context,
-	                                        GTK_STATE_NORMAL,
-	                                        &bg_color);
-
-	bg_color.alpha = 0;
-
-	gtk_widget_override_background_color (frame->priv->slider,
-	                                      GTK_STATE_NORMAL,
-	                                      &bg_color);
-#endif
-
 	gedit_animated_overlay_add (GEDIT_ANIMATED_OVERLAY (frame->priv->overlay),
 	                            GEDIT_ANIMATABLE (frame->priv->slider));
 }
