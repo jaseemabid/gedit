@@ -199,10 +199,10 @@ static void next_files_async 				    (GFileEnumerator        *enumerator,
 G_DEFINE_DYNAMIC_TYPE_EXTENDED (GeditFileBrowserStore, gedit_file_browser_store,
 				G_TYPE_OBJECT,
 				0,
-				G_IMPLEMENT_INTERFACE (GTK_TYPE_TREE_MODEL,
-						       gedit_file_browser_store_iface_init)
-				G_IMPLEMENT_INTERFACE (GTK_TYPE_TREE_DRAG_SOURCE,
-						       gedit_file_browser_store_drag_source_init))
+				G_IMPLEMENT_INTERFACE_DYNAMIC (GTK_TYPE_TREE_MODEL,
+							       gedit_file_browser_store_iface_init)
+				G_IMPLEMENT_INTERFACE_DYNAMIC (GTK_TYPE_TREE_DRAG_SOURCE,
+							       gedit_file_browser_store_drag_source_init))
 
 /* Properties */
 enum {
