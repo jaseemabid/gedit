@@ -3,15 +3,15 @@
 #
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
 # María Majadas <maria.majadas@hispalinux.es>, 2005.
-# Jorge González <jorgegonz@svn.gnome.org>, 2006, 2007, 2009, 2010, 2011.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
+# Jorge González <jorgegonz@svn.gnome.org>, 2006, 2007, 2009, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-04-12 16:58+0000\n"
-"PO-Revision-Date: 2011-04-13 11:37+0200\n"
-"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"POT-Creation-Date: 2011-04-19 21:51+0000\n"
+"PO-Revision-Date: 2011-04-21 18:48+0200\n"
+"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -245,24 +245,18 @@ msgstr ""
 "gui><gui>Deshacer</gui></guiseq>."
 
 #: C/gedit-undo-recent-action.page:30(p)
+#| msgid ""
+#| "<app>gedit</app> will undo one action every time you press "
+#| "<keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</"
+#| "gui><gui>Undo</gui></guiseq> is pressed."
 msgid ""
 "<app>gedit</app> will undo one action every time you press "
 "<keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</"
-"gui><gui>Undo</gui></guiseq> is pressed."
+"gui><gui>Undo</gui></guiseq>."
 msgstr ""
 "<app>gedit</app> deshará una acción cada vez que pulse <keyseq><key>Ctrl</"
 "key><key>Z</key></keyseq> o seleccione <guiseq><gui>Editar</"
 "gui><gui>Deshacer</gui></guiseq>."
-
-#: C/gedit-undo-recent-action.page:32(p)
-msgid ""
-"Be careful. If you make a mistake outside of <app>gedit</app> (e.g., If you "
-"say something mean to your friend) <app>gedit</app> will not be able to help "
-"you undo that mistake."
-msgstr ""
-"Tenga cuidado. Si comete errores fuera de <app>gedit</app> (ej.: si le dice "
-"algo ofensivo a un amigo) <app>gedit</app> no podrá ayudarle a deshacer ese "
-"error."
 
 #: C/gedit-tabs.page:20(title)
 msgid "Add and remove tabs"
@@ -1177,14 +1171,19 @@ msgstr ""
 "gui></guiseq>."
 
 #: C/gedit-plugins-terminal.page:21(p)
+#| msgid ""
+#| "Once you have enabled the plugin, add the terminal to the bottom panel by "
+#| "selecting <guiseq><gui>View</gui><gui>Bottom Pane</gui></guiseq>, or just "
+#| "press <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
 msgid ""
-"Once you have enabled the plugin, add the terminal to the bottom panel by "
+"Once you have enabled the plugin, add the terminal to the bottom pane by "
 "selecting <guiseq><gui>View</gui><gui>Bottom Pane</gui></guiseq>, or just "
 "press <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
 msgstr ""
 "Una vez que haya activado el complemento, añada la terminal al panel "
 "inferior seleccionando <guiseq><gui>Ver</gui><gui>Panel inferior</gui></"
-"guiseq>, o simplemente pulse <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
+"guiseq>, o simplemente pulsando <keyseq><key>Ctrl</key><key>F9</key></"
+"keyseq>."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
@@ -1251,8 +1250,8 @@ msgid ""
 msgstr ""
 "El panel lateral muestra inicialmente una lista de documentos abiertos, por "
 "lo que para ver y usar la <app>Lista de etiquetas</app>, deberá pulsar en la "
-"pestaña que muestra el icono «más» en la parte inferior del panel lateral. El "
-"icono se parece a esto:"
+"pestaña que muestra el icono «más» en la parte inferior del panel lateral. "
+"El icono se parece a esto:"
 
 #: C/gedit-plugins-tag-list.page:37(title)
 msgid "Inserting Tags and Special Characters"
@@ -1385,8 +1384,8 @@ msgid ""
 "The Sort dialog will open, allowing you to choose between several sorting "
 "options:"
 msgstr ""
-"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones de "
-"ordenación:"
+"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones "
+"de ordenación:"
 
 #: C/gedit-plugins-sort.page:30(p)
 msgid ""
@@ -1827,9 +1826,13 @@ msgid "Opening files from the side pane"
 msgstr "Abrir archivos desde el panel lateral"
 
 #: C/gedit-plugins-file-browser.page:26(p)
+#| msgid ""
+#| "To activate and use the <gui>side pane</gui>, select <guiseq><gui>View</"
+#| "gui><gui>Side pane</gui></guiseq> (or just press<key>F9</key>), and then "
+#| "click on the <gui>file-browser</gui> icon at the bottom of the pane."
 msgid ""
 "To activate and use the <gui>side pane</gui>, select <guiseq><gui>View</"
-"gui><gui>Side pane</gui></guiseq> (or just press<key>F9</key>), and then "
+"gui><gui>Side pane</gui></guiseq> (or just press <key>F9</key>), and then "
 "click on the <gui>file-browser</gui> icon at the bottom of the pane."
 msgstr ""
 "Para activar y usar el <gui>Panel lateral</gui>, seleccione "
@@ -1891,7 +1894,8 @@ msgid ""
 msgstr ""
 "Este complemento es para usuarios avanzados y para usarlo correctamente "
 "requiere conocimientos de «script». Use este complemento con cuidado, ya que "
-"errores con sus «script» pueden afectar a su trabajo de forma no intencionada."
+"errores con sus «script» pueden afectar a su trabajo de forma no "
+"intencionada."
 
 #: C/gedit-plugins-doc-stats.page:18(title)
 msgid "View document statistics"
@@ -2018,9 +2022,12 @@ msgid "Auto-complete closing brackets"
 msgstr "Autocompletar cerrado de paréntesis"
 
 #: C/gedit-plugins-bracket-comp.page:16(p)
+#| msgid ""
+#| "The <app>Bracket Completion</app> plugin will auto-complete closing "
+#| "brackets for curly braces, parantheses, and square brackets."
 msgid ""
 "The <app>Bracket Completion</app> plugin will auto-complete closing brackets "
-"for curly braces, parantheses, and square brackets."
+"for curly braces, parentheses, and square brackets."
 msgstr ""
 "El complemento <app>Completar paréntesis</app> completará automáticamente "
 "los paréntesis, llaves y corchetes."
@@ -2115,11 +2122,13 @@ msgstr ""
 
 #: C/gedit-open-recent.page:25(p)
 msgid ""
-"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</gui><gui>gedit-"
-"2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq>."
+"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</"
+"gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></"
+"guiseq>."
 msgstr ""
-"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</gui><gui>gedit-"
-"2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</gui></guiseq>."
+"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</"
+"gui><gui>gedit-2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</"
+"gui></guiseq>."
 
 #: C/gedit-open-recent.page:26(p)
 msgid ""
@@ -2210,11 +2219,6 @@ msgstr ""
 "soportados por <app>gnome-vfs</app>."
 
 #: C/gedit-open-on-server.page:34(p)
-#| msgid ""
-#| "Files from some types of URI are opened as read-only, and any changes you "
-#| "make must be saved to a different location. For example, HTTP only allows "
-#| "files to be read. Files opened from FTP are read-only because because not "
-#| "all FTP servers may correctly work with saving remote files."
 msgid ""
 "Files from some types of URI are opened as read-only, and any changes you "
 "make must be saved to a different location. For example, HTTP only allows "
@@ -2620,6 +2624,15 @@ msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2011\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2006-2011\n"
 "María Majadas <maria.majadas@hispalinux.es>, 2005"
+
+#~ msgid ""
+#~ "Be careful. If you make a mistake outside of <app>gedit</app> (e.g., If "
+#~ "you say something mean to your friend) <app>gedit</app> will not be able "
+#~ "to help you undo that mistake."
+#~ msgstr ""
+#~ "Tenga cuidado. Si comete errores fuera de <app>gedit</app> (ej.: si le "
+#~ "dice algo ofensivo a un amigo) <app>gedit</app> no podrá ayudarle a "
+#~ "deshacer ese error."
 
 #~ msgid ""
 #~ "Working with tabs in <app>gedit</app> allows you to keep an eye on "
@@ -6044,8 +6057,8 @@ msgstr ""
 #~ "pane to show the tag list tab."
 #~ msgstr ""
 #~ "Por omisión, el panel lateral muestra una pestaña conteniendo una lista "
-#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en la "
-#~ "parte de abajo del panel lateral para mostrar la pestaña de listas de "
+#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en "
+#~ "la parte de abajo del panel lateral para mostrar la pestaña de listas de "
 #~ "etiquetas."
 
 #~ msgid ""
