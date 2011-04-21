@@ -62,6 +62,8 @@ struct _GeditNotebookPrivate
 
 	GeditNotebookShowTabsModeType show_tabs_mode;
 
+	GtkCssProvider *css;
+
 	guint close_buttons_sensitive : 1;
 	guint ignore_focused_page_update : 1;
 };
@@ -165,6 +167,12 @@ gedit_notebook_dispose (GObject *object)
 	{
 		g_object_unref (notebook->priv->ui_settings);
 		notebook->priv->ui_settings = NULL;
+	}
+
+	if (notebook->priv->css != NULL)
+	{
+		g_object_unref (notebook->priv->css);
+		notebook->priv->css = NULL;
 	}
 
 	G_OBJECT_CLASS (gedit_notebook_parent_class)->dispose (object);
@@ -675,6 +683,68 @@ gedit_notebook_get_close_buttons_sensitive (GeditNotebook *nb)
 	g_return_val_if_fail (GEDIT_IS_NOTEBOOK (nb), TRUE);
 
 	return nb->priv->close_buttons_sensitive;
+}
+
+static void
+remove_right_padding (GeditNotebook *nb)
+{
+	GtkStyleContext *context;
+	GtkBorder padding;
+	gchar *modified_style;
+	GError *error = NULL;
+	const gchar style[] =
+		".notebook {\n"
+		  "padding: %d 0 %d %d;\n"
+		"}";
+
+	/* FIXME: find out a css like way to do this, right now padding-right/left
+	  doesn't work */
+	context = gtk_widget_get_style_context (GTK_WIDGET (nb));
+	gtk_style_context_get_padding (context, gtk_style_context_get_state (context),
+	                               &padding);
+
+	modified_style = g_strdup_printf (style, padding.top, padding.bottom, padding.left);
+
+	/* make it as small as possible */
+	if (nb->priv->css == NULL)
+	{
+		nb->priv->css = gtk_css_provider_new ();
+	}
+
+	if (gtk_css_provider_load_from_data (nb->priv->css, modified_style, -1, &error))
+	{
+		gtk_style_context_add_provider (context,
+		                                GTK_STYLE_PROVIDER (nb->priv->css),
+		                                GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+	}
+	else
+	{
+		g_warning ("%s", error->message);
+		g_error_free (error);
+	}
+
+	g_free (modified_style);
+}
+
+void
+gedit_notebook_collapse_border (GeditNotebook *nb,
+                                gboolean       collapse)
+{
+	g_return_if_fail (GEDIT_IS_NOTEBOOK (nb));
+
+	if (collapse)
+	{
+		remove_right_padding (nb);
+	}
+	/* if we made some modification put it back to the default state */
+	else if (nb->priv->css != NULL)
+	{
+		GtkStyleContext *context;
+
+		context = gtk_widget_get_style_context (GTK_WIDGET (nb));
+		gtk_style_context_remove_provider (context,
+		                                   GTK_STYLE_PROVIDER (nb->priv->css));
+	}
 }
 
 /* ex:set ts=8 noet: */

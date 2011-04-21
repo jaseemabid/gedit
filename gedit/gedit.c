@@ -159,38 +159,6 @@ gedit_main_window (void)
 }
 
 static void
-load_css ()
-{
-	/* Load css */
-	GtkCssProvider *css = gtk_css_provider_new ();
-	gchar *css_path;
-	GError *error = NULL;
-
-	css_path = g_build_filename (gedit_dirs_get_gedit_data_dir (),
-	                             "css",
-	                             "gedit.css",
-	                             NULL);
-
-	if (!gtk_css_provider_load_from_path (css, css_path, &error))
-	{
-		g_warning ("Failed to load stylesheet `%s': %s",
-		           css_path,
-		           error->message);
-
-		g_error_free (error);
-	}
-	else
-	{
-		gtk_style_context_add_provider_for_screen (gdk_screen_get_default (),
-		                                           GTK_STYLE_PROVIDER (css),
-		                                           GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
-	}
-
-	g_free (css_path);
-	g_object_unref (css);
-}
-
-static void
 gedit_main (gboolean service)
 {
 	GeditPluginsEngine *engine;
@@ -216,8 +184,6 @@ gedit_main (gboolean service)
 	/* Initialize session management */
 	gedit_debug_message (DEBUG_APP, "Init session manager");
 	gedit_session_init ();
-
-	load_css ();
 
 	if (!service && gedit_session_is_restored ())
 	{
