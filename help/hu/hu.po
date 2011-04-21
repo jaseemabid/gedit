@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit_help master\n"
-"POT-Creation-Date: 2011-04-01 13:06+0000\n"
-"PO-Revision-Date: 2011-04-03 16:18+0200\n"
+"POT-Creation-Date: 2011-04-19 21:51+0000\n"
+"PO-Revision-Date: 2011-04-21 22:40+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome at fsf dot hu>\n"
 "MIME-Version: 1.0\n"
@@ -172,7 +172,11 @@ msgid ""
 "way of managing large numbers of files is viewing them in a side pane. Side "
 "panes allow you to view more files at a time than is possible using tabs "
 "alone."
-msgstr "Sok fájl figyelemmel követése lapok használatával nehézkes lehet. Nagy számú fájl kezelésének egyik módja az oldalsávban való megjelenítésük. Az oldalsávok lehetővé teszik egyszerre több fájl megjelenítését, mint ahányat csak a lapok lehetővé tennének."
+msgstr ""
+"Sok fájl figyelemmel követése lapok használatával nehézkes lehet. Nagy számú "
+"fájl kezelésének egyik módja az oldalsávban való megjelenítésük. Az "
+"oldalsávok lehetővé teszik egyszerre több fájl megjelenítését, mint ahányat "
+"csak a lapok lehetővé tennének."
 
 #: C/gedit-view-open-files-in-sidepane.page:23(p)
 msgid ""
@@ -180,7 +184,12 @@ msgid ""
 "gui><gui>Side Pane</gui></guiseq>. A pane will appear to the left of the "
 "workspace with a listing of all currently open files. Clicking a file in the "
 "side pane will display that file in the workspace."
-msgstr "Válassza a <guiseq><gui>Nézet</gui><gui>Oldalsáv</gui></guiseq> menüpontot a nyitott fájlok listájának megjelenítéséhez az oldalsávban. A munkaterület bal oldalán megjelenik egy ablaktábla a jelenleg megnyitott fájlok felsorolásával. Az oldalsáv egyik fájljára kattintva a fájl megnyílik a munkaterületen."
+msgstr ""
+"Válassza a <guiseq><gui>Nézet</gui><gui>Oldalsáv</gui></guiseq> menüpontot a "
+"nyitott fájlok listájának megjelenítéséhez az oldalsávban. A munkaterület "
+"bal oldalán megjelenik egy ablaktábla a jelenleg megnyitott fájlok "
+"felsorolásával. Az oldalsáv egyik fájljára kattintva a fájl megnyílik a "
+"munkaterületen."
 
 #: C/gedit-view-open-files-in-sidepane.page:25(p)
 msgid ""
@@ -189,17 +198,24 @@ msgid ""
 "\"image\" mime=\"image/png\" src=\"figures/gedit-side-pane2.png\">documents "
 "icon</media> at the bottom of the pane to switch to the <app>Documents</app> "
 "view."
-msgstr "Az oldalsáv tartalmaz egy <app>Fájlböngésző</app> nézetet is. Ha az ablaktábla a megnyitott fájlok listája helyett egy könyvtárat jelenít meg, akkor kattintson az ablaktábla alján a <media type=\"image\" mime=\"image/png\" src=\"figures/gedit-side-pane2.png\">dokumentumok ikonra</media> a <app>Dokumentumok</app> nézetre váltáshoz."
+msgstr ""
+"Az oldalsáv tartalmaz egy <app>Fájlböngésző</app> nézetet is. Ha az "
+"ablaktábla a megnyitott fájlok listája helyett egy könyvtárat jelenít meg, "
+"akkor kattintson az ablaktábla alján a <media type=\"image\" mime=\"image/png"
+"\" src=\"figures/gedit-side-pane2.png\">dokumentumok ikonra</media> a "
+"<app>Dokumentumok</app> nézetre váltáshoz."
 
 #: C/gedit-view-open-files-in-sidepane.page:28(p)
 msgid ""
 "The side pane only displays files that are open in the current window. When "
 "multiple windows are open, only the files in the current window will be "
 "displayed in the side pane."
-msgstr "Az oldalsáv csak az aktuális ablakban megnyitott fájlokat jeleníti meg. Ha több ablak is nyitva van, akkor csak az aktuális ablakban megnyitott fájlok lesznek láthatók az oldalsávban."
+msgstr ""
+"Az oldalsáv csak az aktuális ablakban megnyitott fájlokat jeleníti meg. Ha "
+"több ablak is nyitva van, akkor csak az aktuális ablakban megnyitott fájlok "
+"lesznek láthatók az oldalsávban."
 
 #: C/gedit-undo-recent-action.page:23(title)
-#| msgid "Undo the last action."
 msgid "Undo a recent action"
 msgstr "Utolsó művelet visszavonása."
 
@@ -212,21 +228,22 @@ msgid ""
 "Fortunately, <app>gedit</app> can help you recover from mistakes. To undo an "
 "action in <app>gedit</app>, press <keyseq><key>Ctrl</key><key>Z</key></"
 "keyseq>, or click <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq>."
-msgstr "Mindenki hibázik. Még a <app>gedit</app> felhasználói is. Szerencsére a <app>gedit</app> lehetővé teszi a hibák kijavítását. Egy művelet visszavonásához a <app>geditben</app> nyomja meg a <keyseq><key>Ctrl</key><key>Z</key></keyseq> kombinációt, vagy válassza a <guiseq><gui>Szerkesztés</gui><gui>Visszavonás</gui></guiseq> menüpontot."
+msgstr ""
+"Mindenki hibázik. Még a <app>gedit</app> felhasználói is. Szerencsére a "
+"<app>gedit</app> lehetővé teszi a hibák kijavítását. Egy művelet "
+"visszavonásához a <app>geditben</app> nyomja meg a <keyseq><key>Ctrl</"
+"key><key>Z</key></keyseq> kombinációt, vagy válassza a "
+"<guiseq><gui>Szerkesztés</gui><gui>Visszavonás</gui></guiseq> menüpontot."
 
 #: C/gedit-undo-recent-action.page:30(p)
 msgid ""
 "<app>gedit</app> will undo one action every time you press "
 "<keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</"
-"gui><gui>Undo</gui></guiseq> is pressed."
-msgstr "A <app>gedit</app> a <keyseq><key>Ctrl</key><key>Z</key></keyseq> minden megnyomásakor vagy a <guiseq><gui>Szerkesztés</gui><gui>Visszavonás</gui></guiseq> kiválasztásakor egy műveletet von vissza."
-
-#: C/gedit-undo-recent-action.page:32(p)
-msgid ""
-"Be careful. If you make a mistake outside of <app>gedit</app> (e.g., If you "
-"say something mean to your friend) <app>gedit</app> will not be able to help "
-"you undo that mistake."
-msgstr "Legyen óvatos. Ha a <app>gediten</app> kívül hibázik (például valami durvát mond egy barátjának), azt a <app>gedit</app> nem tudja visszacsinálni."
+"gui><gui>Undo</gui></guiseq>."
+msgstr ""
+"A <app>gedit</app> a <keyseq><key>Ctrl</key><key>Z</key></keyseq> minden "
+"megnyomásakor vagy a <guiseq><gui>Szerkesztés</gui><gui>Visszavonás</gui></"
+"guiseq> kiválasztásakor egy műveletet von vissza."
 
 #: C/gedit-tabs.page:20(title)
 msgid "Add and remove tabs"
@@ -238,10 +255,12 @@ msgid ""
 "files in a single window. The tab that is larger than the other tabs "
 "indicates the file that is currently open. The smaller tabs indicate other "
 "files that are available to work on."
-msgstr "A lapok kezelése a <app>geditben</app> lehetővé teszi számos fájl szemmel tartását egyetlen ablakban. A többinél nagyobb lap jelzi a jelenleg nyitott fájlt. A kisebb lapok további fájlokat jeleznek, amelyeken szintén dolgozhat."
+msgstr ""
+"A lapok kezelése a <app>geditben</app> lehetővé teszi számos fájl szemmel "
+"tartását egyetlen ablakban. A többinél nagyobb lap jelzi a jelenleg nyitott "
+"fájlt. A kisebb lapok további fájlokat jeleznek, amelyeken szintén dolgozhat."
 
 #: C/gedit-tabs.page:25(title)
-#| msgid "Adding Snippets"
 msgid "Adding tabs"
 msgstr "Lapok hozzáadása"
 
@@ -250,11 +269,11 @@ msgid ""
 "To add a new tab, create a new file with <keyseq><key>Ctrl</key><key>N</"
 "key></keyseq>. The tab will be added to the right side of any other tabs."
 msgstr ""
-"Új lap hozzáadásához hozzon létre egy új fájlt a <keyseq><key>Ctrl</key><key>N</"
-"key></keyseq> kombinációval. A lap a többi laptól jobbra kerül felvételre."
+"Új lap hozzáadásához hozzon létre egy új fájlt a <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> kombinációval. A lap a többi laptól jobbra kerül "
+"felvételre."
 
 #: C/gedit-tabs.page:30(title)
-#| msgid "Remove Trailing Spaces"
 msgid "Removing tabs"
 msgstr "Lapok eltávolítása"
 
@@ -264,8 +283,9 @@ msgid ""
 "side. To remove all open tabs, press <keyseq><key>Ctrl</key><key>Shift</"
 "key><key>W</key></keyseq>"
 msgstr ""
-"Lap eltávolításához kattintson a lap jobb oldalán lévő <guiseq><gui>X</gui></guiseq> gombra. Az összes nyitott lap eltávolításához nyomja meg a <keyseq><key>Ctrl</key><key>Shift</"
-"key><key>W</key></keyseq> kombinációt."
+"Lap eltávolításához kattintson a lap jobb oldalán lévő <guiseq><gui>X</gui></"
+"guiseq> gombra. Az összes nyitott lap eltávolításához nyomja meg a "
+"<keyseq><key>Ctrl</key><key>Shift</key><key>W</key></keyseq> kombinációt."
 
 #: C/gedit-tabs-moving.page:19(title)
 msgid "Move and re-order tabs"
@@ -277,7 +297,11 @@ msgid ""
 "files. Tabs can be can re-ordered within the same window, moved outside of "
 "<app>gedit</app> (creating a new <app>gedit</app> window), and moved from "
 "one window to another."
-msgstr "A <app>gedit</app> lapjai áthelyezhetők, így egyszerűbbé teszik a fájlok kezelését. A lapot áthelyezhetők ugyanazon az ablakon belül, kihúzhatók a <app>gediten</app> kívülre (így új <app>gedit</app> ablakot hozva létre), és az egyik ablakból a másikba mozgathatók."
+msgstr ""
+"A <app>gedit</app> lapjai áthelyezhetők, így egyszerűbbé teszik a fájlok "
+"kezelését. A lapot áthelyezhetők ugyanazon az ablakon belül, kihúzhatók a "
+"<app>gediten</app> kívülre (így új <app>gedit</app> ablakot hozva létre), és "
+"az egyik ablakból a másikba mozgathatók."
 
 #: C/gedit-tabs-moving.page:23(title)
 msgid "Change the order of tabs in the gedit window"
@@ -305,7 +329,9 @@ msgstr "Engedje fel az egérgombot."
 msgid ""
 "The tab will be placed in the position closest to where you release the tab, "
 "immediately beside other opened tabs."
-msgstr "A lap az elengedési helyhez legközelebbi helyre kerül, közvetlenül a megnyitott lapok mellé."
+msgstr ""
+"A lap az elengedési helyhez legközelebbi helyre kerül, közvetlenül a "
+"megnyitott lapok mellé."
 
 #: C/gedit-tabs-moving.page:38(title)
 msgid "Move a tab, creating a new gedit window"
@@ -323,14 +349,19 @@ msgstr "Húzza a ki lapot az általa elfoglalt helyről,"
 msgid ""
 "or, while the tab to be moved is open, choose <guiseq><gui>Documents</"
 "gui><gui>Move to New Window</gui></guiseq>"
-msgstr "vagy, lépjen a mozgatandó lapra, és válassza a <guiseq><gui>Dokumentumok</gui><gui>Áthelyezés új ablakba</gui></guiseq> menüpontot."
+msgstr ""
+"vagy, lépjen a mozgatandó lapra, és válassza a <guiseq><gui>Dokumentumok</"
+"gui><gui>Áthelyezés új ablakba</gui></guiseq> menüpontot."
 
 #: C/gedit-tabs-moving.page:50(p)
 msgid ""
 "It's difficult to drag a tab into a new window when either the old or new "
 "window is maximized. For best results, un-maximize the windows before "
 "dragging the tab."
-msgstr "A lapot nehéz úgy új ablakba húzni, ha a régi vagy az új ablak teljes méretű. A hatékonyság érdekében a lap húzása előtt mindkét ablakot tegye a maximálisnál kisebb méretűvé."
+msgstr ""
+"A lapot nehéz úgy új ablakba húzni, ha a régi vagy az új ablak teljes "
+"méretű. A hatékonyság érdekében a lap húzása előtt mindkét ablakot tegye a "
+"maximálisnál kisebb méretűvé."
 
 #: C/gedit-tabs-moving.page:57(title)
 msgid "Move a tab to another gedit window"
@@ -352,10 +383,11 @@ msgstr "Helyezze az új ablakban lévő lapok mellé."
 msgid ""
 "See <link xref=\"gedit-shortcut-keys#gedit-tab-shortcuts\"/> for shortcuts "
 "to make it easier to manage your tabs."
-msgstr "Lásd a <link xref=\"gedit-shortcut-keys#gedit-tab-shortcuts\"/> oldalt a lapok kezelését megkönnyítő gyorsbillentyűkkel kapcsolatban."
+msgstr ""
+"Lásd a <link xref=\"gedit-shortcut-keys#gedit-tab-shortcuts\"/> oldalt a "
+"lapok kezelését megkönnyítő gyorsbillentyűkkel kapcsolatban."
 
 #: C/gedit-syntax-highlighting.page:14(title)
-#| msgid "Print syntax highlighting"
 msgid "Turn on syntax highlighting"
 msgstr "Szintaxiskiemelés bekapcsolása"
 
@@ -369,7 +401,10 @@ msgid ""
 "programming, and scientific languages. If <app>gedit</app> recognizes the "
 "syntax being used when you open a file, it will automatically highlight the "
 "text."
-msgstr "A <app>gedit</app> számos jelölő-, programozási és tudományos nyelvhez biztosít szintaxiskiemelést. Ha a <app>gedit</app> felismeri a megnyitott fájlban használt szintaxist, akkor automatikusan kiemeli a szöveget."
+msgstr ""
+"A <app>gedit</app> számos jelölő-, programozási és tudományos nyelvhez "
+"biztosít szintaxiskiemelést. Ha a <app>gedit</app> felismeri a megnyitott "
+"fájlban használt szintaxist, akkor automatikusan kiemeli a szöveget."
 
 #: C/gedit-syntax-highlighting.page:20(p)
 msgid ""
@@ -378,10 +413,14 @@ msgid ""
 "gui><gui>Highlight Mode</gui></guiseq>, and then choosing the desired "
 "syntax. Alternately, you can select the syntax name from a list at the "
 "bottom of the <app>gedit</app> window."
-msgstr "Ha a szintaxis vagy a nyelv nem kerül kiemelésre indításkor, akkor kiválaszthatja a megfelelő szintaxist vagy nyelvet a <guiseq><gui>Nézet</gui><gui>Kiemelési mód</gui></guiseq> menüpont, majd a kívánt szintaxis kiválasztásával. Ennek alternatívájaként kiválaszthatja a szintaxisnevet a <app>gedit</app> ablak alján lévő listából."
+msgstr ""
+"Ha a szintaxis vagy a nyelv nem kerül kiemelésre indításkor, akkor "
+"kiválaszthatja a megfelelő szintaxist vagy nyelvet a <guiseq><gui>Nézet</"
+"gui><gui>Kiemelési mód</gui></guiseq> menüpont, majd a kívánt szintaxis "
+"kiválasztásával. Ennek alternatívájaként kiválaszthatja a szintaxisnevet a "
+"<app>gedit</app> ablak alján lévő listából."
 
 #: C/gedit-spellcheck.page:15(title)
-#| msgid "Save the current document to disk."
 msgid "Spell-check your document"
 msgstr "A dokumentum helyesírásának ellenőrzése"
 
@@ -391,13 +430,20 @@ msgid ""
 "enable the spell-check plugin. To enable the plugin, select "
 "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Spell "
 "Checker</gui></guiseq>."
-msgstr "A <app>gedit</app> helyesírás-ellenőrző szolgáltatásának használatához először engedélyeznie kell a helyesírás-ellenőrző bővítményt. A bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Helyesírás-ellenőrzőt</gui></guiseq>."
+msgstr ""
+"A <app>gedit</app> helyesírás-ellenőrző szolgáltatásának használatához "
+"először engedélyeznie kell a helyesírás-ellenőrző bővítményt. A bővítmény "
+"engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</"
+"gui><gui>Bővítmények</gui><gui>Helyesírás-ellenőrzőt</gui></guiseq>."
 
 #: C/gedit-spellcheck.page:19(p)
 msgid ""
 "Select <guiseq><gui>Tools</gui><gui>Autocheck Spelling</gui></guiseq> to "
 "make <app>gedit</app> highlight spelling errors while you type."
-msgstr "A <app>gedit</app> képes gépelés közben aláhúzni a helyesírási hibákat. Ehhez válassza az <guiseq><gui>Eszközök</gui><gui>Helyesírás automatikus ellenőrzése</gui></guiseq> menüpontot."
+msgstr ""
+"A <app>gedit</app> képes gépelés közben aláhúzni a helyesírási hibákat. "
+"Ehhez válassza az <guiseq><gui>Eszközök</gui><gui>Helyesírás automatikus "
+"ellenőrzése</gui></guiseq> menüpontot."
 
 #: C/gedit-shortcut-keys.page:13(name)
 msgid "Paolo Borelli"
@@ -430,7 +476,6 @@ msgstr ""
 "felsorolják a <app>gedit</app> összes gyorsbillentyűjét."
 
 #: C/gedit-shortcut-keys.page:46(title)
-#| msgid "Shortcut key"
 msgid "Tab-related Shortcut keys"
 msgstr "Lapokkal kapcsolatos gyorsbillentyűk"
 
@@ -449,7 +494,6 @@ msgid "Press This"
 msgstr "Nyomja meg ezt"
 
 #: C/gedit-shortcut-keys.page:58(p)
-#| msgid "Switches to the next tab to the left."
 msgid "Switch to the next tab to the left"
 msgstr "Váltás a balra lévő lapra"
 
@@ -459,7 +503,6 @@ msgid "Ctrl + Alt + PageUp"
 msgstr "Ctrl + Alt + PageUp"
 
 #: C/gedit-shortcut-keys.page:61(p)
-#| msgid "Switches to the next tab to the right."
 msgid "Switch to the next tab to the right"
 msgstr "Váltás a jobbra lévő lapra"
 
@@ -469,7 +512,6 @@ msgid "Ctrl + Alt + PageDown"
 msgstr "Ctrl + Alt + PageDown"
 
 #: C/gedit-shortcut-keys.page:64(p)
-#| msgid "Close tab."
 msgid "Close tab"
 msgstr "Lap bezárása"
 
@@ -478,7 +520,6 @@ msgid "Ctrl + W"
 msgstr "Ctrl + W"
 
 #: C/gedit-shortcut-keys.page:67(p)
-#| msgid "Save all tabs."
 msgid "Save all tabs"
 msgstr "Az összes lap mentése"
 
@@ -487,7 +528,6 @@ msgid "Ctrl + Shift + L"
 msgstr "Ctrl + Shift + L"
 
 #: C/gedit-shortcut-keys.page:70(p)
-#| msgid "Close all tabs."
 msgid "Close all tabs"
 msgstr "Az összes lap bezárása"
 
@@ -496,7 +536,6 @@ msgid "Ctrl + Shift + W"
 msgstr "Ctrl + Shift + W"
 
 #: C/gedit-shortcut-keys.page:73(p)
-#| msgid "Jump to nth tab."
 msgid "Jump to <var>n</var>th tab"
 msgstr "Váltás az <var>n</var>. lapra"
 
@@ -505,12 +544,10 @@ msgid "Alt + <var>n</var>"
 msgstr "Alt + <var>n</var>"
 
 #: C/gedit-shortcut-keys.page:80(title)
-#| msgid "Shortcuts for working with files:"
 msgid "Shortcut keys for working with files"
 msgstr "Gyorsbillentyűk fájlok kezeléséhez"
 
 #: C/gedit-shortcut-keys.page:90(p)
-#| msgid "Create a new document."
 msgid "Create a new document"
 msgstr "Új dokumentum létrehozása"
 
@@ -519,7 +556,6 @@ msgid "Ctrl + N"
 msgstr "Ctrl + N"
 
 #: C/gedit-shortcut-keys.page:93(p)
-#| msgid "Open a document."
 msgid "Open a document"
 msgstr "Dokumentum megnyitása"
 
@@ -528,7 +564,6 @@ msgid "Ctrl + O"
 msgstr "Ctrl + O"
 
 #: C/gedit-shortcut-keys.page:96(p)
-#| msgid "Save the current document to disk."
 msgid "Save the current document"
 msgstr "A jelenlegi dokumentum mentése"
 
@@ -537,7 +572,6 @@ msgid "Ctrl + S"
 msgstr "Ctrl + S"
 
 #: C/gedit-shortcut-keys.page:99(p)
-#| msgid "Save the current document with a new filename."
 msgid "Save the current document with a new filename"
 msgstr "A jelenlegi dokumentum mentése más fájlnéven"
 
@@ -546,7 +580,6 @@ msgid "Ctrl + Shift + S"
 msgstr "Ctrl + Shift + S"
 
 #: C/gedit-shortcut-keys.page:102(p)
-#| msgid "Print the current document."
 msgid "Print the current document"
 msgstr "A jelenlegi dokumentum nyomtatása"
 
@@ -555,7 +588,6 @@ msgid "Ctrl + P"
 msgstr "Ctrl + P"
 
 #: C/gedit-shortcut-keys.page:105(p)
-#| msgid "Print preview."
 msgid "Print preview"
 msgstr "Nyomtatási kép"
 
@@ -564,12 +596,10 @@ msgid "Ctrl + Shift + P"
 msgstr "Ctrl + Shift + P"
 
 #: C/gedit-shortcut-keys.page:108(p)
-#| msgid "Close the current document."
 msgid "Close the current document"
 msgstr "A jelenlegi dokumentum bezárása"
 
 #: C/gedit-shortcut-keys.page:111(p)
-#| msgid "Quit Gedit."
 msgid "Quit gedit"
 msgstr "Kilépés a geditből"
 
@@ -578,12 +608,10 @@ msgid "Ctrl + Q"
 msgstr "Ctrl + Q"
 
 #: C/gedit-shortcut-keys.page:118(title)
-#| msgid "Shortcuts for editing documents:"
 msgid "Shortcut keys for editing files"
 msgstr "Gyorsbillentyűk fájlok szerkesztéséhez"
 
 #: C/gedit-shortcut-keys.page:128(p)
-#| msgid "Undo the last action."
 msgid "Undo the last action"
 msgstr "Az utolsó művelet visszavonása"
 
@@ -592,7 +620,6 @@ msgid "Ctrl + Z"
 msgstr "Ctrl + Z"
 
 #: C/gedit-shortcut-keys.page:131(p)
-#| msgid "Redo the last undone action ."
 msgid "Redo the last undone action"
 msgstr "A visszavont művelet végrehajtása mégis"
 
@@ -601,7 +628,6 @@ msgid "Ctrl + Shift + Z"
 msgstr "Ctrl + Shift + Z"
 
 #: C/gedit-shortcut-keys.page:134(p)
-#| msgid "Cut the selected text or region and place it on the clipboard."
 msgid "Cut the selected text or region and place it on the clipboard"
 msgstr "A kijelölt szöveg vagy terület kivágása és vágólapra helyezése"
 
@@ -610,7 +636,6 @@ msgid "Ctrl + X"
 msgstr "Ctrl + X"
 
 #: C/gedit-shortcut-keys.page:137(p)
-#| msgid "Copy the selected text or region onto the clipboard."
 msgid "Copy the selected text or region onto the clipboard"
 msgstr "A kijelölt szöveg vagy terület másolása a vágólapra"
 
@@ -619,7 +644,6 @@ msgid "Ctrl + C"
 msgstr "Ctrl + C"
 
 #: C/gedit-shortcut-keys.page:140(p)
-#| msgid "Paste the contents of the clipboard."
 msgid "Paste the contents of the clipboard"
 msgstr "A vágólap tartalmának beillesztése"
 
@@ -636,7 +660,6 @@ msgid "Ctrl + A"
 msgstr "Ctrl + A"
 
 #: C/gedit-shortcut-keys.page:146(p)
-#| msgid "Delete current line."
 msgid "Delete the current line"
 msgstr "A jelenlegi sor törlése"
 
@@ -645,32 +668,26 @@ msgid "Ctrl + D"
 msgstr "Ctrl + D"
 
 #: C/gedit-shortcut-keys.page:149(p)
-#| msgid "Move the selected line up one line."
 msgid "Move the selected line up one line"
 msgstr "A kijelölt sor egy sorral feljebb mozgatása"
 
 #: C/gedit-shortcut-keys.page:149(p)
-#| msgid "Alt + Up"
 msgid "Alt + Up Arrow"
 msgstr "Alt + Fel nyíl"
 
 #: C/gedit-shortcut-keys.page:152(p)
-#| msgid "Move the selected line down one line."
 msgid "Move the selected line down one line"
 msgstr "A kijelölt sor egy sorral lejjebb mozgatása"
 
 #: C/gedit-shortcut-keys.page:152(p)
-#| msgid "Alt + Down"
 msgid "Alt + Down Arrow"
 msgstr "Alt + Le nyíl"
 
 #: C/gedit-shortcut-keys.page:159(title)
-#| msgid "Shortcuts for showing and hiding panes:"
 msgid "Shortcut keys for showing and hiding panes"
 msgstr "Ablaktáblákat elrejtő és megjelenítő gyorsbillentyűk"
 
 #: C/gedit-shortcut-keys.page:169(p)
-#| msgid "Show/hide the side pane."
 msgid "Show / hide the side pane"
 msgstr "Oldalsó ablaktábla megjelenítése/elrejtése"
 
@@ -679,7 +696,6 @@ msgid "F9"
 msgstr "F9"
 
 #: C/gedit-shortcut-keys.page:172(p)
-#| msgid "Show/hide the bottom pane."
 msgid "Show / hide the bottom pane."
 msgstr "Alsó ablaktábla megjelenítése/elrejtése"
 
@@ -688,12 +704,10 @@ msgid "Ctrl + F9"
 msgstr "Ctrl + F9"
 
 #: C/gedit-shortcut-keys.page:179(title)
-#| msgid "Shortcuts for searching:"
 msgid "Shortcut keys for searching"
 msgstr "Gyorsbillentyűk a kereséshez"
 
 #: C/gedit-shortcut-keys.page:189(p)
-#| msgid "Find a string."
 msgid "Find a string"
 msgstr "Karakterlánc keresése"
 
@@ -702,7 +716,6 @@ msgid "Ctrl + F"
 msgstr "Ctrl + F"
 
 #: C/gedit-shortcut-keys.page:192(p)
-#| msgid "Find the next instance of the string."
 msgid "Find the next instance of the string"
 msgstr "A karakterlánc következő előfordulására ugrás"
 
@@ -711,7 +724,6 @@ msgid "Ctrl + G"
 msgstr "Ctrl + G"
 
 #: C/gedit-shortcut-keys.page:195(p)
-#| msgid "Find the previous instance of the string."
 msgid "Find the previous instance of the string"
 msgstr "A karakterlánc előző előfordulására ugrás"
 
@@ -720,7 +732,6 @@ msgid "Ctrl + Shift + G"
 msgstr "Ctrl + Shift + G"
 
 #: C/gedit-shortcut-keys.page:198(p)
-#| msgid "Search and replace."
 msgid "Search and Replace"
 msgstr "Keresés és csere"
 
@@ -729,7 +740,6 @@ msgid "Ctrl + H"
 msgstr "Ctrl + H"
 
 #: C/gedit-shortcut-keys.page:201(p)
-#| msgid "Clear highlight."
 msgid "Clear highlight"
 msgstr "Kiemelés törlése"
 
@@ -738,7 +748,6 @@ msgid "Ctrl + Shift + K"
 msgstr "Ctrl + Shift + K"
 
 #: C/gedit-shortcut-keys.page:204(p)
-#| msgid "Goto line."
 msgid "Goto line"
 msgstr "Ugrás sorra"
 
@@ -747,12 +756,10 @@ msgid "Ctrl + I"
 msgstr "Ctrl + I"
 
 #: C/gedit-shortcut-keys.page:211(title)
-#| msgid "Shortcuts for tools:"
 msgid "Shortcut keys for tools"
 msgstr "Gyorsbillentyűk az eszközökhöz"
 
 #: C/gedit-shortcut-keys.page:221(p)
-#| msgid "Check spelling (with plugin)."
 msgid "Check spelling"
 msgstr "Helyesírás-ellenőrzés"
 
@@ -761,7 +768,6 @@ msgid "Shift + F7"
 msgstr "Shift + F7"
 
 #: C/gedit-shortcut-keys.page:224(p)
-#| msgid "Remove trailing spaces (with plugin)."
 msgid "Remove trailing spaces (with plugin)"
 msgstr "Sorvégi szóközök törlése (bővítménnyel)"
 
@@ -770,7 +776,6 @@ msgid "Alt + F12"
 msgstr "Alt + F12"
 
 #: C/gedit-shortcut-keys.page:227(p)
-#| msgid "Run \"make\" in current directory (with plugin)."
 msgid "Run \"make\" in the current directory (with plugin)"
 msgstr "A „make” futtatása az aktuális könyvtárban (bővítménnyel)"
 
@@ -779,7 +784,6 @@ msgid "F8"
 msgstr "F8"
 
 #: C/gedit-shortcut-keys.page:230(p)
-#| msgid "Directory listing (with plugin)."
 msgid "Directory listing (with plugin)"
 msgstr "Könyvtár listázása (bővítménnyel)"
 
@@ -788,7 +792,6 @@ msgid "Ctrl + Shift + D"
 msgstr "Ctrl + Shift + D"
 
 #: C/gedit-shortcut-keys.page:237(title)
-#| msgid "Shortcuts for help:"
 msgid "Shortcut keys for user help"
 msgstr "Súgó gyorsbillentyűi"
 
@@ -811,7 +814,6 @@ msgid ""
 msgstr "A Keresés eszköz segítségével megadott szövegdarabokat kereshet a fájlban."
 
 #: C/gedit-search.page:23(title)
-#| msgid "Finding Text"
 msgid "Finding text"
 msgstr "Szöveg keresése"
 
@@ -821,7 +823,11 @@ msgid ""
 "<guiseq><gui>Search</gui><gui>Find</gui></guiseq> or pressing "
 "<keyseq><key>Ctrl</key><key>F</key></keyseq>. This will move your cursor to "
 "the start of the <gui>search window</gui>."
-msgstr "A <gui style=\"menu\">keresés ablak</gui> megnyitásához válassza a <guiseq><gui>Keresés</gui><gui>Keresés</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>F</key></keyseq> kombinációt. Ez a kurzort a <gui>keresés ablak</gui> elejére viszi."
+msgstr ""
+"A <gui style=\"menu\">keresés ablak</gui> megnyitásához válassza a "
+"<guiseq><gui>Keresés</gui><gui>Keresés</gui></guiseq> menüpontot, vagy "
+"nyomja meg a <keyseq><key>Ctrl</key><key>F</key></keyseq> kombinációt. Ez a "
+"kurzort a <gui>keresés ablak</gui> elejére viszi."
 
 #: C/gedit-search.page:25(p)
 msgid "Type the text you wish to search for in the <gui>search window</gui>."
@@ -831,7 +837,9 @@ msgstr "Írja be a keresendő szöveget a <gui>keresés ablakba</gui>."
 msgid ""
 "As you type, <app>gedit</app> will begin highlighting the portions of text "
 "that match what you have entered."
-msgstr "Gépelés közben a <app>gedit</app> megkezdi a beírt szövegre illeszkedő szövegdarabok kiemelését."
+msgstr ""
+"Gépelés közben a <app>gedit</app> megkezdi a beírt szövegre illeszkedő "
+"szövegdarabok kiemelését."
 
 #: C/gedit-search.page:27(p)
 msgid ""
@@ -839,7 +847,11 @@ msgid ""
 "<gui>search window</gui> (or <keyseq><key>Ctrl</key><key>G</key></keyseq> or "
 "<keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>) to scroll up "
 "or down through the highlighted text."
-msgstr "Használja a <gui>keresés ablak</gui> melletti <gui>fel</gui> vagy <gui>le</gui> mutató nyilakat (vagy a <keyseq><key>Ctrl</key><key>G</key></keyseq> és <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq> kombinációkat) a kiemelt szövegben való fel vagy le mozgáshoz."
+msgstr ""
+"Használja a <gui>keresés ablak</gui> melletti <gui>fel</gui> vagy <gui>le</"
+"gui> mutató nyilakat (vagy a <keyseq><key>Ctrl</key><key>G</key></keyseq> és "
+"<keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq> kombinációkat) "
+"a kiemelt szövegben való fel vagy le mozgáshoz."
 
 #: C/gedit-search.page:30(p)
 msgid "To close the <gui>search window</gui>, press <key>Esc</key>."
@@ -851,10 +863,13 @@ msgid ""
 "after you have completed your search. To remove the highlight, click "
 "<guiseq><gui>Search</gui><gui>Clear Highlight</gui></guiseq>, or press "
 "<keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq>."
-msgstr "A keresett szöveg kiemelve marad, még a keresés befejezése után is. A kiemelés eltávolításához válassza a <guiseq><gui>Keresés</gui><gui>Kiemelés törlése</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq> kombinációt."
+msgstr ""
+"A keresett szöveg kiemelve marad, még a keresés befejezése után is. A "
+"kiemelés eltávolításához válassza a <guiseq><gui>Keresés</gui><gui>Kiemelés "
+"törlése</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</"
+"key><key>Shift</key><key>K</key></keyseq> kombinációt."
 
 #: C/gedit-save-file.page:14(title)
-#| msgid "Create a new document."
 msgid "Save a file"
 msgstr "Fájl mentése"
 
@@ -864,17 +879,23 @@ msgid ""
 "word <gui>Save</gui> next to it. You may also select <guiseq><gui>File</"
 "gui><gui>Save</gui></guiseq>, or just press <keyseq><key>Ctrl</key><key>S</"
 "key></keyseq>."
-msgstr "Fájl mentéséhez a <app>geditben</app> kattintson a <gui>Mentés</gui> szövegű lemezmeghajtó ikonra. Választhatja a <guiseq><gui>Fájl</gui><gui>Mentés</gui></guiseq> menüpontot is, vagy megnyomhatja a <keyseq><key>Ctrl</key><key>S</key></keyseq> kombinációt is."
+msgstr ""
+"Fájl mentéséhez a <app>geditben</app> kattintson a <gui>Mentés</gui> szövegű "
+"lemezmeghajtó ikonra. Választhatja a <guiseq><gui>Fájl</gui><gui>Mentés</"
+"gui></guiseq> menüpontot is, vagy megnyomhatja a <keyseq><key>Ctrl</"
+"key><key>S</key></keyseq> kombinációt is."
 
 #: C/gedit-save-file.page:17(p)
 msgid ""
 "If you are saving a new file, the <gui>Save File</gui> dialog will appear, "
 "and you can select a name for the file, as well as the directory where you "
 "would like the file to be saved."
-msgstr "Ha új fájlt ment, akkor megjelenik a <gui>Fájl mentése</gui> ablak, és kiválaszthatja a fájl nevét, valamint a könyvtárat, amelybe a fájlt menteni szeretné."
+msgstr ""
+"Ha új fájlt ment, akkor megjelenik a <gui>Fájl mentése</gui> ablak, és "
+"kiválaszthatja a fájl nevét, valamint a könyvtárat, amelybe a fájlt menteni "
+"szeretné."
 
 #: C/gedit-replace.page:20(title)
-#| msgid "Replacing Text"
 msgid "Replace text"
 msgstr "Szöveg cseréje"
 
@@ -883,7 +904,10 @@ msgid ""
 "Editing text can be time consuming. To save time, <app>gedit</app> includes "
 "a <app>Replace</app> function that helps you to find and replace portions of "
 "text."
-msgstr "A szöveg szerkesztése időigényes lehet. Az időspórolás érdekében a <app>gedit</app> tartalmazza a <app>Csere</app> funkciót, amely segíti a szövegrészek keresésében és helyettesítésében."
+msgstr ""
+"A szöveg szerkesztése időigényes lehet. Az időspórolás érdekében a "
+"<app>gedit</app> tartalmazza a <app>Csere</app> funkciót, amely segíti a "
+"szövegrészek keresésében és helyettesítésében."
 
 #: C/gedit-replace.page:25(title)
 msgid "Replace text in <app>gedit</app>"
@@ -893,7 +917,10 @@ msgstr "Szöveg cseréje a <app>geditben</app>"
 msgid ""
 "Open the Replace tool by clicking <guiseq><gui>Search</gui><gui>Replace</"
 "gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
-msgstr "A Csere eszközt a <guiseq><gui>Keresés</gui><gui>Csere</gui></guiseq> menüpont kiválasztásával, vagy a <keyseq><key>Ctrl</key><key>H</key></keyseq> kombináció megnyomásával indíthatja el."
+msgstr ""
+"A Csere eszközt a <guiseq><gui>Keresés</gui><gui>Csere</gui></guiseq> "
+"menüpont kiválasztásával, vagy a <keyseq><key>Ctrl</key><key>H</key></"
+"keyseq> kombináció megnyomásával indíthatja el."
 
 #: C/gedit-replace.page:27(p)
 msgid "Enter the text that you wish to replace into the 'Search for:' field."
@@ -907,32 +934,35 @@ msgstr "Az új helyettesítő szöveget írja be a „Csere ezzel” mezőbe."
 msgid ""
 "Once you have entered the original and replacement text, select your desired "
 "replacement options:"
-msgstr "Az eredeti és helyettesítő szöveg megadása után válassza ki a kívánt cserebeállításokat:"
+msgstr ""
+"Az eredeti és helyettesítő szöveg megadása után válassza ki a kívánt "
+"cserebeállításokat:"
 
 #: C/gedit-replace.page:32(p)
-#| msgid ""
-#| "To replace all occurrences of the string throughout the document, click "
-#| "<guibutton>Replace All</guibutton>."
 msgid ""
 "To replace <em>only</em> the next matching portion of text, click "
 "<gui>Replace</gui>."
-msgstr "A <em>következő</em> előfordulás cseréléséhez kattintson a <gui>Csere</gui> gombra."
+msgstr ""
+"A <em>következő</em> előfordulás cseréléséhez kattintson a <gui>Csere</gui> "
+"gombra."
 
 #: C/gedit-replace.page:33(p)
-#| msgid ""
-#| "To replace all occurrences of the string throughout the document, click "
-#| "<guibutton>Replace All</guibutton>."
 msgid ""
 "To replace <em>all occurrences</em> of the searched-for text, click "
 "<gui>Replace All</gui>."
-msgstr "A dokumentumban lévő <em>összes előfordulás</em> cseréléséhez kattintson az <gui>Összes cseréje</gui> gombra."
+msgstr ""
+"A dokumentumban lévő <em>összes előfordulás</em> cseréléséhez kattintson az "
+"<gui>Összes cseréje</gui> gombra."
 
 #: C/gedit-replace.page:39(p)
 msgid ""
 "Use the <gui>Replace All</gui> function with care. <gui>Replace All</gui> "
 "works on the entirety of your text file, and does not allow you to highlight "
 "portions of text where the replace function will be performed."
-msgstr "Az <gui>Összes cseréje</gui> funkciót óvatosan használja. Az <gui>Összes cseréje</gui> funkció a teljes szövegfájlon működik, és nem teszi lehetővé azon szövegrészek kiemelését, amelyen a csere funkció végrehajtásra kerül."
+msgstr ""
+"Az <gui>Összes cseréje</gui> funkciót óvatosan használja. Az <gui>Összes "
+"cseréje</gui> funkció a teljes szövegfájlon működik, és nem teszi lehetővé "
+"azon szövegrészek kiemelését, amelyen a csere funkció végrehajtásra kerül."
 
 #: C/gedit-replace.page:43(title)
 msgid "More options"
@@ -947,7 +977,10 @@ msgid ""
 "The <em>Match case</em> option allows you to specify whether you want your "
 "search to be case-sensitive. If this option is selected, searches will be "
 "case-sensitive. If not, searches will not be case-sensitive."
-msgstr "A <em>Kis- és nagybetű</em> beállítással megadhatja, hogy a keresés megkülönböztesse-e a kis- és nagybetűket. Ha ez be van jelölve, akkor a keresés megkülönbözteti a kis- és nagybetűket, ellenkező esetben nem."
+msgstr ""
+"A <em>Kis- és nagybetű</em> beállítással megadhatja, hogy a keresés "
+"megkülönböztesse-e a kis- és nagybetűket. Ha ez be van jelölve, akkor a "
+"keresés megkülönbözteti a kis- és nagybetűket, ellenkező esetben nem."
 
 #: C/gedit-replace.page:50(title)
 msgid "Match entire word only"
@@ -959,7 +992,11 @@ msgid ""
 "other words. For example, if you searched for the word 'and' with this "
 "option selected, the word 'and' would be matched, but the words 's<em>and</"
 "em>' and 'comm<em>and</em>er' would not be matched."
-msgstr "Ezen beállítással megadható, hogy adott szóra más szavak töredékeit kizárva szeretne-e keresni. Ha például az „és” szót keresi, és ez a beállítás be van jelölve, akkor az „és” szót megtalálja, de a „köt<em>és</em>” vagy a „k<em>és</em>ik” szót már nem."
+msgstr ""
+"Ezen beállítással megadható, hogy adott szóra más szavak töredékeit kizárva "
+"szeretne-e keresni. Ha például az „és” szót keresi, és ez a beállítás be van "
+"jelölve, akkor az „és” szót megtalálja, de a „köt<em>és</em>” vagy a "
+"„k<em>és</em>ik” szót már nem."
 
 #: C/gedit-replace.page:54(title)
 msgid "Search backwards"
@@ -969,7 +1006,10 @@ msgstr "Keresés visszafelé"
 msgid ""
 "This command behaves identically to the Find Previous command. If you wish "
 "to step through search results from end to beginning, select this option."
-msgstr "Ez a beállítás azonosan működik az Előző keresése paranccsal. Ha a találatokat a vége felől az eleje felé szeretné bejárni, akkor jelölje be ezt a négyzetet."
+msgstr ""
+"Ez a beállítás azonosan működik az Előző keresése paranccsal. Ha a "
+"találatokat a vége felől az eleje felé szeretné bejárni, akkor jelölje be "
+"ezt a négyzetet."
 
 #: C/gedit-replace.page:58(title)
 msgid "Wrap around"
@@ -981,13 +1021,15 @@ msgid ""
 "start the search/replace action at the top of the file after it has reached "
 "the bottom of the file. This ensures that your search/replace action is made "
 "across your entire file."
-msgstr "Ha a <app>körbe</app> négyzet be van jelölve, akkor a <app>gedit</app> a keresés/csere műveletet újraindítja a fájl elejétől, miután elérte a fájl végét. Ez biztosítja, hogy a keresés/csere művelet a teljes fájlra végrehajtásra kerüljön."
+msgstr ""
+"Ha a <app>körbe</app> négyzet be van jelölve, akkor a <app>gedit</app> a "
+"keresés/csere műveletet újraindítja a fájl elejétől, miután elérte a fájl "
+"végét. Ez biztosítja, hogy a keresés/csere művelet a teljes fájlra "
+"végrehajtásra kerüljön."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/gedit-quickstart.page:19(None)
-#| msgid ""
-#| "@@image: 'figures/gedit_window.png'; md5=a1daf2ed54a551bb590a172bc730594c"
 msgid ""
 "@@image: 'figures/gedit3-screenshot.png'; "
 "md5=174aac884967f8e4226ab33d9498c60b"
@@ -996,7 +1038,6 @@ msgstr ""
 "md5=174aac884967f8e4226ab33d9498c60b"
 
 #: C/gedit-quickstart.page:16(title)
-#| msgid "Starting gedit"
 msgid "Get started with gedit"
 msgstr "A gedit bemutatása"
 
@@ -1006,27 +1047,39 @@ msgid ""
 "environment. You can use it to prepare simple notes and documents, or you "
 "can use some of its advanced features, making it your own software "
 "development environment."
-msgstr "A <app>gedit</app> egy teljes felszereltségű szövegszerkesztő a GNOME asztali környezethez. Használhatja egyszerű jegyzetek és dokumentumok készítésére, vagy fejlettebb funkcióinak használatával saját szoftverfejlesztői környezetévé alakíthatja."
+msgstr ""
+"A <app>gedit</app> egy teljes felszereltségű szövegszerkesztő a GNOME "
+"asztali környezethez. Használhatja egyszerű jegyzetek és dokumentumok "
+"készítésére, vagy fejlettebb funkcióinak használatával saját "
+"szoftverfejlesztői környezetévé alakíthatja."
 
 #: C/gedit-quickstart.page:21(p)
 msgid ""
 "Once <app>gedit</app> launches, you can start writing right away. To save "
 "your text, just click <gui>Save</gui>."
-msgstr "A <app>gedit</app> indulása után azonnal megkezdheti az írást. A szöveg mentéséhez kattintson a <gui>Mentés</gui> gombra."
+msgstr ""
+"A <app>gedit</app> indulása után azonnal megkezdheti az írást. A szöveg "
+"mentéséhez kattintson a <gui>Mentés</gui> gombra."
 
 #: C/gedit-quickstart.page:23(p)
 msgid ""
 "To learn about additional <app>gedit</app> features and to get assistance "
 "with performing additional tasks, explore <link xref=\"index\">the other "
 "portions</link> of the <app>gedit</app> help."
-msgstr "A <app>gedit</app> további szolgáltatásainak megismeréséhez és a további feladatok elvégzésével kapcsolatos segítségért nézze meg a <app>gedit</app> súgójának <link xref=\"index\">további témaköreit</link>."
+msgstr ""
+"A <app>gedit</app> további szolgáltatásainak megismeréséhez és a további "
+"feladatok elvégzésével kapcsolatos segítségért nézze meg a <app>gedit</app> "
+"súgójának <link xref=\"index\">további témaköreit</link>."
 
 #: C/gedit-printing.page:19(p)
 msgid ""
 "Printing with <app>gedit</app> requires that you have connected and "
 "configured your printer. If you have not done this, please consult the "
 "printing help documentation for your desktop environment."
-msgstr "A <app>geditből</app> való nyomtatáshoz csatlakoztatnia kell nyomtatóját, és be kell azt állítania. Ha ezt még nem tette meg, nézze meg az asztali környezet nyomtatóbeállítással kapcsolatos dokumentációját."
+msgstr ""
+"A <app>geditből</app> való nyomtatáshoz csatlakoztatnia kell nyomtatóját, és "
+"be kell azt állítania. Ha ezt még nem tette meg, nézze meg az asztali "
+"környezet nyomtatóbeállítással kapcsolatos dokumentációját."
 
 #: C/gedit-printing.page:22(p)
 msgid ""
@@ -1034,15 +1087,17 @@ msgid ""
 "printing output to paper. Prior to printing your document, you can also "
 "preview how the printed document will look by using the <app>Print Preview</"
 "app> feature."
-msgstr "A <app>gedit</app> a papírra való nyomtatás mellett lehetővé teszi a nyomtatás kimenetének fájlba irányítását is. A dokumentum nyomtatása előtt az <app>Előnézet</app> szolgáltatással megjelenítheti, hogy hogyan fog a kinyomtatott dokumentum kinézni."
+msgstr ""
+"A <app>gedit</app> a papírra való nyomtatás mellett lehetővé teszi a "
+"nyomtatás kimenetének fájlba irányítását is. A dokumentum nyomtatása előtt "
+"az <app>Előnézet</app> szolgáltatással megjelenítheti, hogy hogyan fog a "
+"kinyomtatott dokumentum kinézni."
 
 #: C/gedit-printing.page:25(title)
-#| msgid "Printing"
 msgid "Printing to paper"
 msgstr "Nyomtatás papírra"
 
 #: C/gedit-printing.page:29(title)
-#| msgid "Printing"
 msgid "Printing output to a file"
 msgstr "Nyomtatás fájlba"
 
@@ -1050,7 +1105,10 @@ msgstr "Nyomtatás fájlba"
 msgid ""
 "You can also use <app>gedit</app> to print to a file. To do so, select "
 "<guiseq><gui>File</gui><gui>Print</gui><gui>Print to File</gui></guiseq>."
-msgstr "A <app>gedit</app> segítségével fájlba is nyomtathat. Ehhez válassza a <guiseq><gui>Fájl</gui><gui>Nyomtatás</gui><gui>Nyomtatás fájlba</gui></guiseq> lehetőséget."
+msgstr ""
+"A <app>gedit</app> segítségével fájlba is nyomtathat. Ehhez válassza a "
+"<guiseq><gui>Fájl</gui><gui>Nyomtatás</gui><gui>Nyomtatás fájlba</gui></"
+"guiseq> lehetőséget."
 
 #: C/gedit-printing.page:32(p)
 msgid "Printing is enabled for the following file formats:"
@@ -1078,42 +1136,57 @@ msgid ""
 "<app>Gnome Terminal</app>, the GNOME command-line application, in the bottom "
 "pane of the <app>gedit</app> window. This will let you run scripts, install "
 "needed software, or test your program without leaving <app>gedit</app>."
-msgstr "A <app>gedit</app> lehetővé teszi a <app>Gnome Terminál</app>, a GNOME parancssor alkalmazásának beágyazását a <app>gedit</app> ablakának aljába. Ez lehetővé teszi parancsfájlok futtatását, szükséges szoftverek telepítését, vagy programjának tesztelését a <app>gedit</app> elhagyása nélkül."
+msgstr ""
+"A <app>gedit</app> lehetővé teszi a <app>Gnome Terminál</app>, a GNOME "
+"parancssor alkalmazásának beágyazását a <app>gedit</app> ablakának aljába. "
+"Ez lehetővé teszi parancsfájlok futtatását, szükséges szoftverek "
+"telepítését, vagy programjának tesztelését a <app>gedit</app> elhagyása "
+"nélkül."
 
 #: C/gedit-plugins-terminal.page:19(p)
 msgid ""
 "To enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</"
 "gui><gui>Plugins</gui><gui>Embedded Terminal</gui></guiseq>."
-msgstr "A bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Beágyazott terminál</gui></guiseq> lehetőséget."
+msgstr ""
+"A bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</"
+"gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Beágyazott terminál</"
+"gui></guiseq> lehetőséget."
 
 #: C/gedit-plugins-terminal.page:21(p)
 msgid ""
-"Once you have enabled the plugin, add the terminal to the bottom panel by "
+"Once you have enabled the plugin, add the terminal to the bottom pane by "
 "selecting <guiseq><gui>View</gui><gui>Bottom Pane</gui></guiseq>, or just "
 "press <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
-msgstr "A bővítmény engedélyezése után a terminált a <guiseq><gui>Nézet</gui><gui>Alsó ablaktábla</gui></guiseq> menüpont kiválasztásával, vagy a <keyseq><key>Ctrl</key><key>F9</key></keyseq> megnyomásával veheti fel az alsó ablaktáblába."
+msgstr ""
+"A bővítmény engedélyezése után a terminált a <guiseq><gui>Nézet</"
+"gui><gui>Alsó ablaktábla</gui></guiseq> menüpont kiválasztásával, vagy a "
+"<keyseq><key>Ctrl</key><key>F9</key></keyseq> megnyomásával veheti fel az "
+"alsó ablaktáblába."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/gedit-plugins-tag-list.page:33(None)
-#| msgid ""
-#| "@@image: 'figures/gedit_window.png'; md5=a1daf2ed54a551bb590a172bc730594c"
 msgid "@@image: 'figures/gedit-side-pane3.png'; md5=4b800d370193ac0ed8db9eb33b86e11c"
 msgstr "@@image: 'figures/gedit-side-pane3.png'; md5=4b800d370193ac0ed8db9eb33b86e11c"
 
 #: C/gedit-plugins-tag-list.page:18(title)
 msgid "Automatically insert tags, strings and special characters into a document"
-msgstr "Címkék, karakterláncok és speciális karakterek automatikus beszúrása a dokumentumba"
+msgstr ""
+"Címkék, karakterláncok és speciális karakterek automatikus beszúrása a "
+"dokumentumba"
 
 #: C/gedit-plugins-tag-list.page:19(p)
 msgid ""
 "The <app>Tag List</app> plugin allows you to insert common tags and special "
 "characters from a list in the side pane. By default, the plugin can insert "
 "tags and special characters for HTML, XHTML, XSLT, XUL and LaTeX."
-msgstr "Az <app>Elemlista</app> bővítmény lehetővé teszi gyakori címkék és speciális karakterek beszúrását az oldalsávban lévő listából. Alapbeállítás szerint a bővítmény HTML, XHTML, XSLT, XUL és LaTeX címkék és speciális karakterek beszúrására képes."
+msgstr ""
+"Az <app>Elemlista</app> bővítmény lehetővé teszi gyakori címkék és speciális "
+"karakterek beszúrását az oldalsávban lévő listából. Alapbeállítás szerint a "
+"bővítmény HTML, XHTML, XSLT, XUL és LaTeX címkék és speciális karakterek "
+"beszúrására képes."
 
 #: C/gedit-plugins-tag-list.page:22(title)
-#| msgid "Tag List Plugin"
 msgid "Using the Tag List plugin"
 msgstr "Az Elemlista bővítmény használata"
 
@@ -1121,10 +1194,11 @@ msgstr "Az Elemlista bővítmény használata"
 msgid ""
 "To use the <app>Tag List</app> plugin, you will need to enable the plugin, "
 "and then activate the tag-list portion of the side pane."
-msgstr "Az <app>Elemlista</app> bővítmény használatához engedélyeznie kell a bővítményt, majd aktiválnia kell az oldalsáv elemlista részét."
+msgstr ""
+"Az <app>Elemlista</app> bővítmény használatához engedélyeznie kell a "
+"bővítményt, majd aktiválnia kell az oldalsáv elemlista részét."
 
 #: C/gedit-plugins-tag-list.page:27(title)
-#| msgid "Enabling a Plugin"
 msgid "Enabling the Plugin"
 msgstr "Bővítmény engedélyezése"
 
@@ -1135,17 +1209,24 @@ msgid ""
 "Once you have activated the plugin, access it by selecting "
 "<guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, or by pressing "
 "<key>F9</key>."
-msgstr "A bővítmény aktiválásához válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Elemlista</gui></guiseq> lehetőséget. A bővítmény aktválása után a <guiseq><gui>Nézet</gui><gui>Oldalsáv</gui></guiseq> kiválasztásával, vagy az <key>F9</key> megnyomásával érheti el azt."
+msgstr ""
+"A bővítmény aktiválásához válassza a <guiseq><gui>Szerkesztés</"
+"gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Elemlista</gui></"
+"guiseq> lehetőséget. A bővítmény aktválása után a <guiseq><gui>Nézet</"
+"gui><gui>Oldalsáv</gui></guiseq> kiválasztásával, vagy az <key>F9</key> "
+"megnyomásával érheti el azt."
 
 #: C/gedit-plugins-tag-list.page:30(p)
 msgid ""
 "The side pane initially shows a list of open documents, so to view and use "
 "the <app>tag list</app>, you will need to click on the tab showing the \"plus"
 "\" icon at the bottom of the side pane. The icon will look similar to this:"
-msgstr "Az oldalsáv kezdetben a megnyitott dokumentumok listáját jeleníti meg, így az <app>elemlista</app> megjelenítéséhez és használatához az oldalsáv alján lévő „plusz” ikont ábrázoló lapra kell kattintania."
+msgstr ""
+"Az oldalsáv kezdetben a megnyitott dokumentumok listáját jeleníti meg, így "
+"az <app>elemlista</app> megjelenítéséhez és használatához az oldalsáv alján "
+"lévő „plusz” ikont ábrázoló lapra kell kattintania."
 
 #: C/gedit-plugins-tag-list.page:37(title)
-#| msgid "Special Characters"
 msgid "Inserting Tags and Special Characters"
 msgstr "Címkék és speciális karakterek beszúrása"
 
@@ -1154,10 +1235,11 @@ msgid ""
 "The <app>tag list</app> uses a drop-down menu to let you choose from the "
 "different types of tags. For example, one tag option is <gui>HTML - Tags</"
 "gui>."
-msgstr "Az <app>elemlista</app> egy legördülő menüt használ a különböző címketípusok közti váltáshoz. Az egyik lehetőség például a <gui>HTML – Címkék</gui>."
+msgstr ""
+"Az <app>elemlista</app> egy legördülő menüt használ a különböző címketípusok "
+"közti váltáshoz. Az egyik lehetőség például a <gui>HTML – Címkék</gui>."
 
 #: C/gedit-plugins-tag-list.page:41(p)
-#| msgid "To create a new snippet, do the following:"
 msgid "To start inserting tags, complete the following:"
 msgstr "Címkék beszúrásának megkezdéséhez tegye a következőt:"
 
@@ -1165,7 +1247,9 @@ msgstr "Címkék beszúrásának megkezdéséhez tegye a következőt:"
 msgid ""
 "Move the cursor to where you will want to insert the tag or special "
 "character."
-msgstr "Vigye a kurzort oda, ahova a címkét vagy speciális karaktert be szeretné szúrni."
+msgstr ""
+"Vigye a kurzort oda, ahova a címkét vagy speciális karaktert be szeretné "
+"szúrni."
 
 #: C/gedit-plugins-tag-list.page:45(p)
 msgid ""
@@ -1174,7 +1258,6 @@ msgid ""
 msgstr "Válassza ki a kívánt címketípust a legördülő menüből az oldalsáv tetején."
 
 #: C/gedit-plugins-tag-list.page:46(p)
-#| msgid "Scroll through the tag list to find the required tag."
 msgid "Scroll through the list to find the desired tag or character."
 msgstr "Görgesse a megjelenő listát a kívánt elem megkereséséhez."
 
@@ -1189,7 +1272,6 @@ msgid ""
 msgstr "A kiválasztott címke vagy speciális karakter megjelenik a dokumentumban."
 
 #: C/gedit-plugins-tag-list.page:54(title)
-#| msgid "Tag List Plugin"
 msgid "Tag List Tips"
 msgstr "Elemlista-tippek"
 
@@ -1197,7 +1279,9 @@ msgstr "Elemlista-tippek"
 msgid ""
 "You can also insert a tag by pressing <key>Return</key> or "
 "<keyseq><key>Shift</key><key>Return</key></keyseq>."
-msgstr "Címke beszúrására használhatja az <key>Enter</key> vagy <keyseq><key>Shift</key><key>Enter</key></keyseq> kombinációt is."
+msgstr ""
+"Címke beszúrására használhatja az <key>Enter</key> vagy <keyseq><key>Shift</"
+"key><key>Enter</key></keyseq> kombinációt is."
 
 #: C/gedit-plugins-tag-list.page:56(p)
 msgid ""
@@ -1205,32 +1289,30 @@ msgid ""
 "position, and then return focus to the document. Pressing "
 "<keyseq><key>Shift</key><key>Return</key></keyseq> will insert the tag at "
 "the cursor position, but will keep the focus on the <app>tag-list</app>."
-msgstr "Az <key>Enter</key> megnyomása a címkét a kurzorpozícióba szúrja be, és a fókuszt visszaadja a dokumentumnak. A <keyseq><key>Shift</key><key>Enter</key></keyseq> megnyomása is beszúrja a címkét a kurzorpozícióba, de a fókuszt az <app>elemlistán</app> tartja."
+msgstr ""
+"Az <key>Enter</key> megnyomása a címkét a kurzorpozícióba szúrja be, és a "
+"fókuszt visszaadja a dokumentumnak. A <keyseq><key>Shift</key><key>Enter</"
+"key></keyseq> megnyomása is beszúrja a címkét a kurzorpozícióba, de a "
+"fókuszt az <app>elemlistán</app> tartja."
 
 #: C/gedit-plugins-tag-list.page:58(p)
 msgid ""
 "You can see a preview of what text will be inserted for each tag and special "
 "character by clicking on the word the <gui>Preview</gui> at the bottom of "
 "the side pane."
-msgstr "Az oldalsáv alján az <gui>Előnézet</gui> szóra kattintva megjelenítheti az egyes címkékhez és speciális karakterekhez beszúrandó szöveg előnézetét."
+msgstr ""
+"Az oldalsáv alján az <gui>Előnézet</gui> szóra kattintva megjelenítheti az "
+"egyes címkékhez és speciális karakterekhez beszúrandó szöveg előnézetét."
 
 #: C/gedit-plugins-sort.page:18(title)
 msgid "Sort text into alphabetical order"
 msgstr "Szöveg betűrendbe rendezése"
 
 #: C/gedit-plugins-sort.page:20(p)
-#| msgid ""
-#| "The <application>Sort</application> plugin arranges selected lines of "
-#| "text into alphabetical order."
 msgid "The Sort plugin arranges selected lines of text into alphabetical order."
 msgstr "A Rendezés bővítmény a kijelölt sorokat betűrendbe teszi."
 
 #: C/gedit-plugins-sort.page:22(p)
-#| msgid ""
-#| "You cannot undo the Sort operation, so you should save the file before "
-#| "performing the sort. To revert to the saved version of the file after the "
-#| "sort operation, choose <menuchoice><guimenu>File</"
-#| "guimenu><guimenuitem>Revert</guimenuitem></menuchoice>."
 msgid ""
 "You cannot use the <gui>Undo</gui> feature to correct a <gui>Sort</gui> "
 "operation, so we recommend that you save the file immediately before "
@@ -1238,45 +1320,57 @@ msgid ""
 "the previously-saved version of the file by selecting <guiseq><gui>File</"
 "gui><gui>Revert</gui></guiseq>."
 msgstr ""
-"A rendezés műveletre nem használható a <gui>Visszavonás</gui> funkció, ezért érdemes végrehajtása előtt menteni. Ha a rendezést elrontja, akkor a mentett verzióra való visszatéréshez válassza a "
-"<guiseq><gui>Fájl</gui><gui>Visszaállítás</gui></guiseq> menüpontot."
+"A rendezés műveletre nem használható a <gui>Visszavonás</gui> funkció, ezért "
+"érdemes végrehajtása előtt menteni. Ha a rendezést elrontja, akkor a mentett "
+"verzióra való visszatéréshez válassza a <guiseq><gui>Fájl</"
+"gui><gui>Visszaállítás</gui></guiseq> menüpontot."
 
 #: C/gedit-plugins-sort.page:24(p)
 msgid ""
 "To enable the <app>Sort</app> plugin, select <guiseq><gui>Edit</"
 "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Sort</gui></guiseq>."
-msgstr "A <app>Rendezés</app> bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Rendezés</gui></guiseq> lehetőséget."
+msgstr ""
+"A <app>Rendezés</app> bővítmény engedélyezéséhez válassza a "
+"<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</"
+"gui><gui>Rendezés</gui></guiseq> lehetőséget."
 
 #: C/gedit-plugins-sort.page:26(p)
 msgid ""
 "After you have enabled the <gui>Sort</gui> plugin, use it by selecting the "
 "lines of text you want to sort, and then clicking <guiseq><gui>Edit</"
 "gui><gui>Sort</gui></guiseq>."
-msgstr "A <gui>Rendezés</gui> bővítmény engedélyezése után a használatához válassza ki a rendezni kívánt szövegsorokat, és válassza a <guiseq><gui>Szerkesztés</gui><gui>Rendezés</gui></guiseq> menüpontot."
+msgstr ""
+"A <gui>Rendezés</gui> bővítmény engedélyezése után a használatához válassza "
+"ki a rendezni kívánt szövegsorokat, és válassza a <guiseq><gui>Szerkesztés</"
+"gui><gui>Rendezés</gui></guiseq> menüpontot."
 
 #: C/gedit-plugins-sort.page:28(p)
 msgid ""
 "The Sort dialog will open, allowing you to choose between several sorting "
 "options:"
-msgstr "Megnyílik a Rendezés ablak, és lehetővé teszi a rendezési beállítások kiválasztását."
+msgstr ""
+"Megnyílik a Rendezés ablak, és lehetővé teszi a rendezési beállítások "
+"kiválasztását."
 
 #: C/gedit-plugins-sort.page:30(p)
 msgid "<em>Reverse order</em> will arrange the text in reverse alphabetical order."
-msgstr "A <em>Fordított sorrend</em> beállítás a szöveget fordított betűrendbe rendezi."
+msgstr ""
+"A <em>Fordított sorrend</em> beállítás a szöveget fordított betűrendbe "
+"rendezi."
 
 #: C/gedit-plugins-sort.page:31(p)
 msgid "<em>Remove duplicates</em> will remove duplicate values from the list."
-msgstr "A <em>Másolatok eltávolítása</em> eltávolítja a többször szereplő értékeket a listából."
+msgstr ""
+"A <em>Másolatok eltávolítása</em> eltávolítja a többször szereplő értékeket "
+"a listából."
 
 #: C/gedit-plugins-sort.page:32(p)
 msgid "<em>Ignore case</em> will ignore case sensitivity."
-msgstr "A <em>Kis- és nagybetű nem számít</em> nem különbözteti meg a kis- és nagybetűket."
+msgstr ""
+"A <em>Kis- és nagybetű nem számít</em> nem különbözteti meg a kis- és "
+"nagybetűket."
 
 #: C/gedit-plugins-sort.page:33(p)
-#| msgid ""
-#| "To have the sort ignore the characters at the start of the lines, set the "
-#| "first character that should be used for sorting in the <guilabel>Start at "
-#| "column</guilabel> spin box."
 msgid ""
 "To have the sort ignore the characters at the start of the lines, set the "
 "first character that should be used for sorting in the <em>Start at</em> "
@@ -1287,7 +1381,6 @@ msgstr ""
 "<em>Kezdőoszlop</em> léptetőmezőben."
 
 #: C/gedit-plugins-sort.page:35(p)
-#| msgid "To perform the sort operation, click <guibutton>Sort</guibutton>."
 msgid "To perform the sort operation, click <gui>Sort</gui>."
 msgstr "A rendezés végrehajtásához nyomja meg a <gui>Rendezés</gui> gombot."
 
@@ -1310,20 +1403,30 @@ msgid ""
 "scripts without leaving <app>gedit</app>. To enable the Python console, "
 "select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</"
 "gui><gui>Python Console</gui></guiseq>."
-msgstr "Az alsó ablaktáblához hozzáadhat egy Python konzolt, amely lehetővé teszi Python parancsfájlok tesztelését a <app>gedit</app> elhagyása nélkül. A Python konzol engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Python konzol</gui></guiseq> lehetőséget."
+msgstr ""
+"Az alsó ablaktáblához hozzáadhat egy Python konzolt, amely lehetővé teszi "
+"Python parancsfájlok tesztelését a <app>gedit</app> elhagyása nélkül. A "
+"Python konzol engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</"
+"gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Python konzol</gui></"
+"guiseq> lehetőséget."
 
 #: C/gedit-plugins-pyconsole.page:18(p)
 msgid ""
 "Once the Python console is enabled, you can open it by selecting "
 "<guiseq><gui>View</gui><gui>Bottom Pane</gui></guiseq>, or just press "
 "<keyseq><key>Shift</key><key>F9</key></keyseq>."
-msgstr "A Python konzol engedélyezése után a megnyitásához válassza a <guiseq><gui>Nézet</gui><gui>Alsó ablaktábla</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Shift</key><key>F9</key></keyseq> kombinációt."
+msgstr ""
+"A Python konzol engedélyezése után a megnyitásához válassza a "
+"<guiseq><gui>Nézet</gui><gui>Alsó ablaktábla</gui></guiseq> menüpontot, vagy "
+"nyomja meg a <keyseq><key>Shift</key><key>F9</key></keyseq> kombinációt."
 
 #: C/gedit-plugins-pyconsole.page:20(p)
 msgid ""
 "If you have also enabled the <gui>Embeded Terminal</gui> plugin, the "
 "<gui>Python Console</gui> will appear as a separate tab in the bottom pane."
-msgstr "Ha engedélyezte a <gui>Beágyazott terminál</gui> bővítményt is, akkor a <gui>Python konzol</gui> külön lapon jelenik meg az alsó panelen."
+msgstr ""
+"Ha engedélyezte a <gui>Beágyazott terminál</gui> bővítményt is, akkor a "
+"<gui>Python konzol</gui> külön lapon jelenik meg az alsó panelen."
 
 #: C/gedit-plugins-modelines.page:18(title)
 msgid "Emacs, Kate and Vim-style modelines support for gedit"
@@ -1336,22 +1439,27 @@ msgid ""
 "preferences to the file. The <app>Modelines</app> plugin supports a subset "
 "of the options used by the <app>Emacs</app>, <app>Kate</app> and <app>Vim</"
 "app> text editors."
-msgstr "A <app>Módsorok</app> bővítmény lehetővé teszi, hogy a <app>gedit</app> elemezze a fájl elején és végén lévő sorokat, majd dokumentumbeállítások halmazát alkalmazza a fájlra. A <app>Módsorok</app> bővítmény az <app>Emacs</app>, <app>Kate</app> és <app>Vim</app> szövegszerkesztők által használt beállítások egy részhalmazát támogatja."
+msgstr ""
+"A <app>Módsorok</app> bővítmény lehetővé teszi, hogy a <app>gedit</app> "
+"elemezze a fájl elején és végén lévő sorokat, majd dokumentumbeállítások "
+"halmazát alkalmazza a fájlra. A <app>Módsorok</app> bővítmény az <app>Emacs</"
+"app>, <app>Kate</app> és <app>Vim</app> szövegszerkesztők által használt "
+"beállítások egy részhalmazát támogatja."
 
 #: C/gedit-plugins-modelines.page:22(p)
 msgid ""
 "To enable the <app>Modelines</app> plugin, select <guiseq><gui>Edit</"
 "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Modelines</gui></guiseq>."
-msgstr "A <app>Módsorok</app> bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Módsorok</gui></guiseq> lehetőséget."
+msgstr ""
+"A <app>Módsorok</app> bővítmény engedélyezéséhez válassza a "
+"<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</"
+"gui><gui>Módsorok</gui></guiseq> lehetőséget."
 
 #: C/gedit-plugins-modelines.page:25(title)
-#| msgid "General Tabbed Section"
 msgid "General Modeline Options"
 msgstr "Általános módsor-beállítások"
 
 #: C/gedit-plugins-modelines.page:26(p)
-#| msgid ""
-#| "The following plugins come built-in with <application>gedit</application>:"
 msgid "The following options can be set using <app>gedit</app> modelines:"
 msgstr "A következő beállítások adhatók meg a <app>gedit</app> módsorokkal:"
 
@@ -1364,7 +1472,6 @@ msgid "Indent width"
 msgstr "Behúzás szélessége"
 
 #: C/gedit-plugins-modelines.page:30(p)
-#| msgid "Insert spaces instead of tabs"
 msgid "Inserting spaces instead of tabs"
 msgstr "Tabulátorok helyett szóközök használata"
 
@@ -1389,17 +1496,16 @@ msgid "Emacs Modelines"
 msgstr "Emacs módsorok"
 
 #: C/gedit-plugins-modelines.page:41(p)
-#| msgid ""
-#| "The first two lines of a document are scanned for <application>Emacs</"
-#| "application> modelines."
 msgid ""
 "The first two lines of a document are scanned for <app>Emacs</app> "
 "modelines, and <app>gedit</app> supports the following <app>Emacs</app> "
 "modeline options:"
-msgstr "A dokumentum első két sorában kerülnek felismerésre az <app>Emacs</app> módsorok, és a <app>gedit</app> a következő <app>Emacs</app> módsor-beállításokat támogatja:"
+msgstr ""
+"A dokumentum első két sorában kerülnek felismerésre az <app>Emacs</app> "
+"módsorok, és a <app>gedit</app> a következő <app>Emacs</app> módsor-"
+"beállításokat támogatja:"
 
 #: C/gedit-plugins-modelines.page:43(p)
-#| msgid "Tab width"
 msgid "Tab-width"
 msgstr "Tab-width"
 
@@ -1420,31 +1526,30 @@ msgid ""
 "For more information on <app>Emacs</app> modelines, visit the <link href="
 "\"http://www.gnu.org/software/emacs/manual/emacs.html\">GNU Emacs Manual</"
 "link>."
-msgstr "Az <app>Emacs</app> módsorokkal kapcsolatos további információkért lásd a <link href=\"http://www.gnu.org/software/emacs/manual/emacs.html\">GNU Emacs kézikönyvét</link>."
+msgstr ""
+"Az <app>Emacs</app> módsorokkal kapcsolatos további információkért lásd a "
+"<link href=\"http://www.gnu.org/software/emacs/manual/emacs.html\">GNU Emacs "
+"kézikönyvét</link>."
 
 #: C/gedit-plugins-modelines.page:52(title)
 msgid "Kate Modelines"
 msgstr "Kate módsorok"
 
 #: C/gedit-plugins-modelines.page:54(p)
-#| msgid ""
-#| "The first and last ten lines a document are scanned for "
-#| "<application>Kate</application> modelines."
 msgid ""
 "The first and last ten lines a document are scanned for <app>Kate</app> "
 "modelines, and <app>gedit</app> supports the following <app>Kate</app> "
 "modeline options:"
 msgstr ""
 "A dokumentum első és utolsó 10 sorában kerülnek felismerésre a <app>Kate</"
-"app> módsorok, és a <app>gedit</app> a következő <app>Kate</app> módsor-beállításokat támogatja:"
+"app> módsorok, és a <app>gedit</app> a következő <app>Kate</app> módsor-"
+"beállításokat támogatja:"
 
 #: C/gedit-plugins-modelines.page:57(p)
-#| msgid "Tab width"
 msgid "tab-width"
 msgstr "tab-width"
 
 #: C/gedit-plugins-modelines.page:58(p)
-#| msgid "Indent width"
 msgid "indent-width"
 msgstr "indent-width"
 
@@ -1464,23 +1569,23 @@ msgstr "word-wrap-column"
 msgid ""
 "For more information about <app>Kate</app> modelines, visit the <link href="
 "\"http://kate-editor.org/\">Kate website</link>."
-msgstr "A <app>Kate</app> módsorokkal kapcsolatos további információkért keresse fel a <link href=\"http://kate-editor.org/\">Kate weboldalát</link>."
+msgstr ""
+"A <app>Kate</app> módsorokkal kapcsolatos további információkért keresse fel "
+"a <link href=\"http://kate-editor.org/\">Kate weboldalát</link>."
 
 #: C/gedit-plugins-modelines.page:68(title)
 msgid "Vim Modelines"
 msgstr "Vim módsorok"
 
 #: C/gedit-plugins-modelines.page:69(p)
-#| msgid ""
-#| "The first and last three lines a document are scanned for "
-#| "<application>Vim</application> modelines."
 msgid ""
 "The first and last three lines a document are scanned for <app>Vim</app> "
 "modelines, and <app>gedit</app> supports the following <app>Vim</app> "
 "modeline options:"
 msgstr ""
 "A dokumentum első és utolsó 3 sorában kerülnek felismerésre a <app>Vim</app> "
-"módsorok, és a <app>gedit</app> a következő <app>Vim</app> módsor-beállításokat támogatja:"
+"módsorok, és a <app>gedit</app> a következő <app>Vim</app> módsor-"
+"beállításokat támogatja:"
 
 #: C/gedit-plugins-modelines.page:72(p)
 msgid "et (expandtab)"
@@ -1499,19 +1604,16 @@ msgid "wrap"
 msgstr "wrap"
 
 #: C/gedit-plugins-modelines.page:76(p)
-#| msgid "Indent width"
 msgid "textwidth"
 msgstr "textwidth"
 
 #: C/gedit-plugins-modelines.page:79(p)
-#| msgid ""
-#| "For more information on creating plugins, see the <ulink type=\"http\" "
-#| "url=\"http://live.gnome.org/Gedit/Plugins\"><application>gedit</"
-#| "application> website</ulink>."
 msgid ""
 "For more information on <app>Vim</app> modelines, visit the <link href="
 "\"http://www.vim.org/\">Vim website</link>."
-msgstr "A <app>Vim</app> módsorokkal kapcsolatos további információkat a <link href=\"http://www.vim.org/\">Vim weboldalán</link> találhat."
+msgstr ""
+"A <app>Vim</app> módsorokkal kapcsolatos további információkat a <link href="
+"\"http://www.vim.org/\">Vim weboldalán</link> találhat."
 
 #: C/gedit-plugins-install.page:20(title)
 msgid "Install Additional gedit Plugins"
@@ -1523,7 +1625,11 @@ msgid ""
 "included by default in <app>gedit</app>. An online list of third-party "
 "plugins is maintained <link href=\"http://live.gnome.org/Gedit/"
 "Plugins#third_party\">here</link>."
-msgstr "Harmadik féltől származó bővítmények telepítése olyan extra funkciókat biztosít, amelyeket a <app>gedit</app> alaptelepítése nem tartalmaz. A harmadik féltől származó bővítmények online listája elérhető <link href=\"http://live.gnome.org/Gedit/Plugins#third_party\">itt</link>."
+msgstr ""
+"Harmadik féltől származó bővítmények telepítése olyan extra funkciókat "
+"biztosít, amelyeket a <app>gedit</app> alaptelepítése nem tartalmaz. A "
+"harmadik féltől származó bővítmények online listája elérhető <link href="
+"\"http://live.gnome.org/Gedit/Plugins#third_party\">itt</link>."
 
 #: C/gedit-plugins-install.page:25(title)
 msgid "Obtain"
@@ -1536,7 +1642,12 @@ msgid ""
 "the plugin's web site. Refer to the plugin's documentation for further "
 "information on obtaining the plugin - instructions will vary depending on "
 "the plugin."
-msgstr "A <app>gedit</app> bővítmények telepítésének első lépése a bővítmény beszerzése. A harmadik féltől származó bővítményeket gyakran a weboldalukról lehet letölteni. A bővítmény beszerzésével kapcsolatban nézze meg a bővítmény dokumentációját – az utasítások a bővítménytől függően változhatnak."
+msgstr ""
+"A <app>gedit</app> bővítmények telepítésének első lépése a bővítmény "
+"beszerzése. A harmadik féltől származó bővítményeket gyakran a weboldalukról "
+"lehet letölteni. A bővítmény beszerzésével kapcsolatban nézze meg a "
+"bővítmény dokumentációját – az utasítások a bővítménytől függően "
+"változhatnak."
 
 #: C/gedit-plugins-install.page:30(title)
 msgid "Install"
@@ -1550,7 +1661,6 @@ msgid ""
 msgstr "A telepítendő bővítmény beszerzése után telepítenie kell azt."
 
 #: C/gedit-plugins-install.page:34(title)
-#| msgid "Enabling a Plugin"
 msgid "Installing a Plugin"
 msgstr "Bővítmény telepítése"
 
@@ -1567,8 +1677,8 @@ msgid ""
 "Copy the plugin into <file>/home/<var>username</var>/.local/share/gedit/"
 "plugins</file>"
 msgstr ""
-"Másolja a bővítményt a <file>/home/<var>felhasználónév</var>/.local/share/gedit/"
-"plugins</file> könyvtárba."
+"Másolja a bővítményt a <file>/home/<var>felhasználónév</var>/.local/share/"
+"gedit/plugins</file> könyvtárba."
 
 #: C/gedit-plugins-install.page:43(p)
 msgid ""
@@ -1576,7 +1686,11 @@ msgid ""
 "will appear in the Preferences menu (<guiseq><gui>Edit</"
 "gui><gui>Preferences</gui><gui>Plugins</gui></guiseq>). From there, the "
 "plugin needs to be enabled to be used."
-msgstr "A bővítményfájlok megfelelő könyvtárba mozgatása után a bővítmény megjelenik a Beállítások menüben (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui></guiseq>). Innen a bővítményt engedélyeznie kell a használatba vételéhez."
+msgstr ""
+"A bővítményfájlok megfelelő könyvtárba mozgatása után a bővítmény megjelenik "
+"a Beállítások menüben (<guiseq><gui>Szerkesztés</gui><gui>Beállítások</"
+"gui><gui>Bővítmények</gui></guiseq>). Innen a bővítményt engedélyeznie kell "
+"a használatba vételéhez."
 
 #: C/gedit-plugins-install.page:46(p)
 msgid ""
@@ -1584,13 +1698,20 @@ msgid ""
 "directory. To display hidden files, click <guiseq><gui>View</gui><gui>Show "
 "Hidden Files</gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></"
 "keyseq>."
-msgstr "A <file>.local</file> könyvtár megjelenítéséhez engedélyeznie kell a rejtett fájlok megjelenítését. A rejtett fájlok megjelenítéséhez válassza a <guiseq><gui>Nézet</gui><gui>Rejtett fájlok megjelenítése</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>H</key></keyseq> kombinációt."
+msgstr ""
+"A <file>.local</file> könyvtár megjelenítéséhez engedélyeznie kell a rejtett "
+"fájlok megjelenítését. A rejtett fájlok megjelenítéséhez válassza a "
+"<guiseq><gui>Nézet</gui><gui>Rejtett fájlok megjelenítése</gui></guiseq> "
+"menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>H</key></keyseq> "
+"kombinációt."
 
 #: C/gedit-plugins-install.page:50(p)
 msgid ""
 "If the directory <file>.local/share/gedit/plugins/</file> is not present on "
 "your system, you will need to create it."
-msgstr "Ha a <file>.local/share/gedit/plugins/</file> könyvtár nem létezik, akkor hozza létre azt."
+msgstr ""
+"Ha a <file>.local/share/gedit/plugins/</file> könyvtár nem létezik, akkor "
+"hozza létre azt."
 
 #: C/gedit-plugins-insert-date-time.page:20(title)
 msgid "Insert the current date/time at the cursor position"
@@ -1604,7 +1725,14 @@ msgid ""
 "gui><gui>Plugins</gui><gui>Insert Date/Time</gui></guiseq>. To use the "
 "plugin, press <guiseq><gui>Edit</gui><gui>Insert Date and Time</gui></"
 "guiseq>."
-msgstr "Ahogyan a bővítmény neve sugallja, a <gui>Dátum/idő beszúrása</gui> bővítmény lehetővé teszi a dátum és/vagy az idő beszúrását az aktuális kurzorpozícióba. A bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Dátum/idő beszúrása</gui></guiseq> lehetőséget. A bővítmény használatához válassza a <guiseq><gui>Szerkesztés</gui><gui>Dátum és idő beszúrása</gui></guiseq> menüpontot."
+msgstr ""
+"Ahogyan a bővítmény neve sugallja, a <gui>Dátum/idő beszúrása</gui> "
+"bővítmény lehetővé teszi a dátum és/vagy az idő beszúrását az aktuális "
+"kurzorpozícióba. A bővítmény engedélyezéséhez válassza a "
+"<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</"
+"gui><gui>Dátum/idő beszúrása</gui></guiseq> lehetőséget. A bővítmény "
+"használatához válassza a <guiseq><gui>Szerkesztés</gui><gui>Dátum és idő "
+"beszúrása</gui></guiseq> menüpontot."
 
 #: C/gedit-plugins-insert-date-time.page:24(p)
 msgid ""
@@ -1613,19 +1741,21 @@ msgid ""
 "you can choose your own default date and time format by selecting "
 "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Insert "
 "Date/Time</gui><gui>Configure</gui></guiseq>."
-msgstr "A <gui>Dátum és idő beszúrása</gui> bővítmény alapesetben a bővítmény minden használatakor bekéri a kívánt dátum/időformátumot. Azonban kiválaszthatja a saját alap dátum- és időformátumát a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Dátum/idő beszúrása</gui><gui>Beállítás</gui></guiseq> gomb kiválasztásával."
+msgstr ""
+"A <gui>Dátum és idő beszúrása</gui> bővítmény alapesetben a bővítmény minden "
+"használatakor bekéri a kívánt dátum/időformátumot. Azonban kiválaszthatja a "
+"saját alap dátum- és időformátumát a <guiseq><gui>Szerkesztés</"
+"gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Dátum/idő beszúrása</"
+"gui><gui>Beállítás</gui></guiseq> gomb kiválasztásával."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/gedit-plugins-file-browser.page:31(None)
 #: C/gedit-open-files-from-sidepane.page:36(None)
-#| msgid ""
-#| "@@image: 'figures/gedit_window.png'; md5=a1daf2ed54a551bb590a172bc730594c"
 msgid "@@image: 'figures/gedit-side-pane1.png'; md5=ac9c80cb0552d63b593c71f23be69b53"
 msgstr "@@image: 'figures/gedit-side-pane1.png'; md5=ac9c80cb0552d63b593c71f23be69b53"
 
 #: C/gedit-plugins-file-browser.page:18(title)
-#| msgid "Use the specified command to print the file."
 msgid "Use the side pane to browse and open files"
 msgstr "Az oldalsáv használata fájlok tallózására és megnyitására"
 
@@ -1635,43 +1765,49 @@ msgid ""
 "the <app>File Browser pane</app> plugin. This plugin embeds a <app>file "
 "browser</app> in the side pane, giving you easy access to your frequently-"
 "used files."
-msgstr "A <app>gedit</app> használatának módjától függően hasznos lehet a <app>Fájlböngésző ablaktábla</app> használata. Ez a bővítmény egy <app>fájlböngészőt</app> ágyaz be az oldalsávba, egyszerű hozzáférést nyújtva a gyakran használt fájlokhoz."
+msgstr ""
+"A <app>gedit</app> használatának módjától függően hasznos lehet a "
+"<app>Fájlböngésző ablaktábla</app> használata. Ez a bővítmény egy "
+"<app>fájlböngészőt</app> ágyaz be az oldalsávba, egyszerű hozzáférést "
+"nyújtva a gyakran használt fájlokhoz."
 
 #: C/gedit-plugins-file-browser.page:22(p)
 msgid ""
 "You can enable the <gui>Side Pane</gui> by selecting <guiseq><gui>Edit</"
 "gui><gui>Preferences</gui><gui>Plugins</gui><gui>File Browser Pane</gui></"
 "guiseq>."
-msgstr "Az <gui>oldalsáv</gui> engedélyezhető a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Fájlböngésző ablaktábla</gui></guiseq> kiválasztásával."
+msgstr ""
+"Az <gui>oldalsáv</gui> engedélyezhető a <guiseq><gui>Szerkesztés</"
+"gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Fájlböngésző "
+"ablaktábla</gui></guiseq> kiválasztásával."
 
 #: C/gedit-plugins-file-browser.page:25(title)
 #: C/gedit-open-files-from-sidepane.page:30(title)
-#| msgid "Opening a File from a URI"
 msgid "Opening files from the side pane"
 msgstr "Fájlok megnyitása az oldalsávból"
 
 #: C/gedit-plugins-file-browser.page:26(p)
-#| msgid ""
-#| "To view the File Browser, choose <menuchoice><guimenu>View</"
-#| "guimenu><guimenuitem>Side Pane</guimenuitem></menuchoice> and then click "
-#| "on the tab showing the File Browser icon at the bottom of the side pane."
 msgid ""
 "To activate and use the <gui>side pane</gui>, select <guiseq><gui>View</"
-"gui><gui>Side pane</gui></guiseq> (or just press<key>F9</key>), and then "
+"gui><gui>Side pane</gui></guiseq> (or just press <key>F9</key>), and then "
 "click on the <gui>file-browser</gui> icon at the bottom of the pane."
 msgstr ""
-"Az <gui>oldalsáv</gui> aktiválásához és használatához válassza a <guiseq><gui>Nézet</gui><gui>Oldalsó ablaktábla</gui></guiseq> "
-"menüpontot (vagy nyomja meg az <key>F9</key> billentyűt), majd az ablaktábla alján kattintson a <gui>fájlböngésző</gui> ikonra."
+"Az <gui>oldalsáv</gui> aktiválásához és használatához válassza a "
+"<guiseq><gui>Nézet</gui><gui>Oldalsó ablaktábla</gui></guiseq> menüpontot "
+"(vagy nyomja meg az <key>F9</key> billentyűt), majd az ablaktábla alján "
+"kattintson a <gui>fájlböngésző</gui> ikonra."
 
 #: C/gedit-plugins-file-browser.page:34(p)
 msgid ""
 "This will activate the <em>file-browser</em> mode of the <app>side pane</"
 "app>. You can then use the navigation buttons at the top of the pane to "
 "locate and open your desired files."
-msgstr "Ez aktiválja az <app>oldalsáv</app> <em>fájlböngésző</em> módját. Ezután az ablaktábla tetején lévő navigációs gombok használatával megkeresheti és megnyithatja a kívánt fájlokat."
+msgstr ""
+"Ez aktiválja az <app>oldalsáv</app> <em>fájlböngésző</em> módját. Ezután az "
+"ablaktábla tetején lévő navigációs gombok használatával megkeresheti és "
+"megnyithatja a kívánt fájlokat."
 
 #: C/gedit-plugins-external-tools.page:21(title)
-#| msgid "External Tools Plugin"
 msgid "External tools"
 msgstr "Külső eszközök"
 
@@ -1683,10 +1819,16 @@ msgid ""
 "programs on your computer. To enable the <app>External Tools</app> plugin, "
 "select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</"
 "gui><gui>External Tools</gui></guiseq>."
-msgstr "A <em>Külső eszközök</em> bővítmény segíthet egyszerűsíteni az ismétlődő feladatokat. Úgy terjeszti ki a <app>geditet</app>, hogy parancsfájlokat futtathasson munkafájljain, és a <app>gedit</app> együttműködhessen a számítógépén található más programokkal. A <app>Külső eszközök</app> bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Külső eszközök</gui></guiseq> lehetőséget."
+msgstr ""
+"A <em>Külső eszközök</em> bővítmény segíthet egyszerűsíteni az ismétlődő "
+"feladatokat. Úgy terjeszti ki a <app>geditet</app>, hogy parancsfájlokat "
+"futtathasson munkafájljain, és a <app>gedit</app> együttműködhessen a "
+"számítógépén található más programokkal. A <app>Külső eszközök</app> "
+"bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</"
+"gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Külső eszközök</gui></"
+"guiseq> lehetőséget."
 
 #: C/gedit-plugins-external-tools.page:26(title)
-#| msgid "External Tools Plugin"
 msgid "Configure the external tools plugin"
 msgstr "Külső eszközök bővítmény beállítása"
 
@@ -1695,17 +1837,23 @@ msgid ""
 "Once you have enabled the plugin, you will need to configure it to suit your "
 "needs. The configuration options are available by selecting "
 "<guiseq><gui>Tools</gui><gui>Manage External Tools</gui></guiseq>."
-msgstr "A bővítmény engedélyezése után be kell azt állítania, hogy megfeleljen igényeinek. A beállítási lehetőségek az <guiseq><gui>Eszközök</gui><gui>Külső eszközök</gui></guiseq> menüpont kiválasztásával érhetők el."
+msgstr ""
+"A bővítmény engedélyezése után be kell azt állítania, hogy megfeleljen "
+"igényeinek. A beállítási lehetőségek az <guiseq><gui>Eszközök</"
+"gui><gui>Külső eszközök</gui></guiseq> menüpont kiválasztásával érhetők el."
 
 #: C/gedit-plugins-external-tools.page:30(p)
 msgid ""
 "This plugin is for advanced users, and requires knowledge of scripting to be "
 "used effectively. Use this plugin with care, as mistakes with your scripts "
 "can affect your work in unintended ways."
-msgstr "Ez a bővítmény haladó felhasználóknak készült, és a hatékony használatához ismerni kell a parancsfájlok írását. A bővítményt óvatosan használja, mivel a parancsfájlokban elkövetett hibák munkáját nem tervezett módokon befolyásolhatják."
+msgstr ""
+"Ez a bővítmény haladó felhasználóknak készült, és a hatékony használatához "
+"ismerni kell a parancsfájlok írását. A bővítményt óvatosan használja, mivel "
+"a parancsfájlokban elkövetett hibák munkáját nem tervezett módokon "
+"befolyásolhatják."
 
 #: C/gedit-plugins-doc-stats.page:18(title)
-#| msgid "Document Statistics Plugin"
 msgid "View document statistics"
 msgstr "Dokumentumstatisztika megjelenítése"
 
@@ -1715,10 +1863,14 @@ msgid ""
 "about your current document. To enable this plugin, select "
 "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Document "
 "Statisics</gui></guiseq>."
-msgstr "A <em>Dokumentumstatisztika</em> bővítmény különböző statisztikákat képes megjeleníteni az aktuális dokumentumról. A bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Dokumentumstatisztika</gui></guiseq> lehetőséget."
+msgstr ""
+"A <em>Dokumentumstatisztika</em> bővítmény különböző statisztikákat képes "
+"megjeleníteni az aktuális dokumentumról. A bővítmény engedélyezéséhez "
+"válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</"
+"gui><gui>Bővítmények</gui><gui>Dokumentumstatisztika</gui></guiseq> "
+"lehetőséget."
 
 #: C/gedit-plugins-doc-stats.page:23(title)
-#| msgid "Document Statistics Plugin"
 msgid "Using Document Statistics"
 msgstr "A dokumentumstatisztika használata"
 
@@ -1728,7 +1880,11 @@ msgid ""
 "gui><gui>Document Statistics</gui></guiseq>. A window will display the "
 "statistical information of your document, including the number of words, "
 "lines, characters, non-space characters, and the size of your file in bytes."
-msgstr "A bővítmény engedélyezése után válassza az <guiseq><gui>Eszközök</gui><gui>Dokumentumstatisztika</gui></guiseq> menüpontot. A megjelenő ablak a dokumentummal kapcsolatos statisztikát tartalmazza, beleértve a szavak, sorok, karakterek, nem szóköz karakterek számát és a fájl méretét bájtban."
+msgstr ""
+"A bővítmény engedélyezése után válassza az <guiseq><gui>Eszközök</"
+"gui><gui>Dokumentumstatisztika</gui></guiseq> menüpontot. A megjelenő ablak "
+"a dokumentummal kapcsolatos statisztikát tartalmazza, beleértve a szavak, "
+"sorok, karakterek, nem szóköz karakterek számát és a fájl méretét bájtban."
 
 #: C/gedit-plugins-doc-stats.page:27(p)
 msgid ""
@@ -1738,10 +1894,15 @@ msgid ""
 "<guiseq><gui>Tools</gui><gui>Document Statistics</gui></guiseq>. <app>Gedit</"
 "app> will display information for both your entire document, and for the "
 "portion of text that you highlighted."
-msgstr "A <em>Dokumentumstatisztika</em> bővítmény használatával korlátozhatja az információk megjelenítését a dokumentum egy részére is. Ehhez az egérrel válassza ki a vizsgálandó szövegrészt, és válassza az <guiseq><gui>Eszközök</gui><gui>Dokumentumstatisztika</gui></guiseq> menüpontot. A <app>gedit</app> megjeleníti a teljes dokumentumra, és a kijelölt szövegrészre vonatkozó információkat is."
+msgstr ""
+"A <em>Dokumentumstatisztika</em> bővítmény használatával korlátozhatja az "
+"információk megjelenítését a dokumentum egy részére is. Ehhez az egérrel "
+"válassza ki a vizsgálandó szövegrészt, és válassza az <guiseq><gui>Eszközök</"
+"gui><gui>Dokumentumstatisztika</gui></guiseq> menüpontot. A <app>gedit</app> "
+"megjeleníti a teljes dokumentumra, és a kijelölt szövegrészre vonatkozó "
+"információkat is."
 
 #: C/gedit-plugins-change-case.page:19(title)
-#| msgid "The currently selected text."
 msgid "Change the case of selected text"
 msgstr "A kijelölt szöveg kis- és nagybetűsségének módosítása"
 
@@ -1752,22 +1913,31 @@ msgid ""
 "the case, or apply title case. To enable this plugin, select "
 "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Change "
 "Case</gui></guiseq>."
-msgstr "Ezen bővítmény segítségével megváltoztathatja a kijelölt szöveg kis- és nagybetűsségét. Használatával a szöveget csupa kisbetűssé, csupa nagybetűssé vagy szókezdő nagybetűs stílusúvá alakíthatja, valamint megfordíthatja a kis- és nagybetűket. A bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Kis- és nagybetű módosítása</gui></guiseq> lehetőséget."
+msgstr ""
+"Ezen bővítmény segítségével megváltoztathatja a kijelölt szöveg kis- és "
+"nagybetűsségét. Használatával a szöveget csupa kisbetűssé, csupa nagybetűssé "
+"vagy szókezdő nagybetűs stílusúvá alakíthatja, valamint megfordíthatja a "
+"kis- és nagybetűket. A bővítmény engedélyezéséhez válassza a "
+"<guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</"
+"gui><gui>Kis- és nagybetű módosítása</gui></guiseq> lehetőséget."
 
 #: C/gedit-plugins-change-case.page:23(p)
 msgid ""
 "Once the <em>Change Case</em> plugin is enabled, you can use it by "
 "completing the following steps:"
-msgstr "A <em>Kis- és nagybetűk módosítása</em> bővítmény engedélyezése után tegye a következőket a használatához:"
+msgstr ""
+"A <em>Kis- és nagybetűk módosítása</em> bővítmény engedélyezése után tegye a "
+"következőket a használatához:"
 
 #: C/gedit-plugins-change-case.page:25(p)
-#| msgid "Select the lines of text you want to sort."
 msgid "Highlight the portion of text that you want to change."
 msgstr "Jelölje ki a módosítandó szövegrészt."
 
 #: C/gedit-plugins-change-case.page:26(p)
 msgid "Select <guiseq><gui>Edit</gui><gui>Change Case</gui></guiseq>"
-msgstr "Válassza a <guiseq><gui>Szerkesztés</gui><gui>Kis- és nagybetű módosítása</gui></guiseq> menüpontot."
+msgstr ""
+"Válassza a <guiseq><gui>Szerkesztés</gui><gui>Kis- és nagybetű módosítása</"
+"gui></guiseq> menüpontot."
 
 #: C/gedit-plugins-change-case.page:27(p)
 msgid "Choose your desired text-formatting option."
@@ -1778,26 +1948,30 @@ msgid "The updates to the text formatting will take place immediately."
 msgstr "A szövegformázás változásai azonnal életbe lépnek."
 
 #: C/gedit-plugins-change-case.page:32(p)
-#| msgid ""
-#| "Change each lowercase character to uppercase, and change each uppercase "
-#| "character to lowercase."
 msgid ""
 "The <gui>Invert Case</gui> option will convert all lower case letters to "
 "upper case, and will convert all upper case letters to lower case."
-msgstr "A <gui>Kis- és nagybetűk invertálása</gui> lehetőség minden kisbetűt nagybetűre cserél, és minden nagybetűt kisbetűre."
+msgstr ""
+"A <gui>Kis- és nagybetűk invertálása</gui> lehetőség minden kisbetűt "
+"nagybetűre cserél, és minden nagybetűt kisbetűre."
 
 #: C/gedit-plugins-change-case.page:33(p)
 msgid ""
 "The <gui>Title Case</gui> option will convert the first letter of each word "
 "to upper case. All other letters will be converted to lower case."
-msgstr "A <gui>Szókezdő</gui> beállítás a szavak első betűit nagybetűvé alakítja. Minden más betű kisbetűvé lesz alakítva."
+msgstr ""
+"A <gui>Szókezdő</gui> beállítás a szavak első betűit nagybetűvé alakítja. "
+"Minden más betű kisbetűvé lesz alakítva."
 
 #: C/gedit-plugins-change-case.page:35(p)
 msgid ""
 "If you have not highlighted any text, the <em>Change Case</em> feature will "
 "be grayed-out. You need to select a portion of text before you use the "
 "<em>Change Case</em> feature."
-msgstr "Ha nem jelölt ki szöveget, akkor a <em>Kis- és nagybetűk módosítása</em> menüpont szürkén jelenik meg. A funkció használatához ki kell jelölnie egy szövegrészt."
+msgstr ""
+"Ha nem jelölt ki szöveget, akkor a <em>Kis- és nagybetűk módosítása</em> "
+"menüpont szürkén jelenik meg. A funkció használatához ki kell jelölnie egy "
+"szövegrészt."
 
 #: C/gedit-plugins-bracket-comp.page:14(title)
 msgid "Auto-complete closing brackets"
@@ -1806,14 +1980,19 @@ msgstr "Záró zárójelek automatikus kiegészítése"
 #: C/gedit-plugins-bracket-comp.page:16(p)
 msgid ""
 "The <app>Bracket Completion</app> plugin will auto-complete closing brackets "
-"for curly braces, parantheses, and square brackets."
-msgstr "A <app>Zárójel-kiegészítés</app> bővítmény automatikusan kiegészíti a záró zárójeleket kapcsos, szögletes és kerek zárójelekhez."
+"for curly braces, parentheses, and square brackets."
+msgstr ""
+"A <app>Zárójel-kiegészítés</app> bővítmény automatikusan kiegészíti a záró "
+"zárójeleket kapcsos, szögletes és kerek zárójelekhez."
 
 #: C/gedit-plugins-bracket-comp.page:18(p)
 msgid ""
 "To enable the plugin, select <guiseq><gui>Edit</gui><gui>Preferences</"
 "gui><gui>Plugins</gui><gui>Bracket Completion</gui></guiseq>."
-msgstr "A bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Zárójel-kiegészítés</gui></guiseq> lehetőséget."
+msgstr ""
+"A bővítmény engedélyezéséhez válassza a <guiseq><gui>Szerkesztés</"
+"gui><gui>Beállítások</gui><gui>Bővítmények</gui><gui>Zárójel-kiegészítés</"
+"gui></guiseq> lehetőséget."
 
 #: C/gedit-plugins-bracket-comp.page:20(p)
 msgid "This plugin does not automatically insert closing HTML or XML tags."
@@ -1824,7 +2003,6 @@ msgid "Do more with gedit by using gedit plugins."
 msgstr "Hozzon ki többet a geditből bővítményekkel."
 
 #: C/gedit-plugin-guide.page:15(title)
-#| msgid "Configuring the Insert Date/Time Plugin"
 msgid "Configure and use gedit Plugins"
 msgstr "Bővítmények beállítása és használata"
 
@@ -1833,17 +2011,21 @@ msgid ""
 "You can do more with <app>gedit</app> by using plugins. Several plugins are "
 "installed by default, but a large number of other plugins are available "
 "separately."
-msgstr "A <app>geditből</app> bővítményekkel többet is kihozhat. Számos bővítmény alapesetben telepítve van, de sok más külön bővítmény is elérhető."
+msgstr ""
+"A <app>geditből</app> bővítményekkel többet is kihozhat. Számos bővítmény "
+"alapesetben telepítve van, de sok más külön bővítmény is elérhető."
 
 #: C/gedit-plugin-guide.page:17(p)
 msgid ""
 "Many Linux distributions make a group of these plugins available as a "
 "<app>gedit-plugins</app> package. Install the <app>gedit-plugins</app> "
 "package to make these extra plugins available to <app>gedit</app>."
-msgstr "Sok Linux disztribúció ezek egy csoportját a <app>gedit-plugins</app> csomagban teszi elérhetővé. Ezen extra bővítmények elérhetővé tételéhez telepítse a <app>gedit-plugins</app> csomagot."
+msgstr ""
+"Sok Linux disztribúció ezek egy csoportját a <app>gedit-plugins</app> "
+"csomagban teszi elérhetővé. Ezen extra bővítmények elérhetővé tételéhez "
+"telepítse a <app>gedit-plugins</app> csomagot."
 
 #: C/gedit-plugin-guide.page:20(title)
-#| msgid "Tag List Plugin"
 msgid "Default gedit Plugins"
 msgstr "A gedit alap bővítményei"
 
@@ -1859,7 +2041,9 @@ msgstr "Legutóbb használt fájl újranyitása"
 msgid ""
 "By default, <app>gedit</app> provides easy access to five of your most "
 "recently-used files. Here is how you can open a recently-used file:"
-msgstr "Alapesetben a <app>gedit</app> az öt utoljára használt fájlhoz biztosít hozzáférést. A legutóbb használt fájlok eléréséhez:"
+msgstr ""
+"Alapesetben a <app>gedit</app> az öt utoljára használt fájlhoz biztosít "
+"hozzáférést. A legutóbb használt fájlok eléréséhez:"
 
 #: C/gedit-open-recent.page:18(p)
 msgid "Click the downward-facing arrow to the right of the <gui>Open</gui> button."
@@ -1877,21 +2061,26 @@ msgstr "Válassza ki a kívánt fájlt, és az megnyílik egy új lapon."
 msgid ""
 "To adjust the number of recently-used files that gedit displays, you will "
 "need to use the <app>gconf-editor</app> application."
-msgstr "A gedit által megjelenített legutóbb használt fájlok számának módosításához a <app>gconf-editor</app> alkalmazást kell használnia."
+msgstr ""
+"A gedit által megjelenített legutóbb használt fájlok számának módosításához "
+"a <app>gconf-editor</app> alkalmazást kell használnia."
 
 #: C/gedit-open-recent.page:25(p)
 msgid ""
 "Launch <app>gconf-editor</app> and select <guiseq><gui>apps</gui><gui>gedit-"
 "2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq>."
 msgstr ""
-"Indítsa el a <app>gconf-editor</app> alkalmazást, és válassza az <guiseq><gui>apps</gui><gui>gedit-"
-"2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq> kategóriát."
+"Indítsa el a <app>gconf-editor</app> alkalmazást, és válassza az "
+"<guiseq><gui>apps</gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</"
+"gui><gui>recents</gui></guiseq> kategóriát."
 
 #: C/gedit-open-recent.page:26(p)
 msgid ""
 "Double-click on the number next to <gui>max_recents</gui> and change the "
 "number to your desired value."
-msgstr "Kattintson duplán a <gui>max_recents</gui> kulcs melletti számra, és módosítsa a kívánt értékre."
+msgstr ""
+"Kattintson duplán a <gui>max_recents</gui> kulcs melletti számra, és "
+"módosítsa a kívánt értékre."
 
 #: C/gedit-open-on-server.page:14(title)
 msgid "Open a file that is located on a server"
@@ -1903,7 +2092,11 @@ msgid ""
 "to know some technical information about the server. For example, you will "
 "need to know the IP Address or URL of the server, and may need to know what "
 "kind of server it is (e.g., HTTP, FTP, etc.)."
-msgstr "A kiszolgálón található fájlok <app>geditből</app> való megnyitása előtt szüksége lesz néhány technikai információra a kiszolgálóról. Tudnia kell például a kiszolgáló IP-címét vagy URL-címét, és szükség lehet a kiszolgáló típusának (például HTTP, FTP stb.) ismeretére is."
+msgstr ""
+"A kiszolgálón található fájlok <app>geditből</app> való megnyitása előtt "
+"szüksége lesz néhány technikai információra a kiszolgálóról. Tudnia kell "
+"például a kiszolgáló IP-címét vagy URL-címét, és szükség lehet a kiszolgáló "
+"típusának (például HTTP, FTP stb.) ismeretére is."
 
 #: C/gedit-open-on-server.page:18(p)
 msgid ""
@@ -1911,80 +2104,75 @@ msgid ""
 "files stored on the server. For example, you may be able to open a file from "
 "a server, but may need to save any changes to the file locally, on your own "
 "computer."
-msgstr "Egyes kiszolgálótípusok korlátozzák, hogy mit tehet a kiszolgálón tárolt fájlokkal. Lehetséges például, hogy meg tud nyitni egy fájl a kiszolgálóról, de a változtatásokat elmenteni csak helyileg tudja, a saját számítógépére."
+msgstr ""
+"Egyes kiszolgálótípusok korlátozzák, hogy mit tehet a kiszolgálón tárolt "
+"fájlokkal. Lehetséges például, hogy meg tud nyitni egy fájl a kiszolgálóról, "
+"de a változtatásokat elmenteni csak helyileg tudja, a saját számítógépére."
 
 #: C/gedit-open-on-server.page:20(p)
 msgid ""
 "With these caveats in mind, perform the following steps to open a file from "
 "a server using <app>gedit</app>:"
-msgstr "Ezeket a kikötéseket szem előtt tartva tegye a következőket a kiszolgálón található fájl megnyitásához a <app>gedittel</app>:"
+msgstr ""
+"Ezeket a kikötéseket szem előtt tartva tegye a következőket a kiszolgálón "
+"található fájl megnyitásához a <app>gedittel</app>:"
 
 #: C/gedit-open-on-server.page:23(p)
-#| msgid ""
-#| "Choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open Location</"
-#| "guimenuitem></menuchoice> to display the <guilabel>Open Location</"
-#| "guilabel> dialog."
 msgid ""
 "Choose <guiseq><gui>File</gui><gui>Open</gui></guiseq> to display the "
 "<gui>Open Files</gui> dialog."
-msgstr "Válassza a <guiseq><gui>Fájl</gui><gui>Megnyitás</gui></guiseq> menüpontot a <gui>Fájlok megnyitása</gui> ablak megjelenítéséhez."
+msgstr ""
+"Válassza a <guiseq><gui>Fájl</gui><gui>Megnyitás</gui></guiseq> menüpontot a "
+"<gui>Fájlok megnyitása</gui> ablak megjelenítéséhez."
 
 #: C/gedit-open-on-server.page:24(p)
 msgid ""
 "Select the <gui>Pencil</gui> icon near the top of the <gui>Open Files</gui> "
 "dialog."
-msgstr "Válassza a <gui>Toll</gui> ikont a <gui>Fájlok megnyitása</gui> ablak tetején."
+msgstr ""
+"Válassza a <gui>Toll</gui> ikont a <gui>Fájlok megnyitása</gui> ablak "
+"tetején."
 
 #: C/gedit-open-on-server.page:25(p)
 msgid "Enter the IP Address or URL of the appropriate server."
 msgstr "Adja meg a megfelelő kiszolgáló IP-címét vagy URL-címét."
 
 #: C/gedit-open-on-server.page:26(p)
-#| msgid "Enter the URI of the file that you want to open."
 msgid "Find and select the file that you wish to open."
 msgstr "Keresse meg, és válassza ki a megnyitni kívánt fájlt."
 
 #: C/gedit-open-on-server.page:27(p)
-#| msgid ""
-#| "Use the <guilabel>Character coding</guilabel> drop-down list to select "
-#| "the appropriate character coding."
 msgid ""
 "Use the Character coding drop-down list to select the appropriate character "
 "coding."
-msgstr "Válassza ki a megfelelő karakterkódolást a Karakterkódolás legördülő listából."
+msgstr ""
+"Válassza ki a megfelelő karakterkódolást a Karakterkódolás legördülő "
+"listából."
 
 #: C/gedit-open-on-server.page:28(p)
-#| msgid "Click <guibutton>Open</guibutton>."
 msgid "Click <gui>Open</gui>."
 msgstr "Kattintson a <gui>Megnyitás</gui> gombra."
 
 #: C/gedit-open-on-server.page:31(p)
-#| msgid ""
-#| "Valid types of <replaceable>URI</replaceable> include <literal>http:</"
-#| "literal>, <literal>ftp:</literal>, <literal>file:</literal>, and all of "
-#| "the methods supported by <literal>gnome-vfs</literal>."
 msgid ""
 "Valid types of URI include http:, ftp:, file:, and all of the methods "
 "supported by <app>gvfs</app>."
 msgstr ""
-"Az érvényes URI-típusok a http:, az ftp:, a file: és minden "
-"más, a <app>gvfs</app> által támogatott elérési mód."
+"Az érvényes URI-típusok a http:, az ftp:, a file: és minden más, a "
+"<app>gvfs</app> által támogatott elérési mód."
 
-#: C/gedit-open-on-server.page:33(p)
-#| msgid ""
-#| "Files from some types of URI are opened as read-only, and any changes you "
-#| "make must be saved to a different location. HTTP only allows files to be "
-#| "read. Files opened from FTP are read-only because because not all FTP "
-#| "servers may correctly work with saving remote files."
+#: C/gedit-open-on-server.page:34(p)
 msgid ""
 "Files from some types of URI are opened as read-only, and any changes you "
 "make must be saved to a different location. For example, HTTP only allows "
-"files to be read. Files opened from FTP are read-only because because not "
-"all FTP servers may correctly work with saving remote files."
+"files to be read. Files opened from FTP are read-only because not all FTP "
+"servers may correctly work with saving remote files."
 msgstr ""
 "Bizonyos típusú URI címekről megnyitott fájlok csak olvasható módban "
 "használhatók, a változtatásokat csak más helyre lehet menteni. A HTTP-n "
-"keresztül megnyitott fájlok például csak olvashatók. Az FTP-vel megnyitottak azért nem módosíthatók, mert egyes FTP kiszolgálók hibásan kezelik a távoli fájlok mentését."
+"keresztül megnyitott fájlok például csak olvashatók. Az FTP-vel megnyitottak "
+"azért nem módosíthatók, mert egyes FTP kiszolgálók hibásan kezelik a távoli "
+"fájlok mentését."
 
 #: C/gedit-open-files.page:18(title)
 msgid "Open a file or set of files"
@@ -1994,23 +2182,28 @@ msgstr "Fájl vagy fájlok megnyitása"
 msgid ""
 "To open a file in <app>gedit</app>, click the <gui>Open</gui> button, or "
 "press <keyseq><key>Ctrl</key><key>O</key></keyseq>."
-msgstr "Fájlok a <app>geditben</app> való megnyitásához kattintson a <gui>Megnyitás</gui> gombra, vagy nyomja meg a <keyseq><key>Ctrl</key><key>O</key></keyseq> kombinációt."
+msgstr ""
+"Fájlok a <app>geditben</app> való megnyitásához kattintson a <gui>Megnyitás</"
+"gui> gombra, vagy nyomja meg a <keyseq><key>Ctrl</key><key>O</key></keyseq> "
+"kombinációt."
 
 #: C/gedit-open-files.page:21(p)
 msgid ""
 "This will cause the <gui>Open Files</gui> dialog to appear. Use your mouse "
 "or keyboard to select the file that you wish to open, and then click "
 "<gui>Open</gui>. The file that you've selected will open in a new tab."
-msgstr "Ekkor megnyílik a <gui>Fájlok megnyitása</gui> ablak. Az egér vagy a billentyűzet használatával válassza ki a megnyitni kívánt fájlt, és nyomja meg a <gui>Megnyitás</gui> gombot. A kijelölt fájl megnyílik egy új lapon."
+msgstr ""
+"Ekkor megnyílik a <gui>Fájlok megnyitása</gui> ablak. Az egér vagy a "
+"billentyűzet használatával válassza ki a megnyitni kívánt fájlt, és nyomja "
+"meg a <gui>Megnyitás</gui> gombot. A kijelölt fájl megnyílik egy új lapon."
 
 #: C/gedit-open-files.page:22(p)
-#| msgid ""
-#| "To close the <guilabel>Preferences</guilabel> dialog, click "
-#| "<guibutton>Close</guibutton>."
 msgid ""
 "To close the <gui>Open Files</gui> dialog without opening a file, click "
 "<gui>Cancel</gui>."
-msgstr "A <gui>Fájlok megnyitása</gui> ablak fájl megnyitása nélküli bezárásához kattintson a <gui>Mégse</gui> gombra."
+msgstr ""
+"A <gui>Fájlok megnyitása</gui> ablak fájl megnyitása nélküli bezárásához "
+"kattintson a <gui>Mégse</gui> gombra."
 
 #: C/gedit-open-files.page:24(p)
 msgid ""
@@ -2018,7 +2211,11 @@ msgid ""
 "one file at a time. If you hold down the <key>Ctrl</key> key while you "
 "select multiple files, clicking <gui>Open</gui> will open each of the files "
 "that you have selected."
-msgstr "A <key>Ctrl</key> és <key>Shift</key> billentyűk használatával egyszerre több fájlt is megnyithat. Ha a <key>Ctrl</key> billentyű lenyomva tartása mellett több fájlt jelöl ki, akkor a <gui>Megnyitás</gui> gomb megnyomása az összes kijelölt fájlt megnyitja."
+msgstr ""
+"A <key>Ctrl</key> és <key>Shift</key> billentyűk használatával egyszerre "
+"több fájlt is megnyithat. Ha a <key>Ctrl</key> billentyű lenyomva tartása "
+"mellett több fájlt jelöl ki, akkor a <gui>Megnyitás</gui> gomb megnyomása az "
+"összes kijelölt fájlt megnyitja."
 
 #. Insert Image Here
 #: C/gedit-open-files.page:28(p)
@@ -2026,7 +2223,10 @@ msgid ""
 "Holding down the <key>Shift</key> while you select multiple files will open "
 "the first file that you select, the last file that you select, and all of "
 "the files in between."
-msgstr "Ha a <key>Shift</key> billentyű lenyomva tartása mellett több fájlt jelöl ki, akkor a <gui>Megnyitás</gui> gomb megnyomása megnyitja az első kijelölt fájlt, az utolsó kijelölt fájlt, és a köztük lévő összes fájlt."
+msgstr ""
+"Ha a <key>Shift</key> billentyű lenyomva tartása mellett több fájlt jelöl "
+"ki, akkor a <gui>Megnyitás</gui> gomb megnyomása megnyitja az első kijelölt "
+"fájlt, az utolsó kijelölt fájlt, és a köztük lévő összes fájlt."
 
 #: C/gedit-open-files-from-sidepane.page:14(title)
 msgid "View and open files from the side pane"
@@ -2038,43 +2238,49 @@ msgid ""
 "the tabs at the top of the <app>gedit</app> window. In some cases, though, "
 "particularly when you are working with a large number of open files, you may "
 "find it easier to use the <app>side pane</app>."
-msgstr "A fájlok közti váltás leggyakoribb módja a <app>geditben</app> a <app>gedit</app> ablak tetején lévő lapok használata. Egyes esetekben azonban, különösen ha sok nyitott fájllal dolgozik, egyszerűbb lehet az <app>oldalsáv</app> használata."
+msgstr ""
+"A fájlok közti váltás leggyakoribb módja a <app>geditben</app> a <app>gedit</"
+"app> ablak tetején lévő lapok használata. Egyes esetekben azonban, különösen "
+"ha sok nyitott fájllal dolgozik, egyszerűbb lehet az <app>oldalsáv</app> "
+"használata."
 
 #: C/gedit-open-files-from-sidepane.page:19(p)
-#| msgid ""
-#| "To view the File Browser, choose <menuchoice><guimenu>View</"
-#| "guimenu><guimenuitem>Side Pane</guimenuitem></menuchoice> and then click "
-#| "on the tab showing the File Browser icon at the bottom of the side pane."
 msgid ""
 "To activate the <app>side pane</app>, select <guiseq><gui>View</"
 "gui><gui>Side Pane</gui></guiseq>, or just press the <key>F9</key> key."
 msgstr ""
-"Az <app>oldalsáv</app> aktiválásához válassza a <guiseq><gui>Nézet</gui><gui>Oldalsó ablaktábla</gui></guiseq> "
-"menüpontot, vagy nyomja meg az <key>F9</key> billentyűt."
+"Az <app>oldalsáv</app> aktiválásához válassza a <guiseq><gui>Nézet</"
+"gui><gui>Oldalsó ablaktábla</gui></guiseq> menüpontot, vagy nyomja meg az "
+"<key>F9</key> billentyűt."
 
 #: C/gedit-open-files-from-sidepane.page:24(p)
 msgid ""
 "You can toggle the <gui>side pane</gui> open or closed by pressing <key>F9</"
 "key> at any time."
-msgstr "Az <gui>oldalsávot</gui> bármikor megnyithatja vagy bezárhatja az <key>F9</key> megnyomásával."
+msgstr ""
+"Az <gui>oldalsávot</gui> bármikor megnyithatja vagy bezárhatja az <key>F9</"
+"key> megnyomásával."
 
 #: C/gedit-open-files-from-sidepane.page:31(p)
-#| msgid ""
-#| "To view the File Browser, choose <menuchoice><guimenu>View</"
-#| "guimenu><guimenuitem>Side Pane</guimenuitem></menuchoice> and then click "
-#| "on the tab showing the File Browser icon at the bottom of the side pane."
 msgid ""
 "To open files from the <app>side pane</app>, first open the <app>side pane</"
 "app> by selecting <guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, then "
 "click on the <gui>file-browser</gui> icon at the bottom of the pane."
-msgstr "Fájlok <app>oldalsávból</app> való megnyitásához első lépésként nyissa meg az <app>oldalsávot</app> a <guiseq><gui>Nézet</gui><gui>Oldalsó ablaktábla</gui></guiseq> menüpont kiválasztásával, majd az ablaktábla alján a <gui>fájlböngészőt</gui> ábrázoló ikonra."
+msgstr ""
+"Fájlok <app>oldalsávból</app> való megnyitásához első lépésként nyissa meg "
+"az <app>oldalsávot</app> a <guiseq><gui>Nézet</gui><gui>Oldalsó ablaktábla</"
+"gui></guiseq> menüpont kiválasztásával, majd az ablaktábla alján a "
+"<gui>fájlböngészőt</gui> ábrázoló ikonra."
 
 #: C/gedit-open-files-from-sidepane.page:39(p)
 msgid ""
 "This will activate the <em>file-browser</em> mode of the <app>side panel</"
 "app>. You can then use the navigation buttons at the top of the pane to "
 "locate and open your desired files."
-msgstr "Ez aktiválja az <app>oldalsáv</app> <em>fájlböngésző</em> módját. Ekkor az oldalsáv tetején lévő navigációs gombokkal megkeresheti és megnyithatja a kívánt fájlokat."
+msgstr ""
+"Ez aktiválja az <app>oldalsáv</app> <em>fájlböngésző</em> módját. Ekkor az "
+"oldalsáv tetején lévő navigációs gombokkal megkeresheti és megnyithatja a "
+"kívánt fájlokat."
 
 #: C/gedit-open-files-from-sidepane.page:45(title)
 msgid "Using the side pane to switch between open files"
@@ -2086,13 +2292,18 @@ msgid ""
 "between open files. To activate the file browser portion of the <app>side "
 "pane</app>, click on the <gui>file</gui> icon at the bottom of the <gui>side "
 "pane</gui>."
-msgstr "Ha több fájlja van megnyitva, akkor az oldalsáv használatával is válthat a nyitott fájlok közt. Az <app>oldalsáv</app> fájlböngésző részének aktiválásához kattintson az <gui>oldalsáv</gui> <gui>fájl</gui> ikonjára."
+msgstr ""
+"Ha több fájlja van megnyitva, akkor az oldalsáv használatával is válthat a "
+"nyitott fájlok közt. Az <app>oldalsáv</app> fájlböngésző részének "
+"aktiválásához kattintson az <gui>oldalsáv</gui> <gui>fájl</gui> ikonjára."
 
 #: C/gedit-open-files-from-sidepane.page:54(p)
 msgid ""
 "Clicking on any file name in the <gui>side pane</gui> will open that file "
 "for editing."
-msgstr "Az <gui>oldalsávban</gui> bármely fájlnévre kattintva megnyithatja a fájlt szerkesztésre."
+msgstr ""
+"Az <gui>oldalsávban</gui> bármely fájlnévre kattintva megnyithatja a fájlt "
+"szerkesztésre."
 
 #: C/gedit-full-screen.page:14(title)
 msgid "Use fullscreen mode"
@@ -2105,7 +2316,11 @@ msgid ""
 "<gui>menu bar</gui>, <gui>tab bar</gui> and the <gui>tool bar</gui>, "
 "presenting you with more of your text and allowing you to better focus on "
 "your tasks."
-msgstr "Nagy dokumentumok kezelésekor hasznos lehet a <app>gedit</app> teljes képernyős módja. A teljes képernyős mód használata elrejti a <gui>menüsávot</gui>, a <gui>lapsávot</gui> és az <gui>eszköztárat</gui>, így a szöveg nagyobb részét láthatja, és jobban koncentrálhat feladataira."
+msgstr ""
+"Nagy dokumentumok kezelésekor hasznos lehet a <app>gedit</app> teljes "
+"képernyős módja. A teljes képernyős mód használata elrejti a <gui>menüsávot</"
+"gui>, a <gui>lapsávot</gui> és az <gui>eszköztárat</gui>, így a szöveg "
+"nagyobb részét láthatja, és jobban koncentrálhat feladataira."
 
 #: C/gedit-full-screen.page:19(title)
 msgid "Turn on fullscreen mode"
@@ -2117,7 +2332,11 @@ msgid ""
 "gui></guiseq>, or press <key>F11</key>. <app>gedit's</app> menu, title, and "
 "tab-bars will hide, and you will only be presented with the text of your "
 "current file."
-msgstr "A teljes képernyős mód bekapcsolásához válassza a <guiseq><gui>Nézet</gui><gui>Teljes képernyő</gui></guiseq> menüpontot, vagy nyomja meg az <key>F11</key> billentyűt. A <app>gedit</app> menüje, címe és lapsávjai eltűnnek, és csak az aktuális fájl szövegét fogja látni."
+msgstr ""
+"A teljes képernyős mód bekapcsolásához válassza a <guiseq><gui>Nézet</"
+"gui><gui>Teljes képernyő</gui></guiseq> menüpontot, vagy nyomja meg az "
+"<key>F11</key> billentyűt. A <app>gedit</app> menüje, címe és lapsávjai "
+"eltűnnek, és csak az aktuális fájl szövegét fogja látni."
 
 #: C/gedit-full-screen.page:21(p)
 msgid ""
@@ -2125,7 +2344,11 @@ msgid ""
 "working in fullscreen mode, move your mouse pointer to the top of the "
 "screen. The <app>gedit</app> menu bar will reappear, and you can select your "
 "desired action."
-msgstr "Ha a <app>gedit</app> egyik menüjéből szeretne végrehajtani egy műveletet, mialatt teljes képernyős módban van, akkor mozgassa az egérmutatót a képernyő tetejére. A <app>gedit</app> menüsávja újra megjelenik, és kiválaszthatja a kívánt menüpontot."
+msgstr ""
+"Ha a <app>gedit</app> egyik menüjéből szeretne végrehajtani egy műveletet, "
+"mialatt teljes képernyős módban van, akkor mozgassa az egérmutatót a "
+"képernyő tetejére. A <app>gedit</app> menüsávja újra megjelenik, és "
+"kiválaszthatja a kívánt menüpontot."
 
 #: C/gedit-full-screen.page:23(p)
 msgid ""
@@ -2147,7 +2370,11 @@ msgid ""
 "window, move your mouse cursor to the top of the screen, and wait for the "
 "<gui>menu bar</gui> to appear. When the <gui>menu bar</gui> appears, select "
 "<gui>Leave Fullscreen</gui>."
-msgstr "A teljes képernyős mód kikapcsolásához, és a normál <app>gedit</app> ablakhoz való visszatéréshez mozgassa kurzorát a képernyő tetejére, és várja meg, amíg megjelenik a <gui>menüsáv</gui>. Amikor megjelenik a <gui>menüsáv</gui>, nyomja meg a <gui>Teljes képernyő elhagyása</gui> gombot."
+msgstr ""
+"A teljes képernyős mód kikapcsolásához, és a normál <app>gedit</app> "
+"ablakhoz való visszatéréshez mozgassa kurzorát a képernyő tetejére, és várja "
+"meg, amíg megjelenik a <gui>menüsáv</gui>. Amikor megjelenik a <gui>menüsáv</"
+"gui>, nyomja meg a <gui>Teljes képernyő elhagyása</gui> gombot."
 
 #: C/gedit-files-basic.page:14(title)
 msgid "File basics: Open, close, and save files"
@@ -2157,7 +2384,9 @@ msgstr "Fájlkezelési alapok: fájlok megnyitása, bezárása és mentése"
 msgid ""
 "If you are new to <app>gedit</app>, these topics will help you with "
 "creating, saving, and opening and closing files."
-msgstr "Ha új <app>gedit</app> felhasználó, akkor ezek a témák segíteni fogják a fájlok létrehozásában, mentésében, megnyitásában és bezárásában."
+msgstr ""
+"Ha új <app>gedit</app> felhasználó, akkor ezek a témák segíteni fogják a "
+"fájlok létrehozásában, mentésében, megnyitásában és bezárásában."
 
 #: C/gedit-edit-as-root.page:14(title)
 msgid "Edit a file as the root (administative) user"
@@ -2167,17 +2396,21 @@ msgstr "Fájl szerkesztése rendszergazdaként (root)"
 msgid ""
 "Editing files as the root user is potentially dangerous, and may break your "
 "system in bad ways. Take great care when editing files as the root user."
-msgstr "A fájlok root felhasználóként történő szerkesztése veszélyes lehet, és csúnyán tönkreteheti rendszerét. Legyen nagyon óvatos, amikor a fájlokat root felhasználóként szerkeszti."
+msgstr ""
+"A fájlok root felhasználóként történő szerkesztése veszélyes lehet, és "
+"csúnyán tönkreteheti rendszerét. Legyen nagyon óvatos, amikor a fájlokat "
+"root felhasználóként szerkeszti."
 
 #: C/gedit-edit-as-root.page:18(p)
 msgid ""
 "To edit files as the root user, launch <app>gedit</app> from the terminal by "
 "entering:"
-msgstr "A fájlok root felhasználóként való szerkesztéséhez a következő parancs kiadásával indítsa a <app>geditet</app> a terminálból:"
+msgstr ""
+"A fájlok root felhasználóként való szerkesztéséhez a következő parancs "
+"kiadásával indítsa a <app>geditet</app> a terminálból:"
 
 #: C/gedit-edit-as-root.page:19(code)
 #, no-wrap
-#| msgid "gedit"
 msgid "sudo gedit"
 msgstr "sudo gedit"
 
@@ -2185,13 +2418,17 @@ msgstr "sudo gedit"
 msgid ""
 "Using the <cmd>sudo</cmd> command, you will need to successfully enter your "
 "password before <app>gedit</app> will open."
-msgstr "A <cmd>sudo</cmd> parancs használatával meg kell adnia jelszavát a <app>gedit</app> megnyílása előtt."
+msgstr ""
+"A <cmd>sudo</cmd> parancs használatával meg kell adnia jelszavát a "
+"<app>gedit</app> megnyílása előtt."
 
 #: C/gedit-edit-as-root.page:22(p)
 msgid ""
 "As an alternative to the <cmd>sudo</cmd> command, you may obtain "
 "administrative privileges by entering:"
-msgstr "A <cmd>sudo</cmd> parancs alternatívájaként rendszergazdai jogokhoz juthat a következő parancs kiadásával is:"
+msgstr ""
+"A <cmd>sudo</cmd> parancs alternatívájaként rendszergazdai jogokhoz juthat a "
+"következő parancs kiadásával is:"
 
 #: C/gedit-edit-as-root.page:23(code)
 #, no-wrap
@@ -2206,10 +2443,11 @@ msgstr "Ezután a <app>gedit</app> a <cmd>gedit</cmd> parancs kiadásával indí
 msgid ""
 "Once you have opened <app>gedit</app> with administrative privileges, the "
 "application will retain those privileges until you close it."
-msgstr "A <app>gedit</app> rendszergazdai jogokkal történő futtatásakor az alkalmazás addig megtartja ezeket a jogokat, amíg be nem zárja."
+msgstr ""
+"A <app>gedit</app> rendszergazdai jogokkal történő futtatásakor az "
+"alkalmazás addig megtartja ezeket a jogokat, amíg be nem zárja."
 
 #: C/gedit-create-new-file.page:14(title)
-#| msgid "Create a new document."
 msgid "Create a new file"
 msgstr "Új fájl létrehozása"
 
@@ -2219,17 +2457,24 @@ msgid ""
 "icon that looks like a blank piece of paper with a \"plus\" sign next to it. "
 "If you prefer, you may also select <guiseq><gui>File</gui><gui>New</gui></"
 "guiseq>, or press <keyseq><key>Ctrl</key><key>N</key></keyseq>."
-msgstr "A <app>geditben</app> új fájlt legegyszerűbben a „plusz” jelet tartalmazó üres papír ikonra kattintva hozhat létre. Kiválaszthatja a <guiseq><gui>Fájl</gui><gui>Új</gui></guiseq> menüpontot is, vagy megnyomhatja a <keyseq><key>Ctrl</key><key>N</key></keyseq> billentyűkombinációt is."
+msgstr ""
+"A <app>geditben</app> új fájlt legegyszerűbben a „plusz” jelet tartalmazó "
+"üres papír ikonra kattintva hozhat létre. Kiválaszthatja a "
+"<guiseq><gui>Fájl</gui><gui>Új</gui></guiseq> menüpontot is, vagy "
+"megnyomhatja a <keyseq><key>Ctrl</key><key>N</key></keyseq> "
+"billentyűkombinációt is."
 
 #: C/gedit-create-new-file.page:18(p)
 msgid ""
 "Any one of these actions will create a new file in the <app>gedit</app> "
 "window. If you have other files open in <app>gedit</app>, the new file that "
 "you create will appear as a new tab to the right of those files."
-msgstr "A fentiek bármelyike létrehoz egy új fájlt a <app>geditben</app>. Ha már más fájljai is nyitva vannak a <app>geditben</app>, akkor az újonnan létrehozott fájl azoktól jobbra, új lapon jelenik meg."
+msgstr ""
+"A fentiek bármelyike létrehoz egy új fájlt a <app>geditben</app>. Ha már más "
+"fájljai is nyitva vannak a <app>geditben</app>, akkor az újonnan létrehozott "
+"fájl azoktól jobbra, új lapon jelenik meg."
 
 #: C/gedit-close-file.page:14(title)
-#| msgid "Close tab."
 msgid "Close a file"
 msgstr "Fájl bezárása"
 
@@ -2239,17 +2484,23 @@ msgid ""
 "gui><gui>Close</gui></guiseq>. Alternately, you can click the small \"X\" "
 "that appears on the right-side of the file's tab, or press "
 "<keyseq><key>Ctrl</key><key>W</key></keyseq>."
-msgstr "Fájl bezárásához a <app>geditben</app> válassza a <guiseq><gui>Fájl</gui><gui>Bezárás</gui></guiseq> menüpontot. Ennek alternatívájaként rákattinthat a fájl lapjának jobb oldalán megjelenő kis „X”-re, vagy megnyomhatja a <keyseq><key>Ctrl</key><key>W</key></keyseq> kombinációt."
+msgstr ""
+"Fájl bezárásához a <app>geditben</app> válassza a <guiseq><gui>Fájl</"
+"gui><gui>Bezárás</gui></guiseq> menüpontot. Ennek alternatívájaként "
+"rákattinthat a fájl lapjának jobb oldalán megjelenő kis „X”-re, vagy "
+"megnyomhatja a <keyseq><key>Ctrl</key><key>W</key></keyseq> kombinációt."
 
 #: C/gedit-close-file.page:17(p)
 msgid ""
 "Any one of these actions will close a file in <app>gedit</app>. If your file "
 "contains changes that have not been saved, <app>gedit</app> will prompt you "
 "to save those changes before closing the file."
-msgstr "Ezek bármelyike bezárja a fájlt a <app>geditben</app>. Ha a fájl mentetlen változtatásokat tartalmaz, akkor a <app>gedit</app> figyelmezteti a változtatások mentésére a fájl bezárása előtt."
+msgstr ""
+"Ezek bármelyike bezárja a fájlt a <app>geditben</app>. Ha a fájl mentetlen "
+"változtatásokat tartalmaz, akkor a <app>gedit</app> figyelmezteti a "
+"változtatások mentésére a fájl bezárása előtt."
 
 #: C/gedit-change-color-scheme.page:14(title)
-#| msgid "Blue based color scheme."
 msgid "Change the color scheme"
 msgstr "Színséma megváltoztatása"
 
@@ -2257,10 +2508,11 @@ msgstr "Színséma megváltoztatása"
 msgid ""
 "<app>gedit</app> includes several different color schemes, allowing you to "
 "change the appearance of the main text window."
-msgstr "A <app>gedit</app> számos színsémát tartalmaz, amelyek lehetővé teszik a fő szövegablak megjelenésének módosítását."
+msgstr ""
+"A <app>gedit</app> számos színsémát tartalmaz, amelyek lehetővé teszik a fő "
+"szövegablak megjelenésének módosítását."
 
 #: C/gedit-change-color-scheme.page:18(p)
-#| msgid "To use the Sort plugin, perform the following steps:"
 msgid "To change the color scheme, complete the following steps:"
 msgstr "A színséma megváltoztatásához tegye a következőket:"
 
@@ -2268,10 +2520,11 @@ msgstr "A színséma megváltoztatásához tegye a következőket:"
 msgid ""
 "Select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Font &amp; Colors</"
 "gui></guiseq>."
-msgstr "Válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Betűk és színek</gui></guiseq> lehetőséget."
+msgstr ""
+"Válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui><gui>Betűk és "
+"színek</gui></guiseq> lehetőséget."
 
 #: C/gedit-change-color-scheme.page:21(p)
-#| msgid "Blue based color scheme."
 msgid "Choose your desired color scheme."
 msgstr "Válassza ki a kívánt színsémát."
 
@@ -2280,7 +2533,6 @@ msgid "The new color scheme will be applied immediately."
 msgstr "Az új színséma azonnal alkalmazásra kerül."
 
 #: C/gedit-change-color-scheme.page:27(title)
-#| msgid "Color Scheme"
 msgid "Use a Custom Color Scheme"
 msgstr "Egyéni színséma használata"
 
@@ -2289,14 +2541,19 @@ msgstr "Egyéni színséma használata"
 msgid ""
 "You can also use color schemes that have been created by others, or create "
 "and use your own color schemes."
-msgstr "Mások által készített színsémákat is használhat, vagy létrehozhatja saját színsémáit."
+msgstr ""
+"Mások által készített színsémákat is használhat, vagy létrehozhatja saját "
+"színsémáit."
 
 #: C/gedit-change-color-scheme.page:30(p)
 msgid ""
 "Instructions on how to install custom color schemes, as well as examples of "
 "color schemes that you can download and use, are available on the <link href="
 "\"http://live.gnome.org/GtkSourceView/StyleSchemes\">gedit wiki</link>."
-msgstr "Az egyéni színsémák telepítésével kapcsolatos utasításokért, valamint a letölthető és használható színsémákra példák a <link href=\"http://live.gnome.org/GtkSourceView/StyleSchemes\">gedit wikiben</link> érhetők el."
+msgstr ""
+"Az egyéni színsémák telepítésével kapcsolatos utasításokért, valamint a "
+"letölthető és használható színsémákra példák a <link href=\"http://live."
+"gnome.org/GtkSourceView/StyleSchemes\">gedit wikiben</link> érhetők el."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/index.page:0(None)
