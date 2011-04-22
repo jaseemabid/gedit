@@ -26,6 +26,40 @@ class SharedData(object):
     def __init__(self):
         self.dlg = None
         self.dlg_default_size = None
+        self.controller_registry = {}
+        self.windows = {}
+
+    def register_controller(self, view, controller):
+        self.controller_registry[view] = controller
+    
+    def unregister_controller(self, view, controller):
+        if self.controller_registry[view] == controller:
+            del self.controller_registry[view]
+
+    def register_window(self, window):
+        self.windows[window.window] = window
+
+    def unregister_window(self, window):
+        if window.window in self.windows:
+            del self.windows[window.window]
+
+    def update_state(self, window):
+        if window in self.windows:
+            self.windows[window].do_update_state()
+
+    def get_active_controller(self, window):
+        view = window.get_active_view()
+
+        if not view or not view in self.controller_registry:
+            return None
+
+        return self.controller_registry[view]
+
+    def get_controller(self, view):
+        if view in self.controller_registry:
+            return self.controller_registry[view]
+        else:
+            return None
 
     def manager_destroyed(self, dlg):
         self.dlg_default_size = [dlg.get_allocation().width, dlg.get_allocation().height]
@@ -42,9 +76,7 @@ class SharedData(object):
             if self.dlg_default_size:
                 self.dlg.set_default_size(self.dlg_default_size[0], self.dlg_default_size[1])
 
-        if window:
-            self.dlg.set_transient_for(window)
-
+        self.dlg.set_transient_for(window)
         self.dlg.present()
 
 # vi:ex:ts=4:et

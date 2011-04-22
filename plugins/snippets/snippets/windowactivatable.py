@@ -24,6 +24,7 @@ from gi.repository import Gtk, Gdk, Gedit, GObject
 from document import Document
 from library import Library
 from shareddata import SharedData
+from signals import Signals
 
 class Activate(Gedit.Message):
         view = GObject.property(type=Gedit.View)
@@ -31,14 +32,16 @@ class Activate(Gedit.Message):
 #        iter = GObject.property(type=Gtk.TextIter)
         trigger = GObject.property(type=str)
 
-class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
+class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
         __gtype_name__ = "GeditSnippetsWindowActivatable"
 
         window = GObject.property(type=Gedit.Window)
 
         def __init__(self):
-                self.current_controller = None
-                self.current_language = None
+                GObject.Object.__init__(self)
+                Signals.__init__(self)
+
+                self.current_language_accel_group = None
                 self.signal_ids = {}
 
         def do_activate(self):
@@ -53,14 +56,13 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
                 if self.accel_group:
                         self.window.add_accel_group(self.accel_group)
 
-                self.window.connect('tab-added', self.on_tab_added)
-
-                # Add controllers to all the current views
-                for view in self.window.get_views():
-                        if isinstance(view, Gedit.View) and not self.has_controller(view):
-                                view._snippet_controller = Document(self, view)
+                self.connect_signal(self.window,
+                                    'active-tab-changed',
+                                    self.on_active_tab_changed)
 
                 self.do_update_state()
+
+                SharedData().register_window(self)
 
         def do_deactivate(self):
                 if self.accel_group:
@@ -71,26 +73,17 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
                 self.remove_menu()
                 self.unregister_messages()
 
-                # Iterate over all the tabs and remove every controller
-                for view in self.window.get_views():
-                        if isinstance(view, Gedit.View) and self.has_controller(view):
-                                view._snippet_controller.stop()
-                                view._snippet_controller = None
-
                 library = Library()
                 library.remove_accelerator_callback(self.accelerator_activated)
 
+                self.disconnect_signals(self.window)
+
+                SharedData().unregister_window(self)
+
         def do_update_state(self):
-                view = self.window.get_active_view()
+                controller = SharedData().get_active_controller(self.window)
 
-                if not view or not self.has_controller(view):
-                        return
-
-                controller = view._snippet_controller
-
-                if controller != self.current_controller:
-                        self.current_controller = controller
-                        self.update_language()
+                self.update_language(controller)
 
         def register_messages(self):
                 bus = self.window.get_message_bus()
@@ -111,7 +104,9 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
                 if not view:
                         view = self.window.get_active_view()
 
-                if not self.has_controller(view):
+                controller = SharedData().get_controller(view)
+
+                if not controller:
                         return
 
                 # TODO: fix me as soon as the property fix lands in pygobject
@@ -119,8 +114,6 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
 
                 #if not iter:
                 iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
-
-                controller = view._snippet_controller
                 controller.run_snippet_trigger(message.props.trigger, (iter, iter))
 
         def on_message_parse_and_activate(self, bus, message, userdata):
@@ -129,15 +122,16 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
                 if not view:
                         view = self.window.get_active_view()
 
-                if not self.has_controller(view):
+                controller = SharedData().get_controller(view)
+
+                if not controller:
                         return
 
-                iter = message.props.iter
-
-                if not iter:
-                        iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
-
-                controller = view._snippet_controller
+                # TODO: fix me as soon as the property fix lands in pygobject
+                #iter = message.props.iter
+                
+                #if not iter:
+                iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
                 controller.parse_and_run_snippet(message.snippet, iter)
 
         def insert_menu(self):
@@ -170,43 +164,33 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
 
                 return result
 
-        def has_controller(self, view):
-                return hasattr(view, '_snippet_controller') and view._snippet_controller
-
-        def update_language(self):
+        def update_language(self, controller):
                 if not self.window:
                         return
 
-                if self.current_language:
-                        accel_group = Library().get_accel_group( \
-                                        self.current_language)
-                        self.window.remove_accel_group(accel_group)
-
-                if self.current_controller:
-                        self.current_language = self.current_controller.language_id
-
-                        if self.current_language != None:
-                                accel_group = Library().get_accel_group( \
-                                                self.current_language)
-                                self.window.add_accel_group(accel_group)
+                if controller:
+                        langid = controller.language_id
                 else:
-                        self.current_language = None
+                        langid = None
 
-        def language_changed(self, controller):
-                if controller == self.current_controller:
-                        self.update_language()
+                if langid != None:
+                        accelgroup = Library().get_accel_group(langid)
+                else:
+                        accelgroup = None
+
+                if accelgroup != self.current_language_accel_group:
+                        if self.current_language_accel_group:
+                                self.window.remove_accel_group(self.current_language_accel_group)
+
+                        if accelgroup:
+                                self.window.add_accel_group(accelgroup)
+
+                self.current_language_accel_group = accelgroup
+
+        def on_active_tab_changed(self, window, tab):
+                self.update_language(SharedData().get_controller(tab.get_view()))
 
         # Callbacks
-
-        def on_tab_added(self, window, tab):
-                # Create a new controller for this tab if it has a standard gedit view
-                view = tab.get_view()
-
-                if isinstance(view, Gedit.View) and not self.has_controller(view):
-                        view._snippet_controller = Document(self, view)
-
-                self.do_update_state()
-
         def create_configure_dialog(self):
                 SharedData().show_manager(self.window, self.plugin_info.get_data_dir())
 
@@ -215,7 +199,10 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
 
         def accelerator_activated(self, group, obj, keyval, mod):
                 if obj == self.window:
-                        return self.current_controller.accelerator_activate(keyval, mod)
+                        controller = SharedData().get_active_controller(self.window)
+
+                        if controller:
+                                return controller.accelerator_activate(keyval, mod)
                 else:
                         return False
 

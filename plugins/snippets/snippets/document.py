@@ -25,25 +25,27 @@ from library import Library
 from snippet import Snippet
 from placeholder import *
 import completion
+from signals import Signals
+from shareddata import SharedData
 
 class DynamicSnippet(dict):
         def __init__(self, text):
                 self['text'] = text
                 self.valid = True
 
-class Document:
-        TAB_KEY_VAL = (Gdk.KEY_Tab, \
-                        Gdk.KEY_ISO_Left_Tab)
+class Document(GObject.Object, Gedit.ViewActivatable, Signals):
+        TAB_KEY_VAL = (Gdk.KEY_Tab, Gdk.KEY_ISO_Left_Tab)
         SPACE_KEY_VAL = (Gdk.KEY_space,)
 
-        def __init__(self, instance, view):
-                self.view = None
-                self.instance = instance
+        view = GObject.property(type=Gedit.View)
+
+        def __init__(self):
+                GObject.Object.__init__(self)
+                Signals.__init__(self)
 
                 self.placeholders = []
                 self.active_snippets = []
                 self.active_placeholder = None
-                self.signal_ids = {}
 
                 self.ordered_placeholders = []
                 self.update_placeholders = []
@@ -54,107 +56,58 @@ class Document:
                 self.provider = completion.Provider(_('Snippets'), self.language_id, self.on_proposal_activated)
                 self.defaults_provider = completion.Defaults(self.on_default_activated)
 
+        def do_activate(self):
                 # Always have a reference to the global snippets
                 Library().ref(None)
-                self.set_view(view)
 
-        # Stop controlling the view. Remove all active snippets, remove references
-        # to the view and the plugin instance, disconnect all signal handlers
-        def stop(self):
+                buf = self.view.get_buffer()
+
+                self.connect_signal(self.view, 'key-press-event', self.on_view_key_press)
+                self.connect_signal(buf, 'notify::language', self.on_notify_language)
+                self.connect_signal(self.view, 'drag-data-received', self.on_drag_data_received)
+
+                self.connect_signal_after(self.view, 'draw', self.on_draw)
+
+                self.update_language()
+
+                completion = self.view.get_completion()
+
+                completion.add_provider(self.provider)
+                completion.add_provider(self.defaults_provider)
+
+                self.connect_signal(completion, 'hide', self.on_completion_hide)
+
+                SharedData().register_controller(self.view, self)
+
+        def do_deactivate(self):
                 if self.timeout_update_id != 0:
                         GObject.source_remove(self.timeout_update_id)
                         self.timeout_update_id = 0
+
                         del self.update_placeholders[:]
                         del self.jump_placeholders[:]
 
                 # Always release the reference to the global snippets
                 Library().unref(None)
-                self.set_view(None)
-                self.instance = None
                 self.active_placeholder = None
 
-        def disconnect_signal(self, obj, signal):
-                if (obj, signal) in self.signal_ids:
-                        obj.disconnect(self.signal_ids[(obj, signal)])
-                        del self.signal_ids[(obj, signal)]
+                self.disconnect_signals(self.view)
+                self.disconnect_signals(self.view.get_buffer())
 
-        def connect_signal(self, obj, signal, cb):
-                self.disconnect_signal(obj, signal)
-                self.signal_ids[(obj, signal)] = obj.connect(signal, cb)
+                # Remove all active snippets
+                for snippet in list(self.active_snippets):
+                        self.deactivate_snippet(snippet, True)
 
-        def connect_signal_after(self, obj, signal, cb):
-                self.disconnect_signal(obj, signal)
-                self.signal_ids[(obj, signal)] = obj.connect_after(signal, cb)
+                completion = self.view.get_completion()
 
-        # Set the view to be controlled. Installs signal handlers and sets current
-        # language. If there is already a view set this function will first remove
-        # all currently active snippets and disconnect all current signals. So
-        # self.set_view(None) will effectively remove all the control from the
-        # current view
-        def _set_view(self, view):
-                if self.view:
-                        buf = self.view.get_buffer()
+                if completion:
+                        completion.remove_provider(self.provider)
+                        completion.remove_provider(self.defaults_provider)
 
-                        # Remove signals
-                        signals = {self.view: ('key-press-event', 'destroy',
-                                               'notify::editable', 'drag-data-received', 'expose-event'),
-                                   buf:       ('notify::language', 'changed', 'cursor-moved', 'insert-text'),
-                                   self.view.get_completion(): ('hide',)}
+                if self.language_id != 0:
+                        Library().unref(self.language_id)
 
-                        for obj, sig in signals.items():
-                                if obj:
-                                        for s in sig:
-                                                self.disconnect_signal(obj, s)
-
-                        # Remove all active snippets
-                        for snippet in list(self.active_snippets):
-                                self.deactivate_snippet(snippet, True)
-
-                        completion = self.view.get_completion()
-
-                        if completion:
-                                completion.remove_provider(self.provider)
-                                completion.remove_provider(self.defaults_provider)
-
-                self.view = view
-
-                if view != None:
-                        buf = view.get_buffer()
-
-                        self.connect_signal(view, 'destroy', self.on_view_destroy)
-
-                        if view.get_editable():
-                                self.connect_signal(view, 'key-press-event', self.on_view_key_press)
-
-                        self.connect_signal(buf, 'notify::language', self.on_notify_language)
-                        self.connect_signal(view, 'notify::editable', self.on_notify_editable)
-                        self.connect_signal(view, 'drag-data-received', self.on_drag_data_received)
-                        self.connect_signal_after(view, 'draw', self.on_draw)
-
-                        self.update_language()
-
-                        completion = view.get_completion()
-
-                        completion.add_provider(self.provider)
-                        completion.add_provider(self.defaults_provider)
-
-                        self.connect_signal(completion, 'hide', self.on_completion_hide)
-                elif self.language_id != 0:
-                        langid = self.language_id
-
-                        self.language_id = None;
-                        self.provider.language_id = self.language_id
-
-                        if self.instance:
-                                self.instance.language_changed(self)
-
-                        Library().unref(langid)
-
-        def set_view(self, view):
-                if view == self.view:
-                        return
-
-                self._set_view(view)
+                SharedData().unregister_controller(self.view, self)
 
         # Call this whenever the language in the view changes. This makes sure that
         # the correct language is used when finding snippets
@@ -173,14 +126,13 @@ class Document:
                 else:
                         self.language_id = None
 
-                if self.instance:
-                        self.instance.language_changed(self)
-
                 if langid != 0:
                         Library().unref(langid)
 
                 Library().ref(self.language_id)
                 self.provider.language_id = self.language_id
+
+                SharedData().update_state(self.view.get_toplevel())
 
         def accelerator_activate(self, keyval, mod):
                 if not self.view or not self.view.get_editable():
@@ -189,8 +141,6 @@ class Document:
                 accelerator = Gtk.accelerator_name(keyval, mod)
                 snippets = Library().from_accelerator(accelerator, \
                                 self.language_id)
-
-                snippets_debug('Accel!')
 
                 if len(snippets) == 0:
                         return False
@@ -558,14 +508,12 @@ class Document:
                         cur = buf.get_iter_at_mark(buf.get_insert())
                         last = sn.end_iter()
 
-                        # FIXME: get_iter_location doesnt work
+                        curloc = self.view.get_iter_location(cur)
+                        lastloc = self.view.get_iter_location(last)
 
-                        #curloc = self.view.get_iter_location(cur)
-                        #lastloc = self.view.get_iter_location(last)
-
-                        #if (lastloc.y + lastloc.height) - curloc.y <= \
-                        #   self.view.get_visible_rect().height:
-                        #        self.view.scroll_mark_onscreen(sn.end_mark)
+                        if (lastloc.y + lastloc.height) - curloc.y <= \
+                           self.view.get_visible_rect().height:
+                                self.view.scroll_mark_onscreen(sn.end_mark)
 
                 buf.end_user_action()
                 self.view.grab_focus()
@@ -604,10 +552,16 @@ class Document:
                 return (word, start, end)
 
         def parse_and_run_snippet(self, data, iter):
+                if not self.view.get_editable():
+                        return
+
                 self.apply_snippet(DynamicSnippet(data), iter, iter)
 
         def run_snippet_trigger(self, trigger, bounds):
                 if not self.view:
+                        return False
+
+                if not self.view.get_editable():
                         return False
 
                 snippets = Library().from_tag(trigger, self.language_id)
@@ -628,6 +582,9 @@ class Document:
 
         def run_snippet(self):
                 if not self.view:
+                        return False
+
+                if not self.view.get_editable():
                         return False
 
                 buf = self.view.get_buffer()
@@ -701,11 +658,6 @@ class Document:
                 del self.jump_placeholders[:]
 
                 return False
-
-        # Callbacks
-        def on_view_destroy(self, view):
-                self.stop()
-                return
 
         def on_buffer_cursor_moved(self, buf):
                 piter = buf.get_iter_at_mark(buf.get_insert())
@@ -784,13 +736,13 @@ class Document:
         def on_notify_language(self, buf, spec):
                 self.update_language()
 
-        def on_notify_editable(self, view, spec):
-                self._set_view(view)
-
         def on_view_key_press(self, view, event):
                 library = Library()
 
                 state = event.get_state()
+
+                if not self.view.get_editable():
+                        return False
 
                 if not (state & Gdk.ModifierType.CONTROL_MASK) and \
                                 not (state & Gdk.ModifierType.MOD1_MASK) and \
@@ -909,6 +861,9 @@ class Document:
                 if not (Gtk.targets_include_uri(context.targets) and data.data and self.in_bounds(x, y)):
                         return
 
+                if not self.view.get_editable():
+                        return
+
                 uris = drop_get_uris(data)
                 uris.reverse()
                 stop = False
@@ -943,6 +898,9 @@ class Document:
                 self.provider.set_proposals(None)
 
         def on_proposal_activated(self, proposal, piter):
+                if not self.view.get_editable():
+                        return False
+
                 buf = self.view.get_buffer()
                 bounds = buf.get_selection_bounds()
 

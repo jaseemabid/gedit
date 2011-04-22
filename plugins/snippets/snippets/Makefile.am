@@ -18,7 +18,8 @@ plugin_PYTHON = \
 	importer.py \
 	exporter.py \
 	languagemanager.py \
-	completion.py
+	completion.py \
+	signals.py
 
 uidir = $(GEDIT_PLUGINS_DATA_DIR)/snippets/ui
 ui_DATA = snippets.ui

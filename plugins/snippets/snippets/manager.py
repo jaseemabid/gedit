@@ -47,7 +47,6 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
         def __init__(self):
                 self.snippet = None
                 self._temp_export = None
-                self.snippets_doc = None
 
                 self.key_press_id = 0
 
@@ -310,7 +309,6 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                 if lang:
                         source_view.get_buffer().set_highlight_syntax(True)
                         source_view.get_buffer().set_language(lang)
-                        self.snippets_doc = Document(None, source_view)
 
                 combo = self['combo_drop_targets']
 
@@ -587,9 +585,6 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                 if self._temp_export:
                       shutil.rmtree(os.path.dirname(self._temp_export))
                       self._temp_export = None
-
-                if self.snippets_doc:
-                        self.snippets_doc.stop()
 
                 self.unref_languages()
                 self.snippet = None
