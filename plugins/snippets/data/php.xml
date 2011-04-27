@@ -10,14 +10,14 @@
 class ${1:ClassName} ${3:extends AnotherClass}
 {
 	#	internal variables
-	
+
 	#	Constructor
 	function __construct (${4:argument})
 	{
 		# code...
 		$0
 	}
-	###	
+	###
 
 }
 ###]]></text>
@@ -202,9 +202,9 @@ break;]]></text>
 	case '${2:value}':
 		${3:# code...}
 	break;
-	
+
 	$0
-			
+
 	default:
 		${4:# code...}
 	break;

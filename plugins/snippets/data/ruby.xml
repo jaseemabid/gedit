@@ -130,14 +130,14 @@ end]]></text>
     <description>hash pointer</description>
   </snippet>
   <snippet id="injecto">
-    <text><![CDATA[inject(${1:object}) do |${2:injection}, ${3:element}| 
+    <text><![CDATA[inject(${1:object}) do |${2:injection}, ${3:element}|
 	$0
 end]]></text>
     <description>inject object do</description>
     <tag>injecto</tag>
   </snippet>
   <snippet id="rejecto">
-    <text><![CDATA[reject do |${1:element}| 
+    <text><![CDATA[reject do |${1:element}|
 	${1:element}.$0
 end]]></text>
     <description>reject element do</description>

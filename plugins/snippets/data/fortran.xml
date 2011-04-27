@@ -21,9 +21,9 @@ end do]]></text>
     <text><![CDATA[function ${1:name}( ${2:parameter} )
 	${3:integer/real ::} $1
 	${4:integer/real ::} $2
-	
+
 	${0:source}
-	
+
 	$1 = 	!result
 end function]]></text>
     <tag>func</tag>
@@ -69,9 +69,9 @@ end if]]></text>
     <text><![CDATA[module ${1:name}
 	implicit none
 	${2:integer/real ::} $3
-	
+
 	${4:contains}
-	
+
 	${0:source}
 end module]]></text>
     <tag>mod</tag>
@@ -85,7 +85,7 @@ end module]]></text>
   <snippet id="prog">
     <text><![CDATA[program ${1:name}
 	implicit none
-	
+
 	${0:source}
 end program]]></text>
     <tag>prog</tag>
@@ -115,9 +115,9 @@ end program]]></text>
     <text><![CDATA[recursive function ${1:name}( ${2:parameter} ) result( ${3:res} )
 	${4:integer/real ::} $3
 	${5:integer/real ::} $2
-	
+
 	${0:source}
-	
+
 	$3 = 	!result
 end function]]></text>
     <tag>rec</tag>
@@ -136,7 +136,7 @@ end select]]></text>
   <snippet id="sub">
     <text><![CDATA[subroutine ${1:name}( ${2:parameter} )
 	${3:integer/real ::} $2
-	
+
 	${0:source}
 end subroutine]]></text>
     <tag>sub</tag>
