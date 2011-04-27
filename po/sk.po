@@ -1,10 +1,7 @@
-# translation of gedit.HEAD.po to Slovak
-# translation of sk.po to Slovak
-# Slovak translation of sk.po
-# gedit sk.po
-# Copyright (C) 2000-2002, 2003, 2004, 2005, 2009 Free Software Foundation, Inc.
-# Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2000-2002,2003.
-# Stanislav Višňovský <visnovsky@nenya.ms.mff.cuni.cz>, 2002.
+# Slovak translation for gedit.
+# Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2009, 2010, 2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gedit package.
+# Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2000, 2001, 2002, 2003.
 # Stanislav Visnovsky <visnovsky@kde.org>, 2003, 2004.
 # Marcel Telka <marcel@telka.sk>, 2005, 2009.
 # Ivan Masár <helix84@centrum.sk>, 2010, 2011.
@@ -14,15 +11,14 @@ msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-04-22 18:50+0000\n"
-"PO-Revision-Date: 2011-04-25 16:06+0200\n"
+"POT-Creation-Date: 2011-04-25 22:15+0000\n"
+"PO-Revision-Date: 2011-04-26 16:17+0200\n"
 "Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
-"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
+"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural= (n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Poedit-Bookmarks: 320,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 
 #: ../data/gedit.desktop.in.in.h:1
 msgid "Edit text files"
@@ -108,8 +104,6 @@ msgstr "Písmo hlavičky pri tlači"
 msgid "Highlight Current Line"
 msgstr "Zvýrazniť aktuálny riadok"
 
-# Ivan: je vždy práve jedna (logicky)
-# PŠ: lenže zvýraznia sa obe...
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:17
 msgid "Highlight Matching Brackets"
 msgstr "Zvýrazniť zodpovedajúce zátvorky"
@@ -229,8 +223,8 @@ msgid ""
 "recognized encodings are used."
 msgstr ""
 "Utriedený zoznam kódovaní používaných pri automatickom určovaní kódovania "
-"súboru. „CURRENT“ znamená kódovanie z aktuálnych miestnych nastavení. Použijú "
-"sa iba podporované kódovania."
+"súboru. „CURRENT“ znamená kódovanie z aktuálnych miestnych nastavení. "
+"Použijú sa iba podporované kódovania."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
 msgid ""
@@ -2134,7 +2128,7 @@ msgstr "Zobrazí alebo skryje bočný panel v aktuálnom okne"
 
 #: ../gedit/gedit-ui.h:177
 msgid "_Bottom Panel"
-msgstr "_Spodný panel"
+msgstr "Sp_odný panel"
 
 #: ../gedit/gedit-ui.h:178
 msgid "Show or hide the bottom panel in the current window"
@@ -2299,7 +2293,7 @@ msgstr "Invertovať veľkosť písmen označeného textu"
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:252
 msgid "_Title Case"
-msgstr "Veľkosť _titulného písmena"
+msgstr "I_niciály veľkými písmenami"
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:253
 msgid "Capitalize the first letter of each selected word"
@@ -2973,8 +2967,8 @@ msgid ""
 msgstr ""
 "Ak je voľba nastavená na „true“, zásuvný modul prehliadača súborov zobrazí "
 "adresár prvého otvoreného dokumentu, ak prehliadač súborov zatiaľ nebol "
-"použitý. (To vo všeobecnosti platí pri otváraní dokumentu z príkazového riadku "
-"alebo z Nautila, atď.)"
+"použitý. (To vo všeobecnosti platí pri otváraní dokumentu z príkazového "
+"riadku alebo z Nautila, atď.)"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:7
 msgid "Open With Tree View"
