@@ -4136,7 +4136,7 @@ gedit_window_init (GeditWindow *window)
 	gtk_paned_pack1 (GTK_PANED (window->priv->vpaned),
 			 GTK_WIDGET (window->priv->multi_notebook),
 			 TRUE,
-			 TRUE);
+			 FALSE);
 	gtk_widget_show (GTK_WIDGET (window->priv->multi_notebook));
 
 	g_signal_connect (window->priv->multi_notebook,
