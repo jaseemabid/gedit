@@ -2,7 +2,7 @@
  * gedit-panel.c
  * This file is part of gedit
  *
- * Copyright (C) 2005 - Paolo Maggi 
+ * Copyright (C) 2005 - Paolo Maggi
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,13 +16,13 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, 
+ * Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA 02111-1307, USA.
  */
- 
+
 /*
- * Modified by the gedit Team, 2005. See the AUTHORS file for a 
- * list of people on the gedit Team.  
+ * Modified by the gedit Team, 2005. See the AUTHORS file for a
+ * list of people on the gedit Team.
  * See the ChangeLog files for a list of changes.
  *
  * $Id$
@@ -47,10 +47,10 @@
 
 #define GEDIT_PANEL_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE ((object), GEDIT_TYPE_PANEL, GeditPanelPrivate))
 
-struct _GeditPanelPrivate 
+struct _GeditPanelPrivate
 {
 	GtkOrientation orientation;
-	
+
 	/* Title bar (vertical panel only) */
 	GtkWidget *title_image;
 	GtkWidget *title_label;
@@ -61,7 +61,7 @@ struct _GeditPanelPrivate
 
 typedef struct _GeditPanelItem GeditPanelItem;
 
-struct _GeditPanelItem 
+struct _GeditPanelItem
 {
 	gchar *id;
 	gchar *display_name;
@@ -85,18 +85,14 @@ enum {
 
 static guint signals[LAST_SIGNAL];
 
-static GObject	*gedit_panel_constructor	(GType type,
-						 guint n_construct_properties,
-						 GObjectConstructParam *construct_properties);
-
+static void	gedit_panel_constructed	(GObject *object);
 
 G_DEFINE_TYPE(GeditPanel, gedit_panel, GTK_TYPE_VBOX)
 
 static void
-gedit_panel_finalize (GObject *obj)
+gedit_panel_finalize (GObject *object)
 {
-	if (G_OBJECT_CLASS (gedit_panel_parent_class)->finalize)
-		(*G_OBJECT_CLASS (gedit_panel_parent_class)->finalize) (obj);
+	G_OBJECT_CLASS (gedit_panel_parent_class)->finalize (object);
 }
 
 static void
@@ -106,7 +102,7 @@ gedit_panel_get_property (GObject    *object,
 			  GParamSpec *pspec)
 {
 	GeditPanel *panel = GEDIT_PANEL (object);
-	
+
 	switch (prop_id)
 	{
 		case PROP_ORIENTATION:
@@ -146,23 +142,28 @@ gedit_panel_close (GeditPanel *panel)
 static void
 gedit_panel_focus_document (GeditPanel *panel)
 {
-	GtkWidget *toplevel = gtk_widget_get_toplevel (GTK_WIDGET (panel));
+	GtkWidget *toplevel;
+
+	toplevel = gtk_widget_get_toplevel (GTK_WIDGET (panel));
+
 	if (gtk_widget_is_toplevel (toplevel) && GEDIT_IS_WINDOW (toplevel))
 	{
 		GeditView *view;
 
 		view = gedit_window_get_active_view (GEDIT_WINDOW (toplevel));
 		if (view != NULL)
+		{
 			gtk_widget_grab_focus (GTK_WIDGET (view));
+		}
 	}
 }
 
 static void
 gedit_panel_grab_focus (GtkWidget *w)
 {
-	gint n;
-	GtkWidget *tab;
 	GeditPanel *panel = GEDIT_PANEL (w);
+	GtkWidget *tab;
+	gint n;
 
 	n = gtk_notebook_get_current_page (GTK_NOTEBOOK (panel->priv->notebook));
 	if (n == -1)
@@ -184,7 +185,7 @@ gedit_panel_class_init (GeditPanelClass *klass)
 
 	g_type_class_add_private (klass, sizeof (GeditPanelPrivate));
 
-	object_class->constructor = gedit_panel_constructor;
+	object_class->constructed = gedit_panel_constructed;
 	object_class->finalize = gedit_panel_finalize;
 	object_class->get_property = gedit_panel_get_property;
 	object_class->set_property = gedit_panel_set_property;
@@ -196,8 +197,7 @@ gedit_panel_class_init (GeditPanelClass *klass)
 							    "The panel's orientation",
 							    GTK_TYPE_ORIENTATION,
 							    GTK_ORIENTATION_VERTICAL,
-							    G_PARAM_WRITABLE |
-							    G_PARAM_READABLE |
+							    G_PARAM_READWRITE |
 							    G_PARAM_CONSTRUCT_ONLY |
 							    G_PARAM_STATIC_STRINGS));
 
@@ -243,18 +243,18 @@ gedit_panel_class_init (GeditPanelClass *klass)
 			      G_STRUCT_OFFSET (GeditPanelClass, focus_document),
 		  	      NULL, NULL,
 		  	      g_cclosure_marshal_VOID__VOID,
-			      G_TYPE_NONE, 0);					
+			      G_TYPE_NONE, 0);
 	binding_set = gtk_binding_set_by_class (klass);
 
-	gtk_binding_entry_add_signal (binding_set, 
-				      GDK_KEY_Escape, 
-				      0, 
-				      "close", 
+	gtk_binding_entry_add_signal (binding_set,
+				      GDK_KEY_Escape,
+				      0,
+				      "close",
 				      0);
-	gtk_binding_entry_add_signal (binding_set, 
-				      GDK_KEY_Return, 
-				      GDK_CONTROL_MASK, 
-				      "focus_document", 
+	gtk_binding_entry_add_signal (binding_set,
+				      GDK_KEY_Return,
+				      GDK_CONTROL_MASK,
+				      "focus_document",
 				      0);
 }
 
@@ -331,7 +331,7 @@ sync_title (GeditPanel     *panel,
 
 	if (item != NULL)
 	{
-		gtk_label_set_text (GTK_LABEL (panel->priv->title_label), 
+		gtk_label_set_text (GTK_LABEL (panel->priv->title_label),
 				    item->display_name);
 
 		set_gtk_image_from_gtk_image (GTK_IMAGE (panel->priv->title_image),
@@ -339,7 +339,7 @@ sync_title (GeditPanel     *panel,
 	}
 	else
 	{
-		gtk_label_set_text (GTK_LABEL (panel->priv->title_label), 
+		gtk_label_set_text (GTK_LABEL (panel->priv->title_label),
 				    _("Empty"));
 
 		gtk_image_set_from_stock (GTK_IMAGE (panel->priv->title_image),
@@ -371,8 +371,8 @@ static void
 panel_show (GeditPanel *panel,
 	    gpointer    user_data)
 {
-	gint page;
 	GtkNotebook *nb;
+	gint page;
 
 	nb = GTK_NOTEBOOK (panel->priv->notebook);
 
@@ -441,10 +441,10 @@ build_horizontal_panel (GeditPanel *panel)
 
 	box = gtk_hbox_new(FALSE, 0);
 
-	gtk_box_pack_start (GTK_BOX (box), 
-			    panel->priv->notebook, 
-			    TRUE, 
-			    TRUE, 
+	gtk_box_pack_start (GTK_BOX (box),
+			    panel->priv->notebook,
+			    TRUE,
+			    TRUE,
 			    0);
 
 	/* Toolbar, close button and first separator */
@@ -453,16 +453,16 @@ build_horizontal_panel (GeditPanel *panel)
 
 	gtk_box_pack_start (GTK_BOX (box),
 			    sidebar,
-			    FALSE, 
-			    FALSE, 
+			    FALSE,
+			    FALSE,
 			    0);
 
 	close_button = create_close_button (panel);
 
 	gtk_box_pack_start (GTK_BOX (sidebar),
 			    close_button,
-			    FALSE, 
-			    FALSE, 
+			    FALSE,
+			    FALSE,
 			    0);
 
 	gtk_widget_show_all (box);
@@ -485,32 +485,32 @@ build_vertical_panel (GeditPanel *panel)
 	/* Create title hbox */
 	title_hbox = gtk_hbox_new (FALSE, 6);
 	gtk_container_set_border_width (GTK_CONTAINER (title_hbox), 5);
-					
+
 	gtk_box_pack_start (GTK_BOX (panel), title_hbox, FALSE, FALSE, 0);
-	
+
 	icon_name_hbox = gtk_hbox_new (FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (title_hbox), 
-			    icon_name_hbox, 
-			    TRUE, 
-			    TRUE, 
+	gtk_box_pack_start (GTK_BOX (title_hbox),
+			    icon_name_hbox,
+			    TRUE,
+			    TRUE,
 			    0);
-		
-	panel->priv->title_image = 
+
+	panel->priv->title_image =
 				gtk_image_new_from_stock (GTK_STOCK_FILE,
 							  GTK_ICON_SIZE_MENU);
-	gtk_box_pack_start (GTK_BOX (icon_name_hbox), 
-			    panel->priv->title_image, 
-			    FALSE, 
-			    TRUE, 
+	gtk_box_pack_start (GTK_BOX (icon_name_hbox),
+			    panel->priv->title_image,
+			    FALSE,
+			    TRUE,
 			    0);
 
 	dummy_label = gtk_label_new (" ");
 
-	gtk_box_pack_start (GTK_BOX (icon_name_hbox), 
-			    dummy_label, 
-			    FALSE, 
-			    FALSE, 
-			    0);	
+	gtk_box_pack_start (GTK_BOX (icon_name_hbox),
+			    dummy_label,
+			    FALSE,
+			    FALSE,
+			    0);
 
 	panel->priv->title_label = gtk_label_new (_("Empty"));
 	gtk_misc_set_alignment (GTK_MISC (panel->priv->title_label), 0, 0.5);
@@ -525,9 +525,9 @@ build_vertical_panel (GeditPanel *panel)
 	close_button = create_close_button (panel);
 
 	gtk_box_pack_start (GTK_BOX (title_hbox),
-			    close_button, 
-			    FALSE, 
-			    FALSE, 
+			    close_button,
+			    FALSE,
+			    FALSE,
 			    0);
 
 	gtk_widget_show_all (title_hbox);
@@ -539,35 +539,30 @@ build_vertical_panel (GeditPanel *panel)
 			    0);
 }
 
-static GObject *
-gedit_panel_constructor (GType type,
-			 guint n_construct_properties,
-			 GObjectConstructParam *construct_properties)
+static void
+gedit_panel_constructed (GObject *object)
 {
-	
-	/* Invoke parent constructor. */
-	GeditPanelClass *klass = GEDIT_PANEL_CLASS (g_type_class_peek (GEDIT_TYPE_PANEL));
-	GObjectClass *parent_class = G_OBJECT_CLASS (g_type_class_peek_parent (klass));
-	GObject *obj = parent_class->constructor (type,
-						  n_construct_properties,
-						  construct_properties);
+	GeditPanel *panel = GEDIT_PANEL (object);
 
-	/* Build the panel, now that we know the orientation 
+	/* Build the panel, now that we know the orientation
 			   (_init has been called previously) */
-	GeditPanel *panel = GEDIT_PANEL (obj);
 
 	build_notebook_for_panel (panel);
-  	if (panel->priv->orientation == GTK_ORIENTATION_HORIZONTAL)
-  		build_horizontal_panel (panel);
+	if (panel->priv->orientation == GTK_ORIENTATION_HORIZONTAL)
+	{
+		build_horizontal_panel (panel);
+	}
 	else
+	{
 		build_vertical_panel (panel);
+	}
 
 	g_signal_connect (panel,
 			  "show",
 			  G_CALLBACK (panel_show),
 			  NULL);
 
-	return obj;
+	G_OBJECT_CLASS (gedit_panel_parent_class)->constructed (object);
 }
 
 /**
@@ -612,9 +607,9 @@ build_tab_label (GeditPanel  *panel,
 	gtk_box_pack_start (GTK_BOX (label_hbox), icon, FALSE, FALSE, 0);
 
 	/* setup label */
-        label = gtk_label_new (name);
+	label = gtk_label_new (name);
 	gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-        gtk_misc_set_padding (GTK_MISC (label), 0, 0);
+	gtk_misc_set_padding (GTK_MISC (label), 0, 0);
 	gtk_box_pack_start (GTK_BOX (label_hbox), label, TRUE, TRUE, 0);
 
 	gtk_widget_set_tooltip_text (label_ebox, name);
@@ -622,7 +617,9 @@ build_tab_label (GeditPanel  *panel,
 	gtk_widget_show_all (hbox);
 
 	if (panel->priv->orientation == GTK_ORIENTATION_VERTICAL)
+	{
 		gtk_widget_hide(label);
+	}
 
 	g_object_set_data (G_OBJECT (item), "label", label);
 	g_object_set_data (G_OBJECT (item), "hbox", hbox);
@@ -681,7 +678,7 @@ gedit_panel_add_item (GeditPanel  *panel,
 	GtkWidget *tab_label;
 	GtkWidget *menu_label;
 	gint w, h;
-	
+
 	g_return_val_if_fail (GEDIT_IS_PANEL (panel), FALSE);
 	g_return_val_if_fail (GTK_IS_WIDGET (item), FALSE);
 	g_return_val_if_fail (id != NULL, FALSE);
@@ -711,7 +708,7 @@ gedit_panel_add_item (GeditPanel  *panel,
 
 	gtk_icon_size_lookup (GTK_ICON_SIZE_MENU, &w, &h);
 	gtk_widget_set_size_request (data->icon, w, h);
-	
+
 	g_object_set_data (G_OBJECT (item),
 		           PANEL_ITEM_KEY,
 		           data);
@@ -780,7 +777,7 @@ gedit_panel_remove_item (GeditPanel *panel,
 {
 	GeditPanelItem *data;
 	gint page_num;
-	
+
 	g_return_val_if_fail (GEDIT_IS_PANEL (panel), FALSE);
 	g_return_val_if_fail (GTK_IS_WIDGET (item), FALSE);
 
@@ -789,7 +786,7 @@ gedit_panel_remove_item (GeditPanel *panel,
 
 	if (page_num == -1)
 		return FALSE;
-		
+
 	data = (GeditPanelItem *)g_object_get_data (G_OBJECT (item),
 					            PANEL_ITEM_KEY);
 	g_return_val_if_fail (data != NULL, FALSE);
@@ -805,7 +802,7 @@ gedit_panel_remove_item (GeditPanel *panel,
 	/* ref the item to keep it alive during signal emission */
 	g_object_ref (G_OBJECT (item));
 
-	gtk_notebook_remove_page (GTK_NOTEBOOK (panel->priv->notebook), 
+	gtk_notebook_remove_page (GTK_NOTEBOOK (panel->priv->notebook),
 				  page_num);
 
 	/* if we removed all the pages, reset the title */
@@ -884,7 +881,7 @@ gedit_panel_item_is_active (GeditPanel *panel,
  * gedit_panel_get_orientation:
  * @panel: a #GeditPanel
  *
- * Gets the orientation of the @panel. 
+ * Gets the orientation of the @panel.
  *
  * Returns: the #GtkOrientation of #GeditPanel
  */
@@ -901,7 +898,7 @@ gedit_panel_get_orientation (GeditPanel *panel)
  * @panel: a #GeditPanel
  *
  * Gets the number of items in a @panel.
- * 
+ *
  * Returns: the number of items contained in #GeditPanel
  */
 gint
