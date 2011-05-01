@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&component=general\n"
-"POT-Creation-Date: 2011-02-15 17:17+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-27 22:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Zeper <zeper@msn.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -46,7 +46,7 @@ msgstr "ئاكتىپ قىستۇرما"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:3
 msgid "Automatic indent"
-msgstr "ئاپتوماتىك تارايتىش"
+msgstr "ئاپتوماتىك تارتىش"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:4
 msgid "Automatically Detected Encodings"
@@ -58,7 +58,7 @@ msgstr "ئاپتوماتىك ساقلاش"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:6
 msgid "Autosave Interval"
-msgstr "ئۆزلۈكىدىن ساقلاش ئارىلىقى"
+msgstr "ئاپتوماتىك ساقلاش ئارىلىقى"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:7
 msgid "Body Font for Printing"
@@ -125,92 +125,86 @@ msgstr "ئاپتوماتىك قۇر قاتلاش ھالىتى"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
 msgid ""
-"List of VFS schemes gedit supports in write mode. The 'file' scheme is "
-"writable by default."
-msgstr "gedit نىڭ يېزىش ھالىتىدە ئىشلەتكىلى بولىدىغان VFS لايىھىلىرىنىڭ تىزىملىكى. 'file' لايىھىسى ئادەتتە يەزىشچان."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
-msgid ""
 "List of active plugins. It contains the \"Location\" of the active plugins. "
 "See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
 msgstr "ئاكتىپ قىستۇرمىلارنى كۆرسىتىدۇ. ئۇنىڭدا ئاكتىپ قىستۇرمىلارنىڭ «ئورنى» بار. بېرىلگەن قىستۇرمىنىڭ «ئورنى» غا ئېرىشىش ئۈچۈن .gedit-plugin ھۆججىتىگە قاراڭ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
 msgid ""
 "List of encodings shown in the Character Encoding menu in open/save file "
 "selector. Only recognized encodings are used."
-msgstr ""
+msgstr "ھۆججەتنى ئېچىش/ساقلاش سۆزلەشكۈسىنىڭ «ھەرپ كودلاش» تىزىملىكىدە كۆرسىتىلىدىغان كودلاشلارنىڭ تىزىمى. بىلەلىگەن كودلاشلارلا ئىشلىتىلدى."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
 msgid "Maximum Number of Undo Actions"
 msgstr "يېنىۋېلىش مەشغۇلاتنىڭ ئەڭ يۇقىرى چېكى"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
 msgid "Maximum Recent Files"
 msgstr "ئىزدىكى ھۆججەتلەرنىڭ ئەڭ چوڭ سانى"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
 msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
 "\" for unlimited number of actions."
 msgstr "Gedit  تىكى يېنىۋېلىش ۋە يانغانغا پۇشايمان قىلىش مەشغۇلاتنىڭ ئەڭ چوڭ چېكىنى كۆرسىتىدۇ.«-1» ئىشلىتىلسە چېكى يوق بولىدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
 msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
 "\" for unlimited number of actions. Deprecated since 2.12.0"
 msgstr "Gedit  تىكى يېنىۋېلىش ۋە يانغانغا پۇشايمان قىلىش مەشغۇلاتنىڭ ئەڭ چوڭ چېكىنى كۆرسىتىدۇ.«-1» ئىشلىتىلسە چېكى يوق بولىدۇ. 2.12.0 نەشرىدىن باشلاپ ئىشلىتىلمىدى."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
 msgid "Notebook Show Tabs Mode"
-msgstr ""
+msgstr "خاتىرە دەپتەرنى بەتكۈچ ھالەتتە كۆرسىتىش"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
 msgid ""
 "Number of minutes after which gedit will automatically save modified files. "
 "This will only take effect if the \"Autosave\" option is turned on."
 msgstr "ھۆججەت ئۆزگەرتىلگەندىن كېيىن ئاپتوماتىك ساقلاشقىچە بولغان ۋاقىت. «ئاپتوماتىك ساقلاش» ئوچۇق(on) بولغاندىلا كۈچكە ئىگە."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
 msgid "Print Header"
 msgstr "بەت قېشىنى باس"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
 msgid "Print Line Numbers"
 msgstr "قۇر نومۇرىنى باس"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
 msgid "Print Syntax Highlighting"
 msgstr "گرامماتىكىسىنى يورۇتۇشنى بېسىش"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
 msgid "Printing Line Wrapping Mode"
 msgstr "باسقاندا قۇرنى قاتلاپ بېسىش"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
 msgid "Restore Previous Cursor Position"
-msgstr "ئالدىنقى نۇر بەلگە ئورنىنى ئەسلىگە كەلتۈر"
+msgstr "ئالدىنقى نۇربەلگە ئورنىنى ئەسلىگە كەلتۈرۈش"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
 msgid "Right Margin Position"
 msgstr "ئوڭ بوشلۇق ئورنى"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
 msgid "Side panel is Visible"
 msgstr "يان كۆزنەكچە كۆرۈنىدۇ"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
 msgid "Smart Home End"
-msgstr ""
+msgstr "ئەقىللىق Home/End"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
 msgid ""
 "Sorted list of encodings used by gedit for automatically detecting the "
 "encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
 "recognized encodings are used."
-msgstr ""
+msgstr "ھۆججەتنىڭ كودلىنىشىنى ئاپتوماتىك پەرق قىلىشتا gedit ئىشلىتىدىغان كودلاشلارنىڭ تىزىمى.  \"CURRENT\" ھازىرقى يەرلىك كودلاشنى ئىپادىلەيدۇ. بىلەلىگەن كودلاشلارلا ئىشلىتىلدى."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
 msgid ""
 "Specifies how the cursor moves when the HOME and END keys are pressed. Use "
 "\"disabled\" to always move at the start/end of the line, \"after\" to move "
@@ -219,178 +213,174 @@ msgid ""
 "pressed, \"before\" to move to the start/end of the text before moving to "
 "the start/end of the line and \"always\" to always move to the start/end of "
 "the text instead of the start/end of the line."
-msgstr ""
+msgstr "HOME ۋە END كۇنۇپكىسى بېسىلغاندا نۇربەلگىسى قانداق يۆتكىلىدىغانلىقىنى بەلگىلەيدۇ. \"disabled\" ئىشلىتىلسە قۇرنىڭ بەشى ياكى ئايىغىغا يۆتكىلىدۇ. \"after\" ئىشلىتىلسە تۇنجى قېتىم قۇرنىڭ بەشى ياكى ئايىغىغا يۆتكىلىپ، ئۇنىڭدىن كېيىنكى بېسىلسا سۆزنىڭ بەشى ۋە ئايىغىغا يۆتكىلىدۇ. \"before\" ئىشلىتىلسە سۆزنىڭ بەشى ۋە سۆزنىڭ ئايىغىغا يۆتكىلىدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
 msgid ""
 "Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
 "\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
 "individual character boundaries. Note that the values are case-sensitive, so "
 "make sure they appear exactly as mentioned here."
-msgstr ""
+msgstr "ئۇزۇن قۇرلارنى بېسىپ چىقىرىدىغان چاغدا قانداق قاتلاشنى بەلگىلەيدۇ. \"none\" ئىشلىتىلسە قاتلىمايدۇ. \"word\" ئىشلىتىلسە سۆزنى ئاساس قىلىپ قاتلايدۇ. \"char\" ئىشلىتىلسە ھەرپنى بىرلىك قىلىپ قاتلايدۇ. دىققەت: چوڭ كىچىك يېزىلىشىغا قارايدىغان بولغاچقا، يازغاندا بەك دىققەت قىلىڭ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
 msgid ""
 "Specifies how to wrap long lines in the editing area. Use \"none\" for no "
 "wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
 "wrapping at individual character boundaries. Note that the values are case-"
 "sensitive, so make sure they appear exactly as mentioned here."
-msgstr ""
+msgstr "ئۇزۇن قۇرلارنى تەھرىرلىگەن چاغدا قانداق قاتلاشنى بەلگىلەيدۇ. \"none\" ئىشلىتىلسە قاتلىمايدۇ. \"word\" ئىشلىتىلسە سۆزنى ئاساس قىلىپ قاتلايدۇ. \"char\" ئىشلىتىلسە ھەرپنى بىرلىك قىلىپ قاتلايدۇ. دىققەت: چوڭ كىچىك يېزىلىشىغا قارايدىغان بولغاچقا، يازغاندا بەك دىققەت قىلىڭ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
 msgid ""
 "Specifies the font to use for a document's body when printing documents."
 msgstr "باسقاندا پۈتۈك گەۋدىسى ئىشلىتىدىغان خەت نۇسخىسىنى بەلگىلەيدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
 msgid ""
 "Specifies the font to use for line numbers when printing. This will only "
 "take effect if the \"Print Line Numbers\" option is non-zero."
 msgstr "قۇر نومۇرىنى بېسىش ئۈچۈن ئىشلىتىدىغان خەت نۇسخىسى. «قۇر نومۇرى باس» تاللانمىسى 0 بولمىغاندا چاغدا كۈچكە ئىگە."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
 msgid ""
 "Specifies the font to use for page headers when printing a document. This "
 "will only take effect if the \"Print Header\" option is turned on."
 msgstr "بەت قېشىنى بېسىش ئۈچۈن ئىشلىتىدىغان خەت نۇسخىسى. «بەت قېشىنى باس» تاللانمىسى ئوچۇق(on) بولغاندا كۈچكە ئىگە."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
 msgid ""
 "Specifies the maximum number of recently opened files that will be displayed "
 "in the \"Recent Files\" submenu."
 msgstr "«ئىزلار» تارماق تىزىملىكىدە كۆرسىتىلىدىغان ھۆججەتلەرنىڭ ئەڭ يۇقىرى سانىنى بەلگىلەيدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
 msgid ""
 "Specifies the number of spaces that should be displayed instead of Tab "
 "characters."
 msgstr "جەدۋەل بەلگىسى ئۈچۈن ئىشلىتىلىدىغان بوشلۇق بەلگىسىنىڭ سانىنى بەلگىلەيدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
 msgid "Specifies the position of the right margin."
 msgstr "ئوڭ تەرەپ بوشلۇقنىڭ ئورنىنى بەلگىلەيدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
 msgid ""
 "Specifies when to show the notebook tabs. Use \"never\" to never show the "
 "tabs, \"always\" to always show the tabs, and \"auto\" to show the tabs only "
 "when there is more than one tab. Note that the values are case-sensitive, so "
 "make sure they appear exactly as mentioned here."
-msgstr ""
+msgstr "خاتىرە دەپتەر بەتكۈچلىرىنى قانداق ئەھۋالدا كۆرسىتىدىغانلىقىنى بەلگىلەيدۇ. \"never\" ئىشلىتىلسە، بەتكۈچلەر كۆرسىتىلمەيدۇ. \"always\" ئىشلىتىلسە بەتكۈچلەر ھەمىشە كۆرسىتىلىدۇ. \"auto\" ئىشلىتىلسە، بىردىن ئارتۇق بەتكۈچ بولغاندا ئاندىن كۆرسىتىدۇ. دىققەت: چوڭ كىچىك يېزىلىشىغا قارايدىغان بولغاچقا، يازغاندا بەك دىققەت قىلىڭ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
 msgid "Status Bar is Visible"
 msgstr "ھالەت بالداق كۆرۈنۈشچان"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
 msgid "Style Scheme"
 msgstr "ئۇسلۇب لايىھىسى"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
 msgid "Tab Size"
 msgstr "جەدۋەل بەلگىسىنىڭ چوڭلۇقى"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
 msgid "The ID of a GtkSourceView Style Scheme used to color the text."
-msgstr ""
+msgstr "تېكىستكە رەڭ بېرىشتە ئىشلىتىلىدىغان GtkSourceView ئۇسلۇب لايىھىسىنىڭ كىملىكى(ID)."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
 msgid "Toolbar is Visible"
 msgstr "قورال بالداق كۆرۈنۈشچان"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
 msgid "Undo Actions Limit (DEPRECATED)"
 msgstr "يېنىۋېلىش مەشغۇلاتىنىڭ چېكى(ئىشلىتىلمەس بولدى)"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
 msgid "Use Default Font"
 msgstr "كۆڭۈلدىكى خەت نۇسخىسىنى ئىشلىتىش"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
 msgid ""
 "Whether gedit should automatically save modified files after a time "
 "interval. You can set the time interval with the \"Autosave Interval\" "
 "option."
-msgstr ""
+msgstr "تەھرىرلەۋاتقان ھۆججەت ئۆزگەرتىلگەندە gedit مەلۇم ۋاقىتتا بىر قېرىم ئاپتوماتىك ساقلامدۇ يوق. بۇ ۋاقىت ئارىلىقىنى «ئاپتوماتىك ساقلاش ئارىلىقى» تاللانمىسىدا بەلگىلىيەلەيسىز."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
 msgid ""
 "Whether gedit should create backup copies for the files it saves. You can "
 "set the backup file extension with the \"Backup Copy Extension\" option."
-msgstr ""
+msgstr "gedit ساقلىغان ھۆججەتنى زاپاسلاپ قويامدۇ يوق. زاپاسلايدىغان ھۆججەتنىڭ كېڭەيتمە ئاتىنى «زاپاس ھۆججەتنىڭ كېڭەيتىلمە ئاتى» دېگەن تاللانما ئارقىلىق بەلگىلەشكە بولىدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
 msgid "Whether gedit should display line numbers in the editing area."
 msgstr "Gedit تەھرىرلەش رايونىدا قۇر نومۇرىنى كۆرسىتەمدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
 msgid "Whether gedit should display the right margin in the editing area."
 msgstr "Gedit تەھرىرلەش رايونىدا ئوڭ تەرەپ بوشلۇقنى كۆرسىتەمدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
 msgid "Whether gedit should enable automatic indentation."
-msgstr "gedit ئاپتوماتىك تارايتىشنى قوزغىتامدۇ."
+msgstr "gedit ئاپتوماتىك تارتىشنى قوزغىتامدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
 msgid "Whether gedit should enable syntax highlighting."
 msgstr "Gedit گرامماتىكا يورۇتۇشنى قوزغىتامدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
 msgid ""
 "Whether gedit should highlight all the occurrences of the searched text."
 msgstr "gedit ئىزدەلگەن سۆزنىڭ ھەممىسىنى يورۇتامدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
 msgid "Whether gedit should highlight matching brackets."
 msgstr "Gedit ماس كەلگەن تىرناقنى يورۇتامدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
 msgid "Whether gedit should highlight the current line."
 msgstr "Gedit نۆۋەتتىكى قۇرنى يورۇتامدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
 msgid "Whether gedit should include a document header when printing documents."
 msgstr "Gedit ھۆججەت باسقاندا ھۆججەت قېشىنىمۇ باسامدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
 msgid "Whether gedit should insert spaces instead of tabs."
 msgstr "gedit جەدۋەل بەلگىسىنىڭ ئورنىغا بوشلۇق بەلگىسىنى كىرگۈزەمدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
 msgid "Whether gedit should print syntax highlighting when printing documents."
 msgstr "Gedit ھۆججەت باسقاندا گرامماتىكا يورۇتۇشنىمۇ باسامدۇ"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
 msgid ""
 "Whether gedit should restore the previous cursor position when a file is "
 "loaded."
-msgstr "Gedit يېڭى ھۆججەت يۈكلىگەندە ئالدىنقى قېتىمقى نۇر بەلگە ئورنىنى ئەسلىگە كەلتۈرەمدۇ"
+msgstr "Gedit يېڭى ھۆججەت يۈكلىگەندە ئالدىنقى قېتىمقى نۇربەلگە ئورنىنى ئەسلىگە كەلتۈرەمدۇ"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
 msgid ""
 "Whether the side panel at the left of editing windows should be visible."
 msgstr "تەھرىرلەش كۆزنىكىنىڭ سول تەرىپىدە يان كۆزنەكچىنى كۆرسىتەمدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
 msgid ""
 "Whether the status bar at the bottom of editing windows should be visible."
 msgstr "تەھرىرلەش كۆزنىكىنىڭ ئاستىدا ھالەت بالدىقىنى كۆرسىتەمدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
 msgid "Whether the toolbar should be visible in editing windows."
 msgstr "تەھرىرلەش كۆزنىكىدە قورال بالدىقىنى كۆرسىتەمدۇ."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:73
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
 msgid ""
 "Whether to use the system's default fixed width font for editing text "
 "instead of a font specific to gedit. If this option is turned off, then the "
 "font named in the \"Editor Font\" option will be used instead of the system "
 "font."
-msgstr ""
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:74
-msgid "Writable VFS schemes"
-msgstr "يېزىشقا بولىدىغان VFS لايىھىسى"
+msgstr "تەھرىرلىگۈچتە سىستېمىنىڭ تەڭ كەڭلىكتىكى خەت نۇسخىسىنى ئىشلىتەمدۇ ياكى gedit تا بەلگىلەنگەن خەت نۇسخىسىنى ئىشلىتەمدۇ. ئەگەر بۇ تاللانما off بولسا، «تەھرىرلىگۈچ خەت نۇسخىسى» دا تاللانغان خەت نۇسخىسىنى ئىشلىتىدۇ."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
 msgid "Log Out _without Saving"
@@ -645,7 +635,7 @@ msgstr "مايىللىق"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:18
 msgid "Tab Stops"
-msgstr ""
+msgstr "بەتكۈچ ھەرپى"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:19
 #: ../gedit/gedit-print-preferences.ui.h:11
@@ -658,19 +648,19 @@ msgstr "كۆرۈنۈش"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:21
 msgid "_Add..."
-msgstr "قوش(_A)…"
+msgstr "قوشۇش(_A)…"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:22
 msgid "_Autosave files every"
 msgstr "ئاپتوماتىك ساقلا(_A)"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:599
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:588
 msgid "_Display line numbers"
 msgstr "قۇر نومۇرىنى كۆرسەت(_D)"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:24
 msgid "_Enable automatic indentation"
-msgstr "ئاپتوماتىك تارايتىشنى قوزغات(_E)"
+msgstr "ئاپتوماتىك تارتىشنى قوزغات(_E)"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:25
 msgid "_Tab width:"
@@ -681,7 +671,7 @@ msgid "_minutes"
 msgstr "مىنۇت(_M)"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1590
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1592
 msgid "Replace"
 msgstr "ئالماشتۇر"
 
@@ -744,7 +734,7 @@ msgstr "كودلاش تاللانمىسىنىڭ ئىشلەتكىلى بولىد�
 msgid ""
 "Set the character encoding to be used to open the files listed on the "
 "command line"
-msgstr ""
+msgstr "بۇيرۇق قۇرىدا تىزىپ كۆرسىتىلگەن ھۆججەتنى ئېچىشتا ئىشلىتىدىغان ھەرپ كودلىشىنى بەلگىلەش"
 
 #: ../gedit/gedit-command-line.c:270
 msgid "ENCODING"
@@ -752,27 +742,27 @@ msgstr "ENCODING"
 
 #: ../gedit/gedit-command-line.c:277
 msgid "Create a new top-level window in an existing instance of gedit"
-msgstr "Gedit نىڭ بار بولغان instance دىن top-level كۆزنەك قۇر"
+msgstr "Gedit نىڭ بار بولغان ئۈلگىسىدىن top-level كۆزنەك قۇر"
 
 #: ../gedit/gedit-command-line.c:285
 msgid "Create a new document in an existing instance of gedit"
-msgstr "Gedit نىڭ بار بولغان instance دىن يېڭى پۈتۈك قۇر"
+msgstr "Gedit نىڭ بار بولغان ئۈلگىسىدىن يېڭى پۈتۈك قۇر"
 
 #: ../gedit/gedit-command-line.c:293
 msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
-msgstr ""
+msgstr "X نىڭ كۆزنەك چوڭلۇقى ۋە ئورنىنى بەلگىلەيدۇ(WIDTHxHEIGHT+X+Y)"
 
 #: ../gedit/gedit-command-line.c:294
 msgid "GEOMETRY"
-msgstr "گېئومېتىرىيە"
+msgstr "GEOMETRY"
 
 #: ../gedit/gedit-command-line.c:301
 msgid "Open files and block process until files are closed"
-msgstr ""
+msgstr "ھۆججەتنى ئېچىپ، ئۇنى يېپىپ بولغۇچە بولغان ئارىلىقتا چەكلەش مەشغۇلاتى قىلسۇن"
 
 #: ../gedit/gedit-command-line.c:309
 msgid "Run gedit in the background"
-msgstr "Geditنى background دا ئىجرا قىل"
+msgstr "Gedit نى ئارقا تەرەپتە ئىجرا قىل"
 
 #: ../gedit/gedit-command-line.c:317
 msgid "Run gedit in standalone mode"
@@ -793,7 +783,7 @@ msgid ""
 "%s\n"
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr "%s\n"
-"'%s --help' ئىجرا قىلىپ بۇيرۇق قۇرىنىڭ تولۇق تاللانما تىزىملىكىنى كۆرۈڭ\n"
+"'%s --help' ئىجرا قىلىپ بۇيرۇق قۇرىنىڭ تولۇق تاللانما تىزىمىنى كۆرۈڭ.\n"
 
 #: ../gedit/gedit-commands-file.c:272
 #, c-format
@@ -844,7 +834,7 @@ msgstr "ھۆججەتنى ساپ تېكىست ھالىتىدە ساقلامدۇ؟
 msgid ""
 "The file \"%s\" was previously saved using compression and will now be saved "
 "as plain text."
-msgstr ""
+msgstr "ھۆججەت «%s» بۇرۇن پرېسلاپ ساقلىنىپتىكەن، ھازىر تېكىست شەكلىدە پرېسلانماي ساقلاندى."
 
 #: ../gedit/gedit-commands-file.c:624
 msgid "_Save As Plain Text"
@@ -928,15 +918,14 @@ msgstr[0] "%d سائەت بۇرۇن ھۆججەتكە قىلغان ئۆزگەرت
 msgid "_Revert"
 msgstr "ئەسلىگە قايتۇر(_R)"
 
-#: ../gedit/gedit-commands-help.c:86
+#: ../gedit/gedit-commands-help.c:88
 msgid "gedit is a small and lightweight text editor for the GNOME Desktop"
 msgstr "GeditبولساGNOMEئېكران يۈزىدىكى كىچىك تىپتىكى تېكىست تەھرىرلىگۈچ"
 
-#: ../gedit/gedit-commands-help.c:111
+#: ../gedit/gedit-commands-help.c:113
 msgid "translator-credits"
 msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
-"Sahran<sahran@live.com>\n"
-"Muhemmed Erdem <misran_erdem@hotmail.com>"
+"Sahran<sahran@live.com>"
 
 #: ../gedit/gedit-commands-search.c:112
 #, c-format
@@ -960,12 +949,12 @@ msgstr "«%s» تېپىلمىدى"
 msgid "Unsaved Document %d"
 msgstr "ساقلانمىغان پۈتۈك %d"
 
-#: ../gedit/gedit-documents-panel.c:118 ../gedit/gedit-documents-panel.c:132
-#: ../gedit/gedit-window.c:2403 ../gedit/gedit-window.c:2410
+#: ../gedit/gedit-documents-panel.c:119 ../gedit/gedit-documents-panel.c:133
+#: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
 msgid "Read-Only"
 msgstr "ئوقۇشقىلا بولىدۇ"
 
-#: ../gedit/gedit-documents-panel.c:1089 ../gedit/gedit-window.c:3835
+#: ../gedit/gedit-documents-panel.c:1124 ../gedit/gedit-window.c:3840
 msgid "Documents"
 msgstr "پۈتۈكلەر"
 
@@ -1008,7 +997,7 @@ msgstr "ئەرەبچە"
 
 #: ../gedit/gedit-encodings.c:167 ../gedit/gedit-encodings.c:274
 msgid "Greek"
-msgstr "گىرېكچە"
+msgstr "گرېكچە"
 
 #: ../gedit/gedit-encodings.c:169
 msgid "Hebrew Visual"
@@ -1053,7 +1042,7 @@ msgstr "ياپونچە"
 #: ../gedit/gedit-encodings.c:215 ../gedit/gedit-encodings.c:244
 #: ../gedit/gedit-encodings.c:248 ../gedit/gedit-encodings.c:263
 msgid "Korean"
-msgstr "كورېيەچە"
+msgstr "كورىيەچە"
 
 #: ../gedit/gedit-encodings.c:220 ../gedit/gedit-encodings.c:222
 #: ../gedit/gedit-encodings.c:224
@@ -1188,7 +1177,7 @@ msgstr "%s ئادەتتىكى ھۆججەت ئەمەس"
 
 #: ../gedit/gedit-io-error-info-bar.c:317
 msgid "Connection timed out. Please try again."
-msgstr "باغلىنىش ۋاقتى ئېشىپ كەتتى،قايتا سىناپ بېقىڭ."
+msgstr "باغلىنىش مۆھلىتى ئېشىپ كەتتى،قايتا سىناپ بېقىڭ."
 
 #: ../gedit/gedit-io-error-info-bar.c:340
 msgid "The file is too big."
@@ -1223,7 +1212,7 @@ msgstr "خالىغانچە تەھرىرلەش(_W)"
 msgid ""
 "The number of followed links is limited and the actual file could not be "
 "found within this limit."
-msgstr ""
+msgstr "ئۇلانمىنىڭ سانى چەكلىك بولۇپ، بۇ چەك ئىچىدە ھۆججەتنى تاپقىلى بولمىدى."
 
 #: ../gedit/gedit-io-error-info-bar.c:612
 msgid "You do not have the permissions necessary to open the file."
@@ -1248,13 +1237,10 @@ msgid "There was a problem opening the file %s."
 msgstr "ھۆججەت%sنى ئاچقاندا مەسىلە كۆرۈلدى."
 
 #: ../gedit/gedit-io-error-info-bar.c:629
-#| msgid ""
-#| "The file you opened has some invalid characters. If you continue editing "
-#| "this file you could make this document useless."
 msgid ""
 "The file you opened has some invalid characters. If you continue editing "
 "this file you could corrupt this document."
-msgstr ""
+msgstr "سىز ئاچقان ھۆججەت ئىناۋەتسىز ھەرپلەر بار ئىكەن. تەھرىرلەشنى داۋاملاشتۇرۇۋەرسىڭىز بۇ ھۆججەتنى بۇزۇپ قويۇشىڭىز مۇمكىن."
 
 #: ../gedit/gedit-io-error-info-bar.c:632
 msgid "You can also choose another character encoding and try again."
@@ -1284,7 +1270,7 @@ msgstr "كودلاش ئۇسۇلى %2$s نى ئىشلىتىپ ھۆججەت %1$s �
 msgid ""
 "The document contains one or more characters that cannot be encoded using "
 "the specified character encoding."
-msgstr "پۈتۈك تەركىبىدىكى بىر ياكى بىرقانچە ھەرپنى ھازىرقى كودلاش ئۇسۇلىدا كودىلىغىلى بولمايدۇ."
+msgstr "پۈتۈك تەركىبىدىكى بىر ياكى بىرقانچە ھەرپنى ھازىرقى كودلاش ئۇسۇلىدا كودلىغىلى بولمايدۇ."
 
 #. Translators: the access key chosen for this string should be
 #. different from other main menu access keys (Open, Edit, View...)
@@ -1301,7 +1287,7 @@ msgstr "بۇ ھۆججەت (%s) باشقا Gedit كۆزنىكىدە ئېچىلغ�
 msgid ""
 "gedit opened this instance of the file in a non-editable way. Do you want to "
 "edit it anyway?"
-msgstr ""
+msgstr "بۇ ھۆججەتنىڭ ئۈلگىسىنى تەھرىرلىگىلى بولمايدىغان ھالەتتە ئاچتى. شۇنداقتىمۇ تەھرىرلەۋېرەمسىز؟"
 
 #: ../gedit/gedit-io-error-info-bar.c:873
 #: ../gedit/gedit-io-error-info-bar.c:971
@@ -1343,7 +1329,7 @@ msgid ""
 "gedit could not back up the old copy of the file before saving the new one. "
 "You can ignore this warning and save the file anyway, but if an error occurs "
 "while saving, you could lose the old copy of the file. Save anyway?"
-msgstr ""
+msgstr "gedit يېڭىسىنى ساقلاشتىن بۇرۇن كونىسىنى زاپاسلىيالمىدى. سىز بۇ ئاگاھلاندۇرۇشقا پىسەنت قىلماي ساقلاۋەرسىڭىز بولۇۋېرىدۇ. بىراق ساقلاش جەريانىدا خاتالىق كۆرۈلسە، كونىسىنىمۇ يوقىتىپ قويىسىز. ساقلاۋەرسۇنمۇ؟"
 
 #. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
 #: ../gedit/gedit-io-error-info-bar.c:1080
@@ -1351,13 +1337,13 @@ msgstr ""
 msgid ""
 "gedit cannot handle %s locations in write mode. Please check that you typed "
 "the location correctly and try again."
-msgstr ""
+msgstr "gedit «%s» دېگەن ئورۇنغا يازالمىدى. كىرگۈزگەن ئورۇن توغرىمۇ تەكشۈرۈپ، قايتا سىناڭ."
 
 #: ../gedit/gedit-io-error-info-bar.c:1088
 msgid ""
 "gedit cannot handle this location in write mode. Please check that you typed "
 "the location correctly and try again."
-msgstr ""
+msgstr "gedit بۇ ئورۇنغا يازالمىدى. كىرگۈزگەن ئورۇن توغرىمۇ تەكشۈرۈپ، قايتا سىناڭ."
 
 #: ../gedit/gedit-io-error-info-bar.c:1097
 #, c-format
@@ -1430,12 +1416,12 @@ msgstr "قايتا يۈكلە(_R)"
 #: ../gedit/gedit-io-error-info-bar.c:1278
 #, c-format
 msgid "Some invalid chars have been detected while saving %s"
-msgstr ""
+msgstr "%s نى ساقلاش جەريانىدا بەزى بىر ئىناۋەتسىز ھەرپلەرنى بايقىدى."
 
 #: ../gedit/gedit-io-error-info-bar.c:1294
 msgid ""
 "If you continue saving this file you can corrupt the document.  Save anyway?"
-msgstr ""
+msgstr "ئەگەر ساقلاۋەرسىڭىز بۇ ھۆججەتنى بۇزۇپ قويىسىز. ساقلاۋېرەمسىز؟"
 
 #: ../gedit/gedit-panel.c:339 ../gedit/gedit-panel.c:511
 msgid "Empty"
@@ -1460,7 +1446,7 @@ msgstr "تەييارلىنىۋاتىدۇ…"
 
 #: ../gedit/gedit-print-preferences.ui.h:3
 msgid "Fonts"
-msgstr "خەت نۇسخىلىرى"
+msgstr "خەت نۇسخا"
 
 #: ../gedit/gedit-print-preferences.ui.h:4
 msgid "He_aders and footers:"
@@ -1576,7 +1562,7 @@ msgstr "بەتنى ئالدىن كۆزەت"
 
 #: ../gedit/gedit-print-preview.c:968
 msgid "The preview of a page in the document to be printed"
-msgstr ""
+msgstr "بېسىلىدىغان پۈتۈكنى ئالدىن كۆزىتىدۇ"
 
 #: ../gedit/gedit-statusbar.c:69 ../gedit/gedit-statusbar.c:75
 msgid "OVR"
@@ -1641,38 +1627,38 @@ msgid "Saving %s"
 msgstr "%s ساقلاۋاتىدۇ"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1827
+#: ../gedit/gedit-tab.c:1832
 msgid "RO"
 msgstr "RO"
 
-#: ../gedit/gedit-tab.c:1874
+#: ../gedit/gedit-tab.c:1879
 #, c-format
 msgid "Error opening file %s"
 msgstr "%s ئاچقاندا خاتالىق كۆرۈلدى"
 
-#: ../gedit/gedit-tab.c:1879
+#: ../gedit/gedit-tab.c:1884
 #, c-format
 msgid "Error reverting file %s"
 msgstr "ھۆججەت %s ئەسلىگە كەلتۈرۈشتە خاتالىق كۆرۈلدى"
 
-#: ../gedit/gedit-tab.c:1884
+#: ../gedit/gedit-tab.c:1889
 #, c-format
 msgid "Error saving file %s"
 msgstr "%s ساقلىغاندا خاتالىق كۆرۈلدى"
 
-#: ../gedit/gedit-tab.c:1905
+#: ../gedit/gedit-tab.c:1910
 msgid "Unicode (UTF-8)"
 msgstr "يۇنىكود (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1912
+#: ../gedit/gedit-tab.c:1917
 msgid "Name:"
 msgstr "ئاتى:"
 
-#: ../gedit/gedit-tab.c:1913
+#: ../gedit/gedit-tab.c:1918
 msgid "MIME Type:"
 msgstr "MIME تىپى:"
 
-#: ../gedit/gedit-tab.c:1914
+#: ../gedit/gedit-tab.c:1919
 msgid "Encoding:"
 msgstr "كودلاش:"
 
@@ -1717,7 +1703,7 @@ msgstr "يېڭى پۈتۈك قۇر"
 msgid "_Open..."
 msgstr "ئاچ(_O)…"
 
-#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1518
+#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1520
 msgid "Open a file"
 msgstr "ھۆججەت ئاچىدۇ"
 
@@ -1757,7 +1743,7 @@ msgstr "باشقا ئاتتا ساقلا(_A)…"
 
 #: ../gedit/gedit-ui.h:83
 msgid "Save the current file with a different name"
-msgstr "نۆۋەتتىكى ھۆججەتنى باشقا ئاتتا ساقلايدۇ"
+msgstr "نۆۋەتتىكى ھۆججەتنى باشقا ئاتتا ساقلا"
 
 #: ../gedit/gedit-ui.h:85
 msgid "Revert to a saved version of the file"
@@ -1785,19 +1771,19 @@ msgstr "ئاخىرقى مەشغۇلاتتىن يېنىۋالىدۇ"
 
 #: ../gedit/gedit-ui.h:95
 msgid "Redo the last undone action"
-msgstr "ئاخىرقى يېنىۋالغان مەشغۇلاتتىن يېنىۋالىدۇ"
+msgstr "ئاخىرقى يېنىۋالغان مەشغۇلاتنى تەكرارلايدۇ"
 
 #: ../gedit/gedit-ui.h:97
 msgid "Cut the selection"
-msgstr "تاللىغاننى كېسىدۇ"
+msgstr "تاللىغاننى كەس"
 
 #: ../gedit/gedit-ui.h:99
 msgid "Copy the selection"
-msgstr "تاللىغاننى كۆچۈرىدۇ"
+msgstr "تاللىغاننى كۆچۈر"
 
 #: ../gedit/gedit-ui.h:101
 msgid "Paste the clipboard"
-msgstr "چاپلاش تاختىسىدىن چاپلايدۇ"
+msgstr "چاپلاش تاختىسىدىن چاپلا"
 
 #: ../gedit/gedit-ui.h:103
 msgid "Delete the selected text"
@@ -1823,7 +1809,7 @@ msgstr "ئىزدە(_F)…"
 
 #: ../gedit/gedit-ui.h:112
 msgid "Search for text"
-msgstr "تېكىست ئىزدەش"
+msgstr "تېكىست ئىزدە"
 
 #: ../gedit/gedit-ui.h:113
 msgid "Find Ne_xt"
@@ -1847,7 +1833,7 @@ msgstr "ئالماشتۇر(_R)..."
 
 #: ../gedit/gedit-ui.h:119 ../gedit/gedit-ui.h:122
 msgid "Search for and replace text"
-msgstr "تېكىستنى ئىزدەش ھەم ئالماشتۇرۇش"
+msgstr "تېكىستنى ئىزدەپ ئالماشتۇر"
 
 #: ../gedit/gedit-ui.h:124
 msgid "_Clear Highlight"
@@ -1855,7 +1841,7 @@ msgstr "يورۇتۇشنى تازىلا(_C)"
 
 #: ../gedit/gedit-ui.h:125
 msgid "Clear highlighting of search matches"
-msgstr ""
+msgstr "ئىزدىگەندە تېپىلىپ يورۇتۇلغان تېكىستلەرنى نورمال ھالەتكە كەلتۈرىدۇ."
 
 #: ../gedit/gedit-ui.h:126
 msgid "Go to _Line..."
@@ -1936,7 +1922,7 @@ msgstr "نۆۋەتتىكى ھۆججەتنى ياپ"
 
 #: ../gedit/gedit-ui.h:159
 msgid "Quit the program"
-msgstr "پروگراممىدىن چېكىنىdu"
+msgstr "پروگراممىدىن چېكىنىدۇ"
 
 #: ../gedit/gedit-ui.h:164
 msgid "_Toolbar"
@@ -1986,7 +1972,7 @@ msgstr "UI ھۆججىتى %s نى ئاچالمىدى. خاتالىق:%s"
 #: ../gedit/gedit-utils.c:1107
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
-msgstr ""
+msgstr "نەڭ «%s» نى ھۆججەت %s نىڭ ئىچىدىن تاپقىلى بولمىدى."
 
 #. Translators: '/ on <remote-share>'
 #: ../gedit/gedit-utils.c:1252
@@ -1995,29 +1981,29 @@ msgid "/ on %s"
 msgstr "/ %s دىكى"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:610
+#: ../gedit/gedit-view-frame.c:596
 msgid "_Wrap Around"
 msgstr "باشتىن باشلاپ ئىزدە(_W)"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:620
+#: ../gedit/gedit-view-frame.c:606
 msgid "Match _Entire Word Only"
 msgstr "پۈتۈن سۆزگە ماس كەلسۇن(_E)"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:630
+#: ../gedit/gedit-view-frame.c:616
 msgid "_Match Case"
 msgstr "چوڭ-كىچىك يېزىلىش پەرقلەندۈر(_M)"
 
-#: ../gedit/gedit-view-frame.c:889
+#: ../gedit/gedit-view-frame.c:875
 msgid "String you want to search for"
 msgstr "سىز ئىزدىمەكچى بولغان تېكىست"
 
-#: ../gedit/gedit-view-frame.c:898
+#: ../gedit/gedit-view-frame.c:884
 msgid "Line you want to move the cursor to"
 msgstr "سىز يۆتكەلمەكچى بولغان قۇر"
 
-#: ../gedit/gedit-window.c:1021
+#: ../gedit/gedit-window.c:1023
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "يورۇتۇش ھالىتى %s نى ئىشلەت"
@@ -2025,7 +2011,7 @@ msgstr "يورۇتۇش ھالىتى %s نى ئىشلەت"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1088 ../gedit/gedit-window.c:2100
+#: ../gedit/gedit-window.c:1090 ../gedit/gedit-window.c:2105
 #: ../plugins/externaltools/tools/manager.py:120
 #: ../plugins/externaltools/tools/manager.py:416
 #: ../plugins/externaltools/tools/manager.py:527
@@ -2033,64 +2019,64 @@ msgstr "يورۇتۇش ھالىتى %s نى ئىشلەت"
 msgid "Plain Text"
 msgstr "ساپ تېكىست"
 
-#: ../gedit/gedit-window.c:1089
+#: ../gedit/gedit-window.c:1091
 msgid "Disable syntax highlighting"
 msgstr "گرامماتىكا يورۇتۇشنى چەكلەش"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1411
+#: ../gedit/gedit-window.c:1413
 #, c-format
 msgid "Open '%s'"
 msgstr "'%s' ئاچ"
 
-#: ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-window.c:1522
 msgid "Open a recently used file"
 msgstr "يېقىندا ئىشلەتكەن ھۆججەتنى ئاچىدۇ"
 
-#: ../gedit/gedit-window.c:1526
+#: ../gedit/gedit-window.c:1528
 msgid "Open"
 msgstr "ئاچ"
 
-#: ../gedit/gedit-window.c:1584
+#: ../gedit/gedit-window.c:1586
 msgid "Save"
 msgstr "ساقلا"
 
-#: ../gedit/gedit-window.c:1586
-msgid "Print"
-msgstr "بېسىپ چىقار"
-
 #: ../gedit/gedit-window.c:1588
+msgid "Print"
+msgstr "باس"
+
+#: ../gedit/gedit-window.c:1590
 msgid "Find"
 msgstr "ئىزدە"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1745
+#: ../gedit/gedit-window.c:1750
 #, c-format
 msgid "Activate '%s'"
 msgstr "'%s' نى ئاكتىپلايدۇ"
 
-#: ../gedit/gedit-window.c:2078
+#: ../gedit/gedit-window.c:2083
 msgid "Use Spaces"
 msgstr "بوش ئورۇن ئىشلىتىش"
 
-#: ../gedit/gedit-window.c:2151
+#: ../gedit/gedit-window.c:2156
 msgid "Tab Width"
 msgstr "بەتكۈچ كەڭلىكى"
 
-#: ../gedit/gedit-window.c:2260
-msgid "Bracket match is out of range"
-msgstr ""
-
 #: ../gedit/gedit-window.c:2265
-msgid "Bracket match not found"
-msgstr ""
+msgid "Bracket match is out of range"
+msgstr "تىرناقلار جۈپى دائىرىدىن چىقىپ كەتتى"
 
 #: ../gedit/gedit-window.c:2270
+msgid "Bracket match not found"
+msgstr "تىرناقلار جۈپى تېپىلمىدى"
+
+#: ../gedit/gedit-window.c:2275
 #, c-format
 msgid "Bracket match found on line: %d"
-msgstr ""
+msgstr "%d قۇردىن تىرناقلار جۈپى تېپىلمىدى"
 
-#: ../gedit/gedit-window.c:4041
+#: ../gedit/gedit-window.c:4046
 msgid "About gedit"
 msgstr "gedit ھەققىدە"
 
@@ -2168,17 +2154,17 @@ msgstr "Gedit نىڭ يېڭى نەشرى بار"
 msgid ""
 "You can download the new version of gedit by clicking on the download button "
 "or ignore that version and wait for a new one"
-msgstr "چۈشۈرۈش كۇنۇپكىسىنى بېسىپ gedit نىڭ ئەڭ يېڭى نەشرىنى چۈشۈرۈڭ،ياكى بۇ نەشرىگە پەرۋا قىلماي كېيىنكى يېڭى نەشرنى ساقلاڭ"
+msgstr "چۈشۈرۈش كۇنۇپكىسىنى بېسىپ gedit نىڭ ئەڭ يېڭى نەشرىنى چۈشۈرۈڭ، ياكى بۇ نەشرىگە پەرۋا قىلماي كېيىنكى يېڭى نەشرنى ساقلاڭ"
 
 #. ex:set ts=8 noet:
 #: ../plugins/checkupdate/org.gnome.gedit.plugins.checkupdate.gschema.xml.in.in.h:1
 msgid "Version to Ignore"
-msgstr ""
+msgstr "پەرۋا قىلمايدىغان نەشرى"
 
 #. This is releated to the next gedit version to be released
 #: ../plugins/checkupdate/org.gnome.gedit.plugins.checkupdate.gschema.xml.in.in.h:3
 msgid "Version to ignore until a newer version is released."
-msgstr ""
+msgstr "يېڭى نەشرى ئېلان قىلىنغۇچە پەرۋا قىلمايدۇ."
 
 #: ../plugins/docinfo/docinfo.plugin.desktop.in.h:1
 msgid ""
@@ -2198,7 +2184,7 @@ msgstr "پۈتۈك ستاتىستىكىسى"
 #: ../plugins/time/gedit-time-dialog.ui.h:1
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "    "
-msgstr ""
+msgstr "    "
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:2
 msgid "Bytes"
@@ -2266,13 +2252,13 @@ msgstr "سىرتقى قوراللار"
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
-msgstr ""
+msgstr "Pango خەت نۇسخىسى ئاتى. مەسىلەن  \"Sans 12\" ياكى \"Monospace Bold 14\" دېگەندەك."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
 msgid ""
 "If true, the external tools will use the desktop-global standard font if "
 "it's monospace (and the most similar font it can come up with otherwise)."
-msgstr ""
+msgstr "true بولسا، سىرتقى قوراللار ئۈستەلئۈستى ئۆلچەملىك خەت نۇسخىسى monospace بولسا شۇنى ئىشلىتىدۇ(ياكى شۇنىڭغا يېقىن كېلىدىغان فونتنى)."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
@@ -2490,113 +2476,113 @@ msgstr "ھۆججەت كۆرگۈ تاختىيى"
 msgid "File System"
 msgstr "ھۆججەت سىستېمىسى"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:585
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:596
 msgid "_Set root to active document"
-msgstr ""
+msgstr "پۈتۈكنىڭ غول يولى قىلىپ بېكىت(_S)"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:587
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:598
 msgid "Set the root to the active document location"
-msgstr ""
+msgstr "پۈتۈكنى ساقلايدىغان غول يول قىلىپ بېكىتىدۇ"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:592
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:603
 msgid "_Open terminal here"
 msgstr "بۇ يەردە تېرمىنالنى ئاچ(_O)"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:594
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:605
 msgid "Open a terminal at the currently opened directory"
 msgstr "نۆۋەتتىكى ئاچقان مۇندەرىجىدە تېرمىنال ئېچىش"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:732
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:743
 msgid "File Browser"
 msgstr "ھۆججەت كۆرگۈ"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:875
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:886
 msgid "An error occurred while creating a new directory"
 msgstr "يېڭى مۇندەرىجە قۇرغاندا خاتالىق كۆرۈلدى"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:878
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:889
 msgid "An error occurred while creating a new file"
 msgstr "يېڭى ھۆججەت قۇرغاندا خاتالىق كۆرۈلدى"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:881
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:892
 msgid "An error occurred while renaming a file or directory"
 msgstr "ھۆججەت ياكى مۇندەرىجىگە قايتا ئىسىم قويغاندا خاتالىق كۆرۈلدى."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:884
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:895
 msgid "An error occurred while deleting a file or directory"
 msgstr "ھۆججەت ياكى مۇندەرىجە ئۆچۈرگەندە خاتالىق كۆرۈلدى."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:887
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:898
 msgid "An error occurred while opening a directory in the file manager"
 msgstr "ھۆججەت باشقۇرغۇچتا مۇندەرىجە ئاچقاندا خاتالىق كۆرۈلدى."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:890
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:901
 msgid "An error occurred while setting a root directory"
 msgstr "غول مۇندەرىجە بەلگىلىگەندە خاتالىق كۆرۈلدى"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:893
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:904
 msgid "An error occurred while loading a directory"
 msgstr "مۇندەرىجە يۈكلىگەندە خاتالىق كۆرۈلدى"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:896
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:907
 msgid "An error occurred"
 msgstr "خاتالىق كۆرۈلدى"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1105
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1123
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
 msgstr "ھۆججەتنى ئەخلەت ساندۇقىغا يۆتكىگىلى بولمىدى، تامامەن ئۆچۈرەمسىز؟"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1110
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1128
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr "ھۆججەت «%s»نى ئەخلەتخانىغا يۆتكىيەلمىدى."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1115
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1133
 msgid "The selected files cannot be moved to the trash."
 msgstr "تاللانغان ھۆججەتلەرنى ئەخلەت ساندۇقىغا يۆتكىگىلى بولمىدى."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1147
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1165
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr "\"%s\" نى راستىنىلا مەڭگۈلۈك ئۆچۈرەمسىز؟"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1152
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1170
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr "تاللانغان ھۆججەتنى مەڭگۈ ئۆچۈرەمسىز؟"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1155
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1173
 msgid "If you delete an item, it is permanently lost."
 msgstr "ئەگەر بىر تۈرنى ئۆچۈرسىڭىز، ئۇ مەڭگۈلۈك يوقىلىدۇ."
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:1728
+#: ../plugins/filebrowser/gedit-file-browser-store.c:1722
 msgid "(Empty)"
 msgstr "(بوش)"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3474
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3467
 msgid ""
 "The renamed file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
-msgstr ""
+msgstr "ئاتى ئۆزگەرتىلگەن ھۆججەت سۈزۈۋېتىلدى. ئەگەر بۇ ھۆججەتنى كۆرۈنىدىغان قىلماقچى بولسىڭىز، سۈزگۈچنىڭ تەڭشىكىنى تەڭشەڭ."
 
 #. Translators: This is the default name of new files created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3718
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3711
 msgid "file"
 msgstr "ھۆججەت"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3746
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3739
 msgid ""
 "The new file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
 msgstr "يېڭى ھۆججەت سۈزۈۋېتىلدى. ھۆججەتنى كۆرۈنىدىغان قىلىش ئۈچۈن سۈزگۈچنى قايتا تەڭشەڭ"
 
 #. Translators: This is the default name of new directories created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3777
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3770
 msgid "directory"
 msgstr "مۇندەرىجە"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3802
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3795
 msgid ""
 "The new directory is currently filtered out. You need to adjust your filter "
 "settings to make the directory visible"
@@ -2757,15 +2743,15 @@ msgstr "دىسكىنى ئېگەرلىيەلمىدى: %s"
 #. ex:ts=8:noet:
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:1
 msgid "Enable Restore of Remote Locations"
-msgstr ""
+msgstr "يىراقتىكى ئورۇننى ئەسلىگە كەلتۈرۈشنى ئىناۋەتلىك قىلىش"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:2
 msgid "File Browser Filter Mode"
-msgstr ""
+msgstr "ھۆججەت كۆرگۈنىڭ سۈزگۈچ ھالىتى"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:3
 msgid "File Browser Filter Pattern"
-msgstr ""
+msgstr "ھۆججەت كۆرگۈنىڭ سۈزگۈچىنىڭ ئەندىزىسى"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:4
 msgid "File Browser Root Directory"
@@ -2785,13 +2771,13 @@ msgstr ""
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:7
 msgid "Open With Tree View"
-msgstr ""
+msgstr "دەرەخسىمان كۆرۈنمەدە ئېچىش"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:8
 msgid ""
 "Open the tree view when the file browser plugin gets loaded instead of the "
 "bookmarks view"
-msgstr ""
+msgstr "ھۆججەت كۆرگۈ قىستۇرمىسىنى يۈكلەيدىغان چاغدا، خەتكۈش كۆرۈنمەسىدە ئەمەس، دەرەخسىمان كۆرۈنمەدە ئاچىدۇ."
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:9
 msgid "Set Location to First Document"
@@ -2818,18 +2804,18 @@ msgstr ""
 msgid ""
 "The filter pattern to filter the file browser with. This filter works on top "
 "of the filter_mode."
-msgstr ""
+msgstr "ھۆججەت كۆرگۈدە ئىشلىتىلىدىغان سۈزگۈچ ئەندىزىسى. بۇ filter_mode نىڭ ئۈستىدە ئىشلەيدۇ."
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:14
 msgid ""
 "This value determines what files get filtered from the file browser. Valid "
 "values are: none (filter nothing), hide-hidden (filter hidden files) and "
 "hide-binary (filter binary files)."
-msgstr ""
+msgstr "بۇ قىممەت ھۆججەت كۆرگۈدە قانداق ھۆججەتلەرنىڭ سۈزۈلىدىغانلىقىنى بەلگىلەيدۇ. ئىناۋەتلىك قىممەتلەر:  يوق(سۈزمەيدۇ)، hide-hidden(يوشۇرۇن ھۆججەتلەرنى سۈزىدۇ) ۋە hide-binary (ئىككىلىك سىستېمىدىكى ھۆججەتلەرنى سۈزىدۇ)."
 
 #: ../plugins/modelines/modelines.plugin.desktop.in.h:1
 msgid "Emacs, Kate and Vim-style modelines support for gedit."
-msgstr ""
+msgstr "Emacs، Kate ۋە Vim-style دىكى modelines ئىقتىدارىنى gedit تا ئىشلىتىدۇ."
 
 #: ../plugins/modelines/modelines.plugin.desktop.in.h:2
 msgid "Modelines"
@@ -2837,11 +2823,11 @@ msgstr "ھالەت قۇرى"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:2
 msgid "Command Color Text"
-msgstr ""
+msgstr "بۇيرۇقنىڭ رەڭگى"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:3
 msgid "Error Color Text"
-msgstr ""
+msgstr "خاتالىقنىڭ رەڭگى"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:5
 msgid ""
@@ -2851,15 +2837,15 @@ msgstr "ئەگەر راست (true) بولسا تېرمىنال ئۈستەلئۈ�
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid "The command color text"
-msgstr ""
+msgstr "بۇيرۇق تېكىستنىڭ رەڭگى"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
 msgid "The error color text"
-msgstr ""
+msgstr "خاتالىق تېكىستىنىڭ رەڭگى"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
 msgid "Interactive Python console standing in the bottom panel"
-msgstr ""
+msgstr "ئاستىدا Python پروگراممىسىنى ئىجرا قىلىش كۆزنىكىنى ئاچىدۇ"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
 #: ../plugins/pythonconsole/pythonconsole/__init__.py:52
@@ -2875,7 +2861,7 @@ msgstr "بۇيرۇق رەڭگى(_C):"
 msgid "_Error color:"
 msgstr "خاتالىق رەڭگى(_E):"
 
-#. ex:ts=8:et:
+#. ex:ts=4:et:
 #: ../plugins/quickopen/quickopen/popup.py:31
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:1
 msgid "Quick Open"
@@ -2903,7 +2889,7 @@ msgid "Create new snippet"
 msgstr "يېڭى بۆلەك قۇرۇش"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/manager.py:398
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Delete selected snippet"
 msgstr "تاللانغان بۆلەكنى ئۆچۈرۈش"
 
@@ -2912,7 +2898,7 @@ msgid "Export selected snippets"
 msgstr "تاللانغان بۆلەكنى ئېكسپورت قىلىش"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/manager.py:769
+#: ../plugins/snippets/snippets/manager.py:778
 msgid "Import snippets"
 msgstr "بۆلەكلەر ئىمپورت قىلىش"
 
@@ -2926,7 +2912,7 @@ msgstr "بۇ بۆلەكنىڭ تېزلەتمە كۇنۇپكىسى ئاكتىپل
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:657
+#: ../plugins/snippets/snippets/manager.py:666
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Tab كۇنۇپكىسىنى چەككەندىن كېيىن بۇ بۆلەكنىڭ تاق سۆزى ئاكتىپلىنىدۇ"
 
@@ -2942,11 +2928,11 @@ msgstr "بۆلەكلەر(_S):"
 msgid "_Tab trigger:"
 msgstr "Tab قوزغاتقۇچ(_T):"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:141
+#: ../plugins/snippets/snippets/windowactivatable.py:149
 msgid "Manage _Snippets..."
 msgstr "بۆلەك باشقۇر(_S)..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:142
+#: ../plugins/snippets/snippets/windowactivatable.py:150
 msgid "Manage snippets"
 msgstr "بۆلەك باشقۇرىدۇ"
 
@@ -2954,94 +2940,94 @@ msgstr "بۆلەك باشقۇرىدۇ"
 msgid "Snippets archive"
 msgstr "بۆلەكلەر ئارخىپى"
 
-#: ../plugins/snippets/snippets/manager.py:65
+#: ../plugins/snippets/snippets/manager.py:63
 msgid "Add a new snippet..."
 msgstr "يېڭى بۆلەك قوشۇش..."
 
-#: ../plugins/snippets/snippets/manager.py:118
+#: ../plugins/snippets/snippets/manager.py:116
 msgid "Global"
 msgstr "ئومۇمىيەت"
 
-#: ../plugins/snippets/snippets/manager.py:395
+#: ../plugins/snippets/snippets/manager.py:393
 msgid "Revert selected snippet"
 msgstr "تاللانغان بۆلەكنى ئەسلىگە كەلتۈرۈش"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:650
+#: ../plugins/snippets/snippets/manager.py:659
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
-msgstr ""
+msgstr "بۇ مۇۋاپىق Tab trigger ئەمەس. Trigger لاردا ھەرپلەر ياكى {، [، قاتارلىقلارنىڭ بىرىلا بولسا بولىدۇ."
 
-#: ../plugins/snippets/snippets/manager.py:748
+#: ../plugins/snippets/snippets/manager.py:757
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "ئىمپورت قىلىۋاتقاندا تۆۋەندىكىدەك خاتالىق كۆرۈلدى:%s"
 
-#: ../plugins/snippets/snippets/manager.py:755
+#: ../plugins/snippets/snippets/manager.py:764
 msgid "Import successfully completed"
 msgstr "ئىمپورت قىلىش مۇۋەپپەقىيەتلىك بولدى"
 
-#: ../plugins/snippets/snippets/manager.py:774
-#: ../plugins/snippets/snippets/manager.py:860
-#: ../plugins/snippets/snippets/manager.py:923
+#: ../plugins/snippets/snippets/manager.py:783
+#: ../plugins/snippets/snippets/manager.py:869
+#: ../plugins/snippets/snippets/manager.py:932
 msgid "All supported archives"
 msgstr "بارلىق ئىشلەتكىلى بولىدىغان ئارخىپلار"
 
-#: ../plugins/snippets/snippets/manager.py:775
-#: ../plugins/snippets/snippets/manager.py:861
-#: ../plugins/snippets/snippets/manager.py:924
+#: ../plugins/snippets/snippets/manager.py:784
+#: ../plugins/snippets/snippets/manager.py:870
+#: ../plugins/snippets/snippets/manager.py:933
 msgid "Gzip compressed archive"
 msgstr "Gzip  دا پرېسلانغان ئارخىپ"
 
-#: ../plugins/snippets/snippets/manager.py:776
-#: ../plugins/snippets/snippets/manager.py:862
-#: ../plugins/snippets/snippets/manager.py:925
+#: ../plugins/snippets/snippets/manager.py:785
+#: ../plugins/snippets/snippets/manager.py:871
+#: ../plugins/snippets/snippets/manager.py:934
 msgid "Bzip2 compressed archive"
 msgstr "Bzip2 دا پرېسلانغان ئارخىپ"
 
-#: ../plugins/snippets/snippets/manager.py:777
+#: ../plugins/snippets/snippets/manager.py:786
 msgid "Single snippets file"
-msgstr ""
+msgstr "تاق snippets ھۆججىتى"
 
-#: ../plugins/snippets/snippets/manager.py:778
-#: ../plugins/snippets/snippets/manager.py:864
-#: ../plugins/snippets/snippets/manager.py:927
+#: ../plugins/snippets/snippets/manager.py:787
+#: ../plugins/snippets/snippets/manager.py:873
+#: ../plugins/snippets/snippets/manager.py:936
 msgid "All files"
 msgstr "ھەممە ھۆججەتلەر"
 
-#: ../plugins/snippets/snippets/manager.py:790
+#: ../plugins/snippets/snippets/manager.py:799
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "ئېكسپورت قىلىۋاتقاندا تۆۋەندىكىدەك خاتالىق كۆرۈلدى:%s"
 
-#: ../plugins/snippets/snippets/manager.py:794
+#: ../plugins/snippets/snippets/manager.py:803
 msgid "Export successfully completed"
 msgstr "ئېكسپورت قىلىش مۇۋەپپەقىيەتلىك بولدى"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:834
-#: ../plugins/snippets/snippets/manager.py:901
+#: ../plugins/snippets/snippets/manager.py:843
+#: ../plugins/snippets/snippets/manager.py:910
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
-msgstr ""
+msgstr "تاللانغان <b>سىستېما</b>snippets نىمۇ بىرگە ساقلامسىز؟"
 
-#: ../plugins/snippets/snippets/manager.py:849
-#: ../plugins/snippets/snippets/manager.py:919
+#: ../plugins/snippets/snippets/manager.py:858
+#: ../plugins/snippets/snippets/manager.py:928
 msgid "There are no snippets selected to be exported"
 msgstr "ئېكسپورت قىلىدىغان بۆلەكلەر تاللانمىغان"
 
-#: ../plugins/snippets/snippets/manager.py:854
-#: ../plugins/snippets/snippets/manager.py:892
+#: ../plugins/snippets/snippets/manager.py:863
+#: ../plugins/snippets/snippets/manager.py:901
 msgid "Export snippets"
 msgstr "بۆلەكلەرنى ئېكسپورت قىلىش"
 
-#: ../plugins/snippets/snippets/manager.py:1031
+#: ../plugins/snippets/snippets/manager.py:1042
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "يېڭى تېزلەتمە كىرگۈزۈڭ ياكى Backspace نى بېسىپ تازىلاڭ"
 
-#: ../plugins/snippets/snippets/manager.py:1033
+#: ../plugins/snippets/snippets/manager.py:1044
 msgid "Type a new shortcut"
-msgstr "يېڭى تېز كۇنۇپكا كىرگۈزۈڭ"
+msgstr "يېڭى تېزلەتمە كىرگۈزۈڭ"
 
 #: ../plugins/snippets/snippets/exporter.py:82
 #, python-format
@@ -3067,12 +3053,12 @@ msgstr "ھۆججەت «%s» مەۋجۇت ئەمەس"
 #: ../plugins/snippets/snippets/importer.py:49
 #, python-format
 msgid "File \"%s\" is not a valid snippets file"
-msgstr ""
+msgstr "ھۆججەت «%s» ئىناۋەتلىك snippets ھۆججىتى ئەمەس"
 
 #: ../plugins/snippets/snippets/importer.py:59
 #, python-format
 msgid "Imported file \"%s\" is not a valid snippets file"
-msgstr ""
+msgstr "ئىمپورت قىلىنغان ھۆججەت «%s» ئىناۋەتلىك snippets ھۆججىتى ئەمەس"
 
 #: ../plugins/snippets/snippets/importer.py:69
 #, python-format
@@ -3088,7 +3074,7 @@ msgstr "تۆۋەندىكى ھۆججەتنى ئىمپورت قىلغىلى بول
 #: ../plugins/snippets/snippets/importer.py:116
 #, python-format
 msgid "File \"%s\" is not a valid snippets archive"
-msgstr ""
+msgstr "ھۆججەت «%s» ئىناۋەتلىك snippets ئارخىپى ئەمەس"
 
 #: ../plugins/snippets/snippets/placeholder.py:594
 #, python-format
@@ -3122,7 +3108,7 @@ msgstr "تەرتىپلەش ئىستوندىن باشلىنىدۇ(_T):"
 #: ../plugins/sort/gedit-sort-plugin.ui.h:3
 #: ../plugins/sort/sort.plugin.desktop.in.h:1
 msgid "Sort"
-msgstr "تەرتىپلەش"
+msgstr "تەرتىپلە"
 
 #: ../plugins/sort/gedit-sort-plugin.ui.h:4
 msgid "You cannot undo a sort operation"
@@ -3331,7 +3317,7 @@ msgstr "چېسلا بىلەن ۋاقىتنى قىستۇر(_S)..."
 
 #: ../plugins/time/gedit-time-plugin.c:190
 msgid "Insert current date and time at the cursor position"
-msgstr "نۆۋەتتىكى نۇر بەلگىسى تۇرغان جايغا ۋاقىت بىلەن چېسىلا قىستۇرۇلىدۇ."
+msgstr "نۆۋەتتىكى نۇربەلگىسى تۇرغان جايغا ۋاقىت بىلەن چېسىلا قىستۇرۇلىدۇ."
 
 #: ../plugins/time/gedit-time-plugin.c:551
 msgid "Available formats"
@@ -3344,7 +3330,7 @@ msgstr "چېسلا/ۋاقىتنى قىستۇرۇش"
 
 #: ../plugins/time/time.plugin.desktop.in.h:2
 msgid "Inserts current date and time at the cursor position."
-msgstr "نۆۋەتتىكى نۇر بەلگىسى تۇرغان جايغا ۋاقىت بىلەن چېسىلا قىستۇرۇلىدۇ."
+msgstr "نۆۋەتتىكى نۇربەلگىسى تۇرغان جايغا ۋاقىت بىلەن چېسىلا قىستۇرۇلىدۇ."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:1
 msgid "Custom Format"
@@ -3354,7 +3340,7 @@ msgstr "ئىختىيارى فورمات"
 msgid ""
 "If the user should be prompted for a format or if the selected or custom "
 "format should be used."
-msgstr ""
+msgstr "ھەر قېتىم ئىشلەتكۈچى فورماتنى كۆرسىتىپ بەرسە بولىدۇ. ياكى تاللانغان ياكى ئىختىيارى فورماتنى ئىشلەتسىمۇ بولىدۇ."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
 msgid "Prompt Type"
@@ -3417,11 +3403,21 @@ msgstr "فورماتنى ئەسكەرت(_P)"
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
 msgid "Logs access and leave event for documents used with gedit"
-msgstr ""
+msgstr "زىيارەتنى خاتىرىلەپ، gedit تا ئىشلىتىلگەن پۈتۈكنىڭ ھادىسىلىرىنى خاتىرىلەيدۇ."
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
-msgstr ""
+msgstr "Zeitgeist سانلىق-مەلۇمات تەمىنلىگۈچى"
+
+#~ msgid ""
+#~ "List of VFS schemes gedit supports in write mode. The 'file' scheme is "
+#~ "writable by default."
+#~ msgstr ""
+#~ "gedit نىڭ يېزىش ھالىتىدە ئىشلەتكىلى بولىدىغان VFS لايىھىلىرىنىڭ "
+#~ "تىزىملىكى. 'file' لايىھىسى ئادەتتە يېزىشچان."
+
+#~ msgid "Writable VFS schemes"
+#~ msgstr "يېزىشقا بولىدىغان VFS لايىھىسى"
 
 #~ msgid "Quick open"
 #~ msgstr "تېز ئېچىش"
