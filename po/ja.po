@@ -10,15 +10,16 @@
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010-2011.
 # Hajime Taira <htaira@redhat.com>, 2011.
+# Jiro Matsuzawa <matsuzawa.jr@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=gedit&component=general\n"
-"POT-Creation-Date: 2011-03-08 05:12+0000\n"
-"PO-Revision-Date: 2011-03-09 00:06+0900\n"
-"Last-Translator: Hajime Taira <htaira@redhat.com>\n"
+"product=gedit&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-05-02 15:54+0000\n"
+"PO-Revision-Date: 2011-04-30 17:05+0900\n"
+"Last-Translator: Jiro Matsuzawa <matsuzawa.jr@gmail.com>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -137,21 +138,13 @@ msgstr "行の折り返しモード"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
 msgid ""
-"List of VFS schemes gedit supports in write mode. The 'file' scheme is "
-"writable by default."
-msgstr ""
-"gedit が書き込みモードでサポートする VFS の並びです。'file' のスキームはデ"
-"フォルトで書き込み可能です。"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
-msgid ""
 "List of active plugins. It contains the \"Location\" of the active plugins. "
 "See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
 msgstr ""
 "利用可能なプラグインの一覧です。プラグインの \"場所\" が含まれます。指定した"
 "プラグインの \"場所\" を得るには .gedit-plugin ファイルを参照してください。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
 msgid ""
 "List of encodings shown in the Character Encoding menu in open/save file "
 "selector. Only recognized encodings are used."
@@ -159,15 +152,15 @@ msgstr ""
 "開く/保存のファイル選択ダイアログの文字エンコーディング・メニューの中に表示す"
 "るエンコーディングのリストです。認識したエンコーディングのみ使用します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
 msgid "Maximum Number of Undo Actions"
 msgstr "\"元に戻す\" の最大回数"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
 msgid "Maximum Recent Files"
 msgstr "\"最近使ったファイル\" に表示する最大数"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
 msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use "
 "\"-1\" for unlimited number of actions."
@@ -175,7 +168,7 @@ msgstr ""
 "gedit で \"元に戻す\" または \"やり直す\" ことができる動作の回数を最大値で指"
 "定します (無制限にする場合は \"-1\")。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
 msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use "
 "\"-1\" for unlimited number of actions. Deprecated since 2.12.0"
@@ -184,11 +177,11 @@ msgstr ""
 "(無制限にする場合は \"-1\") (このキーは GNOME 2.12.0 から非推奨になりまし"
 "た)。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
 msgid "Notebook Show Tabs Mode"
 msgstr "ノートブックをタブモードで表示"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
 msgid ""
 "Number of minutes after which gedit will automatically save modified files. "
 "This will only take effect if the \"Autosave\" option is turned on."
@@ -196,39 +189,39 @@ msgstr ""
 "変更したファイルを gedit が自動的に保存するまでの時間(分単位)です。これは "
 "\"自動保存\" オプションが有効の場合のみ効果があります。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
 msgid "Print Header"
 msgstr "ヘッダの印刷"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
 msgid "Print Line Numbers"
 msgstr "行番号の印刷"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
 msgid "Print Syntax Highlighting"
 msgstr "強調表示の印刷"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
 msgid "Printing Line Wrapping Mode"
 msgstr "印刷時の行の折り返しモード"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
 msgid "Restore Previous Cursor Position"
 msgstr "以前あったカーソル位置に戻す"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
 msgid "Right Margin Position"
 msgstr "右マージンの位置"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
 msgid "Side panel is Visible"
 msgstr "サイド・パネルを表示します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
 msgid "Smart Home End"
 msgstr "スマート [Home]/[End]"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
 msgid ""
 "Sorted list of encodings used by gedit for automatically detecting the "
 "encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
@@ -238,7 +231,7 @@ msgstr ""
 "のリストです。\"CURRENT\" は現在使用しているロケールを表します。認識したエン"
 "コーディングのみ使用されます。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
 msgid ""
 "Specifies how the cursor moves when the HOME and END keys are pressed. Use "
 "\"disabled\" to always move at the start/end of the line, \"after\" to move "
@@ -255,7 +248,7 @@ msgstr ""
 "する前に一旦文字列の先頭/終端にカーソルを移動し、\"always\" を指定すると行の"
 "先頭/末尾ではなく常に文字列の先頭/終端にカーソルを移動します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
 msgid ""
 "Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
 "\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
@@ -267,7 +260,7 @@ msgstr ""
 "合は \"char\" を使います。値は大文字小文字を区別することに注意してください。"
 "そしてここで記述したとおりに印刷されるか確認してください。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
 msgid ""
 "Specifies how to wrap long lines in the editing area. Use \"none\" for no "
 "wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
@@ -279,12 +272,12 @@ msgstr ""
 "は \"char\" を使います。値は大文字小文字を区別することに注意してください。そ"
 "してここで記述したとおりに表示されるか確認してください。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
 msgid ""
 "Specifies the font to use for a document's body when printing documents."
 msgstr "ドキュメントを印刷する際の本文に使用するフォントを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
 msgid ""
 "Specifies the font to use for line numbers when printing. This will only "
 "take effect if the \"Print Line Numbers\" option is non-zero."
@@ -292,7 +285,7 @@ msgstr ""
 "印刷する際の行番号に使用するフォントを指定します。これは \"行番号の印刷\" オ"
 "プションが 0 以外の場合のみ効果があります。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
 msgid ""
 "Specifies the font to use for page headers when printing a document. This "
 "will only take effect if the \"Print Header\" option is turned on."
@@ -300,66 +293,66 @@ msgstr ""
 "ドキュメントを印刷する際のページ・ヘッダに使用するフォントを指定します。これ"
 "は \"ヘッダの印刷\" オプションが有効の場合のみ効果があります。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
 msgid ""
 "Specifies the maximum number of recently opened files that will be displayed "
 "in the \"Recent Files\" submenu."
 msgstr ""
 "\"最近使ったファイル\" のサブメニューに表示するエントリの最大数を指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
 msgid ""
 "Specifies the number of spaces that should be displayed instead of Tab "
 "characters."
 msgstr "タブ文字の代わりに表示されるスペースの数を指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
 msgid "Specifies the position of the right margin."
 msgstr "右マージンの位置を指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
 msgid ""
 "Specifies when to show the notebook tabs. Use \"never\" to never show the "
 "tabs, \"always\" to always show the tabs, and \"auto\" to show the tabs only "
 "when there is more than one tab. Note that the values are case-sensitive, so "
 "make sure they appear exactly as mentioned here."
 msgstr ""
-"表示する際に長い行をどのように折り返すかを指定します。折り返さない場合は "
-"\"never\"、単語の境界で折り返す場合は \"always\"、そして文字の境界で折り返す"
-"場合は \"auto\" を使います。値は大文字小文字を区別することに注意してくださ"
-"い。そしてここで記述したとおりに表示されるか確認してください。"
+"タブ形式表示を制御するために指定します。タブを一切表示しない場合は \"never"
+"\"、常に表示する場合は \"always\"、2 つ以上タブが必要になるときのみ表示する場"
+"合は \"auto\" を使います。値は大文字小文字を区別することに注意してください。"
+"そしてここで記述したとおりに表示されるか確認してください。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
 msgid "Status Bar is Visible"
 msgstr "ステータスバーの表示"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
 msgid "Style Scheme"
 msgstr "スタイルのスキーム"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
 msgid "Tab Size"
 msgstr "タブのサイズ"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
 msgid "The ID of a GtkSourceView Style Scheme used to color the text."
 msgstr ""
 "文字列に色を付ける際に使用する GtkSourceView のスタイルを表すスキームの ID で"
 "す。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
 msgid "Toolbar is Visible"
 msgstr "ツールバーの表示可否"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
 msgid "Undo Actions Limit (DEPRECATED)"
 msgstr "\"元に戻す\" 動作の限度 (非推奨)"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
 msgid "Use Default Font"
 msgstr "デフォルトのフォントを使う"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
 msgid ""
 "Whether gedit should automatically save modified files after a time "
 "interval. You can set the time interval with the \"Autosave Interval\" "
@@ -368,7 +361,7 @@ msgstr ""
 "指定時間後に変更されたファイルを gedit が自動的に保存するかどうかを指定しま"
 "す。\"自動保存の間隔\" オプションで時間を設定できます。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
 msgid ""
 "Whether gedit should create backup copies for the files it saves. You can "
 "set the backup file extension with the \"Backup Copy Extension\" option."
@@ -377,70 +370,70 @@ msgstr ""
 "す。\"バックアップ・コピーの拡張子\" オプションでバックアップ・ファイルの拡張"
 "子を設定することができます。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
 msgid "Whether gedit should display line numbers in the editing area."
 msgstr "編集領域に行番号を表示するかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
 msgid "Whether gedit should display the right margin in the editing area."
 msgstr "編集領域に右マージンを表示するかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
 msgid "Whether gedit should enable automatic indentation."
 msgstr "自動的にインデントするかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
 msgid "Whether gedit should enable syntax highlighting."
 msgstr "構文の強調表示を有効にするかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
 msgid ""
 "Whether gedit should highlight all the occurrences of the searched text."
 msgstr "検索する時に一致した文字列をすべて強調表示するかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
 msgid "Whether gedit should highlight matching brackets."
 msgstr "gedit で対応するカッコを強調表示するかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
 msgid "Whether gedit should highlight the current line."
 msgstr "カーソル行を強調表示するかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
 msgid "Whether gedit should include a document header when printing documents."
 msgstr "ドキュメントを印刷する際にヘッダを含めるかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
 msgid "Whether gedit should insert spaces instead of tabs."
 msgstr "タブ文字の代わりに空白文字を使うかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
 msgid "Whether gedit should print syntax highlighting when printing documents."
 msgstr ""
 "ドキュメントを印刷する際に構文の強調表示も印刷するかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
 msgid ""
 "Whether gedit should restore the previous cursor position when a file is "
 "loaded."
 msgstr ""
 "ファイルを読み込んだ時に記憶していたカーソル位置に戻すかどうか指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
 msgid ""
 "Whether the side panel at the left of editing windows should be visible."
 msgstr "編集ウィンドウの左側にサイド・パネルを表示するかどうかです。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
 msgid ""
 "Whether the status bar at the bottom of editing windows should be visible."
 msgstr "編集ウィンドウの下側にステータスバーを表示するかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
 msgid "Whether the toolbar should be visible in editing windows."
 msgstr "編集ウィンドウの中にツールバーを表示するかどうかを指定します。"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:73
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
 msgid ""
 "Whether to use the system's default fixed width font for editing text "
 "instead of a font specific to gedit. If this option is turned off, then the "
@@ -450,10 +443,6 @@ msgstr ""
 "gedit で指定したフォントの代わりにシステムのデフォルト・フォントを編集で使用"
 "するかどうかを指定します。このオプションを無効にした場合は、システムフォント"
 "ではなく \"エディタのフォント\" オプションで指定したフォントが使用されます。"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:74
-msgid "Writable VFS schemes"
-msgstr "書き込み可能な VFS スキーム"
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
 msgid "Log Out _without Saving"
@@ -730,7 +719,7 @@ msgstr "追加(_A)..."
 msgid "_Autosave files every"
 msgstr "ファイルを自動的に保存する間隔(_A): "
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:588
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:590
 msgid "_Display line numbers"
 msgstr "行番号を表示する(_D)"
 
@@ -747,7 +736,7 @@ msgid "_minutes"
 msgstr "分ごと(_M)"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1590
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1592
 msgid "Replace"
 msgstr "置換"
 
@@ -789,71 +778,71 @@ msgstr "検索する文字列(_S): "
 msgid "_Wrap around"
 msgstr "折り返しも対象にする(_W)"
 
-#: ../gedit/gedit-app.c:233
+#: ../gedit/gedit-app.c:235
 msgid "There was an error displaying the help."
 msgstr "ヘルプを表示する際にエラーが発生しました。"
 
-#: ../gedit/gedit-command-line.c:231
+#: ../gedit/gedit-command-line.c:232
 #, c-format
 msgid "%s: invalid encoding.\n"
 msgstr "%s: エンコーディングが間違っています。\n"
 
-#: ../gedit/gedit-command-line.c:255
+#: ../gedit/gedit-command-line.c:256
 msgid "Show the application's version"
 msgstr "バージョンを表示する"
 
-#: ../gedit/gedit-command-line.c:261
+#: ../gedit/gedit-command-line.c:262
 msgid "Display list of possible values for the encoding option"
 msgstr "利用可能なエンコーディングオプションの値一覧を表示する"
 
-#: ../gedit/gedit-command-line.c:269
+#: ../gedit/gedit-command-line.c:270
 msgid ""
 "Set the character encoding to be used to open the files listed on the "
 "command line"
 msgstr "オープンするファイルで使用する文字エンコーディングをセットする"
 
-#: ../gedit/gedit-command-line.c:270
+#: ../gedit/gedit-command-line.c:271
 msgid "ENCODING"
 msgstr "ENCODING"
 
-#: ../gedit/gedit-command-line.c:277
+#: ../gedit/gedit-command-line.c:278
 msgid "Create a new top-level window in an existing instance of gedit"
 msgstr "既に実行中の gedit で新しいトップレベル・ウィンドウを作成する"
 
-#: ../gedit/gedit-command-line.c:285
+#: ../gedit/gedit-command-line.c:286
 msgid "Create a new document in an existing instance of gedit"
 msgstr "既に実行中の gedit に新しいドキュメントを作成する"
 
-#: ../gedit/gedit-command-line.c:293
+#: ../gedit/gedit-command-line.c:294
 msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
 msgstr "X のウィンドウサイズと場所を指定します。(WIDTHxHEIGHT+X+Y)"
 
-#: ../gedit/gedit-command-line.c:294
+#: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
 msgstr "GEOMETRY"
 
-#: ../gedit/gedit-command-line.c:301
+#: ../gedit/gedit-command-line.c:302
 msgid "Open files and block process until files are closed"
 msgstr "ファイルを開き、ファイルが閉じられるまでブロックする処理を行う"
 
-#: ../gedit/gedit-command-line.c:309
+#: ../gedit/gedit-command-line.c:310
 msgid "Run gedit in the background"
 msgstr "geditをバックグラウンドで動かす"
 
-#: ../gedit/gedit-command-line.c:317
+#: ../gedit/gedit-command-line.c:318
 msgid "Run gedit in standalone mode"
 msgstr "geditをスタンドアローンモードで動かす"
 
-#: ../gedit/gedit-command-line.c:326
+#: ../gedit/gedit-command-line.c:327
 msgid "[FILE...] [+LINE[:COLUMN]]"
 msgstr "[FILE...] [+LINE[:COLUMN]]"
 
 #. Setup command line options
-#: ../gedit/gedit-command-line.c:333
+#: ../gedit/gedit-command-line.c:334
 msgid "- Edit text files"
 msgstr "- テキスト・ファイルを編集する"
 
-#: ../gedit/gedit-command-line.c:344
+#: ../gedit/gedit-command-line.c:345
 #, c-format
 msgid ""
 "%s\n"
@@ -1000,12 +989,12 @@ msgstr[0] "%d時間前に編集したドキュメントへの変更が完全に�
 msgid "_Revert"
 msgstr "戻す(_R)"
 
-#: ../gedit/gedit-commands-help.c:86
+#: ../gedit/gedit-commands-help.c:88
 msgid "gedit is a small and lightweight text editor for the GNOME Desktop"
 msgstr ""
 "gedit は GNOME デスクトップ用に作られた小型軽量のテキスト・エディタです。"
 
-#: ../gedit/gedit-commands-help.c:111
+#: ../gedit/gedit-commands-help.c:113
 msgid "translator-credits"
 msgstr ""
 "相花 毅 <takeshi.aihana@gmail.com>\n"
@@ -1017,6 +1006,7 @@ msgstr ""
 "Akira Higuchi <a-higuti@math.sci.hokudai.ac.jp>\n"
 "やまね ひでき <henrich@debian.or.jp>\n"
 "草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n"
+"松澤 二郎 <matsuzawa.jr@gmail.com>\n"
 "日本GNOMEユーザー会 http://www.gnome.gr.jp/"
 
 #: ../gedit/gedit-commands-search.c:112
@@ -1041,12 +1031,12 @@ msgstr "\"%s\" は見つかりませんでした"
 msgid "Unsaved Document %d"
 msgstr "編集中のドキュメント %d"
 
-#: ../gedit/gedit-documents-panel.c:118 ../gedit/gedit-documents-panel.c:132
-#: ../gedit/gedit-window.c:2406 ../gedit/gedit-window.c:2413
+#: ../gedit/gedit-documents-panel.c:119 ../gedit/gedit-documents-panel.c:133
+#: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
 msgid "Read-Only"
 msgstr "読み取りのみ"
 
-#: ../gedit/gedit-documents-panel.c:1089 ../gedit/gedit-window.c:3838
+#: ../gedit/gedit-documents-panel.c:1124 ../gedit/gedit-window.c:3840
 msgid "Documents"
 msgstr "ドキュメントの一覧"
 
@@ -1553,11 +1543,11 @@ msgid ""
 msgstr ""
 "このファイルの保存を続行すると、文書が壊れてしまうかもしれません。続けますか?"
 
-#: ../gedit/gedit-panel.c:339 ../gedit/gedit-panel.c:511
+#: ../gedit/gedit-panel.c:343 ../gedit/gedit-panel.c:515
 msgid "Empty"
 msgstr "履歴なし"
 
-#: ../gedit/gedit-panel.c:401
+#: ../gedit/gedit-panel.c:405
 msgid "Hide panel"
 msgstr "このペインを隠します"
 
@@ -1694,28 +1684,29 @@ msgstr "ページのプレビュー"
 msgid "The preview of a page in the document to be printed"
 msgstr "印刷するドキュメントのページをプレビューします"
 
-#: ../gedit/gedit-statusbar.c:69 ../gedit/gedit-statusbar.c:75
+#. Use spaces to leave padding proportional to the font size
+#: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
 msgid "OVR"
 msgstr " [上書き]"
 
-#: ../gedit/gedit-statusbar.c:69 ../gedit/gedit-statusbar.c:75
+#: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
 msgid "INS"
 msgstr " [挿入]"
 
 #. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for "Column". Please,
 #. use abbreviations if possible to avoid space problems.
-#: ../gedit/gedit-statusbar.c:247
+#: ../gedit/gedit-statusbar.c:248
 #, c-format
 msgid "  Ln %d, Col %d"
 msgstr " (%d行、%d列)"
 
-#: ../gedit/gedit-statusbar.c:346
+#: ../gedit/gedit-statusbar.c:347
 #, c-format
 msgid "There is a tab with errors"
 msgid_plural "There are %d tabs with errors"
 msgstr[0] "エラーが発生したタブが %d 個あります"
 
-#: ../gedit/gedit-style-scheme-manager.c:206
+#: ../gedit/gedit-style-scheme-manager.c:210
 #, c-format
 msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
 msgstr ""
@@ -1798,296 +1789,296 @@ msgid "Close document"
 msgstr "このドキュメントを閉じます"
 
 #. Toplevel
-#: ../gedit/gedit-ui.h:47
+#: ../gedit/gedit-ui.h:43
 msgid "_File"
 msgstr "ファイル(_F)"
 
-#: ../gedit/gedit-ui.h:48
+#: ../gedit/gedit-ui.h:44
 msgid "_Edit"
 msgstr "編集(_E)"
 
-#: ../gedit/gedit-ui.h:49
+#: ../gedit/gedit-ui.h:45
 msgid "_View"
 msgstr "表示(_V)"
 
-#: ../gedit/gedit-ui.h:50
+#: ../gedit/gedit-ui.h:46
 msgid "_Search"
 msgstr "検索(_S)"
 
-#: ../gedit/gedit-ui.h:51
+#: ../gedit/gedit-ui.h:47
 msgid "_Tools"
 msgstr "ツール(_T)"
 
-#: ../gedit/gedit-ui.h:52
+#: ../gedit/gedit-ui.h:48
 msgid "_Documents"
 msgstr "ドキュメント(_D)"
 
-#: ../gedit/gedit-ui.h:53
+#: ../gedit/gedit-ui.h:49
 msgid "_Help"
 msgstr "ヘルプ(_H)"
 
-#: ../gedit/gedit-ui.h:57
+#: ../gedit/gedit-ui.h:53
 msgid "Create a new document"
 msgstr "新しいドキュメントを作成します"
 
-#: ../gedit/gedit-ui.h:58
+#: ../gedit/gedit-ui.h:54
 msgid "_Open..."
 msgstr "開く(_O)..."
 
-#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1518
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1520
 msgid "Open a file"
 msgstr "ファイルを開きます"
 
 #. Edit menu
-#: ../gedit/gedit-ui.h:62
+#: ../gedit/gedit-ui.h:58
 msgid "Pr_eferences"
 msgstr "設定(_E)"
 
-#: ../gedit/gedit-ui.h:63
+#: ../gedit/gedit-ui.h:59
 msgid "Configure the application"
 msgstr "gedit を設定します"
 
 #. Help menu
-#: ../gedit/gedit-ui.h:66
+#: ../gedit/gedit-ui.h:62
 msgid "_Contents"
 msgstr "目次(_C)"
 
-#: ../gedit/gedit-ui.h:67
+#: ../gedit/gedit-ui.h:63
 msgid "Open the gedit manual"
 msgstr "gedit のマニュアルを開きます"
 
-#: ../gedit/gedit-ui.h:69
+#: ../gedit/gedit-ui.h:65
 msgid "About this application"
 msgstr "このアプリケーションの情報を表示します"
 
-#: ../gedit/gedit-ui.h:73
+#: ../gedit/gedit-ui.h:69
 msgid "Leave fullscreen mode"
 msgstr "フルスクリーンモードの解除"
 
-#: ../gedit/gedit-ui.h:81
+#: ../gedit/gedit-ui.h:77
 msgid "Save the current file"
 msgstr "このファイルを保存します"
 
-#: ../gedit/gedit-ui.h:82
+#: ../gedit/gedit-ui.h:78
 msgid "Save _As..."
 msgstr "別名で保存(_A)..."
 
-#: ../gedit/gedit-ui.h:83
+#: ../gedit/gedit-ui.h:79
 msgid "Save the current file with a different name"
 msgstr "このファイルに名前を付けて保存します"
 
-#: ../gedit/gedit-ui.h:85
+#: ../gedit/gedit-ui.h:81
 msgid "Revert to a saved version of the file"
 msgstr "保存してある元のファイルに戻します"
 
-#: ../gedit/gedit-ui.h:86
+#: ../gedit/gedit-ui.h:82
 msgid "Print Previe_w"
 msgstr "印刷プレビュー(_W)"
 
-#: ../gedit/gedit-ui.h:87
+#: ../gedit/gedit-ui.h:83
 msgid "Print preview"
 msgstr "印刷プレビューを表示します"
 
-#: ../gedit/gedit-ui.h:88
+#: ../gedit/gedit-ui.h:84
 msgid "_Print..."
 msgstr "印刷(_P)..."
 
-#: ../gedit/gedit-ui.h:89
+#: ../gedit/gedit-ui.h:85
 msgid "Print the current page"
 msgstr "このドキュメントを印刷します"
 
-#: ../gedit/gedit-ui.h:93
+#: ../gedit/gedit-ui.h:89
 msgid "Undo the last action"
 msgstr "最後に実行した操作を元に戻します"
 
-#: ../gedit/gedit-ui.h:95
+#: ../gedit/gedit-ui.h:91
 msgid "Redo the last undone action"
 msgstr "最後に実行しようとした操作をやり直します"
 
-#: ../gedit/gedit-ui.h:97
+#: ../gedit/gedit-ui.h:93
 msgid "Cut the selection"
 msgstr "選択範囲を切り取ります"
 
-#: ../gedit/gedit-ui.h:99
+#: ../gedit/gedit-ui.h:95
 msgid "Copy the selection"
 msgstr "選択範囲をコピーします"
 
-#: ../gedit/gedit-ui.h:101
+#: ../gedit/gedit-ui.h:97
 msgid "Paste the clipboard"
 msgstr "クリップボードから貼り付けます"
 
-#: ../gedit/gedit-ui.h:103
+#: ../gedit/gedit-ui.h:99
 msgid "Delete the selected text"
 msgstr "選択したテキストを削除します"
 
-#: ../gedit/gedit-ui.h:104
+#: ../gedit/gedit-ui.h:100
 msgid "Select _All"
 msgstr "すべて選択(_A)"
 
-#: ../gedit/gedit-ui.h:105
+#: ../gedit/gedit-ui.h:101
 msgid "Select the entire document"
 msgstr "ドキュメント全体を選択します"
 
 #. View menu
-#: ../gedit/gedit-ui.h:108
+#: ../gedit/gedit-ui.h:104
 msgid "_Highlight Mode"
 msgstr "強調表示モード(_H)"
 
 #. Search menu
-#: ../gedit/gedit-ui.h:111
+#: ../gedit/gedit-ui.h:107
 msgid "_Find..."
 msgstr "検索(_F)..."
 
-#: ../gedit/gedit-ui.h:112
+#: ../gedit/gedit-ui.h:108
 msgid "Search for text"
 msgstr "文字列を検索します"
 
-#: ../gedit/gedit-ui.h:113
+#: ../gedit/gedit-ui.h:109
 msgid "Find Ne_xt"
 msgstr "次を検索(_X)"
 
-#: ../gedit/gedit-ui.h:114
+#: ../gedit/gedit-ui.h:110
 msgid "Search forwards for the same text"
 msgstr "同じ文字列を前方検索します"
 
-#: ../gedit/gedit-ui.h:115
+#: ../gedit/gedit-ui.h:111
 msgid "Find Pre_vious"
 msgstr "前を検索(_V)"
 
-#: ../gedit/gedit-ui.h:116
+#: ../gedit/gedit-ui.h:112
 msgid "Search backwards for the same text"
 msgstr "同じ文字列を後方検索します"
 
-#: ../gedit/gedit-ui.h:118 ../gedit/gedit-ui.h:121
+#: ../gedit/gedit-ui.h:114 ../gedit/gedit-ui.h:117
 msgid "_Replace..."
 msgstr "置換(_R)..."
 
-#: ../gedit/gedit-ui.h:119 ../gedit/gedit-ui.h:122
+#: ../gedit/gedit-ui.h:115 ../gedit/gedit-ui.h:118
 msgid "Search for and replace text"
 msgstr "文字列を検索し置換します"
 
-#: ../gedit/gedit-ui.h:124
+#: ../gedit/gedit-ui.h:120
 msgid "_Clear Highlight"
 msgstr "強調表示のクリア(_C)"
 
-#: ../gedit/gedit-ui.h:125
+#: ../gedit/gedit-ui.h:121
 msgid "Clear highlighting of search matches"
 msgstr "検索時にマッチした文字列の強調表示をクリアします"
 
-#: ../gedit/gedit-ui.h:126
+#: ../gedit/gedit-ui.h:122
 msgid "Go to _Line..."
 msgstr "指定行へジャンプ(_L)..."
 
-#: ../gedit/gedit-ui.h:127
+#: ../gedit/gedit-ui.h:123
 msgid "Go to a specific line"
 msgstr "指定した行に移動します"
 
 #. Documents menu
-#: ../gedit/gedit-ui.h:130
+#: ../gedit/gedit-ui.h:126
 msgid "_Save All"
 msgstr "すべて保存(_S)"
 
-#: ../gedit/gedit-ui.h:131
+#: ../gedit/gedit-ui.h:127
 msgid "Save all open files"
 msgstr "開いているすべてのファイルを保存します"
 
-#: ../gedit/gedit-ui.h:132
+#: ../gedit/gedit-ui.h:128
 msgid "_Close All"
 msgstr "すべて閉じる(_C)"
 
-#: ../gedit/gedit-ui.h:133
+#: ../gedit/gedit-ui.h:129
 msgid "Close all open files"
 msgstr "開いているすべてのファイルを閉じます"
 
-#: ../gedit/gedit-ui.h:134
+#: ../gedit/gedit-ui.h:130
 msgid "_New Tab Group"
 msgstr "新しいタブグループ(_N)"
 
-#: ../gedit/gedit-ui.h:135
+#: ../gedit/gedit-ui.h:131
 msgid "Create a new tab group"
 msgstr "新しいタブグループを作成します。"
 
-#: ../gedit/gedit-ui.h:136
+#: ../gedit/gedit-ui.h:132
 msgid "P_revious Tab Group"
 msgstr "前のタブグループ(_R)"
 
-#: ../gedit/gedit-ui.h:137
+#: ../gedit/gedit-ui.h:133
 msgid "Switch to the previous tab group"
 msgstr "前のタブグループへ切り替えます"
 
-#: ../gedit/gedit-ui.h:138
+#: ../gedit/gedit-ui.h:134
 msgid "Nex_t Tab Group"
 msgstr "次のタブグループ(_T)"
 
-#: ../gedit/gedit-ui.h:139
+#: ../gedit/gedit-ui.h:135
 msgid "Switch to the next tab group"
 msgstr "次のタブグループへ切り替えます"
 
-#: ../gedit/gedit-ui.h:140
+#: ../gedit/gedit-ui.h:136
 msgid "_Previous Document"
 msgstr "前のドキュメント(_P)"
 
-#: ../gedit/gedit-ui.h:141
+#: ../gedit/gedit-ui.h:137
 msgid "Activate previous document"
 msgstr "前のドキュメントをアクティブにします"
 
-#: ../gedit/gedit-ui.h:142
+#: ../gedit/gedit-ui.h:138
 msgid "N_ext Document"
 msgstr "次のドキュメント(_E)"
 
-#: ../gedit/gedit-ui.h:143
+#: ../gedit/gedit-ui.h:139
 msgid "Activate next document"
 msgstr "次のドキュメントをアクティブにします"
 
-#: ../gedit/gedit-ui.h:144
+#: ../gedit/gedit-ui.h:140
 msgid "_Move to New Window"
 msgstr "新しいウィンドウへ移動(_M)"
 
-#: ../gedit/gedit-ui.h:145
+#: ../gedit/gedit-ui.h:141
 msgid "Move the current document to a new window"
 msgstr "このドキュメントを新しいウィンドウへ移動します"
 
-#: ../gedit/gedit-ui.h:152
+#: ../gedit/gedit-ui.h:148
 msgid "Close the current file"
 msgstr "このファイルを閉じます"
 
-#: ../gedit/gedit-ui.h:159
+#: ../gedit/gedit-ui.h:155
 msgid "Quit the program"
 msgstr "gedit を終了します"
 
-#: ../gedit/gedit-ui.h:164
+#: ../gedit/gedit-ui.h:160
 msgid "_Toolbar"
 msgstr "ツールバー(_T)"
 
-#: ../gedit/gedit-ui.h:165
+#: ../gedit/gedit-ui.h:161
 msgid "Show or hide the toolbar in the current window"
 msgstr "このウィンドウでツールバーの表示/非表示を切り替えます"
 
-#: ../gedit/gedit-ui.h:167
+#: ../gedit/gedit-ui.h:163
 msgid "_Statusbar"
 msgstr "ステータスバー(_S)"
 
-#: ../gedit/gedit-ui.h:168
+#: ../gedit/gedit-ui.h:164
 msgid "Show or hide the statusbar in the current window"
 msgstr "このウィンドウでステータスバーの表示/非表示を切り替えます"
 
-#: ../gedit/gedit-ui.h:171
+#: ../gedit/gedit-ui.h:167
 msgid "Edit text in fullscreen"
 msgstr "フルスクリーンで編集します"
 
-#: ../gedit/gedit-ui.h:178
+#: ../gedit/gedit-ui.h:174
 msgid "Side _Panel"
 msgstr "サイド・パネル(_P)"
 
-#: ../gedit/gedit-ui.h:179
+#: ../gedit/gedit-ui.h:175
 msgid "Show or hide the side panel in the current window"
 msgstr "このウィンドウでサイド・パネルの表示/非表示を切り替えます"
 
-#: ../gedit/gedit-ui.h:181
+#: ../gedit/gedit-ui.h:177
 msgid "_Bottom Panel"
 msgstr "ボトム・パネル(_B)"
 
-#: ../gedit/gedit-ui.h:182
+#: ../gedit/gedit-ui.h:178
 msgid "Show or hide the bottom panel in the current window"
 msgstr "このウィンドウでボトム・パネルの表示/非表示を切り替えます"
 
@@ -2112,29 +2103,29 @@ msgid "/ on %s"
 msgstr "%s の / (ルート)"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:596
+#: ../gedit/gedit-view-frame.c:633
 msgid "_Wrap Around"
 msgstr "折り返しも検索する(_W)"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:606
+#: ../gedit/gedit-view-frame.c:643
 msgid "Match _Entire Word Only"
 msgstr "単語全体にマッチさせる(_E)"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:616
+#: ../gedit/gedit-view-frame.c:653
 msgid "_Match Case"
 msgstr "大/小文字を区別する(_M)"
 
-#: ../gedit/gedit-view-frame.c:875
+#: ../gedit/gedit-view-frame.c:912
 msgid "String you want to search for"
 msgstr "検索する文字列"
 
-#: ../gedit/gedit-view-frame.c:884
+#: ../gedit/gedit-view-frame.c:921
 msgid "Line you want to move the cursor to"
 msgstr "カーソルを移動する行を入力してください"
 
-#: ../gedit/gedit-window.c:1021
+#: ../gedit/gedit-window.c:1023
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "%s 用の強調表示モードにします"
@@ -2142,7 +2133,7 @@ msgstr "%s 用の強調表示モードにします"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1088 ../gedit/gedit-window.c:2103
+#: ../gedit/gedit-window.c:1090 ../gedit/gedit-window.c:2105
 #: ../plugins/externaltools/tools/manager.py:120
 #: ../plugins/externaltools/tools/manager.py:416
 #: ../plugins/externaltools/tools/manager.py:527
@@ -2150,64 +2141,64 @@ msgstr "%s 用の強調表示モードにします"
 msgid "Plain Text"
 msgstr "なし"
 
-#: ../gedit/gedit-window.c:1089
+#: ../gedit/gedit-window.c:1091
 msgid "Disable syntax highlighting"
 msgstr "構文の強調表示を無効にします"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1411
+#: ../gedit/gedit-window.c:1413
 #, c-format
 msgid "Open '%s'"
 msgstr "'%s' を開きます"
 
-#: ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-window.c:1522
 msgid "Open a recently used file"
 msgstr "最近使用したファイルを開きます"
 
-#: ../gedit/gedit-window.c:1526
+#: ../gedit/gedit-window.c:1528
 msgid "Open"
 msgstr "開く"
 
-#: ../gedit/gedit-window.c:1584
+#: ../gedit/gedit-window.c:1586
 msgid "Save"
 msgstr "保存"
 
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1588
 msgid "Print"
 msgstr "印刷"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1590
 msgid "Find"
 msgstr "検索"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1748
+#: ../gedit/gedit-window.c:1750
 #, c-format
 msgid "Activate '%s'"
 msgstr "'%s' に切り替えます"
 
-#: ../gedit/gedit-window.c:2081
+#: ../gedit/gedit-window.c:2083
 msgid "Use Spaces"
 msgstr "空白にする"
 
-#: ../gedit/gedit-window.c:2154
+#: ../gedit/gedit-window.c:2156
 msgid "Tab Width"
 msgstr "タブの幅:"
 
-#: ../gedit/gedit-window.c:2263
+#: ../gedit/gedit-window.c:2265
 msgid "Bracket match is out of range"
 msgstr "対応する括弧は対象範囲から外れています。"
 
-#: ../gedit/gedit-window.c:2268
+#: ../gedit/gedit-window.c:2270
 msgid "Bracket match not found"
 msgstr "対応する括弧は見つかりません。"
 
-#: ../gedit/gedit-window.c:2273
+#: ../gedit/gedit-window.c:2275
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "対応する括弧が %d 行目に見つかりました。"
 
-#: ../gedit/gedit-window.c:4044
+#: ../gedit/gedit-window.c:4046
 msgid "About gedit"
 msgstr "gedit について"
 
@@ -2613,59 +2604,59 @@ msgstr "ファイル参照パネル"
 msgid "File System"
 msgstr "ファイル・システム"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:585
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:577
 msgid "_Set root to active document"
 msgstr "ドキュメントのルートにする(_S)"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:587
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:579
 msgid "Set the root to the active document location"
 msgstr "ドキュメントを格納しているルート・フォルダに指定します"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:592
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:584
 msgid "_Open terminal here"
 msgstr "端末を開く(_O)"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:594
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:586
 msgid "Open a terminal at the currently opened directory"
 msgstr "このフォルダで端末を開きます"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:732
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:724
 msgid "File Browser"
 msgstr "ファイル・ブラウザ"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:875
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:867
 msgid "An error occurred while creating a new directory"
 msgstr "新しいフォルダを生成する際にエラーが発生しました"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:878
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:870
 msgid "An error occurred while creating a new file"
 msgstr "新しいファイルを生成する際にエラーが発生しました"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:881
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:873
 msgid "An error occurred while renaming a file or directory"
 msgstr "ファイルまたはフォルダの名前を変更する際にエラーが発生しました"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:884
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:876
 msgid "An error occurred while deleting a file or directory"
 msgstr "ファイルまたはフォルダを削除する際にエラーが発生しました"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:887
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:879
 msgid "An error occurred while opening a directory in the file manager"
 msgstr "ファイル参照ペインの中でフォルダを開く際にエラーが発生しました"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:890
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:882
 msgid "An error occurred while setting a root directory"
 msgstr "ルート・フォルダを設定する際にエラーが発生しました"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:893
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:885
 msgid "An error occurred while loading a directory"
 msgstr "フォルダを読み込む際にエラーが発生しました"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:896
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:888
 msgid "An error occurred"
 msgstr "エラーが発生しました"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1105
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1104
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
@@ -2673,33 +2664,33 @@ msgstr ""
 "ファイルをゴミ箱へ移動できません。\n"
 "今すぐファイルを削除しますか?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1110
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1109
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr "ファイル \"%s\" をゴミ箱へ移動できません。"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1115
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1114
 msgid "The selected files cannot be moved to the trash."
 msgstr "選択したファイルをゴミ箱へ移動できません。"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1147
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1146
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr "\"%s\" を完全に抹消してもよろしいですか?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1152
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1151
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr "選択したファイルを完全に削除してもよろしいですか?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1155
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1154
 msgid "If you delete an item, it is permanently lost."
 msgstr "削除すると、そのアイテムは完全に無くなります。"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:1728
+#: ../plugins/filebrowser/gedit-file-browser-store.c:1722
 msgid "(Empty)"
 msgstr "(空)"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3474
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3467
 msgid ""
 "The renamed file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
@@ -2708,11 +2699,11 @@ msgstr ""
 "表示するにはフィルタの設定を調整してください。"
 
 #. Translators: This is the default name of new files created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3718
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3711
 msgid "file"
 msgstr "ファイル"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3746
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3739
 msgid ""
 "The new file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
@@ -2721,11 +2712,11 @@ msgstr ""
 "るにはフィルタの設定を変調整してください。"
 
 #. Translators: This is the default name of new directories created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3777
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3770
 msgid "directory"
 msgstr "フォルダ"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3802
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3795
 msgid ""
 "The new directory is currently filtered out. You need to adjust your filter "
 "settings to make the directory visible"
@@ -3025,7 +3016,7 @@ msgstr "コマンドの色(_O):"
 msgid "_Error color:"
 msgstr "エラーの色(_E):"
 
-#. ex:ts=8:et:
+#. ex:ts=4:et:
 #: ../plugins/quickopen/quickopen/popup.py:31
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:1
 msgid "Quick Open"
@@ -3040,7 +3031,7 @@ msgid "Insert often-used pieces of text in a fast way"
 msgstr "よく使用する文字列をすばやく挿入します。"
 
 #: ../plugins/snippets/snippets.plugin.desktop.in.h:2
-#: ../plugins/snippets/snippets/document.py:54
+#: ../plugins/snippets/snippets/document.py:56
 msgid "Snippets"
 msgstr "コード・スニペット"
 
@@ -3053,7 +3044,7 @@ msgid "Create new snippet"
 msgstr "新しいスニペットを生成します"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/manager.py:398
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Delete selected snippet"
 msgstr "選択したスニペットを削除します"
 
@@ -3062,7 +3053,7 @@ msgid "Export selected snippets"
 msgstr "選択したスニペットを保存します"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/manager.py:769
+#: ../plugins/snippets/snippets/manager.py:773
 msgid "Import snippets"
 msgstr "スニペットのインポート"
 
@@ -3076,7 +3067,7 @@ msgstr "スニペットを実行するためのショートカット・キーで
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:657
+#: ../plugins/snippets/snippets/manager.py:663
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "スニペットを実行するために [Tab] キーを押下した後に入力する単語"
 
@@ -3092,11 +3083,11 @@ msgstr "スニペット(_S):"
 msgid "_Tab trigger:"
 msgstr "タブ(_T):"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:141
+#: ../plugins/snippets/snippets/windowactivatable.py:143
 msgid "Manage _Snippets..."
 msgstr "スニペットの管理(_S)..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:142
+#: ../plugins/snippets/snippets/windowactivatable.py:144
 msgid "Manage snippets"
 msgstr "スニペットを管理します"
 
@@ -3111,20 +3102,20 @@ msgstr "スニペットを管理します"
 msgid "Snippets archive"
 msgstr "スニペットのアーカイブ"
 
-#: ../plugins/snippets/snippets/manager.py:65
+#: ../plugins/snippets/snippets/manager.py:62
 msgid "Add a new snippet..."
 msgstr "新しいスニペットの追加..."
 
-#: ../plugins/snippets/snippets/manager.py:118
+#: ../plugins/snippets/snippets/manager.py:115
 msgid "Global"
 msgstr "全般"
 
-#: ../plugins/snippets/snippets/manager.py:395
+#: ../plugins/snippets/snippets/manager.py:393
 msgid "Revert selected snippet"
 msgstr "選択したスニペットを戻します"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:650
+#: ../plugins/snippets/snippets/manager.py:656
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
@@ -3132,73 +3123,73 @@ msgstr ""
 "これは [Tab] のトリガーとしては妥当ではありません。トリガーは文字または非英数"
 "文字(例: {, [ など) を一つだけ含めることができます。"
 
-#: ../plugins/snippets/snippets/manager.py:748
+#: ../plugins/snippets/snippets/manager.py:752
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "インポートする際に次のエラーが発生しました: %s"
 
-#: ../plugins/snippets/snippets/manager.py:755
+#: ../plugins/snippets/snippets/manager.py:759
 msgid "Import successfully completed"
 msgstr "インポートが完了しました"
-
-#: ../plugins/snippets/snippets/manager.py:774
-#: ../plugins/snippets/snippets/manager.py:860
-#: ../plugins/snippets/snippets/manager.py:923
-msgid "All supported archives"
-msgstr "サポートしている全アーカイブ"
-
-#: ../plugins/snippets/snippets/manager.py:775
-#: ../plugins/snippets/snippets/manager.py:861
-#: ../plugins/snippets/snippets/manager.py:924
-msgid "Gzip compressed archive"
-msgstr "Gzip 圧縮のアーカイブ"
-
-#: ../plugins/snippets/snippets/manager.py:776
-#: ../plugins/snippets/snippets/manager.py:862
-#: ../plugins/snippets/snippets/manager.py:925
-msgid "Bzip2 compressed archive"
-msgstr "Bzip2 圧縮のアーカイブ"
-
-#: ../plugins/snippets/snippets/manager.py:777
-msgid "Single snippets file"
-msgstr "単一のファイル"
 
 #: ../plugins/snippets/snippets/manager.py:778
 #: ../plugins/snippets/snippets/manager.py:864
 #: ../plugins/snippets/snippets/manager.py:927
+msgid "All supported archives"
+msgstr "サポートしている全アーカイブ"
+
+#: ../plugins/snippets/snippets/manager.py:779
+#: ../plugins/snippets/snippets/manager.py:865
+#: ../plugins/snippets/snippets/manager.py:928
+msgid "Gzip compressed archive"
+msgstr "Gzip 圧縮のアーカイブ"
+
+#: ../plugins/snippets/snippets/manager.py:780
+#: ../plugins/snippets/snippets/manager.py:866
+#: ../plugins/snippets/snippets/manager.py:929
+msgid "Bzip2 compressed archive"
+msgstr "Bzip2 圧縮のアーカイブ"
+
+#: ../plugins/snippets/snippets/manager.py:781
+msgid "Single snippets file"
+msgstr "単一のファイル"
+
+#: ../plugins/snippets/snippets/manager.py:782
+#: ../plugins/snippets/snippets/manager.py:868
+#: ../plugins/snippets/snippets/manager.py:931
 msgid "All files"
 msgstr "すべてのファイル"
 
-#: ../plugins/snippets/snippets/manager.py:790
+#: ../plugins/snippets/snippets/manager.py:794
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "スニペットを保存する際にエラーが発生しました: %s"
 
-#: ../plugins/snippets/snippets/manager.py:794
+#: ../plugins/snippets/snippets/manager.py:798
 msgid "Export successfully completed"
 msgstr "保存が完了しました"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:834
-#: ../plugins/snippets/snippets/manager.py:901
+#: ../plugins/snippets/snippets/manager.py:838
+#: ../plugins/snippets/snippets/manager.py:905
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr "選択した<b>システム</b>スニペットも一緒に保存しますか?"
 
-#: ../plugins/snippets/snippets/manager.py:849
-#: ../plugins/snippets/snippets/manager.py:919
+#: ../plugins/snippets/snippets/manager.py:853
+#: ../plugins/snippets/snippets/manager.py:923
 msgid "There are no snippets selected to be exported"
 msgstr "保存するスニペットがありません"
 
-#: ../plugins/snippets/snippets/manager.py:854
-#: ../plugins/snippets/snippets/manager.py:892
+#: ../plugins/snippets/snippets/manager.py:858
+#: ../plugins/snippets/snippets/manager.py:896
 msgid "Export snippets"
 msgstr "スニペットの保存"
 
-#: ../plugins/snippets/snippets/manager.py:1031
+#: ../plugins/snippets/snippets/manager.py:1037
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "(新しいショートカットを入力してください/[BS]キーでクリア)"
 
-#: ../plugins/snippets/snippets/manager.py:1033
+#: ../plugins/snippets/snippets/manager.py:1039
 msgid "Type a new shortcut"
 msgstr "(新しいショートカットを入力してください)"
 
@@ -3351,8 +3342,8 @@ msgstr "スペル・チェック完了"
 #. * the second %s is the locale name. Example:
 #. * "French (France)"
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:285
-#: ../plugins/spell/gedit-spell-checker-language.c:291
+#: ../plugins/spell/gedit-spell-checker-language.c:373
+#: ../plugins/spell/gedit-spell-checker-language.c:379
 #, c-format
 msgctxt "language"
 msgid "%s (%s)"
@@ -3361,7 +3352,7 @@ msgstr "%s (%s)"
 #. Translators: this refers to an unknown language code
 #. * (one which isn't in our built-in list).
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:300
+#: ../plugins/spell/gedit-spell-checker-language.c:388
 #, c-format
 msgctxt "language"
 msgid "Unknown (%s)"
@@ -3370,7 +3361,7 @@ msgstr "不明 (%s)"
 #. Translators: this refers the Default language used by the
 #. * spell checker
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:406
+#: ../plugins/spell/gedit-spell-checker-language.c:494
 msgctxt "language"
 msgid "Default"
 msgstr "デフォルト"
@@ -3584,6 +3575,16 @@ msgstr "アクセスを記録し、gedit で使用された文書のイベント
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
 msgstr "Zeitgeist データ・プロバイダ"
+
+#~ msgid ""
+#~ "List of VFS schemes gedit supports in write mode. The 'file' scheme is "
+#~ "writable by default."
+#~ msgstr ""
+#~ "gedit が書き込みモードでサポートする VFS の並びです。'file' のスキームはデ"
+#~ "フォルトで書き込み可能です。"
+
+#~ msgid "Writable VFS schemes"
+#~ msgstr "書き込み可能な VFS スキーム"
 
 #~ msgid ""
 #~ "Style for the toolbar buttons. Possible values are \"system\" to use the "
