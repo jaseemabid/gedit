@@ -22,7 +22,8 @@ AC_SUBST(GEDIT_MICRO_VERSION, gedit_micro_version)
 
 AM_INIT_AUTOMAKE([1.11 tar-pax dist-xz no-dist-gzip -Wno-portability])
 AM_MAINTAINER_MODE
-m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
+
+AM_SILENT_RULES([yes])
 
 # Checks for programs
 AC_PROG_CC
