@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-04-19 21:51+0000\n"
-"PO-Revision-Date: 2011-04-21 18:40+0200\n"
+"POT-Creation-Date: 2011-05-02 15:51+0000\n"
+"PO-Revision-Date: 2011-05-03 17:54+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -245,10 +245,6 @@ msgstr ""
 "gui><gui>Deshacer</gui></guiseq>."
 
 #: C/gedit-undo-recent-action.page:30(p)
-#| msgid ""
-#| "<app>gedit</app> will undo one action every time you press "
-#| "<keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</"
-#| "gui><gui>Undo</gui></guiseq> is pressed."
 msgid ""
 "<app>gedit</app> will undo one action every time you press "
 "<keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</"
@@ -791,7 +787,7 @@ msgstr "Alt + F12"
 
 #: C/gedit-shortcut-keys.page:227(p)
 msgid "Run \"make\" in the current directory (with plugin)"
-msgstr "Ejecutar «make» en el directorio actual (con complemento)"
+msgstr "Ejecutar «make» en la carpeta actual (con complemento)"
 
 #: C/gedit-shortcut-keys.page:227(p)
 msgid "F8"
@@ -845,12 +841,12 @@ msgstr ""
 "<keyseq><key>Ctrl</key><key>F</key></keyseq>. Esto moverá su cursor hasta el "
 "principio de la <gui>ventana de búsqueda</gui>."
 
-#: C/gedit-search.page:25(p)
+#: C/gedit-search.page:27(p)
 msgid "Type the text you wish to search for in the <gui>search window</gui>."
 msgstr ""
 "Introduzca el texto que quiere buscar en la <gui>ventana de búsqueda</gui>."
 
-#: C/gedit-search.page:26(p)
+#: C/gedit-search.page:28(p)
 msgid ""
 "As you type, <app>gedit</app> will begin highlighting the portions of text "
 "that match what you have entered."
@@ -858,23 +854,45 @@ msgstr ""
 "A medida que escribe, <app>gedit</app> empezará a resaltar los fragmentos de "
 "texto que coniciden con lo que ha escrito."
 
-#: C/gedit-search.page:27(p)
-msgid ""
-"Use the <gui>up</gui> or <gui>down</gui> facing arrows next to the "
-"<gui>search window</gui> (or <keyseq><key>Ctrl</key><key>G</key></keyseq> or "
-"<keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>) to scroll up "
-"or down through the highlighted text."
-msgstr ""
-"Use las flechas <gui>arriba</gui> o <gui>abajo</gui> junto a la <gui>ventana "
-"de búsqueda</gui> (o <keyseq><key>Ctrl</key><key>G</key></keyseq> o "
-"<keyseq><key>Ctrl</key><key>Mayús</key><key>G</key></keyseq>) para "
-"desplazarse arriba o abajo a través del texto resaltado."
-
 #: C/gedit-search.page:30(p)
+#| msgid "To create a new snippet, do the following:"
+msgid "To scroll through the search results, do any of the following:"
+msgstr ""
+"Para desplazarse por los resultados de la búsqueda, realice cualquiera de "
+"los siguientes pasos:"
+
+#: C/gedit-search.page:31(p)
+msgid ""
+"Click on the <gui>up</gui> or <gui>down</gui> facing arrows next to the "
+"<gui>search window</gui>"
+msgstr ""
+"Pulse en las flechas <gui>arriba</gui> o <gui>abajo</gui> junto a la "
+"<gui>ventana de búsqueda</gui>"
+
+#: C/gedit-search.page:33(p)
+msgid ""
+"Press the <key>up arrow</key> or <key>down arrow</key> keys on your keyboard"
+msgstr ""
+"Pulse las teclas <key>flecha arriba</key> o <key>flecha abajo</key> en su "
+"teclado"
+
+#: C/gedit-search.page:34(p)
+#| msgid ""
+#| "To switch between open tabs while in fullscreen mode, press either "
+#| "<keyseq><key>Ctrl</key><key>Alt</key><key>PgUp</key></keyseq> or "
+#| "<keyseq><key>Ctrl</key><key>Alt</key><key>PgDn</key></keyseq>."
+msgid ""
+"Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</"
+"key><key> Shift</key><key>G</key></keyseq>."
+msgstr ""
+"Pulse <keyseq><key>Ctrl</key><key>G</key></keyseq> o <keyseq><key>Ctrl</"
+"key><key>Mayús</key><key>G</key></keyseq>."
+
+#: C/gedit-search.page:38(p)
 msgid "To close the <gui>search window</gui>, press <key>Esc</key>."
 msgstr "Para cerrar la <gui>ventana de búsqueda</gui>, pulse <key>Esc</key>."
 
-#: C/gedit-search.page:33(p)
+#: C/gedit-search.page:41(p)
 msgid ""
 "The text that you've searched for will remain highlighted by gedit, even "
 "after you have completed your search. To remove the highlight, click "
@@ -1171,10 +1189,6 @@ msgstr ""
 "gui></guiseq>."
 
 #: C/gedit-plugins-terminal.page:21(p)
-#| msgid ""
-#| "Once you have enabled the plugin, add the terminal to the bottom panel by "
-#| "selecting <guiseq><gui>View</gui><gui>Bottom Pane</gui></guiseq>, or just "
-#| "press <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
 msgid ""
 "Once you have enabled the plugin, add the terminal to the bottom pane by "
 "selecting <guiseq><gui>View</gui><gui>Bottom Pane</gui></guiseq>, or just "
@@ -1249,8 +1263,8 @@ msgid ""
 msgstr ""
 "El panel lateral muestra inicialmente una lista de documentos abiertos, por "
 "lo que para ver y usar la <app>Lista de etiquetas</app>, deberá pulsar en la "
-"pestaña que muestra el icono «más» en la parte inferior del panel lateral. "
-"El icono se parece a esto:"
+"pestaña que muestra el icono «más» en la parte inferior del panel lateral. El "
+"icono se parece a esto:"
 
 #: C/gedit-plugins-tag-list.page:37(title)
 msgid "Inserting Tags and Special Characters"
@@ -1383,8 +1397,8 @@ msgid ""
 "The Sort dialog will open, allowing you to choose between several sorting "
 "options:"
 msgstr ""
-"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones "
-"de ordenación:"
+"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones de "
+"ordenación:"
 
 #: C/gedit-plugins-sort.page:30(p)
 msgid ""
@@ -1825,10 +1839,6 @@ msgid "Opening files from the side pane"
 msgstr "Abrir archivos desde el panel lateral"
 
 #: C/gedit-plugins-file-browser.page:26(p)
-#| msgid ""
-#| "To activate and use the <gui>side pane</gui>, select <guiseq><gui>View</"
-#| "gui><gui>Side pane</gui></guiseq> (or just press<key>F9</key>), and then "
-#| "click on the <gui>file-browser</gui> icon at the bottom of the pane."
 msgid ""
 "To activate and use the <gui>side pane</gui>, select <guiseq><gui>View</"
 "gui><gui>Side pane</gui></guiseq> (or just press <key>F9</key>), and then "
@@ -1893,8 +1903,7 @@ msgid ""
 msgstr ""
 "Este complemento es para usuarios avanzados y para usarlo correctamente "
 "requiere conocimientos de «script». Use este complemento con cuidado, ya que "
-"errores con sus «script» pueden afectar a su trabajo de forma no "
-"intencionada."
+"errores con sus «script» pueden afectar a su trabajo de forma no intencionada."
 
 #: C/gedit-plugins-doc-stats.page:18(title)
 msgid "View document statistics"
@@ -2021,9 +2030,6 @@ msgid "Auto-complete closing brackets"
 msgstr "Autocompletar cerrado de paréntesis"
 
 #: C/gedit-plugins-bracket-comp.page:16(p)
-#| msgid ""
-#| "The <app>Bracket Completion</app> plugin will auto-complete closing "
-#| "brackets for curly braces, parantheses, and square brackets."
 msgid ""
 "The <app>Bracket Completion</app> plugin will auto-complete closing brackets "
 "for curly braces, parentheses, and square brackets."
@@ -2121,13 +2127,11 @@ msgstr ""
 
 #: C/gedit-open-recent.page:25(p)
 msgid ""
-"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</"
-"gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></"
-"guiseq>."
+"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</gui><gui>gedit-"
+"2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq>."
 msgstr ""
-"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</"
-"gui><gui>gedit-2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</"
-"gui></guiseq>."
+"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</gui><gui>gedit-"
+"2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</gui></guiseq>."
 
 #: C/gedit-open-recent.page:26(p)
 msgid ""
@@ -2623,6 +2627,17 @@ msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2011\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2006-2011\n"
 "María Majadas <maria.majadas@hispalinux.es>, 2005"
+
+#~ msgid ""
+#~ "Use the <gui>up</gui> or <gui>down</gui> facing arrows next to the "
+#~ "<gui>search window</gui> (or <keyseq><key>Ctrl</key><key>G</key></keyseq> "
+#~ "or <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>) to "
+#~ "scroll up or down through the highlighted text."
+#~ msgstr ""
+#~ "Use las flechas <gui>arriba</gui> o <gui>abajo</gui> junto a la "
+#~ "<gui>ventana de búsqueda</gui> (o <keyseq><key>Ctrl</key><key>G</key></"
+#~ "keyseq> o <keyseq><key>Ctrl</key><key>Mayús</key><key>G</key></keyseq>) "
+#~ "para desplazarse arriba o abajo a través del texto resaltado."
 
 #~ msgid ""
 #~ "Be careful. If you make a mistake outside of <app>gedit</app> (e.g., If "
@@ -5495,9 +5510,6 @@ msgstr ""
 #~ "Alternativamente, pulse <keycombo><keycap>Ctrl</keycap><keycap>Espacio</"
 #~ "keycap></keycombo> para ver una lista de recortes que puede insertar."
 
-#~ msgid "To create a new snippet, do the following:"
-#~ msgstr "Puede crear un recorte nuevo, haga lo siguiente:"
-
 #~ msgid ""
 #~ "Choose <menuchoice><guimenu>Tools</guimenu><guimenuitem>Manage Snippets</"
 #~ "guimenuitem></menuchoice>. The <guilabel>Snippets Manager</guilabel> "
@@ -6056,8 +6068,8 @@ msgstr ""
 #~ "pane to show the tag list tab."
 #~ msgstr ""
 #~ "Por omisión, el panel lateral muestra una pestaña conteniendo una lista "
-#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en "
-#~ "la parte de abajo del panel lateral para mostrar la pestaña de listas de "
+#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en la "
+#~ "parte de abajo del panel lateral para mostrar la pestaña de listas de "
 #~ "etiquetas."
 
 #~ msgid ""
