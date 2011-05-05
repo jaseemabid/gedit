@@ -37,20 +37,23 @@ G_BEGIN_DECLS
 #define GEDIT_IS_VIEW_FRAME_CLASS(klass)	(G_TYPE_CHECK_CLASS_TYPE ((klass), GEDIT_TYPE_VIEW_FRAME))
 #define GEDIT_VIEW_FRAME_GET_CLASS(obj)		(G_TYPE_INSTANCE_GET_CLASS ((obj), GEDIT_TYPE_VIEW_FRAME, GeditViewFrameClass))
 
-typedef struct _GeditViewFrame		GeditViewFrame;
-typedef struct _GeditViewFrameClass	GeditViewFrameClass;
-typedef struct _GeditViewFramePrivate	GeditViewFramePrivate;
+typedef struct _GeditViewFrame			GeditViewFrame;
+typedef struct _GeditViewFramePrivate		GeditViewFramePrivate;
+typedef struct _GeditViewFrameClass		GeditViewFrameClass;
+typedef struct _GeditViewFrameClassPrivate	GeditViewFrameClassPrivate;
 
 struct _GeditViewFrame
 {
 	GtkVBox parent;
-	
+
 	GeditViewFramePrivate *priv;
 };
 
 struct _GeditViewFrameClass
 {
 	GtkVBoxClass parent_class;
+
+	GeditViewFrameClassPrivate *priv;
 };
 
 GType		 gedit_view_frame_get_type	(void) G_GNUC_CONST;

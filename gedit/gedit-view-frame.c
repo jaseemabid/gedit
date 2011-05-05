@@ -74,6 +74,7 @@ struct _GeditViewFramePrivate
 	GtkWidget   *slider;
 	GtkWidget   *search_widget;
 	GtkWidget   *search_entry;
+	GtkCssProvider *search_css;
 
 	guint        typeselect_flush_timeout;
 	glong        view_scroll_event_id;
@@ -82,6 +83,11 @@ struct _GeditViewFramePrivate
 
 	guint        disable_popdown : 1;
 	guint        wrap_around : 1;
+};
+
+struct _GeditViewFrameClassPrivate
+{
+	GtkCssProvider *search_css;
 };
 
 enum
@@ -100,7 +106,8 @@ typedef enum
 /* The search entry completion is shared among all the views */
 GtkListStore *search_completion_model = NULL;
 
-G_DEFINE_TYPE (GeditViewFrame, gedit_view_frame, GTK_TYPE_VBOX)
+G_DEFINE_TYPE_WITH_CODE (GeditViewFrame, gedit_view_frame, GTK_TYPE_VBOX,
+                         g_type_add_class_private (g_define_type_id, sizeof (GeditViewFrameClassPrivate)))
 
 static void
 gedit_view_frame_finalize (GObject *object)
@@ -283,40 +290,25 @@ search_entry_flush_timeout (GeditViewFrame *frame)
 }
 
 static void
-set_entry_background (GtkWidget               *entry,
+set_entry_background (GeditViewFrame          *frame,
+                      GtkWidget               *entry,
                       GeditSearchEntryBgColor  col)
 {
-	GdkRGBA *fg, *bg;
+	GtkStyleContext *context;
+
+	context = gtk_widget_get_style_context (GTK_WIDGET (entry));
 
 	if (col == GEDIT_SEARCH_ENTRY_NOT_FOUND)
 	{
-		GdkRGBA error_default_fg = { 0.65, 0.15, 0.15, 1.0 };
-		GdkRGBA error_default_bg = { 0.93, 0.21, 0.21, 1.0 };
-		GdkRGBA sym_bg, sym_fg;
-		GtkStyleContext *context;
-
-		context = gtk_widget_get_style_context (entry);
-
-		if (gtk_style_context_lookup_color (context, "error_fg_color", &sym_fg) &&
-		    gtk_style_context_lookup_color (context, "error_bg_color", &sym_bg))
-		{
-			fg = &sym_fg;
-			bg = &sym_bg;
-		}
-		else
-		{
-			fg = &error_default_fg;
-			bg = &error_default_bg;
-		}
+		gtk_style_context_add_provider (context,
+		                                GTK_STYLE_PROVIDER (GEDIT_VIEW_FRAME_GET_CLASS (frame)->priv->search_css),
+		                                GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 	}
 	else /* reset */
 	{
-		fg = NULL;
-		bg = NULL;
+		gtk_style_context_remove_provider (context,
+		                                   GTK_STYLE_PROVIDER (GEDIT_VIEW_FRAME_GET_CLASS (frame)->priv->search_css));
 	}
-
-	gtk_widget_override_background_color (entry, 0, bg);
-	gtk_widget_override_color (entry, 0, fg);
 }
 
 static gboolean
@@ -429,12 +421,12 @@ run_search (GeditViewFrame   *frame,
 	{
 		gedit_view_scroll_to_cursor (GEDIT_VIEW (frame->priv->view));
 
-		set_entry_background (frame->priv->search_entry,
+		set_entry_background (frame, frame->priv->search_entry,
 		                      GEDIT_SEARCH_ENTRY_NORMAL);
 	}
 	else
 	{
-		set_entry_background (frame->priv->search_entry,
+		set_entry_background (frame, frame->priv->search_entry,
 		                      GEDIT_SEARCH_ENTRY_NOT_FOUND);
 	}
 
@@ -1018,12 +1010,12 @@ search_init (GtkWidget      *entry,
 
 			if (!moved || !moved_offset)
 			{
-				set_entry_background (frame->priv->search_entry,
+				set_entry_background (frame, frame->priv->search_entry,
 				                      GEDIT_SEARCH_ENTRY_NOT_FOUND);
 			}
 			else
 			{
-				set_entry_background (frame->priv->search_entry,
+				set_entry_background (frame, frame->priv->search_entry,
 				                      GEDIT_SEARCH_ENTRY_NORMAL);
 			}
 		}
@@ -1378,6 +1370,9 @@ static void
 gedit_view_frame_class_init (GeditViewFrameClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
+	static const gchar error_style[] =
+		"@define-color text_color @error_fg_color;\n"
+		"@define-color base_color @error_bg_color;\n";
 
 	object_class->finalize = gedit_view_frame_finalize;
 	object_class->dispose = gedit_view_frame_dispose;
@@ -1400,6 +1395,11 @@ gedit_view_frame_class_init (GeditViewFrameClass *klass)
 	                                                      G_PARAM_STATIC_STRINGS));
 
 	g_type_class_add_private (object_class, sizeof (GeditViewFramePrivate));
+
+	klass->priv = G_TYPE_CLASS_GET_PRIVATE (klass, GEDIT_TYPE_VIEW_FRAME, GeditViewFrameClassPrivate);
+
+	klass->priv->search_css = gtk_css_provider_new ();
+	gtk_css_provider_load_from_data (klass->priv->search_css, error_style, -1, NULL);
 }
 
 static GMountOperation *
