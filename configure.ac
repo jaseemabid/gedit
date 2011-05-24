@@ -20,7 +20,7 @@ AC_SUBST(GEDIT_MINOR_VERSION, gedit_minor_version)
 AC_DEFINE(GEDIT_MICRO_VERSION, gedit_micro_version, [Gedit micro version])
 AC_SUBST(GEDIT_MICRO_VERSION, gedit_micro_version)
 
-AM_INIT_AUTOMAKE([1.11 tar-pax dist-xz no-dist-gzip -Wno-portability])
+AM_INIT_AUTOMAKE([1.11 tar-ustar dist-xz no-dist-gzip -Wno-portability])
 AM_MAINTAINER_MODE
 
 AM_SILENT_RULES([yes])
