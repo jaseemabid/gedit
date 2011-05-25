@@ -1237,8 +1237,6 @@ init_search_entry (GeditViewFrame *frame)
 		guint     old_find_flags = 0;
 		gint      sel_len = 0;
 
-		g_free (frame->priv->old_search_text);
-
 		old_find_text = gedit_document_get_search_text (GEDIT_DOCUMENT (buffer),
 		                                                &old_find_flags);
 
@@ -1260,6 +1258,7 @@ init_search_entry (GeditViewFrame *frame)
 		}
 		else if (old_find_text != NULL)
 		{
+			g_free (frame->priv->old_search_text);
 			frame->priv->old_search_text = old_find_text;
 			add_search_completion_entry (old_find_text);
 			g_signal_handler_block (frame->priv->search_entry,
