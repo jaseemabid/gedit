@@ -2,17 +2,17 @@
 # Copyright © 2000-2007, Free Software Foundation, Inc.
 # Quico Llach <quico@softcatala.org>, 2000, 2001, 2002.
 # Jordi Mallach <jordi@sindominio.net>, 2002, 2003, 2004.
-# Jordi Mas i Hernàndez <jmas@softcatala.org>, 2003.
+# Jordi Mas i Hernàndez <jmas@softcatala.org>, 2003. 
 # Aleix Badia i Bosch <abadia@ica.es>, 2004.
 # Josep Puigdemont <josep.puigdemont@gmail.com>, 2005, 2006, 2007.
-# Gil Forcada <gilforcada@guifi.net>, 2008, 2009, 2010.
+# Gil Forcada <gilforcada@guifi.net>, 2008, 2009, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-26 11:18+0200\n"
-"PO-Revision-Date: 2010-05-26 20:49+0200\n"
+"POT-Creation-Date: 2011-05-29 18:08+0200\n"
+"PO-Revision-Date: 2011-04-03 23:20+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -107,9 +107,8 @@ msgid "Highlight Current Line"
 msgstr "Ressalta la línia actual"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:17
-#, fuzzy
 msgid "Highlight Matching Brackets"
-msgstr "Ressalta el claudàtor concordant"
+msgstr "Ressalta els claudàtors concordants"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:18
 msgid ""
@@ -135,14 +134,6 @@ msgstr "Mode d'ajustament de línia"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
 msgid ""
-"List of VFS schemes gedit supports in write mode. The 'file' scheme is "
-"writable by default."
-msgstr ""
-"Llista d'esquemes VFS que el gedit permet en mode d'escriptura. Per defecte, "
-"es permet l'escriptura de l'esquema «file»."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
-msgid ""
 "List of active plugins. It contains the \"Location\" of the active plugins. "
 "See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
 msgstr ""
@@ -150,7 +141,7 @@ msgstr ""
 "Vegeu el fitxer .gedit-plugin per obtindre la «Location» d'un connector "
 "determinat."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
 msgid ""
 "List of encodings shown in the Character Encoding menu in open/save file "
 "selector. Only recognized encodings are used."
@@ -158,15 +149,15 @@ msgstr ""
 "Llista de les codificacions mostrades al menú de codificació de caràcters al "
 "diàleg obri/alça de fitxer. Només s'utilitzen codificacions reconegudes."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
 msgid "Maximum Number of Undo Actions"
 msgstr "Nombre màxim d'accions per desfer"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
 msgid "Maximum Recent Files"
 msgstr "Màxim de fitxers recents"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
 msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use "
 "\"-1\" for unlimited number of actions."
@@ -174,7 +165,7 @@ msgstr ""
 "El nombre màxim d'accions que el gedit podrà desfer o refer. Utilitzeu «-1» "
 "per a un nombre il·limitat d'accions."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
 msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use "
 "\"-1\" for unlimited number of actions. Deprecated since 2.12.0"
@@ -183,11 +174,11 @@ msgstr ""
 "per a un nombre il·limitat d'accions. A partir de la versió 2.12.0 es "
 "recomana no fer servir esta opció"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
 msgid "Notebook Show Tabs Mode"
-msgstr ""
+msgstr "Mode de visualització de les pestanyes"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
 msgid ""
 "Number of minutes after which gedit will automatically save modified files. "
 "This will only take effect if the \"Autosave\" option is turned on."
@@ -196,40 +187,39 @@ msgstr ""
 "els fitxers modificats. Només afectarà si l'opció «Alça automàticament» està "
 "habilitada."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
 msgid "Print Header"
 msgstr "Imprimeix la capçalera"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
 msgid "Print Line Numbers"
 msgstr "Imprimeix els números de línia"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
 msgid "Print Syntax Highlighting"
 msgstr "Imprimeix el ressaltat de sintaxi"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
 msgid "Printing Line Wrapping Mode"
 msgstr "Mode d'ajustament de línia en la impressió"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
 msgid "Restore Previous Cursor Position"
 msgstr "Restableix la posició prèvia del cursor"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
 msgid "Right Margin Position"
 msgstr "Posició del marge dret"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
-#, fuzzy
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
 msgid "Side panel is Visible"
-msgstr "El quadre del costat és visible"
+msgstr "El quadre lateral és visible"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
 msgid "Smart Home End"
 msgstr "Tecles d'inici i final intel·ligents"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
 msgid ""
 "Sorted list of encodings used by gedit for automatically detecting the "
 "encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
@@ -240,8 +230,7 @@ msgstr ""
 "codificació de la localització actual. Només s'utilitzen les codificacions "
 "reconegudes."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
-#, fuzzy
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
 msgid ""
 "Specifies how the cursor moves when the HOME and END keys are pressed. Use "
 "\"disabled\" to always move at the start/end of the line, \"after\" to move "
@@ -252,16 +241,15 @@ msgid ""
 "the text instead of the start/end of the line."
 msgstr ""
 "Especifica la manera com es mou el cursor quan es premen les tecles d'inici "
-"i de final. Empreu «DISABLED» (inhabilitat) per moure'l sempre al principi o "
-"al final de les línies. Empreu «AFTER» (després) per moure'l a l'inici o al "
-"final de la línia la primera vegada que es premi la tecla, i al principi o "
-"al final del text la segona vegada que es premi. Empreu «BEFORE» (abans) per "
+"i de final. Empreu «disabled» (inhabilitat) per moure'l sempre al principi o "
+"al final de les línies. Empreu «after» (després) per moure'l a l'inici o al "
+"final de la línia la primera vegada que es prema la tecla, i al principi o "
+"al final del text la segona vegada que es prema. Empreu «abans» (abans) per "
 "moure el cursor al principi o al final del text abans de moure'l al principi "
-"o al final de la línia. Empreu «ALWAYS» (sempre) per moure el cursor sempre "
+"o al final de la línia. Empreu «always» (sempre) per moure el cursor sempre "
 "al principi o al final del text en lloc d'al principi o al final de la línia."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
-#, fuzzy
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
 msgid ""
 "Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
 "\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
@@ -269,13 +257,12 @@ msgid ""
 "make sure they appear exactly as mentioned here."
 msgstr ""
 "Especifica com ajustar les línies llargues per imprimir. Utilitzeu "
-"«GTK_WRAP_NONE» per no ajustar, «GTK_WRAP_WORD» per ajustar als límits de "
-"les paraules i «GTK_WRAP_CHAR» per ajustar als límits de caràcters "
+"«none» (cap) per no ajustar, «word» (paraula) per ajustar als límits de les "
+"paraules i «char» (caràcter) per ajustar als límits de caràcters "
 "individuals. Recordeu que els valors són sensibles a majúscules i "
 "minúscules, assegureu-vos que apareixen exactament com es mencionen ací."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
-#, fuzzy
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
 msgid ""
 "Specifies how to wrap long lines in the editing area. Use \"none\" for no "
 "wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
@@ -283,20 +270,20 @@ msgid ""
 "sensitive, so make sure they appear exactly as mentioned here."
 msgstr ""
 "Especifica com ajustar les línies llargues en l'àrea d'edició. Utilitzeu "
-"«GTK_WRAP_NONE» per no ajustar, «GTK_WRAP_WORD» per ajustar als límits de "
-"les paraules i «GTK_WRAP_CHAR» per ajustar als límits de caràcters "
+"«none» (cap) per no ajustar, «word» (paraula) per ajustar als límits de les "
+"paraules i «char» (caràcter) per ajustar als límits de caràcters "
 "individuals. Teniu en compte que els valors són sensibles a majúscules i "
 "minúscules, així doncs assegureu-vos que apareixen exactament com es "
 "mencionen ací."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
 msgid ""
 "Specifies the font to use for a document's body when printing documents."
 msgstr ""
 "Especifica el tipus de lletra a utilitzar pel cos d'un document en imprimir "
 "documents."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
 msgid ""
 "Specifies the font to use for line numbers when printing. This will only "
 "take effect if the \"Print Line Numbers\" option is non-zero."
@@ -304,7 +291,7 @@ msgstr ""
 "Especifica el tipus de lletra dels números de línia en imprimir. Només "
 "afectarà si l'opció «Imprimeix els números de línia» no equival a zero."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
 msgid ""
 "Specifies the font to use for page headers when printing a document. This "
 "will only take effect if the \"Print Header\" option is turned on."
@@ -313,7 +300,7 @@ msgstr ""
 "imprimir un document. Només afectarà si l'opció «Imprimeix capçaleres» està "
 "habilitada."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
 msgid ""
 "Specifies the maximum number of recently opened files that will be displayed "
 "in the \"Recent Files\" submenu."
@@ -321,7 +308,7 @@ msgstr ""
 "Especifica el número màxim de fitxers recentment oberts que es mostraran en "
 "el submenú «Fitxers recents»."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
 msgid ""
 "Specifies the number of spaces that should be displayed instead of Tab "
 "characters."
@@ -329,55 +316,54 @@ msgstr ""
 "Especifica el número d'espais que s'haurien de mostrar en comptes de "
 "caràcters de tabulació."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
 msgid "Specifies the position of the right margin."
 msgstr "Especifica la posició del marge dret."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
-#, fuzzy
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
 msgid ""
 "Specifies when to show the notebook tabs. Use \"never\" to never show the "
 "tabs, \"always\" to always show the tabs, and \"auto\" to show the tabs only "
 "when there is more than one tab. Note that the values are case-sensitive, so "
 "make sure they appear exactly as mentioned here."
 msgstr ""
-"Especifica com ajustar les línies llargues per imprimir. Utilitzeu "
-"«GTK_WRAP_NONE» per no ajustar, «GTK_WRAP_WORD» per ajustar als límits de "
-"les paraules i «GTK_WRAP_CHAR» per ajustar als límits de caràcters "
-"individuals. Recordeu que els valors són sensibles a majúscules i "
-"minúscules, assegureu-vos que apareixen exactament com es mencionen ací."
+"Especifica quan s'han de mostrar les pestanyes. Empreu «never» (mai) per no "
+"mostrar-les mai. Empreu «always» (sempre) per mostrar-les sempre. Empreu "
+"«auto» (automàtic) per mostrar-les quan hi haja més d'una pestanya. Teniu en "
+"compte que els valors són sensibles a majúscules i minúscules, així doncs "
+"assegureu-vos que apareixen exactament com es mencionen ací."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
 msgid "Status Bar is Visible"
 msgstr "La barra d'estat és visible"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
 msgid "Style Scheme"
 msgstr "Esquema d'estil"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
 msgid "Tab Size"
 msgstr "Mida de la pestanya"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
 msgid "The ID of a GtkSourceView Style Scheme used to color the text."
 msgstr ""
 "L'identificador de l'esquema d'estil del GtkSourceView que s'empra per "
 "acolorir el text."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
 msgid "Toolbar is Visible"
 msgstr "La barra d'eines és visible"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
 msgid "Undo Actions Limit (DEPRECATED)"
 msgstr "Límit d'accions a desfer (desaconsellat)"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
 msgid "Use Default Font"
 msgstr "Utilitza el tipus de lletra predeterminat"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
 msgid ""
 "Whether gedit should automatically save modified files after a time "
 "interval. You can set the time interval with the \"Autosave Interval\" "
@@ -387,7 +373,7 @@ msgstr ""
 "d'un interval de temps. Podeu establir l'interval de temps a l'opció "
 "«Interval de desament automàtic»."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
 msgid ""
 "Whether gedit should create backup copies for the files it saves. You can "
 "set the backup file extension with the \"Backup Copy Extension\" option."
@@ -396,81 +382,78 @@ msgstr ""
 "establir l'extensió del fitxer de còpia de seguretat a l'opció «Extensió de "
 "les còpies de seguretat»."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
 msgid "Whether gedit should display line numbers in the editing area."
 msgstr "Si el gedit hauria de mostrar números de línies en l'àrea d'edició."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
 msgid "Whether gedit should display the right margin in the editing area."
 msgstr "Si el gedit hauria de mostrar el marge dret en l'àrea d'edició."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
 msgid "Whether gedit should enable automatic indentation."
 msgstr "Si el gedit hauria d'habilitar el sagnat automàtic."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
 msgid "Whether gedit should enable syntax highlighting."
 msgstr "Si el gedit hauria d'habilitar el ressaltat de la sintaxi."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
 msgid ""
 "Whether gedit should highlight all the occurrences of the searched text."
 msgstr ""
 "Si el gedit hauria de ressaltar totes les coincidències del text cercat."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
-#, fuzzy
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
 msgid "Whether gedit should highlight matching brackets."
-msgstr "Si el gedit hauria d'habilitar el ressaltat del claudàtor coincident."
+msgstr "Si el gedit hauria de ressaltar els claudàtors coincidents."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
 msgid "Whether gedit should highlight the current line."
 msgstr "Si el gedit hauria de ressaltar la línia actual."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
 msgid "Whether gedit should include a document header when printing documents."
 msgstr ""
 "Si el gedit hauria d'incloure una capçalera del document en imprimir "
 "documents."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
 msgid "Whether gedit should insert spaces instead of tabs."
 msgstr "Si el gedit hauria d'inserir espais en comptes de tabuladors."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
 msgid "Whether gedit should print syntax highlighting when printing documents."
 msgstr ""
 "Si el gedit hauria d'imprimir el ressaltat de sintaxi quan s'imprimeixen els "
 "documents."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
 msgid ""
 "Whether gedit should restore the previous cursor position when a file is "
 "loaded."
 msgstr ""
 "Si el gedit hauria de restablir la posició prèvia del cursor quan es "
-"carregui un fitxer."
+"carregue un fitxer."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
-#, fuzzy
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
 msgid ""
 "Whether the side panel at the left of editing windows should be visible."
 msgstr ""
-"Si hauria de ser visible el quadre lateral de l'esquerra de la finestra "
-"d'edició."
+"Si hauria de mostrar el quadre lateral de l'esquerra de la finestra d'edició."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
 msgid ""
 "Whether the status bar at the bottom of editing windows should be visible."
 msgstr ""
 "Si la barra d'estat a la part inferior de les finestres d'edició hauria de "
 "ser visible."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
 msgid "Whether the toolbar should be visible in editing windows."
 msgstr "Si la barra d'eines hauria de ser visible en les finestres d'edició."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:73
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
 msgid ""
 "Whether to use the system's default fixed width font for editing text "
 "instead of a font specific to gedit. If this option is turned off, then the "
@@ -482,17 +465,13 @@ msgstr ""
 "s'inhabilita, s'utilitzarà el tipus de lletra especificat a l'opció «Tipus "
 "de lletra de l'editor» en comptes del tipus de lletra del sistema."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:74
-msgid "Writable VFS schemes"
-msgstr "Esquemes VFS d'escriptura"
-
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
 msgid "Log Out _without Saving"
 msgstr "Ix se_nse alçar"
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:145
 msgid "_Cancel Logout"
-msgstr "_Cancel·la la eixida"
+msgstr "_Cancel·la l'eixida"
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:152
 msgid "Close _without Saving"
@@ -639,7 +618,7 @@ msgstr "_Descripció"
 msgid "_Encoding"
 msgstr "_Codificacions"
 
-#. ex:ts=8:noet:
+#. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-encodings-dialog.ui.h:1
 msgid "A_vailable encodings:"
 msgstr "Codi_ficacions disponibles:"
@@ -652,48 +631,48 @@ msgstr "Codificació de caràcters"
 msgid "E_ncodings shown in menu:"
 msgstr "Codificacio_ns mostrades al menú:"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:426
+#: ../gedit/dialogs/gedit-preferences-dialog.c:423
 msgid "Click on this button to select the font to be used by the editor"
 msgstr ""
 "Feu clic en este botó per seleccionar el tipus de lletra a utilitzar per "
 "l'editor"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:441
+#: ../gedit/dialogs/gedit-preferences-dialog.c:438
 #, c-format
 msgid "_Use the system fixed width font (%s)"
 msgstr "_Empra el tipus de lletra d'amplada fixa del sistema (%s)"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:637
+#: ../gedit/dialogs/gedit-preferences-dialog.c:634
 msgid "The selected color scheme cannot be installed."
 msgstr "No s'ha pogut instal·lar l'esquema de colors seleccionat."
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:664
+#: ../gedit/dialogs/gedit-preferences-dialog.c:661
 msgid "Add Scheme"
 msgstr "Afig un esquema"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:671
+#: ../gedit/dialogs/gedit-preferences-dialog.c:668
 msgid "A_dd Scheme"
 msgstr "A_fig un esquema"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:679
+#: ../gedit/dialogs/gedit-preferences-dialog.c:676
 msgid "Color Scheme Files"
 msgstr "Fitxers d'esquema de colors"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:686
+#: ../gedit/dialogs/gedit-preferences-dialog.c:683
 #: ../gedit/gedit-file-chooser-dialog.c:52
 msgid "All Files"
 msgstr "Tots els fitxers"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:731
+#: ../gedit/dialogs/gedit-preferences-dialog.c:728
 #, c-format
 msgid "Could not remove color scheme \"%s\"."
 msgstr "No s'ha pogut suprimir l'esquema de colors «%s»."
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:950
+#: ../gedit/dialogs/gedit-preferences-dialog.c:947
 msgid "gedit Preferences"
 msgstr "Preferències del gedit"
 
-#. ex:ts=8:noet:
+#. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:1
 msgid "Color Scheme"
 msgstr "Esquema de colors"
@@ -703,15 +682,14 @@ msgid "Create a _backup copy of files before saving"
 msgstr "Crea una _còpia de seguretat dels fitxers abans d'alçar-los"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:3
-#, fuzzy
 msgid "Display right _margin at column:"
-msgstr "Mostra el _marge dret"
+msgstr "Mostra el _marge dret a la columna:"
 
-#. ex:ts=8:noet:
+#. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:4
 #: ../gedit/gedit-print-preferences.ui.h:1
 msgid "Do not _split words over two lines"
-msgstr "No _separis les paraules en dues línies"
+msgstr "No _separis les paraules en dos línies"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:5
 msgid "Editor"
@@ -731,6 +709,8 @@ msgid "File Saving"
 msgstr "Alçat de fitxers"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:9
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:2
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:4
 msgid "Font"
 msgstr "Tipus de lletra"
 
@@ -743,14 +723,12 @@ msgid "Highlight current _line"
 msgstr "_Ressalta la línia actual"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
-#, fuzzy
 msgid "Highlight matching _brackets"
-msgstr "Ressalta el _claudàtor concordant"
+msgstr "Ressalta els _claudàtors concordants"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:13
-#, fuzzy
 msgid "Highlighting"
-msgstr "Ressaltat de sintaxi"
+msgstr "Ressaltat"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:14
 msgid "Insert _spaces instead of tabs"
@@ -758,7 +736,7 @@ msgstr "Insereix _espais en comptes de tabulacions"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:15
 msgid "Pick the editor font"
-msgstr "Escolliu el tipus de lletra de l'editor"
+msgstr "Trieu el tipus de lletra de l'editor"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:16
 msgid "Plugins"
@@ -789,7 +767,7 @@ msgstr "_Afig..."
 msgid "_Autosave files every"
 msgstr "Al_ça els fitxers automàticament cada"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:920
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:590
 msgid "_Display line numbers"
 msgstr "Mostra els _números de línia"
 
@@ -806,7 +784,7 @@ msgid "_minutes"
 msgstr "_minuts"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1595
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1592
 msgid "Replace"
 msgstr "Reemplaça"
 
@@ -815,11 +793,11 @@ msgid "Replace _All"
 msgstr "Reempl_aça-ho tot"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:292
-#: ../gedit/gedit-commands-file.c:576
+#: ../gedit/gedit-commands-file.c:572
 msgid "_Replace"
 msgstr "_Reemplaça"
 
-#. ex:ts=8:noet:
+#. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-replace-dialog.ui.h:1
 msgid "Match _entire word only"
 msgstr "Només coincid_eix la paraula sencera"
@@ -852,20 +830,20 @@ msgstr "Continua des de l'_inici"
 msgid "There was an error displaying the help."
 msgstr "S'ha produït un error en mostrar l'ajuda."
 
-#: ../gedit/gedit-command-line.c:234
+#: ../gedit/gedit-command-line.c:232
 #, c-format
 msgid "%s: invalid encoding.\n"
-msgstr "%s: codificació invàlida.\n"
+msgstr "%s: codificació no vàlida.\n"
 
-#: ../gedit/gedit-command-line.c:258
+#: ../gedit/gedit-command-line.c:256
 msgid "Show the application's version"
 msgstr "Mostra la versió de l'aplicació"
 
-#: ../gedit/gedit-command-line.c:264
+#: ../gedit/gedit-command-line.c:262
 msgid "Display list of possible values for the encoding option"
 msgstr "Mostra una llista dels valors possibles per a la codificació"
 
-#: ../gedit/gedit-command-line.c:272
+#: ../gedit/gedit-command-line.c:270
 msgid ""
 "Set the character encoding to be used to open the files listed on the "
 "command line"
@@ -873,49 +851,48 @@ msgstr ""
 "Estableix la codificació de caràcters a emprar per obrir els fitxers "
 "llistats en la línia d'ordes"
 
-#: ../gedit/gedit-command-line.c:273
+#: ../gedit/gedit-command-line.c:271
 msgid "ENCODING"
 msgstr "CODIFICACIÓ"
 
-#: ../gedit/gedit-command-line.c:280
+#: ../gedit/gedit-command-line.c:278
 msgid "Create a new top-level window in an existing instance of gedit"
 msgstr "Crea una finestra nova en una instància existent del gedit"
 
-#: ../gedit/gedit-command-line.c:288
+#: ../gedit/gedit-command-line.c:286
 msgid "Create a new document in an existing instance of gedit"
 msgstr "Crea un nou document en una instància existent del gedit"
 
-#: ../gedit/gedit-command-line.c:296
+#: ../gedit/gedit-command-line.c:294
 msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
-msgstr ""
+msgstr "Establiu la mida i posició de la finestra (AMPLADAxALÇADA+X+Y)"
 
-#: ../gedit/gedit-command-line.c:297
+#: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
-msgstr ""
+msgstr "GEOMETRIA"
 
-#: ../gedit/gedit-command-line.c:304
+#: ../gedit/gedit-command-line.c:302
 msgid "Open files and block process until files are closed"
-msgstr ""
+msgstr "Obri els fitxers i bloca el procés fins que es tanquen"
 
-#: ../gedit/gedit-command-line.c:312
-#, fuzzy
+#: ../gedit/gedit-command-line.c:310
 msgid "Run gedit in the background"
-msgstr "Trieu el color de fons"
+msgstr "Executa el gedit en segon pla"
 
-#: ../gedit/gedit-command-line.c:320
+#: ../gedit/gedit-command-line.c:318
 msgid "Run gedit in standalone mode"
-msgstr ""
+msgstr "Executa el gedit en mode independent"
 
-#: ../gedit/gedit-command-line.c:329
+#: ../gedit/gedit-command-line.c:327
 msgid "[FILE...] [+LINE[:COLUMN]]"
-msgstr ""
+msgstr "[FITXER...] [+LÍNIA[:COLUMNA]]"
 
 #. Setup command line options
-#: ../gedit/gedit-command-line.c:336
+#: ../gedit/gedit-command-line.c:334
 msgid "- Edit text files"
 msgstr "- Editeu fitxers de text"
 
-#: ../gedit/gedit-command-line.c:347
+#: ../gedit/gedit-command-line.c:345
 #, c-format
 msgid ""
 "%s\n"
@@ -938,71 +915,71 @@ msgstr[0] "S'està carregant %d fitxer…"
 msgstr[1] "S'estan carregant %d fitxers…"
 
 #. Translators: "Open Files" is the title of the file chooser window
-#: ../gedit/gedit-commands-file.c:450
+#: ../gedit/gedit-commands-file.c:446
 msgid "Open Files"
 msgstr "Obertura de fitxers"
 
-#: ../gedit/gedit-commands-file.c:563
+#: ../gedit/gedit-commands-file.c:559
 #, c-format
 msgid "The file \"%s\" is read-only."
 msgstr "El fitxer «%s» és de només de lectura."
 
-#: ../gedit/gedit-commands-file.c:568
+#: ../gedit/gedit-commands-file.c:564
 msgid "Do you want to try to replace it with the one you are saving?"
-msgstr "Voleu intentar reemplaçar-lo pel que esteu desant?"
+msgstr "Voleu intentar reemplaçar-lo pel que esteu alçant?"
 
-#: ../gedit/gedit-commands-file.c:618
+#: ../gedit/gedit-commands-file.c:614
 msgid "Save the file using compression?"
-msgstr ""
+msgstr "Voleu alçar el fitxer comprimit?"
 
-#: ../gedit/gedit-commands-file.c:619
+#: ../gedit/gedit-commands-file.c:615
 #, c-format
 msgid ""
 "The file \"%s\" was previously saved as plain text and will now be saved "
 "using compression."
 msgstr ""
+"Abans s'havia alçat el fitxer «%s» com a text pla i ara s'alçarà comprimit."
+
+#: ../gedit/gedit-commands-file.c:617
+msgid "_Save Using Compression"
+msgstr "Al_ça'l comprimit"
 
 #: ../gedit/gedit-commands-file.c:621
-msgid "_Save Using Compression"
-msgstr ""
-
-#: ../gedit/gedit-commands-file.c:625
 msgid "Save the file as plain text?"
-msgstr ""
+msgstr "Voleu alçar el fiter com a text pla?"
 
-#: ../gedit/gedit-commands-file.c:626
+#: ../gedit/gedit-commands-file.c:622
 #, c-format
 msgid ""
 "The file \"%s\" was previously saved using compression and will now be saved "
 "as plain text."
 msgstr ""
+"Abans s'havia alçat el fitxer «%s» comprimit i ara s'alçarà com a text pla."
 
-#: ../gedit/gedit-commands-file.c:628
-#, fuzzy
+#: ../gedit/gedit-commands-file.c:624
 msgid "_Save As Plain Text"
-msgstr "Text pla"
+msgstr "_Anomena i alça com a text pla"
 
-#: ../gedit/gedit-commands-file.c:746 ../gedit/gedit-commands-file.c:965
+#: ../gedit/gedit-commands-file.c:742 ../gedit/gedit-commands-file.c:961
 #, c-format
 msgid "Saving file '%s'…"
-msgstr "S'està desant el fitxer «%s»…"
+msgstr "S'està alçant el fitxer «%s»…"
 
-#: ../gedit/gedit-commands-file.c:851
-#, fuzzy
+#: ../gedit/gedit-commands-file.c:847
 msgid "Save As"
-msgstr "Anomena i alça…"
+msgstr "Anomena i alça"
 
-#: ../gedit/gedit-commands-file.c:1179
+#: ../gedit/gedit-commands-file.c:1175
 #, c-format
 msgid "Reverting the document '%s'…"
 msgstr "S'està recuperant el document «%s»…"
 
-#: ../gedit/gedit-commands-file.c:1224
+#: ../gedit/gedit-commands-file.c:1220
 #, c-format
 msgid "Revert unsaved changes to document '%s'?"
 msgstr "Voleu recuperar els canvis no alçats al document «%s»?"
 
-#: ../gedit/gedit-commands-file.c:1233
+#: ../gedit/gedit-commands-file.c:1229
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld second will be permanently lost."
@@ -1015,13 +992,13 @@ msgstr[1] ""
 "Es perdran permanentment els canvis fets al document en els darrers %ld "
 "segons."
 
-#: ../gedit/gedit-commands-file.c:1242
+#: ../gedit/gedit-commands-file.c:1238
 msgid ""
 "Changes made to the document in the last minute will be permanently lost."
 msgstr ""
 "Es perdran permanentment els canvis fets al document en el darrer minut."
 
-#: ../gedit/gedit-commands-file.c:1248
+#: ../gedit/gedit-commands-file.c:1244
 #, c-format
 msgid ""
 "Changes made to the document in the last minute and %ld second will be "
@@ -1036,7 +1013,7 @@ msgstr[1] ""
 "Es perdran permanentment els canvis fets al document en el darrer minut i "
 "%ld segons."
 
-#: ../gedit/gedit-commands-file.c:1258
+#: ../gedit/gedit-commands-file.c:1254
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld minute will be permanently lost."
@@ -1049,11 +1026,11 @@ msgstr[1] ""
 "Es perdran permanentment els canvis fets al document en els darrers %ld "
 "minuts."
 
-#: ../gedit/gedit-commands-file.c:1273
+#: ../gedit/gedit-commands-file.c:1269
 msgid "Changes made to the document in the last hour will be permanently lost."
 msgstr "Es perdran per sempre els canvis fets al document la darrera hora."
 
-#: ../gedit/gedit-commands-file.c:1279
+#: ../gedit/gedit-commands-file.c:1275
 #, c-format
 msgid ""
 "Changes made to the document in the last hour and %d minute will be "
@@ -1068,7 +1045,7 @@ msgstr[1] ""
 "Es perdran permanentment els canvis fets al document en la darrera hora i %d "
 "minuts."
 
-#: ../gedit/gedit-commands-file.c:1294
+#: ../gedit/gedit-commands-file.c:1290
 #, c-format
 msgid ""
 "Changes made to the document in the last %d hour will be permanently lost."
@@ -1079,15 +1056,15 @@ msgstr[0] ""
 msgstr[1] ""
 "Es perdran per sempre els canvis fets al document les darreres %d hores."
 
-#: ../gedit/gedit-commands-file.c:1320
+#: ../gedit/gedit-commands-file.c:1316
 msgid "_Revert"
 msgstr "_Recupera"
 
-#: ../gedit/gedit-commands-help.c:86
+#: ../gedit/gedit-commands-help.c:88
 msgid "gedit is a small and lightweight text editor for the GNOME Desktop"
-msgstr "El gedit és un editor de text petit i lleuger pel GNOME Desktop"
+msgstr "El gedit és un editor de text petit i lleuger per l'escriptori GNOME"
 
-#: ../gedit/gedit-commands-help.c:111
+#: ../gedit/gedit-commands-help.c:113
 msgid "translator-credits"
 msgstr ""
 "Quico Llach <quico@softcatala.org>\n"
@@ -1114,17 +1091,17 @@ msgstr "S'ha trobat i reemplaçat una cadena coincident"
 msgid "\"%s\" not found"
 msgstr "No s'ha trobat «%s»"
 
-#: ../gedit/gedit-document.c:1240 ../gedit/gedit-document.c:1266
+#: ../gedit/gedit-document.c:1241 ../gedit/gedit-document.c:1267
 #, c-format
 msgid "Unsaved Document %d"
 msgstr "Document sense alçar %d"
 
-#: ../gedit/gedit-documents-panel.c:118 ../gedit/gedit-documents-panel.c:132
+#: ../gedit/gedit-documents-panel.c:119 ../gedit/gedit-documents-panel.c:133
 #: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
 msgid "Read-Only"
 msgstr "Només de lectura"
 
-#: ../gedit/gedit-documents-panel.c:1090 ../gedit/gedit-window.c:3845
+#: ../gedit/gedit-documents-panel.c:1124 ../gedit/gedit-window.c:3840
 msgid "Documents"
 msgstr "Documents"
 
@@ -1244,17 +1221,17 @@ msgstr "Tailandés"
 msgid "Unknown"
 msgstr "Desconegut"
 
-#: ../gedit/gedit-encodings-combo-box.c:281
+#: ../gedit/gedit-encodings-combo-box.c:310
 msgid "Automatically Detected"
 msgstr "Detectat automàticament"
 
-#: ../gedit/gedit-encodings-combo-box.c:300
-#: ../gedit/gedit-encodings-combo-box.c:316
+#: ../gedit/gedit-encodings-combo-box.c:329
+#: ../gedit/gedit-encodings-combo-box.c:345
 #, c-format
 msgid "Current Locale (%s)"
 msgstr "Localització actual (%s)"
 
-#: ../gedit/gedit-encodings-combo-box.c:368
+#: ../gedit/gedit-encodings-combo-box.c:397
 msgid "Add or Remove..."
 msgstr "Afig o suprimeix..."
 
@@ -1378,18 +1355,11 @@ msgstr "Codificació de c_aràcter:"
 #. Translators: the access key chosen for this string should be
 #. different from other main menu access keys (Open, Edit, View...)
 #: ../gedit/gedit-io-error-info-bar.c:506
-#: ../gedit/gedit-io-error-info-bar.c:786
+#: ../gedit/gedit-io-error-info-bar.c:782
 msgid "Edit Any_way"
 msgstr "Edita de _totes maneres"
 
-#. Translators: the access key chosen for this string should be
-#. different from other main menu access keys (Open, Edit, View...)
-#: ../gedit/gedit-io-error-info-bar.c:511
-#: ../gedit/gedit-io-error-info-bar.c:791
-msgid "D_on't Edit"
-msgstr "_No l'editis"
-
-#: ../gedit/gedit-io-error-info-bar.c:612
+#: ../gedit/gedit-io-error-info-bar.c:608
 msgid ""
 "The number of followed links is limited and the actual file could not be "
 "found within this limit."
@@ -1397,65 +1367,65 @@ msgstr ""
 "El nombre d'enllaços a seguir és limitat i el fitxer actual no s'ha pogut "
 "trobar dins d'este límit."
 
-#: ../gedit/gedit-io-error-info-bar.c:616
+#: ../gedit/gedit-io-error-info-bar.c:612
 msgid "You do not have the permissions necessary to open the file."
 msgstr "No teniu el permís necessari per poder obrir este fitxer."
 
-#: ../gedit/gedit-io-error-info-bar.c:622
+#: ../gedit/gedit-io-error-info-bar.c:618
 msgid "gedit has not been able to detect the character encoding."
 msgstr "El gedit no ha pogut detectar la codificació de caràcters."
 
-#: ../gedit/gedit-io-error-info-bar.c:624
-#: ../gedit/gedit-io-error-info-bar.c:646
+#: ../gedit/gedit-io-error-info-bar.c:620
+#: ../gedit/gedit-io-error-info-bar.c:642
 msgid "Please check that you are not trying to open a binary file."
 msgstr "Comproveu que no estigueu intentant obrir un fitxer binari."
 
-#: ../gedit/gedit-io-error-info-bar.c:625
+#: ../gedit/gedit-io-error-info-bar.c:621
 msgid "Select a character encoding from the menu and try again."
 msgstr ""
 "Seleccioneu una codificació de caràcters del menú i torneu-ho a intentar."
 
-#: ../gedit/gedit-io-error-info-bar.c:631
+#: ../gedit/gedit-io-error-info-bar.c:627
 #, c-format
 msgid "There was a problem opening the file %s."
 msgstr "S'ha produït un error en obrir el fitxer %s."
 
-#: ../gedit/gedit-io-error-info-bar.c:633
+#: ../gedit/gedit-io-error-info-bar.c:629
 msgid ""
 "The file you opened has some invalid characters. If you continue editing "
-"this file you could make this document useless."
+"this file you could corrupt this document."
 msgstr ""
 "El fitxer que heu obert conté alguns caràcters no vàlids. Si l'editeu "
 "podríeu acabar amb un document no usable."
 
-#: ../gedit/gedit-io-error-info-bar.c:636
+#: ../gedit/gedit-io-error-info-bar.c:632
 msgid "You can also choose another character encoding and try again."
 msgstr ""
 "Podeu seleccionar una altra codificació de caràcters i tornar-ho a intentar."
 
-#: ../gedit/gedit-io-error-info-bar.c:643
+#: ../gedit/gedit-io-error-info-bar.c:639
 #, c-format
 msgid "Could not open the file %s using the %s character encoding."
 msgstr "No s'ha pogut obrir el fitxer %s amb la codificació de caràcters %s."
 
-#: ../gedit/gedit-io-error-info-bar.c:647
-#: ../gedit/gedit-io-error-info-bar.c:721
+#: ../gedit/gedit-io-error-info-bar.c:643
+#: ../gedit/gedit-io-error-info-bar.c:717
 msgid "Select a different character encoding from the menu and try again."
 msgstr ""
 "Seleccioneu una codificació de caràcters diferent del menú i torneu-ho a "
 "intentar."
 
-#: ../gedit/gedit-io-error-info-bar.c:657
+#: ../gedit/gedit-io-error-info-bar.c:653
 #, c-format
 msgid "Could not open the file %s."
 msgstr "No s'ha pogut obrir el fitxer %s."
 
-#: ../gedit/gedit-io-error-info-bar.c:716
+#: ../gedit/gedit-io-error-info-bar.c:712
 #, c-format
 msgid "Could not save the file %s using the %s character encoding."
 msgstr "No s'ha pogut alçar el fitxer %s amb la codificació de caràcters %s."
 
-#: ../gedit/gedit-io-error-info-bar.c:719
+#: ../gedit/gedit-io-error-info-bar.c:715
 msgid ""
 "The document contains one or more characters that cannot be encoded using "
 "the specified character encoding."
@@ -1463,12 +1433,18 @@ msgstr ""
 "El document conté un o més caràcters que no es poden codificar amb la "
 "codificació de caràcters especificada."
 
-#: ../gedit/gedit-io-error-info-bar.c:805
+#. Translators: the access key chosen for this string should be
+#. different from other main menu access keys (Open, Edit, View...)
+#: ../gedit/gedit-io-error-info-bar.c:787
+msgid "D_on't Edit"
+msgstr "_No l'edites"
+
+#: ../gedit/gedit-io-error-info-bar.c:801
 #, c-format
 msgid "This file (%s) is already open in another gedit window."
 msgstr "Este fitxer (%s) ja està obert en una altra finestra del gedit."
 
-#: ../gedit/gedit-io-error-info-bar.c:819
+#: ../gedit/gedit-io-error-info-bar.c:815
 msgid ""
 "gedit opened this instance of the file in a non-editable way. Do you want to "
 "edit it anyway?"
@@ -1476,13 +1452,15 @@ msgstr ""
 "el gedit ha obert esta instància del fitxer d'una manera que no és editable. "
 "Voleu editar-lo de totes maneres?"
 
+#: ../gedit/gedit-io-error-info-bar.c:873
+#: ../gedit/gedit-io-error-info-bar.c:971
+#: ../gedit/gedit-io-error-info-bar.c:1260
+msgid "S_ave Anyway"
+msgstr "Al_ça igualment"
+
 #: ../gedit/gedit-io-error-info-bar.c:877
 #: ../gedit/gedit-io-error-info-bar.c:975
-msgid "S_ave Anyway"
-msgstr "De_sa igualment"
-
-#: ../gedit/gedit-io-error-info-bar.c:881
-#: ../gedit/gedit-io-error-info-bar.c:979
+#: ../gedit/gedit-io-error-info-bar.c:1264
 msgid "D_on't Save"
 msgstr "_No alces"
 
@@ -1490,29 +1468,29 @@ msgstr "_No alces"
 #. * could be interpreted as the changes he made in the document. beside "reading" is
 #. * not accurate (since last load/save)
 #.
-#: ../gedit/gedit-io-error-info-bar.c:899
+#: ../gedit/gedit-io-error-info-bar.c:895
 #, c-format
 msgid "The file %s has been modified since reading it."
 msgstr "El fitxer %s s'ha modificat des que s'ha llegit."
 
-#: ../gedit/gedit-io-error-info-bar.c:914
+#: ../gedit/gedit-io-error-info-bar.c:910
 msgid "If you save it, all the external changes could be lost. Save it anyway?"
 msgstr ""
 "Si l'alceu, tots els canvis externs fets es poden perdre. Voleu alçar-lo "
 "igualment?"
 
-#: ../gedit/gedit-io-error-info-bar.c:1002
+#: ../gedit/gedit-io-error-info-bar.c:998
 #, c-format
 msgid "Could not create a backup file while saving %s"
 msgstr "No s'ha pogut crear una còpia de seguretat en alçar el fitxer %s"
 
-#: ../gedit/gedit-io-error-info-bar.c:1007
+#: ../gedit/gedit-io-error-info-bar.c:1003
 #, c-format
 msgid "Could not create a temporary backup file while saving %s"
 msgstr ""
 "No s'ha pogut crear una còpia de seguretat temporal en alçar el fitxer %s"
 
-#: ../gedit/gedit-io-error-info-bar.c:1024
+#: ../gedit/gedit-io-error-info-bar.c:1020
 msgid ""
 "gedit could not back up the old copy of the file before saving the new one. "
 "You can ignore this warning and save the file anyway, but if an error occurs "
@@ -1524,7 +1502,7 @@ msgstr ""
 "alçar igualment?"
 
 #. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
-#: ../gedit/gedit-io-error-info-bar.c:1084
+#: ../gedit/gedit-io-error-info-bar.c:1080
 #, c-format
 msgid ""
 "gedit cannot handle %s locations in write mode. Please check that you typed "
@@ -1533,7 +1511,7 @@ msgstr ""
 "el gedit no pot gestionar ubicacions %s en mode d'escriptura. Comproveu que "
 "hàgeu escrit correctament la ubicació i torneu-ho a intentar."
 
-#: ../gedit/gedit-io-error-info-bar.c:1092
+#: ../gedit/gedit-io-error-info-bar.c:1088
 msgid ""
 "gedit cannot handle this location in write mode. Please check that you typed "
 "the location correctly and try again."
@@ -1541,7 +1519,7 @@ msgstr ""
 "el gedit no pot gestionar esta ubicació en mode d'escriptura. Comproveu que "
 "hàgeu escrit correctament la ubicació i torneu-ho a intentar."
 
-#: ../gedit/gedit-io-error-info-bar.c:1101
+#: ../gedit/gedit-io-error-info-bar.c:1097
 #, c-format
 msgid ""
 "%s is not a valid location. Please check that you typed the location "
@@ -1550,7 +1528,7 @@ msgstr ""
 "%s no és una ubicació vàlida. Comproveu que l'hàgeu escrit correctament i "
 "torneu-ho a intentar."
 
-#: ../gedit/gedit-io-error-info-bar.c:1107
+#: ../gedit/gedit-io-error-info-bar.c:1104
 msgid ""
 "You do not have the permissions necessary to save the file. Please check "
 "that you typed the location correctly and try again."
@@ -1558,7 +1536,7 @@ msgstr ""
 "No teniu el permís necessari per poder alçar este fitxer. Comproveu que la "
 "ubicació estiga ben escrita i torneu-ho a intentar."
 
-#: ../gedit/gedit-io-error-info-bar.c:1113
+#: ../gedit/gedit-io-error-info-bar.c:1110
 msgid ""
 "There is not enough disk space to save the file. Please free some disk space "
 "and try again."
@@ -1566,7 +1544,7 @@ msgstr ""
 "No hi ha suficient espai al disc per alçar el fitxer. Allibereu espai de "
 "disc i torneu-ho a intentar."
 
-#: ../gedit/gedit-io-error-info-bar.c:1118
+#: ../gedit/gedit-io-error-info-bar.c:1115
 msgid ""
 "You are trying to save the file on a read-only disk. Please check that you "
 "typed the location correctly and try again."
@@ -1574,11 +1552,11 @@ msgstr ""
 "Esteu intentant alçar el fitxer en un disc de només lectura. Comproveu que "
 "la ubicació estiga ben escrita i torneu-ho a intentar."
 
-#: ../gedit/gedit-io-error-info-bar.c:1124
+#: ../gedit/gedit-io-error-info-bar.c:1121
 msgid "A file with the same name already exists. Please use a different name."
 msgstr "Ja existeix un fitxer amb este mateix nom, utilitzeu-ne un altre."
 
-#: ../gedit/gedit-io-error-info-bar.c:1129
+#: ../gedit/gedit-io-error-info-bar.c:1126
 msgid ""
 "The disk where you are trying to save the file has a limitation on length of "
 "the file names. Please use a shorter name."
@@ -1586,7 +1564,7 @@ msgstr ""
 "El disc on esteu intentant alçar el fitxer té una limitació quan a la "
 "longitud dels noms dels fitxers, utilitzeu un nom més curt."
 
-#: ../gedit/gedit-io-error-info-bar.c:1136
+#: ../gedit/gedit-io-error-info-bar.c:1133
 msgid ""
 "The disk where you are trying to save the file has a limitation on file "
 "sizes. Please try saving a smaller file or saving it to a disk that does not "
@@ -1596,7 +1574,7 @@ msgstr ""
 "fitxers. Intenteu alçar un fitxer més petit o alçar-ho en un disc que no "
 "tinga esta limitació."
 
-#: ../gedit/gedit-io-error-info-bar.c:1152
+#: ../gedit/gedit-io-error-info-bar.c:1149
 #, c-format
 msgid "Could not save the file %s."
 msgstr "No s'ha pogut alçar el fitxer %s."
@@ -1605,28 +1583,39 @@ msgstr "No s'ha pogut alçar el fitxer %s."
 #. * could be interpreted as the changes he made in the document. beside "reading" is
 #. * not accurate (since last load/save)
 #.
-#: ../gedit/gedit-io-error-info-bar.c:1197
+#: ../gedit/gedit-io-error-info-bar.c:1194
 #, c-format
 msgid "The file %s changed on disk."
 msgstr "El fitxer %s ha canviat al disc."
 
-#: ../gedit/gedit-io-error-info-bar.c:1202
+#: ../gedit/gedit-io-error-info-bar.c:1199
 msgid "Do you want to drop your changes and reload the file?"
 msgstr "Voleu descartar els canvis i carregar de nou el fitxer?"
 
-#: ../gedit/gedit-io-error-info-bar.c:1204
+#: ../gedit/gedit-io-error-info-bar.c:1201
 msgid "Do you want to reload the file?"
 msgstr "Voleu carregar de nou el fitxer?"
 
-#: ../gedit/gedit-io-error-info-bar.c:1209
+#: ../gedit/gedit-io-error-info-bar.c:1206
 msgid "_Reload"
 msgstr "Carrega de _nou"
 
-#: ../gedit/gedit-panel.c:339 ../gedit/gedit-panel.c:511
+#: ../gedit/gedit-io-error-info-bar.c:1278
+#, c-format
+msgid "Some invalid chars have been detected while saving %s"
+msgstr "S'han detectat alguns caràcters no vàlids mentre es desava «%s»"
+
+#: ../gedit/gedit-io-error-info-bar.c:1294
+msgid ""
+"If you continue saving this file you can corrupt the document.  Save anyway?"
+msgstr ""
+"Si alceu igualment el fitxer pot quedar malmés. Voleu alçar tot i així?"
+
+#: ../gedit/gedit-panel.c:343 ../gedit/gedit-panel.c:515
 msgid "Empty"
 msgstr "Buit"
 
-#: ../gedit/gedit-panel.c:401
+#: ../gedit/gedit-panel.c:405
 msgid "Hide panel"
 msgstr "Amaga el quadre"
 
@@ -1763,33 +1752,30 @@ msgstr "Visualització prèvia de la pàgina"
 msgid "The preview of a page in the document to be printed"
 msgstr "La visualització prèvia de la pàgina del document a imprimir"
 
-#: ../gedit/gedit-smart-charset-converter.c:321
-msgid "It is not possible to detect the encoding automatically"
-msgstr "No es pot detectar automàticament la codificació"
-
-#: ../gedit/gedit-statusbar.c:69 ../gedit/gedit-statusbar.c:75
+#. Use spaces to leave padding proportional to the font size
+#: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
 msgid "OVR"
 msgstr "SOBR"
 
-#: ../gedit/gedit-statusbar.c:69 ../gedit/gedit-statusbar.c:75
+#: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
 msgid "INS"
 msgstr "INSER"
 
 #. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for "Column". Please,
 #. use abbreviations if possible to avoid space problems.
-#: ../gedit/gedit-statusbar.c:247
+#: ../gedit/gedit-statusbar.c:248
 #, c-format
 msgid "  Ln %d, Col %d"
 msgstr "  Ln %d, Col. %d"
 
-#: ../gedit/gedit-statusbar.c:346
+#: ../gedit/gedit-statusbar.c:347
 #, c-format
 msgid "There is a tab with errors"
 msgid_plural "There are %d tabs with errors"
 msgstr[0] "Hi ha una tabulació amb errors"
 msgstr[1] "Hi ha %d tabulacions amb errors"
 
-#: ../gedit/gedit-style-scheme-manager.c:206
+#: ../gedit/gedit-style-scheme-manager.c:210
 #, c-format
 msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
 msgstr ""
@@ -1797,429 +1783,420 @@ msgstr ""
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:746
+#: ../gedit/gedit-tab.c:744
 #, c-format
 msgid "Reverting %s from %s"
 msgstr "S'està recuperant %s de %s"
 
-#: ../gedit/gedit-tab.c:753
+#: ../gedit/gedit-tab.c:751
 #, c-format
 msgid "Reverting %s"
 msgstr "S'està recuperant %s"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:769
+#: ../gedit/gedit-tab.c:767
 #, c-format
 msgid "Loading %s from %s"
 msgstr "S'està carregant %s de %s"
 
-#: ../gedit/gedit-tab.c:776
+#: ../gedit/gedit-tab.c:774
 #, c-format
 msgid "Loading %s"
 msgstr "S'està carregant %s"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:857
+#: ../gedit/gedit-tab.c:855
 #, c-format
 msgid "Saving %s to %s"
-msgstr "S'està desant %s a %s"
+msgstr "S'està alçant %s a %s"
 
-#: ../gedit/gedit-tab.c:864
+#: ../gedit/gedit-tab.c:862
 #, c-format
 msgid "Saving %s"
-msgstr "S'està desant %s"
+msgstr "S'està alçant %s"
 
 #  FIXME: NL (Només Lectura)?
 #. Read only
-#: ../gedit/gedit-tab.c:1777
+#: ../gedit/gedit-tab.c:1832
 msgid "RO"
 msgstr "RO"
 
-#: ../gedit/gedit-tab.c:1824
+#: ../gedit/gedit-tab.c:1879
 #, c-format
 msgid "Error opening file %s"
 msgstr "S'ha produït un error en obrir el fitxer %s"
 
-#: ../gedit/gedit-tab.c:1829
+#: ../gedit/gedit-tab.c:1884
 #, c-format
 msgid "Error reverting file %s"
 msgstr "S'ha produït un error en recuperar el document %s"
 
-#: ../gedit/gedit-tab.c:1834
+#: ../gedit/gedit-tab.c:1889
 #, c-format
 msgid "Error saving file %s"
 msgstr "S'ha produït un error en alçar el fitxer %s"
 
-#: ../gedit/gedit-tab.c:1855
+#: ../gedit/gedit-tab.c:1910
 msgid "Unicode (UTF-8)"
 msgstr "Unicode (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1862
+#: ../gedit/gedit-tab.c:1917
 msgid "Name:"
 msgstr "Nom:"
 
-#: ../gedit/gedit-tab.c:1863
+#: ../gedit/gedit-tab.c:1918
 msgid "MIME Type:"
 msgstr "Tipus de MIME:"
 
-#: ../gedit/gedit-tab.c:1864
+#: ../gedit/gedit-tab.c:1919
 msgid "Encoding:"
 msgstr "Codificació:"
 
-#: ../gedit/gedit-tab-label.c:278
+#: ../gedit/gedit-tab-label.c:280
 msgid "Close document"
 msgstr "Tanca el document"
 
 #. Toplevel
-#: ../gedit/gedit-ui.h:47
+#: ../gedit/gedit-ui.h:43
 msgid "_File"
 msgstr "_Fitxer"
 
-#: ../gedit/gedit-ui.h:48
+#: ../gedit/gedit-ui.h:44
 msgid "_Edit"
 msgstr "_Edita"
 
-#: ../gedit/gedit-ui.h:49
+#: ../gedit/gedit-ui.h:45
 msgid "_View"
 msgstr "_Visualitza"
 
-#: ../gedit/gedit-ui.h:50
+#: ../gedit/gedit-ui.h:46
 msgid "_Search"
 msgstr "_Cerca"
 
-#: ../gedit/gedit-ui.h:51
+#: ../gedit/gedit-ui.h:47
 msgid "_Tools"
 msgstr "Ei_nes"
 
-#: ../gedit/gedit-ui.h:52
+#: ../gedit/gedit-ui.h:48
 msgid "_Documents"
 msgstr "_Documents"
 
-#: ../gedit/gedit-ui.h:53
+#: ../gedit/gedit-ui.h:49
 msgid "_Help"
 msgstr "A_juda"
 
-#: ../gedit/gedit-ui.h:57
+#: ../gedit/gedit-ui.h:53
 msgid "Create a new document"
 msgstr "Crea un document nou"
 
-#: ../gedit/gedit-ui.h:58
+#: ../gedit/gedit-ui.h:54
 msgid "_Open..."
 msgstr "_Obri..."
 
-#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1523
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1520
 msgid "Open a file"
 msgstr "Obri un fitxer"
 
 #. Edit menu
-#: ../gedit/gedit-ui.h:62
+#: ../gedit/gedit-ui.h:58
 msgid "Pr_eferences"
 msgstr "_Preferències"
 
-#: ../gedit/gedit-ui.h:63
+#: ../gedit/gedit-ui.h:59
 msgid "Configure the application"
 msgstr "Configura l'aplicació"
 
 #. Help menu
-#: ../gedit/gedit-ui.h:66
+#: ../gedit/gedit-ui.h:62
 msgid "_Contents"
 msgstr "_Continguts"
 
-#: ../gedit/gedit-ui.h:67
+#: ../gedit/gedit-ui.h:63
 msgid "Open the gedit manual"
 msgstr "Obri el manual del gedit"
 
-#: ../gedit/gedit-ui.h:69
+#: ../gedit/gedit-ui.h:65
 msgid "About this application"
 msgstr "Quant a l'aplicació"
 
-#: ../gedit/gedit-ui.h:73
+#: ../gedit/gedit-ui.h:69
 msgid "Leave fullscreen mode"
 msgstr "Ix del mode de pantalla completa"
 
-#: ../gedit/gedit-ui.h:81
+#: ../gedit/gedit-ui.h:77
 msgid "Save the current file"
 msgstr "Alça el fitxer"
 
-#: ../gedit/gedit-ui.h:82
+#: ../gedit/gedit-ui.h:78
 msgid "Save _As..."
 msgstr "_Anomena i alça..."
 
-#: ../gedit/gedit-ui.h:83
+#: ../gedit/gedit-ui.h:79
 msgid "Save the current file with a different name"
 msgstr "Alça el fitxer amb un altre nom"
 
-#: ../gedit/gedit-ui.h:85
+#: ../gedit/gedit-ui.h:81
 msgid "Revert to a saved version of the file"
 msgstr "Recupera la versió alçada del fitxer"
 
-#: ../gedit/gedit-ui.h:86
+#: ../gedit/gedit-ui.h:82
 msgid "Print Previe_w"
 msgstr "_Previsualització de la impressió"
 
-#: ../gedit/gedit-ui.h:87
+#: ../gedit/gedit-ui.h:83
 msgid "Print preview"
 msgstr "Previsualització de la impressió"
 
-#: ../gedit/gedit-ui.h:88
+#: ../gedit/gedit-ui.h:84
 msgid "_Print..."
 msgstr "_Imprimeix..."
 
-#: ../gedit/gedit-ui.h:89
+#: ../gedit/gedit-ui.h:85
 msgid "Print the current page"
 msgstr "Imprimeix la pàgina actual"
 
-#: ../gedit/gedit-ui.h:93
+#: ../gedit/gedit-ui.h:89
 msgid "Undo the last action"
 msgstr "Desfés la darrera acció"
 
-#: ../gedit/gedit-ui.h:95
+#: ../gedit/gedit-ui.h:91
 msgid "Redo the last undone action"
 msgstr "Refés la darrera acció desfeta"
 
-#: ../gedit/gedit-ui.h:97
+#: ../gedit/gedit-ui.h:93
 msgid "Cut the selection"
 msgstr "Retalla la selecció"
 
-#: ../gedit/gedit-ui.h:99
+#: ../gedit/gedit-ui.h:95
 msgid "Copy the selection"
 msgstr "Copia la selecció"
 
-#: ../gedit/gedit-ui.h:101
+#: ../gedit/gedit-ui.h:97
 msgid "Paste the clipboard"
-msgstr "Enganxa el porta-retalls"
+msgstr "Apega el porta-retalls"
 
-#: ../gedit/gedit-ui.h:103
+#: ../gedit/gedit-ui.h:99
 msgid "Delete the selected text"
 msgstr "Suprimeix el text seleccionat"
 
-#: ../gedit/gedit-ui.h:104
+#: ../gedit/gedit-ui.h:100
 msgid "Select _All"
 msgstr "Selecciona-ho t_ot"
 
-#: ../gedit/gedit-ui.h:105
+#: ../gedit/gedit-ui.h:101
 msgid "Select the entire document"
 msgstr "Selecciona el document sencer"
 
 #. View menu
-#: ../gedit/gedit-ui.h:108
+#: ../gedit/gedit-ui.h:104
 msgid "_Highlight Mode"
 msgstr "Mode de _ressaltat"
 
 #. Search menu
-#: ../gedit/gedit-ui.h:111
+#: ../gedit/gedit-ui.h:107
 msgid "_Find..."
 msgstr "_Cerca..."
 
-#: ../gedit/gedit-ui.h:112
+#: ../gedit/gedit-ui.h:108
 msgid "Search for text"
 msgstr "Cerca el text"
 
-#: ../gedit/gedit-ui.h:113
+#: ../gedit/gedit-ui.h:109
 msgid "Find Ne_xt"
 msgstr "Cerca el _següent"
 
-#: ../gedit/gedit-ui.h:114
+#: ../gedit/gedit-ui.h:110
 msgid "Search forwards for the same text"
 msgstr "Cerca el mateix text cap arrere"
 
-#: ../gedit/gedit-ui.h:115
+#: ../gedit/gedit-ui.h:111
 msgid "Find Pre_vious"
 msgstr "Cerca l'_anterior"
 
-#: ../gedit/gedit-ui.h:116
+#: ../gedit/gedit-ui.h:112
 msgid "Search backwards for the same text"
 msgstr "Cerca la mateixa cadena cap arrere"
 
-#: ../gedit/gedit-ui.h:118 ../gedit/gedit-ui.h:121
+#: ../gedit/gedit-ui.h:114 ../gedit/gedit-ui.h:117
 msgid "_Replace..."
 msgstr "_Reemplaça..."
 
-#: ../gedit/gedit-ui.h:119 ../gedit/gedit-ui.h:122
+#: ../gedit/gedit-ui.h:115 ../gedit/gedit-ui.h:118
 msgid "Search for and replace text"
 msgstr "Cerca i reemplaça el text"
 
-#: ../gedit/gedit-ui.h:124
+#: ../gedit/gedit-ui.h:120
 msgid "_Clear Highlight"
 msgstr "_Neteja el ressaltat"
 
-#: ../gedit/gedit-ui.h:125
+#: ../gedit/gedit-ui.h:121
 msgid "Clear highlighting of search matches"
 msgstr "Neteja el ressaltat de les coincidències amb la cerca"
 
-#: ../gedit/gedit-ui.h:126
+#: ../gedit/gedit-ui.h:122
 msgid "Go to _Line..."
 msgstr "Vés a la _línia..."
 
-#: ../gedit/gedit-ui.h:127
+#: ../gedit/gedit-ui.h:123
 msgid "Go to a specific line"
 msgstr "Vés a una línia específica"
 
 #. Documents menu
-#: ../gedit/gedit-ui.h:130
+#: ../gedit/gedit-ui.h:126
 msgid "_Save All"
-msgstr "De_sa-ho tot"
+msgstr "Al_ça-ho tot"
 
-#: ../gedit/gedit-ui.h:131
+#: ../gedit/gedit-ui.h:127
 msgid "Save all open files"
 msgstr "Alça tots els fitxers oberts"
 
-#: ../gedit/gedit-ui.h:132
+#: ../gedit/gedit-ui.h:128
 msgid "_Close All"
 msgstr "Tan_ca-ho tot"
 
-#: ../gedit/gedit-ui.h:133
+#: ../gedit/gedit-ui.h:129
 msgid "Close all open files"
 msgstr "Tanca tots els fitxers oberts"
 
-#: ../gedit/gedit-ui.h:134
+#: ../gedit/gedit-ui.h:130
 msgid "_New Tab Group"
-msgstr ""
+msgstr "_Grup de pestanyes nou"
+
+#: ../gedit/gedit-ui.h:131
+msgid "Create a new tab group"
+msgstr "Crea un grup de pestanyes nou"
+
+#: ../gedit/gedit-ui.h:132
+msgid "P_revious Tab Group"
+msgstr "Grup de pestanyes _anterior"
+
+#: ../gedit/gedit-ui.h:133
+msgid "Switch to the previous tab group"
+msgstr "Vés al grup de pestanyes anterior"
+
+#: ../gedit/gedit-ui.h:134
+msgid "Nex_t Tab Group"
+msgstr "Grup de pestanyes _següent"
 
 #: ../gedit/gedit-ui.h:135
-#, fuzzy
-msgid "Create a new tab group"
-msgstr "Crea un document nou"
+msgid "Switch to the next tab group"
+msgstr "Vés al grup de pestanyes següent"
 
 #: ../gedit/gedit-ui.h:136
-#, fuzzy
-msgid "P_revious Tab Group"
-msgstr "Ubicació anterior"
-
-#: ../gedit/gedit-ui.h:137
-#, fuzzy
-msgid "Switch to the previous tab group"
-msgstr "Mostra la pàgina anterior"
-
-#: ../gedit/gedit-ui.h:138
-msgid "Nex_t Tab Group"
-msgstr ""
-
-#: ../gedit/gedit-ui.h:139
-#, fuzzy
-msgid "Switch to the next tab group"
-msgstr "Mostra la pàgina següent"
-
-#: ../gedit/gedit-ui.h:140
 msgid "_Previous Document"
 msgstr "Document _anterior"
 
-#: ../gedit/gedit-ui.h:141
+#: ../gedit/gedit-ui.h:137
 msgid "Activate previous document"
 msgstr "Activa el document anterior"
 
-#: ../gedit/gedit-ui.h:142
-#, fuzzy
+#: ../gedit/gedit-ui.h:138
 msgid "N_ext Document"
 msgstr "Document _següent"
 
-#: ../gedit/gedit-ui.h:143
+#: ../gedit/gedit-ui.h:139
 msgid "Activate next document"
 msgstr "Activa el document següent"
 
-#: ../gedit/gedit-ui.h:144
+#: ../gedit/gedit-ui.h:140
 msgid "_Move to New Window"
 msgstr "_Mou a una finestra nova"
 
-#: ../gedit/gedit-ui.h:145
+#: ../gedit/gedit-ui.h:141
 msgid "Move the current document to a new window"
 msgstr "Mou el document actual a una finestra nova"
 
-#: ../gedit/gedit-ui.h:152
+#: ../gedit/gedit-ui.h:148
 msgid "Close the current file"
 msgstr "Tanca el fitxer actual"
 
-#: ../gedit/gedit-ui.h:159
+#: ../gedit/gedit-ui.h:155
 msgid "Quit the program"
 msgstr "Ix del programa"
 
-#: ../gedit/gedit-ui.h:164
+#: ../gedit/gedit-ui.h:160
 msgid "_Toolbar"
 msgstr "_Barra d'eines"
 
-#: ../gedit/gedit-ui.h:165
+#: ../gedit/gedit-ui.h:161
 msgid "Show or hide the toolbar in the current window"
 msgstr "Mostra o amaga la barra d'eines de la finestra actual"
 
-#: ../gedit/gedit-ui.h:167
+#: ../gedit/gedit-ui.h:163
 msgid "_Statusbar"
 msgstr "Barra d'e_stat"
 
-#: ../gedit/gedit-ui.h:168
+#: ../gedit/gedit-ui.h:164
 msgid "Show or hide the statusbar in the current window"
 msgstr "Mosta o amaga la barra d'estat de la finestra actual"
 
-#: ../gedit/gedit-ui.h:171
+#: ../gedit/gedit-ui.h:167
 msgid "Edit text in fullscreen"
 msgstr "Editeu text a pantalla completa"
 
-#: ../gedit/gedit-ui.h:178
-#, fuzzy
+#: ../gedit/gedit-ui.h:174
 msgid "Side _Panel"
-msgstr "Subfinestra _lateral"
+msgstr "Quadre _lateral"
 
-#: ../gedit/gedit-ui.h:179
-#, fuzzy
+#: ../gedit/gedit-ui.h:175
 msgid "Show or hide the side panel in the current window"
-msgstr "Mostra o amaga la subfinestra lateral de la finestra actual"
+msgstr "Mostra o amaga el quadre lateral de la finestra actual"
 
-#: ../gedit/gedit-ui.h:181
-#, fuzzy
+#: ../gedit/gedit-ui.h:177
 msgid "_Bottom Panel"
-msgstr "Subfinestra _inferior"
+msgstr "Quadre _inferior"
 
-#: ../gedit/gedit-ui.h:182
-#, fuzzy
+#: ../gedit/gedit-ui.h:178
 msgid "Show or hide the bottom panel in the current window"
-msgstr "Mostra o amaga la subfinestra inferior de la finestra actual"
+msgstr "Mostra o amaga el quadre inferior de la finestra actual"
 
-#: ../gedit/gedit-utils.c:1061
+#: ../gedit/gedit-utils.c:1017
 msgid "Please check your installation."
 msgstr "Comproveu la instal·lació."
 
-#: ../gedit/gedit-utils.c:1131
+#: ../gedit/gedit-utils.c:1087
 #, c-format
 msgid "Unable to open UI file %s. Error: %s"
 msgstr "No s'ha pogut obrir el fitxer d'interfície d'usuari %s. Error: %s"
 
-#: ../gedit/gedit-utils.c:1151
+#: ../gedit/gedit-utils.c:1107
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
 msgstr "No s'ha trobat l'objecte «%s» dins del fitxer %s."
 
 #. Translators: '/ on <remote-share>'
-#: ../gedit/gedit-utils.c:1296
+#: ../gedit/gedit-utils.c:1252
 #, c-format
 msgid "/ on %s"
 msgstr "/ a %s"
 
 # FIXME
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:599
+#: ../gedit/gedit-view-frame.c:625
 msgid "_Wrap Around"
 msgstr "Cont_inua des de l'inici"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:609
+#: ../gedit/gedit-view-frame.c:635
 msgid "Match _Entire Word Only"
 msgstr "Coincidència només amb la paraula s_encera"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:619
+#: ../gedit/gedit-view-frame.c:645
 msgid "_Match Case"
 msgstr "Coi_ncidència de majúscules i minúscules"
 
-#: ../gedit/gedit-view-frame.c:878
+#: ../gedit/gedit-view-frame.c:904
 msgid "String you want to search for"
 msgstr "Cadena que vulgueu cercar"
 
-#: ../gedit/gedit-view-frame.c:887
+#: ../gedit/gedit-view-frame.c:913
 msgid "Line you want to move the cursor to"
 msgstr "Línia on vulgueu moure el cursor"
 
-#: ../gedit/gedit-window.c:1024
+#: ../gedit/gedit-window.c:1023
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Utilitza el mode de ressaltat %s"
@@ -2227,41 +2204,41 @@ msgstr "Utilitza el mode de ressaltat %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1091 ../gedit/gedit-window.c:2105
-#: ../plugins/externaltools/tools/manager.py:121
-#: ../plugins/externaltools/tools/manager.py:419
-#: ../plugins/externaltools/tools/manager.py:529
-#: ../plugins/externaltools/tools/manager.py:844
+#: ../gedit/gedit-window.c:1090 ../gedit/gedit-window.c:2105
+#: ../plugins/externaltools/tools/manager.py:120
+#: ../plugins/externaltools/tools/manager.py:416
+#: ../plugins/externaltools/tools/manager.py:527
+#: ../plugins/externaltools/tools/manager.py:846
 msgid "Plain Text"
 msgstr "Text pla"
 
-#: ../gedit/gedit-window.c:1092
+#: ../gedit/gedit-window.c:1091
 msgid "Disable syntax highlighting"
 msgstr "Inhabilita el ressaltat de la sintaxi"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1414
+#: ../gedit/gedit-window.c:1413
 #, c-format
 msgid "Open '%s'"
 msgstr "Obri «%s»"
 
-#: ../gedit/gedit-window.c:1525
+#: ../gedit/gedit-window.c:1522
 msgid "Open a recently used file"
 msgstr "Obri un fitxer utilitzat recentment"
 
-#: ../gedit/gedit-window.c:1531
+#: ../gedit/gedit-window.c:1528
 msgid "Open"
 msgstr "Obri"
 
-#: ../gedit/gedit-window.c:1589
+#: ../gedit/gedit-window.c:1586
 msgid "Save"
 msgstr "Alça"
 
-#: ../gedit/gedit-window.c:1591
+#: ../gedit/gedit-window.c:1588
 msgid "Print"
 msgstr "Imprimeix"
 
-#: ../gedit/gedit-window.c:1593
+#: ../gedit/gedit-window.c:1590
 msgid "Find"
 msgstr "Cerca"
 
@@ -2280,25 +2257,23 @@ msgid "Tab Width"
 msgstr "Amplada de la tabulació"
 
 #: ../gedit/gedit-window.c:2265
-#, fuzzy
 msgid "Bracket match is out of range"
-msgstr "Coincidència de claudàtors"
+msgstr "El claudàtor coincident està fora del rang"
 
 #: ../gedit/gedit-window.c:2270
-#, fuzzy
 msgid "Bracket match not found"
-msgstr "Coincidència de claudàtors"
+msgstr "No s'ha trobat el claudàtor coincident"
 
 #: ../gedit/gedit-window.c:2275
 #, c-format
 msgid "Bracket match found on line: %d"
-msgstr ""
+msgstr "S'ha trobat una coincidència de claudàtors a la línia: %d"
 
-#: ../gedit/gedit-window.c:4051
+#: ../gedit/gedit-window.c:4046
 msgid "About gedit"
 msgstr "Quant al gedit"
 
-#. ex:ts=8:noet:
+#. ex:set ts=8 noet:
 #: ../plugins/changecase/changecase.plugin.desktop.in.h:1
 msgid "Change Case"
 msgstr "Canvia les majúscules/minúscules"
@@ -2379,13 +2354,12 @@ msgstr ""
 #. ex:set ts=8 noet:
 #: ../plugins/checkupdate/org.gnome.gedit.plugins.checkupdate.gschema.xml.in.in.h:1
 msgid "Version to Ignore"
-msgstr ""
+msgstr "Versió a ignorar"
 
 #. This is releated to the next gedit version to be released
 #: ../plugins/checkupdate/org.gnome.gedit.plugins.checkupdate.gschema.xml.in.in.h:3
-#, fuzzy
 msgid "Version to ignore until a newer version is released."
-msgstr "Versió a ignorar fins que es publiqui la propera versió"
+msgstr "Versió a ignorar fins que es publique una versió més nova."
 
 #: ../plugins/docinfo/docinfo.plugin.desktop.in.h:1
 msgid ""
@@ -2472,78 +2446,78 @@ msgstr "Executeu ordes externes i scripts de l'intèrpret d'ordes."
 msgid "External Tools"
 msgstr "Eines externes"
 
-#: ../plugins/externaltools/tools/__init__.py:172
-msgid "Manage _External Tools..."
-msgstr "Gestiona les _eines externes..."
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
+msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
+msgstr ""
+"Un nom de tipus de lletra Pango. Com ara «Sans 12» o «Monospace Bold 14»."
 
-#: ../plugins/externaltools/tools/__init__.py:174
-msgid "Opens the External Tools Manager"
-msgstr "Obri el gestor d'eines externes"
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
+msgid ""
+"If true, the external tools will use the desktop-global standard font if "
+"it's monospace (and the most similar font it can come up with otherwise)."
+msgstr ""
+"Si és «true» (cert), les eines externes utilitzaran el tipus de lletra "
+"estàndard de l'escriptori si és la d'amplada fixa (i sinó el tipus de lletra "
+"més paregut que es puga trobar)."
 
-#: ../plugins/externaltools/tools/__init__.py:178
-msgid "External _Tools"
-msgstr "_Eines externes"
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
+msgid "Whether to use the system font"
+msgstr "Si s'ha d'utilitzar el tipus de lletra del sistema"
 
-#: ../plugins/externaltools/tools/__init__.py:180
-msgid "External tools"
-msgstr "Eines externes"
-
-#: ../plugins/externaltools/tools/__init__.py:213
-msgid "Shell Output"
-msgstr "Eixida de l'intèrpret d'ordes"
-
-#: ../plugins/externaltools/tools/capture.py:93
+#: ../plugins/externaltools/tools/capture.py:92
 #, python-format
 msgid "Could not execute command: %s"
 msgstr "No s'ha pogut executar l'orde: %s"
 
-#: ../plugins/externaltools/tools/functions.py:164
+#: ../plugins/externaltools/tools/functions.py:159
 msgid "You must be inside a word to run this command"
 msgstr "Heu de ser dins d'una paraula per poder executar esta orde"
 
-#: ../plugins/externaltools/tools/functions.py:269
+#: ../plugins/externaltools/tools/functions.py:265
 msgid "Running tool:"
 msgstr "S'està executant l'eina:"
 
-#: ../plugins/externaltools/tools/functions.py:298
+#: ../plugins/externaltools/tools/functions.py:294
 msgid "Done."
 msgstr "Fet."
 
-#: ../plugins/externaltools/tools/functions.py:300
+#: ../plugins/externaltools/tools/functions.py:296
 msgid "Exited"
 msgstr "Ha eixit"
 
-#: ../plugins/externaltools/tools/manager.py:119
+#: ../plugins/externaltools/tools/manager.py:118
 msgid "All languages"
 msgstr "Totes les llengües"
 
-#: ../plugins/externaltools/tools/manager.py:518
-#: ../plugins/externaltools/tools/manager.py:522
-#: ../plugins/externaltools/tools/manager.py:842
+#: ../plugins/externaltools/tools/manager.py:516
+#: ../plugins/externaltools/tools/manager.py:520
+#: ../plugins/externaltools/tools/manager.py:844
 #: ../plugins/externaltools/tools/tools.ui.h:2
 msgid "All Languages"
 msgstr "Totes les llengües"
 
-#: ../plugins/externaltools/tools/manager.py:628
+#: ../plugins/externaltools/tools/manager.py:627
 msgid "New tool"
 msgstr "Eina nova"
 
-#: ../plugins/externaltools/tools/manager.py:759
+#: ../plugins/externaltools/tools/manager.py:758
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr "Este accelerador ja s'utilitza per a %s"
 
-#: ../plugins/externaltools/tools/manager.py:810
+#: ../plugins/externaltools/tools/manager.py:809
 msgid "Type a new accelerator, or press Backspace to clear"
 msgstr "Teclegeu un nou accelerador, o premeu la tecla de retrocés per netejar"
 
-#: ../plugins/externaltools/tools/manager.py:812
+#: ../plugins/externaltools/tools/manager.py:811
 msgid "Type a new accelerator"
 msgstr "Teclegeu un accelerador nou"
 
-#: ../plugins/externaltools/tools/outputpanel.py:156
+#: ../plugins/externaltools/tools/outputpanel.py:120
 msgid "Stopped."
-msgstr "Aturat."
+msgstr "Parat."
 
 #: ../plugins/externaltools/tools/tools.ui.h:3
 msgid "All documents"
@@ -2622,7 +2596,7 @@ msgid "_Applicability:"
 msgstr "_Aplicabilitat:"
 
 #: ../plugins/externaltools/tools/tools.ui.h:22
-#: ../plugins/snippets/snippets/snippets.ui.h:12
+#: ../plugins/snippets/snippets/snippets.ui.h:11
 msgid "_Edit:"
 msgstr "_Edita:"
 
@@ -2636,7 +2610,7 @@ msgstr "S_ortida:"
 
 #: ../plugins/externaltools/tools/tools.ui.h:25
 msgid "_Save:"
-msgstr "De_sa:"
+msgstr "Al_ça:"
 
 #: ../plugins/externaltools/tools/tools.ui.h:26
 msgid "_Shortcut Key:"
@@ -2646,6 +2620,27 @@ msgstr "_Tecla de drecera:"
 msgid "_Tools:"
 msgstr "Ei_nes:"
 
+#: ../plugins/externaltools/tools/windowactivatable.py:175
+msgid "Manage _External Tools..."
+msgstr "Gestiona les _eines externes..."
+
+#: ../plugins/externaltools/tools/windowactivatable.py:176
+msgid "Opens the External Tools Manager"
+msgstr "Obri el gestor d'eines externes"
+
+#: ../plugins/externaltools/tools/windowactivatable.py:179
+msgid "External _Tools"
+msgstr "_Eines externes"
+
+#: ../plugins/externaltools/tools/windowactivatable.py:180
+msgid "External tools"
+msgstr "Eines externes"
+
+#: ../plugins/externaltools/tools/windowactivatable.py:214
+msgid "Shell Output"
+msgstr "Eixida de l'intèrpret d'ordes"
+
+#. ex:ts=4:et:
 #: ../plugins/externaltools/data/build.desktop.in.h:1
 msgid "Build"
 msgstr "Munta"
@@ -2665,80 +2660,77 @@ msgstr "Suprimiu espais innecessaris al final de les línies d'un fitxer"
 
 #: ../plugins/externaltools/data/run-command.desktop.in.h:1
 msgid "Execute a custom command and put its output in a new document"
-msgstr ""
-"Executeu una orde personalitzada i poseu-ne la eixida a un document nou"
+msgstr "Executeu una orde personalitzada i poseu-ne l'eixida a un document nou"
 
 #: ../plugins/externaltools/data/run-command.desktop.in.h:2
 msgid "Run command"
 msgstr "Executeu una orde"
 
 #: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:1
-#, fuzzy
 msgid "Easy file access from the side panel"
-msgstr "Accés fàcil als fitxers des de la barra lateral"
+msgstr "Accés fàcil als fitxers des del quadre lateral"
 
 #: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:2
-#, fuzzy
 msgid "File Browser Panel"
-msgstr "Subfinestra del navegador de fitxers"
+msgstr "Quadre del navegador de fitxers"
 
 #: ../plugins/filebrowser/gedit-file-bookmarks-store.c:243
 msgid "File System"
 msgstr "Sistema de fitxers"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:585
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:577
 msgid "_Set root to active document"
 msgstr "E_stabliu l'arrel del document actiu"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:587
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:579
 msgid "Set the root to the active document location"
 msgstr "Establiu l'arrel de la ubicació del document actiu"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:592
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:584
 msgid "_Open terminal here"
 msgstr "_Obri un terminal ací"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:594
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:586
 msgid "Open a terminal at the currently opened directory"
 msgstr "Obri un terminal en el directori obert actualment"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:732
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:724
 msgid "File Browser"
 msgstr "Navegador de fitxers"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:875
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:867
 msgid "An error occurred while creating a new directory"
 msgstr "S'ha produït un error en crear un directori nou"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:878
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:870
 msgid "An error occurred while creating a new file"
 msgstr "S'ha produït un error en crear un fitxer nou"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:881
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:873
 msgid "An error occurred while renaming a file or directory"
 msgstr "S'ha produït un error en canviar el nom d'un fitxer o directori"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:884
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:876
 msgid "An error occurred while deleting a file or directory"
 msgstr "S'ha produït un error en suprimir un fitxer o directori"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:887
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:879
 msgid "An error occurred while opening a directory in the file manager"
 msgstr "S'ha produït un error en obrir un directori al gestor de fitxers"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:890
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:882
 msgid "An error occurred while setting a root directory"
 msgstr "S'ha produït un error en establir el directori arrel"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:893
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:885
 msgid "An error occurred while loading a directory"
-msgstr "S'ha produït un error en carregar-se un directori"
+msgstr "S'ha produït un error en carregar-s'un directori"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:896
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:888
 msgid "An error occurred"
 msgstr "S'ha produït un error"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1105
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1104
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
@@ -2747,34 +2739,33 @@ msgstr ""
 "paperera, el voleu suprimir\n"
 "immediatament?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1110
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1109
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr "No es pot moure el fitxer «%s» a la paperera."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1115
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1114
 msgid "The selected files cannot be moved to the trash."
 msgstr "No es poden moure a la paperera els fitxers seleccionats."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1147
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1146
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr "Esteu segur que voleu suprimir permanentment «%s»?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1152
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1151
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr "Esteu segur que voleu suprimir permanentment els fitxers seleccionats?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1155
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1154
 msgid "If you delete an item, it is permanently lost."
 msgstr "Si suprimiu un element, este es perdrà per sempre."
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:1728
+#: ../plugins/filebrowser/gedit-file-browser-store.c:1722
 msgid "(Empty)"
 msgstr "(Buit)"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3442
-#, fuzzy
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3467
 msgid ""
 "The renamed file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
@@ -2783,11 +2774,11 @@ msgstr ""
 "del filtre per fer-lo visible"
 
 #. Translators: This is the default name of new files created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3689
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3711
 msgid "file"
 msgstr "fitxer"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3717
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3739
 msgid ""
 "The new file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
@@ -2796,11 +2787,11 @@ msgstr ""
 "per fer-lo visible"
 
 #. Translators: This is the default name of new directories created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3748
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3770
 msgid "directory"
 msgstr "directori"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3773
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3795
 msgid ""
 "The new directory is currently filtered out. You need to adjust your filter "
 "settings to make the directory visible"
@@ -2945,17 +2936,17 @@ msgstr "Vés a la següent ubicació"
 msgid "_Match Filename"
 msgstr "Coi_ncidència del nom de fitxer"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2189
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2185
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "No hi ha cap objecte de muntatge per al volum muntat: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2267
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2262
 #, c-format
 msgid "Could not open media: %s"
 msgstr "No s'ha pogut obrir el suport: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2314
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2309
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "No s'ha pogut muntar el volum: %s"
@@ -3003,7 +2994,7 @@ msgid ""
 "bookmarks view"
 msgstr ""
 "Obri la vista d'arbre en lloc de la vista d'adreces d'interés quan es "
-"carregui el connector del navegador de fitxers"
+"carregue el connector del navegador de fitxers"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:9
 msgid "Set Location to First Document"
@@ -3020,7 +3011,7 @@ msgid ""
 "and onload/tree_view is TRUE."
 msgstr ""
 "El directori arrel del navegador de fitxers que es farà servir quan es "
-"carregui el connector del navegador de fitxers i onload/tree_view és CERT."
+"carregue el connector del navegador de fitxers i onload/tree_view és CERT."
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:12
 msgid ""
@@ -3029,7 +3020,7 @@ msgid ""
 "the actual root."
 msgstr ""
 "El directori arrel virtual del navegador de fitxers que es farà servir quan "
-"es carregui el connector del navegador de fitxers i onload/tree_view és "
+"es carregue el connector del navegador de fitxers i onload/tree_view és "
 "CERT. L'arrel virtual ha de ser sempre per sota de l'arrel actual."
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:13
@@ -3041,16 +3032,14 @@ msgstr ""
 "funciona per sobre de filter_mode."
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:14
-#, fuzzy
 msgid ""
 "This value determines what files get filtered from the file browser. Valid "
 "values are: none (filter nothing), hide-hidden (filter hidden files) and "
 "hide-binary (filter binary files)."
 msgstr ""
 "Este valor determina quins fitxers del navegador de fitxers es filtraran. "
-"Els valors vàlids són: none (no es filtra res), hidden (es filtren els "
-"fitxers ocults), binary (es filtren els fitxers binaris) i hidden_and_binary "
-"(es filtren els fitxers ocults i binaris)."
+"Els valors vàlids són: «none» (no es filtra res), «hide-hidden» (es filtren "
+"els fitxers ocults) i «hide-binary» (es filtren els fitxers binaris)."
 
 #: ../plugins/modelines/modelines.plugin.desktop.in.h:1
 msgid "Emacs, Kate and Vim-style modelines support for gedit."
@@ -3060,25 +3049,30 @@ msgstr "Modes de línia a l'estil de l'Emacs, el Kate i el vim per al gedit."
 msgid "Modelines"
 msgstr "Modes de línia"
 
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
-#, fuzzy
-msgid "Command Color Text"
-msgstr "Color de les _ordes:"
-
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:2
-#, fuzzy
-msgid "Error Color Text"
-msgstr "Color dels _errors:"
+msgid "Command Color Text"
+msgstr "Color del text de les ordes"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:3
-#, fuzzy
-msgid "The command color text"
-msgstr "Color de les _ordes:"
+msgid "Error Color Text"
+msgstr "Color del text dels errors"
 
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:4
-#, fuzzy
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:5
+msgid ""
+"If true, the terminal will use the desktop-global standard font if it's "
+"monospace (and the most similar font it can come up with otherwise)."
+msgstr ""
+"Si és «true» (cert), el terminal utilitzarà el tipus de lletra estàndard de "
+"l'escriptori si és la d'amplada fixa (i sinó el tipus de lletra més paregut "
+"que es puga trobar)."
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
+msgid "The command color text"
+msgstr "El color del text de les ordes"
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
 msgid "The error color text"
-msgstr "Color dels _errors:"
+msgstr "El color del text dels errors"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
 msgid "Interactive Python console standing in the bottom panel"
@@ -3098,19 +3092,11 @@ msgstr "Color de les _ordes:"
 msgid "_Error color:"
 msgstr "Color dels _errors:"
 
-#. ex:ts=8:et:
-#: ../plugins/quickopen/quickopen/popup.py:35
+#. ex:ts=4:et:
+#: ../plugins/quickopen/quickopen/popup.py:31
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:1
 msgid "Quick Open"
 msgstr "Obri ràpid"
-
-#: ../plugins/quickopen/quickopen/windowhelper.py:69
-msgid "Quick open"
-msgstr "Obri ràpid"
-
-#: ../plugins/quickopen/quickopen/windowhelper.py:70
-msgid "Quickly open documents"
-msgstr "Obri documents ràpidament"
 
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:2
 msgid "Quickly open files"
@@ -3122,7 +3108,7 @@ msgstr ""
 "Inseriu d'una manera ràpida fragments de text que s'utilitzen freqüentment"
 
 #: ../plugins/snippets/snippets.plugin.desktop.in.h:2
-#: ../plugins/snippets/snippets/Document.py:58
+#: ../plugins/snippets/snippets/document.py:56
 msgid "Snippets"
 msgstr "Fragments"
 
@@ -3135,7 +3121,7 @@ msgid "Create new snippet"
 msgstr "Crea un fragment nou"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/Manager.py:412
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Delete selected snippet"
 msgstr "Suprimeix el fragment seleccionat"
 
@@ -3144,7 +3130,7 @@ msgid "Export selected snippets"
 msgstr "Exporta els fragments seleccionats"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/Manager.py:801
+#: ../plugins/snippets/snippets/manager.py:773
 msgid "Import snippets"
 msgstr "Importa els fragments"
 
@@ -3158,53 +3144,49 @@ msgstr "Drecera de teclat amb la qual s'activa el fragment"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/Manager.py:689
+#: ../plugins/snippets/snippets/manager.py:663
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Paraula que activa un fragment després de prémer la tecla de tabulació"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:10
-msgid "Snippets Manager"
-msgstr "Gestor de fragments"
-
 # FIXME: objectius... (josep)
-#: ../plugins/snippets/snippets/snippets.ui.h:11
+#: ../plugins/snippets/snippets/snippets.ui.h:10
 msgid "_Drop targets:"
 msgstr "_Deixeu anar els objectius:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:13
+#: ../plugins/snippets/snippets/snippets.ui.h:12
 msgid "_Snippets:"
 msgstr "_Fragments:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:14
+#: ../plugins/snippets/snippets/snippets.ui.h:13
 msgid "_Tab trigger:"
 msgstr "Disparador de _tabuladors:"
 
-#: ../plugins/snippets/snippets/WindowHelper.py:130
+#: ../plugins/snippets/snippets/windowactivatable.py:143
 msgid "Manage _Snippets..."
 msgstr "Gestiona _fragments..."
 
-#: ../plugins/snippets/snippets/WindowHelper.py:131
+#: ../plugins/snippets/snippets/windowactivatable.py:144
 msgid "Manage snippets"
 msgstr "Gestiona fragments"
 
-#: ../plugins/snippets/snippets/Manager.py:46
+#: ../plugins/snippets/snippets/manager.py:43
 msgid "Snippets archive"
 msgstr "Arxiu de fragments"
 
-#: ../plugins/snippets/snippets/Manager.py:71
+#: ../plugins/snippets/snippets/manager.py:62
 msgid "Add a new snippet..."
 msgstr "Afig un fragment nou..."
 
-#: ../plugins/snippets/snippets/Manager.py:121
+#: ../plugins/snippets/snippets/manager.py:115
 msgid "Global"
 msgstr "Global"
 
-#: ../plugins/snippets/snippets/Manager.py:409
+#: ../plugins/snippets/snippets/manager.py:393
 msgid "Revert selected snippet"
 msgstr "Reverteix el fragment seleccionat"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/Manager.py:682
+#: ../plugins/snippets/snippets/manager.py:656
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
@@ -3213,125 +3195,125 @@ msgstr ""
 "contindre lletres o bé un sol caràcter que no siga alfanumèric, com ara {, "
 "[, etcètera."
 
-#: ../plugins/snippets/snippets/Manager.py:780
+#: ../plugins/snippets/snippets/manager.py:752
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "S'ha produït este error en importar: %s"
 
-#: ../plugins/snippets/snippets/Manager.py:787
+#: ../plugins/snippets/snippets/manager.py:759
 msgid "Import successfully completed"
 msgstr "S'ha importat correctament"
 
-#: ../plugins/snippets/snippets/Manager.py:806
-#: ../plugins/snippets/snippets/Manager.py:892
-#: ../plugins/snippets/snippets/Manager.py:955
+#: ../plugins/snippets/snippets/manager.py:778
+#: ../plugins/snippets/snippets/manager.py:864
+#: ../plugins/snippets/snippets/manager.py:927
 msgid "All supported archives"
 msgstr "Tots els arxius implementats"
 
-#: ../plugins/snippets/snippets/Manager.py:807
-#: ../plugins/snippets/snippets/Manager.py:893
-#: ../plugins/snippets/snippets/Manager.py:956
+#: ../plugins/snippets/snippets/manager.py:779
+#: ../plugins/snippets/snippets/manager.py:865
+#: ../plugins/snippets/snippets/manager.py:928
 msgid "Gzip compressed archive"
 msgstr "Arxiu comprimit amb el gzip"
 
-#: ../plugins/snippets/snippets/Manager.py:808
-#: ../plugins/snippets/snippets/Manager.py:894
-#: ../plugins/snippets/snippets/Manager.py:957
+#: ../plugins/snippets/snippets/manager.py:780
+#: ../plugins/snippets/snippets/manager.py:866
+#: ../plugins/snippets/snippets/manager.py:929
 msgid "Bzip2 compressed archive"
 msgstr "Arxiu comprimit amb el bzip2"
 
-#: ../plugins/snippets/snippets/Manager.py:809
+#: ../plugins/snippets/snippets/manager.py:781
 msgid "Single snippets file"
 msgstr "Fitxer de fragments simples"
 
-#: ../plugins/snippets/snippets/Manager.py:810
-#: ../plugins/snippets/snippets/Manager.py:896
-#: ../plugins/snippets/snippets/Manager.py:959
+#: ../plugins/snippets/snippets/manager.py:782
+#: ../plugins/snippets/snippets/manager.py:868
+#: ../plugins/snippets/snippets/manager.py:931
 msgid "All files"
 msgstr "Tots els fitxers"
 
-#: ../plugins/snippets/snippets/Manager.py:822
+#: ../plugins/snippets/snippets/manager.py:794
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "S'ha produït este error en exportar: %s"
 
-#: ../plugins/snippets/snippets/Manager.py:826
+#: ../plugins/snippets/snippets/manager.py:798
 msgid "Export successfully completed"
 msgstr "S'ha exportat correctament"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/Manager.py:866
-#: ../plugins/snippets/snippets/Manager.py:933
+#: ../plugins/snippets/snippets/manager.py:838
+#: ../plugins/snippets/snippets/manager.py:905
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr ""
 "Voleu incloure fragments de <b>sistema</b> seleccionats en l'exportació?"
 
-#: ../plugins/snippets/snippets/Manager.py:881
-#: ../plugins/snippets/snippets/Manager.py:951
+#: ../plugins/snippets/snippets/manager.py:853
+#: ../plugins/snippets/snippets/manager.py:923
 msgid "There are no snippets selected to be exported"
 msgstr "No hi ha cap fragment seleccionat per exportar"
 
-#: ../plugins/snippets/snippets/Manager.py:886
-#: ../plugins/snippets/snippets/Manager.py:924
+#: ../plugins/snippets/snippets/manager.py:858
+#: ../plugins/snippets/snippets/manager.py:896
 msgid "Export snippets"
 msgstr "Exporta els fragments"
 
-#: ../plugins/snippets/snippets/Manager.py:1063
+#: ../plugins/snippets/snippets/manager.py:1037
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "Teclegeu un nou accelerador, o premeu la tecla de retrocés per netejar"
 
-#: ../plugins/snippets/snippets/Manager.py:1065
+#: ../plugins/snippets/snippets/manager.py:1039
 msgid "Type a new shortcut"
 msgstr "Teclegeu un accelerador nou"
 
-#: ../plugins/snippets/snippets/Exporter.py:82
+#: ../plugins/snippets/snippets/exporter.py:82
 #, python-format
 msgid "The archive \"%s\" could not be created"
 msgstr "No s'ha pogut crear l'arxiu «%s»"
 
-#: ../plugins/snippets/snippets/Exporter.py:99
+#: ../plugins/snippets/snippets/exporter.py:99
 #, python-format
 msgid "Target directory \"%s\" does not exist"
 msgstr "No existeix el directori de destí «%s»"
 
-#: ../plugins/snippets/snippets/Exporter.py:102
+#: ../plugins/snippets/snippets/exporter.py:102
 #, python-format
 msgid "Target directory \"%s\" is not a valid directory"
 msgstr "El directori de destí «%s» no és vàlid"
 
-#: ../plugins/snippets/snippets/Importer.py:46
-#: ../plugins/snippets/snippets/Importer.py:100
+#: ../plugins/snippets/snippets/importer.py:46
+#: ../plugins/snippets/snippets/importer.py:100
 #, python-format
 msgid "File \"%s\" does not exist"
 msgstr "No existeix el fitxer «%s»"
 
-#: ../plugins/snippets/snippets/Importer.py:49
+#: ../plugins/snippets/snippets/importer.py:49
 #, python-format
 msgid "File \"%s\" is not a valid snippets file"
 msgstr "El fitxer «%s» no és un fitxer de fragments vàlid"
 
-#: ../plugins/snippets/snippets/Importer.py:59
+#: ../plugins/snippets/snippets/importer.py:59
 #, python-format
 msgid "Imported file \"%s\" is not a valid snippets file"
 msgstr "El fitxer importat «%s» no és un fitxer de fragments vàlid"
 
-#: ../plugins/snippets/snippets/Importer.py:69
+#: ../plugins/snippets/snippets/importer.py:69
 #, python-format
 msgid "The archive \"%s\" could not be extracted"
-msgstr "No s'ha pogut extreure l'arxiu «%s»"
+msgstr "No s'ha pogut extraure l'arxiu «%s»"
 
-#: ../plugins/snippets/snippets/Importer.py:87
+#: ../plugins/snippets/snippets/importer.py:87
 #, python-format
 msgid "The following files could not be imported: %s"
 msgstr "Estos fitxers no s'han pogut importar: %s"
 
-#: ../plugins/snippets/snippets/Importer.py:103
-#: ../plugins/snippets/snippets/Importer.py:116
+#: ../plugins/snippets/snippets/importer.py:103
+#: ../plugins/snippets/snippets/importer.py:116
 #, python-format
 msgid "File \"%s\" is not a valid snippets archive"
 msgstr "El fitxer «%s» no és un arxiu de fragments vàlid"
 
-#: ../plugins/snippets/snippets/Placeholder.py:594
+#: ../plugins/snippets/snippets/placeholder.py:594
 #, python-format
 msgid ""
 "Execution of the Python command (%s) exceeds the maximum time, execution "
@@ -3340,7 +3322,7 @@ msgstr ""
 "L'execució de l'orde de Python (%s) ha excedit el temps d'espera màxim, s'ha "
 "interromput l'execució."
 
-#: ../plugins/snippets/snippets/Placeholder.py:602
+#: ../plugins/snippets/snippets/placeholder.py:602
 #, python-format
 msgid "Execution of the Python command (%s) failed: %s"
 msgstr "Ha fallat l'execució de l'orde de Python (%s): %s"
@@ -3391,7 +3373,7 @@ msgstr "Ordena un document o el text seleccionat."
 #. Translators: Displayed in the "Check Spelling" dialog if there are no suggestions
 #. * for the current misspelled word
 #: ../plugins/spell/gedit-automatic-spell-checker.c:420
-#: ../plugins/spell/gedit-spell-checker-dialog.c:456
+#: ../plugins/spell/gedit-spell-checker-dialog.c:451
 msgid "(no suggested words)"
 msgstr "(cap paraula suggerida)"
 
@@ -3422,11 +3404,11 @@ msgid "Suggestions"
 msgstr "Suggeriments"
 
 #. Translators: Displayed in the "Check Spelling" dialog if the current word isn't misspelled
-#: ../plugins/spell/gedit-spell-checker-dialog.c:563
+#: ../plugins/spell/gedit-spell-checker-dialog.c:558
 msgid "(correct spelling)"
 msgstr "(ortografia correcta)"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:706
+#: ../plugins/spell/gedit-spell-checker-dialog.c:699
 msgid "Completed spell checking"
 msgstr "S'ha completat la comprovació d'ortografia"
 
@@ -3434,8 +3416,8 @@ msgstr "S'ha completat la comprovació d'ortografia"
 #. * the second %s is the locale name. Example:
 #. * "French (France)"
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:285
-#: ../plugins/spell/gedit-spell-checker-language.c:291
+#: ../plugins/spell/gedit-spell-checker-language.c:373
+#: ../plugins/spell/gedit-spell-checker-language.c:379
 #, c-format
 msgctxt "language"
 msgid "%s (%s)"
@@ -3444,7 +3426,7 @@ msgstr "%s (%s)"
 #. Translators: this refers to an unknown language code
 #. * (one which isn't in our built-in list).
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:300
+#: ../plugins/spell/gedit-spell-checker-language.c:388
 #, c-format
 msgctxt "language"
 msgid "Unknown (%s)"
@@ -3453,7 +3435,7 @@ msgstr "Desconegut (%s)"
 #. Translators: this refers the Default language used by the
 #. * spell checker
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:406
+#: ../plugins/spell/gedit-spell-checker-language.c:494
 msgctxt "language"
 msgid "Default"
 msgstr "Predeterminada"
@@ -3484,9 +3466,8 @@ msgid "Set the language of the current document"
 msgstr "Especifica l'idioma del document actual"
 
 #: ../plugins/spell/gedit-spell-plugin.c:124
-#, fuzzy
 msgid "_Highlight Misspelled Words"
-msgstr "Mode de _ressaltat"
+msgstr "_Ressalta les paraules mal escrites"
 
 #: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "Automatically spell-check the current document"
@@ -3569,1595 +3550,6 @@ msgstr "Comprova l'ortografia del document actual."
 msgid "Spell Checker"
 msgstr "Comprovador d'ortografia"
 
-#: ../plugins/taglist/gedit-taglist-plugin.c:165
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:697
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:713
-msgid "Tags"
-msgstr "Marcadors"
-
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:608
-msgid "Select the group of tags you want to use"
-msgstr "Selecciona el grup de marcadors que vulgueu utilitzar"
-
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:627
-msgid "_Preview"
-msgstr "_Previsualització"
-
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:694
-msgid "Available Tag Lists"
-msgstr "Llistes dels marcadors disponibles"
-
-#. ex:ts=8:noet:
-#: ../plugins/taglist/HTML.tags.xml.in.h:1
-msgid "Abbreviated form"
-msgstr "Forma abreviada"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:2
-msgid "Abbreviation"
-msgstr "Abreviatura"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:3
-msgid "Above"
-msgstr "A sobre"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:4
-msgid "Accessibility key character"
-msgstr "Caràcter clau d'accessibilitat"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:5
-msgid "Acronym"
-msgstr "Acrònim"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:6
-msgid "Align"
-msgstr "Alinea"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:7
-msgid "Alignment character"
-msgstr "Caràcter d'alineament"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:8
-msgid "Alternative"
-msgstr "Alternatiu"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:9
-msgid "Anchor"
-msgstr "Àncora"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:10
-msgid "Anchor URI"
-msgstr "Ancora l'URI"
-
-#  FIXME (josep)
-#: ../plugins/taglist/HTML.tags.xml.in.h:11
-msgid "Applet class file code"
-msgstr "Fitxer de codi d'una classe d'una miniaplicació"
-
-#  FIXME (josep)
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:13
-msgid "Applet class file code (deprecated)"
-msgstr "Fitxer de codi d'una classe d'una miniaplicació (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:14
-msgid "Array"
-msgstr "Matriu"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:15
-msgid "Associated information"
-msgstr "Informació associada"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:16
-msgid "Author info"
-msgstr "Informació quant a l'autor"
-
-# FIXME (josep)
-#: ../plugins/taglist/HTML.tags.xml.in.h:17
-msgid "Axis related headers"
-msgstr "Capçaleres relacionades amb l'eix"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:18
-msgid "Background color"
-msgstr "Color de fons"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:20
-msgid "Background color (deprecated)"
-msgstr "Color de fons (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:21
-msgid "Background texture tile"
-msgstr "Títol de la textura del fons"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:23
-msgid "Background texture tile (deprecated)"
-msgstr "Títol de la textura del fons (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:24
-msgid "Base URI"
-msgstr "URI base"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:25
-msgid "Base font"
-msgstr "Tipus de lletra base"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:27
-msgid "Base font (deprecated)"
-msgstr "Tipus de lletra base (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:28
-msgid "Bold"
-msgstr "Negreta"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:29
-msgid "Border"
-msgstr "Vora"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:31
-msgid "Border (deprecated)"
-msgstr "Vora (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:32
-msgid "Border color"
-msgstr "Color de la vora"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:33
-msgid "Cell rowspan"
-msgstr "Abast en columnes de la cel·la"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:34
-msgid "Center"
-msgstr "Centre"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:36
-msgid "Center (deprecated)"
-msgstr "Centra (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:37
-msgid "Character encoding of linked resource"
-msgstr "Codificacions de caràcters del recurs enllaçat"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:38
-msgid "Checked (state)"
-msgstr "Comprovat (estat)"
-
-# FIXME ?
-#: ../plugins/taglist/HTML.tags.xml.in.h:39
-msgid "Checked state"
-msgstr "Estat comprovat"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:40
-msgid "Citation"
-msgstr "Citació"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:41
-msgid "Cite reason for change"
-msgstr "Cita el motiu del canvi"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:42
-msgid "Class implementation ID"
-msgstr "ID de la implementació de la classe"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:43
-msgid "Class list"
-msgstr "Llistat de classes"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:44
-msgid "Clear text flow control"
-msgstr "Neteja el control de flux del text"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:45
-msgid "Code content type"
-msgstr "Codi del tipus de contingut"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:46
-msgid "Color of selected links"
-msgstr "Color dels enllaços seleccionats"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:48
-msgid "Color of selected links (deprecated)"
-msgstr "Color dels enllaços seleccionats (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:49
-msgid "Column span"
-msgstr "Abast de la columna"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:50
-msgid "Columns"
-msgstr "Columnes"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:51
-msgid "Comment"
-msgstr "Comentari"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:52
-msgid "Computer code fragment"
-msgstr "Fragment codi d'ordinador"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:53
-msgid "Content scheme"
-msgstr "Esquema de continguts"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:54
-msgid "Content type"
-msgstr "Tipus de continguts"
-
-#. The "type" attribute is deprecated for the "ol" tag only,
-#. since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:57
-msgid "Content type (deprecated)"
-msgstr "Tipus de continguts (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:58
-msgid "Coordinates"
-msgstr "Coordenades"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:59
-msgid "DIV Style container"
-msgstr "Contenidor d'estil DIV"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:60
-msgid "DIV container"
-msgstr "Contenidor DIV"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:61
-msgid "Date and time of change"
-msgstr "Dia i hora del canvi"
-
-#. NOTE: used in "object" tag
-#: ../plugins/taglist/HTML.tags.xml.in.h:63
-msgid "Declare flag"
-msgstr "Declara senyalador"
-
-#. Translators: DEFER is an optional attribute of the <script> tag.
-#. It indicates that the script is not going to generate any document
-#. content. The browser can continue parsing and drawing the page.
-#: ../plugins/taglist/HTML.tags.xml.in.h:67
-msgid "Defer attribute"
-msgstr "Atribut deferent"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:68
-msgid "Definition description"
-msgstr "Descripció de la definició"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:69
-msgid "Definition list"
-msgstr "Llista de definició"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:70
-msgid "Definition term"
-msgstr "Terme de definició"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:71
-msgid "Deleted text"
-msgstr "Text suprimit"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:72
-msgid "Direction"
-msgstr "Direcció"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:73
-msgid "Directionality"
-msgstr "Directivitat"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:75
-msgid "Directionality (deprecated)"
-msgstr "Directivitat (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:76
-msgid "Directory list"
-msgstr "Llistat de directori"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:77
-msgid "Disabled"
-msgstr "Inhabilitat"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:78
-msgid "Document base"
-msgstr "Base del document"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:79
-msgid "Document body"
-msgstr "Cos del document"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:80
-msgid "Document head"
-msgstr "Capçalera del document"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:81
-msgid "Document title"
-msgstr "Títol del document"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:82
-msgid "Document type"
-msgstr "Tipus de document"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:83
-msgid "Element ID"
-msgstr "ID de l'element"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:84
-msgid "Embedded object"
-msgstr "Objecte incrustat"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:85
-#: ../plugins/taglist/Latex.tags.xml.in.h:9
-msgid "Emphasis"
-msgstr "Èmfasi"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:86
-msgid "Encode type"
-msgstr "Tipus de codificació"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:87
-msgid "Figure"
-msgstr "Figura"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:88
-msgid "Font face"
-msgstr "Tipus de lletra"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:90
-msgid "Font face (deprecated)"
-msgstr "Tipus de lletra (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:91
-msgid "For label"
-msgstr "Per etiqueta"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:92
-msgid "Forced line break"
-msgstr "Salt de línia forçat"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:93
-msgid "Form"
-msgstr "Formulari"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:94
-msgid "Form action handler"
-msgstr "Gestor d'accions del formulari"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:95
-msgid "Form control group"
-msgstr "Grup de control del formulari"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:96
-msgid "Form field label text"
-msgstr "Etiqueta de text del camp del formulari"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:97
-msgid "Form input"
-msgstr "Entrada del formulari"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:98
-msgid "Form input type"
-msgstr "Tipus d'entrada del formulari"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:99
-msgid "Form method"
-msgstr "Mètode del formulari"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:100
-msgid "Forward link"
-msgstr "Enllaç avant"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:101
-msgid "Frame"
-msgstr "Marc"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:102
-msgid "Frame border"
-msgstr "Contorn del marc"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:103
-msgid "Frame render parts"
-msgstr "Parts de representació del marc"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:104
-msgid "Frame source"
-msgstr "Font del marc"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:105
-msgid "Frame spacing"
-msgstr "Espaiat entre marcs"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:106
-msgid "Frame target"
-msgstr "Objectiu del marc"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:107
-msgid "Frameborder"
-msgstr "Contorn del marc"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:108
-msgid "Frameset"
-msgstr "Conjunt de marcs"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:109
-msgid "Frameset columns"
-msgstr "Columnes del conjunt de marcs"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:110
-msgid "Frameset rows"
-msgstr "Files del conjunt de marcs"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:111
-msgid "Framespacing"
-msgstr "Espaiat entre marcs"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:112
-msgid "Generic embedded object"
-msgstr "Objecte incrustat genèric"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:113
-msgid "Generic metainformation"
-msgstr "Meta-informació genèrica"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:114
-msgid "Generic span"
-msgstr "Abast genèric"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:115
-msgid "HREF URI"
-msgstr "URI HREF"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:116
-msgid "HTML root element"
-msgstr "Element arrel HTML"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:117
-msgid "HTML version"
-msgstr "Versió HTML"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:118
-#, fuzzy
-msgid "HTML — Special Characters"
-msgstr "HTML - Caràcters especials"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:119
-#, fuzzy
-msgid "HTML — Tags"
-msgstr "HTML - Marcadors"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:120
-msgid "HTTP header name"
-msgstr "Nom de la capçalera HTTP"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:121
-msgid "Header cell IDs"
-msgstr "ID de la cel·la de capçalera"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:122
-msgid "Heading"
-msgstr "Encapçalament"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:123
-msgid "Heading 1"
-msgstr "Encapçalament 1"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:124
-msgid "Heading 2"
-msgstr "Encapçalament 2"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:125
-msgid "Heading 3"
-msgstr "Encapçalament 3"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:126
-msgid "Heading 4"
-msgstr "Encapçalament 4"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:127
-msgid "Heading 5"
-msgstr "Encapçalament 5"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:128
-msgid "Heading 6"
-msgstr "Encapçalament 6"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:129
-msgid "Height"
-msgstr "Alçada"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:130
-msgid "Horizontal rule"
-msgstr "Filet horitzontal"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:131
-msgid "Horizontal space"
-msgstr "Espai horitzontal"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:133
-msgid "Horizontal space (deprecated)"
-msgstr "Espai horitzontal (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:134
-msgid "I18N BiDi override"
-msgstr "Sobreescriptura de la direcció d'escriptura"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:135
-msgid "Image"
-msgstr "Imatge"
-
-# segons el termcat (josep)
-#: ../plugins/taglist/HTML.tags.xml.in.h:136
-msgid "Image map"
-msgstr "Imatge sensible"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:137
-msgid "Image map area"
-msgstr "Àrea d'imatge sensible"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:138
-msgid "Image map name"
-msgstr "Nom de la imatge sensible"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:139
-msgid "Image source"
-msgstr "Font de la imatge"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:140
-msgid "Inline frame"
-msgstr "Marc inserit"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:141
-msgid "Inline layer"
-msgstr "Capa inserida"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:142
-msgid "Inserted text"
-msgstr "Text inserit"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:143
-msgid "Instance definition"
-msgstr "Definició de la instància"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:144
-msgid "Italic text"
-msgstr "Text itàlic"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:145
-msgid "Java applet"
-msgstr "Miniaplicació Java"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:147
-msgid "Java applet (deprecated)"
-msgstr "Miniaplicació Java (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:148
-msgid "Label"
-msgstr "Etiqueta"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:149
-msgid "Language code"
-msgstr "Codi d'idioma"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:150
-msgid "Large text style"
-msgstr "Estil de text gran"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:151
-msgid "Layer"
-msgstr "Capa"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:152
-msgid "Link color"
-msgstr "Color de l'enllaç"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:154
-msgid "Link color (deprecated)"
-msgstr "Color de l'enllaç (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:155
-msgid "List item"
-msgstr "Llista d'elements"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:156
-msgid "List of MIME types for file upload"
-msgstr "Llista de tipus MIME per a la pujada de fitxers"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:157
-msgid "List of supported character sets"
-msgstr "Llista de conjunts de caràcters implementats"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:158
-msgid "Listing"
-msgstr "Llistat"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:159
-msgid "Local change to font"
-msgstr "Canvi local del tipus de lletra"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:160
-msgid "Long description link"
-msgstr "Descripció llarga de l'enllaç"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:161
-msgid "Long quotation"
-msgstr "Citació llarga"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:162
-msgid "Mail link"
-msgstr "Enllaç a correu"
-
-#. Supported in XHTML 1.0 Frameset DTD only.
-#: ../plugins/taglist/HTML.tags.xml.in.h:164
-msgid "Margin pixel height"
-msgstr "Alçada del píxel del marge"
-
-#. Supported in XHTML 1.0 Frameset DTD only.
-#: ../plugins/taglist/HTML.tags.xml.in.h:166
-msgid "Margin pixel width"
-msgstr "Amplada del píxel del marge"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:167
-msgid "Marquee"
-msgstr "Marquesina"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:168
-msgid "Maximum length of text field"
-msgstr "Longitud màxima del camp de text"
-
-#. Here I take some liberties: There's no mandatory attributes,
-#. but those are most common, and will likely be used.
-#: ../plugins/taglist/HTML.tags.xml.in.h:171
-msgid "Media-independent link"
-msgstr "Enllaç independent del medi"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:172
-msgid "Menu list"
-msgstr "Llista del menú"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:174
-msgid "Menu list (deprecated)"
-msgstr "Llista de menú (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:175
-msgid "Multi-line text field"
-msgstr "Camp de text multi-línia"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:176
-msgid "Multicolumn"
-msgstr "Multicolumna"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:177
-msgid "Multiple"
-msgstr "Múltiple"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:178
-msgid "Name"
-msgstr "Nom"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:179
-msgid "Named property value"
-msgstr "Valor de la propietat amb nom"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:180
-msgid "Next ID"
-msgstr "Següent ID"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:181
-msgid "No URI"
-msgstr "Sense URI"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:182
-msgid "No embedded objects"
-msgstr "Sense objectes incrustats"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:183
-msgid "No frames"
-msgstr "Sense marcs"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:184
-msgid "No layers"
-msgstr "Sense capes"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:185
-msgid "No line break"
-msgstr "Sense salts de línia"
-
-# FIXME (josep)
-#: ../plugins/taglist/HTML.tags.xml.in.h:186
-msgid "No resize"
-msgstr "No redimensionable"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:187
-msgid "No script"
-msgstr "Sense script"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:188
-msgid "No shade"
-msgstr "Sense ombra"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:190
-msgid "No shade (deprecated)"
-msgstr "Sense ombra (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:191
-msgid "No word wrap"
-msgstr "Sense ajustament de paraules"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:193
-msgid "No word wrap (deprecated)"
-msgstr "Sense ajustament de paraules (desaconsellat)"
-
-# FIXME
-#: ../plugins/taglist/HTML.tags.xml.in.h:194
-msgid "Non-breaking space"
-msgstr "Espai intrencable"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:195
-msgid "Note"
-msgstr "Nota"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:196
-msgid "Object applet file"
-msgstr "Objecte fitxer de miniaplicació"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:198
-msgid "Object applet file (deprecated)"
-msgstr "Objecte fitxer de miniaplicació (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:199
-msgid "Object data reference"
-msgstr "Objecte referència a dades"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:200
-msgid "Offset for alignment character"
-msgstr "Desplaçament per a l'alineament de caràcter"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:201
-msgid "OnBlur event"
-msgstr "Incidència OnBlur"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:202
-msgid "OnChange event"
-msgstr "Incidència OnChange"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:203
-msgid "OnClick event"
-msgstr "Incidència OnClick"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:204
-msgid "OnDblClick event"
-msgstr "Incidència OnDblClick"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:205
-msgid "OnFocus event"
-msgstr "Incidència OnFocus"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:206
-msgid "OnKeyDown event"
-msgstr "Incidència OnKeyDown"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:207
-msgid "OnKeyPress event"
-msgstr "Incidència OnKeyPress"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:208
-msgid "OnKeyUp event"
-msgstr "Incidència OnKeyUp"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:209
-msgid "OnLoad event"
-msgstr "Incidència OnLoad"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:210
-msgid "OnMouseDown event"
-msgstr "Incidència OnMouseDown"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:211
-msgid "OnMouseMove event"
-msgstr "Incidència OnMouseMove"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:212
-msgid "OnMouseOut event"
-msgstr "Incidència OnMouseOut"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:213
-msgid "OnMouseOver event"
-msgstr "Incidència OnMouseOver"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:214
-msgid "OnMouseUp event"
-msgstr "Incidència OnMouseUp"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:215
-msgid "OnReset event"
-msgstr "Incidència OnReset"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:216
-msgid "OnSelect event"
-msgstr "Incidència OnSelect"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:217
-msgid "OnSubmit event"
-msgstr "Incidència OnSubmit"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:218
-msgid "OnUnload event"
-msgstr "Incidència OnUnload"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:219
-msgid "Option group"
-msgstr "Grup d'opció"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:220
-msgid "Option selector"
-msgstr "Selecció d'opció"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:221
-msgid "Ordered list"
-msgstr "Llista ordenada"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:222
-msgid "Output media"
-msgstr "Medi d'eixida"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:223
-msgid "Paragraph"
-msgstr "Paràgraf"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:224
-msgid "Paragraph class"
-msgstr "Classe del paràgraf"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:225
-msgid "Paragraph style"
-msgstr "Estil del paràgraf"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:226
-msgid "Preformatted listing"
-msgstr "Llistat preformatat"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:227
-msgid "Preformatted text"
-msgstr "Text preformatat"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:228
-msgid "Profile metainfo dictionary"
-msgstr "Perfil del diccionari de meta-informació"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:229
-msgid "Prompt message"
-msgstr "Indica un missatge"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:230
-msgid "Push button"
-msgstr "Botó per prémer"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:231
-msgid "Quote"
-msgstr "Citació"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:232
-msgid "Range"
-msgstr "Rang"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:233
-msgid "ReadOnly text and password"
-msgstr "Text i contrasenya de només lectura"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:234
-msgid "Reduced spacing"
-msgstr "Espai reduït"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:236
-msgid "Reduced spacing (deprecated)"
-msgstr "Espai reduït (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:237
-msgid "Reverse link"
-msgstr "Enllaç invertit"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:238
-msgid "Root"
-msgstr "Arrel"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:239
-msgid "Rows"
-msgstr "Files"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:240
-msgid "Rulings between rows and columns"
-msgstr "Fils entre files i columnes"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:241
-msgid "Sample program output, scripts"
-msgstr "Mostra de la eixida del programa, scripts"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:242
-msgid "Scope covered by header cells"
-msgstr "Àmbit cobert per cel·les de capçalera"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:244
-msgid "Script language name"
-msgstr "Nom del llenguatge de l'script"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:245
-msgid "Script statements"
-msgstr "Sentències d'script"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:246
-msgid "Scrollbar"
-msgstr "Barra de desplaçament"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:247
-msgid "Selectable option"
-msgstr "Opció seleccionable"
-
-# L'opció (josep)
-#: ../plugins/taglist/HTML.tags.xml.in.h:248
-msgid "Selected"
-msgstr "Seleccionada"
-
-# FIXME
-#: ../plugins/taglist/HTML.tags.xml.in.h:249
-msgid "Server-side image map"
-msgstr "Mapa de la imatge del costat del servidor"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:250
-msgid "Shape"
-msgstr "Forma"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:251
-msgid "Short inline quotation"
-msgstr "Citació curta en línia"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:252
-msgid "Single line prompt"
-msgstr "Indicador d'una sola línia"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:253
-msgid "Size"
-msgstr "Mida"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:255
-msgid "Size (deprecated)"
-msgstr "Mida (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:256
-msgid "Small text style"
-msgstr "Estil de text petit"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:257
-msgid "Soft line break"
-msgstr "Salt de pàgina tou"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:258
-msgid "Sound"
-msgstr "So"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:259
-msgid "Source"
-msgstr "Font"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:260
-msgid "Space-separated archive list"
-msgstr "Llista d'arxius separats per espais"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:261
-msgid "Spacer"
-msgstr "Espaiador"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:262
-msgid "Spacing between cells"
-msgstr "Espaiat entre cel·les"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:263
-msgid "Spacing within cells"
-msgstr "Espaiat dins les cel·les"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:264
-msgid "Span"
-msgstr "Abast"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:265
-msgid "Square root"
-msgstr "Arrel quadrada"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:266
-msgid "Standby load message"
-msgstr "Missatge d'espera mentre es carrega"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:267
-msgid "Starting sequence number"
-msgstr "Nombre d'inici de la seqüència"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:269
-msgid "Starting sequence number (deprecated)"
-msgstr "Nombre d'inici de la seqüència (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:270
-msgid "Strike-through text"
-msgstr "Text ratllat"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:272
-msgid "Strike-through text (deprecated)"
-msgstr "Estil de text ratllat (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:273
-msgid "Strike-through text style"
-msgstr "Estil de text ratllat"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:275
-msgid "Strike-through text style (deprecated)"
-msgstr "Estil de text ratllat (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:276
-msgid "Strong emphasis"
-msgstr "Èmfasi fort"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:277
-msgid "Style info"
-msgstr "Informació de l'estil"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:278
-msgid "Subscript"
-msgstr "Subíndex"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:279
-msgid "Superscript"
-msgstr "Superíndex"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:280
-msgid "Tab order position"
-msgstr "Posició de l'orde de les tabulacions"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:281
-msgid "Table"
-msgstr "Taula"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:282
-msgid "Table body"
-msgstr "Cos de la taula"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:283
-msgid "Table caption"
-msgstr "Títol de la taula"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:284
-msgid "Table column group properties"
-msgstr "Propietats del grup de columnes de la taula"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:285
-msgid "Table column properties"
-msgstr "Propietats de la columna de la taula"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:286
-msgid "Table data cell"
-msgstr "Cel·la de dades de la taula"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:287
-msgid "Table footer"
-msgstr "Peu de la taula"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:288
-msgid "Table header"
-msgstr "Capçaleres de la taula"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:289
-msgid "Table header cell"
-msgstr "Cel·la capçalera de la taula"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:290
-msgid "Table row"
-msgstr "Fila de la taula"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:291
-msgid "Table summary"
-msgstr "Sumari de la taula"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:292
-#, fuzzy
-msgid "Target — Blank"
-msgstr "Objectiu - Nou"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:293
-#, fuzzy
-msgid "Target — Parent"
-msgstr "Objectiu - Pare"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:294
-#, fuzzy
-msgid "Target — Self"
-msgstr "Objectiu - Mateixa finestra"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:295
-#, fuzzy
-msgid "Target — Top"
-msgstr "Objectiu - A sobre"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:296
-msgid "Teletype or monospace text style"
-msgstr "Estil de text teletip o monoespai"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:297
-msgid "Text"
-msgstr "Text"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:298
-msgid "Text color"
-msgstr "Color del text"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:300
-msgid "Text color (deprecated)"
-msgstr "Color del text (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:301
-msgid "Text entered by user"
-msgstr "Text que ha entrat l'usuari"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:302
-msgid "Title"
-msgstr "Títol"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:303
-msgid "Top margin in pixels"
-msgstr "Marge superior en píxels"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:304
-msgid "URL"
-msgstr "URL"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:305
-msgid "Underlined text style"
-msgstr "Estil de text subratllat"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:306
-msgid "Unordered list"
-msgstr "Llista sense orde"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:307
-msgid "Use image map"
-msgstr "Utilitza un mapa de la imatge"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:308
-msgid "Value"
-msgstr "Valor"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:309
-msgid "Value interpretation"
-msgstr "Interpretació del valor"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:310
-msgid "Variable or program argument"
-msgstr "Variable o argument d'un programa"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:311
-msgid "Vertical cell alignment"
-msgstr "Alineament vertical de les cel·les"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:312
-msgid "Vertical space"
-msgstr "Espai vertical"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:314
-msgid "Vertical space (deprecated)"
-msgstr "Espai vertical (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:315
-msgid "Visited link color"
-msgstr "Color dels enllaços visitats"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:317
-msgid "Visited link color (deprecated)"
-msgstr "Color dels enllaços visitats (desaconsellat)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:318
-msgid "Width"
-msgstr "Amplada"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:319
-#, fuzzy
-msgid "XHTML 1.0 — Tags"
-msgstr "XHTML 1.0 - Marcadors"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:1
-msgid "Bibliography (cite)"
-msgstr "Bibliografia (citació)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:2
-msgid "Bibliography (item)"
-msgstr "Bibliografia (element)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:3
-msgid "Bibliography (shortcite)"
-msgstr "Bibliografia (citació curta)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:4
-msgid "Bibliography (thebibliography)"
-msgstr "Bibliografia (thebibliography)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:5
-msgid "Brackets ()"
-msgstr "Claudàtors ()"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:6
-msgid "Brackets <>"
-msgstr "Claudàtors <>"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:7
-msgid "Brackets []"
-msgstr "Claudàtors []"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:8
-msgid "Brackets {}"
-msgstr "Claudàtors {}"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:10
-msgid "File input"
-msgstr "Fitxer d'entrada"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:11
-msgid "Footnote"
-msgstr "Nota al peu"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:12
-msgid "Function cosine"
-msgstr "Funció cosinus"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:13
-msgid "Function e^"
-msgstr "Funció e^"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:14
-msgid "Function exp"
-msgstr "Funció exp"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:15
-msgid "Function log"
-msgstr "Funció log"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:16
-msgid "Function log10"
-msgstr "Funció log10"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:17
-msgid "Function sine"
-msgstr "Funció sinus"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:18
-msgid "Greek alpha"
-msgstr "Grec alfa"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:19
-msgid "Greek beta"
-msgstr "Grec beta"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:20
-msgid "Greek epsilon"
-msgstr "Grec èpsilon"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:21
-msgid "Greek gamma"
-msgstr "Grec gamma"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:22
-msgid "Greek lambda"
-msgstr "Grec lambda"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:23
-msgid "Greek rho"
-msgstr "Grec rho"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:24
-msgid "Greek tau"
-msgstr "Grec tau"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:25
-msgid "Header 0 (chapter)"
-msgstr "Capçalera 0 (capítol)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:26
-msgid "Header 0 (chapter*)"
-msgstr "Capçalera 0 (capítol*)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:27
-msgid "Header 1 (section)"
-msgstr "Capçalera 1 (secció)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:28
-msgid "Header 1 (section*)"
-msgstr "Capçalera 1 (secció*)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:29
-msgid "Header 2 (subsection)"
-msgstr "Capçalera 2 (subsecció)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:30
-msgid "Header 2 (subsection*)"
-msgstr "Capçalera 2 (subsecció*)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:31
-msgid "Header 3 (subsubsection)"
-msgstr "Capçalera 3 (subsubsecció)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:32
-msgid "Header 3 (subsubsection*)"
-msgstr "Capçalera 3 (subsubsecció*)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:33
-msgid "Header 4 (paragraph)"
-msgstr "Capçalera 4 (paràgraf)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:34
-msgid "Header appendix"
-msgstr "Capçalera de l'apèndix"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:35
-msgid "Item"
-msgstr "Element"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:36
-msgid "Item with label"
-msgstr "Element amb etiqueta"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:37
-#, fuzzy
-msgid "Latex — Tags"
-msgstr "LaTeX - Etiquetes"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:38
-msgid "List description"
-msgstr "Llista de descripció"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:39
-msgid "List enumerate"
-msgstr "Llista enumerada"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:40
-msgid "List itemize"
-msgstr "Llista amb elements"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:41
-msgid "Maths (display)"
-msgstr "Matemàtiques (visualització)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:42
-msgid "Maths (inline)"
-msgstr "Matemàtiques (inserit)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:43
-msgid "Operator fraction"
-msgstr "Operador fracció"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:44
-msgid "Operator integral (display)"
-msgstr "Operador integral (visualització)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:45
-msgid "Operator integral (inline)"
-msgstr "Operador integral (inserit)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:46
-msgid "Operator sum (display)"
-msgstr "Operador suma (visualització)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:47
-msgid "Operator sum (inline)"
-msgstr "Operador suma (inserit)"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:48
-msgid "Reference label"
-msgstr "Etiqueta de referència"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:49
-msgid "Reference ref"
-msgstr "Preferència ref"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:50
-msgid "Symbol <<"
-msgstr "Símbol <<"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:51
-msgid "Symbol <="
-msgstr "Símbol <="
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:52
-msgid "Symbol >="
-msgstr "Símbol >;="
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:53
-msgid "Symbol >>"
-msgstr "Símbol >>"
-
-# és \and en LaTeX (una instrucció)
-#: ../plugins/taglist/Latex.tags.xml.in.h:54
-msgid "Symbol and"
-msgstr "Símbol and"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:55
-msgid "Symbol const"
-msgstr "Símbol const"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:56
-msgid "Symbol d-by-dt"
-msgstr "Símbol d-by-dt"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:57
-msgid "Symbol d-by-dt-partial"
-msgstr "Símbol d-by-dt-parcial"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:58
-msgid "Symbol d2-by-dt2-partial"
-msgstr "Símbol d2-by-dt2-parcial"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:59
-msgid "Symbol dagger"
-msgstr "Símbol creu"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:60
-msgid "Symbol em-dash ---"
-msgstr "Símbol guionet llarg ---"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:61
-msgid "Symbol en-dash --"
-msgstr "Símbol guionet curt --"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:62
-msgid "Symbol equiv"
-msgstr "Símbol d'equivalent"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:63
-msgid "Symbol infinity"
-msgstr "Símbol d'infinit"
-
-# En LaTeX "\," és el mateix que "\thinspace", que determina
-# l'espai entre nombres d'una mateixa xifra (o element). (Josep)
-#: ../plugins/taglist/Latex.tags.xml.in.h:64
-msgid "Symbol mathspace ,"
-msgstr "Símbol , en el context matemàtic"
-
-# Nota: ídem que \,
-#: ../plugins/taglist/Latex.tags.xml.in.h:65
-msgid "Symbol mathspace ."
-msgstr "Símbol . en el context matemàtiques ."
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:66
-msgid "Symbol mathspace _"
-msgstr "Símbol _ en el context matemàtic"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:67
-msgid "Symbol mathspace __"
-msgstr "Símbol __ en el context matemàtic"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:68
-msgid "Symbol simeq"
-msgstr "Símbol simeq"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:69
-msgid "Symbol star"
-msgstr "Símbol estrella"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:70
-msgid "Typeface bold"
-msgstr "Estil negreta"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:71
-msgid "Typeface italic"
-msgstr "Estil itàlic"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:72
-msgid "Typeface slanted"
-msgstr "Estil inclinat"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:73
-msgid "Typeface type"
-msgstr "Estil del tipus de lletra"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:74
-msgid "Unbreakable text"
-msgstr "Text inseparable"
-
-#: ../plugins/taglist/taglist.plugin.desktop.in.h:1
-msgid ""
-"Provides a method to easily insert commonly used tags/strings into a "
-"document without having to type them."
-msgstr ""
-"Ofereix un mètode senzill per inserir en un document els marcadors/cadenes "
-"més utilitzades sense haver de teclejar-les."
-
-#: ../plugins/taglist/taglist.plugin.desktop.in.h:2
-msgid "Tag list"
-msgstr "Llistat de marcadors"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:1
-#, fuzzy
-msgid "XSLT — Axes"
-msgstr "XSLT - Eixos"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:2
-#, fuzzy
-msgid "XSLT — Elements"
-msgstr "XSLT - Elements"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:3
-#, fuzzy
-msgid "XSLT — Functions"
-msgstr "XSLT - Funcions"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:4
-msgid "ancestor"
-msgstr "antecessor"
-
-# FIXME (josep)
-#: ../plugins/taglist/XSLT.tags.xml.in.h:5
-msgid "ancestor-or-self"
-msgstr "antecessor-o-un-mateix"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:6
-msgid "attribute"
-msgstr "atribut"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:7
-msgid "child"
-msgstr "fill"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:8
-msgid "descendant"
-msgstr "descendent"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:9
-msgid "descendant-or-self"
-msgstr "descendent-o-un-mateix"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:10
-msgid "following"
-msgstr "següent"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:11
-msgid "following-sibling"
-msgstr "següent-germà"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:12
-msgid "namespace"
-msgstr "espai de nom"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:13
-msgid "parent"
-msgstr "pare"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:14
-msgid "preceding"
-msgstr "predecessor"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:15
-msgid "preceding-sibling"
-msgstr "predecessor-germà"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:16
-msgid "self"
-msgstr "un mateix"
-
-#: ../plugins/taglist/XUL.tags.xml.in.h:1
-#, fuzzy
-msgid "XUL — Tags"
-msgstr "XUL - Marcadors"
-
 #: ../plugins/time/gedit-time-plugin.c:188
 msgid "In_sert Date and Time..."
 msgstr "_Insereix la data/hora..."
@@ -5180,35 +3572,32 @@ msgid "Inserts current date and time at the cursor position."
 msgstr "Insereix la data i hora actual a la posició del cursor."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:1
-#, fuzzy
 msgid "Custom Format"
-msgstr "_Utilitza un format personalitzat"
+msgstr "Format personalitzat"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:2
 msgid ""
 "If the user should be prompted for a format or if the selected or custom "
 "format should be used."
 msgstr ""
+"Si s'hauria de demanar a l'usuari el format o s'utilitzarà el format "
+"seleccionat o personalitzat."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
-#, fuzzy
 msgid "Prompt Type"
-msgstr "Indica un missatge"
+msgstr "Pregunta el tipus"
 
-# L'opció (josep)
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
-#, fuzzy
 msgid "Selected Format"
-msgstr "Seleccionada"
+msgstr "Format seleccionat"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
-#, fuzzy
 msgid "The custom format used when inserting the date/time."
-msgstr "Quan s'inserisca la data/hora..."
+msgstr "El format personalitzat per inserir la data/hora."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
 msgid "The selected format used when inserting the date/time."
-msgstr ""
+msgstr "El format seleccionat per inserir la data/hora."
 
 #. Translators: Use the more common date format in your locale
 #: ../plugins/time/gedit-time-dialog.ui.h:3
@@ -5253,6 +3642,25 @@ msgstr "Quan s'inserisca la data/hora..."
 msgid "_Prompt for a format"
 msgstr "_Pregunta per un format"
 
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
+msgid "Logs access and leave event for documents used with gedit"
+msgstr ""
+"Registra els esdeveniments d'accés i tancament dels documents amb el gedit"
+
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
+msgid "Zeitgeist dataprovider"
+msgstr "Proveïdor de dades del Zeitgeist"
+
+#~ msgid ""
+#~ "List of VFS schemes gedit supports in write mode. The 'file' scheme is "
+#~ "writable by default."
+#~ msgstr ""
+#~ "Llista d'esquemes VFS que el gedit permet en mode d'escriptura. Per "
+#~ "defecte, es permet l'escriptura de l'esquema «file»."
+
+#~ msgid "Writable VFS schemes"
+#~ msgstr "Esquemes VFS d'escriptura"
+
 #~ msgid "Bottom Panel is Visible"
 #~ msgstr "El quadre inferior és visible"
 
@@ -5283,7 +3691,7 @@ msgstr "_Pregunta per un format"
 #~ "«GEDIT_TOOLBAR_ICONS_BOTH_HORIZ» per mostrar el text prioritari al costat "
 #~ "de les icones. Recordeu que els valors són sensibles a majúscules i "
 #~ "minúscules, així doncs assegureu-vos que apareixen exactament com es "
-#~ "mencionen ací."
+#~ "mencionen aquí."
 
 #~ msgid "Toolbar Buttons Style"
 #~ msgstr "Estil dels botons de la barra d'eines"
@@ -5357,6 +3765,9 @@ msgstr "_Pregunta per un format"
 #~ msgid "Expected `%s', got `%s' for key %s"
 #~ msgstr "S'esperava «%s» i s'ha rebut «%s» per a la clau %s"
 
+#~ msgid "It is not possible to detect the encoding automatically"
+#~ msgstr "No es pot detectar automàticament la codificació"
+
 #~ msgid "Page Set_up..."
 #~ msgstr "_Configuració de la pàgina..."
 
@@ -5369,8 +3780,1168 @@ msgstr "_Pregunta per un format"
 #~ msgid "Incrementally search for text"
 #~ msgstr "Cerca text de manera incremental"
 
+#~ msgid "Quick open"
+#~ msgstr "Obre ràpid"
+
+#~ msgid "Quickly open documents"
+#~ msgstr "Obre documents ràpidament"
+
+#~ msgid "Snippets Manager"
+#~ msgstr "Gestor de fragments"
+
 #~ msgid "_Autocheck Spelling"
 #~ msgstr "Comprova l'ortografia _automàticament"
+
+#~ msgid "Tags"
+#~ msgstr "Marcadors"
+
+#~ msgid "Select the group of tags you want to use"
+#~ msgstr "Selecciona el grup de marcadors que vulgueu utilitzar"
+
+#~ msgid "_Preview"
+#~ msgstr "_Previsualització"
+
+#~ msgid "Available Tag Lists"
+#~ msgstr "Llistes dels marcadors disponibles"
+
+#~ msgid "Abbreviated form"
+#~ msgstr "Forma abreviada"
+
+#~ msgid "Abbreviation"
+#~ msgstr "Abreviatura"
+
+#~ msgid "Above"
+#~ msgstr "A sobre"
+
+#~ msgid "Accessibility key character"
+#~ msgstr "Caràcter clau d'accessibilitat"
+
+#~ msgid "Acronym"
+#~ msgstr "Acrònim"
+
+#~ msgid "Align"
+#~ msgstr "Alinea"
+
+#~ msgid "Alignment character"
+#~ msgstr "Caràcter d'alineament"
+
+#~ msgid "Alternative"
+#~ msgstr "Alternatiu"
+
+#~ msgid "Anchor"
+#~ msgstr "Àncora"
+
+#~ msgid "Anchor URI"
+#~ msgstr "Ancora l'URI"
+
+#  FIXME (josep)
+#~ msgid "Applet class file code"
+#~ msgstr "Fitxer de codi d'una classe d'una miniaplicació"
+
+#  FIXME (josep)
+#~ msgid "Applet class file code (deprecated)"
+#~ msgstr "Fitxer de codi d'una classe d'una miniaplicació (desaconsellat)"
+
+#~ msgid "Array"
+#~ msgstr "Matriu"
+
+#~ msgid "Associated information"
+#~ msgstr "Informació associada"
+
+#~ msgid "Author info"
+#~ msgstr "Informació quant a l'autor"
+
+# FIXME (josep)
+#~ msgid "Axis related headers"
+#~ msgstr "Capçaleres relacionades amb l'eix"
+
+#~ msgid "Background color"
+#~ msgstr "Color de fons"
+
+#~ msgid "Background color (deprecated)"
+#~ msgstr "Color de fons (desaconsellat)"
+
+#~ msgid "Background texture tile"
+#~ msgstr "Títol de la textura del fons"
+
+#~ msgid "Background texture tile (deprecated)"
+#~ msgstr "Títol de la textura del fons (desaconsellat)"
+
+#~ msgid "Base URI"
+#~ msgstr "URI base"
+
+#~ msgid "Base font"
+#~ msgstr "Tipus de lletra base"
+
+#~ msgid "Base font (deprecated)"
+#~ msgstr "Tipus de lletra base (desaconsellat)"
+
+#~ msgid "Bold"
+#~ msgstr "Negreta"
+
+#~ msgid "Border"
+#~ msgstr "Vora"
+
+#~ msgid "Border (deprecated)"
+#~ msgstr "Vora (desaconsellat)"
+
+#~ msgid "Border color"
+#~ msgstr "Color de la vora"
+
+#~ msgid "Cell rowspan"
+#~ msgstr "Abast en columnes de la cel·la"
+
+#~ msgid "Center"
+#~ msgstr "Centre"
+
+#~ msgid "Center (deprecated)"
+#~ msgstr "Centra (desaconsellat)"
+
+#~ msgid "Character encoding of linked resource"
+#~ msgstr "Codificacions de caràcters del recurs enllaçat"
+
+#~ msgid "Checked (state)"
+#~ msgstr "Comprovat (estat)"
+
+# FIXME ?
+#~ msgid "Checked state"
+#~ msgstr "Estat comprovat"
+
+#~ msgid "Citation"
+#~ msgstr "Citació"
+
+#~ msgid "Cite reason for change"
+#~ msgstr "Cita el motiu del canvi"
+
+#~ msgid "Class implementation ID"
+#~ msgstr "ID de la implementació de la classe"
+
+#~ msgid "Class list"
+#~ msgstr "Llistat de classes"
+
+#~ msgid "Clear text flow control"
+#~ msgstr "Neteja el control de flux del text"
+
+#~ msgid "Code content type"
+#~ msgstr "Codi del tipus de contingut"
+
+#~ msgid "Color of selected links"
+#~ msgstr "Color dels enllaços seleccionats"
+
+#~ msgid "Color of selected links (deprecated)"
+#~ msgstr "Color dels enllaços seleccionats (desaconsellat)"
+
+#~ msgid "Column span"
+#~ msgstr "Abast de la columna"
+
+#~ msgid "Columns"
+#~ msgstr "Columnes"
+
+#~ msgid "Comment"
+#~ msgstr "Comentari"
+
+#~ msgid "Computer code fragment"
+#~ msgstr "Fragment codi d'ordinador"
+
+#~ msgid "Content scheme"
+#~ msgstr "Esquema de continguts"
+
+#~ msgid "Content type"
+#~ msgstr "Tipus de continguts"
+
+#~ msgid "Content type (deprecated)"
+#~ msgstr "Tipus de continguts (desaconsellat)"
+
+#~ msgid "Coordinates"
+#~ msgstr "Coordenades"
+
+#~ msgid "DIV Style container"
+#~ msgstr "Contenidor d'estil DIV"
+
+#~ msgid "DIV container"
+#~ msgstr "Contenidor DIV"
+
+#~ msgid "Date and time of change"
+#~ msgstr "Dia i hora del canvi"
+
+#~ msgid "Declare flag"
+#~ msgstr "Declara senyalador"
+
+#~ msgid "Defer attribute"
+#~ msgstr "Atribut deferent"
+
+#~ msgid "Definition description"
+#~ msgstr "Descripció de la definició"
+
+#~ msgid "Definition list"
+#~ msgstr "Llista de definició"
+
+#~ msgid "Definition term"
+#~ msgstr "Terme de definició"
+
+#~ msgid "Deleted text"
+#~ msgstr "Text suprimit"
+
+#~ msgid "Direction"
+#~ msgstr "Direcció"
+
+#~ msgid "Directionality"
+#~ msgstr "Directivitat"
+
+#~ msgid "Directionality (deprecated)"
+#~ msgstr "Directivitat (desaconsellat)"
+
+#~ msgid "Directory list"
+#~ msgstr "Llistat de directori"
+
+#~ msgid "Disabled"
+#~ msgstr "Inhabilitat"
+
+#~ msgid "Document base"
+#~ msgstr "Base del document"
+
+#~ msgid "Document body"
+#~ msgstr "Cos del document"
+
+#~ msgid "Document head"
+#~ msgstr "Capçalera del document"
+
+#~ msgid "Document title"
+#~ msgstr "Títol del document"
+
+#~ msgid "Document type"
+#~ msgstr "Tipus de document"
+
+#~ msgid "Element ID"
+#~ msgstr "ID de l'element"
+
+#~ msgid "Embedded object"
+#~ msgstr "Objecte incrustat"
+
+#~ msgid "Emphasis"
+#~ msgstr "Èmfasi"
+
+#~ msgid "Encode type"
+#~ msgstr "Tipus de codificació"
+
+#~ msgid "Figure"
+#~ msgstr "Figura"
+
+#~ msgid "Font face"
+#~ msgstr "Tipus de lletra"
+
+#~ msgid "Font face (deprecated)"
+#~ msgstr "Tipus de lletra (desaconsellat)"
+
+#~ msgid "For label"
+#~ msgstr "Per etiqueta"
+
+#~ msgid "Forced line break"
+#~ msgstr "Salt de línia forçat"
+
+#~ msgid "Form"
+#~ msgstr "Formulari"
+
+#~ msgid "Form action handler"
+#~ msgstr "Gestor d'accions del formulari"
+
+#~ msgid "Form control group"
+#~ msgstr "Grup de control del formulari"
+
+#~ msgid "Form field label text"
+#~ msgstr "Etiqueta de text del camp del formulari"
+
+#~ msgid "Form input"
+#~ msgstr "Entrada del formulari"
+
+#~ msgid "Form input type"
+#~ msgstr "Tipus d'entrada del formulari"
+
+#~ msgid "Form method"
+#~ msgstr "Mètode del formulari"
+
+#~ msgid "Forward link"
+#~ msgstr "Enllaç endavant"
+
+#~ msgid "Frame"
+#~ msgstr "Marc"
+
+#~ msgid "Frame border"
+#~ msgstr "Contorn del marc"
+
+#~ msgid "Frame render parts"
+#~ msgstr "Parts de representació del marc"
+
+#~ msgid "Frame source"
+#~ msgstr "Font del marc"
+
+#~ msgid "Frame spacing"
+#~ msgstr "Espaiat entre marcs"
+
+#~ msgid "Frame target"
+#~ msgstr "Objectiu del marc"
+
+#~ msgid "Frameborder"
+#~ msgstr "Contorn del marc"
+
+#~ msgid "Frameset"
+#~ msgstr "Conjunt de marcs"
+
+#~ msgid "Frameset columns"
+#~ msgstr "Columnes del conjunt de marcs"
+
+#~ msgid "Frameset rows"
+#~ msgstr "Files del conjunt de marcs"
+
+#~ msgid "Framespacing"
+#~ msgstr "Espaiat entre marcs"
+
+#~ msgid "Generic embedded object"
+#~ msgstr "Objecte incrustat genèric"
+
+#~ msgid "Generic metainformation"
+#~ msgstr "Meta-informació genèrica"
+
+#~ msgid "Generic span"
+#~ msgstr "Abast genèric"
+
+#~ msgid "HREF URI"
+#~ msgstr "URI HREF"
+
+#~ msgid "HTML - Special Characters"
+#~ msgstr "HTML - Caràcters especials"
+
+#~ msgid "HTML - Tags"
+#~ msgstr "HTML - Marcadors"
+
+#~ msgid "HTML root element"
+#~ msgstr "Element arrel HTML"
+
+#~ msgid "HTML version"
+#~ msgstr "Versió HTML"
+
+#~ msgid "HTTP header name"
+#~ msgstr "Nom de la capçalera HTTP"
+
+#~ msgid "Header cell IDs"
+#~ msgstr "ID de la cel·la de capçalera"
+
+#~ msgid "Heading"
+#~ msgstr "Encapçalament"
+
+#~ msgid "Heading 1"
+#~ msgstr "Encapçalament 1"
+
+#~ msgid "Heading 2"
+#~ msgstr "Encapçalament 2"
+
+#~ msgid "Heading 3"
+#~ msgstr "Encapçalament 3"
+
+#~ msgid "Heading 4"
+#~ msgstr "Encapçalament 4"
+
+#~ msgid "Heading 5"
+#~ msgstr "Encapçalament 5"
+
+#~ msgid "Heading 6"
+#~ msgstr "Encapçalament 6"
+
+#~ msgid "Height"
+#~ msgstr "Alçada"
+
+#~ msgid "Horizontal rule"
+#~ msgstr "Filet horitzontal"
+
+#~ msgid "Horizontal space"
+#~ msgstr "Espai horitzontal"
+
+#~ msgid "Horizontal space (deprecated)"
+#~ msgstr "Espai horitzontal (desaconsellat)"
+
+#~ msgid "I18N BiDi override"
+#~ msgstr "Sobreescriptura de la direcció d'escriptura"
+
+#~ msgid "Image"
+#~ msgstr "Imatge"
+
+# segons el termcat (josep)
+#~ msgid "Image map"
+#~ msgstr "Imatge sensible"
+
+#~ msgid "Image map area"
+#~ msgstr "Àrea d'imatge sensible"
+
+#~ msgid "Image map name"
+#~ msgstr "Nom de la imatge sensible"
+
+#~ msgid "Image source"
+#~ msgstr "Font de la imatge"
+
+#~ msgid "Inline frame"
+#~ msgstr "Marc inserit"
+
+#~ msgid "Inline layer"
+#~ msgstr "Capa inserida"
+
+#~ msgid "Inserted text"
+#~ msgstr "Text inserit"
+
+#~ msgid "Instance definition"
+#~ msgstr "Definició de la instància"
+
+#~ msgid "Italic text"
+#~ msgstr "Text itàlic"
+
+#~ msgid "Java applet"
+#~ msgstr "Miniaplicació Java"
+
+#~ msgid "Java applet (deprecated)"
+#~ msgstr "Miniaplicació Java (desaconsellat)"
+
+#~ msgid "Label"
+#~ msgstr "Etiqueta"
+
+#~ msgid "Language code"
+#~ msgstr "Codi d'idioma"
+
+#~ msgid "Large text style"
+#~ msgstr "Estil de text gran"
+
+#~ msgid "Layer"
+#~ msgstr "Capa"
+
+#~ msgid "Link color"
+#~ msgstr "Color de l'enllaç"
+
+#~ msgid "Link color (deprecated)"
+#~ msgstr "Color de l'enllaç (desaconsellat)"
+
+#~ msgid "List item"
+#~ msgstr "Llista d'elements"
+
+#~ msgid "List of MIME types for file upload"
+#~ msgstr "Llista de tipus MIME per a la pujada de fitxers"
+
+#~ msgid "List of supported character sets"
+#~ msgstr "Llista de conjunts de caràcters implementats"
+
+#~ msgid "Listing"
+#~ msgstr "Llistat"
+
+#~ msgid "Local change to font"
+#~ msgstr "Canvi local del tipus de lletra"
+
+#~ msgid "Long description link"
+#~ msgstr "Descripció llarga de l'enllaç"
+
+#~ msgid "Long quotation"
+#~ msgstr "Citació llarga"
+
+#~ msgid "Mail link"
+#~ msgstr "Enllaç a correu"
+
+#~ msgid "Margin pixel height"
+#~ msgstr "Alçada del píxel del marge"
+
+#~ msgid "Margin pixel width"
+#~ msgstr "Amplada del píxel del marge"
+
+#~ msgid "Marquee"
+#~ msgstr "Marquesina"
+
+#~ msgid "Maximum length of text field"
+#~ msgstr "Longitud màxima del camp de text"
+
+#~ msgid "Media-independent link"
+#~ msgstr "Enllaç independent del medi"
+
+#~ msgid "Menu list"
+#~ msgstr "Llista del menú"
+
+#~ msgid "Menu list (deprecated)"
+#~ msgstr "Llista de menú (desaconsellat)"
+
+#~ msgid "Multi-line text field"
+#~ msgstr "Camp de text multi-línia"
+
+#~ msgid "Multicolumn"
+#~ msgstr "Multicolumna"
+
+#~ msgid "Multiple"
+#~ msgstr "Múltiple"
+
+#~ msgid "Name"
+#~ msgstr "Nom"
+
+#~ msgid "Named property value"
+#~ msgstr "Valor de la propietat amb nom"
+
+#~ msgid "Next ID"
+#~ msgstr "Següent ID"
+
+#~ msgid "No URI"
+#~ msgstr "Sense URI"
+
+#~ msgid "No embedded objects"
+#~ msgstr "Sense objectes incrustats"
+
+#~ msgid "No frames"
+#~ msgstr "Sense marcs"
+
+#~ msgid "No layers"
+#~ msgstr "Sense capes"
+
+#~ msgid "No line break"
+#~ msgstr "Sense salts de línia"
+
+# FIXME (josep)
+#~ msgid "No resize"
+#~ msgstr "No redimensionable"
+
+#~ msgid "No script"
+#~ msgstr "Sense script"
+
+#~ msgid "No shade"
+#~ msgstr "Sense ombra"
+
+#~ msgid "No shade (deprecated)"
+#~ msgstr "Sense ombra (desaconsellat)"
+
+#~ msgid "No word wrap"
+#~ msgstr "Sense ajustament de paraules"
+
+#~ msgid "No word wrap (deprecated)"
+#~ msgstr "Sense ajustament de paraules (desaconsellat)"
+
+# FIXME
+#~ msgid "Non-breaking space"
+#~ msgstr "Espai intrencable"
+
+#~ msgid "Note"
+#~ msgstr "Nota"
+
+#~ msgid "Object applet file"
+#~ msgstr "Objecte fitxer de miniaplicació"
+
+#~ msgid "Object applet file (deprecated)"
+#~ msgstr "Objecte fitxer de miniaplicació (desaconsellat)"
+
+#~ msgid "Object data reference"
+#~ msgstr "Objecte referència a dades"
+
+#~ msgid "Offset for alignment character"
+#~ msgstr "Desplaçament per a l'alineament de caràcter"
+
+#~ msgid "OnBlur event"
+#~ msgstr "Incidència OnBlur"
+
+#~ msgid "OnChange event"
+#~ msgstr "Incidència OnChange"
+
+#~ msgid "OnClick event"
+#~ msgstr "Incidència OnClick"
+
+#~ msgid "OnDblClick event"
+#~ msgstr "Incidència OnDblClick"
+
+#~ msgid "OnFocus event"
+#~ msgstr "Incidència OnFocus"
+
+#~ msgid "OnKeyDown event"
+#~ msgstr "Incidència OnKeyDown"
+
+#~ msgid "OnKeyPress event"
+#~ msgstr "Incidència OnKeyPress"
+
+#~ msgid "OnKeyUp event"
+#~ msgstr "Incidència OnKeyUp"
+
+#~ msgid "OnLoad event"
+#~ msgstr "Incidència OnLoad"
+
+#~ msgid "OnMouseDown event"
+#~ msgstr "Incidència OnMouseDown"
+
+#~ msgid "OnMouseMove event"
+#~ msgstr "Incidència OnMouseMove"
+
+#~ msgid "OnMouseOut event"
+#~ msgstr "Incidència OnMouseOut"
+
+#~ msgid "OnMouseOver event"
+#~ msgstr "Incidència OnMouseOver"
+
+#~ msgid "OnMouseUp event"
+#~ msgstr "Incidència OnMouseUp"
+
+#~ msgid "OnReset event"
+#~ msgstr "Incidència OnReset"
+
+#~ msgid "OnSelect event"
+#~ msgstr "Incidència OnSelect"
+
+#~ msgid "OnSubmit event"
+#~ msgstr "Incidència OnSubmit"
+
+#~ msgid "OnUnload event"
+#~ msgstr "Incidència OnUnload"
+
+#~ msgid "Option group"
+#~ msgstr "Grup d'opció"
+
+#~ msgid "Option selector"
+#~ msgstr "Selecció d'opció"
+
+#~ msgid "Ordered list"
+#~ msgstr "Llista ordenada"
+
+#~ msgid "Output media"
+#~ msgstr "Medi de sortida"
+
+#~ msgid "Paragraph"
+#~ msgstr "Paràgraf"
+
+#~ msgid "Paragraph class"
+#~ msgstr "Classe del paràgraf"
+
+#~ msgid "Paragraph style"
+#~ msgstr "Estil del paràgraf"
+
+#~ msgid "Preformatted listing"
+#~ msgstr "Llistat preformatat"
+
+#~ msgid "Preformatted text"
+#~ msgstr "Text preformatat"
+
+#~ msgid "Profile metainfo dictionary"
+#~ msgstr "Perfil del diccionari de meta-informació"
+
+#~ msgid "Push button"
+#~ msgstr "Botó per prémer"
+
+#~ msgid "Quote"
+#~ msgstr "Citació"
+
+#~ msgid "Range"
+#~ msgstr "Rang"
+
+#~ msgid "ReadOnly text and password"
+#~ msgstr "Text i contrasenya de només lectura"
+
+#~ msgid "Reduced spacing"
+#~ msgstr "Espai reduït"
+
+#~ msgid "Reduced spacing (deprecated)"
+#~ msgstr "Espai reduït (desaconsellat)"
+
+#~ msgid "Reverse link"
+#~ msgstr "Enllaç invertit"
+
+#~ msgid "Root"
+#~ msgstr "Arrel"
+
+#~ msgid "Rows"
+#~ msgstr "Files"
+
+#~ msgid "Rulings between rows and columns"
+#~ msgstr "Fils entre files i columnes"
+
+#~ msgid "Sample program output, scripts"
+#~ msgstr "Mostra de la sortida del programa, scripts"
+
+#~ msgid "Scope covered by header cells"
+#~ msgstr "Àmbit cobert per cel·les de capçalera"
+
+#~ msgid "Script language name"
+#~ msgstr "Nom del llenguatge de l'script"
+
+#~ msgid "Script statements"
+#~ msgstr "Sentències d'script"
+
+#~ msgid "Scrollbar"
+#~ msgstr "Barra de desplaçament"
+
+#~ msgid "Selectable option"
+#~ msgstr "Opció seleccionable"
+
+# FIXME
+#~ msgid "Server-side image map"
+#~ msgstr "Mapa de la imatge del costat del servidor"
+
+#~ msgid "Shape"
+#~ msgstr "Forma"
+
+#~ msgid "Short inline quotation"
+#~ msgstr "Citació curta en línia"
+
+#~ msgid "Single line prompt"
+#~ msgstr "Indicador d'una sola línia"
+
+#~ msgid "Size"
+#~ msgstr "Mida"
+
+#~ msgid "Size (deprecated)"
+#~ msgstr "Mida (desaconsellat)"
+
+#~ msgid "Small text style"
+#~ msgstr "Estil de text petit"
+
+#~ msgid "Soft line break"
+#~ msgstr "Salt de pàgina tou"
+
+#~ msgid "Sound"
+#~ msgstr "So"
+
+#~ msgid "Source"
+#~ msgstr "Font"
+
+#~ msgid "Space-separated archive list"
+#~ msgstr "Llista d'arxius separats per espais"
+
+#~ msgid "Spacer"
+#~ msgstr "Espaiador"
+
+#~ msgid "Spacing between cells"
+#~ msgstr "Espaiat entre cel·les"
+
+#~ msgid "Spacing within cells"
+#~ msgstr "Espaiat dins les cel·les"
+
+#~ msgid "Span"
+#~ msgstr "Abast"
+
+#~ msgid "Square root"
+#~ msgstr "Arrel quadrada"
+
+#~ msgid "Standby load message"
+#~ msgstr "Missatge d'espera mentre es carrega"
+
+#~ msgid "Starting sequence number"
+#~ msgstr "Nombre d'inici de la seqüència"
+
+#~ msgid "Starting sequence number (deprecated)"
+#~ msgstr "Nombre d'inici de la seqüència (desaconsellat)"
+
+#~ msgid "Strike-through text"
+#~ msgstr "Text ratllat"
+
+#~ msgid "Strike-through text (deprecated)"
+#~ msgstr "Estil de text ratllat (desaconsellat)"
+
+#~ msgid "Strike-through text style"
+#~ msgstr "Estil de text ratllat"
+
+#~ msgid "Strike-through text style (deprecated)"
+#~ msgstr "Estil de text ratllat (desaconsellat)"
+
+#~ msgid "Strong emphasis"
+#~ msgstr "Èmfasi fort"
+
+#~ msgid "Style info"
+#~ msgstr "Informació de l'estil"
+
+#~ msgid "Subscript"
+#~ msgstr "Subíndex"
+
+#~ msgid "Superscript"
+#~ msgstr "Superíndex"
+
+#~ msgid "Tab order position"
+#~ msgstr "Posició de l'ordre de les tabulacions"
+
+#~ msgid "Table"
+#~ msgstr "Taula"
+
+#~ msgid "Table body"
+#~ msgstr "Cos de la taula"
+
+#~ msgid "Table caption"
+#~ msgstr "Títol de la taula"
+
+#~ msgid "Table column group properties"
+#~ msgstr "Propietats del grup de columnes de la taula"
+
+#~ msgid "Table column properties"
+#~ msgstr "Propietats de la columna de la taula"
+
+#~ msgid "Table data cell"
+#~ msgstr "Cel·la de dades de la taula"
+
+#~ msgid "Table footer"
+#~ msgstr "Peu de la taula"
+
+#~ msgid "Table header"
+#~ msgstr "Capçaleres de la taula"
+
+#~ msgid "Table header cell"
+#~ msgstr "Cel·la capçalera de la taula"
+
+#~ msgid "Table row"
+#~ msgstr "Fila de la taula"
+
+#~ msgid "Table summary"
+#~ msgstr "Sumari de la taula"
+
+#~ msgid "Target - Blank"
+#~ msgstr "Objectiu - Nou"
+
+#~ msgid "Target - Parent"
+#~ msgstr "Objectiu - Pare"
+
+#~ msgid "Target - Self"
+#~ msgstr "Objectiu - Mateixa finestra"
+
+#~ msgid "Target - Top"
+#~ msgstr "Objectiu - A sobre"
+
+#~ msgid "Teletype or monospace text style"
+#~ msgstr "Estil de text teletip o monoespai"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Text color"
+#~ msgstr "Color del text"
+
+#~ msgid "Text color (deprecated)"
+#~ msgstr "Color del text (desaconsellat)"
+
+#~ msgid "Text entered by user"
+#~ msgstr "Text que ha entrat l'usuari"
+
+#~ msgid "Title"
+#~ msgstr "Títol"
+
+#~ msgid "Top margin in pixels"
+#~ msgstr "Marge superior en píxels"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Underlined text style"
+#~ msgstr "Estil de text subratllat"
+
+#~ msgid "Unordered list"
+#~ msgstr "Llista sense ordre"
+
+#~ msgid "Use image map"
+#~ msgstr "Utilitza un mapa de la imatge"
+
+#~ msgid "Value"
+#~ msgstr "Valor"
+
+#~ msgid "Value interpretation"
+#~ msgstr "Interpretació del valor"
+
+#~ msgid "Variable or program argument"
+#~ msgstr "Variable o argument d'un programa"
+
+#~ msgid "Vertical cell alignment"
+#~ msgstr "Alineament vertical de les cel·les"
+
+#~ msgid "Vertical space"
+#~ msgstr "Espai vertical"
+
+#~ msgid "Vertical space (deprecated)"
+#~ msgstr "Espai vertical (desaconsellat)"
+
+#~ msgid "Visited link color"
+#~ msgstr "Color dels enllaços visitats"
+
+#~ msgid "Visited link color (deprecated)"
+#~ msgstr "Color dels enllaços visitats (desaconsellat)"
+
+#~ msgid "Width"
+#~ msgstr "Amplada"
+
+#~ msgid "XHTML 1.0 - Tags"
+#~ msgstr "XHTML 1.0 - Marcadors"
+
+#~ msgid "Bibliography (cite)"
+#~ msgstr "Bibliografia (citació)"
+
+#~ msgid "Bibliography (item)"
+#~ msgstr "Bibliografia (element)"
+
+#~ msgid "Bibliography (shortcite)"
+#~ msgstr "Bibliografia (citació curta)"
+
+#~ msgid "Bibliography (thebibliography)"
+#~ msgstr "Bibliografia (thebibliography)"
+
+#~ msgid "Brackets ()"
+#~ msgstr "Claudàtors ()"
+
+#~ msgid "Brackets <>"
+#~ msgstr "Claudàtors <>"
+
+#~ msgid "Brackets []"
+#~ msgstr "Claudàtors []"
+
+#~ msgid "Brackets {}"
+#~ msgstr "Claudàtors {}"
+
+#~ msgid "File input"
+#~ msgstr "Fitxer d'entrada"
+
+#~ msgid "Footnote"
+#~ msgstr "Nota al peu"
+
+#~ msgid "Function cosine"
+#~ msgstr "Funció cosinus"
+
+#~ msgid "Function e^"
+#~ msgstr "Funció e^"
+
+#~ msgid "Function exp"
+#~ msgstr "Funció exp"
+
+#~ msgid "Function log"
+#~ msgstr "Funció log"
+
+#~ msgid "Function log10"
+#~ msgstr "Funció log10"
+
+#~ msgid "Function sine"
+#~ msgstr "Funció sinus"
+
+#~ msgid "Greek alpha"
+#~ msgstr "Grec alfa"
+
+#~ msgid "Greek beta"
+#~ msgstr "Grec beta"
+
+#~ msgid "Greek epsilon"
+#~ msgstr "Grec èpsilon"
+
+#~ msgid "Greek gamma"
+#~ msgstr "Grec gamma"
+
+#~ msgid "Greek lambda"
+#~ msgstr "Grec lambda"
+
+#~ msgid "Greek rho"
+#~ msgstr "Grec rho"
+
+#~ msgid "Greek tau"
+#~ msgstr "Grec tau"
+
+#~ msgid "Header 0 (chapter)"
+#~ msgstr "Capçalera 0 (capítol)"
+
+#~ msgid "Header 0 (chapter*)"
+#~ msgstr "Capçalera 0 (capítol*)"
+
+#~ msgid "Header 1 (section)"
+#~ msgstr "Capçalera 1 (secció)"
+
+#~ msgid "Header 1 (section*)"
+#~ msgstr "Capçalera 1 (secció*)"
+
+#~ msgid "Header 2 (subsection)"
+#~ msgstr "Capçalera 2 (subsecció)"
+
+#~ msgid "Header 2 (subsection*)"
+#~ msgstr "Capçalera 2 (subsecció*)"
+
+#~ msgid "Header 3 (subsubsection)"
+#~ msgstr "Capçalera 3 (subsubsecció)"
+
+#~ msgid "Header 3 (subsubsection*)"
+#~ msgstr "Capçalera 3 (subsubsecció*)"
+
+#~ msgid "Header 4 (paragraph)"
+#~ msgstr "Capçalera 4 (paràgraf)"
+
+#~ msgid "Header appendix"
+#~ msgstr "Capçalera de l'apèndix"
+
+#~ msgid "Item"
+#~ msgstr "Element"
+
+#~ msgid "Item with label"
+#~ msgstr "Element amb etiqueta"
+
+#~ msgid "Latex - Tags"
+#~ msgstr "LaTeX - Etiquetes"
+
+#~ msgid "List description"
+#~ msgstr "Llista de descripció"
+
+#~ msgid "List enumerate"
+#~ msgstr "Llista enumerada"
+
+#~ msgid "List itemize"
+#~ msgstr "Llista amb elements"
+
+#~ msgid "Maths (display)"
+#~ msgstr "Matemàtiques (visualització)"
+
+#~ msgid "Maths (inline)"
+#~ msgstr "Matemàtiques (inserit)"
+
+#~ msgid "Operator fraction"
+#~ msgstr "Operador fracció"
+
+#~ msgid "Operator integral (display)"
+#~ msgstr "Operador integral (visualització)"
+
+#~ msgid "Operator integral (inline)"
+#~ msgstr "Operador integral (inserit)"
+
+#~ msgid "Operator sum (display)"
+#~ msgstr "Operador suma (visualització)"
+
+#~ msgid "Operator sum (inline)"
+#~ msgstr "Operador suma (inserit)"
+
+#~ msgid "Reference label"
+#~ msgstr "Etiqueta de referència"
+
+#~ msgid "Reference ref"
+#~ msgstr "Preferència ref"
+
+#~ msgid "Symbol <<"
+#~ msgstr "Símbol <<"
+
+#~ msgid "Symbol <="
+#~ msgstr "Símbol <="
+
+#~ msgid "Symbol >="
+#~ msgstr "Símbol >;="
+
+#~ msgid "Symbol >>"
+#~ msgstr "Símbol >>"
+
+# és \and en LaTeX (una instrucció)
+#~ msgid "Symbol and"
+#~ msgstr "Símbol and"
+
+#~ msgid "Symbol const"
+#~ msgstr "Símbol const"
+
+#~ msgid "Symbol d-by-dt"
+#~ msgstr "Símbol d-by-dt"
+
+#~ msgid "Symbol d-by-dt-partial"
+#~ msgstr "Símbol d-by-dt-parcial"
+
+#~ msgid "Symbol d2-by-dt2-partial"
+#~ msgstr "Símbol d2-by-dt2-parcial"
+
+#~ msgid "Symbol dagger"
+#~ msgstr "Símbol creu"
+
+#~ msgid "Symbol em-dash ---"
+#~ msgstr "Símbol guionet llarg ---"
+
+#~ msgid "Symbol en-dash --"
+#~ msgstr "Símbol guionet curt --"
+
+#~ msgid "Symbol equiv"
+#~ msgstr "Símbol d'equivalent"
+
+#~ msgid "Symbol infinity"
+#~ msgstr "Símbol d'infinit"
+
+# En LaTeX "\," és el mateix que "\thinspace", que determina
+# l'espai entre nombres d'una mateixa xifra (o element). (Josep)
+#~ msgid "Symbol mathspace ,"
+#~ msgstr "Símbol , en el context matemàtic"
+
+# Nota: ídem que \,
+#~ msgid "Symbol mathspace ."
+#~ msgstr "Símbol . en el context matemàtiques ."
+
+#~ msgid "Symbol mathspace _"
+#~ msgstr "Símbol _ en el context matemàtic"
+
+#~ msgid "Symbol mathspace __"
+#~ msgstr "Símbol __ en el context matemàtic"
+
+#~ msgid "Symbol simeq"
+#~ msgstr "Símbol simeq"
+
+#~ msgid "Symbol star"
+#~ msgstr "Símbol estrella"
+
+#~ msgid "Typeface bold"
+#~ msgstr "Estil negreta"
+
+#~ msgid "Typeface italic"
+#~ msgstr "Estil itàlic"
+
+#~ msgid "Typeface slanted"
+#~ msgstr "Estil inclinat"
+
+#~ msgid "Typeface type"
+#~ msgstr "Estil del tipus de lletra"
+
+#~ msgid "Unbreakable text"
+#~ msgstr "Text inseparable"
+
+#~ msgid ""
+#~ "Provides a method to easily insert commonly used tags/strings into a "
+#~ "document without having to type them."
+#~ msgstr ""
+#~ "Ofereix un mètode senzill per inserir en un document els marcadors/"
+#~ "cadenes més utilitzades sense haver de teclejar-les."
+
+#~ msgid "Tag list"
+#~ msgstr "Llistat de marcadors"
+
+#~ msgid "XSLT - Axes"
+#~ msgstr "XSLT - Eixos"
+
+#~ msgid "XSLT - Elements"
+#~ msgstr "XSLT - Elements"
+
+#~ msgid "XSLT - Functions"
+#~ msgstr "XSLT - Funcions"
+
+#~ msgid "ancestor"
+#~ msgstr "antecessor"
+
+# FIXME (josep)
+#~ msgid "ancestor-or-self"
+#~ msgstr "antecessor-o-un-mateix"
+
+#~ msgid "attribute"
+#~ msgstr "atribut"
+
+#~ msgid "child"
+#~ msgstr "fill"
+
+#~ msgid "descendant"
+#~ msgstr "descendent"
+
+#~ msgid "descendant-or-self"
+#~ msgstr "descendent-o-un-mateix"
+
+#~ msgid "following"
+#~ msgstr "següent"
+
+#~ msgid "following-sibling"
+#~ msgstr "següent-germà"
+
+#~ msgid "namespace"
+#~ msgstr "espai de nom"
+
+#~ msgid "parent"
+#~ msgstr "pare"
+
+#~ msgid "preceding"
+#~ msgstr "predecessor"
+
+#~ msgid "preceding-sibling"
+#~ msgstr "predecessor-germà"
+
+#~ msgid "self"
+#~ msgstr "un mateix"
+
+#~ msgid "XUL - Tags"
+#~ msgstr "XUL - Marcadors"
 
 #~ msgid "Configure insert date/time plugin..."
 #~ msgstr "Configura el connector per inserir la data/hora..."
@@ -5649,7 +5220,7 @@ msgstr "_Pregunta per un format"
 #~ msgstr "La ubicació entrada no és vàlida."
 
 #~ msgid "Invalid uri"
-#~ msgstr "URI invàlida"
+#~ msgstr "URI no vàlida"
 
 # FIXME
 #~ msgid "gtk-revert-to-saved"
@@ -5806,7 +5377,7 @@ msgstr "_Pregunta per un format"
 #~ msgstr "_Mode de ressaltat:"
 
 #~ msgid "Pick a color"
-#~ msgstr "Escolliu un color"
+#~ msgstr "Trieu un color"
 
 #~ msgid "U_se default theme colors"
 #~ msgstr "Utilitza els _colors del tema predeterminat"
@@ -6380,7 +5951,7 @@ msgstr "_Pregunta per un format"
 #~ "The file contains data in an invalid format. Probably, you are trying to "
 #~ "open a binary file."
 #~ msgstr ""
-#~ "El fitxer conté dades en un format invàlid. Probablement esteu intentant "
+#~ "El fitxer conté dades en un format no vàlid. Probablement esteu intentant "
 #~ "obrir un fitxer binari."
 
 #~ msgid ""
@@ -6529,7 +6100,8 @@ msgstr "_Pregunta per un format"
 #~ msgstr "Surt d'una instància existent del gedit"
 
 #~ msgid "The file you are trying to open contains an invalid byte sequence."
-#~ msgstr "El fitxer que intenteu obrir conté una seqüència d'octets invàlida."
+#~ msgstr ""
+#~ "El fitxer que intenteu obrir conté una seqüència d'octets no vàlida."
 
 #~ msgid ""
 #~ "gedit was not able to automatically determine the encoding of the file "
