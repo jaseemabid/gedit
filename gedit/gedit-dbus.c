@@ -830,8 +830,7 @@ display_open_if_needed (const gchar *name)
 
 static GeditWindow *
 window_from_display_arguments (gboolean           new_window,
-                               DisplayParameters *dparams,
-                               gboolean           create)
+                               DisplayParameters *dparams)
 {
 	GdkScreen *screen = NULL;
 	GeditApp *app;
@@ -870,18 +869,16 @@ window_from_display_arguments (gboolean           new_window,
 		ret = gedit_app_get_active_window (app);
 	}
 
-	if (!ret && create)
+	if (!ret)
 	{
 		ret = gedit_app_create_window (app, screen);
-		gedit_window_create_tab (ret, TRUE);
 	}
 
 	return ret;
 }
 
 static gboolean
-is_empty_window (GeditWindow *window,
-                 gboolean     check_untouched)
+is_empty_window (GeditWindow *window)
 {
 	GList *views;
 	gboolean ret = FALSE;
@@ -892,7 +889,20 @@ is_empty_window (GeditWindow *window,
 	{
 		ret = TRUE;
 	}
-	else if (check_untouched && views->next == NULL)
+
+	g_list_free (views);
+	return ret;
+}
+
+static gboolean
+is_untouched_window (GeditWindow *window)
+{
+	GList *views;
+	gboolean ret = FALSE;
+
+	views = gedit_window_get_views (window);
+
+	if (views != NULL && views->next == NULL)
 	{
 		GeditView *view = GEDIT_VIEW (views->data);
 		GeditDocument *doc = GEDIT_DOCUMENT (gtk_text_view_get_buffer (GTK_TEXT_VIEW (view)));
@@ -963,7 +973,7 @@ wait_handler_dbus (GObject  *object,
 	g_object_unref (conn);
 
 	if (data->window && object != G_OBJECT (data->window) &&
-	    data->close_window && is_empty_window (data->window, FALSE))
+	    data->close_window && is_empty_window (data->window))
 	{
 		/* Close the window */
 		gtk_widget_destroy (GTK_WIDGET (data->window));
@@ -1314,7 +1324,6 @@ handle_open_fds (GeditDBus             *dbus,
 	g_slist_free (tabs);
 
 	return g_slist_concat (loaded, g_slist_reverse (ret));
-
 }
 
 static void
@@ -1340,6 +1349,8 @@ dbus_handle_open (GeditDBus             *dbus,
 	GeditWindow *window;
 	GSList *loaded_documents = NULL;
 	gboolean empty_window;
+	gboolean untouched_window;
+	gboolean jump_to;
 	WaitData *data;
 	guint32 wait_id = 0;
 
@@ -1368,8 +1379,7 @@ dbus_handle_open (GeditDBus             *dbus,
 		                             NULL);
 
 		window = window_from_display_arguments (new_window,
-		                                        &display_parameters,
-		                                        TRUE);
+		                                        &display_parameters);
 
 		g_free (display_parameters.display_name);
 
@@ -1392,7 +1402,8 @@ dbus_handle_open (GeditDBus             *dbus,
 
 	g_free (charset_encoding);
 
-	empty_window = is_empty_window (window, TRUE);
+	empty_window = is_empty_window (window);
+	untouched_window = is_untouched_window (window);
 
 	extract_optional_parameters (options_hash,
 	                             "line_position", &open_parameters.line_position,
@@ -1423,18 +1434,37 @@ dbus_handle_open (GeditDBus             *dbus,
 	                             "startup_time", &startup_time,
 	                             NULL);
 
+	if (new_document)
+	{
+		GeditTab *tab;
+
+		tab = gedit_window_create_tab (window, TRUE);
+
+		/* when forcing a new doc, it should be the active tab */
+		jump_to = FALSE;
+
+		loaded_documents = g_slist_append (loaded_documents,
+		                                   gedit_tab_get_document (tab));
+	}
+	else if (loaded_documents == NULL)
+	{
+		GeditTab *tab;
+
+		tab = gedit_window_create_tab (window, TRUE);
+		jump_to = TRUE;
+
+		loaded_documents = g_slist_append (loaded_documents,
+		                                   gedit_tab_get_document (tab));
+	}
+	else
+	{
+		jump_to = FALSE;
+	}
+
 	set_interaction_time_and_present (window, startup_time);
 
 	if (!wait)
 	{
-		gboolean jump_to = loaded_documents == NULL;
-
-		if (new_document)
-		{
-			gedit_window_create_tab (window, jump_to);
-			jump_to = FALSE;
-		}
-
 		handle_open_pipe (dbus,
 		                  pipe_path,
 		                  window,
@@ -1444,29 +1474,18 @@ dbus_handle_open (GeditDBus             *dbus,
 	}
 	else
 	{
-		gboolean jump_to = loaded_documents == NULL;
 		gboolean has_pipe;
 
 		data = g_slice_new (WaitData);
 
 		data->dbus = dbus;
 		data->window = window;
-		data->close_window = empty_window;
+		data->close_window = (empty_window || untouched_window);
 		data->wait_id = ++dbus->priv->next_wait_id;
 		data->num_handlers = 0;
 
 		/* for the return value */
 		wait_id = data->wait_id;
-
-		if (new_document)
-		{
-			GeditTab *tab;
-			tab = gedit_window_create_tab (window, jump_to);
-			jump_to = FALSE;
-
-			loaded_documents = g_slist_append (loaded_documents,
-			                                   gedit_tab_get_document (tab));
-		}
 
 		has_pipe = handle_open_pipe (dbus,
 		                             pipe_path,
@@ -1477,7 +1496,7 @@ dbus_handle_open (GeditDBus             *dbus,
 
 		/* Install wait handler on the window if there were no documents
 		   opened */
-		if (loaded_documents == NULL && !has_pipe)
+		if ((loaded_documents == NULL) && !has_pipe)
 		{
 			/* Add wait handler on the window */
 			install_wait_handler (dbus,

@@ -899,7 +899,8 @@ is_in_viewport (GeditWindow  *window,
  * equal parts called viewports. This function retrives the #GeditWindow in
  * the given viewport of the given workspace.
  *
- * Return value: the #GeditWindow in the given viewport of the given workspace.
+ * Return value: the #GeditWindow in the given viewport of the given workspace
+ *    or %NULL% if no window is found.
  */
 GeditWindow *
 _gedit_app_get_window_in_viewport (GeditApp  *app,
@@ -931,8 +932,7 @@ _gedit_app_get_window_in_viewport (GeditApp  *app,
 			return window;
 	}
 
-	/* no window on this workspace... create a new one */
-	return gedit_app_create_window (app, screen);
+	return NULL;
 }
 
 /**
