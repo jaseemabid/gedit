@@ -675,8 +675,6 @@ gedit_app_create_window_real (GeditApp    *app,
 {
 	GeditWindow *window;
 
-	gedit_debug (DEBUG_APP);
-
 	/*
 	 * We need to be careful here, there is a race condition:
 	 * when another gedit is launched it checks active_window,
@@ -766,6 +764,8 @@ gedit_app_create_window (GeditApp  *app,
 {
 	GeditWindow *window;
 
+	gedit_debug (DEBUG_APP);
+
 	window = gedit_app_create_window_real (app, TRUE, NULL);
 
 	if (screen != NULL)
@@ -783,6 +783,8 @@ _gedit_app_restore_window (GeditApp    *app,
 			   const gchar *role)
 {
 	GeditWindow *window;
+
+	gedit_debug (DEBUG_APP);
 
 	window = gedit_app_create_window_real (app, FALSE, role);
 

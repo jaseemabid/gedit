@@ -88,7 +88,8 @@ gedit_debug_init (void)
 		debug = debug | GEDIT_DEBUG_SAVER;
 	if (g_getenv ("GEDIT_DEBUG_PANEL") != NULL)
 		debug = debug | GEDIT_DEBUG_PANEL;
-
+	if (g_getenv ("GEDIT_DEBUG_DBUS") != NULL)
+		debug = debug | GEDIT_DEBUG_DBUS;
 out:
 
 #ifdef ENABLE_PROFILING
@@ -155,7 +156,7 @@ void gedit_debug (GeditDebugSection  section,
 		last = seconds;
 #else
 		g_print ("%s:%d (%s)\n", file, line, function);
-#endif		
+#endif
 		fflush (stdout);
 	}
 }

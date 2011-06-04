@@ -4358,8 +4358,9 @@ process_create_tab (GeditWindow *window,
 		return NULL;
 	}
 
+	gedit_debug (DEBUG_WINDOW);
+
 	gtk_widget_show (GTK_WIDGET (tab));
-	
 	gedit_notebook_add_tab (GEDIT_NOTEBOOK (notebook),
 	                        tab,
 	                        -1,
@@ -4390,7 +4391,11 @@ gedit_window_create_tab (GeditWindow *window,
 	GtkWidget *notebook;
 	GeditTab *tab;
 
+	gedit_debug_message (DEBUG_WINDOW, "AAAAAA\n");
+
 	g_return_val_if_fail (GEDIT_IS_WINDOW (window), NULL);
+
+	gedit_debug (DEBUG_WINDOW);
 
 	notebook = _gedit_window_get_notebook (window);
 	tab = GEDIT_TAB (_gedit_tab_new ());
@@ -4431,6 +4436,8 @@ gedit_window_create_tab_from_location (GeditWindow         *window,
 	g_return_val_if_fail (GEDIT_IS_WINDOW (window), NULL);
 	g_return_val_if_fail (G_IS_FILE (location), NULL);
 
+	gedit_debug (DEBUG_WINDOW);
+
 	notebook = _gedit_window_get_notebook (window);
 	tab = _gedit_tab_new_from_location (location,
 	                                    encoding,
@@ -4462,6 +4469,8 @@ gedit_window_create_tab_from_stream (GeditWindow         *window,
 {
 	GtkWidget *notebook;
 	GtkWidget *tab;
+
+	gedit_debug (DEBUG_WINDOW);
 
 	g_return_val_if_fail (GEDIT_IS_WINDOW (window), NULL);
 	g_return_val_if_fail (G_IS_INPUT_STREAM (stream), NULL);

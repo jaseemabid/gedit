@@ -24,11 +24,12 @@
 #include <errno.h>
 #include <stdlib.h>
 #include <gdk/gdk.h>
-#include "gedit-utils.h"
-#include "gedit-command-line.h"
-#include "gedit-window.h"
+#include "gedit-debug.h"
 #include "gedit-app.h"
+#include "gedit-command-line.h"
 #include "gedit-commands.h"
+#include "gedit-window.h"
+#include "gedit-utils.h"
 
 #ifdef GDK_WINDOWING_X11
 #include <gdk/gdkx.h>
@@ -249,6 +250,8 @@ activate_service (GeditDBus *dbus,
 {
 	GDBusConnection *conn;
 	GVariant *ret;
+
+	gedit_debug (DEBUG_DBUS);
 
 	conn = g_bus_get_sync (G_BUS_TYPE_SESSION, NULL, NULL);
 
@@ -485,6 +488,8 @@ on_open_proxy_signal (GDBusProxy *proxy,
                       GVariant   *parameters,
                       GeditDBus  *dbus)
 {
+	gedit_debug (DEBUG_DBUS);
+
 	if (g_strcmp0 (signal_name, "WaitDone") == 0)
 	{
 		guint wait_id;
@@ -716,6 +721,8 @@ handle_slave (GeditDBus *dbus)
 	GDBusProxyFlags flags;
 	GeditCommandLine *command_line;
 
+	gedit_debug (DEBUG_DBUS);
+
 	conn = g_bus_get_sync (G_BUS_TYPE_SESSION, NULL, NULL);
 
 	if (conn == NULL)
@@ -754,6 +761,8 @@ handle_slave (GeditDBus *dbus)
 static GeditDBusResult
 handle_master (GeditDBus *dbus)
 {
+	gedit_debug (DEBUG_DBUS);
+
 	/* let the main gedit thing do its thing */
 	if (g_getenv ("DBUS_STARTER_ADDRESS"))
 	{
@@ -909,6 +918,8 @@ set_interaction_time_and_present (GeditWindow *window,
 	* terminal. We also need to make sure that the window
 	* has been realized otherwise it will not work. lame.
 	*/
+
+	gedit_debug (DEBUG_DBUS);
 
 	if (!gtk_widget_get_realized (GTK_WIDGET (window)))
 	{
@@ -1511,13 +1522,18 @@ dbus_command_line_method_call_cb (GDBusConnection       *connection,
 	g_return_if_fail (g_strcmp0 (object_path, "/org/gnome/gedit") == 0);
 	g_return_if_fail (g_strcmp0 (interface_name, "org.gnome.gedit.CommandLine") == 0);
 
-	if (g_strcmp0 (method_name, "Open") == 0)
+	if (method_name != NULL)
 	{
-		dbus_handle_open (user_data, parameters, invocation);
-	}
-	else
-	{
-		g_warning ("Unsupported method called on gedit service: %s", method_name);
+		gedit_debug_message (DEBUG_DBUS, "method: %s\n", method_name);
+
+		if (g_strcmp0 (method_name, "Open") == 0)
+		{
+			dbus_handle_open (user_data, parameters, invocation);
+		}
+		else
+		{
+			g_warning ("Unsupported method called on gedit service: %s", method_name);
+		}
 	}
 }
 
@@ -1566,6 +1582,8 @@ bus_acquired_cb (GDBusConnection *connection,
                  const gchar     *name,
                  GeditDBus       *dbus)
 {
+	gedit_debug (DEBUG_DBUS);
+
 	if (connection == NULL)
 	{
 		g_warning ("Failed to acquire dbus connection");
@@ -1587,6 +1605,8 @@ name_acquired_cb (GDBusConnection *connection,
                   const gchar     *name,
                   GeditDBus       *dbus)
 {
+	gedit_debug (DEBUG_DBUS);
+
 	dbus->priv->result = GEDIT_DBUS_RESULT_SUCCESS;
 	g_main_loop_quit (dbus->priv->main_loop);
 }
@@ -1596,6 +1616,8 @@ name_lost_cb (GDBusConnection *connection,
               const gchar     *name,
               GeditDBus       *dbus)
 {
+	gedit_debug (DEBUG_DBUS);
+
 	dbus->priv->result = GEDIT_DBUS_RESULT_FAILED;
 	g_main_loop_quit (dbus->priv->main_loop);
 }
@@ -1606,6 +1628,8 @@ gedit_dbus_run (GeditDBus *dbus)
 	GeditCommandLine *command_line;
 
 	g_return_val_if_fail (GEDIT_IS_DBUS (dbus), GEDIT_DBUS_RESULT_PROCEED);
+
+	gedit_debug (DEBUG_DBUS);
 
 	command_line = gedit_command_line_get_default ();
 
@@ -1635,6 +1659,8 @@ gedit_dbus_run (GeditDBus *dbus)
 	                (GBusNameLostCallback)name_lost_cb,
 	                dbus,
 	                NULL);
+
+	gedit_debug_message (DEBUG_DBUS, "Own name org.gnome.gedit\n");
 
 	dbus->priv->main_loop = g_main_loop_new (NULL, FALSE);
 	g_main_loop_run (dbus->priv->main_loop);
