@@ -4391,8 +4391,6 @@ gedit_window_create_tab (GeditWindow *window,
 	GtkWidget *notebook;
 	GeditTab *tab;
 
-	gedit_debug_message (DEBUG_WINDOW, "AAAAAA\n");
-
 	g_return_val_if_fail (GEDIT_IS_WINDOW (window), NULL);
 
 	gedit_debug (DEBUG_WINDOW);
