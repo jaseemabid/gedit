@@ -387,8 +387,8 @@ gedit_panel_init (GeditPanel *panel)
 {
 	panel->priv = GEDIT_PANEL_GET_PRIVATE (panel);
 
-  gtk_orientable_set_orientation (GTK_ORIENTABLE (panel),
-                                  GTK_ORIENTATION_VERTICAL);
+	gtk_orientable_set_orientation (GTK_ORIENTABLE (panel),
+	                                GTK_ORIENTATION_VERTICAL);
 }
 
 static void
@@ -582,7 +582,7 @@ GtkWidget *
 gedit_panel_new (GtkOrientation orientation)
 {
 	return GTK_WIDGET (g_object_new (GEDIT_TYPE_PANEL,
-					 "orientation", orientation,
+					 "panel-orientation", orientation,
 					 NULL));
 }
 
