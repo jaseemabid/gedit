@@ -545,12 +545,12 @@ build_single_doc_dialog (GeditCloseConfirmationDialog *dlg)
 	gtk_label_set_selectable (GTK_LABEL (secondary_label), TRUE);
 	gtk_widget_set_can_focus (secondary_label, FALSE);
 
-	hbox = gtk_hbox_new (FALSE, 12);
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
 	gtk_container_set_border_width (GTK_CONTAINER (hbox), 5);
 
 	gtk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
 
-	vbox = gtk_vbox_new (FALSE, 12);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 12);
 	
 	gtk_box_pack_start (GTK_BOX (hbox), vbox, FALSE, FALSE, 0);
 
@@ -679,7 +679,7 @@ build_multiple_docs_dialog (GeditCloseConfirmationDialog *dlg)
 
 	priv = dlg->priv;
 
-	hbox = gtk_hbox_new (FALSE, 12);
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
 	gtk_container_set_border_width (GTK_CONTAINER (hbox), 5);
 	gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dlg))),
 			    hbox, TRUE, TRUE, 0);
@@ -690,7 +690,7 @@ build_multiple_docs_dialog (GeditCloseConfirmationDialog *dlg)
 	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0.0);
 	gtk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
 
-	vbox = gtk_vbox_new (FALSE, 12);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 12);
 	gtk_box_pack_start (GTK_BOX (hbox), vbox, TRUE, TRUE, 0);
 
 	/* Primary label */
@@ -726,7 +726,7 @@ build_multiple_docs_dialog (GeditCloseConfirmationDialog *dlg)
 	g_free (markup_str);
 	gtk_box_pack_start (GTK_BOX (vbox), primary_label, FALSE, FALSE, 0);
 	
-	vbox2 = gtk_vbox_new (FALSE, 8);
+	vbox2 = gtk_box_new (GTK_ORIENTATION_VERTICAL, 8);
 	gtk_box_pack_start (GTK_BOX (vbox), vbox2, FALSE, FALSE, 0);
 
 	if (priv->disable_save_to_disk)

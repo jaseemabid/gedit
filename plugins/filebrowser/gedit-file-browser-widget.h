@@ -48,14 +48,14 @@ gboolean (*GeditFileBrowserWidgetFilterFunc) (GeditFileBrowserWidget *obj,
 
 struct _GeditFileBrowserWidget
 {
-	GtkVBox parent;
+	GtkBox parent;
 
 	GeditFileBrowserWidgetPrivate *priv;
 };
 
 struct _GeditFileBrowserWidgetClass
 {
-	GtkVBoxClass parent_class;
+	GtkBoxClass parent_class;
 
 	/* Signals */
 	void (* location_activated)	(GeditFileBrowserWidget *widget,

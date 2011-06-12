@@ -77,7 +77,7 @@ typedef struct _GeditTab GeditTab;
 
 struct _GeditTab 
 {
-	GtkVBox vbox;
+	GtkBox vbox;
 
 	/*< private > */
 	GeditTabPrivate *priv;
@@ -90,7 +90,7 @@ typedef struct _GeditTabClass GeditTabClass;
 
 struct _GeditTabClass 
 {
-	GtkVBoxClass parent_class;
+	GtkBoxClass parent_class;
 
 	void (* drop_uris)	(GeditView *view,
 				 gchar    **uri_list);

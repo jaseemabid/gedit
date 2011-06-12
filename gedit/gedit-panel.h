@@ -55,7 +55,7 @@ typedef struct _GeditPanel GeditPanel;
 
 struct _GeditPanel 
 {
-	GtkVBox vbox;
+	GtkBox vbox;
 
 	/*< private > */
 	GeditPanelPrivate *priv;
@@ -68,7 +68,7 @@ typedef struct _GeditPanelClass GeditPanelClass;
 
 struct _GeditPanelClass 
 {
-	GtkVBoxClass parent_class;
+	GtkBoxClass parent_class;
 
 	void (* item_added)     (GeditPanel     *panel,
 				 GtkWidget      *item);

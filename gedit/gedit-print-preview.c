@@ -84,7 +84,7 @@ struct _GeditPrintPreviewPrivate
 	guint cur_page;
 };
 
-G_DEFINE_TYPE (GeditPrintPreview, gedit_print_preview, GTK_TYPE_VBOX)
+G_DEFINE_TYPE (GeditPrintPreview, gedit_print_preview, GTK_TYPE_BOX)
 
 static void 
 gedit_print_preview_get_property (GObject    *object,
@@ -603,7 +603,7 @@ create_bar (GeditPrintPreview *preview)
 	gtk_widget_show (GTK_WIDGET (i));
 	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), i, -1);
 
-	status = gtk_hbox_new (FALSE, 4);
+	status = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 4);
 	priv->page_entry = gtk_entry_new ();
 	gtk_entry_set_width_chars (GTK_ENTRY (priv->page_entry), 3);
 	gtk_entry_set_max_length (GTK_ENTRY (priv->page_entry), 6);
@@ -1013,6 +1013,9 @@ gedit_print_preview_init (GeditPrintPreview *preview)
 	priv->operation = NULL;
 	priv->context = NULL;
 	priv->gtk_preview = NULL;
+
+	gtk_orientable_set_orientation (GTK_ORIENTABLE (preview),
+	                                GTK_ORIENTATION_VERTICAL);
 
 	create_bar (preview);
 	create_preview_layout (preview);

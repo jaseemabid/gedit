@@ -213,7 +213,7 @@ create_newline_combo (GeditFileChooserDialog *dialog)
 static void
 create_extra_widget (GeditFileChooserDialog *dialog)
 {
-	dialog->priv->extra_widget = gtk_hbox_new (FALSE, 6);
+	dialog->priv->extra_widget = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
 
 	gtk_widget_show (dialog->priv->extra_widget);
 

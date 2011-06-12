@@ -4106,7 +4106,7 @@ gedit_window_init (GeditWindow *window)
 	window->priv->window_group = gtk_window_group_new ();
 	gtk_window_group_add_window (window->priv->window_group, GTK_WINDOW (window));
 
-	main_box = gtk_vbox_new (FALSE, 0);
+	main_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	gtk_container_add (GTK_CONTAINER (window), main_box);
 	gtk_widget_show (main_box);
 

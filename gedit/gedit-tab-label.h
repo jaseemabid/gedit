@@ -42,14 +42,14 @@ typedef struct _GeditTabLabelPrivate	GeditTabLabelPrivate;
 
 struct _GeditTabLabel
 {
-	GtkHBox parent;
+	GtkBox parent;
 	
 	GeditTabLabelPrivate *priv;
 };
 
 struct _GeditTabLabelClass
 {
-	GtkHBoxClass parent_class;
+	GtkBoxClass parent_class;
 
 	void (* close_clicked)  (GeditTabLabel *tab_label);
 };

@@ -45,14 +45,14 @@ typedef struct _GeditMultiNotebookPrivate	GeditMultiNotebookPrivate;
 
 struct _GeditMultiNotebook
 {
-	GtkVBox parent;
+	GtkBox parent;
 	
 	GeditMultiNotebookPrivate *priv;
 };
 
 struct _GeditMultiNotebookClass
 {
-	GtkVBoxClass parent_class;
+	GtkBoxClass parent_class;
 
 	/* Signals */
 	void	(* notebook_added)		(GeditMultiNotebook *mnb,

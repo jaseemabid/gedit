@@ -57,7 +57,7 @@ typedef struct _GeditDocumentsPanel GeditDocumentsPanel;
 
 struct _GeditDocumentsPanel 
 {
-	GtkVBox vbox;
+	GtkBox vbox;
 
 	/*< private > */
 	GeditDocumentsPanelPrivate *priv;
@@ -70,7 +70,7 @@ typedef struct _GeditDocumentsPanelClass GeditDocumentsPanelClass;
 
 struct _GeditDocumentsPanelClass 
 {
-	GtkVBoxClass parent_class;
+	GtkBoxClass parent_class;
 };
 
 /*

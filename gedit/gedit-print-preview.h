@@ -48,14 +48,14 @@ typedef struct _GeditPrintPreviewClass   GeditPrintPreviewClass;
 
 struct _GeditPrintPreview
 {
-	GtkVBox parent;
+	GtkBox parent;
 
 	GeditPrintPreviewPrivate *priv;
 };
 
 struct _GeditPrintPreviewClass
 {
-	GtkVBoxClass parent_class;
+	GtkBoxClass parent_class;
 
 	void (* close)		(GeditPrintPreview          *preview);
 };

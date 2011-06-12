@@ -59,7 +59,7 @@ struct _GeditTabLabelPrivate
 
 static guint signals[LAST_SIGNAL] = { 0 };
 
-G_DEFINE_TYPE (GeditTabLabel, gedit_tab_label, GTK_TYPE_HBOX)
+G_DEFINE_TYPE (GeditTabLabel, gedit_tab_label, GTK_TYPE_BOX)
 
 static void
 gedit_tab_label_finalize (GObject *object)
@@ -268,12 +268,15 @@ gedit_tab_label_init (GeditTabLabel *tab_label)
 
 	tab_label->priv->close_button_sensitive = TRUE;
 
+	gtk_orientable_set_orientation (GTK_ORIENTABLE (tab_label),
+	                                GTK_ORIENTATION_HORIZONTAL);
+
 	ebox = gtk_event_box_new ();
 	gtk_event_box_set_visible_window (GTK_EVENT_BOX (ebox), FALSE);
 	gtk_box_pack_start (GTK_BOX (tab_label), ebox, TRUE, TRUE, 0);
 	tab_label->priv->ebox = ebox;
 
-	hbox = gtk_hbox_new (FALSE, 4);
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 4);
 	gtk_container_add (GTK_CONTAINER (ebox), hbox);
 
 	close_button = gedit_close_button_new ();

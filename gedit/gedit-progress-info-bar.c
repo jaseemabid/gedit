@@ -120,10 +120,10 @@ gedit_progress_info_bar_init (GeditProgressInfoBar *bar)
 	
 	bar->priv = GEDIT_PROGRESS_INFO_BAR_GET_PRIVATE (bar);
 	
-	vbox = gtk_vbox_new (FALSE, 6);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_widget_show (vbox);
 
-	hbox = gtk_hbox_new (FALSE, 4);
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 4);
 	gtk_widget_show (hbox);
 	gtk_box_pack_start (GTK_BOX (vbox), hbox, FALSE, TRUE, 0);
 

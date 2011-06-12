@@ -106,7 +106,7 @@ typedef enum
 /* The search entry completion is shared among all the views */
 GtkListStore *search_completion_model = NULL;
 
-G_DEFINE_TYPE_WITH_CODE (GeditViewFrame, gedit_view_frame, GTK_TYPE_VBOX,
+G_DEFINE_TYPE_WITH_CODE (GeditViewFrame, gedit_view_frame, GTK_TYPE_BOX,
                          g_type_add_class_private (g_define_type_id, sizeof (GeditViewFrameClassPrivate)))
 
 static void
@@ -1080,7 +1080,7 @@ create_search_widget (GeditViewFrame *frame)
 	                  G_CALLBACK (search_widget_scroll_event),
 	                  frame);
 
-	hbox = gtk_hbox_new (FALSE, 3);
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 3);
 	gtk_widget_show (hbox);
 
 	gtk_container_add (GTK_CONTAINER (search_widget), hbox);
@@ -1424,6 +1424,9 @@ gedit_view_frame_init (GeditViewFrame *frame)
 
 	frame->priv->typeselect_flush_timeout = 0;
 	frame->priv->wrap_around = TRUE;
+
+	gtk_orientable_set_orientation (GTK_ORIENTABLE (frame),
+	                                GTK_ORIENTATION_VERTICAL);
 
 	doc = gedit_document_new ();
 

@@ -58,7 +58,7 @@ struct _GeditDocumentsPanelPrivate
 	guint               setting_active_notebook : 1;
 };
 
-G_DEFINE_TYPE(GeditDocumentsPanel, gedit_documents_panel, GTK_TYPE_VBOX)
+G_DEFINE_TYPE(GeditDocumentsPanel, gedit_documents_panel, GTK_TYPE_BOX)
 
 enum
 {
@@ -1080,6 +1080,9 @@ gedit_documents_panel_init (GeditDocumentsPanel *panel)
 
 	panel->priv->adding_tab = FALSE;
 	panel->priv->is_reodering = FALSE;
+
+	gtk_orientable_set_orientation (GTK_ORIENTABLE (panel),
+	                                GTK_ORIENTATION_VERTICAL);
 
 	/* Create the scrolled window */
 	sw = gtk_scrolled_window_new (NULL, NULL);

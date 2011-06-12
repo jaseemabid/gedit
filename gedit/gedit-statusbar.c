@@ -130,7 +130,7 @@ gedit_statusbar_init (GeditStatusbar *statusbar)
 	gtk_frame_set_shadow_type (GTK_FRAME (statusbar->priv->state_frame),
 				   GTK_SHADOW_IN);
 
-	hbox = gtk_hbox_new (FALSE, 0);
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	gtk_container_add (GTK_CONTAINER (statusbar->priv->state_frame), hbox);
 
 	statusbar->priv->load_image = gtk_image_new_from_stock (GTK_STOCK_OPEN, GTK_ICON_SIZE_MENU);

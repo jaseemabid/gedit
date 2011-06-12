@@ -63,7 +63,7 @@ enum
 
 static guint signals[LAST_SIGNAL] = { 0 };
 
-G_DEFINE_TYPE (GeditMultiNotebook, gedit_multi_notebook, GTK_TYPE_VBOX)
+G_DEFINE_TYPE (GeditMultiNotebook, gedit_multi_notebook, GTK_TYPE_BOX)
 
 static void	remove_notebook		(GeditMultiNotebook *mnb,
 					 GtkWidget          *notebook);
@@ -589,6 +589,9 @@ gedit_multi_notebook_init (GeditMultiNotebook *mnb)
 	mnb->priv = GEDIT_MULTI_NOTEBOOK_GET_PRIVATE (mnb);
 
 	mnb->priv->removing_notebook = FALSE;
+
+	gtk_orientable_set_orientation (GTK_ORIENTABLE (mnb),
+	                                GTK_ORIENTATION_VERTICAL);
 
 	mnb->priv->active_notebook = gedit_notebook_new ();
 	add_notebook (mnb, mnb->priv->active_notebook, TRUE);

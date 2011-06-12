@@ -233,7 +233,7 @@ static void on_action_filter_binary            (GtkAction              *action,
 static void on_action_bookmark_open            (GtkAction              *action,
 						GeditFileBrowserWidget *obj);
 
-G_DEFINE_DYNAMIC_TYPE (GeditFileBrowserWidget, gedit_file_browser_widget, GTK_TYPE_VBOX)
+G_DEFINE_DYNAMIC_TYPE (GeditFileBrowserWidget, gedit_file_browser_widget, GTK_TYPE_BOX)
 
 static void
 free_name_icon (gpointer data)
@@ -1262,7 +1262,7 @@ create_filter (GeditFileBrowserWidget *obj)
 	gtk_widget_show (expander);
 	gtk_box_pack_start (GTK_BOX (obj), expander, FALSE, FALSE, 0);
 
-	vbox = gtk_vbox_new (FALSE, 3);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 3);
 	gtk_widget_show (vbox);
 
 	obj->priv->filter_expander = expander;
@@ -1295,6 +1295,8 @@ gedit_file_browser_widget_init (GeditFileBrowserWidget *obj)
 			                                   free_name_icon);
 
 	gtk_box_set_spacing (GTK_BOX (obj), 3);
+	gtk_orientable_set_orientation (GTK_ORIENTABLE (obj),
+	                                GTK_ORIENTATION_VERTICAL);
 
 	obj->priv->busy_cursor = gdk_cursor_new (GDK_WATCH);
 }

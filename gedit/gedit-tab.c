@@ -84,7 +84,7 @@ struct _GeditTabPrivate
 	gint                    ask_if_externally_modified : 1;
 };
 
-G_DEFINE_TYPE(GeditTab, gedit_tab, GTK_TYPE_VBOX)
+G_DEFINE_TYPE(GeditTab, gedit_tab, GTK_TYPE_BOX)
 
 enum
 {
@@ -1643,6 +1643,9 @@ gedit_tab_init (GeditTab *tab)
 	tab->priv->save_flags = 0;
 
 	tab->priv->ask_if_externally_modified = TRUE;
+
+	gtk_orientable_set_orientation (GTK_ORIENTABLE (tab),
+	                                GTK_ORIENTATION_VERTICAL);
 
 	/* Manage auto save data */
 	auto_save = g_settings_get_boolean (tab->priv->editor,

@@ -121,13 +121,13 @@ set_info_bar_text_and_icon (GtkWidget   *info_bar,
 	GtkWidget *primary_label;
 	GtkWidget *secondary_label;
 
-	hbox_content = gtk_hbox_new (FALSE, 8);
+	hbox_content = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
 
 	image = gtk_image_new_from_stock (icon_stock_id, GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
 	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
 
-	vbox = gtk_vbox_new (FALSE, 6);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
 
 	primary_markup = g_strdup_printf ("<b>%s</b>", primary_text);
@@ -448,7 +448,7 @@ create_combo_box (GtkWidget *info_bar,
 	GtkWidget *menu;
 	gchar *label_markup;
 
-	hbox = gtk_hbox_new (FALSE, 6);
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
 
 	label_markup = g_strdup_printf ("<small>%s</small>",
 					_("Ch_aracter Encoding:"));
@@ -518,13 +518,13 @@ create_conversion_error_info_bar (const gchar *primary_text,
 				 GTK_STOCK_CANCEL,
 				 GTK_RESPONSE_CANCEL);
 
-	hbox_content = gtk_hbox_new (FALSE, 8);
+	hbox_content = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
 
 	image = gtk_image_new_from_stock ("gtk-dialog-error", GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
 	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
   
-	vbox = gtk_vbox_new (FALSE, 6);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
 	
 	primary_markup = g_strdup_printf ("<b>%s</b>", primary_text);
@@ -789,13 +789,13 @@ gedit_file_already_open_warning_info_bar_new (GFile *location)
 	gtk_info_bar_set_message_type (GTK_INFO_BAR (info_bar),
 				       GTK_MESSAGE_WARNING);
 
-	hbox_content = gtk_hbox_new (FALSE, 8);
+	hbox_content = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
 
 	image = gtk_image_new_from_stock ("gtk-dialog-warning", GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
 	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
 
-	vbox = gtk_vbox_new (FALSE, 6);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
 
 	primary_text = g_strdup_printf (_("This file (%s) is already open in another gedit window."), uri_for_display);
@@ -879,13 +879,13 @@ gedit_externally_modified_saving_error_info_bar_new (GFile        *location,
 	gtk_info_bar_set_message_type (GTK_INFO_BAR (info_bar),
 				       GTK_MESSAGE_WARNING);
 
-	hbox_content = gtk_hbox_new (FALSE, 8);
+	hbox_content = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
 
 	image = gtk_image_new_from_stock ("gtk-dialog-warning", GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
 	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
 
-	vbox = gtk_vbox_new (FALSE, 6);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
 
 	/* FIXME: review this message, it's not clear since for the user the "modification"
@@ -977,13 +977,13 @@ gedit_no_backup_saving_error_info_bar_new (GFile        *location,
 	gtk_info_bar_set_message_type (GTK_INFO_BAR (info_bar),
 				       GTK_MESSAGE_WARNING);
 
-	hbox_content = gtk_hbox_new (FALSE, 8);
+	hbox_content = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
 
 	image = gtk_image_new_from_stock ("gtk-dialog-warning", GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
 	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
 
-	vbox = gtk_vbox_new (FALSE, 6);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
 
 	editor_settings = g_settings_new ("org.gnome.gedit.preferences.editor");
@@ -1266,13 +1266,13 @@ gedit_invalid_character_info_bar_new (GFile *location)
 	gtk_info_bar_set_message_type (GTK_INFO_BAR (info_bar),
 				       GTK_MESSAGE_WARNING);
 
-	hbox_content = gtk_hbox_new (FALSE, 8);
+	hbox_content = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
 
 	image = gtk_image_new_from_stock ("gtk-dialog-warning", GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
 	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
 
-	vbox = gtk_vbox_new (FALSE, 6);
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
 
 	primary_text = g_strdup_printf (_("Some invalid chars have been detected while saving %s"),
