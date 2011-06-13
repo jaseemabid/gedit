@@ -51,6 +51,8 @@ struct _GeditPanelPrivate
 {
 	GtkOrientation orientation;
 
+	GtkWidget *main_box;
+
 	/* Title bar (vertical panel only) */
 	GtkWidget *title_image;
 	GtkWidget *title_label;
@@ -87,7 +89,7 @@ static guint signals[LAST_SIGNAL];
 
 static void	gedit_panel_constructed	(GObject *object);
 
-G_DEFINE_TYPE(GeditPanel, gedit_panel, GTK_TYPE_BOX)
+G_DEFINE_TYPE(GeditPanel, gedit_panel, GTK_TYPE_BIN)
 
 static void
 gedit_panel_finalize (GObject *object)
@@ -106,7 +108,7 @@ gedit_panel_get_property (GObject    *object,
 	switch (prop_id)
 	{
 		case PROP_ORIENTATION:
-			g_value_set_enum(value, panel->priv->orientation);
+			g_value_set_enum (value, panel->priv->orientation);
 			break;
 		default:
 			G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -159,6 +161,67 @@ gedit_panel_focus_document (GeditPanel *panel)
 }
 
 static void
+gedit_panel_get_size (GtkWidget     *widget,
+                      GtkOrientation orientation,
+                      gint          *minimum,
+                      gint          *natural)
+{
+	GtkBin *bin = GTK_BIN (widget);
+	GtkWidget *child;
+
+	if (minimum)
+		*minimum = 0;
+
+	if (natural)
+		*natural = 0;
+
+	child = gtk_bin_get_child (bin);
+	if (child && gtk_widget_get_visible (child))
+	{
+		if (orientation == GTK_ORIENTATION_HORIZONTAL)
+		{
+			gtk_widget_get_preferred_width (child, minimum, natural);
+		}
+		else
+		{
+			gtk_widget_get_preferred_height (child, minimum, natural);
+		}
+	}
+}
+
+static void
+gedit_panel_get_preferred_width (GtkWidget *widget,
+                                 gint      *minimum,
+                                 gint      *natural)
+{
+	gedit_panel_get_size (widget, GTK_ORIENTATION_HORIZONTAL, minimum, natural);
+}
+
+static void
+gedit_panel_get_preferred_height (GtkWidget *widget,
+                                  gint      *minimum,
+                                  gint      *natural)
+{
+	gedit_panel_get_size (widget, GTK_ORIENTATION_VERTICAL, minimum, natural);
+}
+
+static void
+gedit_panel_size_allocate (GtkWidget     *widget,
+                           GtkAllocation *allocation)
+{
+	GtkBin *bin = GTK_BIN (widget);
+	GtkWidget *child;
+
+	GTK_WIDGET_CLASS (gedit_panel_parent_class)->size_allocate (widget, allocation);
+
+	child = gtk_bin_get_child (bin);
+	if (child && gtk_widget_get_visible (child))
+	{
+		gtk_widget_size_allocate (child, allocation);
+	}
+}
+
+static void
 gedit_panel_grab_focus (GtkWidget *w)
 {
 	GeditPanel *panel = GEDIT_PANEL (w);
@@ -190,21 +253,24 @@ gedit_panel_class_init (GeditPanelClass *klass)
 	object_class->get_property = gedit_panel_get_property;
 	object_class->set_property = gedit_panel_set_property;
 
-	g_object_class_install_property (object_class,
-					 PROP_ORIENTATION,
-					 g_param_spec_enum ("panel-orientation",
-							    "Panel Orientation",
-							    "The panel's orientation",
-							    GTK_TYPE_ORIENTATION,
-							    GTK_ORIENTATION_VERTICAL,
-							    G_PARAM_READWRITE |
-							    G_PARAM_CONSTRUCT_ONLY |
-							    G_PARAM_STATIC_STRINGS));
-
+	widget_class->get_preferred_width = gedit_panel_get_preferred_width;
+	widget_class->get_preferred_height = gedit_panel_get_preferred_height;
+	widget_class->size_allocate = gedit_panel_size_allocate;
 	widget_class->grab_focus = gedit_panel_grab_focus;
 
 	klass->close = gedit_panel_close;
 	klass->focus_document = gedit_panel_focus_document;
+
+	g_object_class_install_property (object_class,
+	                                 PROP_ORIENTATION,
+	                                 g_param_spec_enum ("orientation",
+	                                                    "Panel Orientation",
+	                                                    "The panel's orientation",
+	                                                    GTK_TYPE_ORIENTATION,
+	                                                    GTK_ORIENTATION_VERTICAL,
+	                                                    G_PARAM_READWRITE |
+	                                                    G_PARAM_CONSTRUCT_ONLY |
+	                                                    G_PARAM_STATIC_STRINGS));
 
 	signals[ITEM_ADDED] =
 		g_signal_new ("item_added",
@@ -387,8 +453,9 @@ gedit_panel_init (GeditPanel *panel)
 {
 	panel->priv = GEDIT_PANEL_GET_PRIVATE (panel);
 
-	gtk_orientable_set_orientation (GTK_ORIENTABLE (panel),
-	                                GTK_ORIENTATION_VERTICAL);
+	panel->priv->main_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+	gtk_widget_show (panel->priv->main_box);
+	gtk_container_add (GTK_CONTAINER (panel), panel->priv->main_box);
 }
 
 static void
@@ -470,7 +537,7 @@ build_horizontal_panel (GeditPanel *panel)
 
 	gtk_widget_show_all (box);
 
-	gtk_box_pack_start (GTK_BOX (panel),
+	gtk_box_pack_start (GTK_BOX (panel->priv->main_box),
 			    box,
 			    TRUE,
 			    TRUE,
@@ -489,7 +556,8 @@ build_vertical_panel (GeditPanel *panel)
 	title_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
 	gtk_container_set_border_width (GTK_CONTAINER (title_hbox), 5);
 
-	gtk_box_pack_start (GTK_BOX (panel), title_hbox, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (panel->priv->main_box), title_hbox,
+	                             FALSE, FALSE, 0);
 
 	icon_name_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	gtk_box_pack_start (GTK_BOX (title_hbox),
@@ -535,7 +603,7 @@ build_vertical_panel (GeditPanel *panel)
 
 	gtk_widget_show_all (title_hbox);
 
-	gtk_box_pack_start (GTK_BOX (panel),
+	gtk_box_pack_start (GTK_BOX (panel->priv->main_box),
 			    panel->priv->notebook,
 			    TRUE,
 			    TRUE,
@@ -582,7 +650,7 @@ GtkWidget *
 gedit_panel_new (GtkOrientation orientation)
 {
 	return GTK_WIDGET (g_object_new (GEDIT_TYPE_PANEL,
-					 "panel-orientation", orientation,
+					 "orientation", orientation,
 					 NULL));
 }
 
