@@ -34,7 +34,8 @@ main ()
 	gtk_container_add (GTK_CONTAINER (window), vbox);
 
 	textview = gtk_text_view_new ();
-	overlay = gedit_animated_overlay_new (textview, NULL);
+	overlay = gedit_animated_overlay_new ();
+	gtk_container_add (GTK_CONTAINER (overlay), textview);
 
 	gtk_box_pack_start (GTK_BOX (vbox), overlay, TRUE, TRUE, 0);
 
@@ -45,7 +46,10 @@ main ()
 
 	gtk_container_add (GTK_CONTAINER (frame), entry);
 
-	slider = gedit_floating_slider_new (frame);
+	slider = gedit_floating_slider_new ();
+	gtk_container_add (GTK_CONTAINER (slider), frame);
+	gtk_widget_set_halign (slider, GTK_ALIGN_START);
+	gtk_widget_set_valign (slider, GTK_ALIGN_START);
 
 	g_object_set (G_OBJECT (slider),
 	              "duration", 1000,
@@ -54,8 +58,8 @@ main ()
 	              "orientation", GTK_ORIENTATION_VERTICAL,
 	              NULL);
 
-	gedit_animated_overlay_add (GEDIT_ANIMATED_OVERLAY (overlay),
-	                            GEDIT_ANIMATABLE (slider));
+	gedit_animated_overlay_add_animated_overlay (GEDIT_ANIMATED_OVERLAY (overlay),
+	                                             GEDIT_ANIMATABLE (slider));
 
 	/* set the animation state after it is added the widget */
 	g_object_set (G_OBJECT (slider),
