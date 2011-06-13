@@ -505,10 +505,10 @@ class Manager:
     def clear_fields(self):
         self['accelerator'].set_text('')
 
-	buf = self['commands'].get_buffer()
-	buf.begin_not_undoable_action()
-	buf.set_text('')
-	buf.end_not_undoable_action()
+        buf = self['commands'].get_buffer()
+        buf.begin_not_undoable_action()
+        buf.set_text('')
+        buf.end_not_undoable_action()
 
         for nm in ('input', 'output', 'applicability', 'save-files'):
             self[nm].set_active(0)

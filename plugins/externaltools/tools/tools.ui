@@ -125,6 +125,9 @@
       </row>
     </data>
   </object>
+  <object class="GeditDocument" id="commands_buffer">
+    <property name="highlight-matching-brackets">True</property>
+  </object>
   <object class="GtkDialog" id="tool-manager-dialog">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
@@ -190,6 +193,7 @@
           <object class="GtkHPaned" id="paned">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
+            <property name="vexpand">True</property>
             <property name="border_width">6</property>
             <property name="position">275</property>
             <child>
@@ -590,6 +594,19 @@
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="shadow_type">in</property>
+                            <child>
+                              <object class="GeditView" id="commands">
+                                <property name="buffer">commands_buffer</property>
+                                <property name="visible">True</property>
+                                <property name="auto-indent">True</property>
+                                <property name="insert-spaces-instead-of-tabs">False</property>
+                                <property name="smart-home-end">GTK_SOURCE_SMART_HOME_END_AFTER</property>
+                                <property name="tab-width">2</property>
+                                <property name="highlight-current-line">True</property>
+                                <property name="show-right-margin">False</property>
+                                <property name="show-line-numbers">True</property>
+                              </object>
+                            </child>
                           </object>
                           <packing>
                             <property name="right_attach">2</property>
