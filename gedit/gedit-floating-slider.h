@@ -28,7 +28,6 @@
 #include <glib-object.h>
 #include <gtk/gtk.h>
 #include "theatrics/gedit-theatrics-choreographer.h"
-#include "gedit-overlay-child.h"
 
 G_BEGIN_DECLS
 
@@ -46,19 +45,19 @@ typedef struct _GeditFloatingSliderPrivate	GeditFloatingSliderPrivate;
 
 struct _GeditFloatingSlider
 {
-	GeditOverlayChild parent;
-	
+	GtkBin parent;
+
 	GeditFloatingSliderPrivate *priv;
 };
 
 struct _GeditFloatingSliderClass
 {
-	GeditOverlayChildClass parent_class;
+	GtkBinClass parent_class;
 };
 
 GType		 gedit_floating_slider_get_type	(void) G_GNUC_CONST;
 
-GtkWidget	*gedit_floating_slider_new	(GtkWidget *widget);
+GtkWidget	*gedit_floating_slider_new	(void);
 
 G_END_DECLS
 

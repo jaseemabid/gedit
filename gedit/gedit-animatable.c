@@ -20,11 +20,10 @@
  */
 
 #include "gedit-animatable.h"
-#include "gedit-overlay-child.h"
 #include "theatrics/gedit-theatrics-choreographer.h"
 #include "theatrics/gedit-theatrics-enum-types.h"
 
-G_DEFINE_INTERFACE(GeditAnimatable, gedit_animatable, GEDIT_TYPE_OVERLAY_CHILD)
+G_DEFINE_INTERFACE(GeditAnimatable, gedit_animatable, GTK_TYPE_WIDGET)
 
 void
 gedit_animatable_default_init (GeditAnimatableInterface *iface)

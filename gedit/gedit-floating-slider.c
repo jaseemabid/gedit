@@ -49,14 +49,12 @@ enum
 	PROP_ORIENTATION
 };
 
-G_DEFINE_TYPE_EXTENDED (GeditFloatingSlider,
-			gedit_floating_slider,
-			GEDIT_TYPE_OVERLAY_CHILD,
+G_DEFINE_TYPE_EXTENDED (GeditFloatingSlider, gedit_floating_slider, GTK_TYPE_BIN,
 			0,
 			G_IMPLEMENT_INTERFACE (GEDIT_TYPE_ANIMATABLE,
 			                       NULL)
 			G_IMPLEMENT_INTERFACE (GTK_TYPE_ORIENTABLE,
-					       NULL))
+			                       NULL))
 
 static void
 gedit_floating_slider_finalize (GObject *object)
@@ -158,8 +156,6 @@ gedit_floating_slider_get_preferred_width (GtkWidget *widget,
 	GtkWidget *child;
 	gint width;
 
-	GTK_WIDGET_CLASS (gedit_floating_slider_parent_class)->get_preferred_width (widget, minimum, natural);
-
 	child = gtk_bin_get_child (GTK_BIN (widget));
 
 	if (child != NULL)
@@ -192,8 +188,6 @@ gedit_floating_slider_get_preferred_height (GtkWidget *widget,
 	GeditFloatingSliderPrivate *priv = GEDIT_FLOATING_SLIDER (widget)->priv;
 	GtkWidget *child;
 	gint height;
-
-	GTK_WIDGET_CLASS (gedit_floating_slider_parent_class)->get_preferred_height (widget, minimum, natural);
 
 	child = gtk_bin_get_child (GTK_BIN (widget));
 
@@ -316,11 +310,9 @@ gedit_floating_slider_init (GeditFloatingSlider *slider)
 }
 
 GtkWidget *
-gedit_floating_slider_new (GtkWidget *widget)
+gedit_floating_slider_new (void)
 {
-	return g_object_new (GEDIT_TYPE_FLOATING_SLIDER,
-	                     "widget", widget,
-	                     NULL);
+	return g_object_new (GEDIT_TYPE_FLOATING_SLIDER, NULL);
 }
 
 /* ex:set ts=8 noet: */

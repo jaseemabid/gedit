@@ -22,8 +22,8 @@
 #ifndef __GEDIT_ANIMATED_OVERLAY_H__
 #define __GEDIT_ANIMATED_OVERLAY_H__
 
+#include <gtk/gtk.h>
 #include "gedit-animatable.h"
-#include "gedit-overlay.h"
 #include "theatrics/gedit-theatrics-choreographer.h"
 
 G_BEGIN_DECLS
@@ -42,23 +42,22 @@ typedef struct _GeditAnimatedOverlayPrivate	GeditAnimatedOverlayPrivate;
 
 struct _GeditAnimatedOverlay
 {
-	GeditOverlay parent;
+	GtkOverlay parent;
 	
 	GeditAnimatedOverlayPrivate *priv;
 };
 
 struct _GeditAnimatedOverlayClass
 {
-	GeditOverlayClass parent_class;
+	GtkOverlayClass parent_class;
 };
 
 GType gedit_animated_overlay_get_type (void) G_GNUC_CONST;
 
-GtkWidget *gedit_animated_overlay_new (GtkWidget *main_widget,
-                                       GtkWidget *relative_widget);
+GtkWidget *gedit_animated_overlay_new (void);
 
-void gedit_animated_overlay_add (GeditAnimatedOverlay *overlay,
-                                 GeditAnimatable      *animatable);
+void gedit_animated_overlay_add_animated_overlay (GeditAnimatedOverlay *overlay,
+                                                  GeditAnimatable      *animatable);
 
 G_END_DECLS
 

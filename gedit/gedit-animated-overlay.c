@@ -29,7 +29,7 @@ struct _GeditAnimatedOverlayPrivate
 	GeditTheatricsStage *stage;
 };
 
-G_DEFINE_TYPE (GeditAnimatedOverlay, gedit_animated_overlay, GEDIT_TYPE_OVERLAY)
+G_DEFINE_TYPE (GeditAnimatedOverlay, gedit_animated_overlay, GTK_TYPE_OVERLAY)
 
 static void
 gedit_animated_overlay_dispose (GObject *object)
@@ -148,46 +148,26 @@ on_animation_state_changed (GeditAnimatable      *animatable,
 
 /**
  * gedit_animated_overlay_new:
- * @main_widget: a #GtkWidget
- * @relative_widget: (allow-none): a #Gtkwidget
  *
- * Creates a new #GeditAnimatedOverlay. If @relative_widget is not %NULL the
- * floating widgets will be placed in relation to it, if not @main_widget will
- * be use for this purpose.
+ * Creates a new #GeditAnimatedOverlay.
  *
  * Returns: a new #GeditAnimatedOverlay object.
  */
 GtkWidget *
-gedit_animated_overlay_new (GtkWidget *main_widget,
-                            GtkWidget *relative_widget)
+gedit_animated_overlay_new (void)
 {
-	return g_object_new (GEDIT_TYPE_ANIMATED_OVERLAY,
-	                     "main-widget", main_widget,
-	                     "relative-widget", relative_widget,
-	                     NULL);
+	return g_object_new (GEDIT_TYPE_ANIMATED_OVERLAY, NULL);
 }
 
 void
-gedit_animated_overlay_add (GeditAnimatedOverlay     *overlay,
-                            GeditAnimatable          *animatable)
+gedit_animated_overlay_add_animated_overlay (GeditAnimatedOverlay     *overlay,
+                                             GeditAnimatable          *animatable)
 {
-	GeditOverlayChildPosition position;
-	guint offset, duration;
-
-	g_return_if_fail (GEDIT_IS_OVERLAY (overlay));
+	g_return_if_fail (GEDIT_IS_ANIMATED_OVERLAY (overlay));
 	g_return_if_fail (GEDIT_IS_ANIMATABLE (animatable));
 
-	g_object_get (G_OBJECT (animatable),
-	              "position", &position,
-	              "offset", &offset,
-	              "duration", &duration,
-	              NULL);
-
-	/* FIXME: check that the widget is not already added */
-
-	gedit_overlay_add (GEDIT_OVERLAY (overlay),
-	                   GTK_WIDGET (animatable),
-	                   position, offset);
+	gtk_overlay_add_overlay (GTK_OVERLAY (overlay),
+	                         GTK_WIDGET (animatable));
 
 	g_signal_connect (animatable,
 	                  "notify::animation-state",

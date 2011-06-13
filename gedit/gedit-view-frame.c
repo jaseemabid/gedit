@@ -39,7 +39,7 @@
 #define GEDIT_VIEW_FRAME_SEARCH_DIALOG_TIMEOUT (30*1000) /* 30 seconds */
 
 #define MIN_SEARCH_COMPLETION_KEY_LEN	3
-#define SEARCH_POPUP_OFFSET 12
+#define SEARCH_POPUP_MARGIN 12
 
 #define GEDIT_VIEW_FRAME_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE((object), GEDIT_TYPE_VIEW_FRAME, GeditViewFramePrivate))
 
@@ -1418,7 +1418,6 @@ gedit_view_frame_init (GeditViewFrame *frame)
 {
 	GeditDocument *doc;
 	GtkWidget *sw;
-	GeditOverlayChildPosition position;
 
 	frame->priv = GEDIT_VIEW_FRAME_GET_PRIVATE (frame);
 
@@ -1450,33 +1449,28 @@ gedit_view_frame_init (GeditViewFrame *frame)
 
 	gtk_widget_show (sw);
 
-	frame->priv->overlay = gedit_animated_overlay_new (sw, frame->priv->view);
+	frame->priv->overlay = gedit_animated_overlay_new ();
+	gtk_container_add (GTK_CONTAINER (frame->priv->overlay), sw);
 	gtk_widget_show (frame->priv->overlay);
 
 	gtk_box_pack_start (GTK_BOX (frame), frame->priv->overlay, TRUE, TRUE, 0);
 
 	/* Add slider */
-	if (gtk_widget_get_direction (GTK_WIDGET (frame)) == GTK_TEXT_DIR_RTL)
-	{
-		position = GEDIT_OVERLAY_CHILD_POSITION_NORTH_WEST;
-	}
-	else
-	{
-		position = GEDIT_OVERLAY_CHILD_POSITION_NORTH_EAST;
-	}
-
 	frame->priv->search_widget = create_search_widget (frame);
-	frame->priv->slider = gedit_floating_slider_new (frame->priv->search_widget);
+	frame->priv->slider = gedit_floating_slider_new ();
+	gtk_container_add (GTK_CONTAINER (frame->priv->slider),
+	                   frame->priv->search_widget);
+	gtk_widget_set_halign (frame->priv->slider, GTK_ALIGN_END);
+	gtk_widget_set_valign (frame->priv->slider, GTK_ALIGN_START);
+	gtk_widget_set_margin_right (frame->priv->slider, SEARCH_POPUP_MARGIN);
 	g_object_set (G_OBJECT (frame->priv->slider),
-	              "position", position,
-	              "offset", SEARCH_POPUP_OFFSET,
 	              "easing", GEDIT_THEATRICS_CHOREOGRAPHER_EASING_EXPONENTIAL_IN_OUT,
 	              "blocking", GEDIT_THEATRICS_CHOREOGRAPHER_BLOCKING_DOWNSTAGE,
 	              "orientation", GTK_ORIENTATION_VERTICAL,
 	              NULL);
 
-	gedit_animated_overlay_add (GEDIT_ANIMATED_OVERLAY (frame->priv->overlay),
-	                            GEDIT_ANIMATABLE (frame->priv->slider));
+	gedit_animated_overlay_add_animated_overlay (GEDIT_ANIMATED_OVERLAY (frame->priv->overlay),
+	                                             GEDIT_ANIMATABLE (frame->priv->slider));
 }
 
 GeditViewFrame *
