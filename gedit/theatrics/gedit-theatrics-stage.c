@@ -177,7 +177,7 @@ gedit_theatrics_stage_init (GeditTheatricsStage *stage)
 						g_direct_equal);
 }
 
-static void
+static gboolean
 iterate_actors (gpointer             key,
 		gpointer             value,
 		GeditTheatricsStage *stage)
@@ -188,10 +188,7 @@ iterate_actors (gpointer             key,
 
 	g_signal_emit (G_OBJECT (stage), signals[ACTOR_STEP], 0, actor);
 
-	if (gedit_theatrics_actor_get_expired (actor))
-	{
-		g_hash_table_remove (stage->priv->actors, key);
-	}
+	return gedit_theatrics_actor_get_expired (actor);
 }
 
 static gboolean
@@ -203,9 +200,9 @@ on_timeout (GeditTheatricsStage *stage)
 		return FALSE;
 	}
 
-	g_hash_table_foreach (stage->priv->actors,
-			      (GHFunc)iterate_actors,
-			      stage);
+	g_hash_table_foreach_remove (stage->priv->actors,
+	                             (GHRFunc)iterate_actors,
+	                             stage);
 
 	g_signal_emit (G_OBJECT (stage), signals[ITERATION], 0);
 
