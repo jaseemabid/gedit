@@ -45,15 +45,32 @@ class LanguagesPopup(Gtk.Window):
         self.map()
         
         self.grab_add()
-        
-        Gdk.keyboard_grab(self.window, False, 0L)
-        Gdk.pointer_grab(self.window, False, Gdk.BUTTON_PRESS_MASK |
-                                             Gdk.BUTTON_RELEASE_MASK |
-                                             Gdk.POINTER_MOTION_MASK |
-                                             Gdk.ENTER_NOTIFY_MASK |
-                                             Gdk.LEAVE_NOTIFY_MASK |
-                                             Gdk.PROXIMITY_IN_MASK |
-                                             Gdk.PROXIMITY_OUT_MASK, None, None, 0L)
+
+        self.keyboard = None
+        device_manager = Gdk.Display.get_device_manager(self.get_window().get_display())
+        for device in device_manager.list_devices(Gdk.DeviceType.MASTER):
+            if device.get_source() == Gdk.InputSource.KEYBOARD:
+                self.keyboard = device
+                break
+
+        self.pointer = device_manager.get_client_pointer()
+
+        if self.keyboard is not None:
+            self.keyboard.grab(self.get_window(),
+                               Gdk.GrabOwnership.WINDOW, False,
+                               Gdk.EventMask.KEY_PRESS_MASK |
+                               Gdk.EventMask.KEY_RELEASE_MASK,
+                               None, 0L)
+        self.pointer.grab(self.get_window(),
+                          Gdk.GrabOwnership.WINDOW, False,
+                          Gdk.EventMask.BUTTON_PRESS_MASK |
+                          Gdk.EventMask.BUTTON_RELEASE_MASK |
+                          Gdk.EventMask.POINTER_MOTION_MASK |
+                          Gdk.EventMask.ENTER_NOTIFY_MASK |
+                          Gdk.EventMask.LEAVE_NOTIFY_MASK |
+                          Gdk.EventMask.PROXIMITY_IN_MASK |
+                          Gdk.EventMask.PROXIMITY_OUT_MASK,
+                          None, 0L)
 
         self.view.get_selection().select_path((0,))
 
@@ -66,7 +83,7 @@ class LanguagesPopup(Gtk.Window):
         self.sw.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
         self.sw.set_shadow_type(Gtk.ShadowType.ETCHED_IN)
         
-        self.view = Gtk.TreeView(self.model)
+        self.view = Gtk.TreeView(model=self.model)
         self.view.show()
         
         self.view.set_headers_visible(False)
@@ -75,16 +92,16 @@ class LanguagesPopup(Gtk.Window):
         
         renderer = Gtk.CellRendererToggle()
         column.pack_start(renderer, False)
-        column.set_attributes(renderer, active=self.COLUMN_ENABLED)
+        column.add_attribute(renderer, 'active', self.COLUMN_ENABLED)
         
         renderer.connect('toggled', self.on_language_toggled)
         
         renderer = Gtk.CellRendererText()
         column.pack_start(renderer, True)
-        column.set_attributes(renderer, text=self.COLUMN_NAME)
+        column.add_attribute(renderer, 'text', self.COLUMN_NAME)
         
         self.view.append_column(column)
-        self.view.set_row_separator_func(self.on_separator)
+        self.view.set_row_separator_func(self.on_separator, None)
         
         self.sw.add(self.view)
         
@@ -93,7 +110,7 @@ class LanguagesPopup(Gtk.Window):
     def enabled_languages(self, model, path, piter, ret):
         enabled = model.get_value(piter, self.COLUMN_ENABLED)
         
-        if path == (0,) and enabled:
+        if path.get_indices()[0] == 0 and enabled:
             return True
 
         if enabled:
@@ -107,24 +124,25 @@ class LanguagesPopup(Gtk.Window):
         self.model.foreach(self.enabled_languages, ret)
         return ret
     
-    def on_separator(self, model, piter):
+    def on_separator(self, model, piter, user_data=None):
         val = model.get_value(piter, self.COLUMN_NAME)
         return val == '-'
     
     def init_languages(self, languages):
         manager = GtkSource.LanguageManager()
-        langs = gedit.language_manager_list_languages_sorted(manager, True)
-        
+        langs = [manager.get_language(x) for x in manager.get_language_ids()]
+        langs.sort(key=lambda x: x.get_name())
+
         self.model.append([_('All languages'), None, not languages])
         self.model.append(['-', None, False])
         self.model.append([_('Plain Text'), 'plain', 'plain' in languages])
         self.model.append(['-', None, False])
-        
+
         for lang in langs:
             self.model.append([lang.get_name(), lang.get_id(), lang.get_id() in languages])
 
     def correct_all(self, model, path, piter, enabled):
-        if path == (0,):
+        if path.get_indices()[0] == 0:
             return False
         
         model.set_value(piter, self.COLUMN_ENABLED, enabled)
@@ -141,7 +159,7 @@ class LanguagesPopup(Gtk.Window):
             self.model.set_value(self.model.get_iter_first(), self.COLUMN_ENABLED, False)
 
     def do_key_press_event(self, event):
-        if event.keyval == Gtk.keysyms.Escape:
+        if event.keyval == Gdk.KEY_Escape:
             self.destroy()
             return True
         else:
@@ -154,22 +172,23 @@ class LanguagesPopup(Gtk.Window):
     
     def in_window(self, event, window=None):
         if not window:
-            window = self.window
+            window = self.get_window()
 
         geometry = window.get_geometry()
         origin = window.get_origin()
         
-        return event.x_root >= origin[0] and \
-               event.x_root <= origin[0] + geometry[2] and \
-               event.y_root >= origin[1] and \
-               event.y_root <= origin[1] + geometry[3]
+        return event.x_root >= origin[1] and \
+               event.x_root <= origin[1] + geometry[2] and \
+               event.y_root >= origin[2] and \
+               event.y_root <= origin[2] + geometry[3]
     
     def do_destroy(self):
-        Gdk.keyboard_ungrab(0L)
-        Gdk.pointer_ungrab(0L)
-        
+        if self.keyboard:
+            self.keyboard.ungrab(0L)
+        self.pointer.ungrab(0L)
+
         return Gtk.Window.do_destroy(self)
-    
+
     def setup_event(self, event, window):
         fr = event.window.get_origin()
         to = window.get_origin()
@@ -202,7 +221,7 @@ class LanguagesPopup(Gtk.Window):
         orig = [event.x, event.y]
 
         for widget in allwidgets:
-            windows = self.resolve_windows(widget.window)
+            windows = self.resolve_windows(widget.get_window())
             windows.reverse()
             
             for window in windows:
@@ -871,7 +890,7 @@ class Manager:
         for row in self._tool_rows[tool]:
             path = row.get_path()
             
-            if path[0] == parent[0]:
+            if path.get_indices()[0] == parent.get_indices()[0]:
                 return True
         
         return False
@@ -884,7 +903,7 @@ class Manager:
         ret = None
         
         if node:
-            ref = Gtk.TreeRowReference(self.model, self.model.get_path(piter))
+            ref = Gtk.TreeRowReference.new(self.model, self.model.get_path(piter))
         
         # Update languages, make sure to inhibit selection change stuff
         self.view.get_selection().handler_block(self.selection_changed_id)
@@ -941,10 +960,10 @@ class Manager:
     def on_languages_button_clicked(self, button):
         popup = LanguagesPopup(self.current_node.languages)
         popup.set_transient_for(self.dialog)
-        
-        origin = button.window.get_origin()
-        popup.move(origin[0], origin[1] - popup.allocation.height)
-        
+
+        origin = button.get_window().get_origin()
+        popup.move(origin[1], origin[2] - popup.get_allocation().height)
+
         popup.connect('destroy', self.update_languages)
 
 # ex:et:ts=4:
