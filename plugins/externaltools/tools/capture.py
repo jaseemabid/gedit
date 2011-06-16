@@ -101,7 +101,7 @@ class Capture(GObject.Object):
             fcntl.fcntl(self.pipe.stdout.fileno(), fcntl.F_SETFL, flags)
 
             GObject.io_add_watch(self.pipe.stdout,
-                                 GObject.IOCondition.IN | GObject.IOCondition.HUP,
+                                 GObject.IO_IN | GObject.IO_HUP,
                                  self.on_output)
 
         if self.flags & self.CAPTURE_STDERR:
@@ -110,7 +110,7 @@ class Capture(GObject.Object):
             fcntl.fcntl(self.pipe.stderr.fileno(), fcntl.F_SETFL, flags)
 
             GObject.io_add_watch(self.pipe.stderr,
-                                 GObject.IOCondition.IN | GObject.IOCondition.HUP,
+                                 GObject.IO_IN | GObject.IO_HUP,
                                  self.on_output)
 
         # IO

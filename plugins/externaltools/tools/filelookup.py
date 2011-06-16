@@ -72,7 +72,7 @@ class AbsoluteFileLookupProvider(FileLookupProvider):
 
     def lookup(self, path):
         if os.path.isabs(path) and os.path.isfile(path):
-            return gio.File(path)
+            return Gio.file_new_for_path(path)
         else:
             return None
 
@@ -92,7 +92,7 @@ class CwdFileLookupProvider(FileLookupProvider):
         real_path = os.path.join(cwd, path)
 
         if os.path.isfile(real_path):
-            return gio.File(real_path)
+            return Gio.file_new_for_path(real_path)
         else:
             return None
 
@@ -116,7 +116,7 @@ class OpenDocumentRelPathFileLookupProvider(FileLookupProvider):
                     rel_path = location.get_parent().get_path()
                     joined_path = os.path.join(rel_path, path)
                     if os.path.isfile(joined_path):
-                        return gio.File(joined_path)
+                        return Gio.file_new_for_path(joined_path)
 
         return None
 
