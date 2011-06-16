@@ -109,7 +109,7 @@ class OpenDocumentRelPathFileLookupProvider(FileLookupProvider):
         if path.startswith('/'):
             return None
 
-        for doc in Gedit.app_get_default().get_documents():
+        for doc in Gedit.App.get_default().get_documents():
             if doc.is_local():
                 location = doc.get_location()
                 if location:
@@ -134,7 +134,7 @@ class OpenDocumentFileLookupProvider(FileLookupProvider):
         if path.startswith('/'):
             return None
 
-        for doc in Gedit.app_get_default().get_documents():
+        for doc in Gedit.App.get_default().get_documents():
             if doc.is_local():
                 location = doc.get_location()
                 if location and location.get_uri().endswith(path):
