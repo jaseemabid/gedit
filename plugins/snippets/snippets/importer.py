@@ -16,6 +16,7 @@
 #    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 import os
+import errno
 import tempfile
 import sys
 import shutil
@@ -39,7 +40,7 @@ class Importer:
                         filename = os.path.join(userdir, root + '_' + str(i) + ext)
                         i += 1
 
-                return filename
+                return (userdir, filename)
 
         def import_file(self, filename):
                 if not os.path.exists(filename):
@@ -49,7 +50,14 @@ class Importer:
                         return _('File "%s" is not a valid snippets file') % filename
 
                 # Find destination for file to copy to
-                dest = self.import_destination(filename)
+                destdir, dest = self.import_destination(filename)
+
+                # Make sure dir exists
+                try:
+                    os.makedirs(destdir)
+                except OSError, e:
+                    if e.errno != errno.EEXIST:
+                        raise
 
                 # Copy file
                 shutil.copy(filename, dest)
