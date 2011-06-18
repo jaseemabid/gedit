@@ -911,6 +911,7 @@ create_toolbar (GeditFileBrowserWidget *obj,
 	GtkActionGroup *action_group;
 	GtkWidget *toolbar;
 	GtkWidget *widget;
+	GtkStyleContext *context;
 	GtkAction *action;
 	gchar *ui_file;
 
@@ -1016,6 +1017,8 @@ create_toolbar (GeditFileBrowserWidget *obj,
 	toolbar = gtk_ui_manager_get_widget (manager, "/ToolBar");
 	gtk_toolbar_set_style (GTK_TOOLBAR (toolbar), GTK_TOOLBAR_ICONS);
 	gtk_toolbar_set_icon_size (GTK_TOOLBAR (toolbar), GTK_ICON_SIZE_MENU);
+	context = gtk_widget_get_style_context (toolbar);
+	gtk_style_context_add_class (context, GTK_STYLE_CLASS_PRIMARY_TOOLBAR);
 
 	/* Previous directory menu tool item */
 	obj->priv->location_previous_menu = gtk_menu_new ();
