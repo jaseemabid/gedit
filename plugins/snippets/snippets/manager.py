@@ -281,10 +281,10 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                 self.builder = builder
 
                 handlers_dic = {
-                        'on_button_new_snippet_clicked': self.on_button_new_snippet_clicked,
-                        'on_button_import_snippets_clicked': self.on_button_import_snippets_clicked,
-                        'on_button_export_snippets_clicked': self.on_button_export_snippets_clicked,
-                        'on_button_remove_snippet_clicked': self.on_button_remove_snippet_clicked,
+                        'on_action_new_snippet_activated': self.on_action_new_snippet_activated,
+                        'on_action_remove_snippet_activated': self.on_action_remove_snippet_activated,
+                        'on_action_import_snippets_activated': self.on_action_import_snippets_activated,
+                        'on_action_export_snippets_activated': self.on_action_export_snippets_activated,
                         'on_entry_tab_trigger_focus_out': self.on_entry_tab_trigger_focus_out,
                         'on_entry_tab_trigger_changed': self.on_entry_tab_trigger_changed,
                         'on_entry_accelerator_focus_out': self.on_entry_accelerator_focus_out,
@@ -298,9 +298,6 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
 
                 self.build_tree_view()
                 self.build_model()
-
-                image = self['image_remove']
-                image.set_from_stock(Gtk.STOCK_REMOVE, Gtk.IconSize.SMALL_TOOLBAR)
 
                 source_view = self['source_view_snippet']
                 manager = get_language_manager()
@@ -374,25 +371,25 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
 
                 return (override, remove, system)
 
-        def update_buttons(self):
-                button_remove = self['button_remove_snippet']
-                button_new = self['button_new_snippet']
-                image_remove = self['image_remove']
+        def update_toolbar_buttons(self):
+                action_remove = self['remove_snippet_action']
+                action_add = self['add_snippet_action']
+                button_remove = self['remove_snippet_button']
 
-                button_new.set_sensitive(self.language_path != None)
+                action_add.set_sensitive(self.language_path != None)
                 override, remove, system = self.selected_snippets_state()
 
                 if not (override ^ remove) or system:
-                        button_remove.set_sensitive(False)
-                        image_remove.set_from_stock(Gtk.STOCK_DELETE, Gtk.IconSize.BUTTON)
+                        action_remove.set_sensitive(False)
+                        button_remove.set_icon_name('list-remove-symbolic')
                 else:
-                        button_remove.set_sensitive(True)
+                        action_remove.set_sensitive(True)
 
                         if override:
-                                image_remove.set_from_stock(Gtk.STOCK_UNDO, Gtk.IconSize.BUTTON)
+                                button_remove.set_icon_name('edit-undo-symbolic')
                                 tooltip = _('Revert selected snippet')
                         else:
-                                image_remove.set_from_stock(Gtk.STOCK_DELETE, Gtk.IconSize.BUTTON)
+                                button_remove.set_icon_name('list-remove-symbolic')
                                 tooltip = _('Delete selected snippet')
 
                         button_remove.set_tooltip_text(tooltip)
@@ -410,7 +407,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
 
                         self.model.set_value(piter, self.NAME_COLUMN, nm)
                         self.model.set_value(piter, self.SORT_COLUMN, nm)
-                        self.update_buttons()
+                        self.update_toolbar_buttons()
                         self.entry_tab_trigger_update_valid()
 
                 return piter
@@ -522,7 +519,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                                 'combo_drop_targets']:
                         self[name].set_sensitive(sens)
 
-                self.update_buttons()
+                self.update_toolbar_buttons()
 
         def select_iter(self, piter, unselect=True):
                 selection = self.tree_view.get_selection()
@@ -698,7 +695,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                 self.snippet['text'] = text
                 self.snippet_changed()
 
-        def on_button_new_snippet_clicked(self, button):
+        def on_action_new_snippet_activated(self, action):
                 snippet = self.new_snippet()
 
                 if not snippet:
@@ -769,7 +766,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
 
                 self.import_snippets(f)
 
-        def on_button_import_snippets_clicked(self, button):
+        def on_action_import_snippets_activated(self, action):
                 dlg = Gtk.FileChooserDialog(parent=self.get_toplevel(), title=_("Import snippets"),
                                 action=Gtk.FileChooserAction.OPEN,
                                 buttons=(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
@@ -877,7 +874,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                 else:
                         return self.export_snippets_real(filename, export_snippets, show_dialogs)
 
-        def on_button_export_snippets_clicked(self, button):
+        def on_action_export_snippets_activated(self, action):
                 snippets = self.selected_snippets()
 
                 if not snippets or len(snippets) == 0:
@@ -959,7 +956,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                         self.tree_view.expand_row(self.model.get_path(parent), False)
                         return dummy
 
-        def on_button_remove_snippet_clicked(self, button):
+        def on_action_remove_snippet_activated(self, action):
                 override, remove, system = self.selected_snippets_state()
 
                 if not (override ^ remove) or system:
@@ -1093,7 +1090,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
 
         def on_tree_view_snippets_key_press(self, treeview, event):
                 if event.keyval == Gdk.keyval_from_name('Delete'):
-                        self.on_button_remove_snippet_clicked(None)
+                        self.on_action_remove_snippet_activated(None)
                         return True
 
         def on_tree_view_snippets_row_expanded(self, treeview, piter, path):
