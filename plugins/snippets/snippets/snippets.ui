@@ -121,44 +121,58 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="orientation">vertical</property>
-                <property name="spacing">6</property>
                 <child>
-                  <object class="GtkLabel" id="label1">
+                  <object class="GtkBox" id="box1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
-                    <property name="label" translatable="yes">_Snippets:</property>
-                    <property name="use_underline">True</property>
-                    <property name="mnemonic_widget">tree_view_snippets</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">False</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkScrolledWindow" id="scrolled_window_snippets">
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="shadow_type">in</property>
+                    <property name="hexpand">True</property>
+                    <property name="vexpand">True</property>
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
-                      <object class="GtkTreeView" id="tree_view_snippets">
+                      <object class="GtkLabel" id="label1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="xalign">0</property>
+                        <property name="label" translatable="yes">_Snippets:</property>
+                        <property name="use_underline">True</property>
+                        <property name="mnemonic_widget">tree_view_snippets</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkScrolledWindow" id="scrolled_window_snippets">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
-                        <property name="headers_visible">False</property>
-                        <signal name="row-expanded" handler="on_tree_view_snippets_row_expanded" swapped="no"/>
-                        <signal name="key-press-event" handler="on_tree_view_snippets_key_press" swapped="no"/>
-                        <child internal-child="selection">
-                          <object class="GtkTreeSelection" id="treeview-selection1"/>
+                        <property name="shadow_type">in</property>
+                        <child>
+                          <object class="GtkTreeView" id="tree_view_snippets">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="headers_visible">False</property>
+                            <signal name="row-expanded" handler="on_tree_view_snippets_row_expanded" swapped="no"/>
+                            <signal name="key-press-event" handler="on_tree_view_snippets_key_press" swapped="no"/>
+                            <child internal-child="selection">
+                              <object class="GtkTreeSelection" id="treeview-selection"/>
+                            </child>
+                          </object>
                         </child>
                       </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
+                    <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">1</property>
+                    <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
@@ -170,6 +184,8 @@
                       <object class="GtkToolButton" id="add_snippet_button">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip_markup" translatable="yes">Create new snippet</property>
                         <property name="tooltip_text" translatable="yes">Create new snippet</property>
                         <property name="related_action">add_snippet_action</property>
                         <property name="use_action_appearance">False</property>
@@ -186,6 +202,8 @@
                       <object class="GtkToolButton" id="remove_snippet_button">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip_markup" translatable="yes">Delete selected snippet</property>
                         <property name="tooltip_text" translatable="yes">Delete selected snippet</property>
                         <property name="related_action">remove_snippet_action</property>
                         <property name="use_action_appearance">False</property>
@@ -202,6 +220,8 @@
                       <object class="GtkToolButton" id="import_snippets_button">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip_markup" translatable="yes">Import snippets</property>
                         <property name="tooltip_text" translatable="yes">Import snippets</property>
                         <property name="related_action">import_snippets_action</property>
                         <property name="use_action_appearance">False</property>
@@ -218,6 +238,8 @@
                       <object class="GtkToolButton" id="export_snippets_button">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip_markup" translatable="yes">Export selected snippets</property>
                         <property name="tooltip_text" translatable="yes">Export selected snippets</property>
                         <property name="related_action">export_snippets_action</property>
                         <property name="use_action_appearance">False</property>
@@ -234,7 +256,7 @@
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">2</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
               </object>
