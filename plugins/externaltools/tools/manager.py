@@ -280,8 +280,8 @@ class Manager:
     
     def build(self):
         callbacks = {
-            'on_new_tool_button_clicked'      : self.on_new_tool_button_clicked,
-            'on_remove_tool_button_clicked'   : self.on_remove_tool_button_clicked,
+            'on_action_add_tool_activated'    : self.on_action_add_tool_activated,
+            'on_action_remove_tool_activated' : self.on_action_remove_tool_activated,
             'on_tool_manager_dialog_response' : self.on_tool_manager_dialog_response,
             'on_tool_manager_dialog_focus_out': self.on_tool_manager_dialog_focus_out,
             'on_accelerator_key_press'        : self.on_accelerator_key_press,
@@ -590,8 +590,8 @@ class Manager:
 
         removable = node is not None and node.is_local()
 
-        self['remove-tool-button'].set_sensitive(removable)
-        self['revert-tool-button'].set_sensitive(removable)
+        self['remove-tool-action'].set_sensitive(removable)
+        self['revert-tool-action'].set_sensitive(removable)
 
         if node is not None and node.is_global():
             self['remove-tool-button'].hide()
@@ -636,7 +636,7 @@ class Manager:
         
         return self.language_id_from_iter(piter)
 
-    def on_new_tool_button_clicked(self, button):
+    def on_action_add_tool_activated(self, action):
         self.save_current_tool()
         
         # block handlers while inserting a new item
@@ -668,7 +668,7 @@ class Manager:
 
         self.update_remove_revert()
 
-    def on_remove_tool_button_clicked(self, button):
+    def on_action_remove_tool_activated(self, action):
         piter, node = self.get_selected_tool()
 
         if not node:
@@ -681,7 +681,7 @@ class Manager:
                 self.remove_accelerator(node, shortcut)
                 self.add_accelerator(node)
 
-                self['revert-tool-button'].set_sensitive(False)
+                self['revert-tool-action'].set_sensitive(False)
                 self.fill_fields()
                 
                 self.tool_changed(node)
