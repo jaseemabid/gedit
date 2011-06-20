@@ -299,9 +299,6 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                 self.build_tree_view()
                 self.build_model()
 
-                toolbar_context = self['toolbar'].get_style_context()
-                toolbar_context.add_class(Gtk.STYLE_CLASS_PRIMARY_TOOLBAR)
-
                 source_view = self['source_view_snippet']
                 manager = get_language_manager()
                 lang = manager.get_language('snippets')
