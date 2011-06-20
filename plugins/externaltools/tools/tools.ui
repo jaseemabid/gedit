@@ -267,6 +267,9 @@
                   <object class="GtkToolbar" id="toolbar1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <style>
+                      <class name="inline-toolbar"/>
+                    </style>
                     <child>
                       <object class="GtkToolButton" id="add-tool-button">
                         <property name="visible">True</property>
