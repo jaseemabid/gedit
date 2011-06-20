@@ -851,7 +851,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
 
                 if len(export_snippets) == 0 and show_dialogs:
                         message = _('There are no snippets selected to be exported')
-                        message_dialog(self.get_toplevel(), Gtk.MessageType.INFORMATION, message)
+                        message_dialog(self.get_toplevel(), Gtk.MessageType.QUESTION, message)
                         return False
 
                 if not filename:
@@ -921,7 +921,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                         dlg.destroy()
 
                         message = _('There are no snippets selected to be exported')
-                        message_dialog(self.get_toplevel(), Gtk.MessageType.INFORMATION, message)
+                        message_dialog(self.get_toplevel(), Gtk.MessageType.QUESTION, message)
                         return
 
                 dlg.add_filter(self.file_filter(_('All supported archives'), ('*.gz','*.bz2','*.tar')))
