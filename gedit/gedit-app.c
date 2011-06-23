@@ -494,7 +494,7 @@ extension_added (PeasExtensionSet *extensions,
 		 PeasExtension    *exten,
 		 GeditApp         *app)
 {
-	peas_extension_call (exten, "activate");
+	gedit_app_activatable_activate (GEDIT_APP_ACTIVATABLE (exten));
 }
 
 static void
@@ -503,7 +503,7 @@ extension_removed (PeasExtensionSet *extensions,
 		   PeasExtension    *exten,
 		   GeditApp         *app)
 {
-	peas_extension_call (exten, "deactivate");
+	gedit_app_activatable_deactivate (GEDIT_APP_ACTIVATABLE (exten));
 }
 
 static void
@@ -535,7 +535,9 @@ gedit_app_init (GeditApp *app)
 			  G_CALLBACK (extension_removed),
 			  app);
 
-	peas_extension_set_call (app->priv->extensions, "activate");
+	peas_extension_set_foreach (app->priv->extensions,
+	                            (PeasExtensionSetForeachFunc) extension_added,
+	                            app);
 }
 
 /**

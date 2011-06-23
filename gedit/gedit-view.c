@@ -174,7 +174,7 @@ extension_added (PeasExtensionSet *extensions,
 		 PeasExtension    *exten,
 		 GeditView        *view)
 {
-	peas_extension_call (exten, "activate");
+	gedit_view_activatable_activate (GEDIT_VIEW_ACTIVATABLE (exten));
 }
 
 static void
@@ -183,7 +183,7 @@ extension_removed (PeasExtensionSet *extensions,
 		   PeasExtension    *exten,
 		   GeditView        *view)
 {
-	peas_extension_call (exten, "deactivate");
+	gedit_view_activatable_deactivate (GEDIT_VIEW_ACTIVATABLE (exten));
 }
 
 static void
@@ -647,7 +647,9 @@ gedit_view_realize (GtkWidget *widget)
 		/* We only activate the extensions when the view is realized,
 		 * because most plugins will expect this behaviour, and we won't
 		 * change the buffer later anyway. */
-		peas_extension_set_call (view->priv->extensions, "activate");
+		peas_extension_set_foreach (view->priv->extensions,
+				            (PeasExtensionSetForeachFunc) extension_added,
+				            view);
 		view->priv->view_realized = TRUE;
 	}
 

@@ -327,7 +327,7 @@ PKG_CHECK_MODULES(GEDIT, [
 	gtk+-3.0 >= 3.1.6
 	gtksourceview-3.0 >= 3.0.0
 	libpeas-1.0 >= 0.7.3
-	libpeas-gtk-1.0 >= 0.7.3
+	libpeas-gtk-1.0 >= 1.1.0
 	gsettings-desktop-schemas
 ])
 
@@ -402,7 +402,8 @@ if test "$enable_deprecations" = "yes"; then
 -DGDK_DISABLE_DEPRECATED \
 -DGTK_DISABLE_DEPRECATED \
 -DGDK_PIXBUF_DISABLE_DEPRECATED \
--DGNOME_DISABLE_DEPRECATED"
+-DGNOME_DISABLE_DEPRECATED \
+-DPEAS_DISABLE_DEPRECATED"
 
 	AC_SUBST(DISABLE_DEPRECATED_CFLAGS)
 fi

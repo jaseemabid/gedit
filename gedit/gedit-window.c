@@ -738,6 +738,15 @@ set_paste_sensitivity_according_to_clipboard (GeditWindow  *window,
 }
 
 static void
+extension_update_state (PeasExtensionSet *extensions,
+		        PeasPluginInfo   *info,
+		        PeasExtension    *exten,
+		        GeditWindow      *window)
+{
+	gedit_window_activatable_update_state (GEDIT_WINDOW_ACTIVATABLE (exten));
+}
+
+static void
 set_sensitivity_according_to_tab (GeditWindow *window,
 				  GeditTab    *tab)
 {
@@ -911,7 +920,9 @@ set_sensitivity_according_to_tab (GeditWindow *window,
 
 	update_next_prev_doc_sensitivity (window, tab);
 
-	peas_extension_set_call (window->priv->extensions, "update_state", window);
+	peas_extension_set_foreach (window->priv->extensions,
+	                            (PeasExtensionSetForeachFunc) extension_update_state,
+	                            window);
 }
 
 static void
@@ -2973,7 +2984,9 @@ sync_name (GeditTab    *tab,
 	g_free (escaped_name);
 	g_free (tip);
 
-	peas_extension_set_call (window->priv->extensions, "update_state");
+	peas_extension_set_foreach (window->priv->extensions,
+	                            (PeasExtensionSetForeachFunc) extension_update_state,
+	                            window);
 }
 
 static GeditWindow *
@@ -3364,7 +3377,9 @@ selection_changed (GeditDocument *doc,
 				  editable &&
 				  gtk_text_buffer_get_has_selection (GTK_TEXT_BUFFER (doc)));
 
-	peas_extension_set_call (window->priv->extensions, "update_state");
+	peas_extension_set_foreach (window->priv->extensions,
+	                            (PeasExtensionSetForeachFunc) extension_update_state,
+	                            window);
 }
 
 static void
@@ -3373,7 +3388,9 @@ sync_languages_menu (GeditDocument *doc,
 		     GeditWindow   *window)
 {
 	update_languages_menu (window);
-	peas_extension_set_call (window->priv->extensions, "update_state");
+	peas_extension_set_foreach (window->priv->extensions,
+	                            (PeasExtensionSetForeachFunc) extension_update_state,
+	                            window);
 }
 
 static void
@@ -3386,7 +3403,9 @@ readonly_changed (GeditDocument *doc,
 
 	sync_name (gedit_window_get_active_tab (window), NULL, window);
 
-	peas_extension_set_call (window->priv->extensions, "update_state");
+	peas_extension_set_foreach (window->priv->extensions,
+	                            (PeasExtensionSetForeachFunc) extension_update_state,
+	                            window);
 }
 
 static void
@@ -3394,7 +3413,9 @@ editable_changed (GeditView  *view,
                   GParamSpec  *arg1,
                   GeditWindow *window)
 {
-	peas_extension_set_call (window->priv->extensions, "update_state");
+	peas_extension_set_foreach (window->priv->extensions,
+	                            (PeasExtensionSetForeachFunc) extension_update_state,
+	                            window);
 }
 
 static void
@@ -3628,7 +3649,9 @@ on_tab_removed (GeditMultiNotebook *multi,
 
 		if (num_tabs == 0)
 		{
-			peas_extension_set_call (window->priv->extensions, "update_state");
+			peas_extension_set_foreach (window->priv->extensions,
+					            (PeasExtensionSetForeachFunc) extension_update_state,
+					            window);
 		}
 	}
 
@@ -4061,7 +4084,7 @@ extension_added (PeasExtensionSet *extensions,
 		 PeasExtension    *exten,
 		 GeditWindow      *window)
 {
-	peas_extension_call (exten, "activate");
+	gedit_window_activatable_activate (GEDIT_WINDOW_ACTIVATABLE (exten));
 }
 
 static void
@@ -4070,7 +4093,7 @@ extension_removed (PeasExtensionSet *extensions,
 		   PeasExtension    *exten,
 		   GeditWindow      *window)
 {
-	peas_extension_call (exten, "deactivate");
+	gedit_window_activatable_deactivate (GEDIT_WINDOW_ACTIVATABLE (exten));
 
 	/* Ensure update of ui manager, because we suspect it does something
 	 * with expected static strings in the type module (when unloaded the
@@ -4266,7 +4289,9 @@ gedit_window_init (GeditWindow *window)
 			  "extension-removed",
 			  G_CALLBACK (extension_removed),
 			  window);
-	peas_extension_set_call (window->priv->extensions, "activate");
+	peas_extension_set_foreach (window->priv->extensions,
+	                            (PeasExtensionSetForeachFunc) extension_added,
+	                            window);
 
 
 	/* set visibility of panels.
