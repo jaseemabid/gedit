@@ -163,6 +163,7 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
         GObject.Object.__init__(self)
         self._manager = None
         self._manager_default_size = None
+        self.menu = None
 
     def do_activate(self):
         self._library = ToolLibrary()
@@ -215,8 +216,9 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
                         image)
 
     def do_update_state(self):
-        self.menu.filter(self.window.get_active_document())
-        self.window.get_ui_manager().ensure_update()
+        if self.menu is not None:
+            self.menu.filter(self.window.get_active_document())
+            self.window.get_ui_manager().ensure_update()
 
     def do_deactivate(self):
         ui_manager = self.window.get_ui_manager()
