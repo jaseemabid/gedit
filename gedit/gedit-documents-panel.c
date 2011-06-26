@@ -53,6 +53,8 @@ struct _GeditDocumentsPanelPrivate
 	GtkWidget          *treeview;
 	GtkTreeModel       *model;
 
+	guint               refresh_idle_id;
+
 	guint               adding_tab : 1;
 	guint               is_reodering : 1;
 	guint               setting_active_notebook : 1;
@@ -165,12 +167,12 @@ get_iter_from_tab (GeditDocumentsPanel *panel,
 	g_assert (tab_iter != NULL);
 	g_assert ((tab == NULL && tab_iter == NULL) || (tab != NULL && tab_iter != NULL));
 
-	success = FALSE;
 	search_notebook = (gedit_multi_notebook_get_n_notebooks (panel->priv->mnb) > 1);
 
-	/* We never ever ask for a notebook or tab if it does not already exist in the tree */
-	g_assert (gtk_tree_model_get_iter_first (panel->priv->model, &parent));
+	if (!gtk_tree_model_get_iter_first (panel->priv->model, &parent))
+		return FALSE;
 
+	success = FALSE;
 	do
 	{
 		if (search_notebook)
@@ -250,9 +252,6 @@ get_iter_from_tab (GeditDocumentsPanel *panel,
 
 out:
 
-	/* In the current code if we are not successful then something is wrong */
-	g_assert (success);
-
 	if (tab_iter != NULL)
 	{
 		g_assert (gtk_tree_store_iter_is_valid (GTK_TREE_STORE (panel->priv->model),
@@ -297,8 +296,8 @@ select_active_tab (GeditDocumentsPanel *panel)
 	{
 		GtkTreeIter iter;
 
-		get_iter_from_tab (panel, notebook, tab, &iter);
-		select_iter (panel, &iter);
+		if (get_iter_from_tab (panel, notebook, tab, &iter))
+			select_iter (panel, &iter);
 	}
 }
 
@@ -317,10 +316,8 @@ multi_notebook_tab_switched (GeditMultiNotebook  *mnb,
 	{
 		GtkTreeIter iter;
 
-		get_iter_from_tab (panel, new_notebook, new_tab, &iter);
-
-		if (gtk_tree_store_iter_is_valid (GTK_TREE_STORE (panel->priv->model),
-						  &iter))
+		if (get_iter_from_tab (panel, new_notebook, new_tab, &iter) &&
+		    gtk_tree_store_iter_is_valid (GTK_TREE_STORE (panel->priv->model), &iter))
 		{
 			select_iter (panel, &iter);
 		}
@@ -417,8 +414,8 @@ refresh_notebook_foreach (GeditNotebook       *notebook,
 	}
 }
 
-static void
-refresh_list (GeditDocumentsPanel *panel)
+static gboolean
+refresh_list_idle (GeditDocumentsPanel *panel)
 {
 	gedit_debug (DEBUG_PANEL);
 
@@ -433,6 +430,22 @@ refresh_list (GeditDocumentsPanel *panel)
 	gtk_tree_view_expand_all (GTK_TREE_VIEW (panel->priv->treeview));
 
 	select_active_tab (panel);
+
+	panel->priv->refresh_idle_id = 0;
+
+	return FALSE;
+}
+
+static void
+refresh_list (GeditDocumentsPanel *panel)
+{
+	/* refresh in an idle so that when adding/removing many tabs
+	 * the model is repopulated just once */
+	if (panel->priv->refresh_idle_id == 0)
+	{
+		panel->priv->refresh_idle_id = gdk_threads_add_idle ((GSourceFunc) refresh_list_idle,
+		                                                     panel);
+	}
 }
 
 static void
@@ -453,29 +466,32 @@ sync_name_and_icon (GeditTab            *tab,
 		    GParamSpec          *pspec,
 		    GeditDocumentsPanel *panel)
 {
-	GdkPixbuf *pixbuf;
-	gchar *name;
 	GtkTreeIter iter;
 
 	gedit_debug (DEBUG_PANEL);
 
-	get_iter_from_tab (panel,
-			   gedit_multi_notebook_get_active_notebook (panel->priv->mnb),
-			   tab, &iter);
-
-	name = tab_get_name (tab);
-	pixbuf = _gedit_tab_get_icon (tab);
-
-	gtk_tree_store_set (GTK_TREE_STORE (panel->priv->model),
-			    &iter,
-			    PIXBUF_COLUMN, pixbuf,
-			    NAME_COLUMN, name,
-			    -1);
-
-	g_free (name);
-	if (pixbuf != NULL)
+	if (get_iter_from_tab (panel,
+			       gedit_multi_notebook_get_active_notebook (panel->priv->mnb),
+			       tab,
+			       &iter))
 	{
-		g_object_unref (pixbuf);
+		gchar *name;
+		GdkPixbuf *pixbuf;
+
+		name = tab_get_name (tab);
+		pixbuf = _gedit_tab_get_icon (tab);
+
+		gtk_tree_store_set (GTK_TREE_STORE (panel->priv->model),
+				    &iter,
+				    PIXBUF_COLUMN, pixbuf,
+				    NAME_COLUMN, name,
+				    -1);
+
+		g_free (name);
+		if (pixbuf != NULL)
+		{
+			g_object_unref (pixbuf);
+		}
 	}
 }
 
@@ -681,6 +697,12 @@ gedit_documents_panel_dispose (GObject *object)
 	GeditDocumentsPanel *panel = GEDIT_DOCUMENTS_PANEL (object);
 
 	gedit_debug (DEBUG_PANEL);
+
+	if (panel->priv->refresh_idle_id != 0)
+	{
+		g_source_remove (panel->priv->refresh_idle_id);
+		panel->priv->refresh_idle_id = 0;
+	}
 
 	if (panel->priv->window != NULL)
 	{
