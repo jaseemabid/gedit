@@ -300,7 +300,7 @@ gedit_window_dispose (GObject *object)
 		window->priv->recents_handler_id = 0;
 	}
 
-	if (window->priv->update_documents_list_menu_id == 0)
+	if (window->priv->update_documents_list_menu_id != 0)
 	{
 		g_source_remove (window->priv->update_documents_list_menu_id);
 		window->priv->update_documents_list_menu_id = 0;
