@@ -621,15 +621,23 @@ gedit_notebook_remove_tab (GeditNotebook *nb,
  */
 void
 gedit_notebook_remove_all_tabs (GeditNotebook *nb)
-{	
+{
+	GList *tabs, *t;
+
 	g_return_if_fail (GEDIT_IS_NOTEBOOK (nb));
 	
 	g_list_free (nb->priv->focused_pages);
 	nb->priv->focused_pages = NULL;
 
-	gtk_container_foreach (GTK_CONTAINER (nb),
-			       (GtkCallback)remove_tab,
-			       nb);
+	/* Remove tabs in reverse order since it is faster
+	 * due to how gtknotebook works */
+	tabs = gtk_container_get_children (GTK_CONTAINER (nb));
+	for (t = g_list_last (tabs); t != NULL; t = t->prev)
+	{
+		gtk_container_remove (GTK_CONTAINER (nb), GTK_WIDGET (t->data));
+	}
+
+	g_list_free (tabs);
 }
 
 static void
