@@ -101,6 +101,8 @@ struct _GeditWindowPrivate
 	guint           recents_menu_ui_id;
 	gulong          recents_handler_id;
 
+	guint           update_documents_list_menu_id;
+
 	gint            num_tabs_with_error;
 
 	gint            width;

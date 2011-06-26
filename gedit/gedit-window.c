@@ -300,6 +300,12 @@ gedit_window_dispose (GObject *object)
 		window->priv->recents_handler_id = 0;
 	}
 
+	if (window->priv->update_documents_list_menu_id == 0)
+	{
+		g_source_remove (window->priv->update_documents_list_menu_id);
+		window->priv->update_documents_list_menu_id = 0;
+	}
+
 	if (window->priv->manager != NULL)
 	{
 		g_object_unref (window->priv->manager);
@@ -1764,8 +1770,8 @@ get_menu_tip_for_tab (GeditTab *tab)
 	return tip;
 }
 
-static void
-update_documents_list_menu (GeditWindow *window)
+static gboolean
+update_documents_list_menu_idle (GeditWindow *window)
 {
 	GeditWindowPrivate *p = window->priv;
 	GList *actions, *l;
@@ -1775,7 +1781,7 @@ update_documents_list_menu (GeditWindow *window)
 
 	gedit_debug (DEBUG_WINDOW);
 
-	g_return_if_fail (p->documents_list_action_group != NULL);
+	g_return_val_if_fail (p->documents_list_action_group != NULL, FALSE);
 
 	if (p->documents_list_menu_ui_id != 0)
 	{
@@ -1899,6 +1905,23 @@ update_documents_list_menu (GeditWindow *window)
 	}
 
 	p->documents_list_menu_ui_id = id;
+
+	window->priv->update_documents_list_menu_id = 0;
+
+	return FALSE;
+}
+
+static void
+update_documents_list_menu (GeditWindow *window)
+{
+	/* Do the real update in an idle so that we consolidate
+	 * multiple updates when loading or closing many docs */
+	if (window->priv->update_documents_list_menu_id == 0)
+	{
+		window->priv->update_documents_list_menu_id =
+			gdk_threads_add_idle ((GSourceFunc) update_documents_list_menu_idle,
+			                      window);
+	}
 }
 
 static void
