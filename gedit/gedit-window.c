@@ -2952,9 +2952,6 @@ sync_name (GeditTab    *tab,
 {
 	GtkAction *action;
 	gchar *action_name;
-	gchar *tab_name;
-	gchar *escaped_name;
-	gchar *tip;
 	GeditDocument *doc;
 	gint page_num;
 	GeditNotebook *active_notebook;
@@ -2993,19 +2990,26 @@ sync_name (GeditTab    *tab,
 	}
 	action = gtk_action_group_get_action (window->priv->documents_list_action_group,
 					      action_name);
-	g_return_if_fail (action != NULL);
 
-	tab_name = _gedit_tab_get_name (tab);
-	escaped_name = gedit_utils_escape_underscores (tab_name, -1);
-	tip =  get_menu_tip_for_tab (tab);
+	/* action may be NULL if the idle has not populated the menu yet */
+	if (action != NULL)
+	{
+		gchar *tab_name;
+		gchar *escaped_name;
+		gchar *tip;
 
-	g_object_set (action, "label", escaped_name, NULL);
-	g_object_set (action, "tooltip", tip, NULL);
+		tab_name = _gedit_tab_get_name (tab);
+		escaped_name = gedit_utils_escape_underscores (tab_name, -1);
+		tip =  get_menu_tip_for_tab (tab);
 
-	g_free (action_name);
-	g_free (tab_name);
-	g_free (escaped_name);
-	g_free (tip);
+		g_object_set (action, "label", escaped_name, NULL);
+		g_object_set (action, "tooltip", tip, NULL);
+
+		g_free (action_name);
+		g_free (tab_name);
+		g_free (escaped_name);
+		g_free (tip);
+	}
 
 	peas_extension_set_foreach (window->priv->extensions,
 	                            (PeasExtensionSetForeachFunc) extension_update_state,
