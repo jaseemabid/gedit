@@ -72,7 +72,6 @@ struct _GeditViewFramePrivate
 	guint        search_flags;
 
 	GtkWidget   *slider;
-	GtkWidget   *search_widget;
 	GtkWidget   *search_entry;
 	GtkCssProvider *search_css;
 
@@ -1284,6 +1283,12 @@ start_interactive_search_real (GeditViewFrame *frame)
 	GtkTextIter iter;
 	GtkTextMark *mark;
 
+	if (gtk_bin_get_child (GTK_BIN (frame->priv->slider)) == NULL)
+	{
+		gtk_container_add (GTK_CONTAINER (frame->priv->slider),
+			           create_search_widget (frame));
+	}
+
 	if (gtk_widget_get_visible (frame->priv->slider))
 	{
 		if (frame->priv->search_mode != frame->priv->request_search_mode)
@@ -1456,10 +1461,7 @@ gedit_view_frame_init (GeditViewFrame *frame)
 	gtk_box_pack_start (GTK_BOX (frame), frame->priv->overlay, TRUE, TRUE, 0);
 
 	/* Add slider */
-	frame->priv->search_widget = create_search_widget (frame);
 	frame->priv->slider = gedit_floating_slider_new ();
-	gtk_container_add (GTK_CONTAINER (frame->priv->slider),
-	                   frame->priv->search_widget);
 	gtk_widget_set_halign (frame->priv->slider, GTK_ALIGN_END);
 	gtk_widget_set_valign (frame->priv->slider, GTK_ALIGN_START);
 	gtk_widget_set_margin_right (frame->priv->slider, SEARCH_POPUP_MARGIN);
