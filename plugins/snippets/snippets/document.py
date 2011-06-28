@@ -858,7 +858,7 @@ class Document(GObject.Object, Gedit.ViewActivatable, Signals):
                 return not (x < rect.x or x > rect.x + rect.width or y < rect.y or y > rect.y + rect.height)
 
         def on_drag_data_received(self, view, context, x, y, data, info, timestamp):
-                if not (Gtk.targets_include_uri(context.targets) and data.data and self.in_bounds(x, y)):
+                if not (Gtk.targets_include_uri(context.list_targets()) and data.data and self.in_bounds(x, y)):
                         return
 
                 if not self.view.get_editable():
