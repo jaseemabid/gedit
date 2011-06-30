@@ -192,10 +192,10 @@ class LanguagesPopup(Gtk.Window):
     def setup_event(self, event, window):
         fr = event.window.get_origin()
         to = window.get_origin()
-        
+
         event.window = window
-        event.x += fr[0] - to[0]
-        event.y += fr[1] - to[1]
+        event.x += fr[1] - to[1]
+        event.y += fr[2] - to[2]
     
     def resolve_widgets(self, root):
         res = [root]
