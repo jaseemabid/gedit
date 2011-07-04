@@ -73,8 +73,6 @@ struct _GeditViewPrivate
 	GSettings *editor_settings;
 	GtkTextBuffer *current_buffer;
 	PeasExtensionSet *extensions;
-
-	guint view_realized : 1;
 };
 
 G_DEFINE_TYPE(GeditView, gedit_view, GTK_SOURCE_TYPE_VIEW)
@@ -169,24 +167,6 @@ current_buffer_removed (GeditView *view)
 }
 
 static void
-extension_added (PeasExtensionSet *extensions,
-		 PeasPluginInfo   *info,
-		 PeasExtension    *exten,
-		 GeditView        *view)
-{
-	gedit_view_activatable_activate (GEDIT_VIEW_ACTIVATABLE (exten));
-}
-
-static void
-extension_removed (PeasExtensionSet *extensions,
-		   PeasPluginInfo   *info,
-		   PeasExtension    *exten,
-		   GeditView        *view)
-{
-	gedit_view_activatable_deactivate (GEDIT_VIEW_ACTIVATABLE (exten));
-}
-
-static void
 on_notify_buffer_cb (GeditView  *view,
 		     GParamSpec *arg1,
 		     gpointer    userdata)
@@ -237,22 +217,15 @@ gedit_view_init (GeditView *view)
 		                     TARGET_TAB);
 	}
 
-	view->priv->extensions = peas_extension_set_new (PEAS_ENGINE (gedit_plugins_engine_get_default ()),
-							 GEDIT_TYPE_VIEW_ACTIVATABLE,
-							 "view", view,
-							 NULL);
-	g_signal_connect (view->priv->extensions,
-			  "extension-added",
-			  G_CALLBACK (extension_added),
-			  view);
-	g_signal_connect (view->priv->extensions,
-			  "extension-removed",
-			  G_CALLBACK (extension_removed),
-			  view);
+	view->priv->extensions =
+		peas_extension_set_new (PEAS_ENGINE (gedit_plugins_engine_get_default ()),
+		                        GEDIT_TYPE_VIEW_ACTIVATABLE,
+		                        "view", view,
+		                        NULL);
 
 	/* Act on buffer change */
-	g_signal_connect (view, 
-			  "notify::buffer", 
+	g_signal_connect (view,
+			  "notify::buffer",
 			  G_CALLBACK (on_notify_buffer_cb),
 			  NULL);
 }
@@ -278,8 +251,6 @@ gedit_view_dispose (GObject *object)
 
 	if (view->priv->extensions != NULL)
 	{
-		/* Note that unreffing the extensions will automatically remove
-		   all extensions which in turn will deactivate the extension */
 		g_object_unref (view->priv->extensions);
 		view->priv->extensions = NULL;
 	}
@@ -638,22 +609,63 @@ gedit_view_button_press_event (GtkWidget *widget, GdkEventButton *event)
 }
 
 static void
+extension_added (PeasExtensionSet *extensions,
+		 PeasPluginInfo   *info,
+		 PeasExtension    *exten,
+		 GeditView        *view)
+{
+	gedit_view_activatable_activate (GEDIT_VIEW_ACTIVATABLE (exten));
+}
+
+static void
+extension_removed (PeasExtensionSet *extensions,
+		   PeasPluginInfo   *info,
+		   PeasExtension    *exten,
+		   GeditView        *view)
+{
+	gedit_view_activatable_deactivate (GEDIT_VIEW_ACTIVATABLE (exten));
+}
+
+static void
 gedit_view_realize (GtkWidget *widget)
 {
 	GeditView *view = GEDIT_VIEW (widget);
 
-	if (!view->priv->view_realized)
-	{
-		/* We only activate the extensions when the view is realized,
-		 * because most plugins will expect this behaviour, and we won't
-		 * change the buffer later anyway. */
-		peas_extension_set_foreach (view->priv->extensions,
-				            (PeasExtensionSetForeachFunc) extension_added,
-				            view);
-		view->priv->view_realized = TRUE;
-	}
-
 	GTK_WIDGET_CLASS (gedit_view_parent_class)->realize (widget);
+
+	g_signal_connect (view->priv->extensions,
+	                  "extension-added",
+	                  G_CALLBACK (extension_added),
+	                  view);
+	g_signal_connect (view->priv->extensions,
+	                  "extension-removed",
+	                  G_CALLBACK (extension_removed),
+	                  view);
+
+	/* We only activate the extensions when the view is realized,
+	 * because most plugins will expect this behaviour, and we won't
+	 * change the buffer later anyway. */
+	peas_extension_set_foreach (view->priv->extensions,
+	                            (PeasExtensionSetForeachFunc) extension_added,
+	                            view);
+}
+
+static void
+gedit_view_unrealize (GtkWidget *widget)
+{
+	GeditView *view = GEDIT_VIEW (widget);
+
+	g_signal_handlers_disconnect_by_func (view->priv->extensions, extension_added, view);
+	g_signal_handlers_disconnect_by_func (view->priv->extensions, extension_removed, view);
+
+	/* We need to deactivate the extension on unrealize because it is not
+	   mandatory that a view has been realized when we dispose it, leading
+	   to deactivating the plugin without being activated */
+	peas_extension_set_foreach (view->priv->extensions,
+	                            (PeasExtensionSetForeachFunc) extension_removed,
+	                            view);
+
+	GTK_WIDGET_CLASS (gedit_view_parent_class)->unrealize (widget);
 }
 
 static void
@@ -802,6 +814,7 @@ gedit_view_class_init (GeditViewClass *klass)
 	widget_class->drag_drop = gedit_view_drag_drop;
 	widget_class->button_press_event = gedit_view_button_press_event;
 	widget_class->realize = gedit_view_realize;
+	widget_class->unrealize = gedit_view_unrealize;
 
 	text_view_class->delete_from_cursor = gedit_view_delete_from_cursor;
 
