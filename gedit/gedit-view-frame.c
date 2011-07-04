@@ -1439,6 +1439,7 @@ gedit_view_frame_init (GeditViewFrame *frame)
 						     frame);
 
 	frame->priv->view = gedit_view_new (doc);
+	gtk_widget_set_vexpand (frame->priv->view, TRUE);
 	gtk_widget_show (frame->priv->view);
 
 	g_object_unref (doc);

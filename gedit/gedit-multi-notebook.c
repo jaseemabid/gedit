@@ -461,7 +461,6 @@ add_notebook (GeditMultiNotebook *mnb,
 		gboolean collapse_new_notebook = FALSE;
 
 		paned = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL);
-		gtk_widget_set_vexpand (paned, TRUE);
 		gtk_widget_show (paned);
 
 		/* First we remove the active container from its parent to make
