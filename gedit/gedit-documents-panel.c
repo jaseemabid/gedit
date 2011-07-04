@@ -164,8 +164,8 @@ get_iter_from_tab (GeditDocumentsPanel *panel,
 	gedit_debug (DEBUG_PANEL);
 
 	g_assert (notebook != NULL || tab != NULL);
+	g_assert (tab != NULL);
 	g_assert (tab_iter != NULL);
-	g_assert ((tab == NULL && tab_iter == NULL) || (tab != NULL && tab_iter != NULL));
 
 	search_notebook = (gedit_multi_notebook_get_n_notebooks (panel->priv->mnb) > 1);
 
@@ -237,6 +237,9 @@ get_iter_from_tab (GeditDocumentsPanel *panel,
 
 				if (is_cur)
 				{
+					g_assert (gtk_tree_store_iter_is_valid (GTK_TREE_STORE (panel->priv->model),
+										&iter));
+
 					*tab_iter = iter;
 					success = TRUE;
 
@@ -251,12 +254,6 @@ get_iter_from_tab (GeditDocumentsPanel *panel,
 	} while (gtk_tree_model_iter_next (panel->priv->model, &parent));
 
 out:
-
-	if (tab_iter != NULL)
-	{
-		g_assert (gtk_tree_store_iter_is_valid (GTK_TREE_STORE (panel->priv->model),
-							tab_iter));
-	}
 
 	return success;
 }
