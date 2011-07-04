@@ -163,8 +163,8 @@ get_iter_from_tab (GeditDocumentsPanel *panel,
 
 	gedit_debug (DEBUG_PANEL);
 
-	g_assert (notebook != NULL || tab != NULL);
-	g_assert (tab != NULL);
+	g_assert (notebook != NULL);
+	/* tab may be NULL if just the notebook is specified */
 	g_assert (tab_iter != NULL);
 
 	search_notebook = (gedit_multi_notebook_get_n_notebooks (panel->priv->mnb) > 1);
@@ -175,76 +175,72 @@ get_iter_from_tab (GeditDocumentsPanel *panel,
 	success = FALSE;
 	do
 	{
+		GtkTreeIter iter;
+
 		if (search_notebook)
 		{
 			GeditNotebook *current_notebook;
-			gboolean is_cur;
 
 			gtk_tree_model_get (panel->priv->model,
 					    &parent,
 					    NOTEBOOK_COLUMN, &current_notebook,
 					    -1);
 
-			is_cur = (current_notebook == notebook);
-
-			g_object_unref (current_notebook);
-
-			if (is_cur)
+			if (current_notebook != NULL)
 			{
-				success = TRUE;
+				gboolean is_cur;
+				is_cur = (current_notebook == notebook);
 
-				if (tab == NULL)
+				g_object_unref (current_notebook);
+
+				if (is_cur)
 				{
-					break;
+					/* notebook found */
+					search_notebook = FALSE;
+					gtk_tree_model_iter_children (panel->priv->model, &iter, &parent);
 				}
 			}
 		}
-		else if (tab == NULL)
+		else
 		{
-			success = TRUE;
-
-			break;
+			iter = parent;
 		}
 
-		if (success || !search_notebook)
+		if (!search_notebook)
 		{
-			GeditTab *current_tab;
-			GtkTreeIter iter;
+			if (tab == NULL)
+			{
+				success = TRUE;
+				break;
+			}
 
-			if (search_notebook)
-			{
-				g_assert (gtk_tree_model_iter_children (panel->priv->model,
-									&iter, &parent));
-			}
-			else
-			{
-				iter = parent;
-			}
+			g_assert (gtk_tree_store_iter_is_valid (GTK_TREE_STORE (panel->priv->model),
+								&iter));
 
 			do
 			{
-				gboolean is_cur;
+				GeditTab *current_tab;
 
 				gtk_tree_model_get (panel->priv->model,
 						    &iter,
 						    TAB_COLUMN, &current_tab,
 						    -1);
-				g_assert (current_tab != NULL);
 
-				is_cur = (current_tab == tab);
-
-				g_object_unref (current_tab);
-
-				if (is_cur)
+				if (current_tab != NULL)
 				{
-					g_assert (gtk_tree_store_iter_is_valid (GTK_TREE_STORE (panel->priv->model),
-										&iter));
+					gboolean is_cur;
 
-					*tab_iter = iter;
-					success = TRUE;
+					is_cur = (current_tab == tab);
+					g_object_unref (current_tab);
 
-					/* break 2; */
-					goto out;
+					if (is_cur)
+					{
+						*tab_iter = iter;
+						success = TRUE;
+
+						/* break 2; */
+						goto out;
+					}
 				}
 			} while (gtk_tree_model_iter_next (panel->priv->model, &iter));
 
