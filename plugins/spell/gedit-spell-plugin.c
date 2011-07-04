@@ -48,6 +48,8 @@
 #define GEDIT_METADATA_ATTRIBUTE_SPELL_ENABLED  "metadata::gedit-spell-enabled"
 #endif
 
+#define GEDIT_AUTOMATIC_SPELL_VIEW "GeditAutomaticSpellView"
+
 #define MENU_PATH "/MenuBar/ToolsMenu/ToolsOps_1"
 
 #define GEDIT_SPELL_PLUGIN_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE ((object), \
@@ -870,11 +872,14 @@ spell_cb (GtkAction        *action,
 
 static void
 set_auto_spell (GeditWindow   *window,
-		GeditDocument *doc,
-		gboolean       active)
+                GeditView     *view,
+                gboolean       active)
 {
 	GeditAutomaticSpellChecker *autospell;
 	GeditSpellChecker *spell;
+	GeditDocument *doc;
+
+	doc = GEDIT_DOCUMENT (gtk_text_view_get_buffer (GTK_TEXT_VIEW (view)));
 
 	spell = get_spell_checker_from_document (doc);
 	g_return_if_fail (spell != NULL);
@@ -885,13 +890,8 @@ set_auto_spell (GeditWindow   *window,
 	{
 		if (autospell == NULL)
 		{
-			GeditView *active_view;
-
-			active_view = gedit_window_get_active_view (window);
-			g_return_if_fail (active_view != NULL);
-
 			autospell = gedit_automatic_spell_checker_new (doc, spell);
-			gedit_automatic_spell_checker_attach_view (autospell, active_view);
+			gedit_automatic_spell_checker_attach_view (autospell, view);
 			gedit_automatic_spell_checker_recheck_all (autospell);
 		}
 	}
@@ -906,8 +906,8 @@ static void
 auto_spell_cb (GtkAction   *action,
 	       GeditWindow *window)
 {
-	
 	GeditDocument *doc;
+	GeditView *view;
 	gboolean active;
 
 	gedit_debug (DEBUG_PLUGINS);
@@ -916,43 +916,44 @@ auto_spell_cb (GtkAction   *action,
 
 	gedit_debug_message (DEBUG_PLUGINS, active ? "Auto Spell activated" : "Auto Spell deactivated");
 
-	doc = gedit_window_get_active_document (window);
-	if (doc == NULL)
+	view = gedit_window_get_active_view (window);
+	if (view == NULL)
 		return;
+
+	doc = GEDIT_DOCUMENT (gtk_text_view_get_buffer (GTK_TEXT_VIEW (view)));
 
 	gedit_document_set_metadata (doc,
 				     GEDIT_METADATA_ATTRIBUTE_SPELL_ENABLED,
 				     active ? "1" : NULL, NULL);
 
-	set_auto_spell (window, doc, active);
+	set_auto_spell (window, view, active);
 }
 
 static void
 update_ui (GeditSpellPlugin *plugin)
 {
 	GeditSpellPluginPrivate *priv;
-	GeditDocument *doc;
 	GeditView *view;
-	gboolean autospell;
 	GtkAction *action;
 
 	gedit_debug (DEBUG_PLUGINS);
 
 	priv = plugin->priv;
 
-	doc = gedit_window_get_active_document (priv->window);
 	view = gedit_window_get_active_view (priv->window);
 
-	autospell = (doc != NULL &&
-	             gedit_automatic_spell_checker_get_from_document (doc) != NULL);
-
-	if (doc != NULL)
+	if (view != NULL)
 	{
+		GeditDocument *doc;
 		GeditTab *tab;
 		GeditTabState state;
+		gboolean autospell;
 
+		doc = GEDIT_DOCUMENT (gtk_text_view_get_buffer (GTK_TEXT_VIEW (view)));
 		tab = gedit_window_get_active_tab (priv->window);
 		state = gedit_tab_get_state (tab);
+		autospell = (doc != NULL &&
+		             gedit_automatic_spell_checker_get_from_document (doc) != NULL);
 
 		/* If the document is loading we can't get the metadata so we
 		   endup with an useless speller */
@@ -963,7 +964,7 @@ update_ui (GeditSpellPlugin *plugin)
 	
 			g_signal_handlers_block_by_func (action, auto_spell_cb,
 							 priv->window);
-			set_auto_spell (priv->window, doc, autospell);
+			set_auto_spell (priv->window, view, autospell);
 			gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (action),
 						      autospell);
 			g_signal_handlers_unblock_by_func (action, auto_spell_cb,
@@ -978,13 +979,15 @@ update_ui (GeditSpellPlugin *plugin)
 
 static void
 set_auto_spell_from_metadata (GeditWindow    *window,
-			      GeditDocument  *doc,
+			      GeditView      *view,
 			      GtkActionGroup *action_group)
 {
 	gboolean active = FALSE;
 	gchar *active_str;
+	GeditDocument *doc;
 	GeditDocument *active_doc;
 
+	doc = GEDIT_DOCUMENT (gtk_text_view_get_buffer (GTK_TEXT_VIEW (view)));
 	active_str = gedit_document_get_metadata (doc,
 						  GEDIT_METADATA_ATTRIBUTE_SPELL_ENABLED);
 
@@ -995,7 +998,7 @@ set_auto_spell_from_metadata (GeditWindow    *window,
 		g_free (active_str);
 	}
 
-	set_auto_spell (window, doc, active);
+	set_auto_spell (window, view, active);
 
 	/* In case that the doc is the active one we mark the spell action */
 	active_doc = gedit_window_get_active_document (window);
@@ -1024,6 +1027,7 @@ on_document_loaded (GeditDocument    *doc,
 	if (error == NULL)
 	{
 		GeditSpellChecker *spell;
+		GeditView *view;
 
 		spell = GEDIT_SPELL_CHECKER (g_object_get_qdata (G_OBJECT (doc),
 								 spell_checker_id));
@@ -1032,7 +1036,9 @@ on_document_loaded (GeditDocument    *doc,
 			set_language_from_metadata (spell, doc);
 		}
 
-		set_auto_spell_from_metadata (plugin->priv->window, doc,
+		view = GEDIT_VIEW (g_object_get_data (G_OBJECT (doc), GEDIT_AUTOMATIC_SPELL_VIEW));
+
+		set_auto_spell_from_metadata (plugin->priv->window, view,
 					      plugin->priv->action_group);
 	}
 }
@@ -1077,9 +1083,15 @@ tab_added_cb (GeditWindow      *window,
 	      GeditTab         *tab,
 	      GeditSpellPlugin *plugin)
 {
+	GeditView *view;
 	GeditDocument *doc;
 
-	doc = gedit_tab_get_document (tab);
+	view = gedit_tab_get_view (tab);
+	doc = GEDIT_DOCUMENT (gtk_text_view_get_buffer (GTK_TEXT_VIEW (view)));
+
+	/* we need to pass the view with the document as there is no way to
+	   attach the view to the automatic spell checker. */
+	g_object_set_data (G_OBJECT (doc), GEDIT_AUTOMATIC_SPELL_VIEW, view);
 
 	g_signal_connect (doc, "loaded",
 			  G_CALLBACK (on_document_loaded),
@@ -1098,6 +1110,7 @@ tab_removed_cb (GeditWindow      *window,
 	GeditDocument *doc;
 
 	doc = gedit_tab_get_document (tab);
+	g_object_set_data (G_OBJECT (doc), GEDIT_AUTOMATIC_SPELL_VIEW, NULL);
 	
 	g_signal_handlers_disconnect_by_func (doc, on_document_loaded, plugin);
 	g_signal_handlers_disconnect_by_func (doc, on_document_saved, plugin);
@@ -1108,7 +1121,7 @@ gedit_spell_plugin_activate (GeditWindowActivatable *activatable)
 {
 	GeditSpellPluginPrivate *priv;
 	GtkUIManager *manager;
-	GList *docs, *l;
+	GList *views, *l;
 
 	gedit_debug (DEBUG_PLUGINS);
 
@@ -1162,21 +1175,13 @@ gedit_spell_plugin_activate (GeditWindowActivatable *activatable)
 
 	update_ui (GEDIT_SPELL_PLUGIN (activatable));
 
-	docs = gedit_window_get_documents (priv->window);
-	for (l = docs; l != NULL; l = g_list_next (l))
+	views = gedit_window_get_views (priv->window);
+	for (l = views; l != NULL; l = g_list_next (l))
 	{
-		GeditDocument *doc = GEDIT_DOCUMENT (l->data);
+		GeditView *view = GEDIT_VIEW (l->data);
 
-		set_auto_spell_from_metadata (priv->window, doc,
+		set_auto_spell_from_metadata (priv->window, view,
 					      priv->action_group);
-
-		g_signal_handlers_disconnect_by_func (doc,
-		                                      on_document_loaded,
-		                                      activatable);
-
-		g_signal_handlers_disconnect_by_func (doc,
-		                                      on_document_saved,
-		                                      activatable);
 	}
 
 	priv->tab_added_id =
