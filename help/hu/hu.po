@@ -4,10 +4,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit_help master\n"
-"POT-Creation-Date: 2011-04-19 21:51+0000\n"
-"PO-Revision-Date: 2011-04-21 22:40+0200\n"
+"POT-Creation-Date: 2011-05-25 11:33+0000\n"
+"PO-Revision-Date: 2011-07-05 18:17+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
-"Language-Team: Hungarian <gnome at fsf dot hu>\n"
+"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -299,7 +299,7 @@ msgid ""
 "one window to another."
 msgstr ""
 "A <app>gedit</app> lapjai áthelyezhetők, így egyszerűbbé teszik a fájlok "
-"kezelését. A lapot áthelyezhetők ugyanazon az ablakon belül, kihúzhatók a "
+"kezelését. A lapok áthelyezhetők ugyanazon az ablakon belül, kihúzhatók a "
 "<app>gediten</app> kívülre (így új <app>gedit</app> ablakot hozva létre), és "
 "az egyik ablakból a másikba mozgathatók."
 
@@ -829,11 +829,11 @@ msgstr ""
 "nyomja meg a <keyseq><key>Ctrl</key><key>F</key></keyseq> kombinációt. Ez a "
 "kurzort a <gui>keresés ablak</gui> elejére viszi."
 
-#: C/gedit-search.page:25(p)
+#: C/gedit-search.page:27(p)
 msgid "Type the text you wish to search for in the <gui>search window</gui>."
 msgstr "Írja be a keresendő szöveget a <gui>keresés ablakba</gui>."
 
-#: C/gedit-search.page:26(p)
+#: C/gedit-search.page:28(p)
 msgid ""
 "As you type, <app>gedit</app> will begin highlighting the portions of text "
 "that match what you have entered."
@@ -841,23 +841,33 @@ msgstr ""
 "Gépelés közben a <app>gedit</app> megkezdi a beírt szövegre illeszkedő "
 "szövegdarabok kiemelését."
 
-#: C/gedit-search.page:27(p)
-msgid ""
-"Use the <gui>up</gui> or <gui>down</gui> facing arrows next to the "
-"<gui>search window</gui> (or <keyseq><key>Ctrl</key><key>G</key></keyseq> or "
-"<keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>) to scroll up "
-"or down through the highlighted text."
-msgstr ""
-"Használja a <gui>keresés ablak</gui> melletti <gui>fel</gui> vagy <gui>le</"
-"gui> mutató nyilakat (vagy a <keyseq><key>Ctrl</key><key>G</key></keyseq> és "
-"<keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq> kombinációkat) "
-"a kiemelt szövegben való fel vagy le mozgáshoz."
-
 #: C/gedit-search.page:30(p)
+msgid "To scroll through the search results, do any of the following:"
+msgstr "A találatok közti lépkedéshez tegye a következők egyikét:"
+
+#: C/gedit-search.page:31(p)
+msgid ""
+"Click on the <gui>up</gui> or <gui>down</gui> facing arrows next to the "
+"<gui>search window</gui>"
+msgstr "Kattintson a <gui>keresőablak</gui> mellett <gui>fel</gui> vagy <gui>le</gui> mutató nyilakra."
+
+#: C/gedit-search.page:33(p)
+msgid "Press the <key>up arrow</key> or <key>down arrow</key> keys on your keyboard"
+msgstr "Nyomja meg a <key>fel nyíl</key> vagy <key>le nyíl</key> billentyűt"
+
+#: C/gedit-search.page:34(p)
+msgid ""
+"Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</"
+"key><key> Shift</key><key>G</key></keyseq>."
+msgstr ""
+"Nyomja meg a <keyseq><key>Ctrl</key><key>G</key></keyseq> vagy a <keyseq><key>Ctrl</"
+"key><key> Shift</key><key>G</key></keyseq> kombinációt."
+
+#: C/gedit-search.page:38(p)
 msgid "To close the <gui>search window</gui>, press <key>Esc</key>."
 msgstr "A <gui>keresőablak</gui> bezárásához nyomja meg az <key>Esc</key> billentyűt."
 
-#: C/gedit-search.page:33(p)
+#: C/gedit-search.page:41(p)
 msgid ""
 "The text that you've searched for will remain highlighted by gedit, even "
 "after you have completed your search. To remove the highlight, click "
@@ -2106,7 +2116,7 @@ msgid ""
 "computer."
 msgstr ""
 "Egyes kiszolgálótípusok korlátozzák, hogy mit tehet a kiszolgálón tárolt "
-"fájlokkal. Lehetséges például, hogy meg tud nyitni egy fájl a kiszolgálóról, "
+"fájlokkal. Lehetséges például, hogy meg tud nyitni egy fájlt a kiszolgálóról, "
 "de a változtatásokat elmenteni csak helyileg tudja, a saját számítógépére."
 
 #: C/gedit-open-on-server.page:20(p)
@@ -2398,7 +2408,7 @@ msgid ""
 "system in bad ways. Take great care when editing files as the root user."
 msgstr ""
 "A fájlok root felhasználóként történő szerkesztése veszélyes lehet, és "
-"csúnyán tönkreteheti rendszerét. Legyen nagyon óvatos, amikor a fájlokat "
+"működésképtelenné teheti rendszerét. Legyen nagyon óvatos, amikor a fájlokat "
 "root felhasználóként szerkeszti."
 
 #: C/gedit-edit-as-root.page:18(p)
