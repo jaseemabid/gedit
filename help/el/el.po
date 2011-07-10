@@ -1,43 +1,44 @@
 # Greek translation of Gedit Documentation
 # Copyright (C) 2009, Free Software Foundation, Inc.
+#
 # Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009.
 # Simos Xenitellis <simos@gnome.org>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
-"POT-Creation-Date: 2011-03-18 04:26+0000\n"
-"PO-Revision-Date: 2011-03-21 00:29+0200\n"
+"POT-Creation-Date: 2011-05-03 21:14+0000\n"
+"PO-Revision-Date: 2011-07-10 22:49+0300\n"
 "Last-Translator: Simos Xenitellis <simos@gnome.org>\n"
-"Language-Team: Greek <team@lists.gnome.gr>\n"
+"Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8-bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Poedit-Language: Greek\n"
 "X-Poedit-Country: GREECE\n"
+"Language: el\n"
+"X-Generator: Lokalize 1.2\n"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/index.page:22(None)
-#| msgid ""
-#| "@@image: 'figures/gedit_window.png'; md5=a1daf2ed54a551bb590a172bc730594c"
 msgid "@@image: 'figures/gedit-icon.png'; md5=a7174de2671462e1ac4f80a82ad09184"
 msgstr ""
 "@@image: 'figures/gedit-icon.png'; md5=a7174de2671462e1ac4f80a82ad09184"
 
 #: C/index.page:7(title) C/index.page:8(title)
-#| msgid "text editor"
 msgid "gedit Text Editor"
 msgstr "Επεξεργαστής κειμένου gedit"
 
 #: C/index.page:12(name) C/gedit-view-open-files-in-sidepane.page:9(name)
 #: C/gedit-undo-recent-action.page:9(name)
-#: C/gedit-undo-recent-action.page:19(name) C/gedit-tabs.page:9(name)
-#: C/gedit-syntax-highlighting.page:9(name) C/gedit-spellcheck.page:8(name)
-#: C/gedit-shortcut-keys.page:9(name) C/gedit-replace.page:10(name)
-#: C/gedit-quickstart.page:11(name) C/gedit-printing.page:9(name)
-#: C/gedit-plugins-terminal.page:9(name)
+#: C/gedit-undo-recent-action.page:18(name) C/gedit-tabs.page:10(name)
+#: C/gedit-tabs-moving.page:9(name) C/gedit-syntax-highlighting.page:9(name)
+#: C/gedit-spellcheck.page:10(name) C/gedit-shortcut-keys.page:9(name)
+#: C/gedit-search.page:10(name) C/gedit-save-file.page:9(name)
+#: C/gedit-replace.page:10(name) C/gedit-quickstart.page:11(name)
+#: C/gedit-printing.page:11(name) C/gedit-plugins-terminal.page:10(name)
 #: C/gedit-plugins-tag-list.page:13(name) C/gedit-plugins-sort.page:13(name)
 #: C/gedit-plugins-pyconsole.page:9(name)
 #: C/gedit-plugins-modelines.page:13(name)
@@ -46,23 +47,26 @@ msgstr "Επεξεργαστής κειμένου gedit"
 #: C/gedit-plugins-file-browser.page:13(name)
 #: C/gedit-plugins-external-tools.page:15(name)
 #: C/gedit-plugins-doc-stats.page:13(name)
-#: C/gedit-plugins-check-update.page:13(name)
 #: C/gedit-plugins-change-case.page:14(name)
 #: C/gedit-plugins-bracket-comp.page:9(name)
 #: C/gedit-plugin-guide.page:10(name) C/gedit-open-recent.page:9(name)
-#: C/gedit-open-on-server.page:9(name)
+#: C/gedit-open-on-server.page:9(name) C/gedit-open-files.page:13(name)
 #: C/gedit-open-files-from-sidepane.page:9(name)
-#: C/gedit-edit-as-root.page:9(name) C/gedit-change-color-scheme.page:9(name)
+#: C/gedit-full-screen.page:9(name) C/gedit-files-basic.page:9(name)
+#: C/gedit-edit-as-root.page:9(name) C/gedit-create-new-file.page:9(name)
+#: C/gedit-close-file.page:9(name) C/gedit-change-color-scheme.page:9(name)
 msgid "Jim Campbell"
 msgstr "Jim Campbell"
 
 #: C/index.page:13(email) C/gedit-view-open-files-in-sidepane.page:10(email)
 #: C/gedit-undo-recent-action.page:10(email)
-#: C/gedit-undo-recent-action.page:20(email) C/gedit-tabs.page:10(email)
-#: C/gedit-syntax-highlighting.page:10(email) C/gedit-spellcheck.page:8(email)
-#: C/gedit-shortcut-keys.page:10(email) C/gedit-replace.page:11(email)
-#: C/gedit-quickstart.page:12(email) C/gedit-printing.page:10(email)
-#: C/gedit-plugins-terminal.page:10(email)
+#: C/gedit-undo-recent-action.page:19(email) C/gedit-tabs.page:11(email)
+#: C/gedit-tabs-moving.page:10(email)
+#: C/gedit-syntax-highlighting.page:10(email)
+#: C/gedit-spellcheck.page:11(email) C/gedit-shortcut-keys.page:10(email)
+#: C/gedit-search.page:11(email) C/gedit-save-file.page:10(email)
+#: C/gedit-replace.page:11(email) C/gedit-quickstart.page:12(email)
+#: C/gedit-printing.page:12(email) C/gedit-plugins-terminal.page:11(email)
 #: C/gedit-plugins-tag-list.page:14(email) C/gedit-plugins-sort.page:14(email)
 #: C/gedit-plugins-pyconsole.page:10(email)
 #: C/gedit-plugins-modelines.page:14(email)
@@ -71,13 +75,14 @@ msgstr "Jim Campbell"
 #: C/gedit-plugins-file-browser.page:14(email)
 #: C/gedit-plugins-external-tools.page:16(email)
 #: C/gedit-plugins-doc-stats.page:14(email)
-#: C/gedit-plugins-check-update.page:14(email)
 #: C/gedit-plugins-change-case.page:15(email)
 #: C/gedit-plugins-bracket-comp.page:10(email)
 #: C/gedit-plugin-guide.page:11(email) C/gedit-open-recent.page:10(email)
-#: C/gedit-open-on-server.page:10(email)
+#: C/gedit-open-on-server.page:10(email) C/gedit-open-files.page:14(email)
 #: C/gedit-open-files-from-sidepane.page:10(email)
-#: C/gedit-edit-as-root.page:10(email)
+#: C/gedit-full-screen.page:10(email) C/gedit-files-basic.page:10(email)
+#: C/gedit-edit-as-root.page:10(email) C/gedit-create-new-file.page:10(email)
+#: C/gedit-close-file.page:10(email)
 #: C/gedit-change-color-scheme.page:10(email)
 msgid "jwcampbell@gmail.com"
 msgstr "jwcampbell@gmail.com"
@@ -113,73 +118,66 @@ msgstr ""
 "χρήση του <app>gedit</app>!"
 
 #: C/index.page:31(title)
-#| msgid "Working with Files"
 msgid "Working With Files"
 msgstr "Εργασία με αρχεία"
 
-#: C/index.page:35(title)
+#: C/index.page:36(title)
 msgid "Configure gedit"
 msgstr "Διαμόρφωση του gedit"
 
-#: C/index.page:39(title)
-#| msgid "Tag List Plugin"
+#: C/index.page:40(title)
 msgid "gedit Plugins"
 msgstr "Πρόσθετα gedit"
 
-#: C/index.page:43(title) C/gedit-printing.page:14(title)
-#| msgid "Starting gedit"
+#: C/index.page:44(title) C/gedit-printing.page:16(title)
 msgid "Printing with gedit"
 msgstr "Εκτύπωση με το gedit"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gedit-view-open-files-in-sidepane.page:26(None)
+#: C/gedit-view-open-files-in-sidepane.page:25(None)
 #: C/gedit-open-files-from-sidepane.page:51(None)
-#| msgid ""
-#| "@@image: 'figures/gedit_window.png'; md5=a1daf2ed54a551bb590a172bc730594c"
 msgid ""
 "@@image: 'figures/gedit-side-pane2.png'; md5=e7a12a43adc9c9cb8c992ad22a815a57"
 msgstr ""
 "@@image: 'figures/gedit-side-pane2.png'; md5=e7a12a43adc9c9cb8c992ad22a815a57"
 
-#: C/gedit-view-open-files-in-sidepane.page:15(name)
-#: C/gedit-undo-recent-action.page:15(name) C/gedit-tabs.page:15(name)
-#: C/gedit-replace.page:16(name) C/gedit-plugins-tag-list.page:9(name)
-#: C/gedit-plugins-spell-checker.page:10(name)
-#: C/gedit-plugins-sort.page:9(name) C/gedit-plugins-snippets.page:10(name)
-#: C/gedit-plugins-quick-open:10(name) C/gedit-plugins-modelines.page:9(name)
+#: C/gedit-view-open-files-in-sidepane.page:14(name)
+#: C/gedit-undo-recent-action.page:14(name) C/gedit-tabs.page:15(name)
+#: C/gedit-tabs-moving.page:14(name) C/gedit-search.page:15(name)
+#: C/gedit-replace.page:15(name) C/gedit-plugins-tag-list.page:9(name)
+#: C/gedit-plugins-sort.page:9(name) C/gedit-plugins-snippets.page:9(name)
+#: C/gedit-plugins-modelines.page:9(name)
 #: C/gedit-plugins-install.page:15(name)
 #: C/gedit-plugins-insert-date-time.page:9(name)
 #: C/gedit-plugins-file-browser.page:9(name)
 #: C/gedit-plugins-external-tools.page:11(name)
 #: C/gedit-plugins-doc-stats.page:9(name)
-#: C/gedit-plugins-check-update.page:9(name)
 #: C/gedit-plugins-change-case.page:9(name)
 msgid "Daniel Neel"
 msgstr "Daniel Neel"
 
-#: C/gedit-view-open-files-in-sidepane.page:16(email)
-#: C/gedit-undo-recent-action.page:16(email) C/gedit-tabs.page:16(email)
-#: C/gedit-replace.page:17(email) C/gedit-plugins-tag-list.page:10(email)
-#: C/gedit-plugins-spell-checker.page:11(email)
-#: C/gedit-plugins-sort.page:10(email) C/gedit-plugins-snippets.page:11(email)
-#: C/gedit-plugins-quick-open:11(email)
+#: C/gedit-view-open-files-in-sidepane.page:15(email)
+#: C/gedit-undo-recent-action.page:15(email) C/gedit-tabs.page:16(email)
+#: C/gedit-tabs-moving.page:15(email) C/gedit-search.page:16(email)
+#: C/gedit-replace.page:16(email) C/gedit-plugins-tag-list.page:10(email)
+#: C/gedit-plugins-sort.page:10(email) C/gedit-plugins-snippets.page:10(email)
 #: C/gedit-plugins-modelines.page:10(email)
 #: C/gedit-plugins-install.page:16(email)
 #: C/gedit-plugins-insert-date-time.page:10(email)
 #: C/gedit-plugins-file-browser.page:10(email)
 #: C/gedit-plugins-external-tools.page:12(email)
 #: C/gedit-plugins-doc-stats.page:10(email)
-#: C/gedit-plugins-check-update.page:10(email)
 #: C/gedit-plugins-change-case.page:10(email)
 msgid "dneelyep@gmail.com"
 msgstr "dneelyep@gmail.com"
 
-#: C/gedit-view-open-files-in-sidepane.page:20(title)
-msgid "View a list of open files in a side pane"
+#: C/gedit-view-open-files-in-sidepane.page:19(title)
+#| msgid "View a list of open files in a side pane"
+msgid "View a list of files in the side pane"
 msgstr "Προβάλετε μια λίστα ανοιχτών αρχείων στην πλευρική μπάρα"
 
-#: C/gedit-view-open-files-in-sidepane.page:22(p)
+#: C/gedit-view-open-files-in-sidepane.page:21(p)
 msgid ""
 "Keeping track of a large number of files using tabs can be difficult. One "
 "way of managing large numbers of files is viewing them in a side pane. Side "
@@ -192,7 +190,7 @@ msgstr ""
 "ταυτόχρονα περισσότερα αρχεία από ότι είναι δυνατόν με τη χρήση μόνο "
 "καρτελών."
 
-#: C/gedit-view-open-files-in-sidepane.page:24(p)
+#: C/gedit-view-open-files-in-sidepane.page:23(p)
 msgid ""
 "To view a list of open files in a side pane, click <guiseq><gui>View</"
 "gui><gui>Side Pane</gui></guiseq>. A pane will appear to the left of the "
@@ -205,7 +203,7 @@ msgstr ""
 "αρχείων αυτή τη στιγμή. Κάνοντας κλικ σε ένα αρχείο στην πλευρική μπάρα θα "
 "το προβάλει στον χώρο εργασίας."
 
-#: C/gedit-view-open-files-in-sidepane.page:26(p)
+#: C/gedit-view-open-files-in-sidepane.page:25(p)
 msgid ""
 "The side pane also contains a <app>File Browser</app> view. If the pane "
 "displays a file directory instead of currently open files, click <media type="
@@ -219,25 +217,24 @@ msgstr ""
 "\"figures/gedit-side-pane2.png\">εικονίδιο εγγράφων</media> στο κάτω μέρος "
 "της μπάρας για να αλλάξετε στην προβολή <app>Εγγράφων</app>."
 
-#: C/gedit-view-open-files-in-sidepane.page:29(p)
+#: C/gedit-view-open-files-in-sidepane.page:28(p)
 msgid ""
 "The side pane only displays files that are open in the current window. When "
 "multiple windows are open, only the files in the current window will be "
 "displayed in the side pane."
 msgstr ""
-"Η πλευρική μπάρα προβάλει μόνο αρχεία που είναι ανοιχτά στο τρέχων "
-"παράθυρο. Όταν πολλαπλά παράθυρα είναι ανοιχτά, μόνο τα αρχεία στο τρέχων "
-"παράθυρο θα εμφανίζονται στην πλευρική μπάρα."
+"Η πλευρική μπάρα προβάλει μόνο αρχεία που είναι ανοιχτά στο τρέχων παράθυρο. "
+"Όταν πολλαπλά παράθυρα είναι ανοιχτά, μόνο τα αρχεία στο τρέχων παράθυρο θα "
+"εμφανίζονται στην πλευρική μπάρα."
 
-#: C/gedit-undo-recent-action.page:24(title)
-#| msgid "Undo the last action."
+#: C/gedit-undo-recent-action.page:23(title)
 msgid "Undo a recent action"
 msgstr "Αναίρεση πρόσφατης ενέργειας"
 
 #. TODO: Maybe include a note about how gedit undoes sequences of "similar" actions, rather than every individual keystroke? For example, whole words are deleted rather than letters.
 #. I think we should also include a note about how many "undo's" you can do, and that you can't
 #. undo something once you've saved the file.
-#: C/gedit-undo-recent-action.page:29(p)
+#: C/gedit-undo-recent-action.page:28(p)
 msgid ""
 "We all make mistakes. Even <app>gedit</app> users make mistakes. "
 "Fortunately, <app>gedit</app> can help you recover from mistakes. To undo an "
@@ -250,69 +247,45 @@ msgstr ""
 "<keyseq><key>Ctrl</key><key>Z</key></keyseq>, ή κάντε κλικ στην "
 "<guiseq><gui>Επεξεργασία</gui><gui>Αναίρεση</gui></guiseq>."
 
-#: C/gedit-undo-recent-action.page:31(p)
+#: C/gedit-undo-recent-action.page:30(p)
+#| msgid ""
+#| "<app>gedit</app> will undo one action every time you press "
+#| "<keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</"
+#| "gui><gui>Undo</gui></guiseq> is pressed."
 msgid ""
 "<app>gedit</app> will undo one action every time you press "
 "<keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</"
-"gui><gui>Undo</gui></guiseq> is pressed."
+"gui><gui>Undo</gui></guiseq>."
 msgstr ""
 "Το <app>gedit</app> θα αναιρεί μια ενέργεια κάθε φορά που πατάτε "
 "<keyseq><key>Ctrl</key><key>Z</key></keyseq>, ή κάνετε κλικ στην "
 "<guiseq><gui>Επεξεργασία</gui><gui>Αναίρεση</gui></guiseq>."
-
-#: C/gedit-undo-recent-action.page:33(p)
-msgid ""
-"Be careful. If you make a mistake outside of <app>gedit</app> (e.g., If you "
-"say something mean to your friend) <app>gedit</app> will not be able to help "
-"you undo that mistake."
-msgstr ""
-"Προσέξτε. Αν κάνετε κάποιο λάθος έξω από το <app>gedit</app> (π.χ., Αν πείτε "
-"κάτι άσχημο στον φίλο σας) το <app>gedit</app> δεν θα είναι σε θέση να σας "
-"βοηθήσει να αναιρέσετε αυτό το λάθος."
 
 #: C/gedit-tabs.page:20(title)
 msgid "Add and remove tabs"
 msgstr "Προσθήκη και αφαίρεση καρτελών"
 
 #: C/gedit-tabs.page:21(p)
+#| msgid ""
+#| "Tabs indicate the files you currently have open to work on. The tab that "
+#| "is larger than the other tabs indicates the file that is currently open. "
+#| "The smaller tabs indicate other files that are available to work on."
 msgid ""
 "Working with tabs in <app>gedit</app> allows you to keep an eye on several "
-"files in a single window. When you start <app>gedit</app>, a single tab will "
-"be displayed above the contents of the current file."
-msgstr ""
-"Η εργασία με καρτέλες στο <app>gedit</app> σας επιτρέπει να παρακολουθείτε "
-"αρκετά αρχεία σε ένα μόνο παράθυρο. Όταν εκκινήσετε το <app>gedit</app>, μια "
-"μοναδική καρτέλα θα εμφανίζετε πάνω από τα περιεχόμενα του τρέχων αρχείου."
-
-#: C/gedit-tabs.page:23(p)
-msgid ""
-"Tabs indicate the files you currently have open to work on. The tab that is "
-"larger than the other tabs indicates the file that is currently open. The "
-"smaller tabs indicate other files that are available to work on."
+"files in a single window. The tab that is larger than the other tabs "
+"indicates the file that is currently open. The smaller tabs indicate other "
+"files that are available to work on."
 msgstr ""
 "Οι καρτέλες υποδεικνύουν τα τωρινά αρχεία που έχετε ανοίξει για να "
 "εργαστείτε. Η καρτέλα μου είναι μεγαλύτερη από τις άλλες υποδεικνύει το "
 "αρχείο που είναι ανοιχτό αυτή τη στιγμή. Οι μικρότερες καρτέλες υποδεικνύουν "
 "άλλα αρχεία που είναι διαθέσιμα για να εργαστείτε πάνω τους."
 
-#. <p>add figure tags also<media type="image" mime="" src=""/></p>
-#: C/gedit-tabs.page:26(p)
-msgid ""
-"To view the contents of a specific tab, click the tab itself. The contents "
-"of the file will be displayed below the currently open tabs. Clicking the "
-"<guiseq><gui>X</gui></guiseq> on the side of the tab will close that file."
-msgstr ""
-"Για να προβάλετε τα περιεχόμενα μιας συγκεκριμένης καρτέλας, κάντε κλικ στην "
-"ίδια την καρτέλα. Τα περιεχόμενα του αρχείου θα προβληθούν κάτω από τις "
-"τρέχουσες ανοιχτές καρτέλες. Κάνοντας κλικ στο <guiseq><gui>X</gui></guiseq> "
-"στην άκρη της καρτέλας θα κλείσει το αρχείο αυτό."
-
-#: C/gedit-tabs.page:31(title)
-#| msgid "Adding Snippets"
+#: C/gedit-tabs.page:25(title)
 msgid "Adding tabs"
 msgstr "Προσθήκη καρτελών"
 
-#: C/gedit-tabs.page:32(p)
+#: C/gedit-tabs.page:26(p)
 msgid ""
 "To add a new tab, create a new file with <keyseq><key>Ctrl</key><key>N</"
 "key></keyseq>. The tab will be added to the right side of any other tabs."
@@ -321,12 +294,11 @@ msgstr ""
 "<keyseq><key>Ctrl</key><key>N</key></keyseq>. Η καρτέλα θα προστεθεί στην "
 "δεξιά πλευρά οποιασδήποτε άλλης καρτέλας."
 
-#: C/gedit-tabs.page:36(title)
-#| msgid "Remove Trailing Spaces"
+#: C/gedit-tabs.page:30(title)
 msgid "Removing tabs"
 msgstr "Αφαίρεση καρτελών"
 
-#: C/gedit-tabs.page:37(p)
+#: C/gedit-tabs.page:31(p)
 msgid ""
 "To remove a tab, click the <guiseq><gui>X</gui></guiseq> on the tab's right "
 "side. To remove all open tabs, press <keyseq><key>Ctrl</key><key>Shift</"
@@ -337,34 +309,65 @@ msgstr ""
 "καρτέλες, πατήστε <keyseq><key>Ctrl</key><key>Shift</key><key>W</key></"
 "keyseq>"
 
-#: C/gedit-tabs.page:41(title)
-msgid "Organizing tabs:"
-msgstr "Οργάνωση καρτελών:"
+#: C/gedit-tabs-moving.page:19(title)
+#| msgid "Add and remove tabs"
+msgid "Move and re-order tabs"
+msgstr "Μετακίνηση και ανακατάταξη καρτελών"
 
-#: C/gedit-tabs.page:42(p)
+#: C/gedit-tabs-moving.page:20(p)
 msgid ""
-"There are several different ways to organize your tabs in <app>gedit</app>."
+"Tabs in <app>gedit</app> can be moved, making it easier to work with your "
+"files. Tabs can be can re-ordered within the same window, moved outside of "
+"<app>gedit</app> (creating a new <app>gedit</app> window), and moved from "
+"one window to another."
 msgstr ""
-"Υπάρχουν πολλοί διάφοροι τρόποι για να οργανώσετε τις καρτέλες στο "
-"<app>gedit</app>."
 
-#: C/gedit-tabs.page:44(p)
-msgid "To drag a tab into a new window:"
-msgstr "Για να σύρετε μία καρτέλα σε ένα νέο παράθυρο:"
+#: C/gedit-tabs-moving.page:23(title)
+#| msgid "To change the ordering of tabs in a window:"
+msgid "Change the order of tabs in the gedit window"
+msgstr "Αλλάξτε τη σειρά των καρτελών σε ένα παράθυρο"
 
-#: C/gedit-tabs.page:47(p) C/gedit-tabs.page:62(p) C/gedit-tabs.page:71(p)
+#: C/gedit-tabs-moving.page:25(p)
+msgid "To change the ordering of tabs in a window:"
+msgstr "Για να αλλάξετε την σειρά των καρτελών σε ένα παράθυρο:"
+
+#: C/gedit-tabs-moving.page:28(p) C/gedit-tabs-moving.page:42(p)
+#: C/gedit-tabs-moving.page:62(p)
 msgid "Click and hold the mouse button on the tab"
 msgstr "Κάντε κλικ και κρατήστε το κουμπί του ποντικιού στην καρτέλα"
 
-#: C/gedit-tabs.page:48(p)
-msgid "Drag the tab out of the space it occupies"
-msgstr "Σύρετε την καρτέλα έξω από το πεδίο που καταλαμβάνει"
+#: C/gedit-tabs-moving.page:29(p)
+msgid "Move the tab to the desired position among the other tabs"
+msgstr ""
+"Μετακινήστε την καρτέλα στην επιθυμητή τοποθεσία μεταξύ των άλλων καρτελών"
 
-#: C/gedit-tabs.page:49(p) C/gedit-tabs.page:65(p) C/gedit-tabs.page:73(p)
+#: C/gedit-tabs-moving.page:30(p) C/gedit-tabs-moving.page:44(p)
+#: C/gedit-tabs-moving.page:65(p)
 msgid "Release the mouse button"
 msgstr "Απελευθερώστε το κουμπί του ποντικιού"
 
-#: C/gedit-tabs.page:52(p)
+#: C/gedit-tabs-moving.page:33(p)
+msgid ""
+"The tab will be placed in the position closest to where you release the tab, "
+"immediately beside other opened tabs."
+msgstr ""
+"Η καρτέλα θα τοποθετηθεί στην πλησιέστερη περιοχή όπου απελευθερώσατε την "
+"καρτέλα, αμέσως μεταξύ των άλλων ανοιχτών καρτελών."
+
+#: C/gedit-tabs-moving.page:38(title)
+#| msgid "To drag a tab into a new window:"
+msgid "Move a tab, creating a new gedit window"
+msgstr "Σύρετε μία καρτέλα σε ένα νέο παράθυρο"
+
+#: C/gedit-tabs-moving.page:39(p)
+msgid "To drag a tab into a new window:"
+msgstr "Για να σύρετε μία καρτέλα σε ένα νέο παράθυρο:"
+
+#: C/gedit-tabs-moving.page:43(p)
+msgid "Drag the tab out of the space it occupies"
+msgstr "Σύρετε την καρτέλα έξω από το πεδίο που καταλαμβάνει"
+
+#: C/gedit-tabs-moving.page:47(p)
 msgid ""
 "or, while the tab to be moved is open, choose <guiseq><gui>Documents</"
 "gui><gui>Move to New Window</gui></guiseq>"
@@ -372,7 +375,7 @@ msgstr ""
 "ή, ενώ η καρτέλα που θα μετακινηθεί είναι ανοιχτή, επιλέξτε "
 "<guiseq><gui>Έγγραφα</gui><gui>Μετακίνηση στο νέο παράθυρο</gui></guiseq>"
 
-#: C/gedit-tabs.page:55(p)
+#: C/gedit-tabs-moving.page:50(p)
 msgid ""
 "It's difficult to drag a tab into a new window when either the old or new "
 "window is maximized. For best results, un-maximize the windows before "
@@ -382,45 +385,35 @@ msgstr ""
 "το νέο παράθυρο είναι μεγιστοποιημένα. Για καλύτερα αποτελέσματα, σμικρύνετε "
 "τα παράθυρο πριν σύρετε την καρτέλα."
 
-#: C/gedit-tabs.page:59(p)
+#: C/gedit-tabs-moving.page:57(title)
+#| msgid "Drag the tab to the new window"
+msgid "Move a tab to another gedit window"
+msgstr "Σύρσιμο της καρτέλας στο νέο παράθυρο gedit"
+
+#: C/gedit-tabs-moving.page:59(p)
 msgid "If you want to move a tab from one window to another:"
 msgstr "Αν θέλετε να μετακινήσετε μια καρτέλα από ένα παράθυρο σε άλλο:"
 
-#: C/gedit-tabs.page:63(p)
+#: C/gedit-tabs-moving.page:63(p)
 msgid "Drag the tab to the new window"
 msgstr "Σύρσιμο της καρτέλας στο νέο παράθυρο"
 
-#: C/gedit-tabs.page:64(p)
+#: C/gedit-tabs-moving.page:64(p)
 msgid "Place it beside other tabs in the new window"
 msgstr "Τοποθετήστε το δίπλα από άλλες καρτέλες στο νέο παράθυρο"
 
-#: C/gedit-tabs.page:68(p)
-msgid "To change the ordering of tabs in a window:"
-msgstr "Για να αλλάξετε την σειρά των καρτελών σε ένα παράθυρο:"
-
-#: C/gedit-tabs.page:72(p)
-msgid "Move the tab to the desired position among the other tabs"
-msgstr ""
-"Μετακινήστε την καρτέλα στην επιθυμητή τοποθεσία μεταξύ των άλλων καρτελών"
-
-#: C/gedit-tabs.page:76(p)
-msgid ""
-"The tab will be placed in the position closest to where you release the tab, "
-"immediately beside other opened tabs."
-msgstr ""
-"Η καρτέλα θα τοποθετηθεί στην πλησιέστερη περιοχή όπου απελευθερώσατε την "
-"καρτέλα, αμέσως μεταξύ των άλλων ανοιχτών καρτελών."
-
-#: C/gedit-tabs.page:78(p)
+#: C/gedit-tabs-moving.page:68(p)
+#| msgid ""
+#| "See <link xref=\"gedit-shortcut-keys#gedit-tab-shortcuts\"/> for "
+#| "shortcuts to make managing your tabs more quick."
 msgid ""
 "See <link xref=\"gedit-shortcut-keys#gedit-tab-shortcuts\"/> for shortcuts "
-"to make managing your tabs more quick."
+"to make it easier to manage your tabs."
 msgstr ""
 "Δείτε <link xref=\"gedit-shortcut-keys#gedit-tab-shortcuts\"/> για "
-"συντομεύσεις που θα κάνουν την διαχείριση καρτελών πιο γρήγορη."
+"συντομεύσεις που θα κάνουν την διαχείριση καρτελών πιο εύκολη."
 
 #: C/gedit-syntax-highlighting.page:14(title)
-#| msgid "Print syntax highlighting"
 msgid "Turn on syntax highlighting"
 msgstr "Ενεργοποίηση της επισήμανσης σύνταξης"
 
@@ -441,21 +434,30 @@ msgstr ""
 "επισημάνει αυτόματα το κείμενο."
 
 #: C/gedit-syntax-highlighting.page:20(p)
+#| msgid ""
+#| "If your syntax or language is not highlighted upon startup, you can "
+#| "select the appropriate syntax or language by clicking <guiseq><gui>View</"
+#| "gui><gui>Highlight Mode</gui></guiseq>, and then choosing the desired "
+#| "syntax."
 msgid ""
 "If your syntax or language is not highlighted upon startup, you can select "
 "the appropriate syntax or language by clicking <guiseq><gui>View</"
-"gui><gui>Highlight Mode</gui></guiseq>, and then choosing the desired syntax."
+"gui><gui>Highlight Mode</gui></guiseq>, and then choosing the desired "
+"syntax. Alternately, you can select the syntax name from a list at the "
+"bottom of the <app>gedit</app> window."
 msgstr ""
-"Αν η σύνταξη ή γλώσσα σας  δεν επισημανθεί στην έναρξη, μπορείτε να "
-"επιλέξετε την κατάλληλη σύνταξη ή γλώσσα κάνοντας κλικ στην "
-"<guiseq><gui>Προβολή</gui><gui>Λειτουργία επισήμανσης</gui></guiseq>, και "
-"μετά επιλέγοντας την επιθυμητή σύνταξη."
+"Αν η σύνταξη ή γλώσσα σας δεν επισημανθεί στην έναρξη, μπορείτε να επιλέξετε "
+"την κατάλληλη σύνταξη ή γλώσσα κάνοντας κλικ στην <guiseq><gui>Προβολή</"
+"gui><gui>Λειτουργία επισήμανσης</gui></guiseq>, και μετά επιλέγοντας την "
+"επιθυμητή σύνταξη. Εναλλακτικά, μπορείτε να επιλέξετε το όνομα σύνταξης από "
+"λίστα στο κάτω μέρος του παραθύρου <app>gedit</app>."
 
-#: C/gedit-spellcheck.page:12(title)
-msgid "Use the spell-check feature"
-msgstr "Χρήση του ελέγχου ορθογραφίας κατά την πληκτρολόγηση"
+#: C/gedit-spellcheck.page:15(title)
+#| msgid "Save the current document"
+msgid "Spell-check your document"
+msgstr "Έλεγχος ορθογραφίας εγγράφου"
 
-#: C/gedit-spellcheck.page:13(p)
+#: C/gedit-spellcheck.page:16(p)
 msgid ""
 "Using the spell-check feature in <app>gedit</app> requires that you first "
 "enable the spell-check plugin. To enable the plugin, select "
@@ -467,7 +469,7 @@ msgstr ""
 "το πρόσθετο, επιλέξτε <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</"
 "gui><gui>Πρόσθετα</gui><gui>Ορθογραφικός έλεγχος</gui></guiseq>."
 
-#: C/gedit-spellcheck.page:17(p)
+#: C/gedit-spellcheck.page:19(p)
 msgid ""
 "Select <guiseq><gui>Tools</gui><gui>Autocheck Spelling</gui></guiseq> to "
 "make <app>gedit</app> highlight spelling errors while you type."
@@ -493,15 +495,10 @@ msgid "Ignacio Casal Quinteiro"
 msgstr "Ignacio Casal Quinteiro"
 
 #: C/gedit-shortcut-keys.page:26(title)
-#| msgid "Shortcut key"
 msgid "Shortcut keys"
 msgstr "Πλήκτρα συντόμευσης"
 
 #: C/gedit-shortcut-keys.page:28(p)
-#| msgid ""
-#| "Use shortcut keys to perform common tasks more quickly than with the "
-#| "mouse and menus. The following tables list all of <application>gedit</"
-#| "application>'s shortcut keys."
 msgid ""
 "Use <gui>shortcut keys</gui> to perform common tasks more quickly than with "
 "the mouse and menus. The following tables list all of <app>gedit's</app> "
@@ -513,381 +510,473 @@ msgstr ""
 "<app>gedit</app>."
 
 #: C/gedit-shortcut-keys.page:46(title)
-#| msgid "Shortcut key"
 msgid "Tab-related Shortcut keys"
 msgstr "Συντομεύσεις πλήκτρων σχετικές με τις καρτέλες"
 
-#: C/gedit-shortcut-keys.page:53(p) C/gedit-shortcut-keys.page:88(p)
-#: C/gedit-shortcut-keys.page:126(p) C/gedit-shortcut-keys.page:167(p)
-#: C/gedit-shortcut-keys.page:187(p) C/gedit-shortcut-keys.page:219(p)
-#: C/gedit-shortcut-keys.page:245(p)
+#: C/gedit-shortcut-keys.page:53(p) C/gedit-shortcut-keys.page:85(p)
+#: C/gedit-shortcut-keys.page:123(p) C/gedit-shortcut-keys.page:164(p)
+#: C/gedit-shortcut-keys.page:184(p) C/gedit-shortcut-keys.page:216(p)
+#: C/gedit-shortcut-keys.page:242(p)
 msgid "To Do This"
 msgstr "Για να κάνετε αυτό"
 
-#: C/gedit-shortcut-keys.page:53(p) C/gedit-shortcut-keys.page:88(p)
-#: C/gedit-shortcut-keys.page:126(p) C/gedit-shortcut-keys.page:167(p)
-#: C/gedit-shortcut-keys.page:187(p) C/gedit-shortcut-keys.page:219(p)
-#: C/gedit-shortcut-keys.page:245(p)
+#: C/gedit-shortcut-keys.page:53(p) C/gedit-shortcut-keys.page:85(p)
+#: C/gedit-shortcut-keys.page:123(p) C/gedit-shortcut-keys.page:164(p)
+#: C/gedit-shortcut-keys.page:184(p) C/gedit-shortcut-keys.page:216(p)
+#: C/gedit-shortcut-keys.page:242(p)
 msgid "Press This"
 msgstr "Πατήστε αυτό"
 
-#: C/gedit-shortcut-keys.page:58(p) C/gedit-shortcut-keys.page:61(p)
-#| msgid "Switches to the next tab to the left."
+#: C/gedit-shortcut-keys.page:58(p)
 msgid "Switch to the next tab to the left"
 msgstr "Μετάβαση στην επόμενη προς τα αριστερά καρτέλα"
 
-#: C/gedit-shortcut-keys.page:58(p) C/gedit-shortcut-keys.page:61(p)
+#: C/gedit-shortcut-keys.page:58(p)
 msgid "Ctrl + Alt + PageUp"
 msgstr "Ctrl + Alt + PageUp"
 
-#: C/gedit-shortcut-keys.page:64(p)
-#| msgid "Switches to the next tab to the right."
+#: C/gedit-shortcut-keys.page:61(p)
 msgid "Switch to the next tab to the right"
 msgstr "Μετάβαση στην επόμενη προς τα δεξιά καρτέλα"
 
-#: C/gedit-shortcut-keys.page:64(p)
+#: C/gedit-shortcut-keys.page:61(p)
 msgid "Ctrl + Alt + PageDown"
 msgstr "Ctrl + Alt + PageDown"
 
-#: C/gedit-shortcut-keys.page:67(p)
-#| msgid "Close tab."
+#: C/gedit-shortcut-keys.page:64(p)
 msgid "Close tab"
 msgstr "Κλείσιμο καρτέλας"
 
-#: C/gedit-shortcut-keys.page:67(p) C/gedit-shortcut-keys.page:111(p)
+#: C/gedit-shortcut-keys.page:64(p) C/gedit-shortcut-keys.page:108(p)
 msgid "Ctrl + W"
 msgstr "Ctrl + W"
 
-#: C/gedit-shortcut-keys.page:70(p)
-#| msgid "Save all tabs."
+#: C/gedit-shortcut-keys.page:67(p)
 msgid "Save all tabs"
 msgstr "Αποθήκευση όλων των καρτελών"
 
-#: C/gedit-shortcut-keys.page:70(p)
+#: C/gedit-shortcut-keys.page:67(p)
 msgid "Ctrl + Shift + L"
 msgstr "Ctrl + Shift + L"
 
-#: C/gedit-shortcut-keys.page:73(p)
-#| msgid "Close all tabs."
+#: C/gedit-shortcut-keys.page:70(p)
 msgid "Close all tabs"
 msgstr "Κλείσιμο όλων των καρτελών"
 
-#: C/gedit-shortcut-keys.page:73(p)
+#: C/gedit-shortcut-keys.page:70(p)
 msgid "Ctrl + Shift + W"
 msgstr "Ctrl + Shift + W"
 
-#: C/gedit-shortcut-keys.page:76(p)
-#| msgid "Jump to nth tab."
+#: C/gedit-shortcut-keys.page:73(p)
 msgid "Jump to <var>n</var>th tab"
 msgstr "Μετάβαση στην <var>n</var>η καρτέλα"
 
-#: C/gedit-shortcut-keys.page:76(p)
+#: C/gedit-shortcut-keys.page:73(p)
 msgid "Alt + <var>n</var>"
 msgstr "Alt + <var>n</var>"
 
-#: C/gedit-shortcut-keys.page:83(title)
-#| msgid "Shortcuts for working with files:"
+#: C/gedit-shortcut-keys.page:80(title)
 msgid "Shortcut keys for working with files"
 msgstr "Συντομεύσεις πλήκτρων για εργασία με αρχεία"
 
-#: C/gedit-shortcut-keys.page:93(p)
-#| msgid "Create a new document."
+#: C/gedit-shortcut-keys.page:90(p)
 msgid "Create a new document"
 msgstr "Δημιουργία νέου εγγράφου"
 
-#: C/gedit-shortcut-keys.page:93(p)
+#: C/gedit-shortcut-keys.page:90(p)
 msgid "Ctrl + N"
 msgstr "Ctrl + N"
 
-#: C/gedit-shortcut-keys.page:96(p)
-#| msgid "Open a document."
+#: C/gedit-shortcut-keys.page:93(p)
 msgid "Open a document"
 msgstr "Άνοιγμα ενός εγγράφου"
 
-#: C/gedit-shortcut-keys.page:96(p)
+#: C/gedit-shortcut-keys.page:93(p)
 msgid "Ctrl + O"
 msgstr "Ctrl + O"
 
-#: C/gedit-shortcut-keys.page:99(p)
-#| msgid "Save the current document to disk."
+#: C/gedit-shortcut-keys.page:96(p)
 msgid "Save the current document"
 msgstr "Αποθήκευση του τρέχοντος εγγράφου"
 
-#: C/gedit-shortcut-keys.page:99(p)
+#: C/gedit-shortcut-keys.page:96(p)
 msgid "Ctrl + S"
 msgstr "Ctrl + S"
 
-#: C/gedit-shortcut-keys.page:102(p)
-#| msgid "Save the current document with a new filename."
+#: C/gedit-shortcut-keys.page:99(p)
 msgid "Save the current document with a new filename"
 msgstr "Αποθήκευση του τρέχοντος εγγράφου με νέο όνομα αρχείου"
 
-#: C/gedit-shortcut-keys.page:102(p)
+#: C/gedit-shortcut-keys.page:99(p)
 msgid "Ctrl + Shift + S"
 msgstr "Ctrl + Shift + S"
 
-#: C/gedit-shortcut-keys.page:105(p)
-#| msgid "Print the current document."
+#: C/gedit-shortcut-keys.page:102(p)
 msgid "Print the current document"
 msgstr "Εκτύπωση του τρέχοντος εγγράφου"
 
-#: C/gedit-shortcut-keys.page:105(p)
+#: C/gedit-shortcut-keys.page:102(p)
 msgid "Ctrl + P"
 msgstr "Ctrl + P"
 
-#: C/gedit-shortcut-keys.page:108(p)
-#| msgid "Print preview."
+#: C/gedit-shortcut-keys.page:105(p)
 msgid "Print preview"
 msgstr "Προεπισκόπηση εκτύπωσης"
 
-#: C/gedit-shortcut-keys.page:108(p)
+#: C/gedit-shortcut-keys.page:105(p)
 msgid "Ctrl + Shift + P"
 msgstr "Ctrl + Shift + P"
 
-#: C/gedit-shortcut-keys.page:111(p)
-#| msgid "Close the current document."
+#: C/gedit-shortcut-keys.page:108(p)
 msgid "Close the current document"
 msgstr "Κλείσιμο του τρέχοντος εγγράφου"
 
-#: C/gedit-shortcut-keys.page:114(p)
-#| msgid "Quit Gedit."
+#: C/gedit-shortcut-keys.page:111(p)
 msgid "Quit gedit"
 msgstr "Έξοδος από το gedit"
 
-#: C/gedit-shortcut-keys.page:114(p)
+#: C/gedit-shortcut-keys.page:111(p)
 msgid "Ctrl + Q"
 msgstr "Ctrl + Q"
 
-#: C/gedit-shortcut-keys.page:121(title)
-#| msgid "Shortcuts for editing documents:"
+#: C/gedit-shortcut-keys.page:118(title)
 msgid "Shortcut keys for editing files"
 msgstr "Συντομεύσεις πλήκτρων για την επεξεργασία αρχείων"
 
-#: C/gedit-shortcut-keys.page:131(p)
-#| msgid "Undo the last action."
+#: C/gedit-shortcut-keys.page:128(p)
 msgid "Undo the last action"
 msgstr "Αναίρεση της τελευταίας ενέργειας"
 
-#: C/gedit-shortcut-keys.page:131(p)
+#: C/gedit-shortcut-keys.page:128(p)
 msgid "Ctrl + Z"
 msgstr "Ctrl + Z"
 
-#: C/gedit-shortcut-keys.page:134(p)
-#| msgid "Redo the last undone action ."
+#: C/gedit-shortcut-keys.page:131(p)
 msgid "Redo the last undone action"
 msgstr "Επανάληψη της ενέργειας που έχει ακυρωθεί"
 
-#: C/gedit-shortcut-keys.page:134(p)
+#: C/gedit-shortcut-keys.page:131(p)
 msgid "Ctrl + Shift + Z"
 msgstr "Ctrl + Shift + Z"
 
-#: C/gedit-shortcut-keys.page:137(p)
-#| msgid "Cut the selected text or region and place it on the clipboard."
+#: C/gedit-shortcut-keys.page:134(p)
 msgid "Cut the selected text or region and place it on the clipboard"
 msgstr ""
 "Αποκοπή του επιλεγμένου κειμένου ή περιοχής και τοποθέτηση στο πρόχειρο."
 
-#: C/gedit-shortcut-keys.page:137(p)
+#: C/gedit-shortcut-keys.page:134(p)
 msgid "Ctrl + X"
 msgstr "Ctrl + X"
 
-#: C/gedit-shortcut-keys.page:140(p)
-#| msgid "Copy the selected text or region onto the clipboard."
+#: C/gedit-shortcut-keys.page:137(p)
 msgid "Copy the selected text or region onto the clipboard"
 msgstr "Αντιγραφή του επιλεγμένου κειμένου ή περιοχής στο πρόχειρο."
 
-#: C/gedit-shortcut-keys.page:140(p)
+#: C/gedit-shortcut-keys.page:137(p)
 msgid "Ctrl + C"
 msgstr "Ctrl + C"
 
-#: C/gedit-shortcut-keys.page:143(p)
-#| msgid "Paste the contents of the clipboard."
+#: C/gedit-shortcut-keys.page:140(p)
 msgid "Paste the contents of the clipboard"
 msgstr "Επικόλληση των περιεχομένων του πρόχειρου"
 
-#: C/gedit-shortcut-keys.page:143(p)
+#: C/gedit-shortcut-keys.page:140(p)
 msgid "Ctrl + V"
 msgstr "Ctrl + V"
 
-#: C/gedit-shortcut-keys.page:146(p)
+#: C/gedit-shortcut-keys.page:143(p)
 msgid "Select all text in the file"
 msgstr "Επιλογή όλου του κειμένου στο αρχείο"
 
-#: C/gedit-shortcut-keys.page:146(p)
+#: C/gedit-shortcut-keys.page:143(p)
 msgid "Ctrl + A"
 msgstr "Ctrl + A"
 
-#: C/gedit-shortcut-keys.page:149(p)
-#| msgid "Delete current line."
+#: C/gedit-shortcut-keys.page:146(p)
 msgid "Delete the current line"
 msgstr "Διαγραφή τρέχουσας γραμμής"
 
-#: C/gedit-shortcut-keys.page:149(p)
+#: C/gedit-shortcut-keys.page:146(p)
 msgid "Ctrl + D"
 msgstr "Ctrl + D"
 
-#: C/gedit-shortcut-keys.page:152(p)
-#| msgid "Move the selected line up one line."
+#: C/gedit-shortcut-keys.page:149(p)
 msgid "Move the selected line up one line"
 msgstr "Μετακίνηση της επιλεγμένης γραμμής μια γραμμή επάνω"
 
-#: C/gedit-shortcut-keys.page:152(p)
-#| msgid "Alt + Up"
+#: C/gedit-shortcut-keys.page:149(p)
 msgid "Alt + Up Arrow"
 msgstr "Alt + πάνω βέλος"
 
-#: C/gedit-shortcut-keys.page:155(p)
-#| msgid "Move the selected line down one line."
+#: C/gedit-shortcut-keys.page:152(p)
 msgid "Move the selected line down one line"
 msgstr "Μετακίνηση της επιλεγμένης γραμμής μια γραμμή κάτω"
 
-#: C/gedit-shortcut-keys.page:155(p)
-#| msgid "Alt + Down"
+#: C/gedit-shortcut-keys.page:152(p)
 msgid "Alt + Down Arrow"
 msgstr "Alt + κάτω βέλος"
 
-#: C/gedit-shortcut-keys.page:162(title)
-#| msgid "Shortcuts for showing and hiding panes:"
+#: C/gedit-shortcut-keys.page:159(title)
 msgid "Shortcut keys for showing and hiding panes"
 msgstr "Συντομεύσεις πλήκτρων για εμφάνιση και απόκρυψη εργαλειοθηκών:"
 
-#: C/gedit-shortcut-keys.page:172(p)
-#| msgid "Show/hide the side pane."
+#: C/gedit-shortcut-keys.page:169(p)
 msgid "Show / hide the side pane"
 msgstr "Εμφάνιση / απόκρυψη της πλευρικής μπάρας."
 
-#: C/gedit-shortcut-keys.page:172(p)
+#: C/gedit-shortcut-keys.page:169(p)
 msgid "F9"
 msgstr "F9"
 
-#: C/gedit-shortcut-keys.page:175(p)
-#| msgid "Show/hide the bottom pane."
+#: C/gedit-shortcut-keys.page:172(p)
 msgid "Show / hide the bottom pane."
 msgstr "Εμφάνιση / απόκρυψη της κάτω μπάρας."
 
-#: C/gedit-shortcut-keys.page:175(p)
+#: C/gedit-shortcut-keys.page:172(p)
 msgid "Ctrl + F9"
 msgstr "Ctrl + F9"
 
-#: C/gedit-shortcut-keys.page:182(title)
-#| msgid "Shortcuts for searching:"
+#: C/gedit-shortcut-keys.page:179(title)
 msgid "Shortcut keys for searching"
 msgstr "Συντομεύσεις πλήκτρων για αναζήτηση"
 
-#: C/gedit-shortcut-keys.page:192(p)
-#| msgid "Find a string."
+#: C/gedit-shortcut-keys.page:189(p)
 msgid "Find a string"
 msgstr "Εύρεση συμβολοσειράς"
 
-#: C/gedit-shortcut-keys.page:192(p)
+#: C/gedit-shortcut-keys.page:189(p)
 msgid "Ctrl + F"
 msgstr "Ctrl + F"
 
-#: C/gedit-shortcut-keys.page:195(p)
-#| msgid "Find the next instance of the string."
+#: C/gedit-shortcut-keys.page:192(p)
 msgid "Find the next instance of the string"
-msgstr "Εύρεση του επόμενου στηγμιότυπου της συμβολοσειράς"
+msgstr "Εύρεση του επόμενου στιγμιότυπου της συμβολοσειράς"
 
-#: C/gedit-shortcut-keys.page:195(p)
+#: C/gedit-shortcut-keys.page:192(p)
 msgid "Ctrl + G"
 msgstr "Ctrl + G"
 
-#: C/gedit-shortcut-keys.page:198(p)
-#| msgid "Find the previous instance of the string."
+#: C/gedit-shortcut-keys.page:195(p)
 msgid "Find the previous instance of the string"
-msgstr "Εύρεση του προηγούμενου στηγμιότυπου της συμβολοσειράς"
+msgstr "Εύρεση του προηγούμενου στιγμιότυπου της συμβολοσειράς"
 
-#: C/gedit-shortcut-keys.page:198(p)
+#: C/gedit-shortcut-keys.page:195(p)
 msgid "Ctrl + Shift + G"
 msgstr "Ctrl + Shift + G"
 
-#: C/gedit-shortcut-keys.page:201(p)
-#| msgid "Search and replace."
+#: C/gedit-shortcut-keys.page:198(p)
 msgid "Search and Replace"
 msgstr "Αναζήτηση και αντικατάσταση"
 
-#: C/gedit-shortcut-keys.page:201(p)
+#: C/gedit-shortcut-keys.page:198(p)
 msgid "Ctrl + H"
 msgstr "Ctrl + H"
 
-#: C/gedit-shortcut-keys.page:204(p)
-#| msgid "Clear highlight."
+#: C/gedit-shortcut-keys.page:201(p)
 msgid "Clear highlight"
 msgstr "Καθαρισμός επισήμανσης"
 
-#: C/gedit-shortcut-keys.page:204(p)
+#: C/gedit-shortcut-keys.page:201(p)
 msgid "Ctrl + Shift + K"
 msgstr "Ctrl + Shift + K"
 
-#: C/gedit-shortcut-keys.page:207(p)
-#| msgid "Goto line."
+#: C/gedit-shortcut-keys.page:204(p)
 msgid "Goto line"
 msgstr "Μετάβαση στη γραμμή"
 
-#: C/gedit-shortcut-keys.page:207(p)
+#: C/gedit-shortcut-keys.page:204(p)
 msgid "Ctrl + I"
 msgstr "Ctrl + I"
 
-#: C/gedit-shortcut-keys.page:214(title)
-#| msgid "Shortcuts for tools:"
+#: C/gedit-shortcut-keys.page:211(title)
 msgid "Shortcut keys for tools"
 msgstr "Συντομεύσεις πλήκτρων για εργαλεία"
 
-#: C/gedit-shortcut-keys.page:224(p)
-#| msgid "Check spelling (with plugin)."
+#: C/gedit-shortcut-keys.page:221(p)
 msgid "Check spelling"
 msgstr "Έλεγχος ορθογραφίας"
 
-#: C/gedit-shortcut-keys.page:224(p)
+#: C/gedit-shortcut-keys.page:221(p)
 msgid "Shift + F7"
 msgstr "Shift + F7"
 
-#: C/gedit-shortcut-keys.page:227(p)
-#| msgid "Remove trailing spaces (with plugin)."
+#: C/gedit-shortcut-keys.page:224(p)
 msgid "Remove trailing spaces (with plugin)"
 msgstr "Αφαίρεση πλεοναζόντων κενών (με πρόσθετο)."
 
-#: C/gedit-shortcut-keys.page:227(p)
+#: C/gedit-shortcut-keys.page:224(p)
 msgid "Alt + F12"
 msgstr "Alt + F12"
 
-#: C/gedit-shortcut-keys.page:230(p)
-#| msgid "Run \"make\" in current directory (with plugin)."
+#: C/gedit-shortcut-keys.page:227(p)
 msgid "Run \"make\" in the current directory (with plugin)"
 msgstr "Εκτέλεση της εντολής \"make\" στον τρέχοντα κατάλογο (με πρόσθετο)."
 
-#: C/gedit-shortcut-keys.page:230(p)
+#: C/gedit-shortcut-keys.page:227(p)
 msgid "F8"
 msgstr "F8"
 
-#: C/gedit-shortcut-keys.page:233(p)
-#| msgid "Directory listing (with plugin)."
+#: C/gedit-shortcut-keys.page:230(p)
 msgid "Directory listing (with plugin)"
 msgstr "Λίστα καταλόγου (με πρόσθετο)."
 
-#: C/gedit-shortcut-keys.page:233(p)
+#: C/gedit-shortcut-keys.page:230(p)
 msgid "Ctrl + Shift + D"
 msgstr "Ctrl + Shift + D"
 
-#: C/gedit-shortcut-keys.page:240(title)
-#| msgid "Shortcuts for help:"
+#: C/gedit-shortcut-keys.page:237(title)
 msgid "Shortcut keys for user help"
 msgstr "Συντομεύσεις πλήκτρων για την βοήθεια του χρήστη"
 
-#: C/gedit-shortcut-keys.page:250(p)
+#: C/gedit-shortcut-keys.page:247(p)
 msgid "Open the gedit user guide"
 msgstr "Άνοιγμα του οδηγού χρήσης του gedit"
 
-#: C/gedit-shortcut-keys.page:250(p)
+#: C/gedit-shortcut-keys.page:247(p)
 msgid "F1"
 msgstr "F1"
 
-#: C/gedit-replace.page:21(title)
-#| msgid "Replacing Text"
+#: C/gedit-search.page:20(title)
+msgid "Search for text"
+msgstr "Αναζήτηση κειμένου"
+
+#: C/gedit-search.page:21(p)
+msgid ""
+"The Find tool can help you find specific sequences of text within in your "
+"file."
+msgstr ""
+"Το εργαλείο Αναζήτησης σάς βοηθά να βρείτε συγκεκριμένες ακολουθίες κειμένου "
+"μέσα στο αρχείο. "
+
+#: C/gedit-search.page:23(title)
+#| msgid "Finding Text"
+msgid "Finding text"
+msgstr "Εύρεση κειμένου"
+
+#: C/gedit-search.page:24(p)
+#, fuzzy
+#| msgid ""
+#| "Open the Replace tool by clicking <guiseq><gui>Search</gui><gui>Replace</"
+#| "gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+msgid ""
+"Open the <gui style=\"menu\">search window</gui> by clicking "
+"<guiseq><gui>Search</gui><gui>Find</gui></guiseq> or pressing "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq>. This will move your cursor to "
+"the start of the <gui>search window</gui>."
+msgstr ""
+"Ανοίξτε το εργαλείο Αντικατάσταση κάνοντας κλικ στην <guiseq><gui>Αναζήτηση</"
+"gui><gui>Αντικατάσταση</gui></guiseq> ή πατώντας <keyseq><key>Ctrl</"
+"key><key>H</key></keyseq>."
+
+#: C/gedit-search.page:27(p)
+#, fuzzy
+#| msgid ""
+#| "Enter the text that you wish to replace into the 'Search for:' field."
+msgid "Type the text you wish to search for in the <gui>search window</gui>."
+msgstr ""
+"Τοποθετήστε το κείμενο που θέλετε να αντικαταστήσετε στο πεδίο 'Αναζήτηση "
+"για:'."
+
+#: C/gedit-search.page:28(p)
+msgid ""
+"As you type, <app>gedit</app> will begin highlighting the portions of text "
+"that match what you have entered."
+msgstr ""
+"Καθώς πληκτρολογείτε, το <app>gedit</app> θα ξεκινήσει να υπογραμμίζει τα "
+"κομμάτια εκείνα του κειμένου που ταιριάζουν με αυτό που έχετε εισαγάγει."
+
+#: C/gedit-search.page:30(p)
+msgid "To scroll through the search results, do any of the following:"
+msgstr ""
+"Για να κυλήσετε τα αποτελέσματα της αναζήτησης, κάντε κάποιο από τα παρακάτω:"
+
+#: C/gedit-search.page:31(p)
+msgid ""
+"Click on the <gui>up</gui> or <gui>down</gui> facing arrows next to the "
+"<gui>search window</gui>"
+msgstr ""
+"Πατήστε το <gui>άνω</gui> ή <gui>κάτω</gui> βελάκι δίπλα στο <gui>παράθυρο "
+"αναζήτησης</gui> "
+
+#: C/gedit-search.page:33(p)
+msgid ""
+"Press the <key>up arrow</key> or <key>down arrow</key> keys on your keyboard"
+msgstr ""
+"Πατήστε το <key>άνω βέλος</key> ή το <key>κάτω βέλος</key> στο πληκτρολόγιό "
+"σας"
+
+#: C/gedit-search.page:34(p)
+#, fuzzy
+#| msgid ""
+#| "You can also insert a tag by pressing <key>Return</key> or "
+#| "<keyseq><key>Shift</key><key>Return</key></keyseq>."
+msgid ""
+"Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</"
+"key><key> Shift</key><key>G</key></keyseq>."
+msgstr ""
+"Μπορείτε επίσης να εισάγετε μια ετικέτα πατώντας <key>Return</key> ή "
+"<keyseq><key>Shift</key><key>Return</key></keyseq>."
+
+#: C/gedit-search.page:38(p)
+msgid "To close the <gui>search window</gui>, press <key>Esc</key>."
+msgstr ""
+"Για να κλείσετε το <gui>παράθυρο αναζήτησης</gui>, πατήστε το πλήκτρο "
+"<key>Esc</key>."
+
+#: C/gedit-search.page:41(p)
+#, fuzzy
+#| msgid ""
+#| "You will need to have hidden files displayed to view the <file>.local</"
+#| "file> directory. To display hidden files, click <guiseq><gui>View</"
+#| "gui><gui>Show Hidden Files</gui></guiseq> or press <keyseq><key>Ctrl</"
+#| "key><key>H</key></keyseq>."
+msgid ""
+"The text that you've searched for will remain highlighted by gedit, even "
+"after you have completed your search. To remove the highlight, click "
+"<guiseq><gui>Search</gui><gui>Clear Highlight</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq>."
+msgstr ""
+"Θα χρειαστεί να έχετε τα κρυφά αρχεία εμφανίσιμα για να δείτε τον κατάλογο "
+"<file>.local</file>. Για να δείτε τα κρυφά αρχεία, κάντε κλικ στην "
+"<guiseq><gui>Προβολή</gui><gui>Εμφάνιση κρυφών αρχείων</gui></guiseq> ή "
+"πατήστε <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+
+#: C/gedit-save-file.page:14(title)
+#| msgid "Saving a File"
+msgid "Save a file"
+msgstr "Αποθήκευση αρχείου"
+
+#: C/gedit-save-file.page:16(p)
+#, fuzzy
+#| msgid ""
+#| "Once you have enabled the plugin, add the terminal to the bottom panel by "
+#| "selecting <guiseq><gui>View</gui><gui>Bottom Panel</gui></guiseq>, or "
+#| "just press <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
+msgid ""
+"To save a file in <app>gedit</app>, click on the disk-drive icon with the "
+"word <gui>Save</gui> next to it. You may also select <guiseq><gui>File</"
+"gui><gui>Save</gui></guiseq>, or just press <keyseq><key>Ctrl</key><key>S</"
+"key></keyseq>."
+msgstr ""
+"Αφού ενεργοποιήσετε το πρόσθετο, προσθέστε το τερματικό στην κάτω μπάρα "
+"επιλέγοντας <guiseq><gui>Προβολή</gui><gui>Κάτω μπάρα</gui></guiseq>, ή απλά "
+"πατήστε <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
+
+#: C/gedit-save-file.page:17(p)
+msgid ""
+"If you are saving a new file, the <gui>Save File</gui> dialog will appear, "
+"and you can select a name for the file, as well as the directory where you "
+"would like the file to be saved."
+msgstr ""
+"Αν αποθηκεύετε ένα νέο αρχείο, θα εμφανιστεί ο διάλογος <gui>Αποθήκευσης "
+"Αρχείου</gui>, και μπορείτε να επιλέξετε ένα όνομα για το αρχείο, καθώς "
+"επίσης και το φάκελο στον οποίο θα επιθυμούσατε να σωθεί."
+
+#: C/gedit-replace.page:20(title)
 msgid "Replace text"
 msgstr "Αντικατάσταση κειμένου"
 
-#: C/gedit-replace.page:23(p)
+#: C/gedit-replace.page:22(p)
 msgid ""
 "Editing text can be time consuming. To save time, <app>gedit</app> includes "
 "a <app>Replace</app> function that helps you to find and replace portions of "
@@ -897,11 +986,11 @@ msgstr ""
 "<app>gedit</app> περιλαμβάνει την λειτουργία <app>Αντικατάσταση</app> που "
 "σας βοηθάει να βρείτε και να αντικαταστήσετε τμήματα του κειμένου."
 
-#: C/gedit-replace.page:26(title)
+#: C/gedit-replace.page:25(title)
 msgid "Replace text in <app>gedit</app>"
 msgstr "Αντικατάσταση κειμένου στο <app>gedit</app>"
 
-#: C/gedit-replace.page:27(p)
+#: C/gedit-replace.page:26(p)
 msgid ""
 "Open the Replace tool by clicking <guiseq><gui>Search</gui><gui>Replace</"
 "gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
@@ -910,18 +999,18 @@ msgstr ""
 "gui><gui>Αντικατάσταση</gui></guiseq> ή πατώντας <keyseq><key>Ctrl</"
 "key><key>H</key></keyseq>."
 
-#: C/gedit-replace.page:28(p)
+#: C/gedit-replace.page:27(p)
 msgid "Enter the text that you wish to replace into the 'Search for:' field."
 msgstr ""
 "Τοποθετήστε το κείμενο που θέλετε να αντικαταστήσετε στο πεδίο 'Αναζήτηση "
 "για:'."
 
-#: C/gedit-replace.page:29(p)
+#: C/gedit-replace.page:28(p)
 msgid "Enter the new, replacement text into the 'Replace with:' field."
 msgstr ""
 "Τοποθετήστε το νέο, κείμενο αντικατάστασης στο πεδίο 'Αντικατάσταση με:'."
 
-#: C/gedit-replace.page:31(p)
+#: C/gedit-replace.page:30(p)
 msgid ""
 "Once you have entered the original and replacement text, select your desired "
 "replacement options:"
@@ -929,10 +1018,7 @@ msgstr ""
 "Αφού τοποθετήσετε το αρχικό και το κείμενο αντικατάστασης, επιλέξτε τις "
 "επιθυμητές επιλογές αντικατάστασης:"
 
-#: C/gedit-replace.page:33(p)
-#| msgid ""
-#| "To replace all occurrences of the string throughout the document, click "
-#| "<guibutton>Replace All</guibutton>."
+#: C/gedit-replace.page:32(p)
 msgid ""
 "To replace <em>only</em> the next matching portion of text, click "
 "<gui>Replace</gui>."
@@ -940,10 +1026,7 @@ msgstr ""
 "Για να αντικαταστήσετε <em>μόνο</em> το επόμενο τμήμα κειμένου που "
 "ταιριάζει, κάντε κλικ στην <gui>Αντικατάσταση</gui>."
 
-#: C/gedit-replace.page:34(p)
-#| msgid ""
-#| "To replace all occurrences of the string throughout the document, click "
-#| "<guibutton>Replace All</guibutton>."
+#: C/gedit-replace.page:33(p)
 msgid ""
 "To replace <em>all occurrences</em> of the searched-for text, click "
 "<gui>Replace All</gui>."
@@ -951,7 +1034,7 @@ msgstr ""
 "Για να αντικαταστήσετε <em>όλες τις περιπτώσεις</em> του έυρεση-για "
 "κειμένου, κάντε κλικ στην <gui>Αντικατάσταση όλων</gui>."
 
-#: C/gedit-replace.page:40(p)
+#: C/gedit-replace.page:39(p)
 msgid ""
 "Use the <gui>Replace All</gui> function with care. <gui>Replace All</gui> "
 "works on the entirety of your text file, and does not allow you to highlight "
@@ -962,38 +1045,15 @@ msgstr ""
 "επιτρέπει να επισημάνετε τμήματα του κειμένου που η λειτουργία "
 "αντικατάστασης θα ενεργήσει."
 
-#: C/gedit-replace.page:44(title)
+#: C/gedit-replace.page:43(title)
 msgid "More options"
 msgstr "Περισσότερες επιλογές"
 
-#: C/gedit-replace.page:45(p)
-msgid ""
-"The following section provides options that can help you replace text more "
-"efficiently with <app>gedit</app>."
-msgstr ""
-"Η ακόλουθη ενότητα παρέχει επιλογές που μπορούν να σας βοηθήσουν να "
-"αντικαταστήσετε κείμενο πιο αποδοτικά με το <app>gedit</app>."
-
-#: C/gedit-replace.page:47(title)
-#| msgid "Find and Replace Options"
-msgid "Find/Replace options"
-msgstr "Επιλογές εύρεσης και αντικατάστασης"
-
-#: C/gedit-replace.page:49(p)
-msgid ""
-"These options are located in the Find and Replace menus, accessible at "
-"<guiseq><gui>Search</gui><gui>Find</gui></guiseq> or <guiseq><gui>Search</"
-"gui><gui>Replace</gui></guiseq>."
-msgstr ""
-"Αυτές οι επιλογές βρίσκονται στα μενού Εύρεση και Αντικατάσταση, προσβάσιμα "
-"από την <guiseq><gui>Αναζήτηση</gui><gui>Εύρεση</gui></guiseq> ή την "
-"<guiseq><gui>Αναζήτηση</gui><gui>Αντικατάσταση</gui></guiseq>."
-
-#: C/gedit-replace.page:52(title)
+#: C/gedit-replace.page:46(title)
 msgid "Match case"
 msgstr "Διάκριση πεζών-κεφαλαίων"
 
-#: C/gedit-replace.page:53(p)
+#: C/gedit-replace.page:47(p)
 msgid ""
 "The <em>Match case</em> option allows you to specify whether you want your "
 "search to be case-sensitive. If this option is selected, searches will be "
@@ -1004,11 +1064,11 @@ msgstr ""
 "αναζητήσεις θα έχουν διάκριση πεζών-κεφαλαίων. Αν όχι, οι αναζητήσεις δεν θα "
 "έχουν διάκριση πεζών-κεφαλαίων."
 
-#: C/gedit-replace.page:56(title)
+#: C/gedit-replace.page:50(title)
 msgid "Match entire word only"
-msgstr "Ταίριασμα μόνο όλοκληρης λέξης"
+msgstr "Ταίριασμα μόνο ολόκληρης λέξης"
 
-#: C/gedit-replace.page:57(p)
+#: C/gedit-replace.page:51(p)
 msgid ""
 "Use this option to search for a specific word without including fragments of "
 "other words. For example, if you searched for the word 'and' with this "
@@ -1021,11 +1081,11 @@ msgstr ""
 "θα ταιριάξει, αλλά οι λέξεις '<em>και</em>νούριο' και 'πρός<em>και</em>ρος' "
 "όχι."
 
-#: C/gedit-replace.page:60(title)
+#: C/gedit-replace.page:54(title)
 msgid "Search backwards"
-msgstr "Αναζήτηση πρός τα πίσω"
+msgstr "Αναζήτηση προς τα πίσω"
 
-#: C/gedit-replace.page:61(p)
+#: C/gedit-replace.page:55(p)
 msgid ""
 "This command behaves identically to the Find Previous command. If you wish "
 "to step through search results from end to beginning, select this option."
@@ -1034,11 +1094,11 @@ msgstr ""
 "θέλετε να μεταβείτε στα αποτελέσματα αναζήτησης από το τέλος στην αρχή, "
 "επιλέξτε αυτή την επιλογή."
 
-#: C/gedit-replace.page:64(title)
+#: C/gedit-replace.page:58(title)
 msgid "Wrap around"
 msgstr "Αναδίπλωση γύρω"
 
-#: C/gedit-replace.page:65(p)
+#: C/gedit-replace.page:59(p)
 #, fuzzy
 msgid ""
 "With the <app>wrap around</app> option enabled, <app>gedit</app> will re-"
@@ -1054,8 +1114,6 @@ msgstr ""
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/gedit-quickstart.page:19(None)
-#| msgid ""
-#| "@@image: 'figures/gedit_window.png'; md5=a1daf2ed54a551bb590a172bc730594c"
 msgid ""
 "@@image: 'figures/gedit3-screenshot.png'; "
 "md5=174aac884967f8e4226ab33d9498c60b"
@@ -1064,7 +1122,6 @@ msgstr ""
 "md5=174aac884967f8e4226ab33d9498c60b"
 
 #: C/gedit-quickstart.page:16(title)
-#| msgid "Starting gedit"
 msgid "Get started with gedit"
 msgstr "Ξεκινώντας με το gedit"
 
@@ -1100,7 +1157,17 @@ msgstr ""
 "λάβετε βοήθεια με την εκτέλεση πρόσθετων καθηκόντων, εξερευνήστε <link xref="
 "\"index\">τα άλλα τμήματα</link> τις βοήθειας του <app>gedit</app>."
 
-#: C/gedit-printing.page:16(p)
+#: C/gedit-printing.page:19(p)
+msgid ""
+"Printing with <app>gedit</app> requires that you have connected and "
+"configured your printer. If you have not done this, please consult the "
+"printing help documentation for your desktop environment."
+msgstr ""
+"Η εκτύπωση με το <app>gedit</app> απαιτεί να έχετε συνδεδεμένο και "
+"ρυθμισμένο τον εκτυπωτή σας. Αν το έχετε κάνει, παρακαλώ συμβουλευτείτε την "
+"τεκμηρίωση βοήθειας εκτύπωσης για το γραφικό σας περιβάλλον."
+
+#: C/gedit-printing.page:22(p)
 msgid ""
 "<app>gedit</app> allows you to both print output to a file, as well as "
 "printing output to paper. Prior to printing your document, you can also "
@@ -1112,58 +1179,63 @@ msgstr ""
 "προεπισκόπηση στο πως θα φαίνεται το εκτυπωμένο έγγραφο με την χρήση της "
 "λειτουργίας <app>Προεπισκόπηση εκτύπωσης</app>."
 
-#: C/gedit-printing.page:19(title)
-#| msgid "Printing"
+#: C/gedit-printing.page:25(title)
 msgid "Printing to paper"
 msgstr "Εκτύπωση σε χαρτί"
 
-#: C/gedit-printing.page:22(p)
-msgid ""
-"Printing with <app>gedit</app> requires that you have connected and "
-"configured your printer. If you have not done this, please consult the "
-"printing help documentation for your desktop environment."
-msgstr ""
-"Η εκτύπωση με το <app>gedit</app> απαιτεί να έχετε συνδεδεμένο και "
-"ρυθμισμένο τον εκτυπωτή σας. Αν το έχετε κάνει, παρακαλώ συμβουλευτείτε την "
-"τεκμηρίωση βοήθειας εκτύπωσης για το γραφικό σας περιβάλλον."
+#: C/gedit-printing.page:29(title)
+#| msgid "Printing to paper"
+msgid "Printing output to a file"
+msgstr "Εκτύπωση σε αρχείο"
 
-#: C/gedit-printing.page:26(p)
+#: C/gedit-printing.page:31(p)
 #, fuzzy
+#| msgid ""
+#| "To enable the <app>Sort</app> plugin, select <guiseq><gui>Edit</"
+#| "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Sort</gui></guiseq>."
 msgid ""
-"To set the page options, choose File Page Setup to display the Page Setup "
-"dialog. The Page Setup dialog enables you to specify the following print "
-"options: General Tabbed Section Fonts General Tabbed Section Print syntax "
-"highlighting Select this option to print syntax highlighting. For more "
-"information about syntax highlighting, see Section 7.1 ― Syntax "
-"Highlighting. Print page headers Select this option to include a header on "
-"each page that you print. You cannot configure the header. Line Numbers "
-"Select the Print line numbers option to include line numbers when you print "
-"a file. Use the Number every ... lines spin box to specify how often to "
-"print the line numbers, for example every 5 lines, every 10 lines, and so "
-"on. Text Wrapping Select the Enable text wrapping option to wrap text onto "
-"the next line, at a character level, when you print a file. The application "
-"counts wrapped lines as one line for line numbering purposes. Select the Do "
-"not split words over two lines option to wrap text onto the next line, at a "
-"word level, when you print a file. Fonts Body Click on this button to select "
-"the font to use to print the body text of a file. Line numbers Click on this "
-"button to select the font to use to print line numbers. Headers and footers "
-"Click on this button to select the font to use to print the headers and "
-"footers in a file. To reset the fonts to the default fonts for printing a "
-"file from gedit, click Restore Default Fonts."
+"You can also use <app>gedit</app> to print to a file. To do so, select "
+"<guiseq><gui>File</gui><gui>Print</gui><gui>Print to File</gui></guiseq>."
 msgstr ""
-"Για να ορίσετε τις επιλογές σελίδας, διαλέξτε την Ρύθμιση σελίδας αρχείου "
-"για να εμφανιστεί ο διάλογος Ρύθμισης της σελίδας. Ο διάλογος της Ρύθμισης "
-"σελίδας σας επιτρέπει να προσδιορίσετε τις ακόλουθες επιλογές εκτύπωσης:"
+"Για να ενεργοποιήσετε το πρόσθετο <app>Ταξινόμηση</app>, επιλέξτε "
+"<guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui><gui>Πρόσθετα</"
+"gui><gui>Ταξινόμηση</gui></guiseq>."
 
-#: C/gedit-plugins-terminal.page:14(title)
-msgid "Add a Terminal console to the bottom panel"
+#: C/gedit-printing.page:32(p)
+msgid "Printing is enabled for the following file formats:"
+msgstr "Η εκτύπωση επιτρέπεται για τους παρακάτω τύπους εγγράφων:"
+
+#: C/gedit-printing.page:34(p)
+msgid "Portable Document Format (.pdf)"
+msgstr "Portable Document Format (.pdf)"
+
+#: C/gedit-printing.page:35(p)
+#| msgid "Scripts"
+msgid "PostScript (.ps)"
+msgstr "PostScript (.ps)"
+
+#: C/gedit-printing.page:36(p)
+msgid "Scalable Vector Graphic (.svg)"
+msgstr "Scalable Vector Graphic (.svg)"
+
+#: C/gedit-plugins-terminal.page:15(title)
+#, fuzzy
+#| msgid "Add a Terminal console to the bottom panel"
+msgid "Add a Terminal console to the bottom pane"
 msgstr "Προσθέστε μια κονσόλα τερματικού στην κάτω μπάρα"
 
-#: C/gedit-plugins-terminal.page:16(p)
+#: C/gedit-plugins-terminal.page:17(p)
+#, fuzzy
+#| msgid ""
+#| "<app>gedit</app> makes it possible to include an embedded version of "
+#| "<app>Gnome Terminal</app>, the Gnome command-line application, in the "
+#| "bottom panel of the <app>gedit</app> window. This will let you run "
+#| "scripts, install needed software, or test your program without leaving "
+#| "<app>gedit</app>."
 msgid ""
 "<app>gedit</app> makes it possible to include an embedded version of "
-"<app>Gnome Terminal</app>, the Gnome command-line application, in the bottom "
-"panel of the <app>gedit</app> window. This will let you run scripts, install "
+"<app>Gnome Terminal</app>, the GNOME command-line application, in the bottom "
+"pane of the <app>gedit</app> window. This will let you run scripts, install "
 "needed software, or test your program without leaving <app>gedit</app>."
 msgstr ""
 "Το <app>gedit</app> καθιστά δυνατό να συμπεριληφθεί μια ενσωματωμένη έκδοση "
@@ -1172,7 +1244,7 @@ msgstr ""
 "τρέξετε σενάρια (scripts), να εγκαταστήσετε λογισμικό που χρειάζεστε, ή να "
 "ελέγξετε το πρόγραμμα σας χωρίς να αποχωρείτε από το <app>gedit</app>."
 
-#: C/gedit-plugins-terminal.page:18(p)
+#: C/gedit-plugins-terminal.page:19(p)
 msgid ""
 "To enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</"
 "gui><gui>Plugins</gui><gui>Embedded Terminal</gui></guiseq>."
@@ -1181,10 +1253,15 @@ msgstr ""
 "gui><gui>Προτιμήσεις</gui><gui>Πρόσθετα</gui><gui>Ενσωματωμένο Τερματικό</"
 "gui></guiseq>."
 
-#: C/gedit-plugins-terminal.page:20(p)
+#: C/gedit-plugins-terminal.page:21(p)
+#, fuzzy
+#| msgid ""
+#| "Once you have enabled the plugin, add the terminal to the bottom panel by "
+#| "selecting <guiseq><gui>View</gui><gui>Bottom Panel</gui></guiseq>, or "
+#| "just press <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
 msgid ""
-"Once you have enabled the plugin, add the terminal to the bottom panel by "
-"selecting <guiseq><gui>View</gui><gui>Bottom Panel</gui></guiseq>, or just "
+"Once you have enabled the plugin, add the terminal to the bottom pane by "
+"selecting <guiseq><gui>View</gui><gui>Bottom Pane</gui></guiseq>, or just "
 "press <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
 msgstr ""
 "Αφού ενεργοποιήσετε το πρόσθετο, προσθέστε το τερματικό στην κάτω μπάρα "
@@ -1194,8 +1271,6 @@ msgstr ""
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/gedit-plugins-tag-list.page:33(None)
-#| msgid ""
-#| "@@image: 'figures/gedit_window.png'; md5=a1daf2ed54a551bb590a172bc730594c"
 msgid ""
 "@@image: 'figures/gedit-side-pane3.png'; md5=4b800d370193ac0ed8db9eb33b86e11c"
 msgstr ""
@@ -1215,12 +1290,11 @@ msgid ""
 "tags and special characters for HTML, XHTML, XSLT, XUL and LaTeX."
 msgstr ""
 "Το πρόσθετο <app>Λίστα ετικετών</app> σας επιτρέπει να προσθέσετε συνήθεις "
-"ετικέτες και ειδικούς χαρακτήρες από μία λίστα στην πλευρική μπάρα. "
-"Από προεπιλογή, το πρόσθετο μπορεί να εισάγει ετικέτες και ειδικούς "
-"χαρακτήρες για HTML, XHTML, XSLT, XUL και LaTeX."
+"ετικέτες και ειδικούς χαρακτήρες από μία λίστα στην πλευρική μπάρα. Από "
+"προεπιλογή, το πρόσθετο μπορεί να εισάγει ετικέτες και ειδικούς χαρακτήρες "
+"για HTML, XHTML, XSLT, XUL και LaTeX."
 
 #: C/gedit-plugins-tag-list.page:22(title)
-#| msgid "Tag List Plugin"
 msgid "Using the Tag List plugin"
 msgstr "Χρήση του πρόσθετου λίστας ετικετών"
 
@@ -1234,7 +1308,6 @@ msgstr ""
 "λίστας ετικετών του πλευρικού παράθυρου."
 
 #: C/gedit-plugins-tag-list.page:27(title)
-#| msgid "Enabling a Plugin"
 msgid "Enabling the Plugin"
 msgstr "Ενεργοποίηση προσθέτου"
 
@@ -1249,8 +1322,8 @@ msgstr ""
 "Μπορείτε να ενεργοποιήσετε το πρόσθετο επιλέγοντας <guiseq><gui>Επεξεργασία</"
 "gui><gui>Προτιμήσεις</gui><gui>Πρόσθετα</gui><gui>Λίστα ετικετών</gui></"
 "guiseq>. Αφού ενεργοποιήσετε το πρόσθετο, πάτε σε αυτό επιλέγοντας "
-"<guiseq><gui>Προβολή</gui><gui>Πλευρική μπάρα</gui></guiseq>, ή "
-"πατώντας <key>F9</key>."
+"<guiseq><gui>Προβολή</gui><gui>Πλευρική μπάρα</gui></guiseq>, ή πατώντας "
+"<key>F9</key>."
 
 #: C/gedit-plugins-tag-list.page:30(p)
 msgid ""
@@ -1258,13 +1331,12 @@ msgid ""
 "the <app>tag list</app>, you will need to click on the tab showing the \"plus"
 "\" icon at the bottom of the side pane. The icon will look similar to this:"
 msgstr ""
-"Η πλευρική μπάρα αρχικά δείχνει μια λίστα ανοιχτών εγγράφων, οπότε "
-"για να προβάλετε και να χρησιμοποιήσετε την<app>λίστα ετικετών</app>, θα "
-"χρειαστεί να κάνετε κλικ στην καρτέλα που δείχνει το εικονίδιο \"plus\" στο "
-"κάτω μέρος της πλευρικής μπάρας. Το εικονίδιο θα μοιάζει με αυτό:"
+"Η πλευρική μπάρα αρχικά δείχνει μια λίστα ανοιχτών εγγράφων, οπότε για να "
+"προβάλετε και να χρησιμοποιήσετε την<app>λίστα ετικετών</app>, θα χρειαστεί "
+"να κάνετε κλικ στην καρτέλα που δείχνει το εικονίδιο \"plus\" στο κάτω μέρος "
+"της πλευρικής μπάρας. Το εικονίδιο θα μοιάζει με αυτό:"
 
 #: C/gedit-plugins-tag-list.page:37(title)
-#| msgid "Special Characters"
 msgid "Inserting Tags and Special Characters"
 msgstr "Εισαγωγή ετικετών και ειδικών χαρακτήρων"
 
@@ -1279,7 +1351,6 @@ msgstr ""
 "επιλογή ετικετών είναι οι <gui>ετικέτες - HTML</gui>."
 
 #: C/gedit-plugins-tag-list.page:41(p)
-#| msgid "To create a new snippet, do the following:"
 msgid "To start inserting tags, complete the following:"
 msgstr "Για να αρχίσετε να εισαγωγή ετικετών, κάντε τα ακόλουθα:"
 
@@ -1300,10 +1371,9 @@ msgstr ""
 "της πλευρικής μπάρας."
 
 #: C/gedit-plugins-tag-list.page:46(p)
-#| msgid "Scroll through the tag list to find the required tag."
 msgid "Scroll through the list to find the desired tag or character."
 msgstr ""
-"Κυλίστε τη λίστα ετικετών μέχρι να βρείτε την απαιτούμενη ετικέτα ή "
+"Κυλήστε τη λίστα ετικετών μέχρι να βρείτε την απαιτούμενη ετικέτα ή "
 "χαρακτήρα."
 
 #: C/gedit-plugins-tag-list.page:47(p)
@@ -1355,24 +1425,11 @@ msgstr ""
 "ετικέτα και ειδικό χαρακτήρα κάνοντας κλικ στην λέξη και <gui>Προεπισκόπηση</"
 "gui> στο κάτω μέρος της πλευρικής μπάρας."
 
-#: C/gedit-plugins-spell-checker.page:7(desc)
-#| msgid "Close the current document."
-msgid "*Checks the spelling of the current document."
-msgstr "*Ελέγχει την ορθογραφία του τρέχοντος εγγράφου."
-
-#: C/gedit-plugins-spell-checker.page:15(title)
-#| msgid "Spell Checker Plugin"
-msgid "*Spell checker"
-msgstr "*Ορθογραφικός έλεγχος"
-
 #: C/gedit-plugins-sort.page:18(title)
 msgid "Sort text into alphabetical order"
 msgstr "Ταξινόμηση κειμένου σε αλφαβητική σειρά"
 
 #: C/gedit-plugins-sort.page:20(p)
-#| msgid ""
-#| "The <application>Sort</application> plugin arranges selected lines of "
-#| "text into alphabetical order."
 msgid ""
 "The Sort plugin arranges selected lines of text into alphabetical order."
 msgstr ""
@@ -1380,15 +1437,17 @@ msgstr ""
 "αλφαβητική σειρά."
 
 #: C/gedit-plugins-sort.page:22(p)
+#, fuzzy
 #| msgid ""
 #| "You cannot undo the Sort operation, so you should save the file before "
 #| "performing the sort. To revert to the saved version of the file after the "
-#| "sort operation, choose <menuchoice><guimenu>File</"
-#| "guimenu><guimenuitem>Revert</guimenuitem></menuchoice>."
+#| "sort operation, choose <guiseq><gui>File</gui><gui>Revert</gui></guiseq>."
 msgid ""
-"You cannot undo the Sort operation, so you should save the file before "
-"performing the sort. To revert to the saved version of the file after the "
-"sort operation, choose <guiseq><gui>File</gui><gui>Revert</gui></guiseq>."
+"You cannot use the <gui>Undo</gui> feature to correct a <gui>Sort</gui> "
+"operation, so we recommend that you save the file immediately before "
+"performing the sort. If you make a mistake with the sort, you can revert to "
+"the previously-saved version of the file by selecting <guiseq><gui>File</"
+"gui><gui>Revert</gui></guiseq>."
 msgstr ""
 "Δεν μπορείτε να αναιρέσετε την Ταξινόμηση, έτσι θα πρέπει να αποθηκεύετε το "
 "αρχείο πριν κάνετε την ταξινόμηση. Για να επαναφέρετε την αποθηκευμένη "
@@ -1455,31 +1514,68 @@ msgstr ""
 "πλαίσιο <em>Έναρξη στη στήλη</em>."
 
 #: C/gedit-plugins-sort.page:35(p)
-#| msgid "To perform the sort operation, click <guibutton>Sort</guibutton>."
 msgid "To perform the sort operation, click <gui>Sort</gui>."
 msgstr "Για να εκτελεστεί η ταξινόμηση, κάντε κλικ στην <gui>Ταξινόμηση</gui>."
 
-#: C/gedit-plugins-snippets.page:7(desc)
-msgid "*Insert often used pieces of text in a fast way."
+#: C/gedit-plugins-snippets.page:15(title)
+#, fuzzy
+msgid "Use snippets to quickly insert often-used pieces of text"
 msgstr ""
-"*Εισάγετε συχνά χρησιμοποιούμενα κομμάτια κειμένου με ένα γρήγορο τρόπο."
+"Χρησιμοποιείστε αποσπάσματα (snippets) για να εισάγετε συχνά "
+"χρησιμοποιούμενα κομμάτια κειμένου."
 
-#: C/gedit-plugins-snippets.page:16(title)
-#| msgid "Snippets Plugin"
-msgid "*Snippets"
-msgstr "*Δείγματα κώδικα"
-
-#: C/gedit-plugins-quick-open:7(desc)
-msgid "*Quickly open files."
-msgstr "*Γρήγορο άνοιγμα αρχείων"
-
-#: C/gedit-plugins-quick-open:15(title)
-msgid "*Quick open"
-msgstr "*Γρήγορο άνοιγμα"
+#. TODO: write documentation for gedit snippets
+#: C/gedit-plugins-snippets.page:19(p)
+msgid "Coming soon!"
+msgstr "Έρχεται σύντομα!"
 
 #: C/gedit-plugins-pyconsole.page:14(title)
-msgid "Add an interactive Python console to the bottom panel"
+#, fuzzy
+#| msgid "Add an interactive Python console to the bottom panel"
+msgid "Add an interactive Python console to the bottom pane"
 msgstr "Προσθήκη μιας διαδραστικής κονσόλας Python στην κάτω μπάρα"
+
+#: C/gedit-plugins-pyconsole.page:16(p)
+#, fuzzy
+#| msgid ""
+#| "The <em>Document Statistics</em> plugin can show you various statistics "
+#| "about your current document. To enable this plugin, select "
+#| "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</"
+#| "gui><gui>Document Statisics</gui></guiseq>."
+msgid ""
+"You can add a Python console to the bottom pane, allowing you to test Python "
+"scripts without leaving <app>gedit</app>. To enable the Python console, "
+"select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</"
+"gui><gui>Python Console</gui></guiseq>."
+msgstr ""
+"Το πρόσθετο <em>Στατιστικά Εγγράφων</em> μπορεί να σας εμφανίσει αρκετά "
+"στατιστικά για το τρέχων έγγραφο σας. Για να ενεργοποιήσετε αυτό το "
+"πρόσθετο, επιλέξτε <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</"
+"gui><gui>Πρόσθετα</gui><gui>Στατιστικά Εγγράφων</gui></guiseq>."
+
+#: C/gedit-plugins-pyconsole.page:18(p)
+#, fuzzy
+#| msgid ""
+#| "Once you have enabled the plugin, add the terminal to the bottom panel by "
+#| "selecting <guiseq><gui>View</gui><gui>Bottom Panel</gui></guiseq>, or "
+#| "just press <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
+msgid ""
+"Once the Python console is enabled, you can open it by selecting "
+"<guiseq><gui>View</gui><gui>Bottom Pane</gui></guiseq>, or just press "
+"<keyseq><key>Shift</key><key>F9</key></keyseq>."
+msgstr ""
+"Αφού ενεργοποιήσετε το πρόσθετο, προσθέστε το τερματικό στην κάτω μπάρα "
+"επιλέγοντας <guiseq><gui>Προβολή</gui><gui>Κάτω μπάρα</gui></guiseq>, ή απλά "
+"πατήστε <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
+
+#: C/gedit-plugins-pyconsole.page:20(p)
+msgid ""
+"If you have also enabled the <gui>Embeded Terminal</gui> plugin, the "
+"<gui>Python Console</gui> will appear as a separate tab in the bottom pane."
+msgstr ""
+"Αν έχετε ήδη ενεργοποιήσει το πρόσθετο <gui>Ενσωματωμένου Τερματικού</gui>, "
+"θα εμφανιστεί η <gui>Κονσόλα Python</gui> ως μια ξεχωριστή καρτέλα στο κάτω "
+"μέρος του παραθύρου. "
 
 #: C/gedit-plugins-modelines.page:18(title)
 msgid "Emacs, Kate and Vim-style modelines support for gedit"
@@ -1510,13 +1606,10 @@ msgstr ""
 "gui><gui>Modelines</gui></guiseq>."
 
 #: C/gedit-plugins-modelines.page:25(title)
-#| msgid "General Tabbed Section"
 msgid "General Modeline Options"
 msgstr "Γενικές επιλογές modeline"
 
 #: C/gedit-plugins-modelines.page:26(p)
-#| msgid ""
-#| "The following plugins come built-in with <application>gedit</application>:"
 msgid "The following options can be set using <app>gedit</app> modelines:"
 msgstr ""
 "Οι ακόλουθες επιλογές μπορούν να ορισθούν χρησιμοποιώντας <app>gedit</app> "
@@ -1531,7 +1624,6 @@ msgid "Indent width"
 msgstr "Πλάτος εσοχής"
 
 #: C/gedit-plugins-modelines.page:30(p)
-#| msgid "Insert spaces instead of tabs"
 msgid "Inserting spaces instead of tabs"
 msgstr "Εισαγωγή κενών διαστημάτων αντί στηλοθετών"
 
@@ -1556,9 +1648,6 @@ msgid "Emacs Modelines"
 msgstr "Emacs Modelines"
 
 #: C/gedit-plugins-modelines.page:41(p)
-#| msgid ""
-#| "The first two lines of a document are scanned for <application>Emacs</"
-#| "application> modelines."
 msgid ""
 "The first two lines of a document are scanned for <app>Emacs</app> "
 "modelines, and <app>gedit</app> supports the following <app>Emacs</app> "
@@ -1569,23 +1658,20 @@ msgstr ""
 "<app>Emacs</app> modeline επιλογές:"
 
 #: C/gedit-plugins-modelines.page:43(p)
-#| msgid "Tab width"
 msgid "Tab-width"
 msgstr "Πλάτος-καρτέλας"
 
 #: C/gedit-plugins-modelines.page:44(p)
-#, fuzzy
 msgid "Indent-offset"
-msgstr "Εσοχή-όφσετ"
+msgstr "Offset-εσοχής"
 
 #: C/gedit-plugins-modelines.page:45(p)
-#, fuzzy
 msgid "Indent-tabs-mode"
-msgstr "λειτουργία-εσοχής-καρτελών"
+msgstr "Λειτουργία-εσοχής-καρτελών"
 
 #: C/gedit-plugins-modelines.page:46(p)
 msgid "Text auto-wrap"
-msgstr "Αυτόματη αναδήπλωση κειμένου"
+msgstr "Αυτόματη αναδίπλωση κειμένου"
 
 #: C/gedit-plugins-modelines.page:48(p)
 msgid ""
@@ -1602,9 +1688,6 @@ msgid "Kate Modelines"
 msgstr "Kate Modelines"
 
 #: C/gedit-plugins-modelines.page:54(p)
-#| msgid ""
-#| "The first and last ten lines a document are scanned for "
-#| "<application>Kate</application> modelines."
 msgid ""
 "The first and last ten lines a document are scanned for <app>Kate</app> "
 "modelines, and <app>gedit</app> supports the following <app>Kate</app> "
@@ -1615,12 +1698,10 @@ msgstr ""
 "υποστηρίζει τις ακόλουθες <app>Kate</app> modeline επιλογές:"
 
 #: C/gedit-plugins-modelines.page:57(p)
-#| msgid "Tab width"
 msgid "tab-width"
 msgstr "tab-width"
 
 #: C/gedit-plugins-modelines.page:58(p)
-#| msgid "Indent width"
 msgid "indent-width"
 msgstr "indent-width"
 
@@ -1649,9 +1730,6 @@ msgid "Vim Modelines"
 msgstr "Vim Modelines"
 
 #: C/gedit-plugins-modelines.page:69(p)
-#| msgid ""
-#| "The first and last three lines a document are scanned for "
-#| "<application>Vim</application> modelines."
 msgid ""
 "The first and last three lines a document are scanned for <app>Vim</app> "
 "modelines, and <app>gedit</app> supports the following <app>Vim</app> "
@@ -1678,15 +1756,10 @@ msgid "wrap"
 msgstr "αναδίπλωση"
 
 #: C/gedit-plugins-modelines.page:76(p)
-#| msgid "Indent width"
 msgid "textwidth"
 msgstr "Πλάτος κειμένου"
 
 #: C/gedit-plugins-modelines.page:79(p)
-#| msgid ""
-#| "For more information on creating plugins, see the <ulink type=\"http\" "
-#| "url=\"http://live.gnome.org/Gedit/Plugins\"><application>gedit</"
-#| "application> website</ulink>."
 msgid ""
 "For more information on <app>Vim</app> modelines, visit the <link href="
 "\"http://www.vim.org/\">Vim website</link>."
@@ -1742,7 +1815,6 @@ msgstr ""
 "εγκαταστήσετε."
 
 #: C/gedit-plugins-install.page:34(title)
-#| msgid "Enabling a Plugin"
 msgid "Installing a Plugin"
 msgstr "Εγκατάσταση ενός προσθέτου"
 
@@ -1816,12 +1888,19 @@ msgstr ""
 "και Ώρας</gui></guiseq>."
 
 #: C/gedit-plugins-insert-date-time.page:24(p)
+#, fuzzy
+#| msgid ""
+#| "By default, the <gui>Insert Date/Time</gui> plugin will prompt you to "
+#| "choose your preferred date/time format each time that you use the plugin. "
+#| "However, you can choose your own default date and time format by "
+#| "selecting <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</"
+#| "gui><gui>Insert Date/Time</gui><gui>Configure</gui></guiseq>"
 msgid ""
 "By default, the <gui>Insert Date/Time</gui> plugin will prompt you to choose "
 "your preferred date/time format each time that you use the plugin. However, "
 "you can choose your own default date and time format by selecting "
 "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Insert "
-"Date/Time</gui><gui>Configure</gui></guiseq>"
+"Date/Time</gui><gui>Configure</gui></guiseq>."
 msgstr ""
 "Από προεπιλογή, το πρόσθετο <gui>Εισαγωγή Ημερομηνίας/Ώρας</gui> θα σας "
 "οδηγήσει στην επιλογή της μορφής ημερομηνίας/ώρας που προτιμάτε κάθε φορά "
@@ -1830,77 +1909,69 @@ msgstr ""
 "<guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui><gui>Πρόσθετα</"
 "gui><gui>Εισαγωγή Ημερομηνίας/Ώρας</gui><gui>Διαμόρφωση</gui></guiseq>"
 
-#: C/gedit-plugins-insert-date-time.page:3(page)
-msgid ""
-"<info><placeholder-1/><revision pkgversion=\"3.0\" version=\"0.1\" date="
-"\"2010-12-5\" status=\"stub\"/><credit type=\"author\"><placeholder-2/"
-"><placeholder-3/></credit><credit type=\"author\"><placeholder-4/"
-"><placeholder-5/></credit></info><placeholder-6/><placeholder-7/"
-"><placeholder-8/>."
-msgstr ""
-"<info><placeholder-1/><revision pkgversion=\"3.0\" version=\"0.1\" date="
-"\"2010-12-5\" status=\"stub\"/><credit type=\"author\"><placeholder-2/"
-"><placeholder-3/></credit><credit type=\"author\"><placeholder-4/"
-"><placeholder-5/></credit></info><placeholder-6/><placeholder-7/"
-"><placeholder-8/>."
-
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gedit-plugins-file-browser.page:34(None)
+#: C/gedit-plugins-file-browser.page:31(None)
 #: C/gedit-open-files-from-sidepane.page:36(None)
-#| msgid ""
-#| "@@image: 'figures/gedit_window.png'; md5=a1daf2ed54a551bb590a172bc730594c"
 msgid ""
 "@@image: 'figures/gedit-side-pane1.png'; md5=ac9c80cb0552d63b593c71f23be69b53"
 msgstr ""
 "@@image: 'figures/gedit-side-pane1.png'; md5=ac9c80cb0552d63b593c71f23be69b53"
 
 #: C/gedit-plugins-file-browser.page:18(title)
-#| msgid "Use the specified command to print the file."
-msgid "Use the side panel to browse and open files"
+#, fuzzy
+#| msgid "Use the side panel to browse and open files"
+msgid "Use the side pane to browse and open files"
 msgstr ""
 "Χρησιμοποιήστε την πλευρική μπάρα για να περιηγηθείτε και να ανοίξετε αρχεία"
 
 #: C/gedit-plugins-file-browser.page:20(p)
+#, fuzzy
+#| msgid ""
+#| "If you find that you need to frequently open files while using "
+#| "<app>gedit</app>, you may find it helpful to use the <app>File Browser "
+#| "Panel</app> plugin. This plugin embeds a Gnome file browser in the side "
+#| "panel."
 msgid ""
-"If you find that you need to frequently open files while using <app>gedit</"
-"app>, you may find it helpful to use the <app>File Browser Panel</app> "
-"plugin. This plugin embeds a Gnome file browser in the side panel."
+"Depending on how you use <app>gedit</app>, you may find it helpful to use "
+"the <app>File Browser pane</app> plugin. This plugin embeds a <app>file "
+"browser</app> in the side pane, giving you easy access to your frequently-"
+"used files."
 msgstr ""
 "Αν διαπιστώσετε ότι χρειάζεται να ανοίγετε συχνά αρχεία καθώς χρησιμοποιείτε "
 "το <app>gedit</app>, μπορεί να το βρείτε χρήσιμο να χρησιμοποιήσετε το "
 "πρόσθετο <app>Μπάρα περιήγησης αρχείων</app>. Το πρόσθετο αυτό ενσωματώνει "
 "έναν περιηγητή αρχείων Gnome στην πλευρική μπάρα."
 
-#: C/gedit-plugins-file-browser.page:21(p)
+#: C/gedit-plugins-file-browser.page:22(p)
+#, fuzzy
+#| msgid ""
+#| "To enable the <app>Modelines</app> plugin, select <guiseq><gui>Edit</"
+#| "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Modelines</gui></guiseq>."
 msgid ""
-"To use this plugin, you will need to do three things: select "
-"<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>File "
-"Browser Panel</gui></guiseq>. To activate the side panel, select "
-"<guiseq><gui>View</gui><gui>Side Panel</gui></guiseq>, or just press<key>F9</"
-"key>"
+"You can enable the <gui>Side Pane</gui> by selecting <guiseq><gui>Edit</"
+"gui><gui>Preferences</gui><gui>Plugins</gui><gui>File Browser Pane</gui></"
+"guiseq>."
 msgstr ""
-"Για να χρησιμοποιήσετε αυτό το πρόσθετο, θα χρειαστεί να κάνετε τρία "
-"πράγματα: επιλέξτε <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</"
-"gui><gui>Πρόσθετα</gui><gui>Μπάρα περιήγησης αρχείων</gui></guiseq>. Για να "
-"ενεργοποιήσετε την πλευρική μπάρα, επιλέξτε <guiseq><gui>Προβολή</"
-"gui><gui>Πλευρική μπάρα</gui></guiseq>, ή απλά πατήστε<key>F9</key>"
+"Για να ενεργοποιήσετε το πρόσθετο <app>Modelines</app>, επιλέξτε "
+"<guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui><gui>Πρόσθετα</"
+"gui><gui>Modelines</gui></guiseq>."
 
-#: C/gedit-plugins-file-browser.page:28(title)
+#: C/gedit-plugins-file-browser.page:25(title)
 #: C/gedit-open-files-from-sidepane.page:30(title)
-#| msgid "Opening a File from a URI"
 msgid "Opening files from the side pane"
 msgstr "Άνοιγμα αρχείων από την πλευρική μπάρα"
 
-#: C/gedit-plugins-file-browser.page:29(p)
-#: C/gedit-open-files-from-sidepane.page:31(p)
+#: C/gedit-plugins-file-browser.page:26(p)
+#, fuzzy
 #| msgid ""
-#| "To view the File Browser, choose <menuchoice><guimenu>View</"
-#| "guimenu><guimenuitem>Side Pane</guimenuitem></menuchoice> and then click "
-#| "on the tab showing the File Browser icon at the bottom of the side pane."
+#| "To open files from the <app>side pane</app>, first open the <app>side "
+#| "pane</app> by selecting <guiseq><gui>View</gui><gui>Side Pane</gui></"
+#| "guiseq>, then click on the <gui>file-browser</gui> icon at the bottom of "
+#| "the pane."
 msgid ""
-"To open files from the <app>side pane</app>, first open the <app>side pane</"
-"app> by selecting <guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, then "
+"To activate and use the <gui>side pane</gui>, select <guiseq><gui>View</"
+"gui><gui>Side pane</gui></guiseq> (or just press <key>F9</key>), and then "
 "click on the <gui>file-browser</gui> icon at the bottom of the pane."
 msgstr ""
 "Για να ανοίξετε αρχεία μέσα από την <app>Πλευρική μπάρα</app>, αρχικά "
@@ -1909,7 +1980,7 @@ msgstr ""
 "κλικ στο εικονίδιο <gui>Περιηγητής αρχείων</gui> στο κάτω μέρος του "
 "παράθυρου."
 
-#: C/gedit-plugins-file-browser.page:37(p)
+#: C/gedit-plugins-file-browser.page:34(p)
 msgid ""
 "This will activate the <em>file-browser</em> mode of the <app>side pane</"
 "app>. You can then use the navigation buttons at the top of the pane to "
@@ -1920,28 +1991,7 @@ msgstr ""
 "πλοήγησης στο πάνω μέρος της μπάρας για να εντοπίσετε και να ανοίξετε τα "
 "αρχεία που επιθυμείτε."
 
-#: C/gedit-plugins-file-browser.page:3(page)
-msgid ""
-"<info><placeholder-1/><revision pkgversion=\"3.0\" version=\"0.1\" date="
-"\"2010-12-5\" status=\"stub\"/><credit type=\"author\"><placeholder-2/"
-"><placeholder-3/></credit><credit type=\"author\"><placeholder-4/"
-"><placeholder-5/></credit></info><placeholder-6/><placeholder-7/"
-"><placeholder-8/>. <section id=\"sidepane-open\"><placeholder-9/"
-"><placeholder-10/><placeholder-11/><placeholder-12/></section>"
-msgstr ""
-"<info><placeholder-1/><revision pkgversion=\"3.0\" version=\"0.1\" date="
-"\"2010-12-5\" status=\"stub\"/><credit type=\"author\"><placeholder-2/"
-"><placeholder-3/></credit><credit type=\"author\"><placeholder-4/"
-"><placeholder-5/></credit></info><placeholder-6/><placeholder-7/"
-"><placeholder-8/>. <section id=\"sidepane-open\"><placeholder-9/"
-"><placeholder-10/><placeholder-11/><placeholder-12/></section>"
-
-#: C/gedit-plugins-external-tools.page:7(desc)
-msgid "Execute external commands and shell scripts."
-msgstr "Εκτέλεση εξωτερικών εντολών και δεσμών ενεργειών κελύφους."
-
 #: C/gedit-plugins-external-tools.page:21(title)
-#| msgid "External Tools Plugin"
 msgid "External tools"
 msgstr "Εξωτερικά εργαλεία"
 
@@ -1962,23 +2012,11 @@ msgstr ""
 "επιλέξτε <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui><gui>Πρόσθετα</"
 "gui><gui>Εξωτερικά Εργαλεία</gui></guiseq>."
 
-#: C/gedit-plugins-external-tools.page:25(p)
-msgid ""
-"This plugin is for advanced users, and requires knowledge of scripting to be "
-"used effectively. Use this plugin with care, as mistakes with your scripts "
-"can affect your work in unintended ways."
-msgstr ""
-"Αυτό το πρόσθετο είναι για προχωρημένους χρήστες, και απαιτεί γνώσεις γραφής "
-"σεναρίων (scripting) για να χρησιμοποιείτε αποδοτικά. Χρησιμοποιήστε αυτό το "
-"πρόσθετο με προσοχή, καθώς λάθη με το σενάριο (script) σας μπορούν να "
-"επηρεάσουν την δουλειά σας με ακούσιους τρόπους"
-
-#: C/gedit-plugins-external-tools.page:28(title)
-#| msgid "External Tools Plugin"
+#: C/gedit-plugins-external-tools.page:26(title)
 msgid "Configure the external tools plugin"
-msgstr "Διαμόργωση του πρόσθετου εξωτερικών εργαλείων"
+msgstr "Διαμόρφωση του πρόσθετου εξωτερικών εργαλείων"
 
-#: C/gedit-plugins-external-tools.page:30(p)
+#: C/gedit-plugins-external-tools.page:28(p)
 msgid ""
 "Once you have enabled the plugin, you will need to configure it to suit your "
 "needs. The configuration options are available by selecting "
@@ -1989,8 +2027,18 @@ msgstr ""
 "<guiseq><gui>Εργαλεία</gui><gui>Διαχείριση Εξωτερικών Εργαλείων</gui></"
 "guiseq>."
 
+#: C/gedit-plugins-external-tools.page:30(p)
+msgid ""
+"This plugin is for advanced users, and requires knowledge of scripting to be "
+"used effectively. Use this plugin with care, as mistakes with your scripts "
+"can affect your work in unintended ways."
+msgstr ""
+"Αυτό το πρόσθετο είναι για προχωρημένους χρήστες, και απαιτεί γνώσεις γραφής "
+"σεναρίων (scripting) για να χρησιμοποιείτε αποδοτικά. Χρησιμοποιήστε αυτό το "
+"πρόσθετο με προσοχή, καθώς λάθη με το σενάριο (script) σας μπορούν να "
+"επηρεάσουν την δουλειά σας με ακούσιους τρόπους"
+
 #: C/gedit-plugins-doc-stats.page:18(title)
-#| msgid "Document Statistics Plugin"
 msgid "View document statistics"
 msgstr "Προβολή στατιστικών εγγράφου"
 
@@ -2007,7 +2055,6 @@ msgstr ""
 "gui><gui>Πρόσθετα</gui><gui>Στατιστικά Εγγράφων</gui></guiseq>."
 
 #: C/gedit-plugins-doc-stats.page:23(title)
-#| msgid "Document Statistics Plugin"
 msgid "Using Document Statistics"
 msgstr "Χρήση στατιστικών εγγράφου"
 
@@ -2025,12 +2072,20 @@ msgstr ""
 "και το μέγεθος του αρχείου σας σε bytes."
 
 #: C/gedit-plugins-doc-stats.page:27(p)
+#, fuzzy
+#| msgid ""
+#| "You can also use the <em>Document Statistics</em> feature to show you "
+#| "information about just a portion of your document. To do this, use the "
+#| "mouse to select the portion of text that you want to examine, and then "
+#| "select <guiseq><gui>Tools</gui><gui>Document Statistics</gui></guiseq>. "
+#| "<em>Gedit</em> will display information for both your entire document, "
+#| "and for the portion of text that you highlighted."
 msgid ""
-"You can also use the <em>Document Statistics</em> feature to show you "
-"information about just a portion of your document. To do this, use the mouse "
-"to select the portion of text that you want to examine, and then select "
-"<guiseq><gui>Tools</gui><gui>Document Statistics</gui></guiseq>. <em>Gedit</"
-"em> will display information for both your entire document, and for the "
+"You can also use <em>Document Statistics</em> to show you information about "
+"just a portion of your document. To do this, use the mouse pointer to select "
+"the portion of text that you want to examine, and then select "
+"<guiseq><gui>Tools</gui><gui>Document Statistics</gui></guiseq>. <app>Gedit</"
+"app> will display information for both your entire document, and for the "
 "portion of text that you highlighted."
 msgstr ""
 "Μπορείτε επίσης να χρησιμοποιήσετε το χαρακτηριστικό <em>Στατιστικά "
@@ -2041,12 +2096,7 @@ msgstr ""
 "<em>Gedit</em> θα εμφανίσει πληροφορίες για ολόκληρο το έγγραφο, όπως και "
 "για την μερίδα του κειμένου που επιλέξατε."
 
-#: C/gedit-plugins-check-update.page:18(title)
-msgid "Check for updates to gedit (Windows and Mac OS X only)"
-msgstr "Ελέγξτε για ενημερώσεις στο gedit (Windows και Mac OS X μόνο)"
-
 #: C/gedit-plugins-change-case.page:19(title)
-#| msgid "The currently selected text."
 msgid "Change the case of selected text"
 msgstr "Αλλαγή του επιλεγμένου κειμένου σε κεφαλαία-πεζά"
 
@@ -2074,7 +2124,6 @@ msgstr ""
 "να το χρησιμοποιήσετε ολοκληρώνοντας τα παρακάτω βήματα:"
 
 #: C/gedit-plugins-change-case.page:25(p)
-#| msgid "Select the lines of text you want to sort."
 msgid "Highlight the portion of text that you want to change."
 msgstr "Επιλέξτε τις γραμμές κειμένου που θέλετε να αλλάξετε."
 
@@ -2094,9 +2143,6 @@ msgstr ""
 "Οι ενημερώσεις στην μορφοποίηση του κειμένου θα πραγματοποιηθούν άμεσα."
 
 #: C/gedit-plugins-change-case.page:32(p)
-#| msgid ""
-#| "Change each lowercase character to uppercase, and change each uppercase "
-#| "character to lowercase."
 msgid ""
 "The <gui>Invert Case</gui> option will convert all lower case letters to "
 "upper case, and will convert all upper case letters to lower case."
@@ -2124,15 +2170,14 @@ msgstr ""
 "πριν χρησιμοποιήσετε την λειτουργία <em>Διάκριση κεφαλαίων-πεζών</em>."
 
 #: C/gedit-plugins-bracket-comp.page:14(title)
-#, fuzzy
-msgid "Auto-complete Closing Brackets"
-msgstr "Αυτόματη Κλείσιμο Αγκυλών"
+msgid "Auto-complete closing brackets"
+msgstr "Αυτόματο κλείσιμο αγκυλών"
 
 #: C/gedit-plugins-bracket-comp.page:16(p)
 #, fuzzy
 msgid ""
 "The <app>Bracket Completion</app> plugin will auto-complete closing brackets "
-"for curly braces, parantheses, and square brackets."
+"for curly braces, parentheses, and square brackets."
 msgstr ""
 "Το πρόσθετο <app>Ολοκλήρωση Αγκύλης</app> θα ολοκληρώσει αυτόματα το "
 "κλείσιμο των αγκίστρων, παρενθέσεων, και των αγκυλών."
@@ -2156,7 +2201,6 @@ msgid "Do more with gedit by using gedit plugins."
 msgstr "Κάντε περισσότερα με το gedit χρησιμοποιώντας πρόσθετα gedit."
 
 #: C/gedit-plugin-guide.page:15(title)
-#| msgid "Configuring the Insert Date/Time Plugin"
 msgid "Configure and use gedit Plugins"
 msgstr "Ρύθμιση και χρήση προσθέτων gedit"
 
@@ -2182,7 +2226,6 @@ msgstr ""
 "<app>gedit</app>."
 
 #: C/gedit-plugin-guide.page:20(title)
-#| msgid "Tag List Plugin"
 msgid "Default gedit Plugins"
 msgstr "Προεπιλεγμένα πρόσθετα gedit"
 
@@ -2190,48 +2233,46 @@ msgstr "Προεπιλεγμένα πρόσθετα gedit"
 msgid "Additional gedit Plugins"
 msgstr "Επιπλέον πρόσθετα gedit"
 
-#: C/gedit-plugin-guide.page:28(title)
-msgid "Create your own gedit Plugins"
-msgstr "Δημιουργήστε τα δικά σας πρόσθετα gedit"
-
 #: C/gedit-open-recent.page:14(title)
-msgid "Re-open a recently-used file"
+#, fuzzy
+#| msgid "Re-open a recently-used file"
+msgid "Reopen a recently-used file"
 msgstr "Άνοιγμα εκ νέου ενός πρόσφατου αρχείου"
 
 #: C/gedit-open-recent.page:16(p)
+#| msgid ""
+#| "By default, <app>gedit</app> provides easy access to five of your most "
+#| "recently-used files. To open a recently-used file, complete the following "
+#| "steps."
 msgid ""
 "By default, <app>gedit</app> provides easy access to five of your most "
-"recently-used files. To open a recently-used file, complete the following "
-"steps."
+"recently-used files. Here is how you can open a recently-used file:"
 msgstr ""
-"Από προεπιλογή, το <app>gedit</app> παρέχει έυκολη πρόσβαση σε πέντε από τα "
+"Από προεπιλογή, το <app>gedit</app> παρέχει εύκολη πρόσβαση σε πέντε από τα "
 "πιο πρόσφατα αρχεία που χρησιμοποιήσατε. Για να ανοίξετε ένα αρχείο που "
 "χρησιμοποιήθηκε πρόσφατα, κάντε τα ακόλουθα:"
 
-#: C/gedit-open-recent.page:18(title)
-msgid "Open a recently-used file"
-msgstr "Άνοιγμα ενός πρόσφατου αρχείου"
-
-#: C/gedit-open-recent.page:19(p)
+#: C/gedit-open-recent.page:18(p)
 msgid ""
 "Click the downward-facing arrow to the right of the <gui>Open</gui> button."
 msgstr ""
 "Κάντε κλικ στο βέλος που δείχνει προς τα κάτω στα δεξιά του κουμπιού "
 "<gui>Άνοιγμα</gui>."
 
-#: C/gedit-open-recent.page:20(p)
+#: C/gedit-open-recent.page:19(p)
 msgid ""
 "<app>gedit</app> will display a list of the five most-recently used files."
 msgstr ""
 "Το <app>gedit</app> θα εμφανίσει μια λίστα των πέντε πιο πρόσφατων "
 "χρησιμοποιημένων αρχείων."
 
-#: C/gedit-open-recent.page:21(p)
-msgid "Select the desired file, and it will open in the next available tab."
-msgstr ""
-"Επιλέξτε το επιθυμητό αρχείο, και θα ανοίξει στην επόμενη διαθέσιμη καρτέλα."
+#: C/gedit-open-recent.page:20(p)
+#, fuzzy
+#| msgid "Select the desired file, and it will open in the next available tab."
+msgid "Select the desired file, and it will open in a new tab."
+msgstr "Επιλέξτε το επιθυμητό αρχείο, και θα ανοίξει σε καινούρια καρτέλα."
 
-#: C/gedit-open-recent.page:24(p)
+#: C/gedit-open-recent.page:23(p)
 msgid ""
 "To adjust the number of recently-used files that gedit displays, you will "
 "need to use the <app>gconf-editor</app> application."
@@ -2240,17 +2281,18 @@ msgstr ""
 "εμφανίζει το gedit, θα χρειαστεί να χρησιμοποιήσετε την εφαρμογή "
 "<app>επεξεργαστής-gconf</app>."
 
-#: C/gedit-open-recent.page:26(p)
+#: C/gedit-open-recent.page:25(p)
 #, fuzzy
 msgid ""
-"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</gui><gui>gedit-"
-"2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq>."
+"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</"
+"gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></"
+"guiseq>."
 msgstr ""
 "Εκκινήστε τον <app>επεξεργαστή-gconf</app> και επιλέξτε "
 "<guiseq><gui>εφαρμογές</gui><gui>gedit-2</gui><gui>προτιμήσεις</gui><gui>ui</"
 "gui><gui>πρόσφατα</gui></guiseq>."
 
-#: C/gedit-open-recent.page:27(p)
+#: C/gedit-open-recent.page:26(p)
 msgid ""
 "Double-click on the number next to <gui>max_recents</gui> and change the "
 "number to your desired value."
@@ -2297,10 +2339,6 @@ msgstr ""
 "ανοίξετε ένα αρχείο από έναν διακομιστή χρησιμοποιώντας το <app>gedit</app>:"
 
 #: C/gedit-open-on-server.page:23(p)
-#| msgid ""
-#| "Choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open Location</"
-#| "guimenuitem></menuchoice> to display the <guilabel>Open Location</"
-#| "guilabel> dialog."
 msgid ""
 "Choose <guiseq><gui>File</gui><gui>Open</gui></guiseq> to display the "
 "<gui>Open Files</gui> dialog."
@@ -2321,14 +2359,10 @@ msgid "Enter the IP Address or URL of the appropriate server."
 msgstr "Εισάγετε την διεύθυνση IP ή το URL του κατάλληλου διακομιστή."
 
 #: C/gedit-open-on-server.page:26(p)
-#| msgid "Enter the URI of the file that you want to open."
 msgid "Find and select the file that you wish to open."
 msgstr "Εισάγετε την τοποθεσία του αρχείου που θέλετε να ανοίξετε."
 
 #: C/gedit-open-on-server.page:27(p)
-#| msgid ""
-#| "Use the <guilabel>Character coding</guilabel> drop-down list to select "
-#| "the appropriate character coding."
 msgid ""
 "Use the Character coding drop-down list to select the appropriate character "
 "coding."
@@ -2337,33 +2371,33 @@ msgstr ""
 "διαλέξετε την κατάλληλη κωδικοποίηση."
 
 #: C/gedit-open-on-server.page:28(p)
-#| msgid "Click <guibutton>Open</guibutton>."
 msgid "Click <gui>Open</gui>."
-msgstr "Κλίκ <gui>Άνοιγμα</gui>."
+msgstr "Κλικ <gui>Άνοιγμα</gui>."
 
 #: C/gedit-open-on-server.page:31(p)
+#, fuzzy
 #| msgid ""
-#| "Valid types of <replaceable>URI</replaceable> include <literal>http:</"
-#| "literal>, <literal>ftp:</literal>, <literal>file:</literal>, and all of "
-#| "the methods supported by <literal>gnome-vfs</literal>."
+#| "Valid types of URI include http:, ftp:, file:, and all of the methods "
+#| "supported by <app>gnome-vfs</app>."
 msgid ""
 "Valid types of URI include http:, ftp:, file:, and all of the methods "
-"supported by <app>gnome-vfs</app>."
+"supported by <app>gvfs</app>."
 msgstr ""
 "Έγκυροι τύποι URI περιλαμβάνουν τα http:, ftp:, file:, και όλες τις μεθόδους "
 "που υποστηρίζονται από το <app>gnome-vfs</app>."
 
-#: C/gedit-open-on-server.page:33(p)
+#: C/gedit-open-on-server.page:34(p)
+#, fuzzy
 #| msgid ""
 #| "Files from some types of URI are opened as read-only, and any changes you "
-#| "make must be saved to a different location. HTTP only allows files to be "
-#| "read. Files opened from FTP are read-only because because not all FTP "
-#| "servers may correctly work with saving remote files."
+#| "make must be saved to a different location. For example, HTTP only allows "
+#| "files to be read. Files opened from FTP are read-only because because not "
+#| "all FTP servers may correctly work with saving remote files."
 msgid ""
 "Files from some types of URI are opened as read-only, and any changes you "
 "make must be saved to a different location. For example, HTTP only allows "
-"files to be read. Files opened from FTP are read-only because because not "
-"all FTP servers may correctly work with saving remote files."
+"files to be read. Files opened from FTP are read-only because not all FTP "
+"servers may correctly work with saving remote files."
 msgstr ""
 "Αρχεία από μερικούς τύπους URI ανοίγονται μόνο για ανάγνωση, και ό,τι "
 "αλλαγές κάνετε θα πρέπει να αποθηκευτούν σε μια διαφορετική τοποθεσία. Το "
@@ -2371,31 +2405,85 @@ msgstr ""
 "είναι μόνο για ανάγνωση γιατί δεν υποστηρίζουν όλοι οι εξυπηρετητές FTP την "
 "αποθήκευση απομακρυσμένων αρχείων."
 
-#: C/gedit-open-on-server.page:35(p)
+#: C/gedit-open-files.page:18(title)
+msgid "Open a file or set of files"
+msgstr "Ανοίξτε ένα αρχείο ή σύνολο αρχείων"
+
+#: C/gedit-open-files.page:20(p)
+#, fuzzy
 #| msgid ""
-#| "Saving to FTP servers can be enabled with <ulink type=\"help\" url="
-#| "\"ghelp:gconf-editor\"><application>Configuration Editor</application></"
-#| "ulink>, setting the key <systemitem>/apps/gedit-2/preferences/editor/save/"
-#| "writable_vfs_schemes</systemitem>, but this may cause errors."
+#| "Open the Replace tool by clicking <guiseq><gui>Search</gui><gui>Replace</"
+#| "gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
 msgid ""
-"Saving to FTP servers can be enabled with Configuration Editor, setting the "
-"key /apps/gedit-2/preferences/editor/save/writable_vfs_schemes, but this may "
-"cause errors."
+"To open a file in <app>gedit</app>, click the <gui>Open</gui> button, or "
+"press <keyseq><key>Ctrl</key><key>O</key></keyseq>."
 msgstr ""
-"Η αποθήκευση σε διακομιστές FTP μπορεί να ενεργοποιηθεί με τον Επεξεργαστή "
-"Διαμόρφωσης, ορίζοντας το κλειδή /apps/gedit-2/preferences/editor/save/"
-"writable_vfs_schemes, αλλά μπορεί να προκαλέσει σφάλματα."
+"Ανοίξτε το εργαλείο Αντικατάσταση κάνοντας κλικ στην <guiseq><gui>Αναζήτηση</"
+"gui><gui>Αντικατάσταση</gui></guiseq> ή πατώντας <keyseq><key>Ctrl</"
+"key><key>H</key></keyseq>."
+
+#: C/gedit-open-files.page:21(p)
+msgid ""
+"This will cause the <gui>Open Files</gui> dialog to appear. Use your mouse "
+"or keyboard to select the file that you wish to open, and then click "
+"<gui>Open</gui>. The file that you've selected will open in a new tab."
+msgstr ""
+"Αυτό θα προκαλέσει την εμφάνιση διαλόγου για <gui>Άνοιγμα Αρχείων</gui>. "
+"Χρησιμοποιείστε το ποντίκι ή το πληκτρολόγιο για να επιλέξετε το αρχείο που "
+"επιθυμείτε να ανοίξετε, και κάντε κλικ στο <gui>Άνοιγμα</gui>. Το αρχείο που "
+"έχετε επιλέξει θα ανοίξει σε καινούρια καρτέλα."
+
+#: C/gedit-open-files.page:22(p)
+#, fuzzy
+#| msgid ""
+#| "To close the <guilabel>Preferences</guilabel> dialog, click "
+#| "<guibutton>Close</guibutton>."
+msgid ""
+"To close the <gui>Open Files</gui> dialog without opening a file, click "
+"<gui>Cancel</gui>."
+msgstr ""
+"Για να κλείσετε το παράθυρο διαλόγου <guilabel>Προτιμήσεις</guilabel>, κάντε "
+"κλικ στο <guibutton>Κλείσιμο</guibutton>."
+
+#: C/gedit-open-files.page:24(p)
+msgid ""
+"You can use the <key>Ctrl</key> and <key>Shift</key> keys to open more than "
+"one file at a time. If you hold down the <key>Ctrl</key> key while you "
+"select multiple files, clicking <gui>Open</gui> will open each of the files "
+"that you have selected."
+msgstr ""
+"Μπορείτε να χρησιμοποιήσετε τα πλήκτρα <key>Ctrl</key> και <key>Shift</key> "
+"για να ανοίξετε περισσότερα από ένα αρχεία τη φορά. Αν κρατήσετε πατημένο το "
+"πλήκτρο <key>Ctrl</key> καθώς επιλέγετε πολλαπλά αρχεία, πατώντας "
+"<gui>Άνοιγμα</gui> θα ανοίξει κάθε αρχείο που έχετε επιλέξει."
+
+#. Insert Image Here
+#: C/gedit-open-files.page:28(p)
+msgid ""
+"Holding down the <key>Shift</key> while you select multiple files will open "
+"the first file that you select, the last file that you select, and all of "
+"the files in between."
+msgstr ""
+"Κρατώντας πατημένο το πλήκτρο <key>Shift</key> καθώς επιλέγετε πολλαπλά "
+"αρχεία θα ανοίξει το πρώτο αρχείο που έχετε επιλέξει, το τελευταίο, και όλα "
+"τα ενδιάμεσα."
 
 #: C/gedit-open-files-from-sidepane.page:14(title)
 msgid "View and open files from the side pane"
 msgstr "Δείτε και ανοίξτε αρχεία από την πλευρική μπάρα"
 
 #: C/gedit-open-files-from-sidepane.page:15(p)
+#, fuzzy
+#| msgid ""
+#| "The most common way to switch between files in <app>gedit</app> is by "
+#| "using the tabs at the top of the <app>gedit</app> window. In some cases, "
+#| "though, particularly when you are working with a large number of open "
+#| "files, you may find it beneficial to use the <app>side pane</app>."
 msgid ""
 "The most common way to switch between files in <app>gedit</app> is by using "
 "the tabs at the top of the <app>gedit</app> window. In some cases, though, "
 "particularly when you are working with a large number of open files, you may "
-"find it beneficial to use the <app>side pane</app>."
+"find it easier to use the <app>side pane</app>."
 msgstr ""
 "Ο πιο συνηθισμένος τρόπος για να αλλάξετε μεταξύ αρχείων στο <app>gedit</"
 "app> είναι χρησιμοποιώντας τις καρτέλες στο πάνω μέρος του παραθύρου του "
@@ -2404,25 +2492,40 @@ msgstr ""
 "χρησιμοποιείτε την <app>πλευρική μπάρα</app>."
 
 #: C/gedit-open-files-from-sidepane.page:19(p)
+#, fuzzy
+#| msgid ""
+#| "The <app>side pane</app> can help you to open new files, and easily "
+#| "switch between open files. To activate the <app>side pane</app>, select "
+#| "<guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, or just press the "
+#| "<key>F9</key> key."
 msgid ""
-"The <app>side pane</app> can help you to open new files, and easily switch "
-"between open files. To activate the <app>side pane</app>, select "
-"<guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, or just press the "
-"<key>F9</key> key."
+"To activate the <app>side pane</app>, select <guiseq><gui>View</"
+"gui><gui>Side Pane</gui></guiseq>, or just press the <key>F9</key> key."
 msgstr ""
-"Η <app>πλευρική μπάρα</app> μπορεί να σας βοηθήσει να ανοίξετε νέα "
-"αρχεία, και να αλλάξετε εύκολα μεταξύ ανοιχτών αρχείων. Για να "
-"ενεργοποιήσετε την <app>πλευρική μπάρα</app>, επιλέξτε "
-"<guiseq><gui>Προβολή</gui><gui>Πλευρική μπάρα</gui></guiseq>, η απλά "
-"πατήστε το πλήκτρο <key>F9</key>."
+"Η <app>πλευρική μπάρα</app> μπορεί να σας βοηθήσει να ανοίξετε νέα αρχεία, "
+"και να αλλάξετε εύκολα μεταξύ ανοιχτών αρχείων. Για να ενεργοποιήσετε την "
+"<app>πλευρική μπάρα</app>, επιλέξτε <guiseq><gui>Προβολή</gui><gui>Πλευρική "
+"μπάρα</gui></guiseq>, η απλά πατήστε το πλήκτρο <key>F9</key>."
 
 #: C/gedit-open-files-from-sidepane.page:24(p)
 msgid ""
 "You can toggle the <gui>side pane</gui> open or closed by pressing <key>F9</"
 "key> at any time."
 msgstr ""
-"Μπορείτε να εναλλάξετε την <app>πλευρική μπάρα</app> σε ανοιχτή ή "
-"κλειστή πατώντας <key>F9</key> οποιαδήποτε στιγμή."
+"Μπορείτε να εναλλάξετε την <app>πλευρική μπάρα</app> σε ανοιχτή ή κλειστή "
+"πατώντας <key>F9</key> οποιαδήποτε στιγμή."
+
+#: C/gedit-open-files-from-sidepane.page:31(p)
+msgid ""
+"To open files from the <app>side pane</app>, first open the <app>side pane</"
+"app> by selecting <guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, then "
+"click on the <gui>file-browser</gui> icon at the bottom of the pane."
+msgstr ""
+"Για να ανοίξετε αρχεία μέσα από την <app>Πλευρική μπάρα</app>, αρχικά "
+"ενεργοποιήστε την <app>Πλευρική μπάρα</app> επιλέγοντας "
+"<guiseq><gui>Προβολή</gui><gui>Πλευρική μπάρα</gui></guiseq>, έπειτα κάντε "
+"κλικ στο εικονίδιο <gui>Περιηγητής αρχείων</gui> στο κάτω μέρος του "
+"παράθυρου."
 
 #: C/gedit-open-files-from-sidepane.page:39(p)
 msgid ""
@@ -2453,12 +2556,106 @@ msgstr ""
 "<gui>αρχείο</gui> στο κάτω μέρος της <gui>πλευρικής μπάρας</gui>."
 
 #: C/gedit-open-files-from-sidepane.page:54(p)
+#, fuzzy
+#| msgid ""
+#| "Clicking on any file name in the <gui>side pane</gui> will activate that "
+#| "file for editing."
 msgid ""
-"Clicking on any file name in the <gui>side pane</gui> will activate that "
-"file for editing."
+"Clicking on any file name in the <gui>side pane</gui> will open that file "
+"for editing."
 msgstr ""
 "Κάνοντας κλικ σε οποιοδήποτε όνομα αρχείου στην <gui>πλευρική μπάρα</gui> θα "
 "ενεργοποιήσει το αρχείο αυτό για επεξεργασία."
+
+#: C/gedit-full-screen.page:14(title)
+msgid "Use fullscreen mode"
+msgstr "Χρήση λειτουργίας πλήρους οθόνης"
+
+#: C/gedit-full-screen.page:16(p)
+#, fuzzy
+msgid ""
+"When working with a large document, you may find it helpful to work in "
+"<app>gedit's</app> fullscreen mode. Using fullscreen mode will hide the "
+"<gui>menu bar</gui>, <gui>tab bar</gui> and the <gui>tool bar</gui>, "
+"presenting you with more of your text and allowing you to better focus on "
+"your tasks."
+msgstr ""
+"Όταν εργάζεστε σε ένα μεγάλο έγγραφο, ίσως σας φανεί πιο χρήσιμο να "
+"δουλέψετε στη λειτουργία πλήρους οθόνης του <app>gedit</app>. "
+"Χρησιμοποιώντας τη λειτουργία αυτή, θα κρυφτούν η <gui>μπάρα μενού</gui>, η "
+"<gui>μπάρα καρτελών</gui> και η <gui>μπάρα εργαλείων</gui>, δίνοντάς σας "
+"περισσότερο χώρο για το κείμενό σας και επιτρέποντάς σας να επικεντρωθείτε "
+"καλύτερα στο έργο σας."
+
+#: C/gedit-full-screen.page:19(title)
+msgid "Turn on fullscreen mode"
+msgstr "Ενεργοποίηση λειτουργίας πλήρους οθόνης"
+
+#: C/gedit-full-screen.page:20(p)
+msgid ""
+"To turn on fullscreen mode, select <guiseq><gui>View</gui><gui>Fullscreen</"
+"gui></guiseq>, or press <key>F11</key>. <app>gedit's</app> menu, title, and "
+"tab-bars will hide, and you will only be presented with the text of your "
+"current file."
+msgstr ""
+"Για να ενεργοποιήσετε τη λειτουργία πλήρους οθόνης, επιλέξτε "
+"<guiseq><gui>Προβολή</gui><gui>Πλήρης Οθόνη</gui></guiseq>, ή πατήστε "
+"<key>F11</key>. Το μενού, ο τίτλος και οι μπάρες καρτελών του <app>gedit</"
+"app> θα κρυφτούν, και θα εμφανίζεται μόνο το κείμενο του τρέχοντος αρχείου "
+"σας."
+
+#: C/gedit-full-screen.page:21(p)
+msgid ""
+"If you need to perform an action from the <app>gedit</app> menu while "
+"working in fullscreen mode, move your mouse pointer to the top of the "
+"screen. The <app>gedit</app> menu bar will reappear, and you can select your "
+"desired action."
+msgstr ""
+"Αν πρέπει να εκτελέσετε κάποια ενέργεια από το μενού του <app>gedit</app> "
+"ενώ παράλληλα εργάζεστε σε λειτουργία πλήρους οθόνης, κινήστε το δείκτη του "
+"ποντικιού σας στο πάνω μέρος της οθόνης. Η μπάρα μενού του <app>gedit</app>  "
+"θα εμφανιστεί, κι έτσι μπορείτε να επιλέξετε την επιθυμητή ενέργεια."
+
+#: C/gedit-full-screen.page:23(p)
+#, fuzzy
+msgid ""
+"To switch between open tabs while in fullscreen mode, press either "
+"<keyseq><key>Ctrl</key><key>Alt</key><key>PgUp</key></keyseq> or "
+"<keyseq><key>Ctrl</key><key>Alt</key><key>PgDn</key></keyseq>."
+msgstr ""
+"Για να αλλάξετε καρτέλα ενώ βρίσκεστε σε λειτουργία πλήρους οθόνης, πατήστε "
+"<keyseq><key>Ctrl</key><key>Alt</key><key>PgUp</key></keyseq> ή "
+"<keyseq><key>Ctrl</key><key>Alt</key><key>PgDn</key></keyseq>."
+
+#: C/gedit-full-screen.page:27(title)
+msgid "Turn off fullscreen mode"
+msgstr "Απενεργοποίηση λειτουργίας πλήρους οθόνης"
+
+#: C/gedit-full-screen.page:28(p)
+#, fuzzy
+msgid ""
+"To turn off fullscreen mode and return to the standard <app>gedit</app> "
+"window, move your mouse cursor to the top of the screen, and wait for the "
+"<gui>menu bar</gui> to appear. When the <gui>menu bar</gui> appears, select "
+"<gui>Leave Fullscreen</gui>."
+msgstr ""
+"Για να απενεργοποιήσετε τη λειτουργία πλήρους οθόνης και να επιστρέψετε στο "
+"τυπικό παράθυρο του <app>gedit</app>, κινήστε το δείκτη του ποντικιού στο "
+"πάνω μέρος της οθόνης και περιμένετε μέχρι να εμφανιστεί η <gui>μπάρα μενού</"
+"gui>. Όταν εμφανιστεί η <gui>μπάρα μενού</gui>, επιλέξτε <gui>Έξοδος από "
+"πλήρη οθόνη</gui>."
+
+#: C/gedit-files-basic.page:14(title)
+msgid "File basics: Open, close, and save files"
+msgstr "Βασικά για τα αρχεία: Άνοιγμα, κλείσιμο και αποθήκευση αρχείων"
+
+#: C/gedit-files-basic.page:16(p)
+msgid ""
+"If you are new to <app>gedit</app>, these topics will help you with "
+"creating, saving, and opening and closing files."
+msgstr ""
+"Αν είστε καινούργιος στο <app>gedit</app>, αυτά τα θέματα θα σας βοηθήσουν "
+"στη δημιουργία, αποθήκευση, στο άνοιγμα και κλείσιμο των αρχείων."
 
 #: C/gedit-edit-as-root.page:14(title)
 msgid "Edit a file as the root (administative) user"
@@ -2483,7 +2680,6 @@ msgstr ""
 
 #: C/gedit-edit-as-root.page:19(code)
 #, no-wrap
-#| msgid "gedit"
 msgid "sudo gedit"
 msgstr "sudo gedit"
 
@@ -2523,23 +2719,92 @@ msgstr ""
 "Αφού ανοίξετε το <app>gedit</app> με δικαιώματα διαχειριστή, η εφαρμογή θα "
 "διατηρήσει αυτά τα δικαιώματα μέχρι να την κλείσετε."
 
+#: C/gedit-create-new-file.page:14(title)
+#, fuzzy
+#| msgid "Create a new document"
+msgid "Create a new file"
+msgstr "Δημιουργία νέου εγγράφου"
+
+#: C/gedit-create-new-file.page:16(p)
+#, fuzzy
+#| msgid ""
+#| "Once you have enabled the plugin, add the terminal to the bottom panel by "
+#| "selecting <guiseq><gui>View</gui><gui>Bottom Panel</gui></guiseq>, or "
+#| "just press <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
+msgid ""
+"The easiest way to create a new file in <app>gedit</app>, is to click the "
+"icon that looks like a blank piece of paper with a \"plus\" sign next to it. "
+"If you prefer, you may also select <guiseq><gui>File</gui><gui>New</gui></"
+"guiseq>, or press <keyseq><key>Ctrl</key><key>N</key></keyseq>."
+msgstr ""
+"Αφού ενεργοποιήσετε το πρόσθετο, προσθέστε το τερματικό στην κάτω μπάρα "
+"επιλέγοντας <guiseq><gui>Προβολή</gui><gui>Κάτω μπάρα</gui></guiseq>, ή απλά "
+"πατήστε <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
+
+#: C/gedit-create-new-file.page:18(p)
+msgid ""
+"Any one of these actions will create a new file in the <app>gedit</app> "
+"window. If you have other files open in <app>gedit</app>, the new file that "
+"you create will appear as a new tab to the right of those files."
+msgstr ""
+"Οποιαδήποτε από αυτές τις ενέργειες θα δημιουργήσει ένα νέο αρχείο στο "
+"παράθυρο του <app>gedit</app>. Αν έχετε κι άλλα αρχεία ανοιχτά στο "
+"<app>gedit</app>, το νέο αρχείο που δημιουργείτε θα εμφανιστεί σε μια "
+"καινούρια καρτέλα στα δεξιά αυτών των αρχείων."
+
+#: C/gedit-close-file.page:14(title)
+#, fuzzy
+#| msgid "Close tab"
+msgid "Close a file"
+msgstr "Κλείσιμο καρτέλας"
+
+#: C/gedit-close-file.page:16(p)
+#, fuzzy
+#| msgid ""
+#| "To remove a tab, click the <guiseq><gui>X</gui></guiseq> on the tab's "
+#| "right side. To remove all open tabs, press <keyseq><key>Ctrl</"
+#| "key><key>Shift</key><key>W</key></keyseq>"
+msgid ""
+"To close a file in <app>gedit</app>, select <guiseq><gui>File</"
+"gui><gui>Close</gui></guiseq>. Alternately, you can click the small \"X\" "
+"that appears on the right-side of the file's tab, or press "
+"<keyseq><key>Ctrl</key><key>W</key></keyseq>."
+msgstr ""
+"Για να αφαιρέσετε μια καρτέλα, κάνε κλικ στο <guiseq><gui>X</gui></guiseq> "
+"στην δεξιά πλευρά της καρτέλας. Για να αφαιρέσετε όλες τις ανοιχτές "
+"καρτέλες, πατήστε <keyseq><key>Ctrl</key><key>Shift</key><key>W</key></"
+"keyseq>"
+
+#: C/gedit-close-file.page:17(p)
+msgid ""
+"Any one of these actions will close a file in <app>gedit</app>. If your file "
+"contains changes that have not been saved, <app>gedit</app> will prompt you "
+"to save those changes before closing the file."
+msgstr ""
+"Οποιαδήποτε από αυτές τις ενέργειες θα κλείσει ένα αρχείο στο <app>gedit</"
+"app>. Αν το αρχείο σας περιέχει αλλαγές που δεν έχουν αποθηκευτεί, το "
+"<app>gedit</app> θα σας ειδοποιήσει να τις αποθηκεύσετε πριν κλείσετε το "
+"αρχείο. "
+
 #: C/gedit-change-color-scheme.page:14(title)
-#| msgid "Blue based color scheme."
 msgid "Change the color scheme"
-msgstr "Αλλαγή συνδιασμού χρωμάτων"
+msgstr "Αλλαγή συνδυασμού χρωμάτων"
 
 #: C/gedit-change-color-scheme.page:16(p)
+#, fuzzy
+#| msgid ""
+#| "gedit includes several different color schemes, allowing you to change "
+#| "the appearance of the main text window."
 msgid ""
-"gedit includes several different color schemes, allowing you to change the "
-"appearance of the main text window."
+"<app>gedit</app> includes several different color schemes, allowing you to "
+"change the appearance of the main text window."
 msgstr ""
 "Το gedit συμπεριλαμβάνει αρκετούς διαφορετικούς συνδυασμούς χρωμάτων, "
 "επιτρέποντας σας να αλλάξετε την εμφάνιση του κύριου παράθυρου κειμένου."
 
 #: C/gedit-change-color-scheme.page:18(p)
-#| msgid "To use the Sort plugin, perform the following steps:"
 msgid "To change the color scheme, complete the following steps:"
-msgstr "Για να αλλάξετε τον συνδιασμό χρωμάτων, κάντε τα ακόλουθα:"
+msgstr "Για να αλλάξετε τον συνδυασμό χρωμάτων, κάντε τα ακόλουθα:"
 
 #: C/gedit-change-color-scheme.page:20(p)
 msgid ""
@@ -2550,16 +2815,14 @@ msgstr ""
 "gui><gui>Γραμματοσειρά &amp; Χρώματα</gui></guiseq>."
 
 #: C/gedit-change-color-scheme.page:21(p)
-#| msgid "Blue based color scheme."
 msgid "Choose your desired color scheme."
-msgstr "Διαλέξτε τον επιθυμητό συνδιασμό χρωμάτων"
+msgstr "Διαλέξτε τον επιθυμητό συνδυασμό χρωμάτων"
 
 #: C/gedit-change-color-scheme.page:24(p)
 msgid "The new color scheme will be applied immediately."
 msgstr "Ο νέος συνδυασμός χρωμάτων θα εφαρμοστεί άμεσα."
 
 #: C/gedit-change-color-scheme.page:27(title)
-#| msgid "Color Scheme"
 msgid "Use a Custom Color Scheme"
 msgstr "Χρήση ενός προσαρμοσμένου συνδυασμού χρωμάτων"
 
@@ -2592,6 +2855,187 @@ msgstr ""
 "Μιχαήλ Κοτσαρίνης <mk73628@hotmail.com>,2009\n"
 "Βασίλης Τσιβίκης <vasitsiv@hotmail.gr>, 2011\n"
 "Για περισσότερα δείτε http://www.gnome.gr/"
+
+#~ msgid ""
+#~ "Be careful. If you make a mistake outside of <app>gedit</app> (e.g., If "
+#~ "you say something mean to your friend) <app>gedit</app> will not be able "
+#~ "to help you undo that mistake."
+#~ msgstr ""
+#~ "Προσέξτε. Αν κάνετε κάποιο λάθος έξω από το <app>gedit</app> (π.χ., Αν "
+#~ "πείτε κάτι άσχημο στον φίλο σας) το <app>gedit</app> δεν θα είναι σε θέση "
+#~ "να σας βοηθήσει να αναιρέσετε αυτό το λάθος."
+
+#~ msgid ""
+#~ "Working with tabs in <app>gedit</app> allows you to keep an eye on "
+#~ "several files in a single window. When you start <app>gedit</app>, a "
+#~ "single tab will be displayed above the contents of the current file."
+#~ msgstr ""
+#~ "Η εργασία με καρτέλες στο <app>gedit</app> σας επιτρέπει να "
+#~ "παρακολουθείτε αρκετά αρχεία σε ένα μόνο παράθυρο. Όταν εκκινήσετε το "
+#~ "<app>gedit</app>, μια μοναδική καρτέλα θα εμφανίζετε πάνω από τα "
+#~ "περιεχόμενα του τρέχων αρχείου."
+
+#~ msgid ""
+#~ "To view the contents of a specific tab, click the tab itself. The "
+#~ "contents of the file will be displayed below the currently open tabs. "
+#~ "Clicking the <guiseq><gui>X</gui></guiseq> on the side of the tab will "
+#~ "close that file."
+#~ msgstr ""
+#~ "Για να προβάλετε τα περιεχόμενα μιας συγκεκριμένης καρτέλας, κάντε κλικ "
+#~ "στην ίδια την καρτέλα. Τα περιεχόμενα του αρχείου θα προβληθούν κάτω από "
+#~ "τις τρέχουσες ανοιχτές καρτέλες. Κάνοντας κλικ στο <guiseq><gui>X</gui></"
+#~ "guiseq> στην άκρη της καρτέλας θα κλείσει το αρχείο αυτό."
+
+#~ msgid "Organizing tabs:"
+#~ msgstr "Οργάνωση καρτελών:"
+
+#~ msgid ""
+#~ "There are several different ways to organize your tabs in <app>gedit</"
+#~ "app>."
+#~ msgstr ""
+#~ "Υπάρχουν πολλοί διάφοροι τρόποι για να οργανώσετε τις καρτέλες στο "
+#~ "<app>gedit</app>."
+
+#~ msgid "Use the spell-check feature"
+#~ msgstr "Χρήση του ελέγχου ορθογραφίας κατά την πληκτρολόγηση"
+
+#~ msgid ""
+#~ "The following section provides options that can help you replace text "
+#~ "more efficiently with <app>gedit</app>."
+#~ msgstr ""
+#~ "Η ακόλουθη ενότητα παρέχει επιλογές που μπορούν να σας βοηθήσουν να "
+#~ "αντικαταστήσετε κείμενο πιο αποδοτικά με το <app>gedit</app>."
+
+#~| msgid "Find and Replace Options"
+#~ msgid "Find/Replace options"
+#~ msgstr "Επιλογές εύρεσης και αντικατάστασης"
+
+#~ msgid ""
+#~ "These options are located in the Find and Replace menus, accessible at "
+#~ "<guiseq><gui>Search</gui><gui>Find</gui></guiseq> or <guiseq><gui>Search</"
+#~ "gui><gui>Replace</gui></guiseq>."
+#~ msgstr ""
+#~ "Αυτές οι επιλογές βρίσκονται στα μενού Εύρεση και Αντικατάσταση, "
+#~ "προσβάσιμα από την <guiseq><gui>Αναζήτηση</gui><gui>Εύρεση</gui></guiseq> "
+#~ "ή την <guiseq><gui>Αναζήτηση</gui><gui>Αντικατάσταση</gui></guiseq>."
+
+#, fuzzy
+#~ msgid ""
+#~ "To set the page options, choose File Page Setup to display the Page Setup "
+#~ "dialog. The Page Setup dialog enables you to specify the following print "
+#~ "options: General Tabbed Section Fonts General Tabbed Section Print syntax "
+#~ "highlighting Select this option to print syntax highlighting. For more "
+#~ "information about syntax highlighting, see Section 7.1 ― Syntax "
+#~ "Highlighting. Print page headers Select this option to include a header "
+#~ "on each page that you print. You cannot configure the header. Line "
+#~ "Numbers Select the Print line numbers option to include line numbers when "
+#~ "you print a file. Use the Number every ... lines spin box to specify how "
+#~ "often to print the line numbers, for example every 5 lines, every 10 "
+#~ "lines, and so on. Text Wrapping Select the Enable text wrapping option to "
+#~ "wrap text onto the next line, at a character level, when you print a "
+#~ "file. The application counts wrapped lines as one line for line numbering "
+#~ "purposes. Select the Do not split words over two lines option to wrap "
+#~ "text onto the next line, at a word level, when you print a file. Fonts "
+#~ "Body Click on this button to select the font to use to print the body "
+#~ "text of a file. Line numbers Click on this button to select the font to "
+#~ "use to print line numbers. Headers and footers Click on this button to "
+#~ "select the font to use to print the headers and footers in a file. To "
+#~ "reset the fonts to the default fonts for printing a file from gedit, "
+#~ "click Restore Default Fonts."
+#~ msgstr ""
+#~ "Για να ορίσετε τις επιλογές σελίδας, διαλέξτε την Ρύθμιση σελίδας αρχείου "
+#~ "για να εμφανιστεί ο διάλογος Ρύθμισης της σελίδας. Ο διάλογος της "
+#~ "Ρύθμισης σελίδας σας επιτρέπει να προσδιορίσετε τις ακόλουθες επιλογές "
+#~ "εκτύπωσης:"
+
+#~| msgid "Close the current document."
+#~ msgid "*Checks the spelling of the current document."
+#~ msgstr "*Ελέγχει την ορθογραφία του τρέχοντος εγγράφου."
+
+#~| msgid "Spell Checker Plugin"
+#~ msgid "*Spell checker"
+#~ msgstr "*Ορθογραφικός έλεγχος"
+
+#~ msgid "*Insert often used pieces of text in a fast way."
+#~ msgstr ""
+#~ "*Εισάγετε συχνά χρησιμοποιούμενα κομμάτια κειμένου με ένα γρήγορο τρόπο."
+
+#~| msgid "Snippets Plugin"
+#~ msgid "*Snippets"
+#~ msgstr "*Δείγματα κώδικα"
+
+#~ msgid "*Quickly open files."
+#~ msgstr "*Γρήγορο άνοιγμα αρχείων"
+
+#~ msgid "*Quick open"
+#~ msgstr "*Γρήγορο άνοιγμα"
+
+#~ msgid ""
+#~ "<info><placeholder-1/><revision pkgversion=\"3.0\" version=\"0.1\" date="
+#~ "\"2010-12-5\" status=\"stub\"/><credit type=\"author\"><placeholder-2/"
+#~ "><placeholder-3/></credit><credit type=\"author\"><placeholder-4/"
+#~ "><placeholder-5/></credit></info><placeholder-6/><placeholder-7/"
+#~ "><placeholder-8/>."
+#~ msgstr ""
+#~ "<info><placeholder-1/><revision pkgversion=\"3.0\" version=\"0.1\" date="
+#~ "\"2010-12-5\" status=\"stub\"/><credit type=\"author\"><placeholder-2/"
+#~ "><placeholder-3/></credit><credit type=\"author\"><placeholder-4/"
+#~ "><placeholder-5/></credit></info><placeholder-6/><placeholder-7/"
+#~ "><placeholder-8/>."
+
+#~ msgid ""
+#~ "To use this plugin, you will need to do three things: select "
+#~ "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>File "
+#~ "Browser Panel</gui></guiseq>. To activate the side panel, select "
+#~ "<guiseq><gui>View</gui><gui>Side Panel</gui></guiseq>, or just "
+#~ "press<key>F9</key>"
+#~ msgstr ""
+#~ "Για να χρησιμοποιήσετε αυτό το πρόσθετο, θα χρειαστεί να κάνετε τρία "
+#~ "πράγματα: επιλέξτε <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</"
+#~ "gui><gui>Πρόσθετα</gui><gui>Μπάρα περιήγησης αρχείων</gui></guiseq>. Για "
+#~ "να ενεργοποιήσετε την πλευρική μπάρα, επιλέξτε <guiseq><gui>Προβολή</"
+#~ "gui><gui>Πλευρική μπάρα</gui></guiseq>, ή απλά πατήστε<key>F9</key>"
+
+#~ msgid ""
+#~ "<info><placeholder-1/><revision pkgversion=\"3.0\" version=\"0.1\" date="
+#~ "\"2010-12-5\" status=\"stub\"/><credit type=\"author\"><placeholder-2/"
+#~ "><placeholder-3/></credit><credit type=\"author\"><placeholder-4/"
+#~ "><placeholder-5/></credit></info><placeholder-6/><placeholder-7/"
+#~ "><placeholder-8/>. <section id=\"sidepane-open\"><placeholder-9/"
+#~ "><placeholder-10/><placeholder-11/><placeholder-12/></section>"
+#~ msgstr ""
+#~ "<info><placeholder-1/><revision pkgversion=\"3.0\" version=\"0.1\" date="
+#~ "\"2010-12-5\" status=\"stub\"/><credit type=\"author\"><placeholder-2/"
+#~ "><placeholder-3/></credit><credit type=\"author\"><placeholder-4/"
+#~ "><placeholder-5/></credit></info><placeholder-6/><placeholder-7/"
+#~ "><placeholder-8/>. <section id=\"sidepane-open\"><placeholder-9/"
+#~ "><placeholder-10/><placeholder-11/><placeholder-12/></section>"
+
+#~ msgid "Execute external commands and shell scripts."
+#~ msgstr "Εκτέλεση εξωτερικών εντολών και δεσμών ενεργειών κελύφους."
+
+#~ msgid "Check for updates to gedit (Windows and Mac OS X only)"
+#~ msgstr "Ελέγξτε για ενημερώσεις στο gedit (Windows και Mac OS X μόνο)"
+
+#~ msgid "Create your own gedit Plugins"
+#~ msgstr "Δημιουργήστε τα δικά σας πρόσθετα gedit"
+
+#~ msgid "Open a recently-used file"
+#~ msgstr "Άνοιγμα ενός πρόσφατου αρχείου"
+
+#~| msgid ""
+#~| "Saving to FTP servers can be enabled with <ulink type=\"help\" url="
+#~| "\"ghelp:gconf-editor\"><application>Configuration Editor</application></"
+#~| "ulink>, setting the key <systemitem>/apps/gedit-2/preferences/editor/"
+#~| "save/writable_vfs_schemes</systemitem>, but this may cause errors."
+#~ msgid ""
+#~ "Saving to FTP servers can be enabled with Configuration Editor, setting "
+#~ "the key /apps/gedit-2/preferences/editor/save/writable_vfs_schemes, but "
+#~ "this may cause errors."
+#~ msgstr ""
+#~ "Η αποθήκευση σε διακομιστές FTP μπορεί να ενεργοποιηθεί με τον "
+#~ "Επεξεργαστή Διαμόρφωσης, ορίζοντας το κλειδή /apps/gedit-2/preferences/"
+#~ "editor/save/writable_vfs_schemes, αλλά μπορεί να προκαλέσει σφάλματα."
 
 #~ msgid ""
 #~ "Permission is granted to copy, distribute and/or modify this document "
@@ -3010,17 +3454,17 @@ msgstr ""
 #~ "The side pane displays a list of open documents, and other information "
 #~ "depending on which plugins are enabled."
 #~ msgstr ""
-#~ "Η πλευρική μπάρα εμφανίζει μια λίστα από ανοικτά έγγραφα, και "
-#~ "άλλες πληροφορίες ανάλογα με τις ενεργοποιημένες πρόσθετες λειτουργίες."
+#~ "Η πλευρική μπάρα εμφανίζει μια λίστα από ανοικτά έγγραφα, και άλλες "
+#~ "πληροφορίες ανάλογα με τις ενεργοποιημένες πρόσθετες λειτουργίες."
 
 #~ msgid ""
 #~ "By default the side pane is not shown. To show it, choose "
 #~ "<menuchoice><guimenu>View</guimenu><guimenuitem>Side Pane</guimenuitem></"
 #~ "menuchoice>."
 #~ msgstr ""
-#~ "Εξ ορισμού η πλευρική μπάρα δεν εμφανίζεται. Για να την "
-#~ "εμφανίσετε, επιλέξτε <menuchoice><guimenu>Προβολή</"
-#~ "guimenu><guimenuitem>Πλευρική μπάρα</guimenuitem></menuchoice>."
+#~ "Εξ ορισμού η πλευρική μπάρα δεν εμφανίζεται. Για να την εμφανίσετε, "
+#~ "επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Πλευρική "
+#~ "μπάρα</guimenuitem></menuchoice>."
 
 #~ msgid "Bottom Pane"
 #~ msgstr "Κάτω μπάρα"
@@ -3038,9 +3482,9 @@ msgstr ""
 #~ "<menuchoice><guimenu>View</guimenu><guimenuitem>Bottom Pane</"
 #~ "guimenuitem></menuchoice>."
 #~ msgstr ""
-#~ "Εξ ορισμού η κάτω μπάρα δεν εμφανίζεται. Για να την εμφανίσετε, "
-#~ "επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Κάτω "
-#~ "μπάρα</guimenuitem></menuchoice>."
+#~ "Εξ ορισμού η κάτω μπάρα δεν εμφανίζεται. Για να την εμφανίσετε, επιλέξτε "
+#~ "<menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Κάτω μπάρα</"
+#~ "guimenuitem></menuchoice>."
 
 #~ msgid ""
 #~ "When you right-click in the <application>gedit</application> window, the "
@@ -3156,9 +3600,6 @@ msgstr ""
 #~ "application>. Η εφαρμογή προσθέτει μια καρτέλα στο παράθυρο για κάθε "
 #~ "ανοικτό αρχείο. Για περισσότερες πληροφορίες δείτε <xref linkend=\"gedit-"
 #~ "tabs\"/>."
-
-#~ msgid "Saving a File"
-#~ msgstr "Αποθήκευση αρχείου"
 
 #~ msgid "You can save files in the following ways:"
 #~ msgstr "Μπορείτε να αποθηκεύετε αρχεία με τους εξής τρόπους:"
@@ -3339,9 +3780,6 @@ msgstr ""
 #~ "guilabel> για να ψάξετε για ένα συγκεκριμένο κομμάτι κειμένου, ή την "
 #~ "<guilabel>Αυξητική αναζήτηση</guilabel> για να φωτίσετε το κείμενο που "
 #~ "ταιριάζει καθώς πληκτρολογείτε."
-
-#~ msgid "Finding Text"
-#~ msgstr "Εύρεση κειμένου"
 
 #~ msgid "To search a file for a string of text, perform the following steps:"
 #~ msgstr "Για να αναζητήσετε μια σειρά κειμένου, ακολουθήστε τα εξής βήματα:"
@@ -4074,9 +4512,6 @@ msgstr ""
 #~ "Εμφάνιση επισήμανσης σύνταξης για επεξεργασία κώδικα σήμανσης. "
 #~ "Χρησιμοποιήστε το υπομενού <guisubmenu>Markup</guisubmenu> για να "
 #~ "επιλέξετε τον τύπο του κώδικα σήμανσης."
-
-#~ msgid "Scripts"
-#~ msgstr "Σενάρια ενεργειών (scripts)"
 
 #~ msgid ""
 #~ "Display syntax highlighting to edit script code. Use the "
@@ -5211,13 +5646,6 @@ msgstr ""
 #~ "Πατήστε <guibutton>OK</guibutton> για να κλείσετε το παράθυρο διαλόγου "
 #~ "<guilabel>Προσαρμογή προσθέτου Εισαγωγή ημερομηνίας/ώρας</guilabel>."
 
-#~ msgid ""
-#~ "To close the <guilabel>Preferences</guilabel> dialog, click "
-#~ "<guibutton>Close</guibutton>."
-#~ msgstr ""
-#~ "Για να κλείσετε το παράθυρο διαλόγου <guilabel>Προτιμήσεις</guilabel>, "
-#~ "κάντε κλικ στο <guibutton>Κλείσιμο</guibutton>."
-
 #~ msgid "Modelines Plugin"
 #~ msgstr "Πρόσθετο Modelines"
 
@@ -5917,10 +6345,10 @@ msgstr ""
 #~ "documents. Click on the tab showing a + icon at the bottom of the side "
 #~ "pane to show the tag list tab."
 #~ msgstr ""
-#~ "Ως προεπιλογή, η πλευρική μπάρα εμφανίζει μια καρτέλα που περιέχει "
-#~ "μια λίστα των ανοιχτών εγγράφων. Κάντε κλικ στην καρτέλα που εμφανίζει "
-#~ "ένα + στο τέλος της πλευρικής μπάρας για εμφανίσετε την καρτέλα με "
-#~ "τη λίστα ετικετών."
+#~ "Ως προεπιλογή, η πλευρική μπάρα εμφανίζει μια καρτέλα που περιέχει μια "
+#~ "λίστα των ανοιχτών εγγράφων. Κάντε κλικ στην καρτέλα που εμφανίζει ένα + "
+#~ "στο τέλος της πλευρικής μπάρας για εμφανίσετε την καρτέλα με τη λίστα "
+#~ "ετικετών."
 
 #~ msgid ""
 #~ "Select the appropriate tag category from the drop-down list. For example, "
@@ -5942,8 +6370,8 @@ msgstr ""
 #~ "pane to the display area, press <keycap>Return</keycap>."
 #~ msgstr ""
 #~ "Για να εισάγετε μια ετικέτα στο τρέχον αρχείο και να αλλάξετε την εστίαση "
-#~ "από την πλευρική μπάρα στην περιοχή απεικόνισης, πατήστε "
-#~ "<keycap>Return</keycap>."
+#~ "από την πλευρική μπάρα στην περιοχή απεικόνισης, πατήστε <keycap>Return</"
+#~ "keycap>."
 
 #~ msgid ""
 #~ "To insert a tag in the current file and maintain the focus on the "
