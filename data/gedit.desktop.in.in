@@ -16,3 +16,14 @@ X-GNOME-Bugzilla-Product=gedit
 X-GNOME-Bugzilla-Component=general
 X-GNOME-Bugzilla-Version=@VERSION@
 X-GNOME-Bugzilla-ExtraInfoScript=@FULL_LIBEXECDIR@/gedit/gedit-bugreport.sh
+X-Ayatana-Desktop-Shortcuts=NewDocument;NewWindow;
+
+[NewDocument Shortcut Group]
+_Name=Create a new document
+Exec=gedit --new-document
+TargetEnvironment=Unity
+
+[NewWindow Shortcut Group]
+_Name=Open a new window
+Exec=gedit --new-window
+TargetEnvironment=Unity
