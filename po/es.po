@@ -12,37 +12,46 @@
 # Francisco Javier F. Serrador <serrador@tecknolabs.com>, 2006.
 # Juanje Ojeda Croissier <jojeda@emergya.es>, 2008.
 # Leandro Machacón <leandroman@gemail.com>, 2010.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-06-20 17:24+0000\n"
-"PO-Revision-Date: 2011-06-20 19:42+0200\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
-"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
+"POT-Creation-Date: 2011-07-12 19:36+0000\n"
+"PO-Revision-Date: 2011-07-13 10:55+0200\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bits\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Gtranslator 1.9.3\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/gedit.desktop.in.in.h:1
+#: ../data/gedit.desktop.in.in.h:1 ../gedit/gedit-ui.h:53
+msgid "Create a new document"
+msgstr "Crear un documento nuevo"
+
+#: ../data/gedit.desktop.in.in.h:2
 msgid "Edit text files"
 msgstr "Edite archivos de texto"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:805
+#: ../data/gedit.desktop.in.in.h:3
+#| msgid "_Move to New Window"
+msgid "Open a new window"
+msgstr "Abrir una ventana nueva"
+
+#: ../data/gedit.desktop.in.in.h:4 ../gedit/gedit-print-job.c:805
 msgid "Text Editor"
 msgstr "Editor de textos"
 
-#: ../data/gedit.desktop.in.in.h:3
+#: ../data/gedit.desktop.in.in.h:5
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:4
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "Editor de textos gedit"
 
@@ -776,7 +785,7 @@ msgstr "_Añadir…"
 msgid "_Autosave files every"
 msgstr "_Autoguardar archivos cada"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:590
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:561
 msgid "_Display line numbers"
 msgstr "_Mostrar números de línea"
 
@@ -793,7 +802,7 @@ msgid "_minutes"
 msgstr "_minutos"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1592
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1609
 msgid "Replace"
 msgstr "Reemplazar"
 
@@ -1119,12 +1128,12 @@ msgstr "No se encontró «%s»"
 msgid "Unsaved Document %d"
 msgstr "Documento no guardado %d"
 
-#: ../gedit/gedit-documents-panel.c:119 ../gedit/gedit-documents-panel.c:133
-#: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
+#: ../gedit/gedit-documents-panel.c:121 ../gedit/gedit-documents-panel.c:135
+#: ../gedit/gedit-window.c:2442 ../gedit/gedit-window.c:2449
 msgid "Read-Only"
 msgstr "Sólo lectura"
 
-#: ../gedit/gedit-documents-panel.c:1127 ../gedit/gedit-window.c:3840
+#: ../gedit/gedit-documents-panel.c:1142 ../gedit/gedit-window.c:3890
 msgid "Documents"
 msgstr "Documentos"
 
@@ -1913,15 +1922,11 @@ msgstr "_Documentos"
 msgid "_Help"
 msgstr "Ay_uda"
 
-#: ../gedit/gedit-ui.h:53
-msgid "Create a new document"
-msgstr "Crear un documento nuevo"
-
 #: ../gedit/gedit-ui.h:54
 msgid "_Open..."
 msgstr "_Abrir…"
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1537
 msgid "Open a file"
 msgstr "Abrir un archivo"
 
@@ -2199,29 +2204,29 @@ msgid "/ on %s"
 msgstr "/ en %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:625
+#: ../gedit/gedit-view-frame.c:624
 msgid "_Wrap Around"
 msgstr "_Volver al principio"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:635
+#: ../gedit/gedit-view-frame.c:634
 msgid "Match _Entire Word Only"
 msgstr "Coincidir sólo con palabras compl_etas"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:645
+#: ../gedit/gedit-view-frame.c:644
 msgid "_Match Case"
 msgstr "Coi_ncidir con capitalización"
 
-#: ../gedit/gedit-view-frame.c:904
+#: ../gedit/gedit-view-frame.c:903
 msgid "String you want to search for"
 msgstr "La cadena que quiere buscar"
 
-#: ../gedit/gedit-view-frame.c:913
+#: ../gedit/gedit-view-frame.c:912
 msgid "Line you want to move the cursor to"
 msgstr "Línea a la que quiere mover el cursor"
 
-#: ../gedit/gedit-window.c:1023
+#: ../gedit/gedit-window.c:1040
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Usar modo de resaltado %s"
@@ -2229,7 +2234,7 @@ msgstr "Usar modo de resaltado %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1090 ../gedit/gedit-window.c:2105
+#: ../gedit/gedit-window.c:1107 ../gedit/gedit-window.c:2139
 #: ../plugins/externaltools/tools/manager.py:138
 #: ../plugins/externaltools/tools/manager.py:435
 #: ../plugins/externaltools/tools/manager.py:546
@@ -2237,64 +2242,64 @@ msgstr "Usar modo de resaltado %s"
 msgid "Plain Text"
 msgstr "Texto plano"
 
-#: ../gedit/gedit-window.c:1091
+#: ../gedit/gedit-window.c:1108
 msgid "Disable syntax highlighting"
 msgstr "Desactivar resaltado de sintaxis"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1413
+#: ../gedit/gedit-window.c:1430
 #, c-format
 msgid "Open '%s'"
 msgstr "Abrir «%s»"
 
-#: ../gedit/gedit-window.c:1522
+#: ../gedit/gedit-window.c:1539
 msgid "Open a recently used file"
 msgstr "Abrir un archivo usado recientemente"
 
-#: ../gedit/gedit-window.c:1528
+#: ../gedit/gedit-window.c:1545
 msgid "Open"
 msgstr "Abrir"
 
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1603
 msgid "Save"
 msgstr "Guardar"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1605
 msgid "Print"
 msgstr "Imprimir"
 
-#: ../gedit/gedit-window.c:1590
+#: ../gedit/gedit-window.c:1607
 msgid "Find"
 msgstr "Buscar"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1750
+#: ../gedit/gedit-window.c:1767
 #, c-format
 msgid "Activate '%s'"
 msgstr "Activar «%s»"
 
-#: ../gedit/gedit-window.c:2083
+#: ../gedit/gedit-window.c:2117
 msgid "Use Spaces"
 msgstr "Usar espacios"
 
-#: ../gedit/gedit-window.c:2156
+#: ../gedit/gedit-window.c:2190
 msgid "Tab Width"
 msgstr "Ancho de la tabulación"
 
-#: ../gedit/gedit-window.c:2265
+#: ../gedit/gedit-window.c:2299
 msgid "Bracket match is out of range"
 msgstr "El corchete de coincidencia está fuera de rango"
 
-#: ../gedit/gedit-window.c:2270
+#: ../gedit/gedit-window.c:2304
 msgid "Bracket match not found"
 msgstr "No se encontró el corchete coincidente"
 
-#: ../gedit/gedit-window.c:2275
+#: ../gedit/gedit-window.c:2309
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Corchete coincidente encontrado en la línea: %d"
 
-#: ../gedit/gedit-window.c:4046
+#: ../gedit/gedit-window.c:4096
 msgid "About gedit"
 msgstr "Acerca de gedit"
 
@@ -2548,7 +2553,6 @@ msgid "Add Tool"
 msgstr "Añadir herramienta"
 
 #: ../plugins/externaltools/tools/tools.ui.h:3
-#| msgid "A Brand New Tool"
 msgid "Add a new tool"
 msgstr "Añadir una herramienta nueva"
 
@@ -2601,7 +2605,6 @@ msgid "Local files only"
 msgstr "Sólo archivos locales"
 
 #: ../plugins/externaltools/tools/tools.ui.h:17
-#| msgid "Manage _External Tools..."
 msgid "Manage External Tools"
 msgstr "Gestionar herramientas externas"
 
@@ -2618,7 +2621,6 @@ msgid "Remove Tool"
 msgstr "Quitar herramienta"
 
 #: ../plugins/externaltools/tools/tools.ui.h:21
-#| msgid "Revert selected snippet"
 msgid "Remove selected tool"
 msgstr "Quitar la herramienta seleccionada"
 
@@ -2631,12 +2633,10 @@ msgid "Replace current selection"
 msgstr "Reemplazar la selección actual"
 
 #: ../plugins/externaltools/tools/tools.ui.h:24
-#| msgid "_Revert"
 msgid "Revert Tool"
 msgstr "Revertir herramienta"
 
 #: ../plugins/externaltools/tools/tools.ui.h:25
-#| msgid "_Revert"
 msgid "Revert tool"
 msgstr "Revertir herramienta"
 
@@ -2673,23 +2673,23 @@ msgstr "A_tajo de teclado:"
 msgid "_Tools:"
 msgstr "_Herramientas:"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:175
+#: ../plugins/externaltools/tools/windowactivatable.py:176
 msgid "Manage _External Tools..."
 msgstr "Gestionar herramientas _externas…"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:176
+#: ../plugins/externaltools/tools/windowactivatable.py:177
 msgid "Opens the External Tools Manager"
 msgstr "Abrir el gestor de herramientas externas"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:179
+#: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "External _Tools"
 msgstr "_Herramientas externas"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:180
+#: ../plugins/externaltools/tools/windowactivatable.py:181
 msgid "External tools"
 msgstr "Herramientas externas"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:214
+#: ../plugins/externaltools/tools/windowactivatable.py:215
 msgid "Shell Output"
 msgstr "Salida de shell"
 
@@ -3168,7 +3168,6 @@ msgid "Activation"
 msgstr "Activación"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:3
-#| msgid "Snippets"
 msgid "Add Snippet"
 msgstr "Añadir recorte"
 
@@ -3182,7 +3181,6 @@ msgid "Delete selected snippet"
 msgstr "Borrar el recorte seleccionado"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#| msgid "Export snippets"
 msgid "Export Snippets"
 msgstr "Exportar recortes"
 
@@ -3191,7 +3189,6 @@ msgid "Export selected snippets"
 msgstr "Exportar el recorte seleccionado"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:8
-#| msgid "Import snippets"
 msgid "Import Snippets"
 msgstr "Importar recortes"
 
@@ -3201,12 +3198,10 @@ msgid "Import snippets"
 msgstr "Importar recortes"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:10
-#| msgid "Manage snippets"
 msgid "Manage Snippets"
 msgstr "Gestionar recortes"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:11
-#| msgid "Snippets"
 msgid "Remove Snippet"
 msgstr "Quitar recortes"
 
@@ -3525,36 +3520,36 @@ msgstr "Establecer idioma"
 msgid "Languages"
 msgstr "Idiomas"
 
-#: ../plugins/spell/gedit-spell-plugin.c:105
+#: ../plugins/spell/gedit-spell-plugin.c:107
 msgid "_Check Spelling..."
 msgstr "_Comprobar ortografía…"
 
-#: ../plugins/spell/gedit-spell-plugin.c:107
+#: ../plugins/spell/gedit-spell-plugin.c:109
 msgid "Check the current document for incorrect spelling"
 msgstr ""
 "Comprueba la ortografía del documento actual buscando palabras incorrectas"
 
-#: ../plugins/spell/gedit-spell-plugin.c:113
+#: ../plugins/spell/gedit-spell-plugin.c:115
 msgid "Set _Language..."
 msgstr "Establecer _idioma…"
 
-#: ../plugins/spell/gedit-spell-plugin.c:115
+#: ../plugins/spell/gedit-spell-plugin.c:117
 msgid "Set the language of the current document"
 msgstr "Establece el idioma del documento actual"
 
-#: ../plugins/spell/gedit-spell-plugin.c:124
+#: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "_Highlight Misspelled Words"
 msgstr "_Resaltar palabras mal escritas"
 
-#: ../plugins/spell/gedit-spell-plugin.c:126
+#: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
 msgstr "Comprobar automáticamente la ortografía del documento actual"
 
-#: ../plugins/spell/gedit-spell-plugin.c:817
+#: ../plugins/spell/gedit-spell-plugin.c:819
 msgid "The document is empty."
 msgstr "El documento está vacío."
 
-#: ../plugins/spell/gedit-spell-plugin.c:842
+#: ../plugins/spell/gedit-spell-plugin.c:844
 msgid "No misspelled words"
 msgstr "Sin palabras mal escritas"
 
