@@ -4,14 +4,14 @@
 #
 # Andraž Tori <andraz.tori1@guest.arnes.si>, 2000 - 2005.
 # Matic Žgur <mr.zgur@gmail.com>, 2006 - 2007.
-# Matej Urbančič <mateju@svn.gnome.org>, 2007 - 2010.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007 - 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-06-20 17:44+0000\n"
-"PO-Revision-Date: 2011-06-21 12:11+0100\n"
+"POT-Creation-Date: 2011-07-13 08:56+0000\n"
+"PO-Revision-Date: 2011-07-14 08:01+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -24,19 +24,28 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: ../data/gedit.desktop.in.in.h:1
+#: ../gedit/gedit-ui.h:53
+msgid "Create a new document"
+msgstr "Ustvari nov dokument"
+
+#: ../data/gedit.desktop.in.in.h:2
 msgid "Edit text files"
 msgstr "Enostavni urejevalnik besedilnih datotek"
 
-#: ../data/gedit.desktop.in.in.h:2
+#: ../data/gedit.desktop.in.in.h:3
+msgid "Open a new window"
+msgstr "Odpre novo okno"
+
+#: ../data/gedit.desktop.in.in.h:4
 #: ../gedit/gedit-print-job.c:805
 msgid "Text Editor"
 msgstr "Gedit - urejevalnik besedil"
 
-#: ../data/gedit.desktop.in.in.h:3
+#: ../data/gedit.desktop.in.in.h:5
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:4
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "Gedit urejevalnik besedil "
 
@@ -604,7 +613,7 @@ msgid "_Autosave files every"
 msgstr "Samodejno _shrani datoteke vsakih"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23
-#: ../gedit/gedit-view.c:590
+#: ../gedit/gedit-view.c:561
 msgid "_Display line numbers"
 msgstr "_Pokaži številke vrstic"
 
@@ -622,7 +631,7 @@ msgstr "_minut"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
 #: ../gedit/dialogs/gedit-replace-dialog.ui.h:2
-#: ../gedit/gedit-window.c:1592
+#: ../gedit/gedit-window.c:1609
 msgid "Replace"
 msgstr "Zamenjaj"
 
@@ -903,15 +912,15 @@ msgstr "\"%s\" ni mogoče najti"
 msgid "Unsaved Document %d"
 msgstr "dokument %d"
 
-#: ../gedit/gedit-documents-panel.c:119
-#: ../gedit/gedit-documents-panel.c:133
-#: ../gedit/gedit-window.c:2408
-#: ../gedit/gedit-window.c:2415
+#: ../gedit/gedit-documents-panel.c:121
+#: ../gedit/gedit-documents-panel.c:135
+#: ../gedit/gedit-window.c:2442
+#: ../gedit/gedit-window.c:2449
 msgid "Read-Only"
 msgstr "Le za branje"
 
-#: ../gedit/gedit-documents-panel.c:1127
-#: ../gedit/gedit-window.c:3840
+#: ../gedit/gedit-documents-panel.c:1142
+#: ../gedit/gedit-window.c:3890
 msgid "Documents"
 msgstr "Dokumenti"
 
@@ -1648,16 +1657,12 @@ msgstr "_Dokumenti"
 msgid "_Help"
 msgstr "Pomo_č"
 
-#: ../gedit/gedit-ui.h:53
-msgid "Create a new document"
-msgstr "Ustvari nov dokument"
-
 #: ../gedit/gedit-ui.h:54
 msgid "_Open..."
 msgstr "_Odpri ..."
 
 #: ../gedit/gedit-ui.h:55
-#: ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-window.c:1537
 msgid "Open a file"
 msgstr "Odpri datoteko"
 
@@ -1937,29 +1942,29 @@ msgid "/ on %s"
 msgstr "/ na %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:625
+#: ../gedit/gedit-view-frame.c:624
 msgid "_Wrap Around"
 msgstr "_Prelomi vrstice"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:635
+#: ../gedit/gedit-view-frame.c:634
 msgid "Match _Entire Word Only"
 msgstr "Poišči le _cele besede"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:645
+#: ../gedit/gedit-view-frame.c:644
 msgid "_Match Case"
 msgstr "_Upoštevaj velikost črk"
 
-#: ../gedit/gedit-view-frame.c:904
+#: ../gedit/gedit-view-frame.c:903
 msgid "String you want to search for"
 msgstr "Niz, ki ga želite poiskati"
 
-#: ../gedit/gedit-view-frame.c:913
+#: ../gedit/gedit-view-frame.c:912
 msgid "Line you want to move the cursor to"
 msgstr "Vrstica, na katero želite premakniti kazalko"
 
-#: ../gedit/gedit-window.c:1023
+#: ../gedit/gedit-window.c:1040
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Uporabi način poudarjanje %s"
@@ -1967,8 +1972,8 @@ msgstr "Uporabi način poudarjanje %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1090
-#: ../gedit/gedit-window.c:2105
+#: ../gedit/gedit-window.c:1107
+#: ../gedit/gedit-window.c:2139
 #: ../plugins/externaltools/tools/manager.py:138
 #: ../plugins/externaltools/tools/manager.py:435
 #: ../plugins/externaltools/tools/manager.py:546
@@ -1976,64 +1981,64 @@ msgstr "Uporabi način poudarjanje %s"
 msgid "Plain Text"
 msgstr "Običajno besedilo"
 
-#: ../gedit/gedit-window.c:1091
+#: ../gedit/gedit-window.c:1108
 msgid "Disable syntax highlighting"
 msgstr "Onemogoči poudarjanje skladnje"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1413
+#: ../gedit/gedit-window.c:1430
 #, c-format
 msgid "Open '%s'"
 msgstr "Odpri '%s'"
 
-#: ../gedit/gedit-window.c:1522
+#: ../gedit/gedit-window.c:1539
 msgid "Open a recently used file"
 msgstr "Odpri nedavno uporabljeno datoteko"
 
-#: ../gedit/gedit-window.c:1528
+#: ../gedit/gedit-window.c:1545
 msgid "Open"
 msgstr "Odpri"
 
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1603
 msgid "Save"
 msgstr "Shrani"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1605
 msgid "Print"
 msgstr "Natisni"
 
-#: ../gedit/gedit-window.c:1590
+#: ../gedit/gedit-window.c:1607
 msgid "Find"
 msgstr "Poišči"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1750
+#: ../gedit/gedit-window.c:1767
 #, c-format
 msgid "Activate '%s'"
 msgstr "Pokaži \"%s\""
 
-#: ../gedit/gedit-window.c:2083
+#: ../gedit/gedit-window.c:2117
 msgid "Use Spaces"
 msgstr "Uporabi presledke"
 
-#: ../gedit/gedit-window.c:2156
+#: ../gedit/gedit-window.c:2190
 msgid "Tab Width"
 msgstr "Širina tabulatorja"
 
-#: ../gedit/gedit-window.c:2265
+#: ../gedit/gedit-window.c:2299
 msgid "Bracket match is out of range"
 msgstr "Ujemanje oklepajev je izven obsega"
 
-#: ../gedit/gedit-window.c:2270
+#: ../gedit/gedit-window.c:2304
 msgid "Bracket match not found"
 msgstr "Ujemanja oklepajev ni mogoče najti"
 
-#: ../gedit/gedit-window.c:2275
+#: ../gedit/gedit-window.c:2309
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Na vrstici je bilo najdeno ujemanje oklepaja: %d"
 
-#: ../gedit/gedit-window.c:4046
+#: ../gedit/gedit-window.c:4096
 msgid "About gedit"
 msgstr "O programu"
 
@@ -2393,23 +2398,23 @@ msgstr "Tipka _bližnjice:"
 msgid "_Tools:"
 msgstr "O_rodja:"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:175
+#: ../plugins/externaltools/tools/windowactivatable.py:176
 msgid "Manage _External Tools..."
 msgstr "Upravljanje z _zunanjimi orodji ..."
 
-#: ../plugins/externaltools/tools/windowactivatable.py:176
+#: ../plugins/externaltools/tools/windowactivatable.py:177
 msgid "Opens the External Tools Manager"
 msgstr "Odpre upravljalnik  zunanjih orodij"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:179
+#: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "External _Tools"
 msgstr "Zunanja _orodja"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:180
+#: ../plugins/externaltools/tools/windowactivatable.py:181
 msgid "External tools"
 msgstr "Zunanja orodja"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:214
+#: ../plugins/externaltools/tools/windowactivatable.py:215
 msgid "Shell Output"
 msgstr "Izpis v lupini"
 
@@ -3179,35 +3184,35 @@ msgstr "Nastavitev jezika"
 msgid "Languages"
 msgstr "Jeziki"
 
-#: ../plugins/spell/gedit-spell-plugin.c:105
+#: ../plugins/spell/gedit-spell-plugin.c:107
 msgid "_Check Spelling..."
 msgstr "_Preveri črkovanje ..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:107
+#: ../plugins/spell/gedit-spell-plugin.c:109
 msgid "Check the current document for incorrect spelling"
 msgstr "Preveri pravilnost črkovanja v trenutnem dokumentu ..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:113
+#: ../plugins/spell/gedit-spell-plugin.c:115
 msgid "Set _Language..."
 msgstr "Nastavi _jezik ..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:115
+#: ../plugins/spell/gedit-spell-plugin.c:117
 msgid "Set the language of the current document"
 msgstr "Nastavi jezik trenutnega dokumenta"
 
-#: ../plugins/spell/gedit-spell-plugin.c:124
+#: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "_Highlight Misspelled Words"
 msgstr "_Poudari napačno črkovane besede"
 
-#: ../plugins/spell/gedit-spell-plugin.c:126
+#: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
 msgstr "Samodejno preverjaj črkovanje trenutnega dokumenta"
 
-#: ../plugins/spell/gedit-spell-plugin.c:817
+#: ../plugins/spell/gedit-spell-plugin.c:819
 msgid "The document is empty."
 msgstr "Dokument je prazen."
 
-#: ../plugins/spell/gedit-spell-plugin.c:842
+#: ../plugins/spell/gedit-spell-plugin.c:844
 msgid "No misspelled words"
 msgstr "Ni napačno črkovanih besed"
 
