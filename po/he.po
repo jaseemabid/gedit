@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-02 10:47+0300\n"
-"PO-Revision-Date: 2011-07-02 10:48+0200\n"
+"POT-Creation-Date: 2011-07-15 10:17+0300\n"
+"PO-Revision-Date: 2011-07-15 10:18+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "Language: he\n"
@@ -21,19 +21,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/gedit.desktop.in.in.h:1
+#: ../data/gedit.desktop.in.in.h:1 ../gedit/gedit-ui.h:53
+msgid "Create a new document"
+msgstr "יצירת מסמך חדש"
+
+#: ../data/gedit.desktop.in.in.h:2
 msgid "Edit text files"
 msgstr "עריכת קובצי טקסט"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:805
+#: ../data/gedit.desktop.in.in.h:3
+msgid "Open a new window"
+msgstr "פתיחת חלון חדש"
+
+#: ../data/gedit.desktop.in.in.h:4 ../gedit/gedit-print-job.c:805
 msgid "Text Editor"
 msgstr "עורך טקסט"
 
-#: ../data/gedit.desktop.in.in.h:3
+#: ../data/gedit.desktop.in.in.h:5
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:4
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "עורך הטקסט gedit"
 
@@ -728,7 +736,7 @@ msgstr "_הוספה..."
 msgid "_Autosave files every"
 msgstr "שמירה _אוטומטית בכול"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:590
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:561
 msgid "_Display line numbers"
 msgstr "_הצגת מספרי שורות"
 
@@ -1045,7 +1053,7 @@ msgstr "מסמך שלא נשמר %d"
 msgid "Read-Only"
 msgstr "(קריאה בלבד)"
 
-#: ../gedit/gedit-documents-panel.c:1149 ../gedit/gedit-window.c:3890
+#: ../gedit/gedit-documents-panel.c:1142 ../gedit/gedit-window.c:3890
 msgid "Documents"
 msgstr "מסמכים"
 
@@ -1816,10 +1824,6 @@ msgstr "_מסמכים"
 #: ../gedit/gedit-ui.h:49
 msgid "_Help"
 msgstr "ע_זרה"
-
-#: ../gedit/gedit-ui.h:53
-msgid "Create a new document"
-msgstr "יצירת מסמך חדש"
 
 #: ../gedit/gedit-ui.h:54
 msgid "_Open..."
@@ -3411,35 +3415,35 @@ msgstr "הגדרת שפה"
 msgid "Languages"
 msgstr "שפות"
 
-#: ../plugins/spell/gedit-spell-plugin.c:105
+#: ../plugins/spell/gedit-spell-plugin.c:107
 msgid "_Check Spelling..."
 msgstr "_בדיקת איות..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:107
+#: ../plugins/spell/gedit-spell-plugin.c:109
 msgid "Check the current document for incorrect spelling"
 msgstr "בדיקת המסמך הנוכחי לאיות שגוי"
 
-#: ../plugins/spell/gedit-spell-plugin.c:113
+#: ../plugins/spell/gedit-spell-plugin.c:115
 msgid "Set _Language..."
 msgstr "הגדרת _שפה..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:115
+#: ../plugins/spell/gedit-spell-plugin.c:117
 msgid "Set the language of the current document"
 msgstr "הגדרת השפה של המסמך הנוכחי"
 
-#: ../plugins/spell/gedit-spell-plugin.c:124
+#: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "_Highlight Misspelled Words"
 msgstr "ה_דגשת מילים בעלות איות שגוי"
 
-#: ../plugins/spell/gedit-spell-plugin.c:126
+#: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
 msgstr "בדיקה אוטומטית של האיות במסמך הנוכחי"
 
-#: ../plugins/spell/gedit-spell-plugin.c:817
+#: ../plugins/spell/gedit-spell-plugin.c:819
 msgid "The document is empty."
 msgstr "המסמך ריק."
 
-#: ../plugins/spell/gedit-spell-plugin.c:842
+#: ../plugins/spell/gedit-spell-plugin.c:844
 msgid "No misspelled words"
 msgstr "אין מילים שגויות"
 
