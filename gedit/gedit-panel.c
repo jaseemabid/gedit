@@ -918,6 +918,31 @@ gedit_panel_activate_item (GeditPanel *panel,
 }
 
 /**
+ * gedit_panel_get_active:
+ * @panel: a #GeditPanel
+ *
+ * Gets the active item in @panel
+ *
+ * Returns: (transfer none): the active item in @panel
+ */
+GtkWidget *
+gedit_panel_get_active (GeditPanel *panel)
+{
+	gint current;
+
+	g_return_val_if_fail (GEDIT_IS_PANEL (panel), NULL);
+
+	current = gtk_notebook_get_current_page (GTK_NOTEBOOK (panel->priv->notebook));
+
+	if (current == -1)
+	{
+		return NULL;
+	}
+
+	return gtk_notebook_get_nth_page (GTK_NOTEBOOK (panel->priv->notebook), current);
+}
+
+/**
  * gedit_panel_item_is_active:
  * @panel: a #GeditPanel
  * @item: a #GtkWidget
