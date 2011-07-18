@@ -7,10 +7,10 @@
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gedit 2.91.x\n"
+"Project-Id-Version: gedit 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-02 10:59+0200\n"
-"PO-Revision-Date: 2011-07-02 11:01+0200\n"
+"POT-Creation-Date: 2011-07-18 13:32+0200\n"
+"PO-Revision-Date: 2011-07-18 13:33+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -18,21 +18,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.1\n"
 
-#: ../data/gedit.desktop.in.in.h:1
+#: ../data/gedit.desktop.in.in.h:1 ../gedit/gedit-ui.h:53
+msgid "Create a new document"
+msgstr "Opprett et nytt dokument"
+
+#: ../data/gedit.desktop.in.in.h:2
 msgid "Edit text files"
 msgstr "Rediger tekstfiler"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:805
+#: ../data/gedit.desktop.in.in.h:3
+msgid "Open a new window"
+msgstr "Åpne et nytt vindu"
+
+#: ../data/gedit.desktop.in.in.h:4 ../gedit/gedit-print-job.c:805
 msgid "Text Editor"
 msgstr "Tekstredigering"
 
-#: ../data/gedit.desktop.in.in.h:3
+#: ../data/gedit.desktop.in.in.h:5
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:4
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "gedit tekstredigering"
 
@@ -734,7 +741,7 @@ msgstr "_Legg til …"
 msgid "_Autosave files every"
 msgstr "_Autolagre filer hver(t)"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:590
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:561
 msgid "_Display line numbers"
 msgstr "Vis _linjenummer"
 
@@ -1050,7 +1057,7 @@ msgstr "Ikke-lagret dokument %d"
 msgid "Read-Only"
 msgstr "Skrivebeskyttet"
 
-#: ../gedit/gedit-documents-panel.c:1149 ../gedit/gedit-window.c:3890
+#: ../gedit/gedit-documents-panel.c:1142 ../gedit/gedit-window.c:3890
 msgid "Documents"
 msgstr "Dokumenter"
 
@@ -1830,10 +1837,6 @@ msgstr "_Dokumenter"
 #: ../gedit/gedit-ui.h:49
 msgid "_Help"
 msgstr "_Hjelp"
-
-#: ../gedit/gedit-ui.h:53
-msgid "Create a new document"
-msgstr "Opprett et nytt dokument"
 
 #: ../gedit/gedit-ui.h:54
 msgid "_Open..."
@@ -3426,35 +3429,35 @@ msgstr "Sett språk"
 msgid "Languages"
 msgstr "Språk"
 
-#: ../plugins/spell/gedit-spell-plugin.c:105
+#: ../plugins/spell/gedit-spell-plugin.c:107
 msgid "_Check Spelling..."
 msgstr "_Sjekk staving …"
 
-#: ../plugins/spell/gedit-spell-plugin.c:107
+#: ../plugins/spell/gedit-spell-plugin.c:109
 msgid "Check the current document for incorrect spelling"
 msgstr "Sjekk aktivt dokument for ukorrekt staving"
 
-#: ../plugins/spell/gedit-spell-plugin.c:113
+#: ../plugins/spell/gedit-spell-plugin.c:115
 msgid "Set _Language..."
 msgstr "Sett _språk …"
 
-#: ../plugins/spell/gedit-spell-plugin.c:115
+#: ../plugins/spell/gedit-spell-plugin.c:117
 msgid "Set the language of the current document"
 msgstr "Sett språk for aktivt dokument"
 
-#: ../plugins/spell/gedit-spell-plugin.c:124
+#: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "_Highlight Misspelled Words"
 msgstr "_Uthev feilstavede ord"
 
-#: ../plugins/spell/gedit-spell-plugin.c:126
+#: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
 msgstr "Automatisk stavekontroll av aktivt dokument"
 
-#: ../plugins/spell/gedit-spell-plugin.c:817
+#: ../plugins/spell/gedit-spell-plugin.c:819
 msgid "The document is empty."
 msgstr "Dokumentet er tomt."
 
-#: ../plugins/spell/gedit-spell-plugin.c:842
+#: ../plugins/spell/gedit-spell-plugin.c:844
 msgid "No misspelled words"
 msgstr "Ingen feilstavede ord"
 
