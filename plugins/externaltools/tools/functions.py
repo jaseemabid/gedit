@@ -222,7 +222,7 @@ class MultipleDocumentsSaver:
 
         for doc in docs:
             signals[doc] = doc.connect('saving', self.on_document_saving)
-            Gedit.commands.save_document(window, doc)
+            Gedit.commands_save_document(window, doc)
             doc.disconnect(signals[doc])
     
     def on_document_saving(self, doc, size, total_size):
