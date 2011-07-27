@@ -15,35 +15,42 @@
 # Aron Xu <aronxu@gnome.org>, 2010.
 # Colin Zhao <lonely.ibm@gmail.com>, 2011.
 # YunQiang Su <wzssyqa@gmail.com>, 2011.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-07-04 14:43+0000\n"
-"PO-Revision-Date: 2011-07-04 21:01+0800\n"
-"Last-Translator: lainme <lainme993@gmail.com>\n"
-"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"POT-Creation-Date: 2011-07-15 07:18+0000\n"
+"PO-Revision-Date: 2011-07-27 16:52+0000\n"
+"Last-Translator: Colin Zhao <lonely.ibm@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/gedit.desktop.in.in.h:1
+#: ../data/gedit.desktop.in.in.h:1 ../gedit/gedit-ui.h:53
+msgid "Create a new document"
+msgstr "新建文档"
+
+#: ../data/gedit.desktop.in.in.h:2
 msgid "Edit text files"
 msgstr "编辑文本文件"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:805
+#: ../data/gedit.desktop.in.in.h:3
+msgid "Open a new window"
+msgstr "打开新窗口"
+
+#: ../data/gedit.desktop.in.in.h:4 ../gedit/gedit-print-job.c:805
 msgid "Text Editor"
 msgstr "文本编辑器"
 
-#: ../data/gedit.desktop.in.in.h:3
+#: ../data/gedit.desktop.in.in.h:5
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:4
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "gedit 文本编辑器"
 
@@ -175,7 +182,7 @@ msgstr "gedit 撤销或重做的最多次数。使用“-1”表示无限制。�
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
 msgid "Notebook Show Tabs Mode"
-msgstr "笔记本式标签显示模式"
+msgstr "笔记本式标签页显示模式"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
 msgid ""
@@ -303,9 +310,9 @@ msgid ""
 "when there is more than one tab. Note that the values are case-sensitive, so "
 "make sure they appear exactly as mentioned here."
 msgstr ""
-"指定何时显示笔记本式的标签。设为“never”表示不显示标签，“always”表示总是显示标"
-"签 ，“auto”表示只在多于一个标签时显示。请注意，这些值是区分大小写的，所以请务"
-"必严格按照此处说明的大小写进行设置。"
+"指定何时显示笔记本式的标签页。设为“never”表示不显示标签页，“always”表示总是显"
+"示标签页 ，“auto”表示只在多于一个标签页时显示。请注意，这些值是区分大小写的，"
+"所以请务必严格按照此处说明的大小写进行设置。"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
 msgid "Status Bar is Visible"
@@ -1643,7 +1650,7 @@ msgstr "  行 %d，列 %d"
 #, c-format
 msgid "There is a tab with errors"
 msgid_plural "There are %d tabs with errors"
-msgstr[0] "有 %d 个标签出现错误"
+msgstr[0] "有 %d 个标签页出现错误"
 
 #: ../gedit/gedit-style-scheme-manager.c:210
 #, c-format
@@ -1754,10 +1761,6 @@ msgstr "文档(_D)"
 #: ../gedit/gedit-ui.h:49
 msgid "_Help"
 msgstr "帮助(_H)"
-
-#: ../gedit/gedit-ui.h:53
-msgid "Create a new document"
-msgstr "新建文档"
 
 #: ../gedit/gedit-ui.h:54
 msgid "_Open..."
@@ -1930,27 +1933,27 @@ msgstr "关闭所有已打开的文件"
 
 #: ../gedit/gedit-ui.h:130
 msgid "_New Tab Group"
-msgstr "新建标签组(_N)"
+msgstr "新建标签页组(_N)"
 
 #: ../gedit/gedit-ui.h:131
 msgid "Create a new tab group"
-msgstr "新建一个标签组"
+msgstr "新建一个标签页组"
 
 #: ../gedit/gedit-ui.h:132
 msgid "P_revious Tab Group"
-msgstr "上一个标签组(_R)"
+msgstr "上一个标签页组(_R)"
 
 #: ../gedit/gedit-ui.h:133
 msgid "Switch to the previous tab group"
-msgstr "切换到上一个标签组"
+msgstr "切换到上一个标签页组"
 
 #: ../gedit/gedit-ui.h:134
 msgid "Nex_t Tab Group"
-msgstr "下一个标签组(_T)"
+msgstr "下一个标签页组(_T)"
 
 #: ../gedit/gedit-ui.h:135
 msgid "Switch to the next tab group"
-msgstr "切换到下一个标签组"
+msgstr "切换到下一个标签页组"
 
 #: ../gedit/gedit-ui.h:136
 msgid "_Previous Document"
@@ -2103,7 +2106,7 @@ msgstr "保存"
 
 #: ../gedit/gedit-window.c:1605
 msgid "Print"
-msgstr "打印(_P)..."
+msgstr "打印"
 
 #: ../gedit/gedit-window.c:1607
 msgid "Find"
@@ -2312,7 +2315,7 @@ msgstr "外部工具"
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
-msgstr "Pango 字体名称，例如“Sans 12”或“Monospace Bold 14”"
+msgstr "Pango 字体名称，例如“Sans 12”或“Monospace Bold 14”。"
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
 msgid ""
@@ -2513,7 +2516,7 @@ msgstr "打开外部工具管理器"
 
 #: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "External _Tools"
-msgstr "外部工具"
+msgstr "外部工具(_T)"
 
 #: ../plugins/externaltools/tools/windowactivatable.py:181
 msgid "External tools"
@@ -2820,7 +2823,7 @@ msgstr "挂载的卷没有挂载对象：%s"
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:2264
 #, c-format
 msgid "Could not open media: %s"
-msgstr "无法打开介质：%s。"
+msgstr "无法打开介质：%s"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:2311
 #, c-format
@@ -2860,13 +2863,13 @@ msgstr ""
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:7
 msgid "Open With Tree View"
-msgstr "以树视图打开"
+msgstr "以树状视图打开"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:8
 msgid ""
 "Open the tree view when the file browser plugin gets loaded instead of the "
 "bookmarks view"
-msgstr "文件浏览器插件载入时打开树视图而非书签视图"
+msgstr "文件浏览器插件载入时打开树状视图而非书签视图"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:9
 msgid "Set Location to First Document"
