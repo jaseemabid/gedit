@@ -97,7 +97,7 @@ create_option_menu (GeditFileChooserDialog *dialog)
 	GtkWidget *menu;
 
 	label = gtk_label_new_with_mnemonic (_("C_haracter Encoding:"));
-	gtk_misc_set_alignment (GTK_MISC (label), 0, 0.5);
+	gtk_widget_set_halign (label, GTK_ALIGN_START);
 
 	menu = gedit_encodings_combo_box_new (
 		gtk_file_chooser_get_action (GTK_FILE_CHOOSER (dialog)) == GTK_FILE_CHOOSER_ACTION_SAVE);
@@ -156,7 +156,7 @@ create_newline_combo (GeditFileChooserDialog *dialog)
 	GtkTreeIter iter;
 
 	label = gtk_label_new_with_mnemonic (_("L_ine Ending:"));
-	gtk_misc_set_alignment (GTK_MISC (label), 0, 0.5);
+	gtk_widget_set_halign (label, GTK_ALIGN_START);
 
 	store = gtk_list_store_new (2, G_TYPE_STRING, GEDIT_TYPE_DOCUMENT_NEWLINE_TYPE);
 	combo = gtk_combo_box_new_with_model (GTK_TREE_MODEL (store));

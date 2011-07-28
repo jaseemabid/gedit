@@ -351,7 +351,7 @@ gedit_status_combo_box_init (GeditStatusComboBox *self)
 	gtk_widget_show (self->priv->label);
 	
 	gtk_label_set_single_line_mode (GTK_LABEL (self->priv->label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (self->priv->label), 0.0, 0.5);
+	gtk_widget_set_halign (self->priv->label, GTK_ALIGN_START);
 	
 	gtk_box_pack_start (GTK_BOX (self->priv->hbox), self->priv->label, FALSE, TRUE, 0);
 	
@@ -359,13 +359,12 @@ gedit_status_combo_box_init (GeditStatusComboBox *self)
 	gtk_widget_show (self->priv->item);
 	
 	gtk_label_set_single_line_mode (GTK_LABEL (self->priv->item), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (self->priv->item), 0, 0.5);
+	gtk_widget_set_halign (self->priv->item, GTK_ALIGN_START);
 	
 	gtk_box_pack_start (GTK_BOX (self->priv->hbox), self->priv->item, TRUE, TRUE, 0);
 	
 	self->priv->arrow = gtk_arrow_new (GTK_ARROW_DOWN, GTK_SHADOW_NONE);
 	gtk_widget_show (self->priv->arrow);
-	gtk_misc_set_alignment (GTK_MISC (self->priv->arrow), 0.5, 0.5);
 	
 	gtk_box_pack_start (GTK_BOX (self->priv->hbox), self->priv->arrow, FALSE, TRUE, 0);
 

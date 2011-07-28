@@ -130,14 +130,13 @@ gedit_progress_info_bar_init (GeditProgressInfoBar *bar)
 	bar->priv->image = gtk_image_new_from_icon_name (GTK_STOCK_MISSING_IMAGE, 
 							 GTK_ICON_SIZE_SMALL_TOOLBAR);
 	gtk_widget_show (bar->priv->image);
-	gtk_misc_set_alignment (GTK_MISC (bar->priv->image), 0.5, 0.5);
 	gtk_box_pack_start (GTK_BOX (hbox), bar->priv->image, FALSE, FALSE, 4);
 	
 	bar->priv->label = gtk_label_new ("");
 	gtk_widget_show (bar->priv->label);
 	gtk_box_pack_start (GTK_BOX (hbox), bar->priv->label, FALSE, TRUE, 0);
 	gtk_label_set_use_markup (GTK_LABEL (bar->priv->label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (bar->priv->label), 0, 0.5);
+	gtk_widget_set_halign (bar->priv->label, GTK_ALIGN_START);
 	gtk_label_set_ellipsize (GTK_LABEL (bar->priv->label), 
 				 PANGO_ELLIPSIZE_END);
 

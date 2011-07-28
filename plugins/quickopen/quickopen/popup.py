@@ -105,7 +105,7 @@ class Popup(Gtk.Dialog):
         vbox.pack_start(sw, True, True, 0)
 
         lbl = Gtk.Label()
-        lbl.set_alignment(0, 0.5)
+        lbl.set_halign(Gtk.Align.START)
         lbl.set_ellipsize(Pango.EllipsizeMode.MIDDLE)
         self._info_label = lbl
 

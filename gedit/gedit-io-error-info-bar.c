@@ -125,7 +125,7 @@ set_info_bar_text_and_icon (GtkWidget   *info_bar,
 
 	image = gtk_image_new_from_stock (icon_stock_id, GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
-	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
+	gtk_widget_set_valign (image, GTK_ALIGN_START);
 
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
@@ -136,7 +136,7 @@ set_info_bar_text_and_icon (GtkWidget   *info_bar,
 	gtk_box_pack_start (GTK_BOX (vbox), primary_label, TRUE, TRUE, 0);
 	gtk_label_set_use_markup (GTK_LABEL (primary_label), TRUE);
 	gtk_label_set_line_wrap (GTK_LABEL (primary_label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (primary_label), 0, 0.5);
+	gtk_widget_set_halign (primary_label, GTK_ALIGN_START);
 	gtk_widget_set_can_focus (primary_label, TRUE);
 	gtk_label_set_selectable (GTK_LABEL (primary_label), TRUE);
 
@@ -151,7 +151,7 @@ set_info_bar_text_and_icon (GtkWidget   *info_bar,
 		gtk_label_set_use_markup (GTK_LABEL (secondary_label), TRUE);
 		gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
 		gtk_label_set_selectable (GTK_LABEL (secondary_label), TRUE);
-		gtk_misc_set_alignment (GTK_MISC (secondary_label), 0, 0.5);
+		gtk_widget_set_halign (secondary_label, GTK_ALIGN_START);
 	}
 
 	gtk_widget_show_all (hbox_content);
@@ -522,8 +522,8 @@ create_conversion_error_info_bar (const gchar *primary_text,
 
 	image = gtk_image_new_from_stock ("gtk-dialog-error", GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
-	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
-  
+	gtk_widget_set_valign (image, GTK_ALIGN_START);
+
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
 	
@@ -533,7 +533,7 @@ create_conversion_error_info_bar (const gchar *primary_text,
 	gtk_box_pack_start (GTK_BOX (vbox), primary_label, TRUE, TRUE, 0);
 	gtk_label_set_use_markup (GTK_LABEL (primary_label), TRUE);
 	gtk_label_set_line_wrap (GTK_LABEL (primary_label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (primary_label), 0, 0.5);
+	gtk_widget_set_halign (primary_label, GTK_ALIGN_START);
 	gtk_widget_set_can_focus (primary_label, TRUE);
 	gtk_label_set_selectable (GTK_LABEL (primary_label), TRUE);
 
@@ -548,7 +548,7 @@ create_conversion_error_info_bar (const gchar *primary_text,
 		gtk_label_set_use_markup (GTK_LABEL (secondary_label), TRUE);
 		gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
 		gtk_label_set_selectable (GTK_LABEL (secondary_label), TRUE);
-		gtk_misc_set_alignment (GTK_MISC (secondary_label), 0, 0.5);
+		gtk_widget_set_halign (secondary_label, GTK_ALIGN_START);
 	}
 
 	create_combo_box (info_bar, vbox);
@@ -793,7 +793,7 @@ gedit_file_already_open_warning_info_bar_new (GFile *location)
 
 	image = gtk_image_new_from_stock ("gtk-dialog-warning", GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
-	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
+	gtk_widget_set_halign (image, GTK_ALIGN_START);
 
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
@@ -808,7 +808,7 @@ gedit_file_already_open_warning_info_bar_new (GFile *location)
 	gtk_box_pack_start (GTK_BOX (vbox), primary_label, TRUE, TRUE, 0);
 	gtk_label_set_use_markup (GTK_LABEL (primary_label), TRUE);
 	gtk_label_set_line_wrap (GTK_LABEL (primary_label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (primary_label), 0, 0.5);
+	gtk_widget_set_halign (primary_label, GTK_ALIGN_START);
 	gtk_widget_set_can_focus (primary_label, TRUE);
 	gtk_label_set_selectable (GTK_LABEL (primary_label), TRUE);
 
@@ -823,7 +823,7 @@ gedit_file_already_open_warning_info_bar_new (GFile *location)
 	gtk_label_set_use_markup (GTK_LABEL (secondary_label), TRUE);
 	gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
 	gtk_label_set_selectable (GTK_LABEL (secondary_label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (secondary_label), 0, 0.5);
+	gtk_widget_set_halign (secondary_label, GTK_ALIGN_START);
 
 	gtk_widget_show_all (hbox_content);
 	set_contents (info_bar, hbox_content);
@@ -883,7 +883,7 @@ gedit_externally_modified_saving_error_info_bar_new (GFile        *location,
 
 	image = gtk_image_new_from_stock ("gtk-dialog-warning", GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
-	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
+	gtk_widget_set_valign (image, GTK_ALIGN_START);
 
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
@@ -903,7 +903,7 @@ gedit_externally_modified_saving_error_info_bar_new (GFile        *location,
 	gtk_box_pack_start (GTK_BOX (vbox), primary_label, TRUE, TRUE, 0);
 	gtk_label_set_use_markup (GTK_LABEL (primary_label), TRUE);
 	gtk_label_set_line_wrap (GTK_LABEL (primary_label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (primary_label), 0, 0.5);
+	gtk_widget_set_halign (primary_label, GTK_ALIGN_START);
 	gtk_widget_set_can_focus (primary_label, TRUE);
 	gtk_label_set_selectable (GTK_LABEL (primary_label), TRUE);
 
@@ -917,7 +917,7 @@ gedit_externally_modified_saving_error_info_bar_new (GFile        *location,
 	gtk_label_set_use_markup (GTK_LABEL (secondary_label), TRUE);
 	gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
 	gtk_label_set_selectable (GTK_LABEL (secondary_label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (secondary_label), 0, 0.5);
+	gtk_widget_set_halign (secondary_label, GTK_ALIGN_START);
 
 	gtk_widget_show_all (hbox_content);
 	set_contents (info_bar, hbox_content);
@@ -981,7 +981,7 @@ gedit_no_backup_saving_error_info_bar_new (GFile        *location,
 
 	image = gtk_image_new_from_stock ("gtk-dialog-warning", GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
-	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
+	gtk_widget_set_valign (image, GTK_ALIGN_START);
 
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
@@ -1013,7 +1013,7 @@ gedit_no_backup_saving_error_info_bar_new (GFile        *location,
 	gtk_box_pack_start (GTK_BOX (vbox), primary_label, TRUE, TRUE, 0);
 	gtk_label_set_use_markup (GTK_LABEL (primary_label), TRUE);
 	gtk_label_set_line_wrap (GTK_LABEL (primary_label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (primary_label), 0, 0.5);
+	gtk_widget_set_halign (primary_label, GTK_ALIGN_START);
 	gtk_widget_set_can_focus (primary_label, TRUE);
 	gtk_label_set_selectable (GTK_LABEL (primary_label), TRUE);
 
@@ -1029,7 +1029,7 @@ gedit_no_backup_saving_error_info_bar_new (GFile        *location,
 	gtk_label_set_use_markup (GTK_LABEL (secondary_label), TRUE);
 	gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
 	gtk_label_set_selectable (GTK_LABEL (secondary_label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (secondary_label), 0, 0.5);
+	gtk_widget_set_halign (secondary_label, GTK_ALIGN_START);
 
 	gtk_widget_show_all (hbox_content);
 	set_contents (info_bar, hbox_content);
@@ -1270,7 +1270,7 @@ gedit_invalid_character_info_bar_new (GFile *location)
 
 	image = gtk_image_new_from_stock ("gtk-dialog-warning", GTK_ICON_SIZE_DIALOG);
 	gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
-	gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
+	gtk_widget_set_valign (image, GTK_ALIGN_START);
 
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
 	gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
@@ -1287,7 +1287,7 @@ gedit_invalid_character_info_bar_new (GFile *location)
 	gtk_box_pack_start (GTK_BOX (vbox), primary_label, TRUE, TRUE, 0);
 	gtk_label_set_use_markup (GTK_LABEL (primary_label), TRUE);
 	gtk_label_set_line_wrap (GTK_LABEL (primary_label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (primary_label), 0, 0.5);
+	gtk_widget_set_halign (primary_label, GTK_ALIGN_START);
 	gtk_widget_set_can_focus (primary_label, TRUE);
 	gtk_label_set_selectable (GTK_LABEL (primary_label), TRUE);
 
@@ -1302,7 +1302,7 @@ gedit_invalid_character_info_bar_new (GFile *location)
 	gtk_label_set_use_markup (GTK_LABEL (secondary_label), TRUE);
 	gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
 	gtk_label_set_selectable (GTK_LABEL (secondary_label), TRUE);
-	gtk_misc_set_alignment (GTK_MISC (secondary_label), 0, 0.5);
+	gtk_widget_set_halign (secondary_label, GTK_ALIGN_START);
 
 	gtk_widget_show_all (hbox_content);
 	set_contents (info_bar, hbox_content);

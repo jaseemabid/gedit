@@ -584,7 +584,7 @@ build_vertical_panel (GeditPanel *panel)
 			    0);
 
 	panel->priv->title_label = gtk_label_new (_("Empty"));
-	gtk_misc_set_alignment (GTK_MISC (panel->priv->title_label), 0, 0.5);
+	gtk_widget_set_halign (panel->priv->title_label, GTK_ALIGN_START);
 	gtk_label_set_ellipsize(GTK_LABEL (panel->priv->title_label), PANGO_ELLIPSIZE_END);
 
 	gtk_box_pack_start (GTK_BOX (icon_name_hbox),
@@ -679,7 +679,7 @@ build_tab_label (GeditPanel  *panel,
 
 	/* setup label */
 	label = gtk_label_new (name);
-	gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+	gtk_widget_set_halign (label, GTK_ALIGN_START);
 	gtk_misc_set_padding (GTK_MISC (label), 0, 0);
 	gtk_box_pack_start (GTK_BOX (label_hbox), label, TRUE, TRUE, 0);
 
@@ -787,7 +787,7 @@ gedit_panel_add_item (GeditPanel  *panel,
 	tab_label = build_tab_label (panel, item, data->display_name, data->icon);
 
 	menu_label = gtk_label_new (display_name);
-	gtk_misc_set_alignment (GTK_MISC (menu_label), 0.0, 0.5);
+	gtk_widget_set_halign (menu_label, GTK_ALIGN_START);
 
 	if (!gtk_widget_get_visible (item))
 		gtk_widget_show (item);
