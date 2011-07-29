@@ -1473,6 +1473,10 @@ update_recent_files_menu (GeditWindow *window)
 		g_free (action_name);
 		g_free (label);
 		g_free (tip);
+		if (icon != NULL)
+		{
+			g_object_unref (icon);
+		}
 	}
 
 	g_list_free (filtered_items);
