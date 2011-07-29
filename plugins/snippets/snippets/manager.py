@@ -299,6 +299,12 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                 self.build_tree_view()
                 self.build_model()
 
+                # join treeview and toolbar
+                context = self['scrolled_window_snippets'].get_style_context()
+                context.set_junction_sides(Gtk.JunctionSides.BOTTOM)
+                context = self['toolbar'].get_style_context()
+                context.set_junction_sides(Gtk.JunctionSides.TOP)
+
                 source_view = self['source_view_snippet']
                 manager = get_language_manager()
                 lang = manager.get_language('snippets')

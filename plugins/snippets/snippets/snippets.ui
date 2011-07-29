@@ -121,29 +121,28 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="orientation">vertical</property>
+                <property name="spacing">6</property>
                 <child>
-                  <object class="GtkBox" id="box1">
+                  <object class="GtkLabel" id="label1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="hexpand">True</property>
+                    <property name="xalign">0</property>
+                    <property name="label" translatable="yes">_Snippets:</property>
+                    <property name="use_underline">True</property>
+                    <property name="mnemonic_widget">tree_view_snippets</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="box2">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="vexpand">True</property>
                     <property name="orientation">vertical</property>
-                    <property name="spacing">6</property>
-                    <child>
-                      <object class="GtkLabel" id="label1">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
-                        <property name="label" translatable="yes">_Snippets:</property>
-                        <property name="use_underline">True</property>
-                        <property name="mnemonic_widget">tree_view_snippets</property>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">False</property>
-                        <property name="position">0</property>
-                      </packing>
-                    </child>
                     <child>
                       <object class="GtkScrolledWindow" id="scrolled_window_snippets">
                         <property name="visible">True</property>
@@ -165,95 +164,95 @@
                       <packing>
                         <property name="expand">True</property>
                         <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkToolbar" id="toolbar">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="toolbar_style">icons</property>
+                        <property name="icon_size">1</property>
+                        <style>
+                          <class name="inline-toolbar"/>
+                        </style>
+                        <child>
+                          <object class="GtkToolButton" id="add_snippet_button">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="has_tooltip">True</property>
+                            <property name="tooltip_markup" translatable="yes">Create new snippet</property>
+                            <property name="tooltip_text" translatable="yes">Create new snippet</property>
+                            <property name="related_action">add_snippet_action</property>
+                            <property name="use_action_appearance">False</property>
+                            <property name="label" translatable="yes">Add Snippet</property>
+                            <property name="use_underline">True</property>
+                            <property name="icon_name">list-add-symbolic</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="homogeneous">True</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkToolButton" id="remove_snippet_button">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="has_tooltip">True</property>
+                            <property name="tooltip_markup" translatable="yes">Delete selected snippet</property>
+                            <property name="tooltip_text" translatable="yes">Delete selected snippet</property>
+                            <property name="related_action">remove_snippet_action</property>
+                            <property name="use_action_appearance">False</property>
+                            <property name="label" translatable="yes">Remove Snippet</property>
+                            <property name="use_underline">True</property>
+                            <property name="icon_name">list-remove-symbolic</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="homogeneous">True</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkToolButton" id="import_snippets_button">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="has_tooltip">True</property>
+                            <property name="tooltip_markup" translatable="yes">Import snippets</property>
+                            <property name="tooltip_text" translatable="yes">Import snippets</property>
+                            <property name="related_action">import_snippets_action</property>
+                            <property name="use_action_appearance">False</property>
+                            <property name="label" translatable="yes">Import Snippets</property>
+                            <property name="use_underline">True</property>
+                            <property name="icon_name">document-open-symbolic</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="homogeneous">True</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkToolButton" id="export_snippets_button">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="has_tooltip">True</property>
+                            <property name="tooltip_markup" translatable="yes">Export selected snippets</property>
+                            <property name="tooltip_text" translatable="yes">Export selected snippets</property>
+                            <property name="related_action">export_snippets_action</property>
+                            <property name="use_action_appearance">False</property>
+                            <property name="label" translatable="yes">Export Snippets</property>
+                            <property name="use_underline">True</property>
+                            <property name="icon_name">document-save-as-symbolic</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="homogeneous">True</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
                         <property name="position">1</property>
-                      </packing>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkToolbar" id="toolbar">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="toolbar_style">icons</property>
-                    <property name="icon-size">1</property>
-                    <style>
-                      <class name="inline-toolbar"/>
-                    </style>
-                    <child>
-                      <object class="GtkToolButton" id="add_snippet_button">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="has_tooltip">True</property>
-                        <property name="tooltip_markup" translatable="yes">Create new snippet</property>
-                        <property name="tooltip_text" translatable="yes">Create new snippet</property>
-                        <property name="related_action">add_snippet_action</property>
-                        <property name="use_action_appearance">False</property>
-                        <property name="label" translatable="yes">Add Snippet</property>
-                        <property name="use_underline">True</property>
-                        <property name="icon_name">list-add-symbolic</property>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="homogeneous">True</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkToolButton" id="remove_snippet_button">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="has_tooltip">True</property>
-                        <property name="tooltip_markup" translatable="yes">Delete selected snippet</property>
-                        <property name="tooltip_text" translatable="yes">Delete selected snippet</property>
-                        <property name="related_action">remove_snippet_action</property>
-                        <property name="use_action_appearance">False</property>
-                        <property name="label" translatable="yes">Remove Snippet</property>
-                        <property name="use_underline">True</property>
-                        <property name="icon_name">list-remove-symbolic</property>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="homogeneous">True</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkToolButton" id="import_snippets_button">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="has_tooltip">True</property>
-                        <property name="tooltip_markup" translatable="yes">Import snippets</property>
-                        <property name="tooltip_text" translatable="yes">Import snippets</property>
-                        <property name="related_action">import_snippets_action</property>
-                        <property name="use_action_appearance">False</property>
-                        <property name="label" translatable="yes">Import Snippets</property>
-                        <property name="use_underline">True</property>
-                        <property name="icon_name">document-open-symbolic</property>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="homogeneous">True</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkToolButton" id="export_snippets_button">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="has_tooltip">True</property>
-                        <property name="tooltip_markup" translatable="yes">Export selected snippets</property>
-                        <property name="tooltip_text" translatable="yes">Export selected snippets</property>
-                        <property name="related_action">export_snippets_action</property>
-                        <property name="use_action_appearance">False</property>
-                        <property name="label" translatable="yes">Export Snippets</property>
-                        <property name="use_underline">True</property>
-                        <property name="icon_name">document-save-as-symbolic</property>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="homogeneous">True</property>
                       </packing>
                     </child>
                   </object>

@@ -295,15 +295,21 @@ class Manager:
         self.ui.add_from_file(os.path.join(self.datadir, 'ui', 'tools.ui'))
         self.ui.connect_signals(callbacks)
         self.dialog = self.ui.get_object('tool-manager-dialog')
-        
-        self.view = self.ui.get_object('view')
-        
+
+        self.view = self['view']
+
         self.__init_tools_model()
         self.__init_tools_view()
 
+        # join treeview and toolbar
+        context = self['scrolled_window1'].get_style_context()
+        context.set_junction_sides(Gtk.JunctionSides.BOTTOM)
+        context = self['toolbar1'].get_style_context()
+        context.set_junction_sides(Gtk.JunctionSides.TOP)
+
         for name in ['input', 'output', 'applicability', 'save-files']:
             self.__init_combobox(name)
-        
+
         self.do_update()
 
     def expand_from_doc(self, doc):
