@@ -1392,6 +1392,9 @@ update_recent_files_menu (GeditWindow *window)
 		GtkAction *action;
 		GtkRecentInfo *info = l->data;
 		GFile *location;
+		const gchar *mime_type;
+		gchar *content_type;
+		GIcon *icon = NULL;
 
 		/* clamp */
 		if (i >= max_recents)
@@ -1430,10 +1433,20 @@ update_recent_files_menu (GeditWindow *window)
 		tip = g_strdup_printf (_("Open '%s'"), ruri);
 		g_free (ruri);
 
-		action = gtk_action_new (action_name,
-					 label,
-					 tip,
-					 NULL);
+		mime_type = gtk_recent_info_get_mime_type (info);
+		content_type = g_content_type_from_mime_type (mime_type);
+		if (content_type != NULL)
+		{
+			icon = g_content_type_get_icon (content_type);
+			g_free (content_type);
+		}
+
+		action = g_object_new (GTK_TYPE_ACTION,
+		                       "name", action_name,
+		                       "label", label,
+		                       "gicon", icon,
+		                       "always-show-image", TRUE,
+		                       NULL);
 
 		g_object_set_data_full (G_OBJECT (action),
 					"gtk-recent-info",
