@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-24 20:58+0100\n"
-"PO-Revision-Date: 2011-03-24 21:08+0100\n"
+"POT-Creation-Date: 2011-08-03 08:51+0200\n"
+"PO-Revision-Date: 2011-08-03 08:52+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -21,19 +21,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/gedit.desktop.in.in.h:1
+#: ../gedit/gedit-ui.h:53
+msgid "Create a new document"
+msgstr "Skapa nytt dokument"
+
+#: ../data/gedit.desktop.in.in.h:2
 msgid "Edit text files"
 msgstr "Redigera textfiler"
 
-#: ../data/gedit.desktop.in.in.h:2
+#: ../data/gedit.desktop.in.in.h:3
+msgid "Open a new window"
+msgstr "Öppna ett nytt fönster"
+
+#: ../data/gedit.desktop.in.in.h:4
 #: ../gedit/gedit-print-job.c:805
 msgid "Text Editor"
 msgstr "Textredigerare"
 
-#: ../data/gedit.desktop.in.in.h:3
+#: ../data/gedit.desktop.in.in.h:5
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:4
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "Textredigeraren gedit"
 
@@ -121,218 +130,210 @@ msgstr "Radnummerstypsnitt för utskrift"
 msgid "Line Wrapping Mode"
 msgstr "Radbrytningsläge"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
-msgid "List of VFS schemes gedit supports in write mode. The 'file' scheme is writable by default."
-msgstr "Lista av VFS-scheman som gedit stöder i skrivläge. Schemat \"file\" är skrivbart som standard."
-
 # Osäker.
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
 msgid "List of active plugins. It contains the \"Location\" of the active plugins. See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
 msgstr "Lista med aktiva insticksmoduler. Den innehåller \"platsen\" för de aktiva insticksmodulerna. Se filen .gedit-plugin för att få tag i \"platsen\" för en given insticksmodul."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
 msgid "List of encodings shown in the Character Encoding menu in open/save file selector. Only recognized encodings are used."
 msgstr "Lista med teckenkodningar som visas i teckenkodningsmenyn i filväljaren för öppnande/sparande av filer. Endast kända kodningar används."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
 msgid "Maximum Number of Undo Actions"
 msgstr "Maximalt antal ångringsåtgärder"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
 msgid "Maximum Recent Files"
 msgstr "Maximalt antal senaste filer"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
 msgid "Maximum number of actions that gedit will be able to undo or redo. Use \"-1\" for unlimited number of actions."
 msgstr "Maximalt antal åtgärder som gedit kan ångra eller göra om. Använd \"-1\" för obegränsat antal åtgärder."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
 msgid "Maximum number of actions that gedit will be able to undo or redo. Use \"-1\" for unlimited number of actions. Deprecated since 2.12.0"
 msgstr "Maximalt antal åtgärder som gedit kan ångra eller göra om. Använd \"-1\" för obegränsat antal åtgärder. Föråldrat sedan 2.12.0"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
 msgid "Notebook Show Tabs Mode"
 msgstr "Visningsläge för specialflikar"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
 msgid "Number of minutes after which gedit will automatically save modified files. This will only take effect if the \"Autosave\" option is turned on."
 msgstr "Antal minuter efter vilket gedit automatiskt kommer att spara ändrade filer. Detta har endast effekt då alternativet \"Spara automatiskt\" är påslaget."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
 msgid "Print Header"
 msgstr "Skriv ut huvud"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
 msgid "Print Line Numbers"
 msgstr "Skriv ut radnummer"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
 msgid "Print Syntax Highlighting"
 msgstr "Skriv ut syntaxmarkering"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
 msgid "Printing Line Wrapping Mode"
 msgstr "Radbrytningsläge för utskrift"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
 msgid "Restore Previous Cursor Position"
 msgstr "Återställ tidigare markörposition"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
 msgid "Right Margin Position"
 msgstr "Position för högermarginalen"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
 msgid "Side panel is Visible"
 msgstr "Sidopanelen är synlig"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
 msgid "Smart Home End"
 msgstr "Smarta Home och End"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
 msgid "Sorted list of encodings used by gedit for automatically detecting the encoding of a file. \"CURRENT\" represents the current locale encoding. Only recognized encodings are used."
 msgstr "Sorterad lista över teckenkodningar som används av gedit för automatisk identifiering av filens kodning. \"CURRENT\" är kodningen för den aktuella lokalanpassningen. Endast kända kodningar används."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
 msgid "Specifies how the cursor moves when the HOME and END keys are pressed. Use \"disabled\" to always move at the start/end of the line, \"after\" to move to the start/end of the line the first time the keys are pressed and to the start/end of the text ignoring whitespaces the second time the keys are pressed, \"before\" to move to the start/end of the text before moving to the start/end of the line and \"always\" to always move to the start/end of the text instead of the start/end of the line."
 msgstr "Anger hur markören flyttas när tangenterna HOME och END används. Använd \"disabled\" för att alltid flytta till början/slutet av raden, \"after\" för att flytta till början/slutet av raden första gången tangenterna används och till början/slutet av texten samt ignorera tomrum andra gången som tangenterna används, \"before\" för att flytta till början/slutet av texten innan flytt till början/slutet av raden och \"always\" för att alltid flytta till början/slutet av texten istället för början/slutet av raden."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
 msgid "Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, \"word\" for wrapping at word boundaries, and \"char\" for wrapping at individual character boundaries. Note that the values are case-sensitive, so make sure they appear exactly as mentioned here."
 msgstr "Anger hur långa rader ska radbrytas vid utskrift. Använd \"none\" för ingen radbrytning, \"word\" för radbrytning vid ordgränser och \"char\" för radbrytning vid enskilda teckengränser. Observera att det görs skillnad på versaler och gemener i värdena, så försäkra dig om att de visas exakt som de visas här."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
 msgid "Specifies how to wrap long lines in the editing area. Use \"none\" for no wrapping, \"word\" for wrapping at word boundaries, and \"char\" for wrapping at individual character boundaries. Note that the values are case-sensitive, so make sure they appear exactly as mentioned here."
 msgstr "Anger hur långa rader ska radbrytas i redigeringsytan. Använd \"none\" för ingen radbrytning, \"word\" för radbrytning vid ordgränser och \"char\" för radbrytning vid enskilda teckengränser. Observera att det görs skillnad på versaler och gemener i värdena, så försäkra dig om att de visas exakt som de visas här."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
 msgid "Specifies the font to use for a document's body when printing documents."
 msgstr "Anger det typsnitt som ska användas för dokumentets text vid utskrift av dokument."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
 msgid "Specifies the font to use for line numbers when printing. This will only take effect if the \"Print Line Numbers\" option is non-zero."
 msgstr "Anger det typsnitt som ska användas för radnummer vid utskrift. Detta kommer endast att ha effekt om alternativet \"Skriv ut radnummer\" inte är noll."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
 msgid "Specifies the font to use for page headers when printing a document. This will only take effect if the \"Print Header\" option is turned on."
 msgstr "Anger det typsnitt som ska användas för sidhuvud vid utskrift av ett dokument. Detta kommer endast att ha effekt om alternativet \"Skriv ut huvud\" är påslaget."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
 msgid "Specifies the maximum number of recently opened files that will be displayed in the \"Recent Files\" submenu."
 msgstr "Anger det maximala antalet senaste öppnade filer som kommer att visas i undermenyn \"Senaste filer\"."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
 msgid "Specifies the number of spaces that should be displayed instead of Tab characters."
 msgstr "Anger antalet blanksteg som ska visas istället för tabulatortecken."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
 msgid "Specifies the position of the right margin."
 msgstr "Anger positionen för högermarginalen."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
 msgid "Specifies when to show the notebook tabs. Use \"never\" to never show the tabs, \"always\" to always show the tabs, and \"auto\" to show the tabs only when there is more than one tab. Note that the values are case-sensitive, so make sure they appear exactly as mentioned here."
 msgstr "Anger när specialflikar ska visas. Använd \"never\" för att aldrig visa flikarna, \"always\" för att alltid visa flikarna och \"auto\" för att visa flikarna endast när det finns fler än en flik. Observera att det görs skillnad på versaler och gemener i värdena, så försäkra dig om att de visas exakt som de visas här."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
 msgid "Status Bar is Visible"
 msgstr "Statusrad är synlig"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
 msgid "Style Scheme"
 msgstr "Stilschema"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
 msgid "Tab Size"
 msgstr "Tabulatorbredd"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
 msgid "The ID of a GtkSourceView Style Scheme used to color the text."
 msgstr "ID för ett GtkSourceView-stilschema som används för att färga texten."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
 msgid "Toolbar is Visible"
 msgstr "Verktygsraden är synlig"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
 msgid "Undo Actions Limit (DEPRECATED)"
 msgstr "Gräns för ångraåtgärder (FÖRÅLDRAT)"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
 msgid "Use Default Font"
 msgstr "Använd standardtypsnitt"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
 msgid "Whether gedit should automatically save modified files after a time interval. You can set the time interval with the \"Autosave Interval\" option."
 msgstr "Huruvida gedit automatiskt ska spara ändrade filer efter ett tidsintervall. Du kan ange tidsintervallet med alternativet \"Intervall för automatiskt sparande\"."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
 msgid "Whether gedit should create backup copies for the files it saves. You can set the backup file extension with the \"Backup Copy Extension\" option."
 msgstr "Huruvida gedit ska skapa säkerhetskopior för de filer som det sparar. Du kan ange filändelsen för säkerhetskopior med alternativet \"Ändelse på säkerhetskopior\"."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
 msgid "Whether gedit should display line numbers in the editing area."
 msgstr "Huruvida gedit ska visa radnummer i redigeringsytan."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
 msgid "Whether gedit should display the right margin in the editing area."
 msgstr "Huruvida gedit ska visa högermarginalen i redigeringsytan."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
 msgid "Whether gedit should enable automatic indentation."
 msgstr "Huruvida gedit ska aktivera automatisk indentering."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
 msgid "Whether gedit should enable syntax highlighting."
 msgstr "Huruvida gedit ska aktivera syntaxmarkering."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
 msgid "Whether gedit should highlight all the occurrences of the searched text."
 msgstr "Huruvida gedit ska färgmarkera alla förekomster av söktexten."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
 msgid "Whether gedit should highlight matching brackets."
 msgstr "Huruvida gedit ska färgmarkera matchande klammer."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
 msgid "Whether gedit should highlight the current line."
 msgstr "Huruvida gedit ska färgmarkera den aktuella raden."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
 msgid "Whether gedit should include a document header when printing documents."
 msgstr "Huruvida gedit ska inkludera ett dokumenthuvud vid utskrift av dokument."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
 msgid "Whether gedit should insert spaces instead of tabs."
 msgstr "Huruvida gedit ska infoga blanksteg istället för tabulatortecken."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
 msgid "Whether gedit should print syntax highlighting when printing documents."
 msgstr "Huruvida gedit ska skriva ut syntaxmarkering vid utskrift av dokument."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
 msgid "Whether gedit should restore the previous cursor position when a file is loaded."
 msgstr "Huruvida gedit ska återställa den tidigare markörpositionen när en fil läses in."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
 msgid "Whether the side panel at the left of editing windows should be visible."
 msgstr "Huruvida sidopanelen till vänster i redigeringsfönstret ska vara synlig."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
 msgid "Whether the status bar at the bottom of editing windows should be visible."
 msgstr "Huruvida statusraden i nederkanten på redigeringsfönster ska vara synlig."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
 msgid "Whether the toolbar should be visible in editing windows."
 msgstr "Huruvida verktygsraden ska vara synlig i redigeringsfönster."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:73
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
 msgid "Whether to use the system's default fixed width font for editing text instead of a font specific to gedit. If this option is turned off, then the font named in the \"Editor Font\" option will be used instead of the system font."
 msgstr "Huruvida systemets standardtypsnitt med fast breddsteg ska användas för redigering av text istället för ett typsnitt som är specifikt för gedit. Om detta alternativ är inaktiverat, kommer typsnittet som är angivet i alternativet \"Redigerartypsnitt\" att användas istället för systemtypsnittet."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:74
-msgid "Writable VFS schemes"
-msgstr "Skrivbara VFS-scheman"
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
 msgid "Log Out _without Saving"
@@ -596,7 +597,7 @@ msgid "_Autosave files every"
 msgstr "Spara filer _automatiskt var"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23
-#: ../gedit/gedit-view.c:588
+#: ../gedit/gedit-view.c:561
 msgid "_Display line numbers"
 msgstr "_Visa radnummer"
 
@@ -615,7 +616,7 @@ msgstr "_minut"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
 #: ../gedit/dialogs/gedit-replace-dialog.ui.h:2
-#: ../gedit/gedit-window.c:1592
+#: ../gedit/gedit-window.c:1626
 msgid "Replace"
 msgstr "Ersätt"
 
@@ -657,69 +658,69 @@ msgstr "_Sök efter: "
 msgid "_Wrap around"
 msgstr "_Börja om från början"
 
-#: ../gedit/gedit-app.c:233
+#: ../gedit/gedit-app.c:235
 msgid "There was an error displaying the help."
 msgstr "Ett fel inträffade vid visning av hjälpen."
 
-#: ../gedit/gedit-command-line.c:231
+#: ../gedit/gedit-command-line.c:232
 #, c-format
 msgid "%s: invalid encoding.\n"
 msgstr "%s: ogiltig kodning.\n"
 
-#: ../gedit/gedit-command-line.c:255
+#: ../gedit/gedit-command-line.c:256
 msgid "Show the application's version"
 msgstr "Visa programmets version"
 
-#: ../gedit/gedit-command-line.c:261
+#: ../gedit/gedit-command-line.c:262
 msgid "Display list of possible values for the encoding option"
 msgstr "Visa en lista över möjliga värden för kodningsalternativet"
 
-#: ../gedit/gedit-command-line.c:269
+#: ../gedit/gedit-command-line.c:270
 msgid "Set the character encoding to be used to open the files listed on the command line"
 msgstr "Ställ in den teckenkodning som ska användas för att öppna filerna som anges på kommandoraden"
 
-#: ../gedit/gedit-command-line.c:270
+#: ../gedit/gedit-command-line.c:271
 msgid "ENCODING"
 msgstr "KODNING"
 
-#: ../gedit/gedit-command-line.c:277
+#: ../gedit/gedit-command-line.c:278
 msgid "Create a new top-level window in an existing instance of gedit"
 msgstr "Skapa ett nytt topplagerfönster i en befintlig instans av gedit"
 
-#: ../gedit/gedit-command-line.c:285
+#: ../gedit/gedit-command-line.c:286
 msgid "Create a new document in an existing instance of gedit"
 msgstr "Skapa ett nytt dokument i en befintlig instans av gedit"
 
-#: ../gedit/gedit-command-line.c:293
+#: ../gedit/gedit-command-line.c:294
 msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
 msgstr "Ställ in X-geometri för fönsterstorlek (BREDDxHÖJD+X+Y)"
 
-#: ../gedit/gedit-command-line.c:294
+#: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
 msgstr "GEOMETRI"
 
-#: ../gedit/gedit-command-line.c:301
+#: ../gedit/gedit-command-line.c:302
 msgid "Open files and block process until files are closed"
 msgstr "Öppna filer och blockera processen tills filer har stängts"
 
-#: ../gedit/gedit-command-line.c:309
+#: ../gedit/gedit-command-line.c:310
 msgid "Run gedit in the background"
 msgstr "Kör gedit i bakgrunden"
 
-#: ../gedit/gedit-command-line.c:317
+#: ../gedit/gedit-command-line.c:318
 msgid "Run gedit in standalone mode"
 msgstr "Kör gedit i fristående läge"
 
-#: ../gedit/gedit-command-line.c:326
+#: ../gedit/gedit-command-line.c:327
 msgid "[FILE...] [+LINE[:COLUMN]]"
 msgstr "[FIL...] [+RAD[:KOLUMN]]"
 
 #. Setup command line options
-#: ../gedit/gedit-command-line.c:333
+#: ../gedit/gedit-command-line.c:334
 msgid "- Edit text files"
 msgstr "- Redigera textfiler"
 
-#: ../gedit/gedit-command-line.c:344
+#: ../gedit/gedit-command-line.c:345
 #, c-format
 msgid ""
 "%s\n"
@@ -887,15 +888,15 @@ msgstr "\"%s\" hittades inte"
 msgid "Unsaved Document %d"
 msgstr "Osparat dokument %d"
 
-#: ../gedit/gedit-documents-panel.c:119
-#: ../gedit/gedit-documents-panel.c:133
-#: ../gedit/gedit-window.c:2408
-#: ../gedit/gedit-window.c:2415
+#: ../gedit/gedit-documents-panel.c:121
+#: ../gedit/gedit-documents-panel.c:135
+#: ../gedit/gedit-window.c:2459
+#: ../gedit/gedit-window.c:2466
 msgid "Read-Only"
 msgstr "Skrivskyddad"
 
-#: ../gedit/gedit-documents-panel.c:1124
-#: ../gedit/gedit-window.c:3840
+#: ../gedit/gedit-documents-panel.c:1142
+#: ../gedit/gedit-window.c:3907
 msgid "Documents"
 msgstr "Dokument"
 
@@ -1353,12 +1354,12 @@ msgstr "Några ogiltiga tecken har upptäckts under sparning av %s"
 msgid "If you continue saving this file you can corrupt the document.  Save anyway?"
 msgstr "Om du fortsätter med att spara denna fil kan du skada dokumentet. Spara ändå?"
 
-#: ../gedit/gedit-panel.c:339
-#: ../gedit/gedit-panel.c:511
+#: ../gedit/gedit-panel.c:409
+#: ../gedit/gedit-panel.c:586
 msgid "Empty"
 msgstr "Tom"
 
-#: ../gedit/gedit-panel.c:401
+#: ../gedit/gedit-panel.c:475
 msgid "Hide panel"
 msgstr "Dölj panel"
 
@@ -1495,31 +1496,32 @@ msgstr "Förhandsvisning"
 msgid "The preview of a page in the document to be printed"
 msgstr "Förhandsgranskningen av dokumentsidan som ska skrivas ut"
 
-#: ../gedit/gedit-statusbar.c:69
-#: ../gedit/gedit-statusbar.c:75
+#. Use spaces to leave padding proportional to the font size
+#: ../gedit/gedit-statusbar.c:70
+#: ../gedit/gedit-statusbar.c:76
 msgid "OVR"
 msgstr "ÖVR"
 
-#: ../gedit/gedit-statusbar.c:69
-#: ../gedit/gedit-statusbar.c:75
+#: ../gedit/gedit-statusbar.c:70
+#: ../gedit/gedit-statusbar.c:76
 msgid "INS"
 msgstr "INF"
 
 #. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for "Column". Please,
 #. use abbreviations if possible to avoid space problems.
-#: ../gedit/gedit-statusbar.c:247
+#: ../gedit/gedit-statusbar.c:248
 #, c-format
 msgid "  Ln %d, Col %d"
 msgstr "  Rad %d, kolumn %d"
 
-#: ../gedit/gedit-statusbar.c:346
+#: ../gedit/gedit-statusbar.c:347
 #, c-format
 msgid "There is a tab with errors"
 msgid_plural "There are %d tabs with errors"
 msgstr[0] "Det finns en flik med fel"
 msgstr[1] "Det finns %d flikar med fel"
 
-#: ../gedit/gedit-style-scheme-manager.c:206
+#: ../gedit/gedit-style-scheme-manager.c:210
 #, c-format
 msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
 msgstr "Katalogen \"%s\" kunde inte skapas: g_mkdir_with_parents() misslyckades: %s"
@@ -1561,339 +1563,335 @@ msgid "Saving %s"
 msgstr "Sparar %s"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1832
+#: ../gedit/gedit-tab.c:1835
 msgid "RO"
 msgstr "SKRIVSK"
 
-#: ../gedit/gedit-tab.c:1879
+#: ../gedit/gedit-tab.c:1882
 #, c-format
 msgid "Error opening file %s"
 msgstr "Fel vid öppning av filen %s"
 
-#: ../gedit/gedit-tab.c:1884
+#: ../gedit/gedit-tab.c:1887
 #, c-format
 msgid "Error reverting file %s"
 msgstr "Fel vid återställning av filen %s"
 
-#: ../gedit/gedit-tab.c:1889
+#: ../gedit/gedit-tab.c:1892
 #, c-format
 msgid "Error saving file %s"
 msgstr "Fel vid sparande av filen %s"
 
-#: ../gedit/gedit-tab.c:1910
+#: ../gedit/gedit-tab.c:1913
 msgid "Unicode (UTF-8)"
 msgstr "Unicode (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1917
+#: ../gedit/gedit-tab.c:1920
 msgid "Name:"
 msgstr "Namn:"
 
-#: ../gedit/gedit-tab.c:1918
+#: ../gedit/gedit-tab.c:1921
 msgid "MIME Type:"
 msgstr "MIME-typ:"
 
-#: ../gedit/gedit-tab.c:1919
+#: ../gedit/gedit-tab.c:1922
 msgid "Encoding:"
 msgstr "Kodning:"
 
-#: ../gedit/gedit-tab-label.c:280
+#: ../gedit/gedit-tab-label.c:283
 msgid "Close document"
 msgstr "Stäng dokument"
 
 #. Toplevel
-#: ../gedit/gedit-ui.h:47
+#: ../gedit/gedit-ui.h:43
 msgid "_File"
 msgstr "_Arkiv"
 
-#: ../gedit/gedit-ui.h:48
+#: ../gedit/gedit-ui.h:44
 msgid "_Edit"
 msgstr "_Redigera"
 
-#: ../gedit/gedit-ui.h:49
+#: ../gedit/gedit-ui.h:45
 msgid "_View"
 msgstr "_Visa"
 
-#: ../gedit/gedit-ui.h:50
+#: ../gedit/gedit-ui.h:46
 msgid "_Search"
 msgstr "_Sök"
 
-#: ../gedit/gedit-ui.h:51
+#: ../gedit/gedit-ui.h:47
 msgid "_Tools"
 msgstr "Verkty_g"
 
-#: ../gedit/gedit-ui.h:52
+#: ../gedit/gedit-ui.h:48
 msgid "_Documents"
 msgstr "_Dokument"
 
-#: ../gedit/gedit-ui.h:53
+#: ../gedit/gedit-ui.h:49
 msgid "_Help"
 msgstr "_Hjälp"
 
-#: ../gedit/gedit-ui.h:57
-msgid "Create a new document"
-msgstr "Skapa nytt dokument"
-
-#: ../gedit/gedit-ui.h:58
+#: ../gedit/gedit-ui.h:54
 msgid "_Open..."
 msgstr "_Öppna..."
 
-#: ../gedit/gedit-ui.h:59
-#: ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-ui.h:55
+#: ../gedit/gedit-window.c:1554
 msgid "Open a file"
 msgstr "Öppna en fil"
 
 #. Edit menu
-#: ../gedit/gedit-ui.h:62
+#: ../gedit/gedit-ui.h:58
 msgid "Pr_eferences"
 msgstr "_Inställningar"
 
-#: ../gedit/gedit-ui.h:63
+#: ../gedit/gedit-ui.h:59
 msgid "Configure the application"
 msgstr "Konfigurera programmet"
 
 #. Help menu
-#: ../gedit/gedit-ui.h:66
+#: ../gedit/gedit-ui.h:62
 msgid "_Contents"
 msgstr "_Innehåll"
 
-#: ../gedit/gedit-ui.h:67
+#: ../gedit/gedit-ui.h:63
 msgid "Open the gedit manual"
 msgstr "Öppna gedit-manualen"
 
-#: ../gedit/gedit-ui.h:69
+#: ../gedit/gedit-ui.h:65
 msgid "About this application"
 msgstr "Om detta program"
 
-#: ../gedit/gedit-ui.h:73
+#: ../gedit/gedit-ui.h:69
 msgid "Leave fullscreen mode"
 msgstr "Lämna helskärmsläget"
 
-#: ../gedit/gedit-ui.h:81
+#: ../gedit/gedit-ui.h:77
 msgid "Save the current file"
 msgstr "Spara den aktiva filen"
 
-#: ../gedit/gedit-ui.h:82
+#: ../gedit/gedit-ui.h:78
 msgid "Save _As..."
 msgstr "Spara so_m..."
 
-#: ../gedit/gedit-ui.h:83
+#: ../gedit/gedit-ui.h:79
 msgid "Save the current file with a different name"
 msgstr "Spara den aktuella filen med ett annat namn"
 
-#: ../gedit/gedit-ui.h:85
+#: ../gedit/gedit-ui.h:81
 msgid "Revert to a saved version of the file"
 msgstr "Återgå till en sparad version av filen"
 
-#: ../gedit/gedit-ui.h:86
+#: ../gedit/gedit-ui.h:82
 msgid "Print Previe_w"
 msgstr "Förhands_granska utskrift"
 
-#: ../gedit/gedit-ui.h:87
+#: ../gedit/gedit-ui.h:83
 msgid "Print preview"
 msgstr "Förhandsgranskning"
 
-#: ../gedit/gedit-ui.h:88
+#: ../gedit/gedit-ui.h:84
 msgid "_Print..."
 msgstr "Skriv _ut..."
 
-#: ../gedit/gedit-ui.h:89
+#: ../gedit/gedit-ui.h:85
 msgid "Print the current page"
 msgstr "Skriv ut aktuell sida"
 
-#: ../gedit/gedit-ui.h:93
+#: ../gedit/gedit-ui.h:89
 msgid "Undo the last action"
 msgstr "Ångra den senaste åtgärden"
 
-#: ../gedit/gedit-ui.h:95
+#: ../gedit/gedit-ui.h:91
 msgid "Redo the last undone action"
 msgstr "Gör om den senaste ångrade åtgärden"
 
-#: ../gedit/gedit-ui.h:97
+#: ../gedit/gedit-ui.h:93
 msgid "Cut the selection"
 msgstr "Klipp ut markeringen"
 
-#: ../gedit/gedit-ui.h:99
+#: ../gedit/gedit-ui.h:95
 msgid "Copy the selection"
 msgstr "Kopiera markeringen"
 
-#: ../gedit/gedit-ui.h:101
+#: ../gedit/gedit-ui.h:97
 msgid "Paste the clipboard"
 msgstr "Klistra in från urklipp"
 
-#: ../gedit/gedit-ui.h:103
+#: ../gedit/gedit-ui.h:99
 msgid "Delete the selected text"
 msgstr "Ta bort den markerade texten"
 
-#: ../gedit/gedit-ui.h:104
+#: ../gedit/gedit-ui.h:100
 msgid "Select _All"
 msgstr "Markera _allt"
 
-#: ../gedit/gedit-ui.h:105
+#: ../gedit/gedit-ui.h:101
 msgid "Select the entire document"
 msgstr "Markera hela dokumentet"
 
 #. View menu
-#: ../gedit/gedit-ui.h:108
+#: ../gedit/gedit-ui.h:104
 msgid "_Highlight Mode"
 msgstr "_Färgmarkeringsläge"
 
 #. Search menu
-#: ../gedit/gedit-ui.h:111
+#: ../gedit/gedit-ui.h:107
 msgid "_Find..."
 msgstr "_Sök..."
 
-#: ../gedit/gedit-ui.h:112
+#: ../gedit/gedit-ui.h:108
 msgid "Search for text"
 msgstr "Sök efter text"
 
-#: ../gedit/gedit-ui.h:113
+#: ../gedit/gedit-ui.h:109
 msgid "Find Ne_xt"
 msgstr "Sök n_ästa"
 
-#: ../gedit/gedit-ui.h:114
+#: ../gedit/gedit-ui.h:110
 msgid "Search forwards for the same text"
 msgstr "Sök framlänges efter samma text"
 
-#: ../gedit/gedit-ui.h:115
+#: ../gedit/gedit-ui.h:111
 msgid "Find Pre_vious"
 msgstr "Sök före_gående"
 
-#: ../gedit/gedit-ui.h:116
+#: ../gedit/gedit-ui.h:112
 msgid "Search backwards for the same text"
 msgstr "Sök baklänges efter samma text"
 
-#: ../gedit/gedit-ui.h:118
-#: ../gedit/gedit-ui.h:121
+#: ../gedit/gedit-ui.h:114
+#: ../gedit/gedit-ui.h:117
 msgid "_Replace..."
 msgstr "_Ersätt..."
 
-#: ../gedit/gedit-ui.h:119
-#: ../gedit/gedit-ui.h:122
+#: ../gedit/gedit-ui.h:115
+#: ../gedit/gedit-ui.h:118
 msgid "Search for and replace text"
 msgstr "Sök efter och ersätt text"
 
-#: ../gedit/gedit-ui.h:124
+#: ../gedit/gedit-ui.h:120
 msgid "_Clear Highlight"
 msgstr "_Rensa färgmarkeringsläge"
 
-#: ../gedit/gedit-ui.h:125
+#: ../gedit/gedit-ui.h:121
 msgid "Clear highlighting of search matches"
 msgstr "Rensa färgmarkering på sökträffar"
 
-#: ../gedit/gedit-ui.h:126
+#: ../gedit/gedit-ui.h:122
 msgid "Go to _Line..."
 msgstr "Gå till _rad..."
 
-#: ../gedit/gedit-ui.h:127
+#: ../gedit/gedit-ui.h:123
 msgid "Go to a specific line"
 msgstr "Gå till en specifik rad"
 
 #. Documents menu
-#: ../gedit/gedit-ui.h:130
+#: ../gedit/gedit-ui.h:126
 msgid "_Save All"
 msgstr "_Spara alla"
 
-#: ../gedit/gedit-ui.h:131
+#: ../gedit/gedit-ui.h:127
 msgid "Save all open files"
 msgstr "Spara alla öppna filer"
 
-#: ../gedit/gedit-ui.h:132
+#: ../gedit/gedit-ui.h:128
 msgid "_Close All"
 msgstr "S_täng alla"
 
-#: ../gedit/gedit-ui.h:133
+#: ../gedit/gedit-ui.h:129
 msgid "Close all open files"
 msgstr "Stäng alla öppna filer"
 
-#: ../gedit/gedit-ui.h:134
+#: ../gedit/gedit-ui.h:130
 msgid "_New Tab Group"
 msgstr "_Ny flikgrupp"
 
-#: ../gedit/gedit-ui.h:135
+#: ../gedit/gedit-ui.h:131
 msgid "Create a new tab group"
 msgstr "Skapa en ny flikgrupp"
 
-#: ../gedit/gedit-ui.h:136
+#: ../gedit/gedit-ui.h:132
 msgid "P_revious Tab Group"
 msgstr "Fö_regående flikgrupp"
 
-#: ../gedit/gedit-ui.h:137
+#: ../gedit/gedit-ui.h:133
 msgid "Switch to the previous tab group"
 msgstr "Växla till föregående flikgrupp"
 
-#: ../gedit/gedit-ui.h:138
+#: ../gedit/gedit-ui.h:134
 msgid "Nex_t Tab Group"
 msgstr "Näs_ta flikgrupp"
 
-#: ../gedit/gedit-ui.h:139
+#: ../gedit/gedit-ui.h:135
 msgid "Switch to the next tab group"
 msgstr "Växla till nästa flikgrupp"
 
-#: ../gedit/gedit-ui.h:140
+#: ../gedit/gedit-ui.h:136
 msgid "_Previous Document"
 msgstr "_Föregående dokument"
 
-#: ../gedit/gedit-ui.h:141
+#: ../gedit/gedit-ui.h:137
 msgid "Activate previous document"
 msgstr "Aktivera föregående dokument"
 
-#: ../gedit/gedit-ui.h:142
+#: ../gedit/gedit-ui.h:138
 msgid "N_ext Document"
 msgstr "Näs_ta dokument"
 
-#: ../gedit/gedit-ui.h:143
+#: ../gedit/gedit-ui.h:139
 msgid "Activate next document"
 msgstr "Aktivera nästa dokument"
 
-#: ../gedit/gedit-ui.h:144
+#: ../gedit/gedit-ui.h:140
 msgid "_Move to New Window"
 msgstr "_Flytta till nytt fönster"
 
-#: ../gedit/gedit-ui.h:145
+#: ../gedit/gedit-ui.h:141
 msgid "Move the current document to a new window"
 msgstr "Flytta det aktuella dokumentet till ett nytt fönster"
 
-#: ../gedit/gedit-ui.h:152
+#: ../gedit/gedit-ui.h:148
 msgid "Close the current file"
 msgstr "Stäng den aktiva filen"
 
-#: ../gedit/gedit-ui.h:159
+#: ../gedit/gedit-ui.h:155
 msgid "Quit the program"
 msgstr "Avsluta programmet"
 
-#: ../gedit/gedit-ui.h:164
+#: ../gedit/gedit-ui.h:160
 msgid "_Toolbar"
 msgstr "_Verktygsrad"
 
-#: ../gedit/gedit-ui.h:165
+#: ../gedit/gedit-ui.h:161
 msgid "Show or hide the toolbar in the current window"
 msgstr "Visa eller dölj verktygsraden i det aktuella fönstret"
 
-#: ../gedit/gedit-ui.h:167
+#: ../gedit/gedit-ui.h:163
 msgid "_Statusbar"
 msgstr "_Statusrad"
 
-#: ../gedit/gedit-ui.h:168
+#: ../gedit/gedit-ui.h:164
 msgid "Show or hide the statusbar in the current window"
 msgstr "Visa eller dölj statusraden i det aktuella fönstret"
 
-#: ../gedit/gedit-ui.h:171
+#: ../gedit/gedit-ui.h:167
 msgid "Edit text in fullscreen"
 msgstr "Redigera text i helskärmsläge"
 
-#: ../gedit/gedit-ui.h:178
+#: ../gedit/gedit-ui.h:174
 msgid "Side _Panel"
 msgstr "Sido_panel"
 
-#: ../gedit/gedit-ui.h:179
+#: ../gedit/gedit-ui.h:175
 msgid "Show or hide the side panel in the current window"
 msgstr "Visa eller dölj sidopanelen i det aktuella fönstret"
 
-#: ../gedit/gedit-ui.h:181
+#: ../gedit/gedit-ui.h:177
 msgid "_Bottom Panel"
 msgstr "_Underpanel"
 
-#: ../gedit/gedit-ui.h:182
+#: ../gedit/gedit-ui.h:178
 msgid "Show or hide the bottom panel in the current window"
 msgstr "Visa eller dölj underpanelen i det aktuella fönstret"
 
@@ -1918,29 +1916,29 @@ msgid "/ on %s"
 msgstr "/ på %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:596
+#: ../gedit/gedit-view-frame.c:624
 msgid "_Wrap Around"
 msgstr "_Börja om från början"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:606
+#: ../gedit/gedit-view-frame.c:634
 msgid "Match _Entire Word Only"
 msgstr "Matcha endast _hela ord"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:616
+#: ../gedit/gedit-view-frame.c:644
 msgid "_Match Case"
 msgstr "_Gör skillnad på skiftläge"
 
-#: ../gedit/gedit-view-frame.c:875
+#: ../gedit/gedit-view-frame.c:903
 msgid "String you want to search for"
 msgstr "Sträng du vill söka efter"
 
-#: ../gedit/gedit-view-frame.c:884
+#: ../gedit/gedit-view-frame.c:912
 msgid "Line you want to move the cursor to"
 msgstr "Rad du vill flytta markören till"
 
-#: ../gedit/gedit-window.c:1023
+#: ../gedit/gedit-window.c:1040
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Använd färgmarkeringsläge för %s"
@@ -1948,73 +1946,73 @@ msgstr "Använd färgmarkeringsläge för %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1090
-#: ../gedit/gedit-window.c:2105
-#: ../plugins/externaltools/tools/manager.py:120
-#: ../plugins/externaltools/tools/manager.py:416
-#: ../plugins/externaltools/tools/manager.py:527
-#: ../plugins/externaltools/tools/manager.py:846
+#: ../gedit/gedit-window.c:1107
+#: ../gedit/gedit-window.c:2156
+#: ../plugins/externaltools/tools/manager.py:138
+#: ../plugins/externaltools/tools/manager.py:441
+#: ../plugins/externaltools/tools/manager.py:552
+#: ../plugins/externaltools/tools/manager.py:871
 msgid "Plain Text"
 msgstr "Oformaterad text"
 
-#: ../gedit/gedit-window.c:1091
+#: ../gedit/gedit-window.c:1108
 msgid "Disable syntax highlighting"
 msgstr "Inaktivera syntaxmarkering"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1413
+#: ../gedit/gedit-window.c:1433
 #, c-format
 msgid "Open '%s'"
 msgstr "Öppna \"%s\""
 
-#: ../gedit/gedit-window.c:1522
+#: ../gedit/gedit-window.c:1556
 msgid "Open a recently used file"
 msgstr "Öppna en nyligen använd fil"
 
-#: ../gedit/gedit-window.c:1528
+#: ../gedit/gedit-window.c:1562
 msgid "Open"
 msgstr "Öppna"
 
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1620
 msgid "Save"
 msgstr "Spara"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1622
 msgid "Print"
 msgstr "Skriv ut"
 
-#: ../gedit/gedit-window.c:1590
+#: ../gedit/gedit-window.c:1624
 msgid "Find"
 msgstr "Sök"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1750
+#: ../gedit/gedit-window.c:1784
 #, c-format
 msgid "Activate '%s'"
 msgstr "Aktivera \"%s\""
 
-#: ../gedit/gedit-window.c:2083
+#: ../gedit/gedit-window.c:2134
 msgid "Use Spaces"
 msgstr "Använd blanksteg"
 
-#: ../gedit/gedit-window.c:2156
+#: ../gedit/gedit-window.c:2207
 msgid "Tab Width"
 msgstr "Tabulatorbredd"
 
-#: ../gedit/gedit-window.c:2265
+#: ../gedit/gedit-window.c:2316
 msgid "Bracket match is out of range"
 msgstr "Klammermatchning är utanför intervallet"
 
-#: ../gedit/gedit-window.c:2270
+#: ../gedit/gedit-window.c:2321
 msgid "Bracket match not found"
 msgstr "Klammermatchning hittades inte"
 
-#: ../gedit/gedit-window.c:2275
+#: ../gedit/gedit-window.c:2326
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Klammarmatchning hittades på rad: %d"
 
-#: ../gedit/gedit-window.c:4046
+#: ../gedit/gedit-window.c:4113
 msgid "About gedit"
 msgstr "Om gedit"
 
@@ -2119,7 +2117,6 @@ msgstr "Dokumentstatistik"
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 #: ../plugins/externaltools/tools/tools.ui.h:1
 #: ../plugins/snippets/snippets/snippets.ui.h:1
-#: ../plugins/time/gedit-time-dialog.ui.h:1
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "    "
 msgstr "    "
@@ -2222,31 +2219,31 @@ msgstr "Klar."
 msgid "Exited"
 msgstr "Avslutade"
 
-#: ../plugins/externaltools/tools/manager.py:118
+#: ../plugins/externaltools/tools/manager.py:136
 msgid "All languages"
 msgstr "Alla språk"
 
-#: ../plugins/externaltools/tools/manager.py:516
-#: ../plugins/externaltools/tools/manager.py:520
-#: ../plugins/externaltools/tools/manager.py:844
-#: ../plugins/externaltools/tools/tools.ui.h:2
+#: ../plugins/externaltools/tools/manager.py:541
+#: ../plugins/externaltools/tools/manager.py:545
+#: ../plugins/externaltools/tools/manager.py:869
+#: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Alla språk"
 
-#: ../plugins/externaltools/tools/manager.py:627
+#: ../plugins/externaltools/tools/manager.py:652
 msgid "New tool"
 msgstr "Nytt verktyg"
 
-#: ../plugins/externaltools/tools/manager.py:758
+#: ../plugins/externaltools/tools/manager.py:783
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr "Denna snabbtangent är redan bunden till %s"
 
-#: ../plugins/externaltools/tools/manager.py:809
+#: ../plugins/externaltools/tools/manager.py:834
 msgid "Type a new accelerator, or press Backspace to clear"
 msgstr "Ange en ny snabbtangent, eller tryck Backsteg för att rensa"
 
-#: ../plugins/externaltools/tools/manager.py:811
+#: ../plugins/externaltools/tools/manager.py:836
 msgid "Type a new accelerator"
 msgstr "Ange en ny snabbtangent"
 
@@ -2254,124 +2251,148 @@ msgstr "Ange en ny snabbtangent"
 msgid "Stopped."
 msgstr "Stoppad."
 
+#: ../plugins/externaltools/tools/tools.ui.h:2
+msgid "Add Tool"
+msgstr "Lägg till verktyg"
+
 #: ../plugins/externaltools/tools/tools.ui.h:3
+msgid "Add a new tool"
+msgstr "Lägg till ett nytt verktyg"
+
+#: ../plugins/externaltools/tools/tools.ui.h:5
 msgid "All documents"
 msgstr "Alla dokument"
 
-#: ../plugins/externaltools/tools/tools.ui.h:4
+#: ../plugins/externaltools/tools/tools.ui.h:6
 msgid "All documents except untitled ones"
 msgstr "Alla dokument utom namnlösa dokument"
 
-#: ../plugins/externaltools/tools/tools.ui.h:5
+#: ../plugins/externaltools/tools/tools.ui.h:7
 msgid "Append to current document"
 msgstr "Infoga till aktuellt dokument"
 
-#: ../plugins/externaltools/tools/tools.ui.h:6
+#: ../plugins/externaltools/tools/tools.ui.h:8
 msgid "Create new document"
 msgstr "Skapa nytt dokument"
 
-#: ../plugins/externaltools/tools/tools.ui.h:7
+#: ../plugins/externaltools/tools/tools.ui.h:9
 msgid "Current document"
 msgstr "Aktuellt dokument"
 
-#: ../plugins/externaltools/tools/tools.ui.h:8
+#: ../plugins/externaltools/tools/tools.ui.h:10
 msgid "Current line"
 msgstr "Aktuell rad"
 
-#: ../plugins/externaltools/tools/tools.ui.h:9
+#: ../plugins/externaltools/tools/tools.ui.h:11
 msgid "Current selection"
 msgstr "Aktuell markering"
 
-#: ../plugins/externaltools/tools/tools.ui.h:10
+#: ../plugins/externaltools/tools/tools.ui.h:12
 msgid "Current selection (default to document)"
 msgstr "Aktuell markering (standard är dokument)"
 
-#: ../plugins/externaltools/tools/tools.ui.h:11
+#: ../plugins/externaltools/tools/tools.ui.h:13
 msgid "Current word"
 msgstr "Aktuellt ord"
 
-#: ../plugins/externaltools/tools/tools.ui.h:12
+#: ../plugins/externaltools/tools/tools.ui.h:14
 msgid "Display in bottom pane"
 msgstr "Visa i underpanel"
 
-#: ../plugins/externaltools/tools/tools.ui.h:13
-msgid "External Tools Manager"
-msgstr "Hantera externa verktyg"
-
-#: ../plugins/externaltools/tools/tools.ui.h:14
+#: ../plugins/externaltools/tools/tools.ui.h:15
 msgid "Insert at cursor position"
 msgstr "Infoga vid markörpositionen"
 
-#: ../plugins/externaltools/tools/tools.ui.h:15
+#: ../plugins/externaltools/tools/tools.ui.h:16
 msgid "Local files only"
 msgstr "Endast lokala filer"
 
-#: ../plugins/externaltools/tools/tools.ui.h:16
+#: ../plugins/externaltools/tools/tools.ui.h:17
+msgid "Manage External Tools"
+msgstr "Hantera externa verktyg"
+
+#: ../plugins/externaltools/tools/tools.ui.h:18
 msgid "Nothing"
 msgstr "Ingenting"
 
-#: ../plugins/externaltools/tools/tools.ui.h:17
+#: ../plugins/externaltools/tools/tools.ui.h:19
 msgid "Remote files only"
 msgstr "Endast fjärrfiler"
 
-#: ../plugins/externaltools/tools/tools.ui.h:18
+#: ../plugins/externaltools/tools/tools.ui.h:20
+msgid "Remove Tool"
+msgstr "Ta bort verktyg"
+
+#: ../plugins/externaltools/tools/tools.ui.h:21
+msgid "Remove selected tool"
+msgstr "Ta bort markerat verktyg"
+
+#: ../plugins/externaltools/tools/tools.ui.h:22
 msgid "Replace current document"
 msgstr "Ersätt aktuellt dokument"
 
-#: ../plugins/externaltools/tools/tools.ui.h:19
+#: ../plugins/externaltools/tools/tools.ui.h:23
 msgid "Replace current selection"
 msgstr "Ersätt aktuell markering"
 
-#: ../plugins/externaltools/tools/tools.ui.h:20
+#: ../plugins/externaltools/tools/tools.ui.h:24
+msgid "Revert Tool"
+msgstr "Återställ verktyg"
+
+#: ../plugins/externaltools/tools/tools.ui.h:25
+msgid "Revert tool"
+msgstr "Återställ verktyg"
+
+#: ../plugins/externaltools/tools/tools.ui.h:26
 msgid "Untitled documents only"
 msgstr "Endast namnlösa dokument"
 
-#: ../plugins/externaltools/tools/tools.ui.h:21
+#: ../plugins/externaltools/tools/tools.ui.h:27
 msgid "_Applicability:"
 msgstr "_Användbarhet:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:22
-#: ../plugins/snippets/snippets/snippets.ui.h:11
+#: ../plugins/externaltools/tools/tools.ui.h:28
+#: ../plugins/snippets/snippets/snippets.ui.h:16
 msgid "_Edit:"
 msgstr "R_edigera:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:23
+#: ../plugins/externaltools/tools/tools.ui.h:29
 msgid "_Input:"
 msgstr "_Inmatning:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:24
+#: ../plugins/externaltools/tools/tools.ui.h:30
 msgid "_Output:"
 msgstr "_Utdata:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:25
+#: ../plugins/externaltools/tools/tools.ui.h:31
 msgid "_Save:"
 msgstr "_Spara:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:26
+#: ../plugins/externaltools/tools/tools.ui.h:32
 msgid "_Shortcut Key:"
 msgstr "_Snabbtangent:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:27
+#: ../plugins/externaltools/tools/tools.ui.h:33
 msgid "_Tools:"
 msgstr "Verkty_g:"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:175
+#: ../plugins/externaltools/tools/windowactivatable.py:176
 msgid "Manage _External Tools..."
 msgstr "Hantera _externa verktyg..."
 
-#: ../plugins/externaltools/tools/windowactivatable.py:176
+#: ../plugins/externaltools/tools/windowactivatable.py:177
 msgid "Opens the External Tools Manager"
 msgstr "Öppnar hanteraren för externa verktyg"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:179
+#: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "External _Tools"
 msgstr "Externa ver_ktyg"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:180
+#: ../plugins/externaltools/tools/windowactivatable.py:181
 msgid "External tools"
 msgstr "Externa verktyg"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:214
+#: ../plugins/externaltools/tools/windowactivatable.py:215
 msgid "Shell Output"
 msgstr "Skalutdata"
 
@@ -2412,59 +2433,59 @@ msgstr "Filbläddrarpanel"
 msgid "File System"
 msgstr "Filsystem"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:596
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:577
 msgid "_Set root to active document"
 msgstr "_Ställ in rot till aktivt dokument"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:598
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:579
 msgid "Set the root to the active document location"
 msgstr "Ställ in roten till platsen för det aktiva dokumentet"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:603
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:584
 msgid "_Open terminal here"
 msgstr "_Öppna en terminal här"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:605
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:586
 msgid "Open a terminal at the currently opened directory"
 msgstr "Öppna en terminal vid för närvarande öppnad katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:743
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:724
 msgid "File Browser"
 msgstr "Filbläddrare"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:886
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:867
 msgid "An error occurred while creating a new directory"
 msgstr "Ett fel uppstod vid skapandet av en ny katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:889
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:870
 msgid "An error occurred while creating a new file"
 msgstr "Ett fel uppstod vid skapandet av en ny fil"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:892
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:873
 msgid "An error occurred while renaming a file or directory"
 msgstr "Ett fel uppstod vid namnbyte av en fil eller katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:895
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:876
 msgid "An error occurred while deleting a file or directory"
 msgstr "Ett fel uppstod vid borttagning av en fil eller katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:898
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:879
 msgid "An error occurred while opening a directory in the file manager"
 msgstr "Ett fel uppstod vid öppnandet av en katalog i filhanteraren"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:901
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:882
 msgid "An error occurred while setting a root directory"
 msgstr "Ett fel uppstod vid inställning av en rotkatalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:904
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:885
 msgid "An error occurred while loading a directory"
 msgstr "Ett fel uppstod vid inläsning av en katalog"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:907
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:888
 msgid "An error occurred"
 msgstr "Ett fel inträffade"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1123
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1104
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
@@ -2472,25 +2493,25 @@ msgstr ""
 "Kan inte flytta filen till papperskorgen.\n"
 "Vill du ta bort den permanent?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1128
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1109
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr "Filen (%s) kan inte flyttas till papperskorgen."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1133
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1114
 msgid "The selected files cannot be moved to the trash."
 msgstr "De markerade filerna kan inte flyttas till papperskorgen."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1165
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1146
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr "Är du säker på att du vill ta bort \"%s\" permanent?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1170
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1151
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr "Är du säker på att du vill ta bort de markerade filerna permanent?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1173
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1154
 msgid "If you delete an item, it is permanently lost."
 msgstr "Om du tar bort ett objekt är det borta för alltid."
 
@@ -2657,17 +2678,17 @@ msgstr "Gå till nästa plats"
 msgid "_Match Filename"
 msgstr "_Matcha filnamn"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2185
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2187
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "Inga monteringsobjekt för monterad volym: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2262
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2264
 #, c-format
 msgid "Could not open media: %s"
 msgstr "Kunde inte öppna media: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2309
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2311
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "Kunde inte montera volym: %s"
@@ -2790,7 +2811,7 @@ msgid "Insert often-used pieces of text in a fast way"
 msgstr "Infoga ofta använda textdelar på ett snabbt sätt"
 
 #: ../plugins/snippets/snippets.plugin.desktop.in.h:2
-#: ../plugins/snippets/snippets/document.py:54
+#: ../plugins/snippets/snippets/document.py:56
 msgid "Snippets"
 msgstr "Textsnuttar"
 
@@ -2799,54 +2820,75 @@ msgid "Activation"
 msgstr "Aktivering"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:3
+msgid "Add Snippet"
+msgstr "Lägg till textsnutt"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:4
 msgid "Create new snippet"
 msgstr "Skapa ny textsnutt"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:4
+#: ../plugins/snippets/snippets/snippets.ui.h:5
 #: ../plugins/snippets/snippets/manager.py:399
 msgid "Delete selected snippet"
 msgstr "Ta bort markerad textsnutt"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:5
+#: ../plugins/snippets/snippets/snippets.ui.h:6
+msgid "Export Snippets"
+msgstr "Exportera textsnuttar"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:7
 msgid "Export selected snippets"
 msgstr "Exportera markerade textsnuttar"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/manager.py:770
+#: ../plugins/snippets/snippets/snippets.ui.h:8
+msgid "Import Snippets"
+msgstr "Importera textsnuttar"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+#: ../plugins/snippets/snippets/manager.py:776
 msgid "Import snippets"
 msgstr "Importera textsnuttar"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:7
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+msgid "Manage Snippets"
+msgstr "Hantera textsnuttar"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:11
+msgid "Remove Snippet"
+msgstr "Ta bort textsnutt"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:12
 msgid "S_hortcut key:"
 msgstr "Sna_bbtangent:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:8
+#: ../plugins/snippets/snippets/snippets.ui.h:13
 msgid "Shortcut key with which the snippet is activated"
 msgstr "Snabbtangent med vilken textsnutten aktiveras"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
-#: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:658
+#: ../plugins/snippets/snippets/snippets.ui.h:14
+#: ../plugins/snippets/snippets/manager.py:666
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Ett ord med vilket textsnutten aktiveras efter att tabulatortangenten tryckts"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:10
+#: ../plugins/snippets/snippets/snippets.ui.h:15
 msgid "_Drop targets:"
 msgstr "_Släppmål:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:12
+#: ../plugins/snippets/snippets/snippets.ui.h:17
 msgid "_Snippets:"
 msgstr "_Textsnuttar:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:13
+#. "tab" here means the tab key, not the notebook tab!
+#: ../plugins/snippets/snippets/snippets.ui.h:19
 msgid "_Tab trigger:"
 msgstr "_Tabulatorutlösare:"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:141
+#: ../plugins/snippets/snippets/windowactivatable.py:143
 msgid "Manage _Snippets..."
 msgstr "Hantera _textsnuttar..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:142
+#: ../plugins/snippets/snippets/windowactivatable.py:144
 msgid "Manage snippets"
 msgstr "Hantera textsnuttar"
 
@@ -2854,11 +2896,11 @@ msgstr "Hantera textsnuttar"
 msgid "Snippets archive"
 msgstr "Textsnuttsarkiv"
 
-#: ../plugins/snippets/snippets/manager.py:66
+#: ../plugins/snippets/snippets/manager.py:62
 msgid "Add a new snippet..."
 msgstr "Lägg till en ny textsnutt..."
 
-#: ../plugins/snippets/snippets/manager.py:119
+#: ../plugins/snippets/snippets/manager.py:115
 msgid "Global"
 msgstr "Global"
 
@@ -2867,77 +2909,77 @@ msgid "Revert selected snippet"
 msgstr "Återställ markerad textsnutt"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:651
+#: ../plugins/snippets/snippets/manager.py:659
 msgid "This is not a valid Tab trigger. Triggers can either contain letters or a single (non-alphanumeric) character like: {, [, etc."
 msgstr "Detta är inte en giltig tabulatorutlösare. Utlösare kan antingen innehålla bokstäver eller ett enda (icke-alfabetiskt) tecken som: {, [, etc."
 
-#: ../plugins/snippets/snippets/manager.py:749
+#: ../plugins/snippets/snippets/manager.py:755
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "Följande fel inträffade vid importering: %s"
 
-#: ../plugins/snippets/snippets/manager.py:756
+#: ../plugins/snippets/snippets/manager.py:762
 msgid "Import successfully completed"
 msgstr "Importeringen lyckades"
 
-#: ../plugins/snippets/snippets/manager.py:775
-#: ../plugins/snippets/snippets/manager.py:861
-#: ../plugins/snippets/snippets/manager.py:924
+#: ../plugins/snippets/snippets/manager.py:781
+#: ../plugins/snippets/snippets/manager.py:867
+#: ../plugins/snippets/snippets/manager.py:930
 msgid "All supported archives"
 msgstr "Alla arkiv som stöds"
 
-#: ../plugins/snippets/snippets/manager.py:776
-#: ../plugins/snippets/snippets/manager.py:862
-#: ../plugins/snippets/snippets/manager.py:925
+#: ../plugins/snippets/snippets/manager.py:782
+#: ../plugins/snippets/snippets/manager.py:868
+#: ../plugins/snippets/snippets/manager.py:931
 msgid "Gzip compressed archive"
 msgstr "Gzip-komprimerat arkiv"
 
-#: ../plugins/snippets/snippets/manager.py:777
-#: ../plugins/snippets/snippets/manager.py:863
-#: ../plugins/snippets/snippets/manager.py:926
+#: ../plugins/snippets/snippets/manager.py:783
+#: ../plugins/snippets/snippets/manager.py:869
+#: ../plugins/snippets/snippets/manager.py:932
 msgid "Bzip2 compressed archive"
 msgstr "Bzip2-komprimerat arkiv"
 
-#: ../plugins/snippets/snippets/manager.py:778
+#: ../plugins/snippets/snippets/manager.py:784
 msgid "Single snippets file"
 msgstr "En textsnuttsfil"
 
-#: ../plugins/snippets/snippets/manager.py:779
-#: ../plugins/snippets/snippets/manager.py:865
-#: ../plugins/snippets/snippets/manager.py:928
+#: ../plugins/snippets/snippets/manager.py:785
+#: ../plugins/snippets/snippets/manager.py:871
+#: ../plugins/snippets/snippets/manager.py:934
 msgid "All files"
 msgstr "Alla filer"
 
-#: ../plugins/snippets/snippets/manager.py:791
+#: ../plugins/snippets/snippets/manager.py:797
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "Följande fel inträffade vid exportering: %s"
 
-#: ../plugins/snippets/snippets/manager.py:795
+#: ../plugins/snippets/snippets/manager.py:801
 msgid "Export successfully completed"
 msgstr "Exporteringen lyckades"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:835
-#: ../plugins/snippets/snippets/manager.py:902
+#: ../plugins/snippets/snippets/manager.py:841
+#: ../plugins/snippets/snippets/manager.py:908
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr "Vill du inkludera markerade <b>system</b>textsnuttar i din exportering?"
 
-#: ../plugins/snippets/snippets/manager.py:850
-#: ../plugins/snippets/snippets/manager.py:920
+#: ../plugins/snippets/snippets/manager.py:856
+#: ../plugins/snippets/snippets/manager.py:926
 msgid "There are no snippets selected to be exported"
 msgstr "Det finns inga textsnuttar markerade att exportera"
 
-#: ../plugins/snippets/snippets/manager.py:855
-#: ../plugins/snippets/snippets/manager.py:893
+#: ../plugins/snippets/snippets/manager.py:861
+#: ../plugins/snippets/snippets/manager.py:899
 msgid "Export snippets"
 msgstr "Exportera textsnuttar"
 
-#: ../plugins/snippets/snippets/manager.py:1032
+#: ../plugins/snippets/snippets/manager.py:1040
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "Ange en ny snabbtangent, eller tryck Backsteg för att rensa"
 
-#: ../plugins/snippets/snippets/manager.py:1034
+#: ../plugins/snippets/snippets/manager.py:1042
 msgid "Type a new shortcut"
 msgstr "Ange en ny snabbtangent"
 
@@ -2956,34 +2998,34 @@ msgstr "Målkatalogen \"%s\" finns inte"
 msgid "Target directory \"%s\" is not a valid directory"
 msgstr "Målkatalogen \"%s\" är inte en giltig katalog"
 
-#: ../plugins/snippets/snippets/importer.py:46
-#: ../plugins/snippets/snippets/importer.py:100
+#: ../plugins/snippets/snippets/importer.py:47
+#: ../plugins/snippets/snippets/importer.py:108
 #, python-format
 msgid "File \"%s\" does not exist"
 msgstr "Filen \"%s\" finns inte"
 
-#: ../plugins/snippets/snippets/importer.py:49
+#: ../plugins/snippets/snippets/importer.py:50
 #, python-format
 msgid "File \"%s\" is not a valid snippets file"
 msgstr "Filen \"%s\" är inte en giltig textsnuttsfil"
 
-#: ../plugins/snippets/snippets/importer.py:59
+#: ../plugins/snippets/snippets/importer.py:67
 #, python-format
 msgid "Imported file \"%s\" is not a valid snippets file"
 msgstr "Importerade filen \"%s\" är inte en giltig textsnuttsfil"
 
-#: ../plugins/snippets/snippets/importer.py:69
+#: ../plugins/snippets/snippets/importer.py:77
 #, python-format
 msgid "The archive \"%s\" could not be extracted"
 msgstr "Arkivet \"%s\" kunde inte extraheras"
 
-#: ../plugins/snippets/snippets/importer.py:87
+#: ../plugins/snippets/snippets/importer.py:95
 #, python-format
 msgid "The following files could not be imported: %s"
 msgstr "Följande filer kunde inte importeras: %s"
 
-#: ../plugins/snippets/snippets/importer.py:103
-#: ../plugins/snippets/snippets/importer.py:116
+#: ../plugins/snippets/snippets/importer.py:111
+#: ../plugins/snippets/snippets/importer.py:124
 #, python-format
 msgid "File \"%s\" is not a valid snippets archive"
 msgstr "Filen \"%s\" är inte ett giltigt textsnuttsarkiv"
@@ -3087,8 +3129,8 @@ msgstr "Stavningskontrollen färdig"
 #. * the second %s is the locale name. Example:
 #. * "French (France)"
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:285
-#: ../plugins/spell/gedit-spell-checker-language.c:291
+#: ../plugins/spell/gedit-spell-checker-language.c:373
+#: ../plugins/spell/gedit-spell-checker-language.c:379
 #, c-format
 msgctxt "language"
 msgid "%s (%s)"
@@ -3097,7 +3139,7 @@ msgstr "%s (%s)"
 #. Translators: this refers to an unknown language code
 #. * (one which isn't in our built-in list).
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:300
+#: ../plugins/spell/gedit-spell-checker-language.c:388
 #, c-format
 msgctxt "language"
 msgid "Unknown (%s)"
@@ -3106,7 +3148,7 @@ msgstr "Okänd (%s)"
 #. Translators: this refers the Default language used by the
 #. * spell checker
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:406
+#: ../plugins/spell/gedit-spell-checker-language.c:494
 msgctxt "language"
 msgid "Default"
 msgstr "Standard"
@@ -3120,35 +3162,35 @@ msgstr "Ställ in språk"
 msgid "Languages"
 msgstr "Språk"
 
-#: ../plugins/spell/gedit-spell-plugin.c:105
+#: ../plugins/spell/gedit-spell-plugin.c:107
 msgid "_Check Spelling..."
 msgstr "_Kontrollera stavning..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:107
+#: ../plugins/spell/gedit-spell-plugin.c:109
 msgid "Check the current document for incorrect spelling"
 msgstr "Kontrollera det aktuella dokumentets stavning"
 
-#: ../plugins/spell/gedit-spell-plugin.c:113
+#: ../plugins/spell/gedit-spell-plugin.c:115
 msgid "Set _Language..."
 msgstr "Ställ in _språk..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:115
+#: ../plugins/spell/gedit-spell-plugin.c:117
 msgid "Set the language of the current document"
 msgstr "Ställ in språket på det aktuella dokumentet"
 
-#: ../plugins/spell/gedit-spell-plugin.c:124
+#: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "_Highlight Misspelled Words"
 msgstr "Färgmarkera f_elstavade ord"
 
-#: ../plugins/spell/gedit-spell-plugin.c:126
+#: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
 msgstr "Stavningskontrollera automatiskt det aktuella dokumentet"
 
-#: ../plugins/spell/gedit-spell-plugin.c:817
+#: ../plugins/spell/gedit-spell-plugin.c:819
 msgid "The document is empty."
 msgstr "Dokumentet är tomt."
 
-#: ../plugins/spell/gedit-spell-plugin.c:842
+#: ../plugins/spell/gedit-spell-plugin.c:844
 msgid "No misspelled words"
 msgstr "Inga felstavade ord"
 
@@ -3267,32 +3309,32 @@ msgid "The selected format used when inserting the date/time."
 msgstr "Det valda formatet som används när datum/tid infogas."
 
 #. Translators: Use the more common date format in your locale
-#: ../plugins/time/gedit-time-dialog.ui.h:3
+#: ../plugins/time/gedit-time-dialog.ui.h:2
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:4
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%Y-%m-%d %H.%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
-#: ../plugins/time/gedit-time-dialog.ui.h:4
+#: ../plugins/time/gedit-time-dialog.ui.h:3
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:6
 msgid "01/11/2009 17:52:00"
 msgstr "2009-01-11 17.52:00"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:5
+#: ../plugins/time/gedit-time-dialog.ui.h:4
 msgid "Insert Date and Time"
 msgstr "Infoga datum och tid"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:6
+#: ../plugins/time/gedit-time-dialog.ui.h:5
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 msgid "Use the _selected format"
 msgstr "Använd det _valda formatet"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:7
+#: ../plugins/time/gedit-time-dialog.ui.h:6
 msgid "_Insert"
 msgstr "_Infoga"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:8
+#: ../plugins/time/gedit-time-dialog.ui.h:7
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:11
 msgid "_Use custom format"
 msgstr "_Använd anpassat format"
@@ -3317,12 +3359,28 @@ msgstr "Loggar åtkomst och lämna händelser för dokument som används med ged
 msgid "Zeitgeist dataprovider"
 msgstr "Zeitgeist-dataleverantör"
 
+#~ msgid ""
+#~ "List of VFS schemes gedit supports in write mode. The 'file' scheme is "
+#~ "writable by default."
+#~ msgstr ""
+#~ "Lista av VFS-scheman som gedit stöder i skrivläge. Schemat \"file\" är "
+#~ "skrivbart som standard."
+
+#~ msgid "Writable VFS schemes"
+#~ msgstr "Skrivbara VFS-scheman"
+
+#~ msgid "External Tools Manager"
+#~ msgstr "Hantera externa verktyg"
+
 #~ msgid "Quick open"
 #~ msgstr "Snabböppna"
+
 #~ msgid "Quickly open documents"
 #~ msgstr "Snabböppna dokument"
+
 #~ msgid "It is not possible to detect the encoding automatically"
 #~ msgstr "Det är inte möjligt att automatiskt identifiera teckenkodningen"
+
 #~ msgid "Snippets Manager"
 #~ msgstr "Hantera textsnuttar"
 
@@ -3341,592 +3399,885 @@ msgstr "Zeitgeist-dataleverantör"
 #~ "prioriterad text bredvid ikoner. Observera att det görs skillnad på "
 #~ "versaler och gemener i värdena, så försäkra dig om att de visas exakt som "
 #~ "de visas här."
+
 #~ msgid "Toolbar Buttons Style"
 #~ msgstr "Stil på verktygsradsknappar"
+
 #~ msgid "_Incremental Search..."
 #~ msgstr "_Inkrementiell sökning..."
+
 #~ msgid "Incrementally search for text"
 #~ msgstr "Interaktiv sökning efter text"
+
 #~ msgid "Tags"
 #~ msgstr "Taggar"
+
 #~ msgid "Select the group of tags you want to use"
 #~ msgstr "Välj den grupp med taggar som du vill använda"
+
 #~ msgid "_Preview"
 #~ msgstr "_Förhandsgranska"
+
 #~ msgid "Available Tag Lists"
 #~ msgstr "Tillgängliga tagglistor"
+
 #~ msgid "Abbreviated form"
 #~ msgstr "Förkortad form"
+
 #~ msgid "Abbreviation"
 #~ msgstr "Förkortning"
+
 #~ msgid "Above"
 #~ msgstr "Ovanför"
+
 #~ msgid "Accessibility key character"
 #~ msgstr "Tecken för tillgänglighetstangent"
+
 #~ msgid "Acronym"
 #~ msgstr "Akronym"
+
 #~ msgid "Align"
 #~ msgstr "Justera"
+
 #~ msgid "Alignment character"
 #~ msgstr "Justeringstecken"
+
 #~ msgid "Alternative"
 #~ msgstr "Alternativ"
+
 #~ msgid "Anchor"
 #~ msgstr "Ankare"
+
 #~ msgid "Anchor URI"
 #~ msgstr "Ankar-URI"
+
 #~ msgid "Applet class file code"
 #~ msgstr "Applet-klassfilsnamn"
+
 #~ msgid "Applet class file code (deprecated)"
 #~ msgstr "Applet-klassfilsnamn (utfasad)"
+
 #~ msgid "Array"
 #~ msgstr "Vektor"
+
 #~ msgid "Associated information"
 #~ msgstr "Associerad information"
+
 #~ msgid "Author info"
 #~ msgstr "Författarinformation"
+
 #~ msgid "Axis related headers"
 #~ msgstr "Axelrelaterade huvuden"
+
 #~ msgid "Background color"
 #~ msgstr "Bakgrundsfärg"
+
 #~ msgid "Background color (deprecated)"
 #~ msgstr "Bakgrundsfärg (utfasad)"
+
 #~ msgid "Background texture tile"
 #~ msgstr "Bakgrundstexturbricka"
+
 #~ msgid "Background texture tile (deprecated)"
 #~ msgstr "Bakgrundstexturbricka (utfasad)"
+
 #~ msgid "Base URI"
 #~ msgstr "Bas-URI"
+
 #~ msgid "Base font"
 #~ msgstr "Bastypsnitt"
+
 #~ msgid "Base font (deprecated)"
 #~ msgstr "Grundtypsnitt (utfasad)"
+
 #~ msgid "Bold"
 #~ msgstr "Fet"
+
 #~ msgid "Border"
 #~ msgstr "Kant"
+
 #~ msgid "Border (deprecated)"
 #~ msgstr "Ram (utfasad)"
+
 #~ msgid "Border color"
 #~ msgstr "Kantfärg"
+
 #~ msgid "Cell rowspan"
 #~ msgstr "Cellradvidd"
+
 #~ msgid "Center"
 #~ msgstr "Mitt"
+
 #~ msgid "Center (deprecated)"
 #~ msgstr "Centrera (utfasad)"
+
 #~ msgid "Character encoding of linked resource"
 #~ msgstr "Teckenkodning för länkad resurs"
+
 #~ msgid "Checked (state)"
 #~ msgstr "Ikryssat (tillstånd)"
+
 #~ msgid "Checked state"
 #~ msgstr "Ikryssat tillstånd"
+
 #~ msgid "Citation"
 #~ msgstr "Citering"
+
 #~ msgid "Cite reason for change"
 #~ msgstr "Ange orsak för ändring"
+
 #~ msgid "Class implementation ID"
 #~ msgstr "Id för klassimplementation"
+
 #~ msgid "Class list"
 #~ msgstr "Klasslista"
+
 #~ msgid "Clear text flow control"
 #~ msgstr "Töm textflödeskontroll"
+
 #~ msgid "Code content type"
 #~ msgstr "Typ av kodinnehåll"
+
 #~ msgid "Color of selected links"
 #~ msgstr "Färg på markerade länkar"
+
 #~ msgid "Color of selected links (deprecated)"
 #~ msgstr "Färg på markerade länkar (utfasad)"
+
 #~ msgid "Column span"
 #~ msgstr "Kolumnvidd"
+
 #~ msgid "Columns"
 #~ msgstr "Kolumner"
+
 #~ msgid "Comment"
 #~ msgstr "Kommentar"
+
 #~ msgid "Computer code fragment"
 #~ msgstr "Datorkodfragment"
+
 #~ msgid "Content scheme"
 #~ msgstr "Innehållsschema"
+
 #~ msgid "Content type"
 #~ msgstr "Innehållstyp"
+
 #~ msgid "Content type (deprecated)"
 #~ msgstr "Innehållstyp (utfasad)"
+
 #~ msgid "Coordinates"
 #~ msgstr "Koordinater"
+
 #~ msgid "DIV Style container"
 #~ msgstr "DIV-stilcontainer"
+
 #~ msgid "DIV container"
 #~ msgstr "DIV-container"
+
 #~ msgid "Date and time of change"
 #~ msgstr "Datum och tid för ändring"
+
 #~ msgid "Declare flag"
 #~ msgstr "Deklarera flagga"
+
 #~ msgid "Defer attribute"
 #~ msgstr "Defer-attribut"
+
 #~ msgid "Definition description"
 #~ msgstr "Definitionsbeskrivning"
+
 #~ msgid "Definition list"
 #~ msgstr "Definitionslista"
+
 #~ msgid "Definition term"
 #~ msgstr "Definitionsterm"
+
 #~ msgid "Deleted text"
 #~ msgstr "Borttagen text"
+
 #~ msgid "Direction"
 #~ msgstr "Riktning"
+
 #~ msgid "Directionality"
 #~ msgstr "Riktning"
+
 #~ msgid "Directionality (deprecated)"
 #~ msgstr "Riktning (utfasad)"
+
 #~ msgid "Directory list"
 #~ msgstr "Kataloglista"
+
 #~ msgid "Disabled"
 #~ msgstr "Inaktiverad"
+
 #~ msgid "Document base"
 #~ msgstr "Dokumentbas"
+
 #~ msgid "Document body"
 #~ msgstr "Dokumenttext"
+
 #~ msgid "Document head"
 #~ msgstr "Dokumenthuvud"
+
 #~ msgid "Document title"
 #~ msgstr "Dokumenttitel"
+
 #~ msgid "Document type"
 #~ msgstr "Dokumenttyp"
+
 #~ msgid "Element ID"
 #~ msgstr "Element-id"
+
 #~ msgid "Embedded object"
 #~ msgstr "Inbäddat objekt"
+
 #~ msgid "Emphasis"
 #~ msgstr "Betoning"
+
 #~ msgid "Encode type"
 #~ msgstr "Kodningstyp"
+
 #~ msgid "Figure"
 #~ msgstr "Figur"
+
 #~ msgid "Font face"
 #~ msgstr "Typsnitt"
+
 #~ msgid "Font face (deprecated)"
 #~ msgstr "Typsnitt (utfasad)"
+
 #~ msgid "For label"
 #~ msgstr "För etikett"
+
 #~ msgid "Forced line break"
 #~ msgstr "Framtvingad radbrytning"
+
 #~ msgid "Form"
 #~ msgstr "Formulär"
+
 #~ msgid "Form action handler"
 #~ msgstr "Formuläråtgärdshanterare"
+
 #~ msgid "Form control group"
 #~ msgstr "Formulärkontrollgrupp"
+
 #~ msgid "Form field label text"
 #~ msgstr "Etikettext för formulärfält"
+
 #~ msgid "Form input"
 #~ msgstr "Formulärinmatning"
+
 #~ msgid "Form input type"
 #~ msgstr "Typ av formulärinmatning"
+
 #~ msgid "Form method"
 #~ msgstr "Formulärmetod"
+
 #~ msgid "Forward link"
 #~ msgstr "Framåtlänk"
+
 #~ msgid "Frame"
 #~ msgstr "Ram"
+
 #~ msgid "Frame border"
 #~ msgstr "Ramkant"
+
 #~ msgid "Frame render parts"
 #~ msgstr "Ramrenderingsdelar"
+
 #~ msgid "Frame source"
 #~ msgstr "Ramkälla"
+
 #~ msgid "Frame spacing"
 #~ msgstr "Rammellanrum"
+
 #~ msgid "Frame target"
 #~ msgstr "Rammål"
+
 #~ msgid "Frameborder"
 #~ msgstr "Ramkant"
+
 #~ msgid "Frameset"
 #~ msgstr "Ramsamling"
+
 #~ msgid "Frameset columns"
 #~ msgstr "Ramsamlingskolumner"
+
 #~ msgid "Frameset rows"
 #~ msgstr "Ramsamlingsrader"
+
 #~ msgid "Framespacing"
 #~ msgstr "Rammellanrum"
+
 #~ msgid "Generic embedded object"
 #~ msgstr "Allmänt inbäddat objekt"
+
 #~ msgid "Generic metainformation"
 #~ msgstr "Allmän metainformation"
+
 #~ msgid "Generic span"
 #~ msgstr "Allmän vidd"
+
 #~ msgid "HREF URI"
 #~ msgstr "HREF-URI"
+
 #~ msgid "HTML root element"
 #~ msgstr "HTML-rotelement"
+
 #~ msgid "HTML version"
 #~ msgstr "HTML-version"
+
 #~ msgid "HTML — Special Characters"
 #~ msgstr "HTML — Specialtecken"
+
 #~ msgid "HTML — Tags"
 #~ msgstr "HTML — Taggar"
+
 #~ msgid "HTTP header name"
 #~ msgstr "Namn på HTTP-huvud"
+
 #~ msgid "Header cell IDs"
 #~ msgstr "Huvudcell-id"
+
 #~ msgid "Heading"
 #~ msgstr "Rubrik"
+
 #~ msgid "Heading 1"
 #~ msgstr "Rubrik 1"
+
 #~ msgid "Heading 2"
 #~ msgstr "Rubrik 2"
+
 #~ msgid "Heading 3"
 #~ msgstr "Rubrik 3"
+
 #~ msgid "Heading 4"
 #~ msgstr "Rubrik 4"
+
 #~ msgid "Heading 5"
 #~ msgstr "Rubrik 5"
+
 #~ msgid "Heading 6"
 #~ msgstr "Rubrik 6"
+
 #~ msgid "Height"
 #~ msgstr "Höjd"
+
 #~ msgid "Horizontal rule"
 #~ msgstr "Horisontell linje"
+
 #~ msgid "Horizontal space"
 #~ msgstr "Horisontellt mellanrum"
+
 #~ msgid "Horizontal space (deprecated)"
 #~ msgstr "Horisontellt mellanrum (utfasad)"
+
 #~ msgid "I18N BiDi override"
 #~ msgstr "Åsidosättning av I18N BiDi"
+
 #~ msgid "Image"
 #~ msgstr "Bild"
+
 #~ msgid "Image map"
 #~ msgstr "Bildkarta"
+
 #~ msgid "Image map area"
 #~ msgstr "Bildkarteområde"
+
 #~ msgid "Image map name"
 #~ msgstr "Bildkartenamn"
+
 #~ msgid "Image source"
 #~ msgstr "Bildkälla"
+
 #~ msgid "Inline frame"
 #~ msgstr "Inline-ram"
+
 #~ msgid "Inline layer"
 #~ msgstr "Inline-lager"
+
 #~ msgid "Inserted text"
 #~ msgstr "Infogad text"
+
 #~ msgid "Instance definition"
 #~ msgstr "Instansdefinition"
+
 #~ msgid "Italic text"
 #~ msgstr "Kursiv text"
+
 #~ msgid "Java applet"
 #~ msgstr "Java-applet"
+
 #~ msgid "Java applet (deprecated)"
 #~ msgstr "Java-applet (utfasad)"
+
 #~ msgid "Label"
 #~ msgstr "Etikett"
+
 #~ msgid "Language code"
 #~ msgstr "Språkkod"
+
 #~ msgid "Large text style"
 #~ msgstr "Stor textstil"
+
 #~ msgid "Layer"
 #~ msgstr "Lager"
+
 #~ msgid "Link color"
 #~ msgstr "Länkfärg"
+
 #~ msgid "Link color (deprecated)"
 #~ msgstr "Länkfärg (utfasad)"
+
 #~ msgid "List item"
 #~ msgstr "Listobjekt"
+
 #~ msgid "List of MIME types for file upload"
 #~ msgstr "Lista med MIME-typer för fillämning"
+
 #~ msgid "List of supported character sets"
 #~ msgstr "Lista med teckentabeller som stöds"
+
 #~ msgid "Listing"
 #~ msgstr "Lista"
+
 #~ msgid "Local change to font"
 #~ msgstr "Lokal ändring av typsnitt"
+
 #~ msgid "Long description link"
 #~ msgstr "Lång beskrivningslänk"
+
 #~ msgid "Long quotation"
 #~ msgstr "Långt citat"
+
 #~ msgid "Mail link"
 #~ msgstr "E-postlänk"
+
 #~ msgid "Margin pixel height"
 #~ msgstr "Bildpunktshöjd för marginal"
+
 #~ msgid "Margin pixel width"
 #~ msgstr "Bildpunktsbredd för marginal"
+
 #~ msgid "Marquee"
 #~ msgstr "Skärmtak"
+
 #~ msgid "Maximum length of text field"
 #~ msgstr "Maximal längd på textfält"
+
 #~ msgid "Media-independent link"
 #~ msgstr "Mediaoberoende länk"
+
 #~ msgid "Menu list"
 #~ msgstr "Menylista"
+
 #~ msgid "Menu list (deprecated)"
 #~ msgstr "Menylista (utfasad)"
+
 #~ msgid "Multi-line text field"
 #~ msgstr "Flerradigt textfält"
+
 #~ msgid "Multicolumn"
 #~ msgstr "Flera kolumner"
+
 #~ msgid "Multiple"
 #~ msgstr "Flertal"
+
 #~ msgid "Name"
 #~ msgstr "Namn"
+
 #~ msgid "Named property value"
 #~ msgstr "Värde på namngiven egenskap"
+
 #~ msgid "Next ID"
 #~ msgstr "Nästa id"
+
 #~ msgid "No URI"
 #~ msgstr "Ingen URI"
+
 #~ msgid "No embedded objects"
 #~ msgstr "Inga inbäddade objekt"
+
 #~ msgid "No frames"
 #~ msgstr "Inga ramar"
+
 #~ msgid "No layers"
 #~ msgstr "Inga lager"
+
 #~ msgid "No line break"
 #~ msgstr "Ingen radbrytning"
+
 #~ msgid "No resize"
 #~ msgstr "Ingen storleksändring"
+
 #~ msgid "No script"
 #~ msgstr "Inget skript"
+
 #~ msgid "No shade"
 #~ msgstr "Ingen skuggning"
+
 #~ msgid "No shade (deprecated)"
 #~ msgstr "Ingen skuggning (utfasad)"
+
 #~ msgid "No word wrap"
 #~ msgstr "Ingen ordbrytning"
+
 #~ msgid "No word wrap (deprecated)"
 #~ msgstr "Ingen ordbrytning (utfasad)"
+
 #~ msgid "Non-breaking space"
 #~ msgstr "Icke-brytande mellanrum"
+
 #~ msgid "Note"
 #~ msgstr "Anteckning"
+
 #~ msgid "Object applet file"
 #~ msgstr "Fil för objekt-applet"
+
 #~ msgid "Object applet file (deprecated)"
 #~ msgstr "Fil för objekt-applet (utfasad)"
+
 #~ msgid "Object data reference"
 #~ msgstr "Objektdatareferens"
+
 #~ msgid "Offset for alignment character"
 #~ msgstr "Avstånd för justeringstecken"
+
 #~ msgid "OnBlur event"
 #~ msgstr "Suddningshändelse"
+
 #~ msgid "OnChange event"
 #~ msgstr "Ändringshändelse"
+
 #~ msgid "OnClick event"
 #~ msgstr "Klickhändelse"
+
 #~ msgid "OnDblClick event"
 #~ msgstr "Dubbelklickshändelse"
+
 #~ msgid "OnFocus event"
 #~ msgstr "Fokushändelse"
+
 #~ msgid "OnKeyDown event"
 #~ msgstr "Tangentnedtryckningshändelse"
+
 #~ msgid "OnKeyPress event"
 #~ msgstr "Tangenttryckningshändelse"
+
 #~ msgid "OnKeyUp event"
 #~ msgstr "Tangentuppsläppningshändelse"
+
 #~ msgid "OnLoad event"
 #~ msgstr "Inläsningshändelse"
+
 #~ msgid "OnMouseDown event"
 #~ msgstr "Musklickningshändelse"
+
 #~ msgid "OnMouseMove event"
 #~ msgstr "Musflyttningshändelse"
+
 #~ msgid "OnMouseOut event"
 #~ msgstr "Musutflyttningshändelse"
+
 #~ msgid "OnMouseOver event"
 #~ msgstr "Musöverflyttningshändelse"
+
 #~ msgid "OnMouseUp event"
 #~ msgstr "Musuppsläppningshändelse"
+
 #~ msgid "OnReset event"
 #~ msgstr "Återställningshändelse"
+
 #~ msgid "OnSelect event"
 #~ msgstr "Markeringshändelse"
+
 #~ msgid "OnSubmit event"
 #~ msgstr "Skickandehändelse"
+
 #~ msgid "OnUnload event"
 #~ msgstr "Utläsningshändelse"
+
 #~ msgid "Option group"
 #~ msgstr "Alternativgrupp"
+
 #~ msgid "Option selector"
 #~ msgstr "Alternativväljare"
+
 #~ msgid "Ordered list"
 #~ msgstr "Sorterad lista"
+
 #~ msgid "Output media"
 #~ msgstr "Utdatamedia"
+
 #~ msgid "Paragraph"
 #~ msgstr "Stycke"
+
 #~ msgid "Paragraph class"
 #~ msgstr "Styckeklass"
+
 #~ msgid "Paragraph style"
 #~ msgstr "Styckestil"
+
 #~ msgid "Preformatted listing"
 #~ msgstr "Förformaterad lista"
+
 #~ msgid "Preformatted text"
 #~ msgstr "Förformaterad text"
+
 #~ msgid "Profile metainfo dictionary"
 #~ msgstr "Katalog för profilmetainformation"
+
 #~ msgid "Prompt message"
 #~ msgstr "Frågemeddelande"
+
 #~ msgid "Push button"
 #~ msgstr "Tryckknapp"
+
 #~ msgid "Quote"
 #~ msgstr "Citat"
+
 #~ msgid "Range"
 #~ msgstr "Intervall"
+
 #~ msgid "ReadOnly text and password"
 #~ msgstr "Skrivskyddad text och lösenord"
+
 #~ msgid "Reduced spacing"
 #~ msgstr "Reducerat mellanrum"
+
 #~ msgid "Reduced spacing (deprecated)"
 #~ msgstr "Reducerat mellanrum (utfasad)"
+
 #~ msgid "Reverse link"
 #~ msgstr "Baklängeslänk"
+
 #~ msgid "Root"
 #~ msgstr "Rot"
+
 #~ msgid "Rows"
 #~ msgstr "Rader"
+
 #~ msgid "Rulings between rows and columns"
 #~ msgstr "Linjer mellan rader och kolumner"
+
 #~ msgid "Sample program output, scripts"
 #~ msgstr "Exempelprogramutdata, skript"
+
 #~ msgid "Scope covered by header cells"
 #~ msgstr "Omfattning som täcks av huvudceller"
+
 #~ msgid "Script language name"
 #~ msgstr "Namn på skriptspråk"
+
 #~ msgid "Script statements"
 #~ msgstr "Skriptsatser"
+
 #~ msgid "Scrollbar"
 #~ msgstr "Rullningslist"
+
 #~ msgid "Selectable option"
 #~ msgstr "Valbart alternativ"
+
 #~ msgid "Selected"
 #~ msgstr "Markerad"
+
 #~ msgid "Server-side image map"
 #~ msgstr "Bildkarta på serversida"
+
 #~ msgid "Shape"
 #~ msgstr "Form"
+
 #~ msgid "Short inline quotation"
 #~ msgstr "Kort inline-citat"
+
 #~ msgid "Single line prompt"
 #~ msgstr "Enkelradsfråga"
+
 #~ msgid "Size"
 #~ msgstr "Storlek"
+
 #~ msgid "Size (deprecated)"
 #~ msgstr "Storlek (utfasad)"
+
 #~ msgid "Small text style"
 #~ msgstr "Liten textstil"
+
 #~ msgid "Soft line break"
 #~ msgstr "Mjuk radbrytning"
+
 #~ msgid "Sound"
 #~ msgstr "Ljud"
+
 #~ msgid "Source"
 #~ msgstr "Källa"
+
 #~ msgid "Space-separated archive list"
 #~ msgstr "Blankstegsseparerad arkivlista"
+
 #~ msgid "Spacer"
 #~ msgstr "Utfyllnad"
+
 #~ msgid "Spacing between cells"
 #~ msgstr "Mellanrum mellan celler"
+
 #~ msgid "Spacing within cells"
 #~ msgstr "Mellanrum i celler"
+
 #~ msgid "Span"
 #~ msgstr "Vidd"
+
 #~ msgid "Square root"
 #~ msgstr "Kvadratrot"
+
 #~ msgid "Standby load message"
 #~ msgstr "Standby-inläsningsmeddelande"
+
 #~ msgid "Starting sequence number"
 #~ msgstr "Startsekvensnummer"
+
 #~ msgid "Starting sequence number (deprecated)"
 #~ msgstr "Startsekvensnummer (utfasad)"
+
 #~ msgid "Strike-through text"
 #~ msgstr "Genomstruken text"
+
 #~ msgid "Strike-through text (deprecated)"
 #~ msgstr "Genomstruken textstil (utfasad)"
+
 #~ msgid "Strike-through text style"
 #~ msgstr "Genomstruken textstil"
+
 #~ msgid "Strike-through text style (deprecated)"
 #~ msgstr "Genomstruken textstil (utfasad)"
+
 #~ msgid "Strong emphasis"
 #~ msgstr "Stark betoning"
+
 #~ msgid "Style info"
 #~ msgstr "Stilinformation"
+
 #~ msgid "Subscript"
 #~ msgstr "Nedsänkt"
+
 #~ msgid "Superscript"
 #~ msgstr "Upphöjd"
+
 #~ msgid "Tab order position"
 #~ msgstr "Position för fliksortering"
+
 #~ msgid "Table"
 #~ msgstr "Tabell"
+
 #~ msgid "Table body"
 #~ msgstr "Tabelltext"
+
 #~ msgid "Table caption"
 #~ msgstr "Tabellrubrik"
+
 #~ msgid "Table column group properties"
 #~ msgstr "Gruppegenskaper för tabellkolumn"
+
 #~ msgid "Table column properties"
 #~ msgstr "Egenskaper för tabellkolumn"
+
 #~ msgid "Table data cell"
 #~ msgstr "Tabelldatacell"
+
 #~ msgid "Table footer"
 #~ msgstr "Tabellfot"
+
 #~ msgid "Table header"
 #~ msgstr "Tabellhuvud"
+
 #~ msgid "Table header cell"
 #~ msgstr "Tabellhuvudcell"
+
 #~ msgid "Table row"
 #~ msgstr "Tabellrad"
+
 #~ msgid "Table summary"
 #~ msgstr "Tabellsammanfattning"
+
 #~ msgid "Target — Blank"
 #~ msgstr "Mål — Tomt"
+
 #~ msgid "Target — Parent"
 #~ msgstr "Mål — Förälder"
+
 #~ msgid "Target — Self"
 #~ msgstr "Mål — Själv"
+
 #~ msgid "Target — Top"
 #~ msgstr "Mål — Överst"
+
 #~ msgid "Teletype or monospace text style"
 #~ msgstr "Textstil med fast breddsteg"
+
 #~ msgid "Text"
 #~ msgstr "Text"
+
 #~ msgid "Text color"
 #~ msgstr "Textfärg"
+
 #~ msgid "Text color (deprecated)"
 #~ msgstr "Textfärg (utfasad)"
+
 #~ msgid "Text entered by user"
 #~ msgstr "Text angiven av användaren"
+
 #~ msgid "Title"
 #~ msgstr "Titel"
+
 #~ msgid "Top margin in pixels"
 #~ msgstr "Överkantsmarginal i bildpunkter"
+
 #~ msgid "URL"
 #~ msgstr "URL"
+
 #~ msgid "Underlined text style"
 #~ msgstr "Understruken textstil"
+
 #~ msgid "Unordered list"
 #~ msgstr "Osorterad lista"
+
 #~ msgid "Use image map"
 #~ msgstr "Använd bildkarta"
+
 #~ msgid "Value"
 #~ msgstr "Värde"
+
 #~ msgid "Value interpretation"
 #~ msgstr "Värdetolkning"
+
 #~ msgid "Variable or program argument"
 #~ msgstr "Variabel eller programargument"
+
 #~ msgid "Vertical cell alignment"
 #~ msgstr "Vertikal celljustering"
+
 #~ msgid "Vertical space"
 #~ msgstr "Vertikalt blanksteg"
+
 #~ msgid "Vertical space (deprecated)"
 #~ msgstr "Vertikalt blanksteg (utfasad)"
+
 #~ msgid "Visited link color"
 #~ msgstr "Färg på besökt länk"
+
 #~ msgid "Visited link color (deprecated)"
 #~ msgstr "Färg på besökt länk (utfasad)"
+
 #~ msgid "Width"
 #~ msgstr "Bredd"
+
 #~ msgid "XHTML 1.0 — Tags"
 #~ msgstr "XHTML 1.0 — Taggar"
+
 #~ msgid "Bibliography (cite)"
 #~ msgstr "Bibliografi (citat)"
+
 #~ msgid "Bibliography (item)"
 #~ msgstr "Bibliografi (objekt)"
+
 #~ msgid "Bibliography (shortcite)"
 #~ msgstr "Bibliografi (kort citat)"
-
