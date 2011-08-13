@@ -238,4 +238,48 @@ G_END_DECLS
     <tag>ginterface</tag>
     <description>GObject interface</description>
   </snippet>
+    <snippet>
+    <text><![CDATA[#ifndef __${1:NAME}_H__
+#define __$1_H__
+
+#include <${2:glib-object.h}>
+
+G_BEGIN_DECLS
+
+$<
+global camel_str
+components = $1.split('_')
+type_str = '_'.join([components[0], 'TYPE'] + components[1:])
+is_str = '_'.join([components[0], 'IS'] + components[1:])
+camel_str = ''
+
+for t in components:
+  camel_str += t.capitalize()
+
+items = [ \
+['#define ' + type_str, '(' + $1.lower() + '_get_type ())'], \
+['#define ' + $1 + '(obj)', '((' + camel_str + ' *)obj)'], \
+['#define ' + $1 + '_CONST(obj)', '((' + camel_str + ' const *)obj)'], \
+]
+
+return align(items) >
+
+$<[1]:
+items = [ \
+['typedef struct _' + camel_str, camel_str + ';'], \
+]
+
+return align(items) >
+
+GType $< return $1.lower() + '_get_type' > (void) G_GNUC_CONST;
+$<[1]: return camel_str > *$< return $1.lower()>_${3:copy} ($<[1]: return camel_str > *${4:boxed_name});
+void $< return $1.lower()>_${5:free} ($<[1]: return camel_str > *${4:boxed_name});
+
+$0
+G_END_DECLS
+
+#endif /* __$1_H__ */]]></text>
+    <tag>gboxed</tag>
+    <description>GBoxed template</description>
+  </snippet>
 </snippets>

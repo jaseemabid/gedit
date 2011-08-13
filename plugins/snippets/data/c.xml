@@ -280,4 +280,38 @@ $<[1]: return low_str>_get_type ()
     <tag>ginterface</tag>
     <description>GObject interface</description>
   </snippet>
+    <snippet>
+    <text><![CDATA[#include "$1.h"
+$<
+global camel_str,low_str, type_str, is_str, up_str
+components = $1.split('-')
+low_str = '_'.join(components).lower()
+up_str = '_'.join(components).upper()
+type_str = '_'.join([components[0], 'TYPE'] + components[1:]).upper()
+camel_str = ''
+
+for t in components:
+  camel_str += t.capitalize()
+>
+
+struct _$<[1]: return camel_str >
+{
+};
+
+G_DEFINE_BOXED_TYPE ($<[1]: return camel_str >, $<[1]: return low_str >, $<[1]: return low_str >_${2:copy}, $<[1]: return low_str >_${3:free})
+
+$<[1]: return camel_str > *
+$<[1]: return low_str >_${2:copy} ($<[1]: return camel_str > *${4:boxed_name})
+{
+	
+}
+
+void
+$<[1]: return low_str >_${3:free} ($<[1]: return camel_str > *${4:boxed_name})
+{
+	
+}]]></text>
+    <tag>gboxed</tag>
+    <description>GBoxed template</description>
+  </snippet>
 </snippets>
