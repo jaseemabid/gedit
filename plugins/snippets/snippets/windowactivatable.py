@@ -42,7 +42,6 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
                 Signals.__init__(self)
 
                 self.current_language_accel_group = None
-                self.signal_ids = {}
 
         def do_activate(self):
                 self.insert_menu()
@@ -91,11 +90,17 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
                 bus.register(Activate, '/plugins/snippets', 'activate')
                 bus.register(Activate, '/plugins/snippets', 'parse-and-activate')
 
-                bus.connect('/plugins/snippets', 'activate', self.on_message_activate, None)
-                bus.connect('/plugins/snippets', 'parse-and-activate', self.on_message_parse_and_activate, None)
+                self.signal_ids = set()
+                sid = bus.connect('/plugins/snippets', 'activate', self.on_message_activate, None)
+                self.signal_ids.add(sid)
+                sid = bus.connect('/plugins/snippets', 'parse-and-activate', self.on_message_parse_and_activate, None)
+                self.signal_ids.add(sid)
 
         def unregister_messages(self):
                 bus = self.window.get_message_bus()
+                for sid in self.signal_ids:
+                    bus.disconnect(sid)
+                signal_ids = None
                 bus.unregister_all('/plugins/snippets')
 
         def on_message_activate(self, bus, message, userdata):
