@@ -555,17 +555,6 @@ gedit_notebook_add_tab (GeditNotebook *nb,
 	}
 }
 
-static void
-remove_tab (GeditTab      *tab,
-            GeditNotebook *nb)
-{
-	gint position;
-
-	position = gtk_notebook_page_num (GTK_NOTEBOOK (nb), GTK_WIDGET (tab));
-
-	gtk_notebook_remove_page (GTK_NOTEBOOK (nb), position);
-}
-
 /**
  * gedit_notebook_move_tab:
  * @src: a #GeditNotebook
@@ -591,26 +580,9 @@ gedit_notebook_move_tab (GeditNotebook *src,
 
 	/* make sure the tab isn't destroyed while we move it */
 	g_object_ref (tab);
-	remove_tab (tab, src);
+	gtk_container_remove (GTK_CONTAINER (src), GTK_WIDGET (tab));
 	gedit_notebook_add_tab (dest, tab, dest_position, TRUE);
 	g_object_unref (tab);
-}
-
-/**
- * gedit_notebook_remove_tab:
- * @nb: a #GeditNotebook
- * @tab: a #GeditTab
- *
- * Removes @tab from @nb.
- */
-void
-gedit_notebook_remove_tab (GeditNotebook *nb,
-			   GeditTab      *tab)
-{
-	g_return_if_fail (GEDIT_IS_NOTEBOOK (nb));
-	g_return_if_fail (GEDIT_IS_TAB (tab));
-
-	remove_tab (tab, nb);
 }
 
 /**
@@ -625,7 +597,7 @@ gedit_notebook_remove_all_tabs (GeditNotebook *nb)
 	GList *tabs, *t;
 
 	g_return_if_fail (GEDIT_IS_NOTEBOOK (nb));
-	
+
 	g_list_free (nb->priv->focused_pages);
 	nb->priv->focused_pages = NULL;
 

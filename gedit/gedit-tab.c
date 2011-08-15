@@ -545,11 +545,10 @@ set_info_bar (GeditTab  *tab,
 static void
 remove_tab (GeditTab *tab)
 {
-	GeditNotebook *notebook;
+	GtkWidget *notebook;
 
-	notebook = GEDIT_NOTEBOOK (gtk_widget_get_parent (GTK_WIDGET (tab)));
-
-	gedit_notebook_remove_tab (notebook, tab);
+	notebook = gtk_widget_get_parent (GTK_WIDGET (tab));
+	gtk_container_remove (GTK_CONTAINER (notebook), GTK_WIDGET (tab));
 }
 
 static void 

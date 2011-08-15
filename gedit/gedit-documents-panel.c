@@ -1030,17 +1030,17 @@ close_button_clicked (GtkCellRenderer     *cell,
                       const gchar         *path,
                       GeditDocumentsPanel *panel)
 {
-        GtkTreeIter iter;
-        GeditTab *tab;
-        GeditNotebook *notebook;
+	GtkTreeIter iter;
+	GeditTab *tab;
+	GeditNotebook *notebook;
 
-        if (!gtk_tree_model_get_iter_from_string (panel->priv->model,
-                                                  &iter, path))
-        {
-                return;
-        }
+	if (!gtk_tree_model_get_iter_from_string (panel->priv->model,
+	                                          &iter, path))
+	{
+	        return;
+	}
 
-        gtk_tree_model_get (panel->priv->model,
+	gtk_tree_model_get (panel->priv->model,
 		            &iter,
 		            NOTEBOOK_COLUMN, &notebook,
 		            TAB_COLUMN, &tab,
@@ -1052,7 +1052,8 @@ close_button_clicked (GtkCellRenderer     *cell,
 	}
 	else
 	{
-		gedit_notebook_remove_tab (notebook, tab);
+		gtk_container_remove (GTK_CONTAINER (notebook),
+		                      GTK_WIDGET (tab));
 		g_object_unref (tab);
 	}
 

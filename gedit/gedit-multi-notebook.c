@@ -793,12 +793,12 @@ gedit_multi_notebook_close_tabs (GeditMultiNotebook *mnb,
 			gint n;
 
 			n = gtk_notebook_page_num (GTK_NOTEBOOK (nbs->data),
-						   GTK_WIDGET (l->data));
+			                           GTK_WIDGET (l->data));
 
 			if (n != -1)
 			{
-				gedit_notebook_remove_tab (GEDIT_NOTEBOOK (nbs->data),
-				                           GEDIT_TAB (l->data));
+				gtk_container_remove (GTK_CONTAINER (nbs->data),
+				                      GTK_WIDGET (l->data));
 				break;
 			}
 		}

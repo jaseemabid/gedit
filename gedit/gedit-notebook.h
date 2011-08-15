@@ -108,9 +108,6 @@ void		gedit_notebook_move_tab		(GeditNotebook *src,
 						 GeditTab      *tab,
 						 gint           dest_position);
 
-void		gedit_notebook_remove_tab	(GeditNotebook *nb,
-						 GeditTab      *tab);
-
 void		gedit_notebook_remove_all_tabs 	(GeditNotebook *nb);
 
 void		gedit_notebook_set_close_buttons_sensitive
