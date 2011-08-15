@@ -292,7 +292,7 @@ fi
 
 AM_CONDITIONAL(ENABLE_ZEITGEIST, test x"$enable_zeitgeist" = "xyes")
 
-PYGOBJECT_REQUIRED=2.28
+PYGOBJECT_REQUIRED=2.90.2
 
 AC_ARG_ENABLE([python],
               AS_HELP_STRING([--enable-python[=@<:@no/auto/yes@:>@]],[Build with python support]),
@@ -300,14 +300,14 @@ AC_ARG_ENABLE([python],
               [enable_python="auto"])
 
 if test "x$enable_python" = "xauto"; then
-	PKG_CHECK_EXISTS([pygobject-2.0 >= $PYGOBJECT_REQUIRED],
+	PKG_CHECK_EXISTS([pygobject-3.0 >= $PYGOBJECT_REQUIRED],
 	                 [enable_python=yes],[enable_python=no])
 fi
 
 if test "x$enable_python" = "xyes"; then
-	PKG_CHECK_MODULES(PYTHON, [pygobject-2.0 >= $PYGOBJECT_REQUIRED])
+	PKG_CHECK_MODULES(PYTHON, [pygobject-3.0 >= $PYGOBJECT_REQUIRED])
 
-	pyoverridesdir=`$PKG_CONFIG --variable=overridesdir pygobject-2.0`
+	pyoverridesdir=`$PKG_CONFIG --variable=overridesdir pygobject-3.0`
 	AC_SUBST(pyoverridesdir)
 fi
 
