@@ -19,9 +19,7 @@ import sys
 import os
 import shutil
 
-import glib
-
-from gi.repository import Gedit, GObject, Gtk
+from gi.repository import Gedit, GLib, GObject, Gtk
 import platform
 
 from library import Library
@@ -46,7 +44,7 @@ class AppActivatable(GObject.Object, Gedit.AppActivatable):
                         if userdir:
                                 snippetsdir = os.path.join(userdir, 'gedit/snippets')
                         else:
-                                snippetsdir = os.path.join(glib.get_user_config_dir(), 'gedit/snippets')
+                                snippetsdir = os.path.join(GLib.get_user_config_dir(), 'gedit/snippets')
 
                 library.set_dirs(snippetsdir, self.system_dirs())
 
