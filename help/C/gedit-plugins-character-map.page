@@ -2,23 +2,26 @@
       type="topic" style="task"
       id="gedit-plugins-character-map">
   <info>
-    <revision version="0.2" date="2011-08-16" status="draft"/>
+    <revision version="0.2" date="2011-08-16" status="candidate"/>
     <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
 
-    <credit type="author copyright">
-      <name>Jim Campbell, Paul Weaver</name>
+    <credit type="author">
+      <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
-      <years>2011</years>
     </credit>
 
-    <desc></desc>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Insert special characters just by clicking on them</desc>
   </info>
 
-  <title>Insert special characters just by clicking on them</title>
+  <title>Character map</title>
 
   <comment>
     <cite date="2011-08-16" href="mailto:ch3pjw@bath.ac.uk">Paul Weaver</cite>
-<!--    <cite date="2011-08-13" href="mailto:jwcampbell@gmail.com">Jim Campbell</cite>-->
     <p>This assumes the reader knows how to use gedit in general. By the end of this page,
     the reader will be able to use the character map plugin to insert characters into their documents.</p>
   </comment>
@@ -29,9 +32,10 @@
     <title>Using Character Map</title>
 
     <p>Once the plugin is enabled, you can add characters from the <em>Character Map</em> tab of the side panel (<guiseq><gui>View</gui><gui>Side Panel</gui></guiseq>).</p>
-   
+  
   <steps>
     <item><p>Place the cursor at the point in your document at which you would like your special character.</p></item>
+    <item><p>Open the side panel by selecting <guiseq><gui>View</gui><gui>Side Panel</gui></guiseq>, or by pressing <key>F9</key>.</p></item>
     <item><p>Select the <em>Character Map</em> tab in the side panel.</p></item>
     <item><p>If neccessary, choose the character set to which your character belongs from the list at the top of the <em>Character Map</em> tab (e.g., Arabic).</p></item>
     <item><p>Double click your desired character to insert it.</p></item>
