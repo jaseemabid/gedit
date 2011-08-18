@@ -42,6 +42,7 @@ G_BEGIN_DECLS
 typedef struct _GeditFloatingSlider		GeditFloatingSlider;
 typedef struct _GeditFloatingSliderClass	GeditFloatingSliderClass;
 typedef struct _GeditFloatingSliderPrivate	GeditFloatingSliderPrivate;
+typedef struct _GeditFloatingSliderClassPrivate	GeditFloatingSliderClassPrivate;
 
 struct _GeditFloatingSlider
 {
@@ -53,6 +54,8 @@ struct _GeditFloatingSlider
 struct _GeditFloatingSliderClass
 {
 	GtkBinClass parent_class;
+
+	GeditFloatingSliderClassPrivate *priv;
 };
 
 GType		 gedit_floating_slider_get_type	(void) G_GNUC_CONST;

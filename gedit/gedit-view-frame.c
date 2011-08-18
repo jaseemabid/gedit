@@ -30,7 +30,6 @@
 #include "gedit-utils.h"
 #include "gedit-animated-overlay.h"
 #include "gedit-floating-slider.h"
-#include "gedit-rounded-frame.h"
 
 #include <gdk/gdkkeysyms.h>
 #include <glib/gi18n.h>
@@ -1065,11 +1064,10 @@ static GtkWidget *
 create_search_widget (GeditViewFrame *frame)
 {
 	GtkWidget          *search_widget;
-	GtkWidget          *hbox;
 	GtkWidget          *button;
 	GtkEntryCompletion *completion;
 
-	search_widget = gedit_rounded_frame_new ();
+	search_widget = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
 	gtk_widget_show (search_widget);
 
 	g_signal_connect (search_widget, "key-press-event",
@@ -1078,12 +1076,6 @@ create_search_widget (GeditViewFrame *frame)
 	g_signal_connect (search_widget, "scroll-event",
 	                  G_CALLBACK (search_widget_scroll_event),
 	                  frame);
-
-	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 3);
-	gtk_widget_show (hbox);
-
-	gtk_container_add (GTK_CONTAINER (search_widget), hbox);
-	gtk_container_set_border_width (GTK_CONTAINER (hbox), 3);
 
 	/* add entry */
 	frame->priv->search_entry = gtk_entry_new ();
@@ -1112,7 +1104,7 @@ create_search_widget (GeditViewFrame *frame)
 		                  G_CALLBACK (search_entry_focus_out_event),
 		                  frame);
 
-	gtk_container_add (GTK_CONTAINER (hbox),
+	gtk_container_add (GTK_CONTAINER (search_widget),
 	                   frame->priv->search_entry);
 
 	if (search_completion_model == NULL)
@@ -1151,7 +1143,7 @@ create_search_widget (GeditViewFrame *frame)
 	button = create_button_from_stock (GTK_STOCK_GO_UP);
 	gtk_widget_show (button);
 
-	gtk_box_pack_start (GTK_BOX (hbox), button, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (search_widget), button, FALSE, FALSE, 0);
 
 	g_signal_connect (button,
 	                  "clicked",
@@ -1161,7 +1153,7 @@ create_search_widget (GeditViewFrame *frame)
 	button = create_button_from_stock (GTK_STOCK_GO_DOWN);
 	gtk_widget_show (button);
 
-	gtk_box_pack_start (GTK_BOX (hbox), button, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (search_widget), button, FALSE, FALSE, 0);
 
 	g_signal_connect (button,
 	                  "clicked",
@@ -1286,7 +1278,7 @@ start_interactive_search_real (GeditViewFrame *frame)
 	if (gtk_bin_get_child (GTK_BIN (frame->priv->slider)) == NULL)
 	{
 		gtk_container_add (GTK_CONTAINER (frame->priv->slider),
-			           create_search_widget (frame));
+		                   create_search_widget (frame));
 	}
 
 	if (gtk_widget_get_visible (frame->priv->slider))

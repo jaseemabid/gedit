@@ -28,6 +28,7 @@
 struct _GeditFloatingSliderPrivate
 {
 	GtkAllocation widget_alloc;
+	GtkAllocation child_alloc;
 	GeditTheatricsChoreographerEasing easing;
 	GeditTheatricsChoreographerBlocking blocking;
 	GeditTheatricsAnimationState animation_state;
@@ -35,6 +36,11 @@ struct _GeditFloatingSliderPrivate
 	guint duration;
 	gdouble bias;
 	gdouble percent;
+};
+
+struct _GeditFloatingSliderClassPrivate
+{
+	GtkCssProvider *css;
 };
 
 enum
@@ -49,12 +55,12 @@ enum
 	PROP_ORIENTATION
 };
 
-G_DEFINE_TYPE_EXTENDED (GeditFloatingSlider, gedit_floating_slider, GTK_TYPE_BIN,
-			0,
-			G_IMPLEMENT_INTERFACE (GEDIT_TYPE_ANIMATABLE,
-			                       NULL)
-			G_IMPLEMENT_INTERFACE (GTK_TYPE_ORIENTABLE,
-			                       NULL))
+G_DEFINE_TYPE_WITH_CODE (GeditFloatingSlider, gedit_floating_slider, GTK_TYPE_BIN,
+                         g_type_add_class_private (g_define_type_id, sizeof (GeditFloatingSliderClassPrivate));
+                         G_IMPLEMENT_INTERFACE (GEDIT_TYPE_ANIMATABLE,
+                                                NULL)
+                         G_IMPLEMENT_INTERFACE (GTK_TYPE_ORIENTABLE,
+                                                NULL))
 
 static void
 gedit_floating_slider_finalize (GObject *object)
@@ -160,11 +166,21 @@ gedit_floating_slider_get_preferred_width (GtkWidget *widget,
 
 	if (child != NULL)
 	{
+		GtkStyleContext *context;
+		GtkBorder padding;
 		gint child_min, child_nat;
 
 		gtk_widget_get_preferred_width (child, &child_min, &child_nat);
-		priv->widget_alloc.width = child_min;
+
+		priv->child_alloc.width = child_min;
+
+		context = gtk_widget_get_style_context (widget);
+		gtk_style_context_get_padding (context, GTK_STATE_FLAG_NORMAL,
+		                               &padding);
+
+		priv->widget_alloc.width = child_min + padding.left + padding.right;
 	}
+
 
 	if (priv->orientation == GTK_ORIENTATION_HORIZONTAL)
 	{
@@ -193,10 +209,19 @@ gedit_floating_slider_get_preferred_height (GtkWidget *widget,
 
 	if (child != NULL)
 	{
+		GtkStyleContext *context;
+		GtkBorder padding;
 		gint child_min, child_nat;
 
 		gtk_widget_get_preferred_height (child, &child_min, &child_nat);
-		priv->widget_alloc.height = child_min;
+
+		priv->child_alloc.height = child_min;
+
+		context = gtk_widget_get_style_context (widget);
+		gtk_style_context_get_padding (context, GTK_STATE_FLAG_NORMAL,
+		                               &padding);
+
+		priv->widget_alloc.height = child_min + padding.top + padding.bottom;
 	}
 
 	if (priv->orientation == GTK_ORIENTATION_HORIZONTAL)
@@ -226,32 +251,67 @@ gedit_floating_slider_size_allocate (GtkWidget     *widget,
 
 	if (child != NULL)
 	{
+		GtkStyleContext *context;
+		GtkBorder padding;
+		GtkAllocation child_alloc;
+
+		context = gtk_widget_get_style_context (widget);
+		gtk_style_context_get_padding (context, GTK_STATE_FLAG_NORMAL,
+		                               &padding);
+
+		child_alloc = priv->child_alloc;
+
 		if (priv->orientation == GTK_ORIENTATION_HORIZONTAL)
 		{
-			priv->widget_alloc.height = allocation->height;
-			priv->widget_alloc.x = 0;
+			child_alloc.y = padding.top;
+			child_alloc.x = padding.left;
 
 			if (priv->blocking == GEDIT_THEATRICS_CHOREOGRAPHER_BLOCKING_DOWNSTAGE)
 			{
-				priv->widget_alloc.x = allocation->width - priv->widget_alloc.width;
+				child_alloc.x = allocation->width - priv->child_alloc.width - padding.right;
 			}
 		}
 		else
 		{
-			priv->widget_alloc.width = allocation->width;
-			priv->widget_alloc.y = 0;
+			child_alloc.y = padding.top;
+			child_alloc.x = padding.left;
 
 			if (priv->blocking == GEDIT_THEATRICS_CHOREOGRAPHER_BLOCKING_DOWNSTAGE)
 			{
-				priv->widget_alloc.y = allocation->height - priv->widget_alloc.height;
+				child_alloc.y = allocation->height - priv->child_alloc.height - padding.bottom;
 			}
 		}
 
-		if (priv->widget_alloc.height > 0 && priv->widget_alloc.width > 0)
+		if (child_alloc.height > 0 && child_alloc.width > 0)
 		{
-			gtk_widget_size_allocate (child, &priv->widget_alloc);
+			gtk_widget_size_allocate (child, &child_alloc);
 		}
 	}
+}
+
+static gboolean
+gedit_floating_slider_draw (GtkWidget *widget,
+                            cairo_t   *cr)
+{
+	GtkStyleContext *context;
+
+	context = gtk_widget_get_style_context (widget);
+
+	gtk_style_context_save (context);
+	gtk_style_context_set_state (context,
+	                             gtk_widget_get_state_flags (widget));
+
+	gtk_render_background (context, cr, 0, 0,
+	                       gtk_widget_get_allocated_width (widget),
+	                       gtk_widget_get_allocated_height (widget));
+
+	gtk_render_frame (context, cr, 0, 0,
+	                  gtk_widget_get_allocated_width (widget),
+	                  gtk_widget_get_allocated_height (widget));
+
+	gtk_style_context_restore (context);
+
+	return GTK_WIDGET_CLASS (gedit_floating_slider_parent_class)->draw (widget, cr);
 }
 
 static void
@@ -259,7 +319,33 @@ gedit_floating_slider_class_init (GeditFloatingSliderClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
 	GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
-	
+	static const gchar style[] =
+	"* {"
+	  "background-image: -gtk-gradient (linear,\n"
+	                                    "left top, left bottom,\n"
+	                                    "from (shade (@notebook_tab_gradient_a, 0.97)),\n"
+	                                    "to (shade (@notebook_tab_gradient_b, 0.90)));\n"
+
+	  "padding: 6;\n"
+	  "border-color: shade (@notebook_tab_gradient_b, 0.80);\n"
+
+	  "border-radius: 0 0 3 3;\n"
+	  "border-width: 1;\n"
+	  "border-style: solid;\n"
+	"}\n"
+
+	".button {"
+	  "background-color: alpha (@theme_base_color, 0.0);"
+	  "background-image: none;"
+
+	  "padding: 0;\n"
+	  "border-style: none;"
+	  "border-image: none;"
+
+	  "-GtkButton-image-spacing: 0;"
+	  "-GtkButton-inner-border: 0;"
+	"}";
+
 	object_class->finalize = gedit_floating_slider_finalize;
 	object_class->get_property = gedit_floating_slider_get_property;
 	object_class->set_property = gedit_floating_slider_set_property;
@@ -267,46 +353,53 @@ gedit_floating_slider_class_init (GeditFloatingSliderClass *klass)
 	widget_class->get_preferred_width = gedit_floating_slider_get_preferred_width;
 	widget_class->get_preferred_height = gedit_floating_slider_get_preferred_height;
 	widget_class->size_allocate = gedit_floating_slider_size_allocate;
+	widget_class->draw = gedit_floating_slider_draw;
 
-	g_object_class_override_property (object_class,
-	                                  PROP_EASING,
+	g_object_class_override_property (object_class, PROP_EASING,
 	                                  "easing");
 
-	g_object_class_override_property (object_class,
-	                                  PROP_BLOCKING,
+	g_object_class_override_property (object_class, PROP_BLOCKING,
 	                                  "blocking");
 
-	g_object_class_override_property (object_class,
-	                                  PROP_ANIMATION_STATE,
+	g_object_class_override_property (object_class, PROP_ANIMATION_STATE,
 	                                  "animation-state");
 
-	g_object_class_override_property (object_class,
-	                                  PROP_DURATION,
+	g_object_class_override_property (object_class, PROP_DURATION,
 	                                  "duration");
 
-	g_object_class_override_property (object_class,
-	                                  PROP_PERCENT,
+	g_object_class_override_property (object_class, PROP_PERCENT,
 	                                  "percent");
 
-	g_object_class_override_property (object_class,
-	                                  PROP_BIAS,
+	g_object_class_override_property (object_class, PROP_BIAS,
 	                                  "bias");
 
-	g_object_class_override_property (object_class,
-	                                  PROP_ORIENTATION,
+	g_object_class_override_property (object_class, PROP_ORIENTATION,
 	                                  "orientation");
 
 	g_type_class_add_private (object_class, sizeof (GeditFloatingSliderPrivate));
+
+	klass->priv = G_TYPE_CLASS_GET_PRIVATE (klass, GEDIT_TYPE_FLOATING_SLIDER,
+	                                        GeditFloatingSliderClassPrivate);
+
+	klass->priv->css = gtk_css_provider_new ();
+	gtk_css_provider_load_from_data (klass->priv->css, style, -1, NULL);
 }
 
 static void
 gedit_floating_slider_init (GeditFloatingSlider *slider)
 {
+	GtkStyleContext *context;
+
 	slider->priv = G_TYPE_INSTANCE_GET_PRIVATE (slider,
 	                                            GEDIT_TYPE_FLOATING_SLIDER,
 	                                            GeditFloatingSliderPrivate);
 
 	slider->priv->orientation = GTK_ORIENTATION_VERTICAL;
+
+	context = gtk_widget_get_style_context (GTK_WIDGET (slider));
+	gtk_style_context_add_provider (context,
+	                                GTK_STYLE_PROVIDER (GEDIT_FLOATING_SLIDER_GET_CLASS (slider)->priv->css),
+	                                GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 }
 
 GtkWidget *

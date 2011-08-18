@@ -123,7 +123,6 @@ NOINST_H_FILES =			\
 	gedit-plugins-engine.h		\
 	gedit-print-job.h		\
 	gedit-print-preview.h		\
-	gedit-rounded-frame.h		\
 	gedit-session.h			\
 	gedit-settings.h		\
 	gedit-status-combo-box.h	\
@@ -207,7 +206,6 @@ libgedit_c_files =			\
 	gedit-print-job.c		\
 	gedit-print-preview.c		\
 	gedit-progress-info-bar.c	\
-	gedit-rounded-frame.c		\
 	gedit-session.c			\
 	gedit-settings.c		\
 	gedit-statusbar.c		\

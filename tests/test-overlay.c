@@ -1,7 +1,6 @@
 #include <gtk/gtk.h>
 #include <glib.h>
 #include "gedit-animated-overlay.h"
-#include "gedit-rounded-frame.h"
 #include "gedit-floating-slider.h"
 
 static GtkWidget *overlay;
@@ -20,7 +19,6 @@ main ()
 {
 	GtkWidget *window;
 	GtkWidget *textview;
-	GtkWidget *frame;
 	GtkWidget *entry;
 	GtkWidget *vbox;
 	GtkWidget *button;
@@ -39,15 +37,10 @@ main ()
 
 	gtk_box_pack_start (GTK_BOX (vbox), overlay, TRUE, TRUE, 0);
 
-	frame = gedit_rounded_frame_new ();
-	gtk_widget_show (frame);
-
 	entry = gtk_entry_new ();
 
-	gtk_container_add (GTK_CONTAINER (frame), entry);
-
 	slider = gedit_floating_slider_new ();
-	gtk_container_add (GTK_CONTAINER (slider), frame);
+	gtk_container_add (GTK_CONTAINER (slider), entry);
 	gtk_widget_set_halign (slider, GTK_ALIGN_START);
 	gtk_widget_set_valign (slider, GTK_ALIGN_START);
 
