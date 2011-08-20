@@ -528,7 +528,7 @@ it from:
 
   http://ftp.gnome.org/pub/gnome/sources/gedit/2.${stable_version}/
 
-Or checkout the gnome-${stable_version} branch of the gedit module from:
+Or checkout the gnome-${GEDIT_MAJOR_VERSION}-${stable_version} branch of the gedit module from:
 
   git://git.gnome.org/gedit
 
