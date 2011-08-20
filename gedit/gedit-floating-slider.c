@@ -172,13 +172,13 @@ gedit_floating_slider_get_preferred_width (GtkWidget *widget,
 
 		gtk_widget_get_preferred_width (child, &child_min, &child_nat);
 
-		priv->child_alloc.width = child_min;
+		priv->child_alloc.width = child_nat;
 
 		context = gtk_widget_get_style_context (widget);
 		gtk_style_context_get_padding (context, GTK_STATE_FLAG_NORMAL,
 		                               &padding);
 
-		priv->widget_alloc.width = child_min + padding.left + padding.right;
+		priv->widget_alloc.width = child_nat + padding.left + padding.right;
 	}
 
 
@@ -215,13 +215,13 @@ gedit_floating_slider_get_preferred_height (GtkWidget *widget,
 
 		gtk_widget_get_preferred_height (child, &child_min, &child_nat);
 
-		priv->child_alloc.height = child_min;
+		priv->child_alloc.height = child_nat;
 
 		context = gtk_widget_get_style_context (widget);
 		gtk_style_context_get_padding (context, GTK_STATE_FLAG_NORMAL,
 		                               &padding);
 
-		priv->widget_alloc.height = child_min + padding.top + padding.bottom;
+		priv->widget_alloc.height = child_nat + padding.top + padding.bottom;
 	}
 
 	if (priv->orientation == GTK_ORIENTATION_HORIZONTAL)
