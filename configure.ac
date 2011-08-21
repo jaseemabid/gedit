@@ -4,7 +4,7 @@ AC_PREREQ(2.63.2)
 
 m4_define(gedit_major_version, 3)
 m4_define(gedit_minor_version, 1)
-m4_define(gedit_micro_version, 3)
+m4_define(gedit_micro_version, 4)
 m4_define(gedit_version, gedit_major_version.gedit_minor_version.gedit_micro_version)
 
 AC_INIT([gedit],[gedit_version],[http://bugzilla.gnome.org/enter_bug.cgi?product=gedit],[gedit],[http://projects.gnome.org/gedit/])
@@ -526,7 +526,7 @@ It will probably crash and you will lose your data.
 If you are looking for a stable release of gedit, either download
 it from:
 
-  http://ftp.gnome.org/pub/gnome/sources/gedit/2.${stable_version}/
+  http://ftp.gnome.org/pub/gnome/sources/gedit/${GEDIT_MAJOR_VERSION}.${stable_version}/
 
 Or checkout the gnome-${GEDIT_MAJOR_VERSION}-${stable_version} branch of the gedit module from:
 
