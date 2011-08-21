@@ -432,7 +432,7 @@ remove_listener (GeditMessageBus *bus,
 	if (!message->listeners)
 	{
 		/* remove message because it does not have any listeners */
-		g_hash_table_remove (bus->priv->messages, message);
+		g_hash_table_remove (bus->priv->messages, message->identifier);
 	}
 }
 
