@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gedit HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-03-27 22:23+0000\n"
-"PO-Revision-Date: 2011-08-22 23:47+0330\n"
+"PO-Revision-Date: 2011-08-22 23:50+0330\n"
 "Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -402,6 +402,7 @@ msgstr "سؤال"
 msgid "If you don't save, changes from the last %ld second will be permanently lost."
 msgid_plural "If you don't save, changes from the last %ld seconds will be permanently lost."
 msgstr[0] "اگر ذخیره نکنید، تغییرات %Ild ثانیه‌ی اخیر برای همیشه از دست خواهد رفت."
+msgstr[1] "اگر ذخیره نکنید، تغییرات %Ild ثانیه‌ی اخیر برای همیشه از دست خواهد رفت."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:423
 msgid "If you don't save, changes from the last minute will be permanently lost."
@@ -412,12 +413,14 @@ msgstr "اگر ذخیره نکنید، تغییرات یک دقیقه‌ی اخ�
 msgid "If you don't save, changes from the last minute and %ld second will be permanently lost."
 msgid_plural "If you don't save, changes from the last minute and %ld seconds will be permanently lost."
 msgstr[0] "اگر ذخیره نکنید، تغییرات یک دقیقه و %Ild ثانیه‌ی اخیر برای همیشه از دست خواهد رفت."
+msgstr[1] "اگر ذخیره نکنید، تغییرات یک دقیقه و %Ild ثانیه‌ی اخیر برای همیشه از دست خواهد رفت."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:439
 #, c-format
 msgid "If you don't save, changes from the last %ld minute will be permanently lost."
 msgid_plural "If you don't save, changes from the last %ld minutes will be permanently lost."
 msgstr[0] "اگر ذخیره نکنید، تغییرات %Ild دقیقه‌ی اخیر برای همیشه از دست خواهد رفت."
+msgstr[1] "اگر ذخیره نکنید، تغییرات %Ild دقیقه‌ی اخیر برای همیشه از دست خواهد رفت."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:454
 #| msgid ""
@@ -433,6 +436,7 @@ msgstr "اگر ذخیره نکنید، تغییرات یک ساعت اخیر ب�
 msgid "If you don't save, changes from the last hour and %d minute will be permanently lost."
 msgid_plural "If you don't save, changes from the last hour and %d minutes will be permanently lost."
 msgstr[0] "اگر ذخیره نکنید، تغییرات یک ساعت و  %Id دقیقه‌ی اخیر برای همیشه از دست خواهد رفت."
+msgstr[1] "اگر ذخیره نکنید، تغییرات یک ساعت و  %Id دقیقه‌ی اخیر برای همیشه از دست خواهد رفت."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:475
 #, c-format
@@ -444,6 +448,7 @@ msgstr[0] "اگر ذخیره نکنید، تغییرات یک ساعت و  %Id �
 msgid "If you don't save, changes from the last %d hour will be permanently lost."
 msgid_plural "If you don't save, changes from the last %d hours will be permanently lost."
 msgstr[0] "اگر ذخیره نکنید، تغییرات %Id ساعت اخیر برای همیشه از دست خواهد رفت."
+msgstr[1] "اگر ذخیره نکنید، تغییرات %Id ساعت اخیر برای همیشه از دست خواهد رفت."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:519
 #, c-format
@@ -476,12 +481,14 @@ msgstr "ذخیره‌سازی توسط مدیریت سیستم غیرفعال ش
 msgid "Changes to %d document will be permanently lost."
 msgid_plural "Changes to %d documents will be permanently lost."
 msgstr[0] "تغییرات اعمال شده روی %Id سند برای همیشه از دست خواهند رفت."
+msgstr[1] "تغییرات اعمال شده روی %Id سند برای همیشه از دست خواهند رفت."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:714
 #, c-format
 msgid "There is %d document with unsaved changes. Save changes before closing?"
 msgid_plural "There are %d documents with unsaved changes. Save changes before closing?"
 msgstr[0] "%Id سند با تغییرات ذخیره نشده موجود است. تغییرات پیش از بستن ذخیره شوند؟"
+msgstr[1] "%Id سند با تغییرات ذخیره نشده موجود است. تغییرات پیش از بستن ذخیره شوند؟"
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:733
 msgid "Docum_ents with unsaved changes:"
@@ -823,6 +830,7 @@ msgstr "در حال بار کردن پرونده‌ی «%s»..."
 msgid "Loading %d file…"
 msgid_plural "Loading %d files…"
 msgstr[0] "در حال بار کردن %Id پرونده..."
+msgstr[1] "در حال بار کردن %Id پرونده..."
 
 #. Translators: "Open Files" is the title of the file chooser window
 #: ../gedit/gedit-commands-file.c:446
@@ -894,6 +902,7 @@ msgstr "آیا تغییرات ذخیره نشده‌ی سند «%s» بازگر�
 msgid "Changes made to the document in the last %ld second will be permanently lost."
 msgid_plural "Changes made to the document in the last %ld seconds will be permanently lost."
 msgstr[0] "تغییرات اعمال شده روی سند در %Ild ثانیه‌ی اخیر برای همیشه از دست خواهند رفت."
+msgstr[1] "تغییرات اعمال شده روی سند در %Ild ثانیه‌ی اخیر برای همیشه از دست خواهند رفت."
 
 #: ../gedit/gedit-commands-file.c:1238
 msgid "Changes made to the document in the last minute will be permanently lost."
@@ -904,12 +913,14 @@ msgstr "تغییرات اعمال شده روی سند در یک دقیقه‌ی
 msgid "Changes made to the document in the last minute and %ld second will be permanently lost."
 msgid_plural "Changes made to the document in the last minute and %ld seconds will be permanently lost."
 msgstr[0] "تغییرات اعمال شده روی سند در یک دقیقه و %Ild ثانیه‌ی اخیر برای همیشه از دست خواهند رفت."
+msgstr[1] "تغییرات اعمال شده روی سند در یک دقیقه و %Ild ثانیه‌ی اخیر برای همیشه از دست خواهند رفت."
 
 #: ../gedit/gedit-commands-file.c:1254
 #, c-format
 msgid "Changes made to the document in the last %ld minute will be permanently lost."
 msgid_plural "Changes made to the document in the last %ld minutes will be permanently lost."
 msgstr[0] "تغییرات اعمال شده روی سند در %Ild دقیقه‌ی اخیر برای همیشه از دست خواهند رفت."
+msgstr[1] "تغییرات اعمال شده روی سند در %Ild دقیقه‌ی اخیر برای همیشه از دست خواهند رفت."
 
 #: ../gedit/gedit-commands-file.c:1269
 #| msgid ""
@@ -925,6 +936,7 @@ msgstr "تغییرات اعمال شده روی سند در ساعت گذشته 
 msgid "Changes made to the document in the last hour and %d minute will be permanently lost."
 msgid_plural "Changes made to the document in the last hour and %d minutes will be permanently lost."
 msgstr[0] "تغییرات اعمال شده روی سند در یک ساعت و %Id دقیقه‌ی اخیر برای همیشه از دست خواهند رفت."
+msgstr[1] "تغییرات اعمال شده روی سند در یک ساعت و %Id دقیقه‌ی اخیر برای همیشه از دست خواهند رفت."
 
 #: ../gedit/gedit-commands-file.c:1290
 #, c-format
@@ -936,6 +948,7 @@ msgstr[0] "تغییرات اعمال شده روی سند در یک ساعت و 
 msgid "Changes made to the document in the last %d hour will be permanently lost."
 msgid_plural "Changes made to the document in the last %d hours will be permanently lost."
 msgstr[0] "تغییرات اعمال شده روی سند در %Id ساعت اخیر برای همیشه از دست خواهند رفت."
+msgstr[1] "تغییرات اعمال شده روی سند در %Id ساعت اخیر برای همیشه از دست خواهند رفت."
 
 #: ../gedit/gedit-commands-file.c:1316
 msgid "_Revert"
@@ -960,6 +973,7 @@ msgstr ""
 msgid "Found and replaced %d occurrence"
 msgid_plural "Found and replaced %d occurrences"
 msgstr[0] "%Id مورد یافته و جای‌گزین شد"
+msgstr[1] "%Id مورد یافته و جای‌گزین شد"
 
 #: ../gedit/gedit-commands-search.c:121
 #| msgid "Found and replaced %d occurrence."
