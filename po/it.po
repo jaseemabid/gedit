@@ -10,15 +10,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-21 16:09+0200\n"
-"PO-Revision-Date: 2011-08-21 16:08+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=gedit&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-08-22 19:31+0000\n"
+"PO-Revision-Date: 2011-08-31 14:35+0200\n"
 "Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
+"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/gedit.desktop.in.in.h:1
@@ -1569,7 +1570,7 @@ msgid ""
 "and try again."
 msgstr ""
 "Non c'è abbastanza spazio su disco per salvare il file. Liberare un po' di "
-"spazio su disco e riprovare."
+"spazio e riprovare."
 
 #: ../gedit/gedit-io-error-info-bar.c:1115
 msgid ""
@@ -1859,17 +1860,17 @@ msgstr "RO"
 #: ../gedit/gedit-tab.c:1881
 #, c-format
 msgid "Error opening file %s"
-msgstr "Errore nel caricamento del file «%s»"
+msgstr "Errore nell'aprire il file «%s»"
 
 #: ../gedit/gedit-tab.c:1886
 #, c-format
 msgid "Error reverting file %s"
-msgstr "Errore nel ripristino del file «%s»"
+msgstr "Errore nel ripristinare il file «%s»"
 
 #: ../gedit/gedit-tab.c:1891
 #, c-format
 msgid "Error saving file %s"
-msgstr "Errore nel salvataggio del file «%s»"
+msgstr "Errore nel salvare il file «%s»"
 
 #: ../gedit/gedit-tab.c:1912
 msgid "Unicode (UTF-8)"
@@ -3737,16 +3738,3 @@ msgstr ""
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
 msgstr "Dataprovider Zeitgeist"
-
-#~ msgid ""
-#~ "List of VFS schemes gedit supports in write mode. The 'file' scheme is "
-#~ "writable by default."
-#~ msgstr ""
-#~ "Elenco degli schemi VFS supportati. Lo schema \"file\" è abilitato alla "
-#~ "scrittura in modo predefinito."
-
-#~ msgid "Writable VFS schemes"
-#~ msgstr "Schemi VFS scrivibili"
-
-#~ msgid "External Tools Manager"
-#~ msgstr "Gestore strumenti esterni"
