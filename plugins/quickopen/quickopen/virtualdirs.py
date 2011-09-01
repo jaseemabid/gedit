@@ -45,7 +45,7 @@ class VirtualDirectory(object):
             if info:
                 self._children.append((child, info))
         except StandardError as e:
-            print e
+            pass
 
 class RecentDocumentsDirectory(VirtualDirectory):
     def __init__(self, maxitems=10):
