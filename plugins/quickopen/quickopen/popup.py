@@ -61,8 +61,12 @@ class Popup(Gtk.Dialog):
         self.connect('show', self.on_show)
 
     def _build_ui(self):
+        self.set_border_width(5)
         vbox = self.get_content_area()
-        vbox.set_spacing(3)
+        vbox.set_spacing(2)
+        action_area = self.get_action_area()
+        action_area.set_border_width(5)
+        action_area.set_spacing(6)
 
         self._entry = Gtk.Entry()
         self.set_entry_icon(self._entry)
