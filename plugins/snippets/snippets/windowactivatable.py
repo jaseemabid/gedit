@@ -199,7 +199,7 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
         def create_configure_dialog(self):
                 SharedData().show_manager(self.window, self.plugin_info.get_data_dir())
 
-        def on_action_snippets_activate(self, action, data):
+        def on_action_snippets_activate(self, action, data=None):
                 self.create_configure_dialog()
 
         def accelerator_activated(self, group, obj, keyval, mod):
