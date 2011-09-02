@@ -175,7 +175,7 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
         self._action_group.add_actions([('ExternalToolManager', None,
                                          _('Manage _External Tools...'), None,
                                          _("Opens the External Tools Manager"),
-                                         lambda action, data=None: self.open_dialog()),
+                                         lambda action: self.open_dialog()),
                                         ('ExternalTools', None,
                                          _('External _Tools'), None,
                                          _("External tools"), None)])
