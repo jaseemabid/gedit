@@ -65,9 +65,11 @@ class Popup(Gtk.Dialog):
         vbox.set_spacing(3)
 
         self._entry = Gtk.Entry()
+        self.set_entry_icon(self._entry)
 
         self._entry.connect('changed', self.on_changed)
         self._entry.connect('key-press-event', self.on_key_press_event)
+        self._entry.connect('icon-press', self.on_icon_press)
 
         sw = Gtk.ScrolledWindow()
         sw.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
@@ -358,9 +360,23 @@ class Popup(Gtk.Dialog):
 
         self.do_search()
 
+    def set_entry_icon(self, entry):
+        if entry.get_text() == "":
+            icon = Gio.ThemedIcon.new_with_default_fallbacks("edit-find-symbolic")
+            entry.set_icon_activatable(Gtk.EntryIconPosition.SECONDARY, False)
+            entry.set_icon_sensitive(Gtk.EntryIconPosition.SECONDARY, False)
+        else:
+            icon = Gio.ThemedIcon.new_with_default_fallbacks("edit-clear-symbolic")
+            entry.set_icon_activatable(Gtk.EntryIconPosition.SECONDARY, True)
+            entry.set_icon_sensitive(Gtk.EntryIconPosition.SECONDARY, True)
+
+        entry.set_icon_from_gicon(Gtk.EntryIconPosition.SECONDARY, icon)
+
     def on_changed(self, editable):
         self.do_search()
         self.on_selection_changed(self._treeview.get_selection())
+
+        self.set_entry_icon(editable)
 
     def _shift_extend(self, towhere):
         selection = self._treeview.get_selection()
@@ -511,6 +527,9 @@ class Popup(Gtk.Dialog):
             self.toggle_cursor()
 
         return False
+
+    def on_icon_press(self, entry, icon_pos, event):
+        entry.set_text("")
 
     def on_row_activated(self, view, path, column):
         self._activate()
