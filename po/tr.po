@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-08-04 09:27+0000\n"
-"PO-Revision-Date: 2011-08-16 04:26+0300\n"
+"POT-Creation-Date: 2011-08-16 01:47+0000\n"
+"PO-Revision-Date: 2011-09-04 09:45+0300\n"
 "Last-Translator: Muhammet Kara <muhammet.k@gmail.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -381,9 +381,8 @@ msgid "Whether gedit should display the right margin in the editing area."
 msgstr "Gedit'in düzenleme alanında sağ kenar boşluğunu göstermesi."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
-#, fuzzy
 msgid "Whether gedit should enable automatic indentation."
-msgstr "Gedit'in kendiliğinden girintilemeyi etkinleştirmesi."
+msgstr "Gedit'in otomatik girintilemeyi etkinleştirip etkinleştirmeyeceği."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
 msgid "Whether gedit should enable syntax highlighting."
@@ -395,9 +394,8 @@ msgid ""
 msgstr "Gedit'in arama metninin geçtiği yerleri vurgulaması."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
-#, fuzzy
 msgid "Whether gedit should highlight matching brackets."
-msgstr "Gedit'in eşleşen parantezler için vurgulamayı etkinleştirmesi."
+msgstr "Gedit'in eşleşen parantezleri vurgulayıp vurgulamayacağı."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
 msgid "Whether gedit should highlight the current line."
@@ -423,11 +421,10 @@ msgstr ""
 "Gedit'in dosya yüklendiği zaman imlecin önceki yerinin geri getirilmesi."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
-#, fuzzy
 msgid ""
 "Whether the side panel at the left of editing windows should be visible."
 msgstr ""
-"Düzenleme penceresinin solunda bunan kenar panelinin görünür hale gelmesi."
+"Düzenleme penceresinin solundaki kenar panelinin görünür olup olmayacağı."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
 msgid ""
@@ -608,11 +605,10 @@ msgid "E_ncodings shown in menu:"
 msgstr "Menüde gösterilen _kodlamalar:"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.c:423
-#, fuzzy
 msgid "Click on this button to select the font to be used by the editor"
 msgstr ""
-"Düzenleyici tarafından kullanılacak olan yazıtipini seçmek için bu düğmeyi "
-"basınız"
+"Düzenleyici tarafından kullanılacak yazı tipini seçmek için bu düğmeye "
+"tıklayın"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.c:438
 #, c-format
@@ -730,9 +726,8 @@ msgstr "Sekmeler"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:19
 #: ../gedit/gedit-print-preferences.ui.h:11
-#, fuzzy
 msgid "Text Wrapping"
-msgstr "<b>Metin Bölmesi</b>"
+msgstr "Metin Kaydırma"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:20
 msgid "View"
@@ -806,9 +801,8 @@ msgid "_Wrap around"
 msgstr "_Böl"
 
 #: ../gedit/gedit-app.c:235
-#, fuzzy
 msgid "There was an error displaying the help."
-msgstr "Yardım gösteriminde hata oluştu."
+msgstr "Yardım görüntülenirken bir hata oluştu."
 
 #: ../gedit/gedit-command-line.c:232
 #, c-format
@@ -834,9 +828,8 @@ msgid "ENCODING"
 msgstr "KODLAMA"
 
 #: ../gedit/gedit-command-line.c:278
-#, fuzzy
 msgid "Create a new top-level window in an existing instance of gedit"
-msgstr "Gedit'in mevcut durumunda yeni bir en üst düzey pencere yarat"
+msgstr "Gedit'in mevcut bir örneğinde yeni bir en üst düzey pencere yarat"
 
 #: ../gedit/gedit-command-line.c:286
 msgid "Create a new document in an existing instance of gedit"
@@ -1032,7 +1025,9 @@ msgstr "gedit GNOME Masaüstü için küçük ve sade bir metin düzenleyicisidi
 
 #: ../gedit/gedit-commands-help.c:113
 msgid "translator-credits"
-msgstr "Barış Çiçek <baris@teamforce.name.tr>"
+msgstr ""
+"Barış Çiçek <baris@teamforce.name.tr>\n"
+"Muhammet Kara <muhammet.k@gmail.com>"
 
 #: ../gedit/gedit-commands-search.c:112
 #, c-format
@@ -1061,7 +1056,7 @@ msgstr "Kaydedilmemiş Belge %d"
 msgid "Read-Only"
 msgstr "Salt Okunur"
 
-#: ../gedit/gedit-documents-panel.c:1142 ../gedit/gedit-window.c:3907
+#: ../gedit/gedit-documents-panel.c:1143 ../gedit/gedit-window.c:3907
 msgid "Documents"
 msgstr "Belgeler"
 
@@ -1273,12 +1268,12 @@ msgstr ""
 "emin olun ve tekrar deneyin."
 
 #: ../gedit/gedit-io-error-info-bar.c:304
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Hostname was invalid. Please check that you typed the location correctly and "
 "try again."
 msgstr ""
-"Makine adı geçersiz. Lütfen konumu doğru yazdığınıza emin olun ve tekrar "
+"Makine adı geçersiz. Lütfen konumu doğru yazdığınızdan emin olun ve tekrar "
 "deneyin."
 
 #: ../gedit/gedit-io-error-info-bar.c:312
@@ -1358,18 +1353,16 @@ msgstr ""
 "bu dosya, bu belgeye zarar verebilir"
 
 #: ../gedit/gedit-io-error-info-bar.c:632
-#, fuzzy
 msgid "You can also choose another character encoding and try again."
-msgstr "Menüden bir karakter kodlaması seçin ve tekrar deneyin."
+msgstr "Ayrıca başka bir karakter kodlaması seçip tekrar deneyebilirsiniz."
 
 #: ../gedit/gedit-io-error-info-bar.c:639
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open the file %s using the %s character encoding."
-msgstr "%2$s karakter kodlaması kullanılarak %1$s dosyası açılamadı"
+msgstr "%s dosyası, %s karakter kodlaması kullanılarak açılamadı."
 
 #: ../gedit/gedit-io-error-info-bar.c:643
 #: ../gedit/gedit-io-error-info-bar.c:717
-#, fuzzy
 msgid "Select a different character encoding from the menu and try again."
 msgstr "Menüden başka bir karakter kodlaması seçin ve tekrar deneyin."
 
@@ -1379,18 +1372,17 @@ msgid "Could not open the file %s."
 msgstr "%s dosyası açılamadı."
 
 #: ../gedit/gedit-io-error-info-bar.c:712
-#, fuzzy, c-format
+#, c-format
 msgid "Could not save the file %s using the %s character encoding."
-msgstr "%2$s karakter kodlaması kullanılarak %1$s dosyası kaydedemedi."
+msgstr "%s dosyası, %s karakter kodlaması kullanılarak kaydedilemedi."
 
 #: ../gedit/gedit-io-error-info-bar.c:715
-#, fuzzy
 msgid ""
 "The document contains one or more characters that cannot be encoded using "
 "the specified character encoding."
 msgstr ""
-"Belge belirtilen karakter kodlaması kullanarak kodlanamayacak bir ya da daha "
-"fazlakarakter içeriyor."
+"Belge, belirtilen karakter kodlaması kullanarak kodlanamayacak bir ya da daha "
+"fazla karakter içeriyor."
 
 #. Translators: the access key chosen for this string should be
 #. different from other main menu access keys (Open, Edit, View...)
@@ -1449,16 +1441,17 @@ msgid "Could not create a temporary backup file while saving %s"
 msgstr "%s kaydedilirken bir geçici yedek dosyası oluşturulamadı"
 
 #: ../gedit/gedit-io-error-info-bar.c:1020
-#, fuzzy
 msgid ""
 "gedit could not back up the old copy of the file before saving the new one. "
 "You can ignore this warning and save the file anyway, but if an error occurs "
 "while saving, you could lose the old copy of the file. Save anyway?"
 msgstr ""
-"gedit, dosyanın eski kopyasının yeni kopyayı kaydederken yedeği alınamadı. "
-"Bu uyarıyı yok sayıp dosyayı gene de kaydedebilirsiniz, ancak eğer kayıt "
-"esnasında bir hata olursa dosyanın eski kopyasını kaydedebilirsiniz. Gene de "
-"kaydedilsin mi?"
+"gedit, dosyanın yeni kopyasını kaydederken eskisinin yedeğini alamadı. Gene "
+"de "
+"bu uyarıyı yok sayıp dosyayı kaydedebilirsiniz, ancak eğer kayıt esnasında "
+"bir "
+"hata olursa, dosyanın eski kopyasını kaybedebilirsiniz. Yine de kaydedilsin "
+"mi?"
 
 #. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
 #: ../gedit/gedit-io-error-info-bar.c:1080
@@ -1622,9 +1615,8 @@ msgid "Print synta_x highlighting"
 msgstr "Vurgulanan sözdizimini _yazdır"
 
 #: ../gedit/gedit-print-preferences.ui.h:10
-#, fuzzy
 msgid "Syntax Highlighting"
-msgstr "Vurgulanan Sözdizimlerini Yazdır"
+msgstr "Sözdizimi Vurgulaması"
 
 #: ../gedit/gedit-print-preferences.ui.h:12
 msgid "_Body:"
@@ -1699,7 +1691,7 @@ msgstr "Ö_nizlemeyi Kapat"
 
 #: ../gedit/gedit-print-preview.c:714
 msgid "Close print preview"
-msgstr "Yazdırma önizlemesini kapat"
+msgstr "Baskı önizlemeyi kapat"
 
 #: ../gedit/gedit-print-preview.c:783
 #, c-format
@@ -1712,7 +1704,7 @@ msgstr "Sayfa Önizleme"
 
 #: ../gedit/gedit-print-preview.c:968
 msgid "The preview of a page in the document to be printed"
-msgstr "Belgenin yazdırılacak sayfa önizlemesi"
+msgstr "Yazdırılacak belgedeki bir sayfanın önizlemesi"
 
 #. Use spaces to leave padding proportional to the font size
 #: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
@@ -1743,73 +1735,73 @@ msgstr "Dizin '%s' oluşturulamadı: g_mkdir_with_parents() başarısız oldu: %
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:744
+#: ../gedit/gedit-tab.c:743
 #, c-format
 msgid "Reverting %s from %s"
 msgstr "%s dosyası %s konumundan eski haline getiriliyor"
 
-#: ../gedit/gedit-tab.c:751
+#: ../gedit/gedit-tab.c:750
 #, c-format
 msgid "Reverting %s"
 msgstr "%s ilk haline getiriliyor"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:767
+#: ../gedit/gedit-tab.c:766
 #, c-format
 msgid "Loading %s from %s"
 msgstr "%s dosyası %s konumundan yükleniyor"
 
-#: ../gedit/gedit-tab.c:774
+#: ../gedit/gedit-tab.c:773
 #, c-format
 msgid "Loading %s"
 msgstr "%s yükleniyor"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:855
+#: ../gedit/gedit-tab.c:854
 #, c-format
 msgid "Saving %s to %s"
 msgstr "%s, %s konumuna kaydediliyor"
 
-#: ../gedit/gedit-tab.c:862
+#: ../gedit/gedit-tab.c:861
 #, c-format
 msgid "Saving %s"
 msgstr "%s kaydediliyor"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1835
+#: ../gedit/gedit-tab.c:1834
 msgid "RO"
 msgstr "SO"
 
-#: ../gedit/gedit-tab.c:1882
+#: ../gedit/gedit-tab.c:1881
 #, c-format
 msgid "Error opening file %s"
 msgstr "%s dosyası açılırken hata"
 
-#: ../gedit/gedit-tab.c:1887
+#: ../gedit/gedit-tab.c:1886
 #, c-format
 msgid "Error reverting file %s"
 msgstr "%s dosyası ilk haline getirilirken hata"
 
-#: ../gedit/gedit-tab.c:1892
+#: ../gedit/gedit-tab.c:1891
 #, c-format
 msgid "Error saving file %s"
 msgstr "%s dosyası kaydedilirken hata"
 
-#: ../gedit/gedit-tab.c:1913
+#: ../gedit/gedit-tab.c:1912
 msgid "Unicode (UTF-8)"
 msgstr "Unikod (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1920
+#: ../gedit/gedit-tab.c:1919
 msgid "Name:"
 msgstr "İsim:"
 
-#: ../gedit/gedit-tab.c:1921
+#: ../gedit/gedit-tab.c:1920
 msgid "MIME Type:"
 msgstr "MIME Türü:"
 
-#: ../gedit/gedit-tab.c:1922
+#: ../gedit/gedit-tab.c:1921
 msgid "Encoding:"
 msgstr "Kodlama:"
 
@@ -1906,7 +1898,7 @@ msgstr "Yazdırma Ö_nizleme"
 
 #: ../gedit/gedit-ui.h:83
 msgid "Print preview"
-msgstr "Yazdırma önizlemesi"
+msgstr "Baskı önizleme"
 
 #: ../gedit/gedit-ui.h:84
 msgid "_Print..."
@@ -2100,7 +2092,6 @@ msgid "Side _Panel"
 msgstr "Yan _Panel"
 
 #: ../gedit/gedit-ui.h:175
-#, fuzzy
 msgid "Show or hide the side panel in the current window"
 msgstr "Geçerli penceredeki kenar panelini göster ya da gizle"
 
@@ -2109,7 +2100,6 @@ msgid "_Bottom Panel"
 msgstr "_Alt Panel"
 
 #: ../gedit/gedit-ui.h:178
-#, fuzzy
 msgid "Show or hide the bottom panel in the current window"
 msgstr "Geçerli penceredeki alt paneli göster ya da gizle"
 
@@ -2118,9 +2108,9 @@ msgid "Please check your installation."
 msgstr "Lütfen kurulumunuzu kontrol edin."
 
 #: ../gedit/gedit-utils.c:1087
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open UI file %s. Error: %s"
-msgstr "Ui dosyası %s açılamadı. Hata: %s"
+msgstr "UI dosyası %s açılamadı. Hata: %s"
 
 #: ../gedit/gedit-utils.c:1107
 #, c-format
@@ -2288,29 +2278,28 @@ msgid "Check update"
 msgstr "Güncelleme kontrol et"
 
 #: ../plugins/checkupdate/gedit-check-update-plugin.c:270
-#, fuzzy
 msgid "There was an error displaying the URI."
-msgstr "URL gösteriminde hata oluştu."
+msgstr "URI gösterilirken bir hata oluştu."
 
 #: ../plugins/checkupdate/gedit-check-update-plugin.c:307
 msgid "_Download"
 msgstr "İ_ndir"
 
 #: ../plugins/checkupdate/gedit-check-update-plugin.c:315
-#, fuzzy
 msgid "_Ignore Version"
-msgstr "Büyük/küçük harf önemli _değil"
+msgstr "Sürümü _Yoksay"
 
 #: ../plugins/checkupdate/gedit-check-update-plugin.c:330
 msgid "There is a new version of gedit"
 msgstr "Gedit'in yeni bir sürümü var"
 
 #: ../plugins/checkupdate/gedit-check-update-plugin.c:334
-#, fuzzy
 msgid ""
 "You can download the new version of gedit by clicking on the download button "
 "or ignore that version and wait for a new one"
-msgstr "İndirme düğmesine basarak gedit'in yeni sürümünü indirebilirsiniz"
+msgstr ""
+"İndirme düğmesine basarak gedit'in yeni sürümünü indirebilir ya da yoksayıp "
+"bir sonraki sürümü bekleyebilirsiniz."
 
 #. ex:set ts=8 noet:
 #: ../plugins/checkupdate/org.gnome.gedit.plugins.checkupdate.gschema.xml.in.in.h:1
@@ -2320,7 +2309,7 @@ msgstr "Yoksayılacak Sürüm"
 #. This is releated to the next gedit version to be released
 #: ../plugins/checkupdate/org.gnome.gedit.plugins.checkupdate.gschema.xml.in.in.h:3
 msgid "Version to ignore until a newer version is released."
-msgstr ""
+msgstr "Daha yenisi çıkana kadar yoksayılacak sürüm."
 
 #: ../plugins/docinfo/docinfo.plugin.desktop.in.h:1
 msgid ""
@@ -2384,9 +2373,8 @@ msgid "_Document Statistics"
 msgstr "_Belge İstatistikleri"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.c:453
-#, fuzzy
 msgid "Get statistical information on the current document"
-msgstr "Geçerli belgenin istatistik bilgilerini göster"
+msgstr "Geçerli belge hakkında istatistiki bilgiler alın"
 
 #. ex:set ts=8 noet:
 #: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
@@ -2422,7 +2410,7 @@ msgstr ""
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
 msgid "Whether to use the system font"
-msgstr ""
+msgstr "Sistem yazıtipinin kullanılması"
 
 #: ../plugins/externaltools/tools/capture.py:92
 #, python-format
@@ -2483,7 +2471,6 @@ msgid "Add Tool"
 msgstr "Araç Ekle"
 
 #: ../plugins/externaltools/tools/tools.ui.h:3
-#| msgid "A Brand New Tool"
 msgid "Add a new tool"
 msgstr "Yeni bir araç ekle"
 
@@ -2536,7 +2523,6 @@ msgid "Local files only"
 msgstr "Sadece yerel dosyalar"
 
 #: ../plugins/externaltools/tools/tools.ui.h:17
-#| msgid "Manage _External Tools..."
 msgid "Manage External Tools"
 msgstr "Harici Araçları Yönet"
 
@@ -2553,7 +2539,6 @@ msgid "Remove Tool"
 msgstr "Aracı Kaldır"
 
 #: ../plugins/externaltools/tools/tools.ui.h:21
-#| msgid "Revert selected snippet"
 msgid "Remove selected tool"
 msgstr "Seçilen aracı kaldır"
 
@@ -2566,12 +2551,10 @@ msgid "Replace current selection"
 msgstr "Mevcut seçimin yerine koy"
 
 #: ../plugins/externaltools/tools/tools.ui.h:24
-#| msgid "Revert"
 msgid "Revert Tool"
 msgstr "Aracı Eski Durumuna Getir"
 
 #: ../plugins/externaltools/tools/tools.ui.h:25
-#| msgid "Revert"
 msgid "Revert tool"
 msgstr "Aracı eski durumuna getir"
 
@@ -2983,9 +2966,8 @@ msgstr ""
 "görünümünü aç"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:9
-#, fuzzy
 msgid "Set Location to First Document"
-msgstr "Konumu İlk Belgeye Ata"
+msgstr "Konumu İlk Belgeye Ayarla"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:10
 msgid "Sets whether to enable restoring of remote locations."
@@ -3038,14 +3020,12 @@ msgid "Modelines"
 msgstr "Kip Satırları"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:2
-#, fuzzy
 msgid "Command Color Text"
-msgstr "_Komut rengi:"
+msgstr "Komut Rengi Metni"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:3
-#, fuzzy
 msgid "Error Color Text"
-msgstr "_Hata rengi:"
+msgstr "Hata Rengi Metni"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:5
 msgid ""
@@ -3054,19 +3034,16 @@ msgid ""
 msgstr ""
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
-#, fuzzy
 msgid "The command color text"
-msgstr "_Komut rengi:"
+msgstr "Komut rengi metni"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
-#, fuzzy
 msgid "The error color text"
-msgstr "_Hata rengi:"
+msgstr "Hata rengi metni"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
-#, fuzzy
 msgid "Interactive Python console standing in the bottom panel"
-msgstr "Alt panelde duran etkileşimli bir python konsolu"
+msgstr "Alt panelde duran etkileşimli Python uçbirimi"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
 #: ../plugins/pythonconsole/pythonconsole/__init__.py:52
@@ -3093,9 +3070,8 @@ msgid "Quickly open files"
 msgstr "Dosyaları hızlıca açar"
 
 #: ../plugins/snippets/snippets.plugin.desktop.in.h:1
-#, fuzzy
 msgid "Insert often-used pieces of text in a fast way"
-msgstr "Sıklıkla kullanılan metin parçalarını hızlı bir şekilde ekler"
+msgstr "Sıklıkla kullanılan metin parçalarını hızlı bir şekilde ekleyin"
 
 #: ../plugins/snippets/snippets.plugin.desktop.in.h:2
 #: ../plugins/snippets/snippets/document.py:56
@@ -3107,10 +3083,9 @@ msgid "Activation"
 msgstr "Etkinleştirme"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:3
-#, fuzzy
 #| msgid "Snippets"
 msgid "Add Snippet"
-msgstr "Parçalar"
+msgstr "Parça Ekle"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:4
 msgid "Create new snippet"
@@ -3122,20 +3097,18 @@ msgid "Delete selected snippet"
 msgstr "Seçili bölümü sil"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#, fuzzy
 #| msgid "Export snippets"
 msgid "Export Snippets"
-msgstr "Parçaları aktar"
+msgstr "Parçaları Dışa Aktar"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:7
 msgid "Export selected snippets"
 msgstr "Seçili bölümleri aktar"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:8
-#, fuzzy
 #| msgid "Import snippets"
 msgid "Import Snippets"
-msgstr "Parçaları aktar"
+msgstr "Parçaları İçe Aktar"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:9
 #: ../plugins/snippets/snippets/manager.py:776
@@ -3143,16 +3116,14 @@ msgid "Import snippets"
 msgstr "Parçaları aktar"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:10
-#, fuzzy
 #| msgid "Manage snippets"
 msgid "Manage Snippets"
-msgstr "Parçaları yönet"
+msgstr "Parçaları Yönet"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:11
-#, fuzzy
 #| msgid "Snippets"
 msgid "Remove Snippet"
-msgstr "Parçalar"
+msgstr "Parçayı Sil"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:12
 msgid "S_hortcut key:"
@@ -3288,40 +3259,40 @@ msgid "Type a new shortcut"
 msgstr "Yeni bir kısayol yaz"
 
 #: ../plugins/snippets/snippets/exporter.py:82
-#, fuzzy, python-format
+#, python-format
 msgid "The archive \"%s\" could not be created"
-msgstr "Arşiv `%s` oluşturulamadı"
+msgstr "\"%s\" arşivi oluşturulamadı"
 
 #: ../plugins/snippets/snippets/exporter.py:99
-#, fuzzy, python-format
+#, python-format
 msgid "Target directory \"%s\" does not exist"
-msgstr "Hedef dizin `%s` mevcut değil"
+msgstr "Hedef dizin \"%s\" mevcut değil"
 
 #: ../plugins/snippets/snippets/exporter.py:102
-#, fuzzy, python-format
+#, python-format
 msgid "Target directory \"%s\" is not a valid directory"
-msgstr "Hedef dizin `%s` geçerli bir dizin değil"
+msgstr "Hedef dizin \"%s\" geeçrli bir dizin değil"
 
 #: ../plugins/snippets/snippets/importer.py:47
 #: ../plugins/snippets/snippets/importer.py:108
-#, fuzzy, python-format
+#, python-format
 msgid "File \"%s\" does not exist"
-msgstr "Dosya `%s` mevcut değil"
+msgstr "\"%s\" dosyası mevcut değil"
 
 #: ../plugins/snippets/snippets/importer.py:50
-#, fuzzy, python-format
+#, python-format
 msgid "File \"%s\" is not a valid snippets file"
-msgstr "Dosya `%s` geçerli bir bölüm dosyası değil"
+msgstr "\"%s\" dosyası geçerli bir parçalar dosyası değil"
 
 #: ../plugins/snippets/snippets/importer.py:67
-#, fuzzy, python-format
+#, python-format
 msgid "Imported file \"%s\" is not a valid snippets file"
-msgstr "Aktarılan dosya `%s` geçerli bir parçalar dosyası değil"
+msgstr "İçe aktarılan \"%s\" dosyası geçerli bir parçalar dosyası değil"
 
 #: ../plugins/snippets/snippets/importer.py:77
-#, fuzzy, python-format
+#, python-format
 msgid "The archive \"%s\" could not be extracted"
-msgstr "Arşiv `%s` açılamadı"
+msgstr "\"%s\" arşivi açılamadı"
 
 #: ../plugins/snippets/snippets/importer.py:95
 #, python-format
@@ -3330,22 +3301,23 @@ msgstr "Bu dosyalar aktarılamadı: %s"
 
 #: ../plugins/snippets/snippets/importer.py:111
 #: ../plugins/snippets/snippets/importer.py:124
-#, fuzzy, python-format
+#, python-format
 msgid "File \"%s\" is not a valid snippets archive"
-msgstr "Dosya `%s` geçerli bir parçalar arşivi değil"
+msgstr "\"%s\" dosyası geçerli bir parçalar arşivi değil"
 
 #: ../plugins/snippets/snippets/placeholder.py:594
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Execution of the Python command (%s) exceeds the maximum time, execution "
 "aborted."
 msgstr ""
-"Python komutu (%s) çalıştırılması azami süreyi aştı, çalıştırma iptal edildi."
+"Python komutunun (%s) çalıştırılması azami süreyi aştı, yürütme "
+"durduruldu."
 
 #: ../plugins/snippets/snippets/placeholder.py:602
-#, fuzzy, python-format
+#, python-format
 msgid "Execution of the Python command (%s) failed: %s"
-msgstr "Python komutu (%s) çalıştırılması başarısız oldu: %s"
+msgstr "Python komutunun (%s) çalıştırılması başarısız oldu: %s"
 
 #: ../plugins/sort/gedit-sort-plugin.c:88
 msgid "S_ort..."
@@ -3486,9 +3458,8 @@ msgid "Set the language of the current document"
 msgstr "Geçerli belgenin dilini ayarla"
 
 #: ../plugins/spell/gedit-spell-plugin.c:126
-#, fuzzy
 msgid "_Highlight Misspelled Words"
-msgstr "_Vurgu Kipi"
+msgstr "Hatalı Yazılmış Sözcükleri _Vurgula"
 
 #: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
@@ -3603,9 +3574,8 @@ msgid ""
 msgstr ""
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
-#, fuzzy
 msgid "Prompt Type"
-msgstr "Mesaj göster"
+msgstr "Uyarı Türü"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
 msgid "Selected Format"
@@ -3656,9 +3626,8 @@ msgid "Configure date/time plugin"
 msgstr "Tarih/Zaman eklentisini yapılandır"
 
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:9
-#, fuzzy
 msgid "When inserting date/time..."
-msgstr "Tarih/zaman ekleme eklentisini yapılandır..."
+msgstr "Tarih/zaman eklenirken..."
 
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "_Prompt for a format"
