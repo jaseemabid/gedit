@@ -842,11 +842,11 @@ class Manager:
 
     def on_tool_manager_dialog_response(self, dialog, response):
         if response == Gtk.ResponseType.HELP:
-            Gedit.app_get_default().show_help(self.dialog, 'gedit', 'gedit-external-tools-plugin')
+            Gedit.app_get_default().show_help(self.dialog, 'gedit', 'gedit-plugins-external-tools')
             return
 
         self.on_tool_manager_dialog_focus_out(dialog, None)
-        
+
         self.dialog.destroy()
         self.dialog = None
         self.tools = None
