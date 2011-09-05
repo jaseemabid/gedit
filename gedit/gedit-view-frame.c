@@ -892,24 +892,28 @@ completion_func (GtkEntryCompletion *completion,
 static void
 customize_for_search_mode (GeditViewFrame *frame)
 {
+	GIcon *icon;
+
 	if (frame->priv->search_mode == SEARCH)
 	{
-		gtk_entry_set_icon_from_stock (GTK_ENTRY (frame->priv->search_entry),
-		                               GTK_ENTRY_ICON_PRIMARY,
-		                               GTK_STOCK_FIND);
+		icon = g_themed_icon_new_with_default_fallbacks ("edit-find-symbolic");
 
 		gtk_widget_set_tooltip_text (frame->priv->search_entry,
 		                             _("String you want to search for"));
 	}
 	else
 	{
-		gtk_entry_set_icon_from_stock (GTK_ENTRY (frame->priv->search_entry),
-		                               GTK_ENTRY_ICON_PRIMARY,
-		                               GTK_STOCK_JUMP_TO);
+		icon = g_themed_icon_new_with_default_fallbacks ("go-jump-symbolic");
 
 		gtk_widget_set_tooltip_text (frame->priv->search_entry,
 		                             _("Line you want to move the cursor to"));
 	}
+
+	gtk_entry_set_icon_from_gicon (GTK_ENTRY (frame->priv->search_entry),
+	                               GTK_ENTRY_ICON_PRIMARY,
+	                               icon);
+
+	g_object_unref (icon);
 }
 
 static void
