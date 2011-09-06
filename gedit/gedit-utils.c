@@ -1494,16 +1494,4 @@ gedit_utils_get_compression_type_from_content_type (const gchar *content_type)
 	return GEDIT_DOCUMENT_COMPRESSION_TYPE_NONE;
 }
 
-/* This is a workaround for python bindings:
- * see https://bugzilla.gnome.org/show_bug.cgi?id=645258 */
-void
-gedit_utils_text_iter_assign (GtkTextIter       *iter,
-                              GtkTextIter const *other)
-{
-	g_return_if_fail (iter != NULL);
-	g_return_if_fail (other != NULL);
-
-	*iter = *other;
-}
-
 /* ex:set ts=8 noet: */
