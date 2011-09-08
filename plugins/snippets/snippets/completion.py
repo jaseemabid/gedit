@@ -123,7 +123,7 @@ class Provider(GObject.Object, GtkSource.CompletionProvider):
 
         def do_get_info_widget(self, proposal):
                 if not self.info_widget:
-                        view = Gedit.View(Gedit.Document())
+                        view = Gedit.View.new_with_buffer(Gedit.Document())
                         manager = get_language_manager()
 
                         lang = manager.get_language('snippets')
@@ -143,10 +143,7 @@ class Provider(GObject.Object, GtkSource.CompletionProvider):
                 buf.set_text(proposal.get_info())
                 buf.move_mark(buf.get_insert(), buf.get_start_iter())
                 buf.move_mark(buf.get_selection_bound(), buf.get_start_iter())
-                self.info_view.scroll_to_iter(buf.get_start_iter(), False)
-
-                info.set_sizing(-1, -1, False, False)
-                info.process_resize()
+                self.info_view.scroll_to_iter(buf.get_start_iter(), 0.0, False, 0.5, 0.5)
 
         def do_get_icon(self):
                 return self.icon
