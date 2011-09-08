@@ -164,6 +164,8 @@ gedit_modeline_plugin_activate (GeditViewActivatable *activatable)
 
 	plugin = GEDIT_MODELINE_PLUGIN (activatable);
 
+	modeline_parser_apply_modeline (GTK_SOURCE_VIEW (plugin->priv->view));
+
 	doc = gtk_text_view_get_buffer (GTK_TEXT_VIEW (plugin->priv->view));
 
 	plugin->priv->document_loaded_handler_id =
