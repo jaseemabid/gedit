@@ -12,46 +12,37 @@
 # Francisco Javier F. Serrador <serrador@tecknolabs.com>, 2006.
 # Juanje Ojeda Croissier <jojeda@emergya.es>, 2008.
 # Leandro Machacón <leandroman@gemail.com>, 2010.
-# Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
+# Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-07-12 19:36+0000\n"
-"PO-Revision-Date: 2011-07-13 10:55+0200\n"
-"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"POT-Creation-Date: 2011-08-04 09:27+0000\n"
+"PO-Revision-Date: 2011-09-11 11:24+0200\n"
+"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Gtranslator 1.9.3\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: ../data/gedit.desktop.in.in.h:1 ../gedit/gedit-ui.h:53
-msgid "Create a new document"
-msgstr "Crear un documento nuevo"
-
-#: ../data/gedit.desktop.in.in.h:2
+#: ../data/gedit.desktop.in.in.h:1
 msgid "Edit text files"
 msgstr "Edite archivos de texto"
 
-#: ../data/gedit.desktop.in.in.h:3
-#| msgid "_Move to New Window"
-msgid "Open a new window"
-msgstr "Abrir una ventana nueva"
-
-#: ../data/gedit.desktop.in.in.h:4 ../gedit/gedit-print-job.c:805
+#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:805
 msgid "Text Editor"
 msgstr "Editor de textos"
 
-#: ../data/gedit.desktop.in.in.h:5
+#: ../data/gedit.desktop.in.in.h:3
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:6
+#: ../data/gedit.desktop.in.in.h:4
 msgid "gedit Text Editor"
 msgstr "Editor de textos gedit"
 
@@ -802,7 +793,7 @@ msgid "_minutes"
 msgstr "_minutos"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1609
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1626
 msgid "Replace"
 msgstr "Reemplazar"
 
@@ -891,7 +882,7 @@ msgstr ""
 
 #: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
-msgstr "GEOMETRÍA"
+msgstr "GEOMETRÍA"
 
 #: ../gedit/gedit-command-line.c:302
 msgid "Open files and block process until files are closed"
@@ -1129,11 +1120,11 @@ msgid "Unsaved Document %d"
 msgstr "Documento no guardado %d"
 
 #: ../gedit/gedit-documents-panel.c:121 ../gedit/gedit-documents-panel.c:135
-#: ../gedit/gedit-window.c:2442 ../gedit/gedit-window.c:2449
+#: ../gedit/gedit-window.c:2459 ../gedit/gedit-window.c:2466
 msgid "Read-Only"
 msgstr "Sólo lectura"
 
-#: ../gedit/gedit-documents-panel.c:1142 ../gedit/gedit-window.c:3890
+#: ../gedit/gedit-documents-panel.c:1142 ../gedit/gedit-window.c:3907
 msgid "Documents"
 msgstr "Documentos"
 
@@ -1922,11 +1913,15 @@ msgstr "_Documentos"
 msgid "_Help"
 msgstr "Ay_uda"
 
+#: ../gedit/gedit-ui.h:53
+msgid "Create a new document"
+msgstr "Crear un documento nuevo"
+
 #: ../gedit/gedit-ui.h:54
 msgid "_Open..."
 msgstr "_Abrir…"
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1537
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1554
 msgid "Open a file"
 msgstr "Abrir un archivo"
 
@@ -2234,11 +2229,11 @@ msgstr "Usar modo de resaltado %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1107 ../gedit/gedit-window.c:2139
+#: ../gedit/gedit-window.c:1107 ../gedit/gedit-window.c:2156
 #: ../plugins/externaltools/tools/manager.py:138
-#: ../plugins/externaltools/tools/manager.py:435
-#: ../plugins/externaltools/tools/manager.py:546
-#: ../plugins/externaltools/tools/manager.py:865
+#: ../plugins/externaltools/tools/manager.py:441
+#: ../plugins/externaltools/tools/manager.py:552
+#: ../plugins/externaltools/tools/manager.py:871
 msgid "Plain Text"
 msgstr "Texto plano"
 
@@ -2247,59 +2242,59 @@ msgid "Disable syntax highlighting"
 msgstr "Desactivar resaltado de sintaxis"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1430
+#: ../gedit/gedit-window.c:1433
 #, c-format
 msgid "Open '%s'"
 msgstr "Abrir «%s»"
 
-#: ../gedit/gedit-window.c:1539
+#: ../gedit/gedit-window.c:1556
 msgid "Open a recently used file"
 msgstr "Abrir un archivo usado recientemente"
 
-#: ../gedit/gedit-window.c:1545
+#: ../gedit/gedit-window.c:1562
 msgid "Open"
 msgstr "Abrir"
 
-#: ../gedit/gedit-window.c:1603
+#: ../gedit/gedit-window.c:1620
 msgid "Save"
 msgstr "Guardar"
 
-#: ../gedit/gedit-window.c:1605
+#: ../gedit/gedit-window.c:1622
 msgid "Print"
 msgstr "Imprimir"
 
-#: ../gedit/gedit-window.c:1607
+#: ../gedit/gedit-window.c:1624
 msgid "Find"
 msgstr "Buscar"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1767
+#: ../gedit/gedit-window.c:1784
 #, c-format
 msgid "Activate '%s'"
 msgstr "Activar «%s»"
 
-#: ../gedit/gedit-window.c:2117
+#: ../gedit/gedit-window.c:2134
 msgid "Use Spaces"
 msgstr "Usar espacios"
 
-#: ../gedit/gedit-window.c:2190
+#: ../gedit/gedit-window.c:2207
 msgid "Tab Width"
 msgstr "Ancho de la tabulación"
 
-#: ../gedit/gedit-window.c:2299
+#: ../gedit/gedit-window.c:2316
 msgid "Bracket match is out of range"
 msgstr "El corchete de coincidencia está fuera de rango"
 
-#: ../gedit/gedit-window.c:2304
+#: ../gedit/gedit-window.c:2321
 msgid "Bracket match not found"
 msgstr "No se encontró el corchete coincidente"
 
-#: ../gedit/gedit-window.c:2309
+#: ../gedit/gedit-window.c:2326
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Corchete coincidente encontrado en la línea: %d"
 
-#: ../gedit/gedit-window.c:4096
+#: ../gedit/gedit-window.c:4113
 msgid "About gedit"
 msgstr "Acerca de gedit"
 
@@ -2479,7 +2474,7 @@ msgstr "Herramientas externas"
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr ""
-"Un nombre de tipografía Pango. Por ejemplo «Sans 12» o «Monospace Bold 14»."
+"Un nombre de tipografía Pango. Por ejemplo «Sans 12» o «Monospace Bold 14»."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
 msgid ""
@@ -2493,7 +2488,7 @@ msgstr ""
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
 msgid "Whether to use the system font"
-msgstr "Indica si se debe usar la tipografía del sistema"
+msgstr "Indica si se debe usar la tipografía del sistema"
 
 #: ../plugins/externaltools/tools/capture.py:92
 #, python-format
@@ -2520,27 +2515,27 @@ msgstr "Salió"
 msgid "All languages"
 msgstr "Todos los idiomas"
 
-#: ../plugins/externaltools/tools/manager.py:535
-#: ../plugins/externaltools/tools/manager.py:539
-#: ../plugins/externaltools/tools/manager.py:863
+#: ../plugins/externaltools/tools/manager.py:541
+#: ../plugins/externaltools/tools/manager.py:545
+#: ../plugins/externaltools/tools/manager.py:869
 #: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Todos los idiomas"
 
-#: ../plugins/externaltools/tools/manager.py:646
+#: ../plugins/externaltools/tools/manager.py:652
 msgid "New tool"
 msgstr "Herramienta nueva"
 
-#: ../plugins/externaltools/tools/manager.py:777
+#: ../plugins/externaltools/tools/manager.py:783
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr "Este acelerador ya está vinculado a %s"
 
-#: ../plugins/externaltools/tools/manager.py:828
+#: ../plugins/externaltools/tools/manager.py:834
 msgid "Type a new accelerator, or press Backspace to clear"
 msgstr "Teclee un acelerador nuevo , o pulse Retroceder para limpiar"
 
-#: ../plugins/externaltools/tools/manager.py:830
+#: ../plugins/externaltools/tools/manager.py:836
 msgid "Type a new accelerator"
 msgstr "Teclee un acelerador nuevo"
 
@@ -3114,8 +3109,8 @@ msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
 msgstr ""
-"Si es cierto, la terminal usará la tipografía global estándar del escritorio "
-"si ésta es de ancho fijo (y la tipografía más parecida a ésta)."
+"Si es cierto, la terminal usará la tipografía global estándar del escritorio "
+"si ésta es de ancho fijo (y la tipografía más parecida a ésta)."
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid "The command color text"
@@ -3176,7 +3171,7 @@ msgid "Create new snippet"
 msgstr "Crear un recorte nuevo"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:5
-#: ../plugins/snippets/snippets/manager.py:393
+#: ../plugins/snippets/snippets/manager.py:399
 msgid "Delete selected snippet"
 msgstr "Borrar el recorte seleccionado"
 
@@ -3193,7 +3188,7 @@ msgid "Import Snippets"
 msgstr "Importar recortes"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:770
+#: ../plugins/snippets/snippets/manager.py:776
 msgid "Import snippets"
 msgstr "Importar recortes"
 
@@ -3215,7 +3210,7 @@ msgstr "Atajo de teclado con el que se activa el recorte"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:14
-#: ../plugins/snippets/snippets/manager.py:660
+#: ../plugins/snippets/snippets/manager.py:666
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Palabra con la que se activa el recorte después de pulsar el tabulador"
 
@@ -3252,12 +3247,12 @@ msgstr "Añadir un nuevo recorte…"
 msgid "Global"
 msgstr "Global"
 
-#: ../plugins/snippets/snippets/manager.py:390
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Revert selected snippet"
 msgstr "Revertir el recorte seleccionado"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:653
+#: ../plugins/snippets/snippets/manager.py:659
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
@@ -3265,75 +3260,75 @@ msgstr ""
 "Este no es un disparador válido. Los disparadores pueden contener letras o "
 "un solo carácter no alfanumérico como {,[, etcétera."
 
-#: ../plugins/snippets/snippets/manager.py:749
+#: ../plugins/snippets/snippets/manager.py:755
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "Ocurrió el siguiente error al importar: %s"
 
-#: ../plugins/snippets/snippets/manager.py:756
+#: ../plugins/snippets/snippets/manager.py:762
 msgid "Import successfully completed"
 msgstr "Importación completada satisfactoriamente"
 
-#: ../plugins/snippets/snippets/manager.py:775
-#: ../plugins/snippets/snippets/manager.py:861
-#: ../plugins/snippets/snippets/manager.py:924
+#: ../plugins/snippets/snippets/manager.py:781
+#: ../plugins/snippets/snippets/manager.py:867
+#: ../plugins/snippets/snippets/manager.py:930
 msgid "All supported archives"
 msgstr "Todos los archivos soportados"
 
-#: ../plugins/snippets/snippets/manager.py:776
-#: ../plugins/snippets/snippets/manager.py:862
-#: ../plugins/snippets/snippets/manager.py:925
+#: ../plugins/snippets/snippets/manager.py:782
+#: ../plugins/snippets/snippets/manager.py:868
+#: ../plugins/snippets/snippets/manager.py:931
 msgid "Gzip compressed archive"
 msgstr "Archivo comprimido con Gzip"
 
-#: ../plugins/snippets/snippets/manager.py:777
-#: ../plugins/snippets/snippets/manager.py:863
-#: ../plugins/snippets/snippets/manager.py:926
+#: ../plugins/snippets/snippets/manager.py:783
+#: ../plugins/snippets/snippets/manager.py:869
+#: ../plugins/snippets/snippets/manager.py:932
 msgid "Bzip2 compressed archive"
 msgstr "Archivador comprimido con Bzip"
 
-#: ../plugins/snippets/snippets/manager.py:778
+#: ../plugins/snippets/snippets/manager.py:784
 msgid "Single snippets file"
 msgstr "Archivo individual de recortes"
 
-#: ../plugins/snippets/snippets/manager.py:779
-#: ../plugins/snippets/snippets/manager.py:865
-#: ../plugins/snippets/snippets/manager.py:928
+#: ../plugins/snippets/snippets/manager.py:785
+#: ../plugins/snippets/snippets/manager.py:871
+#: ../plugins/snippets/snippets/manager.py:934
 msgid "All files"
 msgstr "Todos los archivos"
 
-#: ../plugins/snippets/snippets/manager.py:791
+#: ../plugins/snippets/snippets/manager.py:797
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "Ocurrió el siguiente error al exportar: %s"
 
-#: ../plugins/snippets/snippets/manager.py:795
+#: ../plugins/snippets/snippets/manager.py:801
 msgid "Export successfully completed"
 msgstr "Exportación completada satisfactoriamente"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:835
-#: ../plugins/snippets/snippets/manager.py:902
+#: ../plugins/snippets/snippets/manager.py:841
+#: ../plugins/snippets/snippets/manager.py:908
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr ""
 "¿Quiere incluir los recortes del <b>sistema</b> seleccionados en su "
 "exportación?"
 
-#: ../plugins/snippets/snippets/manager.py:850
-#: ../plugins/snippets/snippets/manager.py:920
+#: ../plugins/snippets/snippets/manager.py:856
+#: ../plugins/snippets/snippets/manager.py:926
 msgid "There are no snippets selected to be exported"
 msgstr "No hay recortes seleccionados para exportar"
 
-#: ../plugins/snippets/snippets/manager.py:855
-#: ../plugins/snippets/snippets/manager.py:893
+#: ../plugins/snippets/snippets/manager.py:861
+#: ../plugins/snippets/snippets/manager.py:899
 msgid "Export snippets"
 msgstr "Exportar recortes"
 
-#: ../plugins/snippets/snippets/manager.py:1034
+#: ../plugins/snippets/snippets/manager.py:1040
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "Teclee un acelerador nuevo o pulse Retroceso para limpiar"
 
-#: ../plugins/snippets/snippets/manager.py:1036
+#: ../plugins/snippets/snippets/manager.py:1042
 msgid "Type a new shortcut"
 msgstr "Teclee un acelerador nuevo"
 
@@ -3722,6 +3717,10 @@ msgstr ""
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
 msgstr "Proveedor de datos de Zeitgeist"
+
+#~| msgid "_Move to New Window"
+#~ msgid "Open a new window"
+#~ msgstr "Abrir una ventana nueva"
 
 #~ msgid ""
 #~ "List of VFS schemes gedit supports in write mode. The 'file' scheme is "
