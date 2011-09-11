@@ -37,7 +37,6 @@
 
 #define GEDIT_VIEW_FRAME_SEARCH_DIALOG_TIMEOUT (30*1000) /* 30 seconds */
 
-#define MIN_SEARCH_COMPLETION_KEY_LEN	3
 #define SEARCH_POPUP_MARGIN 12
 
 #define GEDIT_VIEW_FRAME_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE((object), GEDIT_TYPE_VIEW_FRAME, GeditViewFramePrivate))
@@ -100,9 +99,6 @@ typedef enum
 	GEDIT_SEARCH_ENTRY_NORMAL,
 	GEDIT_SEARCH_ENTRY_NOT_FOUND
 } GeditSearchEntryBgColor;
-
-/* The search entry completion is shared among all the views */
-GtkListStore *search_completion_model = NULL;
 
 G_DEFINE_TYPE_WITH_CODE (GeditViewFrame, gedit_view_frame, GTK_TYPE_BOX,
                          g_type_add_class_private (g_define_type_id, sizeof (GeditViewFrameClassPrivate)))
@@ -209,69 +205,6 @@ hide_search_widget (GeditViewFrame *frame,
 
 	g_signal_handler_unblock (frame->priv->search_entry,
 	                          frame->priv->search_entry_focus_out_id);
-}
-
-static void
-add_search_completion_entry (const gchar *str)
-{
-	gchar        *text;
-	gboolean      valid;
-	GtkTreeModel *model;
-	GtkTreeIter   iter;
-
-	if (str == NULL)
-		return;
-
-	text = gedit_utils_unescape_search_text (str);
-
-	if (g_utf8_strlen (text, -1) < MIN_SEARCH_COMPLETION_KEY_LEN)
-	{
-		g_free (text);
-		return;
-	}
-
-	g_return_if_fail (GTK_IS_TREE_MODEL (search_completion_model));
-
-	model = GTK_TREE_MODEL (search_completion_model);
-
-	/* Get the first iter in the list */
-	valid = gtk_tree_model_get_iter_first (model, &iter);
-
-	while (valid)
-	{
-		/* Walk through the list, reading each row */
-		gchar *str_data;
-
-		gtk_tree_model_get (model,
-		                    &iter,
-		                    0,
-		                    &str_data,
-		                    -1);
-
-		if (strcmp (text, str_data) == 0)
-		{
-			g_free (text);
-			g_free (str_data);
-			gtk_list_store_move_after (GTK_LIST_STORE (model),
-			                           &iter,
-			                           NULL);
-
-			return;
-		}
-
-		g_free (str_data);
-
-		valid = gtk_tree_model_iter_next (model, &iter);
-	}
-
-	gtk_list_store_prepend (GTK_LIST_STORE (model), &iter);
-	gtk_list_store_set (GTK_LIST_STORE (model),
-	                    &iter,
-	                    0,
-	                    text,
-	                    -1);
-
-	g_free (text);
 }
 
 static gboolean
@@ -451,8 +384,6 @@ search_again (GeditViewFrame *frame,
 	}
 
 	entry_text = gtk_entry_get_text (GTK_ENTRY (frame->priv->search_entry));
-
-	add_search_completion_entry (entry_text);
 
 	run_search (frame,
 	            entry_text,
@@ -831,64 +762,6 @@ search_entry_insert_text (GtkEditable    *editable,
 	}
 }
 
-static gboolean
-completion_func (GtkEntryCompletion *completion,
-                 const gchar        *key,
-		 GtkTreeIter        *iter,
-		 gpointer            data)
-{
-	gchar *item = NULL;
-	gboolean ret = FALSE;
-	GtkTreeModel *model;
-	GeditViewFramePrivate *priv = GEDIT_VIEW_FRAME (data)->priv;
-	const gchar *real_key;
-
-	if (priv->search_mode == GOTO_LINE)
-		return FALSE;
-
-	real_key = gtk_entry_get_text (GTK_ENTRY (gtk_entry_completion_get_entry (completion)));
-
-	if (g_utf8_strlen (real_key, -1) <= MIN_SEARCH_COMPLETION_KEY_LEN)
-		return FALSE;
-
-	model = gtk_entry_completion_get_model (completion);
-	g_return_val_if_fail (gtk_tree_model_get_column_type (model, 0) == G_TYPE_STRING,
-	                      FALSE);
-
-	gtk_tree_model_get (model,
-	                    iter,
-	                    0,
-	                    &item,
-	                    -1);
-
-	if (item == NULL)
-		return FALSE;
-
-	if (GEDIT_SEARCH_IS_CASE_SENSITIVE (priv->search_flags))
-	{
-		if (!strncmp (real_key, item, strlen (real_key)))
-			ret = TRUE;
-	}
-	else
-	{
-		gchar *normalized_string;
-		gchar *case_normalized_string;
-		
-		normalized_string = g_utf8_normalize (item, -1, G_NORMALIZE_ALL);
-		case_normalized_string = g_utf8_casefold (normalized_string, -1);
-
-		if (!strncmp (key, case_normalized_string, strlen (key)))
-			ret = TRUE;
-
-		g_free (normalized_string);
-		g_free (case_normalized_string);
-	}
-
-	g_free (item);
-
-	return ret;
-}
-
 static void
 customize_for_search_mode (GeditViewFrame *frame)
 {
@@ -1069,7 +942,6 @@ create_search_widget (GeditViewFrame *frame)
 {
 	GtkWidget          *search_widget;
 	GtkWidget          *button;
-	GtkEntryCompletion *completion;
 
 	search_widget = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
 	gtk_widget_show (search_widget);
@@ -1110,36 +982,6 @@ create_search_widget (GeditViewFrame *frame)
 
 	gtk_container_add (GTK_CONTAINER (search_widget),
 	                   frame->priv->search_entry);
-
-	if (search_completion_model == NULL)
-	{
-		/* Create a tree model and use it as the completion model */
-		search_completion_model = gtk_list_store_new (1, G_TYPE_STRING);
-	}
-
-	/* Create the completion object for the search entry */
-	completion = gtk_entry_completion_new ();
-	gtk_entry_completion_set_model (completion,
-	                                GTK_TREE_MODEL (search_completion_model));
-
-	/* Use model column 0 as the text column */
-	gtk_entry_completion_set_text_column (completion, 0);
-
-	gtk_entry_completion_set_minimum_key_length (completion,
-	                                             MIN_SEARCH_COMPLETION_KEY_LEN);
-
-	gtk_entry_completion_set_popup_completion (completion, FALSE);
-	gtk_entry_completion_set_inline_completion (completion, TRUE);
-
-	gtk_entry_completion_set_match_func (completion,
-	                                     completion_func,
-	                                     frame,
-	                                     NULL);
-
-	/* Assign the completion to the entry */
-	gtk_entry_set_completion (GTK_ENTRY (frame->priv->search_entry),
-	                          completion);
-	g_object_unref (completion);
 
 	customize_for_search_mode (frame);
 
@@ -1255,7 +1097,6 @@ init_search_entry (GeditViewFrame *frame)
 		{
 			g_free (frame->priv->old_search_text);
 			frame->priv->old_search_text = old_find_text;
-			add_search_completion_entry (old_find_text);
 			g_signal_handler_block (frame->priv->search_entry,
 			                        frame->priv->search_entry_changed_id);
 
