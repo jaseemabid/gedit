@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: gu\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
 "cgi?product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-08-04 09:27+0000\n"
-"PO-Revision-Date: 2011-09-08 11:35+0000\n"
+"POT-Creation-Date: 2011-09-08 06:06+0000\n"
+"PO-Revision-Date: 2011-09-19 15:45+0000\n"
 "Last-Translator: \n"
 "Language-Team: gu_IN <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -54,10 +54,9 @@ msgid "Active plugins"
 msgstr "સક્રિય પ્લગઈનો"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:3
-#, fuzzy
 #| msgid "Auto indent"
 msgid "Automatic indent"
-msgstr "આપોઆપ હાંસિયાથી દૂર કરો"
+msgstr "આપોઆપ હાંસિયો"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:4
 msgid "Automatically Detected Encodings"
@@ -68,7 +67,6 @@ msgid "Autosave"
 msgstr "સ્વયં સંગ્રહ કરો"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:6
-#, fuzzy
 #| msgid "Auto Save Interval"
 msgid "Autosave Interval"
 msgstr "અંતરાલ વચ્ચે સ્વયં સંગ્રહ"
@@ -725,7 +723,6 @@ msgid "Highlight current _line"
 msgstr "વર્તમાન લીટી પ્રકાશિત કરો (_l)"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
-#, fuzzy
 #| msgid "Highlight matching _bracket"
 msgid "Highlight matching _brackets"
 msgstr "કૌંસ સરખામણી પ્રકાશિત કરો (_b)"
@@ -869,7 +866,7 @@ msgstr "હાલના gedit ના નમૂનામાં નવો દસ�
 
 #: ../gedit/gedit-command-line.c:294
 msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
-msgstr ""
+msgstr "X ભૂમિતિ વિન્ડો માપ સુયોજિત કરો (WIDTHxHEIGHT+X+Y)"
 
 #: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
@@ -877,7 +874,7 @@ msgstr "GEOMETRY"
 
 #: ../gedit/gedit-command-line.c:302
 msgid "Open files and block process until files are closed"
-msgstr ""
+msgstr "ફાઇલોને ખોલો અને પ્રક્રિયાઓ બ્લોક કરો જ્યાં સુધી ફાઇલો બંધ થઇ જાય"
 
 #: ../gedit/gedit-command-line.c:310
 msgid "Run gedit in the background"
@@ -885,7 +882,7 @@ msgstr "પાશ્ર્વભાગમાં gedit ને ચલાવો"
 
 #: ../gedit/gedit-command-line.c:318
 msgid "Run gedit in standalone mode"
-msgstr ""
+msgstr "standalone સ્થિતિમાં gedit ને ચલાવો"
 
 #: ../gedit/gedit-command-line.c:327
 msgid "[FILE...] [+LINE[:COLUMN]]"
@@ -933,7 +930,7 @@ msgstr "શું તમે તેને સંગ્રહ થઈ રહેલ 
 
 #: ../gedit/gedit-commands-file.c:614
 msgid "Save the file using compression?"
-msgstr ""
+msgstr "સંકોચનની મદદથી ફાઇલને સંગ્રહો છો?"
 
 #: ../gedit/gedit-commands-file.c:615
 #, c-format
@@ -944,11 +941,11 @@ msgstr ""
 
 #: ../gedit/gedit-commands-file.c:617
 msgid "_Save Using Compression"
-msgstr ""
+msgstr "સંકોચનની મદદથી સંગ્રહો (_S)"
 
 #: ../gedit/gedit-commands-file.c:621
 msgid "Save the file as plain text?"
-msgstr ""
+msgstr "શું સાદા લખાણ તરીકે ફાઇલને સંગ્રહો છો?"
 
 #: ../gedit/gedit-commands-file.c:622
 #, c-format
@@ -1075,7 +1072,7 @@ msgstr "અસંગ્રહિત દસ્તાવેજ %d"
 msgid "Read-Only"
 msgstr "માત્ર વાંચી શકાય તેવું"
 
-#: ../gedit/gedit-documents-panel.c:1142 ../gedit/gedit-window.c:3907
+#: ../gedit/gedit-documents-panel.c:1143 ../gedit/gedit-window.c:3907
 msgid "Documents"
 msgstr "દસ્તાવેજો"
 
@@ -1582,11 +1579,12 @@ msgstr "પુનઃલાવો (_R)"
 #: ../gedit/gedit-io-error-info-bar.c:1278
 #, c-format
 msgid "Some invalid chars have been detected while saving %s"
-msgstr ""
+msgstr "અમુક અયોગ્ય અક્ષરો શોધાયાં છે જ્યારે %s સંગ્રહી રહ્યા હતા ત્યારે"
 
 #: ../gedit/gedit-io-error-info-bar.c:1294
 msgid "If you continue saving this file you can corrupt the document.  Save anyway?"
 msgstr ""
+"જો તમે આ ફાઇલને સંગ્રહવાનું ચાલુ રાખો તો તમે દસ્તાવેજ ભ્રષ્ટ થઇ શકે છે. કોઇપણરીતે સંગ્રહો?"
 
 #: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:586
 msgid "Empty"
@@ -1618,10 +1616,9 @@ msgid "He_aders and footers:"
 msgstr "હેડરો અને ફૂટરો (_a):"
 
 #: ../gedit/gedit-print-preferences.ui.h:5
-#, fuzzy
 #| msgid "_Line numbers:"
 msgid "Line Numbers"
-msgstr "લીટી ક્રમાંકો (_L):"
+msgstr "લીટી ક્રમાંકો"
 
 #: ../gedit/gedit-print-preferences.ui.h:6
 msgid "Page header"
@@ -1763,73 +1760,73 @@ msgstr "ડિરેક્ટરી '%s' બનાવી શક્યા નહ�
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:744
+#: ../gedit/gedit-tab.c:743
 #, c-format
 msgid "Reverting %s from %s"
 msgstr "%s ને %s માંથી પાછું ઉલટાવી રહ્યા છીએ"
 
-#: ../gedit/gedit-tab.c:751
+#: ../gedit/gedit-tab.c:750
 #, c-format
 msgid "Reverting %s"
 msgstr "%s ઉલટાવી રહ્યા છીએ"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:767
+#: ../gedit/gedit-tab.c:766
 #, c-format
 msgid "Loading %s from %s"
 msgstr "%s ને %s માંથી લાવી રહ્યા છીએ"
 
-#: ../gedit/gedit-tab.c:774
+#: ../gedit/gedit-tab.c:773
 #, c-format
 msgid "Loading %s"
 msgstr "%s લાવી રહ્યા છીએ"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:855
+#: ../gedit/gedit-tab.c:854
 #, c-format
 msgid "Saving %s to %s"
 msgstr "%s ને %s માં સંગ્રહી રહ્યા છીએ"
 
-#: ../gedit/gedit-tab.c:862
+#: ../gedit/gedit-tab.c:861
 #, c-format
 msgid "Saving %s"
 msgstr "%s સંગ્રહી રહ્યા છીએ"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1835
+#: ../gedit/gedit-tab.c:1834
 msgid "RO"
 msgstr "RO"
 
-#: ../gedit/gedit-tab.c:1882
+#: ../gedit/gedit-tab.c:1881
 #, c-format
 msgid "Error opening file %s"
 msgstr "ફાઈલ %s ખોલવામાં ભૂલ"
 
-#: ../gedit/gedit-tab.c:1887
+#: ../gedit/gedit-tab.c:1886
 #, c-format
 msgid "Error reverting file %s"
 msgstr "ફાઈલ %s પુનઃપ્રાપ્ત કરવામાં ભૂલ"
 
-#: ../gedit/gedit-tab.c:1892
+#: ../gedit/gedit-tab.c:1891
 #, c-format
 msgid "Error saving file %s"
 msgstr "ફાઈલ %s નો સંગ્રહ કરવામાં ભૂલ"
 
-#: ../gedit/gedit-tab.c:1913
+#: ../gedit/gedit-tab.c:1912
 msgid "Unicode (UTF-8)"
 msgstr "યુનિકોડ (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1920
+#: ../gedit/gedit-tab.c:1919
 msgid "Name:"
 msgstr "નામ:"
 
-#: ../gedit/gedit-tab.c:1921
+#: ../gedit/gedit-tab.c:1920
 msgid "MIME Type:"
 msgstr "MIME પ્રકાર:"
 
-#: ../gedit/gedit-tab.c:1922
+#: ../gedit/gedit-tab.c:1921
 msgid "Encoding:"
 msgstr "સંગ્રહપદ્ધતિ:"
 
@@ -2152,25 +2149,25 @@ msgid "/ on %s"
 msgstr "/ on %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:624
+#: ../gedit/gedit-view-frame.c:623
 msgid "_Wrap Around"
 msgstr "ફરતે લપેટો (_W)"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:634
+#: ../gedit/gedit-view-frame.c:633
 msgid "Match _Entire Word Only"
 msgstr "માત્ર આખો શબ્દ જ સરખાવો (_E)"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:644
+#: ../gedit/gedit-view-frame.c:643
 msgid "_Match Case"
 msgstr "કેસ સરખાવો (_M)"
 
-#: ../gedit/gedit-view-frame.c:903
+#: ../gedit/gedit-view-frame.c:902
 msgid "String you want to search for"
 msgstr "તમે શોધવા માંગો તે શબ્દમાળા"
 
-#: ../gedit/gedit-view-frame.c:912
+#: ../gedit/gedit-view-frame.c:909
 msgid "Line you want to move the cursor to"
 msgstr "તમે જે લીટીમાં કર્સર ખસેડવા માંગો તે"
 
@@ -2426,7 +2423,7 @@ msgstr "બાહ્ય સાધનો"
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
-msgstr ""
+msgstr "Pango ફોન્ટ નામ. ઉદાહરણો \"Sans 12\" અથવા \"Monospace Bold 14\" છે."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
 msgid ""
@@ -2497,7 +2494,6 @@ msgid "Add Tool"
 msgstr "સાધન ઉમેરો"
 
 #: ../plugins/externaltools/tools/tools.ui.h:3
-#| msgid "Add new empty folder"
 msgid "Add a new tool"
 msgstr "નવું સાધન ઉમેરો"
 
@@ -2550,10 +2546,9 @@ msgid "Local files only"
 msgstr "માત્ર સ્થાનિક ફાઈલો જ"
 
 #: ../plugins/externaltools/tools/tools.ui.h:17
-#, fuzzy
 #| msgid "Manage _External Tools..."
 msgid "Manage External Tools"
-msgstr "બાહ્ય સાધનો ને સંચાલિત કરો (_E)..."
+msgstr "બાહ્ય સાધનો ને સંચાલિત કરો"
 
 #: ../plugins/externaltools/tools/tools.ui.h:18
 msgid "Nothing"
@@ -2568,7 +2563,6 @@ msgid "Remove Tool"
 msgstr "સાધન દૂર કરો"
 
 #: ../plugins/externaltools/tools/tools.ui.h:21
-#| msgid "Revert selected snippet"
 msgid "Remove selected tool"
 msgstr "પસંદ થયેલ સાધનને દૂર કરો"
 
@@ -2581,16 +2575,14 @@ msgid "Replace current selection"
 msgstr "વર્તમાન પસંદગી બદલો"
 
 #: ../plugins/externaltools/tools/tools.ui.h:24
-#, fuzzy
 #| msgid "_Revert"
 msgid "Revert Tool"
-msgstr "પહેલાની સ્થિતિમાં લાવો (_R)"
+msgstr "સાધનને પહેલાંની સ્થિતિમાં લાવો"
 
 #: ../plugins/externaltools/tools/tools.ui.h:25
-#, fuzzy
 #| msgid "_Revert"
 msgid "Revert tool"
-msgstr "પહેલાની સ્થિતિમાં લાવો (_R)"
+msgstr "સાધનને પહેલાંની સ્થિતિમાં લાવો"
 
 #: ../plugins/externaltools/tools/tools.ui.h:26
 msgid "Untitled documents only"
@@ -3130,7 +3122,6 @@ msgid "Activation"
 msgstr "સક્રિયકરણ"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:3
-#| msgid "Snippets"
 msgid "Add Snippet"
 msgstr "સ્નીપેટ ઉમેરો"
 
@@ -3144,7 +3135,6 @@ msgid "Delete selected snippet"
 msgstr "પસંદ કરેલ સ્નિપેટ કાઢી નાખો"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#, fuzzy
 #| msgid "Export snippets"
 msgid "Export Snippets"
 msgstr "સ્નીપેટો નિકાસ કરો"
@@ -3154,7 +3144,6 @@ msgid "Export selected snippets"
 msgstr "પસંદિત સ્નિપેટોની નિકાસ કરો"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:8
-#, fuzzy
 #| msgid "Import snippets"
 msgid "Import Snippets"
 msgstr "સ્નીપેટની આયાત કરો"
@@ -3165,12 +3154,10 @@ msgid "Import snippets"
 msgstr "સ્નીપેટની આયાત કરો"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:10
-#| msgid "Manage snippets"
 msgid "Manage Snippets"
 msgstr "સ્નીપેટ સંચાલિત કરો"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:11
-#| msgid "Snippets"
 msgid "Remove Snippet"
 msgstr "સ્નીપેટ દૂર કરો"
 
@@ -3203,11 +3190,11 @@ msgstr "સ્નીપેટો (_S):"
 msgid "_Tab trigger:"
 msgstr "ટેબ ફેરવનાર (_T):"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:143
+#: ../plugins/snippets/snippets/windowactivatable.py:148
 msgid "Manage _Snippets..."
 msgstr "સ્નીપેટોની વ્યવસ્થા કરો (_S)..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:144
+#: ../plugins/snippets/snippets/windowactivatable.py:149
 msgid "Manage snippets"
 msgstr "સ્નીપેટોની વ્યવસ્થા કરો"
 
@@ -3623,6 +3610,7 @@ msgid ""
 "If the user should be prompted for a format or if the selected or custom "
 "format should be used."
 msgstr ""
+"જો વપરાશકર્તાએ બંધારણ માટે પૂછવુ જોઇએ અથવા જો પસંદ થયેલ અથવા વૈવિધ્ય બંધારણ વાપરેલ હોવુ જોઇએ."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
 msgid "Prompt Type"
@@ -3634,11 +3622,11 @@ msgstr "પસંદ થયેલ બંધારણ"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
 msgid "The custom format used when inserting the date/time."
-msgstr ""
+msgstr "વૈવિધ્ય બંધારણ વાપરેલ છે જ્યારે તારીખ/સમયને દાખલ કરી રહ્યા હોય."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
 msgid "The selected format used when inserting the date/time."
-msgstr ""
+msgstr "પસંદ થયેલ બંધારણ વાપરેલ છે જ્યારે તારીખ/સમયને દાખલ કરી રહ્યા હોય."
 
 #. Translators: Use the more common date format in your locale
 #: ../plugins/time/gedit-time-dialog.ui.h:2
