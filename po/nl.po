@@ -21,15 +21,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-18 21:39+0200\n"
-"PO-Revision-Date: 2011-08-16 09:19+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=gedit&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-09-17 14:39+0000\n"
+"PO-Revision-Date: 2011-09-18 11:14+0200\n"
 "Last-Translator: Hannie Dumoleyn <hannie@ubuntu.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
-"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.2\n"
 
@@ -137,11 +138,11 @@ msgstr "Spaties invoegen"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:20
 msgid "Line Number Font for Printing"
-msgstr "Lettertype voor regelnummers bij afdrukken"
+msgstr "Afdruklettertype voor regelnummers"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:21
 msgid "Line Wrapping Mode"
-msgstr "Regelafbrekingsmodus"
+msgstr "Regelafbreekmodus"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
 msgid ""
@@ -170,16 +171,16 @@ msgstr "Maximum aantal recente bestanden"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
 msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use "
-"\"-1\" for unlimited number of actions."
+"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
+"\" for unlimited number of actions."
 msgstr ""
 "Maximum aantal acties dat gedit ongedaan kan maken of opnieuw kan doen. "
 "Gebruik ‘-1’ voor een ongelimiteerd aantal acties."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
 msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use "
-"\"-1\" for unlimited number of actions. Deprecated since 2.12.0"
+"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
+"\" for unlimited number of actions. Deprecated since 2.12.0"
 msgstr ""
 "Maximum aantal acties dat gedit ongedaan kan maken of opnieuw kan doen. "
 "Gebruik ‘-1’ voor een ongelimiteerd aantal acties. Wordt afgeraden sinds "
@@ -466,7 +467,7 @@ msgstr ""
 "Of het standaard vaste breedte-systeemlettertype gebruikt dient te worden "
 "bij het bewerken van tekst in plaats van een lettertype specifiek voor "
 "gedit. Als deze optie uitgeschakeld is, zal het lettertype worden gebruikt "
-"dat wordt aangegeven in de optie ‘Editor-lettertype’, in plaats van het "
+"dat wordt aangegeven in de optie ‘Editorlettertype’, in plaats van het "
 "systeemlettertype."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
@@ -538,8 +539,8 @@ msgstr[1] ""
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:454
 msgid "If you don't save, changes from the last hour will be permanently lost."
 msgstr ""
-"Als u niet opslaat, zijn de wijzigingen van het afgelopen uur definitief "
-"verloren."
+"Als u niet opslaat, zullen de wijzigingen van het afgelopen uur definitief "
+"verloren gaan."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:460
 #, c-format
@@ -563,10 +564,10 @@ msgid ""
 msgid_plural ""
 "If you don't save, changes from the last %d hours will be permanently lost."
 msgstr[0] ""
-"Als u niet opslaat, zijn de wijzigingen van het afgelopen uur definitief "
-"verloren."
+"Als u niet opslaat, zullen de wijzigingen van het afgelopen uur definitief "
+"verloren gaan."
 msgstr[1] ""
-"Als u niet opslaat, zijn de wijzigingen van de afgelopen %d uur definitief "
+"Als u niet opslaat, zullen de wijzigingen van de afgelopen %d uur definitief "
 "verloren."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:519
@@ -815,7 +816,7 @@ msgstr "_Enkel complete woorden"
 
 #: ../gedit/dialogs/gedit-replace-dialog.ui.h:3
 msgid "Replace All"
-msgstr "_Alles vervangen"
+msgstr "Alles vervangen"
 
 #: ../gedit/dialogs/gedit-replace-dialog.ui.h:4
 msgid "Replace _with: "
@@ -910,7 +911,8 @@ msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 "%s\n"
-"Voer '%s --help' uit voor een volledige lijst van opdrachtregelparameters.\n"
+"Gebruik ‘%s --help’ voor een volledige lijst van beschikbare opties voor de "
+"opdrachtregel.\n"
 
 #: ../gedit/gedit-commands-file.c:272
 #, c-format
@@ -1187,7 +1189,7 @@ msgstr "Turks"
 
 #: ../gedit/gedit-encodings.c:173
 msgid "Nordic"
-msgstr "Noors"
+msgstr "Noord-Europees"
 
 #: ../gedit/gedit-encodings.c:177
 msgid "Celtic"
@@ -1303,13 +1305,14 @@ msgstr "Kan het bestand ‘%s’ niet vinden."
 #: ../gedit/gedit-io-error-info-bar.c:248
 #: ../gedit/gedit-io-error-info-bar.c:255
 msgid "Please check that you typed the location correctly and try again."
-msgstr "Ga na of u de locatie correct heeft ingevoerd en probeer het opnieuw."
+msgstr ""
+"Controleer of u de locatie juist heeft ingevoerd en probeer het opnieuw."
 
 #. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
 #: ../gedit/gedit-io-error-info-bar.c:224
 #, c-format
 msgid "gedit cannot handle %s locations."
-msgstr "de tekst-editor kan %s-locaties niet aan."
+msgstr "gedit kan %s-locaties niet aan."
 
 #: ../gedit/gedit-io-error-info-bar.c:230
 msgid "gedit cannot handle this location."
@@ -1732,7 +1735,7 @@ msgstr "van"
 
 #: ../gedit/gedit-print-preview.c:641
 msgid "Page total"
-msgstr "Totaal pagina's"
+msgstr "Totaal aantal pagina's"
 
 #: ../gedit/gedit-print-preview.c:642
 msgid "The total number of pages in the document"
@@ -1773,11 +1776,11 @@ msgstr "Pagina %d van %d"
 
 #: ../gedit/gedit-print-preview.c:967
 msgid "Page Preview"
-msgstr "Paginavoorbeeld"
+msgstr "Afdrukvoorbeeld"
 
 #: ../gedit/gedit-print-preview.c:968
 msgid "The preview of a page in the document to be printed"
-msgstr "Een voorproefje van een pagina in het af te drukken document"
+msgstr "Een voorbeeld van een pagina in het af te drukken document"
 
 #. Use spaces to leave padding proportional to the font size
 #: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
@@ -1813,7 +1816,7 @@ msgstr ""
 #: ../gedit/gedit-tab.c:743
 #, c-format
 msgid "Reverting %s from %s"
-msgstr "Terugzetten %s> vanaf %s"
+msgstr "%s terugzetten vanaf %s"
 
 #: ../gedit/gedit-tab.c:750
 #, c-format
@@ -1825,7 +1828,7 @@ msgstr "Terugzetten van %s>"
 #: ../gedit/gedit-tab.c:766
 #, c-format
 msgid "Loading %s from %s"
-msgstr "Laden %s vanuit %s"
+msgstr "%s laden vanaf %s"
 
 #: ../gedit/gedit-tab.c:773
 #, c-format
@@ -1852,12 +1855,12 @@ msgstr "AL"
 #: ../gedit/gedit-tab.c:1881
 #, c-format
 msgid "Error opening file %s"
-msgstr "Er is een fout opgetreden bij het laden van bestand %s."
+msgstr "Fout bij openen van bestand %s"
 
 #: ../gedit/gedit-tab.c:1886
 #, c-format
 msgid "Error reverting file %s"
-msgstr "Er is een fout opgetreden bij het terugzetten van het document %s."
+msgstr "Fout bij terugzetten van bestand %s"
 
 #: ../gedit/gedit-tab.c:1891
 #, c-format
@@ -2199,25 +2202,25 @@ msgid "/ on %s"
 msgstr "/ op %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:624
+#: ../gedit/gedit-view-frame.c:554
 msgid "_Wrap Around"
 msgstr "Doo_rgaan na documenteinde"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:634
+#: ../gedit/gedit-view-frame.c:564
 msgid "Match _Entire Word Only"
-msgstr "_Enkel complete woorden"
+msgstr "_Alleen hele woorden"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:644
+#: ../gedit/gedit-view-frame.c:574
 msgid "_Match Case"
 msgstr "Hoo_fdlettergevoelig"
 
-#: ../gedit/gedit-view-frame.c:903
+#: ../gedit/gedit-view-frame.c:775
 msgid "String you want to search for"
-msgstr "Tekenreeks om te zoeken"
+msgstr "Te zoeken tekenreeks"
 
-#: ../gedit/gedit-view-frame.c:912
+#: ../gedit/gedit-view-frame.c:782
 msgid "Line you want to move the cursor to"
 msgstr "Regel waar u de cursor heen wilt verplaatsen"
 
@@ -2279,7 +2282,7 @@ msgstr "Spaties gebruiken"
 
 #: ../gedit/gedit-window.c:2207
 msgid "Tab Width"
-msgstr "Tabbreedte"
+msgstr "Tab-breedte"
 
 #: ../gedit/gedit-window.c:2316
 msgid "Bracket match is out of range"
@@ -2305,7 +2308,7 @@ msgstr "Lettervorm wijzigen"
 
 #: ../plugins/changecase/changecase.plugin.desktop.in.h:2
 msgid "Changes the case of selected text."
-msgstr "Verandert lettervorm van geselecteerde tekst"
+msgstr "De lettervorm van geselecteerde tekst omzetten."
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:242
 msgid "C_hange Case"
@@ -2317,7 +2320,7 @@ msgstr "Allemaal _hoofdletters"
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:244
 msgid "Change selected text to upper case"
-msgstr "De geselecteerde-tekst omzetten naar hoofdletters"
+msgstr "De geselecteerde tekst omzetten naar hoofdletters"
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:246
 msgid "All _Lower Case"
@@ -2325,7 +2328,7 @@ msgstr "Allemaal _kleine letters"
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:247
 msgid "Change selected text to lower case"
-msgstr "De geselecteerde-tekst omzetten naar kleine letters"
+msgstr "De geselecteerde tekst omzetten naar kleine letters"
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:249
 msgid "_Invert Case"
@@ -2391,8 +2394,8 @@ msgid ""
 "Analyzes the current document and reports the number of words, lines, "
 "characters and non-space characters in it."
 msgstr ""
-"Analyseert het huidige document en meldt het aantal woorden, regels, "
-"karakters en niet-spatie-karakters erin."
+"Analyseert het huidige document en meldt het aantal woorden, regels, tekens "
+"en niet-spatietekens erin."
 
 #: ../plugins/docinfo/docinfo.plugin.desktop.in.h:2
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:6
@@ -2536,11 +2539,11 @@ msgstr "Deze sneltoets is al gekoppeld aan %s"
 
 #: ../plugins/externaltools/tools/manager.py:834
 msgid "Type a new accelerator, or press Backspace to clear"
-msgstr "Type een nieuwe sneltoets, of druk op Backspace om te wissen"
+msgstr "Typ een nieuwe sneltoets, of druk op Backspace om te wissen"
 
 #: ../plugins/externaltools/tools/manager.py:836
 msgid "Type a new accelerator"
-msgstr "Type een nieuwe sneltoets"
+msgstr "Typ een nieuwe sneltoets"
 
 #: ../plugins/externaltools/tools/outputpanel.py:120
 msgid "Stopped."
@@ -2702,11 +2705,11 @@ msgstr "‘make’ uitvoeren in de documentmap"
 
 #: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:1
 msgid "Remove trailing spaces"
-msgstr "Afsluitende spaties verwijderen"
+msgstr "Spaties aan einde van regel verwijderen"
 
 #: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:2
 msgid "Remove useless trailing spaces in your file"
-msgstr "Nutteloze afsluitende spaties in uw bestand verwijderen"
+msgstr "Nutteloze spaties aan einde van regels uit uw bestand verwijderen"
 
 #: ../plugins/externaltools/data/run-command.desktop.in.h:1
 msgid "Execute a custom command and put its output in a new document"
@@ -2776,7 +2779,7 @@ msgstr ""
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:882
 msgid "An error occurred while setting a root directory"
-msgstr "Er is een fout opgetreden tijdens het instellen van de root-map"
+msgstr "Er is een fout opgetreden tijdens het instellen van de hoofdmap"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:885
 msgid "An error occurred while loading a directory"
@@ -2888,7 +2891,7 @@ msgstr "Geselecteerd bestand openen"
 # boven/op
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:853
 msgid "Up"
-msgstr "Boven"
+msgstr "Omhoog"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:854
 msgid "Open the parent folder"
@@ -3002,7 +3005,7 @@ msgstr "Overeenkomst in bestands_naam"
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:2187
 #, c-format
 msgid "No mount object for mounted volume: %s"
-msgstr "Geen koppelobject voor aangekoppeld volumen: %s"
+msgstr "Geen koppelobject voor aangekoppeld volume: %s"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:2264
 #, c-format
@@ -3012,7 +3015,7 @@ msgstr "Kon media niet openen: %s"
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:2311
 #, c-format
 msgid "Could not mount volume: %s"
-msgstr "Kon volumen niet aankoppelen: %s"
+msgstr "Kon volume niet aankoppelen: %s"
 
 #. ex:ts=8:noet:
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:1
@@ -3021,7 +3024,7 @@ msgstr "Herstellen van locaties op afstand gebruiken"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:2
 msgid "File Browser Filter Mode"
-msgstr "Bestandsverkenner-filtermodus"
+msgstr "Filtermodus van de bestandsverkenner"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:3
 msgid "File Browser Filter Pattern"
@@ -3145,12 +3148,12 @@ msgstr "De tekstkleur voor foutmeldingen"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
 msgid "Interactive Python console standing in the bottom panel"
-msgstr "Interactieve python-opdrachtregel in het onderpaneel"
+msgstr "Interactieve Python-opdrachtregel in het onderpaneel"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
 #: ../plugins/pythonconsole/pythonconsole/__init__.py:52
 msgid "Python Console"
-msgstr "Python Console"
+msgstr "Python-opdrachtregel"
 
 #. ex:et:ts=4:
 #: ../plugins/pythonconsole/pythonconsole/config.ui.h:1
@@ -3421,7 +3424,7 @@ msgstr "S_orteren…"
 
 #: ../plugins/sort/gedit-sort-plugin.c:90
 msgid "Sort the current document or selection"
-msgstr "Sorteren van het huidige document of de selectie."
+msgstr "Sorteren van huidige document of selectie"
 
 #. ex:ts=8:noet:
 #: ../plugins/sort/gedit-sort-plugin.ui.h:1
@@ -3481,7 +3484,7 @@ msgstr "_Toevoegen"
 
 #: ../plugins/spell/gedit-automatic-spell-checker.c:553
 msgid "_Spelling Suggestions..."
-msgstr "_Spelling-suggesties…"
+msgstr "_Spellingsuggesties…"
 
 #: ../plugins/spell/gedit-spell-checker-dialog.c:271
 msgid "Check Spelling"
@@ -3555,7 +3558,7 @@ msgstr "De taal van het huidige document instellen"
 
 #: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "_Highlight Misspelled Words"
-msgstr "_Onjuist gespelde woorden oplichten"
+msgstr "_Verkeerd gespelde woorden oplichten"
 
 #: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
@@ -3563,11 +3566,11 @@ msgstr "Het huidige document automatisch op spelling controleren"
 
 #: ../plugins/spell/gedit-spell-plugin.c:819
 msgid "The document is empty."
-msgstr "Het document bevat geen tekst."
+msgstr "Het document is leeg."
 
 #: ../plugins/spell/gedit-spell-plugin.c:844
 msgid "No misspelled words"
-msgstr "Geen onjuist gespelde woorden"
+msgstr "Geen verkeerd gespelde woorden"
 
 #. ex:ts=8:noet:
 #: ../plugins/spell/languages-dialog.ui.h:1
@@ -3612,7 +3615,7 @@ msgstr "Taal:"
 
 #: ../plugins/spell/spell-checker.ui.h:10
 msgid "Misspelled word:"
-msgstr "Incorrect gespeld woord:"
+msgstr "Verkeerd gespeld woord:"
 
 #: ../plugins/spell/spell-checker.ui.h:11
 msgid "User dictionary:"
