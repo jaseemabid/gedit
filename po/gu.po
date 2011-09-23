@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: gu\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
 "cgi?product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-09-08 06:06+0000\n"
-"PO-Revision-Date: 2011-09-19 15:45+0000\n"
+"POT-Creation-Date: 2011-09-19 10:16+0000\n"
+"PO-Revision-Date: 2011-09-23 12:02+0000\n"
 "Last-Translator: \n"
 "Language-Team: gu_IN <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -54,7 +54,6 @@ msgid "Active plugins"
 msgstr "સક્રિય પ્લગઈનો"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:3
-#| msgid "Auto indent"
 msgid "Automatic indent"
 msgstr "આપોઆપ હાંસિયો"
 
@@ -67,7 +66,6 @@ msgid "Autosave"
 msgstr "સ્વયં સંગ્રહ કરો"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:6
-#| msgid "Auto Save Interval"
 msgid "Autosave Interval"
 msgstr "અંતરાલ વચ્ચે સ્વયં સંગ્રહ"
 
@@ -145,7 +143,6 @@ msgstr ""
 "\"Location\" મેળવવા માટે .gedit-plugin ફાઈલ જુઓ."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
-#, fuzzy
 #| msgid ""
 #| "List of encodings shown in Character Coding menu in open/save file "
 #| "selector. Only recognized encodings are used."
@@ -157,7 +154,6 @@ msgstr ""
 "માત્ર ઓળખાયેલી સંગ્રહપદ્ધતિઓ વપરાય છે."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
-#, fuzzy
 #| msgid "Max Number of Undo Actions"
 msgid "Maximum Number of Undo Actions"
 msgstr "મહત્તમ સંખ્યાની રદ કરેલી સંખ્યાઓ"
@@ -184,10 +180,9 @@ msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
 msgid "Notebook Show Tabs Mode"
-msgstr ""
+msgstr "નોટબુક દર્શાવ ટૅબ સ્થિતિ"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
-#, fuzzy
 #| msgid ""
 #| "Number of minutes after which gedit will automatically save modified "
 #| "files. This will only take effect if the \"Auto Save\" option is turned "
@@ -232,7 +227,6 @@ msgid "Smart Home End"
 msgstr "સ્માર્ટ ઘર અંત"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
-#, fuzzy
 #| msgid ""
 #| "Sorted list of encodings used by gedit for auto-detecting the encoding of "
 #| "a file. \"CURRENT\" represents the current locale encoding. Only "
@@ -247,7 +241,6 @@ msgstr ""
 "સંગ્રહપદ્ધતિઓ જ વપરાય છે."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
-#, fuzzy
 #| msgid ""
 #| "Specifies how the cursor moves when the HOME and END keys are pressed. "
 #| "Use \"DISABLED\" to always move at the start/end of the line, \"AFTER\" "
@@ -266,14 +259,13 @@ msgid ""
 "the text instead of the start/end of the line."
 msgstr ""
 "જ્યારે HOME અને END કીઓ દબાવવામાં આવે ત્યારે કર્સર કેવી રીતે ખસે તે સ્પષ્ટ કરે છે. લીટીની "
-"શરૂઆત/અંતે ખસવા માટે હંમેશા \"DISABLED\" વાપરો, પ્રથમ વખતે કી દબાવવામાં આવે ત્યારે "
+"શરૂઆત/અંતે ખસવા માટે હંમેશા \"નિષ્ક્રિય\" વાપરો, પ્રથમ વખતે કી દબાવવામાં આવે ત્યારે "
 "લીટીની શરૂઆત/અંતે ખસવા માટે અને બીજી વખતે કીઓ દબાવવામાં આવે ત્યારે ખાલી જગ્યાના લખાણોને "
-"અવગણીને લીટીની શરૂઆત/અંતે ખસવા માટે હંમેશા \"AFTER\" દબાવો, લીટીની શરૂઆત/અંતે ખસવા "
-"પહેલાં લખાણના શરૂઆત/અંતે ખસવા માટે \"BEFORE\" દબાવો અને લીટીના શરૂઆત/અંતે ખસવાની જગ્યાએ "
-"લખાણના શરૂઆત/અંતે ખસવા માટે હંમેશા \"ALWAYS\" દબાવો."
+"અવગણીને લીટીની શરૂઆત/અંતે ખસવા માટે હંમેશા \"પછી\" દબાવો, લીટીની શરૂઆત/અંતે ખસવા "
+"પહેલાં લખાણના શરૂઆત/અંતે ખસવા માટે \"પહેલાં\" દબાવો અને લીટીના શરૂઆત/અંતે ખસવાની જગ્યાએ "
+"લખાણના શરૂઆત/અંતે ખસવા માટે હંમેશા \"હંમેશા\" દબાવો."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
-#, fuzzy
 #| msgid ""
 #| "Specifies how to wrap long lines for printing. Use \"GTK_WRAP_NONE\" for "
 #| "no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
@@ -286,13 +278,12 @@ msgid ""
 "individual character boundaries. Note that the values are case-sensitive, so "
 "make sure they appear exactly as mentioned here."
 msgstr ""
-"લાંબી લીટીને છાપવા માટે કઈ રીતે લપેટવી તે સ્પષ્ટ કરે છે. લપેટવુ ન હોય તો \"GTK_WRAP_NONE"
-"\" વાપરો; શબ્દની સીમાએ લપેટવુ હોય તો \"GTK_WRAP_WORD\" અને દરેક અક્ષરની સીમાએ લપેટવુ "
-"હોય તો \"GTK_WRAP_CHAR\" વાપરો. આ મુલ્યો અક્ષર પ્રત્યે સંવેદનશીલ છે આથી અહીં દર્શાવ્યા "
-"પ્રમાણે જ તે લખો."
+"લાંબી લીટીને છાપવા માટે કઈ રીતે લપેટવી તે સ્પષ્ટ કરે છે. લપેટવુ ન હોય તો \"કઇ નહિં\" વાપરો; "
+"શબ્દની સીમાએ લપેટવુ હોય તો \"શબ્દ\" અને દરેક અક્ષરની સીમાએ લપેટવુ "
+"હોય તો \"અક્ષર\" વાપરો. આ મુલ્યો અક્ષર પ્રત્યે સંવેદનશીલ છે આથી અહીં દર્શાવ્યા પ્રમાણે જ તે "
+"દેખાશે."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
-#, fuzzy
 #| msgid ""
 #| "Specifies how to wrap long lines in the editing area. Use \"GTK_WRAP_NONE"
 #| "\" for no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, "
@@ -306,9 +297,9 @@ msgid ""
 "sensitive, so make sure they appear exactly as mentioned here."
 msgstr ""
 "લાંબી લીટીને સંપાદન વિસ્તારમાં કઈ રીતે લપેટવી તે સ્પષ્ટ કરે છે. લપેટવુ ન હોય તો "
-"\"GTK_WRAP_NONE\" વાપરો; શબ્દની સીમાએ લપેટવુ હોય તો \"GTK_WRAP_WORD\" અને દરેક "
-"અક્ષરની સીમાએ લપેટવુ હોય તો \"GTK_WRAP_CHAR\" વાપરો. આ મુલ્યો અક્ષર પ્રત્યે સંવેદનશીલ છે "
-"આથી અહીં દર્શાવ્યા પ્રમાણે જ તે લખો."
+"\"કઇ નહિં\" વાપરો; શબ્દની સીમાએ લપેટવુ હોય તો \"શબ્દ\" વાપરો અને દરેક "
+"અક્ષરની સીમાએ લપેટવુ હોય તો \"અક્ષર\" વાપરો. આ મુલ્યો અક્ષર પ્રત્યે સંવેદનશીલ છે "
+"આથી અહીં દર્શાવ્યા પ્રમાણે જ તે દેખાશે."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
 msgid "Specifies the font to use for a document's body when printing documents."
@@ -347,7 +338,6 @@ msgid "Specifies the position of the right margin."
 msgstr "જમણા હાંસિયાની સ્થિતિ સ્પષ્ટ કરે છે."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
-#, fuzzy
 #| msgid ""
 #| "Specifies how to wrap long lines for printing. Use \"GTK_WRAP_NONE\" for "
 #| "no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
@@ -360,10 +350,10 @@ msgid ""
 "when there is more than one tab. Note that the values are case-sensitive, so "
 "make sure they appear exactly as mentioned here."
 msgstr ""
-"લાંબી લીટીને છાપવા માટે કઈ રીતે લપેટવી તે સ્પષ્ટ કરે છે. લપેટવુ ન હોય તો \"GTK_WRAP_NONE"
-"\" વાપરો; શબ્દની સીમાએ લપેટવુ હોય તો \"GTK_WRAP_WORD\" અને દરેક અક્ષરની સીમાએ લપેટવુ "
-"હોય તો \"GTK_WRAP_CHAR\" વાપરો. આ મુલ્યો અક્ષર પ્રત્યે સંવેદનશીલ છે આથી અહીં દર્શાવ્યા "
-"પ્રમાણે જ તે લખો."
+"ક્યારે નોટબુક ટૅબને બતાવવા તે સ્પષ્ટ કરે છે. ટૅબને કદી ન બતાવવા માટે \"કદી નહિં\" વાપરો, "
+"હંમેશા ટૅબને બતાવવા માટે \"હંમેશા\" વાપરો. અને ફક્ત ટૅબને બતાવવા માટે "
+"\"સ્વયં\" ને વાપરો જ્યારે એક કરતા વધારે ટૅબ છે. નોંધો કે કિંમતો અક્ષર પ્રત્યે સંવેદનશીલ છે, "
+"તેથી ખાતરી કરો કે તેઓ અહિં દર્શાવેલ પ્રમાણે જ દેખાશે."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
 msgid "Status Bar is Visible"
@@ -378,7 +368,6 @@ msgid "Tab Size"
 msgstr "ટેબનું માપ"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
-#, fuzzy
 #| msgid "The id of a GtkSourceView Style Scheme used to color the text."
 msgid "The ID of a GtkSourceView Style Scheme used to color the text."
 msgstr "GtkSourceView શૈલી પદ્ધતિનું id કે જે લખાણને રંગ કરવા માટે વપરાય છે."
@@ -396,7 +385,6 @@ msgid "Use Default Font"
 msgstr "મૂળભૂત ફોન્ટ વાપરો"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
-#, fuzzy
 #| msgid ""
 #| "Whether gedit should automatically save modified files after a time "
 #| "interval. You can set the time interval with the \"Auto Save Interval\" "
@@ -426,7 +414,6 @@ msgid "Whether gedit should display the right margin in the editing area."
 msgstr "શું gedit સંપાદક વિસ્તારમાં જમણો હાંસિયો દર્શાવી શકે."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
-#, fuzzy
 #| msgid "Whether gedit should enable auto indentation."
 msgid "Whether gedit should enable automatic indentation."
 msgstr "શું gedit સ્વયં હાંસ્યાથી અંતર સક્રિય કરી શકે."
@@ -440,7 +427,6 @@ msgid "Whether gedit should highlight all the occurrences of the searched text."
 msgstr "શું gedit એ શોધાયેલ લખાણના બધા વારાઓ પ્રકાશિત કરવા જોઈએ."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
-#, fuzzy
 #| msgid "Whether gedit should highlight matching bracket."
 msgid "Whether gedit should highlight matching brackets."
 msgstr "શું gedit કૌંસ સરખાવવા માટે પ્રકાશિત થવું જોઈએ."
@@ -468,7 +454,6 @@ msgid ""
 msgstr "જ્યારે ફાઈલ લોડ થઈ રહી હોય ત્યારે શું gedit એ પહેલાનું કર્સર સ્થાન પુનઃસંગ્રહવું જોઈએ."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
-#, fuzzy
 #| msgid ""
 #| "Whether the side pane at the left of the editing window should be visible."
 msgid "Whether the side panel at the left of editing windows should be visible."
@@ -723,7 +708,6 @@ msgid "Highlight current _line"
 msgstr "વર્તમાન લીટી પ્રકાશિત કરો (_l)"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
-#| msgid "Highlight matching _bracket"
 msgid "Highlight matching _brackets"
 msgstr "કૌંસ સરખામણી પ્રકાશિત કરો (_b)"
 
@@ -855,7 +839,6 @@ msgid "ENCODING"
 msgstr "સંગ્રહપદ્ધતિ"
 
 #: ../gedit/gedit-command-line.c:278
-#, fuzzy
 #| msgid "Create a new toplevel window in an existing instance of gedit"
 msgid "Create a new top-level window in an existing instance of gedit"
 msgstr "હાલના gedit ના નમૂનાની નવી ઉચ્ચસ્તરની વિન્ડો બનાવો"
@@ -937,7 +920,7 @@ msgstr "સંકોચનની મદદથી ફાઇલને સંગ્
 msgid ""
 "The file \"%s\" was previously saved as plain text and will now be saved "
 "using compression."
-msgstr ""
+msgstr "ફાઇલ \"%s\" એ સાદા લખાણ તરીકે પહેલાં સંગ્રહ થયેલ છે અને સંકોચની મદદથી હવે સંગ્રહાશે."
 
 #: ../gedit/gedit-commands-file.c:617
 msgid "_Save Using Compression"
@@ -952,7 +935,7 @@ msgstr "શું સાદા લખાણ તરીકે ફાઇલને �
 msgid ""
 "The file \"%s\" was previously saved using compression and will now be saved "
 "as plain text."
-msgstr ""
+msgstr "ફાઇલ \"%s\" એ સંકોચની મદદથી પહેલાં સંગ્રહ થયેલ છે અને સાદા લખાણ તરીકે હવે સંગ્રહાશે."
 
 #: ../gedit/gedit-commands-file.c:624
 msgid "_Save As Plain Text"
@@ -1215,10 +1198,9 @@ msgid "C_haracter Encoding:"
 msgstr "અક્ષર સંગ્રહપદ્દતિ(_h):"
 
 #: ../gedit/gedit-file-chooser-dialog.c:158
-#, fuzzy
 #| msgid "_Encoding"
 msgid "L_ine Ending:"
-msgstr "સંગ્રહપદ્ધતિ (_E)"
+msgstr "વાક્યનો અંત (_i)"
 
 #: ../gedit/gedit-file-chooser-dialog.c:177
 msgid "Unix/Linux"
@@ -1286,7 +1268,7 @@ msgstr ""
 "ફરીથી પ્રયાસ કરો."
 
 #: ../gedit/gedit-io-error-info-bar.c:304
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Host name was invalid. Please check that you typed the location correctly "
 #| "and try again."
@@ -1368,6 +1350,8 @@ msgid ""
 "The file you opened has some invalid characters. If you continue editing "
 "this file you could corrupt this document."
 msgstr ""
+"ફાઇલ કે જે તમે ખોલેલ છે તેની પાસે અયોગ્ય અક્ષરો છે. જો તમે આ ફાઇલમાં ફેરફાર કરવાનું ચાલુ રાખો "
+"તો તમે આ દસ્તાવેજ ભ્રષ્ટ કરી શકે છે."
 
 #: ../gedit/gedit-io-error-info-bar.c:632
 msgid "You can also choose another character encoding and try again."
@@ -1457,7 +1441,6 @@ msgid "Could not create a temporary backup file while saving %s"
 msgstr "%s સંગ્રહતી વખતે કામચલાઉ બેકઅપ ફાઈલ બનાવી શક્યા નહિં"
 
 #: ../gedit/gedit-io-error-info-bar.c:1020
-#, fuzzy
 #| msgid ""
 #| "gedit could not backup the old copy of the file before saving the new "
 #| "one. You can ignore this warning and save the file anyway, but if an "
@@ -1536,7 +1519,6 @@ msgstr ""
 "છે. મહેરબાની કરીને ટૂંકુ નામ વાપરો."
 
 #: ../gedit/gedit-io-error-info-bar.c:1133
-#, fuzzy
 #| msgid ""
 #| "The disk where you are trying to save the file has a limitation on file "
 #| "sizes.  Please try saving a smaller file or saving it to a disk that does "
@@ -1616,7 +1598,6 @@ msgid "He_aders and footers:"
 msgstr "હેડરો અને ફૂટરો (_a):"
 
 #: ../gedit/gedit-print-preferences.ui.h:5
-#| msgid "_Line numbers:"
 msgid "Line Numbers"
 msgstr "લીટી ક્રમાંકો"
 
@@ -1637,10 +1618,9 @@ msgid "Print synta_x highlighting"
 msgstr "વાક્યરચના પ્રકાશિત કરીને છાપો (_x)"
 
 #: ../gedit/gedit-print-preferences.ui.h:10
-#, fuzzy
 #| msgid "Print Syntax Highlighting"
 msgid "Syntax Highlighting"
-msgstr "પ્રકાશિત વાક્યરચનાને છાપો"
+msgstr "સિન્ટેક્ષ માટે પ્રકાશિત"
 
 #: ../gedit/gedit-print-preferences.ui.h:12
 msgid "_Body:"
@@ -2054,7 +2034,7 @@ msgstr "પહેલાનાં ટૅબ જૂથમાં ખસેડો"
 
 #: ../gedit/gedit-ui.h:134
 msgid "Nex_t Tab Group"
-msgstr ""
+msgstr "આગળનું ટૅબ જૂથ (_t)"
 
 #: ../gedit/gedit-ui.h:135
 msgid "Switch to the next tab group"
@@ -2149,25 +2129,25 @@ msgid "/ on %s"
 msgstr "/ on %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:623
+#: ../gedit/gedit-view-frame.c:554
 msgid "_Wrap Around"
 msgstr "ફરતે લપેટો (_W)"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:633
+#: ../gedit/gedit-view-frame.c:564
 msgid "Match _Entire Word Only"
 msgstr "માત્ર આખો શબ્દ જ સરખાવો (_E)"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:643
+#: ../gedit/gedit-view-frame.c:574
 msgid "_Match Case"
 msgstr "કેસ સરખાવો (_M)"
 
-#: ../gedit/gedit-view-frame.c:902
+#: ../gedit/gedit-view-frame.c:775
 msgid "String you want to search for"
 msgstr "તમે શોધવા માંગો તે શબ્દમાળા"
 
-#: ../gedit/gedit-view-frame.c:909
+#: ../gedit/gedit-view-frame.c:782
 msgid "Line you want to move the cursor to"
 msgstr "તમે જે લીટીમાં કર્સર ખસેડવા માંગો તે"
 
@@ -2233,16 +2213,16 @@ msgstr "ટેબ પહોળાઈ"
 
 #: ../gedit/gedit-window.c:2316
 msgid "Bracket match is out of range"
-msgstr ""
+msgstr "કૌંસ બંધબેસતુ સીમાની બહાર છે"
 
 #: ../gedit/gedit-window.c:2321
 msgid "Bracket match not found"
-msgstr ""
+msgstr "કૌંસ બંધબેસતુ મળ્યુ નથી"
 
 #: ../gedit/gedit-window.c:2326
 #, c-format
 msgid "Bracket match found on line: %d"
-msgstr ""
+msgstr "કૌંસને બંધબેસતુ વાક્ય પર મળ્યુ: %d"
 
 #: ../gedit/gedit-window.c:4113
 msgid "About gedit"
@@ -2430,6 +2410,8 @@ msgid ""
 "If true, the external tools will use the desktop-global standard font if "
 "it's monospace (and the most similar font it can come up with otherwise)."
 msgstr ""
+"જો true હોય તો, વધારાનાં સાધનો desktop-global મૂળભૂત ફોન્ટને વાપરશે જો તે મોનોસ્પેસ હોય તો "
+"(અને સૌથી સમાન ફોન્ટ તે અન્યથા સાથે આવી શકે)."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
@@ -2546,7 +2528,6 @@ msgid "Local files only"
 msgstr "માત્ર સ્થાનિક ફાઈલો જ"
 
 #: ../plugins/externaltools/tools/tools.ui.h:17
-#| msgid "Manage _External Tools..."
 msgid "Manage External Tools"
 msgstr "બાહ્ય સાધનો ને સંચાલિત કરો"
 
@@ -2575,12 +2556,10 @@ msgid "Replace current selection"
 msgstr "વર્તમાન પસંદગી બદલો"
 
 #: ../plugins/externaltools/tools/tools.ui.h:24
-#| msgid "_Revert"
 msgid "Revert Tool"
 msgstr "સાધનને પહેલાંની સ્થિતિમાં લાવો"
 
 #: ../plugins/externaltools/tools/tools.ui.h:25
-#| msgid "_Revert"
 msgid "Revert tool"
 msgstr "સાધનને પહેલાંની સ્થિતિમાં લાવો"
 
@@ -2761,7 +2740,6 @@ msgid "(Empty)"
 msgstr "(ખાલી)"
 
 #: ../plugins/filebrowser/gedit-file-browser-store.c:3467
-#, fuzzy
 #| msgid ""
 #| "The renamed file is currently filtered out. You need to adjust your "
 #| "filter settings to make the file visible"
@@ -2972,7 +2950,6 @@ msgid "File Browser Virtual Root Directory"
 msgstr "ફાઈલ બ્રાઉઝર વર્ચ્યુઅલ રુટ ડિરેક્ટરી"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:6
-#, fuzzy
 #| msgid ""
 #| "If TRUE the file browser plugin will view the directory of the first "
 #| "opened document given that the file browser hasn't been used yet. (Thus "
@@ -2986,7 +2963,7 @@ msgid ""
 msgstr ""
 "જો TRUE હોય તો ફાઈલ બ્રાઉઝર પ્લગઈન પ્રથમ ખૂલેલ દસ્તાવેજની ડિરેક્ટરી જોશે કે જેને ફાઈલ "
 "બ્રાઉઝરે હજુ સુધી વાપરેલ નથી. (આ રીતે આ સામાન્ય રીતે આદેશ વાક્યમાંથી દસ્તાવેજ ખોલવાને લાગુ "
-"પડે છે અથવા તેને નોટિલસ સાથે ખોલવા માટે વગેરે)"
+"પડે છે અથવા તેને Nautilus સાથે ખોલવા માટે વગેરે)"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:7
 msgid "Open With Tree View"
@@ -3031,7 +3008,6 @@ msgid ""
 msgstr "ફાઈલ બ્રાઉઝર સાથે ગાળવા માટે ફાઈલ ભાત. આ ગાળક filter_mode ની ટોચ પર કામ કરે છે."
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:14
-#, fuzzy
 #| msgid ""
 #| "This value determines what files get filtered from the file browser. "
 #| "Valid values are: none (filter nothing), hidden (filter hidden files), "
@@ -3067,6 +3043,8 @@ msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
 msgstr ""
+"જો true હોય તો, ટર્મિનલ desktop-global મૂળભૂત ફોન્ટને વાપરશે જો તે મોનોસ્પેસ હોય તો (અને સૌથી "
+"સમાન ફોન્ટ તે અન્યથા સાથે આવી શકે)."
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid "The command color text"
@@ -3077,7 +3055,6 @@ msgid "The error color text"
 msgstr "રંગ લખાણમાં ભૂલ"
 
 #: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
-#, fuzzy
 #| msgid "Interactive python console standing in the bottom panel"
 msgid "Interactive Python console standing in the bottom panel"
 msgstr "પૂછપરછવાળું python કન્સોલ એ તળિયેની પેનલમાં ઊભું છે"
@@ -3107,7 +3084,6 @@ msgid "Quickly open files"
 msgstr "ફાઇલોને ઝડપથી ખોલો"
 
 #: ../plugins/snippets/snippets.plugin.desktop.in.h:1
-#, fuzzy
 #| msgid "Insert often used pieces of text in a fast way"
 msgid "Insert often-used pieces of text in a fast way"
 msgstr "દાખલ કરવાનું હંમેશા ઝડપી માર્ગે લખાણના ટુકડાઓ વાપર્યા હતા"
@@ -3135,7 +3111,6 @@ msgid "Delete selected snippet"
 msgstr "પસંદ કરેલ સ્નિપેટ કાઢી નાખો"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#| msgid "Export snippets"
 msgid "Export Snippets"
 msgstr "સ્નીપેટો નિકાસ કરો"
 
@@ -3144,7 +3119,6 @@ msgid "Export selected snippets"
 msgstr "પસંદિત સ્નિપેટોની નિકાસ કરો"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:8
-#| msgid "Import snippets"
 msgid "Import Snippets"
 msgstr "સ્નીપેટની આયાત કરો"
 
@@ -3172,7 +3146,6 @@ msgstr "ટૂંકાણ કી કે જેની સાથે સ્નિ�
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:14
 #: ../plugins/snippets/snippets/manager.py:666
-#, fuzzy
 #| msgid "Single word with which the snippet is activated after pressing tab"
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "એક શ્બદ કે જેની સાથે સ્નિપેટ ટેબ દબાવ્યા પછી સક્રિય કરવામાં આવેલ છે"
@@ -3216,7 +3189,6 @@ msgstr "પસંદિત સ્નિપેટો ઉલટાવો"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
 #: ../plugins/snippets/snippets/manager.py:659
-#, fuzzy
 #| msgid ""
 #| "This is not a valid tab trigger. Triggers can either contain letters or a "
 #| "single, non alphanumeric, character like {, [, etcetera."
@@ -3610,7 +3582,8 @@ msgid ""
 "If the user should be prompted for a format or if the selected or custom "
 "format should be used."
 msgstr ""
-"જો વપરાશકર્તાએ બંધારણ માટે પૂછવુ જોઇએ અથવા જો પસંદ થયેલ અથવા વૈવિધ્ય બંધારણ વાપરેલ હોવુ જોઇએ."
+"જો વપરાશકર્તાએ બંધારણ માટે પૂછવુ જોઇએ અથવા જો પસંદ થયેલ અથવા વૈવિધ્ય બંધારણ વાપરેલ હોવુ "
+"જોઇએ."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
 msgid "Prompt Type"
@@ -3673,7 +3646,7 @@ msgstr "બંધારણ માટે પ્રોમ્પ્ટ (_P)"
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
 msgid "Logs access and leave event for documents used with gedit"
-msgstr ""
+msgstr "gedit સાથે વાપરેલ દસ્તાવેજો માટે ઘટનાને છોડો અને લૉગને વાપરો"
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
