@@ -17,14 +17,14 @@ msgstr ""
 "Project-Id-Version: gedit master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-05-02 15:54+0000\n"
-"PO-Revision-Date: 2011-04-30 17:05+0900\n"
-"Last-Translator: Jiro Matsuzawa <matsuzawa.jr@gmail.com>\n"
+"POT-Creation-Date: 2011-09-23 15:36+0000\n"
+"PO-Revision-Date: 2011-09-24 01:58+0900\n"
+"Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
-"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../data/gedit.desktop.in.in.h:1
@@ -162,16 +162,16 @@ msgstr "\"最近使ったファイル\" に表示する最大数"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
 msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use "
-"\"-1\" for unlimited number of actions."
+"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
+"\" for unlimited number of actions."
 msgstr ""
 "gedit で \"元に戻す\" または \"やり直す\" ことができる動作の回数を最大値で指"
 "定します (無制限にする場合は \"-1\")。"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
 msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use "
-"\"-1\" for unlimited number of actions. Deprecated since 2.12.0"
+"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
+"\" for unlimited number of actions. Deprecated since 2.12.0"
 msgstr ""
 "gedit で \"元に戻す\" や \"やり直す\" ことができる動作の最大数を指定します "
 "(無制限にする場合は \"-1\") (このキーは GNOME 2.12.0 から非推奨になりまし"
@@ -366,9 +366,9 @@ msgid ""
 "Whether gedit should create backup copies for the files it saves. You can "
 "set the backup file extension with the \"Backup Copy Extension\" option."
 msgstr ""
-"ファイルを保存する時にバックアップ・コピーを作成するかどうかを指定しま"
-"す。\"バックアップ・コピーの拡張子\" オプションでバックアップ・ファイルの拡張"
-"子を設定することができます。"
+"ファイルを保存する時にバックアップ・コピーを作成するかどうかを指定します。"
+"\"バックアップ・コピーの拡張子\" オプションでバックアップ・ファイルの拡張子を"
+"設定することができます。"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
 msgid "Whether gedit should display line numbers in the editing area."
@@ -719,7 +719,7 @@ msgstr "追加(_A)..."
 msgid "_Autosave files every"
 msgstr "ファイルを自動的に保存する間隔(_A): "
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:590
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:561
 msgid "_Display line numbers"
 msgstr "行番号を表示する(_D)"
 
@@ -736,7 +736,7 @@ msgid "_minutes"
 msgstr "分ごと(_M)"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1592
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1626
 msgid "Replace"
 msgstr "置換"
 
@@ -1031,12 +1031,12 @@ msgstr "\"%s\" は見つかりませんでした"
 msgid "Unsaved Document %d"
 msgstr "編集中のドキュメント %d"
 
-#: ../gedit/gedit-documents-panel.c:119 ../gedit/gedit-documents-panel.c:133
-#: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
+#: ../gedit/gedit-documents-panel.c:121 ../gedit/gedit-documents-panel.c:135
+#: ../gedit/gedit-window.c:2459 ../gedit/gedit-window.c:2466
 msgid "Read-Only"
 msgstr "読み取りのみ"
 
-#: ../gedit/gedit-documents-panel.c:1124 ../gedit/gedit-window.c:3840
+#: ../gedit/gedit-documents-panel.c:1143 ../gedit/gedit-window.c:3907
 msgid "Documents"
 msgstr "ドキュメントの一覧"
 
@@ -1504,7 +1504,7 @@ msgid ""
 "have this limitation."
 msgstr ""
 "保存先のディスクにはファイル・サイズの制限があります。小さいファイルを保存す"
-"るか、この制限のない泥空くに保存してください。"
+"るか、この制限のないディスクに保存してください。"
 
 #: ../gedit/gedit-io-error-info-bar.c:1149
 #, c-format
@@ -1543,11 +1543,11 @@ msgid ""
 msgstr ""
 "このファイルの保存を続行すると、文書が壊れてしまうかもしれません。続けますか?"
 
-#: ../gedit/gedit-panel.c:343 ../gedit/gedit-panel.c:515
+#: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:586
 msgid "Empty"
 msgstr "履歴なし"
 
-#: ../gedit/gedit-panel.c:405
+#: ../gedit/gedit-panel.c:475
 msgid "Hide panel"
 msgstr "このペインを隠します"
 
@@ -1714,77 +1714,77 @@ msgstr ""
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:744
+#: ../gedit/gedit-tab.c:743
 #, c-format
 msgid "Reverting %s from %s"
 msgstr "%2$s から %1$s に戻しています"
 
-#: ../gedit/gedit-tab.c:751
+#: ../gedit/gedit-tab.c:750
 #, c-format
 msgid "Reverting %s"
 msgstr "%s に戻しています"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:767
+#: ../gedit/gedit-tab.c:766
 #, c-format
 msgid "Loading %s from %s"
 msgstr "%2$s から %1$s を読み込んでいます"
 
-#: ../gedit/gedit-tab.c:774
+#: ../gedit/gedit-tab.c:773
 #, c-format
 msgid "Loading %s"
 msgstr "%s を読み込んでいます"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:855
+#: ../gedit/gedit-tab.c:854
 #, c-format
 msgid "Saving %s to %s"
 msgstr "%s を %s へ保存しています"
 
-#: ../gedit/gedit-tab.c:862
+#: ../gedit/gedit-tab.c:861
 #, c-format
 msgid "Saving %s"
 msgstr "%s を保存しています"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1832
+#: ../gedit/gedit-tab.c:1834
 msgid "RO"
 msgstr "[書き込み禁止]"
 
-#: ../gedit/gedit-tab.c:1879
+#: ../gedit/gedit-tab.c:1881
 #, c-format
 msgid "Error opening file %s"
 msgstr "ファイル %s を読み込む際にエラー"
 
-#: ../gedit/gedit-tab.c:1884
+#: ../gedit/gedit-tab.c:1886
 #, c-format
 msgid "Error reverting file %s"
 msgstr "ファイル %s に戻す際にエラー"
 
-#: ../gedit/gedit-tab.c:1889
+#: ../gedit/gedit-tab.c:1891
 #, c-format
 msgid "Error saving file %s"
 msgstr "ファイル %s を保存する際にエラー"
 
-#: ../gedit/gedit-tab.c:1910
+#: ../gedit/gedit-tab.c:1912
 msgid "Unicode (UTF-8)"
 msgstr "Unicode (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1917
+#: ../gedit/gedit-tab.c:1919
 msgid "Name:"
 msgstr "名前:"
 
-#: ../gedit/gedit-tab.c:1918
+#: ../gedit/gedit-tab.c:1920
 msgid "MIME Type:"
 msgstr "MIME 型:"
 
-#: ../gedit/gedit-tab.c:1919
+#: ../gedit/gedit-tab.c:1921
 msgid "Encoding:"
 msgstr "エンコーディング:"
 
-#: ../gedit/gedit-tab-label.c:280
+#: ../gedit/gedit-tab-label.c:283
 msgid "Close document"
 msgstr "このドキュメントを閉じます"
 
@@ -1825,7 +1825,7 @@ msgstr "新しいドキュメントを作成します"
 msgid "_Open..."
 msgstr "開く(_O)..."
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1554
 msgid "Open a file"
 msgstr "ファイルを開きます"
 
@@ -2103,29 +2103,29 @@ msgid "/ on %s"
 msgstr "%s の / (ルート)"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:633
+#: ../gedit/gedit-view-frame.c:554
 msgid "_Wrap Around"
 msgstr "折り返しも検索する(_W)"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:643
+#: ../gedit/gedit-view-frame.c:564
 msgid "Match _Entire Word Only"
 msgstr "単語全体にマッチさせる(_E)"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:653
+#: ../gedit/gedit-view-frame.c:574
 msgid "_Match Case"
 msgstr "大/小文字を区別する(_M)"
 
-#: ../gedit/gedit-view-frame.c:912
+#: ../gedit/gedit-view-frame.c:775
 msgid "String you want to search for"
 msgstr "検索する文字列"
 
-#: ../gedit/gedit-view-frame.c:921
+#: ../gedit/gedit-view-frame.c:782
 msgid "Line you want to move the cursor to"
 msgstr "カーソルを移動する行を入力してください"
 
-#: ../gedit/gedit-window.c:1023
+#: ../gedit/gedit-window.c:1040
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "%s 用の強調表示モードにします"
@@ -2133,72 +2133,72 @@ msgstr "%s 用の強調表示モードにします"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1090 ../gedit/gedit-window.c:2105
-#: ../plugins/externaltools/tools/manager.py:120
-#: ../plugins/externaltools/tools/manager.py:416
-#: ../plugins/externaltools/tools/manager.py:527
-#: ../plugins/externaltools/tools/manager.py:846
+#: ../gedit/gedit-window.c:1107 ../gedit/gedit-window.c:2156
+#: ../plugins/externaltools/tools/manager.py:138
+#: ../plugins/externaltools/tools/manager.py:441
+#: ../plugins/externaltools/tools/manager.py:552
+#: ../plugins/externaltools/tools/manager.py:871
 msgid "Plain Text"
 msgstr "なし"
 
-#: ../gedit/gedit-window.c:1091
+#: ../gedit/gedit-window.c:1108
 msgid "Disable syntax highlighting"
 msgstr "構文の強調表示を無効にします"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1413
+#: ../gedit/gedit-window.c:1433
 #, c-format
 msgid "Open '%s'"
 msgstr "'%s' を開きます"
 
-#: ../gedit/gedit-window.c:1522
+#: ../gedit/gedit-window.c:1556
 msgid "Open a recently used file"
 msgstr "最近使用したファイルを開きます"
 
-#: ../gedit/gedit-window.c:1528
+#: ../gedit/gedit-window.c:1562
 msgid "Open"
 msgstr "開く"
 
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1620
 msgid "Save"
 msgstr "保存"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1622
 msgid "Print"
 msgstr "印刷"
 
-#: ../gedit/gedit-window.c:1590
+#: ../gedit/gedit-window.c:1624
 msgid "Find"
 msgstr "検索"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1750
+#: ../gedit/gedit-window.c:1784
 #, c-format
 msgid "Activate '%s'"
 msgstr "'%s' に切り替えます"
 
-#: ../gedit/gedit-window.c:2083
+#: ../gedit/gedit-window.c:2134
 msgid "Use Spaces"
 msgstr "空白にする"
 
-#: ../gedit/gedit-window.c:2156
+#: ../gedit/gedit-window.c:2207
 msgid "Tab Width"
 msgstr "タブの幅:"
 
-#: ../gedit/gedit-window.c:2265
+#: ../gedit/gedit-window.c:2316
 msgid "Bracket match is out of range"
 msgstr "対応する括弧は対象範囲から外れています。"
 
-#: ../gedit/gedit-window.c:2270
+#: ../gedit/gedit-window.c:2321
 msgid "Bracket match not found"
 msgstr "対応する括弧は見つかりません。"
 
-#: ../gedit/gedit-window.c:2275
+#: ../gedit/gedit-window.c:2326
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "対応する括弧が %d 行目に見つかりました。"
 
-#: ../gedit/gedit-window.c:4046
+#: ../gedit/gedit-window.c:4113
 msgid "About gedit"
 msgstr "gedit について"
 
@@ -2307,7 +2307,6 @@ msgstr "ドキュメントの統計"
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 #: ../plugins/externaltools/tools/tools.ui.h:1
 #: ../plugins/snippets/snippets/snippets.ui.h:1
-#: ../plugins/time/gedit-time-dialog.ui.h:1
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "    "
 msgstr "    "
@@ -2414,31 +2413,31 @@ msgstr "完了しました。"
 msgid "Exited"
 msgstr "終了コード:"
 
-#: ../plugins/externaltools/tools/manager.py:118
+#: ../plugins/externaltools/tools/manager.py:136
 msgid "All languages"
 msgstr "すべての言語"
 
-#: ../plugins/externaltools/tools/manager.py:516
-#: ../plugins/externaltools/tools/manager.py:520
-#: ../plugins/externaltools/tools/manager.py:844
-#: ../plugins/externaltools/tools/tools.ui.h:2
+#: ../plugins/externaltools/tools/manager.py:541
+#: ../plugins/externaltools/tools/manager.py:545
+#: ../plugins/externaltools/tools/manager.py:869
+#: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "すべての言語"
 
-#: ../plugins/externaltools/tools/manager.py:627
+#: ../plugins/externaltools/tools/manager.py:652
 msgid "New tool"
 msgstr "新しいツール"
 
-#: ../plugins/externaltools/tools/manager.py:758
+#: ../plugins/externaltools/tools/manager.py:783
 #, python-format
 msgid "This accelerator is already bound to %s"
-msgstr "既にこのアクセレータは %s に割当られています"
+msgstr "既にこのアクセラレータは %s に割り当てられています"
 
-#: ../plugins/externaltools/tools/manager.py:809
+#: ../plugins/externaltools/tools/manager.py:834
 msgid "Type a new accelerator, or press Backspace to clear"
 msgstr "(新しいアクセラレータを入力してください/[BS]キーでクリア)"
 
-#: ../plugins/externaltools/tools/manager.py:811
+#: ../plugins/externaltools/tools/manager.py:836
 msgid "Type a new accelerator"
 msgstr "(新しいアクセラレータを入力してください)"
 
@@ -2446,124 +2445,148 @@ msgstr "(新しいアクセラレータを入力してください)"
 msgid "Stopped."
 msgstr "停止しました。"
 
+#: ../plugins/externaltools/tools/tools.ui.h:2
+msgid "Add Tool"
+msgstr "ツールの追加"
+
 #: ../plugins/externaltools/tools/tools.ui.h:3
+msgid "Add a new tool"
+msgstr "新しいツールを追加します"
+
+#: ../plugins/externaltools/tools/tools.ui.h:5
 msgid "All documents"
 msgstr "すべてのドキュメント"
 
-#: ../plugins/externaltools/tools/tools.ui.h:4
+#: ../plugins/externaltools/tools/tools.ui.h:6
 msgid "All documents except untitled ones"
 msgstr "保存していないものを除くすべてのドキュメント"
 
-#: ../plugins/externaltools/tools/tools.ui.h:5
+#: ../plugins/externaltools/tools/tools.ui.h:7
 msgid "Append to current document"
 msgstr "編集中のドキュメントに追加する"
 
-#: ../plugins/externaltools/tools/tools.ui.h:6
+#: ../plugins/externaltools/tools/tools.ui.h:8
 msgid "Create new document"
 msgstr "新しいドキュメントを作成する"
 
-#: ../plugins/externaltools/tools/tools.ui.h:7
+#: ../plugins/externaltools/tools/tools.ui.h:9
 msgid "Current document"
 msgstr "編集中のドキュメント"
 
-#: ../plugins/externaltools/tools/tools.ui.h:8
+#: ../plugins/externaltools/tools/tools.ui.h:10
 msgid "Current line"
 msgstr "カーソルがある行"
 
-#: ../plugins/externaltools/tools/tools.ui.h:9
+#: ../plugins/externaltools/tools/tools.ui.h:11
 msgid "Current selection"
 msgstr "現在の選択範囲"
 
-#: ../plugins/externaltools/tools/tools.ui.h:10
+#: ../plugins/externaltools/tools/tools.ui.h:12
 msgid "Current selection (default to document)"
 msgstr "現在の選択範囲 (デフォルトではドキュメントになります)"
 
-#: ../plugins/externaltools/tools/tools.ui.h:11
+#: ../plugins/externaltools/tools/tools.ui.h:13
 msgid "Current word"
 msgstr "カーソルがある文字"
 
-#: ../plugins/externaltools/tools/tools.ui.h:12
+#: ../plugins/externaltools/tools/tools.ui.h:14
 msgid "Display in bottom pane"
 msgstr "ボトム・ペインに表示する"
 
-#: ../plugins/externaltools/tools/tools.ui.h:13
-msgid "External Tools Manager"
-msgstr "外部ツール・マネージャ"
-
-#: ../plugins/externaltools/tools/tools.ui.h:14
+#: ../plugins/externaltools/tools/tools.ui.h:15
 msgid "Insert at cursor position"
 msgstr "カーソルがある位置に挿入する"
 
-#: ../plugins/externaltools/tools/tools.ui.h:15
+#: ../plugins/externaltools/tools/tools.ui.h:16
 msgid "Local files only"
 msgstr "ローカルのファイルのみ"
 
-#: ../plugins/externaltools/tools/tools.ui.h:16
+#: ../plugins/externaltools/tools/tools.ui.h:17
+msgid "Manage External Tools"
+msgstr "外部ツールの管理"
+
+#: ../plugins/externaltools/tools/tools.ui.h:18
 msgid "Nothing"
 msgstr "なし"
 
-#: ../plugins/externaltools/tools/tools.ui.h:17
+#: ../plugins/externaltools/tools/tools.ui.h:19
 msgid "Remote files only"
 msgstr "リモートのファイルのみ"
 
-#: ../plugins/externaltools/tools/tools.ui.h:18
+#: ../plugins/externaltools/tools/tools.ui.h:20
+msgid "Remove Tool"
+msgstr "ツールの削除"
+
+#: ../plugins/externaltools/tools/tools.ui.h:21
+msgid "Remove selected tool"
+msgstr "選択したツールを削除します"
+
+#: ../plugins/externaltools/tools/tools.ui.h:22
 msgid "Replace current document"
 msgstr "編集中のドキュメントを置き換える"
 
-#: ../plugins/externaltools/tools/tools.ui.h:19
+#: ../plugins/externaltools/tools/tools.ui.h:23
 msgid "Replace current selection"
 msgstr "現在の選択範囲を置き換える"
 
-#: ../plugins/externaltools/tools/tools.ui.h:20
+#: ../plugins/externaltools/tools/tools.ui.h:24
+msgid "Revert Tool"
+msgstr "ツールを元に戻す"
+
+#: ../plugins/externaltools/tools/tools.ui.h:25
+msgid "Revert tool"
+msgstr "ツールの編集を元に戻します"
+
+#: ../plugins/externaltools/tools/tools.ui.h:26
 msgid "Untitled documents only"
 msgstr "保存していないドキュメントのみ"
 
-#: ../plugins/externaltools/tools/tools.ui.h:21
+#: ../plugins/externaltools/tools/tools.ui.h:27
 msgid "_Applicability:"
 msgstr "適用範囲(_A):"
 
-#: ../plugins/externaltools/tools/tools.ui.h:22
-#: ../plugins/snippets/snippets/snippets.ui.h:11
+#: ../plugins/externaltools/tools/tools.ui.h:28
+#: ../plugins/snippets/snippets/snippets.ui.h:16
 msgid "_Edit:"
 msgstr "編集(_E):"
 
-#: ../plugins/externaltools/tools/tools.ui.h:23
+#: ../plugins/externaltools/tools/tools.ui.h:29
 msgid "_Input:"
 msgstr "入力(_I):"
 
-#: ../plugins/externaltools/tools/tools.ui.h:24
+#: ../plugins/externaltools/tools/tools.ui.h:30
 msgid "_Output:"
 msgstr "出力(_O):"
 
-#: ../plugins/externaltools/tools/tools.ui.h:25
+#: ../plugins/externaltools/tools/tools.ui.h:31
 msgid "_Save:"
 msgstr "保存(_S):"
 
-#: ../plugins/externaltools/tools/tools.ui.h:26
+#: ../plugins/externaltools/tools/tools.ui.h:32
 msgid "_Shortcut Key:"
 msgstr "ショートカット・キー(_S):"
 
-#: ../plugins/externaltools/tools/tools.ui.h:27
+#: ../plugins/externaltools/tools/tools.ui.h:33
 msgid "_Tools:"
 msgstr "ツール(_T):"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:175
+#: ../plugins/externaltools/tools/windowactivatable.py:176
 msgid "Manage _External Tools..."
 msgstr "外部ツールの管理(_E)..."
 
-#: ../plugins/externaltools/tools/windowactivatable.py:176
+#: ../plugins/externaltools/tools/windowactivatable.py:177
 msgid "Opens the External Tools Manager"
 msgstr "外部ツールを管理するマネージャを開きます"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:179
+#: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "External _Tools"
 msgstr "外部ツール(_T)"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:180
+#: ../plugins/externaltools/tools/windowactivatable.py:181
 msgid "External tools"
 msgstr "外部ツール"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:214
+#: ../plugins/externaltools/tools/windowactivatable.py:215
 msgid "Shell Output"
 msgstr "シェルの出力"
 
@@ -2709,7 +2732,7 @@ msgid ""
 "settings to make the file visible"
 msgstr ""
 "新しいファイルはフィルタの機能により表示されていません。そのファイルを表示す"
-"るにはフィルタの設定を変調整してください。"
+"るにはフィルタの設定を調整してください。"
 
 #. Translators: This is the default name of new directories created by the file browser pane.
 #: ../plugins/filebrowser/gedit-file-browser-store.c:3770
@@ -2861,17 +2884,17 @@ msgstr "次の場所へ進みます"
 msgid "_Match Filename"
 msgstr "ファイル名のフィルタ(_M)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2185
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2187
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "マウントしたボリュームには何もありません: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2262
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2264
 #, c-format
 msgid "Could not open media: %s"
 msgstr "次のメディアを開けませんでした: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2309
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2311
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "次のボリュームをマウントできませんでした: %s"
@@ -3040,54 +3063,75 @@ msgid "Activation"
 msgstr "アクティベーション"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:3
+msgid "Add Snippet"
+msgstr "スニペットの追加"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:4
 msgid "Create new snippet"
 msgstr "新しいスニペットを生成します"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/manager.py:396
+#: ../plugins/snippets/snippets/snippets.ui.h:5
+#: ../plugins/snippets/snippets/manager.py:399
 msgid "Delete selected snippet"
 msgstr "選択したスニペットを削除します"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:5
+#: ../plugins/snippets/snippets/snippets.ui.h:6
+msgid "Export Snippets"
+msgstr "スニペットの保存"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:7
 msgid "Export selected snippets"
 msgstr "選択したスニペットを保存します"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/manager.py:773
-msgid "Import snippets"
+#: ../plugins/snippets/snippets/snippets.ui.h:8
+msgid "Import Snippets"
 msgstr "スニペットのインポート"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:7
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+#: ../plugins/snippets/snippets/manager.py:776
+msgid "Import snippets"
+msgstr "スニペットをインポートします"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+msgid "Manage Snippets"
+msgstr "スニペットの管理"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:11
+msgid "Remove Snippet"
+msgstr "スニペットの削除"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:12
 msgid "S_hortcut key:"
 msgstr "ショートカット・キー(_H):"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:8
+#: ../plugins/snippets/snippets/snippets.ui.h:13
 msgid "Shortcut key with which the snippet is activated"
 msgstr "スニペットを実行するためのショートカット・キーです"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
-#: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:663
+#: ../plugins/snippets/snippets/snippets.ui.h:14
+#: ../plugins/snippets/snippets/manager.py:666
 msgid "Single word the snippet is activated with after pressing Tab"
-msgstr "スニペットを実行するために [Tab] キーを押下した後に入力する単語"
+msgstr "スニペットを実行するために [Tab] キーを押下する前に入力する単語です"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:10
+#: ../plugins/snippets/snippets/snippets.ui.h:15
 msgid "_Drop targets:"
 msgstr "挿入する対象(_D):"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:12
+#: ../plugins/snippets/snippets/snippets.ui.h:17
 msgid "_Snippets:"
 msgstr "スニペット(_S):"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:13
+#. "tab" here means the tab key, not the notebook tab!
+#: ../plugins/snippets/snippets/snippets.ui.h:19
 msgid "_Tab trigger:"
 msgstr "タブ(_T):"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:143
+#: ../plugins/snippets/snippets/windowactivatable.py:148
 msgid "Manage _Snippets..."
 msgstr "スニペットの管理(_S)..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:144
+#: ../plugins/snippets/snippets/windowactivatable.py:149
 msgid "Manage snippets"
 msgstr "スニペットを管理します"
 
@@ -3110,12 +3154,12 @@ msgstr "新しいスニペットの追加..."
 msgid "Global"
 msgstr "全般"
 
-#: ../plugins/snippets/snippets/manager.py:393
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Revert selected snippet"
 msgstr "選択したスニペットを戻します"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:656
+#: ../plugins/snippets/snippets/manager.py:659
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
@@ -3123,73 +3167,73 @@ msgstr ""
 "これは [Tab] のトリガーとしては妥当ではありません。トリガーは文字または非英数"
 "文字(例: {, [ など) を一つだけ含めることができます。"
 
-#: ../plugins/snippets/snippets/manager.py:752
+#: ../plugins/snippets/snippets/manager.py:755
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "インポートする際に次のエラーが発生しました: %s"
 
-#: ../plugins/snippets/snippets/manager.py:759
+#: ../plugins/snippets/snippets/manager.py:762
 msgid "Import successfully completed"
 msgstr "インポートが完了しました"
 
-#: ../plugins/snippets/snippets/manager.py:778
-#: ../plugins/snippets/snippets/manager.py:864
-#: ../plugins/snippets/snippets/manager.py:927
+#: ../plugins/snippets/snippets/manager.py:781
+#: ../plugins/snippets/snippets/manager.py:867
+#: ../plugins/snippets/snippets/manager.py:930
 msgid "All supported archives"
 msgstr "サポートしている全アーカイブ"
-
-#: ../plugins/snippets/snippets/manager.py:779
-#: ../plugins/snippets/snippets/manager.py:865
-#: ../plugins/snippets/snippets/manager.py:928
-msgid "Gzip compressed archive"
-msgstr "Gzip 圧縮のアーカイブ"
-
-#: ../plugins/snippets/snippets/manager.py:780
-#: ../plugins/snippets/snippets/manager.py:866
-#: ../plugins/snippets/snippets/manager.py:929
-msgid "Bzip2 compressed archive"
-msgstr "Bzip2 圧縮のアーカイブ"
-
-#: ../plugins/snippets/snippets/manager.py:781
-msgid "Single snippets file"
-msgstr "単一のファイル"
 
 #: ../plugins/snippets/snippets/manager.py:782
 #: ../plugins/snippets/snippets/manager.py:868
 #: ../plugins/snippets/snippets/manager.py:931
+msgid "Gzip compressed archive"
+msgstr "Gzip 圧縮のアーカイブ"
+
+#: ../plugins/snippets/snippets/manager.py:783
+#: ../plugins/snippets/snippets/manager.py:869
+#: ../plugins/snippets/snippets/manager.py:932
+msgid "Bzip2 compressed archive"
+msgstr "Bzip2 圧縮のアーカイブ"
+
+#: ../plugins/snippets/snippets/manager.py:784
+msgid "Single snippets file"
+msgstr "単一のファイル"
+
+#: ../plugins/snippets/snippets/manager.py:785
+#: ../plugins/snippets/snippets/manager.py:871
+#: ../plugins/snippets/snippets/manager.py:934
 msgid "All files"
 msgstr "すべてのファイル"
 
-#: ../plugins/snippets/snippets/manager.py:794
+#: ../plugins/snippets/snippets/manager.py:797
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "スニペットを保存する際にエラーが発生しました: %s"
 
-#: ../plugins/snippets/snippets/manager.py:798
+#: ../plugins/snippets/snippets/manager.py:801
 msgid "Export successfully completed"
 msgstr "保存が完了しました"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:838
-#: ../plugins/snippets/snippets/manager.py:905
+#: ../plugins/snippets/snippets/manager.py:841
+#: ../plugins/snippets/snippets/manager.py:908
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr "選択した<b>システム</b>スニペットも一緒に保存しますか?"
 
-#: ../plugins/snippets/snippets/manager.py:853
-#: ../plugins/snippets/snippets/manager.py:923
+#: ../plugins/snippets/snippets/manager.py:856
+#: ../plugins/snippets/snippets/manager.py:926
 msgid "There are no snippets selected to be exported"
 msgstr "保存するスニペットがありません"
 
-#: ../plugins/snippets/snippets/manager.py:858
-#: ../plugins/snippets/snippets/manager.py:896
+#: ../plugins/snippets/snippets/manager.py:861
+#: ../plugins/snippets/snippets/manager.py:899
 msgid "Export snippets"
 msgstr "スニペットの保存"
 
-#: ../plugins/snippets/snippets/manager.py:1037
+#: ../plugins/snippets/snippets/manager.py:1040
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "(新しいショートカットを入力してください/[BS]キーでクリア)"
 
-#: ../plugins/snippets/snippets/manager.py:1039
+#: ../plugins/snippets/snippets/manager.py:1042
 msgid "Type a new shortcut"
 msgstr "(新しいショートカットを入力してください)"
 
@@ -3208,35 +3252,35 @@ msgstr "対象ディレクトリ \"%s\" が存在しません"
 msgid "Target directory \"%s\" is not a valid directory"
 msgstr "対象ディレクトリ \"%s\" は妥当なディレクトリではありません"
 
-#: ../plugins/snippets/snippets/importer.py:46
-#: ../plugins/snippets/snippets/importer.py:100
+#: ../plugins/snippets/snippets/importer.py:47
+#: ../plugins/snippets/snippets/importer.py:108
 #, python-format
 msgid "File \"%s\" does not exist"
 msgstr "ファイル \"%s\" は存在しませんでした"
 
-#: ../plugins/snippets/snippets/importer.py:49
+#: ../plugins/snippets/snippets/importer.py:50
 #, python-format
 msgid "File \"%s\" is not a valid snippets file"
 msgstr "ファイル \"%s\" は妥当なスニペット・ファイルではありません"
 
-#: ../plugins/snippets/snippets/importer.py:59
+#: ../plugins/snippets/snippets/importer.py:67
 #, python-format
 msgid "Imported file \"%s\" is not a valid snippets file"
 msgstr ""
 "インポートしたファイル \"%s\" は妥当なスニペット・ファイルではありません"
 
-#: ../plugins/snippets/snippets/importer.py:69
+#: ../plugins/snippets/snippets/importer.py:77
 #, python-format
 msgid "The archive \"%s\" could not be extracted"
 msgstr "アーカイブ \"%s\" を解凍できませんでした"
 
-#: ../plugins/snippets/snippets/importer.py:87
+#: ../plugins/snippets/snippets/importer.py:95
 #, python-format
 msgid "The following files could not be imported: %s"
 msgstr "次のファイルをインポートできませんでした: %s"
 
-#: ../plugins/snippets/snippets/importer.py:103
-#: ../plugins/snippets/snippets/importer.py:116
+#: ../plugins/snippets/snippets/importer.py:111
+#: ../plugins/snippets/snippets/importer.py:124
 #, python-format
 msgid "File \"%s\" is not a valid snippets archive"
 msgstr "ファイル \"%s\" は妥当なスニペット・アーカイブではありません"
@@ -3375,35 +3419,35 @@ msgstr "言語の設定"
 msgid "Languages"
 msgstr "言語"
 
-#: ../plugins/spell/gedit-spell-plugin.c:105
+#: ../plugins/spell/gedit-spell-plugin.c:107
 msgid "_Check Spelling..."
 msgstr "スペル・チェック(_C)..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:107
+#: ../plugins/spell/gedit-spell-plugin.c:109
 msgid "Check the current document for incorrect spelling"
 msgstr "このドキュメントにある間違ったスペルをチェックします"
 
-#: ../plugins/spell/gedit-spell-plugin.c:113
-msgid "Set _Language..."
-msgstr "言語の設定(_L).."
-
 #: ../plugins/spell/gedit-spell-plugin.c:115
+msgid "Set _Language..."
+msgstr "言語の設定(_L)..."
+
+#: ../plugins/spell/gedit-spell-plugin.c:117
 msgid "Set the language of the current document"
 msgstr "このドキュメントの言語を設定します"
 
-#: ../plugins/spell/gedit-spell-plugin.c:124
+#: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "_Highlight Misspelled Words"
 msgstr "スペルミスの強調表示(_H)"
 
-#: ../plugins/spell/gedit-spell-plugin.c:126
+#: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
 msgstr "このドキュメントを自動的にスペルチェックします"
 
-#: ../plugins/spell/gedit-spell-plugin.c:817
+#: ../plugins/spell/gedit-spell-plugin.c:819
 msgid "The document is empty."
 msgstr "ドキュメントは空です。"
 
-#: ../plugins/spell/gedit-spell-plugin.c:842
+#: ../plugins/spell/gedit-spell-plugin.c:844
 msgid "No misspelled words"
 msgstr "スペルミスと思われる単語はありません"
 
@@ -3526,32 +3570,32 @@ msgid "The selected format used when inserting the date/time."
 msgstr "日付/時刻を挿入する時の選択された書式を使用します。"
 
 #. Translators: Use the more common date format in your locale
-#: ../plugins/time/gedit-time-dialog.ui.h:3
+#: ../plugins/time/gedit-time-dialog.ui.h:2
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:4
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%Y-%m-%d %H:%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
-#: ../plugins/time/gedit-time-dialog.ui.h:4
+#: ../plugins/time/gedit-time-dialog.ui.h:3
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:6
 msgid "01/11/2009 17:52:00"
 msgstr "2009-11-01 17:52:00"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:5
+#: ../plugins/time/gedit-time-dialog.ui.h:4
 msgid "Insert Date and Time"
 msgstr "日付と時間の挿入"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:6
+#: ../plugins/time/gedit-time-dialog.ui.h:5
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 msgid "Use the _selected format"
 msgstr "次の書式を使う(_S)"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:7
+#: ../plugins/time/gedit-time-dialog.ui.h:6
 msgid "_Insert"
 msgstr "挿入(_I)"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:8
+#: ../plugins/time/gedit-time-dialog.ui.h:7
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:11
 msgid "_Use custom format"
 msgstr "その他(_U)"
@@ -3575,6 +3619,9 @@ msgstr "アクセスを記録し、gedit で使用された文書のイベント
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
 msgstr "Zeitgeist データ・プロバイダ"
+
+#~ msgid "External Tools Manager"
+#~ msgstr "外部ツール・マネージャ"
 
 #~ msgid ""
 #~ "List of VFS schemes gedit supports in write mode. The 'file' scheme is "
@@ -4946,9 +4993,6 @@ msgstr "Zeitgeist データ・プロバイダ"
 
 #~ msgid "Edit tool <i>%s</i>:"
 #~ msgstr "<i>%s</i> ツールの編集:"
-
-#~ msgid "A Brand New Tool"
-#~ msgstr "(ここにツールの説明を入力してください)"
 
 #~ msgid "Co_mmand(s):"
 #~ msgstr "コマンド(_M):"
