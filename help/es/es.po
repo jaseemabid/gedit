@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-09-22 20:10+0000\n"
-"PO-Revision-Date: 2011-09-22 22:31+0200\n"
+"POT-Creation-Date: 2011-09-24 03:13+0000\n"
+"PO-Revision-Date: 2011-09-24 11:34+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -825,11 +825,11 @@ msgstr ""
 "La herramienta de búsqueda le puede ayudar a encontrar secuencias de texto "
 "específicas en su archivo."
 
-#: C/gedit-search.page:23(title)
+#: C/gedit-search.page:24(title)
 msgid "Finding text"
 msgstr "Buscar texto"
 
-#: C/gedit-search.page:24(p)
+#: C/gedit-search.page:25(p)
 msgid ""
 "Open the <gui style=\"menu\">search window</gui> by clicking "
 "<guiseq><gui>Search</gui><gui>Find</gui></guiseq> or pressing "
@@ -841,12 +841,14 @@ msgstr ""
 "<keyseq><key>Ctrl</key><key>F</key></keyseq>. Esto moverá su cursor hasta el "
 "principio de la <gui>ventana de búsqueda</gui>."
 
-#: C/gedit-search.page:27(p)
-msgid "Type the text you wish to search for in the <gui>search window</gui>."
+#: C/gedit-search.page:30(p)
+#| msgid ""
+#| "Type the text you wish to search for in the <gui>search window</gui>."
+msgid "Type the text you wish to search for in the <gui>search window </gui>."
 msgstr ""
 "Introduzca el texto que quiere buscar en la <gui>ventana de búsqueda</gui>."
 
-#: C/gedit-search.page:28(p)
+#: C/gedit-search.page:32(p)
 msgid ""
 "As you type, <app>gedit</app> will begin highlighting the portions of text "
 "that match what you have entered."
@@ -854,13 +856,13 @@ msgstr ""
 "A medida que escribe, <app>gedit</app> empezará a resaltar los fragmentos de "
 "texto que coniciden con lo que ha escrito."
 
-#: C/gedit-search.page:30(p)
+#: C/gedit-search.page:35(p)
 msgid "To scroll through the search results, do any of the following:"
 msgstr ""
 "Para desplazarse por los resultados de la búsqueda, realice cualquiera de "
 "los siguientes pasos:"
 
-#: C/gedit-search.page:31(p)
+#: C/gedit-search.page:37(p)
 msgid ""
 "Click on the <gui>up</gui> or <gui>down</gui> facing arrows next to the "
 "<gui>search window</gui>"
@@ -868,14 +870,14 @@ msgstr ""
 "Pulse en las flechas <gui>arriba</gui> o <gui>abajo</gui> junto a la "
 "<gui>ventana de búsqueda</gui>"
 
-#: C/gedit-search.page:33(p)
+#: C/gedit-search.page:40(p)
 msgid ""
 "Press the <key>up arrow</key> or <key>down arrow</key> keys on your keyboard"
 msgstr ""
 "Pulse las teclas <key>flecha arriba</key> o <key>flecha abajo</key> en su "
 "teclado"
 
-#: C/gedit-search.page:34(p)
+#: C/gedit-search.page:41(p)
 msgid ""
 "Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</"
 "key><key> Shift</key><key>G</key></keyseq>."
@@ -883,11 +885,27 @@ msgstr ""
 "Pulse <keyseq><key>Ctrl</key><key>G</key></keyseq> o <keyseq><key>Ctrl</"
 "key><key>Mayús</key><key>G</key></keyseq>."
 
-#: C/gedit-search.page:38(p)
-msgid "To close the <gui>search window</gui>, press <key>Esc</key>."
-msgstr "Para cerrar la <gui>ventana de búsqueda</gui>, pulse <key>Esc</key>."
+#: C/gedit-search.page:43(p)
+msgid ""
+"Press the <key>Ctrl</key> and use your mouse or touchpad's <key>scroll</key> "
+"feature to move up or down through the text."
+msgstr ""
+"Pulse <key>Ctrl</key> y use el <key>deslizador</key> de su ratón o "
+"«touchpad» para moverse hacia arriba o hacia abajo a través del texto."
 
-#: C/gedit-search.page:41(p)
+#: C/gedit-search.page:47(p)
+msgid ""
+"To close the <gui>search window</gui>, press either <key>Esc</key> or "
+"<key>Enter</key>. Pressing <key>Esc</key> will return the cursor to its "
+"where it was before you began your search. Pressing <key>Enter</key> will "
+"return the cursor to the current position in the search results."
+msgstr ""
+"Para cerrar la <gui>ventana de búsqueda</gui> pulse <key>Esc</key> o "
+"<key>Intro</key>. Al pulsar <key>Esc</key> el cursor volverá a la posición "
+"donde estaba antes de comenzar la búsqueda. Al pulsar <key>Intro</key> el "
+"cursor volverá a la posición actual en los resultados de la búsqueda."
+
+#: C/gedit-search.page:53(p)
 msgid ""
 "The text that you've searched for will remain highlighted by gedit, even "
 "after you have completed your search. To remove the highlight, click "
@@ -1952,7 +1970,6 @@ msgid "View document statistics"
 msgstr "Ver las estadísticas del documento"
 
 #: C/gedit-plugins-doc-stats.page:19(title)
-#| msgid "Document statistiscs"
 msgid "Document statistics"
 msgstr "Estadísticas del documento"
 
@@ -2684,6 +2701,10 @@ msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2011\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2006-2011\n"
 "María Majadas <maria.majadas@hispalinux.es>, 2005"
+
+#~ msgid "To close the <gui>search window</gui>, press <key>Esc</key>."
+#~ msgstr ""
+#~ "Para cerrar la <gui>ventana de búsqueda</gui>, pulse <key>Esc</key>."
 
 #~ msgid "Install Additional gedit Plugins"
 #~ msgstr "Instalar complementos adicionales de gedit"
