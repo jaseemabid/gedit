@@ -17,9 +17,9 @@ msgstr ""
 "Project-Id-Version: gedit master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-09-24 21:25+0000\n"
-"PO-Revision-Date: 2011-09-25 11:22+0900\n"
-"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
+"POT-Creation-Date: 2011-09-25 06:22+0000\n"
+"PO-Revision-Date: 2011-09-25 15:52+0900\n"
+"Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -256,9 +256,9 @@ msgid ""
 "make sure they appear exactly as mentioned here."
 msgstr ""
 "印刷する際に長い行をどのように折り返すかを指定します。折り返さない場合は "
-"\"none\"、単語の境界で折り返す場合は \"words\"、そして文字の境界で折り返す場"
-"合は \"char\" を使います。値は大文字小文字を区別することに注意してください。"
-"そしてここで記述したとおりに印刷されるか確認してください。"
+"\"none\"、単語の境界で折り返す場合は \"word\"、そして文字の境界で折り返す場合"
+"は \"char\" を使います。値は大文字小文字を区別することに注意してください。そ"
+"してここで記述したとおりに印刷されるか確認してください。"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
 msgid ""
@@ -1018,7 +1018,7 @@ msgstr[0] "%d ヶ所で検索と置換を行いました。"
 
 #: ../gedit/gedit-commands-search.c:121
 msgid "Found and replaced one occurrence"
-msgstr "%d ヶ所で検索と置換を行いました。"
+msgstr "1 ヶ所で検索と置換を行いました。"
 
 #. Translators: %s is replaced by the text
 #. entered by the user in the search box
