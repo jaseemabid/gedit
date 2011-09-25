@@ -4,27 +4,28 @@
 # Alastair McKinstry <mckinstry@computer.org>, 2000.
 # Paul Duffy <dubhthach@frink.nuigalway.ie>, 2003.
 # Alan Horkan <horkan@maths.tcd.ie>, 2005.
-# Seán de Búrca <leftmostcat@gmail.com>, 2007-2009, 2010.
+# Seán de Búrca <leftmostcat@gmail.com>, 2007-2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-03 08:24-0600\n"
-"PO-Revision-Date: 2010-06-03 08:38-0600\n"
+"POT-Creation-Date: 2011-09-25 15:21-0600\n"
+"PO-Revision-Date: 2011-09-25 15:33-0600\n"
 "Last-Translator: Seán de Búrca <leftmostcat@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : (n%10==1 || n%10==2) ? 1 : (n%"
-"10>=3 && n%10<= 6) ? 2 : ((n%10>=7 && n%10<=9) || n==10) ? 3 : 4;\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : (n%10==1 || n%10==2) ? 1 : (n"
+"%10>=3 && n%10<= 6) ? 2 : ((n%10>=7 && n%10<=9) || n==10) ? 3 : 4;\n"
 
 #: ../data/gedit.desktop.in.in.h:1
 msgid "Edit text files"
 msgstr "Cuir comhaid téacs in eagar"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:787
+#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:805
 msgid "Text Editor"
 msgstr "Eagarthóir Téacs"
 
@@ -128,40 +129,38 @@ msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
 msgid ""
-"List of VFS schemes gedit supports in write mode. The 'file' scheme is "
-"writable by default."
-msgstr ""
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
-msgid ""
 "List of active plugins. It contains the \"Location\" of the active plugins. "
 "See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
 msgid ""
 "List of encodings shown in the Character Encoding menu in open/save file "
 "selector. Only recognized encodings are used."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
 msgid "Maximum Number of Undo Actions"
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
 msgid "Maximum Recent Files"
+msgstr ""
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
+msgid ""
+"Maximum number of actions that gedit will be able to undo or redo. Use "
+"\"-1\" for unlimited number of actions."
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
 msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
-"\" for unlimited number of actions."
+"Maximum number of actions that gedit will be able to undo or redo. Use "
+"\"-1\" for unlimited number of actions. Deprecated since 2.12.0"
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
-msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
-"\" for unlimited number of actions. Deprecated since 2.12.0"
+msgid "Notebook Show Tabs Mode"
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
@@ -195,7 +194,7 @@ msgid "Right Margin Position"
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
-msgid "Side Pane is Visible"
+msgid "Side panel is Visible"
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
@@ -212,30 +211,28 @@ msgstr ""
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
 msgid ""
 "Specifies how the cursor moves when the HOME and END keys are pressed. Use "
-"\"DISABLED\" to always move at the start/end of the line, \"AFTER\" to move "
+"\"disabled\" to always move at the start/end of the line, \"after\" to move "
 "to the start/end of the line the first time the keys are pressed and to the "
 "start/end of the text ignoring whitespaces the second time the keys are "
-"pressed, \"BEFORE\" to move to the start/end of the text before moving to "
-"the start/end of the line and \"ALWAYS\" to always move to the start/end of "
+"pressed, \"before\" to move to the start/end of the text before moving to "
+"the start/end of the line and \"always\" to always move to the start/end of "
 "the text instead of the start/end of the line."
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
 msgid ""
-"Specifies how to wrap long lines for printing. Use \"GTK_WRAP_NONE\" for no "
-"wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
-"\"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. Note that "
-"the values are case-sensitive, so make sure they appear exactly as mentioned "
-"here."
+"Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
+"\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
+"individual character boundaries. Note that the values are case-sensitive, so "
+"make sure they appear exactly as mentioned here."
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
 msgid ""
-"Specifies how to wrap long lines in the editing area. Use \"GTK_WRAP_NONE\" "
-"for no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
-"\"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. Note that "
-"the values are case-sensitive, so make sure they appear exactly as mentioned "
-"here."
+"Specifies how to wrap long lines in the editing area. Use \"none\" for no "
+"wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
+"wrapping at individual character boundaries. Note that the values are case-"
+"sensitive, so make sure they appear exactly as mentioned here."
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
@@ -272,21 +269,19 @@ msgid "Specifies the position of the right margin."
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
-msgid "Status Bar is Visible"
+msgid ""
+"Specifies when to show the notebook tabs. Use \"never\" to never show the "
+"tabs, \"always\" to always show the tabs, and \"auto\" to show the tabs only "
+"when there is more than one tab. Note that the values are case-sensitive, so "
+"make sure they appear exactly as mentioned here."
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
-msgid "Style Scheme"
+msgid "Status Bar is Visible"
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
-msgid ""
-"Style for the toolbar buttons. Possible values are \"GEDIT_TOOLBAR_SYSTEM\" "
-"to use the system's default style, \"GEDIT_TOOLBAR_ICONS\" to display icons "
-"only, \"GEDIT_TOOLBAR_ICONS_AND_TEXT\" to display both icons and text, and "
-"\"GEDIT_TOOLBAR_ICONS_BOTH_HORIZ\" to display prioritized text beside icons. "
-"Note that the values are case-sensitive, so make sure they appear exactly as "
-"mentioned here."
+msgid "Style Scheme"
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
@@ -298,97 +293,94 @@ msgid "The ID of a GtkSourceView Style Scheme used to color the text."
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
-msgid "Toolbar Buttons Style"
-msgstr ""
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
 msgid "Toolbar is Visible"
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
 msgid "Undo Actions Limit (DEPRECATED)"
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
 msgid "Use Default Font"
 msgstr "Bain Úsáid as Cló Réamhshocrú"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
 msgid ""
 "Whether gedit should automatically save modified files after a time "
 "interval. You can set the time interval with the \"Autosave Interval\" "
 "option."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
 msgid ""
 "Whether gedit should create backup copies for the files it saves. You can "
 "set the backup file extension with the \"Backup Copy Extension\" option."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
 msgid "Whether gedit should display line numbers in the editing area."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
 msgid "Whether gedit should display the right margin in the editing area."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
 #, fuzzy
 msgid "Whether gedit should enable automatic indentation."
 msgstr "_Cumasaigh eangú uathoibríoch"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
 msgid "Whether gedit should enable syntax highlighting."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
 msgid ""
 "Whether gedit should highlight all the occurrences of the searched text."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
 #, fuzzy
 msgid "Whether gedit should highlight matching brackets."
 msgstr "Aibhsigh lúi_bín comhoiriúnach"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
 msgid "Whether gedit should highlight the current line."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
 msgid "Whether gedit should include a document header when printing documents."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
 msgid "Whether gedit should insert spaces instead of tabs."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
 msgid "Whether gedit should print syntax highlighting when printing documents."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
 msgid ""
 "Whether gedit should restore the previous cursor position when a file is "
 "loaded."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
-msgid "Whether the side pane at the left of editing windows should be visible."
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
+msgid ""
+"Whether the side panel at the left of editing windows should be visible."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
 msgid ""
 "Whether the status bar at the bottom of editing windows should be visible."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
 msgid "Whether the toolbar should be visible in editing windows."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:73
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
 msgid ""
 "Whether to use the system's default fixed width font for editing text "
 "instead of a font specific to gedit. If this option is turned off, then the "
@@ -396,27 +388,23 @@ msgid ""
 "font."
 msgstr ""
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:74
-msgid "Writable VFS schemes"
-msgstr ""
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:143
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
 msgid "Log Out _without Saving"
 msgstr "Logáil Amach _gan Sábháil"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:147
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:145
 msgid "_Cancel Logout"
 msgstr "_Cealaigh Logáil Amach"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:154
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:152
 msgid "Close _without Saving"
 msgstr "Dún _gan Sábháil"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:217
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:214
 msgid "Question"
 msgstr "Ceist"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:417
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:414
 #, c-format
 msgid ""
 "If you don't save, changes from the last %ld second will be permanently lost."
@@ -426,12 +414,12 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:426
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:423
 msgid ""
 "If you don't save, changes from the last minute will be permanently lost."
 msgstr ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:432
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:429
 #, c-format
 msgid ""
 "If you don't save, changes from the last minute and %ld second will be "
@@ -442,7 +430,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:442
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:439
 #, c-format
 msgid ""
 "If you don't save, changes from the last %ld minute will be permanently lost."
@@ -452,11 +440,11 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:457
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:454
 msgid "If you don't save, changes from the last hour will be permanently lost."
 msgstr ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:463
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:460
 #, c-format
 msgid ""
 "If you don't save, changes from the last hour and %d minute will be "
@@ -467,7 +455,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:478
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:475
 #, c-format
 msgid ""
 "If you don't save, changes from the last %d hour will be permanently lost."
@@ -477,22 +465,22 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:522
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:519
 #, c-format
 msgid "Changes to document \"%s\" will be permanently lost."
 msgstr ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:527
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:524
 #, c-format
 msgid "Save changes to document \"%s\" before closing?"
 msgstr ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:541
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:758
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:538
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:755
 msgid "Saving has been disabled by the system administrator."
 msgstr ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:709
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:706
 #, c-format
 msgid "Changes to %d document will be permanently lost."
 msgid_plural "Changes to %d documents will be permanently lost."
@@ -500,7 +488,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:717
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:714
 #, c-format
 msgid "There is %d document with unsaved changes. Save changes before closing?"
 msgid_plural ""
@@ -508,33 +496,33 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:736
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:733
 msgid "Docum_ents with unsaved changes:"
 msgstr ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:738
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:735
 msgid "S_elect the documents you want to save:"
 msgstr ""
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:762
+#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:759
 msgid "If you don't save, all your changes will be permanently lost."
 msgstr ""
 
-#: ../gedit/dialogs/gedit-encodings-dialog.c:356
+#: ../gedit/dialogs/gedit-encodings-dialog.c:351
 msgid "Character Encodings"
 msgstr "Ionchóduithe Carachtar"
 
-#: ../gedit/dialogs/gedit-encodings-dialog.c:420
-#: ../gedit/dialogs/gedit-encodings-dialog.c:481
+#: ../gedit/dialogs/gedit-encodings-dialog.c:414
+#: ../gedit/dialogs/gedit-encodings-dialog.c:475
 msgid "_Description"
 msgstr "C_ur Síos"
 
-#: ../gedit/dialogs/gedit-encodings-dialog.c:429
-#: ../gedit/dialogs/gedit-encodings-dialog.c:490
+#: ../gedit/dialogs/gedit-encodings-dialog.c:423
+#: ../gedit/dialogs/gedit-encodings-dialog.c:484
 msgid "_Encoding"
 msgstr "_Ionchódú"
 
-#. ex:ts=8:noet:
+#. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-encodings-dialog.ui.h:1
 msgid "A_vailable encodings:"
 msgstr "_Ionchóduithe ar fáil:"
@@ -547,46 +535,46 @@ msgstr "Ionchóduithe carachtar"
 msgid "E_ncodings shown in menu:"
 msgstr "Io_nchóduithe taispeánta sa roghchlár:"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:426
+#: ../gedit/dialogs/gedit-preferences-dialog.c:423
 msgid "Click on this button to select the font to be used by the editor"
 msgstr ""
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:441
+#: ../gedit/dialogs/gedit-preferences-dialog.c:438
 #, c-format
 msgid "_Use the system fixed width font (%s)"
 msgstr "Ú_sáid cló aonleithid an chórais (%s)"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:637
+#: ../gedit/dialogs/gedit-preferences-dialog.c:634
 msgid "The selected color scheme cannot be installed."
 msgstr ""
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:664
+#: ../gedit/dialogs/gedit-preferences-dialog.c:661
 msgid "Add Scheme"
 msgstr "Cuir Scéim Leis"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:671
+#: ../gedit/dialogs/gedit-preferences-dialog.c:668
 msgid "A_dd Scheme"
 msgstr "Cuir Scéim _Leis"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:679
+#: ../gedit/dialogs/gedit-preferences-dialog.c:676
 msgid "Color Scheme Files"
 msgstr "Comhaid Scéim Dathanna"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:686
+#: ../gedit/dialogs/gedit-preferences-dialog.c:683
 #: ../gedit/gedit-file-chooser-dialog.c:52
 msgid "All Files"
 msgstr "Gach Comhad"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:731
+#: ../gedit/dialogs/gedit-preferences-dialog.c:728
 #, c-format
 msgid "Could not remove color scheme \"%s\"."
 msgstr "Níorbh fhéidir scéim dathanna \"%s\" a bhaint."
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:950
+#: ../gedit/dialogs/gedit-preferences-dialog.c:947
 msgid "gedit Preferences"
 msgstr "Sainroghanna gedit"
 
-#. ex:ts=8:noet:
+#. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:1
 msgid "Color Scheme"
 msgstr "Scéim Dathanna"
@@ -596,11 +584,10 @@ msgid "Create a _backup copy of files before saving"
 msgstr "Cruthaigh cóip cúl_taca de chomhaid roimh shábháil"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:3
-#, fuzzy
 msgid "Display right _margin at column:"
-msgstr "Taispeáin _imeall ar dheis"
+msgstr "Taispeáin _imeall ar dheis ag colún:"
 
-#. ex:ts=8:noet:
+#. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:4
 #: ../gedit/gedit-print-preferences.ui.h:1
 msgid "Do not _split words over two lines"
@@ -624,6 +611,8 @@ msgid "File Saving"
 msgstr "Sábháil Comhad"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:9
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:2
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:4
 msgid "Font"
 msgstr "Cló"
 
@@ -680,8 +669,7 @@ msgstr "Cuir _Leis..."
 msgid "_Autosave files every"
 msgstr "_Uathshábháil comhaid gach"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23
-#: ../gedit/gedit-view.c:2042
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:561
 msgid "_Display line numbers"
 msgstr "T_aispeáin uimhreacha líne"
 
@@ -697,118 +685,114 @@ msgstr "Leithead _táib:"
 msgid "_minutes"
 msgstr "_nóiméad"
 
-#: ../gedit/dialogs/gedit-search-dialog.c:300
-#: ../gedit/dialogs/gedit-search-dialog.ui.h:2 ../gedit/gedit-window.c:1637
+#: ../gedit/dialogs/gedit-replace-dialog.c:209
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1626
 msgid "Replace"
 msgstr "Ionadaigh"
 
-#: ../gedit/dialogs/gedit-search-dialog.c:306 ../gedit/gedit-window.c:1635
-msgid "Find"
-msgstr "Aimsigh"
-
-#: ../gedit/dialogs/gedit-search-dialog.c:410
+#: ../gedit/dialogs/gedit-replace-dialog.c:291
 msgid "Replace _All"
 msgstr "Ionadaigh _Gach Rud"
 
-#: ../gedit/dialogs/gedit-search-dialog.c:411
-#: ../gedit/gedit-commands-file.c:562
+#: ../gedit/dialogs/gedit-replace-dialog.c:292
+#: ../gedit/gedit-commands-file.c:572
 msgid "_Replace"
 msgstr "_Ionadaigh"
 
-#. ex:ts=8:noet:
-#: ../gedit/dialogs/gedit-search-dialog.ui.h:1
+#. ex:set ts=8 noet:
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:1
 msgid "Match _entire word only"
 msgstr "Meaitseáil an focal ar _fad amháin"
 
-#: ../gedit/dialogs/gedit-search-dialog.ui.h:3
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:3
 msgid "Replace All"
 msgstr "Ionadaigh Gach Rud"
 
-#: ../gedit/dialogs/gedit-search-dialog.ui.h:4
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:4
 msgid "Replace _with: "
 msgstr "Ionadaigh _le:"
 
-#: ../gedit/dialogs/gedit-search-dialog.ui.h:5
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:5
 msgid "Search _backwards"
 msgstr "Cuardaigh ar _gcúl"
 
-#: ../gedit/dialogs/gedit-search-dialog.ui.h:6
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:6
 msgid "_Match case"
 msgstr "_Meaitseáil an cás"
 
-#: ../gedit/dialogs/gedit-search-dialog.ui.h:7
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:7
 msgid "_Search for: "
 msgstr "_Cuardaigh ar: "
 
-#: ../gedit/dialogs/gedit-search-dialog.ui.h:8
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:8
 msgid "_Wrap around"
 msgstr "_Timfhill"
 
-#: ../gedit/gedit-app.c:221
+#: ../gedit/gedit-app.c:235
 msgid "There was an error displaying the help."
 msgstr "Tharla earráid agus cabhair á thaispeáint."
 
-#: ../gedit/gedit-command-line.c:230
+#: ../gedit/gedit-command-line.c:232
 #, c-format
 msgid "%s: invalid encoding.\n"
 msgstr "%s: ionchódú neamhbhailí.\n"
 
-#: ../gedit/gedit-command-line.c:254
+#: ../gedit/gedit-command-line.c:256
 msgid "Show the application's version"
 msgstr "Taispeáin leagan an fheidhmchláir"
 
-#: ../gedit/gedit-command-line.c:260
+#: ../gedit/gedit-command-line.c:262
 msgid "Display list of possible values for the encoding option"
 msgstr ""
 
-#: ../gedit/gedit-command-line.c:268
+#: ../gedit/gedit-command-line.c:270
 msgid ""
 "Set the character encoding to be used to open the files listed on the "
 "command line"
 msgstr ""
 
-#: ../gedit/gedit-command-line.c:269
+#: ../gedit/gedit-command-line.c:271
 msgid "ENCODING"
 msgstr "IONCHÓDÚ"
 
-#: ../gedit/gedit-command-line.c:276
+#: ../gedit/gedit-command-line.c:278
 msgid "Create a new top-level window in an existing instance of gedit"
 msgstr ""
 
-#: ../gedit/gedit-command-line.c:284
+#: ../gedit/gedit-command-line.c:286
 msgid "Create a new document in an existing instance of gedit"
 msgstr ""
 
-#: ../gedit/gedit-command-line.c:292
+#: ../gedit/gedit-command-line.c:294
 msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
 msgstr ""
 
-#: ../gedit/gedit-command-line.c:293
+#: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
 msgstr "CÉIMSEATA"
 
-#: ../gedit/gedit-command-line.c:300
+#: ../gedit/gedit-command-line.c:302
 msgid "Open files and block process until files are closed"
 msgstr ""
 
-#: ../gedit/gedit-command-line.c:308
+#: ../gedit/gedit-command-line.c:310
 msgid "Run gedit in the background"
 msgstr ""
 
-#: ../gedit/gedit-command-line.c:316
+#: ../gedit/gedit-command-line.c:318
 msgid "Run gedit in standalone mode"
 msgstr ""
 
-#: ../gedit/gedit-command-line.c:325
+#: ../gedit/gedit-command-line.c:327
 msgid "[FILE...] [+LINE[:COLUMN]]"
 msgstr "[COMHAD...] [+LÍNE[:COLÚN]]"
 
 #. Setup command line options
-#: ../gedit/gedit-command-line.c:332
+#: ../gedit/gedit-command-line.c:334
 msgid "- Edit text files"
 msgstr "- Cuir comhaid téacs in eagar"
 
-#: ../gedit/gedit-command-line.c:341
+#: ../gedit/gedit-command-line.c:345
 #, c-format
 msgid ""
 "%s\n"
@@ -831,69 +815,69 @@ msgstr[3] "%d gcomhad á luchtú..."
 msgstr[4] "%d comhad á luchtú..."
 
 #. Translators: "Open Files" is the title of the file chooser window
-#: ../gedit/gedit-commands-file.c:436
+#: ../gedit/gedit-commands-file.c:446
 msgid "Open Files"
 msgstr "Oscail Comhaid"
 
-#: ../gedit/gedit-commands-file.c:549
+#: ../gedit/gedit-commands-file.c:559
 #, c-format
 msgid "The file \"%s\" is read-only."
 msgstr ""
 
-#: ../gedit/gedit-commands-file.c:554
+#: ../gedit/gedit-commands-file.c:564
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr ""
 
-#: ../gedit/gedit-commands-file.c:604
+#: ../gedit/gedit-commands-file.c:614
 msgid "Save the file using compression?"
 msgstr ""
 
-#: ../gedit/gedit-commands-file.c:605
+#: ../gedit/gedit-commands-file.c:615
 #, c-format
 msgid ""
 "The file \"%s\" was previously saved as plain text and will now be saved "
 "using compression."
 msgstr ""
 
-#: ../gedit/gedit-commands-file.c:607
+#: ../gedit/gedit-commands-file.c:617
 msgid "_Save Using Compression"
 msgstr ""
 
-#: ../gedit/gedit-commands-file.c:611
+#: ../gedit/gedit-commands-file.c:621
 msgid "Save the file as plain text?"
 msgstr ""
 
-#: ../gedit/gedit-commands-file.c:612
+#: ../gedit/gedit-commands-file.c:622
 #, c-format
 msgid ""
 "The file \"%s\" was previously saved using compression and will now be saved "
 "as plain text."
 msgstr ""
 
-#: ../gedit/gedit-commands-file.c:614
+#: ../gedit/gedit-commands-file.c:624
 msgid "_Save As Plain Text"
 msgstr "_Sábháil Mar Gnáththéacs"
 
-#: ../gedit/gedit-commands-file.c:732 ../gedit/gedit-commands-file.c:951
+#: ../gedit/gedit-commands-file.c:742 ../gedit/gedit-commands-file.c:961
 #, c-format
 msgid "Saving file '%s'…"
 msgstr "Comhad '%s' á shábháil..."
 
-#: ../gedit/gedit-commands-file.c:837
+#: ../gedit/gedit-commands-file.c:847
 msgid "Save As"
 msgstr "Sábháil Mar"
 
-#: ../gedit/gedit-commands-file.c:1165
+#: ../gedit/gedit-commands-file.c:1175
 #, c-format
 msgid "Reverting the document '%s'…"
 msgstr ""
 
-#: ../gedit/gedit-commands-file.c:1210
+#: ../gedit/gedit-commands-file.c:1220
 #, c-format
 msgid "Revert unsaved changes to document '%s'?"
 msgstr ""
 
-#: ../gedit/gedit-commands-file.c:1219
+#: ../gedit/gedit-commands-file.c:1229
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld second will be permanently lost."
@@ -903,12 +887,12 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../gedit/gedit-commands-file.c:1228
+#: ../gedit/gedit-commands-file.c:1238
 msgid ""
 "Changes made to the document in the last minute will be permanently lost."
 msgstr ""
 
-#: ../gedit/gedit-commands-file.c:1234
+#: ../gedit/gedit-commands-file.c:1244
 #, c-format
 msgid ""
 "Changes made to the document in the last minute and %ld second will be "
@@ -919,7 +903,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../gedit/gedit-commands-file.c:1244
+#: ../gedit/gedit-commands-file.c:1254
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld minute will be permanently lost."
@@ -929,11 +913,11 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../gedit/gedit-commands-file.c:1259
+#: ../gedit/gedit-commands-file.c:1269
 msgid "Changes made to the document in the last hour will be permanently lost."
 msgstr ""
 
-#: ../gedit/gedit-commands-file.c:1265
+#: ../gedit/gedit-commands-file.c:1275
 #, c-format
 msgid ""
 "Changes made to the document in the last hour and %d minute will be "
@@ -944,7 +928,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../gedit/gedit-commands-file.c:1280
+#: ../gedit/gedit-commands-file.c:1290
 #, c-format
 msgid ""
 "Changes made to the document in the last %d hour will be permanently lost."
@@ -954,15 +938,15 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: ../gedit/gedit-commands-file.c:1306
+#: ../gedit/gedit-commands-file.c:1316
 msgid "_Revert"
 msgstr "_Fill"
 
-#: ../gedit/gedit-commands-help.c:86
+#: ../gedit/gedit-commands-help.c:88
 msgid "gedit is a small and lightweight text editor for the GNOME Desktop"
 msgstr "Is eagarthóir téacs beag agus éadrom don Deasc GNOME gedit"
 
-#: ../gedit/gedit-commands-help.c:111
+#: ../gedit/gedit-commands-help.c:113
 msgid "translator-credits"
 msgstr ""
 "Alastair McKinstry <mckinstry@computer.org>\n"
@@ -970,7 +954,7 @@ msgstr ""
 "Alan Horkan <horkan@maths.tcd.ie>\n"
 "Seán de Búrca <leftmostcat@gmail.com>"
 
-#: ../gedit/gedit-commands-search.c:111
+#: ../gedit/gedit-commands-search.c:112
 #, c-format
 msgid "Found and replaced %d occurrence"
 msgid_plural "Found and replaced %d occurrences"
@@ -978,158 +962,158 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: ../gedit/gedit-commands-search.c:120
+#: ../gedit/gedit-commands-search.c:121
 msgid "Found and replaced one occurrence"
 msgstr ""
 
 #. Translators: %s is replaced by the text
 #. entered by the user in the search box
-#: ../gedit/gedit-commands-search.c:143
+#: ../gedit/gedit-commands-search.c:144
 #, c-format
 msgid "\"%s\" not found"
 msgstr "\"%s\" gan aimsiú"
 
-#: ../gedit/gedit-document.c:1218 ../gedit/gedit-document.c:1239
+#: ../gedit/gedit-document.c:1241 ../gedit/gedit-document.c:1267
 #, c-format
 msgid "Unsaved Document %d"
-msgstr "Cáipéis Gan Sábháil %d"
+msgstr "Cáipéis gan Sábháil %d"
 
-#: ../gedit/gedit-documents-panel.c:98 ../gedit/gedit-documents-panel.c:112
-#: ../gedit/gedit-window.c:2449 ../gedit/gedit-window.c:2456
+#: ../gedit/gedit-documents-panel.c:121 ../gedit/gedit-documents-panel.c:135
+#: ../gedit/gedit-window.c:2459 ../gedit/gedit-window.c:2466
 msgid "Read-Only"
 msgstr "Inléite-Amháin"
 
-#: ../gedit/gedit-documents-panel.c:794
+#: ../gedit/gedit-documents-panel.c:1143 ../gedit/gedit-window.c:3907
 msgid "Documents"
 msgstr "Cáipéisí"
 
-#: ../gedit/gedit-encodings.c:138 ../gedit/gedit-encodings.c:180
-#: ../gedit/gedit-encodings.c:182 ../gedit/gedit-encodings.c:184
+#: ../gedit/gedit-encodings.c:142 ../gedit/gedit-encodings.c:184
 #: ../gedit/gedit-encodings.c:186 ../gedit/gedit-encodings.c:188
 #: ../gedit/gedit-encodings.c:190 ../gedit/gedit-encodings.c:192
+#: ../gedit/gedit-encodings.c:194 ../gedit/gedit-encodings.c:196
 msgid "Unicode"
 msgstr "Unicode"
 
-#: ../gedit/gedit-encodings.c:151 ../gedit/gedit-encodings.c:175
-#: ../gedit/gedit-encodings.c:225 ../gedit/gedit-encodings.c:268
+#: ../gedit/gedit-encodings.c:155 ../gedit/gedit-encodings.c:179
+#: ../gedit/gedit-encodings.c:229 ../gedit/gedit-encodings.c:272
 msgid "Western"
 msgstr "Iartharach"
 
-#: ../gedit/gedit-encodings.c:153 ../gedit/gedit-encodings.c:227
-#: ../gedit/gedit-encodings.c:264
+#: ../gedit/gedit-encodings.c:157 ../gedit/gedit-encodings.c:231
+#: ../gedit/gedit-encodings.c:268
 msgid "Central European"
 msgstr "Lár-Eorpach"
 
-#: ../gedit/gedit-encodings.c:155
+#: ../gedit/gedit-encodings.c:159
 msgid "South European"
 msgstr "Deisceart na hEorpa"
 
-#: ../gedit/gedit-encodings.c:157 ../gedit/gedit-encodings.c:171
-#: ../gedit/gedit-encodings.c:278
+#: ../gedit/gedit-encodings.c:161 ../gedit/gedit-encodings.c:175
+#: ../gedit/gedit-encodings.c:282
 msgid "Baltic"
 msgstr "Baltach"
 
-#: ../gedit/gedit-encodings.c:159 ../gedit/gedit-encodings.c:229
-#: ../gedit/gedit-encodings.c:242 ../gedit/gedit-encodings.c:246
-#: ../gedit/gedit-encodings.c:248 ../gedit/gedit-encodings.c:266
+#: ../gedit/gedit-encodings.c:163 ../gedit/gedit-encodings.c:233
+#: ../gedit/gedit-encodings.c:246 ../gedit/gedit-encodings.c:250
+#: ../gedit/gedit-encodings.c:252 ../gedit/gedit-encodings.c:270
 msgid "Cyrillic"
 msgstr "Coireallach"
 
-#: ../gedit/gedit-encodings.c:161 ../gedit/gedit-encodings.c:235
-#: ../gedit/gedit-encodings.c:276
+#: ../gedit/gedit-encodings.c:165 ../gedit/gedit-encodings.c:239
+#: ../gedit/gedit-encodings.c:280
 msgid "Arabic"
 msgstr "Arabach"
 
-#: ../gedit/gedit-encodings.c:163 ../gedit/gedit-encodings.c:270
+#: ../gedit/gedit-encodings.c:167 ../gedit/gedit-encodings.c:274
 msgid "Greek"
 msgstr "Gréagach"
 
-#: ../gedit/gedit-encodings.c:165
+#: ../gedit/gedit-encodings.c:169
 msgid "Hebrew Visual"
 msgstr "Eabhrach Infheicthe"
 
-#: ../gedit/gedit-encodings.c:167 ../gedit/gedit-encodings.c:231
-#: ../gedit/gedit-encodings.c:272
+#: ../gedit/gedit-encodings.c:171 ../gedit/gedit-encodings.c:235
+#: ../gedit/gedit-encodings.c:276
 msgid "Turkish"
 msgstr "Turcach"
 
-#: ../gedit/gedit-encodings.c:169
+#: ../gedit/gedit-encodings.c:173
 msgid "Nordic"
 msgstr "Nordach"
 
-#: ../gedit/gedit-encodings.c:173
+#: ../gedit/gedit-encodings.c:177
 msgid "Celtic"
 msgstr "Ceilteach"
 
-#: ../gedit/gedit-encodings.c:177
+#: ../gedit/gedit-encodings.c:181
 msgid "Romanian"
 msgstr "Rómánach"
 
-#: ../gedit/gedit-encodings.c:195
+#: ../gedit/gedit-encodings.c:199
 msgid "Armenian"
 msgstr "Airméanach"
 
-#: ../gedit/gedit-encodings.c:197 ../gedit/gedit-encodings.c:199
-#: ../gedit/gedit-encodings.c:213
+#: ../gedit/gedit-encodings.c:201 ../gedit/gedit-encodings.c:203
+#: ../gedit/gedit-encodings.c:217
 msgid "Chinese Traditional"
 msgstr "Síneach Traidisiúnta"
 
-#: ../gedit/gedit-encodings.c:201
+#: ../gedit/gedit-encodings.c:205
 msgid "Cyrillic/Russian"
 msgstr "Coireallach/Rúiseach"
 
-#: ../gedit/gedit-encodings.c:204 ../gedit/gedit-encodings.c:206
-#: ../gedit/gedit-encodings.c:208 ../gedit/gedit-encodings.c:238
-#: ../gedit/gedit-encodings.c:253
+#: ../gedit/gedit-encodings.c:208 ../gedit/gedit-encodings.c:210
+#: ../gedit/gedit-encodings.c:212 ../gedit/gedit-encodings.c:242
+#: ../gedit/gedit-encodings.c:257
 msgid "Japanese"
 msgstr "Seapánach"
 
-#: ../gedit/gedit-encodings.c:211 ../gedit/gedit-encodings.c:240
-#: ../gedit/gedit-encodings.c:244 ../gedit/gedit-encodings.c:259
+#: ../gedit/gedit-encodings.c:215 ../gedit/gedit-encodings.c:244
+#: ../gedit/gedit-encodings.c:248 ../gedit/gedit-encodings.c:263
 msgid "Korean"
 msgstr "Cóiréach"
 
-#: ../gedit/gedit-encodings.c:216 ../gedit/gedit-encodings.c:218
-#: ../gedit/gedit-encodings.c:220
+#: ../gedit/gedit-encodings.c:220 ../gedit/gedit-encodings.c:222
+#: ../gedit/gedit-encodings.c:224
 msgid "Chinese Simplified"
 msgstr "Síneach Simplithe"
 
-#: ../gedit/gedit-encodings.c:222
+#: ../gedit/gedit-encodings.c:226
 msgid "Georgian"
 msgstr "Seoirseach"
 
-#: ../gedit/gedit-encodings.c:233 ../gedit/gedit-encodings.c:274
+#: ../gedit/gedit-encodings.c:237 ../gedit/gedit-encodings.c:278
 msgid "Hebrew"
 msgstr "Eabhrach"
 
-#: ../gedit/gedit-encodings.c:250
+#: ../gedit/gedit-encodings.c:254
 msgid "Cyrillic/Ukrainian"
 msgstr "Coireallach/Úcránach"
 
-#: ../gedit/gedit-encodings.c:255 ../gedit/gedit-encodings.c:261
-#: ../gedit/gedit-encodings.c:280
+#: ../gedit/gedit-encodings.c:259 ../gedit/gedit-encodings.c:265
+#: ../gedit/gedit-encodings.c:284
 msgid "Vietnamese"
 msgstr "Vítneamach"
 
-#: ../gedit/gedit-encodings.c:257
+#: ../gedit/gedit-encodings.c:261
 msgid "Thai"
 msgstr "Téalannach"
 
-#: ../gedit/gedit-encodings.c:431
+#: ../gedit/gedit-encodings.c:435
 msgid "Unknown"
 msgstr "Anaithnid"
 
-#: ../gedit/gedit-encodings-combo-box.c:284
+#: ../gedit/gedit-encodings-combo-box.c:310
 msgid "Automatically Detected"
 msgstr "Braitheadh go hUathoibríoch"
 
-#: ../gedit/gedit-encodings-combo-box.c:303
-#: ../gedit/gedit-encodings-combo-box.c:319
+#: ../gedit/gedit-encodings-combo-box.c:329
+#: ../gedit/gedit-encodings-combo-box.c:345
 #, c-format
 msgid "Current Locale (%s)"
 msgstr "Logchaighdeán Reatha (%s)"
 
-#: ../gedit/gedit-encodings-combo-box.c:372
+#: ../gedit/gedit-encodings-combo-box.c:397
 msgid "Add or Remove..."
 msgstr "Cuir Leis nó Bain..."
 
@@ -1142,247 +1126,238 @@ msgid "C_haracter Encoding:"
 msgstr "I_onchódú Carachtar:"
 
 #: ../gedit/gedit-file-chooser-dialog.c:158
-#, fuzzy
 msgid "L_ine Ending:"
-msgstr "_Ionchódú"
+msgstr "_Deireadh Línte:"
 
 #: ../gedit/gedit-file-chooser-dialog.c:177
 msgid "Unix/Linux"
-msgstr ""
+msgstr "Unix/Linux"
 
 #: ../gedit/gedit-file-chooser-dialog.c:183
 msgid "Mac OS Classic"
-msgstr ""
+msgstr "Mac OS Clasaiceach"
 
 #: ../gedit/gedit-file-chooser-dialog.c:189
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
-#: ../gedit/gedit-io-error-message-area.c:202
-#: ../gedit/gedit-io-error-message-area.c:207
-#: ../gedit/gedit-io-error-message-area.c:524
-#: ../gedit/gedit-io-error-message-area.c:547
+#: ../gedit/gedit-io-error-info-bar.c:182
+#: ../gedit/gedit-io-error-info-bar.c:497
 msgid "_Retry"
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:229
+#: ../gedit/gedit-io-error-info-bar.c:203
 #, c-format
 msgid "Could not find the file %s."
 msgstr "Níorbh fhéidir an comhad %s a aimsiú."
 
-#: ../gedit/gedit-io-error-message-area.c:231
-#: ../gedit/gedit-io-error-message-area.c:274
-#: ../gedit/gedit-io-error-message-area.c:281
+#: ../gedit/gedit-io-error-info-bar.c:205
+#: ../gedit/gedit-io-error-info-bar.c:248
+#: ../gedit/gedit-io-error-info-bar.c:255
 msgid "Please check that you typed the location correctly and try again."
 msgstr ""
 
 #. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
-#: ../gedit/gedit-io-error-message-area.c:250
+#: ../gedit/gedit-io-error-info-bar.c:224
 #, c-format
 msgid "gedit cannot handle %s locations."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:256
+#: ../gedit/gedit-io-error-info-bar.c:230
 msgid "gedit cannot handle this location."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:264
+#: ../gedit/gedit-io-error-info-bar.c:238
 msgid "The location of the file cannot be mounted."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:268
+#: ../gedit/gedit-io-error-info-bar.c:242
 msgid "The location of the file cannot be accessed because it is not mounted."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:272
+#: ../gedit/gedit-io-error-info-bar.c:246
 #, c-format
 msgid "%s is a directory."
 msgstr "Is fillteán é %s."
 
-#: ../gedit/gedit-io-error-message-area.c:279
+#: ../gedit/gedit-io-error-info-bar.c:253
 #, c-format
 msgid "%s is not a valid location."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:315
+#: ../gedit/gedit-io-error-info-bar.c:289
 #, c-format
 msgid ""
 "Host %s could not be found. Please check that your proxy settings are "
 "correct and try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:330
+#: ../gedit/gedit-io-error-info-bar.c:304
 #, c-format
 msgid ""
 "Hostname was invalid. Please check that you typed the location correctly and "
 "try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:338
+#: ../gedit/gedit-io-error-info-bar.c:312
 #, c-format
 msgid "%s is not a regular file."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:343
+#: ../gedit/gedit-io-error-info-bar.c:317
 msgid "Connection timed out. Please try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:366
+#: ../gedit/gedit-io-error-info-bar.c:340
 msgid "The file is too big."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:407
+#: ../gedit/gedit-io-error-info-bar.c:381
 #, c-format
 msgid "Unexpected error: %s"
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:443
+#: ../gedit/gedit-io-error-info-bar.c:417
 msgid "gedit cannot find the file. Perhaps it has recently been deleted."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:453
+#: ../gedit/gedit-io-error-info-bar.c:427
 #, c-format
 msgid "Could not revert the file %s."
 msgstr "Níorbh fhéidir an comhad %s a fhilleadh."
 
-#: ../gedit/gedit-io-error-message-area.c:480
+#: ../gedit/gedit-io-error-info-bar.c:454
 msgid "Ch_aracter Encoding:"
 msgstr "I_onchódú Carachtar:"
 
 #. Translators: the access key chosen for this string should be
 #. different from other main menu access keys (Open, Edit, View...)
-#: ../gedit/gedit-io-error-message-area.c:531
-#: ../gedit/gedit-io-error-message-area.c:556
-#: ../gedit/gedit-io-error-message-area.c:841
-#: ../gedit/gedit-io-error-message-area.c:851
+#: ../gedit/gedit-io-error-info-bar.c:506
+#: ../gedit/gedit-io-error-info-bar.c:782
 msgid "Edit Any_way"
 msgstr ""
 
-#. Translators: the access key chosen for this string should be
-#. different from other main menu access keys (Open, Edit, View...)
-#: ../gedit/gedit-io-error-message-area.c:534
-#: ../gedit/gedit-io-error-message-area.c:561
-#: ../gedit/gedit-io-error-message-area.c:844
-#: ../gedit/gedit-io-error-message-area.c:856
-msgid "D_on't Edit"
-msgstr "_Ná Cuir in Eagar"
-
-#: ../gedit/gedit-io-error-message-area.c:663
+#: ../gedit/gedit-io-error-info-bar.c:608
 msgid ""
 "The number of followed links is limited and the actual file could not be "
 "found within this limit."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:667
+#: ../gedit/gedit-io-error-info-bar.c:612
 msgid "You do not have the permissions necessary to open the file."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:673
+#: ../gedit/gedit-io-error-info-bar.c:618
 #, fuzzy
 msgid "gedit has not been able to detect the character encoding."
 msgstr ""
 "Niorbh fhéidir an comhad %s a shábháil agus ionchódú carachtar %s á úsáid."
 
-#: ../gedit/gedit-io-error-message-area.c:675
-#: ../gedit/gedit-io-error-message-area.c:697
+#: ../gedit/gedit-io-error-info-bar.c:620
+#: ../gedit/gedit-io-error-info-bar.c:642
 msgid "Please check that you are not trying to open a binary file."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:676
+#: ../gedit/gedit-io-error-info-bar.c:621
 msgid "Select a character encoding from the menu and try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:682
+#: ../gedit/gedit-io-error-info-bar.c:627
 #, fuzzy, c-format
 msgid "There was a problem opening the file %s."
 msgstr "Tharla earráid agus url á thaispeáint."
 
-#: ../gedit/gedit-io-error-message-area.c:684
+#: ../gedit/gedit-io-error-info-bar.c:629
 msgid ""
 "The file you opened has some invalid characters. If you continue editing "
-"this file you could make this document useless."
+"this file you could corrupt this document."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:687
+#: ../gedit/gedit-io-error-info-bar.c:632
 msgid "You can also choose another character encoding and try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:694
+#: ../gedit/gedit-io-error-info-bar.c:639
 #, fuzzy, c-format
 msgid "Could not open the file %s using the %s character encoding."
 msgstr ""
 "Niorbh fhéidir an comhad %s a shábháil agus ionchódú carachtar %s á úsáid."
 
-#: ../gedit/gedit-io-error-message-area.c:698
-#: ../gedit/gedit-io-error-message-area.c:772
+#: ../gedit/gedit-io-error-info-bar.c:643
+#: ../gedit/gedit-io-error-info-bar.c:717
 msgid "Select a different character encoding from the menu and try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:708
+#: ../gedit/gedit-io-error-info-bar.c:653
 #, c-format
 msgid "Could not open the file %s."
 msgstr "Níorbh fhéidir an comhad %s a oscailt."
 
-#: ../gedit/gedit-io-error-message-area.c:767
+#: ../gedit/gedit-io-error-info-bar.c:712
 #, fuzzy, c-format
 msgid "Could not save the file %s using the %s character encoding."
 msgstr ""
 "Niorbh fhéidir an comhad %s a shábháil agus ionchódú carachtar %s á úsáid."
 
-#: ../gedit/gedit-io-error-message-area.c:770
+#: ../gedit/gedit-io-error-info-bar.c:715
 msgid ""
 "The document contains one or more characters that cannot be encoded using "
 "the specified character encoding."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:871
+#. Translators: the access key chosen for this string should be
+#. different from other main menu access keys (Open, Edit, View...)
+#: ../gedit/gedit-io-error-info-bar.c:787
+msgid "D_on't Edit"
+msgstr "_Ná Cuir in Eagar"
+
+#: ../gedit/gedit-io-error-info-bar.c:801
 #, c-format
 msgid "This file (%s) is already open in another gedit window."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:885
+#: ../gedit/gedit-io-error-info-bar.c:815
 msgid ""
 "gedit opened this instance of the file in a non-editable way. Do you want to "
 "edit it anyway?"
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:943
-#: ../gedit/gedit-io-error-message-area.c:953
-#: ../gedit/gedit-io-error-message-area.c:1051
-#: ../gedit/gedit-io-error-message-area.c:1061
+#: ../gedit/gedit-io-error-info-bar.c:873
+#: ../gedit/gedit-io-error-info-bar.c:971
+#: ../gedit/gedit-io-error-info-bar.c:1260
 msgid "S_ave Anyway"
 msgstr "Sábháil Mar Sin _Féin"
 
-#: ../gedit/gedit-io-error-message-area.c:947
-#: ../gedit/gedit-io-error-message-area.c:957
-#: ../gedit/gedit-io-error-message-area.c:1055
-#: ../gedit/gedit-io-error-message-area.c:1065
+#: ../gedit/gedit-io-error-info-bar.c:877
+#: ../gedit/gedit-io-error-info-bar.c:975
+#: ../gedit/gedit-io-error-info-bar.c:1264
 msgid "D_on't Save"
 msgstr "Ná Sá_bháil"
 
 #. FIXME: review this message, it's not clear since for the user the "modification"
-#. could be interpreted as the changes he made in the document. beside "reading" is
-#. not accurate (since last load/save)
-#: ../gedit/gedit-io-error-message-area.c:975
+#. * could be interpreted as the changes he made in the document. beside "reading" is
+#. * not accurate (since last load/save)
+#.
+#: ../gedit/gedit-io-error-info-bar.c:895
 #, c-format
 msgid "The file %s has been modified since reading it."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:990
+#: ../gedit/gedit-io-error-info-bar.c:910
 msgid "If you save it, all the external changes could be lost. Save it anyway?"
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1089
+#: ../gedit/gedit-io-error-info-bar.c:998
 #, c-format
 msgid "Could not create a backup file while saving %s"
 msgstr "Níorbh fhéidir comhad cúltaca a chruthú agus %s á shábháil"
 
-#: ../gedit/gedit-io-error-message-area.c:1094
+#: ../gedit/gedit-io-error-info-bar.c:1003
 #, c-format
 msgid "Could not create a temporary backup file while saving %s"
 msgstr "Níorbh fhéidir comhad cúltaca sealadach a chruthú agus %s á shábháil"
 
-#: ../gedit/gedit-io-error-message-area.c:1111
+#: ../gedit/gedit-io-error-info-bar.c:1020
 msgid ""
 "gedit could not back up the old copy of the file before saving the new one. "
 "You can ignore this warning and save the file anyway, but if an error occurs "
@@ -1390,62 +1365,62 @@ msgid ""
 msgstr ""
 
 #. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
-#: ../gedit/gedit-io-error-message-area.c:1171
+#: ../gedit/gedit-io-error-info-bar.c:1080
 #, c-format
 msgid ""
 "gedit cannot handle %s locations in write mode. Please check that you typed "
 "the location correctly and try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1179
+#: ../gedit/gedit-io-error-info-bar.c:1088
 msgid ""
 "gedit cannot handle this location in write mode. Please check that you typed "
 "the location correctly and try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1188
+#: ../gedit/gedit-io-error-info-bar.c:1097
 #, c-format
 msgid ""
 "%s is not a valid location. Please check that you typed the location "
 "correctly and try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1194
+#: ../gedit/gedit-io-error-info-bar.c:1104
 msgid ""
 "You do not have the permissions necessary to save the file. Please check "
 "that you typed the location correctly and try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1200
+#: ../gedit/gedit-io-error-info-bar.c:1110
 msgid ""
 "There is not enough disk space to save the file. Please free some disk space "
 "and try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1205
+#: ../gedit/gedit-io-error-info-bar.c:1115
 msgid ""
 "You are trying to save the file on a read-only disk. Please check that you "
 "typed the location correctly and try again."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1211
+#: ../gedit/gedit-io-error-info-bar.c:1121
 msgid "A file with the same name already exists. Please use a different name."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1216
+#: ../gedit/gedit-io-error-info-bar.c:1126
 msgid ""
 "The disk where you are trying to save the file has a limitation on length of "
 "the file names. Please use a shorter name."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1223
+#: ../gedit/gedit-io-error-info-bar.c:1133
 msgid ""
 "The disk where you are trying to save the file has a limitation on file "
 "sizes. Please try saving a smaller file or saving it to a disk that does not "
 "have this limitation."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1239
+#: ../gedit/gedit-io-error-info-bar.c:1149
 #, c-format
 msgid "Could not save the file %s."
 msgstr "Níorbh fhéidir an comhad %s a shábháil."
@@ -1454,82 +1429,51 @@ msgstr "Níorbh fhéidir an comhad %s a shábháil."
 #. * could be interpreted as the changes he made in the document. beside "reading" is
 #. * not accurate (since last load/save)
 #.
-#: ../gedit/gedit-io-error-message-area.c:1284
+#: ../gedit/gedit-io-error-info-bar.c:1194
 #, c-format
 msgid "The file %s changed on disk."
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1289
+#: ../gedit/gedit-io-error-info-bar.c:1199
 msgid "Do you want to drop your changes and reload the file?"
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1291
+#: ../gedit/gedit-io-error-info-bar.c:1201
 msgid "Do you want to reload the file?"
 msgstr ""
 
-#: ../gedit/gedit-io-error-message-area.c:1297
-#: ../gedit/gedit-io-error-message-area.c:1308
+#: ../gedit/gedit-io-error-info-bar.c:1206
 msgid "_Reload"
 msgstr "_Athluchtaigh"
 
-#: ../gedit/gedit-panel.c:358 ../gedit/gedit-panel.c:530
+#: ../gedit/gedit-io-error-info-bar.c:1278
+#, c-format
+msgid "Some invalid chars have been detected while saving %s"
+msgstr ""
+
+#: ../gedit/gedit-io-error-info-bar.c:1294
+msgid ""
+"If you continue saving this file you can corrupt the document.  Save anyway?"
+msgstr ""
+
+#: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:586
 msgid "Empty"
 msgstr "Folamh"
 
-#: ../gedit/gedit-panel.c:420
+#: ../gedit/gedit-panel.c:475
 msgid "Hide panel"
 msgstr "Folmhaigh painéal"
 
-#: ../gedit/gedit-plugin-manager.c:54
-msgid "Plugin"
-msgstr "Breiseán"
-
-#: ../gedit/gedit-plugin-manager.c:55
-msgid "Enabled"
-msgstr "Cumasaithe"
-
-#: ../gedit/gedit-plugin-manager.c:508
-msgid "_About"
-msgstr "_Maidir Leis Seo"
-
-#: ../gedit/gedit-plugin-manager.c:516
-msgid "C_onfigure"
-msgstr "C_umraigh"
-
-#: ../gedit/gedit-plugin-manager.c:525
-msgid "A_ctivate"
-msgstr "_Gníomhachtaigh"
-
-#: ../gedit/gedit-plugin-manager.c:536
-msgid "Ac_tivate All"
-msgstr "_Gníomhachtaigh Gach Rud"
-
-#: ../gedit/gedit-plugin-manager.c:541
-msgid "_Deactivate All"
-msgstr "_Díghníomhachtaigh Gach Rud"
-
-#: ../gedit/gedit-plugin-manager.c:803
-msgid "Active _Plugins:"
-msgstr "_Breiseáin Gníomhacha:"
-
-#: ../gedit/gedit-plugin-manager.c:828
-msgid "_About Plugin"
-msgstr "_Maidir le Breiseán"
-
-#: ../gedit/gedit-plugin-manager.c:832
-msgid "C_onfigure Plugin"
-msgstr "_Cumraigh Breiseán"
-
-#: ../gedit/gedit-print-job.c:569
+#: ../gedit/gedit-print-job.c:586
 #, c-format
 msgid "File: %s"
 msgstr "Comhad: %s"
 
-#: ../gedit/gedit-print-job.c:578
+#: ../gedit/gedit-print-job.c:595
 msgid "Page %N of %Q"
 msgstr "Leathanach %N as %Q"
 
-#: ../gedit/gedit-print-job.c:839
+#: ../gedit/gedit-print-job.c:857
 msgid "Preparing..."
 msgstr "Á Ullmhú..."
 
@@ -1587,76 +1531,73 @@ msgstr "Athchóirigh Clónna Réamhshocraithe"
 msgid "lines"
 msgstr "líne"
 
-#: ../gedit/gedit-print-preview.c:571
+#: ../gedit/gedit-print-preview.c:582
 msgid "Show the previous page"
 msgstr ""
 
-#: ../gedit/gedit-print-preview.c:583
+#: ../gedit/gedit-print-preview.c:594
 msgid "Show the next page"
 msgstr ""
 
-#: ../gedit/gedit-print-preview.c:599
+#: ../gedit/gedit-print-preview.c:610
 msgid "Current page (Alt+P)"
 msgstr "Leathanach reatha (Alt+P)"
 
 #. Translators: the "of" from "1 of 19" in print preview.
-#: ../gedit/gedit-print-preview.c:622
+#: ../gedit/gedit-print-preview.c:633
 msgid "of"
 msgstr "as"
 
-#: ../gedit/gedit-print-preview.c:630
+#: ../gedit/gedit-print-preview.c:641
 msgid "Page total"
 msgstr "Líon iomlán leathanaigh"
 
-#: ../gedit/gedit-print-preview.c:631
+#: ../gedit/gedit-print-preview.c:642
 msgid "The total number of pages in the document"
 msgstr ""
 
-#: ../gedit/gedit-print-preview.c:648
+#: ../gedit/gedit-print-preview.c:659
 msgid "Show multiple pages"
 msgstr ""
 
-#: ../gedit/gedit-print-preview.c:661
+#: ../gedit/gedit-print-preview.c:672
 msgid "Zoom 1:1"
 msgstr "Súmáil 1:1"
 
-#: ../gedit/gedit-print-preview.c:670
+#: ../gedit/gedit-print-preview.c:681
 msgid "Zoom to fit the whole page"
 msgstr ""
 
-#: ../gedit/gedit-print-preview.c:679
+#: ../gedit/gedit-print-preview.c:690
 msgid "Zoom the page in"
 msgstr ""
 
-#: ../gedit/gedit-print-preview.c:688
+#: ../gedit/gedit-print-preview.c:699
 msgid "Zoom the page out"
 msgstr ""
 
-#: ../gedit/gedit-print-preview.c:700
+#: ../gedit/gedit-print-preview.c:711
 msgid "_Close Preview"
 msgstr "_Dún Réamhamharc"
 
-#: ../gedit/gedit-print-preview.c:703
+#: ../gedit/gedit-print-preview.c:714
 msgid "Close print preview"
 msgstr "Dún réamhamharc priontála"
 
-#: ../gedit/gedit-print-preview.c:773
+#: ../gedit/gedit-print-preview.c:783
 #, c-format
 msgid "Page %d of %d"
 msgstr "Leathanach %d as %d"
 
-#: ../gedit/gedit-print-preview.c:958
+#: ../gedit/gedit-print-preview.c:967
 msgid "Page Preview"
 msgstr "Réamhamharc Leathanaigh"
 
-#: ../gedit/gedit-print-preview.c:959
+#: ../gedit/gedit-print-preview.c:968
 msgid "The preview of a page in the document to be printed"
 msgstr ""
 
-#: ../gedit/gedit-smart-charset-converter.c:321
-msgid "It is not possible to detect the encoding automatically"
-msgstr ""
-
+#. Use spaces to leave padding proportional to the font size
 #: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
 msgid "OVR"
 msgstr "FOR"
@@ -1667,12 +1608,12 @@ msgstr "IONS"
 
 #. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for "Column". Please,
 #. use abbreviations if possible to avoid space problems.
-#: ../gedit/gedit-statusbar.c:332
+#: ../gedit/gedit-statusbar.c:248
 #, c-format
 msgid "  Ln %d, Col %d"
 msgstr "  Ln %d, Col %d"
 
-#: ../gedit/gedit-statusbar.c:431
+#: ../gedit/gedit-statusbar.c:347
 #, c-format
 msgid "There is a tab with errors"
 msgid_plural "There are %d tabs with errors"
@@ -1680,446 +1621,427 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: ../gedit/gedit-style-scheme-manager.c:207
+#: ../gedit/gedit-style-scheme-manager.c:210
 #, c-format
 msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
 msgstr ""
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:714
+#: ../gedit/gedit-tab.c:743
 #, c-format
 msgid "Reverting %s from %s"
 msgstr "%s á Fhilleadh ó %s"
 
-#: ../gedit/gedit-tab.c:721
+#: ../gedit/gedit-tab.c:750
 #, c-format
 msgid "Reverting %s"
 msgstr "%s á Fhilleadh"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:737
+#: ../gedit/gedit-tab.c:766
 #, c-format
 msgid "Loading %s from %s"
 msgstr "%s á luchtú ó %s"
 
-#: ../gedit/gedit-tab.c:744
+#: ../gedit/gedit-tab.c:773
 #, c-format
 msgid "Loading %s"
 msgstr "%s á luchtú"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:827
+#: ../gedit/gedit-tab.c:854
 #, c-format
 msgid "Saving %s to %s"
 msgstr "%s á Shábháil go %s"
 
-#: ../gedit/gedit-tab.c:834
+#: ../gedit/gedit-tab.c:861
 #, c-format
 msgid "Saving %s"
 msgstr "%s á shábháil"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1779
+#: ../gedit/gedit-tab.c:1834
 msgid "RO"
 msgstr "LA"
 
-#: ../gedit/gedit-tab.c:1826
+#: ../gedit/gedit-tab.c:1881
 #, c-format
 msgid "Error opening file %s"
 msgstr "Earráid agus comhad %s á oscailt"
 
-#: ../gedit/gedit-tab.c:1831
+#: ../gedit/gedit-tab.c:1886
 #, c-format
 msgid "Error reverting file %s"
 msgstr "Earráid agus comhad %s á fhilleadh"
 
-#: ../gedit/gedit-tab.c:1836
+#: ../gedit/gedit-tab.c:1891
 #, c-format
 msgid "Error saving file %s"
 msgstr "Earráid agus comhad %s á shábháil"
 
-#: ../gedit/gedit-tab.c:1857
+#: ../gedit/gedit-tab.c:1912
 msgid "Unicode (UTF-8)"
 msgstr "Unicode (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1864
+#: ../gedit/gedit-tab.c:1919
 msgid "Name:"
 msgstr "Ainm:"
 
-#: ../gedit/gedit-tab.c:1865
+#: ../gedit/gedit-tab.c:1920
 msgid "MIME Type:"
 msgstr "Cineál MIME:"
 
-#: ../gedit/gedit-tab.c:1866
+#: ../gedit/gedit-tab.c:1921
 msgid "Encoding:"
 msgstr "Ionchódú:"
 
-#: ../gedit/gedit-tab-label.c:290
+#: ../gedit/gedit-tab-label.c:283
 msgid "Close document"
 msgstr "Dún cáipéis"
 
 #. Toplevel
-#: ../gedit/gedit-ui.h:47
+#: ../gedit/gedit-ui.h:43
 msgid "_File"
 msgstr "_Comhad"
 
-#: ../gedit/gedit-ui.h:48
+#: ../gedit/gedit-ui.h:44
 msgid "_Edit"
 msgstr "_Eagar"
 
-#: ../gedit/gedit-ui.h:49
+#: ../gedit/gedit-ui.h:45
 msgid "_View"
 msgstr "_Amharc"
 
-#: ../gedit/gedit-ui.h:50
+#: ../gedit/gedit-ui.h:46
 msgid "_Search"
 msgstr "Cuar_daigh"
 
-#: ../gedit/gedit-ui.h:51
+#: ../gedit/gedit-ui.h:47
 msgid "_Tools"
 msgstr "_Uirlisí"
 
-#: ../gedit/gedit-ui.h:52
+#: ../gedit/gedit-ui.h:48
 msgid "_Documents"
 msgstr "Cái_péisí"
 
-#: ../gedit/gedit-ui.h:53
+#: ../gedit/gedit-ui.h:49
 msgid "_Help"
 msgstr "Cab_hair"
 
-#: ../gedit/gedit-ui.h:57
+#: ../gedit/gedit-ui.h:53
 msgid "Create a new document"
 msgstr "Cruthaigh cáipéis nua"
 
-#: ../gedit/gedit-ui.h:58
+#: ../gedit/gedit-ui.h:54
 msgid "_Open..."
 msgstr "_Oscail..."
 
-#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1565
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1554
 msgid "Open a file"
 msgstr "Oscail comhad"
 
 #. Edit menu
-#: ../gedit/gedit-ui.h:62
+#: ../gedit/gedit-ui.h:58
 msgid "Pr_eferences"
 msgstr "_Sainroghanna"
 
-#: ../gedit/gedit-ui.h:63
+#: ../gedit/gedit-ui.h:59
 msgid "Configure the application"
 msgstr "Cumraigh an feidhmchlár"
 
 #. Help menu
-#: ../gedit/gedit-ui.h:66
+#: ../gedit/gedit-ui.h:62
 msgid "_Contents"
 msgstr "_Inneachar"
 
-#: ../gedit/gedit-ui.h:67
+#: ../gedit/gedit-ui.h:63
 msgid "Open the gedit manual"
 msgstr "Oscail an lámhleabhar gedit"
 
-#: ../gedit/gedit-ui.h:69
+#: ../gedit/gedit-ui.h:65
 msgid "About this application"
 msgstr "Maidir leis an feidhmchlár seo"
 
-#: ../gedit/gedit-ui.h:73
+#: ../gedit/gedit-ui.h:69
 msgid "Leave fullscreen mode"
 msgstr ""
 
-#: ../gedit/gedit-ui.h:81
+#: ../gedit/gedit-ui.h:77
 msgid "Save the current file"
 msgstr "Sábháil an comhad reatha"
 
-#: ../gedit/gedit-ui.h:82
+#: ../gedit/gedit-ui.h:78
 msgid "Save _As..."
 msgstr "Sábháil _Mar..."
 
-#: ../gedit/gedit-ui.h:83
+#: ../gedit/gedit-ui.h:79
 msgid "Save the current file with a different name"
 msgstr "Sábháil an comhad reatha le hainm éagsúil"
 
-#: ../gedit/gedit-ui.h:85
+#: ../gedit/gedit-ui.h:81
 msgid "Revert to a saved version of the file"
 msgstr "Fill ar leagan sábháilte an chomhaid"
 
-#: ../gedit/gedit-ui.h:87
-msgid "Page Set_up..."
-msgstr "Socrú _Leathanaigh..."
-
-#: ../gedit/gedit-ui.h:88
-#, fuzzy
-msgid "Set up the page settings"
-msgstr "Socraigh socruithe an leathanaigh"
-
-#: ../gedit/gedit-ui.h:90
+#: ../gedit/gedit-ui.h:82
 msgid "Print Previe_w"
 msgstr "_Réamhamharc Priontála"
 
-#: ../gedit/gedit-ui.h:91
+#: ../gedit/gedit-ui.h:83
 msgid "Print preview"
 msgstr "Réamhamharc priontála"
 
-#: ../gedit/gedit-ui.h:92
+#: ../gedit/gedit-ui.h:84
 msgid "_Print..."
 msgstr "_Priontáil"
 
-#: ../gedit/gedit-ui.h:93
+#: ../gedit/gedit-ui.h:85
 msgid "Print the current page"
 msgstr "Priontáil an leathanach reatha"
 
-#: ../gedit/gedit-ui.h:97
+#: ../gedit/gedit-ui.h:89
 msgid "Undo the last action"
 msgstr "Cealaigh an gníomh roimhe seo"
 
-#: ../gedit/gedit-ui.h:99
+#: ../gedit/gedit-ui.h:91
 msgid "Redo the last undone action"
 msgstr "Athfheidhmigh an gníomh cealaithe is déanaí"
 
-#: ../gedit/gedit-ui.h:101
+#: ../gedit/gedit-ui.h:93
 msgid "Cut the selection"
 msgstr "Gearr an roghnú"
 
-#: ../gedit/gedit-ui.h:103
+#: ../gedit/gedit-ui.h:95
 msgid "Copy the selection"
 msgstr "Cóipeáil an roghnú"
 
-#: ../gedit/gedit-ui.h:105
+#: ../gedit/gedit-ui.h:97
 msgid "Paste the clipboard"
 msgstr "Greamaigh an ghearrthaisce"
 
-#: ../gedit/gedit-ui.h:107
+#: ../gedit/gedit-ui.h:99
 msgid "Delete the selected text"
 msgstr "Scrios an téacs roghnaithe"
 
-#: ../gedit/gedit-ui.h:108
+#: ../gedit/gedit-ui.h:100
 msgid "Select _All"
 msgstr "Roghnaigh G_ach Rud"
 
-#: ../gedit/gedit-ui.h:109
+#: ../gedit/gedit-ui.h:101
 msgid "Select the entire document"
 msgstr "Roghnaigh an cáipéis ar fad"
 
 #. View menu
-#: ../gedit/gedit-ui.h:112
+#: ../gedit/gedit-ui.h:104
 msgid "_Highlight Mode"
 msgstr "_Mód Aibhsithe"
 
 #. Search menu
-#: ../gedit/gedit-ui.h:115
+#: ../gedit/gedit-ui.h:107
 msgid "_Find..."
 msgstr "_Aimsigh..."
 
-#: ../gedit/gedit-ui.h:116
+#: ../gedit/gedit-ui.h:108
 msgid "Search for text"
 msgstr "Cuardaigh ar théacs"
 
-#: ../gedit/gedit-ui.h:117
+#: ../gedit/gedit-ui.h:109
 msgid "Find Ne_xt"
 msgstr "An Chéad Cheann _Eile"
 
-#: ../gedit/gedit-ui.h:118
+#: ../gedit/gedit-ui.h:110
 msgid "Search forwards for the same text"
 msgstr ""
 
-#: ../gedit/gedit-ui.h:119
+#: ../gedit/gedit-ui.h:111
 msgid "Find Pre_vious"
 msgstr "_Roimhe Seo"
 
-#: ../gedit/gedit-ui.h:120
+#: ../gedit/gedit-ui.h:112
 msgid "Search backwards for the same text"
 msgstr ""
 
-#: ../gedit/gedit-ui.h:122 ../gedit/gedit-ui.h:125
+#: ../gedit/gedit-ui.h:114 ../gedit/gedit-ui.h:117
 msgid "_Replace..."
 msgstr "_Ionadaigh..."
 
-#: ../gedit/gedit-ui.h:123 ../gedit/gedit-ui.h:126
+#: ../gedit/gedit-ui.h:115 ../gedit/gedit-ui.h:118
 msgid "Search for and replace text"
 msgstr "Cuardaigh ar agus ionadaigh téacs"
 
-#: ../gedit/gedit-ui.h:128
+#: ../gedit/gedit-ui.h:120
 msgid "_Clear Highlight"
 msgstr "_Glan Aibhsiú"
 
-#: ../gedit/gedit-ui.h:129
+#: ../gedit/gedit-ui.h:121
 msgid "Clear highlighting of search matches"
 msgstr "Glan aibhsiú mheaitseálacha cuardaigh"
 
-#: ../gedit/gedit-ui.h:130
+#: ../gedit/gedit-ui.h:122
 msgid "Go to _Line..."
 msgstr "Téigh go _Líne..."
 
-#: ../gedit/gedit-ui.h:131
+#: ../gedit/gedit-ui.h:123
 msgid "Go to a specific line"
 msgstr "Téigh go líne áirithe"
 
-#: ../gedit/gedit-ui.h:132
-msgid "_Incremental Search..."
-msgstr "_Cuardach Incriminteach..."
-
-#: ../gedit/gedit-ui.h:133
-msgid "Incrementally search for text"
-msgstr "Cuardaigh go hincriminteach ar théacs"
-
 #. Documents menu
-#: ../gedit/gedit-ui.h:136
+#: ../gedit/gedit-ui.h:126
 msgid "_Save All"
 msgstr "_Sábháil Gach Rud"
 
-#: ../gedit/gedit-ui.h:137
+#: ../gedit/gedit-ui.h:127
 msgid "Save all open files"
 msgstr "Sábháil gach comhad oscailte"
 
-#: ../gedit/gedit-ui.h:138
+#: ../gedit/gedit-ui.h:128
 msgid "_Close All"
 msgstr "_Dún Gach Rud"
 
-#: ../gedit/gedit-ui.h:139
+#: ../gedit/gedit-ui.h:129
 msgid "Close all open files"
 msgstr "Dún gach comhad oscailte"
 
-#: ../gedit/gedit-ui.h:140
+#: ../gedit/gedit-ui.h:130
 msgid "_New Tab Group"
-msgstr ""
+msgstr "Grúpa Cluaisíní _Nua"
 
-#: ../gedit/gedit-ui.h:141
+#: ../gedit/gedit-ui.h:131
 #, fuzzy
 msgid "Create a new tab group"
 msgstr "Cruthaigh cáipéis nua"
 
-#: ../gedit/gedit-ui.h:142
-#, fuzzy
+#: ../gedit/gedit-ui.h:132
 msgid "P_revious Tab Group"
-msgstr "Suíomh roimhe seo"
+msgstr "An Grúpa Cluaisíní R_oimhe Seo"
 
-#: ../gedit/gedit-ui.h:143
+#: ../gedit/gedit-ui.h:133
 msgid "Switch to the previous tab group"
 msgstr ""
 
-#: ../gedit/gedit-ui.h:144
+#: ../gedit/gedit-ui.h:134
 msgid "Nex_t Tab Group"
-msgstr ""
+msgstr "An Chéad Ghrúpa Cluaisíní E_ile"
 
-#: ../gedit/gedit-ui.h:145
+#: ../gedit/gedit-ui.h:135
 msgid "Switch to the next tab group"
 msgstr ""
 
-#: ../gedit/gedit-ui.h:146
+#: ../gedit/gedit-ui.h:136
 msgid "_Previous Document"
-msgstr "Cáipéis _Roimhe Seo"
+msgstr "An Cháipéis _Roimhe Seo"
 
-#: ../gedit/gedit-ui.h:147
+#: ../gedit/gedit-ui.h:137
 msgid "Activate previous document"
 msgstr "Gníomhachtaigh an cáipéis roimhe seo"
 
-#: ../gedit/gedit-ui.h:148
-#, fuzzy
+#: ../gedit/gedit-ui.h:138
 msgid "N_ext Document"
 msgstr "An Chéad Cháipéis _Eile"
 
-#: ../gedit/gedit-ui.h:149
+#: ../gedit/gedit-ui.h:139
 msgid "Activate next document"
 msgstr "Gníomhachtaigh an chéad cháipéis eile"
 
-#: ../gedit/gedit-ui.h:150
+#: ../gedit/gedit-ui.h:140
 msgid "_Move to New Window"
 msgstr "_Bog go Fuinneog Nua"
 
-#: ../gedit/gedit-ui.h:151
+#: ../gedit/gedit-ui.h:141
 msgid "Move the current document to a new window"
 msgstr "Bog an cáipéis reatha go fuinneog nua"
 
-#: ../gedit/gedit-ui.h:158
+#: ../gedit/gedit-ui.h:148
 msgid "Close the current file"
 msgstr "Dún an comhad reatha"
 
-#: ../gedit/gedit-ui.h:165
+#: ../gedit/gedit-ui.h:155
 msgid "Quit the program"
 msgstr "Scoir ón feidhmchlár"
 
-#: ../gedit/gedit-ui.h:170
+#: ../gedit/gedit-ui.h:160
 msgid "_Toolbar"
 msgstr "_Barra Uirlisí"
 
-#: ../gedit/gedit-ui.h:171
+#: ../gedit/gedit-ui.h:161
 msgid "Show or hide the toolbar in the current window"
 msgstr ""
 
-#: ../gedit/gedit-ui.h:173
+#: ../gedit/gedit-ui.h:163
 msgid "_Statusbar"
 msgstr "Barra _Stádais"
 
-#: ../gedit/gedit-ui.h:174
+#: ../gedit/gedit-ui.h:164
 msgid "Show or hide the statusbar in the current window"
 msgstr ""
 
-#: ../gedit/gedit-ui.h:177
+#: ../gedit/gedit-ui.h:167
 #, fuzzy
 msgid "Edit text in fullscreen"
 msgstr "Cuir téacs in eagar i lánscáileán"
 
-#: ../gedit/gedit-ui.h:184
-msgid "Side _Pane"
-msgstr "_Pána Taoibh"
+#: ../gedit/gedit-ui.h:174
+msgid "Side _Panel"
+msgstr "Painéal _Taoibh"
 
-#: ../gedit/gedit-ui.h:185
-msgid "Show or hide the side pane in the current window"
+#: ../gedit/gedit-ui.h:175
+msgid "Show or hide the side panel in the current window"
 msgstr ""
 
-#: ../gedit/gedit-ui.h:187
-msgid "_Bottom Pane"
-msgstr "B_unphána"
+#: ../gedit/gedit-ui.h:177
+msgid "_Bottom Panel"
+msgstr "Bun_phainéal"
 
-#: ../gedit/gedit-ui.h:188
-msgid "Show or hide the bottom pane in the current window"
+#: ../gedit/gedit-ui.h:178
+msgid "Show or hide the bottom panel in the current window"
 msgstr ""
 
-#: ../gedit/gedit-utils.c:1082
+#: ../gedit/gedit-utils.c:1017
 msgid "Please check your installation."
 msgstr ""
 
-#: ../gedit/gedit-utils.c:1151
+#: ../gedit/gedit-utils.c:1087
 #, c-format
 msgid "Unable to open UI file %s. Error: %s"
 msgstr ""
 
-#: ../gedit/gedit-utils.c:1171
+#: ../gedit/gedit-utils.c:1107
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
 msgstr ""
 
 #. Translators: '/ on <remote-share>'
-#: ../gedit/gedit-utils.c:1337
+#: ../gedit/gedit-utils.c:1252
 #, c-format
 msgid "/ on %s"
 msgstr "/ ar %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view.c:1276
+#: ../gedit/gedit-view-frame.c:554
 msgid "_Wrap Around"
 msgstr "_Timfhill"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view.c:1286
+#: ../gedit/gedit-view-frame.c:564
 msgid "Match _Entire Word Only"
 msgstr "Meaitseáil an Focal ar _Fad Amháin"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view.c:1296
+#: ../gedit/gedit-view-frame.c:574
 msgid "_Match Case"
 msgstr "_Meaitseáil an Cás"
 
-#: ../gedit/gedit-view.c:1411
+#: ../gedit/gedit-view-frame.c:775
 msgid "String you want to search for"
 msgstr ""
 
-#: ../gedit/gedit-view.c:1420
+#: ../gedit/gedit-view-frame.c:782
 msgid "Line you want to move the cursor to"
 msgstr ""
 
-#: ../gedit/gedit-window.c:1079
+#: ../gedit/gedit-window.c:1040
 #, c-format
 msgid "Use %s highlight mode"
 msgstr ""
@@ -2127,226 +2049,227 @@ msgstr ""
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1136 ../gedit/gedit-window.c:2142
-#: ../plugins/externaltools/tools/manager.py:121
-#: ../plugins/externaltools/tools/manager.py:419
-#: ../plugins/externaltools/tools/manager.py:529
-#: ../plugins/externaltools/tools/manager.py:844
+#: ../gedit/gedit-window.c:1107 ../gedit/gedit-window.c:2156
+#: ../plugins/externaltools/tools/manager.py:138
+#: ../plugins/externaltools/tools/manager.py:441
+#: ../plugins/externaltools/tools/manager.py:552
+#: ../plugins/externaltools/tools/manager.py:871
 msgid "Plain Text"
 msgstr "Gnáth-Théacs"
 
-#: ../gedit/gedit-window.c:1137
+#: ../gedit/gedit-window.c:1108
 msgid "Disable syntax highlighting"
 msgstr ""
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1457
+#: ../gedit/gedit-window.c:1433
 #, c-format
 msgid "Open '%s'"
 msgstr "Oscail '%s'"
 
-#: ../gedit/gedit-window.c:1567
+#: ../gedit/gedit-window.c:1556
 msgid "Open a recently used file"
 msgstr "Oscail comhad úsáidte le déanaí"
 
-#: ../gedit/gedit-window.c:1573
+#: ../gedit/gedit-window.c:1562
 msgid "Open"
 msgstr "Oscail"
 
-#: ../gedit/gedit-window.c:1631
+#: ../gedit/gedit-window.c:1620
 msgid "Save"
 msgstr "Sábháil"
 
-#: ../gedit/gedit-window.c:1633
+#: ../gedit/gedit-window.c:1622
 msgid "Print"
 msgstr "Priontáil"
 
+#: ../gedit/gedit-window.c:1624
+msgid "Find"
+msgstr "Aimsigh"
+
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1812
+#: ../gedit/gedit-window.c:1784
 #, c-format
 msgid "Activate '%s'"
 msgstr "Gníomhachtaigh '%s'"
 
-#: ../gedit/gedit-window.c:2120
+#: ../gedit/gedit-window.c:2134
 msgid "Use Spaces"
 msgstr "Úsáid Spásanna"
 
-#: ../gedit/gedit-window.c:2193
+#: ../gedit/gedit-window.c:2207
 msgid "Tab Width"
 msgstr "Leithead Táib"
 
-#: ../gedit/gedit-window.c:2306
+#: ../gedit/gedit-window.c:2316
 msgid "Bracket match is out of range"
 msgstr ""
 
-#: ../gedit/gedit-window.c:2311
+#: ../gedit/gedit-window.c:2321
 msgid "Bracket match not found"
 msgstr ""
 
-#: ../gedit/gedit-window.c:2316
+#: ../gedit/gedit-window.c:2326
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr ""
 
-#: ../gedit/gedit-window.c:4068
+#: ../gedit/gedit-window.c:4113
 msgid "About gedit"
 msgstr "Maidir le gedit"
 
-#. ex:ts=8:noet:
-#: ../plugins/changecase/changecase.gedit-plugin.desktop.in.h:1
+#. ex:set ts=8 noet:
+#: ../plugins/changecase/changecase.plugin.desktop.in.h:1
 msgid "Change Case"
 msgstr "Athraigh an Cás"
 
-#: ../plugins/changecase/changecase.gedit-plugin.desktop.in.h:2
+#: ../plugins/changecase/changecase.plugin.desktop.in.h:2
 msgid "Changes the case of selected text."
 msgstr "Athraíonn cás an téacs roghnaithe."
 
-#: ../plugins/changecase/gedit-changecase-plugin.c:222
+#: ../plugins/changecase/gedit-changecase-plugin.c:242
 msgid "C_hange Case"
 msgstr "At_hraigh an Cás"
 
-#: ../plugins/changecase/gedit-changecase-plugin.c:223
+#: ../plugins/changecase/gedit-changecase-plugin.c:243
 msgid "All _Upper Case"
 msgstr "Cás _Uachtair ar Fad"
 
-#: ../plugins/changecase/gedit-changecase-plugin.c:224
+#: ../plugins/changecase/gedit-changecase-plugin.c:244
 msgid "Change selected text to upper case"
 msgstr "Athraigh téacs roghnaithe go cás uachtair"
 
-#: ../plugins/changecase/gedit-changecase-plugin.c:226
+#: ../plugins/changecase/gedit-changecase-plugin.c:246
 msgid "All _Lower Case"
 msgstr "Cás Í_ochtair ar Fad"
 
-#: ../plugins/changecase/gedit-changecase-plugin.c:227
+#: ../plugins/changecase/gedit-changecase-plugin.c:247
 msgid "Change selected text to lower case"
 msgstr "Athraigh téacs roghnaithe go cás íochtair"
 
-#: ../plugins/changecase/gedit-changecase-plugin.c:229
+#: ../plugins/changecase/gedit-changecase-plugin.c:249
 msgid "_Invert Case"
 msgstr "_Inbhéartaigh an Cás"
 
-#: ../plugins/changecase/gedit-changecase-plugin.c:230
+#: ../plugins/changecase/gedit-changecase-plugin.c:250
 msgid "Invert the case of selected text"
 msgstr "Inbhéartaigh cás an téacs roghnaithe"
 
-#: ../plugins/changecase/gedit-changecase-plugin.c:232
+#: ../plugins/changecase/gedit-changecase-plugin.c:252
 msgid "_Title Case"
 msgstr "Cás _Teidil"
 
-#: ../plugins/changecase/gedit-changecase-plugin.c:233
+#: ../plugins/changecase/gedit-changecase-plugin.c:253
 msgid "Capitalize the first letter of each selected word"
 msgstr ""
 
-#. ex:ts=8:noet:
-#: ../plugins/checkupdate/checkupdate.gedit-plugin.desktop.in.h:1
+#. ex:set ts=8 noet:
+#: ../plugins/checkupdate/checkupdate.plugin.desktop.in.h:1
 msgid "Check for latest version of gedit"
 msgstr "Lorg leagan is déanaí de gedit"
 
-#: ../plugins/checkupdate/checkupdate.gedit-plugin.desktop.in.h:2
+#: ../plugins/checkupdate/checkupdate.plugin.desktop.in.h:2
 msgid "Check update"
 msgstr "Seiceáil nuashonrú"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:238
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:270
 msgid "There was an error displaying the URI."
 msgstr "Tharla earráid agus an URI á thaispeáint."
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:284
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:299
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:307
 msgid "_Download"
 msgstr "Í_osluchtaigh"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:288
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:307
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:315
 #, fuzzy
 msgid "_Ignore Version"
 msgstr "Tabhair _Neamhaird Air"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:323
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:330
 msgid "There is a new version of gedit"
 msgstr "Tá leagan nua de gedit ann"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:327
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:334
 msgid ""
 "You can download the new version of gedit by clicking on the download button "
 "or ignore that version and wait for a new one"
 msgstr ""
 
-#. ex:ts=8:noet:
-#: ../plugins/checkupdate/org.gnome.gedit.checkupdate.gschema.xml.in.in.h:1
+#. ex:set ts=8 noet:
+#: ../plugins/checkupdate/org.gnome.gedit.plugins.checkupdate.gschema.xml.in.in.h:1
 msgid "Version to Ignore"
 msgstr ""
 
 #. This is releated to the next gedit version to be released
-#: ../plugins/checkupdate/org.gnome.gedit.checkupdate.gschema.xml.in.in.h:3
+#: ../plugins/checkupdate/org.gnome.gedit.plugins.checkupdate.gschema.xml.in.in.h:3
 msgid "Version to ignore until a newer version is released."
 msgstr ""
 
-#: ../plugins/docinfo/docinfo.gedit-plugin.desktop.in.h:1
+#: ../plugins/docinfo/docinfo.plugin.desktop.in.h:1
 msgid ""
 "Analyzes the current document and reports the number of words, lines, "
 "characters and non-space characters in it."
 msgstr ""
 
-#: ../plugins/docinfo/docinfo.gedit-plugin.desktop.in.h:2
-#: ../plugins/docinfo/docinfo.ui.h:6
+#: ../plugins/docinfo/docinfo.plugin.desktop.in.h:2
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:6
 msgid "Document Statistics"
 msgstr "Staitisticí Cáipéise"
 
 #. ex:ts=4:et:
-#: ../plugins/docinfo/docinfo.ui.h:1
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 #: ../plugins/externaltools/tools/tools.ui.h:1
 #: ../plugins/snippets/snippets/snippets.ui.h:1
-#: ../plugins/time/gedit-time-dialog.ui.h:1
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "    "
 msgstr "    "
 
-#: ../plugins/docinfo/docinfo.ui.h:2
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:2
 msgid "Bytes"
 msgstr "Bearta"
 
-#: ../plugins/docinfo/docinfo.ui.h:3
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:3
 msgid "Characters (no spaces)"
 msgstr "Carachtair (gan spásanna)"
 
-#: ../plugins/docinfo/docinfo.ui.h:4
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:4
 msgid "Characters (with spaces)"
 msgstr "Carachtair (le spásanna)"
 
-#: ../plugins/docinfo/docinfo.ui.h:5
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:5
 msgid "Document"
 msgstr "Cáipéis"
 
-#: ../plugins/docinfo/docinfo.ui.h:7
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:7
 msgid "File Name"
 msgstr "Ainm Comhaid"
 
-#: ../plugins/docinfo/docinfo.ui.h:8
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:8
 msgid "Lines"
 msgstr "Línte"
 
-#: ../plugins/docinfo/docinfo.ui.h:9
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:9
 msgid "Selection"
 msgstr "Roghnú"
 
-#: ../plugins/docinfo/docinfo.ui.h:10
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:10
 msgid "Words"
 msgstr "Focail"
 
-#: ../plugins/docinfo/docinfo.ui.h:11
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:11
 msgid "_Update"
 msgstr "_Nuashonraigh"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:471
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
 msgid "_Document Statistics"
 msgstr "_Staitisticí Cáipéise"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:473
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
 #, fuzzy
 msgid "Get statistical information on the current document"
 msgstr "Faigh faisnéis staitistiúil faoin gcáipéis reatha"
 
-#. ex:ts=8:noet:
+#. ex:set ts=8 noet:
 #: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
 #: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:1
 msgid "Open a terminal in the document location"
@@ -2357,188 +2280,233 @@ msgstr ""
 msgid "Open terminal here"
 msgstr ""
 
-#: ../plugins/externaltools/externaltools.gedit-plugin.desktop.in.h:1
+#: ../plugins/externaltools/externaltools.plugin.desktop.in.h:1
 msgid "Execute external commands and shell scripts."
 msgstr ""
 
-#: ../plugins/externaltools/externaltools.gedit-plugin.desktop.in.h:2
+#: ../plugins/externaltools/externaltools.plugin.desktop.in.h:2
 msgid "External Tools"
 msgstr ""
 
-#: ../plugins/externaltools/tools/__init__.py:172
-msgid "Manage _External Tools..."
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
+msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
 msgstr ""
 
-#: ../plugins/externaltools/tools/__init__.py:174
-msgid "Opens the External Tools Manager"
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
+msgid ""
+"If true, the external tools will use the desktop-global standard font if "
+"it's monospace (and the most similar font it can come up with otherwise)."
 msgstr ""
 
-#: ../plugins/externaltools/tools/__init__.py:178
-msgid "External _Tools"
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
+msgid "Whether to use the system font"
 msgstr ""
 
-#: ../plugins/externaltools/tools/__init__.py:180
-msgid "External tools"
-msgstr ""
-
-#: ../plugins/externaltools/tools/__init__.py:213
-msgid "Shell Output"
-msgstr ""
-
-#: ../plugins/externaltools/tools/capture.py:93
+#: ../plugins/externaltools/tools/capture.py:92
 #, python-format
 msgid "Could not execute command: %s"
 msgstr "Níorbh fhéidir ordú a rith: %s"
 
-#: ../plugins/externaltools/tools/functions.py:164
+#: ../plugins/externaltools/tools/functions.py:159
 msgid "You must be inside a word to run this command"
 msgstr ""
 
-#: ../plugins/externaltools/tools/functions.py:269
+#: ../plugins/externaltools/tools/functions.py:265
 msgid "Running tool:"
 msgstr ""
 
-#: ../plugins/externaltools/tools/functions.py:298
+#: ../plugins/externaltools/tools/functions.py:294
 msgid "Done."
 msgstr "Críochnaithe."
 
-#: ../plugins/externaltools/tools/functions.py:300
+#: ../plugins/externaltools/tools/functions.py:296
 msgid "Exited"
 msgstr ""
 
-#: ../plugins/externaltools/tools/manager.py:119
+#: ../plugins/externaltools/tools/manager.py:136
 msgid "All languages"
 msgstr "Gach teanga"
 
-#: ../plugins/externaltools/tools/manager.py:518
-#: ../plugins/externaltools/tools/manager.py:522
-#: ../plugins/externaltools/tools/manager.py:842
-#: ../plugins/externaltools/tools/tools.ui.h:2
+#: ../plugins/externaltools/tools/manager.py:541
+#: ../plugins/externaltools/tools/manager.py:545
+#: ../plugins/externaltools/tools/manager.py:869
+#: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Gach Teanga"
 
-#: ../plugins/externaltools/tools/manager.py:628
+#: ../plugins/externaltools/tools/manager.py:652
 msgid "New tool"
 msgstr "Uirlis nua"
 
-#: ../plugins/externaltools/tools/manager.py:759
+#: ../plugins/externaltools/tools/manager.py:783
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr ""
 
-#: ../plugins/externaltools/tools/manager.py:810
+#: ../plugins/externaltools/tools/manager.py:834
 msgid "Type a new accelerator, or press Backspace to clear"
 msgstr ""
 
-#: ../plugins/externaltools/tools/manager.py:812
+#: ../plugins/externaltools/tools/manager.py:836
 msgid "Type a new accelerator"
 msgstr ""
 
-#: ../plugins/externaltools/tools/outputpanel.py:156
+#: ../plugins/externaltools/tools/outputpanel.py:120
 msgid "Stopped."
 msgstr ""
 
+#: ../plugins/externaltools/tools/tools.ui.h:2
+msgid "Add Tool"
+msgstr ""
+
 #: ../plugins/externaltools/tools/tools.ui.h:3
+#, fuzzy
+msgid "Add a new tool"
+msgstr "Uirlis nua"
+
+#: ../plugins/externaltools/tools/tools.ui.h:5
 msgid "All documents"
 msgstr "Gach cáipéis"
 
-#: ../plugins/externaltools/tools/tools.ui.h:4
+#: ../plugins/externaltools/tools/tools.ui.h:6
 msgid "All documents except untitled ones"
 msgstr ""
 
-#: ../plugins/externaltools/tools/tools.ui.h:5
+#: ../plugins/externaltools/tools/tools.ui.h:7
 msgid "Append to current document"
 msgstr "Iarcheangail le cáipéis reatha"
 
-#: ../plugins/externaltools/tools/tools.ui.h:6
+#: ../plugins/externaltools/tools/tools.ui.h:8
 msgid "Create new document"
 msgstr "Cruthaigh cáipéis nua"
 
-#: ../plugins/externaltools/tools/tools.ui.h:7
+#: ../plugins/externaltools/tools/tools.ui.h:9
 msgid "Current document"
 msgstr "Cáipéis reatha"
 
-#: ../plugins/externaltools/tools/tools.ui.h:8
+#: ../plugins/externaltools/tools/tools.ui.h:10
 msgid "Current line"
 msgstr "Líne reatha"
 
-#: ../plugins/externaltools/tools/tools.ui.h:9
+#: ../plugins/externaltools/tools/tools.ui.h:11
 msgid "Current selection"
 msgstr "Roghnú reatha"
 
-#: ../plugins/externaltools/tools/tools.ui.h:10
+#: ../plugins/externaltools/tools/tools.ui.h:12
 msgid "Current selection (default to document)"
 msgstr "Roghnú reatha (cáipéis mar réamhshocrú)"
 
-#: ../plugins/externaltools/tools/tools.ui.h:11
+#: ../plugins/externaltools/tools/tools.ui.h:13
 msgid "Current word"
 msgstr "Focal reatha"
 
-#: ../plugins/externaltools/tools/tools.ui.h:12
+#: ../plugins/externaltools/tools/tools.ui.h:14
 msgid "Display in bottom pane"
 msgstr ""
 
-#: ../plugins/externaltools/tools/tools.ui.h:13
-msgid "External Tools Manager"
-msgstr ""
-
-#: ../plugins/externaltools/tools/tools.ui.h:14
+#: ../plugins/externaltools/tools/tools.ui.h:15
 msgid "Insert at cursor position"
 msgstr ""
 
-#: ../plugins/externaltools/tools/tools.ui.h:15
+#: ../plugins/externaltools/tools/tools.ui.h:16
 msgid "Local files only"
 msgstr ""
 
-#: ../plugins/externaltools/tools/tools.ui.h:16
-msgid "Nothing"
-msgstr "Neamhní"
-
 #: ../plugins/externaltools/tools/tools.ui.h:17
-msgid "Remote files only"
+msgid "Manage External Tools"
 msgstr ""
 
 #: ../plugins/externaltools/tools/tools.ui.h:18
+msgid "Nothing"
+msgstr "Neamhní"
+
+#: ../plugins/externaltools/tools/tools.ui.h:19
+msgid "Remote files only"
+msgstr ""
+
+#: ../plugins/externaltools/tools/tools.ui.h:20
+msgid "Remove Tool"
+msgstr ""
+
+#: ../plugins/externaltools/tools/tools.ui.h:21
+#, fuzzy
+msgid "Remove selected tool"
+msgstr "Fill an blúire roghnaithe"
+
+#: ../plugins/externaltools/tools/tools.ui.h:22
 msgid "Replace current document"
 msgstr "Ionadaigh cáipéis reatha"
 
-#: ../plugins/externaltools/tools/tools.ui.h:19
+#: ../plugins/externaltools/tools/tools.ui.h:23
 msgid "Replace current selection"
 msgstr "Ionadaigh roghnú reatha"
 
-#: ../plugins/externaltools/tools/tools.ui.h:20
+#: ../plugins/externaltools/tools/tools.ui.h:24
+#, fuzzy
+msgid "Revert Tool"
+msgstr "_Fill"
+
+#: ../plugins/externaltools/tools/tools.ui.h:25
+#, fuzzy
+msgid "Revert tool"
+msgstr "_Fill"
+
+#: ../plugins/externaltools/tools/tools.ui.h:26
 msgid "Untitled documents only"
 msgstr "Cáipéisí gan teideal amháin"
 
-#: ../plugins/externaltools/tools/tools.ui.h:21
+#: ../plugins/externaltools/tools/tools.ui.h:27
 msgid "_Applicability:"
 msgstr ""
 
-#: ../plugins/externaltools/tools/tools.ui.h:22
-#: ../plugins/snippets/snippets/snippets.ui.h:12
+#: ../plugins/externaltools/tools/tools.ui.h:28
+#: ../plugins/snippets/snippets/snippets.ui.h:16
 msgid "_Edit:"
 msgstr "_Eagar:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:23
+#: ../plugins/externaltools/tools/tools.ui.h:29
 msgid "_Input:"
 msgstr "_Ionchur:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:24
+#: ../plugins/externaltools/tools/tools.ui.h:30
 msgid "_Output:"
 msgstr "_Aschur:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:25
+#: ../plugins/externaltools/tools/tools.ui.h:31
 msgid "_Save:"
 msgstr "_Sábháil:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:26
+#: ../plugins/externaltools/tools/tools.ui.h:32
 msgid "_Shortcut Key:"
 msgstr ""
 
-#: ../plugins/externaltools/tools/tools.ui.h:27
+#: ../plugins/externaltools/tools/tools.ui.h:33
 msgid "_Tools:"
 msgstr "_Uirlisí:"
 
+#: ../plugins/externaltools/tools/windowactivatable.py:176
+msgid "Manage _External Tools..."
+msgstr ""
+
+#: ../plugins/externaltools/tools/windowactivatable.py:177
+msgid "Opens the External Tools Manager"
+msgstr ""
+
+#: ../plugins/externaltools/tools/windowactivatable.py:180
+msgid "External _Tools"
+msgstr ""
+
+#: ../plugins/externaltools/tools/windowactivatable.py:181
+msgid "External tools"
+msgstr ""
+
+#: ../plugins/externaltools/tools/windowactivatable.py:215
+msgid "Shell Output"
+msgstr ""
+
+#. ex:ts=4:et:
 #: ../plugins/externaltools/data/build.desktop.in.h:1
 msgid "Build"
 msgstr "Tóg"
@@ -2563,304 +2531,305 @@ msgstr ""
 msgid "Run command"
 msgstr "Rith ordú"
 
-#: ../plugins/filebrowser/filebrowser.gedit-plugin.desktop.in.h:1
-msgid "Easy file access from the side pane"
+#: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:1
+msgid "Easy file access from the side panel"
 msgstr ""
 
-#: ../plugins/filebrowser/filebrowser.gedit-plugin.desktop.in.h:2
-msgid "File Browser Pane"
-msgstr ""
+#: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:2
+#, fuzzy
+msgid "File Browser Panel"
+msgstr "Brabhsálaí Comhad"
 
-#: ../plugins/filebrowser/gedit-file-bookmarks-store.c:239
+#: ../plugins/filebrowser/gedit-file-bookmarks-store.c:243
 msgid "File System"
 msgstr "Córas Comhad"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:556
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:577
 msgid "_Set root to active document"
 msgstr "_Socraigh fréamh mar an gcáipéis gníomhach"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:558
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:579
 msgid "Set the root to the active document location"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:563
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:584
 msgid "_Open terminal here"
 msgstr "_Oscail teirminéal anseo"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:565
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:586
 msgid "Open a terminal at the currently opened directory"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:708
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:724
 msgid "File Browser"
 msgstr "Brabhsálaí Comhad"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:841
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:867
 msgid "An error occurred while creating a new directory"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:844
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:870
 msgid "An error occurred while creating a new file"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:847
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:873
 msgid "An error occurred while renaming a file or directory"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:850
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:876
 msgid "An error occurred while deleting a file or directory"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:853
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:879
 msgid "An error occurred while opening a directory in the file manager"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:856
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:882
 msgid "An error occurred while setting a root directory"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:859
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:885
 msgid "An error occurred while loading a directory"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:862
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:888
 msgid "An error occurred"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1133
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1104
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1138
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1109
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1143
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1114
 msgid "The selected files cannot be moved to the trash."
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1177
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1146
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1182
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1151
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1185
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1154
 msgid "If you delete an item, it is permanently lost."
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:1728
+#: ../plugins/filebrowser/gedit-file-browser-store.c:1722
 msgid "(Empty)"
 msgstr "(Folamh)"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3441
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3467
 msgid ""
 "The renamed file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
 msgstr ""
 
 #. Translators: This is the default name of new files created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3690
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3711
 msgid "file"
 msgstr "comhad"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3718
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3739
 msgid ""
 "The new file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
 msgstr ""
 
 #. Translators: This is the default name of new directories created by the file browser pane.
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3749
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3770
 msgid "directory"
 msgstr "comhadlann"
 
-#: ../plugins/filebrowser/gedit-file-browser-store.c:3774
+#: ../plugins/filebrowser/gedit-file-browser-store.c:3795
 msgid ""
 "The new directory is currently filtered out. You need to adjust your filter "
 "settings to make the directory visible"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:732
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:743
 msgid "Bookmarks"
 msgstr "Leabharmharcanna"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:816
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:831
 msgid "_Filter"
 msgstr "_Scagaire"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:821
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:836
 msgid "_Move to Trash"
 msgstr "_Bog go Bruscar"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:822
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:837
 msgid "Move selected file or folder to trash"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:824
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:839
 msgid "_Delete"
 msgstr "Scri_os"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:825
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:840
 msgid "Delete selected file or folder"
 msgstr "Scrios comhad nó fillteán roghnaithe"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:832
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:847
 msgid "Open selected file"
 msgstr "Oscail comhad roghnaithe"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:838
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
 msgid "Up"
 msgstr "Suas"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:839
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:854
 msgid "Open the parent folder"
 msgstr "Oscail an máthairfhillteán"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
 msgid "_New Folder"
 msgstr "_Fillteán Nua"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:845
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:860
 msgid "Add new empty folder"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:847
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:862
 msgid "New F_ile"
 msgstr "Comhad _Nua"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:848
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:863
 msgid "Add new empty file"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
 msgid "_Rename"
 msgstr "_Athainmnigh"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:854
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:869
 msgid "Rename selected file or folder"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:860
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:875
 msgid "_Previous Location"
 msgstr "Suíomh _Roimhe Seo"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:862
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:877
 msgid "Go to the previous visited location"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:864
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:879
 msgid "_Next Location"
 msgstr "An Chéad Suíomh _Eile"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:865
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:880
 msgid "Go to the next visited location"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:866
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:881
 msgid "Re_fresh View"
-msgstr ""
+msgstr "_Athnuaigh an tAmharc"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:867
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
 msgid "Refresh the view"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:886
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:883
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:901
 msgid "_View Folder"
 msgstr "_Amharc ar Fhillteán"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:869
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:887
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:884
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:902
 msgid "View folder in file manager"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:876
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:891
 msgid "Show _Hidden"
 msgstr "Taispeáin Comhaid atá i bh_Folach"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:877
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
 msgid "Show hidden files and folders"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:879
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:894
 msgid "Show _Binary"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:880
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:895
 msgid "Show binary files"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1013
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1022
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1043
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1028
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1037
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1058
 msgid "Previous location"
 msgstr "Suíomh roimhe seo"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1015
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1030
 msgid "Go to previous location"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1017
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1038
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1032
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1053
 msgid "Go to a previously opened location"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1034
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1049
 msgid "Next location"
 msgstr "An chéad suíomh eile"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1036
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1051
 msgid "Go to next location"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1247
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1261
 msgid "_Match Filename"
-msgstr ""
+msgstr "_Meaitseáil Ainm Comhaid"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2183
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2187
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr ""
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2261
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2264
 #, c-format
 msgid "Could not open media: %s"
 msgstr "Níorbh fhéidir meáin a oscailt: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2308
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2311
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "Níorbh fhéidir imleabhar a fheistiú: %s"
 
 #. ex:ts=8:noet:
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:1
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:1
 msgid "Enable Restore of Remote Locations"
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:2
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:2
 msgid "File Browser Filter Mode"
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:3
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:3
 msgid "File Browser Filter Pattern"
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:4
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:4
 msgid "File Browser Root Directory"
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:5
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:5
 msgid "File Browser Virtual Root Directory"
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:6
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:6
 msgid ""
 "If TRUE the file browser plugin will view the directory of the first opened "
 "document given that the file browser hasn't been used yet. (Thus this "
@@ -2868,66 +2837,89 @@ msgid ""
 "with Nautilus, etc.)"
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:7
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:7
 msgid "Open With Tree View"
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:8
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:8
 msgid ""
 "Open the tree view when the file browser plugin gets loaded instead of the "
 "bookmarks view"
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:9
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:9
 #, fuzzy
 msgid "Set Location to First Document"
 msgstr "_Socraigh fréamh mar an gcáipéis gníomhach"
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:10
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:10
 msgid "Sets whether to enable restoring of remote locations."
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:11
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:11
 msgid ""
 "The file browser root directory to use when loading the file browser plugin "
 "and onload/tree_view is TRUE."
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:12
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:12
 msgid ""
 "The file browser virtual root directory to use when loading the file browser "
 "plugin when onload/tree_view is TRUE. The virtual root must always be below "
 "the actual root."
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:13
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:13
 msgid ""
 "The filter pattern to filter the file browser with. This filter works on top "
 "of the filter_mode."
 msgstr ""
 
-#: ../plugins/filebrowser/org.gnome.gedit.file-browser.gschema.xml.in.in.h:14
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:14
 msgid ""
 "This value determines what files get filtered from the file browser. Valid "
-"values are: none (filter nothing), hidden (filter hidden files), binary "
-"(filter binary files) and hidden_and_binary (filter both hidden and binary "
-"files)."
+"values are: none (filter nothing), hide-hidden (filter hidden files) and "
+"hide-binary (filter binary files)."
 msgstr ""
 
-#: ../plugins/modelines/modelines.gedit-plugin.desktop.in.h:1
+#: ../plugins/modelines/modelines.plugin.desktop.in.h:1
 msgid "Emacs, Kate and Vim-style modelines support for gedit."
 msgstr ""
 
-#: ../plugins/modelines/modelines.gedit-plugin.desktop.in.h:2
+#: ../plugins/modelines/modelines.plugin.desktop.in.h:2
 msgid "Modelines"
 msgstr ""
 
-#: ../plugins/pythonconsole/pythonconsole.gedit-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:2
+msgid "Command Color Text"
+msgstr ""
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:3
+#, fuzzy
+msgid "Error Color Text"
+msgstr "Dath _earráidí:"
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:5
+msgid ""
+"If true, the terminal will use the desktop-global standard font if it's "
+"monospace (and the most similar font it can come up with otherwise)."
+msgstr ""
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
+msgid "The command color text"
+msgstr ""
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
+#, fuzzy
+msgid "The error color text"
+msgstr "Dath _earráidí:"
+
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
 msgid "Interactive Python console standing in the bottom panel"
 msgstr ""
 
-#: ../plugins/pythonconsole/pythonconsole.gedit-plugin.desktop.in.h:2
-#: ../plugins/pythonconsole/pythonconsole/__init__.py:51
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
+#: ../plugins/pythonconsole/pythonconsole/__init__.py:52
 msgid "Python Console"
 msgstr ""
 
@@ -2940,30 +2932,22 @@ msgstr ""
 msgid "_Error color:"
 msgstr "Dath _earráidí:"
 
-#. ex:ts=8:et:
-#: ../plugins/quickopen/quickopen/popup.py:35
-#: ../plugins/quickopen/quickopen.gedit-plugin.desktop.in.h:1
+#. ex:ts=4:et:
+#: ../plugins/quickopen/quickopen/popup.py:31
+#: ../plugins/quickopen/quickopen.plugin.desktop.in.h:1
 msgid "Quick Open"
 msgstr ""
 
-#: ../plugins/quickopen/quickopen/windowhelper.py:69
-msgid "Quick open"
-msgstr ""
-
-#: ../plugins/quickopen/quickopen/windowhelper.py:70
-msgid "Quickly open documents"
-msgstr "Oscail cáipéisí go tapa"
-
-#: ../plugins/quickopen/quickopen.gedit-plugin.desktop.in.h:2
+#: ../plugins/quickopen/quickopen.plugin.desktop.in.h:2
 msgid "Quickly open files"
 msgstr "Oscail comhaid go tapa"
 
-#: ../plugins/snippets/snippets.gedit-plugin.desktop.in.h:1
+#: ../plugins/snippets/snippets.plugin.desktop.in.h:1
 msgid "Insert often-used pieces of text in a fast way"
 msgstr ""
 
-#: ../plugins/snippets/snippets.gedit-plugin.desktop.in.h:2
-#: ../plugins/snippets/snippets/Document.py:58
+#: ../plugins/snippets/snippets.plugin.desktop.in.h:2
+#: ../plugins/snippets/snippets/document.py:56
 msgid "Snippets"
 msgstr ""
 
@@ -2972,209 +2956,227 @@ msgid "Activation"
 msgstr "Gníomhachtú"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:3
+msgid "Add Snippet"
+msgstr ""
+
+#: ../plugins/snippets/snippets/snippets.ui.h:4
 msgid "Create new snippet"
 msgstr "Cruthaigh blúire nua"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/Manager.py:412
+#: ../plugins/snippets/snippets/snippets.ui.h:5
+#: ../plugins/snippets/snippets/manager.py:399
 msgid "Delete selected snippet"
 msgstr "Scrios an blúire roghnaithe"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:5
-msgid "Export selected snippets"
-msgstr ""
-
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/Manager.py:801
-msgid "Import snippets"
+msgid "Export Snippets"
 msgstr ""
 
 #: ../plugins/snippets/snippets/snippets.ui.h:7
-msgid "S_hortcut key:"
+msgid "Export selected snippets"
 msgstr ""
 
 #: ../plugins/snippets/snippets/snippets.ui.h:8
+msgid "Import Snippets"
+msgstr ""
+
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+#: ../plugins/snippets/snippets/manager.py:776
+msgid "Import snippets"
+msgstr ""
+
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+#, fuzzy
+msgid "Manage Snippets"
+msgstr "Cruthaigh blúire nua"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:11
+msgid "Remove Snippet"
+msgstr ""
+
+#: ../plugins/snippets/snippets/snippets.ui.h:12
+msgid "S_hortcut key:"
+msgstr ""
+
+#: ../plugins/snippets/snippets/snippets.ui.h:13
 msgid "Shortcut key with which the snippet is activated"
 msgstr ""
 
 #. self['hbox_tab_trigger'].set_spacing(0)
-#: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/Manager.py:689
+#: ../plugins/snippets/snippets/snippets.ui.h:14
+#: ../plugins/snippets/snippets/manager.py:666
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr ""
 
-#: ../plugins/snippets/snippets/snippets.ui.h:10
-msgid "Snippets Manager"
-msgstr "Bainisteoir Blúirí"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:11
+#: ../plugins/snippets/snippets/snippets.ui.h:15
 msgid "_Drop targets:"
 msgstr ""
 
-#: ../plugins/snippets/snippets/snippets.ui.h:13
+#: ../plugins/snippets/snippets/snippets.ui.h:17
 msgid "_Snippets:"
 msgstr ""
 
-#: ../plugins/snippets/snippets/snippets.ui.h:14
+#. "tab" here means the tab key, not the notebook tab!
+#: ../plugins/snippets/snippets/snippets.ui.h:19
 msgid "_Tab trigger:"
 msgstr ""
 
-#: ../plugins/snippets/snippets/WindowHelper.py:130
+#: ../plugins/snippets/snippets/windowactivatable.py:148
 msgid "Manage _Snippets..."
 msgstr ""
 
-#: ../plugins/snippets/snippets/WindowHelper.py:131
+#: ../plugins/snippets/snippets/windowactivatable.py:149
 msgid "Manage snippets"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:46
+#: ../plugins/snippets/snippets/manager.py:43
 msgid "Snippets archive"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:71
+#: ../plugins/snippets/snippets/manager.py:62
 msgid "Add a new snippet..."
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:121
+#: ../plugins/snippets/snippets/manager.py:115
 msgid "Global"
 msgstr "Domhanda"
 
-#: ../plugins/snippets/snippets/Manager.py:409
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Revert selected snippet"
 msgstr "Fill an blúire roghnaithe"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/Manager.py:682
+#: ../plugins/snippets/snippets/manager.py:659
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:780
+#: ../plugins/snippets/snippets/manager.py:755
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:787
+#: ../plugins/snippets/snippets/manager.py:762
 msgid "Import successfully completed"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:806
-#: ../plugins/snippets/snippets/Manager.py:892
-#: ../plugins/snippets/snippets/Manager.py:955
+#: ../plugins/snippets/snippets/manager.py:781
+#: ../plugins/snippets/snippets/manager.py:867
+#: ../plugins/snippets/snippets/manager.py:930
 msgid "All supported archives"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:807
-#: ../plugins/snippets/snippets/Manager.py:893
-#: ../plugins/snippets/snippets/Manager.py:956
+#: ../plugins/snippets/snippets/manager.py:782
+#: ../plugins/snippets/snippets/manager.py:868
+#: ../plugins/snippets/snippets/manager.py:931
 msgid "Gzip compressed archive"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:808
-#: ../plugins/snippets/snippets/Manager.py:894
-#: ../plugins/snippets/snippets/Manager.py:957
+#: ../plugins/snippets/snippets/manager.py:783
+#: ../plugins/snippets/snippets/manager.py:869
+#: ../plugins/snippets/snippets/manager.py:932
 msgid "Bzip2 compressed archive"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:809
+#: ../plugins/snippets/snippets/manager.py:784
 msgid "Single snippets file"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:810
-#: ../plugins/snippets/snippets/Manager.py:896
-#: ../plugins/snippets/snippets/Manager.py:959
+#: ../plugins/snippets/snippets/manager.py:785
+#: ../plugins/snippets/snippets/manager.py:871
+#: ../plugins/snippets/snippets/manager.py:934
 msgid "All files"
 msgstr "Gach comhad"
 
-#: ../plugins/snippets/snippets/Manager.py:822
+#: ../plugins/snippets/snippets/manager.py:797
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:826
+#: ../plugins/snippets/snippets/manager.py:801
 msgid "Export successfully completed"
 msgstr ""
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/Manager.py:866
-#: ../plugins/snippets/snippets/Manager.py:933
+#: ../plugins/snippets/snippets/manager.py:841
+#: ../plugins/snippets/snippets/manager.py:908
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:881
-#: ../plugins/snippets/snippets/Manager.py:951
+#: ../plugins/snippets/snippets/manager.py:856
+#: ../plugins/snippets/snippets/manager.py:926
 msgid "There are no snippets selected to be exported"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:886
-#: ../plugins/snippets/snippets/Manager.py:924
+#: ../plugins/snippets/snippets/manager.py:861
+#: ../plugins/snippets/snippets/manager.py:899
 msgid "Export snippets"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:1063
+#: ../plugins/snippets/snippets/manager.py:1040
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Manager.py:1065
+#: ../plugins/snippets/snippets/manager.py:1042
 msgid "Type a new shortcut"
 msgstr "Clóscríobh aicearra nua"
 
-#: ../plugins/snippets/snippets/Exporter.py:82
+#: ../plugins/snippets/snippets/exporter.py:82
 #, python-format
 msgid "The archive \"%s\" could not be created"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Exporter.py:99
+#: ../plugins/snippets/snippets/exporter.py:99
 #, python-format
 msgid "Target directory \"%s\" does not exist"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Exporter.py:102
+#: ../plugins/snippets/snippets/exporter.py:102
 #, python-format
 msgid "Target directory \"%s\" is not a valid directory"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Importer.py:46
-#: ../plugins/snippets/snippets/Importer.py:100
+#: ../plugins/snippets/snippets/importer.py:47
+#: ../plugins/snippets/snippets/importer.py:108
 #, python-format
 msgid "File \"%s\" does not exist"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Importer.py:49
+#: ../plugins/snippets/snippets/importer.py:50
 #, python-format
 msgid "File \"%s\" is not a valid snippets file"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Importer.py:59
+#: ../plugins/snippets/snippets/importer.py:67
 #, python-format
 msgid "Imported file \"%s\" is not a valid snippets file"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Importer.py:69
+#: ../plugins/snippets/snippets/importer.py:77
 #, python-format
 msgid "The archive \"%s\" could not be extracted"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Importer.py:87
+#: ../plugins/snippets/snippets/importer.py:95
 #, python-format
 msgid "The following files could not be imported: %s"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Importer.py:103
-#: ../plugins/snippets/snippets/Importer.py:116
+#: ../plugins/snippets/snippets/importer.py:111
+#: ../plugins/snippets/snippets/importer.py:124
 #, python-format
 msgid "File \"%s\" is not a valid snippets archive"
 msgstr ""
 
-#: ../plugins/snippets/snippets/Placeholder.py:594
+#: ../plugins/snippets/snippets/placeholder.py:594
 #, python-format
 msgid ""
 "Execution of the Python command (%s) exceeds the maximum time, execution "
 "aborted."
 msgstr ""
 
-#: ../plugins/snippets/snippets/Placeholder.py:602
+#: ../plugins/snippets/snippets/placeholder.py:602
 #, python-format
 msgid "Execution of the Python command (%s) failed: %s"
 msgstr ""
@@ -3188,44 +3190,44 @@ msgid "Sort the current document or selection"
 msgstr "Sórtáil an cáipéis reatha nó roghnú"
 
 #. ex:ts=8:noet:
-#: ../plugins/sort/sort.gedit-plugin.desktop.in.h:1
-#: ../plugins/sort/sort.ui.h:3
-msgid "Sort"
-msgstr "Sórtáil"
-
-#: ../plugins/sort/sort.gedit-plugin.desktop.in.h:2
-msgid "Sorts a document or selected text."
-msgstr ""
-
-#: ../plugins/sort/sort.ui.h:1
+#: ../plugins/sort/gedit-sort-plugin.ui.h:1
 msgid "R_emove duplicates"
 msgstr ""
 
-#: ../plugins/sort/sort.ui.h:2
+#: ../plugins/sort/gedit-sort-plugin.ui.h:2
 msgid "S_tart at column:"
 msgstr ""
 
-#: ../plugins/sort/sort.ui.h:4
+#: ../plugins/sort/gedit-sort-plugin.ui.h:3
+#: ../plugins/sort/sort.plugin.desktop.in.h:1
+msgid "Sort"
+msgstr "Sórtáil"
+
+#: ../plugins/sort/gedit-sort-plugin.ui.h:4
 msgid "You cannot undo a sort operation"
 msgstr ""
 
-#: ../plugins/sort/sort.ui.h:5
+#: ../plugins/sort/gedit-sort-plugin.ui.h:5
 msgid "_Ignore case"
 msgstr ""
 
-#: ../plugins/sort/sort.ui.h:6
+#: ../plugins/sort/gedit-sort-plugin.ui.h:6
 msgid "_Reverse order"
 msgstr ""
 
-#: ../plugins/sort/sort.ui.h:7
+#: ../plugins/sort/gedit-sort-plugin.ui.h:7
 msgid "_Sort"
 msgstr "_Sórtáil"
+
+#: ../plugins/sort/sort.plugin.desktop.in.h:2
+msgid "Sorts a document or selected text."
+msgstr ""
 
 #. Translators: Displayed in the "Check Spelling" dialog if there are no suggestions for the current misspelled word
 #. Translators: Displayed in the "Check Spelling" dialog if there are no suggestions
 #. * for the current misspelled word
 #: ../plugins/spell/gedit-automatic-spell-checker.c:420
-#: ../plugins/spell/gedit-spell-checker-dialog.c:459
+#: ../plugins/spell/gedit-spell-checker-dialog.c:451
 msgid "(no suggested words)"
 msgstr ""
 
@@ -3247,20 +3249,20 @@ msgstr "_Cuir Leis"
 msgid "_Spelling Suggestions..."
 msgstr ""
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:274
+#: ../plugins/spell/gedit-spell-checker-dialog.c:271
 msgid "Check Spelling"
 msgstr ""
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:285
+#: ../plugins/spell/gedit-spell-checker-dialog.c:282
 msgid "Suggestions"
 msgstr ""
 
 #. Translators: Displayed in the "Check Spelling" dialog if the current word isn't misspelled
-#: ../plugins/spell/gedit-spell-checker-dialog.c:566
+#: ../plugins/spell/gedit-spell-checker-dialog.c:558
 msgid "(correct spelling)"
 msgstr ""
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:709
+#: ../plugins/spell/gedit-spell-checker-dialog.c:699
 msgid "Completed spell checking"
 msgstr ""
 
@@ -3268,8 +3270,8 @@ msgstr ""
 #. * the second %s is the locale name. Example:
 #. * "French (France)"
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:285
-#: ../plugins/spell/gedit-spell-checker-language.c:291
+#: ../plugins/spell/gedit-spell-checker-language.c:373
+#: ../plugins/spell/gedit-spell-checker-language.c:379
 #, c-format
 msgctxt "language"
 msgid "%s (%s)"
@@ -3278,7 +3280,7 @@ msgstr "%s (%s)"
 #. Translators: this refers to an unknown language code
 #. * (one which isn't in our built-in list).
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:300
+#: ../plugins/spell/gedit-spell-checker-language.c:388
 #, c-format
 msgctxt "language"
 msgid "Unknown (%s)"
@@ -3287,7 +3289,7 @@ msgstr "Anaithnid (%s)"
 #. Translators: this refers the Default language used by the
 #. * spell checker
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:406
+#: ../plugins/spell/gedit-spell-checker-language.c:494
 msgctxt "language"
 msgid "Default"
 msgstr "Réamhshocrú"
@@ -3297,40 +3299,40 @@ msgstr "Réamhshocrú"
 msgid "Set language"
 msgstr "Socraigh teanga"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:197
+#: ../plugins/spell/gedit-spell-language-dialog.c:196
 msgid "Languages"
 msgstr "Teangacha"
 
-#: ../plugins/spell/gedit-spell-plugin.c:85
+#: ../plugins/spell/gedit-spell-plugin.c:107
 msgid "_Check Spelling..."
 msgstr "_Seiceáil Litriú..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:87
+#: ../plugins/spell/gedit-spell-plugin.c:109
 msgid "Check the current document for incorrect spelling"
 msgstr ""
 
-#: ../plugins/spell/gedit-spell-plugin.c:93
+#: ../plugins/spell/gedit-spell-plugin.c:115
 msgid "Set _Language..."
 msgstr "Socraigh _Teanga..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:95
+#: ../plugins/spell/gedit-spell-plugin.c:117
 msgid "Set the language of the current document"
 msgstr ""
 
-#: ../plugins/spell/gedit-spell-plugin.c:104
+#: ../plugins/spell/gedit-spell-plugin.c:126
 #, fuzzy
 msgid "_Highlight Misspelled Words"
 msgstr "_Mód Aibhsithe"
 
-#: ../plugins/spell/gedit-spell-plugin.c:106
+#: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
 msgstr ""
 
-#: ../plugins/spell/gedit-spell-plugin.c:751
+#: ../plugins/spell/gedit-spell-plugin.c:819
 msgid "The document is empty."
 msgstr ""
 
-#: ../plugins/spell/gedit-spell-plugin.c:781
+#: ../plugins/spell/gedit-spell-plugin.c:844
 msgid "No misspelled words"
 msgstr "Gan focal mílitrithe"
 
@@ -3395,1654 +3397,88 @@ msgstr ""
 msgid "word"
 msgstr "focal"
 
-#: ../plugins/spell/spell.gedit-plugin.desktop.in.h:1
+#: ../plugins/spell/spell.plugin.desktop.in.h:1
 msgid "Checks the spelling of the current document."
 msgstr ""
 
-#: ../plugins/spell/spell.gedit-plugin.desktop.in.h:2
+#: ../plugins/spell/spell.plugin.desktop.in.h:2
 msgid "Spell Checker"
 msgstr "Litreoir"
 
-#: ../plugins/taglist/gedit-taglist-plugin.c:99
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:694
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:710
-msgid "Tags"
-msgstr ""
-
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:605
-msgid "Select the group of tags you want to use"
-msgstr ""
-
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:624
-msgid "_Preview"
-msgstr "_Réamhamharc"
-
-#: ../plugins/taglist/gedit-taglist-plugin-panel.c:691
-msgid "Available Tag Lists"
-msgstr ""
-
-#. ex:ts=8:noet:
-#: ../plugins/taglist/HTML.tags.xml.in.h:1
-msgid "Abbreviated form"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:2
-msgid "Abbreviation"
-msgstr "Giorrúchán"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:3
-msgid "Above"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:4
-msgid "Accessibility key character"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:5
-msgid "Acronym"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:6
-msgid "Align"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:7
-msgid "Alignment character"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:8
-msgid "Alternative"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:9
-msgid "Anchor"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:10
-msgid "Anchor URI"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:11
-msgid "Applet class file code"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:13
-msgid "Applet class file code (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:14
-msgid "Array"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:15
-msgid "Associated information"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:16
-msgid "Author info"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:17
-msgid "Axis related headers"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:18
-msgid "Background color"
-msgstr "Dath cúlra"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:20
-msgid "Background color (deprecated)"
-msgstr "Dath cúlra (lochtach)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:21
-msgid "Background texture tile"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:23
-msgid "Background texture tile (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:24
-msgid "Base URI"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:25
-msgid "Base font"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:27
-msgid "Base font (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:28
-msgid "Bold"
-msgstr "Trom"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:29
-msgid "Border"
-msgstr "Imeall"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:31
-msgid "Border (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:32
-msgid "Border color"
-msgstr "Dath imill"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:33
-msgid "Cell rowspan"
-msgstr "Réise na rónna den chill"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:34
-msgid "Center"
-msgstr "Lárnach"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:36
-msgid "Center (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:37
-msgid "Character encoding of linked resource"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:38
-msgid "Checked (state)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:39
-msgid "Checked state"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:40
-msgid "Citation"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:41
-msgid "Cite reason for change"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:42
-msgid "Class implementation ID"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:43
-msgid "Class list"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:44
-msgid "Clear text flow control"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:45
-msgid "Code content type"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:46
-msgid "Color of selected links"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:48
-msgid "Color of selected links (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:49
-msgid "Column span"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:50
-msgid "Columns"
-msgstr "Colúin"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:51
-msgid "Comment"
-msgstr "Nóta"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:52
-msgid "Computer code fragment"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:53
-msgid "Content scheme"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:54
-msgid "Content type"
-msgstr "Cineál ábhair"
-
-#. The "type" attribute is deprecated for the "ol" tag only,
-#. since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:57
-msgid "Content type (deprecated)"
-msgstr "Cineál ábhair (lochtach)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:58
-msgid "Coordinates"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:59
-msgid "DIV Style container"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:60
-msgid "DIV container"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:61
-msgid "Date and time of change"
-msgstr ""
-
-#. NOTE: used in "object" tag
-#: ../plugins/taglist/HTML.tags.xml.in.h:63
-msgid "Declare flag"
-msgstr ""
-
-#. Translators: DEFER is an optional attribute of the <script> tag.
-#. It indicates that the script is not going to generate any document
-#. content. The browser can continue parsing and drawing the page.
-#: ../plugins/taglist/HTML.tags.xml.in.h:67
-msgid "Defer attribute"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:68
-msgid "Definition description"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:69
-msgid "Definition list"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:70
-msgid "Definition term"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:71
-msgid "Deleted text"
-msgstr "Téacs scriosta"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:72
-msgid "Direction"
-msgstr "Treo"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:73
-msgid "Directionality"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:75
-msgid "Directionality (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:76
-msgid "Directory list"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:77
-msgid "Disabled"
-msgstr "Díchumasaithe"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:78
-msgid "Document base"
-msgstr "Bonn cáipéise"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:79
-msgid "Document body"
-msgstr "Corp cáipéise"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:80
-msgid "Document head"
-msgstr "Ceann cáipéise"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:81
-msgid "Document title"
-msgstr "Teideal cáipéise"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:82
-msgid "Document type"
-msgstr "Cineál cáipéise"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:83
-msgid "Element ID"
-msgstr "CA Eiliminte"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:84
-msgid "Embedded object"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:85
-#: ../plugins/taglist/Latex.tags.xml.in.h:9
-msgid "Emphasis"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:86
-msgid "Encode type"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:87
-msgid "Figure"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:88
-msgid "Font face"
-msgstr "Cló-aghaidh"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:90
-msgid "Font face (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:91
-msgid "For label"
-msgstr "Lipéad Do"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:92
-msgid "Forced line break"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:93
-msgid "Form"
-msgstr "Foirm"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:94
-msgid "Form action handler"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:95
-msgid "Form control group"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:96
-msgid "Form field label text"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:97
-msgid "Form input"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:98
-msgid "Form input type"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:99
-msgid "Form method"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:100
-msgid "Forward link"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:101
-msgid "Frame"
-msgstr "Fráma"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:102
-msgid "Frame border"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:103
-msgid "Frame render parts"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:104
-msgid "Frame source"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:105
-#, fuzzy
-msgid "Frame spacing"
-msgstr "ainmspás"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:106
-msgid "Frame target"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:107
-msgid "Frameborder"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:108
-msgid "Frameset"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:109
-msgid "Frameset columns"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:110
-msgid "Frameset rows"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:111
-msgid "Framespacing"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:112
-msgid "Generic embedded object"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:113
-msgid "Generic metainformation"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:114
-msgid "Generic span"
-msgstr "Réise ghinearálta"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:115
-msgid "HREF URI"
-msgstr "URI HREF"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:116
-msgid "HTML root element"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:117
-msgid "HTML version"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:118
-msgid "HTML — Special Characters"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:119
-msgid "HTML — Tags"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:120
-msgid "HTTP header name"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:121
-msgid "Header cell IDs"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:122
-msgid "Heading"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:123
-msgid "Heading 1"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:124
-msgid "Heading 2"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:125
-msgid "Heading 3"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:126
-msgid "Heading 4"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:127
-msgid "Heading 5"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:128
-msgid "Heading 6"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:129
-msgid "Height"
-msgstr "Airde"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:130
-msgid "Horizontal rule"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:131
-msgid "Horizontal space"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:133
-msgid "Horizontal space (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:134
-msgid "I18N BiDi override"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:135
-msgid "Image"
-msgstr "Íomhá"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:136
-msgid "Image map"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:137
-msgid "Image map area"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:138
-msgid "Image map name"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:139
-msgid "Image source"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:140
-msgid "Inline frame"
-msgstr "Fráma inlíne"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:141
-msgid "Inline layer"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:142
-msgid "Inserted text"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:143
-msgid "Instance definition"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:144
-msgid "Italic text"
-msgstr "Téacs iodálach"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:145
-msgid "Java applet"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:147
-msgid "Java applet (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:148
-msgid "Label"
-msgstr "Lipéad"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:149
-msgid "Language code"
-msgstr "Cód teanga"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:150
-msgid "Large text style"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:151
-msgid "Layer"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:152
-msgid "Link color"
-msgstr "Dath naisc"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:154
-msgid "Link color (deprecated)"
-msgstr "Dath naisc (lochtach)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:155
-msgid "List item"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:156
-msgid "List of MIME types for file upload"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:157
-msgid "List of supported character sets"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:158
-msgid "Listing"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:159
-msgid "Local change to font"
-msgstr "Athrú logánta ar chló"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:160
-msgid "Long description link"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:161
-msgid "Long quotation"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:162
-msgid "Mail link"
-msgstr ""
-
-#. Supported in XHTML 1.0 Frameset DTD only.
-#: ../plugins/taglist/HTML.tags.xml.in.h:164
-msgid "Margin pixel height"
-msgstr ""
-
-#. Supported in XHTML 1.0 Frameset DTD only.
-#: ../plugins/taglist/HTML.tags.xml.in.h:166
-msgid "Margin pixel width"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:167
-msgid "Marquee"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:168
-msgid "Maximum length of text field"
-msgstr ""
-
-#. Here I take some liberties: There's no mandatory attributes,
-#. but those are most common, and will likely be used.
-#: ../plugins/taglist/HTML.tags.xml.in.h:171
-msgid "Media-independent link"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:172
-msgid "Menu list"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:174
-msgid "Menu list (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:175
-msgid "Multi-line text field"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:176
-msgid "Multicolumn"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:177
-msgid "Multiple"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:178
-msgid "Name"
-msgstr "Ainm"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:179
-msgid "Named property value"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:180
-msgid "Next ID"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:181
-msgid "No URI"
-msgstr "Gan URI"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:182
-msgid "No embedded objects"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:183
-msgid "No frames"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:184
-msgid "No layers"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:185
-msgid "No line break"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:186
-msgid "No resize"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:187
-msgid "No script"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:188
-msgid "No shade"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:190
-msgid "No shade (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:191
-msgid "No word wrap"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:193
-msgid "No word wrap (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:194
-msgid "Non-breaking space"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:195
-msgid "Note"
-msgstr "Nóta"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:196
-msgid "Object applet file"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:198
-msgid "Object applet file (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:199
-msgid "Object data reference"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:200
-msgid "Offset for alignment character"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:201
-msgid "OnBlur event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:202
-msgid "OnChange event"
-msgstr "Teagmhas OnChange"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:203
-msgid "OnClick event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:204
-msgid "OnDblClick event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:205
-msgid "OnFocus event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:206
-msgid "OnKeyDown event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:207
-msgid "OnKeyPress event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:208
-msgid "OnKeyUp event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:209
-msgid "OnLoad event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:210
-msgid "OnMouseDown event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:211
-msgid "OnMouseMove event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:212
-msgid "OnMouseOut event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:213
-msgid "OnMouseOver event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:214
-msgid "OnMouseUp event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:215
-msgid "OnReset event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:216
-msgid "OnSelect event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:217
-msgid "OnSubmit event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:218
-msgid "OnUnload event"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:219
-msgid "Option group"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:220
-msgid "Option selector"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:221
-msgid "Ordered list"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:222
-msgid "Output media"
-msgstr "Meáin aschurtha"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:223
-msgid "Paragraph"
-msgstr "Alt"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:224
-msgid "Paragraph class"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:225
-msgid "Paragraph style"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:226
-msgid "Preformatted listing"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:227
-msgid "Preformatted text"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:228
-msgid "Profile metainfo dictionary"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:229
-msgid "Prompt message"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:230
-msgid "Push button"
-msgstr "Brúigh cnaipe"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:231
-msgid "Quote"
-msgstr "Luaigh"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:232
-msgid "Range"
-msgstr "Raon"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:233
-msgid "ReadOnly text and password"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:234
-msgid "Reduced spacing"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:236
-msgid "Reduced spacing (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:237
-msgid "Reverse link"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:238
-msgid "Root"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:239
-msgid "Rows"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:240
-msgid "Rulings between rows and columns"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:241
-msgid "Sample program output, scripts"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:242
-msgid "Scope covered by header cells"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:244
-msgid "Script language name"
-msgstr "Ainm teanga scripte"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:245
-msgid "Script statements"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:246
-msgid "Scrollbar"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:247
-msgid "Selectable option"
-msgstr "Rogha inroghnaithe"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:248
-msgid "Selected"
-msgstr "Roghnaithe"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:249
-msgid "Server-side image map"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:250
-msgid "Shape"
-msgstr "Cruth"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:251
-msgid "Short inline quotation"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:252
-msgid "Single line prompt"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:253
-msgid "Size"
-msgstr "Méid"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:255
-msgid "Size (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:256
-msgid "Small text style"
-msgstr "Stíl téacs bheag"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:257
-msgid "Soft line break"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:258
-msgid "Sound"
-msgstr "Fuaim"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:259
-msgid "Source"
-msgstr "Foinse"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:260
-msgid "Space-separated archive list"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:261
-msgid "Spacer"
-msgstr "Scarthóir"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:262
-msgid "Spacing between cells"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:263
-msgid "Spacing within cells"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:264
-msgid "Span"
-msgstr "Réise"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:265
-msgid "Square root"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:266
-msgid "Standby load message"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:267
-msgid "Starting sequence number"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:269
-msgid "Starting sequence number (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:270
-msgid "Strike-through text"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:272
-msgid "Strike-through text (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:273
-msgid "Strike-through text style"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:275
-msgid "Strike-through text style (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:276
-msgid "Strong emphasis"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:277
-msgid "Style info"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:278
-msgid "Subscript"
-msgstr "Foscript"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:279
-msgid "Superscript"
-msgstr "Forscript"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:280
-msgid "Tab order position"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:281
-msgid "Table"
-msgstr "Tábla"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:282
-msgid "Table body"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:283
-msgid "Table caption"
-msgstr "Teideal tábla"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:284
-msgid "Table column group properties"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:285
-msgid "Table column properties"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:286
-msgid "Table data cell"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:287
-msgid "Table footer"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:288
-msgid "Table header"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:289
-msgid "Table header cell"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:290
-msgid "Table row"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:291
-msgid "Table summary"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:292
-msgid "Target — Blank"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:293
-msgid "Target — Parent"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:294
-msgid "Target — Self"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:295
-msgid "Target — Top"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:296
-msgid "Teletype or monospace text style"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:297
-msgid "Text"
-msgstr "Téacs"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:298
-msgid "Text color"
-msgstr "Dath téacs"
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:300
-msgid "Text color (deprecated)"
-msgstr "Dath téacs (lochtach)"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:301
-msgid "Text entered by user"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:302
-msgid "Title"
-msgstr "Teideal"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:303
-msgid "Top margin in pixels"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:304
-msgid "URL"
-msgstr "URL"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:305
-msgid "Underlined text style"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:306
-msgid "Unordered list"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:307
-msgid "Use image map"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:308
-msgid "Value"
-msgstr "Luach"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:309
-msgid "Value interpretation"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:310
-msgid "Variable or program argument"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:311
-msgid "Vertical cell alignment"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:312
-msgid "Vertical space"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:314
-msgid "Vertical space (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:315
-msgid "Visited link color"
-msgstr ""
-
-#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
-#: ../plugins/taglist/HTML.tags.xml.in.h:317
-msgid "Visited link color (deprecated)"
-msgstr ""
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:318
-msgid "Width"
-msgstr "Leithead"
-
-#: ../plugins/taglist/HTML.tags.xml.in.h:319
-msgid "XHTML 1.0 — Tags"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:1
-msgid "Bibliography (cite)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:2
-msgid "Bibliography (item)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:3
-msgid "Bibliography (shortcite)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:4
-msgid "Bibliography (thebibliography)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:5
-msgid "Brackets ()"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:6
-msgid "Brackets <>"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:7
-msgid "Brackets []"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:8
-msgid "Brackets {}"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:10
-msgid "File input"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:11
-msgid "Footnote"
-msgstr "Fonóta"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:12
-msgid "Function cosine"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:13
-msgid "Function e^"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:14
-msgid "Function exp"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:15
-msgid "Function log"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:16
-msgid "Function log10"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:17
-msgid "Function sine"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:18
-msgid "Greek alpha"
-msgstr "Alfa Gréigise"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:19
-msgid "Greek beta"
-msgstr "Béite Gréigise"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:20
-msgid "Greek epsilon"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:21
-msgid "Greek gamma"
-msgstr "Gáma Gréigise"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:22
-msgid "Greek lambda"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:23
-msgid "Greek rho"
-msgstr "Ró Gréigise"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:24
-msgid "Greek tau"
-msgstr "Tó Gréigise"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:25
-msgid "Header 0 (chapter)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:26
-msgid "Header 0 (chapter*)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:27
-msgid "Header 1 (section)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:28
-msgid "Header 1 (section*)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:29
-msgid "Header 2 (subsection)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:30
-msgid "Header 2 (subsection*)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:31
-msgid "Header 3 (subsubsection)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:32
-msgid "Header 3 (subsubsection*)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:33
-msgid "Header 4 (paragraph)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:34
-msgid "Header appendix"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:35
-msgid "Item"
-msgstr "Mír"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:36
-msgid "Item with label"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:37
-msgid "Latex — Tags"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:38
-msgid "List description"
-msgstr "Cur síos an liosta"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:39
-msgid "List enumerate"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:40
-msgid "List itemize"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:41
-msgid "Maths (display)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:42
-msgid "Maths (inline)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:43
-msgid "Operator fraction"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:44
-msgid "Operator integral (display)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:45
-msgid "Operator integral (inline)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:46
-msgid "Operator sum (display)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:47
-msgid "Operator sum (inline)"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:48
-msgid "Reference label"
-msgstr "Lipéad tagartha"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:49
-msgid "Reference ref"
-msgstr "Tagairt tagartha"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:50
-msgid "Symbol <<"
-msgstr "Siombail <<"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:51
-msgid "Symbol <="
-msgstr "Siombail <="
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:52
-msgid "Symbol >="
-msgstr "Siombail >="
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:53
-msgid "Symbol >>"
-msgstr "Siombail >>"
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:54
-msgid "Symbol and"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:55
-msgid "Symbol const"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:56
-msgid "Symbol d-by-dt"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:57
-msgid "Symbol d-by-dt-partial"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:58
-msgid "Symbol d2-by-dt2-partial"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:59
-msgid "Symbol dagger"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:60
-msgid "Symbol em-dash ---"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:61
-msgid "Symbol en-dash --"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:62
-msgid "Symbol equiv"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:63
-msgid "Symbol infinity"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:64
-msgid "Symbol mathspace ,"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:65
-msgid "Symbol mathspace ."
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:66
-msgid "Symbol mathspace _"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:67
-msgid "Symbol mathspace __"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:68
-msgid "Symbol simeq"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:69
-msgid "Symbol star"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:70
-msgid "Typeface bold"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:71
-msgid "Typeface italic"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:72
-msgid "Typeface slanted"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:73
-msgid "Typeface type"
-msgstr ""
-
-#: ../plugins/taglist/Latex.tags.xml.in.h:74
-msgid "Unbreakable text"
-msgstr ""
-
-#: ../plugins/taglist/taglist.gedit-plugin.desktop.in.h:1
-msgid ""
-"Provides a method to easily insert commonly used tags/strings into a "
-"document without having to type them."
-msgstr ""
-
-#: ../plugins/taglist/taglist.gedit-plugin.desktop.in.h:2
-msgid "Tag list"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:1
-msgid "XSLT — Axes"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:2
-msgid "XSLT — Elements"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:3
-msgid "XSLT — Functions"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:4
-msgid "ancestor"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:5
-msgid "ancestor-or-self"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:6
-msgid "attribute"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:7
-msgid "child"
-msgstr "mac"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:8
-msgid "descendant"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:9
-msgid "descendant-or-self"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:10
-msgid "following"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:11
-msgid "following-sibling"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:12
-msgid "namespace"
-msgstr "ainmspás"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:13
-msgid "parent"
-msgstr "máthair"
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:14
-msgid "preceding"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:15
-msgid "preceding-sibling"
-msgstr ""
-
-#: ../plugins/taglist/XSLT.tags.xml.in.h:16
-msgid "self"
-msgstr ""
-
-#: ../plugins/taglist/XUL.tags.xml.in.h:1
-msgid "XUL — Tags"
-msgstr ""
-
-#: ../plugins/time/gedit-time-plugin.c:180
+#: ../plugins/time/gedit-time-plugin.c:188
 msgid "In_sert Date and Time..."
 msgstr ""
 
-#: ../plugins/time/gedit-time-plugin.c:182
+#: ../plugins/time/gedit-time-plugin.c:190
 msgid "Insert current date and time at the cursor position"
 msgstr ""
 
-#: ../plugins/time/gedit-time-plugin.c:591
+#: ../plugins/time/gedit-time-plugin.c:551
 msgid "Available formats"
 msgstr ""
 
-#: ../plugins/time/gedit-time-plugin.c:744
-msgid "Configure insert date/time plugin..."
-msgstr ""
-
 #. ex:ts=8:noet:
-#: ../plugins/time/time.gedit-plugin.desktop.in.h:1
+#: ../plugins/time/time.plugin.desktop.in.h:1
 msgid "Insert Date/Time"
 msgstr "Ionsáigh Dáta/Am"
 
-#: ../plugins/time/time.gedit-plugin.desktop.in.h:2
+#: ../plugins/time/time.plugin.desktop.in.h:2
 msgid "Inserts current date and time at the cursor position."
 msgstr ""
 
-#: ../plugins/time/org.gnome.gedit.time.gschema.xml.in.in.h:1
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:1
 msgid "Custom Format"
 msgstr "Formáid Saincheaptha"
 
-#: ../plugins/time/org.gnome.gedit.time.gschema.xml.in.in.h:2
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:2
 msgid ""
 "If the user should be prompted for a format or if the selected or custom "
 "format should be used."
 msgstr ""
 
-#: ../plugins/time/org.gnome.gedit.time.gschema.xml.in.in.h:3
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
 msgid "Prompt Type"
 msgstr ""
 
-#: ../plugins/time/org.gnome.gedit.time.gschema.xml.in.in.h:4
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
 msgid "Selected Format"
 msgstr "Formáid Roghnaithe"
 
-#: ../plugins/time/org.gnome.gedit.time.gschema.xml.in.in.h:5
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
 msgid "The custom format used when inserting the date/time."
 msgstr ""
 
-#: ../plugins/time/org.gnome.gedit.time.gschema.xml.in.in.h:6
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
 msgid "The selected format used when inserting the date/time."
 msgstr ""
 
 #. Translators: Use the more common date format in your locale
-#: ../plugins/time/gedit-time-dialog.ui.h:3
+#: ../plugins/time/gedit-time-dialog.ui.h:2
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:4
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%d/%m/%Y %H:%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
-#: ../plugins/time/gedit-time-dialog.ui.h:4
+#: ../plugins/time/gedit-time-dialog.ui.h:3
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:6
 msgid "01/11/2009 17:52:00"
 msgstr "01/11/2009 17:52:00"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:5
+#: ../plugins/time/gedit-time-dialog.ui.h:4
 msgid "Insert Date and Time"
 msgstr "Ionsáigh Dáta agus Am"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:6
+#: ../plugins/time/gedit-time-dialog.ui.h:5
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 msgid "Use the _selected format"
 msgstr "Bain úsáid as an bhformáid _roghnaithe"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:7
+#: ../plugins/time/gedit-time-dialog.ui.h:6
 msgid "_Insert"
 msgstr "_Ionsáigh"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:8
+#: ../plugins/time/gedit-time-dialog.ui.h:7
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:11
 msgid "_Use custom format"
 msgstr "_Bain úsáid as formáid saincheaptha"
@@ -5058,4 +3494,12 @@ msgstr "Ionsáigh Dáta/Am"
 
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "_Prompt for a format"
+msgstr ""
+
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
+msgid "Logs access and leave event for documents used with gedit"
+msgstr ""
+
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
+msgid "Zeitgeist dataprovider"
 msgstr ""
