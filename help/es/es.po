@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-09-24 09:37+0000\n"
-"PO-Revision-Date: 2011-09-24 11:39+0200\n"
+"POT-Creation-Date: 2011-09-24 20:53+0000\n"
+"PO-Revision-Date: 2011-09-25 11:00+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -842,8 +842,6 @@ msgstr ""
 "principio de la <gui>ventana de búsqueda</gui>."
 
 #: C/gedit-search.page:30(p)
-#| msgid ""
-#| "Type the text you wish to search for in the <gui>search window </gui>."
 msgid "Type the text you wish to search for in the <gui>search window</gui>."
 msgstr ""
 "Introduzca el texto que quiere buscar en la <gui>ventana de búsqueda</gui>."
@@ -894,11 +892,6 @@ msgstr ""
 "«touchpad» para moverse hacia arriba o hacia abajo a través del texto."
 
 #: C/gedit-search.page:47(p)
-#| msgid ""
-#| "To close the <gui>search window</gui>, press either <key>Esc</key> or "
-#| "<key>Enter</key>. Pressing <key>Esc</key> will return the cursor to its "
-#| "where it was before you began your search. Pressing <key>Enter</key> will "
-#| "return the cursor to the current position in the search results."
 msgid ""
 "To close the <gui>search window</gui>, press either <key>Esc</key> or "
 "<key>Enter</key>. Pressing <key>Esc</key> will return the cursor to where it "
@@ -910,7 +903,32 @@ msgstr ""
 "donde estaba antes de comenzar la búsqueda. Al pulsar <key>Intro</key> el "
 "cursor volverá a la posición actual en los resultados de la búsqueda."
 
-#: C/gedit-search.page:53(p)
+#: C/gedit-search.page:53(title)
+#| msgid "Search"
+msgid "Search tips"
+msgstr "Consejos de búsqueda"
+
+#: C/gedit-search.page:54(p)
+msgid ""
+"If you highlight a portion of text with your mouse, and then press "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq>, the text you've highlighted "
+"will appear in the search window."
+msgstr ""
+"Si resalta un fragmento de texto con el ratón y pulsa <keyseq><key>Ctrl</"
+"key><key>F</key></keyseq>, el texto que ha resaltado aparecerá en la ventana "
+"de búsqueda."
+
+#: C/gedit-search.page:57(p)
+msgid ""
+"For advanced search options, you can click on the <gui>Magnifying Glass</"
+"gui> icon in the search window, or you can right-click on any portion of the "
+"search window."
+msgstr ""
+"Para opciones de búsqueda avanzadas, puede pulsar el icono de la <gui>Lupa</"
+"gui> en la ventana de búsqueda, o puede pulsar con el botón derecho en "
+"cualquier parte de la ventana de búsqueda."
+
+#: C/gedit-search.page:60(p)
 msgid ""
 "The text that you've searched for will remain highlighted by gedit, even "
 "after you have completed your search. To remove the highlight, click "
@@ -4446,9 +4464,6 @@ msgstr ""
 
 #~ msgid "Panes"
 #~ msgstr "Paneles"
-
-#~ msgid "Search"
-#~ msgstr "Buscar"
 
 #~ msgid "Ctrl + K"
 #~ msgstr "Ctrl + K"
