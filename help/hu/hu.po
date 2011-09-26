@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit_help master\n"
-"POT-Creation-Date: 2011-08-18 01:51+0000\n"
-"PO-Revision-Date: 2011-09-21 10:41+0200\n"
+"POT-Creation-Date: 2011-09-24 20:53+0000\n"
+"PO-Revision-Date: 2011-09-26 12:51+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Magyar <gnome-hu-list at gnome dot org>\n"
 "MIME-Version: 1.0\n"
@@ -817,11 +817,11 @@ msgid ""
 msgstr ""
 "A Keresés eszköz segítségével megadott szövegdarabokat kereshet a fájlban."
 
-#: C/gedit-search.page:23(title)
+#: C/gedit-search.page:24(title)
 msgid "Finding text"
 msgstr "Szöveg keresése"
 
-#: C/gedit-search.page:24(p)
+#: C/gedit-search.page:25(p)
 msgid ""
 "Open the <gui style=\"menu\">search window</gui> by clicking "
 "<guiseq><gui>Search</gui><gui>Find</gui></guiseq> or pressing "
@@ -833,11 +833,11 @@ msgstr ""
 "nyomja meg a <keyseq><key>Ctrl</key><key>F</key></keyseq> kombinációt. Ez a "
 "kurzort a <gui>keresés ablak</gui> elejére viszi."
 
-#: C/gedit-search.page:27(p)
+#: C/gedit-search.page:30(p)
 msgid "Type the text you wish to search for in the <gui>search window</gui>."
 msgstr "Írja be a keresendő szöveget a <gui>keresés ablakba</gui>."
 
-#: C/gedit-search.page:28(p)
+#: C/gedit-search.page:32(p)
 msgid ""
 "As you type, <app>gedit</app> will begin highlighting the portions of text "
 "that match what you have entered."
@@ -845,11 +845,11 @@ msgstr ""
 "Gépelés közben a <app>gedit</app> megkezdi a beírt szövegre illeszkedő "
 "szövegdarabok kiemelését."
 
-#: C/gedit-search.page:30(p)
+#: C/gedit-search.page:35(p)
 msgid "To scroll through the search results, do any of the following:"
 msgstr "A találatok közti lépkedéshez tegye a következők egyikét:"
 
-#: C/gedit-search.page:31(p)
+#: C/gedit-search.page:37(p)
 msgid ""
 "Click on the <gui>up</gui> or <gui>down</gui> facing arrows next to the "
 "<gui>search window</gui>"
@@ -857,12 +857,12 @@ msgstr ""
 "Kattintson a <gui>keresőablak</gui> mellett <gui>fel</gui> vagy <gui>le</"
 "gui> mutató nyilakra."
 
-#: C/gedit-search.page:33(p)
+#: C/gedit-search.page:40(p)
 msgid ""
 "Press the <key>up arrow</key> or <key>down arrow</key> keys on your keyboard"
 msgstr "Nyomja meg a <key>fel nyíl</key> vagy <key>le nyíl</key> billentyűt"
 
-#: C/gedit-search.page:34(p)
+#: C/gedit-search.page:41(p)
 msgid ""
 "Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</"
 "key><key> Shift</key><key>G</key></keyseq>."
@@ -870,12 +870,53 @@ msgstr ""
 "Nyomja meg a <keyseq><key>Ctrl</key><key>G</key></keyseq> vagy a "
 "<keyseq><key>Ctrl</key><key> Shift</key><key>G</key></keyseq> kombinációt."
 
-#: C/gedit-search.page:38(p)
-msgid "To close the <gui>search window</gui>, press <key>Esc</key>."
+#: C/gedit-search.page:43(p)
+msgid ""
+"Press the <key>Ctrl</key> and use your mouse or touchpad's <key>scroll</key> "
+"feature to move up or down through the text."
 msgstr ""
-"A <gui>keresőablak</gui> bezárásához nyomja meg az <key>Esc</key> billentyűt."
+"Tartsa lenyomva a <key>Ctrl</key> billentyűt, és az egér vagy az érintőtábla "
+"<key>görgetés</key> funkciójával mozogjon felfelé vagy lefelé a szövegben."
 
-#: C/gedit-search.page:41(p)
+#: C/gedit-search.page:47(p)
+msgid ""
+"To close the <gui>search window</gui>, press either <key>Esc</key> or "
+"<key>Enter</key>. Pressing <key>Esc</key> will return the cursor to where it "
+"was before you began your search. Pressing <key>Enter</key> will return the "
+"cursor to the current position in the search results."
+msgstr ""
+"A <gui>keresés ablak</gui> bezárásához nyomja meg az <key>Esc</key> vagy az "
+"<key>Enter</key> billentyűt. Az <key>Esc</key> megnyomása visszaviszi a "
+"kurzort oda, ahol a keresés megkezdése előtt volt. Az <key>Enter</key> "
+"megnyomása visszaviszi a kurzort a keresési eredményekben az aktuális "
+"pozícióba."
+
+#: C/gedit-search.page:53(title)
+#| msgid "Search for text"
+msgid "Search tips"
+msgstr "Keresési tippek"
+
+#: C/gedit-search.page:54(p)
+msgid ""
+"If you highlight a portion of text with your mouse, and then press "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq>, the text you've highlighted "
+"will appear in the search window."
+msgstr ""
+"Ha kijelöl egy szövegrészt az egérrel, majd megnyomja a <keyseq><key>Ctrl<"
+"/key><key>F</key></keyseq> kombinációt, akkor a kijelölt szöveg megjelenik a "
+"keresési ablakban."
+
+#: C/gedit-search.page:57(p)
+msgid ""
+"For advanced search options, you can click on the <gui>Magnifying Glass</"
+"gui> icon in the search window, or you can right-click on any portion of the "
+"search window."
+msgstr ""
+"Speciális keresési beállítások eléréséhez kattintson a <gui>Nagyító</gui> "
+"ikonra a keresési ablakban, vagy kattintson a jobb egérgombbal a keresési "
+"ablak bármely részére."
+
+#: C/gedit-search.page:60(p)
 msgid ""
 "The text that you've searched for will remain highlighted by gedit, even "
 "after you have completed your search. To remove the highlight, click "
@@ -1145,7 +1186,6 @@ msgid "Scalable Vector Graphic (.svg)"
 msgstr "Scalable Vector Graphic (.svg)"
 
 #: C/gedit-plugins-terminal.page:13(desc)
-#| msgid "Add a Terminal console to the bottom pane"
 msgid "Add a terminal console to the bottom pane"
 msgstr "Terminál beágyazása az alsó ablaktáblába"
 
@@ -1202,7 +1242,6 @@ msgstr ""
 "dokumentumba"
 
 #: C/gedit-plugins-tag-list.page:19(title)
-#| msgid "Tag List Tips"
 msgid "Tag list"
 msgstr "Elemlista"
 
@@ -1338,7 +1377,6 @@ msgstr ""
 "egyes címkékhez és speciális karakterekhez beszúrandó szöveg előnézetét."
 
 #: C/gedit-plugins-sort.page:16(desc)
-#| msgid "Sort text into alphabetical order"
 msgid "Sort lines of text into alphabetical order"
 msgstr "Szövegsorok betűrendbe rendezése"
 
@@ -1482,7 +1520,6 @@ msgid "Emacs, Kate and Vim-style modelines support for gedit"
 msgstr "Emacs, Kate és Vim-stílusú módsorok támogatása gedithez"
 
 #: C/gedit-plugins-modelines.page:19(title)
-#| msgid "Vim Modelines"
 msgid "Modelines"
 msgstr "Módsorok"
 
@@ -1678,7 +1715,6 @@ msgstr ""
 "ennek módját."
 
 #: C/gedit-plugins-install.page:21(title)
-#| msgid "Additional gedit Plugins"
 msgid "Additional gedit plugins"
 msgstr "További gedit bővítmények"
 
@@ -1937,8 +1973,8 @@ msgid "View document statistics"
 msgstr "Dokumentumstatisztika megjelenítése"
 
 #: C/gedit-plugins-doc-stats.page:19(title)
-#| msgid "View document statistics"
-msgid "Document statistiscs"
+#| msgid "Document statistiscs"
+msgid "Document statistics"
 msgstr "Dokumentumstatisztika"
 
 #: C/gedit-plugins-doc-stats.page:21(p)
@@ -2066,7 +2102,6 @@ msgid "Auto-complete closing brackets"
 msgstr "Záró zárójelek automatikus kiegészítése"
 
 #: C/gedit-plugins-bracket-comp.page:15(title)
-#| msgid "More options"
 msgid "Bracket completion"
 msgstr "Zárójel-kiegészítés"
 
@@ -2660,6 +2695,11 @@ msgid "translator-credits"
 msgstr ""
 "Kelemen Gábor <kelemeng at gnome dot hu>, 2007., 2008.\n"
 "Őry Máté <orymate at gmail dot com>, 2007., 2008."
+
+#~ msgid "To close the <gui>search window</gui>, press <key>Esc</key>."
+#~ msgstr ""
+#~ "A <gui>keresőablak</gui> bezárásához nyomja meg az <key>Esc</key> "
+#~ "billentyűt."
 
 #~ msgid "Install Additional gedit Plugins"
 #~ msgstr "További gedit bővítmények telepítése"
