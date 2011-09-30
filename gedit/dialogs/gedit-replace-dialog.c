@@ -48,7 +48,7 @@
 
 struct _GeditReplaceDialogPrivate
 {
-	GtkWidget *table;
+	GtkWidget *grid;
 	GtkWidget *search_label;
 	GtkWidget *search_entry;
 	GtkWidget *search_text_entry;
@@ -226,7 +226,7 @@ gedit_replace_dialog_init (GeditReplaceDialog *dlg)
 					  root_objects,
 					  &error_widget,
 					  "replace_dialog_content", &content,
-					  "table", &dlg->priv->table,
+					  "grid", &dlg->priv->grid,
 					  "search_label", &dlg->priv->search_label,
 					  "replace_with_label", &dlg->priv->replace_label,
 					  "match_case_checkbutton", &dlg->priv->match_case_checkbutton,
@@ -251,36 +251,32 @@ gedit_replace_dialog_init (GeditReplaceDialog *dlg)
 		return;
 	}
 
-	gtk_table_set_row_spacings (GTK_TABLE (dlg->priv->table), 12);
-
-	dlg->priv->search_entry = gedit_history_entry_new ("search-for-entry",
-							   TRUE);
+	dlg->priv->search_entry = gedit_history_entry_new ("search-for-entry", TRUE);
 	gtk_widget_set_size_request (dlg->priv->search_entry, 300, -1);
 	gedit_history_entry_set_escape_func
 			(GEDIT_HISTORY_ENTRY (dlg->priv->search_entry),
 			 (GeditHistoryEntryEscapeFunc) gedit_utils_escape_search_text);
-
+	gtk_widget_set_hexpand (GTK_WIDGET (dlg->priv->search_entry), TRUE);
 	dlg->priv->search_text_entry = gedit_history_entry_get_entry
 			(GEDIT_HISTORY_ENTRY (dlg->priv->search_entry));
-	gtk_entry_set_activates_default (GTK_ENTRY (dlg->priv->search_text_entry),
-					 TRUE);
-	gtk_table_attach_defaults (GTK_TABLE (dlg->priv->table),
-				   dlg->priv->search_entry,
-				   1, 2, 0, 1);
+	gtk_entry_set_activates_default (GTK_ENTRY (dlg->priv->search_text_entry), TRUE);
+	gtk_grid_attach_next_to (GTK_GRID (dlg->priv->grid),
+				 dlg->priv->search_entry,
+				 dlg->priv->search_label,
+				 GTK_POS_RIGHT, 1, 1);
 
-	dlg->priv->replace_entry = gedit_history_entry_new ("replace-with-entry",
-							    TRUE);
+	dlg->priv->replace_entry = gedit_history_entry_new ("replace-with-entry", TRUE);
 	gedit_history_entry_set_escape_func
 			(GEDIT_HISTORY_ENTRY (dlg->priv->replace_entry),
 			 (GeditHistoryEntryEscapeFunc) gedit_utils_escape_search_text);
-
+	gtk_widget_set_hexpand (GTK_WIDGET (dlg->priv->replace_entry), TRUE);
 	dlg->priv->replace_text_entry = gedit_history_entry_get_entry
 			(GEDIT_HISTORY_ENTRY (dlg->priv->replace_entry));
-	gtk_entry_set_activates_default (GTK_ENTRY (dlg->priv->replace_text_entry),
-					 TRUE);
-	gtk_table_attach_defaults (GTK_TABLE (dlg->priv->table),
-				   dlg->priv->replace_entry,
-				   1, 2, 1, 2);
+	gtk_entry_set_activates_default (GTK_ENTRY (dlg->priv->replace_text_entry), TRUE);
+	gtk_grid_attach_next_to (GTK_GRID (dlg->priv->grid),
+				 dlg->priv->replace_entry,
+				 dlg->priv->replace_label,
+				 GTK_POS_RIGHT, 1, 1);
 
 	gtk_label_set_mnemonic_widget (GTK_LABEL (dlg->priv->search_label),
 				       dlg->priv->search_entry);
