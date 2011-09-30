@@ -137,7 +137,7 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
                 
                 #if not iter:
                 iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
-                controller.parse_and_run_snippet(message.snippet, iter)
+                controller.parse_and_run_snippet(message.props.trigger, iter)
 
         def insert_menu(self):
                 manager = self.window.get_ui_manager()
