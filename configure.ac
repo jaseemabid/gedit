@@ -292,7 +292,7 @@ fi
 
 AM_CONDITIONAL(ENABLE_ZEITGEIST, test x"$enable_zeitgeist" = "xyes")
 
-PYGOBJECT_REQUIRED=2.90.2
+PYGOBJECT_REQUIRED=3.0.0
 
 AC_ARG_ENABLE([python],
               AS_HELP_STRING([--enable-python[=@<:@no/auto/yes@:>@]],[Build with python support]),
