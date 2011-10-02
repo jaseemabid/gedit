@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
 "cgi?product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-06-20 17:24+0000\n"
-"PO-Revision-Date: 2011-07-09 21:44+0300\n"
+"POT-Creation-Date: 2011-08-04 09:27+0000\n"
+"PO-Revision-Date: 2011-09-29 16:22+0300\n"
 "Last-Translator: Rūdofls Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.2\n"
+"Language: lv\n"
 
 #: ../data/gedit.desktop.in.in.h:1
 msgid "Edit text files"
@@ -562,7 +563,7 @@ msgstr "Dokumentā \"%s\" veiktās izmaiņas tiks neatgriezeniski pazaudētas."
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:524
 #, c-format
 msgid "Save changes to document \"%s\" before closing?"
-msgstr "Vai, pirms aizvēršanas, saglabāt izmaiņas dokumentā \"%s\"?"
+msgstr "Vai pirms aizvēršanas saglabāt izmaiņas dokumentā \"%s\"?"
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:538
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:755
@@ -765,7 +766,7 @@ msgstr "_Pievienot..."
 msgid "_Autosave files every"
 msgstr "Saglabāt failus _automātiski katras"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:590
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:561
 msgid "_Display line numbers"
 msgstr "_Rādīt rindu numurus"
 
@@ -782,7 +783,7 @@ msgid "_minutes"
 msgstr "_minūtes"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1592
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1626
 msgid "Replace"
 msgstr "Aizvietot"
 
@@ -1104,12 +1105,12 @@ msgstr "\"%s\" nav atrasts"
 msgid "Unsaved Document %d"
 msgstr "Nesaglabāts dokuments nr.%d"
 
-#: ../gedit/gedit-documents-panel.c:119 ../gedit/gedit-documents-panel.c:133
-#: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
+#: ../gedit/gedit-documents-panel.c:121 ../gedit/gedit-documents-panel.c:135
+#: ../gedit/gedit-window.c:2459 ../gedit/gedit-window.c:2466
 msgid "Read-Only"
 msgstr "Tikai lasāms"
 
-#: ../gedit/gedit-documents-panel.c:1127 ../gedit/gedit-window.c:3840
+#: ../gedit/gedit-documents-panel.c:1142 ../gedit/gedit-window.c:3907
 msgid "Documents"
 msgstr "Dokumenti"
 
@@ -1900,7 +1901,7 @@ msgstr "Izveidot jaunu dokumentu"
 msgid "_Open..."
 msgstr "_Atvērt..."
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1554
 msgid "Open a file"
 msgstr "Atvērt failu"
 
@@ -1968,7 +1969,7 @@ msgstr "Atsaukt pēdējo darbību"
 
 #: ../gedit/gedit-ui.h:91
 msgid "Redo the last undone action"
-msgstr "Atcelt atsaukto darbību"
+msgstr "Atcelt darbības atsaukšanu"
 
 #: ../gedit/gedit-ui.h:93
 msgid "Cut the selection"
@@ -2095,7 +2096,7 @@ msgstr "Ie_priekšējais dokuments"
 
 #: ../gedit/gedit-ui.h:137
 msgid "Activate previous document"
-msgstr "Aktivēt iepriekšējo dokumentu"
+msgstr "Aktivizēt iepriekšējo dokumentu"
 
 #: ../gedit/gedit-ui.h:138
 msgid "N_ext Document"
@@ -2178,29 +2179,29 @@ msgid "/ on %s"
 msgstr "/ uz %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:625
+#: ../gedit/gedit-view-frame.c:624
 msgid "_Wrap Around"
 msgstr "Apliekt"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:635
+#: ../gedit/gedit-view-frame.c:634
 msgid "Match _Entire Word Only"
 msgstr "Atlasīt tikai v_eselus vārdus"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:645
+#: ../gedit/gedit-view-frame.c:644
 msgid "_Match Case"
 msgstr "Precīzs _meklējums"
 
-#: ../gedit/gedit-view-frame.c:904
+#: ../gedit/gedit-view-frame.c:903
 msgid "String you want to search for"
 msgstr "Simbolu virkne kuru vēlaties meklēt"
 
-#: ../gedit/gedit-view-frame.c:913
+#: ../gedit/gedit-view-frame.c:912
 msgid "Line you want to move the cursor to"
 msgstr "Rindiņa uz kuru vēlaties pārcelt kursoru"
 
-#: ../gedit/gedit-window.c:1023
+#: ../gedit/gedit-window.c:1040
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Lietot %s iekrāsošanas veidu"
@@ -2208,72 +2209,72 @@ msgstr "Lietot %s iekrāsošanas veidu"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1090 ../gedit/gedit-window.c:2105
+#: ../gedit/gedit-window.c:1107 ../gedit/gedit-window.c:2156
 #: ../plugins/externaltools/tools/manager.py:138
-#: ../plugins/externaltools/tools/manager.py:435
-#: ../plugins/externaltools/tools/manager.py:546
-#: ../plugins/externaltools/tools/manager.py:865
+#: ../plugins/externaltools/tools/manager.py:441
+#: ../plugins/externaltools/tools/manager.py:552
+#: ../plugins/externaltools/tools/manager.py:871
 msgid "Plain Text"
 msgstr "Vienkāršs teksts"
 
-#: ../gedit/gedit-window.c:1091
+#: ../gedit/gedit-window.c:1108
 msgid "Disable syntax highlighting"
 msgstr "Atslēgt sintakses iekrāsošanu"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1413
+#: ../gedit/gedit-window.c:1433
 #, c-format
 msgid "Open '%s'"
 msgstr "Atvērt '%s'"
 
-#: ../gedit/gedit-window.c:1522
+#: ../gedit/gedit-window.c:1556
 msgid "Open a recently used file"
 msgstr "Atvērt nesen lietotu failu"
 
-#: ../gedit/gedit-window.c:1528
+#: ../gedit/gedit-window.c:1562
 msgid "Open"
 msgstr "Atvērt"
 
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1620
 msgid "Save"
 msgstr "Saglabāt"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1622
 msgid "Print"
 msgstr "_Drukāt"
 
-#: ../gedit/gedit-window.c:1590
+#: ../gedit/gedit-window.c:1624
 msgid "Find"
 msgstr "Meklēt"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1750
+#: ../gedit/gedit-window.c:1784
 #, c-format
 msgid "Activate '%s'"
 msgstr "Aktivizēt '%s'"
 
-#: ../gedit/gedit-window.c:2083
+#: ../gedit/gedit-window.c:2134
 msgid "Use Spaces"
 msgstr "Izmantot atstarpes"
 
-#: ../gedit/gedit-window.c:2156
+#: ../gedit/gedit-window.c:2207
 msgid "Tab Width"
 msgstr "Tabulācijas platums"
 
-#: ../gedit/gedit-window.c:2265
+#: ../gedit/gedit-window.c:2316
 msgid "Bracket match is out of range"
 msgstr "Iekavas pāris ir ārpus apgabala"
 
-#: ../gedit/gedit-window.c:2270
+#: ../gedit/gedit-window.c:2321
 msgid "Bracket match not found"
 msgstr "Iekavu pāris nav atrasts"
 
-#: ../gedit/gedit-window.c:2275
+#: ../gedit/gedit-window.c:2326
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Iekāvu pāris atrasts rindā: %d"
 
-#: ../gedit/gedit-window.c:4046
+#: ../gedit/gedit-window.c:4113
 msgid "About gedit"
 msgstr "Par gedit"
 
@@ -2492,27 +2493,27 @@ msgstr "Izgāja"
 msgid "All languages"
 msgstr "Visas valodas"
 
-#: ../plugins/externaltools/tools/manager.py:535
-#: ../plugins/externaltools/tools/manager.py:539
-#: ../plugins/externaltools/tools/manager.py:863
+#: ../plugins/externaltools/tools/manager.py:541
+#: ../plugins/externaltools/tools/manager.py:545
+#: ../plugins/externaltools/tools/manager.py:869
 #: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Visas valodas"
 
-#: ../plugins/externaltools/tools/manager.py:646
+#: ../plugins/externaltools/tools/manager.py:652
 msgid "New tool"
 msgstr "Jauns rīks"
 
-#: ../plugins/externaltools/tools/manager.py:777
+#: ../plugins/externaltools/tools/manager.py:783
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr "Paātrinātājs jau ir piesaistīts %s"
 
-#: ../plugins/externaltools/tools/manager.py:828
+#: ../plugins/externaltools/tools/manager.py:834
 msgid "Type a new accelerator, or press Backspace to clear"
 msgstr "Ieraksti jaunu paātrinātāju vai nospied atpakaļatkāpi, lai attīrītu"
 
-#: ../plugins/externaltools/tools/manager.py:830
+#: ../plugins/externaltools/tools/manager.py:836
 msgid "Type a new accelerator"
 msgstr "Ieraksti jaunu paātrinātāju"
 
@@ -2525,7 +2526,6 @@ msgid "Add Tool"
 msgstr "Pievienot rīku"
 
 #: ../plugins/externaltools/tools/tools.ui.h:3
-#| msgid "Add new empty folder"
 msgid "Add a new tool"
 msgstr "Pievienot jaunu rīku"
 
@@ -2543,7 +2543,7 @@ msgstr "Pievienot pašreizējajam dokumentam"
 
 #: ../plugins/externaltools/tools/tools.ui.h:8
 msgid "Create new document"
-msgstr "Izveido jaunu dokumentu"
+msgstr "Izveidot jaunu dokumentu"
 
 #: ../plugins/externaltools/tools/tools.ui.h:9
 msgid "Current document"
@@ -2578,7 +2578,6 @@ msgid "Local files only"
 msgstr "Tikai lokālos failus"
 
 #: ../plugins/externaltools/tools/tools.ui.h:17
-#| msgid "Manage _External Tools..."
 msgid "Manage External Tools"
 msgstr "Pārvaldīt ārējos rīkus"
 
@@ -2595,7 +2594,6 @@ msgid "Remove Tool"
 msgstr "Izņemt rīku"
 
 #: ../plugins/externaltools/tools/tools.ui.h:21
-#| msgid "Revert selected snippet"
 msgid "Remove selected tool"
 msgstr "Izņemt izvēlēto rīku"
 
@@ -2608,12 +2606,10 @@ msgid "Replace current selection"
 msgstr "Aizvietot pašreiz atlasīto"
 
 #: ../plugins/externaltools/tools/tools.ui.h:24
-#| msgid "_Revert"
 msgid "Revert Tool"
 msgstr "Atgriešanas rīks"
 
 #: ../plugins/externaltools/tools/tools.ui.h:25
-#| msgid "_Revert"
 msgid "Revert tool"
 msgstr "Atgriešanas rīks"
 
@@ -2650,23 +2646,23 @@ msgstr "Ī_sinājuma taustiņš:"
 msgid "_Tools:"
 msgstr "_Rīki:"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:175
+#: ../plugins/externaltools/tools/windowactivatable.py:176
 msgid "Manage _External Tools..."
 msgstr "Pārvaldīt ā_rējos rīkus..."
 
-#: ../plugins/externaltools/tools/windowactivatable.py:176
+#: ../plugins/externaltools/tools/windowactivatable.py:177
 msgid "Opens the External Tools Manager"
 msgstr "Atver ārējo rīku pārvaldnieku"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:179
+#: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "External _Tools"
 msgstr "Ārējie _rīki"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:180
+#: ../plugins/externaltools/tools/windowactivatable.py:181
 msgid "External tools"
 msgstr "Ārējie rīki"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:214
+#: ../plugins/externaltools/tools/windowactivatable.py:215
 msgid "Shell Output"
 msgstr "Komandrindas izvade"
 
@@ -3140,7 +3136,6 @@ msgid "Activation"
 msgstr "Aktivizācijas"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:3
-#| msgid "Snippets"
 msgid "Add Snippet"
 msgstr "Pievienot fragmentu"
 
@@ -3149,12 +3144,11 @@ msgid "Create new snippet"
 msgstr "Izveido jaunu fragmentu"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:5
-#: ../plugins/snippets/snippets/manager.py:393
+#: ../plugins/snippets/snippets/manager.py:399
 msgid "Delete selected snippet"
 msgstr "Dzēst izvēlēto fragmentu"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#| msgid "Export snippets"
 msgid "Export Snippets"
 msgstr "Eksportēt fragmentus"
 
@@ -3163,22 +3157,19 @@ msgid "Export selected snippets"
 msgstr "Eksportēt izvēlētos fragmentus"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:8
-#| msgid "Import snippets"
 msgid "Import Snippets"
 msgstr "Importēt fragmentus"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:770
+#: ../plugins/snippets/snippets/manager.py:776
 msgid "Import snippets"
 msgstr "Importēt fragmentus"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:10
-#| msgid "Manage snippets"
 msgid "Manage Snippets"
 msgstr "Pārvaldīt fragmentus"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:11
-#| msgid "Snippets"
 msgid "Remove Snippet"
 msgstr "Izņemt fragmentu"
 
@@ -3192,7 +3183,7 @@ msgstr "Fragmentu aktivizējošā tastatūras saīsne"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:14
-#: ../plugins/snippets/snippets/manager.py:660
+#: ../plugins/snippets/snippets/manager.py:666
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Viens vārds, kas aktivizē fragmentu, ja pēc tā nospiež Tab"
 
@@ -3229,12 +3220,12 @@ msgstr "Pievienot jaunu atgriezumu..."
 msgid "Global"
 msgstr "Globāls"
 
-#: ../plugins/snippets/snippets/manager.py:390
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Revert selected snippet"
 msgstr "Atjaunot izvēlēto fragmentu"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:653
+#: ../plugins/snippets/snippets/manager.py:659
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
@@ -3242,74 +3233,74 @@ msgstr ""
 "Nav norādīts derīgs tabulātoru trigeris. Trigeri var sastāvēt no burtiem vai "
 "viena ne-burtcipara rakstzīmes, piem. {, [, utt."
 
-#: ../plugins/snippets/snippets/manager.py:749
+#: ../plugins/snippets/snippets/manager.py:755
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "Importējot radusies sekojoša kļūda: %s"
 
-#: ../plugins/snippets/snippets/manager.py:756
+#: ../plugins/snippets/snippets/manager.py:762
 msgid "Import successfully completed"
 msgstr "Importēšana veiksmīgi pabeigta"
 
-#: ../plugins/snippets/snippets/manager.py:775
-#: ../plugins/snippets/snippets/manager.py:861
-#: ../plugins/snippets/snippets/manager.py:924
+#: ../plugins/snippets/snippets/manager.py:781
+#: ../plugins/snippets/snippets/manager.py:867
+#: ../plugins/snippets/snippets/manager.py:930
 msgid "All supported archives"
 msgstr "Visi atbalstītie arhīvi"
 
-#: ../plugins/snippets/snippets/manager.py:776
-#: ../plugins/snippets/snippets/manager.py:862
-#: ../plugins/snippets/snippets/manager.py:925
+#: ../plugins/snippets/snippets/manager.py:782
+#: ../plugins/snippets/snippets/manager.py:868
+#: ../plugins/snippets/snippets/manager.py:931
 msgid "Gzip compressed archive"
 msgstr "Gzip kompresēts arhīvs"
 
-#: ../plugins/snippets/snippets/manager.py:777
-#: ../plugins/snippets/snippets/manager.py:863
-#: ../plugins/snippets/snippets/manager.py:926
+#: ../plugins/snippets/snippets/manager.py:783
+#: ../plugins/snippets/snippets/manager.py:869
+#: ../plugins/snippets/snippets/manager.py:932
 msgid "Bzip2 compressed archive"
 msgstr "Bzip2 kompresēts arhīvs"
 
-#: ../plugins/snippets/snippets/manager.py:778
+#: ../plugins/snippets/snippets/manager.py:784
 msgid "Single snippets file"
 msgstr "Viens fragmenta fails"
 
-#: ../plugins/snippets/snippets/manager.py:779
-#: ../plugins/snippets/snippets/manager.py:865
-#: ../plugins/snippets/snippets/manager.py:928
+#: ../plugins/snippets/snippets/manager.py:785
+#: ../plugins/snippets/snippets/manager.py:871
+#: ../plugins/snippets/snippets/manager.py:934
 msgid "All files"
 msgstr "Visi faili"
 
-#: ../plugins/snippets/snippets/manager.py:791
+#: ../plugins/snippets/snippets/manager.py:797
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "Eksportējot notikusi sekojoša kļūda: %s"
 
-#: ../plugins/snippets/snippets/manager.py:795
+#: ../plugins/snippets/snippets/manager.py:801
 msgid "Export successfully completed"
 msgstr "Eksportēšana veiksmīgi pabeigta"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:835
-#: ../plugins/snippets/snippets/manager.py:902
+#: ../plugins/snippets/snippets/manager.py:841
+#: ../plugins/snippets/snippets/manager.py:908
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr ""
 "Vai vēlaties iekļaut sekojošus <b>sistēmas</b> fragmentus savā eksportā?"
 
-#: ../plugins/snippets/snippets/manager.py:850
-#: ../plugins/snippets/snippets/manager.py:920
+#: ../plugins/snippets/snippets/manager.py:856
+#: ../plugins/snippets/snippets/manager.py:926
 msgid "There are no snippets selected to be exported"
 msgstr "Neviens fragments nav izvēlēts eksportēšanai"
 
-#: ../plugins/snippets/snippets/manager.py:855
-#: ../plugins/snippets/snippets/manager.py:893
+#: ../plugins/snippets/snippets/manager.py:861
+#: ../plugins/snippets/snippets/manager.py:899
 msgid "Export snippets"
 msgstr "Eksportēt fragmentus"
 
-#: ../plugins/snippets/snippets/manager.py:1034
+#: ../plugins/snippets/snippets/manager.py:1040
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "Ieraksti jaunu paātrinātāju vai nospied Backspace, lai attīrītu"
 
-#: ../plugins/snippets/snippets/manager.py:1036
+#: ../plugins/snippets/snippets/manager.py:1042
 msgid "Type a new shortcut"
 msgstr "Ieraksti jaunu paātrinātāju"
 
@@ -3496,35 +3487,35 @@ msgstr "Iestatīt valodu"
 msgid "Languages"
 msgstr "Valodas"
 
-#: ../plugins/spell/gedit-spell-plugin.c:105
+#: ../plugins/spell/gedit-spell-plugin.c:107
 msgid "_Check Spelling..."
 msgstr "_Pārbaudīt pareizrakstību..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:107
+#: ../plugins/spell/gedit-spell-plugin.c:109
 msgid "Check the current document for incorrect spelling"
 msgstr "Pārbaudīt pareizrakstību pašreizējā dokumentā"
 
-#: ../plugins/spell/gedit-spell-plugin.c:113
+#: ../plugins/spell/gedit-spell-plugin.c:115
 msgid "Set _Language..."
 msgstr "Iestatīt _valodu..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:115
+#: ../plugins/spell/gedit-spell-plugin.c:117
 msgid "Set the language of the current document"
 msgstr "Iestatīt pašreizējā dokumenta valodu"
 
-#: ../plugins/spell/gedit-spell-plugin.c:124
+#: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "_Highlight Misspelled Words"
 msgstr "_Iekrāsot nepareizos vārdus"
 
-#: ../plugins/spell/gedit-spell-plugin.c:126
+#: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
 msgstr "Automātiski pārbaudīt pareizrakstību pašreizējā dokumentā"
 
-#: ../plugins/spell/gedit-spell-plugin.c:817
+#: ../plugins/spell/gedit-spell-plugin.c:819
 msgid "The document is empty."
 msgstr "Dokuments ir tukšs."
 
-#: ../plugins/spell/gedit-spell-plugin.c:842
+#: ../plugins/spell/gedit-spell-plugin.c:844
 msgid "No misspelled words"
 msgstr "Nav nepareizi uzrakstītu vārdu"
 
