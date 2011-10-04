@@ -1,36 +1,36 @@
 <?xml version='1.0' encoding='utf-8'?>
 <snippets language="mallard">
-  <snippet>
+  <snippet id="app">
     <text><![CDATA[<app>${1:Application's name}</app>$0]]></text>
     <tag>app</tag>
     <description>app</description>
   </snippet>
-  <snippet>
+  <snippet id="cdata">
     <text><![CDATA[<![CDATA[$0]]]]><![CDATA[>]]></text>
     <tag>cdata</tag>
     <description>cdata</description>
   </snippet>
-  <snippet>
+  <snippet id="cite">
     <text><![CDATA[<cite>${1:Joe Example}</cite>]]></text>
     <tag>cite</tag>
     <description>cite</description>
   </snippet>
-  <snippet>
+  <snippet id="cited">
     <text><![CDATA[<cite date="$1">${2:Joe Example}</cite>]]></text>
     <tag>cited</tag>
     <description>cite</description>
   </snippet>
-  <snippet>
+  <snippet id="desc">
     <text><![CDATA[<desc>${1:Description.}</desc>]]></text>
     <tag>desc</tag>
     <description>desc</description>
   </snippet>
-  <snippet>
+  <snippet id="em">
     <text><![CDATA[<em>$1</em>]]></text>
     <tag>em</tag>
     <description>em</description>
   </snippet>
-  <snippet>
+  <snippet id="figure">
     <text><![CDATA[<figure>
   <title>${1:Title}</title>
   <desc>${2:Short description.}</desc>
@@ -40,47 +40,47 @@
     <tag>figure</tag>
     <description>figure</description>
   </snippet>
-  <snippet>
+  <snippet id="file">
     <text><![CDATA[<file>${0:filename}</file>]]></text>
     <tag>file</tag>
     <description>file</description>
   </snippet>
-  <snippet>
+  <snippet id="g">
     <text><![CDATA[<gui>$1</gui>$2]]></text>
     <tag>g</tag>
     <description>gui</description>
   </snippet>
-  <snippet>
+  <snippet id="q">
     <text><![CDATA[<guiseq><gui>$1</gui><gui>$2</gui></guiseq>]]></text>
     <tag>q</tag>
     <description>guiseq</description>
   </snippet>
-  <snippet>
+  <snippet id="http">
     <text><![CDATA[<link href="http://${1:url}/">${2}</link>]]></text>
     <tag>http</tag>
     <description>http</description>
   </snippet>
-  <snippet>
+  <snippet id="item">
     <text><![CDATA[<item><p>$0</p></item>]]></text>
     <tag>item</tag>
     <description>item</description>
   </snippet>
-  <snippet>
+  <snippet id="key">
     <text><![CDATA[<key>$1</key>]]></text>
     <tag>key</tag>
     <description>key</description>
   </snippet>
-  <snippet>
+  <snippet id="keys">
     <text><![CDATA[<keyseq><key>$1</key><key>$2</key></keyseq>]]></text>
     <tag>keys</tag>
     <description>keystroke</description>
   </snippet>
-  <snippet>
+  <snippet id="link">
     <text><![CDATA[<link type="${1:[topic,guide,seealso,next]}" xref="${2:index}"/>]]></text>
     <tag>link</tag>
     <description>link</description>
   </snippet>
-  <snippet>
+  <snippet id="list">
     <text><![CDATA[<list>
   <title>${1:Title}</title>
   <item><p>${2}</p></item>
@@ -89,7 +89,7 @@
     <tag>list</tag>
     <description>list</description>
   </snippet>
-  <snippet>
+  <snippet id="listing">
     <text><![CDATA[<listing>
   <title>${1:Title}</title>
   <desc>${2:Short description.}</desc>
@@ -100,7 +100,7 @@ $0
     <tag>listing</tag>
     <description>listing</description>
   </snippet>
-  <snippet>
+  <snippet id="note">
     <text><![CDATA[<note style="${1:[advanced,bug,important,tip,warning]}">
   <p>
     $0
@@ -109,7 +109,7 @@ $0
     <tag>note</tag>
     <description>note</description>
   </snippet>
-  <snippet>
+  <snippet id="num">
     <text><![CDATA[<list type="numbered">
   <item><p>$1</p></item>
   <item><p>$2</p></item>
@@ -118,7 +118,7 @@ $0
     <tag>num</tag>
     <description>numbered list</description>
   </snippet>
-  <snippet>
+  <snippet id="page">
     <text><![CDATA[<page xmlns="http://projectmallard.org/1.0/"
       type="${1:[topic,guide,seealso,next]}" style="${2:task}"
       id="${3:id}">
@@ -145,24 +145,24 @@ $0
     <tag>page</tag>
     <description>page</description>
   </snippet>
-  <snippet>
+  <snippet id="/">
     <text><![CDATA[</p>]]></text>
     <tag>/</tag>
     <description>p close</description>
   </snippet>
-  <snippet>
+  <snippet id="p">
     <text><![CDATA[<p>]]></text>
     <tag>p</tag>
     <description>p open</description>
   </snippet>
-  <snippet>
+  <snippet id="quote">
     <text><![CDATA[<quote>
   <p>$0</p>
 </quote>]]></text>
     <tag>quote</tag>
     <description>quote</description>
   </snippet>
-  <snippet>
+  <snippet id="section">
     <text><![CDATA[<section id="${1}">
   <title>${2:Section Title}</title>
   <p>$0</p>
@@ -170,14 +170,14 @@ $0
     <tag>section</tag>
     <description>section</description>
   </snippet>
-  <snippet>
+  <snippet id="steps">
     <text><![CDATA[<steps>
   <item><p>$0</p></item>
 </steps>]]></text>
     <tag>steps</tag>
     <description>steps</description>
   </snippet>
-  <snippet>
+  <snippet id="terms">
     <text><![CDATA[<terms>
   <title>${1:Title}</title>
   <item><p>$2</p></item>
@@ -185,41 +185,41 @@ $0
     <tag>terms</tag>
     <description>terms</description>
   </snippet>
-  <snippet>
+  <snippet id="tip">
     <text><![CDATA[<note style="tip">
   <p>$1</p>
 </note>  ]]></text>
     <tag>tip</tag>
     <description>tip note</description>
   </snippet>
-  <snippet>
+  <snippet id="title">
     <text><![CDATA[<title>${1:Title}</title>]]></text>
     <tag>title</tag>
     <description>title</description>
   </snippet>
-  <snippet>
+  <snippet id="warn">
     <text><![CDATA[<note style="warning">
   <p>$1</p>
 </note>  ]]></text>
     <tag>warn</tag>
     <description>warning note</description>
   </snippet>
-  <snippet>
+  <snippet id="elink">
     <text><![CDATA[<link href="http://${1:url}/">${2}</link>$0]]></text>
     <tag>elink</tag>
     <description>link</description>
   </snippet>
-  <snippet>
+  <snippet id="years">
     <text><![CDATA[<years>$<1: import datetime as d; return d.date.today().strftime('%Y')></years>]]></text>
     <tag>years</tag>
     <description>years</description>
   </snippet>
-  <snippet>
+  <snippet id="sel href">
     <text><![CDATA[<link href="$1">${2:$GEDIT_SELECTED_TEXT}</link>]]></text>
     <accelerator><![CDATA[<Control>l]]></accelerator>
     <description>Wrap selection as link</description>
   </snippet>
-  <snippet>
+  <snippet id="sel list">
     <text><![CDATA[<item><p>${1:$GEDIT_SELECTED_TEXT}</p></item>]]></text>
     <accelerator><![CDATA[<Control>t]]></accelerator>
     <description>Wrap selection as list item</description>
