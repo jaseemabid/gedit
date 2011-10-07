@@ -950,6 +950,14 @@ remove_tab_idle (GeditTab *tab)
 	return FALSE;
 }
 
+static gboolean
+scroll_to_cursor (GeditTab *tab)
+{
+	gedit_view_scroll_to_cursor (gedit_view_frame_get_view (tab->priv->frame));
+
+	return FALSE;
+}
+
 static void
 document_loaded (GeditDocument *document,
 		 const GError  *error,
@@ -1078,8 +1086,10 @@ document_loaded (GeditDocument *document,
 			gtk_widget_show (emsg);
 		}
 
-		/* Scroll to the cursor when the document is loaded */
-		gedit_view_scroll_to_cursor (gedit_view_frame_get_view (tab->priv->frame));
+		/* Scroll to the cursor when the document is loaded, we need
+		   to do it in an idle as after the document is loaded the
+		   textview is still redrawing and relocating its internals */
+		g_idle_add ((GSourceFunc)scroll_to_cursor, tab);
 
 		/* if the document is readonly we don't care how many times the document
 		   is opened */
