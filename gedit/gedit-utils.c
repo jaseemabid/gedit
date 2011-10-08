@@ -1027,33 +1027,16 @@ handle_builder_error (const gchar *message, ...)
 	return label;
 }
 
-/* FIXME this is an issue for introspection */
-/**
- * gedit_utils_get_ui_objects:
- * @filename: the path to the gtk builder file
- * @root_objects: a %NULL terminated list of root objects to load or NULL to
- *                load all objects
- * @error_widget: a pointer were a #GtkLabel
- * @object_name: the name of the first object
- * @...: a pointer were the first object is returned, followed by more
- *       name / object pairs and terminated by %NULL.
- *
- * This function gets the requested objects from a GtkBuilder ui file. In case
- * of error it returns %FALSE and sets error_widget to a GtkLabel containing
- * the error message to display.
- *
- * Returns: %FALSE if an error occurs, %TRUE on success.
- */
-gboolean
-gedit_utils_get_ui_objects (const gchar  *filename,
-			    gchar       **root_objects,
-			    GtkWidget   **error_widget,
-			    const gchar  *object_name,
-			    ...)
+/* TODO: just add a translation_doamin arg to get_ui_objects method */
+static gboolean
+get_ui_objects_with_translation_domain (const gchar  *filename,
+                                        const gchar  *translation_domain,
+                                        gchar       **root_objects,
+                                        GtkWidget   **error_widget,
+                                        const gchar  *object_name,
+                                        va_list       args)
 {
-
 	GtkBuilder *builder;
-	va_list args;
 	const gchar *name;
 	GError *error = NULL;
 	gchar *filename_markup;
@@ -1067,6 +1050,11 @@ gedit_utils_get_ui_objects (const gchar  *filename,
 	*error_widget = NULL;
 
 	builder = gtk_builder_new ();
+
+	if (translation_domain != NULL)
+	{
+		gtk_builder_set_translation_domain (builder, translation_domain);
+	}
 
 	if (root_objects != NULL)
 	{
@@ -1094,8 +1082,7 @@ gedit_utils_get_ui_objects (const gchar  *filename,
 		return FALSE;
 	}
 
-	va_start (args, object_name);
-	for (name = object_name; name; name = va_arg (args, const gchar *) )
+	for (name = object_name; name; name = va_arg (args, const gchar *))
 	{
 		GObject **gobj;
 
@@ -1126,10 +1113,87 @@ gedit_utils_get_ui_objects (const gchar  *filename,
 			}
 		}
 	}
-	va_end (args);
 
 	g_free (filename_markup);
 	g_object_unref (builder);
+
+	return ret;
+}
+
+/**
+ * gedit_utils_get_ui_objects:
+ * @filename: the path to the gtk builder file
+ * @root_objects: a %NULL terminated list of root objects to load or NULL to
+ *                load all objects
+ * @error_widget: a pointer were a #GtkLabel
+ * @object_name: the name of the first object
+ * @...: a pointer were the first object is returned, followed by more
+ *       name / object pairs and terminated by %NULL.
+ *
+ * This function gets the requested objects from a GtkBuilder ui file. In case
+ * of error it returns %FALSE and sets error_widget to a GtkLabel containing
+ * the error message to display.
+ *
+ * Returns: %FALSE if an error occurs, %TRUE on success.
+ */
+gboolean
+gedit_utils_get_ui_objects (const gchar  *filename,
+			    gchar       **root_objects,
+			    GtkWidget   **error_widget,
+			    const gchar  *object_name,
+			    ...)
+{
+	gboolean ret;
+	va_list args;
+
+	va_start (args, object_name);
+	ret = get_ui_objects_with_translation_domain (filename,
+	                                              NULL,
+	                                              root_objects,
+	                                              error_widget,
+	                                              object_name,
+	                                              args);
+	va_end (args);
+
+	return ret;
+}
+
+/**
+ * gedit_utils_get_ui_objects_with_translation_domain:
+ * @filename: the path to the gtk builder file
+ * @translation_domain: the specific translation domain
+ * @root_objects: a %NULL terminated list of root objects to load or NULL to
+ *                load all objects
+ * @error_widget: a pointer were a #GtkLabel
+ * @object_name: the name of the first object
+ * @...: a pointer were the first object is returned, followed by more
+ *       name / object pairs and terminated by %NULL.
+ *
+ * This function gets the requested objects from a GtkBuilder ui file. In case
+ * of error it returns %FALSE and sets error_widget to a GtkLabel containing
+ * the error message to display.
+ *
+ * Returns: %FALSE if an error occurs, %TRUE on success.
+ */
+gboolean
+gedit_utils_get_ui_objects_with_translation_domain (const gchar  *filename,
+                                                    const gchar  *translation_domain,
+                                                    gchar       **root_objects,
+                                                    GtkWidget   **error_widget,
+                                                    const gchar  *object_name,
+                                                    ...)
+{
+	gboolean ret;
+	va_list args;
+
+	va_start (args, object_name);
+	ret = get_ui_objects_with_translation_domain (filename,
+	                                              translation_domain,
+	                                              root_objects,
+	                                              error_widget,
+	                                              object_name,
+	                                              args);
+	va_end (args);
 
 	return ret;
 }

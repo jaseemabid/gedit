@@ -124,6 +124,14 @@ gboolean	 gedit_utils_get_ui_objects		(const gchar      *filename,
 							 const gchar      *object_name,
 							 ...) G_GNUC_NULL_TERMINATED;
 
+gboolean         gedit_utils_get_ui_objects_with_translation_domain
+                                                        (const gchar  *filename,
+                                                         const gchar  *translation_domain,
+                                                         gchar       **root_objects,
+                                                         GtkWidget   **error_widget,
+                                                         const gchar  *object_name,
+                                                         ...) G_GNUC_NULL_TERMINATED;
+
 /* Return NULL if str is not a valid URI and/or filename */
 gchar		*gedit_utils_make_canonical_uri_from_shell_arg
 							(const gchar      *str);
