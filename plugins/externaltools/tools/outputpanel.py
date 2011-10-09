@@ -49,8 +49,7 @@ class OutputPanel(UniqueById):
         callbacks = {
             'on_stop_clicked' : self.on_stop_clicked,
             'on_view_visibility_notify_event': self.on_view_visibility_notify_event,
-            'on_view_motion_notify_event': self.on_view_motion_notify_event,
-            'on_view_button_press_event': self.on_view_button_press_event
+            'on_view_motion_notify_event': self.on_view_motion_notify_event
         }
 
         self.profile_settings = self.get_profile_settings()
@@ -62,6 +61,7 @@ class OutputPanel(UniqueById):
         self.ui = Gtk.Builder()
         self.ui.add_from_file(os.path.join(datadir, 'ui', 'outputpanel.ui'))
         self.ui.connect_signals(callbacks)
+        self['view'].connect('button-press-event', self.on_view_button_press_event)
 
         self.panel = self["output-panel"]
         self.font_changed()
@@ -175,7 +175,7 @@ class OutputPanel(UniqueById):
         panel.show()
         panel.activate_item(self.panel)
 
-    def update_cursor_style(self, view, x, y):       
+    def update_cursor_style(self, view, x, y):  
         if self.get_link_at_location(view, x, y) is not None:
             cursor = self.link_cursor
         else:
@@ -221,7 +221,7 @@ class OutputPanel(UniqueById):
         return None
 
     def on_view_button_press_event(self, view, event):
-        if event.button != 1 or event.type != Gdk.BUTTON_PRESS or \
+        if event.button != 1 or event.type != Gdk.EventType.BUTTON_PRESS or \
            event.window != view.get_window(Gtk.TextWindowType.TEXT):
             return False
 
