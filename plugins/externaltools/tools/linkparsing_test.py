@@ -27,9 +27,10 @@ class LinkParserTest(unittest.TestCase):
     def assert_link_count(self, links, expected_count):
         self.assertEquals(len(links), expected_count, 'incorrect nr of links')
 
-    def assert_link(self, actual, path, line_nr):
+    def assert_link(self, actual, path, line_nr, col_nr=0):
         self.assertEquals(actual.path, path, "incorrect path")
         self.assertEquals(actual.line_nr, line_nr, "incorrect line nr")
+        self.assertEquals(actual.col_nr, col_nr, "incorrect col nr")
 
     def assert_link_text(self, text, link, link_text):
         self.assertEquals(text[link.start:link.end], link_text,
@@ -38,27 +39,27 @@ class LinkParserTest(unittest.TestCase):
     def test_parse_gcc_simple_test_with_real_output(self):
         gcc_output = """
 test.c: In function 'f':
-test.c:5: warning: passing argument 1 of 'f' makes integer from pointer without a cast
-test.c:3: note: expected 'int' but argument is of type 'char *'
+test.c:5:6: warning: passing argument 1 of 'f' makes integer from pointer without a cast
+test.c:3:7: note: expected 'int' but argument is of type 'char *'
 test.c: In function 'main':
-test.c:11: warning: initialization makes pointer from integer without a cast
-test.c:12: warning: initialization makes integer from pointer without a cast
-test.c:13: error: too few arguments to function 'f'
-test.c:14: error: expected ';' before 'return'
+test.c:11:10: warning: initialization makes pointer from integer without a cast
+test.c:12:11: warning: initialization makes integer from pointer without a cast
+test.c:13:12: error: too few arguments to function 'f'
+test.c:14:13: error: expected ';' before 'return'
 """
         links = self.p.parse(gcc_output)
         self.assert_link_count(links, 6)
         lnk = links[2]
-        self.assert_link(lnk, "test.c", 11)
-        self.assert_link_text(gcc_output, lnk, "test.c:11")
+        self.assert_link(lnk, "test.c", 11, 10)
+        self.assert_link_text(gcc_output, lnk, "test.c:11:10")
 
     def test_parse_gcc_one_line(self):
-        line = "/tmp/myfile.c:1212: error: ..."
+        line = "/tmp/myfile.c:1212:12: error: ..."
         links = self.p.parse(line)
         self.assert_link_count(links, 1)
         lnk = links[0]
-        self.assert_link(lnk, "/tmp/myfile.c", 1212)
-        self.assert_link_text(line, lnk, "/tmp/myfile.c:1212")
+        self.assert_link(lnk, "/tmp/myfile.c", 1212, 12)
+        self.assert_link_text(line, lnk, "/tmp/myfile.c:1212:12")
 
     def test_parse_gcc_empty_string(self):
         links = self.p.parse("")

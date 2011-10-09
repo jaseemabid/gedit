@@ -26,21 +26,23 @@ class Link:
     string that should be marked as a link.
     """
 
-    def __init__(self, path, line_nr, start, end):
+    def __init__(self, path, line_nr, col_nr, start, end):
         """
         path -- the path of the file (that could be extracted)
         line_nr -- the line nr of the specified file
+        col_nr -- the col nr of the specific file
         start -- the index within the string that the link starts at
         end -- the index within the string where the link ends at
         """
         self.path    = path
         self.line_nr = int(line_nr)
+        self.col_nr  = int(col_nr)
         self.start   = start
         self.end     = end
 
     def __repr__(self):
-        return "%s[%s](%s:%s)" % (self.path, self.line_nr,
-                                  self.start, self.end)
+        return "%s[%s][%s](%s:%s)" % (self.path, self.line_nr, self.col_nr,
+                                      self.start, self.end)
 
 class LinkParser:
     """
@@ -137,11 +139,20 @@ class RegexpLinkParser(AbstractLinkParser):
     def parse(self, text):
         links = []
         for m in re.finditer(self.re, text):
+            groups = m.groups()
+
             path = m.group("pth")
             line_nr = m.group("ln")
             start = m.start("lnk")
             end = m.end("lnk")
-            link = Link(path, line_nr, start, end)
+
+            # some regexes may have a col group
+            if len(groups) > 3 and groups[3] != None:
+                col_nr = m.group("col")
+            else:
+                col_nr = 0
+
+            link = Link(path, line_nr, col_nr, start, end)
             links.append(link)
 
         return links
@@ -154,9 +165,11 @@ class RegexpLinkParser(AbstractLinkParser):
 REGEXP_STANDARD = r"""
 ^
 (?P<lnk>
-    (?P<pth> .*[a-z0-9] )
+    (?P<pth> [^\:\n]* )
     \:
     (?P<ln> \d+)
+    \:?
+    (?P<col> \d+)?
 )
 \:\s"""
 

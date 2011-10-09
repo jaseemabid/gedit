@@ -232,7 +232,7 @@ class OutputPanel(UniqueById):
         gfile = self.file_lookup.lookup(link.path)
 
         if gfile:
-            Gedit.commands_load_location(self.window, gfile, None, link.line_nr, -1)
+            Gedit.commands_load_location(self.window, gfile, None, link.line_nr, link.col_nr)
             GObject.idle_add(self.idle_grab_focus)
 
 # ex:ts=4:et:
