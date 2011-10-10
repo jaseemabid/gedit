@@ -90,12 +90,12 @@ ValueError: invalid literal for int() with base 10: 'xxx'
         self.assert_link_text(output, lnk, '"test.py", line 4')
 
     def test_parse_python_one_line(self):
-        line = "  File \"test.py\", line 10, in <module>"
+        line = "  File \"test.py\", line 1\n    def a()"
         links = self.p.parse(line)
         self.assert_link_count(links, 1)
         lnk = links[0]
-        self.assert_link(lnk, "test.py", 10)
-        self.assert_link_text(line, lnk, '"test.py", line 10')
+        self.assert_link(lnk, "test.py", 1)
+        self.assert_link_text(line, lnk, '"test.py", line 1')
 
     def test_parse_bash_one_line(self):
         line = "test.sh: line 5: gerp: command not found"

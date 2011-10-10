@@ -181,7 +181,7 @@ REGEXP_PYTHON = r"""
     (?P<pth> [^\"]+ )
     \",\sline\s
     (?P<ln> \d+ )
-),"""
+)"""
 
 # python 'test.sh: line 5:'
 REGEXP_BASH = r"""
