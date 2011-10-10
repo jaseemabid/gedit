@@ -28,8 +28,7 @@ from signals import Signals
 
 class Activate(Gedit.Message):
         view = GObject.property(type=Gedit.View)
-# FIXME: fix as soon as fix lands in pygobject
-#        iter = GObject.property(type=Gtk.TextIter)
+        iter = GObject.property(type=Gtk.TextIter)
         trigger = GObject.property(type=str)
 
 class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
@@ -114,11 +113,10 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
                 if not controller:
                         return
 
-                # TODO: fix me as soon as the property fix lands in pygobject
-                #iter = message.props.iter
+                iter = message.props.iter
 
-                #if not iter:
-                iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
+                if not iter:
+                        iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
                 controller.run_snippet_trigger(message.props.trigger, (iter, iter))
 
         def on_message_parse_and_activate(self, bus, message, userdata):
@@ -132,11 +130,10 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
                 if not controller:
                         return
 
-                # TODO: fix me as soon as the property fix lands in pygobject
-                #iter = message.props.iter
+                iter = message.props.iter
                 
-                #if not iter:
-                iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
+                if not iter:
+                        iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
                 controller.parse_and_run_snippet(message.props.trigger, iter)
 
         def insert_menu(self):
