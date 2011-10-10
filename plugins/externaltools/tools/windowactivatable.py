@@ -166,6 +166,9 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
         self.menu = None
 
     def do_activate(self):
+        # We need to get access to the activatable object to update the
+        # menuitems from the manager.
+        self.window.set_data("ExternalToolsPluginWindowData", self)
         self._library = ToolLibrary()
 
         ui_manager = self.window.get_ui_manager()
@@ -221,6 +224,7 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable):
             self.window.get_ui_manager().ensure_update()
 
     def do_deactivate(self):
+        self.window.set_data("ExternalToolsPluginWindowData", None)
         ui_manager = self.window.get_ui_manager()
         self.menu.deactivate()
         ui_manager.remove_ui(self._merge_id)

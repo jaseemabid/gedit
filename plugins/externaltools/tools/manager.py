@@ -854,12 +854,9 @@ class Manager:
     def on_tool_manager_dialog_focus_out(self, dialog, event):
         self.save_current_tool()
 
-        #FIXME: this is wrong, we must emit a signal and let the plugin update the menu
-        """
-        for window in gedit.app_get_default().get_windows():
-            helper = window.get_data("ExternalToolsPluginWindowData")
-            helper.menu.update()
-        """
+        for window in Gedit.App.get_default().get_windows():
+            windowactivatable = window.get_data("ExternalToolsPluginWindowData")
+            windowactivatable.menu.update()
 
     def get_cell_data_cb(self, column, cell, model, piter, user_data=None):
         tool = model.get_value(piter, self.TOOL_COLUMN)
