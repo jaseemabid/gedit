@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-04-25 22:15+0000\n"
-"PO-Revision-Date: 2011-04-26 16:17+0200\n"
+"POT-Creation-Date: 2011-10-10 11:10+0000\n"
+"PO-Revision-Date: 2011-10-16 22:24+0200\n"
 "Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -742,7 +742,7 @@ msgstr "Prid_ať..."
 msgid "_Autosave files every"
 msgstr "_Automaticky ukladať každých"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:590
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:561
 msgid "_Display line numbers"
 msgstr "Zobraziť čísla _riadkov"
 
@@ -759,15 +759,15 @@ msgid "_minutes"
 msgstr "_minút"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1592
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1626
 msgid "Replace"
 msgstr "Nahradiť"
 
-#: ../gedit/dialogs/gedit-replace-dialog.c:291
+#: ../gedit/dialogs/gedit-replace-dialog.c:287
 msgid "Replace _All"
 msgstr "Nahradiť vš_etko"
 
-#: ../gedit/dialogs/gedit-replace-dialog.c:292
+#: ../gedit/dialogs/gedit-replace-dialog.c:288
 #: ../gedit/gedit-commands-file.c:572
 msgid "_Replace"
 msgstr "Na_hradiť"
@@ -1078,12 +1078,12 @@ msgstr "Výraz „%s“ nebol nájdený"
 msgid "Unsaved Document %d"
 msgstr "Neuložený dokument %d"
 
-#: ../gedit/gedit-documents-panel.c:119 ../gedit/gedit-documents-panel.c:133
-#: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
+#: ../gedit/gedit-documents-panel.c:121 ../gedit/gedit-documents-panel.c:135
+#: ../gedit/gedit-window.c:2459 ../gedit/gedit-window.c:2466
 msgid "Read-Only"
 msgstr "Len na čítanie"
 
-#: ../gedit/gedit-documents-panel.c:1124 ../gedit/gedit-window.c:3840
+#: ../gedit/gedit-documents-panel.c:1143 ../gedit/gedit-window.c:3907
 msgid "Documents"
 msgstr "Dokumenty"
 
@@ -1591,11 +1591,11 @@ msgstr ""
 
 # je tu správny rod?
 # Ivan: áno - panel
-#: ../gedit/gedit-panel.c:343 ../gedit/gedit-panel.c:515
+#: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:586
 msgid "Empty"
 msgstr "Prázdny"
 
-#: ../gedit/gedit-panel.c:405
+#: ../gedit/gedit-panel.c:475
 msgid "Hide panel"
 msgstr "Skryť panel"
 
@@ -1763,77 +1763,77 @@ msgstr "Adresár „%s“ nebolo možné vytvoriť: g_mkdir_with_parents() zlyha
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:744
+#: ../gedit/gedit-tab.c:743
 #, c-format
 msgid "Reverting %s from %s"
 msgstr "Vracia sa %s z %s"
 
-#: ../gedit/gedit-tab.c:751
+#: ../gedit/gedit-tab.c:750
 #, c-format
 msgid "Reverting %s"
 msgstr "Vracia sa %s"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:767
+#: ../gedit/gedit-tab.c:766
 #, c-format
 msgid "Loading %s from %s"
 msgstr "Načítava sa %s z %s"
 
-#: ../gedit/gedit-tab.c:774
+#: ../gedit/gedit-tab.c:773
 #, c-format
 msgid "Loading %s"
 msgstr "Načítava sa %s"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:855
+#: ../gedit/gedit-tab.c:854
 #, c-format
 msgid "Saving %s to %s"
 msgstr "Ukladá sa %s do %s"
 
-#: ../gedit/gedit-tab.c:862
+#: ../gedit/gedit-tab.c:861
 #, c-format
 msgid "Saving %s"
 msgstr "Ukladá sa %s"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1832
+#: ../gedit/gedit-tab.c:1844
 msgid "RO"
 msgstr "RO"
 
-#: ../gedit/gedit-tab.c:1879
+#: ../gedit/gedit-tab.c:1891
 #, c-format
 msgid "Error opening file %s"
 msgstr "Chyba pri otváraní súboru %s"
 
-#: ../gedit/gedit-tab.c:1884
+#: ../gedit/gedit-tab.c:1896
 #, c-format
 msgid "Error reverting file %s"
 msgstr "Chyba pri vracaní súboru %s"
 
-#: ../gedit/gedit-tab.c:1889
+#: ../gedit/gedit-tab.c:1901
 #, c-format
 msgid "Error saving file %s"
 msgstr "Chyba pri ukladaní súboru %s"
 
-#: ../gedit/gedit-tab.c:1910
+#: ../gedit/gedit-tab.c:1922
 msgid "Unicode (UTF-8)"
 msgstr "Unicode (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1917
+#: ../gedit/gedit-tab.c:1929
 msgid "Name:"
 msgstr "Názov:"
 
-#: ../gedit/gedit-tab.c:1918
+#: ../gedit/gedit-tab.c:1930
 msgid "MIME Type:"
 msgstr "Typ MIME:"
 
-#: ../gedit/gedit-tab.c:1919
+#: ../gedit/gedit-tab.c:1931
 msgid "Encoding:"
 msgstr "Kódovanie:"
 
-#: ../gedit/gedit-tab-label.c:280
+#: ../gedit/gedit-tab-label.c:283
 msgid "Close document"
 msgstr "Zavrieť dokument"
 
@@ -1874,7 +1874,7 @@ msgstr "Vytvorí nový dokument"
 msgid "_Open..."
 msgstr "_Otvoriť..."
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1554
 msgid "Open a file"
 msgstr "Otvorí súbor"
 
@@ -2138,46 +2138,46 @@ msgstr "Zobrazí alebo skryje spodný panel v aktuálnom okne"
 msgid "Please check your installation."
 msgstr "Prosím, skontrolujte svoju inštaláciu."
 
-#: ../gedit/gedit-utils.c:1087
+#: ../gedit/gedit-utils.c:1075
 #, c-format
 msgid "Unable to open UI file %s. Error: %s"
 msgstr "Nepodarilo sa otvoriť súbor používateľského rozhrania %s. Chyba: %s"
 
-#: ../gedit/gedit-utils.c:1107
+#: ../gedit/gedit-utils.c:1094
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
 msgstr "Nepodarilo sa nájst objekt „%s“ v súbore %s."
 
 #. Translators: '/ on <remote-share>'
-#: ../gedit/gedit-utils.c:1252
+#: ../gedit/gedit-utils.c:1316
 #, c-format
 msgid "/ on %s"
 msgstr "/ na %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:633
+#: ../gedit/gedit-view-frame.c:554
 msgid "_Wrap Around"
 msgstr "_Pokračovať dookola"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:643
+#: ../gedit/gedit-view-frame.c:564
 msgid "Match _Entire Word Only"
 msgstr "Len c_elé slová"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:653
+#: ../gedit/gedit-view-frame.c:574
 msgid "_Match Case"
 msgstr "Rozlišovať veľkosť pís_men"
 
-#: ../gedit/gedit-view-frame.c:912
+#: ../gedit/gedit-view-frame.c:775
 msgid "String you want to search for"
 msgstr "Reťazec, ktorý chcete hľadať"
 
-#: ../gedit/gedit-view-frame.c:921
+#: ../gedit/gedit-view-frame.c:782
 msgid "Line you want to move the cursor to"
 msgstr "Riadok, na ktorý chcete presunúť kurzor"
 
-#: ../gedit/gedit-window.c:1023
+#: ../gedit/gedit-window.c:1040
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Použiť režim zvýrazňovania %s"
@@ -2185,72 +2185,72 @@ msgstr "Použiť režim zvýrazňovania %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1090 ../gedit/gedit-window.c:2105
-#: ../plugins/externaltools/tools/manager.py:120
-#: ../plugins/externaltools/tools/manager.py:416
-#: ../plugins/externaltools/tools/manager.py:527
-#: ../plugins/externaltools/tools/manager.py:846
+#: ../gedit/gedit-window.c:1107 ../gedit/gedit-window.c:2156
+#: ../plugins/externaltools/tools/manager.py:138
+#: ../plugins/externaltools/tools/manager.py:441
+#: ../plugins/externaltools/tools/manager.py:552
+#: ../plugins/externaltools/tools/manager.py:868
 msgid "Plain Text"
 msgstr "Čistý text"
 
-#: ../gedit/gedit-window.c:1091
+#: ../gedit/gedit-window.c:1108
 msgid "Disable syntax highlighting"
 msgstr "Vypne zvýrazňovanie syntaxe"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1413
+#: ../gedit/gedit-window.c:1433
 #, c-format
 msgid "Open '%s'"
 msgstr "Otvoriť „%s“"
 
-#: ../gedit/gedit-window.c:1522
+#: ../gedit/gedit-window.c:1556
 msgid "Open a recently used file"
 msgstr "Otvoriť nedávny súbor"
 
-#: ../gedit/gedit-window.c:1528
+#: ../gedit/gedit-window.c:1562
 msgid "Open"
 msgstr "Otvoriť"
 
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1620
 msgid "Save"
 msgstr "Uložiť"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1622
 msgid "Print"
 msgstr "Tlačiť"
 
-#: ../gedit/gedit-window.c:1590
+#: ../gedit/gedit-window.c:1624
 msgid "Find"
 msgstr "Nájsť"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1750
+#: ../gedit/gedit-window.c:1784
 #, c-format
 msgid "Activate '%s'"
 msgstr "Aktivovať „%s“"
 
-#: ../gedit/gedit-window.c:2083
+#: ../gedit/gedit-window.c:2134
 msgid "Use Spaces"
 msgstr "Používať medzery"
 
-#: ../gedit/gedit-window.c:2156
+#: ../gedit/gedit-window.c:2207
 msgid "Tab Width"
 msgstr "Šírka tabulátora"
 
-#: ../gedit/gedit-window.c:2265
+#: ../gedit/gedit-window.c:2316
 msgid "Bracket match is out of range"
 msgstr "Hľadanie zátvoriek je mimo rozsahu"
 
-#: ../gedit/gedit-window.c:2270
+#: ../gedit/gedit-window.c:2321
 msgid "Bracket match not found"
 msgstr "Zodpovedajúca zátvorka nebola nájdená"
 
-#: ../gedit/gedit-window.c:2275
+#: ../gedit/gedit-window.c:2326
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Zodpovedajúca zátvorka nájdená na riadku: %d"
 
-#: ../gedit/gedit-window.c:4046
+#: ../gedit/gedit-window.c:4113
 msgid "About gedit"
 msgstr "O aplikácii gedit"
 
@@ -2359,7 +2359,6 @@ msgstr "Štatistika dokumentu"
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 #: ../plugins/externaltools/tools/tools.ui.h:1
 #: ../plugins/snippets/snippets/snippets.ui.h:1
-#: ../plugins/time/gedit-time-dialog.ui.h:1
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "    "
 msgstr "    "
@@ -2474,31 +2473,31 @@ msgstr "Hotovo."
 msgid "Exited"
 msgstr "Ukončené"
 
-#: ../plugins/externaltools/tools/manager.py:118
+#: ../plugins/externaltools/tools/manager.py:136
 msgid "All languages"
 msgstr "Všetky jazyky"
 
-#: ../plugins/externaltools/tools/manager.py:516
-#: ../plugins/externaltools/tools/manager.py:520
-#: ../plugins/externaltools/tools/manager.py:844
-#: ../plugins/externaltools/tools/tools.ui.h:2
+#: ../plugins/externaltools/tools/manager.py:541
+#: ../plugins/externaltools/tools/manager.py:545
+#: ../plugins/externaltools/tools/manager.py:866
+#: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Všetky jazyky"
 
-#: ../plugins/externaltools/tools/manager.py:627
+#: ../plugins/externaltools/tools/manager.py:652
 msgid "New tool"
 msgstr "Nový nástroj"
 
-#: ../plugins/externaltools/tools/manager.py:758
+#: ../plugins/externaltools/tools/manager.py:783
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr "Tento akcelerátor je už previazaný s %s"
 
-#: ../plugins/externaltools/tools/manager.py:809
+#: ../plugins/externaltools/tools/manager.py:834
 msgid "Type a new accelerator, or press Backspace to clear"
 msgstr "Zadajte nový akcelerátor alebo ho vymažte stlačením Backspace"
 
-#: ../plugins/externaltools/tools/manager.py:811
+#: ../plugins/externaltools/tools/manager.py:836
 msgid "Type a new accelerator"
 msgstr "Zadajte nový akcelerátor"
 
@@ -2506,124 +2505,148 @@ msgstr "Zadajte nový akcelerátor"
 msgid "Stopped."
 msgstr "Zastavené."
 
+#: ../plugins/externaltools/tools/tools.ui.h:2
+msgid "Add Tool"
+msgstr "Pridať nástroj"
+
 #: ../plugins/externaltools/tools/tools.ui.h:3
+msgid "Add a new tool"
+msgstr "Pridá nový nástroj"
+
+#: ../plugins/externaltools/tools/tools.ui.h:5
 msgid "All documents"
 msgstr "Všetky dokumenty"
 
-#: ../plugins/externaltools/tools/tools.ui.h:4
+#: ../plugins/externaltools/tools/tools.ui.h:6
 msgid "All documents except untitled ones"
 msgstr "Všetky dokumenty okrem nepomenovaných"
 
-#: ../plugins/externaltools/tools/tools.ui.h:5
+#: ../plugins/externaltools/tools/tools.ui.h:7
 msgid "Append to current document"
 msgstr "Pridať k aktuálnemu dokumentu"
 
-#: ../plugins/externaltools/tools/tools.ui.h:6
+#: ../plugins/externaltools/tools/tools.ui.h:8
 msgid "Create new document"
 msgstr "Vytvoriť nový dokument"
 
-#: ../plugins/externaltools/tools/tools.ui.h:7
+#: ../plugins/externaltools/tools/tools.ui.h:9
 msgid "Current document"
 msgstr "Aktuálny dokument"
 
-#: ../plugins/externaltools/tools/tools.ui.h:8
+#: ../plugins/externaltools/tools/tools.ui.h:10
 msgid "Current line"
 msgstr "Aktuálny riadok"
 
-#: ../plugins/externaltools/tools/tools.ui.h:9
+#: ../plugins/externaltools/tools/tools.ui.h:11
 msgid "Current selection"
 msgstr "Aktuálny výber"
 
-#: ../plugins/externaltools/tools/tools.ui.h:10
+#: ../plugins/externaltools/tools/tools.ui.h:12
 msgid "Current selection (default to document)"
 msgstr "Aktuálny výber (predvolený je dokument)"
 
-#: ../plugins/externaltools/tools/tools.ui.h:11
+#: ../plugins/externaltools/tools/tools.ui.h:13
 msgid "Current word"
 msgstr "Aktuálne slovo"
 
-#: ../plugins/externaltools/tools/tools.ui.h:12
+#: ../plugins/externaltools/tools/tools.ui.h:14
 msgid "Display in bottom pane"
 msgstr "Zobraziť v spodnom paneli"
 
-#: ../plugins/externaltools/tools/tools.ui.h:13
-msgid "External Tools Manager"
-msgstr "Správca externých nástrojov"
-
-#: ../plugins/externaltools/tools/tools.ui.h:14
+#: ../plugins/externaltools/tools/tools.ui.h:15
 msgid "Insert at cursor position"
 msgstr "Vložiť na aktuálnu pozíciu kurzora"
 
-#: ../plugins/externaltools/tools/tools.ui.h:15
+#: ../plugins/externaltools/tools/tools.ui.h:16
 msgid "Local files only"
 msgstr "Iba lokálne súbory"
 
-#: ../plugins/externaltools/tools/tools.ui.h:16
+#: ../plugins/externaltools/tools/tools.ui.h:17
+msgid "Manage External Tools"
+msgstr "Spravovať externé nástroje..."
+
+#: ../plugins/externaltools/tools/tools.ui.h:18
 msgid "Nothing"
 msgstr "Nič"
 
-#: ../plugins/externaltools/tools/tools.ui.h:17
+#: ../plugins/externaltools/tools/tools.ui.h:19
 msgid "Remote files only"
 msgstr "Iba vzdialené súbory"
 
-#: ../plugins/externaltools/tools/tools.ui.h:18
+#: ../plugins/externaltools/tools/tools.ui.h:20
+msgid "Remove Tool"
+msgstr "Odstrániť nástroj"
+
+#: ../plugins/externaltools/tools/tools.ui.h:21
+msgid "Remove selected tool"
+msgstr "Odstráni vybraný nástroj"
+
+#: ../plugins/externaltools/tools/tools.ui.h:22
 msgid "Replace current document"
 msgstr "Nahradiť aktuálny dokument"
 
-#: ../plugins/externaltools/tools/tools.ui.h:19
+#: ../plugins/externaltools/tools/tools.ui.h:23
 msgid "Replace current selection"
 msgstr "Nahradiť aktuálny výber"
 
-#: ../plugins/externaltools/tools/tools.ui.h:20
+#: ../plugins/externaltools/tools/tools.ui.h:24
+msgid "Revert Tool"
+msgstr "Vrátiť nástroj"
+
+#: ../plugins/externaltools/tools/tools.ui.h:25
+msgid "Revert tool"
+msgstr "Vráti nástroj"
+
+#: ../plugins/externaltools/tools/tools.ui.h:26
 msgid "Untitled documents only"
 msgstr "Iba nepomenované dokumenty"
 
-#: ../plugins/externaltools/tools/tools.ui.h:21
+#: ../plugins/externaltools/tools/tools.ui.h:27
 msgid "_Applicability:"
 msgstr "_Aplikovateľnosť:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:22
-#: ../plugins/snippets/snippets/snippets.ui.h:11
+#: ../plugins/externaltools/tools/tools.ui.h:28
+#: ../plugins/snippets/snippets/snippets.ui.h:16
 msgid "_Edit:"
 msgstr "_Upraviť:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:23
+#: ../plugins/externaltools/tools/tools.ui.h:29
 msgid "_Input:"
 msgstr "_Vstup:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:24
+#: ../plugins/externaltools/tools/tools.ui.h:30
 msgid "_Output:"
 msgstr "Vý_stup:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:25
+#: ../plugins/externaltools/tools/tools.ui.h:31
 msgid "_Save:"
 msgstr "_Uložiť:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:26
+#: ../plugins/externaltools/tools/tools.ui.h:32
 msgid "_Shortcut Key:"
 msgstr "Klávesová _skratka:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:27
+#: ../plugins/externaltools/tools/tools.ui.h:33
 msgid "_Tools:"
 msgstr "_Nástroje:"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:175
+#: ../plugins/externaltools/tools/windowactivatable.py:179
 msgid "Manage _External Tools..."
 msgstr "Spravovať _externé nástroje..."
 
-#: ../plugins/externaltools/tools/windowactivatable.py:176
+#: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "Opens the External Tools Manager"
 msgstr "Otvorí Správcu externých nástrojov"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:179
+#: ../plugins/externaltools/tools/windowactivatable.py:183
 msgid "External _Tools"
 msgstr "Externé _nástroje"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:180
+#: ../plugins/externaltools/tools/windowactivatable.py:184
 msgid "External tools"
 msgstr "Externé nástroje"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:214
+#: ../plugins/externaltools/tools/windowactivatable.py:218
 msgid "Shell Output"
 msgstr "Výstup shellu"
 
@@ -2922,17 +2945,17 @@ msgstr "Prejsť na nasledovné umiestnenie"
 msgid "_Match Filename"
 msgstr "_Rozlišovať veľkosť písmen"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2185
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2187
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "Neexistuje objekt pripojenia pripojeného zväzku: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2262
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2264
 #, c-format
 msgid "Could not open media: %s"
 msgstr "Nepodarilo sa otvoriť multimediálny súbor %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2309
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2311
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "Nepodarilo sa pripojiť zväzok: %s"
@@ -3106,54 +3129,75 @@ msgid "Activation"
 msgstr "Aktivácia"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:3
+msgid "Add Snippet"
+msgstr "Pridať ústrižok"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:4
 msgid "Create new snippet"
 msgstr "Vytvoriť nový ústrižok"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/manager.py:396
+#: ../plugins/snippets/snippets/snippets.ui.h:5
+#: ../plugins/snippets/snippets/manager.py:399
 msgid "Delete selected snippet"
 msgstr "Odstrániť vybraný ústrižok"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:5
+#: ../plugins/snippets/snippets/snippets.ui.h:6
+msgid "Export Snippets"
+msgstr "Exportovať ústrižky"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:7
 msgid "Export selected snippets"
 msgstr "Exportovať vybrané ústrižky"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/manager.py:773
+#: ../plugins/snippets/snippets/snippets.ui.h:8
+msgid "Import Snippets"
+msgstr "Importovať ústrižky"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+#: ../plugins/snippets/snippets/manager.py:776
 msgid "Import snippets"
 msgstr "Importovať ústrižky"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:7
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+msgid "Manage Snippets"
+msgstr "Spravovať ústrižky"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:11
+msgid "Remove Snippet"
+msgstr "Odstrániť ústrižok"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:12
 msgid "S_hortcut key:"
 msgstr "_Klávesová skratka:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:8
+#: ../plugins/snippets/snippets/snippets.ui.h:13
 msgid "Shortcut key with which the snippet is activated"
 msgstr "Klávesová skratka, ktorá aktivuje ústrižok"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
-#: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:663
+#: ../plugins/snippets/snippets/snippets.ui.h:14
+#: ../plugins/snippets/snippets/manager.py:666
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Jediné slovo, ktoré aktivuje ústrižok po stlačení klávesu Tab"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:10
+#: ../plugins/snippets/snippets/snippets.ui.h:15
 msgid "_Drop targets:"
 msgstr "Ciele _pustenia:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:12
+#: ../plugins/snippets/snippets/snippets.ui.h:17
 msgid "_Snippets:"
 msgstr "Ú_strižky:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:13
+#. "tab" here means the tab key, not the notebook tab!
+#: ../plugins/snippets/snippets/snippets.ui.h:19
 msgid "_Tab trigger:"
 msgstr "Spúšťač _tabulátorom:"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:143
+#: ../plugins/snippets/snippets/windowactivatable.py:145
 msgid "Manage _Snippets..."
 msgstr "_Spravovať ústrižky..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:144
+#: ../plugins/snippets/snippets/windowactivatable.py:146
 msgid "Manage snippets"
 msgstr "Spravovať ústrižky"
 
@@ -3169,12 +3213,12 @@ msgstr "Pridať nový ústrižok..."
 msgid "Global"
 msgstr "Globálne"
 
-#: ../plugins/snippets/snippets/manager.py:393
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Revert selected snippet"
 msgstr "Vrátiť vybraný ústrižok"
 
 #. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:656
+#: ../plugins/snippets/snippets/manager.py:659
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
@@ -3182,74 +3226,74 @@ msgstr ""
 "Toto nie je platný spúšťač tabulátorom. Spúšťače môžu obsahovať buď písmená "
 "alebo jediný (nealfanumerický) znak ako: {, [ atď."
 
-#: ../plugins/snippets/snippets/manager.py:752
+#: ../plugins/snippets/snippets/manager.py:755
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "Počas importu sa vyskytla nasledovná chyba: %s"
 
-#: ../plugins/snippets/snippets/manager.py:759
+#: ../plugins/snippets/snippets/manager.py:762
 msgid "Import successfully completed"
 msgstr "Import bol úspešne dokončený"
 
-#: ../plugins/snippets/snippets/manager.py:778
-#: ../plugins/snippets/snippets/manager.py:864
-#: ../plugins/snippets/snippets/manager.py:927
+#: ../plugins/snippets/snippets/manager.py:781
+#: ../plugins/snippets/snippets/manager.py:867
+#: ../plugins/snippets/snippets/manager.py:930
 msgid "All supported archives"
 msgstr "Všetky podporované archívy"
-
-#: ../plugins/snippets/snippets/manager.py:779
-#: ../plugins/snippets/snippets/manager.py:865
-#: ../plugins/snippets/snippets/manager.py:928
-msgid "Gzip compressed archive"
-msgstr "Archív komprimovaný pomocou gzip"
-
-#: ../plugins/snippets/snippets/manager.py:780
-#: ../plugins/snippets/snippets/manager.py:866
-#: ../plugins/snippets/snippets/manager.py:929
-msgid "Bzip2 compressed archive"
-msgstr "Archív komprimovaný pomocou bzip2"
-
-# ???
-#: ../plugins/snippets/snippets/manager.py:781
-msgid "Single snippets file"
-msgstr "Jediný súbor ústrižkov"
 
 #: ../plugins/snippets/snippets/manager.py:782
 #: ../plugins/snippets/snippets/manager.py:868
 #: ../plugins/snippets/snippets/manager.py:931
+msgid "Gzip compressed archive"
+msgstr "Archív komprimovaný pomocou gzip"
+
+#: ../plugins/snippets/snippets/manager.py:783
+#: ../plugins/snippets/snippets/manager.py:869
+#: ../plugins/snippets/snippets/manager.py:932
+msgid "Bzip2 compressed archive"
+msgstr "Archív komprimovaný pomocou bzip2"
+
+# ???
+#: ../plugins/snippets/snippets/manager.py:784
+msgid "Single snippets file"
+msgstr "Jediný súbor ústrižkov"
+
+#: ../plugins/snippets/snippets/manager.py:785
+#: ../plugins/snippets/snippets/manager.py:871
+#: ../plugins/snippets/snippets/manager.py:934
 msgid "All files"
 msgstr "Všetky súbory"
 
-#: ../plugins/snippets/snippets/manager.py:794
+#: ../plugins/snippets/snippets/manager.py:797
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "Počas exportu sa vyskytla nasledovná chyba: %s"
 
-#: ../plugins/snippets/snippets/manager.py:798
+#: ../plugins/snippets/snippets/manager.py:801
 msgid "Export successfully completed"
 msgstr "Export bol úspešne dokončený"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:838
-#: ../plugins/snippets/snippets/manager.py:905
+#: ../plugins/snippets/snippets/manager.py:841
+#: ../plugins/snippets/snippets/manager.py:908
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr "Chcete do exportu zahrnúť aj vybrané <b>systémové</b> ústrižky?"
 
-#: ../plugins/snippets/snippets/manager.py:853
-#: ../plugins/snippets/snippets/manager.py:923
+#: ../plugins/snippets/snippets/manager.py:856
+#: ../plugins/snippets/snippets/manager.py:926
 msgid "There are no snippets selected to be exported"
 msgstr "Nie sú vybrané žiadne ústrižky na export"
 
-#: ../plugins/snippets/snippets/manager.py:858
-#: ../plugins/snippets/snippets/manager.py:896
+#: ../plugins/snippets/snippets/manager.py:861
+#: ../plugins/snippets/snippets/manager.py:899
 msgid "Export snippets"
 msgstr "Exportovať ústrižky"
 
-#: ../plugins/snippets/snippets/manager.py:1037
+#: ../plugins/snippets/snippets/manager.py:1040
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "Zadajte novú klávesovú skratku alebo ju vymažte pomocou Backspace"
 
-#: ../plugins/snippets/snippets/manager.py:1039
+#: ../plugins/snippets/snippets/manager.py:1042
 msgid "Type a new shortcut"
 msgstr "Zadajte novú skratku"
 
@@ -3268,34 +3312,34 @@ msgstr "Cieľový adresár „%s“ neexistuje"
 msgid "Target directory \"%s\" is not a valid directory"
 msgstr "Cieľový adresár „%s“ nie je platný adresár"
 
-#: ../plugins/snippets/snippets/importer.py:46
-#: ../plugins/snippets/snippets/importer.py:100
+#: ../plugins/snippets/snippets/importer.py:47
+#: ../plugins/snippets/snippets/importer.py:108
 #, python-format
 msgid "File \"%s\" does not exist"
 msgstr "Súbor „%s“ neexistuje"
 
-#: ../plugins/snippets/snippets/importer.py:49
+#: ../plugins/snippets/snippets/importer.py:50
 #, python-format
 msgid "File \"%s\" is not a valid snippets file"
 msgstr "Súbor „%s“ nie je platný súbor s ústrižkami"
 
-#: ../plugins/snippets/snippets/importer.py:59
+#: ../plugins/snippets/snippets/importer.py:67
 #, python-format
 msgid "Imported file \"%s\" is not a valid snippets file"
 msgstr "Importovaný súbor „%s“ nie je platný súbor s ústrižkami"
 
-#: ../plugins/snippets/snippets/importer.py:69
+#: ../plugins/snippets/snippets/importer.py:77
 #, python-format
 msgid "The archive \"%s\" could not be extracted"
 msgstr "Archív „%s“ nebolo možné rozbaliť"
 
-#: ../plugins/snippets/snippets/importer.py:87
+#: ../plugins/snippets/snippets/importer.py:95
 #, python-format
 msgid "The following files could not be imported: %s"
 msgstr "Nasledovné súbory nebolo možné importovať: %s"
 
-#: ../plugins/snippets/snippets/importer.py:103
-#: ../plugins/snippets/snippets/importer.py:116
+#: ../plugins/snippets/snippets/importer.py:111
+#: ../plugins/snippets/snippets/importer.py:124
 #, python-format
 msgid "File \"%s\" is not a valid snippets archive"
 msgstr "Súbor „%s“ nie je platný archív s ústrižkami"
@@ -3436,35 +3480,35 @@ msgstr "Nastaviť jazyk"
 msgid "Languages"
 msgstr "Jazyky"
 
-#: ../plugins/spell/gedit-spell-plugin.c:105
+#: ../plugins/spell/gedit-spell-plugin.c:107
 msgid "_Check Spelling..."
 msgstr "_Kontrola pravopisu..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:107
+#: ../plugins/spell/gedit-spell-plugin.c:109
 msgid "Check the current document for incorrect spelling"
 msgstr "Kontrola pravopisu aktuálneho dokumentu"
 
-#: ../plugins/spell/gedit-spell-plugin.c:113
+#: ../plugins/spell/gedit-spell-plugin.c:115
 msgid "Set _Language..."
 msgstr "Nastaviť _jazyk..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:115
+#: ../plugins/spell/gedit-spell-plugin.c:117
 msgid "Set the language of the current document"
 msgstr "Nastaví jazyk aktuálneho dokumentu"
 
-#: ../plugins/spell/gedit-spell-plugin.c:124
+#: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "_Highlight Misspelled Words"
 msgstr "_Zvýrazniť preklepy"
 
-#: ../plugins/spell/gedit-spell-plugin.c:126
+#: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
 msgstr "Automaticky kontrolovať pravopis v aktuálnom dokumente"
 
-#: ../plugins/spell/gedit-spell-plugin.c:817
+#: ../plugins/spell/gedit-spell-plugin.c:819
 msgid "The document is empty."
 msgstr "Dokument je prázdny."
 
-#: ../plugins/spell/gedit-spell-plugin.c:842
+#: ../plugins/spell/gedit-spell-plugin.c:844
 msgid "No misspelled words"
 msgstr "Žiadne nesprávne slová"
 
@@ -3587,32 +3631,32 @@ msgid "The selected format used when inserting the date/time."
 msgstr "Vybraný formát použitý pri vkladaní dátumu a času."
 
 #. Translators: Use the more common date format in your locale
-#: ../plugins/time/gedit-time-dialog.ui.h:3
+#: ../plugins/time/gedit-time-dialog.ui.h:2
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:4
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%d.%m.%Y %H:%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
-#: ../plugins/time/gedit-time-dialog.ui.h:4
+#: ../plugins/time/gedit-time-dialog.ui.h:3
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:6
 msgid "01/11/2009 17:52:00"
 msgstr "01.11.2009 17:52:00"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:5
+#: ../plugins/time/gedit-time-dialog.ui.h:4
 msgid "Insert Date and Time"
 msgstr "Vložiť dátum a čas"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:6
+#: ../plugins/time/gedit-time-dialog.ui.h:5
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 msgid "Use the _selected format"
 msgstr "Použiť _vybraný formát"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:7
+#: ../plugins/time/gedit-time-dialog.ui.h:6
 msgid "_Insert"
 msgstr "V_ložiť"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:8
+#: ../plugins/time/gedit-time-dialog.ui.h:7
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:11
 msgid "_Use custom format"
 msgstr "Použiť _vlastný formát"
@@ -3636,6 +3680,9 @@ msgstr "Zaznamenáva udalosti prístupu a opustenia dokumentov pomocou gedit"
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
 msgstr "Poskytovateľ dát Zeitgeist"
+
+#~ msgid "External Tools Manager"
+#~ msgstr "Správca externých nástrojov"
 
 # predvolene zapisovateľná znie čudne nedá sa to povedať inak?
 #~ msgid ""
