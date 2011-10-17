@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-08 21:16+0200\n"
-"PO-Revision-Date: 2011-09-08 21:17+0200\n"
+"POT-Creation-Date: 2011-10-17 20:00+0200\n"
+"PO-Revision-Date: 2011-10-17 20:01+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -813,11 +813,11 @@ msgstr "mi_nut"
 msgid "Replace"
 msgstr "Zmień"
 
-#: ../gedit/dialogs/gedit-replace-dialog.c:291
+#: ../gedit/dialogs/gedit-replace-dialog.c:287
 msgid "Replace _All"
 msgstr "Zmień _wszystkie"
 
-#: ../gedit/dialogs/gedit-replace-dialog.c:292
+#: ../gedit/dialogs/gedit-replace-dialog.c:288
 #: ../gedit/gedit-commands-file.c:572
 msgid "_Replace"
 msgstr "Z_mień"
@@ -1858,38 +1858,38 @@ msgid "Saving %s"
 msgstr "Zapisywanie %s"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1834
+#: ../gedit/gedit-tab.c:1844
 msgid "RO"
 msgstr "tylko do odczytu"
 
-#: ../gedit/gedit-tab.c:1881
+#: ../gedit/gedit-tab.c:1891
 #, c-format
 msgid "Error opening file %s"
 msgstr "Podczas otwierania pliku %s wystąpił błąd"
 
-#: ../gedit/gedit-tab.c:1886
+#: ../gedit/gedit-tab.c:1896
 #, c-format
 msgid "Error reverting file %s"
 msgstr "Podczas przywracania pliku %s wystąpił błąd"
 
-#: ../gedit/gedit-tab.c:1891
+#: ../gedit/gedit-tab.c:1901
 #, c-format
 msgid "Error saving file %s"
 msgstr "Podczas zapisywania pliku %s wystąpił błąd"
 
-#: ../gedit/gedit-tab.c:1912
+#: ../gedit/gedit-tab.c:1922
 msgid "Unicode (UTF-8)"
 msgstr "Unikod (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1919
+#: ../gedit/gedit-tab.c:1929
 msgid "Name:"
 msgstr "Nazwa:"
 
-#: ../gedit/gedit-tab.c:1920
+#: ../gedit/gedit-tab.c:1930
 msgid "MIME Type:"
 msgstr "Typ MIME:"
 
-#: ../gedit/gedit-tab.c:1921
+#: ../gedit/gedit-tab.c:1931
 msgid "Encoding:"
 msgstr "Kodowanie:"
 
@@ -2195,42 +2195,42 @@ msgstr "Przełącza wyświetlanie panelu dolnego w bieżącym oknie"
 msgid "Please check your installation."
 msgstr "Proszę sprawdzić poprawność instalacji."
 
-#: ../gedit/gedit-utils.c:1087
+#: ../gedit/gedit-utils.c:1075
 #, c-format
 msgid "Unable to open UI file %s. Error: %s"
 msgstr "Nie można otworzyć pliku interfejsu użytkownika %s. Błąd: %s"
 
-#: ../gedit/gedit-utils.c:1107
+#: ../gedit/gedit-utils.c:1094
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
 msgstr "Nie można odnaleźć obiektu \"%s\" w pliku %s."
 
 #. Translators: '/ on <remote-share>'
-#: ../gedit/gedit-utils.c:1252
+#: ../gedit/gedit-utils.c:1316
 #, c-format
 msgid "/ on %s"
 msgstr "/ na %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:623
+#: ../gedit/gedit-view-frame.c:554
 msgid "_Wrap Around"
 msgstr "_Automatyczny powrót do początku"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:633
+#: ../gedit/gedit-view-frame.c:564
 msgid "Match _Entire Word Only"
 msgstr "Tylko całe _wyrazy"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:643
+#: ../gedit/gedit-view-frame.c:574
 msgid "_Match Case"
 msgstr "_Rozróżnianie małych i wielkich liter"
 
-#: ../gedit/gedit-view-frame.c:902
+#: ../gedit/gedit-view-frame.c:775
 msgid "String you want to search for"
 msgstr "Poszukiwane wyrażenie"
 
-#: ../gedit/gedit-view-frame.c:909
+#: ../gedit/gedit-view-frame.c:782
 msgid "Line you want to move the cursor to"
 msgstr "Numer wiersza, do którego ma zostać przeniesiony kursor"
 
@@ -2246,7 +2246,7 @@ msgstr "Używa trybu wyróżniania elementów składni %s"
 #: ../plugins/externaltools/tools/manager.py:138
 #: ../plugins/externaltools/tools/manager.py:441
 #: ../plugins/externaltools/tools/manager.py:552
-#: ../plugins/externaltools/tools/manager.py:871
+#: ../plugins/externaltools/tools/manager.py:868
 msgid "Plain Text"
 msgstr "Zwykły tekst"
 
@@ -2348,10 +2348,9 @@ msgstr "_Odwróć wielkość liter"
 msgid "Invert the case of selected text"
 msgstr "Zamienia wielkość liter zaznaczonego tekstu"
 
-# FIXME - bo jak inaczej to nazwać?
 #: ../plugins/changecase/gedit-changecase-plugin.c:252
 msgid "_Title Case"
-msgstr "Styl _tytułowy"
+msgstr "_Tytuł"
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:253
 msgid "Capitalize the first letter of each selected word"
@@ -2534,7 +2533,7 @@ msgstr "Wszystkie języki"
 
 #: ../plugins/externaltools/tools/manager.py:541
 #: ../plugins/externaltools/tools/manager.py:545
-#: ../plugins/externaltools/tools/manager.py:869
+#: ../plugins/externaltools/tools/manager.py:866
 #: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Wszystkie języki"
@@ -2687,23 +2686,23 @@ msgstr "Klawisz _skrótu:"
 msgid "_Tools:"
 msgstr "_Narzędzia:"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:176
+#: ../plugins/externaltools/tools/windowactivatable.py:179
 msgid "Manage _External Tools..."
 msgstr "Zarządzaj narzędziami z_ewnętrznymi..."
 
-#: ../plugins/externaltools/tools/windowactivatable.py:177
+#: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "Opens the External Tools Manager"
 msgstr "Otwiera zewnętrzny menedżer narzędzi"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:180
+#: ../plugins/externaltools/tools/windowactivatable.py:183
 msgid "External _Tools"
 msgstr "_Narzędzia zewnętrzne"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:181
+#: ../plugins/externaltools/tools/windowactivatable.py:184
 msgid "External tools"
 msgstr "Narzędzia zewnętrzne"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:215
+#: ../plugins/externaltools/tools/windowactivatable.py:218
 msgid "Shell Output"
 msgstr "Wyjście powłoki"
 
@@ -3245,11 +3244,11 @@ msgstr "_Wstawki:"
 msgid "_Tab trigger:"
 msgstr "Wyzwalacz _Tab:"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:148
+#: ../plugins/snippets/snippets/windowactivatable.py:145
 msgid "Manage _Snippets..."
 msgstr "Zarządzaj _wstawkami..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:149
+#: ../plugins/snippets/snippets/windowactivatable.py:146
 msgid "Manage snippets"
 msgstr "Zarządzanie wstawkami"
 
