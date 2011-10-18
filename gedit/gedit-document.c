@@ -628,6 +628,7 @@ gedit_document_class_init (GeditDocumentClass *klass)
 	 * @location: the location where to load the document from.
 	 * @encoding: the #GeditEncoding to encode the document.
 	 * @line_pos: the line to show.
+	 * @column_pos: the column to show.
 	 * @create: whether the document should be created if it doesn't exist.
 	 *
 	 * The "load" signal is emitted when a document is loaded.
@@ -647,6 +648,7 @@ gedit_document_class_init (GeditDocumentClass *klass)
 			      /* we rely on the fact that the GeditEncoding pointer stays
 			       * the same forever */
 			      GEDIT_TYPE_ENCODING | G_SIGNAL_TYPE_STATIC_SCOPE,
+			      G_TYPE_INT,
 			      G_TYPE_INT,
 			      G_TYPE_BOOLEAN);
 
