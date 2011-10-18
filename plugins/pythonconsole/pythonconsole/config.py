@@ -58,9 +58,9 @@ class PythonConsoleConfigWidget(object):
 
     @staticmethod
     def set_colorbutton_color(colorbutton, value):
-        parsed, color = Gdk.color_parse(value)
+        color = Gdk.color_parse(value)
 
-        if parsed:
+        if color is not None:
             colorbutton.set_color(color)
 
     def on_colorbutton_command_color_set(self, colorbutton):
