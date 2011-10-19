@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gedit 2.25.6\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-03-27 22:23+0000\n"
+"POT-Creation-Date: 2011-08-04 09:27+0000\n"
 "PO-Revision-Date: 2011-04-14 19:03+0700\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -153,16 +153,16 @@ msgstr "Số tối đa tập tin gần đây"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
 msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
-"\" for unlimited number of actions."
+"Maximum number of actions that gedit will be able to undo or redo. Use "
+"\"-1\" for unlimited number of actions."
 msgstr ""
 "Số tối đa các hành động Hủy bước/Bước lại có thể thực hiện. Dùng « -1 » cho "
 "số hành động vô hạn."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
 msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
-"\" for unlimited number of actions. Deprecated since 2.12.0"
+"Maximum number of actions that gedit will be able to undo or redo. Use "
+"\"-1\" for unlimited number of actions. Deprecated since 2.12.0"
 msgstr ""
 "Số tối đa các hành động Hủy bước/Bước lại có thể thực hiện. Dùng « -1 » cho "
 "số hành động vô hạn. Bị phản đối kể từ phiên bản 2.12.0."
@@ -719,7 +719,7 @@ msgstr "Thê_m..."
 msgid "_Autosave files every"
 msgstr "_Tự động lưu tập tin mỗi"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:588
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:561
 msgid "_Display line numbers"
 msgstr "_Hiện số dòng"
 
@@ -736,7 +736,7 @@ msgid "_minutes"
 msgstr "_phút"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1592
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1626
 msgid "Replace"
 msgstr "Thay thế"
 
@@ -778,72 +778,72 @@ msgstr "_Tìm: "
 msgid "_Wrap around"
 msgstr "_Cuộn lại"
 
-#: ../gedit/gedit-app.c:233
+#: ../gedit/gedit-app.c:235
 msgid "There was an error displaying the help."
 msgstr "Đã có một lỗi khi hiển thị trợ giúp"
 
-#: ../gedit/gedit-command-line.c:231
+#: ../gedit/gedit-command-line.c:232
 #, c-format
 msgid "%s: invalid encoding.\n"
 msgstr "%s: bảng mã không hợp lệ.\n"
 
-#: ../gedit/gedit-command-line.c:255
+#: ../gedit/gedit-command-line.c:256
 msgid "Show the application's version"
 msgstr "Hiện phiên bản của ứng dụng"
 
-#: ../gedit/gedit-command-line.c:261
+#: ../gedit/gedit-command-line.c:262
 msgid "Display list of possible values for the encoding option"
 msgstr "Hiểu thị danh sách những giá trị có thể dùng cho tuỳ chọn bảng mã"
 
-#: ../gedit/gedit-command-line.c:269
+#: ../gedit/gedit-command-line.c:270
 msgid ""
 "Set the character encoding to be used to open the files listed on the "
 "command line"
 msgstr ""
 "Đặt bảng mã ký tự cần dùng để mở những tập tin đã liệt kê trên dòng lệnh."
 
-#: ../gedit/gedit-command-line.c:270
+#: ../gedit/gedit-command-line.c:271
 msgid "ENCODING"
 msgstr "BẢNG MÃ"
 
-#: ../gedit/gedit-command-line.c:277
+#: ../gedit/gedit-command-line.c:278
 msgid "Create a new top-level window in an existing instance of gedit"
 msgstr "Tạo một cửa sổ ở khác của hiện thực có sẵn của gedit"
 
-#: ../gedit/gedit-command-line.c:285
+#: ../gedit/gedit-command-line.c:286
 msgid "Create a new document in an existing instance of gedit"
 msgstr "Tạo tài liệu mới trong một trình gedit đang chạy"
 
-#: ../gedit/gedit-command-line.c:293
+#: ../gedit/gedit-command-line.c:294
 msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
 msgstr "Đặt toạ độ và kích thước cửa sổ (WIDTHxHEIGHT+X+Y)"
 
-#: ../gedit/gedit-command-line.c:294
+#: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
 msgstr "TOẠ ĐỘ"
 
-#: ../gedit/gedit-command-line.c:301
+#: ../gedit/gedit-command-line.c:302
 msgid "Open files and block process until files are closed"
 msgstr "Mở tập tin và chặn tiến trình đến khi tập tin bị đóng"
 
-#: ../gedit/gedit-command-line.c:309
+#: ../gedit/gedit-command-line.c:310
 msgid "Run gedit in the background"
 msgstr "Chạy gedit ở nền"
 
-#: ../gedit/gedit-command-line.c:317
+#: ../gedit/gedit-command-line.c:318
 msgid "Run gedit in standalone mode"
 msgstr "Chạy gedit độc lập"
 
-#: ../gedit/gedit-command-line.c:326
+#: ../gedit/gedit-command-line.c:327
 msgid "[FILE...] [+LINE[:COLUMN]]"
 msgstr "[TẬP TIN...] [+DÒNG[:CỘT]]"
 
 #. Setup command line options
-#: ../gedit/gedit-command-line.c:333
+#: ../gedit/gedit-command-line.c:334
 msgid "- Edit text files"
 msgstr "- Soạn thảo tập tin văn bản"
 
-#: ../gedit/gedit-command-line.c:344
+#: ../gedit/gedit-command-line.c:345
 #, c-format
 msgid ""
 "%s\n"
@@ -1020,12 +1020,12 @@ msgstr "Không tìm thấy \"%s\""
 msgid "Unsaved Document %d"
 msgstr "Tài liệu chưa lưu %d"
 
-#: ../gedit/gedit-documents-panel.c:119 ../gedit/gedit-documents-panel.c:133
-#: ../gedit/gedit-window.c:2408 ../gedit/gedit-window.c:2415
+#: ../gedit/gedit-documents-panel.c:121 ../gedit/gedit-documents-panel.c:135
+#: ../gedit/gedit-window.c:2459 ../gedit/gedit-window.c:2466
 msgid "Read-Only"
 msgstr "Chỉ đọc"
 
-#: ../gedit/gedit-documents-panel.c:1124 ../gedit/gedit-window.c:3840
+#: ../gedit/gedit-documents-panel.c:1142 ../gedit/gedit-window.c:3907
 msgid "Documents"
 msgstr "Tài liệu"
 
@@ -1312,13 +1312,12 @@ msgid "There was a problem opening the file %s."
 msgstr "Có một lỗi khi mở tập tin %s."
 
 #: ../gedit/gedit-io-error-info-bar.c:629
-#| msgid ""
-#| "The file you opened has some invalid characters. If you continue editing "
-#| "this file you could make this document useless."
 msgid ""
 "The file you opened has some invalid characters. If you continue editing "
 "this file you could corrupt this document."
-msgstr "Tập tin mà bạn đã mở có một số kí tự không hợp lệ. Nếu bạn vẫn tiếp tục chỉnh sửa, bạn có thể làm hỏng tập tin này."
+msgstr ""
+"Tập tin mà bạn đã mở có một số kí tự không hợp lệ. Nếu bạn vẫn tiếp tục "
+"chỉnh sửa, bạn có thể làm hỏng tập tin này."
 
 #: ../gedit/gedit-io-error-info-bar.c:632
 msgid "You can also choose another character encoding and try again."
@@ -1526,11 +1525,11 @@ msgid ""
 "If you continue saving this file you can corrupt the document.  Save anyway?"
 msgstr "Nếu bạn tiếp tục, bạn có thể làm hỏng tài liệu. Vẫn lưu chứ?"
 
-#: ../gedit/gedit-panel.c:339 ../gedit/gedit-panel.c:511
+#: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:586
 msgid "Empty"
 msgstr "Rỗng"
 
-#: ../gedit/gedit-panel.c:401
+#: ../gedit/gedit-panel.c:475
 msgid "Hide panel"
 msgstr "Ẩn bảng"
 
@@ -1667,28 +1666,29 @@ msgstr "Xem thử trang"
 msgid "The preview of a page in the document to be printed"
 msgstr "Khung xem thử trang trong tài liệu cần in"
 
-#: ../gedit/gedit-statusbar.c:69 ../gedit/gedit-statusbar.c:75
+#. Use spaces to leave padding proportional to the font size
+#: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
 msgid "OVR"
 msgstr "ĐÈ"
 
-#: ../gedit/gedit-statusbar.c:69 ../gedit/gedit-statusbar.c:75
+#: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
 msgid "INS"
 msgstr "CHÈN"
 
 #. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for "Column". Please,
 #. use abbreviations if possible to avoid space problems.
-#: ../gedit/gedit-statusbar.c:247
+#: ../gedit/gedit-statusbar.c:248
 #, c-format
 msgid "  Ln %d, Col %d"
 msgstr "  Dòng %d, Cột %d"
 
-#: ../gedit/gedit-statusbar.c:346
+#: ../gedit/gedit-statusbar.c:347
 #, c-format
 msgid "There is a tab with errors"
 msgid_plural "There are %d tabs with errors"
 msgstr[0] "Có %d thanh bị lỗi"
 
-#: ../gedit/gedit-style-scheme-manager.c:206
+#: ../gedit/gedit-style-scheme-manager.c:210
 #, c-format
 msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
 msgstr "Không thể tạo thư mục \"%s\" , vì g_mkdir_with_parents() bị lỗi: %s"
@@ -1730,337 +1730,337 @@ msgid "Saving %s"
 msgstr "Đang lưu %s..."
 
 #. Read only
-#: ../gedit/gedit-tab.c:1832
+#: ../gedit/gedit-tab.c:1835
 msgid "RO"
 msgstr "Chỉ đọc"
 
-#: ../gedit/gedit-tab.c:1879
+#: ../gedit/gedit-tab.c:1882
 #, c-format
 msgid "Error opening file %s"
 msgstr "Gặp lỗi khi mở tập tin %s"
 
-#: ../gedit/gedit-tab.c:1884
+#: ../gedit/gedit-tab.c:1887
 #, c-format
 msgid "Error reverting file %s"
 msgstr "Gặp lỗi khi hoàn nguyên tập tin %s"
 
-#: ../gedit/gedit-tab.c:1889
+#: ../gedit/gedit-tab.c:1892
 #, c-format
 msgid "Error saving file %s"
 msgstr "Gặp lỗi khi lưu tập tin %s"
 
-#: ../gedit/gedit-tab.c:1910
+#: ../gedit/gedit-tab.c:1913
 msgid "Unicode (UTF-8)"
 msgstr "Unicode (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1917
+#: ../gedit/gedit-tab.c:1920
 msgid "Name:"
 msgstr "Tên:"
 
-#: ../gedit/gedit-tab.c:1918
+#: ../gedit/gedit-tab.c:1921
 msgid "MIME Type:"
 msgstr "Dạng MIME:"
 
-#: ../gedit/gedit-tab.c:1919
+#: ../gedit/gedit-tab.c:1922
 msgid "Encoding:"
 msgstr "Bảng mã:"
 
-#: ../gedit/gedit-tab-label.c:280
+#: ../gedit/gedit-tab-label.c:283
 msgid "Close document"
 msgstr "Đóng tài liệu"
 
 #. Toplevel
-#: ../gedit/gedit-ui.h:47
+#: ../gedit/gedit-ui.h:43
 msgid "_File"
 msgstr "_Tập tin"
 
-#: ../gedit/gedit-ui.h:48
+#: ../gedit/gedit-ui.h:44
 msgid "_Edit"
 msgstr "_Sửa"
 
-#: ../gedit/gedit-ui.h:49
+#: ../gedit/gedit-ui.h:45
 msgid "_View"
 msgstr "_Xem"
 
-#: ../gedit/gedit-ui.h:50
+#: ../gedit/gedit-ui.h:46
 msgid "_Search"
 msgstr "_Tìm kiếm"
 
-#: ../gedit/gedit-ui.h:51
+#: ../gedit/gedit-ui.h:47
 msgid "_Tools"
 msgstr "_Công cụ"
 
-#: ../gedit/gedit-ui.h:52
+#: ../gedit/gedit-ui.h:48
 msgid "_Documents"
 msgstr "Tài _liệu"
 
-#: ../gedit/gedit-ui.h:53
+#: ../gedit/gedit-ui.h:49
 msgid "_Help"
 msgstr "Trợ g_iúp"
 
-#: ../gedit/gedit-ui.h:57
+#: ../gedit/gedit-ui.h:53
 msgid "Create a new document"
 msgstr "Tạo tài liệu mới"
 
-#: ../gedit/gedit-ui.h:58
+#: ../gedit/gedit-ui.h:54
 msgid "_Open..."
 msgstr "_Mở..."
 
-#: ../gedit/gedit-ui.h:59 ../gedit/gedit-window.c:1520
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1554
 msgid "Open a file"
 msgstr "Mở tập tin"
 
 #. Edit menu
-#: ../gedit/gedit-ui.h:62
+#: ../gedit/gedit-ui.h:58
 msgid "Pr_eferences"
 msgstr "Tù_y thích"
 
-#: ../gedit/gedit-ui.h:63
+#: ../gedit/gedit-ui.h:59
 msgid "Configure the application"
 msgstr "Cấu hình ứng dụng"
 
 #. Help menu
-#: ../gedit/gedit-ui.h:66
+#: ../gedit/gedit-ui.h:62
 msgid "_Contents"
 msgstr "Mụ_c lục"
 
-#: ../gedit/gedit-ui.h:67
+#: ../gedit/gedit-ui.h:63
 msgid "Open the gedit manual"
 msgstr "Mở hướng dẫn gedit"
 
-#: ../gedit/gedit-ui.h:69
+#: ../gedit/gedit-ui.h:65
 msgid "About this application"
 msgstr "Giới thiệu về ứng dụng này"
 
-#: ../gedit/gedit-ui.h:73
+#: ../gedit/gedit-ui.h:69
 msgid "Leave fullscreen mode"
 msgstr "Ra khỏi chế độ toàn màn hình"
 
-#: ../gedit/gedit-ui.h:81
+#: ../gedit/gedit-ui.h:77
 msgid "Save the current file"
 msgstr "Lưu tập tin hiện thời"
 
-#: ../gedit/gedit-ui.h:82
+#: ../gedit/gedit-ui.h:78
 msgid "Save _As..."
 msgstr "Lư_u dạng..."
 
-#: ../gedit/gedit-ui.h:83
+#: ../gedit/gedit-ui.h:79
 msgid "Save the current file with a different name"
 msgstr "Lưu tập tin hiện thời với tên khác"
 
-#: ../gedit/gedit-ui.h:85
+#: ../gedit/gedit-ui.h:81
 msgid "Revert to a saved version of the file"
 msgstr "Hoàn lại phiên bản đã lưu của tập tin"
 
-#: ../gedit/gedit-ui.h:86
+#: ../gedit/gedit-ui.h:82
 msgid "Print Previe_w"
 msgstr "_Xem thử bản in"
 
-#: ../gedit/gedit-ui.h:87
+#: ../gedit/gedit-ui.h:83
 msgid "Print preview"
 msgstr "Xem thử bản in"
 
-#: ../gedit/gedit-ui.h:88
+#: ../gedit/gedit-ui.h:84
 msgid "_Print..."
 msgstr "_In..."
 
-#: ../gedit/gedit-ui.h:89
+#: ../gedit/gedit-ui.h:85
 msgid "Print the current page"
 msgstr "In trang hiện có"
 
-#: ../gedit/gedit-ui.h:93
+#: ../gedit/gedit-ui.h:89
 msgid "Undo the last action"
 msgstr "Hủy bước cuối cùng"
 
-#: ../gedit/gedit-ui.h:95
+#: ../gedit/gedit-ui.h:91
 msgid "Redo the last undone action"
 msgstr "Làm lại hành động mới hủy bước"
 
-#: ../gedit/gedit-ui.h:97
+#: ../gedit/gedit-ui.h:93
 msgid "Cut the selection"
 msgstr "Cắt vùng được chọn"
 
-#: ../gedit/gedit-ui.h:99
+#: ../gedit/gedit-ui.h:95
 msgid "Copy the selection"
 msgstr "Sao chép vùng đã chọn"
 
-#: ../gedit/gedit-ui.h:101
+#: ../gedit/gedit-ui.h:97
 msgid "Paste the clipboard"
 msgstr "Dán bảng lưu tạm"
 
-#: ../gedit/gedit-ui.h:103
+#: ../gedit/gedit-ui.h:99
 msgid "Delete the selected text"
 msgstr "Xóa bỏ đoạn đã chọn"
 
-#: ../gedit/gedit-ui.h:104
+#: ../gedit/gedit-ui.h:100
 msgid "Select _All"
 msgstr "Chọn _tất cả"
 
-#: ../gedit/gedit-ui.h:105
+#: ../gedit/gedit-ui.h:101
 msgid "Select the entire document"
 msgstr "Chọn toàn bộ tài liệu"
 
 #. View menu
-#: ../gedit/gedit-ui.h:108
+#: ../gedit/gedit-ui.h:104
 msgid "_Highlight Mode"
 msgstr "C_hế độ tô sáng"
 
 #. Search menu
-#: ../gedit/gedit-ui.h:111
+#: ../gedit/gedit-ui.h:107
 msgid "_Find..."
 msgstr "_Tìm..."
 
-#: ../gedit/gedit-ui.h:112
+#: ../gedit/gedit-ui.h:108
 msgid "Search for text"
 msgstr "Tìm đoạn"
 
-#: ../gedit/gedit-ui.h:113
+#: ../gedit/gedit-ui.h:109
 msgid "Find Ne_xt"
 msgstr "Tìm tiế_p"
 
-#: ../gedit/gedit-ui.h:114
+#: ../gedit/gedit-ui.h:110
 msgid "Search forwards for the same text"
 msgstr "Tìm tới trong cùng đoạn"
 
-#: ../gedit/gedit-ui.h:115
+#: ../gedit/gedit-ui.h:111
 msgid "Find Pre_vious"
 msgstr "Tìm _ngược"
 
-#: ../gedit/gedit-ui.h:116
+#: ../gedit/gedit-ui.h:112
 msgid "Search backwards for the same text"
 msgstr "Tìm ngược cùng đoạn"
 
-#: ../gedit/gedit-ui.h:118 ../gedit/gedit-ui.h:121
+#: ../gedit/gedit-ui.h:114 ../gedit/gedit-ui.h:117
 msgid "_Replace..."
 msgstr "Th_ay thế..."
 
-#: ../gedit/gedit-ui.h:119 ../gedit/gedit-ui.h:122
+#: ../gedit/gedit-ui.h:115 ../gedit/gedit-ui.h:118
 msgid "Search for and replace text"
 msgstr "Tìm và thay thế đoạn"
 
-#: ../gedit/gedit-ui.h:124
+#: ../gedit/gedit-ui.h:120
 msgid "_Clear Highlight"
 msgstr "_Xoá tô sáng"
 
-#: ../gedit/gedit-ui.h:125
+#: ../gedit/gedit-ui.h:121
 msgid "Clear highlighting of search matches"
 msgstr "Xoá tô sáng khi khớp chuỗi cần tìm"
 
-#: ../gedit/gedit-ui.h:126
+#: ../gedit/gedit-ui.h:122
 msgid "Go to _Line..."
 msgstr "Đi tới _dòng..."
 
-#: ../gedit/gedit-ui.h:127
+#: ../gedit/gedit-ui.h:123
 msgid "Go to a specific line"
 msgstr "Đi đến dòng xác định"
 
 #. Documents menu
-#: ../gedit/gedit-ui.h:130
+#: ../gedit/gedit-ui.h:126
 msgid "_Save All"
 msgstr "_Lưu tất cả"
 
-#: ../gedit/gedit-ui.h:131
+#: ../gedit/gedit-ui.h:127
 msgid "Save all open files"
 msgstr "Lưu mọi tập tin đang mở"
 
-#: ../gedit/gedit-ui.h:132
+#: ../gedit/gedit-ui.h:128
 msgid "_Close All"
 msgstr "Đóng tất _cả"
 
-#: ../gedit/gedit-ui.h:133
+#: ../gedit/gedit-ui.h:129
 msgid "Close all open files"
 msgstr "Đóng tất cả các tập tin đang mở"
 
-#: ../gedit/gedit-ui.h:134
+#: ../gedit/gedit-ui.h:130
 msgid "_New Tab Group"
 msgstr "_Nhóm thẻ mới"
 
-#: ../gedit/gedit-ui.h:135
+#: ../gedit/gedit-ui.h:131
 msgid "Create a new tab group"
 msgstr "Tạo nhóm thẻ mới"
 
-#: ../gedit/gedit-ui.h:136
+#: ../gedit/gedit-ui.h:132
 msgid "P_revious Tab Group"
 msgstr "Nhóm thẻ t_rước"
 
-#: ../gedit/gedit-ui.h:137
+#: ../gedit/gedit-ui.h:133
 msgid "Switch to the previous tab group"
 msgstr "Chuyển sang nhóm thẻ trước"
 
-#: ../gedit/gedit-ui.h:138
+#: ../gedit/gedit-ui.h:134
 msgid "Nex_t Tab Group"
 msgstr "Nhóm thẻ _kế"
 
-#: ../gedit/gedit-ui.h:139
+#: ../gedit/gedit-ui.h:135
 msgid "Switch to the next tab group"
 msgstr "Chuyển sang nhóm thẻ kế tiếp"
 
-#: ../gedit/gedit-ui.h:140
+#: ../gedit/gedit-ui.h:136
 msgid "_Previous Document"
 msgstr "Tài liệu _trước"
 
-#: ../gedit/gedit-ui.h:141
+#: ../gedit/gedit-ui.h:137
 msgid "Activate previous document"
 msgstr "Kích hoạt tài liệu trước đó"
 
-#: ../gedit/gedit-ui.h:142
+#: ../gedit/gedit-ui.h:138
 msgid "N_ext Document"
 msgstr "Tài liệu _kế"
 
-#: ../gedit/gedit-ui.h:143
+#: ../gedit/gedit-ui.h:139
 msgid "Activate next document"
 msgstr "Kích hoạt tài liệu kế tiếp"
 
-#: ../gedit/gedit-ui.h:144
+#: ../gedit/gedit-ui.h:140
 msgid "_Move to New Window"
 msgstr "Chu_yển vào cửa sổ mới"
 
-#: ../gedit/gedit-ui.h:145
+#: ../gedit/gedit-ui.h:141
 msgid "Move the current document to a new window"
 msgstr "Chuyển tài liệu hiện thời vào cửa sổ mới"
 
-#: ../gedit/gedit-ui.h:152
+#: ../gedit/gedit-ui.h:148
 msgid "Close the current file"
 msgstr "Đóng tập tin hiện thời"
 
-#: ../gedit/gedit-ui.h:159
+#: ../gedit/gedit-ui.h:155
 msgid "Quit the program"
 msgstr "Thoát chương trình"
 
-#: ../gedit/gedit-ui.h:164
+#: ../gedit/gedit-ui.h:160
 msgid "_Toolbar"
 msgstr "_Thanh công cụ"
 
-#: ../gedit/gedit-ui.h:165
+#: ../gedit/gedit-ui.h:161
 msgid "Show or hide the toolbar in the current window"
 msgstr "Hiện/Ẩn thanh công cụ trên cửa sổ hiện thời"
 
-#: ../gedit/gedit-ui.h:167
+#: ../gedit/gedit-ui.h:163
 msgid "_Statusbar"
 msgstr "Thanh t_rạng thái"
 
-#: ../gedit/gedit-ui.h:168
+#: ../gedit/gedit-ui.h:164
 msgid "Show or hide the statusbar in the current window"
 msgstr ""
 "Thay đổi trạng thái hiển thị của thanh trạng thái trên cửa sổ hiện thời"
 
-#: ../gedit/gedit-ui.h:171
+#: ../gedit/gedit-ui.h:167
 msgid "Edit text in fullscreen"
 msgstr "Soạn thảo văn bản ở chế độ toàn màn hình"
 
-#: ../gedit/gedit-ui.h:178
+#: ../gedit/gedit-ui.h:174
 msgid "Side _Panel"
 msgstr "Khung _lề"
 
-#: ../gedit/gedit-ui.h:179
+#: ../gedit/gedit-ui.h:175
 msgid "Show or hide the side panel in the current window"
 msgstr "Hiện/Ẩn khung lề trên cửa sổ hiện thời"
 
-#: ../gedit/gedit-ui.h:181
+#: ../gedit/gedit-ui.h:177
 msgid "_Bottom Panel"
 msgstr "Khung đá_y"
 
-#: ../gedit/gedit-ui.h:182
+#: ../gedit/gedit-ui.h:178
 msgid "Show or hide the bottom panel in the current window"
 msgstr "Hiện/Ẩn khung đáy trong cửa sổ hiện thời"
 
@@ -2085,29 +2085,29 @@ msgid "/ on %s"
 msgstr "/ trên %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:596
+#: ../gedit/gedit-view-frame.c:624
 msgid "_Wrap Around"
 msgstr "_Cuộn vòng"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:606
+#: ../gedit/gedit-view-frame.c:634
 msgid "Match _Entire Word Only"
 msgstr "Chỉ khớp với ng_uyên từ"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:616
+#: ../gedit/gedit-view-frame.c:644
 msgid "_Match Case"
 msgstr "_Khớp chữ hoa/thường"
 
-#: ../gedit/gedit-view-frame.c:875
+#: ../gedit/gedit-view-frame.c:903
 msgid "String you want to search for"
 msgstr "Chuỗi cần tìm kiếm"
 
-#: ../gedit/gedit-view-frame.c:884
+#: ../gedit/gedit-view-frame.c:912
 msgid "Line you want to move the cursor to"
 msgstr "Dòng nơi bạn muốn chuyển con trỏ đến"
 
-#: ../gedit/gedit-window.c:1023
+#: ../gedit/gedit-window.c:1040
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Dùng chế độ tô sáng %s"
@@ -2115,72 +2115,72 @@ msgstr "Dùng chế độ tô sáng %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1090 ../gedit/gedit-window.c:2105
-#: ../plugins/externaltools/tools/manager.py:120
-#: ../plugins/externaltools/tools/manager.py:416
-#: ../plugins/externaltools/tools/manager.py:527
-#: ../plugins/externaltools/tools/manager.py:846
+#: ../gedit/gedit-window.c:1107 ../gedit/gedit-window.c:2156
+#: ../plugins/externaltools/tools/manager.py:138
+#: ../plugins/externaltools/tools/manager.py:441
+#: ../plugins/externaltools/tools/manager.py:552
+#: ../plugins/externaltools/tools/manager.py:871
 msgid "Plain Text"
 msgstr "Văn bản thô"
 
-#: ../gedit/gedit-window.c:1091
+#: ../gedit/gedit-window.c:1108
 msgid "Disable syntax highlighting"
 msgstr "Tắt tô sáng cú pháp"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1413
+#: ../gedit/gedit-window.c:1433
 #, c-format
 msgid "Open '%s'"
 msgstr "Mở '%s'"
 
-#: ../gedit/gedit-window.c:1522
+#: ../gedit/gedit-window.c:1556
 msgid "Open a recently used file"
 msgstr "Mở tập tin vừa dùng"
 
-#: ../gedit/gedit-window.c:1528
+#: ../gedit/gedit-window.c:1562
 msgid "Open"
 msgstr "Mở"
 
-#: ../gedit/gedit-window.c:1586
+#: ../gedit/gedit-window.c:1620
 msgid "Save"
 msgstr "Lưu"
 
-#: ../gedit/gedit-window.c:1588
+#: ../gedit/gedit-window.c:1622
 msgid "Print"
 msgstr "In"
 
-#: ../gedit/gedit-window.c:1590
+#: ../gedit/gedit-window.c:1624
 msgid "Find"
 msgstr "Tìm"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1750
+#: ../gedit/gedit-window.c:1784
 #, c-format
 msgid "Activate '%s'"
 msgstr "Kích hoạt \"%s\""
 
-#: ../gedit/gedit-window.c:2083
+#: ../gedit/gedit-window.c:2134
 msgid "Use Spaces"
 msgstr "Chèn dấu cách"
 
-#: ../gedit/gedit-window.c:2156
+#: ../gedit/gedit-window.c:2207
 msgid "Tab Width"
 msgstr "Bề rộng Tab"
 
-#: ../gedit/gedit-window.c:2265
+#: ../gedit/gedit-window.c:2316
 msgid "Bracket match is out of range"
 msgstr "Khớp dấu ngoặc ngoài phạm vi"
 
-#: ../gedit/gedit-window.c:2270
+#: ../gedit/gedit-window.c:2321
 msgid "Bracket match not found"
 msgstr "Không tìm thấy dấu ngoặc khớp"
 
-#: ../gedit/gedit-window.c:2275
+#: ../gedit/gedit-window.c:2326
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Tìm thấy dấu ngoặc khớp trên dòng: %d"
 
-#: ../gedit/gedit-window.c:4046
+#: ../gedit/gedit-window.c:4113
 msgid "About gedit"
 msgstr "Giới thiệu về gedit"
 
@@ -2289,7 +2289,6 @@ msgstr "Thống kê tài liệu"
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 #: ../plugins/externaltools/tools/tools.ui.h:1
 #: ../plugins/snippets/snippets/snippets.ui.h:1
-#: ../plugins/time/gedit-time-dialog.ui.h:1
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "    "
 msgstr "    "
@@ -2366,7 +2365,9 @@ msgstr "Tên phông Pango. Ví dụ \"Sans 12\" hoặc \"Monospace Bold 14\"."
 msgid ""
 "If true, the external tools will use the desktop-global standard font if "
 "it's monospace (and the most similar font it can come up with otherwise)."
-msgstr "Nếu đúng, công cụ bên ngoài sẽ dùng phông chuẩn của hệ thống nếu là phông monospace (hoặc phông giống nhất nếu khác)."
+msgstr ""
+"Nếu đúng, công cụ bên ngoài sẽ dùng phông chuẩn của hệ thống nếu là phông "
+"monospace (hoặc phông giống nhất nếu khác)."
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
@@ -2394,31 +2395,31 @@ msgstr "Đã xong."
 msgid "Exited"
 msgstr "Đã thoát"
 
-#: ../plugins/externaltools/tools/manager.py:118
+#: ../plugins/externaltools/tools/manager.py:136
 msgid "All languages"
 msgstr "Tất cả ngôn ngữ"
 
-#: ../plugins/externaltools/tools/manager.py:516
-#: ../plugins/externaltools/tools/manager.py:520
-#: ../plugins/externaltools/tools/manager.py:844
-#: ../plugins/externaltools/tools/tools.ui.h:2
+#: ../plugins/externaltools/tools/manager.py:541
+#: ../plugins/externaltools/tools/manager.py:545
+#: ../plugins/externaltools/tools/manager.py:869
+#: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Tất cả ngôn ngữ"
 
-#: ../plugins/externaltools/tools/manager.py:627
+#: ../plugins/externaltools/tools/manager.py:652
 msgid "New tool"
 msgstr "Công cụ mới"
 
-#: ../plugins/externaltools/tools/manager.py:758
+#: ../plugins/externaltools/tools/manager.py:783
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr "Phím tắt này đã được gán cho %s"
 
-#: ../plugins/externaltools/tools/manager.py:809
+#: ../plugins/externaltools/tools/manager.py:834
 msgid "Type a new accelerator, or press Backspace to clear"
 msgstr "Hãy gõ phím tắt mới, hoặc bấm phím Backspace để xóa"
 
-#: ../plugins/externaltools/tools/manager.py:811
+#: ../plugins/externaltools/tools/manager.py:836
 msgid "Type a new accelerator"
 msgstr "Gõ phím tắt mới"
 
@@ -2426,124 +2427,158 @@ msgstr "Gõ phím tắt mới"
 msgid "Stopped."
 msgstr "Bị dừng."
 
+#: ../plugins/externaltools/tools/tools.ui.h:2
+msgid "Add Tool"
+msgstr ""
+
 #: ../plugins/externaltools/tools/tools.ui.h:3
+#, fuzzy
+#| msgid "A Brand New Tool"
+msgid "Add a new tool"
+msgstr "Một Công cụ Mới Phát triển"
+
+#: ../plugins/externaltools/tools/tools.ui.h:5
 msgid "All documents"
 msgstr "Mọi tài liệu"
 
-#: ../plugins/externaltools/tools/tools.ui.h:4
+#: ../plugins/externaltools/tools/tools.ui.h:6
 msgid "All documents except untitled ones"
 msgstr "Mọi tài liệu trừ những cái không tên"
 
-#: ../plugins/externaltools/tools/tools.ui.h:5
+#: ../plugins/externaltools/tools/tools.ui.h:7
 msgid "Append to current document"
 msgstr "Nối vào tài liệu hiện tại"
 
-#: ../plugins/externaltools/tools/tools.ui.h:6
+#: ../plugins/externaltools/tools/tools.ui.h:8
 msgid "Create new document"
 msgstr "Tạo tài liệu mới"
 
-#: ../plugins/externaltools/tools/tools.ui.h:7
+#: ../plugins/externaltools/tools/tools.ui.h:9
 msgid "Current document"
 msgstr "Tài liệu hiện tại"
 
-#: ../plugins/externaltools/tools/tools.ui.h:8
+#: ../plugins/externaltools/tools/tools.ui.h:10
 msgid "Current line"
 msgstr "Dòng hiện tại"
 
-#: ../plugins/externaltools/tools/tools.ui.h:9
+#: ../plugins/externaltools/tools/tools.ui.h:11
 msgid "Current selection"
 msgstr "Vùng chọn hiện tại"
 
-#: ../plugins/externaltools/tools/tools.ui.h:10
+#: ../plugins/externaltools/tools/tools.ui.h:12
 msgid "Current selection (default to document)"
 msgstr "Lựa chọn hiện tại (mặc định là tài liệu)"
 
-#: ../plugins/externaltools/tools/tools.ui.h:11
+#: ../plugins/externaltools/tools/tools.ui.h:13
 msgid "Current word"
 msgstr "Từ hiện tại"
 
-#: ../plugins/externaltools/tools/tools.ui.h:12
+#: ../plugins/externaltools/tools/tools.ui.h:14
 msgid "Display in bottom pane"
 msgstr "Hiện ở cuối ô"
 
-#: ../plugins/externaltools/tools/tools.ui.h:13
-msgid "External Tools Manager"
-msgstr "Bộ quản lý công cụ bên ngoài"
-
-#: ../plugins/externaltools/tools/tools.ui.h:14
+#: ../plugins/externaltools/tools/tools.ui.h:15
 msgid "Insert at cursor position"
 msgstr "Chèn tại vị trí con trỏ"
 
-#: ../plugins/externaltools/tools/tools.ui.h:15
+#: ../plugins/externaltools/tools/tools.ui.h:16
 msgid "Local files only"
 msgstr "Chỉ tập tin cục bộ"
 
-#: ../plugins/externaltools/tools/tools.ui.h:16
+#: ../plugins/externaltools/tools/tools.ui.h:17
+#, fuzzy
+#| msgid "Manage _External Tools..."
+msgid "Manage External Tools"
+msgstr "Quản lý công cụ bên _ngoài..."
+
+#: ../plugins/externaltools/tools/tools.ui.h:18
 msgid "Nothing"
 msgstr "Không gì"
 
-#: ../plugins/externaltools/tools/tools.ui.h:17
+#: ../plugins/externaltools/tools/tools.ui.h:19
 msgid "Remote files only"
 msgstr "Chỉ tập tin ở xa"
 
-#: ../plugins/externaltools/tools/tools.ui.h:18
+#: ../plugins/externaltools/tools/tools.ui.h:20
+msgid "Remove Tool"
+msgstr ""
+
+#: ../plugins/externaltools/tools/tools.ui.h:21
+#, fuzzy
+#| msgid "Revert selected snippet"
+msgid "Remove selected tool"
+msgstr "Hoàn nguyên đoạn đã chọn"
+
+#: ../plugins/externaltools/tools/tools.ui.h:22
 msgid "Replace current document"
 msgstr "Thay thế tài liệu hiện tại"
 
-#: ../plugins/externaltools/tools/tools.ui.h:19
+#: ../plugins/externaltools/tools/tools.ui.h:23
 msgid "Replace current selection"
 msgstr "Thay thế vùng chọn hiện tại"
 
-#: ../plugins/externaltools/tools/tools.ui.h:20
+#: ../plugins/externaltools/tools/tools.ui.h:24
+#, fuzzy
+#| msgid "_Revert"
+msgid "Revert Tool"
+msgstr "_Hoàn nguyên"
+
+#: ../plugins/externaltools/tools/tools.ui.h:25
+#, fuzzy
+#| msgid "_Revert"
+msgid "Revert tool"
+msgstr "_Hoàn nguyên"
+
+#: ../plugins/externaltools/tools/tools.ui.h:26
 msgid "Untitled documents only"
 msgstr "Chỉ tài liệu không tên"
 
-#: ../plugins/externaltools/tools/tools.ui.h:21
+#: ../plugins/externaltools/tools/tools.ui.h:27
 msgid "_Applicability:"
 msgstr "Khả năng á_p dụng:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:22
-#: ../plugins/snippets/snippets/snippets.ui.h:11
+#: ../plugins/externaltools/tools/tools.ui.h:28
+#: ../plugins/snippets/snippets/snippets.ui.h:16
 msgid "_Edit:"
 msgstr "_Sửa:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:23
+#: ../plugins/externaltools/tools/tools.ui.h:29
 msgid "_Input:"
 msgstr "_Vào:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:24
+#: ../plugins/externaltools/tools/tools.ui.h:30
 msgid "_Output:"
 msgstr "_Xuất:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:25
+#: ../plugins/externaltools/tools/tools.ui.h:31
 msgid "_Save:"
 msgstr "_Lưu :"
 
-#: ../plugins/externaltools/tools/tools.ui.h:26
+#: ../plugins/externaltools/tools/tools.ui.h:32
 msgid "_Shortcut Key:"
 msgstr "_Phím tắt:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:27
+#: ../plugins/externaltools/tools/tools.ui.h:33
 msgid "_Tools:"
 msgstr "_Công cụ:"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:175
+#: ../plugins/externaltools/tools/windowactivatable.py:176
 msgid "Manage _External Tools..."
 msgstr "Quản lý công cụ bên _ngoài..."
 
-#: ../plugins/externaltools/tools/windowactivatable.py:176
+#: ../plugins/externaltools/tools/windowactivatable.py:177
 msgid "Opens the External Tools Manager"
 msgstr "Mở bộ quản lý công cụ bên ngoài"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:179
+#: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "External _Tools"
 msgstr "_Công cụ bên ngoài"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:180
+#: ../plugins/externaltools/tools/windowactivatable.py:181
 msgid "External tools"
 msgstr "Công cụ bên ngoài"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:214
+#: ../plugins/externaltools/tools/windowactivatable.py:215
 msgid "Shell Output"
 msgstr "Kết xuất dòng lệnh"
 
@@ -2584,59 +2619,59 @@ msgstr "Khung duyệt tập tin"
 msgid "File System"
 msgstr "Hệ thống tập tin"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:596
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:577
 msgid "_Set root to active document"
 msgstr "Đặt _gốc là tài liệu hoạt động"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:598
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:579
 msgid "Set the root to the active document location"
 msgstr "Đặt gốc là vị trí của tài liệu hoạt động hiện tại"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:603
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:584
 msgid "_Open terminal here"
 msgstr "_Mở dòng lệnh ở đây"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:605
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:586
 msgid "Open a terminal at the currently opened directory"
 msgstr "Mở cửa sổ kiểu dòng lệnh tại thư mục được mở hiện thời"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:743
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:724
 msgid "File Browser"
 msgstr "Bộ duyệt tập tin"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:886
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:867
 msgid "An error occurred while creating a new directory"
 msgstr "Gặp lỗi khi tạo thư mục mới"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:889
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:870
 msgid "An error occurred while creating a new file"
 msgstr "Gặp lỗi khi tạo tập tin mới"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:892
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:873
 msgid "An error occurred while renaming a file or directory"
 msgstr "Gặp lỗi khi thay đổi tên của tập tin hay thư mục"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:895
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:876
 msgid "An error occurred while deleting a file or directory"
 msgstr "Gặp lỗi khi xoá tập tin hay thư mục"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:898
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:879
 msgid "An error occurred while opening a directory in the file manager"
 msgstr "Gặp lỗi khi mở thư mục trong bộ quản lý tập tin"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:901
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:882
 msgid "An error occurred while setting a root directory"
 msgstr "Gặp lỗi khi đặt thư mục gốc"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:904
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:885
 msgid "An error occurred while loading a directory"
 msgstr "Gặp lỗi khi tải thư mục"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:907
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:888
 msgid "An error occurred"
 msgstr "Gặp lỗi"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1123
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1104
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
@@ -2644,25 +2679,25 @@ msgstr ""
 "Không thể di chuyển tập tin vào Sọt rác,\n"
 "bạn có muốn xoá nó ngay không?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1128
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1109
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr "Không thể di chuyển tập tin \"%s\" vào Sọt rác."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1133
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1114
 msgid "The selected files cannot be moved to the trash."
 msgstr "Không thể di chuyển tập tin đã chọn vào Sọt rác."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1165
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1146
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr "Bạn có chắc muốn xoá hẳn « %s » không?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1170
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1151
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr "Bạn có chắc muốn xoá hẳn các tập tin đã chọn không?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1173
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1154
 msgid "If you delete an item, it is permanently lost."
 msgstr "Nếu bạn xoá mục nào, nó sẽ bị mất hoàn toàn."
 
@@ -2841,17 +2876,17 @@ msgstr "Tới vị trí kế tiếp"
 msgid "_Match Filename"
 msgstr "_Khớp tên tập tin"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2185
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2187
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "Không có đối tượng \"mount\" cho khối đã gắn: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2262
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2264
 #, c-format
 msgid "Could not open media: %s"
 msgstr "Không thể mở phương tiện %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2309
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2311
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "Không thể gắn khối: %s"
@@ -2963,7 +2998,9 @@ msgstr "Mô tả màu cho lỗi:"
 msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
-msgstr "Nếu đúng, cửa sổ dòng lệnh sẽ dùng phông chuẩn của hệ thống nếu là phông monospace (hoặc phông gần giống nhất nếu khác)."
+msgstr ""
+"Nếu đúng, cửa sổ dòng lệnh sẽ dùng phông chuẩn của hệ thống nếu là phông "
+"monospace (hoặc phông gần giống nhất nếu khác)."
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid "The command color text"
@@ -3006,7 +3043,7 @@ msgid "Insert often-used pieces of text in a fast way"
 msgstr "Chèn vào một đoạn văn bản thường dùng một cách nhanh chóng"
 
 #: ../plugins/snippets/snippets.plugin.desktop.in.h:2
-#: ../plugins/snippets/snippets/document.py:54
+#: ../plugins/snippets/snippets/document.py:56
 msgid "Snippets"
 msgstr "Đoạn"
 
@@ -3015,54 +3052,85 @@ msgid "Activation"
 msgstr "Kích hoạt"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:3
+#, fuzzy
+#| msgid "Snippets"
+msgid "Add Snippet"
+msgstr "Đoạn"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:4
 msgid "Create new snippet"
 msgstr "Tạo đoạn mới"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:4
-#: ../plugins/snippets/snippets/manager.py:396
+#: ../plugins/snippets/snippets/snippets.ui.h:5
+#: ../plugins/snippets/snippets/manager.py:399
 msgid "Delete selected snippet"
 msgstr "Xóa đoạn đã chọn"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:5
+#: ../plugins/snippets/snippets/snippets.ui.h:6
+#, fuzzy
+#| msgid "Export snippets"
+msgid "Export Snippets"
+msgstr "Xuất đoạn"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:7
 msgid "Export selected snippets"
 msgstr "Xuất các đoạn đã chọn"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:6
-#: ../plugins/snippets/snippets/manager.py:778
+#: ../plugins/snippets/snippets/snippets.ui.h:8
+#, fuzzy
+#| msgid "Import snippets"
+msgid "Import Snippets"
+msgstr "Nhập đoạn"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+#: ../plugins/snippets/snippets/manager.py:776
 msgid "Import snippets"
 msgstr "Nhập đoạn"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:7
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+#, fuzzy
+#| msgid "Manage snippets"
+msgid "Manage Snippets"
+msgstr "Quản lý đoạn"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:11
+#, fuzzy
+#| msgid "Snippets"
+msgid "Remove Snippet"
+msgstr "Đoạn"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:12
 msgid "S_hortcut key:"
 msgstr "P_hím tắt:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:8
+#: ../plugins/snippets/snippets/snippets.ui.h:13
 msgid "Shortcut key with which the snippet is activated"
 msgstr "Phím tắt kích hoạt đoạn"
 
 #. self['hbox_tab_trigger'].set_spacing(0)
-#: ../plugins/snippets/snippets/snippets.ui.h:9
+#: ../plugins/snippets/snippets/snippets.ui.h:14
 #: ../plugins/snippets/snippets/manager.py:666
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Một từ đơn đoạn mã ngắn được kích hoạt với việc nhấn phím Tab"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:10
+#: ../plugins/snippets/snippets/snippets.ui.h:15
 msgid "_Drop targets:"
 msgstr "Đíc_h thả:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:12
+#: ../plugins/snippets/snippets/snippets.ui.h:17
 msgid "_Snippets:"
 msgstr "Đ_oạn:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:13
+#. "tab" here means the tab key, not the notebook tab!
+#: ../plugins/snippets/snippets/snippets.ui.h:19
 msgid "_Tab trigger:"
 msgstr "_Tab gây ra:"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:149
+#: ../plugins/snippets/snippets/windowactivatable.py:143
 msgid "Manage _Snippets..."
 msgstr "Quản lý đ_oạn..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:150
+#: ../plugins/snippets/snippets/windowactivatable.py:144
 msgid "Manage snippets"
 msgstr "Quản lý đoạn"
 
@@ -3070,15 +3138,15 @@ msgstr "Quản lý đoạn"
 msgid "Snippets archive"
 msgstr "Kho lưu đoạn"
 
-#: ../plugins/snippets/snippets/manager.py:63
+#: ../plugins/snippets/snippets/manager.py:62
 msgid "Add a new snippet..."
 msgstr "Thêm đoạn mới..."
 
-#: ../plugins/snippets/snippets/manager.py:116
+#: ../plugins/snippets/snippets/manager.py:115
 msgid "Global"
 msgstr "Toàn cục"
 
-#: ../plugins/snippets/snippets/manager.py:393
+#: ../plugins/snippets/snippets/manager.py:396
 msgid "Revert selected snippet"
 msgstr "Hoàn nguyên đoạn đã chọn"
 
@@ -3091,73 +3159,73 @@ msgstr ""
 "Đây không phải là một cách tạo nên Tab hợp lệ. Cách thực hiện có thể chứa từ "
 "hoặc kí tự đơn (không phải chữ, số) như: {, [  ..."
 
-#: ../plugins/snippets/snippets/manager.py:757
+#: ../plugins/snippets/snippets/manager.py:755
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "Gặp lỗi theo đây khi nhập : %s"
 
-#: ../plugins/snippets/snippets/manager.py:764
+#: ../plugins/snippets/snippets/manager.py:762
 msgid "Import successfully completed"
 msgstr "Hoàn tất nhập vào"
+
+#: ../plugins/snippets/snippets/manager.py:781
+#: ../plugins/snippets/snippets/manager.py:867
+#: ../plugins/snippets/snippets/manager.py:930
+msgid "All supported archives"
+msgstr "Mọi kho nén đã hỗ trợ"
+
+#: ../plugins/snippets/snippets/manager.py:782
+#: ../plugins/snippets/snippets/manager.py:868
+#: ../plugins/snippets/snippets/manager.py:931
+msgid "Gzip compressed archive"
+msgstr "Kho nén Gzip"
 
 #: ../plugins/snippets/snippets/manager.py:783
 #: ../plugins/snippets/snippets/manager.py:869
 #: ../plugins/snippets/snippets/manager.py:932
-msgid "All supported archives"
-msgstr "Mọi kho nén đã hỗ trợ"
+msgid "Bzip2 compressed archive"
+msgstr "Kho nén Bzip2"
 
 #: ../plugins/snippets/snippets/manager.py:784
-#: ../plugins/snippets/snippets/manager.py:870
-#: ../plugins/snippets/snippets/manager.py:933
-msgid "Gzip compressed archive"
-msgstr "Kho nén Gzip"
+msgid "Single snippets file"
+msgstr "Tập tin đoạn riêng"
 
 #: ../plugins/snippets/snippets/manager.py:785
 #: ../plugins/snippets/snippets/manager.py:871
 #: ../plugins/snippets/snippets/manager.py:934
-msgid "Bzip2 compressed archive"
-msgstr "Kho nén Bzip2"
-
-#: ../plugins/snippets/snippets/manager.py:786
-msgid "Single snippets file"
-msgstr "Tập tin đoạn riêng"
-
-#: ../plugins/snippets/snippets/manager.py:787
-#: ../plugins/snippets/snippets/manager.py:873
-#: ../plugins/snippets/snippets/manager.py:936
 msgid "All files"
 msgstr "Mọi tập tin"
 
-#: ../plugins/snippets/snippets/manager.py:799
+#: ../plugins/snippets/snippets/manager.py:797
 #, python-format
 msgid "The following error occurred while exporting: %s"
 msgstr "Gặp lỗi theo đây khi xuất: %s"
 
-#: ../plugins/snippets/snippets/manager.py:803
+#: ../plugins/snippets/snippets/manager.py:801
 msgid "Export successfully completed"
 msgstr "Hoàn tất xuất ra"
 
 #. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:843
-#: ../plugins/snippets/snippets/manager.py:910
+#: ../plugins/snippets/snippets/manager.py:841
+#: ../plugins/snippets/snippets/manager.py:908
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
 msgstr "Bạn cũng có muốn xuất các đoạn <b>hệ thống</b> đã chọn không?"
 
-#: ../plugins/snippets/snippets/manager.py:858
-#: ../plugins/snippets/snippets/manager.py:928
+#: ../plugins/snippets/snippets/manager.py:856
+#: ../plugins/snippets/snippets/manager.py:926
 msgid "There are no snippets selected to be exported"
 msgstr "Chưa chọn đoạn cần xuất khẩu"
 
-#: ../plugins/snippets/snippets/manager.py:863
-#: ../plugins/snippets/snippets/manager.py:901
+#: ../plugins/snippets/snippets/manager.py:861
+#: ../plugins/snippets/snippets/manager.py:899
 msgid "Export snippets"
 msgstr "Xuất đoạn"
 
-#: ../plugins/snippets/snippets/manager.py:1042
+#: ../plugins/snippets/snippets/manager.py:1040
 msgid "Type a new shortcut, or press Backspace to clear"
 msgstr "Hãy gõ phím tắt mới, hoặc bấm phím Backspace để xóa trống"
 
-#: ../plugins/snippets/snippets/manager.py:1044
+#: ../plugins/snippets/snippets/manager.py:1042
 msgid "Type a new shortcut"
 msgstr "Gõ phím tắt mới"
 
@@ -3176,34 +3244,34 @@ msgstr "Thư mục đích \"%s\" không tồn tại"
 msgid "Target directory \"%s\" is not a valid directory"
 msgstr "Tư mục đích \"%s\" không phải là một thư mục hợp lệ"
 
-#: ../plugins/snippets/snippets/importer.py:46
-#: ../plugins/snippets/snippets/importer.py:100
+#: ../plugins/snippets/snippets/importer.py:47
+#: ../plugins/snippets/snippets/importer.py:108
 #, python-format
 msgid "File \"%s\" does not exist"
 msgstr "Tập tin \"%s\" không tồn tại"
 
-#: ../plugins/snippets/snippets/importer.py:49
+#: ../plugins/snippets/snippets/importer.py:50
 #, python-format
 msgid "File \"%s\" is not a valid snippets file"
 msgstr "Tập tin \"%s\" không phải là tập tin đoạn mã snippet hợp lệ"
 
-#: ../plugins/snippets/snippets/importer.py:59
+#: ../plugins/snippets/snippets/importer.py:67
 #, python-format
 msgid "Imported file \"%s\" is not a valid snippets file"
 msgstr "Tập tin đã nhập \"%s\" là một tập tin mã snippet không hợp lệ"
 
-#: ../plugins/snippets/snippets/importer.py:69
+#: ../plugins/snippets/snippets/importer.py:77
 #, python-format
 msgid "The archive \"%s\" could not be extracted"
 msgstr "Kho lưu \"%s\" không thể được giải nén"
 
-#: ../plugins/snippets/snippets/importer.py:87
+#: ../plugins/snippets/snippets/importer.py:95
 #, python-format
 msgid "The following files could not be imported: %s"
 msgstr "Không thể nhập khẩu những tập tin này: %s"
 
-#: ../plugins/snippets/snippets/importer.py:103
-#: ../plugins/snippets/snippets/importer.py:116
+#: ../plugins/snippets/snippets/importer.py:111
+#: ../plugins/snippets/snippets/importer.py:124
 #, python-format
 msgid "File \"%s\" is not a valid snippets archive"
 msgstr "Tập tin \"%s\" không phải là một kho lưu đoạn mã snippet hợp lệ"
@@ -3311,8 +3379,8 @@ msgstr "Hoàn thành kiểm lỗi chính tả"
 #. * the second %s is the locale name. Example:
 #. * "French (France)"
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:285
-#: ../plugins/spell/gedit-spell-checker-language.c:291
+#: ../plugins/spell/gedit-spell-checker-language.c:373
+#: ../plugins/spell/gedit-spell-checker-language.c:379
 #, c-format
 msgctxt "language"
 msgid "%s (%s)"
@@ -3321,7 +3389,7 @@ msgstr "%s (%s)"
 #. Translators: this refers to an unknown language code
 #. * (one which isn't in our built-in list).
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:300
+#: ../plugins/spell/gedit-spell-checker-language.c:388
 #, c-format
 msgctxt "language"
 msgid "Unknown (%s)"
@@ -3330,7 +3398,7 @@ msgstr "Không rõ (%s)"
 #. Translators: this refers the Default language used by the
 #. * spell checker
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:406
+#: ../plugins/spell/gedit-spell-checker-language.c:494
 msgctxt "language"
 msgid "Default"
 msgstr "Mặc định"
@@ -3344,35 +3412,35 @@ msgstr "Lập ngôn ngữ"
 msgid "Languages"
 msgstr "Ngôn ngữ"
 
-#: ../plugins/spell/gedit-spell-plugin.c:105
+#: ../plugins/spell/gedit-spell-plugin.c:107
 msgid "_Check Spelling..."
 msgstr "Kiểm lỗi _chính tả..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:107
+#: ../plugins/spell/gedit-spell-plugin.c:109
 msgid "Check the current document for incorrect spelling"
 msgstr "Kiểm tra tài liệu hiện thời để phát hiện lỗi chính tả"
 
-#: ../plugins/spell/gedit-spell-plugin.c:113
+#: ../plugins/spell/gedit-spell-plugin.c:115
 msgid "Set _Language..."
 msgstr "Chọn n_gôn ngữ..."
 
-#: ../plugins/spell/gedit-spell-plugin.c:115
+#: ../plugins/spell/gedit-spell-plugin.c:117
 msgid "Set the language of the current document"
 msgstr "Lập ngôn ngữ của tài liệu hiện thời"
 
-#: ../plugins/spell/gedit-spell-plugin.c:124
+#: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "_Highlight Misspelled Words"
 msgstr "_Tô sáng từ viết sai"
 
-#: ../plugins/spell/gedit-spell-plugin.c:126
+#: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
 msgstr "Tự động kiểm lỗi chính tả tài liệu hiện thời"
 
-#: ../plugins/spell/gedit-spell-plugin.c:817
+#: ../plugins/spell/gedit-spell-plugin.c:819
 msgid "The document is empty."
 msgstr "Tài liệu trống."
 
-#: ../plugins/spell/gedit-spell-plugin.c:842
+#: ../plugins/spell/gedit-spell-plugin.c:844
 msgid "No misspelled words"
 msgstr "Không có từ sai chính tả"
 
@@ -3495,32 +3563,32 @@ msgid "The selected format used when inserting the date/time."
 msgstr "Định dạng được chọn được dùng khi chèn ngày/giờ."
 
 #. Translators: Use the more common date format in your locale
-#: ../plugins/time/gedit-time-dialog.ui.h:3
+#: ../plugins/time/gedit-time-dialog.ui.h:2
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:4
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%d/%m/%Y %H:%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
-#: ../plugins/time/gedit-time-dialog.ui.h:4
+#: ../plugins/time/gedit-time-dialog.ui.h:3
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:6
 msgid "01/11/2009 17:52:00"
 msgstr "01/11/2009 17:52:00"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:5
+#: ../plugins/time/gedit-time-dialog.ui.h:4
 msgid "Insert Date and Time"
 msgstr "Chèn ngày giờ"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:6
+#: ../plugins/time/gedit-time-dialog.ui.h:5
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 msgid "Use the _selected format"
 msgstr "Dùng định _dạng đã chọn"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:7
+#: ../plugins/time/gedit-time-dialog.ui.h:6
 msgid "_Insert"
 msgstr "_Chèn"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:8
+#: ../plugins/time/gedit-time-dialog.ui.h:7
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:11
 msgid "_Use custom format"
 msgstr "Dùng định dạng _riêng"
@@ -3544,6 +3612,9 @@ msgstr "Lưu lại sự kiện truy cập hoặc rời khỏi tài liệu khi d�
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
 msgstr "Nguồn dữ liệu Zeitgeist"
+
+#~ msgid "External Tools Manager"
+#~ msgstr "Bộ quản lý công cụ bên ngoài"
 
 #~ msgid ""
 #~ "List of VFS schemes gedit supports in write mode. The 'file' scheme is "
@@ -3895,9 +3966,6 @@ msgstr "Nguồn dữ liệu Zeitgeist"
 
 #~ msgid "Edit tool <i>%s</i>:"
 #~ msgstr "Sửa đổi công cụ <i>%s</i>:"
-
-#~ msgid "A Brand New Tool"
-#~ msgstr "Một Công cụ Mới Phát triển"
 
 #~ msgid "Co_mmand(s):"
 #~ msgstr "_Lệnh:"
