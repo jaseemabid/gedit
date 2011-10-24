@@ -251,21 +251,27 @@ gedit_notebook_switch_page (GtkNotebook *notebook,
 {
 	GeditNotebook *nb = GEDIT_NOTEBOOK (notebook);
 
-	GTK_NOTEBOOK_CLASS (gedit_notebook_parent_class)->switch_page (notebook, page, page_num);
-
 	if (!nb->priv->ignore_focused_page_update)
 	{
+		gint prev_page;
+		GtkWidget *previous_page;
+
+		prev_page = gtk_notebook_get_current_page (notebook);
+		previous_page = gtk_notebook_get_nth_page (notebook, prev_page);
+
 		/* Remove the old page, we dont want to grow unnecessarily
 		 * the list */
 		if (nb->priv->focused_pages)
 		{
 			nb->priv->focused_pages =
-				g_list_remove (nb->priv->focused_pages, page);
+				g_list_remove (nb->priv->focused_pages, previous_page);
 		}
 
 		nb->priv->focused_pages = g_list_append (nb->priv->focused_pages,
-		                                         page);
+		                                         previous_page);
 	}
+
+	GTK_NOTEBOOK_CLASS (gedit_notebook_parent_class)->switch_page (notebook, page, page_num);
 
 	/* give focus to the tab */
 	gtk_widget_grab_focus (page);
@@ -291,20 +297,11 @@ static void
 smart_tab_switching_on_closure (GeditNotebook *nb,
 				GeditTab      *tab)
 {
-	gboolean jump_to;
-
-	jump_to = GPOINTER_TO_INT (g_object_get_data
-	                           (G_OBJECT (tab), "jump_to"));
-
-	if (!jump_to || !nb->priv->focused_pages)
-	{
-		gtk_notebook_next_page (GTK_NOTEBOOK (nb));
-	}
-	else
+	if (nb->priv->focused_pages)
 	{
 		GList *l;
 		GtkWidget *child;
-		int page_num;
+		gint page_num;
 
 		/* activate the last focused tab */
 		l = g_list_last (nb->priv->focused_pages);
