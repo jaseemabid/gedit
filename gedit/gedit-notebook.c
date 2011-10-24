@@ -544,10 +544,6 @@ gedit_notebook_add_tab (GeditNotebook *nb,
 	if (jump_to)
 	{
 		gtk_notebook_set_current_page (GTK_NOTEBOOK (nb), position);
-		g_object_set_data (G_OBJECT (tab), 
-				   "jump_to",
-				   GINT_TO_POINTER (jump_to));
-		
 		gtk_widget_grab_focus (GTK_WIDGET (tab));
 	}
 }
