@@ -1,0 +1,52 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="gedit-plugins-color-picker">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/> 
+    <revision version="3.4" date="2011-10-29" status="candidate"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Pick a color from a dialog and insert its hexadecimal representation</desc>
+  </info>
+
+  <title>Color picker</title>
+
+  <p>The <app>color picker</app> plugin helps you to insert the character 
+  codes that represent a certain color. This can make it easier to choose
+  and use the correct color in your programs.</p>
+  
+  <p>To enable the color picker plugin, select <guiseq><gui>
+  Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Color Picker</gui>
+  </guiseq>.</p>
+  
+  <p>To open and use the color picker:</p>
+  <steps>
+      <item><p>Place your cursor at the point in your document where you want
+      to insert the color code.</p></item>
+      <item><p>Select <guiseq><gui>Tools</gui><gui>Pick Color...</gui></guiseq>.
+       The color picker dialog will appear.</p></item>
+      <item><p>If the color that you want to select is currently on your screen,
+      click on the icon that looks like an eyedropper.</p>
+        <p>Your mouse pointer will change appearance, and will look like an 
+        eyedropper.</p>
+        <p>Use the eyedropper and click on the portion of your screen that 
+        contains the color you want to use. The color code for that color 
+        will appear in the color picker window.</p></item>
+      <item><p>To insert that color code into your document, click <gui>
+      Insert</gui>. The code will be inserted where you had placed your 
+      cursor.</p></item>
+      <item><p>To close the <app>color picker</app>, click <gui>Close</gui>.
+      </p></item>
+  </steps>
+
+  <note style="tip"><p>You can make fine-grained adjustments to the color by
+  adjusting the values for Hue, Saturation, Value, Red, Green, or Blue.</p>
+  <p>Additionally, you can save colors by right-clicking on any of the colored 
+  boxes in the color picker, and selecting <gui>Save color here</gui>. This 
+  will make it easier to insert commonly-used colors later.</p>
+  </note>     
+</page>
