@@ -80,7 +80,6 @@ struct _GeditPrintJobPrivate
 	GtkWidget *line_numbers_spinbutton;
 	GtkWidget *text_wrapping_checkbutton;
 	GtkWidget *do_not_split_checkbutton;
-	GtkWidget *fonts_table;
 	GtkWidget *body_font_label;
 	GtkWidget *headers_font_label;
 	GtkWidget *numbers_font_label;
@@ -352,7 +351,6 @@ create_custom_widget_cb (GtkPrintOperation *operation,
 					  "page_header_checkbutton", &job->priv->page_header_checkbutton,
 					  "text_wrapping_checkbutton", &job->priv->text_wrapping_checkbutton,
 					  "do_not_split_checkbutton", &job->priv->do_not_split_checkbutton,
-					  "fonts_table", &job->priv->fonts_table,
 					  "body_font_label", &job->priv->body_font_label,
 					  "body_fontbutton", &job->priv->body_fontbutton,
 					  "headers_font_label", &job->priv->headers_font_label,
