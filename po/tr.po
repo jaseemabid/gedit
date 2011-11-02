@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-08-16 01:47+0000\n"
-"PO-Revision-Date: 2011-09-04 09:45+0300\n"
+"POT-Creation-Date: 2011-11-01 19:08+0000\n"
+"PO-Revision-Date: 2011-11-02 12:24+0200\n"
 "Last-Translator: Muhammet Kara <muhammet.k@gmail.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -174,7 +174,7 @@ msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
 msgid "Notebook Show Tabs Mode"
-msgstr ""
+msgstr "Not Defteri Sekmeleri Göster Kipi"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
 msgid ""
@@ -762,11 +762,11 @@ msgstr "_dakika"
 msgid "Replace"
 msgstr "Değiştir"
 
-#: ../gedit/dialogs/gedit-replace-dialog.c:291
+#: ../gedit/dialogs/gedit-replace-dialog.c:287
 msgid "Replace _All"
 msgstr "_Hepsini Değiştir"
 
-#: ../gedit/dialogs/gedit-replace-dialog.c:292
+#: ../gedit/dialogs/gedit-replace-dialog.c:288
 #: ../gedit/gedit-commands-file.c:572
 msgid "_Replace"
 msgstr "_Değiştir"
@@ -1381,8 +1381,8 @@ msgid ""
 "The document contains one or more characters that cannot be encoded using "
 "the specified character encoding."
 msgstr ""
-"Belge, belirtilen karakter kodlaması kullanarak kodlanamayacak bir ya da daha "
-"fazla karakter içeriyor."
+"Belge, belirtilen karakter kodlaması kullanarak kodlanamayacak bir ya da "
+"daha fazla karakter içeriyor."
 
 #. Translators: the access key chosen for this string should be
 #. different from other main menu access keys (Open, Edit, View...)
@@ -1447,11 +1447,9 @@ msgid ""
 "while saving, you could lose the old copy of the file. Save anyway?"
 msgstr ""
 "gedit, dosyanın yeni kopyasını kaydederken eskisinin yedeğini alamadı. Gene "
-"de "
-"bu uyarıyı yok sayıp dosyayı kaydedebilirsiniz, ancak eğer kayıt esnasında "
-"bir "
-"hata olursa, dosyanın eski kopyasını kaybedebilirsiniz. Yine de kaydedilsin "
-"mi?"
+"de bu uyarıyı yok sayıp dosyayı kaydedebilirsiniz, ancak eğer kayıt "
+"esnasında bir hata olursa, dosyanın eski kopyasını kaybedebilirsiniz. Yine "
+"de kaydedilsin mi?"
 
 #. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
 #: ../gedit/gedit-io-error-info-bar.c:1080
@@ -1770,38 +1768,38 @@ msgid "Saving %s"
 msgstr "%s kaydediliyor"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1834
+#: ../gedit/gedit-tab.c:1844
 msgid "RO"
 msgstr "SO"
 
-#: ../gedit/gedit-tab.c:1881
+#: ../gedit/gedit-tab.c:1891
 #, c-format
 msgid "Error opening file %s"
 msgstr "%s dosyası açılırken hata"
 
-#: ../gedit/gedit-tab.c:1886
+#: ../gedit/gedit-tab.c:1896
 #, c-format
 msgid "Error reverting file %s"
 msgstr "%s dosyası ilk haline getirilirken hata"
 
-#: ../gedit/gedit-tab.c:1891
+#: ../gedit/gedit-tab.c:1901
 #, c-format
 msgid "Error saving file %s"
 msgstr "%s dosyası kaydedilirken hata"
 
-#: ../gedit/gedit-tab.c:1912
+#: ../gedit/gedit-tab.c:1922
 msgid "Unicode (UTF-8)"
 msgstr "Unikod (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1919
+#: ../gedit/gedit-tab.c:1929
 msgid "Name:"
 msgstr "İsim:"
 
-#: ../gedit/gedit-tab.c:1920
+#: ../gedit/gedit-tab.c:1930
 msgid "MIME Type:"
 msgstr "MIME Türü:"
 
-#: ../gedit/gedit-tab.c:1921
+#: ../gedit/gedit-tab.c:1931
 msgid "Encoding:"
 msgstr "Kodlama:"
 
@@ -2107,42 +2105,42 @@ msgstr "Geçerli penceredeki alt paneli göster ya da gizle"
 msgid "Please check your installation."
 msgstr "Lütfen kurulumunuzu kontrol edin."
 
-#: ../gedit/gedit-utils.c:1087
+#: ../gedit/gedit-utils.c:1075
 #, c-format
 msgid "Unable to open UI file %s. Error: %s"
 msgstr "UI dosyası %s açılamadı. Hata: %s"
 
-#: ../gedit/gedit-utils.c:1107
+#: ../gedit/gedit-utils.c:1094
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
 msgstr "'%s' nesnesi %s dosyası içerisinde bulunamadı."
 
 #. Translators: '/ on <remote-share>'
-#: ../gedit/gedit-utils.c:1252
+#: ../gedit/gedit-utils.c:1316
 #, c-format
 msgid "/ on %s"
 msgstr "%s üzerinde /"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:624
+#: ../gedit/gedit-view-frame.c:554
 msgid "_Wrap Around"
 msgstr "_Satır Bölme"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:634
+#: ../gedit/gedit-view-frame.c:564
 msgid "Match _Entire Word Only"
 msgstr "Sadece Tüm _Kelimeyi Eşleştir"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:644
+#: ../gedit/gedit-view-frame.c:574
 msgid "_Match Case"
 msgstr "Büyük/Küçük _Harf Eşleştir"
 
-#: ../gedit/gedit-view-frame.c:903
+#: ../gedit/gedit-view-frame.c:775
 msgid "String you want to search for"
 msgstr "Arama yapılacak dizgi"
 
-#: ../gedit/gedit-view-frame.c:912
+#: ../gedit/gedit-view-frame.c:782
 msgid "Line you want to move the cursor to"
 msgstr "İmleci taşımak istediğiniz satır"
 
@@ -2158,7 +2156,7 @@ msgstr "%s vurgu kipini kullan"
 #: ../plugins/externaltools/tools/manager.py:138
 #: ../plugins/externaltools/tools/manager.py:441
 #: ../plugins/externaltools/tools/manager.py:552
-#: ../plugins/externaltools/tools/manager.py:871
+#: ../plugins/externaltools/tools/manager.py:868
 msgid "Plain Text"
 msgstr "Düz Metin"
 
@@ -2439,7 +2437,7 @@ msgstr "Tüm diller"
 
 #: ../plugins/externaltools/tools/manager.py:541
 #: ../plugins/externaltools/tools/manager.py:545
-#: ../plugins/externaltools/tools/manager.py:869
+#: ../plugins/externaltools/tools/manager.py:866
 #: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Tüm Diller"
@@ -2591,23 +2589,23 @@ msgstr "_Kısayol Tuşu:"
 msgid "_Tools:"
 msgstr "_Araçlar:"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:176
+#: ../plugins/externaltools/tools/windowactivatable.py:179
 msgid "Manage _External Tools..."
 msgstr "_Harici Araçları Yönet..."
 
-#: ../plugins/externaltools/tools/windowactivatable.py:177
+#: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "Opens the External Tools Manager"
 msgstr "Harici Araçlar Yöneticisini Açar"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:180
+#: ../plugins/externaltools/tools/windowactivatable.py:183
 msgid "External _Tools"
 msgstr "Harici _Araçlar"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:181
+#: ../plugins/externaltools/tools/windowactivatable.py:184
 msgid "External tools"
 msgstr "Harici araçlar"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:215
+#: ../plugins/externaltools/tools/windowactivatable.py:218
 msgid "Shell Output"
 msgstr "Kabuk Çıktısı"
 
@@ -3065,6 +3063,10 @@ msgstr "_Hata rengi:"
 msgid "Quick Open"
 msgstr "Hızlı Aç"
 
+#: ../plugins/quickopen/quickopen/popup.py:72
+msgid "Type to search..."
+msgstr "Aramak için buraya yazın..."
+
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:2
 msgid "Quickly open files"
 msgstr "Dosyaları hızlıca açar"
@@ -3083,7 +3085,6 @@ msgid "Activation"
 msgstr "Etkinleştirme"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:3
-#| msgid "Snippets"
 msgid "Add Snippet"
 msgstr "Parça Ekle"
 
@@ -3097,7 +3098,6 @@ msgid "Delete selected snippet"
 msgstr "Seçili bölümü sil"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:6
-#| msgid "Export snippets"
 msgid "Export Snippets"
 msgstr "Parçaları Dışa Aktar"
 
@@ -3106,7 +3106,6 @@ msgid "Export selected snippets"
 msgstr "Seçili bölümleri aktar"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:8
-#| msgid "Import snippets"
 msgid "Import Snippets"
 msgstr "Parçaları İçe Aktar"
 
@@ -3116,12 +3115,10 @@ msgid "Import snippets"
 msgstr "Parçaları aktar"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:10
-#| msgid "Manage snippets"
 msgid "Manage Snippets"
 msgstr "Parçaları Yönet"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:11
-#| msgid "Snippets"
 msgid "Remove Snippet"
 msgstr "Parçayı Sil"
 
@@ -3136,9 +3133,8 @@ msgstr "Parçanın etkinleşeceği kısayol tuşu"
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/snippets.ui.h:14
 #: ../plugins/snippets/snippets/manager.py:666
-#, fuzzy
 msgid "Single word the snippet is activated with after pressing Tab"
-msgstr "Tab tuşuna basıldığında parçayı etkinleştirecek tek sözcük"
+msgstr "Sekme tuşuna basıldıktan sonra parçayı etkinleştirecek tekil sözcük"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:15
 msgid "_Drop targets:"
@@ -3153,11 +3149,11 @@ msgstr "_Parçalar:"
 msgid "_Tab trigger:"
 msgstr "_Tab tetikleyicisi:"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:143
+#: ../plugins/snippets/snippets/windowactivatable.py:145
 msgid "Manage _Snippets..."
 msgstr "_Parçaları Yönet..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:144
+#: ../plugins/snippets/snippets/windowactivatable.py:146
 msgid "Manage snippets"
 msgstr "Parçaları yönet"
 
@@ -3311,8 +3307,7 @@ msgid ""
 "Execution of the Python command (%s) exceeds the maximum time, execution "
 "aborted."
 msgstr ""
-"Python komutunun (%s) çalıştırılması azami süreyi aştı, yürütme "
-"durduruldu."
+"Python komutunun (%s) çalıştırılması azami süreyi aştı, yürütme durduruldu."
 
 #: ../plugins/snippets/snippets/placeholder.py:602
 #, python-format
