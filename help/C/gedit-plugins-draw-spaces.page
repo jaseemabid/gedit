@@ -3,7 +3,7 @@
       id="gedit-plugins-draw-spaces">
   <info>
     <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
-    <revision version="3.4" date="2011-10-29" status="candidate"/>
+    <revision version="3.4" date="2011-11-05" status="candidate"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
@@ -15,13 +15,28 @@
 
   <title>Draw spaces</title>
 
-  <p>The <app>Draw Spaces</app> plugin is a simple plugin that marks each space 
-   within a file with a small, visible dot. By making file spaces visible, you 
-   can more easily see how spaces are used in a document, and can apply spacing
-   strategies more consistently.</p>
+  <p>The <app>Draw Spaces</app> plugin is a simple plugin that can mark spaces, 
+  tabs, and other types of whitespace with a small, visible marker. By making 
+  whitespace visible, you can more easily see how whitespace is used in a 
+  document, and can apply spacing strategies more consistently.</p>
    
   <p>To enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</gui>
-  <gui>Plugins</gui><gui>Draw Spaces</gui></guiseq>.</p>
+  <gui>Plugins</gui><gui>Draw Spaces</gui></guiseq>. After you have enabled the plugin, you can set its options by highlighting the plugin and selecting <gui>Preferences</gui>.</p>
+  
+  <list>
+  <title>By default, the <app>Draw Spaces</app> plugin will mark the following types of whitespace in a file:</title>
+    <item><p>Spaces</p></item>
+    <item><p>Tabs</p></item>
+    <item><p>Leading spaces</p></item>
+    <item><p>Spaces in text</p></item>
+    <item><p>Trailing spaces</p></item>
+  </list>
+  
+  <list>
+    <title>You can also set the plugin to mark:</title>
+    <item><p>New Lines</p></item>
+    <item><p>Non-breaking spaces</p></item>
+  </list>
    
   <note style="tip"><p>Though you will be able to see the dots when you work on 
   a file, the dots will not be visible when you print a file to paper.</p>
