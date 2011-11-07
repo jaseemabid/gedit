@@ -22,19 +22,28 @@ DOC_PAGES = \
 	gedit-open-on-server.page \
 	gedit-open-recent.page \
 	gedit-plugin-guide.page \
+	gedit-plugins-bookmarks.page \
 	gedit-plugins-bracket-comp.page \
 	gedit-plugins-change-case.page \
+	gedit-plugins-character-map.page \
+	gedit-plugins-code-comment.page \
+	gedit-plugins-color-picker.page \
+	gedit-plugins-commander.page \
 	gedit-plugins-doc-stats.page \
+	gedit-plugins-draw-spaces.page \
 	gedit-plugins-external-tools.page \
 	gedit-plugins-file-browser.page \
 	gedit-plugins-insert-date-time.page \
 	gedit-plugins-install.page \
 	gedit-plugins-modelines.page \
+	gedit-plugins-multi-edit.page \
 	gedit-plugins-pyconsole.page \
+	gedit-plugins-quick-open.page \
 	gedit-plugins-snippets.page \
 	gedit-plugins-sort.page \
 	gedit-plugins-tag-list.page \
 	gedit-plugins-terminal.page \
+	gedit-plugins-word-completion.page \
 	gedit-printing.page \
 	gedit-quickstart.page \
 	gedit-replace.page \

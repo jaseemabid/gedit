@@ -1,0 +1,43 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="gedit-plugins-quick-open">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision version="3.4" date="2011-11-07" status="candidate"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Quickly open a file or set of files</desc>
+  </info>
+
+  <title>Quick open</title>
+
+    <p>As the name of this plugin would imply, the <app>Quick Open</app> 
+    plugin helps you to open files more quickly than the regular way of opening 
+    files. To enable this plugin, select <guiseq><gui>Edit</gui><gui>
+    Preferences</gui><gui>Plugins</gui><gui>Quick Open</gui></guiseq>.</p>
+    
+    <p>Once you've enabled it, here is how to use the plugin:</p>
+    
+    <steps>
+      <item><p>Open the <app>Quick Open</app> dialog by pressing <keyseq><key>
+      Ctrl</key><key>Alt</key><key>O</key></keyseq>, or by selecting <guiseq>
+      <gui>File</gui><gui>Quick Open</gui></guiseq>.</p>
+      <p>The <gui>Quick Open</gui> file dialog will appear.</p></item>
+      <item><p>Use your mouse to select the file or files that you want to open.
+      </p>
+      <p>To select several individual files, hold down your <key>Ctrl</key> key
+      while you click on the files that you want to open.</p>
+      <p>To select a group of files, click on the first file that you want to 
+      open, hold down the <key>Shift</key> key, and then click on the last file 
+      in the list that you want to open.</p></item>
+      <item><p>Click <gui>Open</gui>.</p></item>
+    </steps>
+    
+    <note style="tip"><p>The <app>Quick Open</app> plugin will only display 
+    files that you have previously opened.</p></note>
+
+</page>
