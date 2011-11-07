@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-11-07 12:56+0000\n"
-"PO-Revision-Date: 2011-11-07 16:13+0100\n"
+"POT-Creation-Date: 2011-11-07 15:14+0000\n"
+"PO-Revision-Date: 2011-11-07 23:29+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -907,8 +907,8 @@ msgid ""
 "Press the <key>Ctrl</key> and use your mouse or touchpad's <key>scroll</key> "
 "feature to move up or down through the text."
 msgstr ""
-"Pulse <key>Ctrl</key> y use el <key>deslizador</key> de su ratón o «touchpad» "
-"para moverse hacia arriba o hacia abajo a través del texto."
+"Pulse <key>Ctrl</key> y use el <key>deslizador</key> de su ratón o "
+"«touchpad» para moverse hacia arriba o hacia abajo a través del texto."
 
 #: C/gedit-search.page:47(p)
 msgid ""
@@ -1233,7 +1233,6 @@ msgid "Autocomplete words or portions of code as you type"
 msgstr "Autocompletar palabras o fragmentos de código según escribe"
 
 #: C/gedit-plugins-word-completion.page:21(title)
-#| msgid "Bracket completion"
 msgid "Word completion"
 msgstr "Completado de palabras"
 
@@ -1243,6 +1242,9 @@ msgid ""
 "this page the reader will be able to use the word completion plugin whilst "
 "editing text documents or code."
 msgstr ""
+"Esto asume que el lector conoce cómo usar gedit a nivel general. Al final de "
+"esta página, el lector podrá usar el complemento de completado de palabras "
+"mientras edita documentos de texto o código."
 
 #: C/gedit-plugins-word-completion.page:30(p)
 #, fuzzy
@@ -1390,8 +1392,8 @@ msgid ""
 msgstr ""
 "El panel lateral muestra inicialmente una lista de documentos abiertos, por "
 "lo que para ver y usar la <app>Lista de etiquetas</app>, deberá pulsar en la "
-"pestaña que muestra el icono «más» en la parte inferior del panel lateral. El "
-"icono se parece a esto:"
+"pestaña que muestra el icono «más» en la parte inferior del panel lateral. "
+"El icono se parece a esto:"
 
 #: C/gedit-plugins-tag-list.page:39(title)
 msgid "Inserting Tags and Special Characters"
@@ -1528,8 +1530,8 @@ msgid ""
 "The Sort dialog will open, allowing you to choose between several sorting "
 "options:"
 msgstr ""
-"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones de "
-"ordenación:"
+"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones "
+"de ordenación:"
 
 #: C/gedit-plugins-sort.page:31(p)
 msgid ""
@@ -1574,13 +1576,11 @@ msgid "Coming soon!"
 msgstr "Muy pronto"
 
 #: C/gedit-plugins-quick-open.page:13(desc)
-#, fuzzy
 #| msgid "Open a file or set of files"
 msgid "Quickly open a file or set of files"
-msgstr "Abrir un archivo o un conjunto de archivos"
+msgstr "Abrir rápidamente un archivo o un conjunto de archivos"
 
 #: C/gedit-plugins-quick-open.page:16(title)
-#| msgid "*Quick open"
 msgid "Quick open"
 msgstr "Apertura rápida"
 
@@ -1696,7 +1696,6 @@ msgstr ""
 "inferior."
 
 #: C/gedit-plugins-multi-edit.page:11(years)
-#| msgid "2010"
 msgid "2011"
 msgstr "2011"
 
@@ -1705,16 +1704,10 @@ msgid "Edit a document in multiple places at once"
 msgstr "Editar un documento en varios sitios a la vez"
 
 #: C/gedit-plugins-multi-edit.page:17(title)
-#| msgid "Quit gedit"
 msgid "Multi edit"
 msgstr "Edición múltiple"
 
 #: C/gedit-plugins-multi-edit.page:19(p)
-#| msgid ""
-#| "The <em>Document Statistics</em> plugin can show you various statistics "
-#| "about your current document. To enable this plugin, select "
-#| "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</"
-#| "gui><gui>Document Statisics</gui></guiseq>."
 msgid ""
 "The <app>Multi Edit</app> plugin allows you to edit a document in multiple "
 "places at once. This can be helpful when performing tedious editing tasks. "
@@ -2231,11 +2224,12 @@ msgid ""
 msgstr ""
 "Este complemento es para usuarios avanzados y para usarlo correctamente "
 "requiere conocimientos de «script». Use este complemento con cuidado, ya que "
-"errores con sus «script» pueden afectar a su trabajo de forma no intencionada."
+"errores con sus «script» pueden afectar a su trabajo de forma no "
+"intencionada."
 
 #: C/gedit-plugins-draw-spaces.page:13(desc)
 msgid "Show white space between words or portions of code"
-msgstr ""
+msgstr "Mostrar espacios en blanco entre palabras o fragmentos de código"
 
 #: C/gedit-plugins-draw-spaces.page:16(title)
 msgid "Draw spaces"
@@ -2276,7 +2270,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-draw-spaces.page:28(p)
-#| msgid "Sources"
 msgid "Spaces"
 msgstr "Espacios"
 
@@ -2303,7 +2296,6 @@ msgid "You can also set the plugin to mark:"
 msgstr "También puede configurar el complemento para marcar:"
 
 #: C/gedit-plugins-draw-spaces.page:37(p)
-#| msgid "Lines"
 msgid "New Lines"
 msgstr "Líneas nuevas"
 
@@ -2402,8 +2394,8 @@ msgid ""
 "Once you have enabled the plugin, activate it by pressing <keyseq><key> "
 "Ctrl</key><key>+</key><key>.</key></keyseq>."
 msgstr ""
-"También puede insertar una etiqueta pulsando <key>Intro</key> o "
-"<keyseq><key>Mayús</key><key>Intro</key></keyseq>."
+"Una vez que haya activado el complemento, actívelo pulsando <keyseq><key> "
+"Ctrl</key><key>+</key><key>.</key></keyseq>."
 
 #: C/gedit-plugins-commander.page:25(p)
 msgid "The last key in the above key combination is a period."
@@ -2458,9 +2450,10 @@ msgid ""
 "Place your cursor at the point in your document where you want to insert the "
 "color code."
 msgstr ""
+"Sitúe el cursor en el punto del documento en el que quiere insertar el "
+"código del color."
 
 #: C/gedit-plugins-color-picker.page:30(p)
-#, fuzzy
 #| msgid ""
 #| "Select <guiseq><gui>Tools</gui><gui>Autocheck Spelling</gui></guiseq> to "
 #| "make <app>gedit</app> highlight spelling errors while you type."
@@ -2468,9 +2461,8 @@ msgid ""
 "Select <guiseq><gui>Tools</gui><gui>Pick Color...</gui></guiseq>. The color "
 "picker dialog will appear."
 msgstr ""
-"Seleccione <guiseq><gui>Herramientas</gui><gui>Comprobar ortografía...</"
-"gui></guiseq> para que <app>gedit</app> resalte errores ortográficos al "
-"escribir."
+"Seleccione <guiseq><gui>Herramientas</gui><gui>Seleccionar color...</gui></"
+"guiseq>. aparecerá el diálogo del selector de color."
 
 #: C/gedit-plugins-color-picker.page:32(p)
 msgid ""
@@ -2482,6 +2474,8 @@ msgstr ""
 msgid ""
 "Your mouse pointer will change appearance, and will look like an eyedropper."
 msgstr ""
+"El puntero de su ratón cambiará su apariencia, y se parecerá a un "
+"cuentagotas."
 
 #: C/gedit-plugins-color-picker.page:36(p)
 msgid ""
@@ -2497,10 +2491,9 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-color-picker.page:42(p)
-#, fuzzy
 #| msgid "To perform the sort operation, click <gui>Sort</gui>."
 msgid "To close the <app>color picker</app>, click <gui>Close</gui>."
-msgstr "Para efectuar la ordenación pulse el botón <gui>Ordenar</gui>."
+msgstr "Para cerrar el <app>selector de color</app>, pulse <gui>Cerrar</gui>."
 
 #: C/gedit-plugins-color-picker.page:46(p)
 msgid ""
@@ -2517,7 +2510,7 @@ msgstr ""
 
 #: C/gedit-plugins-code-comment.page:13(desc)
 msgid "Comment-out or uncomment a block of code"
-msgstr ""
+msgstr "Comentar o descomentar un bloque de código"
 
 #: C/gedit-plugins-code-comment.page:16(title)
 #, fuzzy
@@ -2531,6 +2524,10 @@ msgid ""
 "understand a program's code, but they don't affect how a program works. "
 "Comments are separated from other parts of a program by special characters."
 msgstr ""
+"Los comentarios del código son fragmentos de texto que facilitan a la gente "
+"entender el código de un programa, pero no afectan al funcionamiento del "
+"mismo. Los comentarios se separan del resto de partes del programa mediante "
+"caracteres especiales."
 
 #: C/gedit-plugins-code-comment.page:23(p)
 #, fuzzy
@@ -2562,7 +2559,6 @@ msgid ""
 msgstr "Resalte el fragmento de texto que quiere cambiar."
 
 #: C/gedit-plugins-code-comment.page:32(p)
-#, fuzzy
 #| msgid ""
 #| "Open the Replace tool by clicking <guiseq><gui>Search</gui><gui>Replace</"
 #| "gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
@@ -2570,12 +2566,10 @@ msgid ""
 "To add a comment, click <guiseq><gui>Edit</gui><gui>Comment Code </gui></"
 "guiseq>, or press <keyseq><key>Ctrl</key><key>M</key></keyseq>."
 msgstr ""
-"Abra la herramienta de reemplazado pulsando en <guiseq><gui>Buscar</"
-"gui><gui>Reemplazar</gui></guiseq> o pulse <keyseq><key>Ctrl</key><key>H</"
-"key></keyseq>."
+"Para añadir un comentario, pulse <guiseq><gui>Editar</gui><gui>Comentar "
+"código</gui></guiseq>, o pulse <keyseq><key>Ctrl</key><key>M</key></keyseq>."
 
 #: C/gedit-plugins-code-comment.page:35(p)
-#, fuzzy
 #| msgid ""
 #| "Open the Replace tool by clicking <guiseq><gui>Search</gui><gui>Replace</"
 #| "gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
@@ -2584,9 +2578,9 @@ msgid ""
 "guiseq>, or press <keyseq><key>Shift</key><key>Ctrl</key><key>M</key></"
 "keyseq>."
 msgstr ""
-"Abra la herramienta de reemplazado pulsando en <guiseq><gui>Buscar</"
-"gui><gui>Reemplazar</gui></guiseq> o pulse <keyseq><key>Ctrl</key><key>H</"
-"key></keyseq>."
+"Para quitar un comentario, pulse <guiseq><gui>Editar</gui><gui>Descomentar "
+"código</gui></guiseq>, o pulse <keyseq><key>Mayús</key><key>Ctrl</"
+"key><key>M</key></keyseq>."
 
 #: C/gedit-plugins-code-comment.page:40(p)
 msgid ""
@@ -2610,9 +2604,11 @@ msgid ""
 "this page, the reader will be able to use the character map plugin to insert "
 "characters into their documents."
 msgstr ""
+"Esto asume que el lector conoce cómo usar gedit a nivel general. Al final de "
+"esta página, el lector podrá usar el complemento de mapa de caracteres para "
+"insertar caracteres en sus documentos."
 
 #: C/gedit-plugins-character-map.page:29(p)
-#, fuzzy
 #| msgid ""
 #| "The <em>Document Statistics</em> plugin can show you various statistics "
 #| "about your current document. To enable this plugin, select "
@@ -2624,10 +2620,11 @@ msgid ""
 "To enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</"
 "gui><gui>Plugins</gui><gui>Character Map</gui></guiseq>."
 msgstr ""
-"El complemento <em>Estadísticas del documento</em> puede mostrarle varias "
-"estadísticas sobre el documento actual. Para activar este complemento, "
-"seleccione <guiseq><gui>Editar</gui><gui>Preferencias</"
-"gui><gui>Complementos</gui><gui>Estadísticas del documento</gui></guiseq>."
+"El complemento <app>Mapa de caracteres</app> le permite insertar en su "
+"documento caracteres que es posible que sean fáciles de escribir usando su "
+"teclado. Para activar este complemento, seleccione <guiseq><gui>Editar</"
+"gui><gui>Preferencias</gui><gui>Complementos</gui><gui>Mapa de caracteres</"
+"gui></guiseq>."
 
 #: C/gedit-plugins-character-map.page:32(title)
 msgid "Using Character Map"
@@ -2639,9 +2636,11 @@ msgid ""
 "Map</em> tab of the side panel (<guiseq><gui>View</gui><gui>Side Panel</"
 "gui></guiseq>)."
 msgstr ""
+"Una vez que el complemento está activado, puede añadir caracteres desde la "
+"pestaña <em>Mapa de caracteres</em> en el panel lateral (<guiseq><gui>Ver</"
+"gui><gui>Panel lateral</gui></guiseq>)."
 
 #: C/gedit-plugins-character-map.page:37(p)
-#, fuzzy
 #| msgid ""
 #| "Move the cursor to where you will want to insert the tag or special "
 #| "character."
@@ -2649,10 +2648,10 @@ msgid ""
 "Place the cursor at the point in your document at which you would like your "
 "special character."
 msgstr ""
-"Mueva el cursor a donde quiera insertar la etiqueta o el carácter especial."
+"Sitúe el cursor en el punto del documento en el que quiere insertar el "
+"carácter especial."
 
 #: C/gedit-plugins-character-map.page:38(p)
-#, fuzzy
 #| msgid ""
 #| "To activate the <app>side pane</app>, select <guiseq><gui>View</"
 #| "gui><gui>Side Pane</gui></guiseq>, or just press the <key>F9</key> key."
@@ -2660,9 +2659,8 @@ msgid ""
 "Open the side panel by selecting <guiseq><gui>View</gui><gui>Side Panel</"
 "gui></guiseq>, or by pressing <key>F9</key>."
 msgstr ""
-"Para activar el <app>panel lateral</app>, seleccione <guiseq><gui>Ver</"
-"gui><gui>Panel lateral</gui></guiseq>, o simplemente pulse la tecla <key>F9</"
-"key>."
+"Abra el panel lateral seleccionando <guiseq><gui>Ver</gui><gui>Panel "
+"lateral</gui></guiseq>, o pulsando <key>F9</key>."
 
 #: C/gedit-plugins-character-map.page:39(p)
 msgid "Select the <em>Character Map</em> tab in the side panel."
@@ -2673,18 +2671,22 @@ msgid ""
 "If neccessary, choose the character set to which your character belongs from "
 "the list at the top of the <em>Character Map</em> tab (e.g., Arabic)."
 msgstr ""
+"Si es necesario, elija el conjunto de caracteres al que pertenece su "
+"carácter de la lista de la parte superior de la pestaña <em>Mapa de "
+"caracteres</em> (ej, Árabe)."
 
 #: C/gedit-plugins-character-map.page:41(p)
-#, fuzzy
 #| msgid "Double-click on the tag in the tag list."
 msgid "Double click your desired character to insert it."
-msgstr "Doble pulsación en la etiqueta en la lista de etiquetas."
+msgstr "Pulse dos veces en el carácter que quiere para insertarlo."
 
 #: C/gedit-plugins-character-map.page:44(p)
 msgid ""
 "You must click on the editing view of your document to continue editing "
 "normally."
 msgstr ""
+"Debe pulsar en la vista de edición de su documento para continuar editándolo "
+"normalmente."
 
 #: C/gedit-plugins-change-case.page:17(desc)
 msgid "Change the case of selected text"
@@ -2807,7 +2809,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-bookmarks.page:22(p)
-#, fuzzy
 #| msgid ""
 #| "To enable the <app>Sort</app> plugin, select <guiseq><gui>Edit</"
 #| "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Sort</gui></guiseq>."
@@ -2815,9 +2816,9 @@ msgid ""
 "To enable the bookmark plugin, select <guiseq><gui>Edit</gui><gui> "
 "Preferences</gui><gui>Plugins</gui><gui>Bookmarks</gui></guiseq>."
 msgstr ""
-"Para activar el complemento <app>Ordenar</app> seleccione "
-"<guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Complementos</"
-"gui><gui>Ordenar</gui></guiseq>."
+"Para activar el complemento de marcadores, seleccione <guiseq><gui>Editar</"
+"gui><gui> Preferencias</gui><gui>Complementos</gui><gui>Marcadores</gui></"
+"guiseq>."
 
 #: C/gedit-plugins-bookmarks.page:26(title)
 msgid ""
@@ -2830,10 +2831,6 @@ msgid "Navigate to the line where you want to insert or remove the bookmark."
 msgstr ""
 
 #: C/gedit-plugins-bookmarks.page:30(p)
-#| msgid ""
-#| "<app>gedit</app> will undo one action every time you press "
-#| "<keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</"
-#| "gui><gui>Undo</gui></guiseq>."
 msgid ""
 "Press <keyseq><key>Ctrl</key><key>Alt</key><key>B</key></keyseq>, or click "
 "<guiseq><gui>Edit</gui><gui>Toggle Bookmark</gui></guiseq>."
@@ -2844,9 +2841,6 @@ msgid "To move between bookmarks:"
 msgstr "Para moverse entre marcadores:"
 
 #: C/gedit-plugins-bookmarks.page:37(p)
-#| msgid ""
-#| "Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</"
-#| "key><key> Shift</key><key>G</key></keyseq>."
 msgid ""
 "Press <keyseq><key>Ctrl</key><key>B</key></keyseq> to move to the next "
 "bookmark."
@@ -2855,9 +2849,6 @@ msgstr ""
 "marcador."
 
 #: C/gedit-plugins-bookmarks.page:39(p)
-#| msgid ""
-#| "Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</"
-#| "key><key> Shift</key><key>G</key></keyseq>."
 msgid ""
 "Press <keyseq><key>Ctrl</key><key>Shift</key><key>B</key></keyseq> to move "
 "to the previous bookmark."
@@ -2956,11 +2947,13 @@ msgstr ""
 
 #: C/gedit-open-recent.page:25(p)
 msgid ""
-"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</gui><gui>gedit-"
-"2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq>."
+"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</"
+"gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></"
+"guiseq>."
 msgstr ""
-"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</gui><gui>gedit-"
-"2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</gui></guiseq>."
+"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</"
+"gui><gui>gedit-2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</"
+"gui></guiseq>."
 
 #: C/gedit-open-recent.page:26(p)
 msgid ""
@@ -6849,8 +6842,8 @@ msgstr ""
 #~ "pane to show the tag list tab."
 #~ msgstr ""
 #~ "Por omisión, el panel lateral muestra una pestaña conteniendo una lista "
-#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en la "
-#~ "parte de abajo del panel lateral para mostrar la pestaña de listas de "
+#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en "
+#~ "la parte de abajo del panel lateral para mostrar la pestaña de listas de "
 #~ "etiquetas."
 
 #~ msgid ""
