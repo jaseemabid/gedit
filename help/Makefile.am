@@ -39,6 +39,7 @@ DOC_PAGES = \
 	gedit-plugins-multi-edit.page \
 	gedit-plugins-pyconsole.page \
 	gedit-plugins-quick-open.page \
+	gedit-plugins-session-saver.page \
 	gedit-plugins-snippets.page \
 	gedit-plugins-sort.page \
 	gedit-plugins-tag-list.page \
