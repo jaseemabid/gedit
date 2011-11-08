@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-11-07 15:14+0000\n"
-"PO-Revision-Date: 2011-11-07 23:29+0100\n"
+"POT-Creation-Date: 2011-11-08 11:15+0000\n"
+"PO-Revision-Date: 2011-11-08 14:10+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -40,6 +40,7 @@ msgstr "editor de textos gedit"
 #: C/gedit-printing.page:11(name) C/gedit-plugins-word-completion.page:9(name)
 #: C/gedit-plugins-terminal.page:10(name)
 #: C/gedit-plugins-tag-list.page:13(name) C/gedit-plugins-sort.page:13(name)
+#: C/gedit-plugins-session-saver.page:9(name)
 #: C/gedit-plugins-quick-open.page:9(name)
 #: C/gedit-plugins-pyconsole.page:9(name)
 #: C/gedit-plugins-multi-edit.page:9(name)
@@ -78,6 +79,7 @@ msgstr "Jim Campbell"
 #: C/gedit-plugins-word-completion.page:10(email)
 #: C/gedit-plugins-terminal.page:11(email)
 #: C/gedit-plugins-tag-list.page:14(email) C/gedit-plugins-sort.page:14(email)
+#: C/gedit-plugins-session-saver.page:10(email)
 #: C/gedit-plugins-quick-open.page:10(email)
 #: C/gedit-plugins-pyconsole.page:10(email)
 #: C/gedit-plugins-multi-edit.page:10(email)
@@ -463,7 +465,7 @@ msgid ""
 msgstr ""
 "Usar la característica de comprobación de ortografía en <app>gedit</app> "
 "requiere que primero active el complemento del corrector ortográfico. Para "
-"activar el complemento, seleccione <guiseq><gui>Editar</"
+"activar este complemento, seleccione <guiseq><gui>Editar</"
 "gui><gui>Preferencias</gui><gui>Complementos</gui><gui>Corrector "
 "ortográfico</gui></guiseq>."
 
@@ -907,8 +909,8 @@ msgid ""
 "Press the <key>Ctrl</key> and use your mouse or touchpad's <key>scroll</key> "
 "feature to move up or down through the text."
 msgstr ""
-"Pulse <key>Ctrl</key> y use el <key>deslizador</key> de su ratón o "
-"«touchpad» para moverse hacia arriba o hacia abajo a través del texto."
+"Pulse <key>Ctrl</key> y use el <key>deslizador</key> de su ratón o «touchpad» "
+"para moverse hacia arriba o hacia abajo a través del texto."
 
 #: C/gedit-search.page:47(p)
 msgid ""
@@ -1217,7 +1219,6 @@ msgid "Scalable Vector Graphic (.svg)"
 msgstr "Gráfico vectorial escalable (.svg)"
 
 #: C/gedit-plugins-word-completion.page:14(name)
-#: C/gedit-plugins-word-completion.page:24(cite)
 #: C/gedit-plugins-character-map.page:14(name)
 #: C/gedit-plugins-character-map.page:24(cite)
 msgid "Paul Weaver"
@@ -1236,18 +1237,7 @@ msgstr "Autocompletar palabras o fragmentos de código según escribe"
 msgid "Word completion"
 msgstr "Completado de palabras"
 
-#: C/gedit-plugins-word-completion.page:25(p)
-msgid ""
-"This assumes the reader knows how to use gedit in general. By the end of "
-"this page the reader will be able to use the word completion plugin whilst "
-"editing text documents or code."
-msgstr ""
-"Esto asume que el lector conoce cómo usar gedit a nivel general. Al final de "
-"esta página, el lector podrá usar el complemento de completado de palabras "
-"mientras edita documentos de texto o código."
-
-#: C/gedit-plugins-word-completion.page:30(p)
-#, fuzzy
+#: C/gedit-plugins-word-completion.page:23(p)
 #| msgid ""
 #| "The <em>Document Statistics</em> plugin can show you various statistics "
 #| "about your current document. To enable this plugin, select "
@@ -1259,12 +1249,12 @@ msgid ""
 "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Word "
 "Completion</gui></guiseq>."
 msgstr ""
-"El complemento <em>Estadísticas del documento</em> puede mostrarle varias "
-"estadísticas sobre el documento actual. Para activar este complemento, "
-"seleccione <guiseq><gui>Editar</gui><gui>Preferencias</"
-"gui><gui>Complementos</gui><gui>Estadísticas del documento</gui></guiseq>."
+"El complemento <app>Completado de palabras</app> puede acelerar la edición "
+"sugiriéndole completados de palabras a medida que escribe. Para activar este "
+"complemento, seleccione <guiseq><gui>Editar</gui><gui>Preferencias</"
+"gui><gui>Complementos</gui><gui>Completado de palabras</gui></guiseq>."
 
-#: C/gedit-plugins-word-completion.page:32(p)
+#: C/gedit-plugins-word-completion.page:28(p)
 msgid ""
 "While editing, the <app>Word Completion</app> plugin will automatically "
 "display a pop-up list of words that begin with the letters you have already "
@@ -1272,6 +1262,11 @@ msgid ""
 "document and upon pre-defined keywords if your document is of a recognised "
 "format."
 msgstr ""
+"Mientras edita, el complemento de <app>Completado de palabras</app> mostrará "
+"automáticamente una lista emergente de palabras que comiencen por las letras "
+"que ya haya escrito. Las sugerencias de palabras se basan en palabras que "
+"aparecen en cualquier parte del documento y en palabras calve predefinidas "
+"si su documento tiene un formato reconocido."
 
 #: C/gedit-plugins-word-completion.page:34(p)
 msgid ""
@@ -1392,8 +1387,8 @@ msgid ""
 msgstr ""
 "El panel lateral muestra inicialmente una lista de documentos abiertos, por "
 "lo que para ver y usar la <app>Lista de etiquetas</app>, deberá pulsar en la "
-"pestaña que muestra el icono «más» en la parte inferior del panel lateral. "
-"El icono se parece a esto:"
+"pestaña que muestra el icono «más» en la parte inferior del panel lateral. El "
+"icono se parece a esto:"
 
 #: C/gedit-plugins-tag-list.page:39(title)
 msgid "Inserting Tags and Special Characters"
@@ -1530,8 +1525,8 @@ msgid ""
 "The Sort dialog will open, allowing you to choose between several sorting "
 "options:"
 msgstr ""
-"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones "
-"de ordenación:"
+"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones de "
+"ordenación:"
 
 #: C/gedit-plugins-sort.page:31(p)
 msgid ""
@@ -1575,8 +1570,112 @@ msgstr "Recortes"
 msgid "Coming soon!"
 msgstr "Muy pronto"
 
+#: C/gedit-plugins-session-saver.page:13(desc)
+msgid "Save and restore your working sessions"
+msgstr "Guardar y restaurar sus sesiones de trabajo"
+
+#: C/gedit-plugins-session-saver.page:16(title)
+msgid "Session Saver"
+msgstr "Guardador de sesiones"
+
+#: C/gedit-plugins-session-saver.page:18(p)
+#| msgid ""
+#| "The <em>Document Statistics</em> plugin can show you various statistics "
+#| "about your current document. To enable this plugin, select "
+#| "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</"
+#| "gui><gui>Document Statisics</gui></guiseq>."
+msgid ""
+"The <app>Session Saver</app> plugin saves groups of files together so that "
+"you can open them together at a later time. To enable the plugin, select "
+"<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Session "
+"Saver</gui></guiseq>."
+msgstr ""
+"El complemento <em>Guardador de sesiones</em> guarda grupos de archivos "
+"juntos, por lo que que puede puede abrirlos juntos más tarde. Para activar "
+"este complemento, seleccione <guiseq><gui>Editar</gui><gui>Preferencias</"
+"gui><gui>Complementos</gui><gui>Guardador de sesiones</gui></guiseq>."
+
+#: C/gedit-plugins-session-saver.page:24(title)
+msgid "To save a new session:"
+msgstr "Para guardar una sesión nueva:"
+
+#: C/gedit-plugins-session-saver.page:25(p)
+#| msgid ""
+#| "Select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Font &amp; "
+#| "Colors</gui></guiseq>."
+msgid ""
+"Select <guiseq><gui>File</gui><gui>Saved Sessions</gui><gui>Save current "
+"session</gui></guiseq>."
+msgstr ""
+"Seleccione <guiseq><gui>Archivo</gui><gui>Sesiones guardadas</"
+"gui><gui>Guardar sesión actual</gui></guiseq>."
+
+#: C/gedit-plugins-session-saver.page:27(p)
+msgid "Type a session name in the <gui>Save session</gui> dialog box."
+msgstr ""
+"Escriba un nombre para la sesión en el cuadro de diálogo <gui>Guardar "
+"sesión</gui>."
+
+#: C/gedit-plugins-session-saver.page:29(p)
+#| msgid "Click <gui>Open</gui>."
+msgid "Click <gui>Save</gui>."
+msgstr "Pulse <gui>Guardar</gui>."
+
+#: C/gedit-plugins-session-saver.page:33(title)
+msgid "To open an existing session:"
+msgstr "Para abrir una sesión existente:"
+
+#: C/gedit-plugins-session-saver.page:34(p)
+#| msgid "Select <guiseq><gui>Edit</gui><gui>Change Case</gui></guiseq>"
+msgid "Select <guiseq><gui>File</gui><gui>Saved Sessions</gui></guiseq>."
+msgstr ""
+"Seleccione <guiseq><gui>Archivo</gui><gui>Sesiones guardadas</gui></guiseq>."
+
+#: C/gedit-plugins-session-saver.page:36(p)
+msgid "Click the name of your desired session."
+msgstr "Pulse en el nombre de la sesión que quiere."
+
+#: C/gedit-plugins-session-saver.page:40(title)
+msgid "To delete an existing session:"
+msgstr "Para eliminar una sesión existente:"
+
+#: C/gedit-plugins-session-saver.page:41(p)
+#| msgid ""
+#| "Select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Font &amp; "
+#| "Colors</gui></guiseq>."
+msgid ""
+"Select <guiseq><gui>File</gui><gui>Saved Sessions</gui><gui> Manage saved "
+"sessions</gui></guiseq>."
+msgstr ""
+"Seleccione <guiseq><gui>Archivo</gui><gui>Sesiones guardadas</"
+"gui><gui>Gestionar sesiones guardadas</gui></guiseq>."
+
+#: C/gedit-plugins-session-saver.page:43(p)
+#| msgid ""
+#| "Select the check box next to the name of the plugin that you want to "
+#| "enable."
+msgid "Select the name of the session that you want to delete."
+msgstr "Seleccione el nombre de la sesión que quiere eliminar."
+
+#: C/gedit-plugins-session-saver.page:45(p)
+#| msgid "Click <gui>Open</gui>."
+msgid "Click <gui>Delete</gui>."
+msgstr "Pulse <gui>Eliminar</gui>."
+
+#: C/gedit-plugins-session-saver.page:46(p)
+#| msgid "Click <gui>Open</gui>."
+msgid "Click <gui>Close</gui>."
+msgstr "Pulse <gui>Cerrar</gui>."
+
+#: C/gedit-plugins-session-saver.page:47(p)
+msgid ""
+"The session name will still be listed in your list of sessions until you "
+"close <app>gedit</app>."
+msgstr ""
+"El nombre de la sesión aparecerá en su lista de sesiones hasta que cierre "
+"<app>gedit</app>."
+
 #: C/gedit-plugins-quick-open.page:13(desc)
-#| msgid "Open a file or set of files"
 msgid "Quickly open a file or set of files"
 msgstr "Abrir rápidamente un archivo o un conjunto de archivos"
 
@@ -1585,7 +1684,6 @@ msgid "Quick open"
 msgstr "Apertura rápida"
 
 #: C/gedit-plugins-quick-open.page:18(p)
-#, fuzzy
 #| msgid ""
 #| "Using the spell-check feature in <app>gedit</app> requires that you first "
 #| "enable the spell-check plugin. To enable the plugin, select "
@@ -1597,18 +1695,17 @@ msgid ""
 "To enable this plugin, select <guiseq><gui>Edit</gui><gui> Preferences</"
 "gui><gui>Plugins</gui><gui>Quick Open</gui></guiseq>."
 msgstr ""
-"Usar la característica de comprobación de ortografía en <app>gedit</app> "
-"requiere que primero active el complemento del corrector ortográfico. Para "
-"activar el complemento, seleccione <guiseq><gui>Editar</"
-"gui><gui>Preferencias</gui><gui>Complementos</gui><gui>Corrector "
-"ortográfico</gui></guiseq>."
+"Como su propio nombre indica, el complemento de <app>Apertura rápida</app> "
+"le ayuda a abrir archivos más rápidamente que de la manera habitual. Para "
+"activar este complemento, seleccione <guiseq><gui>Editar</gui><gui> "
+"Preferencias</gui><gui>Complementos</gui><gui>Apertura rápida</gui></guiseq>."
 
 #: C/gedit-plugins-quick-open.page:23(p)
 msgid "Once you've enabled it, here is how to use the plugin:"
 msgstr ""
+"Una vez que lo haya activado, aquí se explica cómo usar el complemento:"
 
 #: C/gedit-plugins-quick-open.page:26(p)
-#, fuzzy
 #| msgid ""
 #| "<app>gedit</app> will undo one action every time you press "
 #| "<keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</"
@@ -1618,25 +1715,26 @@ msgid ""
 "key><key>Alt</key><key>O</key></keyseq>, or by selecting <guiseq><gui>File</"
 "gui><gui>Quick Open</gui></guiseq>."
 msgstr ""
-"<app>gedit</app>deshará una acción cada vez que pulse <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> o seleccione <guiseq><gui>Editar</"
-"gui><gui>Deshacer</gui></guiseq>."
+"Abra el diálogo <app>Apertura rápida</app> pulsando <keyseq><key> Ctrl</"
+"key><key>Alt</key><key>O</key></keyseq>, o seleccionando "
+"<guiseq><gui>Archivo</gui><gui>Apertura rápida</gui></guiseq>."
 
 #: C/gedit-plugins-quick-open.page:29(p)
 msgid "The <gui>Quick Open</gui> file dialog will appear."
-msgstr ""
+msgstr "Aparecerá el diálogo <gui>Apertura rápida</gui> de archivos."
 
 #: C/gedit-plugins-quick-open.page:30(p)
-#, fuzzy
 #| msgid "Find and select the file that you wish to open."
 msgid "Use your mouse to select the file or files that you want to open."
-msgstr "Buscar y seleccionar el archivo que quiere abrir."
+msgstr "Use su ratón para seleccionar los archivos que quiere abrir."
 
 #: C/gedit-plugins-quick-open.page:32(p)
 msgid ""
 "To select several individual files, hold down your <key>Ctrl</key> key while "
 "you click on the files that you want to open."
 msgstr ""
+"Para seleccionar varios archivos individuales, mantenga pulsada la tecla "
+"<key>Ctrl</key> mientras pulsa sobre los archivos que quiere abrir."
 
 #: C/gedit-plugins-quick-open.page:34(p)
 msgid ""
@@ -1644,6 +1742,9 @@ msgid ""
 "hold down the <key>Shift</key> key, and then click on the last file in the "
 "list that you want to open."
 msgstr ""
+"Para seleccionar un grupo de archivos, pulse sobre el primero de ellos, "
+"mantenga pulsada la tecla <key>Mayús</key>, y pulse sobre el último archivo "
+"de la lista de archivos que quiera abrir."
 
 #: C/gedit-plugins-quick-open.page:37(p) C/gedit-open-on-server.page:28(p)
 msgid "Click <gui>Open</gui>."
@@ -1654,6 +1755,8 @@ msgid ""
 "The <app>Quick Open</app> plugin will only display files that you have "
 "previously opened."
 msgstr ""
+"El complemento de <app>Apertura rápida</app> sólo mostrará los archivos que "
+"haya abierto previamente."
 
 #: C/gedit-plugins-pyconsole.page:12(desc)
 msgid "Add an interactive Python console to the bottom pane"
@@ -1716,7 +1819,7 @@ msgid ""
 msgstr ""
 "El complemento <em>Edición múltiple</em> le permite editar un documento en "
 "varios sitios a la vez. Esto puede ser útil para realizar tareas de edición "
-"tediosas. Para activar el complemento de edición múltiple, seleccione "
+"tediosas. Para activar este complemento de edición múltiple, seleccione "
 "<guiseq><gui>Editar</gui><gui> Preferencias</gui><gui>Complementos</"
 "gui><gui>Edición múltiple</gui></guiseq>."
 
@@ -2224,8 +2327,7 @@ msgid ""
 msgstr ""
 "Este complemento es para usuarios avanzados y para usarlo correctamente "
 "requiere conocimientos de «script». Use este complemento con cuidado, ya que "
-"errores con sus «script» pueden afectar a su trabajo de forma no "
-"intencionada."
+"errores con sus «script» pueden afectar a su trabajo de forma no intencionada."
 
 #: C/gedit-plugins-draw-spaces.page:13(desc)
 msgid "Show white space between words or portions of code"
@@ -2282,10 +2384,9 @@ msgid "Leading spaces"
 msgstr ""
 
 #: C/gedit-plugins-draw-spaces.page:31(p)
-#, fuzzy
 #| msgid "Replace text"
 msgid "Spaces in text"
-msgstr "Reemplazar texto"
+msgstr "Espacios en el texto"
 
 #: C/gedit-plugins-draw-spaces.page:32(p)
 msgid "Trailing spaces"
@@ -2399,7 +2500,7 @@ msgstr ""
 
 #: C/gedit-plugins-commander.page:25(p)
 msgid "The last key in the above key combination is a period."
-msgstr ""
+msgstr "La última tecla de la combinación de teclas indicada es un punto («.»)."
 
 #: C/gedit-plugins-commander.page:29(p)
 msgid "First step..."
@@ -2416,6 +2517,7 @@ msgstr "Tercer paso..."
 #: C/gedit-plugins-color-picker.page:13(desc)
 msgid "Pick a color from a dialog and insert its hexadecimal representation"
 msgstr ""
+"Seleccionar un color de un diálogo e insertar su representación hexadecimal"
 
 #: C/gedit-plugins-color-picker.page:16(title)
 msgid "Color picker"
@@ -2427,9 +2529,11 @@ msgid ""
 "that represent a certain color. This can make it easier to choose and use "
 "the correct color in your programs."
 msgstr ""
+"El complemento <app>selector de color</app> le ayuda a insertar el código de "
+"caracteres que representa un color determinado. Esto puede simplificar el "
+"elegir y usar el color correcto en sus programas."
 
 #: C/gedit-plugins-color-picker.page:22(p)
-#, fuzzy
 #| msgid ""
 #| "To enable the <app>Sort</app> plugin, select <guiseq><gui>Edit</"
 #| "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Sort</gui></guiseq>."
@@ -2437,9 +2541,9 @@ msgid ""
 "To enable the color picker plugin, select <guiseq><gui> Edit</"
 "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Color Picker</gui></guiseq>."
 msgstr ""
-"Para activar el complemento <app>Ordenar</app> seleccione "
-"<guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Complementos</"
-"gui><gui>Ordenar</gui></guiseq>."
+"Para activar el selector de color, seleccione <guiseq><gui> Editar</"
+"gui><gui>Preferencias</gui><gui>Complementos</gui><gui>Selector de color</"
+"gui></guiseq>."
 
 #: C/gedit-plugins-color-picker.page:26(p)
 msgid "To open and use the color picker:"
@@ -2454,9 +2558,6 @@ msgstr ""
 "código del color."
 
 #: C/gedit-plugins-color-picker.page:30(p)
-#| msgid ""
-#| "Select <guiseq><gui>Tools</gui><gui>Autocheck Spelling</gui></guiseq> to "
-#| "make <app>gedit</app> highlight spelling errors while you type."
 msgid ""
 "Select <guiseq><gui>Tools</gui><gui>Pick Color...</gui></guiseq>. The color "
 "picker dialog will appear."
@@ -2469,6 +2570,8 @@ msgid ""
 "If the color that you want to select is currently on your screen, click on "
 "the icon that looks like an eyedropper."
 msgstr ""
+"Si el color que quiere seleccionar está actualmente en su pantalla, pulse en "
+"el icono que parece un cuentagotas."
 
 #: C/gedit-plugins-color-picker.page:34(p)
 msgid ""
@@ -2491,7 +2594,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-color-picker.page:42(p)
-#| msgid "To perform the sort operation, click <gui>Sort</gui>."
 msgid "To close the <app>color picker</app>, click <gui>Close</gui>."
 msgstr "Para cerrar el <app>selector de color</app>, pulse <gui>Cerrar</gui>."
 
@@ -2559,20 +2661,18 @@ msgid ""
 msgstr "Resalte el fragmento de texto que quiere cambiar."
 
 #: C/gedit-plugins-code-comment.page:32(p)
+#, fuzzy
 #| msgid ""
-#| "Open the Replace tool by clicking <guiseq><gui>Search</gui><gui>Replace</"
-#| "gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+#| "To add a comment, click <guiseq><gui>Edit</gui><gui>Comment Code </gui></"
+#| "guiseq>, or press <keyseq><key>Ctrl</key><key>M</key></keyseq>."
 msgid ""
-"To add a comment, click <guiseq><gui>Edit</gui><gui>Comment Code </gui></"
+"To add a comment, click <guiseq><gui>Edit</gui><gui>Comment Code</gui></"
 "guiseq>, or press <keyseq><key>Ctrl</key><key>M</key></keyseq>."
 msgstr ""
 "Para añadir un comentario, pulse <guiseq><gui>Editar</gui><gui>Comentar "
 "código</gui></guiseq>, o pulse <keyseq><key>Ctrl</key><key>M</key></keyseq>."
 
-#: C/gedit-plugins-code-comment.page:35(p)
-#| msgid ""
-#| "Open the Replace tool by clicking <guiseq><gui>Search</gui><gui>Replace</"
-#| "gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+#: C/gedit-plugins-code-comment.page:34(p)
 msgid ""
 "To remove a comment, click <guiseq><gui>Edit</gui><gui>Uncomment Code</gui></"
 "guiseq>, or press <keyseq><key>Shift</key><key>Ctrl</key><key>M</key></"
@@ -2582,7 +2682,7 @@ msgstr ""
 "código</gui></guiseq>, o pulse <keyseq><key>Mayús</key><key>Ctrl</"
 "key><key>M</key></keyseq>."
 
-#: C/gedit-plugins-code-comment.page:40(p)
+#: C/gedit-plugins-code-comment.page:39(p)
 msgid ""
 "<app>Gedit</app> will automatically use the correct style of comment based "
 "on the language or syntax of the file. If <app>gedit </app> doesn't identify "
@@ -2609,11 +2709,6 @@ msgstr ""
 "insertar caracteres en sus documentos."
 
 #: C/gedit-plugins-character-map.page:29(p)
-#| msgid ""
-#| "The <em>Document Statistics</em> plugin can show you various statistics "
-#| "about your current document. To enable this plugin, select "
-#| "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</"
-#| "gui><gui>Document Statisics</gui></guiseq>."
 msgid ""
 "The <app>Character Map</app> plugin enables you to insert characters into "
 "your document that you may not be able to type easily using your keyboard. "
@@ -2641,9 +2736,6 @@ msgstr ""
 "gui><gui>Panel lateral</gui></guiseq>)."
 
 #: C/gedit-plugins-character-map.page:37(p)
-#| msgid ""
-#| "Move the cursor to where you will want to insert the tag or special "
-#| "character."
 msgid ""
 "Place the cursor at the point in your document at which you would like your "
 "special character."
@@ -2652,9 +2744,6 @@ msgstr ""
 "carácter especial."
 
 #: C/gedit-plugins-character-map.page:38(p)
-#| msgid ""
-#| "To activate the <app>side pane</app>, select <guiseq><gui>View</"
-#| "gui><gui>Side Pane</gui></guiseq>, or just press the <key>F9</key> key."
 msgid ""
 "Open the side panel by selecting <guiseq><gui>View</gui><gui>Side Panel</"
 "gui></guiseq>, or by pressing <key>F9</key>."
@@ -2676,7 +2765,6 @@ msgstr ""
 "caracteres</em> (ej, Árabe)."
 
 #: C/gedit-plugins-character-map.page:41(p)
-#| msgid "Double-click on the tag in the tag list."
 msgid "Double click your desired character to insert it."
 msgstr "Pulse dos veces en el carácter que quiere para insertarlo."
 
@@ -2809,9 +2897,6 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-bookmarks.page:22(p)
-#| msgid ""
-#| "To enable the <app>Sort</app> plugin, select <guiseq><gui>Edit</"
-#| "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Sort</gui></guiseq>."
 msgid ""
 "To enable the bookmark plugin, select <guiseq><gui>Edit</gui><gui> "
 "Preferences</gui><gui>Plugins</gui><gui>Bookmarks</gui></guiseq>."
@@ -2947,13 +3032,11 @@ msgstr ""
 
 #: C/gedit-open-recent.page:25(p)
 msgid ""
-"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</"
-"gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></"
-"guiseq>."
+"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</gui><gui>gedit-"
+"2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq>."
 msgstr ""
-"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</"
-"gui><gui>gedit-2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</"
-"gui></guiseq>."
+"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</gui><gui>gedit-"
+"2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</gui></guiseq>."
 
 #: C/gedit-open-recent.page:26(p)
 msgid ""
@@ -3445,6 +3528,15 @@ msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2011\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2006-2011\n"
 "María Majadas <maria.majadas@hispalinux.es>, 2005"
+
+#~ msgid ""
+#~ "This assumes the reader knows how to use gedit in general. By the end of "
+#~ "this page the reader will be able to use the word completion plugin "
+#~ "whilst editing text documents or code."
+#~ msgstr ""
+#~ "Esto asume que el lector conoce cómo usar gedit a nivel general. Al final "
+#~ "de esta página, el lector podrá usar el complemento de completado de "
+#~ "palabras mientras edita documentos de texto o código."
 
 #~ msgid "To close the <gui>search window</gui>, press <key>Esc</key>."
 #~ msgstr ""
@@ -5422,12 +5514,6 @@ msgstr ""
 #~ msgstr "Seleccione la pestaña <guilabel>Complementos</guilabel>."
 
 #~ msgid ""
-#~ "Select the check box next to the name of the plugin that you want to "
-#~ "enable."
-#~ msgstr ""
-#~ "Seleccione la casilla junto al nombre del complemento que desea activar."
-
-#~ msgid ""
 #~ "Click <guibutton>Close</guibutton> to close the <guilabel>Preferences</"
 #~ "guilabel> dialog."
 #~ msgstr ""
@@ -6842,8 +6928,8 @@ msgstr ""
 #~ "pane to show the tag list tab."
 #~ msgstr ""
 #~ "Por omisión, el panel lateral muestra una pestaña conteniendo una lista "
-#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en "
-#~ "la parte de abajo del panel lateral para mostrar la pestaña de listas de "
+#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en la "
+#~ "parte de abajo del panel lateral para mostrar la pestaña de listas de "
 #~ "etiquetas."
 
 #~ msgid ""
