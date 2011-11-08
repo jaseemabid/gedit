@@ -1,0 +1,51 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="gedit-plugins-session-saver">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision version="3.4" date="2011-11-07" status="draft"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Save and restore your working sessions</desc>
+  </info>
+
+  <title>Session Saver</title>
+
+  <p>The <app>Session Saver</app> plugin saves groups of files 
+  together so that you can open them together at a later time. To enable the 
+  plugin, select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui>
+  <gui>Session Saver</gui></guiseq>.</p>
+
+  <steps>
+    <title>To save a new session:</title>
+      <item><p>Select <guiseq><gui>File</gui><gui>Saved Sessions</gui><gui>Save 
+      current session</gui></guiseq>.</p></item> 
+      <item><p>Type a session name in the <gui>Save session</gui> dialog box.
+      </p></item>
+      <item><p>Click <gui>Save</gui>.</p></item>
+  </steps>
+  
+  <steps>
+    <title>To open an existing session:</title>
+      <item><p>Select <guiseq><gui>File</gui><gui>Saved Sessions</gui></guiseq>.
+      </p></item>
+      <item><p>Click the name of your desired session.</p></item>
+  </steps>
+  
+  <steps>
+    <title>To delete an existing session:</title>
+      <item><p>Select <guiseq><gui>File</gui><gui>Saved Sessions</gui><gui>
+      Manage saved sessions</gui></guiseq>.</p></item>
+      <item><p>Select the name of the session that you want to delete.</p>
+      </item>
+      <item><p>Click <gui>Delete</gui>.</p></item>
+      <item><p>Click <gui>Close</gui>.</p>
+      <p>The session name will still be listed in your list of sessions until 
+      you close <app>gedit</app>.</p></item>
+  </steps>
+  
+</page>
