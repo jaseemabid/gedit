@@ -75,6 +75,13 @@ add_gedit_styles_path (GtkSourceStyleSchemeManager *mgr)
 	}	
 }
 
+/**
+ * gedit_get_style_scheme_manager:
+ *
+ * Returns the unique #GtkSourceStyleSchemeManager instance used by gedit.
+ *
+ * Return value: (transfer none): the unique #GtkSourceStyleSchemeManager instance.
+ */
 GtkSourceStyleSchemeManager *
 gedit_get_style_scheme_manager (void)
 {
@@ -100,6 +107,15 @@ schemes_compare (gconstpointer a,
 	return g_utf8_collate (name_a, name_b);
 }
 
+/**
+ * gedit_style_scheme_manager_list_schemes_sorted:
+ * @manager:
+ *
+ * Returns the list of style schemes sorted alphabetically.
+ *
+ * Return value: (element-type GtkSourceStyleScheme) (transfer container):
+ *     a newly-allocated list of style schemes.
+ */
 GSList *
 gedit_style_scheme_manager_list_schemes_sorted (GtkSourceStyleSchemeManager *manager)
 {
