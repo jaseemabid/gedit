@@ -1105,11 +1105,7 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                 self.select_iter(piter)
 
         def on_entry_drop_targets_drag_data_received(self, entry, context, x, y, selection_data, info, timestamp):
-                if not Gtk.targets_include_uri(context.targets):
-                        return
-
                 uris = drop_get_uris(selection_data)
-
                 if not uris:
                         return
 

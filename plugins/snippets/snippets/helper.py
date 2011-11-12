@@ -169,13 +169,15 @@ def buffer_line_boundary(buf):
         return (start, iter)
 
 def drop_get_uris(selection):
-        lines = re.split('\\s*[\\n\\r]+\\s*', selection.data.strip())
-        result = []
+        uris = []
+        if selection.targets_include_uri():
+                data = selection.get_data()
+                lines = re.split('\\s*[\\n\\r]+\\s*', data.strip())
 
-        for line in lines:
-                if not line.startswith('#'):
-                        result.append(line)
+                for line in lines:
+                        if not line.startswith('#'):
+                                uris.append(line)
 
-        return result
+        return uris
 
 # ex:ts=8:et:
