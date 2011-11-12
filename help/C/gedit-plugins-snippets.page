@@ -4,7 +4,17 @@
 
 <info>
   <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
-  <revision pkgversion="3.2" version="0.1" date="2010-12-5" status="incomplete"/>
+  <revision pkgversion="3.4" date="2010-12-5" status="incomplete"/>
+  
+  <comment><p>As of 11/11/11 this document is still a work-in-progress. 
+  Translators, please do not attempt to translate this document yet, as it 
+  will likely go through a couple of iterations. Thank you for being awesome.
+  </p></comment>
+  
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
   <credit type="author">
     <name>Daniel Neel</name>
     <email>dneelyep@gmail.com</email>
@@ -15,8 +25,56 @@
 
 <title>Snippets</title>
 
-<!-- TODO: write documentation for gedit snippets -->
+  <p><app>Snippets</app> provide a convenient way of inserting repetitive 
+  portions of code into your files. For example, an HTML snippet for the 
+  <code>img</code> tag would insert the appropriate opening and closing tags, 
+  as well as fixed places where you can enter information such as the path to 
+  the image, the image's alt-text, a description, and the image's height and 
+  width. This can help you complete basic coding tasks more quickly.</p>
+  
+  <p>To enable the <app>Snippets</app> plugin, select <guiseq><gui>Edit</gui>
+  <gui>Preferences</gui><gui>Plugins</gui><gui>Snippets</gui></guiseq>.</p>
 
-<p>Coming soon!</p>
+  <section id="using-snippets">
+    <title>Using snippets</title>
+      <p>The following points will help you get started with using snippets:
+      </p>
+      
+      <list>
+        <item><p>Make sure the syntax is set appropriately.</p>
+        <p>The status bar at the bottom of the <app>gedit</app> window will 
+        show the current language setting. <app>Gedit</app> will normally 
+        detect the language or syntax of the file that you're using, but 
+        sometimes you may need to set it.</p></item>
+      </list>
+        
+      <figure>
+          <desc>In this example, the language is set to HTML.</desc>
+            <media type="image" mime="image/png" 
+            src="figures/gedit-html-snippet.png" >
+            </media>
+      </figure>
+      
+      <list>
+        <item><p>Study the default snippets.</p>       
+        <p>Select <guiseq><gui>Tools</gui><gui>Manage Snippets</gui></guiseq>.
+        Review the snippets that are available for your language or syntax. 
+        Find some basic snippets that you think might be useful for you.</p>
+        </item>
+        <item><p>Try using some of the snippets.</p>
+        <p>Type the snippet text, and then press the <key>Tab</key> key. The 
+        code should auto-complete for you. For example, if you set the syntax 
+        to <em>HTML</em>, type <code>head</code>, and press the <key>Tab</key> 
+        key, you should see something like this:</p></item>
+      </list>
+      
+        <code>
+        <![CDATA[<head>
+          <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+          <title>Page Title</title>
+          
+        </head>]]>
+        </code>
 
+    </section>
 </page>
