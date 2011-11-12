@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <!-- interface-requires gtk+ 2.12 -->
+  <!-- interface-requires gtk+ 3.0 -->
   <object class="GtkDialog" id="dialog">
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">Replace</property>
@@ -19,6 +19,7 @@
             <child>
               <object class="GtkButton" id="close_button">
                 <property name="label">gtk-close</property>
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -35,6 +36,7 @@
             <child>
               <object class="GtkButton" id="replace_all_button">
                 <property name="label" translatable="yes">Replace All</property>
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -51,6 +53,7 @@
             <child>
               <object class="GtkButton" id="replace_button">
                 <property name="label" translatable="yes">Replace</property>
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -67,6 +70,7 @@
             <child>
               <object class="GtkButton" id="find_next_button">
                 <property name="label">gtk-find</property>
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -101,8 +105,6 @@
                 <property name="can_focus">False</property>
                 <property name="row_spacing">12</property>
                 <property name="column_spacing">12</property>
-                <property name="n_rows">2</property>
-                <property name="n_columns">2</property>
                 <child>
                   <object class="GtkLabel" id="search_label">
                     <property name="visible">True</property>
@@ -155,6 +157,7 @@
                 <child>
                   <object class="GtkCheckButton" id="match_case_checkbutton">
                     <property name="label" translatable="yes">_Match case</property>
+                    <property name="use_action_appearance">False</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">False</property>
@@ -172,6 +175,7 @@
                 <child>
                   <object class="GtkCheckButton" id="entire_word_checkbutton">
                     <property name="label" translatable="yes">Match _entire word only</property>
+                    <property name="use_action_appearance">False</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">False</property>
@@ -189,6 +193,7 @@
                 <child>
                   <object class="GtkCheckButton" id="search_backwards_checkbutton">
                     <property name="label" translatable="yes">Search _backwards</property>
+                    <property name="use_action_appearance">False</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">False</property>
@@ -206,6 +211,7 @@
                 <child>
                   <object class="GtkCheckButton" id="wrap_around_checkbutton">
                     <property name="label" translatable="yes">_Wrap around</property>
+                    <property name="use_action_appearance">False</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">False</property>
