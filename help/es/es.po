@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-11-11 15:55+0000\n"
-"PO-Revision-Date: 2011-11-11 16:56+0100\n"
+"POT-Creation-Date: 2011-11-14 21:34+0000\n"
+"PO-Revision-Date: 2011-11-15 18:06+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -40,6 +40,7 @@ msgstr "editor de textos gedit"
 #: C/gedit-printing.page:11(name) C/gedit-plugins-word-completion.page:9(name)
 #: C/gedit-plugins-terminal.page:10(name)
 #: C/gedit-plugins-tag-list.page:13(name) C/gedit-plugins-sort.page:13(name)
+#: C/gedit-plugins-snippets.page:15(name)
 #: C/gedit-plugins-session-saver.page:9(name)
 #: C/gedit-plugins-quick-open.page:9(name)
 #: C/gedit-plugins-pyconsole.page:9(name)
@@ -79,6 +80,7 @@ msgstr "Jim Campbell"
 #: C/gedit-plugins-word-completion.page:10(email)
 #: C/gedit-plugins-terminal.page:11(email)
 #: C/gedit-plugins-tag-list.page:14(email) C/gedit-plugins-sort.page:14(email)
+#: C/gedit-plugins-snippets.page:16(email)
 #: C/gedit-plugins-session-saver.page:10(email)
 #: C/gedit-plugins-quick-open.page:10(email)
 #: C/gedit-plugins-pyconsole.page:10(email)
@@ -166,7 +168,7 @@ msgstr ""
 #: C/gedit-undo-recent-action.page:14(name) C/gedit-tabs.page:15(name)
 #: C/gedit-tabs-moving.page:14(name) C/gedit-search.page:15(name)
 #: C/gedit-replace.page:15(name) C/gedit-plugins-tag-list.page:9(name)
-#: C/gedit-plugins-sort.page:9(name) C/gedit-plugins-snippets.page:9(name)
+#: C/gedit-plugins-sort.page:9(name) C/gedit-plugins-snippets.page:19(name)
 #: C/gedit-plugins-modelines.page:9(name)
 #: C/gedit-plugins-install.page:15(name)
 #: C/gedit-plugins-insert-date-time.page:9(name)
@@ -181,7 +183,7 @@ msgstr "Daniel Neel"
 #: C/gedit-undo-recent-action.page:15(email) C/gedit-tabs.page:16(email)
 #: C/gedit-tabs-moving.page:15(email) C/gedit-search.page:16(email)
 #: C/gedit-replace.page:16(email) C/gedit-plugins-tag-list.page:10(email)
-#: C/gedit-plugins-sort.page:10(email) C/gedit-plugins-snippets.page:10(email)
+#: C/gedit-plugins-sort.page:10(email) C/gedit-plugins-snippets.page:20(email)
 #: C/gedit-plugins-modelines.page:10(email)
 #: C/gedit-plugins-install.page:16(email)
 #: C/gedit-plugins-insert-date-time.page:10(email)
@@ -1550,20 +1552,105 @@ msgstr ""
 msgid "To perform the sort operation, click <gui>Sort</gui>."
 msgstr "Para efectuar la ordenación pulse el botón <gui>Ordenar</gui>."
 
-#: C/gedit-plugins-snippets.page:12(desc)
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gedit-plugins-snippets.page:54(None)
+#| msgid ""
+#| "@@image: 'figures/gedit-side-pane3.png'; "
+#| "md5=4b800d370193ac0ed8db9eb33b86e11c"
+msgid ""
+"@@image: 'figures/gedit-html-snippet.png'; "
+"md5=1f02c599b116ed209e6fb79e3e63b9ca"
+msgstr ""
+"@@image: 'figures/gedit-html-snippet.png'; "
+"md5=1f02c599b116ed209e6fb79e3e63b9ca"
+
+#: C/gedit-plugins-snippets.page:9(p)
+msgid ""
+"As of 11/11/11 this document is still a work-in-progress. Translators, "
+"please do not attempt to translate this document yet, as it will likely go "
+"through a couple of iterations. Thank you for being awesome."
+msgstr ""
+
+#: C/gedit-plugins-snippets.page:22(desc)
 msgid "Use snippets to quickly insert often-used pieces of text"
 msgstr ""
 "Use recortes para insertar rápidamente fragmentos de texto usados "
 "frecuentemente"
 
-#: C/gedit-plugins-snippets.page:16(title)
+#: C/gedit-plugins-snippets.page:26(title)
 msgid "Snippets"
 msgstr "Recortes"
 
-#. TODO: write documentation for gedit snippets
-#: C/gedit-plugins-snippets.page:20(p)
-msgid "Coming soon!"
-msgstr "Muy pronto"
+#: C/gedit-plugins-snippets.page:28(p)
+msgid ""
+"<app>Snippets</app> provide a convenient way of inserting repetitive "
+"portions of code into your files. For example, an HTML snippet for the "
+"<code>img</code> tag would insert the appropriate opening and closing tags, "
+"as well as fixed places where you can enter information such as the path to "
+"the image, the image's alt-text, a description, and the image's height and "
+"width. This can help you complete basic coding tasks more quickly."
+msgstr ""
+
+#: C/gedit-plugins-snippets.page:35(p)
+#| msgid ""
+#| "To enable the <app>Sort</app> plugin, select <guiseq><gui>Edit</"
+#| "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Sort</gui></guiseq>."
+msgid ""
+"To enable the <app>Snippets</app> plugin, select <guiseq><gui>Edit</"
+"gui><gui>Preferences</gui><gui>Plugins</gui><gui>Snippets</gui></guiseq>."
+msgstr ""
+"Para activar el complemento <app>Recortes</app> seleccione "
+"<guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Complementos</"
+"gui><gui>Recortes</gui></guiseq>."
+
+#: C/gedit-plugins-snippets.page:39(title)
+#| msgid "Inserting Snippets"
+msgid "Using snippets"
+msgstr "Usar recortes"
+
+#: C/gedit-plugins-snippets.page:40(p)
+msgid "The following points will help you get started with using snippets:"
+msgstr "Los puntos siguientes le ayudarán a empezar a usar los recortes:"
+
+#: C/gedit-plugins-snippets.page:44(p)
+msgid "Make sure the syntax is set appropriately."
+msgstr "Asegúrese de que la sintaxis está configurada correctamente."
+
+#: C/gedit-plugins-snippets.page:45(p)
+msgid ""
+"The status bar at the bottom of the <app>gedit</app> window will show the "
+"current language setting. <app>Gedit</app> will normally detect the language "
+"or syntax of the file that you're using, but sometimes you may need to set "
+"it."
+msgstr ""
+
+#: C/gedit-plugins-snippets.page:52(desc)
+msgid "In this example, the language is set to HTML."
+msgstr "En este ejemplo, el lenguaje establecido es HTML."
+
+#: C/gedit-plugins-snippets.page:59(p)
+msgid "Study the default snippets."
+msgstr ""
+
+#: C/gedit-plugins-snippets.page:60(p)
+msgid ""
+"Select <guiseq><gui>Tools</gui><gui>Manage Snippets</gui></guiseq>. Review "
+"the snippets that are available for your language or syntax. Find some basic "
+"snippets that you think might be useful for you."
+msgstr ""
+
+#: C/gedit-plugins-snippets.page:64(p)
+msgid "Try using some of the snippets."
+msgstr ""
+
+#: C/gedit-plugins-snippets.page:65(p)
+msgid ""
+"Type the snippet text, and then press the <key>Tab</key> key. The code "
+"should auto-complete for you. For example, if you set the syntax to "
+"<em>HTML</em>, type <code>head</code>, and press the <key>Tab</key> key, you "
+"should see something like this:"
+msgstr ""
 
 #: C/gedit-plugins-session-saver.page:13(desc)
 msgid "Save and restore your working sessions"
@@ -2913,10 +3000,6 @@ msgstr ""
 "moverse al marcador anterior."
 
 #: C/gedit-plugins-bookmarks.page:41(p)
-#| msgid ""
-#| "If you prefer using the mouse, you can click <guiseq><gui>Edit</"
-#| "gui><gui>Goto Next Bookmark</gui></guiseq> or <guiseq><gui>Edit</"
-#| "gui><gui>Goto Previous Bookmark</gui></guiseq>."
 msgid ""
 "If you prefer using the mouse, you can click <guiseq><gui>Edit</gui><gui>Go "
 "to Next Bookmark</gui></guiseq> or <guiseq><gui>Edit</gui><gui>Go to "
@@ -3498,6 +3581,9 @@ msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2011\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2006-2011\n"
 "María Majadas <maria.majadas@hispalinux.es>, 2005"
+
+#~ msgid "Coming soon!"
+#~ msgstr "Muy pronto"
 
 #~ msgid ""
 #~ "This assumes the reader knows how to use gedit in general. By the end of "
@@ -6318,9 +6404,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Junto con <application>gedit</application>, se instalan varios recortes, "
 #~ "que pueden modificarse."
-
-#~ msgid "Inserting Snippets"
-#~ msgstr "Inserción de recortes"
 
 #~ msgid ""
 #~ "To insert a snippet into a document, type its <firstterm>tab trigger</"
