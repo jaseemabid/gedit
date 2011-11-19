@@ -4,9 +4,9 @@
 
 <info>
   <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
-  <revision pkgversion="3.4" date="2010-12-5" status="incomplete"/>
+  <revision pkgversion="3.4" date="2010-12-5" status="draft"/>
   
-  <comment><p>As of 11/11/11 this document is still a work-in-progress. 
+  <comment><p>As of 11/18/11 this document is still a work-in-progress. 
   Translators, please do not attempt to translate this document yet, as it 
   will likely go through a couple of iterations. Thank you for being awesome.
   </p></comment>
@@ -27,10 +27,9 @@
 
   <p><app>Snippets</app> provide a convenient way of inserting repetitive 
   portions of code into your files. For example, an HTML snippet for the 
-  <code>img</code> tag would insert the appropriate opening and closing tags, 
-  as well as fixed places where you can enter information such as the path to 
-  the image, the image's alt-text, a description, and the image's height and 
-  width. This can help you complete basic coding tasks more quickly.</p>
+  <code><![CDATA[<img>]]></code> tag would insert the opening and closing 
+  portions of the tag, as well as fixed places where you can enter image 
+  attributes. This can make writing code easier and faster.</p>
   
   <p>To enable the <app>Snippets</app> plugin, select <guiseq><gui>Edit</gui>
   <gui>Preferences</gui><gui>Plugins</gui><gui>Snippets</gui></guiseq>.</p>
@@ -43,9 +42,10 @@
       <list>
         <item><p>Make sure the syntax is set appropriately.</p>
         <p>The status bar at the bottom of the <app>gedit</app> window will 
-        show the current language setting. <app>Gedit</app> will normally 
-        detect the language or syntax of the file that you're using, but 
-        sometimes you may need to set it.</p></item>
+        show the current language setting, and the language setting is what 
+        allows gedit to insert the proper snippets. <app>Gedit</app> will 
+        normally detect the language or syntax of the file that you're using, 
+        but sometimes you may need to set it.</p></item>
       </list>
         
       <figure>
@@ -56,16 +56,15 @@
       </figure>
       
       <list>
-        <item><p>Study the default snippets.</p>       
+        <item><p>Review the default snippets.</p>       
         <p>Select <guiseq><gui>Tools</gui><gui>Manage Snippets</gui></guiseq>.
         Review the snippets that are available for your language or syntax. 
         Find some basic snippets that you think might be useful for you.</p>
         </item>
         <item><p>Try using some of the snippets.</p>
-        <p>Type the snippet text, and then press the <key>Tab</key> key. The 
-        code should auto-complete for you. For example, if you set the syntax 
-        to <em>HTML</em>, type <code>head</code>, and press the <key>Tab</key> 
-        key, you should see something like this:</p></item>
+        <p>For example, if you set the syntax to <em>HTML</em>, type <code>head
+        </code>, and press the <key>Tab</key> key, you should see something 
+        like this:</p></item>
       </list>
       
         <code>

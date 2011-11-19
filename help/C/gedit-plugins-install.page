@@ -4,7 +4,7 @@
 
   <info>
     <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
-    <revision pkgversion="3.2" version="1.0" date="2011-08-17" status="candidate"/>
+    <revision pkgversion="3.4" version="1.0" date="2011-11-18" status="candidate"/>
     <credit type="author">
       <name>Jim Campbell</name>
       <email>jwcampbell@gmail.com</email>
@@ -15,41 +15,52 @@
       <name>Daniel Neel</name>
       <email>dneelyep@gmail.com</email>
     </credit>
-    <desc>Some gedit plugins need to be manually installed. Here is how to install them.</desc>
+    <desc>How to install third-party plugins</desc>
   </info>
 
   <title>Additional gedit plugins</title>
 
-  <p>Installing third-party plugins gives you extra functionality that is not included by default in <app>gedit</app>. An online list of third-party plugins is maintained <link href="http://live.gnome.org/Gedit/Plugins#third_party">here</link>.</p>
+  <p>Installing third-party plugins gives you extra functionality that isn't 
+  available in default <app>gedit</app> plugins, or even the extra plugins that 
+  are part of the <app>gedit-plugins</app> package. An online list of 
+  third-party plugins is 
+  <link href="http://live.gnome.org/Gedit/Plugins#third_party">kept here</link>.
+  </p>
+  
+  <p>Installing a third-party plugin involves downloading the plugin, placing 
+  the plugin files in the right directory, and activating the plugin.</p>
+  
+  <steps>
+    <item><p>You can usually download a plugin from the plugin's website, but 
+    may need to use a revision-control program like <app>git</app>, <app>
+    bazaar</app>, or <app>subversion</app> to copy a plugin's software 
+    repository from the internet. Refer to the plugin's documentation for 
+    information on getting the plugin.</p></item>
+    <item><p>Place the plugin files into the 
+    <file>/home/<var>username</var>/.local/share/gedit/plugins</file> directory.
+    </p>
+    <p>Of course, replace the word <var>username</var> with your own username.
+    </p></item>
+    <item><p>After you have placed the plugin files into the correct directory, 
+    the plugin will appear in the Preferences menu. Select <guiseq><gui>Edit
+    </gui><gui>Preferences</gui><gui>Plugins</gui><gui>[Name of Plugin]</gui>
+    </guiseq> to enable the plugin.</p></item>
+    <item><p>Click <gui>Close</gui>.</p></item>
+  </steps>
+  
+  <p>After you have enabled the plugin, it should be available for you to use.
+  </p>
+  
+  <note style="tip">
+    <p>The <file>.local</file> directory is hidden by default. To view it and 
+    other hidden files, select <guiseq><gui>View</gui><gui>Show Hidden 
+    Files</gui></guiseq>, or press <keyseq><key>Ctrl</key><key>H</key></keyseq>.
+    </p>
+  </note>
 
-  <section id="gedit-plugins-install-download">
-    <title>Obtain</title>
-    <p>The first step to install a plugin in <app>gedit</app> is to obtain the plugin. Third-party plugins will often be obtained by downloading them from the plugin's web site. Refer to the plugin's documentation for further information on obtaining the plugin - instructions will vary depending on the plugin.</p>
-  </section>
-
-  <section id="gedit-plugins-install-install">
-    <title>Install</title>
-    <!-- Are all plugins released as tarballs? If so, this section should focus on extracting the tarball into the proper directory. If not, it should focus on copying the files into the proper directory, to avoid confusion. Or maybe it would be better to focus solely on copying the files into the directory, as this applies for both a tarball and any other set of files. -->
-    <p>After you have obtained the plugin you wish to install, you will need to install it.</p>
-    <steps>
-      <title>Installing a Plugin</title>
-      <item><p>Locate the plugin files to be installed.</p></item>
-      <item>
-        <p>Install the plugin files:</p>
-        <list>
-          <item><p>Copy the plugin into <file>/home/<var>username</var>/.local/share/gedit/plugins</file></p></item>
-        </list>
-      </item>
-    </steps>
-    <p>After you have moved the plugin files into the correct directory, the plugin will appear in the Preferences menu (<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui></guiseq>). From there, the plugin needs to be enabled to be used.</p>
-
-    <note style="tip">
-      <p>You will need to have hidden files displayed to view the <file>.local</file> directory. To display hidden files, click <guiseq><gui>View</gui><gui>Show Hidden Files</gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
-    </note>
-
-    <note style="important">
-      <p>If the directory <file>.local/share/gedit/plugins/</file> is not present on your system, you will need to create it.</p>
-    </note>
-  </section>
-
+  <note style="tip">
+    <p>If the directory <file>.local/share/gedit/plugins/</file> is not 
+    present on your system, you will need to create it.</p>
+  </note>
+  
 </page>
