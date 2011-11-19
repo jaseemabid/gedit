@@ -227,9 +227,6 @@ main (int argc, char *argv[])
 	/* Init type system as soon as possible */
 	g_type_init ();
 
-	/* Init glib threads asap */
-	g_thread_init (NULL);
-
 	/* Setup debugging */
 	gedit_debug_init ();
 	gedit_debug_message (DEBUG_APP, "Startup");
