@@ -27,8 +27,8 @@ msgstr ""
 "Project-Id-Version: gedit HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-09-05 20:57+0000\n"
-"PO-Revision-Date: 2011-09-04 15:39+0200\n"
+"POT-Creation-Date: 2011-11-15 17:08+0000\n"
+"PO-Revision-Date: 2011-11-24 10:15+0100\n"
 "Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -817,11 +817,11 @@ msgstr "_minutes"
 msgid "Replace"
 msgstr "Remplacer"
 
-#: ../gedit/dialogs/gedit-replace-dialog.c:291
+#: ../gedit/dialogs/gedit-replace-dialog.c:287
 msgid "Replace _All"
 msgstr "_Tout remplacer"
 
-#: ../gedit/dialogs/gedit-replace-dialog.c:292
+#: ../gedit/dialogs/gedit-replace-dialog.c:288
 #: ../gedit/gedit-commands-file.c:572
 msgid "_Replace"
 msgstr "R_emplacer"
@@ -1830,7 +1830,7 @@ msgid_plural "There are %d tabs with errors"
 msgstr[0] "Il y a un onglet avec des erreurs"
 msgstr[1] "Il y a %d onglets avec des erreurs"
 
-#: ../gedit/gedit-style-scheme-manager.c:210
+#: ../gedit/gedit-style-scheme-manager.c:226
 #, c-format
 msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
 msgstr ""
@@ -1874,38 +1874,38 @@ msgid "Saving %s"
 msgstr "Enregistrement de %s"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1834
+#: ../gedit/gedit-tab.c:1844
 msgid "RO"
 msgstr "RO"
 
-#: ../gedit/gedit-tab.c:1881
+#: ../gedit/gedit-tab.c:1891
 #, c-format
 msgid "Error opening file %s"
 msgstr "Erreur lors de l'ouverture du fichier %s"
 
-#: ../gedit/gedit-tab.c:1886
+#: ../gedit/gedit-tab.c:1896
 #, c-format
 msgid "Error reverting file %s"
 msgstr "Erreur lors du rétablissement du fichier %s"
 
-#: ../gedit/gedit-tab.c:1891
+#: ../gedit/gedit-tab.c:1901
 #, c-format
 msgid "Error saving file %s"
 msgstr "Erreur lors de l'enregistrement du fichier %s"
 
-#: ../gedit/gedit-tab.c:1912
+#: ../gedit/gedit-tab.c:1922
 msgid "Unicode (UTF-8)"
 msgstr "Unicode (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1919
+#: ../gedit/gedit-tab.c:1929
 msgid "Name:"
 msgstr "Nom :"
 
-#: ../gedit/gedit-tab.c:1920
+#: ../gedit/gedit-tab.c:1930
 msgid "MIME Type:"
 msgstr "Type MIME :"
 
-#: ../gedit/gedit-tab.c:1921
+#: ../gedit/gedit-tab.c:1931
 msgid "Encoding:"
 msgstr "Codage :"
 
@@ -2211,42 +2211,42 @@ msgstr "Affiche ou masque le panneau inférieur dans la fenêtre actuelle"
 msgid "Please check your installation."
 msgstr "Vérifiez votre installation."
 
-#: ../gedit/gedit-utils.c:1087
+#: ../gedit/gedit-utils.c:1075
 #, c-format
 msgid "Unable to open UI file %s. Error: %s"
 msgstr "Impossible d'ouvrir le fichier d'interface %s. Erreur : %s"
 
-#: ../gedit/gedit-utils.c:1107
+#: ../gedit/gedit-utils.c:1094
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
 msgstr "Impossible de trouver l'objet « %s » dans le fichier %s."
 
 #. Translators: '/ on <remote-share>'
-#: ../gedit/gedit-utils.c:1252
+#: ../gedit/gedit-utils.c:1316
 #, c-format
 msgid "/ on %s"
 msgstr "/ sur %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:623
+#: ../gedit/gedit-view-frame.c:554
 msgid "_Wrap Around"
 msgstr "_Recherche circulaire"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:633
+#: ../gedit/gedit-view-frame.c:564
 msgid "Match _Entire Word Only"
 msgstr "_Mots entiers seulement"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:643
+#: ../gedit/gedit-view-frame.c:574
 msgid "_Match Case"
 msgstr "Res_pecter la casse"
 
-#: ../gedit/gedit-view-frame.c:902
+#: ../gedit/gedit-view-frame.c:775
 msgid "String you want to search for"
 msgstr "Chaîne que vous recherchez"
 
-#: ../gedit/gedit-view-frame.c:909
+#: ../gedit/gedit-view-frame.c:782
 msgid "Line you want to move the cursor to"
 msgstr "La ligne vers laquelle vous souhaitez déplacer le curseur"
 
@@ -2262,7 +2262,7 @@ msgstr "Utilise le mode de coloration %s"
 #: ../plugins/externaltools/tools/manager.py:138
 #: ../plugins/externaltools/tools/manager.py:441
 #: ../plugins/externaltools/tools/manager.py:552
-#: ../plugins/externaltools/tools/manager.py:871
+#: ../plugins/externaltools/tools/manager.py:868
 msgid "Plain Text"
 msgstr "Texte brut"
 
@@ -2547,7 +2547,7 @@ msgstr "Tous les langages"
 
 #: ../plugins/externaltools/tools/manager.py:541
 #: ../plugins/externaltools/tools/manager.py:545
-#: ../plugins/externaltools/tools/manager.py:869
+#: ../plugins/externaltools/tools/manager.py:866
 #: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Tous les langages"
@@ -2699,23 +2699,23 @@ msgstr "_Touche de raccourci :"
 msgid "_Tools:"
 msgstr "_Outils :"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:176
+#: ../plugins/externaltools/tools/windowactivatable.py:179
 msgid "Manage _External Tools..."
 msgstr "Gérer les outils e_xternes..."
 
-#: ../plugins/externaltools/tools/windowactivatable.py:177
+#: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "Opens the External Tools Manager"
 msgstr "Ouvre le gestionnaire d'outils externes"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:180
+#: ../plugins/externaltools/tools/windowactivatable.py:183
 msgid "External _Tools"
 msgstr "Outils e_xternes"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:181
+#: ../plugins/externaltools/tools/windowactivatable.py:184
 msgid "External tools"
 msgstr "Outils externes"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:215
+#: ../plugins/externaltools/tools/windowactivatable.py:218
 msgid "Shell Output"
 msgstr "Sortie du shell"
 
@@ -3183,6 +3183,10 @@ msgstr "Couleur des _erreurs :"
 msgid "Quick Open"
 msgstr "Ouverture rapide"
 
+#: ../plugins/quickopen/quickopen/popup.py:72
+msgid "Type to search..."
+msgstr "Saisissez le nom du fichier à ouvrir..."
+
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:2
 msgid "Quickly open files"
 msgstr "Ouvre rapidement des fichiers"
@@ -3267,11 +3271,11 @@ msgstr "_Extraits de code :"
 msgid "_Tab trigger:"
 msgstr "_Mot déclencheur :"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:148
+#: ../plugins/snippets/snippets/windowactivatable.py:145
 msgid "Manage _Snippets..."
 msgstr "Gérer les _extraits de code..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:149
+#: ../plugins/snippets/snippets/windowactivatable.py:146
 msgid "Manage snippets"
 msgstr "Gérer les extraits de code"
 
