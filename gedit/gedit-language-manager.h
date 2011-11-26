@@ -38,10 +38,6 @@ G_BEGIN_DECLS
 
 GtkSourceLanguageManager	*gedit_get_language_manager	(void);
 
-GSList				*gedit_language_manager_list_languages_sorted
-								(GtkSourceLanguageManager	*lm,
-								 gboolean			 include_hidden);
-
 G_END_DECLS
 
 #endif /* __GEDIT_LANGUAGES_MANAGER_H__ */

@@ -1080,13 +1080,51 @@ create_language_menu_item (GtkSourceLanguage *lang,
 }
 
 static gint
-language_section_compare (GtkSourceLanguage *a,
-			  GtkSourceLanguage *b)
+language_compare (GtkSourceLanguage *lang1,
+		  GtkSourceLanguage *lang2)
 {
-	const gchar *section_a = gtk_source_language_get_section (a);
-	const gchar *section_b = gtk_source_language_get_section (b);
-	
-	return g_utf8_collate (section_a, section_b);
+	const gchar *section1, *section2, *name1, *name2;
+	gchar *tmp1, *tmp2;
+	gint ret;
+
+	section1 = gtk_source_language_get_section (lang1);
+	section2 = gtk_source_language_get_section (lang2);
+	name1 = gtk_source_language_get_name (lang1);
+	name2 = gtk_source_language_get_name (lang2);
+
+	/* we collate the concatenation so that they are
+	 * sorted first by section and then by name */
+	tmp1 = g_strconcat (section1, "::", name1, NULL);
+	tmp2 = g_strconcat (section2, "::", name2, NULL);
+
+	ret = g_utf8_collate (tmp1, tmp2);
+
+	g_free(tmp1);
+	g_free(tmp2);
+
+	return ret;
+}
+
+static GSList *
+get_languages_sorted_by_section (GeditWindow *window)
+{
+	GtkSourceLanguageManager *lm;
+	const gchar * const *ids;
+	gint i;
+	GSList *languages = NULL;
+
+	lm = gedit_get_language_manager ();
+	ids = gtk_source_language_manager_get_language_ids (lm);
+
+	for (i = 0; ids[i] != NULL; i++)
+	{
+		GtkSourceLanguage *lang;
+
+		lang = gtk_source_language_manager_get_language	(lm, ids[i]);
+		languages = g_slist_prepend (languages, lang);
+	}
+
+	return g_slist_sort (languages, (GCompareFunc)language_compare);
 }
 
 static void
@@ -1130,19 +1168,11 @@ create_languages_menu (GeditWindow *window)
 
 	gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (action_none), TRUE);
 
-	/* now add all the known languages */
-	languages = gedit_language_manager_list_languages_sorted (
-						gedit_get_language_manager (),
-						FALSE);
+	languages = get_languages_sorted_by_section (window);
 
-	languages = g_slist_sort (languages, (GCompareFunc)language_section_compare);
-
-	for (l = languages, i = 0; l != NULL; l = l->next, ++i)
+	for (l = languages, i = 0; l != NULL; l = l->next)
 	{
-		create_language_menu_item (l->data,
-					   i,
-					   id,
-					   window);
+		create_language_menu_item (l->data, i, id, window);
 	}
 
 	g_slist_free (languages);
@@ -2144,14 +2174,11 @@ fill_tab_width_combo (GeditWindow *window)
 static void
 fill_language_combo (GeditWindow *window)
 {
-	GtkSourceLanguageManager *manager;
-	GSList *languages;
-	GSList *item;
-	GtkWidget *menu_item;
+	GtkSourceLanguageManager *lm;
+	const gchar * const *ids;
 	const gchar *name;
-	
-	manager = gedit_get_language_manager ();
-	languages = gedit_language_manager_list_languages_sorted (manager, FALSE);
+	GtkWidget *menu_item;
+	gint i;
 
 	name = _("Plain Text");
 	menu_item = gtk_menu_item_new_with_label (name);
@@ -2162,10 +2189,15 @@ fill_language_combo (GeditWindow *window)
 					 GTK_MENU_ITEM (menu_item),
 					 name);
 
-	for (item = languages; item; item = item->next)
+	lm = gedit_get_language_manager ();
+	ids = gtk_source_language_manager_get_language_ids (lm);
+
+	for (i = 0; ids[i] != NULL; i++)
 	{
-		GtkSourceLanguage *lang = GTK_SOURCE_LANGUAGE (item->data);
-		
+		GtkSourceLanguage *lang;
+
+		lang = gtk_source_language_manager_get_language (lm, ids[i]);
+
 		name = gtk_source_language_get_name (lang);
 		menu_item = gtk_menu_item_new_with_label (name);
 		gtk_widget_show (menu_item);
@@ -2179,8 +2211,6 @@ fill_language_combo (GeditWindow *window)
 						 GTK_MENU_ITEM (menu_item),
 						 name);
 	}
-	
-	g_slist_free (languages);
 }
 
 static void

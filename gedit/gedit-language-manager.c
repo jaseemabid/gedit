@@ -48,42 +48,4 @@ gedit_get_language_manager (void)
 	return language_manager;
 }
 
-static gint
-language_compare (GtkSourceLanguage *a,
-		  GtkSourceLanguage *b)
-{
-	const gchar *name_a = gtk_source_language_get_name (a);
-	const gchar *name_b = gtk_source_language_get_name (b);
-
-	return g_utf8_collate (name_a, name_b);
-}
-
-GSList *
-gedit_language_manager_list_languages_sorted (GtkSourceLanguageManager *lm,
-					      gboolean                  include_hidden)
-{
-	GSList *languages = NULL;
-	const gchar * const *ids;
-
-	ids = gtk_source_language_manager_get_language_ids (lm);
-	if (ids == NULL)
-		return NULL;
-
-	while (*ids != NULL)
-	{
-		GtkSourceLanguage *lang;
-
-		lang = gtk_source_language_manager_get_language (lm, *ids);
-		g_return_val_if_fail (GTK_SOURCE_IS_LANGUAGE (lang), NULL);
-		++ids;
-
-		if (include_hidden || !gtk_source_language_get_hidden (lang))
-		{
-			languages = g_slist_prepend (languages, lang);
-		}
-	}
-
-	return g_slist_sort (languages, (GCompareFunc)language_compare);
-}
-
 /* ex:set ts=8 noet: */
