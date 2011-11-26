@@ -549,9 +549,10 @@ ensure_color_scheme_id (GeditPreferencesDialog *dlg,
 static const gchar *
 populate_color_scheme_list (GeditPreferencesDialog *dlg, const gchar *def_id)
 {
-	GSList *schemes;
-	GSList *l;
-	
+	GtkSourceStyleSchemeManager *sm;
+	const gchar * const *ids;
+	gint i;
+
 	gtk_list_store_clear (dlg->priv->schemes_treeview_model);
 	
 	def_id = ensure_color_scheme_id (dlg, def_id);
@@ -561,44 +562,38 @@ populate_color_scheme_list (GeditPreferencesDialog *dlg, const gchar *def_id)
 		           "Please check your GtkSourceView installation.");
 		return NULL;
 	}
-	
-	schemes = gedit_style_scheme_manager_list_schemes_sorted (gedit_get_style_scheme_manager ());
-	l = schemes;
-	while (l != NULL)
+
+	sm = gedit_get_style_scheme_manager ();
+	ids = gtk_source_style_scheme_manager_get_scheme_ids (sm);
+	for (i = 0; ids[i] != NULL; i++)
 	{
 		GtkSourceStyleScheme *scheme;
-		const gchar *id;
 		const gchar *name;
 		const gchar *description;
 		GtkTreeIter iter;
 
-		scheme = GTK_SOURCE_STYLE_SCHEME (l->data);
-				
-		id = gtk_source_style_scheme_get_id (scheme);
+		scheme = gtk_source_style_scheme_manager_get_scheme (sm, ids[i]);
+
 		name = gtk_source_style_scheme_get_name (scheme);
 		description = gtk_source_style_scheme_get_description (scheme);
 
 		gtk_list_store_append (dlg->priv->schemes_treeview_model, &iter);
 		gtk_list_store_set (dlg->priv->schemes_treeview_model,
 				    &iter,
-				    ID_COLUMN, id,
+				    ID_COLUMN, ids[i],
 				    NAME_COLUMN, name,
 				    DESC_COLUMN, description,
 				    -1);
 
 		g_return_val_if_fail (def_id != NULL, NULL);
-		if (strcmp (id, def_id) == 0)
+		if (strcmp (ids[i], def_id) == 0)
 		{
 			GtkTreeSelection *selection;
-			
+
 			selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dlg->priv->schemes_treeview));
 			gtk_tree_selection_select_iter (selection, &iter);
 		}
-		
-		l = g_slist_next (l);
 	}
-	
-	g_slist_free (schemes);
 	
 	return def_id;
 }

@@ -107,43 +107,6 @@ schemes_compare (gconstpointer a,
 	return g_utf8_collate (name_a, name_b);
 }
 
-/**
- * gedit_style_scheme_manager_list_schemes_sorted:
- * @manager:
- *
- * Returns the list of style schemes sorted alphabetically.
- *
- * Return value: (element-type GtkSourceStyleScheme) (transfer container):
- *     a newly-allocated list of style schemes.
- */
-GSList *
-gedit_style_scheme_manager_list_schemes_sorted (GtkSourceStyleSchemeManager *manager)
-{
-	const gchar * const * scheme_ids;
-	GSList *schemes = NULL;
-
-	g_return_val_if_fail (GTK_SOURCE_IS_STYLE_SCHEME_MANAGER (manager), NULL);
-
-	scheme_ids = gtk_source_style_scheme_manager_get_scheme_ids (manager);
-	
-	while (*scheme_ids != NULL)
-	{
-		GtkSourceStyleScheme *scheme;
-
-		scheme = gtk_source_style_scheme_manager_get_scheme (manager, 
-								     *scheme_ids);
-
-		schemes = g_slist_prepend (schemes, scheme);
-
-		++scheme_ids;
-	}
-
-	if (schemes != NULL)
-		schemes = g_slist_sort (schemes, (GCompareFunc)schemes_compare);
-
-	return schemes;
-}
-
 gboolean
 _gedit_style_scheme_manager_scheme_is_gedit_user_scheme (GtkSourceStyleSchemeManager *manager,
 							 const gchar                 *scheme_id)

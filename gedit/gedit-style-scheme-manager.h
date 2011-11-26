@@ -32,10 +32,6 @@ G_BEGIN_DECLS
 GtkSourceStyleSchemeManager *
 		 gedit_get_style_scheme_manager		(void);
 
-/* Returns a sorted list of style schemes */
-GSList		*gedit_style_scheme_manager_list_schemes_sorted
-							(GtkSourceStyleSchemeManager *manager);
-
 /*
  * Non exported functions
  */
