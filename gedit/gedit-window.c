@@ -3037,6 +3037,7 @@ sync_name (GeditTab    *tab,
 	}
 	action = gtk_action_group_get_action (window->priv->documents_list_action_group,
 					      action_name);
+	g_free (action_name);
 
 	/* action may be NULL if the idle has not populated the menu yet */
 	if (action != NULL)
@@ -3052,7 +3053,6 @@ sync_name (GeditTab    *tab,
 		g_object_set (action, "label", escaped_name, NULL);
 		g_object_set (action, "tooltip", tip, NULL);
 
-		g_free (action_name);
 		g_free (tab_name);
 		g_free (escaped_name);
 		g_free (tip);
