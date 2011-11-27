@@ -860,19 +860,9 @@ gedit_view_class_init (GeditViewClass *klass)
 GtkWidget *
 gedit_view_new (GeditDocument *doc)
 {
-	GtkWidget *view;
-
-	gedit_debug_message (DEBUG_VIEW, "START");
-
 	g_return_val_if_fail (GEDIT_IS_DOCUMENT (doc), NULL);
 
-	view = GTK_WIDGET (g_object_new (GEDIT_TYPE_VIEW, "buffer", doc, NULL));
-
-	gedit_debug_message (DEBUG_VIEW, "END: %d", G_OBJECT (view)->ref_count);
-
-	gtk_widget_show_all (view);
-
-	return view;
+	return GTK_WIDGET (g_object_new (GEDIT_TYPE_VIEW, "buffer", doc, NULL));
 }
 
 void
