@@ -1476,6 +1476,7 @@ update_recent_files_menu (GeditWindow *window)
 		                       "label", label,
 		                       "gicon", icon,
 		                       "always-show-image", TRUE,
+		                       "tooltip", tip,
 		                       NULL);
 
 		g_object_set_data_full (G_OBJECT (action),
