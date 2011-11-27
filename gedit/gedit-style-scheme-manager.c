@@ -94,41 +94,28 @@ gedit_get_style_scheme_manager (void)
 	return style_scheme_manager;
 }
 
-static gint
-schemes_compare (gconstpointer a,
-		 gconstpointer b)
-{
-	GtkSourceStyleScheme *scheme_a = (GtkSourceStyleScheme *)a;
-	GtkSourceStyleScheme *scheme_b = (GtkSourceStyleScheme *)b;
-
-	const gchar *name_a = gtk_source_style_scheme_get_name (scheme_a);
-	const gchar *name_b = gtk_source_style_scheme_get_name (scheme_b);
-
-	return g_utf8_collate (name_a, name_b);
-}
-
 gboolean
 _gedit_style_scheme_manager_scheme_is_gedit_user_scheme (GtkSourceStyleSchemeManager *manager,
 							 const gchar                 *scheme_id)
 {
 	GtkSourceStyleScheme *scheme;
-	const gchar *filename;
-	gchar *dir;
 	gboolean res = FALSE;
 
 	scheme = gtk_source_style_scheme_manager_get_scheme (manager, scheme_id);
-	if (scheme == NULL)
-		return FALSE;
+	if (scheme != NULL)
+	{
+		const gchar *filename;
 
-	filename = gtk_source_style_scheme_get_filename (scheme);
-	if (filename == NULL)
-		return FALSE;
+		filename = gtk_source_style_scheme_get_filename (scheme);
+		if (filename != NULL)
+		{
+			gchar *dir;
 
-	dir = get_gedit_styles_path ();
-
-	res = g_str_has_prefix (filename, dir);
-
-	g_free (dir);
+			dir = get_gedit_styles_path ();
+			res = g_str_has_prefix (filename, dir);
+			g_free (dir);
+		}
+	}
 
 	return res;
 }
