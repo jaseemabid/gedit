@@ -296,6 +296,13 @@ restore_button_clicked (GtkButton     *button,
 {
 	gchar *body, *header, *numbers;
 	
+	g_settings_reset (job->priv->print_settings,
+			  GEDIT_SETTINGS_PRINT_FONT_BODY_PANGO);
+	g_settings_reset (job->priv->print_settings,
+			  GEDIT_SETTINGS_PRINT_FONT_HEADER_PANGO);
+	g_settings_reset (job->priv->print_settings,
+			  GEDIT_SETTINGS_PRINT_FONT_NUMBERS_PANGO);
+
 	body = g_settings_get_string (job->priv->print_settings,
 				      GEDIT_SETTINGS_PRINT_FONT_BODY_PANGO);
 	header = g_settings_get_string (job->priv->print_settings,
@@ -306,11 +313,9 @@ restore_button_clicked (GtkButton     *button,
 	gtk_font_button_set_font_name (
 			GTK_FONT_BUTTON (job->priv->body_fontbutton),
 			body);
-
 	gtk_font_button_set_font_name (
 			GTK_FONT_BUTTON (job->priv->headers_fontbutton),
 			header);
-
 	gtk_font_button_set_font_name (
 			GTK_FONT_BUTTON (job->priv->numbers_fontbutton),
 			numbers);
