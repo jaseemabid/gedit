@@ -835,7 +835,6 @@ file_save_as (GeditTab    *tab,
 	GtkWindowGroup *wg;
 	GeditDocument *doc;
 	GFile *file;
-	gboolean uri_set = FALSE;
 	const GeditEncoding *encoding;
 	GeditDocumentNewlineType newline_type;
 
@@ -873,14 +872,13 @@ file_save_as (GeditTab    *tab,
 
 	if (file != NULL)
 	{
-		uri_set = gtk_file_chooser_set_file (GTK_FILE_CHOOSER (save_dialog),
-						     file,
-						     NULL);
+		gtk_file_chooser_set_file (GTK_FILE_CHOOSER (save_dialog),
+					   file,
+					   NULL);
 
 		g_object_unref (file);
 	}
-
-	if (!uri_set)
+	else
 	{
 		GFile *default_path;
 		gchar *docname;
