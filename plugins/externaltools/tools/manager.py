@@ -775,12 +775,12 @@ class Manager:
             return True
             
         col = self.accelerator_collision(name, self.current_node)
-        
+
         if col:
             dialog = Gtk.MessageDialog(self.dialog,
-                                       Gtk.DIALOG_MODAL,
-                                       Gtk.MESSAGE_ERROR,
-                                       Gtk.BUTTONS_OK,
+                                       Gtk.DialogFlags.MODAL,
+                                       Gtk.MessageType.ERROR,
+                                       Gtk.ButtonsType.CLOSE,
                                        _('This accelerator is already bound to %s') % (', '.join(map(lambda x: x.name, col)),))
 
             dialog.run()
