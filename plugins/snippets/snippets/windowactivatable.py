@@ -26,10 +26,15 @@ from library import Library
 from shareddata import SharedData
 from signals import Signals
 
-class Activate(Gedit.Message):
+class Message(Gedit.Message):
         view = GObject.property(type=Gedit.View)
         iter = GObject.property(type=Gtk.TextIter)
+
+class Activate(Message):
         trigger = GObject.property(type=str)
+
+class ParseAndActivate(Message):
+        snippet = GObject.property(type=str)
 
 class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
         __gtype_name__ = "GeditSnippetsWindowActivatable"
@@ -87,11 +92,13 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
                 bus = self.window.get_message_bus()
 
                 bus.register(Activate, '/plugins/snippets', 'activate')
-                bus.register(Activate, '/plugins/snippets', 'parse-and-activate')
+                bus.register(ParseAndActivate, '/plugins/snippets', 'parse-and-activate')
 
                 self.signal_ids = set()
+
                 sid = bus.connect('/plugins/snippets', 'activate', self.on_message_activate, None)
                 self.signal_ids.add(sid)
+
                 sid = bus.connect('/plugins/snippets', 'parse-and-activate', self.on_message_parse_and_activate, None)
                 self.signal_ids.add(sid)
 
@@ -117,6 +124,7 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
 
                 if not iter:
                         iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
+
                 controller.run_snippet_trigger(message.props.trigger, (iter, iter))
 
         def on_message_parse_and_activate(self, bus, message, userdata):
@@ -134,7 +142,8 @@ class WindowActivatable(GObject.Object, Gedit.WindowActivatable, Signals):
                 
                 if not iter:
                         iter = view.get_buffer().get_iter_at_mark(view.get_buffer().get_insert())
-                controller.parse_and_run_snippet(message.props.trigger, iter)
+
+                controller.parse_and_run_snippet(message.props.snippet, iter)
 
         def insert_menu(self):
                 manager = self.window.get_ui_manager()
