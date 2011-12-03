@@ -384,6 +384,7 @@
                             <signal name="key-press-event" handler="on_accelerator_key_press" swapped="no"/>
                             <signal name="focus-out-event" handler="on_accelerator_focus_out" swapped="no"/>
                             <signal name="focus-in-event" handler="on_accelerator_focus_in" swapped="no"/>
+                            <signal name="backspace" handler="on_accelerator_backspace" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>

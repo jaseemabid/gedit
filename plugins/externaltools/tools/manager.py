@@ -287,6 +287,7 @@ class Manager:
             'on_accelerator_key_press'        : self.on_accelerator_key_press,
             'on_accelerator_focus_in'         : self.on_accelerator_focus_in,
             'on_accelerator_focus_out'        : self.on_accelerator_focus_out,
+            'on_accelerator_backspace'        : self.on_accelerator_backspace,
             'on_languages_button_clicked'     : self.on_languages_button_clicked
         }
 
@@ -801,13 +802,6 @@ class Manager:
             entry.set_text(default(self.current_node.shortcut, ''))
             self['commands'].grab_focus()
             return True
-        elif event.keyval == Gdk.KEY_Delete \
-          or event.keyval == Gdk.KEY_BackSpace:
-            entry.set_text('')
-            self.remove_accelerator(self.current_node)
-            self.current_node.shortcut = None
-            self['commands'].grab_focus()
-            return True
         elif event.keyval in range(Gdk.KEY_F1, Gdk.KEY_F12 + 1):
             # New accelerator
             if self.set_accelerator(event.keyval, mask):
@@ -839,6 +833,12 @@ class Manager:
         if self.current_node is not None:
             entry.set_text(default(self.current_node.shortcut, ''))
             self.tool_changed(self.current_node)
+
+    def on_accelerator_backspace(self, entry):
+        entry.set_text('')
+        self.remove_accelerator(self.current_node)
+        self.current_node.shortcut = None
+        self['commands'].grab_focus()
 
     def on_tool_manager_dialog_response(self, dialog, response):
         if response == Gtk.ResponseType.HELP:
