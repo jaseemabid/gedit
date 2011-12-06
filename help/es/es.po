@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-11-14 21:34+0000\n"
-"PO-Revision-Date: 2011-11-15 18:06+0100\n"
+"POT-Creation-Date: 2011-12-03 10:53+0000\n"
+"PO-Revision-Date: 2011-12-06 14:09+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -40,13 +40,13 @@ msgstr "editor de textos gedit"
 #: C/gedit-printing.page:11(name) C/gedit-plugins-word-completion.page:9(name)
 #: C/gedit-plugins-terminal.page:10(name)
 #: C/gedit-plugins-tag-list.page:13(name) C/gedit-plugins-sort.page:13(name)
-#: C/gedit-plugins-snippets.page:15(name)
+#: C/gedit-plugins-snippets.page:9(name)
 #: C/gedit-plugins-session-saver.page:9(name)
 #: C/gedit-plugins-quick-open.page:9(name)
 #: C/gedit-plugins-pyconsole.page:9(name)
 #: C/gedit-plugins-multi-edit.page:9(name)
 #: C/gedit-plugins-modelines.page:13(name)
-#: C/gedit-plugins-install.page:9(name)
+#: C/gedit-plugins-install.page:8(name)
 #: C/gedit-plugins-insert-date-time.page:14(name)
 #: C/gedit-plugins-file-browser.page:13(name)
 #: C/gedit-plugins-external-tools.page:15(name)
@@ -80,13 +80,13 @@ msgstr "Jim Campbell"
 #: C/gedit-plugins-word-completion.page:10(email)
 #: C/gedit-plugins-terminal.page:11(email)
 #: C/gedit-plugins-tag-list.page:14(email) C/gedit-plugins-sort.page:14(email)
-#: C/gedit-plugins-snippets.page:16(email)
+#: C/gedit-plugins-snippets.page:10(email)
 #: C/gedit-plugins-session-saver.page:10(email)
 #: C/gedit-plugins-quick-open.page:10(email)
 #: C/gedit-plugins-pyconsole.page:10(email)
 #: C/gedit-plugins-multi-edit.page:10(email)
 #: C/gedit-plugins-modelines.page:14(email)
-#: C/gedit-plugins-install.page:10(email)
+#: C/gedit-plugins-install.page:9(email)
 #: C/gedit-plugins-insert-date-time.page:15(email)
 #: C/gedit-plugins-file-browser.page:14(email)
 #: C/gedit-plugins-external-tools.page:16(email)
@@ -168,9 +168,9 @@ msgstr ""
 #: C/gedit-undo-recent-action.page:14(name) C/gedit-tabs.page:15(name)
 #: C/gedit-tabs-moving.page:14(name) C/gedit-search.page:15(name)
 #: C/gedit-replace.page:15(name) C/gedit-plugins-tag-list.page:9(name)
-#: C/gedit-plugins-sort.page:9(name) C/gedit-plugins-snippets.page:19(name)
+#: C/gedit-plugins-sort.page:9(name) C/gedit-plugins-snippets.page:13(name)
 #: C/gedit-plugins-modelines.page:9(name)
-#: C/gedit-plugins-install.page:15(name)
+#: C/gedit-plugins-install.page:12(name)
 #: C/gedit-plugins-insert-date-time.page:9(name)
 #: C/gedit-plugins-file-browser.page:9(name)
 #: C/gedit-plugins-external-tools.page:11(name)
@@ -183,9 +183,9 @@ msgstr "Daniel Neel"
 #: C/gedit-undo-recent-action.page:15(email) C/gedit-tabs.page:16(email)
 #: C/gedit-tabs-moving.page:15(email) C/gedit-search.page:16(email)
 #: C/gedit-replace.page:16(email) C/gedit-plugins-tag-list.page:10(email)
-#: C/gedit-plugins-sort.page:10(email) C/gedit-plugins-snippets.page:20(email)
+#: C/gedit-plugins-sort.page:10(email) C/gedit-plugins-snippets.page:14(email)
 #: C/gedit-plugins-modelines.page:10(email)
-#: C/gedit-plugins-install.page:16(email)
+#: C/gedit-plugins-install.page:13(email)
 #: C/gedit-plugins-insert-date-time.page:10(email)
 #: C/gedit-plugins-file-browser.page:10(email)
 #: C/gedit-plugins-external-tools.page:12(email)
@@ -840,7 +840,7 @@ msgstr "F1"
 msgid "Search for text"
 msgstr "Buscar texto"
 
-#: C/gedit-search.page:21(p)
+#: C/gedit-search.page:22(p)
 msgid ""
 "The Find tool can help you find specific sequences of text within in your "
 "file."
@@ -848,11 +848,11 @@ msgstr ""
 "La herramienta de búsqueda le puede ayudar a encontrar secuencias de texto "
 "específicas en su archivo."
 
-#: C/gedit-search.page:24(title)
+#: C/gedit-search.page:26(title)
 msgid "Finding text"
 msgstr "Buscar texto"
 
-#: C/gedit-search.page:25(p)
+#: C/gedit-search.page:27(p)
 msgid ""
 "Open the <gui style=\"menu\">search window</gui> by clicking "
 "<guiseq><gui>Search</gui><gui>Find</gui></guiseq> or pressing "
@@ -864,26 +864,26 @@ msgstr ""
 "<keyseq><key>Ctrl</key><key>F</key></keyseq>. Esto moverá su cursor hasta el "
 "principio de la <gui>ventana de búsqueda</gui>."
 
-#: C/gedit-search.page:30(p)
+#: C/gedit-search.page:32(p)
 msgid "Type the text you wish to search for in the <gui>search window</gui>."
 msgstr ""
 "Introduzca el texto que quiere buscar en la <gui>ventana de búsqueda</gui>."
 
-#: C/gedit-search.page:32(p)
+#: C/gedit-search.page:34(p)
 msgid ""
 "As you type, <app>gedit</app> will begin highlighting the portions of text "
 "that match what you have entered."
 msgstr ""
-"A medida que escribe, <app>gedit</app> empezará a resaltar los fragmentos de "
+"A medida que escribe, <app>gedit</app> empezará a resaltar los recortes de "
 "texto que coniciden con lo que ha escrito."
 
-#: C/gedit-search.page:35(p)
+#: C/gedit-search.page:39(p)
 msgid "To scroll through the search results, do any of the following:"
 msgstr ""
 "Para desplazarse por los resultados de la búsqueda, realice cualquiera de "
 "los siguientes pasos:"
 
-#: C/gedit-search.page:37(p)
+#: C/gedit-search.page:41(p)
 msgid ""
 "Click on the <gui>up</gui> or <gui>down</gui> facing arrows next to the "
 "<gui>search window</gui>"
@@ -891,30 +891,33 @@ msgstr ""
 "Pulse en las flechas <gui>arriba</gui> o <gui>abajo</gui> junto a la "
 "<gui>ventana de búsqueda</gui>"
 
-#: C/gedit-search.page:40(p)
+#: C/gedit-search.page:43(p)
 msgid ""
 "Press the <key>up arrow</key> or <key>down arrow</key> keys on your keyboard"
 msgstr ""
 "Pulse las teclas <key>flecha arriba</key> o <key>flecha abajo</key> en su "
 "teclado"
 
-#: C/gedit-search.page:41(p)
+#: C/gedit-search.page:45(p)
+#| msgid ""
+#| "Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</"
+#| "key><key> Shift</key><key>G</key></keyseq>."
 msgid ""
 "Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</"
-"key><key> Shift</key><key>G</key></keyseq>."
+"key><key>Shift</key><key>G</key></keyseq>."
 msgstr ""
 "Pulse <keyseq><key>Ctrl</key><key>G</key></keyseq> o <keyseq><key>Ctrl</"
 "key><key>Mayús</key><key>G</key></keyseq>."
 
-#: C/gedit-search.page:43(p)
+#: C/gedit-search.page:47(p)
 msgid ""
 "Press the <key>Ctrl</key> and use your mouse or touchpad's <key>scroll</key> "
 "feature to move up or down through the text."
 msgstr ""
-"Pulse <key>Ctrl</key> y use el <key>deslizador</key> de su ratón o «touchpad» "
-"para moverse hacia arriba o hacia abajo a través del texto."
+"Pulse <key>Ctrl</key> y use el <key>deslizador</key> de su ratón o "
+"«touchpad» para moverse hacia arriba o hacia abajo a través del texto."
 
-#: C/gedit-search.page:47(p)
+#: C/gedit-search.page:52(p)
 msgid ""
 "To close the <gui>search window</gui>, press either <key>Esc</key> or "
 "<key>Enter</key>. Pressing <key>Esc</key> will return the cursor to where it "
@@ -926,11 +929,11 @@ msgstr ""
 "donde estaba antes de comenzar la búsqueda. Al pulsar <key>Intro</key> el "
 "cursor volverá a la posición actual en los resultados de la búsqueda."
 
-#: C/gedit-search.page:53(title)
+#: C/gedit-search.page:58(title)
 msgid "Search tips"
 msgstr "Consejos de búsqueda"
 
-#: C/gedit-search.page:54(p)
+#: C/gedit-search.page:59(p)
 msgid ""
 "If you highlight a portion of text with your mouse, and then press "
 "<keyseq><key>Ctrl</key><key>F</key></keyseq>, the text you've highlighted "
@@ -940,7 +943,7 @@ msgstr ""
 "key><key>F</key></keyseq>, el texto que ha resaltado aparecerá en la ventana "
 "de búsqueda."
 
-#: C/gedit-search.page:57(p)
+#: C/gedit-search.page:62(p)
 msgid ""
 "For advanced search options, you can click on the <gui>Magnifying Glass</"
 "gui> icon in the search window, or you can right-click on any portion of the "
@@ -950,7 +953,7 @@ msgstr ""
 "gui> en la ventana de búsqueda, o puede pulsar con el botón derecho en "
 "cualquier parte de la ventana de búsqueda."
 
-#: C/gedit-search.page:60(p)
+#: C/gedit-search.page:65(p)
 msgid ""
 "The text that you've searched for will remain highlighted by gedit, even "
 "after you have completed your search. To remove the highlight, click "
@@ -1233,7 +1236,7 @@ msgstr "ch3pjw@bath.ac.uk"
 
 #: C/gedit-plugins-word-completion.page:18(desc)
 msgid "Autocomplete words or portions of code as you type"
-msgstr "Autocompletar palabras o fragmentos de código según escribe"
+msgstr "Autocompletar palabras o recortes de código según escribe"
 
 #: C/gedit-plugins-word-completion.page:21(title)
 msgid "Word completion"
@@ -1384,8 +1387,8 @@ msgid ""
 msgstr ""
 "El panel lateral muestra inicialmente una lista de documentos abiertos, por "
 "lo que para ver y usar la <app>Lista de etiquetas</app>, deberá pulsar en la "
-"pestaña que muestra el icono «más» en la parte inferior del panel lateral. El "
-"icono se parece a esto:"
+"pestaña que muestra el icono «más» en la parte inferior del panel lateral. "
+"El icono se parece a esto:"
 
 #: C/gedit-plugins-tag-list.page:39(title)
 msgid "Inserting Tags and Special Characters"
@@ -1522,8 +1525,8 @@ msgid ""
 "The Sort dialog will open, allowing you to choose between several sorting "
 "options:"
 msgstr ""
-"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones de "
-"ordenación:"
+"El diálogo «Ordenar» se abrirá, permitiéndole elegir entre varias opciones "
+"de ordenación:"
 
 #: C/gedit-plugins-sort.page:31(p)
 msgid ""
@@ -1554,10 +1557,7 @@ msgstr "Para efectuar la ordenación pulse el botón <gui>Ordenar</gui>."
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gedit-plugins-snippets.page:54(None)
-#| msgid ""
-#| "@@image: 'figures/gedit-side-pane3.png'; "
-#| "md5=4b800d370193ac0ed8db9eb33b86e11c"
+#: C/gedit-plugins-snippets.page:35(None)
 msgid ""
 "@@image: 'figures/gedit-html-snippet.png'; "
 "md5=1f02c599b116ed209e6fb79e3e63b9ca"
@@ -1565,92 +1565,68 @@ msgstr ""
 "@@image: 'figures/gedit-html-snippet.png'; "
 "md5=1f02c599b116ed209e6fb79e3e63b9ca"
 
-#: C/gedit-plugins-snippets.page:9(p)
-msgid ""
-"As of 11/11/11 this document is still a work-in-progress. Translators, "
-"please do not attempt to translate this document yet, as it will likely go "
-"through a couple of iterations. Thank you for being awesome."
-msgstr ""
+#: C/gedit-plugins-snippets.page:16(desc)
+#| msgid "To insert editing points in your file:"
+msgid "Inserting snippets of text into your files"
+msgstr "Insertar recortes de texto en sus archivos"
 
-#: C/gedit-plugins-snippets.page:22(desc)
-msgid "Use snippets to quickly insert often-used pieces of text"
-msgstr ""
-"Use recortes para insertar rápidamente fragmentos de texto usados "
-"frecuentemente"
-
-#: C/gedit-plugins-snippets.page:26(title)
-msgid "Snippets"
-msgstr "Recortes"
-
-#: C/gedit-plugins-snippets.page:28(p)
-msgid ""
-"<app>Snippets</app> provide a convenient way of inserting repetitive "
-"portions of code into your files. For example, an HTML snippet for the "
-"<code>img</code> tag would insert the appropriate opening and closing tags, "
-"as well as fixed places where you can enter information such as the path to "
-"the image, the image's alt-text, a description, and the image's height and "
-"width. This can help you complete basic coding tasks more quickly."
-msgstr ""
-
-#: C/gedit-plugins-snippets.page:35(p)
-#| msgid ""
-#| "To enable the <app>Sort</app> plugin, select <guiseq><gui>Edit</"
-#| "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Sort</gui></guiseq>."
-msgid ""
-"To enable the <app>Snippets</app> plugin, select <guiseq><gui>Edit</"
-"gui><gui>Preferences</gui><gui>Plugins</gui><gui>Snippets</gui></guiseq>."
-msgstr ""
-"Para activar el complemento <app>Recortes</app> seleccione "
-"<guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Complementos</"
-"gui><gui>Recortes</gui></guiseq>."
-
-#: C/gedit-plugins-snippets.page:39(title)
-#| msgid "Inserting Snippets"
+#: C/gedit-plugins-snippets.page:19(title)
 msgid "Using snippets"
 msgstr "Usar recortes"
 
-#: C/gedit-plugins-snippets.page:40(p)
+#: C/gedit-plugins-snippets.page:21(p)
 msgid "The following points will help you get started with using snippets:"
 msgstr "Los puntos siguientes le ayudarán a empezar a usar los recortes:"
 
-#: C/gedit-plugins-snippets.page:44(p)
+#: C/gedit-plugins-snippets.page:24(p)
 msgid "Make sure the syntax is set appropriately."
 msgstr "Asegúrese de que la sintaxis está configurada correctamente."
 
-#: C/gedit-plugins-snippets.page:45(p)
+#: C/gedit-plugins-snippets.page:25(p)
 msgid ""
 "The status bar at the bottom of the <app>gedit</app> window will show the "
-"current language setting. <app>Gedit</app> will normally detect the language "
-"or syntax of the file that you're using, but sometimes you may need to set "
-"it."
+"current language setting, and the language setting is what allows gedit to "
+"insert the proper snippets. <app>Gedit</app> will normally detect the "
+"language or syntax of the file that you're using, but sometimes you may need "
+"to set it."
 msgstr ""
+"La barra de estado en la parte inferior de la ventana de <app>gedit</app> "
+"mostrará la configuración del lenguaje actual, que es lo que permite a Gedit "
+"insertar los recortes adecuados. Normalmente, <app>Gedit</app> detectará el "
+"lenguaje o la sintaxis del archivo que está usando, pero es posible que "
+"algunas veces deba establecerlo."
 
-#: C/gedit-plugins-snippets.page:52(desc)
+#: C/gedit-plugins-snippets.page:33(desc)
 msgid "In this example, the language is set to HTML."
 msgstr "En este ejemplo, el lenguaje establecido es HTML."
 
-#: C/gedit-plugins-snippets.page:59(p)
-msgid "Study the default snippets."
-msgstr ""
+#: C/gedit-plugins-snippets.page:40(p)
+msgid "Review the default snippets."
+msgstr "Revisar los recortes predeterminados."
 
-#: C/gedit-plugins-snippets.page:60(p)
+#: C/gedit-plugins-snippets.page:41(p)
 msgid ""
 "Select <guiseq><gui>Tools</gui><gui>Manage Snippets</gui></guiseq>. Review "
 "the snippets that are available for your language or syntax. Find some basic "
 "snippets that you think might be useful for you."
 msgstr ""
+"Seleccione <guiseq><gui>Herramientas</gui><gui>Gestionar recortes</gui></"
+"guiseq>. Revise los recortes disponibles para su lenguaje o sintaxis. Busque "
+"algunos recortes básicos que crea que pueden serle útiles."
 
-#: C/gedit-plugins-snippets.page:64(p)
+#: C/gedit-plugins-snippets.page:45(p)
 msgid "Try using some of the snippets."
-msgstr ""
+msgstr "Pruebe a usar algunos de los recortes."
 
-#: C/gedit-plugins-snippets.page:65(p)
+#: C/gedit-plugins-snippets.page:46(p)
 msgid ""
-"Type the snippet text, and then press the <key>Tab</key> key. The code "
-"should auto-complete for you. For example, if you set the syntax to "
-"<em>HTML</em>, type <code>head</code>, and press the <key>Tab</key> key, you "
-"should see something like this:"
+"For example, if you set the syntax to <em>HTML</em>, type <code>head\n"
+"        </code>, and press the <key>Tab</key> key, you should see something "
+"like this:"
 msgstr ""
+"Por ejemplo, si establece que la sintaxis es <em>HTML</em>, escriba "
+"<code>head\n"
+"        </code>, y pulse la tecla <key>Tab</key>. Debería ver algo como esto:"
 
 #: C/gedit-plugins-session-saver.page:13(desc)
 msgid "Save and restore your working sessions"
@@ -1727,7 +1703,7 @@ msgstr "Seleccione el nombre de la sesión que quiere eliminar."
 msgid "Click <gui>Delete</gui>."
 msgstr "Pulse <gui>Eliminar</gui>."
 
-#: C/gedit-plugins-session-saver.page:46(p)
+#: C/gedit-plugins-session-saver.page:46(p) C/gedit-plugins-install.page:45(p)
 msgid "Click <gui>Close</gui>."
 msgstr "Pulse <gui>Cerrar</gui>."
 
@@ -2128,105 +2104,115 @@ msgstr ""
 "Para obtener más información acerca de <app>Vim</app> visite el <link href="
 "\"http://www.vim.org/\">sitio web de Vim</link>."
 
-#: C/gedit-plugins-install.page:18(desc)
-msgid ""
-"Some gedit plugins need to be manually installed. Here is how to install "
-"them."
-msgstr ""
-"Algunos complementos de gedit pueden necesitar instalación manual. Aquí se "
-"explica cómo instalarlos."
+#: C/gedit-plugins-install.page:15(desc)
+msgid "How to install third-party plugins"
+msgstr "Cómo instalar complementos de terceras partes"
 
-#: C/gedit-plugins-install.page:21(title)
+#: C/gedit-plugins-install.page:18(title)
 msgid "Additional gedit plugins"
 msgstr "Complementos adicionales de gedit"
 
-#: C/gedit-plugins-install.page:23(p)
+#: C/gedit-plugins-install.page:20(p)
+#| msgid ""
+#| "Installing third-party plugins gives you extra functionality that is not "
+#| "included by default in <app>gedit</app>. An online list of third-party "
+#| "plugins is maintained <link href=\"http://live.gnome.org/Gedit/"
+#| "Plugins#third_party\">here</link>."
 msgid ""
-"Installing third-party plugins gives you extra functionality that is not "
-"included by default in <app>gedit</app>. An online list of third-party "
-"plugins is maintained <link href=\"http://live.gnome.org/Gedit/"
-"Plugins#third_party\">here</link>."
+"Installing third-party plugins gives you extra functionality that isn't "
+"available in default <app>gedit</app> plugins, or even the extra plugins "
+"that are part of the <app>gedit-plugins</app> package. An online list of "
+"third-party plugins is <link href=\"http://live.gnome.org/Gedit/"
+"Plugins#third_party\">kept here</link>."
 msgstr ""
 "Instalar complementos de terceras partes le da una funcionalidad que no está "
-"incluida de manera predeterminada en <app>gedit</app>. <link href=\"http://"
-"live.gnome.org/Gedit/Plugins#third_party\">Aquí</link> se mantiene una lista "
-"en línea de complementos de terceras partes."
-
-#: C/gedit-plugins-install.page:26(title)
-msgid "Obtain"
-msgstr "Obtenerlo"
+"incluida de manera predeterminada en <app>gedit</app> ni en los complentos "
+"adicionales que forman parte del paquete <app>gedit-plugins</app>. <link "
+"href=\"http://live.gnome.org/Gedit/Plugins#third_party\">Aquí</link> se "
+"mantiene una lista de complementos de terceras partes."
 
 #: C/gedit-plugins-install.page:27(p)
 msgid ""
-"The first step to install a plugin in <app>gedit</app> is to obtain the "
-"plugin. Third-party plugins will often be obtained by downloading them from "
-"the plugin's web site. Refer to the plugin's documentation for further "
-"information on obtaining the plugin - instructions will vary depending on "
-"the plugin."
+"Installing a third-party plugin involves downloading the plugin, placing the "
+"plugin files in the right directory, and activating the plugin."
 msgstr ""
-"El primer paso para instalar un complemento en <app>gedit</app> es "
-"obtenerlo. Los complementos de terceras partes a menudo se obtendrán desde "
-"la página web del complemento. Consulte la documentación del complemento "
-"para obtener información sobe cómo obtenerlo; las instrucciones pueden "
-"variar dependiendo del complemento."
+"Instalar un complemento de terceras partes implica descargar el complemento, "
+"copiar los archivos del complemento en la carpeta correcta y activarlo."
 
-#: C/gedit-plugins-install.page:31(title)
-msgid "Install"
-msgstr "Instalar"
-
-#. Are all plugins released as tarballs? If so, this section should focus on extracting the tarball into the proper directory. If not, it should focus on copying the files into the proper directory, to avoid confusion. Or maybe it would be better to focus solely on copying the files into the directory, as this applies for both a tarball and any other set of files.
-#: C/gedit-plugins-install.page:33(p)
+#: C/gedit-plugins-install.page:31(p)
 msgid ""
-"After you have obtained the plugin you wish to install, you will need to "
-"install it."
+"You can usually download a plugin from the plugin's website, but may need to "
+"use a revision-control program like <app>git</app>, <app> bazaar</app>, or "
+"<app>subversion</app> to copy a plugin's software repository from the "
+"internet. Refer to the plugin's documentation for information on getting the "
+"plugin."
 msgstr ""
-"Después de obtener el complemento que quiere instalar, deberá instalarlo."
-
-#: C/gedit-plugins-install.page:35(title)
-msgid "Installing a Plugin"
-msgstr "Instalar un complemento"
+"Generalmente puede descargar el complemento de su página web, pero puede "
+"necesitar un programa de control de versiones como <app>git</app>, <app> "
+"bazaar</app>, or <app>subversion</app> para copiar el repositorio de "
+"software de un complemento desde Internet. Consulte la documentación del "
+"complemento para obtener más información."
 
 #: C/gedit-plugins-install.page:36(p)
-msgid "Locate the plugin files to be installed."
-msgstr "Localice los archivos del complemento que instalar."
-
-#: C/gedit-plugins-install.page:38(p)
-msgid "Install the plugin files:"
-msgstr "Instalar los archivos del complemento:"
-
-#: C/gedit-plugins-install.page:40(p)
+#| msgid ""
+#| "Copy the plugin into <file>/home/<var>username</var>/.local/share/gedit/"
+#| "plugins</file>"
 msgid ""
-"Copy the plugin into <file>/home/<var>username</var>/.local/share/gedit/"
-"plugins</file>"
+"Place the plugin files into the <file>/home/<var>username</var>/.local/share/"
+"gedit/plugins</file> directory."
 msgstr ""
-"Copie el complemento en <file>/home/<var>username</var>/.local/share/gedit/"
-"plugins</file>"
+"Copie el complemento en la carpeta <file>/home/<var>nombre_de_usuario</var>/."
+"local/share/gedit/plugins</file>."
 
-#: C/gedit-plugins-install.page:44(p)
+#: C/gedit-plugins-install.page:39(p)
+msgid "Of course, replace the word <var>username</var> with your own username."
+msgstr ""
+"Por supuesto, reemplace la palabra <var>nombre_de_usuario</var> con su "
+"nombre de usuario."
+
+#: C/gedit-plugins-install.page:41(p)
+#| msgid ""
+#| "After you have moved the plugin files into the correct directory, the "
+#| "plugin will appear in the Preferences menu (<guiseq><gui>Edit</"
+#| "gui><gui>Preferences</gui><gui>Plugins</gui></guiseq>). From there, the "
+#| "plugin needs to be enabled to be used."
 msgid ""
-"After you have moved the plugin files into the correct directory, the plugin "
-"will appear in the Preferences menu (<guiseq><gui>Edit</"
-"gui><gui>Preferences</gui><gui>Plugins</gui></guiseq>). From there, the "
-"plugin needs to be enabled to be used."
+"After you have placed the plugin files into the correct directory, the "
+"plugin will appear in the Preferences menu. Select <guiseq><gui>Edit </"
+"gui><gui>Preferences</gui><gui>Plugins</gui><gui>[Name of Plugin]</gui></"
+"guiseq> to enable the plugin."
 msgstr ""
 "Después de mover el complemento a la carpeta correcta, aparecerá en el menú "
-"«Preferencias» (<guiseq><gui>Editar</gui><gui>Preferencias</"
-"gui><gui>Complementos</gui></guiseq>). Desde aquí, necesita activar el "
-"complemento para poder usarlo."
+"«Preferencias». Seleccione <guiseq><gui>Editar</gui><gui>Preferencias</"
+"gui><gui>Complementos</gui><gui>[Nombre del complemento]</gui></guiseq> para "
+"activarlo."
 
-#: C/gedit-plugins-install.page:47(p)
+#: C/gedit-plugins-install.page:48(p)
+#| msgid ""
+#| "After you have obtained the plugin you wish to install, you will need to "
+#| "install it."
 msgid ""
-"You will need to have hidden files displayed to view the <file>.local</file> "
-"directory. To display hidden files, click <guiseq><gui>View</gui><gui>Show "
-"Hidden Files</gui></guiseq> or press <keyseq><key>Ctrl</key><key>H</key></"
-"keyseq>."
+"After you have enabled the plugin, it should be available for you to use."
 msgstr ""
-"Deberá mostrar los archivos ocultos para ver la carpeta <file>.local</file>. "
-"Para mostrar los archivos ocultos, pulse <guiseq><gui>Ver</gui><gui>Mostrar "
+"Después de activar el complemento, debería estar disponible para usarse."
+
+#: C/gedit-plugins-install.page:52(p)
+#| msgid ""
+#| "You will need to have hidden files displayed to view the <file>.local</"
+#| "file> directory. To display hidden files, click <guiseq><gui>View</"
+#| "gui><gui>Show Hidden Files</gui></guiseq> or press <keyseq><key>Ctrl</"
+#| "key><key>H</key></keyseq>."
+msgid ""
+"The <file>.local</file> directory is hidden by default. To view it and other "
+"hidden files, select <guiseq><gui>View</gui><gui>Show Hidden Files</gui></"
+"guiseq>, or press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+msgstr ""
+"La carpeta <file>.local</file> esta oculta de manera predeterminada. Para "
+"mostrar los archivos ocultos, seleccione <guiseq><gui>Ver</gui><gui>Mostrar "
 "archivos ocultos</gui></guiseq> o pulse <keyseq><key>Ctrl</key><key>H</key></"
 "keyseq>."
 
-#: C/gedit-plugins-install.page:51(p)
+#: C/gedit-plugins-install.page:59(p)
 msgid ""
 "If the directory <file>.local/share/gedit/plugins/</file> is not present on "
 "your system, you will need to create it."
@@ -2388,7 +2374,8 @@ msgid ""
 msgstr ""
 "Este complemento es para usuarios avanzados y para usarlo correctamente "
 "requiere conocimientos de «script». Use este complemento con cuidado, ya que "
-"errores con sus «script» pueden afectar a su trabajo de forma no intencionada."
+"errores con sus «script» pueden afectar a su trabajo de forma no "
+"intencionada."
 
 #: C/gedit-plugins-draw-spaces.page:13(desc)
 msgid "Show white space between words or portions of code"
@@ -2551,7 +2538,8 @@ msgstr ""
 
 #: C/gedit-plugins-commander.page:25(p)
 msgid "The last key in the above key combination is a period."
-msgstr "La última tecla de la combinación de teclas indicada es un punto («.»)."
+msgstr ""
+"La última tecla de la combinación de teclas indicada es un punto («.»)."
 
 #: C/gedit-plugins-commander.page:29(p)
 msgid "First step..."
@@ -3085,11 +3073,13 @@ msgstr ""
 
 #: C/gedit-open-recent.page:25(p)
 msgid ""
-"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</gui><gui>gedit-"
-"2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq>."
+"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</"
+"gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></"
+"guiseq>."
 msgstr ""
-"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</gui><gui>gedit-"
-"2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</gui></guiseq>."
+"Lance <app>gconf-editor</app> y seleccione <guiseq><gui>apps</"
+"gui><gui>gedit-2</gui><gui>preferencias</gui><gui>iu</gui><gui>recientes</"
+"gui></guiseq>."
 
 #: C/gedit-open-recent.page:26(p)
 msgid ""
@@ -3508,7 +3498,7 @@ msgstr ""
 "puede pulsar la X que aparece en la parte derecha de la pestaña del archivo."
 "o pulsar <keyseq><key>Ctrl</key><key>Mayús</key><key>W</key></keyseq>."
 
-#: C/gedit-close-file.page:17(p)
+#: C/gedit-close-file.page:20(p)
 msgid ""
 "Any one of these actions will close a file in <app>gedit</app>. If your file "
 "contains changes that have not been saved, <app>gedit</app> will prompt you "
@@ -3581,6 +3571,60 @@ msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2011\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2006-2011\n"
 "María Majadas <maria.majadas@hispalinux.es>, 2005"
+
+#~ msgid "Use snippets to quickly insert often-used pieces of text"
+#~ msgstr ""
+#~ "Use recortes para insertar rápidamente fragmentos de texto usados "
+#~ "frecuentemente"
+
+#~ msgid "Snippets"
+#~ msgstr "Recortes"
+
+#~| msgid ""
+#~| "To enable the <app>Sort</app> plugin, select <guiseq><gui>Edit</"
+#~| "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Sort</gui></guiseq>."
+#~ msgid ""
+#~ "To enable the <app>Snippets</app> plugin, select <guiseq><gui>Edit</"
+#~ "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Snippets</gui></guiseq>."
+#~ msgstr ""
+#~ "Para activar el complemento <app>Recortes</app> seleccione "
+#~ "<guiseq><gui>Editar</gui><gui>Preferencias</gui><gui>Complementos</"
+#~ "gui><gui>Recortes</gui></guiseq>."
+
+#~ msgid ""
+#~ "Some gedit plugins need to be manually installed. Here is how to install "
+#~ "them."
+#~ msgstr ""
+#~ "Algunos complementos de gedit pueden necesitar instalación manual. Aquí "
+#~ "se explica cómo instalarlos."
+
+#~ msgid "Obtain"
+#~ msgstr "Obtenerlo"
+
+#~ msgid ""
+#~ "The first step to install a plugin in <app>gedit</app> is to obtain the "
+#~ "plugin. Third-party plugins will often be obtained by downloading them "
+#~ "from the plugin's web site. Refer to the plugin's documentation for "
+#~ "further information on obtaining the plugin - instructions will vary "
+#~ "depending on the plugin."
+#~ msgstr ""
+#~ "El primer paso para instalar un complemento en <app>gedit</app> es "
+#~ "obtenerlo. Los complementos de terceras partes a menudo se obtendrán "
+#~ "desde la página web del complemento. Consulte la documentación del "
+#~ "complemento para obtener información sobe cómo obtenerlo; las "
+#~ "instrucciones pueden variar dependiendo del complemento."
+
+#~ msgid "Install"
+#~ msgstr "Instalar"
+
+#~ msgid "Installing a Plugin"
+#~ msgstr "Instalar un complemento"
+
+#~ msgid "Locate the plugin files to be installed."
+#~ msgstr "Localice los archivos del complemento que instalar."
+
+#~ msgid "Install the plugin files:"
+#~ msgstr "Instalar los archivos del complemento:"
 
 #~ msgid "Coming soon!"
 #~ msgstr "Muy pronto"
@@ -6981,8 +7025,8 @@ msgstr ""
 #~ "pane to show the tag list tab."
 #~ msgstr ""
 #~ "Por omisión, el panel lateral muestra una pestaña conteniendo una lista "
-#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en la "
-#~ "parte de abajo del panel lateral para mostrar la pestaña de listas de "
+#~ "de documentos abiertos. Pulse en la pestaña que muestra un icono «+» en "
+#~ "la parte de abajo del panel lateral para mostrar la pestaña de listas de "
 #~ "etiquetas."
 
 #~ msgid ""
