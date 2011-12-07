@@ -43,7 +43,7 @@ class LanguagesPopup(Gtk.Window):
 
         self.show()
         self.map()
-        
+
         self.grab_add()
 
         self.keyboard = None
@@ -560,11 +560,10 @@ class Manager:
             self['languages_label'].set_text(', '.join(langs))
     
     def fill_fields(self):
-        node = self.current_node
-        self['accelerator'].set_text(default(node.shortcut, ''))
+        self.update_accelerator_label()
 
         buf = self['commands'].get_buffer()
-        script = default(''.join(node.get_script()), '')
+        script = default(''.join(self.current_node.get_script()), '')
 
         buf.begin_not_undoable_action()
         buf.set_text(script)
@@ -585,12 +584,19 @@ class Manager:
         for nm in ('input', 'output', 'applicability', 'save-files'):
             model = self[nm].get_model()
             piter = model.get_iter_first()
-            
             self.set_active_by_name(nm,
-                                    default(node.__getattribute__(nm.replace('-', '_')),
+                                    default(self.current_node.__getattribute__(nm.replace('-', '_')),
                                     model.get_value(piter, self.NAME_COLUMN)))
 
         self.fill_languages_button()
+
+    def update_accelerator_label(self):
+        if self.current_node.shortcut:
+            key, mods = Gtk.accelerator_parse(self.current_node.shortcut)
+            label = Gtk.accelerator_get_label(key, mods)
+            self['accelerator'].set_text(label)
+        else:
+            self['accelerator'].set_text('')
 
     def update_remove_revert(self):
         piter, node = self.get_selected_tool()
@@ -799,13 +805,13 @@ class Manager:
         mask = event.state & Gtk.accelerator_get_default_mod_mask()
 
         if event.keyval == Gdk.KEY_Escape:
-            entry.set_text(default(self.current_node.shortcut, ''))
+            self.update_accelerator_label()
             self['commands'].grab_focus()
             return True
         elif event.keyval in range(Gdk.KEY_F1, Gdk.KEY_F12 + 1):
             # New accelerator
             if self.set_accelerator(event.keyval, mask):
-                entry.set_text(default(self.current_node.shortcut, ''))
+                self.update_accelerator_label()
                 self['commands'].grab_focus()
     
             # Capture all `normal characters`
@@ -814,7 +820,7 @@ class Manager:
             if mask:
                 # New accelerator
                 if self.set_accelerator(event.keyval, mask):
-                    entry.set_text(default(self.current_node.shortcut, ''))
+                    self.update_accelerator_label()
                     self['commands'].grab_focus()
             # Capture all `normal characters`
             return True
@@ -831,7 +837,7 @@ class Manager:
 
     def on_accelerator_focus_out(self, entry, event):
         if self.current_node is not None:
-            entry.set_text(default(self.current_node.shortcut, ''))
+            self.update_accelerator_label()
             self.tool_changed(self.current_node)
 
     def on_accelerator_backspace(self, entry):
