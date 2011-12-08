@@ -291,7 +291,7 @@ gedit_command_line_parse (GeditCommandLine   *command_line,
 		{
 			"geometry", 'g', 0, G_OPTION_ARG_STRING,
 			&command_line->priv->geometry,
-			N_("Set the X geometry window size (WIDTHxHEIGHT+X+Y)"),
+			N_("Set the size and position of the window (WIDTHxHEIGHT+X+Y)"),
 			N_("GEOMETRY")
 		},
 
