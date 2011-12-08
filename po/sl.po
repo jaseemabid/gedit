@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-11-24 09:16+0000\n"
-"PO-Revision-Date: 2011-12-02 18:33+0100\n"
+"POT-Creation-Date: 2011-12-08 20:15+0000\n"
+"PO-Revision-Date: 2011-12-08 22:13+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: \n"
@@ -28,7 +28,7 @@ msgid "Edit text files"
 msgstr "Enostavni urejevalnik besedilnih datotek"
 
 #: ../data/gedit.desktop.in.in.h:2
-#: ../gedit/gedit-print-job.c:805
+#: ../gedit/gedit-print-job.c:808
 msgid "Text Editor"
 msgstr "Gedit - urejevalnik besedil"
 
@@ -478,33 +478,33 @@ msgstr "Pritisnite ta gumb za izbiro pisave, ki naj jo uporablja urejevalnik"
 msgid "_Use the system fixed width font (%s)"
 msgstr "_Uporabi pisavo sistema s stalno širino (%s)"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:634
+#: ../gedit/dialogs/gedit-preferences-dialog.c:629
 msgid "The selected color scheme cannot be installed."
 msgstr "Izbrane barvne sheme ni mogoče namestiti."
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:661
+#: ../gedit/dialogs/gedit-preferences-dialog.c:656
 msgid "Add Scheme"
 msgstr "Dodaj shemo"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:668
+#: ../gedit/dialogs/gedit-preferences-dialog.c:663
 msgid "A_dd Scheme"
 msgstr "_Dodaj shemo"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:676
+#: ../gedit/dialogs/gedit-preferences-dialog.c:671
 msgid "Color Scheme Files"
 msgstr "Datoteke barvnih shem"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:683
+#: ../gedit/dialogs/gedit-preferences-dialog.c:678
 #: ../gedit/gedit-file-chooser-dialog.c:52
 msgid "All Files"
 msgstr "Vse datoteke"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:728
+#: ../gedit/dialogs/gedit-preferences-dialog.c:723
 #, c-format
 msgid "Could not remove color scheme \"%s\"."
 msgstr "Ni mogoče odstraniti barvne sheme \"%s\"."
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:947
+#: ../gedit/dialogs/gedit-preferences-dialog.c:942
 msgid "gedit Preferences"
 msgstr "Možnosti programa gedit"
 
@@ -622,7 +622,7 @@ msgstr "_minut"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
 #: ../gedit/dialogs/gedit-replace-dialog.ui.h:2
-#: ../gedit/gedit-window.c:1626
+#: ../gedit/gedit-window.c:1657
 msgid "Replace"
 msgstr "Zamenjaj"
 
@@ -698,8 +698,8 @@ msgid "Create a new document in an existing instance of gedit"
 msgstr "Ustvari nov dokument v obstoječem primerku gedit"
 
 #: ../gedit/gedit-command-line.c:294
-msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
-msgstr "Določitev X geometrije velikosti okna (ŠIRINAxVIŠINA+X+Y)"
+msgid "Set the size and position of the window (WIDTHxHEIGHT+X+Y)"
+msgstr "Nastavitve položaja in velikost okna (širina x višina + X + Y)"
 
 #: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
@@ -790,26 +790,26 @@ msgid "_Save As Plain Text"
 msgstr "Shrani kot običajno besedilno datoteko"
 
 #: ../gedit/gedit-commands-file.c:742
-#: ../gedit/gedit-commands-file.c:961
+#: ../gedit/gedit-commands-file.c:959
 #, c-format
 msgid "Saving file '%s'…"
 msgstr "Shranjevanje datoteke '%s' ..."
 
-#: ../gedit/gedit-commands-file.c:847
+#: ../gedit/gedit-commands-file.c:846
 msgid "Save As"
 msgstr "Shrani kot"
 
-#: ../gedit/gedit-commands-file.c:1175
+#: ../gedit/gedit-commands-file.c:1173
 #, c-format
 msgid "Reverting the document '%s'…"
 msgstr "Povračanje dokumenta '%s' ..."
 
-#: ../gedit/gedit-commands-file.c:1220
+#: ../gedit/gedit-commands-file.c:1218
 #, c-format
 msgid "Revert unsaved changes to document '%s'?"
 msgstr "Povrni neshranjene spremembe dokumentu '%s'?"
 
-#: ../gedit/gedit-commands-file.c:1229
+#: ../gedit/gedit-commands-file.c:1227
 #, c-format
 msgid "Changes made to the document in the last %ld second will be permanently lost."
 msgid_plural "Changes made to the document in the last %ld seconds will be permanently lost."
@@ -818,11 +818,11 @@ msgstr[1] "Spremembe dokumenta narejene v zadnji %ld sekundi bodo trajno izgublj
 msgstr[2] "Spremembe dokumenta narejene v zadnjih %ld sekundah bodo trajno izgubljene."
 msgstr[3] "Spremembe dokumenta narejene v zadnjih %ld sekundah bodo trajno izgubljene."
 
-#: ../gedit/gedit-commands-file.c:1238
+#: ../gedit/gedit-commands-file.c:1236
 msgid "Changes made to the document in the last minute will be permanently lost."
 msgstr "Spremembe dokumenta narejene v zadnji minuti bodo trajno izgubljene."
 
-#: ../gedit/gedit-commands-file.c:1244
+#: ../gedit/gedit-commands-file.c:1242
 #, c-format
 msgid "Changes made to the document in the last minute and %ld second will be permanently lost."
 msgid_plural "Changes made to the document in the last minute and %ld seconds will be permanently lost."
@@ -831,7 +831,7 @@ msgstr[1] "Spremembe dokumenta narejene v zadnji minuti in %ld sekundi bodo traj
 msgstr[2] "Spremembe dokumenta narejene v zadnji minuti in %ld sekundah bodo trajno izgubljene."
 msgstr[3] "Spremembe dokumenta narejene v zadnji minuti in %ld sekundah bodo trajno izgubljene."
 
-#: ../gedit/gedit-commands-file.c:1254
+#: ../gedit/gedit-commands-file.c:1252
 #, c-format
 msgid "Changes made to the document in the last %ld minute will be permanently lost."
 msgid_plural "Changes made to the document in the last %ld minutes will be permanently lost."
@@ -840,11 +840,11 @@ msgstr[1] "Spremembe dokumenta narejene v zadnji %ld minuti bodo trajno izgublje
 msgstr[2] "Spremembe dokumenta narejene v zadnjih %ld minutah bodo trajno izgubljene."
 msgstr[3] "Spremembe dokumenta narejene v zadnjih %ld minutah bodo trajno izgubljene."
 
-#: ../gedit/gedit-commands-file.c:1269
+#: ../gedit/gedit-commands-file.c:1267
 msgid "Changes made to the document in the last hour will be permanently lost."
 msgstr "Spremembe dokumenta narejene v zadnji uri bodo trajno izgubljene."
 
-#: ../gedit/gedit-commands-file.c:1275
+#: ../gedit/gedit-commands-file.c:1273
 #, c-format
 msgid "Changes made to the document in the last hour and %d minute will be permanently lost."
 msgid_plural "Changes made to the document in the last hour and %d minutes will be permanently lost."
@@ -853,7 +853,7 @@ msgstr[1] "Spremembe dokumenta narejene v zadnji uri in %d minuti bodo trajno iz
 msgstr[2] "Spremembe dokumenta narejene v zadnji uri in %d minutah bodo trajno izgubljene."
 msgstr[3] "Spremembe dokumenta narejene v zadnji uri in %d minutah bodo trajno izgubljene."
 
-#: ../gedit/gedit-commands-file.c:1290
+#: ../gedit/gedit-commands-file.c:1288
 #, c-format
 msgid "Changes made to the document in the last %d hour will be permanently lost."
 msgid_plural "Changes made to the document in the last %d hours will be permanently lost."
@@ -862,7 +862,7 @@ msgstr[1] "Spremembe dokumenta narejene v zadnji %d uri bodo trajno izgubljene."
 msgstr[2] "Spremembe dokumenta narejene v zadnji %d urah bodo trajno izgubljene."
 msgstr[3] "Spremembe dokumenta narejene v zadnji %d urah bodo trajno izgubljene."
 
-#: ../gedit/gedit-commands-file.c:1316
+#: ../gedit/gedit-commands-file.c:1314
 msgid "_Revert"
 msgstr "_Povrni"
 
@@ -897,21 +897,21 @@ msgstr "Najden in zamenjan en niz"
 msgid "\"%s\" not found"
 msgstr "\"%s\" ni mogoče najti"
 
-#: ../gedit/gedit-document.c:1241
-#: ../gedit/gedit-document.c:1267
+#: ../gedit/gedit-document.c:1243
+#: ../gedit/gedit-document.c:1269
 #, c-format
 msgid "Unsaved Document %d"
 msgstr "dokument %d"
 
 #: ../gedit/gedit-documents-panel.c:121
 #: ../gedit/gedit-documents-panel.c:135
-#: ../gedit/gedit-window.c:2459
-#: ../gedit/gedit-window.c:2466
+#: ../gedit/gedit-window.c:2490
+#: ../gedit/gedit-window.c:2497
 msgid "Read-Only"
 msgstr "Le za branje"
 
 #: ../gedit/gedit-documents-panel.c:1143
-#: ../gedit/gedit-window.c:3907
+#: ../gedit/gedit-window.c:3938
 msgid "Documents"
 msgstr "Dokumenti"
 
@@ -1378,16 +1378,16 @@ msgstr "Prazno"
 msgid "Hide panel"
 msgstr "Skrij pladenj"
 
-#: ../gedit/gedit-print-job.c:586
+#: ../gedit/gedit-print-job.c:589
 #, c-format
 msgid "File: %s"
 msgstr "Datoteka: %s"
 
-#: ../gedit/gedit-print-job.c:595
+#: ../gedit/gedit-print-job.c:598
 msgid "Page %N of %Q"
 msgstr "Stran %N od %Q"
 
-#: ../gedit/gedit-print-job.c:857
+#: ../gedit/gedit-print-job.c:860
 msgid "Preparing..."
 msgstr "Pripravljanje ..."
 
@@ -1538,7 +1538,7 @@ msgstr[1] "Obstaja %d zavihek z napakami"
 msgstr[2] "Obstajata %d zavihka z napakami"
 msgstr[3] "Obstajajo %d zavihki z napakami"
 
-#: ../gedit/gedit-style-scheme-manager.c:226
+#: ../gedit/gedit-style-scheme-manager.c:176
 #, c-format
 msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
 msgstr "Mape '%s' ni mogoče ustvariti: g_mkdir_with_parents() napaka: %s"
@@ -1657,7 +1657,7 @@ msgid "_Open..."
 msgstr "_Odpri ..."
 
 #: ../gedit/gedit-ui.h:55
-#: ../gedit/gedit-window.c:1554
+#: ../gedit/gedit-window.c:1585
 msgid "Open a file"
 msgstr "Odpri datoteko"
 
@@ -1967,73 +1967,73 @@ msgstr "Uporabi način poudarjanje %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1107
-#: ../gedit/gedit-window.c:2156
+#: ../gedit/gedit-window.c:1145
+#: ../gedit/gedit-window.c:2184
 #: ../plugins/externaltools/tools/manager.py:138
-#: ../plugins/externaltools/tools/manager.py:441
-#: ../plugins/externaltools/tools/manager.py:552
-#: ../plugins/externaltools/tools/manager.py:868
+#: ../plugins/externaltools/tools/manager.py:442
+#: ../plugins/externaltools/tools/manager.py:553
+#: ../plugins/externaltools/tools/manager.py:874
 msgid "Plain Text"
 msgstr "Običajno besedilo"
 
-#: ../gedit/gedit-window.c:1108
+#: ../gedit/gedit-window.c:1146
 msgid "Disable syntax highlighting"
 msgstr "Onemogoči poudarjanje skladnje"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1433
+#: ../gedit/gedit-window.c:1463
 #, c-format
 msgid "Open '%s'"
 msgstr "Odpri '%s'"
 
-#: ../gedit/gedit-window.c:1556
+#: ../gedit/gedit-window.c:1587
 msgid "Open a recently used file"
 msgstr "Odpri nedavno uporabljeno datoteko"
 
-#: ../gedit/gedit-window.c:1562
+#: ../gedit/gedit-window.c:1593
 msgid "Open"
 msgstr "Odpri"
 
-#: ../gedit/gedit-window.c:1620
+#: ../gedit/gedit-window.c:1651
 msgid "Save"
 msgstr "Shrani"
 
-#: ../gedit/gedit-window.c:1622
+#: ../gedit/gedit-window.c:1653
 msgid "Print"
 msgstr "Natisni"
 
-#: ../gedit/gedit-window.c:1624
+#: ../gedit/gedit-window.c:1655
 msgid "Find"
 msgstr "Poišči"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1784
+#: ../gedit/gedit-window.c:1815
 #, c-format
 msgid "Activate '%s'"
 msgstr "Pokaži \"%s\""
 
-#: ../gedit/gedit-window.c:2134
+#: ../gedit/gedit-window.c:2165
 msgid "Use Spaces"
 msgstr "Uporabi presledke"
 
-#: ../gedit/gedit-window.c:2207
+#: ../gedit/gedit-window.c:2238
 msgid "Tab Width"
 msgstr "Širina tabulatorja"
 
-#: ../gedit/gedit-window.c:2316
+#: ../gedit/gedit-window.c:2347
 msgid "Bracket match is out of range"
 msgstr "Ujemanje oklepajev je izven obsega"
 
-#: ../gedit/gedit-window.c:2321
+#: ../gedit/gedit-window.c:2352
 msgid "Bracket match not found"
 msgstr "Ujemanja oklepajev ni mogoče najti"
 
-#: ../gedit/gedit-window.c:2326
+#: ../gedit/gedit-window.c:2357
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Na vrstici je bilo najdeno ujemanje oklepaja: %d"
 
-#: ../gedit/gedit-window.c:4113
+#: ../gedit/gedit-window.c:4144
 msgid "About gedit"
 msgstr "O programu"
 
@@ -2240,18 +2240,18 @@ msgstr "Končal"
 msgid "All languages"
 msgstr "Vsi jeziki"
 
-#: ../plugins/externaltools/tools/manager.py:541
-#: ../plugins/externaltools/tools/manager.py:545
-#: ../plugins/externaltools/tools/manager.py:866
+#: ../plugins/externaltools/tools/manager.py:542
+#: ../plugins/externaltools/tools/manager.py:546
+#: ../plugins/externaltools/tools/manager.py:872
 #: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Vsi jeziki"
 
-#: ../plugins/externaltools/tools/manager.py:652
+#: ../plugins/externaltools/tools/manager.py:659
 msgid "New tool"
 msgstr "Novo orodje"
 
-#: ../plugins/externaltools/tools/manager.py:783
+#: ../plugins/externaltools/tools/manager.py:790
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr "Ta bližnjica je že vezana na %s"
@@ -2905,11 +2905,11 @@ msgstr "_Izrezki:"
 msgid "_Tab trigger:"
 msgstr "_Sprožilec zavihka:"
 
-#: ../plugins/snippets/snippets/windowactivatable.py:145
+#: ../plugins/snippets/snippets/windowactivatable.py:154
 msgid "Manage _Snippets..."
 msgstr "Upravljanje _izrezkov ..."
 
-#: ../plugins/snippets/snippets/windowactivatable.py:146
+#: ../plugins/snippets/snippets/windowactivatable.py:155
 msgid "Manage snippets"
 msgstr "Upravljanje izrezkov"
 
