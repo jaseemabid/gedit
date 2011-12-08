@@ -74,7 +74,7 @@ struct _GeditNotebook
 	GtkNotebook notebook;
 
 	/*< private >*/
-        GeditNotebookPrivate *priv;
+	GeditNotebookPrivate *priv;
 };
 
 /*
@@ -84,11 +84,13 @@ typedef struct _GeditNotebookClass	GeditNotebookClass;
 
 struct _GeditNotebookClass
 {
-        GtkNotebookClass parent_class;
+	GtkNotebookClass parent_class;
 
 	/* Signals */
-	void	 (* tab_close_request)	(GeditNotebook *notebook,
+	void	(* tab_close_request)	(GeditNotebook *notebook,
 					 GeditTab      *tab);
+	void	(* show_popup_menu)	(GeditNotebook *notebook,
+					 GdkEvent      *event);
 };
 
 /*

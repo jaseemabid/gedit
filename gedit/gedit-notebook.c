@@ -81,6 +81,7 @@ enum
 enum
 {
 	TAB_CLOSE_REQUEST,
+	SHOW_POPUP_MENU,
 	LAST_SIGNAL
 };
 
@@ -251,7 +252,7 @@ find_tab_num_at_pos (GtkNotebook *notebook,
 }
 
 static gboolean
-gedit_notebook_button_press (GtkWidget *widget,
+gedit_notebook_button_press (GtkWidget      *widget,
                              GdkEventButton *event)
 {
 	GtkNotebook *nb = GTK_NOTEBOOK (widget);
@@ -268,9 +269,10 @@ gedit_notebook_button_press (GtkWidget *widget,
 			/* switch to the page the mouse is over */
 			gtk_notebook_set_current_page (nb, tab_clicked);
 
+			g_signal_emit (G_OBJECT (widget), signals[SHOW_POPUP_MENU], 0, event);
+
 			return TRUE;
 		}
-
 	}
 
 	return GTK_WIDGET_CLASS (gedit_notebook_parent_class)->button_press_event (widget, event);
@@ -526,6 +528,17 @@ gedit_notebook_class_init (GeditNotebookClass *klass)
 			      G_TYPE_NONE,
 			      1,
 			      GEDIT_TYPE_TAB);
+
+	signals[SHOW_POPUP_MENU] =
+		g_signal_new ("show-popup-menu",
+			      G_OBJECT_CLASS_TYPE (object_class),
+			      G_SIGNAL_RUN_FIRST,
+			      G_STRUCT_OFFSET (GeditNotebookClass, show_popup_menu),
+			      NULL, NULL,
+			      g_cclosure_marshal_VOID__BOXED,
+			      G_TYPE_NONE,
+			      1,
+			      GDK_TYPE_EVENT | G_SIGNAL_TYPE_STATIC_SCOPE);
 
 	g_type_class_add_private (object_class, sizeof (GeditNotebookPrivate));
 }

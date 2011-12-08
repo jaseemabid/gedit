@@ -228,18 +228,12 @@ gedit_multi_notebook_class_init (GeditMultiNotebookClass *klass)
 							      G_PARAM_STATIC_STRINGS));
 }
 
-static gboolean
-notebook_button_press_event (GtkNotebook        *notebook,
-			     GdkEventButton     *event,
-			     GeditMultiNotebook *mnb)
+static void
+notebook_show_popup_menu (GtkNotebook        *notebook,
+                          GdkEvent           *event,
+                          GeditMultiNotebook *mnb)
 {
-	if (GDK_BUTTON_PRESS == event->type && 3 == event->button)
-	{
-		g_signal_emit (G_OBJECT (mnb), signals[SHOW_POPUP_MENU], 0,
-		               event);
-	}
-
-	return FALSE;
+	g_signal_emit (G_OBJECT (mnb), signals[SHOW_POPUP_MENU], 0, event);
 }
 
 static void 
@@ -410,8 +404,8 @@ connect_notebook_signals (GeditMultiNotebook *mnb,
 			  G_CALLBACK (notebook_tab_close_request),
 			  mnb);
 	g_signal_connect (notebook,
-			  "button-press-event",
-			  G_CALLBACK (notebook_button_press_event),
+			  "show-popup-menu",
+			  G_CALLBACK (notebook_show_popup_menu),
 			  mnb);
 }
 
@@ -433,7 +427,7 @@ disconnect_notebook_signals (GeditMultiNotebook *mnb,
 					      mnb);
 	g_signal_handlers_disconnect_by_func (notebook, notebook_tab_close_request,
 					      mnb);
-	g_signal_handlers_disconnect_by_func (notebook, notebook_button_press_event,
+	g_signal_handlers_disconnect_by_func (notebook, notebook_show_popup_menu,
 					      mnb);
 }
 
