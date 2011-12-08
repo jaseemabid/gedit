@@ -261,13 +261,13 @@ gedit_notebook_button_press (GtkWidget *widget,
 	    event->button != 3 ||
 	    (event->state & gtk_accelerator_get_default_mod_mask ()) != 0)
 	{
-		return FALSE;
+		return GTK_WIDGET_CLASS (gedit_notebook_parent_class)->button_press_event (widget, event);
 	}
 
 	tab_clicked = find_tab_num_at_pos (nb, event->x_root, event->y_root);
 	if (tab_clicked < 0)
 	{
-		return FALSE;
+		return GTK_WIDGET_CLASS (gedit_notebook_parent_class)->button_press_event (widget, event);
 	}
 
 	/* switch to the page the mouse is over */
