@@ -201,6 +201,81 @@ gedit_notebook_grab_focus (GtkWidget *widget)
 	gtk_widget_grab_focus (tab);
 }
 
+static gint
+find_tab_num_at_pos (GtkNotebook *notebook,
+                     gint         screen_x,
+                     gint         screen_y)
+{
+	GtkNotebook *nb = GTK_NOTEBOOK (notebook);
+	GtkPositionType tab_pos;
+	GtkWidget *page;
+	GtkAllocation tab_allocation;
+	gint page_num = 0;
+
+	tab_pos = gtk_notebook_get_tab_pos (GTK_NOTEBOOK (notebook));
+
+	while ((page = gtk_notebook_get_nth_page (nb, page_num)))
+	{
+		GtkWidget *tab;
+		gint max_x, max_y, x_root, y_root;
+
+		tab = gtk_notebook_get_tab_label (nb, page);
+		g_return_val_if_fail (tab != NULL, -1);
+
+		if (!gtk_widget_get_mapped (GTK_WIDGET (tab)))
+		{
+			page_num++;
+			continue;
+		}
+
+		gdk_window_get_origin (gtk_widget_get_window (tab), &x_root, &y_root);
+
+		gtk_widget_get_allocation (tab, &tab_allocation);
+		max_x = x_root + tab_allocation.x + tab_allocation.width;
+		max_y = y_root + tab_allocation.y + tab_allocation.height;
+
+		if ((tab_pos == GTK_POS_TOP || tab_pos == GTK_POS_BOTTOM) && screen_x <= max_x)
+		{
+			return page_num;
+		}
+
+		if ((tab_pos == GTK_POS_LEFT || tab_pos == GTK_POS_RIGHT) && screen_y <= max_y)
+		{
+			return page_num;
+		}
+
+		page_num++;
+	}
+
+	return -1;
+}
+
+static gboolean
+gedit_notebook_button_press (GtkWidget *widget,
+                             GdkEventButton *event)
+{
+	GtkNotebook *nb = GTK_NOTEBOOK (widget);
+	gint tab_clicked;
+
+	if (event->type != GDK_BUTTON_PRESS ||
+	    event->button != 3 ||
+	    (event->state & gtk_accelerator_get_default_mod_mask ()) != 0)
+	{
+		return FALSE;
+	}
+
+	tab_clicked = find_tab_num_at_pos (nb, event->x_root, event->y_root);
+	if (tab_clicked < 0)
+	{
+		return FALSE;
+	}
+
+	/* switch to the page the mouse is over */
+	gtk_notebook_set_current_page (nb, tab_clicked);
+
+	return TRUE;
+}
+
 /*
  * We need to override this because when we don't show the tabs, like in
  * fullscreen we need to have wrap around too
@@ -424,6 +499,7 @@ gedit_notebook_class_init (GeditNotebookClass *klass)
 	object_class->set_property = gedit_notebook_set_property;
 
 	gtkwidget_class->grab_focus = gedit_notebook_grab_focus;
+	gtkwidget_class->button_press_event = gedit_notebook_button_press;
 
 	notebook_class->change_current_page = gedit_notebook_change_current_page;
 	notebook_class->switch_page = gedit_notebook_switch_page;

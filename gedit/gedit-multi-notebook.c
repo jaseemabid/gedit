@@ -236,9 +236,7 @@ notebook_button_press_event (GtkNotebook        *notebook,
 	if (GDK_BUTTON_PRESS == event->type && 3 == event->button)
 	{
 		g_signal_emit (G_OBJECT (mnb), signals[SHOW_POPUP_MENU], 0,
-			       event);
-
-		return TRUE;
+		               event);
 	}
 
 	return FALSE;
