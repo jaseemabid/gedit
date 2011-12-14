@@ -120,6 +120,7 @@ NOINST_H_FILES =			\
 	gedit-language-manager.h	\
 	gedit-multi-notebook.h		\
 	gedit-notebook.h		\
+	gedit-notebook-popup-menu.h	\
 	gedit-plugins-engine.h		\
 	gedit-print-job.h		\
 	gedit-print-preview.h		\
@@ -201,6 +202,7 @@ libgedit_c_files =			\
 	gedit-message.c			\
 	gedit-multi-notebook.c		\
 	gedit-notebook.c		\
+	gedit-notebook-popup-menu.c	\
 	gedit-panel.c			\
 	gedit-plugins-engine.c		\
 	gedit-print-job.c		\

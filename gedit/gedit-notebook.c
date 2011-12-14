@@ -49,6 +49,7 @@
 #include "gedit-window.h"
 #include "gedit-enum-types.h"
 #include "gedit-settings.h"
+#include "gedit-marshal.h"
 
 #define GEDIT_NOTEBOOK_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE ((object), GEDIT_TYPE_NOTEBOOK, GeditNotebookPrivate))
 
@@ -266,10 +267,11 @@ gedit_notebook_button_press (GtkWidget      *widget,
 		tab_clicked = find_tab_num_at_pos (nb, event->x_root, event->y_root);
 		if (tab_clicked >= 0)
 		{
-			/* switch to the page the mouse is over */
-			gtk_notebook_set_current_page (nb, tab_clicked);
+			GtkWidget *tab;
 
-			g_signal_emit (G_OBJECT (widget), signals[SHOW_POPUP_MENU], 0, event);
+			tab = gtk_notebook_get_nth_page (nb, tab_clicked);
+
+			g_signal_emit (G_OBJECT (widget), signals[SHOW_POPUP_MENU], 0, event, tab);
 
 			return TRUE;
 		}
@@ -535,10 +537,11 @@ gedit_notebook_class_init (GeditNotebookClass *klass)
 			      G_SIGNAL_RUN_FIRST,
 			      G_STRUCT_OFFSET (GeditNotebookClass, show_popup_menu),
 			      NULL, NULL,
-			      g_cclosure_marshal_VOID__BOXED,
+			      gedit_marshal_VOID__BOXED_OBJECT,
 			      G_TYPE_NONE,
-			      1,
-			      GDK_TYPE_EVENT | G_SIGNAL_TYPE_STATIC_SCOPE);
+			      2,
+			      GDK_TYPE_EVENT | G_SIGNAL_TYPE_STATIC_SCOPE,
+			      GEDIT_TYPE_TAB);
 
 	g_type_class_add_private (object_class, sizeof (GeditNotebookPrivate));
 }

@@ -90,7 +90,8 @@ struct _GeditNotebookClass
 	void	(* tab_close_request)	(GeditNotebook *notebook,
 					 GeditTab      *tab);
 	void	(* show_popup_menu)	(GeditNotebook *notebook,
-					 GdkEvent      *event);
+					 GdkEvent      *event,
+					 GeditTab      *tab);
 };
 
 /*

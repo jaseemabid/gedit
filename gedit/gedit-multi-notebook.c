@@ -205,10 +205,11 @@ gedit_multi_notebook_class_init (GeditMultiNotebookClass *klass)
 			      G_SIGNAL_RUN_FIRST,
 			      G_STRUCT_OFFSET (GeditMultiNotebookClass, show_popup_menu),
 			      NULL, NULL,
-			      g_cclosure_marshal_VOID__BOXED,
+			      gedit_marshal_VOID__BOXED_OBJECT,
 			      G_TYPE_NONE,
-			      1,
-			      GDK_TYPE_EVENT | G_SIGNAL_TYPE_STATIC_SCOPE);
+			      2,
+			      GDK_TYPE_EVENT | G_SIGNAL_TYPE_STATIC_SCOPE,
+			      GEDIT_TYPE_TAB);
 
 	g_object_class_install_property (object_class,
 					 PROP_ACTIVE_NOTEBOOK,
@@ -231,9 +232,10 @@ gedit_multi_notebook_class_init (GeditMultiNotebookClass *klass)
 static void
 notebook_show_popup_menu (GtkNotebook        *notebook,
                           GdkEvent           *event,
+                          GeditTab           *tab,
                           GeditMultiNotebook *mnb)
 {
-	g_signal_emit (G_OBJECT (mnb), signals[SHOW_POPUP_MENU], 0, event);
+	g_signal_emit (G_OBJECT (mnb), signals[SHOW_POPUP_MENU], 0, event, tab);
 }
 
 static void 

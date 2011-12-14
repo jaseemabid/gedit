@@ -73,6 +73,10 @@ void		_gedit_cmd_file_new			(GtkAction   *action,
 							 GeditWindow *window);
 void		_gedit_cmd_file_open			(GtkAction   *action,
 							 GeditWindow *window);
+void		_gedit_cmd_file_save_tab		(GeditTab    *tab,
+							 GeditWindow *window);
+void		_gedit_cmd_file_save_as_tab		(GeditTab    *tab,
+							 GeditWindow *window);
 void		_gedit_cmd_file_save			(GtkAction   *action,
 							 GeditWindow *window);
 void		_gedit_cmd_file_save_as			(GtkAction   *action,
@@ -137,8 +141,8 @@ void		_gedit_cmd_search_clear_highlight	(GtkAction   *action,
 void		_gedit_cmd_search_goto_line		(GtkAction   *action,
 							 GeditWindow *window);
 void		_gedit_cmd_search_incremental_search	(GtkAction   *action,
-							 GeditWindow *window);							 
-							 
+							 GeditWindow *window);
+
 void		_gedit_cmd_documents_previous_document	(GtkAction   *action,
 							 GeditWindow *window);
 void		_gedit_cmd_documents_next_document	(GtkAction   *action,

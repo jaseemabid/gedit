@@ -498,8 +498,6 @@ _gedit_cmd_file_open (GtkAction   *action,
 }
 
 /* File saving */
-static void file_save_as (GeditTab    *tab,
-			  GeditWindow *window);
 
 static gboolean
 is_read_only (GFile *location)
@@ -791,7 +789,7 @@ save_next_tab:
 		}
 
 		gedit_window_set_active_tab (window, tab);
-		file_save_as (tab, window);
+		_gedit_cmd_file_save_as_tab (tab, window);
 	}
 }
 
@@ -827,9 +825,9 @@ confirm_overwrite_callback (GtkFileChooser *dialog,
 	return res;
 }
 
-static void
-file_save_as (GeditTab    *tab,
-	      GeditWindow *window)
+void
+_gedit_cmd_file_save_as_tab (GeditTab    *tab,
+                             GeditWindow *window)
 {
 	GtkWidget *save_dialog;
 	GtkWindowGroup *wg;
@@ -928,9 +926,9 @@ file_save_as (GeditTab    *tab,
 	gtk_widget_show (save_dialog);
 }
 
-static void
-file_save (GeditTab    *tab,
-	   GeditWindow *window)
+void
+_gedit_cmd_file_save_tab (GeditTab    *tab,
+                          GeditWindow *window)
 {
 	GeditDocument *doc;
 	gchar *uri_for_display;
@@ -948,8 +946,8 @@ file_save (GeditTab    *tab,
 	{
 		gedit_debug_message (DEBUG_COMMANDS, "Untitled or Readonly");
 
-		file_save_as (tab, window);
-		
+		_gedit_cmd_file_save_as_tab (tab, window);
+
 		return;
 	}
 
@@ -966,7 +964,7 @@ file_save (GeditTab    *tab,
 
 void
 _gedit_cmd_file_save (GtkAction   *action,
-		      GeditWindow *window)
+                      GeditWindow *window)
 {
 	GeditTab *tab;
 
@@ -976,12 +974,12 @@ _gedit_cmd_file_save (GtkAction   *action,
 	if (tab == NULL)
 		return;
 
-	file_save (tab, window);
+	_gedit_cmd_file_save_tab (tab, window);
 }
 
 void
 _gedit_cmd_file_save_as (GtkAction   *action,
-			 GeditWindow *window)
+                         GeditWindow *window)
 {
 	GeditTab *tab;
 
@@ -991,7 +989,7 @@ _gedit_cmd_file_save_as (GtkAction   *action,
 	if (tab == NULL)
 		return;
 
-	file_save_as (tab, window);
+	_gedit_cmd_file_save_as_tab (tab, window);
 }
 
 static gboolean
@@ -1058,7 +1056,7 @@ _gedit_cmd_file_save_documents_list (GeditWindow *window,
 			}
 			else
 			{
-				file_save (t, window);			
+				_gedit_cmd_file_save_tab (t, window);
 			}
 		}
 		else
@@ -1113,7 +1111,7 @@ _gedit_cmd_file_save_documents_list (GeditWindow *window,
 		tab = GEDIT_TAB (tabs_to_save_as->data);
 
 		gedit_window_set_active_tab (window, tab);
-		file_save_as (tab, window);
+		_gedit_cmd_file_save_as_tab (tab, window);
 	}
 }
 
@@ -1152,7 +1150,7 @@ gedit_commands_save_document (GeditWindow   *window,
 	gedit_debug (DEBUG_COMMANDS);
 	
 	tab = gedit_tab_get_from_document (document);
-	file_save (tab, window);
+	_gedit_cmd_file_save_tab (tab, window);
 }
 
 /* File revert */
@@ -1452,7 +1450,7 @@ save_and_close (GeditTab    *tab,
 			  G_CALLBACK (tab_state_changed_while_saving),
 			  window);
 
-	file_save (tab, window);
+	_gedit_cmd_file_save_tab (tab, window);
 }
 
 static void
@@ -1472,7 +1470,7 @@ save_as_and_close (GeditTab    *tab,
 			  window);
 
 	gedit_window_set_active_tab (window, tab);
-	file_save_as (tab, window);
+	_gedit_cmd_file_save_as_tab (tab, window);
 }
 
 static void

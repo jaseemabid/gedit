@@ -80,7 +80,8 @@ struct _GeditMultiNotebookClass
 						 gint                y);
 	void	(* page_reordered)		(GeditMultiNotebook *mnb);
 	void	(* show_popup_menu)		(GeditMultiNotebook *mnb,
-						 GdkEvent           *event);
+						 GdkEvent           *event,
+						 GeditTab           *tab);
 };
 
 GType			 gedit_multi_notebook_get_type			(void) G_GNUC_CONST;

@@ -45,6 +45,7 @@
 #include "gedit-window-private.h"
 #include "gedit-app.h"
 #include "gedit-notebook.h"
+#include "gedit-notebook-popup-menu.h"
 #include "gedit-multi-notebook.h"
 #include "gedit-statusbar.h"
 #include "gedit-utils.h"
@@ -3782,16 +3783,17 @@ on_tab_close_request (GeditMultiNotebook *multi,
 
 static void
 on_show_popup_menu (GeditMultiNotebook *multi,
-		    GdkEventButton     *event,
-		    GeditWindow        *window)
+                    GdkEventButton     *event,
+                    GeditTab           *tab,
+                    GeditWindow        *window)
 {
 	GtkWidget *menu;
 
 	if (event == NULL)
 		return;
 
-	menu = gtk_ui_manager_get_widget (window->priv->manager, "/NotebookPopup");
-	g_return_if_fail (menu != NULL);
+	menu = gedit_notebook_popup_menu_new (window, tab);
+	gtk_widget_show (menu);
 
 	gtk_menu_popup (GTK_MENU (menu), NULL, NULL,
 			NULL, NULL,
