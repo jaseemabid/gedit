@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit 3.1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-12 18:07+0100\n"
-"PO-Revision-Date: 2011-11-12 18:07+0100\n"
+"POT-Creation-Date: 2011-12-14 22:36+0100\n"
+"PO-Revision-Date: 2011-12-14 22:36+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Edit text files"
 msgstr "Rediger tekstfiler"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:805
+#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:808
 msgid "Text Editor"
 msgstr "Tekstredigering"
 
@@ -608,33 +608,33 @@ msgstr ""
 msgid "_Use the system fixed width font (%s)"
 msgstr "Br_uk systemets skrift for fast bredde (%s)"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:634
+#: ../gedit/dialogs/gedit-preferences-dialog.c:629
 msgid "The selected color scheme cannot be installed."
 msgstr "Valgt fargeschema kan ikke installeres."
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:661
+#: ../gedit/dialogs/gedit-preferences-dialog.c:656
 msgid "Add Scheme"
 msgstr "Legg til schema"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:668
+#: ../gedit/dialogs/gedit-preferences-dialog.c:663
 msgid "A_dd Scheme"
 msgstr "_Legg til schema"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:676
+#: ../gedit/dialogs/gedit-preferences-dialog.c:671
 msgid "Color Scheme Files"
 msgstr "Filer for fargeschema"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:683
+#: ../gedit/dialogs/gedit-preferences-dialog.c:678
 #: ../gedit/gedit-file-chooser-dialog.c:52
 msgid "All Files"
 msgstr "Alle filer"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:728
+#: ../gedit/dialogs/gedit-preferences-dialog.c:723
 #, c-format
 msgid "Could not remove color scheme \"%s\"."
 msgstr "Kunne ikke fjerne fargeschema «%s»"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:947
+#: ../gedit/dialogs/gedit-preferences-dialog.c:942
 msgid "gedit Preferences"
 msgstr "Brukervalg for gedit"
 
@@ -750,7 +750,7 @@ msgid "_minutes"
 msgstr "_minutter"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1626
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1658
 msgid "Replace"
 msgstr "Erstatt"
 
@@ -759,7 +759,7 @@ msgid "Replace _All"
 msgstr "Erstatt _alle"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:288
-#: ../gedit/gedit-commands-file.c:572
+#: ../gedit/gedit-commands-file.c:570
 msgid "_Replace"
 msgstr "E_rstatt"
 
@@ -829,8 +829,8 @@ msgid "Create a new document in an existing instance of gedit"
 msgstr "Opprett et nytt dokument i en eksisterende instans av gedit"
 
 #: ../gedit/gedit-command-line.c:294
-msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
-msgstr "Sett X-geometri for vindustørrelse (BREDDExHØYDE+X+Y)"
+msgid "Set the size and position of the window (WIDTHxHEIGHT+X+Y)"
+msgstr "Sett størrelse og posisjon for vinduet (BREDDExHØYDE+X+Y)"
 
 #: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
@@ -883,20 +883,20 @@ msgstr[1] "Laster %d filer …"
 msgid "Open Files"
 msgstr "Åpne filer"
 
-#: ../gedit/gedit-commands-file.c:559
+#: ../gedit/gedit-commands-file.c:557
 #, c-format
 msgid "The file \"%s\" is read-only."
 msgstr "Filen «%s» er skrivebeskyttet."
 
-#: ../gedit/gedit-commands-file.c:564
+#: ../gedit/gedit-commands-file.c:562
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr "Vil du prøve å erstatte den med filen du lagrer?"
 
-#: ../gedit/gedit-commands-file.c:614
+#: ../gedit/gedit-commands-file.c:612
 msgid "Save the file using compression?"
 msgstr "Lagre filen med komprimering?"
 
-#: ../gedit/gedit-commands-file.c:615
+#: ../gedit/gedit-commands-file.c:613
 #, c-format
 msgid ""
 "The file \"%s\" was previously saved as plain text and will now be saved "
@@ -904,15 +904,15 @@ msgid ""
 msgstr ""
 "Filen «%s» var lagret som ren tekst og vil nå bli lagret med komprimering."
 
-#: ../gedit/gedit-commands-file.c:617
+#: ../gedit/gedit-commands-file.c:615
 msgid "_Save Using Compression"
 msgstr "_Lagre med komprimering"
 
-#: ../gedit/gedit-commands-file.c:621
+#: ../gedit/gedit-commands-file.c:619
 msgid "Save the file as plain text?"
 msgstr "Lagre filen som ren tekst?"
 
-#: ../gedit/gedit-commands-file.c:622
+#: ../gedit/gedit-commands-file.c:620
 #, c-format
 msgid ""
 "The file \"%s\" was previously saved using compression and will now be saved "
@@ -920,30 +920,30 @@ msgid ""
 msgstr ""
 "Filen «%s» var lagret med komprimering og vil nå bli lagret som ren tekst."
 
-#: ../gedit/gedit-commands-file.c:624
+#: ../gedit/gedit-commands-file.c:622
 msgid "_Save As Plain Text"
 msgstr "_Lagre som vanlig tekst"
 
-#: ../gedit/gedit-commands-file.c:742 ../gedit/gedit-commands-file.c:961
+#: ../gedit/gedit-commands-file.c:740 ../gedit/gedit-commands-file.c:957
 #, c-format
 msgid "Saving file '%s'…"
 msgstr "Lagrer fil «%s» …"
 
-#: ../gedit/gedit-commands-file.c:847
+#: ../gedit/gedit-commands-file.c:844
 msgid "Save As"
 msgstr "Lagre som"
 
-#: ../gedit/gedit-commands-file.c:1175
+#: ../gedit/gedit-commands-file.c:1171
 #, c-format
 msgid "Reverting the document '%s'…"
 msgstr "Forkaster endringer i dokument «%s» …"
 
-#: ../gedit/gedit-commands-file.c:1220
+#: ../gedit/gedit-commands-file.c:1216
 #, c-format
 msgid "Revert unsaved changes to document '%s'?"
 msgstr "Forkast ikke-lagrede endringer i dokumentet «%s»?"
 
-#: ../gedit/gedit-commands-file.c:1229
+#: ../gedit/gedit-commands-file.c:1225
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld second will be permanently lost."
@@ -953,12 +953,12 @@ msgid_plural ""
 msgstr[0] "Endringer gjort i dokumentet det siste %ld sekundet vil å tapt."
 msgstr[1] "Endringer gjort i dokumentet de siste %ld sekundene vil gå tapt."
 
-#: ../gedit/gedit-commands-file.c:1238
+#: ../gedit/gedit-commands-file.c:1234
 msgid ""
 "Changes made to the document in the last minute will be permanently lost."
 msgstr "Endringer gjort i dokumentet det siste minuttet vil gå tapt."
 
-#: ../gedit/gedit-commands-file.c:1244
+#: ../gedit/gedit-commands-file.c:1240
 #, c-format
 msgid ""
 "Changes made to the document in the last minute and %ld second will be "
@@ -971,7 +971,7 @@ msgstr[0] ""
 msgstr[1] ""
 "Endringer gjort i dokumentet det siste minuttet og %ld sekundene vil gå tapt."
 
-#: ../gedit/gedit-commands-file.c:1254
+#: ../gedit/gedit-commands-file.c:1250
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld minute will be permanently lost."
@@ -981,11 +981,11 @@ msgid_plural ""
 msgstr[0] "Endringer gjort i dokumentet det siste %ld minuttet vil gå tapt."
 msgstr[1] "Endringer gjort i dokumentet de siste %ld minuttene vil gå tapt."
 
-#: ../gedit/gedit-commands-file.c:1269
+#: ../gedit/gedit-commands-file.c:1265
 msgid "Changes made to the document in the last hour will be permanently lost."
 msgstr "Endringer gjort i dokumentet den siste timen vil gå tapt."
 
-#: ../gedit/gedit-commands-file.c:1275
+#: ../gedit/gedit-commands-file.c:1271
 #, c-format
 msgid ""
 "Changes made to the document in the last hour and %d minute will be "
@@ -998,7 +998,7 @@ msgstr[0] ""
 msgstr[1] ""
 "Endringer gjort i dokumentet den siste timen og %d minuttene vil gå tapt."
 
-#: ../gedit/gedit-commands-file.c:1290
+#: ../gedit/gedit-commands-file.c:1286
 #, c-format
 msgid ""
 "Changes made to the document in the last %d hour will be permanently lost."
@@ -1007,7 +1007,7 @@ msgid_plural ""
 msgstr[0] "Endringer gjort i dokumentet den siste %d timen vil gå tapt."
 msgstr[1] "Endringer gjort i dokumentet de siste %d timene vil gå tapt."
 
-#: ../gedit/gedit-commands-file.c:1316
+#: ../gedit/gedit-commands-file.c:1312
 msgid "_Revert"
 msgstr "Fo_rkast"
 
@@ -1039,17 +1039,17 @@ msgstr "Fant og erstattet en oppføring"
 msgid "\"%s\" not found"
 msgstr "«%s» ikke funnet"
 
-#: ../gedit/gedit-document.c:1241 ../gedit/gedit-document.c:1267
+#: ../gedit/gedit-document.c:1243 ../gedit/gedit-document.c:1269
 #, c-format
 msgid "Unsaved Document %d"
 msgstr "Ikke-lagret dokument %d"
 
 #: ../gedit/gedit-documents-panel.c:121 ../gedit/gedit-documents-panel.c:135
-#: ../gedit/gedit-window.c:2459 ../gedit/gedit-window.c:2466
+#: ../gedit/gedit-window.c:2491 ../gedit/gedit-window.c:2498
 msgid "Read-Only"
 msgstr "Skrivebeskyttet"
 
-#: ../gedit/gedit-documents-panel.c:1143 ../gedit/gedit-window.c:3907
+#: ../gedit/gedit-documents-panel.c:1143 ../gedit/gedit-window.c:3940
 msgid "Documents"
 msgstr "Dokumenter"
 
@@ -1556,6 +1556,19 @@ msgstr ""
 "Hvis du fortsetter å lagre denne filen kan dokumentet bli korrupt. Lagre "
 "likevel?"
 
+#. Keep in sync with the respective GtkActions
+#: ../gedit/gedit-notebook-popup-menu.c:172 ../gedit/gedit-ui.h:140
+msgid "_Move to New Window"
+msgstr "_Flytt til nytt vindu"
+
+#: ../gedit/gedit-notebook-popup-menu.c:190 ../gedit/gedit-ui.h:78
+msgid "Save _As..."
+msgstr "L_agre som …"
+
+#: ../gedit/gedit-notebook-popup-menu.c:203 ../gedit/gedit-ui.h:84
+msgid "_Print..."
+msgstr "S_kriv ut …"
+
 #: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:586
 msgid "Empty"
 msgstr "Tom"
@@ -1564,16 +1577,16 @@ msgstr "Tom"
 msgid "Hide panel"
 msgstr "Skjul panel"
 
-#: ../gedit/gedit-print-job.c:586
+#: ../gedit/gedit-print-job.c:589
 #, c-format
 msgid "File: %s"
 msgstr "Fil: %s"
 
-#: ../gedit/gedit-print-job.c:595
+#: ../gedit/gedit-print-job.c:598
 msgid "Page %N of %Q"
 msgstr "Side %N av %Q"
 
-#: ../gedit/gedit-print-job.c:857
+#: ../gedit/gedit-print-job.c:860
 msgid "Preparing..."
 msgstr "Forbereder …"
 
@@ -1720,7 +1733,7 @@ msgid_plural "There are %d tabs with errors"
 msgstr[0] "Det finnes en fane med feil"
 msgstr[1] "Det finnes %d faner med feil"
 
-#: ../gedit/gedit-style-scheme-manager.c:226
+#: ../gedit/gedit-style-scheme-manager.c:176
 #, c-format
 msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
 msgstr "Kunne ikke opprette katalog «%s»: g_mkdir_with_parents() feilet: %s"
@@ -1838,7 +1851,7 @@ msgstr "Opprett et nytt dokument"
 msgid "_Open..."
 msgstr "_Åpne …"
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1554
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1586
 msgid "Open a file"
 msgstr "Åpne en fil"
 
@@ -1872,10 +1885,6 @@ msgstr "Forlat fullskjerm"
 msgid "Save the current file"
 msgstr "Lagre aktiv fil"
 
-#: ../gedit/gedit-ui.h:78
-msgid "Save _As..."
-msgstr "L_agre som …"
-
 #: ../gedit/gedit-ui.h:79
 msgid "Save the current file with a different name"
 msgstr "Lagre aktiv fil med et nytt navn"
@@ -1891,10 +1900,6 @@ msgstr "Forhånds_visning av utskrift"
 #: ../gedit/gedit-ui.h:83
 msgid "Print preview"
 msgstr "Forhåndsvisning"
-
-#: ../gedit/gedit-ui.h:84
-msgid "_Print..."
-msgstr "S_kriv ut …"
 
 #: ../gedit/gedit-ui.h:85
 msgid "Print the current page"
@@ -2043,10 +2048,6 @@ msgstr "N_este dokument"
 msgid "Activate next document"
 msgstr "Aktiver forrige dokument"
 
-#: ../gedit/gedit-ui.h:140
-msgid "_Move to New Window"
-msgstr "_Flytt til nytt vindu"
-
 #: ../gedit/gedit-ui.h:141
 msgid "Move the current document to a new window"
 msgstr "Flytt aktivt dokument til et nytt vindu"
@@ -2138,7 +2139,7 @@ msgstr "Streng du vil søke etter"
 msgid "Line you want to move the cursor to"
 msgstr "Linje du vil flytte markøren til"
 
-#: ../gedit/gedit-window.c:1040
+#: ../gedit/gedit-window.c:1041
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Bruk uthevingsmodus %s"
@@ -2146,72 +2147,72 @@ msgstr "Bruk uthevingsmodus %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1107 ../gedit/gedit-window.c:2156
+#: ../gedit/gedit-window.c:1146 ../gedit/gedit-window.c:2185
 #: ../plugins/externaltools/tools/manager.py:138
-#: ../plugins/externaltools/tools/manager.py:441
-#: ../plugins/externaltools/tools/manager.py:552
-#: ../plugins/externaltools/tools/manager.py:868
+#: ../plugins/externaltools/tools/manager.py:442
+#: ../plugins/externaltools/tools/manager.py:553
+#: ../plugins/externaltools/tools/manager.py:874
 msgid "Plain Text"
 msgstr "Vanlig tekst"
 
-#: ../gedit/gedit-window.c:1108
+#: ../gedit/gedit-window.c:1147
 msgid "Disable syntax highlighting"
 msgstr "Deaktiver syntaksutheving"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1433
+#: ../gedit/gedit-window.c:1464
 #, c-format
 msgid "Open '%s'"
 msgstr "Åpne «%s»"
 
-#: ../gedit/gedit-window.c:1556
+#: ../gedit/gedit-window.c:1588
 msgid "Open a recently used file"
 msgstr "Åpne nylig brukt fil"
 
-#: ../gedit/gedit-window.c:1562
+#: ../gedit/gedit-window.c:1594
 msgid "Open"
 msgstr "Åpne"
 
-#: ../gedit/gedit-window.c:1620
+#: ../gedit/gedit-window.c:1652
 msgid "Save"
 msgstr "Lagre"
 
-#: ../gedit/gedit-window.c:1622
+#: ../gedit/gedit-window.c:1654
 msgid "Print"
 msgstr "Skriv ut"
 
-#: ../gedit/gedit-window.c:1624
+#: ../gedit/gedit-window.c:1656
 msgid "Find"
 msgstr "Finn"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1784
+#: ../gedit/gedit-window.c:1816
 #, c-format
 msgid "Activate '%s'"
 msgstr "Aktiver «%s»"
 
-#: ../gedit/gedit-window.c:2134
+#: ../gedit/gedit-window.c:2166
 msgid "Use Spaces"
 msgstr "Bruk mellomrom"
 
-#: ../gedit/gedit-window.c:2207
+#: ../gedit/gedit-window.c:2239
 msgid "Tab Width"
 msgstr "Tabulatorbredde"
 
-#: ../gedit/gedit-window.c:2316
+#: ../gedit/gedit-window.c:2348
 msgid "Bracket match is out of range"
 msgstr "Søk etter sammenhørende hakeparantes utenfor gyldig område"
 
-#: ../gedit/gedit-window.c:2321
+#: ../gedit/gedit-window.c:2353
 msgid "Bracket match not found"
 msgstr "Fant ingen sammenhørende hakeparanteser"
 
-#: ../gedit/gedit-window.c:2326
+#: ../gedit/gedit-window.c:2358
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Sammenhørende hakeparantes funnet på linje: %d"
 
-#: ../gedit/gedit-window.c:4113
+#: ../gedit/gedit-window.c:4146
 msgid "About gedit"
 msgstr "Om gedit"
 
@@ -2316,7 +2317,17 @@ msgstr ""
 msgid "Document Statistics"
 msgstr "Dokumentstatistikk"
 
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
+msgid "_Document Statistics"
+msgstr "_Dokumentstatistikk"
+
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
+msgid "Get statistical information on the current document"
+msgstr "Hent statisisk informasjon om dette dokumentet"
+
+#. ex:set ts=8 noet:
 #. ex:ts=4:et:
+#. ex:ts=8:noet:
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 #: ../plugins/externaltools/tools/tools.ui.h:1
 #: ../plugins/snippets/snippets/snippets.ui.h:1
@@ -2360,24 +2371,39 @@ msgstr "Ord"
 msgid "_Update"
 msgstr "_Oppdater"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
-msgid "_Document Statistics"
-msgstr "_Dokumentstatistikk"
+#: ../plugins/externaltools/data/build.desktop.in.h:1
+msgid "Build"
+msgstr "Bygg"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
-msgid "Get statistical information on the current document"
-msgstr "Hent statisisk informasjon om dette dokumentet"
+#: ../plugins/externaltools/data/build.desktop.in.h:2
+msgid "Run \"make\" in the document directory"
+msgstr "Kjør «make» i dokumentkatalogen"
 
-#. ex:set ts=8 noet:
-#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
 #: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:1
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
 msgid "Open a terminal in the document location"
 msgstr "Åpne en terminal i dokumentkatalogen"
 
-#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:2
 #: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:2
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:2
 msgid "Open terminal here"
 msgstr "Åpne terminal her"
+
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:1
+msgid "Remove trailing spaces"
+msgstr "Fjern ekstra mellomrom"
+
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:2
+msgid "Remove useless trailing spaces in your file"
+msgstr "Fjern unødvendige mellomrom i filen"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:1
+msgid "Execute a custom command and put its output in a new document"
+msgstr "Kjør en egendefinert kommando og lagre utdata i et nytt dokument"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:2
+msgid "Run command"
+msgstr "Kjør kommando"
 
 #: ../plugins/externaltools/externaltools.plugin.desktop.in.h:1
 msgid "Execute external commands and shell scripts."
@@ -2431,18 +2457,18 @@ msgstr "Avsluttet"
 msgid "All languages"
 msgstr "Alle språk"
 
-#: ../plugins/externaltools/tools/manager.py:541
-#: ../plugins/externaltools/tools/manager.py:545
-#: ../plugins/externaltools/tools/manager.py:866
+#: ../plugins/externaltools/tools/manager.py:542
+#: ../plugins/externaltools/tools/manager.py:546
+#: ../plugins/externaltools/tools/manager.py:872
 #: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Alle språk"
 
-#: ../plugins/externaltools/tools/manager.py:652
+#: ../plugins/externaltools/tools/manager.py:659
 msgid "New tool"
 msgstr "Nytt verktøy"
 
-#: ../plugins/externaltools/tools/manager.py:783
+#: ../plugins/externaltools/tools/manager.py:790
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr "Denne snarveien er allerede satt til %s"
@@ -2605,30 +2631,6 @@ msgid "Shell Output"
 msgstr "Utdata på kommandolinjen"
 
 #. ex:ts=4:et:
-#: ../plugins/externaltools/data/build.desktop.in.h:1
-msgid "Build"
-msgstr "Bygg"
-
-#: ../plugins/externaltools/data/build.desktop.in.h:2
-msgid "Run \"make\" in the document directory"
-msgstr "Kjør «make» i dokumentkatalogen"
-
-#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:1
-msgid "Remove trailing spaces"
-msgstr "Fjern ekstra mellomrom"
-
-#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:2
-msgid "Remove useless trailing spaces in your file"
-msgstr "Fjern unødvendige mellomrom i filen"
-
-#: ../plugins/externaltools/data/run-command.desktop.in.h:1
-msgid "Execute a custom command and put its output in a new document"
-msgstr "Kjør en egendefinert kommando og lagre utdata i et nytt dokument"
-
-#: ../plugins/externaltools/data/run-command.desktop.in.h:2
-msgid "Run command"
-msgstr "Kjør kommando"
-
 #: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:1
 msgid "Easy file access from the side panel"
 msgstr "Enkel filtilgang fra sidepanelet"
@@ -3034,16 +3036,6 @@ msgstr "Fargetekst for kommando"
 msgid "The error color text"
 msgstr "Fargetekst for feil"
 
-#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
-msgid "Interactive Python console standing in the bottom panel"
-msgstr "Interaktivt python-konsoll i det nederste panelet"
-
-#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-#: ../plugins/pythonconsole/pythonconsole/__init__.py:52
-msgid "Python Console"
-msgstr "Python-konsoll"
-
-#. ex:et:ts=4:
 #: ../plugins/pythonconsole/pythonconsole/config.ui.h:1
 msgid "C_ommand color:"
 msgstr "Farge for k_ommando:"
@@ -3052,105 +3044,80 @@ msgstr "Farge for k_ommando:"
 msgid "_Error color:"
 msgstr "Farge for f_eil:"
 
-#. ex:ts=4:et:
-#: ../plugins/quickopen/quickopen/popup.py:31
+#: ../plugins/pythonconsole/pythonconsole/__init__.py:52
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
+msgid "Python Console"
+msgstr "Python-konsoll"
+
+#. ex:et:ts=4:
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
+msgid "Interactive Python console standing in the bottom panel"
+msgstr "Interaktivt python-konsoll i det nederste panelet"
+
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:1
+#: ../plugins/quickopen/quickopen/popup.py:31
 msgid "Quick Open"
 msgstr "Hurtigåpning"
-
-#: ../plugins/quickopen/quickopen/popup.py:72
-msgid "Type to search..."
-msgstr "Skriv for å søke …"
 
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:2
 msgid "Quickly open files"
 msgstr "Åpne filer raskt"
 
-#: ../plugins/snippets/snippets.plugin.desktop.in.h:1
-msgid "Insert often-used pieces of text in a fast way"
-msgstr "Sett inn ofte brukte tekstblokker på en lettvint måte"
+#: ../plugins/quickopen/quickopen/popup.py:72
+msgid "Type to search..."
+msgstr "Skriv for å søke …"
 
-#: ../plugins/snippets/snippets.plugin.desktop.in.h:2
 #: ../plugins/snippets/snippets/document.py:56
+#: ../plugins/snippets/snippets.plugin.desktop.in.h:2
 msgid "Snippets"
 msgstr "Tekstblokker"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:2
-msgid "Activation"
-msgstr "Aktivering"
+#: ../plugins/snippets/snippets/exporter.py:82
+#, python-format
+msgid "The archive \"%s\" could not be created"
+msgstr "Arkivet «%s» kunne ikke opprettes"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:3
-msgid "Add Snippet"
-msgstr "Legg til tekstblokk"
+#: ../plugins/snippets/snippets/exporter.py:99
+#, python-format
+msgid "Target directory \"%s\" does not exist"
+msgstr "Målkatalog «%s» eksisterer ikke"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:4
-msgid "Create new snippet"
-msgstr "Opprett ny tekstblokk"
+#: ../plugins/snippets/snippets/exporter.py:102
+#, python-format
+msgid "Target directory \"%s\" is not a valid directory"
+msgstr "Målkatalog «%s» er ikke en gyldig katalog"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:5
-#: ../plugins/snippets/snippets/manager.py:399
-msgid "Delete selected snippet"
-msgstr "Slett valgt tekstblokk"
+#: ../plugins/snippets/snippets/importer.py:47
+#: ../plugins/snippets/snippets/importer.py:108
+#, python-format
+msgid "File \"%s\" does not exist"
+msgstr "Fil «%s» eksisterer ikke"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:6
-msgid "Export Snippets"
-msgstr "Eksporter tekstblokker"
+#: ../plugins/snippets/snippets/importer.py:50
+#, python-format
+msgid "File \"%s\" is not a valid snippets file"
+msgstr "Filen «%s» er ikke en gyldig tekstblokkfil"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:7
-msgid "Export selected snippets"
-msgstr "Eksporter valgt tekstblokk"
+#: ../plugins/snippets/snippets/importer.py:67
+#, python-format
+msgid "Imported file \"%s\" is not a valid snippets file"
+msgstr "Importert fil «%s» er ikke en gyldig tekstblokkfil"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:8
-msgid "Import Snippets"
-msgstr "Importer tekstblokker"
+#: ../plugins/snippets/snippets/importer.py:77
+#, python-format
+msgid "The archive \"%s\" could not be extracted"
+msgstr "Arkivet «%s» kunne ikke pakkes ut"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:776
-msgid "Import snippets"
-msgstr "Importer tekstblokk"
+#: ../plugins/snippets/snippets/importer.py:95
+#, python-format
+msgid "The following files could not be imported: %s"
+msgstr "Følgende filer kunne ikke importeres: %s"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:10
-msgid "Manage Snippets"
-msgstr "Håndter tekstblokker"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:11
-msgid "Remove Snippet"
-msgstr "Fjern tekstblokk"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:12
-msgid "S_hortcut key:"
-msgstr "S_narveitast:"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:13
-msgid "Shortcut key with which the snippet is activated"
-msgstr "Snarveitast som aktiverer tekstblokker"
-
-#. self['hbox_tab_trigger'].set_spacing(0)
-#: ../plugins/snippets/snippets/snippets.ui.h:14
-#: ../plugins/snippets/snippets/manager.py:666
-msgid "Single word the snippet is activated with after pressing Tab"
-msgstr "Enkelt ord som aktiverer tekstblokker etter å trykke tabulator"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:15
-msgid "_Drop targets:"
-msgstr "Mål for slipp:"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:17
-msgid "_Snippets:"
-msgstr "_Tekstblokker:"
-
-#. "tab" here means the tab key, not the notebook tab!
-#: ../plugins/snippets/snippets/snippets.ui.h:19
-msgid "_Tab trigger:"
-msgstr "_Tab-utløser:"
-
-#: ../plugins/snippets/snippets/windowactivatable.py:145
-msgid "Manage _Snippets..."
-msgstr "Håndter _tekstblokker …"
-
-#: ../plugins/snippets/snippets/windowactivatable.py:146
-msgid "Manage snippets"
-msgstr "Håndter tekstblokker"
+#: ../plugins/snippets/snippets/importer.py:111
+#: ../plugins/snippets/snippets/importer.py:124
+#, python-format
+msgid "File \"%s\" is not a valid snippets archive"
+msgstr "Fil «%s» er ikke et gyldig tekstblokkarkiv"
 
 #: ../plugins/snippets/snippets/manager.py:43
 msgid "Snippets archive"
@@ -3168,6 +3135,11 @@ msgstr "Global"
 msgid "Revert selected snippet"
 msgstr "Forkast valgt tekstblokk"
 
+#: ../plugins/snippets/snippets/manager.py:399
+#: ../plugins/snippets/snippets/snippets.ui.h:5
+msgid "Delete selected snippet"
+msgstr "Slett valgt tekstblokk"
+
 #. self['hbox_tab_trigger'].set_spacing(3)
 #: ../plugins/snippets/snippets/manager.py:659
 msgid ""
@@ -3177,6 +3149,12 @@ msgstr ""
 "Dette er ikke en gyldig utløser for tabulator. Utløsere kan enten inneholde "
 "bokstaver eller et enkelt, ikke alfanumerisk, tegn som {, [, etc."
 
+#. self['hbox_tab_trigger'].set_spacing(0)
+#: ../plugins/snippets/snippets/manager.py:666
+#: ../plugins/snippets/snippets/snippets.ui.h:14
+msgid "Single word the snippet is activated with after pressing Tab"
+msgstr "Enkelt ord som aktiverer tekstblokker etter å trykke tabulator"
+
 #: ../plugins/snippets/snippets/manager.py:755
 #, python-format
 msgid "The following error occurred while importing: %s"
@@ -3185,6 +3163,11 @@ msgstr "Følgende feil oppsto ved import: %s"
 #: ../plugins/snippets/snippets/manager.py:762
 msgid "Import successfully completed"
 msgstr "Import fullført uten feil"
+
+#: ../plugins/snippets/snippets/manager.py:776
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+msgid "Import snippets"
+msgstr "Importer tekstblokk"
 
 #: ../plugins/snippets/snippets/manager.py:781
 #: ../plugins/snippets/snippets/manager.py:867
@@ -3247,53 +3230,6 @@ msgstr "Skriv inn en ny snarvei eller trykk slett for å tømme"
 msgid "Type a new shortcut"
 msgstr "Skriv inn en ny snarvei"
 
-#: ../plugins/snippets/snippets/exporter.py:82
-#, python-format
-msgid "The archive \"%s\" could not be created"
-msgstr "Arkivet «%s» kunne ikke opprettes"
-
-#: ../plugins/snippets/snippets/exporter.py:99
-#, python-format
-msgid "Target directory \"%s\" does not exist"
-msgstr "Målkatalog «%s» eksisterer ikke"
-
-#: ../plugins/snippets/snippets/exporter.py:102
-#, python-format
-msgid "Target directory \"%s\" is not a valid directory"
-msgstr "Målkatalog «%s» er ikke en gyldig katalog"
-
-#: ../plugins/snippets/snippets/importer.py:47
-#: ../plugins/snippets/snippets/importer.py:108
-#, python-format
-msgid "File \"%s\" does not exist"
-msgstr "Fil «%s» eksisterer ikke"
-
-#: ../plugins/snippets/snippets/importer.py:50
-#, python-format
-msgid "File \"%s\" is not a valid snippets file"
-msgstr "Filen «%s» er ikke en gyldig tekstblokkfil"
-
-#: ../plugins/snippets/snippets/importer.py:67
-#, python-format
-msgid "Imported file \"%s\" is not a valid snippets file"
-msgstr "Importert fil «%s» er ikke en gyldig tekstblokkfil"
-
-#: ../plugins/snippets/snippets/importer.py:77
-#, python-format
-msgid "The archive \"%s\" could not be extracted"
-msgstr "Arkivet «%s» kunne ikke pakkes ut"
-
-#: ../plugins/snippets/snippets/importer.py:95
-#, python-format
-msgid "The following files could not be imported: %s"
-msgstr "Følgende filer kunne ikke importeres: %s"
-
-#: ../plugins/snippets/snippets/importer.py:111
-#: ../plugins/snippets/snippets/importer.py:124
-#, python-format
-msgid "File \"%s\" is not a valid snippets archive"
-msgstr "Fil «%s» er ikke et gyldig tekstblokkarkiv"
-
 #: ../plugins/snippets/snippets/placeholder.py:594
 #, python-format
 msgid ""
@@ -3306,6 +3242,72 @@ msgstr ""
 #, python-format
 msgid "Execution of the Python command (%s) failed: %s"
 msgstr "Kjøring av Python-kommando (%s) feilet: %s"
+
+#. ex:ts=8:et:
+#: ../plugins/snippets/snippets.plugin.desktop.in.h:1
+msgid "Insert often-used pieces of text in a fast way"
+msgstr "Sett inn ofte brukte tekstblokker på en lettvint måte"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:2
+msgid "Activation"
+msgstr "Aktivering"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:3
+msgid "Add Snippet"
+msgstr "Legg til tekstblokk"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:4
+msgid "Create new snippet"
+msgstr "Opprett ny tekstblokk"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:6
+msgid "Export Snippets"
+msgstr "Eksporter tekstblokker"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:7
+msgid "Export selected snippets"
+msgstr "Eksporter valgt tekstblokk"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:8
+msgid "Import Snippets"
+msgstr "Importer tekstblokker"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+msgid "Manage Snippets"
+msgstr "Håndter tekstblokker"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:11
+msgid "Remove Snippet"
+msgstr "Fjern tekstblokk"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:12
+msgid "S_hortcut key:"
+msgstr "S_narveitast:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:13
+msgid "Shortcut key with which the snippet is activated"
+msgstr "Snarveitast som aktiverer tekstblokker"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:15
+msgid "_Drop targets:"
+msgstr "Mål for slipp:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:17
+msgid "_Snippets:"
+msgstr "_Tekstblokker:"
+
+#. "tab" here means the tab key, not the notebook tab!
+#: ../plugins/snippets/snippets/snippets.ui.h:19
+msgid "_Tab trigger:"
+msgstr "_Tab-utløser:"
+
+#: ../plugins/snippets/snippets/windowactivatable.py:154
+msgid "Manage _Snippets..."
+msgstr "Håndter _tekstblokker …"
+
+#: ../plugins/snippets/snippets/windowactivatable.py:155
+msgid "Manage snippets"
+msgstr "Håndter tekstblokker"
 
 #: ../plugins/sort/gedit-sort-plugin.c:88
 msgid "S_ort..."
@@ -3530,55 +3532,6 @@ msgstr "Sjekker staving i aktivt dokument."
 msgid "Spell Checker"
 msgstr "Stavekontroll"
 
-#: ../plugins/time/gedit-time-plugin.c:188
-msgid "In_sert Date and Time..."
-msgstr "_Sett inn dato/klokkeslett …"
-
-#: ../plugins/time/gedit-time-plugin.c:190
-msgid "Insert current date and time at the cursor position"
-msgstr "Sett inn dagens dato og klokkeslett i markørposisjonen"
-
-#: ../plugins/time/gedit-time-plugin.c:551
-msgid "Available formats"
-msgstr "Tilgjengelige formater"
-
-#. ex:ts=8:noet:
-#: ../plugins/time/time.plugin.desktop.in.h:1
-msgid "Insert Date/Time"
-msgstr "Sett inn dato/klokkeslett"
-
-#: ../plugins/time/time.plugin.desktop.in.h:2
-msgid "Inserts current date and time at the cursor position."
-msgstr "Setter inn dagens dato og klokkeslett i markørposisjonen."
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:1
-msgid "Custom Format"
-msgstr "Egendefinert format"
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:2
-msgid ""
-"If the user should be prompted for a format or if the selected or custom "
-"format should be used."
-msgstr ""
-"Hvorvidt bruker skal spørres etter et format eller om valgt eller "
-"egendefinert format skal brukes."
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
-msgid "Prompt Type"
-msgstr "Type ledetekst"
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
-msgid "Selected Format"
-msgstr "Valgt format"
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
-msgid "The custom format used when inserting the date/time."
-msgstr "Egendefinert format som brukes ved innsetting av dato/klokkeslett."
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
-msgid "The selected format used when inserting the date/time."
-msgstr "Valgt format som brukes ved innsetting av dato/klokkeslett."
-
 #. Translators: Use the more common date format in your locale
 #: ../plugins/time/gedit-time-dialog.ui.h:2
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:4
@@ -3610,6 +3563,18 @@ msgstr "Sett _inn"
 msgid "_Use custom format"
 msgstr "Vis vindu for tag-liste"
 
+#: ../plugins/time/gedit-time-plugin.c:188
+msgid "In_sert Date and Time..."
+msgstr "_Sett inn dato/klokkeslett …"
+
+#: ../plugins/time/gedit-time-plugin.c:190
+msgid "Insert current date and time at the cursor position"
+msgstr "Sett inn dagens dato og klokkeslett i markørposisjonen"
+
+#: ../plugins/time/gedit-time-plugin.c:551
+msgid "Available formats"
+msgstr "Tilgjengelige formater"
+
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:7
 msgid "Configure date/time plugin"
 msgstr "Konfigurer tillegg for dato/klokkeslett"
@@ -3621,6 +3586,42 @@ msgstr "Ved innsetting av dato/klokkeslett …"
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "_Prompt for a format"
 msgstr "S_pør etter et format"
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:1
+msgid "Custom Format"
+msgstr "Egendefinert format"
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:2
+msgid ""
+"If the user should be prompted for a format or if the selected or custom "
+"format should be used."
+msgstr ""
+"Hvorvidt bruker skal spørres etter et format eller om valgt eller "
+"egendefinert format skal brukes."
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
+msgid "Prompt Type"
+msgstr "Type ledetekst"
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
+msgid "Selected Format"
+msgstr "Valgt format"
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
+msgid "The custom format used when inserting the date/time."
+msgstr "Egendefinert format som brukes ved innsetting av dato/klokkeslett."
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
+msgid "The selected format used when inserting the date/time."
+msgstr "Valgt format som brukes ved innsetting av dato/klokkeslett."
+
+#: ../plugins/time/time.plugin.desktop.in.h:1
+msgid "Insert Date/Time"
+msgstr "Sett inn dato/klokkeslett"
+
+#: ../plugins/time/time.plugin.desktop.in.h:2
+msgid "Inserts current date and time at the cursor position."
+msgstr "Setter inn dagens dato og klokkeslett i markørposisjonen."
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
 msgid "Logs access and leave event for documents used with gedit"
