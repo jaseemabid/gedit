@@ -748,6 +748,7 @@ gedit_panel_add_item (GeditPanel  *panel,
 	GeditPanelItem *data;
 	GtkWidget *tab_label;
 	GtkWidget *menu_label;
+	GtkStyleContext *context;
 	gint w, h;
 
 	g_return_val_if_fail (GEDIT_IS_PANEL (panel), FALSE);
@@ -790,7 +791,16 @@ gedit_panel_add_item (GeditPanel  *panel,
 	gtk_widget_set_halign (menu_label, GTK_ALIGN_START);
 
 	if (!gtk_widget_get_visible (item))
+	{
 		gtk_widget_show (item);
+	}
+
+	/* Only apply the sidebar style to the side panel */
+	if (panel->priv->orientation == GTK_ORIENTATION_VERTICAL)
+	{
+		context = gtk_widget_get_style_context (item);
+		gtk_style_context_add_class (context, GTK_STYLE_CLASS_SIDEBAR);
+	}
 
 	gtk_notebook_append_page_menu (GTK_NOTEBOOK (panel->priv->notebook),
 				       item,
