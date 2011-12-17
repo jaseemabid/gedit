@@ -527,17 +527,8 @@ gedit_sort_plugin_dispose (GObject *object)
 
 	gedit_debug_message (DEBUG_PLUGINS, "GeditSortPlugin disposing");
 
-	if (plugin->priv->ui_action_group)
-	{
-		g_object_unref (plugin->priv->ui_action_group);
-		plugin->priv->ui_action_group = NULL;
-	}
-
-	if (plugin->priv->window != NULL)
-	{
-		g_object_unref (plugin->priv->window);
-		plugin->priv->window = NULL;
-	}
+	g_clear_object (&plugin->priv->ui_action_group);
+	g_clear_object (&plugin->priv->window);
 
 	G_OBJECT_CLASS (gedit_sort_plugin_parent_class)->dispose (object);
 }

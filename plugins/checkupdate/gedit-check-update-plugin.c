@@ -99,23 +99,9 @@ gedit_check_update_plugin_dispose (GObject *object)
 {
 	GeditCheckUpdatePlugin *plugin = GEDIT_CHECK_UPDATE_PLUGIN (object);
 
-	if (plugin->priv->session != NULL)
-	{
-		g_object_unref (plugin->priv->session);
-		plugin->priv->session = NULL;
-	}
-
-	if (plugin->priv->settings != NULL)
-	{
-		g_object_unref (plugin->priv->settings);
-		plugin->priv->settings = NULL;
-	}
-	
-	if (plugin->priv->window != NULL)
-	{
-		g_object_unref (plugin->priv->window);
-		plugin->priv->window = NULL;
-	}
+	g_clear_object (&plugin->priv->session);
+	g_clear_object (&plugin->priv->settings);
+	g_clear_object (&plugin->priv->window);
 
 	gedit_debug_message (DEBUG_PLUGINS,
 			     "GeditCheckUpdatePlugin disposing");

@@ -111,25 +111,12 @@ gedit_app_dispose (GObject *object)
 {
 	GeditApp *app = GEDIT_APP (object);
 
-	if (app->priv->window_settings != NULL)
-	{
-		g_object_unref (app->priv->window_settings);
-		app->priv->window_settings = NULL;
-	}
+	g_clear_object (&app->priv->window_settings);
+	g_clear_object (&app->priv->settings);
 
-	if (app->priv->settings != NULL)
-	{
-		g_object_unref (app->priv->settings);
-		app->priv->settings = NULL;
-	}
-
-	if (app->priv->extensions != NULL)
-	{
-		/* Note that unreffing the extensions will automatically remove
-		   all extensions which in turn will deactivate the extension */
-		g_object_unref (app->priv->extensions);
-		app->priv->extensions = NULL;
-	}
+	/* Note that unreffing the extensions will automatically remove
+	   all extensions which in turn will deactivate the extension */
+	g_clear_object (&app->priv->extensions);
 
 	G_OBJECT_CLASS (gedit_app_parent_class)->dispose (object);
 }

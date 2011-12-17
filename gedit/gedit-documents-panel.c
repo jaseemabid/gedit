@@ -697,11 +697,7 @@ gedit_documents_panel_dispose (GObject *object)
 		panel->priv->refresh_idle_id = 0;
 	}
 
-	if (panel->priv->window != NULL)
-	{
-		g_object_unref (panel->priv->window);
-		panel->priv->window = NULL;
-	}
+	g_clear_object (&panel->priv->window);
 
 	G_OBJECT_CLASS (gedit_documents_panel_parent_class)->dispose (object);
 }

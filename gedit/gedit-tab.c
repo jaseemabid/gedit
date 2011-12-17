@@ -250,17 +250,8 @@ gedit_tab_dispose (GObject *object)
 		tab->priv->print_preview = NULL;
 	}
 
-	if (tab->priv->tmp_save_location != NULL)
-	{
-		g_object_unref (tab->priv->tmp_save_location);
-		tab->priv->tmp_save_location = NULL;
-	}
-
-	if (tab->priv->editor != NULL)
-	{
-		g_object_unref (tab->priv->editor);
-		tab->priv->editor = NULL;
-	}
+	g_clear_object (&tab->priv->tmp_save_location);
+	g_clear_object (&tab->priv->editor);
 
 	G_OBJECT_CLASS (gedit_tab_parent_class)->dispose (object);
 }

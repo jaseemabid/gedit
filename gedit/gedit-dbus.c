@@ -160,23 +160,9 @@ gedit_dbus_dispose (GObject *object)
 		dbus->priv->stdin_cancellable = NULL;
 	}
 
-	if (dbus->priv->stdin_fifo)
-	{
-		g_object_unref (dbus->priv->stdin_fifo);
-		dbus->priv->stdin_fifo = NULL;
-	}
-
-	if (dbus->priv->stdin_out_stream)
-	{
-		g_object_unref (dbus->priv->stdin_out_stream);
-		dbus->priv->stdin_out_stream = NULL;
-	}
-
-	if (dbus->priv->stdin_in_stream)
-	{
-		g_object_unref (dbus->priv->stdin_in_stream);
-		dbus->priv->stdin_in_stream = NULL;
-	}
+	g_clear_object (&dbus->priv->stdin_fifo);
+	g_clear_object (&dbus->priv->stdin_out_stream);
+	g_clear_object (&dbus->priv->stdin_in_stream);
 
 	G_OBJECT_CLASS (gedit_dbus_parent_class)->dispose (object);
 }

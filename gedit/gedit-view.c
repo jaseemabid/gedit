@@ -249,17 +249,8 @@ gedit_view_dispose (GObject *object)
 {
 	GeditView *view = GEDIT_VIEW (object);
 
-	if (view->priv->extensions != NULL)
-	{
-		g_object_unref (view->priv->extensions);
-		view->priv->extensions = NULL;
-	}
-
-	if (view->priv->editor_settings != NULL)
-	{
-		g_object_unref (view->priv->editor_settings);
-		view->priv->editor_settings = NULL;
-	}
+	g_clear_object (&view->priv->extensions);
+	g_clear_object (&view->priv->editor_settings);
 
 	G_OBJECT_CLASS (gedit_view_parent_class)->dispose (object);
 }

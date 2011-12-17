@@ -307,48 +307,15 @@ gedit_window_dispose (GObject *object)
 		window->priv->update_documents_list_menu_id = 0;
 	}
 
-	if (window->priv->manager != NULL)
-	{
-		g_object_unref (window->priv->manager);
-		window->priv->manager = NULL;
-	}
-
-	if (window->priv->message_bus != NULL)
-	{
-		g_object_unref (window->priv->message_bus);
-		window->priv->message_bus = NULL;
-	}
-
-	if (window->priv->window_group != NULL)
-	{
-		g_object_unref (window->priv->window_group);
-		window->priv->window_group = NULL;
-	}
+	g_clear_object (&window->priv->manager);
+	g_clear_object (&window->priv->message_bus);
+	g_clear_object (&window->priv->window_group);
+	g_clear_object (&window->priv->default_location);
 
 	/* We must free the settings after saving the panels */
-	if (window->priv->editor_settings != NULL)
-	{
-		g_object_unref (window->priv->editor_settings);
-		window->priv->editor_settings = NULL;
-	}
-	
-	if (window->priv->ui_settings != NULL)
-	{
-		g_object_unref (window->priv->ui_settings);
-		window->priv->ui_settings = NULL;
-	}
-
-	if (window->priv->window_settings != NULL)
-	{
-		g_object_unref (window->priv->window_settings);
-		window->priv->window_settings = NULL;
-	}
-
-	if (window->priv->default_location != NULL)
-	{
-		g_object_unref (window->priv->default_location);
-		window->priv->default_location = NULL;
-	}
+	g_clear_object (&window->priv->editor_settings);
+	g_clear_object (&window->priv->ui_settings);
+	g_clear_object (&window->priv->window_settings);
 
 	/* Now that there have broken some reference loops,
 	 * force collection again.

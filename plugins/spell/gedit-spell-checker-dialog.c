@@ -116,11 +116,7 @@ gedit_spell_checker_dialog_dispose (GObject *object)
 {
 	GeditSpellCheckerDialog *dlg = GEDIT_SPELL_CHECKER_DIALOG (object);
 
-	if (dlg->spell_checker != NULL)
-	{
-		g_object_unref (dlg->spell_checker);
-		dlg->spell_checker = NULL;
-	}
+	g_clear_object (&dlg->spell_checker);
 
 	if (dlg->misspelled_word != NULL)
 	{
@@ -132,11 +128,22 @@ gedit_spell_checker_dialog_dispose (GObject *object)
 }
 
 static void
+gedit_spell_checker_dialog_finalize (GObject *object)
+{
+	GeditSpellCheckerDialog *dlg = GEDIT_SPELL_CHECKER_DIALOG (object);
+
+	g_free (dlg->misspelled_word);
+
+	G_OBJECT_CLASS (gedit_spell_checker_dialog_parent_class)->finalize (object);
+}
+
+static void
 gedit_spell_checker_dialog_class_init (GeditSpellCheckerDialogClass * klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
 	object_class->dispose = gedit_spell_checker_dialog_dispose;
+	object_class->finalize = gedit_spell_checker_dialog_finalize;
 
 	signals[IGNORE] = 
 		g_signal_new ("ignore",

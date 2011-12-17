@@ -210,41 +210,13 @@ gedit_document_loader_dispose (GObject *object)
 		priv->cancellable = NULL;
 	}
 
-	if (priv->stream != NULL)
-	{
-		g_object_unref (priv->stream);
-		priv->stream = NULL;
-	}
+	g_clear_error (&priv->error);
 
-	if (priv->output != NULL)
-	{
-		g_object_unref (priv->output);
-		priv->output = NULL;
-	}
-
-	if (priv->error != NULL)
-	{
-		g_error_free (priv->error);
-		priv->error = NULL;
-	}
-
-	if (priv->info != NULL)
-	{
-		g_object_unref (priv->info);
-		priv->info = NULL;
-	}
-	
-	if (priv->location != NULL)
-	{
-		g_object_unref (priv->location);
-		priv->location = NULL;
-	}
-	
-	if (priv->enc_settings != NULL)
-	{
-		g_object_unref (priv->enc_settings);
-		priv->enc_settings = NULL;
-	}
+	g_clear_object (&priv->stream);
+	g_clear_object (&priv->output);
+	g_clear_object (&priv->info);
+	g_clear_object (&priv->location);
+	g_clear_object (&priv->enc_settings);
 
 	G_OBJECT_CLASS (gedit_document_loader_parent_class)->dispose (object);
 }

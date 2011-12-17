@@ -165,17 +165,8 @@ gedit_notebook_dispose (GObject *object)
 {
 	GeditNotebook *notebook = GEDIT_NOTEBOOK (object);
 
-	if (notebook->priv->ui_settings != NULL)
-	{
-		g_object_unref (notebook->priv->ui_settings);
-		notebook->priv->ui_settings = NULL;
-	}
-
-	if (notebook->priv->css != NULL)
-	{
-		g_object_unref (notebook->priv->css);
-		notebook->priv->css = NULL;
-	}
+	g_clear_object (&notebook->priv->ui_settings);
+	g_clear_object (&notebook->priv->css);
 
 	G_OBJECT_CLASS (gedit_notebook_parent_class)->dispose (object);
 }

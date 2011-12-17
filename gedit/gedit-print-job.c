@@ -175,17 +175,8 @@ gedit_print_job_dispose (GObject *object)
 {
 	GeditPrintJob *job = GEDIT_PRINT_JOB (object);
 
-	if (job->priv->print_settings != NULL)
-	{
-		g_object_unref (job->priv->print_settings);
-		job->priv->print_settings = NULL;
-	}
-
-	if (job->priv->compositor != NULL)
-	{
-		g_object_unref (job->priv->compositor);
-		job->priv->compositor = NULL;
-	}
+	g_clear_object (&job->priv->print_settings);
+	g_clear_object (&job->priv->compositor);
 
 	if (job->priv->operation != NULL)
 	{

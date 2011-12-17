@@ -287,17 +287,8 @@ gedit_changecase_plugin_dispose (GObject *object)
 
 	gedit_debug_message (DEBUG_PLUGINS, "GeditChangecasePlugin disponsing");
 
-	if (plugin->priv->window != NULL)
-	{
-		g_object_unref (plugin->priv->window);
-		plugin->priv->window = NULL;
-	}
-
-	if (plugin->priv->action_group != NULL)
-	{
-		g_object_unref (plugin->priv->action_group);
-		plugin->priv->action_group = NULL;
-	}
+	g_clear_object (&plugin->priv->window);
+	g_clear_object (&plugin->priv->action_group);
 
 	G_OBJECT_CLASS (gedit_changecase_plugin_parent_class)->dispose (object);
 }

@@ -71,11 +71,7 @@ gedit_file_chooser_dialog_dispose (GObject *object)
 {
 	GeditFileChooserDialog *dialog = GEDIT_FILE_CHOOSER_DIALOG (object);
 
-	if (dialog->priv->filter_settings != NULL)
-	{
-		g_object_unref (dialog->priv->filter_settings);
-		dialog->priv->filter_settings = NULL;
-	}
+	g_clear_object (&dialog->priv->filter_settings);
 
 	G_OBJECT_CLASS (gedit_file_chooser_dialog_parent_class)->dispose (object);
 }

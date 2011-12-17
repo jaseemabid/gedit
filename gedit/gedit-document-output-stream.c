@@ -144,11 +144,7 @@ gedit_document_output_stream_dispose (GObject *object)
 {
 	GeditDocumentOutputStream *stream = GEDIT_DOCUMENT_OUTPUT_STREAM (object);
 
-	if (stream->priv->charset_conv != NULL)
-	{
-		g_object_unref (stream->priv->charset_conv);
-		stream->priv->charset_conv = NULL;
-	}
+	g_clear_object (&stream->priv->charset_conv);
 
 	G_OBJECT_CLASS (gedit_document_output_stream_parent_class)->dispose (object);
 }

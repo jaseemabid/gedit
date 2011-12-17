@@ -202,41 +202,13 @@ gedit_document_saver_dispose (GObject *object)
 		priv->cancellable = NULL;
 	}
 
-	if (priv->error != NULL)
-	{
-		g_error_free (priv->error);
-		priv->error = NULL;
-	}
+	g_clear_error (&priv->error);
 
-	if (priv->stream != NULL)
-	{
-		g_object_unref (priv->stream);
-		priv->stream = NULL;
-	}
-
-	if (priv->input != NULL)
-	{
-		g_object_unref (priv->input);
-		priv->input = NULL;
-	}
-
-	if (priv->info != NULL)
-	{
-		g_object_unref (priv->info);
-		priv->info = NULL;
-	}
-	
-	if (priv->location != NULL)
-	{
-		g_object_unref (priv->location);
-		priv->location = NULL;
-	}
-
-	if (priv->editor_settings != NULL)
-	{
-		g_object_unref (priv->editor_settings);
-		priv->editor_settings = NULL;
-	}
+	g_clear_object (&priv->stream);
+	g_clear_object (&priv->input);
+	g_clear_object (&priv->info);
+	g_clear_object (&priv->location);
+	g_clear_object (&priv->editor_settings);
 
 	G_OBJECT_CLASS (gedit_document_saver_parent_class)->dispose (object);
 }

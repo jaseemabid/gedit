@@ -133,11 +133,7 @@ gedit_preferences_dialog_dispose (GObject *object)
 {
 	GeditPreferencesDialog *dlg = GEDIT_PREFERENCES_DIALOG (object);
 
-	if (dlg->priv->editor != NULL)
-	{
-		g_object_unref (dlg->priv->editor);
-		dlg->priv->editor = NULL;
-	}
+	g_clear_object (&dlg->priv->editor);
 
 	G_OBJECT_CLASS (gedit_preferences_dialog_parent_class)->dispose (object);
 }

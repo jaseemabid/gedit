@@ -209,23 +209,9 @@ gedit_time_plugin_dispose (GObject *object)
 
 	gedit_debug_message (DEBUG_PLUGINS, "GeditTimePlugin disposing");
 
-	if (plugin->priv->settings != NULL)
-	{
-		g_object_unref (plugin->priv->settings);
-		plugin->priv->settings = NULL;
-	}
-
-	if (plugin->priv->action_group != NULL)
-	{
-		g_object_unref (plugin->priv->action_group);
-		plugin->priv->action_group = NULL;
-	}
-
-	if (plugin->priv->window != NULL)
-	{
-		g_object_unref (plugin->priv->window);
-		plugin->priv->window = NULL;
-	}
+	g_clear_object (&plugin->priv->settings);
+	g_clear_object (&plugin->priv->action_group);
+	g_clear_object (&plugin->priv->window);
 
 	G_OBJECT_CLASS (gedit_time_plugin_parent_class)->dispose (object);
 }

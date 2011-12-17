@@ -87,11 +87,7 @@ gedit_modeline_plugin_dispose (GObject *object)
 
 	gedit_debug_message (DEBUG_PLUGINS, "GeditModelinePlugin disposing");
 
-	if (plugin->priv->view != NULL)
-	{
-		g_object_unref (plugin->priv->view);
-		plugin->priv->view = NULL;
-	}
+	g_clear_object (&plugin->priv->view);
 
 	G_OBJECT_CLASS (gedit_modeline_plugin_parent_class)->dispose (object);
 }

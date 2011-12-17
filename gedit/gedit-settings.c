@@ -68,31 +68,12 @@ gedit_settings_finalize (GObject *object)
 static void
 gedit_settings_dispose (GObject *object)
 {
-	GeditSettings *gs = GEDIT_SETTINGS (object);
-	
-	if (gs->priv->lockdown != NULL)
-	{
-		g_object_unref (gs->priv->lockdown);
-		gs->priv->lockdown = NULL;
-	}
-	
-	if (gs->priv->interface != NULL)
-	{
-		g_object_unref (gs->priv->interface);
-		gs->priv->interface = NULL;
-	}
-	
-	if (gs->priv->editor != NULL)
-	{
-		g_object_unref (gs->priv->editor);
-		gs->priv->editor = NULL;
-	}
-	
-	if (gs->priv->ui != NULL)
-	{
-		g_object_unref (gs->priv->ui);
-		gs->priv->ui = NULL;
-	}
+	GeditSettingsPrivate *priv = GEDIT_SETTINGS (object)->priv;
+
+	g_clear_object (&priv->lockdown);
+	g_clear_object (&priv->interface);
+	g_clear_object (&priv->editor);
+	g_clear_object (&priv->ui);
 
 	G_OBJECT_CLASS (gedit_settings_parent_class)->dispose (object);
 }

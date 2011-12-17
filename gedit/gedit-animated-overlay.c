@@ -36,11 +36,7 @@ gedit_animated_overlay_dispose (GObject *object)
 {
 	GeditAnimatedOverlayPrivate *priv = GEDIT_ANIMATED_OVERLAY (object)->priv;
 
-	if (priv->stage != NULL)
-	{
-		g_object_unref (priv->stage);
-		priv->stage = NULL;
-	}
+	g_clear_object (&priv->stage);
 
 	G_OBJECT_CLASS (gedit_animated_overlay_parent_class)->dispose (object);
 }

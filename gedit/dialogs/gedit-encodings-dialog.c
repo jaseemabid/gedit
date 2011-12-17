@@ -80,11 +80,7 @@ gedit_encodings_dialog_dispose (GObject *object)
 {
 	GeditEncodingsDialogPrivate *priv = GEDIT_ENCODINGS_DIALOG (object)->priv;
 
-	if (priv->enc_settings != NULL)
-	{
-		g_object_unref (priv->enc_settings);
-		priv->enc_settings = NULL;
-	}
+	g_clear_object (&priv->enc_settings);
 
 	G_OBJECT_CLASS (gedit_encodings_dialog_parent_class)->dispose (object);
 }

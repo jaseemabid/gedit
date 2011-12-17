@@ -178,29 +178,10 @@ gedit_file_browser_plugin_dispose (GObject *object)
 {
 	GeditFileBrowserPlugin *plugin = GEDIT_FILE_BROWSER_PLUGIN (object);
 
-	if (plugin->priv->settings != NULL)
-	{
-		g_object_unref (plugin->priv->settings);
-		plugin->priv->settings = NULL;
-	}
-
-	if (plugin->priv->nautilus_settings != NULL)
-	{
-		g_object_unref (plugin->priv->nautilus_settings);
-		plugin->priv->nautilus_settings = NULL;
-	}
-
-	if (plugin->priv->terminal_settings != NULL)
-	{
-		g_object_unref (plugin->priv->terminal_settings);
-		plugin->priv->terminal_settings = NULL;
-	}
-
-	if (plugin->priv->window != NULL)
-	{
-		g_object_unref (plugin->priv->window);
-		plugin->priv->window = NULL;
-	}
+	g_clear_object (&plugin->priv->settings);
+	g_clear_object (&plugin->priv->nautilus_settings);
+	g_clear_object (&plugin->priv->terminal_settings);
+	g_clear_object (&plugin->priv->window);
 
 	G_OBJECT_CLASS (gedit_file_browser_plugin_parent_class)->dispose (object);
 }

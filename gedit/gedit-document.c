@@ -304,29 +304,10 @@ gedit_document_dispose (GObject *object)
 		g_free (position);
 	}
 
-	if (doc->priv->loader)
-	{
-		g_object_unref (doc->priv->loader);
-		doc->priv->loader = NULL;
-	}
-	
-	if (doc->priv->editor_settings)
-	{
-		g_object_unref (doc->priv->editor_settings);
-		doc->priv->editor_settings = NULL;
-	}
-
-	if (doc->priv->metadata_info != NULL)
-	{
-		g_object_unref (doc->priv->metadata_info);
-		doc->priv->metadata_info = NULL;
-	}
-
-	if (doc->priv->location != NULL)
-	{
-		g_object_unref (doc->priv->location);
-		doc->priv->location = NULL;
-	}
+	g_clear_object (&doc->priv->loader);
+	g_clear_object (&doc->priv->editor_settings);
+	g_clear_object (&doc->priv->metadata_info);
+	g_clear_object (&doc->priv->location);
 
 	doc->priv->dispose_has_run = TRUE;
 

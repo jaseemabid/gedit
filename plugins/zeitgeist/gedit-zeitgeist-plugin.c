@@ -91,17 +91,8 @@ gedit_zeitgeist_plugin_dispose (GObject *object)
 
 	gedit_debug_message (DEBUG_PLUGINS, "GeditZeitgeistPlugin disposing");
 
-	if (plugin->priv->view != NULL)
-	{
-		g_object_unref (plugin->priv->view);
-		plugin->priv->view = NULL;
-	}
-
-	if (plugin->priv->app != NULL)
-	{
-		g_object_unref (plugin->priv->app);
-		plugin->priv->app = NULL;
-	}
+	g_clear_object (&plugin->priv->view);
+	g_clear_object (&plugin->priv->app);
 
 	G_OBJECT_CLASS (gedit_zeitgeist_plugin_parent_class)->dispose (object);
 }
@@ -109,9 +100,9 @@ gedit_zeitgeist_plugin_dispose (GObject *object)
 static void
 gedit_zeitgeist_plugin_finalize (GObject *object)
 {
-	G_OBJECT_CLASS (gedit_zeitgeist_plugin_parent_class)->finalize (object);
-
 	gedit_debug_message (DEBUG_PLUGINS, "GeditZeitgeistPlugin finalizing");
+
+	G_OBJECT_CLASS (gedit_zeitgeist_plugin_parent_class)->finalize (object);
 }
 
 static void

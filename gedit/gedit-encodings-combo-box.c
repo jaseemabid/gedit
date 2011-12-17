@@ -126,17 +126,8 @@ gedit_encodings_combo_box_dispose (GObject *object)
 {
 	GeditEncodingsComboBox *combo = GEDIT_ENCODINGS_COMBO_BOX (object);
 
-	if (combo->priv->store != NULL)
-	{
-		g_object_unref (combo->priv->store);
-		combo->priv->store = NULL;
-	}
-
-	if (combo->priv->enc_settings != NULL)
-	{
-		g_object_unref (combo->priv->enc_settings);
-		combo->priv->enc_settings = NULL;
-	}
+	g_clear_object (&combo->priv->store);
+	g_clear_object (&combo->priv->enc_settings);
 
 	G_OBJECT_CLASS (gedit_encodings_combo_box_parent_class)->dispose (object);
 }

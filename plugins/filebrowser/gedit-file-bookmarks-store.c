@@ -72,11 +72,7 @@ gedit_file_bookmarks_store_dispose (GObject *object)
 		obj->priv->volume_monitor = NULL;
 	}
 
-	if (obj->priv->bookmarks_monitor != NULL)
-	{
-		g_object_unref (obj->priv->bookmarks_monitor);
-		obj->priv->bookmarks_monitor = NULL;
-	}
+	g_clear_object (&obj->priv->bookmarks_monitor);
 
 	G_OBJECT_CLASS (gedit_file_bookmarks_store_parent_class)->dispose (object);
 }
