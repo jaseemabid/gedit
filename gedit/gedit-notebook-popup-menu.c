@@ -134,14 +134,14 @@ static void
 on_file_save_menuitem_activate (GtkMenuItem            *menuitem,
                                 GeditNotebookPopupMenu *menu)
 {
-	_gedit_cmd_file_save (menu->priv->tab, menu->priv->window);
+	_gedit_cmd_file_save_tab (menu->priv->tab, menu->priv->window);
 }
 
 static void
 on_file_save_as_menuitem_activate (GtkMenuItem            *menuitem,
                                    GeditNotebookPopupMenu *menu)
 {
-	_gedit_cmd_file_save_as (menu->priv->tab, menu->priv->window);
+	_gedit_cmd_file_save_as_tab (menu->priv->tab, menu->priv->window);
 }
 
 static void
