@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-17 00:16+0300\n"
-"PO-Revision-Date: 2011-10-17 00:16+0300\n"
+"POT-Creation-Date: 2011-12-23 21:58+0300\n"
+"PO-Revision-Date: 2011-12-23 21:59+0300\n"
 "Last-Translator: Sviatlana Liasovich <xelj.gjkz@bk.ru>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: \n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Edit text files"
 msgstr "Рэдагаванне тэкставых файлаў"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:805
+#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:799
 msgid "Text Editor"
 msgstr "Тэкставы рэдактар"
 
@@ -601,17 +601,17 @@ msgstr "_Вылучыце дакументы, якія трэба захавац
 msgid "If you don't save, all your changes will be permanently lost."
 msgstr "Усе змены будуць незваротна страчаны, калі вы іх не захаваеце."
 
-#: ../gedit/dialogs/gedit-encodings-dialog.c:351
+#: ../gedit/dialogs/gedit-encodings-dialog.c:347
 msgid "Character Encodings"
 msgstr "Кадаванні знакаў"
 
-#: ../gedit/dialogs/gedit-encodings-dialog.c:414
-#: ../gedit/dialogs/gedit-encodings-dialog.c:475
+#: ../gedit/dialogs/gedit-encodings-dialog.c:410
+#: ../gedit/dialogs/gedit-encodings-dialog.c:471
 msgid "_Description"
 msgstr "_Апісанне"
 
-#: ../gedit/dialogs/gedit-encodings-dialog.c:423
-#: ../gedit/dialogs/gedit-encodings-dialog.c:484
+#: ../gedit/dialogs/gedit-encodings-dialog.c:419
+#: ../gedit/dialogs/gedit-encodings-dialog.c:480
 msgid "_Encoding"
 msgstr "_Кадаванне"
 
@@ -628,42 +628,42 @@ msgstr "Кадаванні знакаў"
 msgid "E_ncodings shown in menu:"
 msgstr "_Кадаванні, бачныя ў меню:"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:423
+#: ../gedit/dialogs/gedit-preferences-dialog.c:419
 msgid "Click on this button to select the font to be used by the editor"
 msgstr "Пстрыкніце ў гэту кнопку, каб выбраць шрыфт для рэдактара"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:438
+#: ../gedit/dialogs/gedit-preferences-dialog.c:434
 #, c-format
 msgid "_Use the system fixed width font (%s)"
 msgstr "_Ужыць сістэмны роўнашырокі шрыфт (%s)"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:634
+#: ../gedit/dialogs/gedit-preferences-dialog.c:625
 msgid "The selected color scheme cannot be installed."
 msgstr "Не ўдалося ўсталяваць выбраную схему колераў."
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:661
+#: ../gedit/dialogs/gedit-preferences-dialog.c:652
 msgid "Add Scheme"
 msgstr "Даданне схемы"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:668
+#: ../gedit/dialogs/gedit-preferences-dialog.c:659
 msgid "A_dd Scheme"
 msgstr "_Дадаць схему"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:676
+#: ../gedit/dialogs/gedit-preferences-dialog.c:667
 msgid "Color Scheme Files"
 msgstr "Файлы схем колераў"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:683
+#: ../gedit/dialogs/gedit-preferences-dialog.c:674
 #: ../gedit/gedit-file-chooser-dialog.c:52
 msgid "All Files"
 msgstr "Усе файлы"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:728
+#: ../gedit/dialogs/gedit-preferences-dialog.c:719
 #, c-format
 msgid "Could not remove color scheme \"%s\"."
 msgstr "Не ўдалося выдаліць схему колераў \"%s\"."
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:947
+#: ../gedit/dialogs/gedit-preferences-dialog.c:938
 msgid "gedit Preferences"
 msgstr "Настройкі gedit"
 
@@ -762,7 +762,7 @@ msgstr "_Дадаць..."
 msgid "_Autosave files every"
 msgstr "_Аўтаматычна захоўваць файлы праз"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:561
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:552
 msgid "_Display line numbers"
 msgstr "Па_казваць нумарацыю радкоў"
 
@@ -779,7 +779,7 @@ msgid "_minutes"
 msgstr "_хвілін"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1626
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1625
 msgid "Replace"
 msgstr "Замяніць"
 
@@ -788,7 +788,7 @@ msgid "Replace _All"
 msgstr "За_мяніць усё"
 
 #: ../gedit/dialogs/gedit-replace-dialog.c:288
-#: ../gedit/gedit-commands-file.c:572
+#: ../gedit/gedit-commands-file.c:570
 msgid "_Replace"
 msgstr "_Замяніць"
 
@@ -821,7 +821,7 @@ msgstr "_Шуканы тэкст: "
 msgid "_Wrap around"
 msgstr "Пра_цягваць пошук з пачатку ці канца"
 
-#: ../gedit/gedit-app.c:235
+#: ../gedit/gedit-app.c:222
 msgid "There was an error displaying the help."
 msgstr "Узнікла памылка паказу даведкі."
 
@@ -857,8 +857,8 @@ msgid "Create a new document in an existing instance of gedit"
 msgstr "Стварыць новы дакумент для ўжо дзейнай копіі праграмы gedit"
 
 #: ../gedit/gedit-command-line.c:294
-msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
-msgstr "Вызначыць памеры акна X-сістэмы (ШЫРЫНЯxВЫШЫНЯ+X+Y)"
+msgid "Set the size and position of the window (WIDTHxHEIGHT+X+Y)"
+msgstr "Вызначыць памеры і размяшчэнне акна (ШЫРЫНЯxВЫШЫНЯ+X+Y)"
 
 #: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
@@ -913,20 +913,20 @@ msgstr[2] "Загрузка %d файлаў..."
 msgid "Open Files"
 msgstr "Адкрыццё файлаў"
 
-#: ../gedit/gedit-commands-file.c:559
+#: ../gedit/gedit-commands-file.c:557
 #, c-format
 msgid "The file \"%s\" is read-only."
 msgstr "Файл \"%s\" даступны толькі для чытання."
 
-#: ../gedit/gedit-commands-file.c:564
+#: ../gedit/gedit-commands-file.c:562
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr "Ці хочаце паспрабаваць замяніць яго тым, што захоўваеце?"
 
-#: ../gedit/gedit-commands-file.c:614
+#: ../gedit/gedit-commands-file.c:612
 msgid "Save the file using compression?"
 msgstr "Захаваць файл са сцісканнем?"
 
-#: ../gedit/gedit-commands-file.c:615
+#: ../gedit/gedit-commands-file.c:613
 #, c-format
 msgid ""
 "The file \"%s\" was previously saved as plain text and will now be saved "
@@ -935,15 +935,15 @@ msgstr ""
 "Файл \"%s\" раней быў захаваны як звычайны тэкст, а зараз будзе захаваны са "
 "сцісканнем."
 
-#: ../gedit/gedit-commands-file.c:617
+#: ../gedit/gedit-commands-file.c:615
 msgid "_Save Using Compression"
 msgstr "_Захаваць са сцісканнем"
 
-#: ../gedit/gedit-commands-file.c:621
+#: ../gedit/gedit-commands-file.c:619
 msgid "Save the file as plain text?"
 msgstr "Захаваць файл як звычайны тэкст?"
 
-#: ../gedit/gedit-commands-file.c:622
+#: ../gedit/gedit-commands-file.c:620
 #, c-format
 msgid ""
 "The file \"%s\" was previously saved using compression and will now be saved "
@@ -952,30 +952,30 @@ msgstr ""
 "Файл \"%s\" раней быў захаваны са сцісканнем, а зараз будзе захаваны як "
 "звычайны тэкст."
 
-#: ../gedit/gedit-commands-file.c:624
+#: ../gedit/gedit-commands-file.c:622
 msgid "_Save As Plain Text"
 msgstr "Захаваць _як звычайны тэкст"
 
-#: ../gedit/gedit-commands-file.c:742 ../gedit/gedit-commands-file.c:961
+#: ../gedit/gedit-commands-file.c:740 ../gedit/gedit-commands-file.c:957
 #, c-format
 msgid "Saving file '%s'…"
 msgstr "Захаванне файла \"%s\"..."
 
-#: ../gedit/gedit-commands-file.c:847
+#: ../gedit/gedit-commands-file.c:844
 msgid "Save As"
 msgstr "Захаванне"
 
-#: ../gedit/gedit-commands-file.c:1175
+#: ../gedit/gedit-commands-file.c:1171
 #, c-format
 msgid "Reverting the document '%s'…"
 msgstr "Адрабленне змен у дакуменце \"%s\"..."
 
-#: ../gedit/gedit-commands-file.c:1220
+#: ../gedit/gedit-commands-file.c:1216
 #, c-format
 msgid "Revert unsaved changes to document '%s'?"
 msgstr "Адрабіць незахаваныя змены ў дакуменце \"%s\"?"
 
-#: ../gedit/gedit-commands-file.c:1229
+#: ../gedit/gedit-commands-file.c:1225
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld second will be permanently lost."
@@ -992,13 +992,13 @@ msgstr[2] ""
 "Змены, зробленыя ў дакуменце за апошнія %ld секунд, будуць незваротна "
 "страчаныя."
 
-#: ../gedit/gedit-commands-file.c:1238
+#: ../gedit/gedit-commands-file.c:1234
 msgid ""
 "Changes made to the document in the last minute will be permanently lost."
 msgstr ""
 "Змены, зробленыя ў дакуменце за апошнюю хвіліну, будуць незваротна страчаныя."
 
-#: ../gedit/gedit-commands-file.c:1244
+#: ../gedit/gedit-commands-file.c:1240
 #, c-format
 msgid ""
 "Changes made to the document in the last minute and %ld second will be "
@@ -1016,7 +1016,7 @@ msgstr[2] ""
 "Змены, зробленыя ў дакуменце за апошнюю хвіліну і %ld секунд, будуць "
 "незваротна страчаныя."
 
-#: ../gedit/gedit-commands-file.c:1254
+#: ../gedit/gedit-commands-file.c:1250
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld minute will be permanently lost."
@@ -1033,12 +1033,12 @@ msgstr[2] ""
 "Змены, зробленыя ў дакуменце за апошнія %ld хвілін, будуць незваротна "
 "страчаныя."
 
-#: ../gedit/gedit-commands-file.c:1269
+#: ../gedit/gedit-commands-file.c:1265
 msgid "Changes made to the document in the last hour will be permanently lost."
 msgstr ""
 "Змены, зробленыя ў дакуменце за апошнюю гадзіну, будуць незваротна страчаныя."
 
-#: ../gedit/gedit-commands-file.c:1275
+#: ../gedit/gedit-commands-file.c:1271
 #, c-format
 msgid ""
 "Changes made to the document in the last hour and %d minute will be "
@@ -1056,7 +1056,7 @@ msgstr[2] ""
 "Змены, зробленыя ў дакуменце за апошнюю гадзіну і %d хвілін, будуць "
 "незваротна страчаныя."
 
-#: ../gedit/gedit-commands-file.c:1290
+#: ../gedit/gedit-commands-file.c:1286
 #, c-format
 msgid ""
 "Changes made to the document in the last %d hour will be permanently lost."
@@ -1072,7 +1072,7 @@ msgstr[2] ""
 "Змены, зробленыя ў дакуменце за апошнія %d гадзін, будуць незваротна "
 "страчаныя."
 
-#: ../gedit/gedit-commands-file.c:1316
+#: ../gedit/gedit-commands-file.c:1312
 msgid "_Revert"
 msgstr "_Адрабіць"
 
@@ -1108,17 +1108,17 @@ msgstr "Знойдзена і заменена адна адпаведнасць
 msgid "\"%s\" not found"
 msgstr "Шуканы тэкст (\"%s\") не знойдзены"
 
-#: ../gedit/gedit-document.c:1241 ../gedit/gedit-document.c:1267
+#: ../gedit/gedit-document.c:1224 ../gedit/gedit-document.c:1250
 #, c-format
 msgid "Unsaved Document %d"
 msgstr "Незахаваны дакумент %d"
 
 #: ../gedit/gedit-documents-panel.c:121 ../gedit/gedit-documents-panel.c:135
-#: ../gedit/gedit-window.c:2459 ../gedit/gedit-window.c:2466
+#: ../gedit/gedit-window.c:2458 ../gedit/gedit-window.c:2465
 msgid "Read-Only"
 msgstr "Толькі чытанне"
 
-#: ../gedit/gedit-documents-panel.c:1143 ../gedit/gedit-window.c:3907
+#: ../gedit/gedit-documents-panel.c:1139 ../gedit/gedit-window.c:3907
 msgid "Documents"
 msgstr "Дакументы"
 
@@ -1238,17 +1238,17 @@ msgstr "Тайскае"
 msgid "Unknown"
 msgstr "Невядомае"
 
-#: ../gedit/gedit-encodings-combo-box.c:310
+#: ../gedit/gedit-encodings-combo-box.c:301
 msgid "Automatically Detected"
 msgstr "Аўтаматычна вызначанае"
 
-#: ../gedit/gedit-encodings-combo-box.c:329
-#: ../gedit/gedit-encodings-combo-box.c:345
+#: ../gedit/gedit-encodings-combo-box.c:320
+#: ../gedit/gedit-encodings-combo-box.c:336
 #, c-format
 msgid "Current Locale (%s)"
 msgstr "Дзейная лакальнасць (%s)"
 
-#: ../gedit/gedit-encodings-combo-box.c:397
+#: ../gedit/gedit-encodings-combo-box.c:388
 msgid "Add or Remove..."
 msgstr "Дадаць ці выдаліць..."
 
@@ -1256,23 +1256,23 @@ msgstr "Дадаць ці выдаліць..."
 msgid "All Text Files"
 msgstr "Усе тэкставыя файлы"
 
-#: ../gedit/gedit-file-chooser-dialog.c:99
+#: ../gedit/gedit-file-chooser-dialog.c:95
 msgid "C_haracter Encoding:"
 msgstr "_Кадаванні знакаў:"
 
-#: ../gedit/gedit-file-chooser-dialog.c:158
+#: ../gedit/gedit-file-chooser-dialog.c:154
 msgid "L_ine Ending:"
 msgstr "_Знак канца радка:"
 
-#: ../gedit/gedit-file-chooser-dialog.c:177
+#: ../gedit/gedit-file-chooser-dialog.c:173
 msgid "Unix/Linux"
 msgstr "Unix/Linux"
 
-#: ../gedit/gedit-file-chooser-dialog.c:183
+#: ../gedit/gedit-file-chooser-dialog.c:179
 msgid "Mac OS Classic"
 msgstr "Mac OS Classic"
 
-#: ../gedit/gedit-file-chooser-dialog.c:189
+#: ../gedit/gedit-file-chooser-dialog.c:185
 msgid "Windows"
 msgstr "Windows"
 
@@ -1626,6 +1626,19 @@ msgstr ""
 "Калі вы працягніце захаванне файла, вы можаце пашкодзіць дакумент. Усё роўна "
 "захаваць?"
 
+#. Keep in sync with the respective GtkActions
+#: ../gedit/gedit-notebook-popup-menu.c:172 ../gedit/gedit-ui.h:140
+msgid "_Move to New Window"
+msgstr "_Перамясціць у новае акно"
+
+#: ../gedit/gedit-notebook-popup-menu.c:190 ../gedit/gedit-ui.h:78
+msgid "Save _As..."
+msgstr "Захаваць _як..."
+
+#: ../gedit/gedit-notebook-popup-menu.c:203 ../gedit/gedit-ui.h:84
+msgid "_Print..."
+msgstr "_Надрукаваць..."
+
 #: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:586
 msgid "Empty"
 msgstr "Пусты"
@@ -1634,16 +1647,16 @@ msgstr "Пусты"
 msgid "Hide panel"
 msgstr "Схаваць панэль"
 
-#: ../gedit/gedit-print-job.c:586
+#: ../gedit/gedit-print-job.c:580
 #, c-format
 msgid "File: %s"
 msgstr "Файл: %s"
 
-#: ../gedit/gedit-print-job.c:595
+#: ../gedit/gedit-print-job.c:589
 msgid "Page %N of %Q"
 msgstr "Старонка %N з %Q"
 
-#: ../gedit/gedit-print-job.c:857
+#: ../gedit/gedit-print-job.c:851
 msgid "Preparing..."
 msgstr "Падрыхтоўка..."
 
@@ -1791,7 +1804,7 @@ msgstr[0] "%d картка мае памылкі"
 msgstr[1] "%d карткі маюць памылкі"
 msgstr[2] "%d картак маюць памылкі"
 
-#: ../gedit/gedit-style-scheme-manager.c:210
+#: ../gedit/gedit-style-scheme-manager.c:176
 #, c-format
 msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
 msgstr ""
@@ -1799,73 +1812,73 @@ msgstr ""
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:743
+#: ../gedit/gedit-tab.c:734
 #, c-format
 msgid "Reverting %s from %s"
 msgstr "Адрабленне змен (%s з %s)"
 
-#: ../gedit/gedit-tab.c:750
+#: ../gedit/gedit-tab.c:741
 #, c-format
 msgid "Reverting %s"
 msgstr "Адрабленне змен (%s)"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:766
+#: ../gedit/gedit-tab.c:757
 #, c-format
 msgid "Loading %s from %s"
 msgstr "Загрузка %s з %s"
 
-#: ../gedit/gedit-tab.c:773
+#: ../gedit/gedit-tab.c:764
 #, c-format
 msgid "Loading %s"
 msgstr "Загрузка %s"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:854
+#: ../gedit/gedit-tab.c:845
 #, c-format
 msgid "Saving %s to %s"
 msgstr "Захаванне %s у %s"
 
-#: ../gedit/gedit-tab.c:861
+#: ../gedit/gedit-tab.c:852
 #, c-format
 msgid "Saving %s"
 msgstr "Захаванне %s"
 
 #. Read only
-#: ../gedit/gedit-tab.c:1844
+#: ../gedit/gedit-tab.c:1835
 msgid "RO"
 msgstr "ЧЫТ"
 
-#: ../gedit/gedit-tab.c:1891
+#: ../gedit/gedit-tab.c:1882
 #, c-format
 msgid "Error opening file %s"
 msgstr "Памылка адкрыцця файла \"%s\""
 
-#: ../gedit/gedit-tab.c:1896
+#: ../gedit/gedit-tab.c:1887
 #, c-format
 msgid "Error reverting file %s"
 msgstr "Памылка адраблення змен (\"%s\")"
 
-#: ../gedit/gedit-tab.c:1901
+#: ../gedit/gedit-tab.c:1892
 #, c-format
 msgid "Error saving file %s"
 msgstr "Памылка захавання файла \"%s\""
 
-#: ../gedit/gedit-tab.c:1922
+#: ../gedit/gedit-tab.c:1913
 msgid "Unicode (UTF-8)"
 msgstr "Унікод (UTF-8)"
 
-#: ../gedit/gedit-tab.c:1929
+#: ../gedit/gedit-tab.c:1920
 msgid "Name:"
 msgstr "Назва:"
 
-#: ../gedit/gedit-tab.c:1930
+#: ../gedit/gedit-tab.c:1921
 msgid "MIME Type:"
 msgstr "MIME-тып:"
 
-#: ../gedit/gedit-tab.c:1931
+#: ../gedit/gedit-tab.c:1922
 msgid "Encoding:"
 msgstr "Кадаванне:"
 
@@ -1910,7 +1923,7 @@ msgstr "Стварыць новы дакумент"
 msgid "_Open..."
 msgstr "_Адкрыць..."
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1554
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1553
 msgid "Open a file"
 msgstr "Адкрыць файл"
 
@@ -1944,10 +1957,6 @@ msgstr "Выйсці з поўнаэкраннага рэжыму"
 msgid "Save the current file"
 msgstr "Захаваць бягучы файл"
 
-#: ../gedit/gedit-ui.h:78
-msgid "Save _As..."
-msgstr "Захаваць _як..."
-
 #: ../gedit/gedit-ui.h:79
 msgid "Save the current file with a different name"
 msgstr "Захаваць бягучы файл з іншай назвай"
@@ -1963,10 +1972,6 @@ msgstr "Папярэдні _агляд друку"
 #: ../gedit/gedit-ui.h:83
 msgid "Print preview"
 msgstr "Папярэдні агляд друку"
-
-#: ../gedit/gedit-ui.h:84
-msgid "_Print..."
-msgstr "_Надрукаваць..."
 
 #: ../gedit/gedit-ui.h:85
 msgid "Print the current page"
@@ -2115,10 +2120,6 @@ msgstr "_Наступны дакумент"
 msgid "Activate next document"
 msgstr "Пераключыць на наступны дакумент"
 
-#: ../gedit/gedit-ui.h:140
-msgid "_Move to New Window"
-msgstr "_Перамясціць у новае акно"
-
 #: ../gedit/gedit-ui.h:141
 msgid "Move the current document to a new window"
 msgstr "Перамясціць гэты дакумент у новае акно"
@@ -2210,7 +2211,7 @@ msgstr "Шуканы тэкст"
 msgid "Line you want to move the cursor to"
 msgstr "Радок, у які трэба перамясціць курсор"
 
-#: ../gedit/gedit-window.c:1040
+#: ../gedit/gedit-window.c:1008
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Уключыць рэжым падсветкі %s"
@@ -2218,67 +2219,67 @@ msgstr "Уключыць рэжым падсветкі %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1107 ../gedit/gedit-window.c:2156
+#: ../gedit/gedit-window.c:1113 ../gedit/gedit-window.c:2152
 #: ../plugins/externaltools/tools/manager.py:138
-#: ../plugins/externaltools/tools/manager.py:441
-#: ../plugins/externaltools/tools/manager.py:552
-#: ../plugins/externaltools/tools/manager.py:868
+#: ../plugins/externaltools/tools/manager.py:442
+#: ../plugins/externaltools/tools/manager.py:553
+#: ../plugins/externaltools/tools/manager.py:874
 msgid "Plain Text"
 msgstr "Звычайны тэкст"
 
-#: ../gedit/gedit-window.c:1108
+#: ../gedit/gedit-window.c:1114
 msgid "Disable syntax highlighting"
 msgstr "Выключыць падсветку сінтаксісу"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1433
+#: ../gedit/gedit-window.c:1431
 #, c-format
 msgid "Open '%s'"
 msgstr "Адкрыць \"%s\""
 
-#: ../gedit/gedit-window.c:1556
+#: ../gedit/gedit-window.c:1555
 msgid "Open a recently used file"
 msgstr "Адкрыць нядаўна выкарыстаны файл"
 
-#: ../gedit/gedit-window.c:1562
+#: ../gedit/gedit-window.c:1561
 msgid "Open"
 msgstr "Адкрыць"
 
-#: ../gedit/gedit-window.c:1620
+#: ../gedit/gedit-window.c:1619
 msgid "Save"
 msgstr "Захаваць"
 
-#: ../gedit/gedit-window.c:1622
+#: ../gedit/gedit-window.c:1621
 msgid "Print"
 msgstr "Надрукаваць"
 
-#: ../gedit/gedit-window.c:1624
+#: ../gedit/gedit-window.c:1623
 msgid "Find"
 msgstr "Шукаць"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1784
+#: ../gedit/gedit-window.c:1783
 #, c-format
 msgid "Activate '%s'"
 msgstr "Задзейнічаць \"%s\""
 
-#: ../gedit/gedit-window.c:2134
+#: ../gedit/gedit-window.c:2133
 msgid "Use Spaces"
 msgstr "Ужыць прабелы"
 
-#: ../gedit/gedit-window.c:2207
+#: ../gedit/gedit-window.c:2206
 msgid "Tab Width"
 msgstr "Шырыня табуляцыі"
 
-#: ../gedit/gedit-window.c:2316
+#: ../gedit/gedit-window.c:2315
 msgid "Bracket match is out of range"
 msgstr "Парная дужка па-за дыяпазонам"
 
-#: ../gedit/gedit-window.c:2321
+#: ../gedit/gedit-window.c:2320
 msgid "Bracket match not found"
 msgstr "Парная дужка не знойдзена"
 
-#: ../gedit/gedit-window.c:2326
+#: ../gedit/gedit-window.c:2325
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Парная дужка знойдзена ў радку: %d"
@@ -2341,23 +2342,23 @@ msgstr "Праверыць навізну версіі gedit"
 msgid "Check update"
 msgstr "Шукаць абноўкі"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:270
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:256
 msgid "There was an error displaying the URI."
 msgstr "Узнікла памылка паказу URI-адрасу."
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:307
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:293
 msgid "_Download"
 msgstr "_Сцягнуць"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:315
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:301
 msgid "_Ignore Version"
 msgstr "_Ігнараваць версію"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:330
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:316
 msgid "There is a new version of gedit"
 msgstr "Ёсць у наяўнасці новая версія gedit"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:334
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:320
 msgid ""
 "You can download the new version of gedit by clicking on the download button "
 "or ignore that version and wait for a new one"
@@ -2388,7 +2389,17 @@ msgstr ""
 msgid "Document Statistics"
 msgstr "Статыстыка дакумента"
 
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
+msgid "_Document Statistics"
+msgstr "_Статыстыка дакумента"
+
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
+msgid "Get statistical information on the current document"
+msgstr "Атрымаць статыстычную інфармацыю аб дакуменце"
+
+#. ex:set ts=8 noet:
 #. ex:ts=4:et:
+#. ex:ts=8:noet:
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 #: ../plugins/externaltools/tools/tools.ui.h:1
 #: ../plugins/snippets/snippets/snippets.ui.h:1
@@ -2432,24 +2443,39 @@ msgstr "Слоў"
 msgid "_Update"
 msgstr "_Абнавіць"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
-msgid "_Document Statistics"
-msgstr "_Статыстыка дакумента"
+#: ../plugins/externaltools/data/build.desktop.in.h:1
+msgid "Build"
+msgstr "Пабудова"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
-msgid "Get statistical information on the current document"
-msgstr "Атрымаць статыстычную інфармацыю аб дакуменце"
+#: ../plugins/externaltools/data/build.desktop.in.h:2
+msgid "Run \"make\" in the document directory"
+msgstr "Запуск \"make\" у каталозе дакумента"
 
-#. ex:set ts=8 noet:
-#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
 #: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:1
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
 msgid "Open a terminal in the document location"
 msgstr "Адкрыццё тэрмінала ў каталозе дакумента"
 
-#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:2
 #: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:2
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:2
 msgid "Open terminal here"
 msgstr "Адкрыць тэрмінал тут"
+
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:1
+msgid "Remove trailing spaces"
+msgstr "Выдаленне канцавых прабелаў"
+
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:2
+msgid "Remove useless trailing spaces in your file"
+msgstr "Выдаленне лішніх канцавых прабелаў у файле"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:1
+msgid "Execute a custom command and put its output in a new document"
+msgstr "Запуск уласных загадаў і змяшчэнне іх вываду ў новых дакументах"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:2
+msgid "Run command"
+msgstr "Запуск загаду"
 
 #: ../plugins/externaltools/externaltools.plugin.desktop.in.h:1
 msgid "Execute external commands and shell scripts."
@@ -2503,18 +2529,18 @@ msgstr "Выхад"
 msgid "All languages"
 msgstr "Усе мовы"
 
-#: ../plugins/externaltools/tools/manager.py:541
-#: ../plugins/externaltools/tools/manager.py:545
-#: ../plugins/externaltools/tools/manager.py:866
+#: ../plugins/externaltools/tools/manager.py:542
+#: ../plugins/externaltools/tools/manager.py:546
+#: ../plugins/externaltools/tools/manager.py:872
 #: ../plugins/externaltools/tools/tools.ui.h:4
 msgid "All Languages"
 msgstr "Усе мовы"
 
-#: ../plugins/externaltools/tools/manager.py:652
+#: ../plugins/externaltools/tools/manager.py:659
 msgid "New tool"
 msgstr "Новая прылада"
 
-#: ../plugins/externaltools/tools/manager.py:783
+#: ../plugins/externaltools/tools/manager.py:790
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr "Гэтая хуткая клавіша ўжо звязана з %s"
@@ -2678,30 +2704,6 @@ msgid "Shell Output"
 msgstr "Вывад загаднай абалонкі"
 
 #. ex:ts=4:et:
-#: ../plugins/externaltools/data/build.desktop.in.h:1
-msgid "Build"
-msgstr "Пабудова"
-
-#: ../plugins/externaltools/data/build.desktop.in.h:2
-msgid "Run \"make\" in the document directory"
-msgstr "Запуск \"make\" у каталозе дакумента"
-
-#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:1
-msgid "Remove trailing spaces"
-msgstr "Выдаленне канцавых прабелаў"
-
-#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:2
-msgid "Remove useless trailing spaces in your file"
-msgstr "Выдаленне лішніх канцавых прабелаў у файле"
-
-#: ../plugins/externaltools/data/run-command.desktop.in.h:1
-msgid "Execute a custom command and put its output in a new document"
-msgstr "Запуск уласных загадаў і змяшчэнне іх вываду ў новых дакументах"
-
-#: ../plugins/externaltools/data/run-command.desktop.in.h:2
-msgid "Run command"
-msgstr "Запуск загаду"
-
 #: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:1
 msgid "Easy file access from the side panel"
 msgstr "Лёгкі доступ да файлаў з бакавой панэлі"
@@ -2710,63 +2712,63 @@ msgstr "Лёгкі доступ да файлаў з бакавой панэлі
 msgid "File Browser Panel"
 msgstr "Панэль агляду файлаў"
 
-#: ../plugins/filebrowser/gedit-file-bookmarks-store.c:243
+#: ../plugins/filebrowser/gedit-file-bookmarks-store.c:239
 msgid "File System"
 msgstr "Файлавая сістэма"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:577
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:558
 msgid "_Set root to active document"
 msgstr "_Зрабіць адрас актыўнага дакумента каранёвай папкай"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:579
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:560
 msgid "Set the root to the active document location"
 msgstr "Зрабіць адрас актыўнага дакумента каранёвай папкай"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:584
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:565
 msgid "_Open terminal here"
 msgstr "_Адкрыць тэрмінал тут"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:586
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:567
 msgid "Open a terminal at the currently opened directory"
 msgstr "Адкрыць тэрмінал у адкрытым каталозе"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:724
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:705
 msgid "File Browser"
 msgstr "Агляд файлаў"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:867
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:848
 msgid "An error occurred while creating a new directory"
 msgstr "Узнікла памылка пры стварэнні новага каталога"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:870
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:851
 msgid "An error occurred while creating a new file"
 msgstr "Узнікла памылка пры стварэнні новага файла"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:873
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:854
 msgid "An error occurred while renaming a file or directory"
 msgstr "Узнікла памылка пры пераназыванні файла ці каталога"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:876
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:857
 msgid "An error occurred while deleting a file or directory"
 msgstr "Узнікла памылка пры выдаленні файла ці каталога"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:879
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:860
 msgid "An error occurred while opening a directory in the file manager"
 msgstr "Узнікла памылка пры адкрыцці каталога ў кіраўніку файлаў"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:882
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:863
 msgid "An error occurred while setting a root directory"
 msgstr "Узнікла памылка пры ўсталяванні каранёвага каталога"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:885
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:866
 msgid "An error occurred while loading a directory"
 msgstr "Узнікла памылка пры загрузцы каталога"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:888
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:869
 msgid "An error occurred"
 msgstr "Узнікла памылка"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1104
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1085
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
@@ -2774,25 +2776,25 @@ msgstr ""
 "Не ўдалося выкінуць файл у сметніцу.\n"
 "Ці вы хочаце незваротна яго выдаліць?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1109
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1090
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr "Не ўдалося выкінуць файл \"%s\" у сметніцу."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1114
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1095
 msgid "The selected files cannot be moved to the trash."
 msgstr "Не ўдалося выкінуць вылучаныя файлы ў сметніцу."
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1146
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1127
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr "Вы сапраўды хочаце незваротна выдаліць \"%s\"?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1151
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1132
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr "Вы сапраўды хочаце незваротна выдаліць вылучаныя файлы?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1154
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1135
 msgid "If you delete an item, it is permanently lost."
 msgstr "Калі вы выдаліце аб'ект, ён будзе незваротна страчаны."
 
@@ -3102,16 +3104,6 @@ msgstr "Колер тэксту загаду"
 msgid "The error color text"
 msgstr "Колер тэксту памылкі"
 
-#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
-msgid "Interactive Python console standing in the bottom panel"
-msgstr "Інтэрактыўная Python-кансоль у ніжняй панэлі"
-
-#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-#: ../plugins/pythonconsole/pythonconsole/__init__.py:52
-msgid "Python Console"
-msgstr "Python-кансоль"
-
-#. ex:et:ts=4:
 #: ../plugins/pythonconsole/pythonconsole/config.ui.h:1
 msgid "C_ommand color:"
 msgstr "_Колер загаду:"
@@ -3120,9 +3112,18 @@ msgstr "_Колер загаду:"
 msgid "_Error color:"
 msgstr "Колер _памылкі:"
 
-#. ex:ts=4:et:
-#: ../plugins/quickopen/quickopen/popup.py:31
+#: ../plugins/pythonconsole/pythonconsole/__init__.py:52
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
+msgid "Python Console"
+msgstr "Python-кансоль"
+
+#. ex:et:ts=4:
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
+msgid "Interactive Python console standing in the bottom panel"
+msgstr "Інтэрактыўная Python-кансоль у ніжняй панэлі"
+
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:1
+#: ../plugins/quickopen/quickopen/popup.py:31
 msgid "Quick Open"
 msgstr "Хуткае адкрыццё"
 
@@ -3130,91 +3131,61 @@ msgstr "Хуткае адкрыццё"
 msgid "Quickly open files"
 msgstr "Хуткае адкрыццё файлаў"
 
-#: ../plugins/snippets/snippets.plugin.desktop.in.h:1
-msgid "Insert often-used pieces of text in a fast way"
-msgstr "Хуткая ўстаўка часта патрэбных урыўкаў тэксту"
+#: ../plugins/quickopen/quickopen/popup.py:72
+msgid "Type to search..."
+msgstr "Імгненны пошук..."
 
-#: ../plugins/snippets/snippets.plugin.desktop.in.h:2
 #: ../plugins/snippets/snippets/document.py:56
+#: ../plugins/snippets/snippets.plugin.desktop.in.h:2
 msgid "Snippets"
 msgstr "Урыўкі"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:2
-msgid "Activation"
-msgstr "Актывізацыя"
+#: ../plugins/snippets/snippets/exporter.py:82
+#, python-format
+msgid "The archive \"%s\" could not be created"
+msgstr "Не ўдалося стварыць архіў \"%s\""
 
-#: ../plugins/snippets/snippets/snippets.ui.h:3
-msgid "Add Snippet"
-msgstr "Дадаць урывак"
+#: ../plugins/snippets/snippets/exporter.py:99
+#, python-format
+msgid "Target directory \"%s\" does not exist"
+msgstr "Мэтавы каталог \"%s\" не існуе"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:4
-msgid "Create new snippet"
-msgstr "Стварыць новы ўрывак"
+#: ../plugins/snippets/snippets/exporter.py:102
+#, python-format
+msgid "Target directory \"%s\" is not a valid directory"
+msgstr "Мэтавы каталог \"%s\" не з'яўляецца прыдатным каталогам"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:5
-#: ../plugins/snippets/snippets/manager.py:399
-msgid "Delete selected snippet"
-msgstr "Выдаліць вылучаны ўрывак"
+#: ../plugins/snippets/snippets/importer.py:47
+#: ../plugins/snippets/snippets/importer.py:108
+#, python-format
+msgid "File \"%s\" does not exist"
+msgstr "Файл \"%s\" не існуе"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:6
-msgid "Export Snippets"
-msgstr "Экспартаваць урыўкі"
+#: ../plugins/snippets/snippets/importer.py:50
+#, python-format
+msgid "File \"%s\" is not a valid snippets file"
+msgstr "Файл \"%s\" не з'яўляецца прыдатным файлам урыўкаў"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:7
-msgid "Export selected snippets"
-msgstr "Экспартаваць вылучаныя ўрыўкі"
+#: ../plugins/snippets/snippets/importer.py:67
+#, python-format
+msgid "Imported file \"%s\" is not a valid snippets file"
+msgstr "Імпартаваны файл \"%s\" не з'яўляецца прыдатным файлам урыўкаў"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:8
-msgid "Import Snippets"
-msgstr "Імпартаваць урыўкі"
+#: ../plugins/snippets/snippets/importer.py:77
+#, python-format
+msgid "The archive \"%s\" could not be extracted"
+msgstr "Не ўдалося выняць змесціва архіва \"%s\""
 
-#: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:776
-msgid "Import snippets"
-msgstr "Імпартаваць урыўкі"
+#: ../plugins/snippets/snippets/importer.py:95
+#, python-format
+msgid "The following files could not be imported: %s"
+msgstr "Не ўдалося імпартаваць наступныя файлы: %s"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:10
-msgid "Manage Snippets"
-msgstr "Кіраванне ўрыўкамі"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:11
-msgid "Remove Snippet"
-msgstr "Выдаліць урывак"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:12
-msgid "S_hortcut key:"
-msgstr "_Клавіятурны скарот:"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:13
-msgid "Shortcut key with which the snippet is activated"
-msgstr "Клавіятурны скарот для актывізацыі ўрыўка"
-
-#. self['hbox_tab_trigger'].set_spacing(0)
-#: ../plugins/snippets/snippets/snippets.ui.h:14
-#: ../plugins/snippets/snippets/manager.py:666
-msgid "Single word the snippet is activated with after pressing Tab"
-msgstr "Слова, пасля якога націск клавішы Tab актывізуе ўрывак"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:15
-msgid "_Drop targets:"
-msgstr "_Мэтавыя тыпы:"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:17
-msgid "_Snippets:"
-msgstr "_Урыўкі:"
-
-#. "tab" here means the tab key, not the notebook tab!
-#: ../plugins/snippets/snippets/snippets.ui.h:19
-msgid "_Tab trigger:"
-msgstr "_Актыватар табуляцыі:"
-
-#: ../plugins/snippets/snippets/windowactivatable.py:145
-msgid "Manage _Snippets..."
-msgstr "_Кіраванне ўрыўкамі..."
-
-#: ../plugins/snippets/snippets/windowactivatable.py:146
-msgid "Manage snippets"
-msgstr "Кіраванне ўрыўкамі"
+#: ../plugins/snippets/snippets/importer.py:111
+#: ../plugins/snippets/snippets/importer.py:124
+#, python-format
+msgid "File \"%s\" is not a valid snippets archive"
+msgstr "Файл \"%s\" не з'яўляецца прыдатным архівам урыўкаў"
 
 #: ../plugins/snippets/snippets/manager.py:43
 msgid "Snippets archive"
@@ -3232,6 +3203,11 @@ msgstr "Глабальныя"
 msgid "Revert selected snippet"
 msgstr "Адрабіць змены ў вылучаным урыўку"
 
+#: ../plugins/snippets/snippets/manager.py:399
+#: ../plugins/snippets/snippets/snippets.ui.h:5
+msgid "Delete selected snippet"
+msgstr "Выдаліць вылучаны ўрывак"
+
 #. self['hbox_tab_trigger'].set_spacing(3)
 #: ../plugins/snippets/snippets/manager.py:659
 msgid ""
@@ -3241,6 +3217,12 @@ msgstr ""
 "Гэта непрыдатны актыватар табуляцыі. Актыватары могуць складацца або толькі "
 "з літар, або з аднаго нялітарна-лічбавага знака, напрыклад: { ці ["
 
+#. self['hbox_tab_trigger'].set_spacing(0)
+#: ../plugins/snippets/snippets/manager.py:666
+#: ../plugins/snippets/snippets/snippets.ui.h:14
+msgid "Single word the snippet is activated with after pressing Tab"
+msgstr "Слова, пасля якога націск клавішы Tab актывізуе ўрывак"
+
 #: ../plugins/snippets/snippets/manager.py:755
 #, python-format
 msgid "The following error occurred while importing: %s"
@@ -3249,6 +3231,11 @@ msgstr "Падчас імпартавання ўзнікла наступная 
 #: ../plugins/snippets/snippets/manager.py:762
 msgid "Import successfully completed"
 msgstr "Імпартаванне паспяхова закончана"
+
+#: ../plugins/snippets/snippets/manager.py:776
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+msgid "Import snippets"
+msgstr "Імпартаваць урыўкі"
 
 #: ../plugins/snippets/snippets/manager.py:781
 #: ../plugins/snippets/snippets/manager.py:867
@@ -3314,53 +3301,6 @@ msgstr ""
 msgid "Type a new shortcut"
 msgstr "Увядзіце новы клавіятурны скарот"
 
-#: ../plugins/snippets/snippets/exporter.py:82
-#, python-format
-msgid "The archive \"%s\" could not be created"
-msgstr "Не ўдалося стварыць архіў \"%s\""
-
-#: ../plugins/snippets/snippets/exporter.py:99
-#, python-format
-msgid "Target directory \"%s\" does not exist"
-msgstr "Мэтавы каталог \"%s\" не існуе"
-
-#: ../plugins/snippets/snippets/exporter.py:102
-#, python-format
-msgid "Target directory \"%s\" is not a valid directory"
-msgstr "Мэтавы каталог \"%s\" не з'яўляецца прыдатным каталогам"
-
-#: ../plugins/snippets/snippets/importer.py:47
-#: ../plugins/snippets/snippets/importer.py:108
-#, python-format
-msgid "File \"%s\" does not exist"
-msgstr "Файл \"%s\" не існуе"
-
-#: ../plugins/snippets/snippets/importer.py:50
-#, python-format
-msgid "File \"%s\" is not a valid snippets file"
-msgstr "Файл \"%s\" не з'яўляецца прыдатным файлам урыўкаў"
-
-#: ../plugins/snippets/snippets/importer.py:67
-#, python-format
-msgid "Imported file \"%s\" is not a valid snippets file"
-msgstr "Імпартаваны файл \"%s\" не з'яўляецца прыдатным файлам урыўкаў"
-
-#: ../plugins/snippets/snippets/importer.py:77
-#, python-format
-msgid "The archive \"%s\" could not be extracted"
-msgstr "Не ўдалося выняць змесціва архіва \"%s\""
-
-#: ../plugins/snippets/snippets/importer.py:95
-#, python-format
-msgid "The following files could not be imported: %s"
-msgstr "Не ўдалося імпартаваць наступныя файлы: %s"
-
-#: ../plugins/snippets/snippets/importer.py:111
-#: ../plugins/snippets/snippets/importer.py:124
-#, python-format
-msgid "File \"%s\" is not a valid snippets archive"
-msgstr "Файл \"%s\" не з'яўляецца прыдатным архівам урыўкаў"
-
 #: ../plugins/snippets/snippets/placeholder.py:594
 #, python-format
 msgid ""
@@ -3374,6 +3314,72 @@ msgstr ""
 #, python-format
 msgid "Execution of the Python command (%s) failed: %s"
 msgstr "Не ўдалося выканаць загад Python (%s): %s"
+
+#. ex:ts=8:et:
+#: ../plugins/snippets/snippets.plugin.desktop.in.h:1
+msgid "Insert often-used pieces of text in a fast way"
+msgstr "Хуткая ўстаўка часта патрэбных урыўкаў тэксту"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:2
+msgid "Activation"
+msgstr "Актывізацыя"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:3
+msgid "Add Snippet"
+msgstr "Дадаць урывак"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:4
+msgid "Create new snippet"
+msgstr "Стварыць новы ўрывак"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:6
+msgid "Export Snippets"
+msgstr "Экспартаваць урыўкі"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:7
+msgid "Export selected snippets"
+msgstr "Экспартаваць вылучаныя ўрыўкі"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:8
+msgid "Import Snippets"
+msgstr "Імпартаваць урыўкі"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+msgid "Manage Snippets"
+msgstr "Кіраванне ўрыўкамі"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:11
+msgid "Remove Snippet"
+msgstr "Выдаліць урывак"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:12
+msgid "S_hortcut key:"
+msgstr "_Клавіятурны скарот:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:13
+msgid "Shortcut key with which the snippet is activated"
+msgstr "Клавіятурны скарот для актывізацыі ўрыўка"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:15
+msgid "_Drop targets:"
+msgstr "_Мэтавыя тыпы:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:17
+msgid "_Snippets:"
+msgstr "_Урыўкі:"
+
+#. "tab" here means the tab key, not the notebook tab!
+#: ../plugins/snippets/snippets/snippets.ui.h:19
+msgid "_Tab trigger:"
+msgstr "_Актыватар табуляцыі:"
+
+#: ../plugins/snippets/snippets/windowactivatable.py:154
+msgid "Manage _Snippets..."
+msgstr "_Кіраванне ўрыўкамі..."
+
+#: ../plugins/snippets/snippets/windowactivatable.py:155
+msgid "Manage snippets"
+msgstr "Кіраванне ўрыўкамі"
 
 #: ../plugins/sort/gedit-sort-plugin.c:88
 msgid "S_ort..."
@@ -3421,7 +3427,7 @@ msgstr "Сартаванне змесціва дакумента ці вылуч
 #. Translators: Displayed in the "Check Spelling" dialog if there are no suggestions
 #. * for the current misspelled word
 #: ../plugins/spell/gedit-automatic-spell-checker.c:420
-#: ../plugins/spell/gedit-spell-checker-dialog.c:451
+#: ../plugins/spell/gedit-spell-checker-dialog.c:458
 msgid "(no suggested words)"
 msgstr "(няма прапанаваных слоў)"
 
@@ -3443,20 +3449,20 @@ msgstr "_Дадаць"
 msgid "_Spelling Suggestions..."
 msgstr "_Прапановы напісання..."
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:271
+#: ../plugins/spell/gedit-spell-checker-dialog.c:278
 msgid "Check Spelling"
 msgstr "Праверка арфаграфіі"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:282
+#: ../plugins/spell/gedit-spell-checker-dialog.c:289
 msgid "Suggestions"
 msgstr "Прапановы"
 
 #. Translators: Displayed in the "Check Spelling" dialog if the current word isn't misspelled
-#: ../plugins/spell/gedit-spell-checker-dialog.c:558
+#: ../plugins/spell/gedit-spell-checker-dialog.c:565
 msgid "(correct spelling)"
 msgstr "(правільнае напісанне)"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:699
+#: ../plugins/spell/gedit-spell-checker-dialog.c:706
 msgid "Completed spell checking"
 msgstr "Праверка арфаграфіі закончана"
 
@@ -3521,11 +3527,11 @@ msgstr "Падсвечваць памылкова _напісаныя словы
 msgid "Automatically spell-check the current document"
 msgstr "Аўтаматычна правяраць арфаграфію ў адкрытым дакуменце"
 
-#: ../plugins/spell/gedit-spell-plugin.c:819
+#: ../plugins/spell/gedit-spell-plugin.c:810
 msgid "The document is empty."
 msgstr "Дакумент пусты."
 
-#: ../plugins/spell/gedit-spell-plugin.c:844
+#: ../plugins/spell/gedit-spell-plugin.c:835
 msgid "No misspelled words"
 msgstr "Няма слоў з арфаграфічнымі памылкамі"
 
@@ -3598,55 +3604,6 @@ msgstr "Праверка арфаграфіі для адкрытага даку
 msgid "Spell Checker"
 msgstr "Праверка арфаграфіі"
 
-#: ../plugins/time/gedit-time-plugin.c:188
-msgid "In_sert Date and Time..."
-msgstr "_Уставіць дату і час..."
-
-#: ../plugins/time/gedit-time-plugin.c:190
-msgid "Insert current date and time at the cursor position"
-msgstr "Уставіць бягучую дату і час у месцы размяшчэння курсора"
-
-#: ../plugins/time/gedit-time-plugin.c:551
-msgid "Available formats"
-msgstr "Магчымыя фарматы"
-
-#. ex:ts=8:noet:
-#: ../plugins/time/time.plugin.desktop.in.h:1
-msgid "Insert Date/Time"
-msgstr "Устаўка даты/часу"
-
-#: ../plugins/time/time.plugin.desktop.in.h:2
-msgid "Inserts current date and time at the cursor position."
-msgstr "Устаўка бягучай даты і часу ў месцы размяшчэння курсора."
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:1
-msgid "Custom Format"
-msgstr "Уласны фармат"
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:2
-msgid ""
-"If the user should be prompted for a format or if the selected or custom "
-"format should be used."
-msgstr ""
-"Ці трэба пытацца ў карыстальніка аб фармаце або выкарыстоўваць вылучаны ці "
-"ўласны фармат."
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
-msgid "Prompt Type"
-msgstr "Тып запыту"
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
-msgid "Selected Format"
-msgstr "Выбраны фармат"
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
-msgid "The custom format used when inserting the date/time."
-msgstr "Уласны фармат для ўстаўкі даты/часу."
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
-msgid "The selected format used when inserting the date/time."
-msgstr "Выбраны фармат для ўстаўкі даты/часу."
-
 #. Translators: Use the more common date format in your locale
 #: ../plugins/time/gedit-time-dialog.ui.h:2
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:4
@@ -3678,6 +3635,18 @@ msgstr "_Уставіць"
 msgid "_Use custom format"
 msgstr "У_жыць уласны фармат"
 
+#: ../plugins/time/gedit-time-plugin.c:188
+msgid "In_sert Date and Time..."
+msgstr "_Уставіць дату і час..."
+
+#: ../plugins/time/gedit-time-plugin.c:190
+msgid "Insert current date and time at the cursor position"
+msgstr "Уставіць бягучую дату і час у месцы размяшчэння курсора"
+
+#: ../plugins/time/gedit-time-plugin.c:537
+msgid "Available formats"
+msgstr "Магчымыя фарматы"
+
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:7
 msgid "Configure date/time plugin"
 msgstr "Настроіць плугін даты/часу"
@@ -3689,6 +3658,42 @@ msgstr "Пры ўстаўцы даты/часу..."
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "_Prompt for a format"
 msgstr "_Запытаць фармат"
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:1
+msgid "Custom Format"
+msgstr "Уласны фармат"
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:2
+msgid ""
+"If the user should be prompted for a format or if the selected or custom "
+"format should be used."
+msgstr ""
+"Ці трэба пытацца ў карыстальніка аб фармаце або выкарыстоўваць вылучаны ці "
+"ўласны фармат."
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
+msgid "Prompt Type"
+msgstr "Тып запыту"
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
+msgid "Selected Format"
+msgstr "Выбраны фармат"
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
+msgid "The custom format used when inserting the date/time."
+msgstr "Уласны фармат для ўстаўкі даты/часу."
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
+msgid "The selected format used when inserting the date/time."
+msgstr "Выбраны фармат для ўстаўкі даты/часу."
+
+#: ../plugins/time/time.plugin.desktop.in.h:1
+msgid "Insert Date/Time"
+msgstr "Устаўка даты/часу"
+
+#: ../plugins/time/time.plugin.desktop.in.h:2
+msgid "Inserts current date and time at the cursor position."
+msgstr "Устаўка бягучай даты і часу ў месцы размяшчэння курсора."
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
 msgid "Logs access and leave event for documents used with gedit"
