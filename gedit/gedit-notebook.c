@@ -750,7 +750,7 @@ remove_right_padding (GeditNotebook *nb)
 	GError *error = NULL;
 	const gchar style[] =
 		".notebook {\n"
-		  "padding: %d 0 %d %d;\n"
+		  "border-width: %d 0 %d %d;\n"
 		"}";
 
 	/* FIXME: find out a css like way to do this, right now padding-right/left
