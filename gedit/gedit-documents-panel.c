@@ -1085,6 +1085,7 @@ gedit_documents_panel_init (GeditDocumentsPanel *panel)
 	GtkTreeViewColumn *column;
 	GtkCellRenderer *cell;
 	GtkTreeSelection *selection;
+	GIcon *icon;
 
 	gedit_debug (DEBUG_PANEL);
 
@@ -1152,7 +1153,10 @@ gedit_documents_panel_init (GeditDocumentsPanel *panel)
 				     column);
 
 	cell = gedit_cell_renderer_button_new ();
-	g_object_set (cell, "stock-id", GTK_STOCK_CLOSE, NULL);
+
+	icon = g_themed_icon_new_with_default_fallbacks ("window-close-symbolic");
+	g_object_set (cell, "gicon", icon, NULL);
+	g_object_unref (icon);
 	gtk_tree_view_column_pack_end (column, cell, FALSE);
 	g_signal_connect (cell,
 	                  "clicked",

@@ -59,7 +59,7 @@ gedit_close_button_init (GeditCloseButton *button)
 	icon = g_themed_icon_new_with_default_fallbacks ("window-close-symbolic");
 	image = gtk_image_new_from_gicon (icon, GTK_ICON_SIZE_MENU);
 	gtk_widget_show (image);
-	g_object_unref(icon);
+	g_object_unref (icon);
 
 	gtk_container_add (GTK_CONTAINER (button), image);
 
