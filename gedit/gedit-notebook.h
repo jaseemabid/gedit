@@ -120,6 +120,9 @@ void		gedit_notebook_set_close_buttons_sensitive
 gboolean	gedit_notebook_get_close_buttons_sensitive
 						(GeditNotebook *nb);
 
+void		gedit_notebook_collapse_border	(GeditNotebook *nb,
+						 gboolean       collapse);
+
 G_END_DECLS
 
 #endif /* GEDIT_NOTEBOOK_H */

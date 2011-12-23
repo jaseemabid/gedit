@@ -36,6 +36,7 @@ struct _GeditMultiNotebookPrivate
 	GeditTab  *active_tab;
 
 	guint      removing_notebook : 1;
+	guint      collapse : 1;
 };
 
 enum
@@ -451,6 +452,7 @@ add_notebook (GeditMultiNotebook *mnb,
 		GtkAllocation allocation;
 		GtkWidget *active_notebook = mnb->priv->active_notebook;
 		gint active_nb_pos;
+		gboolean collapse_new_notebook = FALSE;
 
 		paned = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL);
 		gtk_widget_show (paned);
@@ -473,11 +475,26 @@ add_notebook (GeditMultiNotebook *mnb,
 		gtk_paned_set_position (GTK_PANED (paned),
 		                        allocation.width / 2);
 
+		/* check if we need to uncollapse the active notebook */
+		if (active_notebook == g_list_last (mnb->priv->notebooks)->data &&
+		    mnb->priv->collapse)
+		{
+			collapse_new_notebook = TRUE;
+			gedit_notebook_collapse_border (GEDIT_NOTEBOOK (active_notebook),
+			                                FALSE);
+		}
+
 		active_nb_pos = g_list_index (mnb->priv->notebooks,
 		                              active_notebook);
 		mnb->priv->notebooks = g_list_insert (mnb->priv->notebooks,
 		                                      notebook,
 		                                      active_nb_pos + 1);
+
+		if (collapse_new_notebook)
+		{
+			gedit_notebook_collapse_border (GEDIT_NOTEBOOK (notebook),
+			                                TRUE);
+		}
 	}
 
 	gtk_widget_show (notebook);
@@ -513,6 +530,10 @@ remove_notebook (GeditMultiNotebook *mnb,
 	else
 	{
 		new_notebook = GTK_WIDGET (mnb->priv->notebooks->data);
+
+		/* we must check if we need to collapse the new last notebook */
+		gedit_notebook_collapse_border (GEDIT_NOTEBOOK (current->prev->data),
+		                                mnb->priv->collapse);
 	}
 
 	parent = gtk_widget_get_parent (notebook);
@@ -879,6 +900,21 @@ gedit_multi_notebook_next_notebook (GeditMultiNotebook *mnb)
 		notebook = GTK_WIDGET (mnb->priv->notebooks->data);
 
 	gtk_widget_grab_focus (notebook);
+}
+
+void
+gedit_multi_notebook_collapse_notebook_border (GeditMultiNotebook *mnb,
+					       gboolean            collapse)
+{
+	GeditNotebook *notebook;
+
+	g_return_if_fail (GEDIT_IS_MULTI_NOTEBOOK (mnb));
+
+	mnb->priv->collapse = (collapse != FALSE);
+
+	notebook = GEDIT_NOTEBOOK (g_list_last (mnb->priv->notebooks)->data);
+
+	gedit_notebook_collapse_border (notebook, collapse);
 }
 
 void
