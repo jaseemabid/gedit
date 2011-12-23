@@ -1302,7 +1302,16 @@ gedit_view_frame_init (GeditViewFrame *frame)
 	frame->priv->slider = gedit_floating_slider_new ();
 	gtk_widget_set_halign (frame->priv->slider, GTK_ALIGN_END);
 	gtk_widget_set_valign (frame->priv->slider, GTK_ALIGN_START);
-	gtk_widget_set_margin_right (frame->priv->slider, SEARCH_POPUP_MARGIN);
+
+	if (gtk_widget_get_direction (frame->priv->slider) == GTK_TEXT_DIR_LTR)
+	{
+		gtk_widget_set_margin_right (frame->priv->slider, SEARCH_POPUP_MARGIN);
+	}
+	else
+	{
+		gtk_widget_set_margin_left (frame->priv->slider, SEARCH_POPUP_MARGIN);
+	}
+
 	g_object_set (G_OBJECT (frame->priv->slider),
 	              "easing", GEDIT_THEATRICS_CHOREOGRAPHER_EASING_EXPONENTIAL_IN_OUT,
 	              "blocking", GEDIT_THEATRICS_CHOREOGRAPHER_BLOCKING_DOWNSTAGE,
