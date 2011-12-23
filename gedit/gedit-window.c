@@ -348,22 +348,7 @@ gedit_window_window_state_event (GtkWidget           *widget,
 	g_settings_set_int (window->priv->window_settings, GEDIT_SETTINGS_WINDOW_STATE,
 			    window->priv->window_state);
 
-	if ((event->changed_mask &
-	    (GDK_WINDOW_STATE_MAXIMIZED | GDK_WINDOW_STATE_FULLSCREEN)) != 0)
-	{
-		gboolean show;
-
-		show = !(event->new_window_state &
-			(GDK_WINDOW_STATE_MAXIMIZED | GDK_WINDOW_STATE_FULLSCREEN));
-
-		gedit_multi_notebook_collapse_notebook_border (window->priv->multi_notebook,
-							       !show);
-	}
-
-	if (GTK_WIDGET_CLASS (gedit_window_parent_class)->window_state_event)
-		return GTK_WIDGET_CLASS (gedit_window_parent_class)->window_state_event (widget, event);
-
-	return FALSE;
+	return GTK_WIDGET_CLASS (gedit_window_parent_class)->window_state_event (widget, event);
 }
 
 static gboolean
