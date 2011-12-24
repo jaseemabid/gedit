@@ -124,7 +124,6 @@ struct _GeditFileBrowserWidgetPrivate
 	GtkWidget *combo;
 	GtkTreeStore *combo_model;
 
-	GtkWidget *filter_expander;
 	GtkWidget *filter_entry;
 
 	GtkUIManager *manager;
@@ -1254,21 +1253,10 @@ create_tree (GeditFileBrowserWidget *obj)
 static void
 create_filter (GeditFileBrowserWidget *obj)
 {
-	GtkWidget *expander;
-	GtkWidget *vbox;
 	GtkWidget *entry;
 
-	expander = gtk_expander_new_with_mnemonic (_("_Match Filename"));
-	gtk_widget_show (expander);
-	gtk_box_pack_start (GTK_BOX (obj), expander, FALSE, FALSE, 0);
-
-	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 3);
-	gtk_widget_show (vbox);
-
-	obj->priv->filter_expander = expander;
-
 	entry = gtk_entry_new ();
-	gtk_widget_show (entry);
+	gtk_entry_set_placeholder_text (GTK_ENTRY (entry), _("Match Filename"));
 
 	obj->priv->filter_entry = entry;
 
@@ -1279,8 +1267,7 @@ create_filter (GeditFileBrowserWidget *obj)
 				  G_CALLBACK (on_entry_filter_activate),
 				  obj);
 
-	gtk_box_pack_start (GTK_BOX (vbox), entry, FALSE, FALSE, 0);
-	gtk_container_add (GTK_CONTAINER (expander), vbox);
+	gtk_box_pack_start (GTK_BOX (obj), entry, FALSE, FALSE, 0);
 }
 
 static void
@@ -1840,12 +1827,6 @@ set_filter_pattern_real (GeditFileBrowserWidget *obj,
 	{
 		gtk_entry_set_text (GTK_ENTRY (obj->priv->filter_entry),
 		                    obj->priv->filter_pattern_str);
-
-		if (obj->priv->filter_pattern_str != '\0')
-		{
-			gtk_expander_set_expanded (GTK_EXPANDER (obj->priv->filter_expander),
-			                           TRUE);
-		}
 	}
 
 	if (GEDIT_IS_FILE_BROWSER_STORE (model))
@@ -2719,12 +2700,12 @@ on_model_set (GObject *gobject, GParamSpec *arg1,
 			gtk_action_set_sensitive (action, TRUE);
 		}
 
-		gtk_widget_set_sensitive (obj->priv->filter_expander, FALSE);
+		gtk_widget_hide (obj->priv->filter_entry);
 
 		add_signal (obj, gobject,
 			    g_signal_connect (gobject, "bookmark-activated",
-					      G_CALLBACK
-					      (on_bookmark_activated), obj));
+					      G_CALLBACK (on_bookmark_activated),
+					      obj));
 	}
 	else if (GEDIT_IS_FILE_BROWSER_STORE (model))
 	{
@@ -2733,15 +2714,15 @@ on_model_set (GObject *gobject, GParamSpec *arg1,
 
 		add_signal (obj, gobject,
 			    g_signal_connect (gobject, "file-activated",
-					      G_CALLBACK
-					      (on_file_activated), obj));
+					      G_CALLBACK (on_file_activated),
+					      obj));
 
 		add_signal (obj, model,
-			    g_signal_connect (model, "no-trash",
-			    		      G_CALLBACK
-			    		      (on_file_store_no_trash), obj));
+		            g_signal_connect (model, "no-trash",
+		                              G_CALLBACK (on_file_store_no_trash),
+		                              obj));
 
-		gtk_widget_set_sensitive (obj->priv->filter_expander, TRUE);
+		gtk_widget_show (obj->priv->filter_entry);
 	}
 
 	update_sensitivity (obj);
