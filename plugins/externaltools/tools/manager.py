@@ -76,40 +76,40 @@ class LanguagesPopup(Gtk.Window):
 
     def build(self):
         self.model = Gtk.ListStore(str, str, bool)
-        
+
         self.sw = Gtk.ScrolledWindow()
         self.sw.show()
-        
+
         self.sw.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
         self.sw.set_shadow_type(Gtk.ShadowType.ETCHED_IN)
-        
+
         self.view = Gtk.TreeView(model=self.model)
         self.view.show()
-        
+
         self.view.set_headers_visible(False)
-        
+
         column = Gtk.TreeViewColumn()
-        
+
         renderer = Gtk.CellRendererToggle()
         column.pack_start(renderer, False)
         column.add_attribute(renderer, 'active', self.COLUMN_ENABLED)
-        
+
         renderer.connect('toggled', self.on_language_toggled)
-        
+
         renderer = Gtk.CellRendererText()
         column.pack_start(renderer, True)
         column.add_attribute(renderer, 'text', self.COLUMN_NAME)
-        
+
         self.view.append_column(column)
         self.view.set_row_separator_func(self.on_separator, None)
-        
+
         self.sw.add(self.view)
-        
+
         self.add(self.sw)
-    
+
     def enabled_languages(self, model, path, piter, ret):
         enabled = model.get_value(piter, self.COLUMN_ENABLED)
-        
+
         if path.get_indices()[0] == 0 and enabled:
             return True
 
@@ -117,17 +117,17 @@ class LanguagesPopup(Gtk.Window):
             ret.append(model.get_value(piter, self.COLUMN_ID))
 
         return False
-    
+
     def languages(self):
         ret = []
-        
+
         self.model.foreach(self.enabled_languages, ret)
         return ret
-    
+
     def on_separator(self, model, piter, user_data=None):
         val = model.get_value(piter, self.COLUMN_NAME)
         return val == '-'
-    
+
     def init_languages(self, languages):
         manager = GtkSource.LanguageManager()
         langs = [manager.get_language(x) for x in manager.get_language_ids()]
@@ -144,15 +144,15 @@ class LanguagesPopup(Gtk.Window):
     def correct_all(self, model, path, piter, enabled):
         if path.get_indices()[0] == 0:
             return False
-        
+
         model.set_value(piter, self.COLUMN_ENABLED, enabled)
 
     def on_language_toggled(self, renderer, path):
         piter = self.model.get_iter(path)
-        
+
         enabled = self.model.get_value(piter, self.COLUMN_ENABLED)
         self.model.set_value(piter, self.COLUMN_ENABLED, not enabled)
-        
+
         if path == '0':
             self.model.foreach(self.correct_all, False)
         else:
@@ -165,23 +165,23 @@ class LanguagesPopup(Gtk.Window):
         else:
             event.window = self.view.get_bin_window()
             return self.view.event(event)
-    
+
     def do_key_release_event(self, event):
         event.window = self.view.get_bin_window()
         return self.view.event(event)
-    
+
     def in_window(self, event, window=None):
         if not window:
             window = self.get_window()
 
         geometry = window.get_geometry()
         origin = window.get_origin()
-        
+
         return event.x_root >= origin[1] and \
                event.x_root <= origin[1] + geometry[2] and \
                event.y_root >= origin[2] and \
                event.y_root <= origin[2] + geometry[3]
-    
+
     def do_destroy(self):
         if self.keyboard:
             self.keyboard.ungrab(0L)
@@ -196,34 +196,34 @@ class LanguagesPopup(Gtk.Window):
         event.window = window
         event.x += fr[1] - to[1]
         event.y += fr[2] - to[2]
-    
+
     def resolve_widgets(self, root):
         res = [root]
-        
+
         if isinstance(root, Gtk.Container):
             root.forall(lambda x, y: res.extend(self.resolve_widgets(x)), None)
-        
+
         return res
-    
+
     def resolve_windows(self, window):
         if not window:
             return []
 
         res = [window]
         res.extend(window.get_children())
-        
+
         return res
-    
+
     def propagate_mouse_event(self, event):
         allwidgets = self.resolve_widgets(self.get_child())
         allwidgets.reverse()
-        
+
         orig = [event.x, event.y]
 
         for widget in allwidgets:
             windows = self.resolve_windows(widget.get_window())
             windows.reverse()
-            
+
             for window in windows:
                 if not (window.get_events() & event.type):
                     continue
@@ -233,9 +233,9 @@ class LanguagesPopup(Gtk.Window):
 
                     if widget.event(event):
                         return True
-        
+
         return False
-    
+
     def do_button_press_event(self, event):
         if not self.in_window(event):
             self.destroy()
@@ -250,19 +250,19 @@ class LanguagesPopup(Gtk.Window):
 
     def do_scroll_event(self, event):
         return self.propagate_mouse_event(event)
-    
+
     def do_motion_notify_event(self, event):
         return self.propagate_mouse_event(event)
-    
+
     def do_enter_notify_event(self, event):
         return self.propagate_mouse_event(event)
 
     def do_leave_notify_event(self, event):
         return self.propagate_mouse_event(event)
-    
+
     def do_proximity_in_event(self, event):
         return self.propagate_mouse_event(event)
-    
+
     def do_proximity_out_event(self, event):
         return self.propagate_mouse_event(event)
 
@@ -275,9 +275,9 @@ class Manager:
         self.dialog = None
         self._languages = {}
         self._tool_rows = {}
-        
+
         self.build()
-    
+
     def build(self):
         callbacks = {
             'on_action_add_tool_activated'    : self.on_action_add_tool_activated,
@@ -315,29 +315,29 @@ class Manager:
 
     def expand_from_doc(self, doc):
         row = None
-        
+
         if doc:
             if doc.get_language():
                 lid = doc.get_language().get_id()
-            
+
                 if lid in self._languages:
                     row = self._languages[lid]
             elif 'plain' in self._languages:
                 row = self._languages['plain']
-    
+
         if not row and None in self._languages:
             row = self._languages[None]
-    
+
         if not row:
             return
-        
+
         self.view.expand_row(row.get_path(), False)
         self.view.get_selection().select_path(row.get_path())
-    
+
     def run(self, window):
         if self.dialog == None:
             self.build()
-        
+
         # Open up language
         self.expand_from_doc(window.get_active_document())
 
@@ -348,7 +348,7 @@ class Manager:
     def add_accelerator(self, item):
         if not item.shortcut:
             return
-        
+
         if item.shortcut in self.accelerators:
             if not item in self.accelerators[item.shortcut]:
                 self.accelerators[item.shortcut].append(item)
@@ -372,42 +372,42 @@ class Manager:
             lid = language.get_id()
         else:
             lid = language
-            
+
         if not lid in self._languages:
             piter = self.model.append(None, [language])
-            
+
             parent = Gtk.TreeRowReference.new(self.model, self.model.get_path(piter))
             self._languages[lid] = parent
         else:
             parent = self._languages[lid]
-        
+
         piter = self.model.get_iter(parent.get_path())
         child = self.model.append(piter, [tool])
-        
+
         if not tool in self._tool_rows:
             self._tool_rows[tool] = []
-        
+
         self._tool_rows[tool].append(Gtk.TreeRowReference.new(self.model, self.model.get_path(child)))
         return child
 
     def add_tool(self, tool):
         manager = GtkSource.LanguageManager()
         ret = None
-        
+
         for lang in tool.languages:
             l = manager.get_language(lang)
-            
+
             if l:
                 ret = self.add_tool_to_language(tool, l)
             elif lang == 'plain':
                 ret = self.add_tool_to_language(tool, 'plain')
-            
+
         if not ret:
             ret = self.add_tool_to_language(tool, None)
 
         self.add_accelerator(tool)
         return ret
-        
+
     def __init_tools_model(self):
         self.tools = ToolLibrary()
         self.current_node = None
@@ -427,26 +427,26 @@ class Manager:
         # For languages, sort All before everything else, otherwise alphabetical
         t1 = model.get_value(iter1, self.TOOL_COLUMN)
         t2 = model.get_value(iter2, self.TOOL_COLUMN)
-        
+
         if model.iter_parent(iter1) == None:
             if t1 == None:
                 return -1
-            
+
             if t2 == None:
                 return 1
-            
+
             def lang_name(lang):
                 if isinstance(lang, GtkSource.Language):
                     return lang.get_name()
                 else:
                     return _('Plain Text')
-            
+
             n1 = lang_name(t1)
             n2 = lang_name(t2)
         else:
             n1 = t1.name
             n2 = t2.name
-        
+
         return cmp(n1.lower(), n2.lower())
 
     def __init_tools_view(self):
@@ -456,12 +456,12 @@ class Manager:
         column.pack_start(renderer, False)
         renderer.set_property('editable', True)
         self.view.append_column(column)
-        
+
         column.set_cell_data_func(renderer, self.get_cell_data_cb, None)
 
         renderer.connect('edited', self.on_view_label_cell_edited)
         renderer.connect('editing-started', self.on_view_label_cell_editing_started)
-        
+
         self.selection_changed_id = self.view.get_selection().connect('changed', self.on_view_selection_changed, None)
 
     def __init_combobox(self, name):
@@ -488,10 +488,10 @@ class Manager:
 
         if piter is not None:
             tool = model.get_value(piter, self.TOOL_COLUMN)
-            
+
             if not isinstance(tool, Tool):
                 tool = None
-            
+
             return piter, tool
         else:
             return None, None
@@ -538,27 +538,27 @@ class Manager:
 
         for nm in ('input', 'output', 'applicability', 'save-files'):
             self[nm].set_active(0)
-        
+
         self['languages_label'].set_text(_('All Languages'))
-    
+
     def fill_languages_button(self):
         if not self.current_node or not self.current_node.languages:
             self['languages_label'].set_text(_('All Languages'))
         else:
             manager = GtkSource.LanguageManager()
             langs = []
-            
+
             for lang in self.current_node.languages:
                 if lang == 'plain':
                     langs.append(_('Plain Text'))
                 else:
                     l = manager.get_language(lang)
-                    
+
                     if l:
                         langs.append(l.get_name())
-            
+
             self['languages_label'].set_text(', '.join(langs))
-    
+
     def fill_fields(self):
         self.update_accelerator_label()
 
@@ -631,27 +631,27 @@ class Manager:
             return None
 
         tool = self.model.get_value(piter, self.TOOL_COLUMN)
-        
+
         if isinstance(tool, Tool):
             piter = self.model.iter_parent(piter)
             tool = self.model.get_value(piter, self.TOOL_COLUMN)
-        
+
         if isinstance(tool, GtkSource.Language):
             return tool.get_id()
         elif tool:
             return 'plain'
-        
+
         return None
 
     def selected_language_id(self):
         # Find current language if there is any
         model, piter = self.view.get_selection().get_selected()
-        
+
         return self.language_id_from_iter(piter)
 
     def on_action_add_tool_activated(self, action):
         self.save_current_tool()
-        
+
         # block handlers while inserting a new item
         self.view.get_selection().handler_block(self.selection_changed_id)
 
@@ -660,10 +660,10 @@ class Manager:
         self.tools.tree.tools.append(self.current_node)
 
         lang = self.selected_language_id()
-        
+
         if lang:
             self.current_node.languages = [lang]
-        
+
         piter = self.add_tool(self.current_node)
 
         self.view.set_cursor(self.model.get_path(piter), self.view.get_column(self.TOOL_COLUMN), True)
@@ -675,7 +675,7 @@ class Manager:
     def tool_changed(self, tool, refresh=False):
         for row in self._tool_rows[tool]:
             self.model.row_changed(row.get_path(), self.model.get_iter(row.get_path()))
-        
+
         if refresh and tool == self.current_node:
             self.fill_fields()
 
@@ -689,29 +689,29 @@ class Manager:
 
         if node.is_global():
             shortcut = node.shortcut
-            
+
             if node.parent.revert_tool(node):
                 self.remove_accelerator(node, shortcut)
                 self.add_accelerator(node)
 
                 self['revert-tool-action'].set_sensitive(False)
                 self.fill_fields()
-                
+
                 self.tool_changed(node)
         else:
             parent = self.model.iter_parent(piter)
             language = self.language_id_from_iter(parent)
-            
+
             self.model.remove(piter)
-            
+
             if language in node.languages:
                 node.languages.remove(language)
 
             self._tool_rows[node] = filter(lambda x: x.valid(), self._tool_rows[node])
-            
+
             if not self._tool_rows[node]:
                 del self._tool_rows[node]
-                
+
                 if node.parent.delete_tool(node):
                     self.remove_accelerator(node)
                     self.current_node = None
@@ -721,10 +721,10 @@ class Manager:
                         self.view.set_cursor(self.model.get_path(piter), self.view.get_column(self.TOOL_COLUMN), False)
 
                 self.view.grab_focus()
-            
+
             path = self._languages[language].get_path()
             parent = self.model.get_iter(path)
-            
+
             if not self.model.iter_has_child(parent):
                 self.model.remove(parent)
                 del self._languages[language]
@@ -733,9 +733,9 @@ class Manager:
         if new_text != '':
             piter = self.model.get_iter(path)
             tool = self.model.get_value(piter, self.TOOL_COLUMN)
-            
+
             tool.name = new_text
-            
+
             self.save_current_tool()
             self.tool_changed(tool)
 
@@ -746,7 +746,7 @@ class Manager:
             if isinstance(editable, Gtk.Entry):
                 editable.set_text(tool.name)
                 editable.grab_focus()
-    
+
     def on_view_selection_changed(self, selection, userdata):
         self.save_current_tool()
         self.do_update()
@@ -754,19 +754,19 @@ class Manager:
     def accelerator_collision(self, name, node):
         if not name in self.accelerators:
             return []
-            
+
         ret = []
-        
+
         for other in self.accelerators[name]:
             if not other.languages or not node.languages:
                 ret.append(other)
                 continue
-            
+
             for lang in other.languages:
                 if lang in node.languages:
                     ret.append(other)
                     continue
-        
+
         return ret
 
     def set_accelerator(self, keyval, mod):
@@ -779,7 +779,7 @@ class Manager:
             self.current_node.shorcut = None
             self.save_current_tool()
             return True
-            
+
         col = self.accelerator_collision(name, self.current_node)
 
         if col:
@@ -813,7 +813,7 @@ class Manager:
             if self.set_accelerator(event.keyval, mask):
                 self.update_accelerator_label()
                 self['commands'].grab_focus()
-    
+
             # Capture all `normal characters`
             return True
         elif Gdk.keyval_to_unicode(event.keyval):
@@ -874,7 +874,7 @@ class Manager:
                 label = _('Plain Text')
             else:
                 label = tool.get_name()
-                
+
             markup = saxutils.escape(label)
             editable = False
         else:
@@ -886,7 +886,7 @@ class Manager:
                 markup = escaped
 
             editable = True
-            
+
         cell.set_properties(markup=markup, editable=editable)
 
     def tool_in_language(self, tool, lang):
@@ -895,75 +895,75 @@ class Manager:
 
         ref = self._languages[lang]
         parent = ref.get_path()
-        
+
         for row in self._tool_rows[tool]:
             path = row.get_path()
-            
+
             if path.get_indices()[0] == parent.get_indices()[0]:
                 return True
-        
+
         return False
 
     def update_languages(self, popup):
         self.current_node.languages = popup.languages()
         self.fill_languages_button()
-        
+
         piter, node = self.get_selected_tool()
         ret = None
-        
+
         if node:
             ref = Gtk.TreeRowReference.new(self.model, self.model.get_path(piter))
-        
+
         # Update languages, make sure to inhibit selection change stuff
         self.view.get_selection().handler_block(self.selection_changed_id)
-        
+
         # Remove all rows that are no longer
         for row in list(self._tool_rows[self.current_node]):
             piter = self.model.get_iter(row.get_path())
             language = self.language_id_from_iter(piter)
-            
+
             if (not language and not self.current_node.languages) or \
                (language in self.current_node.languages):
                 continue
-            
+
             # Remove from language
             self.model.remove(piter)
             self._tool_rows[self.current_node].remove(row)
-            
+
             # If language is empty, remove it
             parent = self.model.get_iter(self._languages[language].get_path())
-            
+
             if not self.model.iter_has_child(parent):
                 self.model.remove(parent)
                 del self._languages[language]
-        
+
         # Now, add for any that are new
         manager = GtkSource.LanguageManager()
-        
+
         for lang in self.current_node.languages:
             if not self.tool_in_language(self.current_node, lang):
                 l = manager.get_language(lang)
-                
+
                 if not l:
                     l = 'plain'
-                    
+
                 self.add_tool_to_language(self.current_node, l)
-        
+
         if not self.current_node.languages and not self.tool_in_language(self.current_node, None):
             self.add_tool_to_language(self.current_node, None)
-        
+
         # Check if we can still keep the current
         if not ref or not ref.valid():
             # Change selection to first language
             path = self._tool_rows[self.current_node][0].get_path()
             piter = self.model.get_iter(path)
             parent = self.model.iter_parent(piter)
-            
+
             # Expand parent, select child and scroll to it
             self.view.expand_row(self.model.get_path(parent), False)
             self.view.get_selection().select_path(path)
             self.view.set_cursor(path, self.view.get_column(self.TOOL_COLUMN), False)
-        
+
         self.view.get_selection().handler_unblock(self.selection_changed_id)
 
     def on_languages_button_clicked(self, button):
