@@ -214,9 +214,11 @@ class LanguagesPopup(Gtk.Window):
 
         return res
 
-    def propagate_mouse_event(self, event):
+    def propagate_mouse_event(self, event, reverse=True):
         allwidgets = self.resolve_widgets(self.get_child())
-        allwidgets.reverse()
+
+        if reverse:
+            allwidgets.reverse()
 
         for widget in allwidgets:
             windows = self.resolve_windows(widget.get_window())
@@ -247,7 +249,7 @@ class LanguagesPopup(Gtk.Window):
             return self.propagate_mouse_event(event)
 
     def do_scroll_event(self, event):
-        return self.propagate_mouse_event(event)
+        return self.propagate_mouse_event(event, False)
 
     def do_motion_notify_event(self, event):
         return self.propagate_mouse_event(event)
