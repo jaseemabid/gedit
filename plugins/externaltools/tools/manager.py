@@ -218,8 +218,6 @@ class LanguagesPopup(Gtk.Window):
         allwidgets = self.resolve_widgets(self.get_child())
         allwidgets.reverse()
 
-        orig = [event.x, event.y]
-
         for widget in allwidgets:
             windows = self.resolve_windows(widget.get_window())
             windows.reverse()
