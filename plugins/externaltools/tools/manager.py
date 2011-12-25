@@ -184,8 +184,8 @@ class LanguagesPopup(Gtk.Window):
 
     def do_destroy(self):
         if self.keyboard:
-            self.keyboard.ungrab(0L)
-        self.pointer.ungrab(0L)
+            self.keyboard.ungrab(Gdk.CURRENT_TIME)
+        self.pointer.ungrab(Gdk.CURRENT_TIME)
 
         return Gtk.Window.do_destroy(self)
 
