@@ -42,7 +42,6 @@ class LanguagesPopup(Gtk.Window):
         self.init_languages(languages)
 
         self.show()
-        self.map()
 
         self.grab_add()
 
