@@ -59,7 +59,7 @@ class LanguagesPopup(Gtk.Window):
                                Gdk.GrabOwnership.WINDOW, False,
                                Gdk.EventMask.KEY_PRESS_MASK |
                                Gdk.EventMask.KEY_RELEASE_MASK,
-                               None, 0L)
+                               None, Gdk.CURRENT_TIME)
         self.pointer.grab(self.get_window(),
                           Gdk.GrabOwnership.WINDOW, False,
                           Gdk.EventMask.BUTTON_PRESS_MASK |
@@ -68,8 +68,9 @@ class LanguagesPopup(Gtk.Window):
                           Gdk.EventMask.ENTER_NOTIFY_MASK |
                           Gdk.EventMask.LEAVE_NOTIFY_MASK |
                           Gdk.EventMask.PROXIMITY_IN_MASK |
-                          Gdk.EventMask.PROXIMITY_OUT_MASK,
-                          None, 0L)
+                          Gdk.EventMask.PROXIMITY_OUT_MASK |
+                          Gdk.EventMask.SCROLL_MASK,
+                          None, Gdk.CURRENT_TIME)
 
         self.view.get_selection().select_path((0,))
 
