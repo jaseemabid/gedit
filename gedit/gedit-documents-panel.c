@@ -53,6 +53,7 @@ struct _GeditDocumentsPanelPrivate
 	GtkWidget          *treeview;
 	GtkTreeModel       *model;
 
+	guint               selection_changed_handler_id;
 	guint               refresh_idle_id;
 
 	guint               adding_tab : 1;
@@ -410,7 +411,12 @@ refresh_notebook_foreach (GeditNotebook       *notebook,
 static gboolean
 refresh_list_idle (GeditDocumentsPanel *panel)
 {
+	GtkTreeSelection *selection;
+
 	gedit_debug (DEBUG_PANEL);
+
+	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (panel->priv->treeview));
+	g_signal_handler_block (selection, panel->priv->selection_changed_handler_id);
 
 	gtk_tree_store_clear (GTK_TREE_STORE (panel->priv->model));
 
@@ -425,6 +431,8 @@ refresh_list_idle (GeditDocumentsPanel *panel)
 	select_active_tab (panel);
 
 	panel->priv->refresh_idle_id = 0;
+
+	g_signal_handler_unblock (selection, panel->priv->selection_changed_handler_id);
 
 	return FALSE;
 }
@@ -1162,10 +1170,10 @@ gedit_documents_panel_init (GeditDocumentsPanel *panel)
 
 	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (panel->priv->treeview));
 	gtk_tree_selection_set_mode (selection, GTK_SELECTION_SINGLE);
-	g_signal_connect (selection,
-			  "changed",
-			  G_CALLBACK (treeview_selection_changed),
-			  panel);
+	panel->priv->selection_changed_handler_id = g_signal_connect (selection,
+								      "changed",
+								       G_CALLBACK (treeview_selection_changed),
+								       panel);
 
 	g_signal_connect (panel->priv->treeview,
 			  "button-press-event",
