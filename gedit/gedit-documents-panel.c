@@ -587,15 +587,12 @@ set_window (GeditDocumentsPanel *panel,
 }
 
 static void
-treeview_cursor_changed (GtkTreeView         *view,
-			 GeditDocumentsPanel *panel)
+treeview_selection_changed (GtkTreeSelection    *selection,
+			    GeditDocumentsPanel *panel)
 {
 	GtkTreeIter iter;
-	GtkTreeSelection *selection;
 
 	gedit_debug (DEBUG_PANEL);
-
-	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (panel->priv->treeview));
 
 	if (gtk_tree_selection_get_selected (selection, NULL, &iter))
 	{
@@ -1164,13 +1161,12 @@ gedit_documents_panel_init (GeditDocumentsPanel *panel)
 	                  panel);
 
 	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (panel->priv->treeview));
-
 	gtk_tree_selection_set_mode (selection, GTK_SELECTION_SINGLE);
-
-	g_signal_connect (panel->priv->treeview,
-			  "cursor-changed",
-			  G_CALLBACK (treeview_cursor_changed),
+	g_signal_connect (selection,
+			  "changed",
+			  G_CALLBACK (treeview_selection_changed),
 			  panel);
+
 	g_signal_connect (panel->priv->treeview,
 			  "button-press-event",
 			  G_CALLBACK (panel_button_press_event),
