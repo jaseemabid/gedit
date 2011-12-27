@@ -1,5 +1,5 @@
-guidelines for gedit
-====================
+Source code repository
+======================
 
 gedit source code is maintained using the git version control system
 and is available at the following location:
@@ -13,6 +13,28 @@ Or if you have an account on GNOME servers:
 A Web Interface is available at:
 
     http://git.gnome.org/cgit/gedit
+
+
+Building from git
+=================
+
+When building from a git checkout you will need to run the
+autogen.sh script which takes care of running automake, autoconf,
+etc and then run "configure" for you. You can pass options like
+--prefix to autogen.sh and they will be forwarded to the configure
+script.
+
+Note that you cannot run gedit from its build directory: you need
+to install it with "make install". For this reason it is highly
+recommended that you install in a separate prefix instead of
+overwriting your system binaries. Note however that when running
+gedit from a custom prefix you will need to set many environment
+variables accordingly, for instance PATH and XDG_DATA_DIR.
+The JHBuild tool can take care of all this for you.
+
+
+Commit guidelines
+=================
 
 Please don't commit directly to the git repository unless
 you have been given the green light to commit freely to gedit. 
