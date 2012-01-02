@@ -3,7 +3,7 @@
       id="gedit-plugins-commander">
   <info>
     <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/> 
-    <revision version="0.5" date="2011-10-14" status="draft"/>
+    <revision version="3.4" date="2012-01-02" status="draft"/>
 
     <credit type="author">
       <name>Jim Campbell</name>
@@ -16,19 +16,53 @@
   <title>Commander</title>
 
 
-  <p>To enable the commander plugin, select <guiseq><gui>Edit</gui><gui>
+  <p>The <app>Commander</app> plugin is a plugin for advanced <app>gedit</app> 
+  users that allows you to perform command-line actions on the current 
+  file. To enable the commander plugin, select <guiseq><gui>Edit</gui><gui>
   Preferences</gui><gui>Plugins</gui><gui>Commander</gui></guiseq>.</p>
 
   <p>Once you have enabled the plugin, activate it by pressing <keyseq><key>
-  Ctrl</key><key>+</key><key>.</key></keyseq>.</p>
+  Ctrl</key><key>.</key></keyseq>.</p>
   
   <note style="tip"><p>The last key in the above key combination is a period.
   </p></note>
 
-  <steps>
-    <item><p>First step...</p></item>
-    <item><p>Second step...</p></item>
-    <item><p>Third step...</p></item>
-  </steps>
+    <table frame="all" rules="all">
+      <thead>
+        <tr>
+          <td><p>To Do This</p></td>  <td><p>Press This</p></td>  
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>See an overview of available commands</p></td> <td><p>Tab + Tab
+          </p></td>  
+        </tr>
+        <tr>
+          <td><p>Find a word within the current file</p></td>  <td><p>/ <em>foo
+          </em></p>
+          <p>This will find the word <em>foo</em>.</p></td>
+        </tr>
+        <tr>
+          <td><p>Replace a word within the current file</p></td>  <td><p>// foo
+          bar</p>
+          <p>This will replace <em>foo</em> with <em>bar</em>.</p></td>
+        </tr>
+        <tr>
+          <td><p>Move the cursor to a certain line number in your file</p></td>  
+          <td><p>go [line number] <em>or</em> just <em>g</em> [line number]</p>
+          </td>
+        </tr>
+        <tr>
+          <td><p>Toggle the bookmark indicator for the current line</p></td>  
+          <td><p>bookmark <em>or</em> just <em>b</em></p></td>  
+        </tr>
+      </tbody>
+    </table>
+  
+  <note style="tip"><p>Some commands, such as the <app>bookmark</app> command
+  require that the appropriate plugin be installed and activated. If you do not 
+  have the appropriate plugin installed and activated, you will receive an 
+  error message.</p></note>
 
 </page>
