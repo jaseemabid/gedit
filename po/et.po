@@ -9,22 +9,22 @@
 # Tõivo Leedjärv <toivo linux ee>, 2002, 2003.
 # Priit Laes <plaes plaes org>, 2005, 2009.
 # Ivar Smolin <okul linux ee>, 2005–2011.
-# Mattias Põldaru <mahfiaz gmail com>, 2009–2010.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2009–2010, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-03-14 03:37+0000\n"
-"PO-Revision-Date: 2011-03-14 14:01+0300\n"
+"POT-Creation-Date: 2012-01-01 14:55+0000\n"
+"PO-Revision-Date: 2012-01-01 23:40+0200\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
-"Language-Team: Estonian <gnome-et linux.ee>\n"
+"Language-Team: Estonian <>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Poedit-Language: Estonian\n"
 "X-Poedit-Country: ESTONIA\n"
 
@@ -112,13 +112,6 @@ msgstr "Reanumbrite kirjatüüp printimisel"
 
 msgid "Line Wrapping Mode"
 msgstr "Reamurdmisrežiim"
-
-msgid ""
-"List of VFS schemes gedit supports in write mode. The 'file' scheme is "
-"writable by default."
-msgstr ""
-"Gedit'i poolt kirjutamiseks toetatavate VFS-skeemide loetelu. 'file' skeem "
-"on kirjutatav vaikimisi."
 
 msgid ""
 "List of active plugins. It contains the \"Location\" of the active plugins. "
@@ -374,9 +367,6 @@ msgstr ""
 "Kas redigeeritava teksti jaoks kasutatakse gedit'is määratud kirjatüübi "
 "asemel süsteemi vaikimisi kindla laiusega kirjatüüpi. Kui see on märkimata, "
 "siis kasutatakse valikus \"Redaktori kirjatüüp\" määratud kirjatüüpi."
-
-msgid "Writable VFS schemes"
-msgstr "Kirjutatavad VFS-skeemid"
 
 msgid "Log Out _without Saving"
 msgstr "Logi välja _ilma salvestamata"
@@ -690,8 +680,8 @@ msgstr "Uue ülemise taseme akna loomine olemasolevale gedit'i instantsile"
 msgid "Create a new document in an existing instance of gedit"
 msgstr "Uue dokumendi loomine olemasolevas gedit'i instantsis"
 
-msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
-msgstr "Akna suuruse määramine (X-geomeetria vormingus: LAIUSxKÕRGUS+X+Y)"
+msgid "Set the size and position of the window (WIDTHxHEIGHT+X+Y)"
+msgstr "Akna suuruse ja asukoha määramine (LAIUSxKÕRGUS+X+Y)"
 
 msgid "GEOMETRY"
 msgstr "GEOMEETRIA"
@@ -871,7 +861,7 @@ msgstr ""
 "Tõivo Leedjärv <toivo linux ee>, 2002, 2003.\n"
 "Priit Laes <plaes plaes org>, 2005, 2009.\n"
 "Ivar Smolin <okul linux ee>, 2005–2011.\n"
-"Mattias Põldaru <mahfiaz gmail com>, 2009–2010."
+"Mattias Põldaru <mahfiaz gmail com>, 2009–2010, 2012."
 
 #, c-format
 msgid "Found and replaced %d occurrence"
@@ -1280,6 +1270,16 @@ msgstr ""
 "Jätkates selle faili salvestamist võid sa dokumendi rikkuda.  Kas peaks "
 "siiski salvestama?"
 
+#. Keep in sync with the respective GtkActions
+msgid "_Move to New Window"
+msgstr "_Tõsta uude aknasse"
+
+msgid "Save _As..."
+msgstr "Sa_lvesta kui..."
+
+msgid "_Print..."
+msgstr "_Prindi..."
+
 msgid "Empty"
 msgstr "Tühi"
 
@@ -1387,6 +1387,7 @@ msgstr "Lehekülje eelvaade"
 msgid "The preview of a page in the document to be printed"
 msgstr "Prinditava dokumendi eelvaade"
 
+#. Use spaces to leave padding proportional to the font size
 msgid "OVR"
 msgstr "ÜLE"
 
@@ -1526,9 +1527,6 @@ msgstr "Täisekraanvaatest lahkumine"
 msgid "Save the current file"
 msgstr "Käesoleva faili salvestamine"
 
-msgid "Save _As..."
-msgstr "Sa_lvesta kui..."
-
 msgid "Save the current file with a different name"
 msgstr "Käesoleva faili salvestamine teise nime alla"
 
@@ -1540,9 +1538,6 @@ msgstr "Printimise _eelvaade"
 
 msgid "Print preview"
 msgstr "Printimise eelvaade"
-
-msgid "_Print..."
-msgstr "_Prindi..."
 
 msgid "Print the current page"
 msgstr "Käesoleva lehekülje printimine"
@@ -1654,9 +1649,6 @@ msgstr "_Järgmine dokument"
 
 msgid "Activate next document"
 msgstr "Järgmise dokumendi aktiveerimine"
-
-msgid "_Move to New Window"
-msgstr "_Tõsta uude aknasse"
 
 msgid "Move the current document to a new window"
 msgstr "Selle dokumendi tõstmine uude aknasse"
@@ -1863,7 +1855,15 @@ msgstr ""
 msgid "Document Statistics"
 msgstr "Dokumendi statistika"
 
+msgid "_Document Statistics"
+msgstr "_Dokumendi statistika"
+
+msgid "Get statistical information on the current document"
+msgstr "Käesoleva dokumendi kohta statistiliste andmete hankimine"
+
+#. ex:set ts=8 noet:
 #. ex:ts=4:et:
+#. ex:ts=8:noet:
 msgid "    "
 msgstr "    "
 
@@ -1894,18 +1894,29 @@ msgstr "Sõnu"
 msgid "_Update"
 msgstr "_Uuenda"
 
-msgid "_Document Statistics"
-msgstr "_Dokumendi statistika"
+msgid "Build"
+msgstr "Ehitamine"
 
-msgid "Get statistical information on the current document"
-msgstr "Käesoleva dokumendi kohta statistiliste andmete hankimine"
+msgid "Run \"make\" in the document directory"
+msgstr "\"make\" käivitamine dokumendikataloogis"
 
-#. ex:set ts=8 noet:
 msgid "Open a terminal in the document location"
 msgstr "Terminali avamine dokumendi kataloogis"
 
 msgid "Open terminal here"
 msgstr "Terminali avamine siin"
+
+msgid "Remove trailing spaces"
+msgstr "Eemalda realõputühikud"
+
+msgid "Remove useless trailing spaces in your file"
+msgstr "Kasutute realõputühikute eemaldamine failist"
+
+msgid "Execute a custom command and put its output in a new document"
+msgstr "Kohandatud käsu käivitamine ja selle väljundi lisamine dokumendile"
+
+msgid "Run command"
+msgstr "Käivita käsk"
 
 msgid "Execute external commands and shell scripts."
 msgstr "Väliste käskude ja skriptide käivitamine."
@@ -1964,6 +1975,12 @@ msgstr "Sisesta uus kiirklahv"
 msgid "Stopped."
 msgstr "Seisatud."
 
+msgid "Add Tool"
+msgstr "Tööriista lisamine"
+
+msgid "Add a new tool"
+msgstr "Uue tööriista lisamine"
+
 msgid "All documents"
 msgstr "Kõigile dokumentidele"
 
@@ -1994,14 +2011,14 @@ msgstr "Käesolev sõna"
 msgid "Display in bottom pane"
 msgstr "Kuvatakse alumisel paanil"
 
-msgid "External Tools Manager"
-msgstr "Väliste tööriistade haldur"
-
 msgid "Insert at cursor position"
 msgstr "Lisatakse kursori asukohale"
 
 msgid "Local files only"
 msgstr "Kohalikele failidele"
+
+msgid "Manage External Tools"
+msgstr "Väliste tööriistade haldamine"
 
 msgid "Nothing"
 msgstr "Puudub"
@@ -2009,11 +2026,23 @@ msgstr "Puudub"
 msgid "Remote files only"
 msgstr "Kaugfailidele"
 
+msgid "Remove Tool"
+msgstr "Tööriista eemaldamine"
+
+msgid "Remove selected tool"
+msgstr "Valitud tööriista eemaldamine"
+
 msgid "Replace current document"
 msgstr "Asendab käesoleva dokumendi"
 
 msgid "Replace current selection"
 msgstr "Asendab käesoleva valiku"
+
+msgid "Revert Tool"
+msgstr "Tööriista taastamine"
+
+msgid "Revert tool"
+msgstr "Tööriista taastamine"
 
 msgid "Untitled documents only"
 msgstr "Pealkirjata dokumentidele"
@@ -2055,24 +2084,6 @@ msgid "Shell Output"
 msgstr "Kestprogrammi väljund"
 
 #. ex:ts=4:et:
-msgid "Build"
-msgstr "Ehitamine"
-
-msgid "Run \"make\" in the document directory"
-msgstr "\"make\" käivitamine dokumendikataloogis"
-
-msgid "Remove trailing spaces"
-msgstr "Eemalda realõputühikud"
-
-msgid "Remove useless trailing spaces in your file"
-msgstr "Kasutute realõputühikute eemaldamine failist"
-
-msgid "Execute a custom command and put its output in a new document"
-msgstr "Kohandatud käsu käivitamine ja selle väljundi lisamine dokumendile"
-
-msgid "Run command"
-msgstr "Käivita käsk"
-
 msgid "Easy file access from the side panel"
 msgstr "Külgpaneeli kaudu hõlbus ligipääs failidele"
 
@@ -2153,7 +2164,7 @@ msgid ""
 "settings to make the file visible"
 msgstr ""
 "Ümber nimetatud fail on hetkel välja filtreeritud. Selle nähtavaletoomiseks "
-"pead sa filtri sätteid muutma"
+"pead sa filtri sätteid muutma."
 
 #. Translators: This is the default name of new files created by the file browser pane.
 msgid "file"
@@ -2259,23 +2270,8 @@ msgstr "Näita _binaarseid"
 msgid "Show binary files"
 msgstr "Binaarfailide näitamine"
 
-msgid "Previous location"
-msgstr "Eelmine asukoht"
-
-msgid "Go to previous location"
-msgstr "Eelmisele asukohale siirdumine"
-
-msgid "Go to a previously opened location"
-msgstr "Eelmisele avatud asukohale siirdumine"
-
-msgid "Next location"
-msgstr "Järgmine asukoht"
-
-msgid "Go to next location"
-msgstr "Järgmisele asukohale siirdumine"
-
-msgid "_Match Filename"
-msgstr "Faili_nime sobitus"
+msgid "Match Filename"
+msgstr "Failinime vastavus"
 
 #, c-format
 msgid "No mount object for mounted volume: %s"
@@ -2388,73 +2384,66 @@ msgstr "Käsu teksti värvus"
 msgid "The error color text"
 msgstr "Vea teksti värvus"
 
-msgid "Interactive Python console standing in the bottom panel"
-msgstr "Pythoni interaktiivse konsooli avamine alumisel paneelil"
-
-msgid "Python Console"
-msgstr "Pythoni konsool"
-
-#. ex:et:ts=4:
 msgid "C_ommand color:"
 msgstr "_Käsu värvus:"
 
 msgid "_Error color:"
 msgstr "_Vea värvus:"
 
-#. ex:ts=8:et:
+msgid "Python Console"
+msgstr "Pythoni konsool"
+
+#. ex:et:ts=4:
+msgid "Interactive Python console standing in the bottom panel"
+msgstr "Pythoni interaktiivse konsooli avamine alumisel paneelil"
+
 msgid "Quick Open"
 msgstr "Kiiravamine"
 
 msgid "Quickly open files"
 msgstr "Failide kiiravamine"
 
-msgid "Insert often-used pieces of text in a fast way"
-msgstr "Tihti kasutatavate tükkide kiire lisamine tekstile"
+msgid "Type to search..."
+msgstr "Otsimiseks kirjuta siia..."
 
 msgid "Snippets"
 msgstr "Tekstijupid"
 
-msgid "Activation"
-msgstr "Aktiveerimine"
+#, python-format
+msgid "The archive \"%s\" could not be created"
+msgstr "Arhiivi \"%s\" pole võimalik luua"
 
-msgid "Create new snippet"
-msgstr "Uue tekstijupi loomine"
+#, python-format
+msgid "Target directory \"%s\" does not exist"
+msgstr "Sihtkataloogi \"%s\" pole olemas"
 
-msgid "Delete selected snippet"
-msgstr "Valitud tekstijupi kustutamine"
+#, python-format
+msgid "Target directory \"%s\" is not a valid directory"
+msgstr "Sihtkataloog \"%s\" pole korrektne kataloog"
 
-msgid "Export selected snippets"
-msgstr "Valitud tekstijuppide eksportimine"
+#, python-format
+msgid "File \"%s\" does not exist"
+msgstr "Faili \"%s\" pole olemas"
 
-msgid "Import snippets"
-msgstr "Tekstijuppide importimine"
+#, python-format
+msgid "File \"%s\" is not a valid snippets file"
+msgstr "Fail \"%s\" pole korrektne tekstijuppide fail"
 
-msgid "S_hortcut key:"
-msgstr "_Kiirklahv:"
+#, python-format
+msgid "Imported file \"%s\" is not a valid snippets file"
+msgstr "Imporditud fail \"%s\" pole korrektne tekstijuppide fail"
 
-msgid "Shortcut key with which the snippet is activated"
-msgstr "Kiirklahv, millele vajutamisel tekstijupp aktiveeritakse"
+#, python-format
+msgid "The archive \"%s\" could not be extracted"
+msgstr "Arhiivi \"%s\" pole võimalik lahti pakkida"
 
-#. self['hbox_tab_trigger'].set_spacing(0)
-msgid "Single word the snippet is activated with after pressing Tab"
-msgstr ""
-"Üksik sõna, mille korral tekstijupp aktiveeritakse pärast tab-klahvi "
-"vajutamist"
+#, python-format
+msgid "The following files could not be imported: %s"
+msgstr "Järgnevaid faile pole võimalik importida: %s"
 
-msgid "_Drop targets:"
-msgstr "_Aknasse lohistamisel:"
-
-msgid "_Snippets:"
-msgstr "_Tekstijupid:"
-
-msgid "_Tab trigger:"
-msgstr "_Tabulaatori väljakutse:"
-
-msgid "Manage _Snippets..."
-msgstr "_Halda tekstijuppe..."
-
-msgid "Manage snippets"
-msgstr "Tekstijuppide haldamine"
+#, python-format
+msgid "File \"%s\" is not a valid snippets archive"
+msgstr "Fail \"%s\" pole korrektne tekstijuppide arhiiv"
 
 msgid "Snippets archive"
 msgstr "Tekstijuppide arhiiv"
@@ -2468,6 +2457,9 @@ msgstr "Globaalne"
 msgid "Revert selected snippet"
 msgstr "Valitud tekstijupi taastamine"
 
+msgid "Delete selected snippet"
+msgstr "Valitud tekstijupi kustutamine"
+
 #. self['hbox_tab_trigger'].set_spacing(3)
 msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
@@ -2476,12 +2468,21 @@ msgstr ""
 "See sõne ei sobi Tab klahviga väljakutsumiseks. Väljakutsuja võib sisaldada "
 "tähti või üksikuid erimärke, mis pole tähed ega numbrid, nagu {, [, jne."
 
+#. self['hbox_tab_trigger'].set_spacing(0)
+msgid "Single word the snippet is activated with after pressing Tab"
+msgstr ""
+"Üksik sõna, mille korral tekstijupp aktiveeritakse pärast tab-klahvi "
+"vajutamist"
+
 #, python-format
 msgid "The following error occurred while importing: %s"
 msgstr "Importimise käigus tekkis järgnev viga: %s"
 
 msgid "Import successfully completed"
 msgstr "Importimine lõpetati edukalt"
+
+msgid "Import snippets"
+msgstr "Tekstijuppide importimine"
 
 msgid "All supported archives"
 msgstr "Kõik toetatud arhiivid"
@@ -2523,42 +2524,6 @@ msgid "Type a new shortcut"
 msgstr "Sisesta uus kiirklahv"
 
 #, python-format
-msgid "The archive \"%s\" could not be created"
-msgstr "Arhiivi \"%s\" pole võimalik luua"
-
-#, python-format
-msgid "Target directory \"%s\" does not exist"
-msgstr "Sihtkataloogi \"%s\" pole olemas"
-
-#, python-format
-msgid "Target directory \"%s\" is not a valid directory"
-msgstr "Sihtkataloog \"%s\" pole korrektne kataloog"
-
-#, python-format
-msgid "File \"%s\" does not exist"
-msgstr "Faili \"%s\" pole olemas"
-
-#, python-format
-msgid "File \"%s\" is not a valid snippets file"
-msgstr "Fail \"%s\" pole korrektne tekstijuppide fail"
-
-#, python-format
-msgid "Imported file \"%s\" is not a valid snippets file"
-msgstr "Imporditud fail \"%s\" pole korrektne tekstijuppide fail"
-
-#, python-format
-msgid "The archive \"%s\" could not be extracted"
-msgstr "Arhiivi \"%s\" pole võimalik lahti pakkida"
-
-#, python-format
-msgid "The following files could not be imported: %s"
-msgstr "Järgnevaid faile pole võimalik importida: %s"
-
-#, python-format
-msgid "File \"%s\" is not a valid snippets archive"
-msgstr "Fail \"%s\" pole korrektne tekstijuppide arhiiv"
-
-#, python-format
 msgid ""
 "Execution of the Python command (%s) exceeds the maximum time, execution "
 "aborted."
@@ -2569,6 +2534,56 @@ msgstr ""
 #, python-format
 msgid "Execution of the Python command (%s) failed: %s"
 msgstr "Pythoni käsu (%s) täitmine nurjus: %s"
+
+#. ex:ts=8:et:
+msgid "Insert often-used pieces of text in a fast way"
+msgstr "Tihti kasutatavate tükkide kiire lisamine tekstile"
+
+msgid "Activation"
+msgstr "Aktiveerimine"
+
+msgid "Add Snippet"
+msgstr "Tekstijupi lisamine"
+
+msgid "Create new snippet"
+msgstr "Uue tekstijupi loomine"
+
+msgid "Export Snippets"
+msgstr "Tekstijuppide eksportimine"
+
+msgid "Export selected snippets"
+msgstr "Valitud tekstijuppide eksportimine"
+
+msgid "Import Snippets"
+msgstr "Tekstijuppide importimine"
+
+msgid "Manage Snippets"
+msgstr "Tekstijuppide haldamine"
+
+msgid "Remove Snippet"
+msgstr "Tekstijuppide eemaldamine"
+
+msgid "S_hortcut key:"
+msgstr "_Kiirklahv:"
+
+msgid "Shortcut key with which the snippet is activated"
+msgstr "Kiirklahv, millele vajutamisel tekstijupp aktiveeritakse"
+
+msgid "_Drop targets:"
+msgstr "_Aknasse lohistamisel:"
+
+msgid "_Snippets:"
+msgstr "_Tekstijupid:"
+
+#. "tab" here means the tab key, not the notebook tab!
+msgid "_Tab trigger:"
+msgstr "_Tabulaatori väljakutse:"
+
+msgid "Manage _Snippets..."
+msgstr "_Halda tekstijuppe..."
+
+msgid "Manage snippets"
+msgstr "Tekstijuppide haldamine"
 
 msgid "S_ort..."
 msgstr "S_ordi..."
@@ -2740,6 +2755,27 @@ msgstr "Käesoleva dokumendi õigekirja kontrollimine."
 msgid "Spell Checker"
 msgstr "Õigekirjakontroll"
 
+#. Translators: Use the more common date format in your locale
+#, no-c-format
+msgid "%d/%m/%Y %H:%M:%S"
+msgstr "%d.%m.%Y %H:%M:%S"
+
+#. Translators: This example should follow the date format defined in the entry above
+msgid "01/11/2009 17:52:00"
+msgstr "01/11/2009 17:52:00"
+
+msgid "Insert Date and Time"
+msgstr "Kuupäeva ja kellaaja lisamine"
+
+msgid "Use the _selected format"
+msgstr "Kasutatakse _valitud vormingut"
+
+msgid "_Insert"
+msgstr "L_isa"
+
+msgid "_Use custom format"
+msgstr "Kasutatakse o_ma vormingut"
+
 msgid "In_sert Date and Time..."
 msgstr "Lisa kuupäev/kellaae_g..."
 
@@ -2749,12 +2785,14 @@ msgstr "Praeguse kuupäeva ja kellaaja lisamine kursori asukohta"
 msgid "Available formats"
 msgstr "Saadaval vormingud"
 
-#. ex:ts=8:noet:
-msgid "Insert Date/Time"
-msgstr "Kuupäeva/kellaaja lisamine"
+msgid "Configure date/time plugin"
+msgstr "\"Kuupäeva/kellaaja\" plugina seadistamine"
 
-msgid "Inserts current date and time at the cursor position."
-msgstr "Praeguse kuupäeva ja kellaaaja lisamine kursori asukohta."
+msgid "When inserting date/time..."
+msgstr "\"Kuupäeva/kellaaja\" sisestamisel..."
+
+msgid "_Prompt for a format"
+msgstr "_Küsitakse vormingut"
 
 msgid "Custom Format"
 msgstr "Kohandatud vorming"
@@ -2778,128 +2816,14 @@ msgstr "Kuupäeva ja kellaaja sisestamisel kasutatav kohandatud vorming."
 msgid "The selected format used when inserting the date/time."
 msgstr "Kuupäeva ja kellaaja lisamiseks kasutatav valitud vorming."
 
-#. Translators: Use the more common date format in your locale
-#, no-c-format
-msgid "%d/%m/%Y %H:%M:%S"
-msgstr "%d.%m.%Y %H:%M:%S"
+msgid "Insert Date/Time"
+msgstr "Kuupäeva/kellaaja lisamine"
 
-#. Translators: This example should follow the date format defined in the entry above
-msgid "01/11/2009 17:52:00"
-msgstr "01/11/2009 17:52:00"
-
-msgid "Insert Date and Time"
-msgstr "Kuupäeva ja kellaaja lisamine"
-
-msgid "Use the _selected format"
-msgstr "Kasutatakse _valitud vormingut"
-
-msgid "_Insert"
-msgstr "L_isa"
-
-msgid "_Use custom format"
-msgstr "Kasutatakse o_ma vormingut"
-
-msgid "Configure date/time plugin"
-msgstr "\"Kuupäeva/kellaaja\" plugina seadistamine"
-
-msgid "When inserting date/time..."
-msgstr "\"Kuupäeva/kellaaja\" sisestamisel..."
-
-msgid "_Prompt for a format"
-msgstr "_Küsitakse vormingut"
+msgid "Inserts current date and time at the cursor position."
+msgstr "Praeguse kuupäeva ja kellaaaja lisamine kursori asukohta."
 
 msgid "Logs access and leave event for documents used with gedit"
 msgstr "Logib geditiga avatud dokumentide avamise ja sulgemise sündmuseid"
 
 msgid "Zeitgeist dataprovider"
 msgstr "Zeitgeisti andmevarustaja"
-
-#~ msgid "Quick open"
-#~ msgstr "Kiiravamine"
-
-#~ msgid "Quickly open documents"
-#~ msgstr "Dokumendi kiiravamine"
-
-#~ msgid "Snippets Manager"
-#~ msgstr "Tekstijuppide haldur"
-
-#~ msgid ""
-#~ "Style for the toolbar buttons. Possible values are \"GEDIT_TOOLBAR_SYSTEM"
-#~ "\" to use the system's default style, \"GEDIT_TOOLBAR_ICONS\" to display "
-#~ "icons only, \"GEDIT_TOOLBAR_ICONS_AND_TEXT\" to display both icons and "
-#~ "text, and \"GEDIT_TOOLBAR_ICONS_BOTH_HORIZ\" to display prioritized text "
-#~ "beside icons. Note that the values are case-sensitive, so make sure they "
-#~ "appear exactly as mentioned here."
-#~ msgstr ""
-#~ "Tööriistariba nuppude laad. Võimalikud väärtused on \"GEDIT_TOOLBAR_SYSTEM"
-#~ "\" süsteemi vaikimisi laadi jaoks, \"GEDIT_TOOLBAR_ICONS\" ainult "
-#~ "ikoonide kuvamiseks, \"GEDIT_TOOLBAR_ICONS_AND_TEXT\" nii ikoonide kui ka "
-#~ "teksti kuvamiseks ja \"GEDIT_TOOLBAR_ICONS_BOTH_HORIZ\" kuvamaks ikoonide "
-#~ "kõrval ainult tähtsamat teksti. Väärtused on tõstutundlikud ja seetõttu "
-#~ "tuleb jälgida, et need määrataks täpselt nii nagu siin kirjeldatud."
-
-#~ msgid "Toolbar Buttons Style"
-#~ msgstr "Tööriistariba nuppude välimus"
-
-#~ msgid "Plugin"
-#~ msgstr "Plugin"
-
-#~ msgid "Enabled"
-#~ msgstr "Lubatud"
-
-#~ msgid "_About"
-#~ msgstr "_Pluginast lähemalt"
-
-#~ msgid "C_onfigure"
-#~ msgstr "Sea_dista"
-
-#~ msgid "A_ctivate"
-#~ msgstr "_Aktiveeri"
-
-#~ msgid "Ac_tivate All"
-#~ msgstr "A_ktiveeri kõik"
-
-#~ msgid "_Deactivate All"
-#~ msgstr "_Deaktiveeri kõik"
-
-#~ msgid "Active _Plugins:"
-#~ msgstr "Aktiivsed _pluginad:"
-
-#~ msgid "_About Plugin"
-#~ msgstr "_Pluginast lähemalt"
-
-#~ msgid "C_onfigure Plugin"
-#~ msgstr "Sea_dista pluginat"
-
-#~ msgid "It is not possible to detect the encoding automatically"
-#~ msgstr "Kodeerimise automaatne tuvastamine pole võimalik"
-
-#~ msgid "Page Set_up..."
-#~ msgstr "Lehe_külje sätted..."
-
-#~ msgid "Set up the page settings"
-#~ msgstr "Lehekülje seadistamine"
-
-#~ msgid "_Incremental Search..."
-#~ msgstr "_Kasvav otsing..."
-
-#~ msgid "Incrementally search for text"
-#~ msgstr "Teksti kasvav otsing"
-
-#~ msgid "Tags"
-#~ msgstr "Sildid"
-
-#~ msgid "Select the group of tags you want to use"
-#~ msgstr "Vali kasutatav siltide grupp"
-
-#~ msgid "_Preview"
-#~ msgstr "_Eelvaade"
-
-#~ msgid "Available Tag Lists"
-#~ msgstr "Saadaolevate siltide loetelu"
-
-#~ msgid "Abbreviated form"
-#~ msgstr "Lühendatud vorm"
-
-#~ msgid "Abbreviation"
-#~ msgstr "Lühend"
