@@ -4,13 +4,13 @@
 # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
 # María Majadas <maria.majadas@hispalinux.es>, 2005.
 # Jorge González <jorgegonz@svn.gnome.org>, 2006, 2007, 2009, 2010, 2011.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2011-12-03 10:53+0000\n"
-"PO-Revision-Date: 2011-12-06 14:09+0100\n"
+"POT-Creation-Date: 2012-01-02 21:05+0000\n"
+"PO-Revision-Date: 2012-01-03 20:03+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -517,14 +517,14 @@ msgstr "Tecla rápidas relacionadas con las pestañas"
 #: C/gedit-shortcut-keys.page:53(p) C/gedit-shortcut-keys.page:85(p)
 #: C/gedit-shortcut-keys.page:123(p) C/gedit-shortcut-keys.page:164(p)
 #: C/gedit-shortcut-keys.page:184(p) C/gedit-shortcut-keys.page:216(p)
-#: C/gedit-shortcut-keys.page:242(p)
+#: C/gedit-shortcut-keys.page:242(p) C/gedit-plugins-commander.page:33(p)
 msgid "To Do This"
 msgstr "Para hacer esto"
 
 #: C/gedit-shortcut-keys.page:53(p) C/gedit-shortcut-keys.page:85(p)
 #: C/gedit-shortcut-keys.page:123(p) C/gedit-shortcut-keys.page:164(p)
 #: C/gedit-shortcut-keys.page:184(p) C/gedit-shortcut-keys.page:216(p)
-#: C/gedit-shortcut-keys.page:242(p)
+#: C/gedit-shortcut-keys.page:242(p) C/gedit-plugins-commander.page:33(p)
 msgid "Press This"
 msgstr "Pulsar esto"
 
@@ -899,9 +899,6 @@ msgstr ""
 "teclado"
 
 #: C/gedit-search.page:45(p)
-#| msgid ""
-#| "Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</"
-#| "key><key> Shift</key><key>G</key></keyseq>."
 msgid ""
 "Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or <keyseq><key>Ctrl</"
 "key><key>Shift</key><key>G</key></keyseq>."
@@ -1566,7 +1563,6 @@ msgstr ""
 "md5=1f02c599b116ed209e6fb79e3e63b9ca"
 
 #: C/gedit-plugins-snippets.page:16(desc)
-#| msgid "To insert editing points in your file:"
 msgid "Inserting snippets of text into your files"
 msgstr "Insertar recortes de texto en sus archivos"
 
@@ -1583,9 +1579,15 @@ msgid "Make sure the syntax is set appropriately."
 msgstr "Asegúrese de que la sintaxis está configurada correctamente."
 
 #: C/gedit-plugins-snippets.page:25(p)
+#| msgid ""
+#| "The status bar at the bottom of the <app>gedit</app> window will show the "
+#| "current language setting, and the language setting is what allows gedit "
+#| "to insert the proper snippets. <app>Gedit</app> will normally detect the "
+#| "language or syntax of the file that you're using, but sometimes you may "
+#| "need to set it."
 msgid ""
 "The status bar at the bottom of the <app>gedit</app> window will show the "
-"current language setting, and the language setting is what allows gedit to "
+"current language setting. This language setting is what allows gedit to "
 "insert the proper snippets. <app>Gedit</app> will normally detect the "
 "language or syntax of the file that you're using, but sometimes you may need "
 "to set it."
@@ -2113,11 +2115,6 @@ msgid "Additional gedit plugins"
 msgstr "Complementos adicionales de gedit"
 
 #: C/gedit-plugins-install.page:20(p)
-#| msgid ""
-#| "Installing third-party plugins gives you extra functionality that is not "
-#| "included by default in <app>gedit</app>. An online list of third-party "
-#| "plugins is maintained <link href=\"http://live.gnome.org/Gedit/"
-#| "Plugins#third_party\">here</link>."
 msgid ""
 "Installing third-party plugins gives you extra functionality that isn't "
 "available in default <app>gedit</app> plugins, or even the extra plugins "
@@ -2154,9 +2151,6 @@ msgstr ""
 "complemento para obtener más información."
 
 #: C/gedit-plugins-install.page:36(p)
-#| msgid ""
-#| "Copy the plugin into <file>/home/<var>username</var>/.local/share/gedit/"
-#| "plugins</file>"
 msgid ""
 "Place the plugin files into the <file>/home/<var>username</var>/.local/share/"
 "gedit/plugins</file> directory."
@@ -2171,11 +2165,6 @@ msgstr ""
 "nombre de usuario."
 
 #: C/gedit-plugins-install.page:41(p)
-#| msgid ""
-#| "After you have moved the plugin files into the correct directory, the "
-#| "plugin will appear in the Preferences menu (<guiseq><gui>Edit</"
-#| "gui><gui>Preferences</gui><gui>Plugins</gui></guiseq>). From there, the "
-#| "plugin needs to be enabled to be used."
 msgid ""
 "After you have placed the plugin files into the correct directory, the "
 "plugin will appear in the Preferences menu. Select <guiseq><gui>Edit </"
@@ -2188,20 +2177,12 @@ msgstr ""
 "activarlo."
 
 #: C/gedit-plugins-install.page:48(p)
-#| msgid ""
-#| "After you have obtained the plugin you wish to install, you will need to "
-#| "install it."
 msgid ""
 "After you have enabled the plugin, it should be available for you to use."
 msgstr ""
 "Después de activar el complemento, debería estar disponible para usarse."
 
 #: C/gedit-plugins-install.page:52(p)
-#| msgid ""
-#| "You will need to have hidden files displayed to view the <file>.local</"
-#| "file> directory. To display hidden files, click <guiseq><gui>View</"
-#| "gui><gui>Show Hidden Files</gui></guiseq> or press <keyseq><key>Ctrl</"
-#| "key><key>H</key></keyseq>."
 msgid ""
 "The <file>.local</file> directory is hidden by default. To view it and other "
 "hidden files, select <guiseq><gui>View</gui><gui>Show Hidden Files</gui></"
@@ -2520,38 +2501,100 @@ msgid "Commander"
 msgstr "Comando"
 
 #: C/gedit-plugins-commander.page:19(p)
+#| msgid ""
+#| "The <app>Session Saver</app> plugin saves groups of files together so "
+#| "that you can open them together at a later time. To enable the plugin, "
+#| "select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</"
+#| "gui><gui>Session Saver</gui></guiseq>."
 msgid ""
+"The <app>Commander</app> plugin is a plugin for advanced <app>gedit</app> "
+"users that allows you to perform command-line actions on the current file. "
 "To enable the commander plugin, select <guiseq><gui>Edit</gui><gui> "
 "Preferences</gui><gui>Plugins</gui><gui>Commander</gui></guiseq>."
 msgstr ""
-"Para activar el complemento de comandos, seleccione <guiseq><gui>Editar</"
-"gui><gui> Preferencias</gui><gui>Complementos</gui><gui>Comando</gui></"
-"guiseq>."
+"El complemento <app>Comando</app> es para usuarios avanzados de <app>gedit</"
+"app> que permite realizar acciones de línea de comandos sobre el archivo "
+"actual. Para activar el complemento «Comando», seleccione "
+"<guiseq><gui>Editar</gui><gui> Preferencias</gui><gui>Complementos</"
+"gui><gui>Comando</gui></guiseq>."
 
-#: C/gedit-plugins-commander.page:22(p)
+#: C/gedit-plugins-commander.page:24(p)
+#| msgid ""
+#| "Once you have enabled the plugin, activate it by pressing <keyseq><key> "
+#| "Ctrl</key><key>+</key><key>.</key></keyseq>."
 msgid ""
 "Once you have enabled the plugin, activate it by pressing <keyseq><key> "
-"Ctrl</key><key>+</key><key>.</key></keyseq>."
+"Ctrl</key><key>.</key></keyseq>."
 msgstr ""
-"Una vez que haya activado el complemento, puede usarlo pulsando "
-"<keyseq><key> Ctrl</key><key>+</key><key>.</key></keyseq>."
+"Una vez que haya instalado el complemento, actívelo pulsando <keyseq><key> "
+"Ctrl</key><key>.</key></keyseq>."
 
-#: C/gedit-plugins-commander.page:25(p)
+#: C/gedit-plugins-commander.page:27(p)
 msgid "The last key in the above key combination is a period."
 msgstr ""
 "La última tecla de la combinación de teclas indicada es un punto («.»)."
 
-#: C/gedit-plugins-commander.page:29(p)
-msgid "First step..."
-msgstr "Primer paso..."
+#: C/gedit-plugins-commander.page:38(p)
+msgid "See an overview of available commands"
+msgstr "Ver una descripción de los comandos disponibles"
 
-#: C/gedit-plugins-commander.page:30(p)
-msgid "Second step..."
-msgstr "Segundo paso..."
+#: C/gedit-plugins-commander.page:38(p)
+msgid "Tab + Tab"
+msgstr "Tab + Tab"
 
-#: C/gedit-plugins-commander.page:31(p)
-msgid "Third step..."
-msgstr "Tercer paso..."
+#: C/gedit-plugins-commander.page:42(p)
+#| msgid "Number of words in the current document."
+msgid "Find a word within the current file"
+msgstr "Buscar una palabra en el archivo actual"
+
+#: C/gedit-plugins-commander.page:42(p)
+msgid "/ <em>foo </em>"
+msgstr "/ <em>foo</em>"
+
+#: C/gedit-plugins-commander.page:44(p)
+msgid "This will find the word <em>foo</em>."
+msgstr "Esto buscará la palabra <em>foo</em>."
+
+#: C/gedit-plugins-commander.page:47(p)
+#| msgid "Delete the current line"
+msgid "Replace a word within the current file"
+msgstr "Reemplazar una palabra en el archivo actual"
+
+#: C/gedit-plugins-commander.page:47(p)
+msgid "// foo bar"
+msgstr "// foo bar"
+
+#: C/gedit-plugins-commander.page:49(p)
+msgid "This will replace <em>foo</em> with <em>bar</em>."
+msgstr "Esto reemplazará <em>foo</em> por <em>bar</em>."
+
+#: C/gedit-plugins-commander.page:52(p)
+msgid "Move the cursor to a certain line number in your file"
+msgstr "Mover el cursos a un determinado número de línea en su archivo"
+
+#: C/gedit-plugins-commander.page:53(p)
+msgid "go [line number] <em>or</em> just <em>g</em> [line number]"
+msgstr ""
+"go [número de línea] <em>o</em> simplemente <em>g</em> [número de línea]"
+
+#: C/gedit-plugins-commander.page:57(p)
+msgid "Toggle the bookmark indicator for the current line"
+msgstr "Conmutar el indicador de marcador para la línea actual"
+
+#: C/gedit-plugins-commander.page:58(p)
+msgid "bookmark <em>or</em> just <em>b</em>"
+msgstr "bookmark <em>o</em> simplemente <em>b</em>"
+
+#: C/gedit-plugins-commander.page:63(p)
+msgid ""
+"Some commands, such as the <app>bookmark</app> command require that the "
+"appropriate plugin be installed and activated. If you do not have the "
+"appropriate plugin installed and activated, you will receive an error "
+"message."
+msgstr ""
+"Algunos comandos, como <app>bookmark</app>, necesitan que se insale y active "
+"el complemento adecuado. Si no tiene el complemento instalado y activado, "
+"obtendrá un mensaje de error."
 
 #: C/gedit-plugins-color-picker.page:13(desc)
 msgid "Pick a color from a dialog and insert its hexadecimal representation"
@@ -3571,6 +3614,23 @@ msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2011\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2006-2011\n"
 "María Majadas <maria.majadas@hispalinux.es>, 2005"
+
+#~ msgid ""
+#~ "To enable the commander plugin, select <guiseq><gui>Edit</gui><gui> "
+#~ "Preferences</gui><gui>Plugins</gui><gui>Commander</gui></guiseq>."
+#~ msgstr ""
+#~ "Para activar el complemento de comandos, seleccione <guiseq><gui>Editar</"
+#~ "gui><gui> Preferencias</gui><gui>Complementos</gui><gui>Comando</gui></"
+#~ "guiseq>."
+
+#~ msgid "First step..."
+#~ msgstr "Primer paso..."
+
+#~ msgid "Second step..."
+#~ msgstr "Segundo paso..."
+
+#~ msgid "Third step..."
+#~ msgstr "Tercer paso..."
 
 #~ msgid "Use snippets to quickly insert often-used pieces of text"
 #~ msgstr ""
@@ -5879,9 +5939,6 @@ msgstr ""
 
 #~ msgid "Number of lines in the current document."
 #~ msgstr "Número de líneas del documento actual."
-
-#~ msgid "Number of words in the current document."
-#~ msgstr "Número de palabras del documento actual."
 
 #~ msgid "Number of characters, including spaces, in the current document."
 #~ msgstr "Número de caracteres, espacios incluidos, del documento actual."
