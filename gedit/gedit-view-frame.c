@@ -71,7 +71,6 @@ struct _GeditViewFramePrivate
 
 	GtkWidget   *slider;
 	GtkWidget   *search_entry;
-	GtkCssProvider *search_css;
 
 	guint        typeselect_flush_timeout;
 	glong        view_scroll_event_id;
