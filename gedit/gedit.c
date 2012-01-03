@@ -163,7 +163,6 @@ gedit_main (gboolean service)
 {
 	GeditPluginsEngine *engine;
 	GeditApp *app;
-	gboolean restored = FALSE;
 	const gchar *dir;
 	gchar *icon_dir;
 
@@ -185,18 +184,26 @@ gedit_main (gboolean service)
 	gedit_debug_message (DEBUG_APP, "Init session manager");
 	gedit_session_init ();
 
-	if (!service && gedit_session_is_restored ())
+	if (!service)
 	{
-		restored = gedit_session_load ();
-	}
+		gboolean restored = FALSE;
 
-	if (!service && !restored)
-	{
-		gedit_main_window ();
+		if (gedit_session_is_restored ())
+		{
+			restored = gedit_session_load ();
+		}
+
+		if (!restored)
+		{
+			gedit_main_window ();
+		}
 	}
 
 	gedit_debug_message (DEBUG_APP, "Start gtk-main");
 	gtk_main ();
+
+	/* Make sure settings are saved */
+	g_settings_sync ();
 
 	/* Cleanup */
 	g_object_unref (engine);
