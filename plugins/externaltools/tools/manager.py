@@ -621,10 +621,10 @@ class Manager:
 
         if node is not None:
             self.fill_fields()
-            self['tool-table'].set_sensitive(True)
+            self['tool-grid'].set_sensitive(True)
         else:
             self.clear_fields()
-            self['tool-table'].set_sensitive(False)
+            self['tool-grid'].set_sensitive(False)
 
     def language_id_from_iter(self, piter):
         if not piter:
@@ -669,7 +669,7 @@ class Manager:
         self.view.set_cursor(self.model.get_path(piter), self.view.get_column(self.TOOL_COLUMN), True)
         self.fill_fields()
 
-        self['tool-table'].set_sensitive(True)
+        self['tool-grid'].set_sensitive(True)
         self.view.get_selection().handler_unblock(self.selection_changed_id)
 
     def tool_changed(self, tool, refresh=False):

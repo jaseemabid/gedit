@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <!-- interface-requires gtk+ 2.12 -->
+  <!-- interface-requires gtk+ 3.0 -->
   <object class="GtkAction" id="add-tool-action">
     <signal name="activate" handler="on_action_add_tool_activated" swapped="no"/>
   </object>
@@ -161,6 +161,7 @@
             <child>
               <object class="GtkButton" id="button1">
                 <property name="label">gtk-help</property>
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -177,6 +178,7 @@
             <child>
               <object class="GtkButton" id="button2">
                 <property name="label">gtk-close</property>
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -268,12 +270,14 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="toolbar_style">icons</property>
-                    <property name="icon-size">1</property>
+                    <property name="icon_size">1</property>
                     <style>
                       <class name="inline-toolbar"/>
                     </style>
                     <child>
                       <object class="GtkToolButton" id="add-tool-button">
+                        <property name="use_action_appearance">False</property>
+                        <property name="related_action">add-tool-action</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="tooltip_text" translatable="yes">Add a new tool</property>
@@ -290,6 +294,8 @@
                     </child>
                     <child>
                       <object class="GtkToolButton" id="remove-tool-button">
+                        <property name="use_action_appearance">False</property>
+                        <property name="related_action">remove-tool-action</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="tooltip_text" translatable="yes">Remove selected tool</property>
@@ -306,6 +312,8 @@
                     </child>
                     <child>
                       <object class="GtkToolButton" id="revert-tool-button">
+                        <property name="use_action_appearance">False</property>
+                        <property name="related_action">revert-tool-action</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="tooltip_text" translatable="yes">Revert tool</property>
@@ -370,29 +378,25 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkTable" id="tool-table">
+                      <object class="GtkGrid" id="tool-grid">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="n_rows">6</property>
-                        <property name="n_columns">2</property>
-                        <property name="column_spacing">6</property>
                         <property name="row_spacing">6</property>
+                        <property name="column_spacing">6</property>
                         <child>
                           <object class="GtkEntry" id="accelerator">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <signal name="key-press-event" handler="on_accelerator_key_press" swapped="no"/>
+                            <signal name="backspace" handler="on_accelerator_backspace" swapped="no"/>
                             <signal name="focus-out-event" handler="on_accelerator_focus_out" swapped="no"/>
                             <signal name="focus-in-event" handler="on_accelerator_focus_in" swapped="no"/>
-                            <signal name="backspace" handler="on_accelerator_backspace" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
-                            <property name="right_attach">2</property>
                             <property name="top_attach">1</property>
-                            <property name="bottom_attach">2</property>
-                            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-                            <property name="y_options">GTK_FILL</property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -423,6 +427,7 @@
                                 <property name="can_focus">False</property>
                                 <child>
                                   <object class="GtkButton" id="languages_button">
+                                    <property name="use_action_appearance">False</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="receives_default">False</property>
@@ -435,7 +440,7 @@
                                         <property name="xalign">0</property>
                                         <property name="label" translatable="yes">All Languages</property>
                                         <property name="ellipsize">end</property>
-                                        <property name="width-chars">13</property>
+                                        <property name="width_chars">13</property>
                                       </object>
                                     </child>
                                   </object>
@@ -450,11 +455,9 @@
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
-                            <property name="right_attach">2</property>
                             <property name="top_attach">5</property>
-                            <property name="bottom_attach">6</property>
-                            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-                            <property name="y_options">GTK_FILL</property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -471,11 +474,9 @@
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
-                            <property name="right_attach">2</property>
                             <property name="top_attach">4</property>
-                            <property name="bottom_attach">5</property>
-                            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-                            <property name="y_options">GTK_FILL</property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -492,11 +493,9 @@
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
-                            <property name="right_attach">2</property>
                             <property name="top_attach">3</property>
-                            <property name="bottom_attach">4</property>
-                            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-                            <property name="y_options">GTK_FILL</property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -513,11 +512,9 @@
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
-                            <property name="right_attach">2</property>
                             <property name="top_attach">2</property>
-                            <property name="bottom_attach">3</property>
-                            <property name="x_options">GTK_EXPAND | GTK_SHRINK | GTK_FILL</property>
-                            <property name="y_options">GTK_FILL</property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -530,10 +527,10 @@
                             <property name="mnemonic_widget">applicability</property>
                           </object>
                           <packing>
+                            <property name="left_attach">0</property>
                             <property name="top_attach">5</property>
-                            <property name="bottom_attach">6</property>
-                            <property name="x_options">GTK_FILL</property>
-                            <property name="y_options"></property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -546,10 +543,10 @@
                             <property name="mnemonic_widget">output</property>
                           </object>
                           <packing>
+                            <property name="left_attach">0</property>
                             <property name="top_attach">4</property>
-                            <property name="bottom_attach">5</property>
-                            <property name="x_options">GTK_FILL</property>
-                            <property name="y_options"></property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -562,10 +559,10 @@
                             <property name="mnemonic_widget">input</property>
                           </object>
                           <packing>
+                            <property name="left_attach">0</property>
                             <property name="top_attach">3</property>
-                            <property name="bottom_attach">4</property>
-                            <property name="x_options">GTK_FILL</property>
-                            <property name="y_options"></property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -578,10 +575,10 @@
                             <property name="mnemonic_widget">save-files</property>
                           </object>
                           <packing>
+                            <property name="left_attach">0</property>
                             <property name="top_attach">2</property>
-                            <property name="bottom_attach">3</property>
-                            <property name="x_options">GTK_FILL</property>
-                            <property name="y_options"></property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -589,21 +586,22 @@
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="xalign">0</property>
-                            <property name="label" translatable="yes">_Shortcut Key:</property>
+                            <property name="label" translatable="yes">Shortcut _Key:</property>
                             <property name="use_underline">True</property>
                             <property name="mnemonic_widget">accelerator</property>
                           </object>
                           <packing>
+                            <property name="left_attach">0</property>
                             <property name="top_attach">1</property>
-                            <property name="bottom_attach">2</property>
-                            <property name="x_options">GTK_FILL</property>
-                            <property name="y_options"></property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>>
                           </packing>
                         </child>
                         <child>
                           <object class="GtkScrolledWindow" id="scrolledwindow1">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="vexpand">True</property>
                             <property name="shadow_type">in</property>
                             <child>
                               <object class="GeditView" id="commands">
@@ -620,7 +618,10 @@
                             </child>
                           </object>
                           <packing>
-                            <property name="right_attach">2</property>
+                            <property name="left_attach">0</property>
+                            <property name="top_attach">0</property>
+                            <property name="width">2</property>
+                            <property name="height">1</property>>
                           </packing>
                         </child>
                       </object>
