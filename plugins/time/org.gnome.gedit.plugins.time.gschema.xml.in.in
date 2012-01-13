@@ -1,7 +1,7 @@
 <schemalist>
   <schema gettext-domain="@GETTEXT_PACKAGE@" id="org.gnome.gedit.plugins.time" path="/org/gnome/gedit/plugins/time/">
     <key name="prompt-type" enum="org.gnome.gedit.plugins.time.GeditTimePluginPromptType">
-      <default>'use-selected-format'</default>
+      <default>'prompt-selected-format'</default>
       <_summary>Prompt Type</_summary>
       <_description>If the user should be prompted for a format or if the selected or custom format should be used.</_description>
     </key>
