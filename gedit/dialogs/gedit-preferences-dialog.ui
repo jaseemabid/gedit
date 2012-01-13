@@ -22,10 +22,6 @@
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
-  <object class="GtkImage" id="install_scheme_image">
-    <property name="can_focus">False</property>
-    <property name="stock">gtk-add</property>
-  </object>
   <object class="GtkDialog" id="preferences_dialog">
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">Preferences</property>
@@ -769,9 +765,8 @@
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="orientation">vertical</property>
-                            <property name="spacing">6</property>
                             <child>
-                              <object class="GtkScrolledWindow" id="scrolledwindow2">
+                              <object class="GtkScrolledWindow" id="schemes-scrolled-window">
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="shadow_type">etched-in</property>
@@ -796,40 +791,42 @@
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkHButtonBox" id="hbuttonbox1">
+                              <object class="GtkToolbar" id="schemes-toolbar">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="spacing">6</property>
-                                <property name="layout_style">end</property>
+                                <property name="toolbar_style">icons</property>
+                                <property name="icon_size">1</property>
+                                <style>
+                                  <class name="inline-toolbar"/>
+                                </style>
                                 <child>
-                                  <object class="GtkButton" id="install_scheme_button">
-                                    <property name="label" translatable="yes">_Add...</property>
+                                  <object class="GtkToolButton" id="install_scheme_button">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">True</property>
-                                    <property name="receives_default">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="tooltip_text" translatable="yes">Install scheme</property>
                                     <property name="use_action_appearance">False</property>
-                                    <property name="image">install_scheme_image</property>
+                                    <property name="label" translatable="yes">toolbutton1</property>
                                     <property name="use_underline">True</property>
+                                    <property name="icon_name">list-add-symbolic</property>
                                   </object>
                                   <packing>
                                     <property name="expand">False</property>
-                                    <property name="fill">True</property>
-                                    <property name="position">0</property>
+                                    <property name="homogeneous">True</property>
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkButton" id="uninstall_scheme_button">
-                                    <property name="label">gtk-remove</property>
+                                  <object class="GtkToolButton" id="uninstall_scheme_button">
                                     <property name="visible">True</property>
-                                    <property name="can_focus">True</property>
-                                    <property name="receives_default">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="tooltip_text" translatable="yes">Uninstall scheme</property>
                                     <property name="use_action_appearance">False</property>
-                                    <property name="use_stock">True</property>
+                                    <property name="label" translatable="yes">toolbutton2</property>
+                                    <property name="use_underline">True</property>
+                                    <property name="icon_name">list-remove-symbolic</property>
                                   </object>
                                   <packing>
                                     <property name="expand">False</property>
-                                    <property name="fill">True</property>
-                                    <property name="position">1</property>
+                                    <property name="homogeneous">True</property>
                                   </packing>
                                 </child>
                               </object>

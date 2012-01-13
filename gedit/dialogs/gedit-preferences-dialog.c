@@ -89,7 +89,9 @@ struct _GeditPreferencesDialogPrivate
 	GtkWidget	*schemes_treeview;
 	GtkWidget	*install_scheme_button;
 	GtkWidget	*uninstall_scheme_button;
-	
+	GtkWidget	*schemes_scrolled_window;
+	GtkWidget	*schemes_toolbar;
+
 	GtkWidget	*install_scheme_file_schooser;
 
 	/* Tabs */
@@ -831,6 +833,7 @@ setup_font_colors_page_style_scheme_section (GeditPreferencesDialog *dlg)
 	GtkCellRenderer *renderer;
 	GtkTreeViewColumn *column;
 	GtkTreeSelection *selection;
+	GtkStyleContext *context;
 	const gchar *def_id;
 	
 	gedit_debug (DEBUG_PREFS);
@@ -866,7 +869,13 @@ setup_font_colors_page_style_scheme_section (GeditPreferencesDialog *dlg)
 	gtk_tree_selection_set_mode (selection, GTK_SELECTION_BROWSE);
 
 	def_id = populate_color_scheme_list (dlg, NULL);
-	
+
+	/* junction between the scrolled window and the toolbar */
+	context = gtk_widget_get_style_context (dlg->priv->schemes_scrolled_window);
+	gtk_style_context_set_junction_sides (context, GTK_JUNCTION_BOTTOM);
+	context = gtk_widget_get_style_context (dlg->priv->schemes_toolbar);
+	gtk_style_context_set_junction_sides (context, GTK_JUNCTION_TOP);
+
 	/* Connect signals */
 	g_signal_connect (dlg->priv->schemes_treeview,
 			  "cursor-changed",
@@ -986,8 +995,10 @@ gedit_preferences_dialog_init (GeditPreferencesDialog *dlg)
 		"font_hbox", &dlg->priv->font_hbox,
 
 		"schemes_treeview", &dlg->priv->schemes_treeview,
+		"schemes-scrolled-window", &dlg->priv->schemes_scrolled_window,
 		"install_scheme_button", &dlg->priv->install_scheme_button,
 		"uninstall_scheme_button", &dlg->priv->uninstall_scheme_button,
+		"schemes-toolbar", &dlg->priv->schemes_toolbar,
 
 		"plugin_manager_place_holder", &dlg->priv->plugin_manager_place_holder,
 		NULL);
