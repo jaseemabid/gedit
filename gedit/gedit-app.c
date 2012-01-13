@@ -52,7 +52,7 @@
 #ifdef OS_OSX
 #include "gedit-app-osx.h"
 #else
-#ifdef OS_WIN32
+#ifdef G_OS_WIN32
 #include "gedit-app-win32.h"
 #else
 #include "gedit-app-x11.h"
@@ -548,7 +548,7 @@ gedit_app_get_default (void)
 #ifdef OS_OSX
 	type = GEDIT_TYPE_APP_OSX;
 #else
-#ifdef OS_WIN32
+#ifdef G_OS_WIN32
 	type = GEDIT_TYPE_APP_WIN32;
 #else
 	type = GEDIT_TYPE_APP_X11;
