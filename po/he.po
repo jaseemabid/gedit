@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-30 10:36+0200\n"
-"PO-Revision-Date: 2011-12-30 10:37+0200\n"
+"POT-Creation-Date: 2012-01-13 09:32+0200\n"
+"PO-Revision-Date: 2012-01-13 09:32+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "Language: he\n"
@@ -1919,25 +1919,25 @@ msgid "/ on %s"
 msgstr "/ תחת %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:554
+#: ../gedit/gedit-view-frame.c:553
 msgid "_Wrap Around"
 msgstr "_גלישה מסביב"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:564
+#: ../gedit/gedit-view-frame.c:563
 msgid "Match _Entire Word Only"
 msgstr "התאמת מילים _שלמות בלבד"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:574
+#: ../gedit/gedit-view-frame.c:573
 msgid "_Match Case"
 msgstr "הת_אמת רישיות"
 
-#: ../gedit/gedit-view-frame.c:775
+#: ../gedit/gedit-view-frame.c:774
 msgid "String you want to search for"
 msgstr "המחרוזת שברצונך לחפש"
 
-#: ../gedit/gedit-view-frame.c:782
+#: ../gedit/gedit-view-frame.c:781
 msgid "Line you want to move the cursor to"
 msgstr "השורה אליה להעביר את הסמן"
 
@@ -2369,33 +2369,33 @@ msgid "Revert tool"
 msgstr "כלי השחזור"
 
 #: ../plugins/externaltools/tools/tools.ui.h:26
+msgid "Shortcut _Key:"
+msgstr "מקש _קיצור:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:27
 msgid "Untitled documents only"
 msgstr "מסמכים ללא שם בלבד"
 
-#: ../plugins/externaltools/tools/tools.ui.h:27
+#: ../plugins/externaltools/tools/tools.ui.h:28
 msgid "_Applicability:"
 msgstr "_יישומיות:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:28
+#: ../plugins/externaltools/tools/tools.ui.h:29
 #: ../plugins/snippets/snippets/snippets.ui.h:16
 msgid "_Edit:"
 msgstr "_עריכה:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:29
+#: ../plugins/externaltools/tools/tools.ui.h:30
 msgid "_Input:"
 msgstr "_קלט:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:30
+#: ../plugins/externaltools/tools/tools.ui.h:31
 msgid "_Output:"
 msgstr "_פלט:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:31
+#: ../plugins/externaltools/tools/tools.ui.h:32
 msgid "_Save:"
 msgstr "_שמירה:"
-
-#: ../plugins/externaltools/tools/tools.ui.h:32
-msgid "_Shortcut Key:"
-msgstr "מקש _קיצור:"
 
 #: ../plugins/externaltools/tools/tools.ui.h:33
 msgid "_Tools:"
@@ -2542,154 +2542,131 @@ msgstr "תיקייה"
 msgid "The new directory is currently filtered out. You need to adjust your filter settings to make the directory visible"
 msgstr "התיקייה החדשה לא נכללת עקב סינון. יהיה עליך להתאים את הגדרות המסנן שלך כך שהתיקייה תופיע"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:742
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:734
 msgid "Bookmarks"
 msgstr "סימניות"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:822
 msgid "_Filter"
 msgstr "_מסנן"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:835
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
 msgid "_Move to Trash"
 msgstr "העברה ל_אשפה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:836
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:828
 msgid "Move selected file or folder to trash"
 msgstr "העברת הקובץ או התיקייה הנבחרים לאשפה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:838
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
 msgid "_Delete"
 msgstr "_מחיקה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:839
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:831
 msgid "Delete selected file or folder"
 msgstr "מחיקת הקובץ או התיקייה הנבחרים"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:846
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:838
 msgid "Open selected file"
 msgstr "פתיחת הקובץ הנבחר"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:852
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
 msgid "Up"
 msgstr "למעלה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:845
 msgid "Open the parent folder"
 msgstr "פתיחת תיקיית ההורה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:858
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
 msgid "_New Folder"
 msgstr "_תיקייה חדשה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:851
 msgid "Add new empty folder"
 msgstr "הוספת תיקייה ריקה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:861
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
 msgid "New F_ile"
 msgstr "_קובץ חדש"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:862
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:854
 msgid "Add new empty file"
 msgstr "הוספת קובץ ריק"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:867
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
 msgid "_Rename"
 msgstr "ה_חלפת שם"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:860
 msgid "Rename selected file or folder"
 msgstr "שינוי שם הקובץ או התיקייה שנבחרו"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:866
 msgid "_Previous Location"
 msgstr "המיקום ה_קודם"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:876
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
 msgid "Go to the previous visited location"
 msgstr "מעבר למיקום הקודם בו ביקרת"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:878
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
 msgid "_Next Location"
 msgstr "המיקום ה_בא"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:879
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
 msgid "Go to the next visited location"
 msgstr "מעבר למיקום הבא בו ביקרת"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:880
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
 msgid "Re_fresh View"
 msgstr "ר_ענון התצוגה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:881
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
 msgid "Refresh the view"
 msgstr "רענון התצוגה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:900
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
 msgid "_View Folder"
 msgstr "_הצגת תיקיה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:883
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:901
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:875
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:893
 msgid "View folder in file manager"
 msgstr "הצגת התיקייה במנהל הקבצים"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:890
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
 msgid "Show _Hidden"
 msgstr "הצגת _נסתרים"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:891
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:883
 msgid "Show hidden files and folders"
 msgstr "הצגת קבצים ותיקיות נסתרים"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:893
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
 msgid "Show _Binary"
 msgstr "הצגה _בינרית"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:894
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:886
 msgid "Show binary files"
 msgstr "הצגת קבצים בינריים"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1027
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1036
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1057
-msgid "Previous location"
-msgstr "המיקום הקודם"
-
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1029
-msgid "Go to previous location"
-msgstr "מעבר למיקום הקודם"
-
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1031
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1052
-msgid "Go to a previously opened location"
-msgstr "מעבר למיקום שנפתח בעבר"
-
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1048
-msgid "Next location"
-msgstr "המיקום הבא"
-
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1050
-msgid "Go to next location"
-msgstr "מעבר למיקום הבא"
-
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1259
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1207
 msgid "Match Filename"
 msgstr "התאמת שם קובץ"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2168
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2009
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "אין פריט עגינה עבור הכרך שעוגן: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2245
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2086
 #, c-format
 msgid "Could not open media: %s"
 msgstr "לא ניתן לפתוח את המדיה: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2292
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2133
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "לא ניתן לעגון את הכרך: %s"
@@ -3362,6 +3339,21 @@ msgstr "רישום אירועי הגישה והעזיבה עבור מסמכים 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Zeitgeist dataprovider"
 msgstr "ספק נתוני שימוש"
+
+#~ msgid "Previous location"
+#~ msgstr "המיקום הקודם"
+
+#~ msgid "Go to previous location"
+#~ msgstr "מעבר למיקום הקודם"
+
+#~ msgid "Go to a previously opened location"
+#~ msgstr "מעבר למיקום שנפתח בעבר"
+
+#~ msgid "Next location"
+#~ msgstr "המיקום הבא"
+
+#~ msgid "Go to next location"
+#~ msgstr "מעבר למיקום הבא"
 
 #~ msgid "Open a new window"
 #~ msgstr "פתיחת חלון חדש"
