@@ -41,7 +41,7 @@
 #define FILE_REGEX "gedit\\-setup\\-[0-9]+\\.[0-9]+\\.[0-9]+(\\-[0-9]+)?\\.exe"
 #else
 #define GEDIT_URL "http://ftp.acc.umu.se/pub/gnome/binaries/mac/gedit/"
-#define FILE_REGEX "gedit\\-[0-9]+\\.[0-9]+\\.[0-9]+(\\-[0-9]+)?\\.dmg"
+#define FILE_REGEX "gedit\\-[0-9]+\\.[0-9]+\\.[0-9]+(\\-[0-9]+)?(_.*)?\\.dmg"
 #endif
 
 #ifdef OS_OSX
