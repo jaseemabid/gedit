@@ -468,6 +468,12 @@ parse_page_file (SoupSession            *session,
 		gchar *ignore_version;
 
 		file = get_file (msg->response_body->data, FILE_REGEX);
+
+		if (!file)
+		{
+            return;
+		}
+
 		file_version = parse_file_version (file);
 		ignore_version = get_ignore_version (plugin);
 
