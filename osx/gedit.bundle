@@ -89,6 +89,10 @@
   <data>${prefix}/lib/python2.7/site-packages/gi</data>
   <data>${prefix}/lib/python2.7/site-packages/libxml2.py</data>
 
+  <binary>${prefix}/lib/python2.7/lib-dynload/*.so</binary>
+  <data>${prefix}/lib/python2.7</data>
+  <binary>${prefix}/bin/python*</binary>
+
   <!-- GTK+3 data -->
   <data>${prefix}/etc/gtk-3.0/*</data>
 

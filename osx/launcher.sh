@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if test "x$GTK_DEBUG_LAUNCHER" != x; then
 	set -x
@@ -6,11 +6,7 @@ fi
 
 if test "x$GTK_DEBUG_GDB" != x; then
 	EXEC="gdb --args"
-else
-	EXEC=exec
-fi
-
-if test "x$GTK_DEBUG_DTRUSS" != x; then
+elif test "x$GTK_DEBUG_DTRUSS" != x; then
 	EXEC="dtruss"
 else
 	EXEC=exec
@@ -27,6 +23,7 @@ bundle_bin="$bundle_res"/bin
 bundle_data="$bundle_res"/share
 bundle_etc="$bundle_res"/etc
 
+export PATH="$bundle_bin:$PATH"
 export DYLD_LIBRARY_PATH="$bundle_lib:$DYLD_LIBRARY_PATH"
 export XDG_CONFIG_DIRS="$bundle_etc:$XDG_CONFIG_DIRS"
 export XDG_DATA_DIRS="$bundle_data:$XDG_DATA_DIRS"
@@ -39,6 +36,7 @@ export GI_TYPELIB_PATH="$bundle_lib/girepository-1.0"
 export PYTHONPATH="$bundle_lib/python2.6/site-packages:$PYTHONPATH"
 export PANGO_LIBDIR="$bundle_lib"
 export PANGO_SYSCONFDIR="$bundle_etc"
+export PEAS_PLUGIN_LOADERS_DIR="$bundle_lib/libpeas-1.0/loaders"
 
 if test -f "$bundle_lib/charset.alias"; then
 	export CHARSETALIASDIR="$bundle_lib"
@@ -48,6 +46,10 @@ fi
 EXTRA_ARGS=
 if test -f "$bundle_res/environment.sh"; then
 	source "$bundle_res/environment.sh"
+fi
+
+if test -f "$HOME/.geditenv"; then
+	source "$HOME/.geditenv"
 fi
 
 # Strip out the argument added by the OS.
@@ -63,7 +65,7 @@ if [ -f "$dbusenv" ]; then
 fi
 
 if [ -z "$DBUS_SESSION_BUS_PID" ] || ! ps -p "$DBUS_SESSION_BUS_PID" >/dev/null; then
-	"$bundle_bin"/dbus-launch > "$dbusenv"
+	"$bundle_bin/dbus-launch" --config-file "$bundle_etc/dbus-1/session.conf" > "$dbusenv"
 
 	source "$dbusenv"
 fi
@@ -71,4 +73,8 @@ fi
 export DBUS_SESSION_BUS_PID
 export DBUS_SESSION_BUS_ADDRESS
 
-$EXEC "$bundle_contents/MacOS/$name-bin" "$@" $EXTRA_ARGS
+if [ "x$GTK_DEBUG_SHELL" != "x" ]; then
+	exec bash
+else
+	$EXEC "$bundle_contents/MacOS/$name-bin" "$@" $EXTRA_ARGS
+fi

@@ -21,9 +21,9 @@ MOUNT_POINT=$VOLUME_NAME.mounted
 rm -f $DMG_FILE
 rm -f $DMG_FILE.master
 
-# Compute an approximated image size in MB, and bloat by 10 MB
+# Compute an approximated image size in MB, and bloat by 15 MB
 image_size=$(du -ck $DMG_APP dmg-data | tail -n1 | cut -f1)
-image_size=$((($image_size + 10000) / 1000))
+image_size=$((($image_size + 15000) / 1000))
 
 echo "Creating disk image (${image_size}MB)..."
 #hdiutil create $DMG_FILE -megabytes $image_size -volname $VOLUME_NAME -fs HFS+ -quiet || exit $?

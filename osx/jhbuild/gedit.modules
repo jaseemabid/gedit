@@ -8,7 +8,6 @@
   <repository type="tarball" name="ftp.gnome.org" default="yes"
               href="http://ftp.gnome.org/pub/GNOME/sources/"/>
   <repository type="git" name="github" href="git://github.com/"/>
-  <repository type="git" name="githubjessevdk" href="git://github.com/jessevdk/"/>
   <repository type="tarball" name="ftp.gnupg.org" href="ftp://ftp.gnupg.org/" />
   <repository type="tarball" name="ftp.gnu.org" href="ftp://ftp.gnu.org/gnu/"/>
   <repository type="tarball" name="launchpad" href="http://edge.launchpad.net/"/>
@@ -184,10 +183,11 @@
     </dependencies>
   </autotools>
 
-  <autotools id="gedit-plugins" autogenargs="DATADIRNAME=share">
+  <autotools id="gedit-plugins" autogenargs="DATADIRNAME=share" autogen="autogen.sh">
     <branch module="gedit-plugins/3.2/gedit-plugins-3.2.1.tar.bz2"
             version="3.2.1"
             hash="sha256:8f6b5bc88ca61d8f0bc4dd54b2dc82473acfefd90453e4d4ffc3ca88d4182f4d">
+      <patch file="http://git.gnome.org/browse/gedit/plain/osx/jhbuild/patches/gedit-plugins-disable-terminal.patch" strip="1"/>
     </branch>
     <dependencies>
       <dep package="meta-gtk-osx-bootstrap"/>
@@ -265,7 +265,7 @@
   </autotools>
 
   <autotools id="gedit" autogenargs="DATADIRNAME=share">
-    <branch repo="githubjessevdk" module="gedit" revision="gnome-3-2"/>
+    <branch module="gedit" revision="3.2.6-osx-2"/>
     <dependencies>
       <dep package="meta-gtk-osx-bootstrap"/>
       <dep package="meta-gtk-osx-gtk3"/>
@@ -303,6 +303,20 @@
     </dependencies>
     <after>
       <dep package="gtk+-3.0"/>
+      <dep package="meta-gtk-osx-bootstrap"/>
+    </after>
+  </autotools>
+
+  <autotools id="glib-gtk3" autogen-sh="configure">
+    <branch module="glib/2.30/glib-2.30.1.tar.bz2"  version="2.30.1"
+            hash="sha256:4e560319450f31d85b6cdb2b530c3324a510ca04817e360943d0774327d21804">
+      <patch file="http://git.gnome.org/browse/gedit/plain/osx/jhbuild/patches/glib-iconv.patch" strip="1"/>
+    </branch>
+    <dependencies>
+      <dep package="libffi"/>
+      <dep package="gtk-doc"/>
+    </dependencies>
+    <after>
       <dep package="meta-gtk-osx-bootstrap"/>
     </after>
   </autotools>
