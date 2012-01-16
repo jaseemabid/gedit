@@ -1,0 +1,52 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="gedit-plugins-dashboard">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>  
+    <revision version="3.4" date="2011-12-30" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Display recently-used and most-used files on startup</desc>
+  </info>
+
+  <title>Dashboard</title>
+
+  <p>The <app>Dashboard</app> plugin provides quick access to your most 
+  recently-used files and most-frequently used files. To 
+  activate the <app>Dashboard</app> plugin, select <keyseq><key>Edit</key><key>
+  Preferences</key><key>Plugins</key><key>Dashboard</key></keyseq>. You will 
+  need to restart <app>gedit</app> to activate the <app>Dashboard</app> plugin.
+  </p>
+  
+  <p>The <app>dashboard</app> also includes a <gui>Search</gui> window, 
+  allowing you to search for files that may not appear in the list of files.</p>
+  
+  <section id="gedit-recently-used">
+    <title>Recently used files</title>
+    <p>The dashboard will initially display a shortcut for an <gui>empty 
+    document</gui> and seven of your most recently-used files. Click on the 
+    <gui>empty document</gui> to create a new file. Click on any of the other 
+    files to open that file.</p>
+  </section>
+  
+  <section id="gedit-most-used">
+    <title>Most frequently-used files</title>
+    <p>Similarly, the dashboard displays a shortcut for an <gui>empty document
+    </gui> and seven of your most frequently-used files. Click on the <gui>
+    empty document</gui> to create a new file. Click on any of the other 
+    files to open that file.</p>
+
+  <note style="tip"><p>Once activated, the <app>dashboard</app> will be 
+  displayed by default when you open <app>gedit</app>. You can also open the 
+  <app>dashboard</app> by clicking <guiseq><gui>File</gui><gui>New</gui>
+  </guiseq>, or by pressing <keyseq><key>Ctrl</key><key>N</key></keyseq>.</p>
+  </note>
+  
+  </section>
+
+  
+</page>
