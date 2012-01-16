@@ -1,7 +1,7 @@
 # Norwegian bokmål translation of gedit.
 # Copyright (C) 1998-2004, 2005 Free Software Foundation, Inc.
 #
-# Kjartan Maraas <kmaraas@gnome.org>, 1998-2011.
+# Kjartan Maraas <kmaraas@gnome.org>, 1998-2012.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 # Sigurd Gartmann <sigurd-translate@brogar.org>, 2005.
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit 3.3.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-06 20:47+0100\n"
-"PO-Revision-Date: 2012-01-06 20:48+0100\n"
+"POT-Creation-Date: 2012-01-16 17:12+0100\n"
+"PO-Revision-Date: 2012-01-16 17:14+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -597,44 +597,44 @@ msgstr "Til_gjengelige kodinger:"
 msgid "E_ncodings shown in menu:"
 msgstr "Kodi_nger som vises i menyen:"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:419
+#: ../gedit/dialogs/gedit-preferences-dialog.c:421
 msgid "Click on this button to select the font to be used by the editor"
 msgstr ""
 "Trykk på denne knappen for å velge skriften som skal brukes av "
 "redigeringsprogrammet"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:434
+#: ../gedit/dialogs/gedit-preferences-dialog.c:436
 #, c-format
 msgid "_Use the system fixed width font (%s)"
 msgstr "Br_uk systemets skrift for fast bredde (%s)"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:629
+#: ../gedit/dialogs/gedit-preferences-dialog.c:631
 msgid "The selected color scheme cannot be installed."
 msgstr "Valgt fargeschema kan ikke installeres."
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:656
+#: ../gedit/dialogs/gedit-preferences-dialog.c:658
 msgid "Add Scheme"
 msgstr "Legg til schema"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:663
+#: ../gedit/dialogs/gedit-preferences-dialog.c:665
 msgid "A_dd Scheme"
 msgstr "_Legg til schema"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:671
+#: ../gedit/dialogs/gedit-preferences-dialog.c:673
 msgid "Color Scheme Files"
 msgstr "Filer for fargeschema"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:678
+#: ../gedit/dialogs/gedit-preferences-dialog.c:680
 #: ../gedit/gedit-file-chooser-dialog.c:52
 msgid "All Files"
 msgstr "Alle filer"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:723
+#: ../gedit/dialogs/gedit-preferences-dialog.c:725
 #, c-format
 msgid "Could not remove color scheme \"%s\"."
 msgstr "Kunne ikke fjerne fargeschema «%s»"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:942
+#: ../gedit/dialogs/gedit-preferences-dialog.c:951
 msgid "gedit Preferences"
 msgstr "Brukervalg for gedit"
 
@@ -737,20 +737,32 @@ msgid "Color Scheme"
 msgstr "Fargepalett"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:24
-msgid "_Add..."
-msgstr "_Legg til …"
+msgid "Install scheme"
+msgstr "Installer skjema"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:25
+msgid "toolbutton1"
+msgstr "toolbutton1"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:26
+msgid "Uninstall scheme"
+msgstr "Avinstaller skjema"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:27
+msgid "toolbutton2"
+msgstr "toolbutton2"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:28
 msgid "Font & Colors"
 msgstr "Skrifter og farger"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:26
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:29
 msgid "Plugins"
 msgstr "Tillegg"
 
 #. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:1 ../gedit/gedit-window.c:1625
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:1 ../gedit/gedit-window.c:1574
 msgid "Replace"
 msgstr "Erstatt"
 
@@ -791,9 +803,13 @@ msgstr "Søk _bakover"
 msgid "_Wrap around"
 msgstr "_Brytningsmodus"
 
-#: ../gedit/gedit-app.c:222
+#: ../gedit/gedit-app.c:223
 msgid "There was an error displaying the help."
 msgstr "Det oppsto en feil under visning av hjelp."
+
+#: ../gedit/gedit-app-osx.c:274
+msgid "About gedit"
+msgstr "Om gedit"
 
 #: ../gedit/gedit-command-line.c:232
 #, c-format
@@ -1044,11 +1060,11 @@ msgid "Unsaved Document %d"
 msgstr "Ikke-lagret dokument %d"
 
 #: ../gedit/gedit-documents-panel.c:122 ../gedit/gedit-documents-panel.c:136
-#: ../gedit/gedit-window.c:2458 ../gedit/gedit-window.c:2465
+#: ../gedit/gedit-window.c:2414 ../gedit/gedit-window.c:2421
 msgid "Read-Only"
 msgstr "Skrivebeskyttet"
 
-#: ../gedit/gedit-documents-panel.c:1145 ../gedit/gedit-window.c:3907
+#: ../gedit/gedit-documents-panel.c:1145 ../gedit/gedit-window.c:3863
 msgid "Documents"
 msgstr "Dokumenter"
 
@@ -1851,7 +1867,7 @@ msgstr "Opprett et nytt dokument"
 msgid "_Open..."
 msgstr "_Åpne …"
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1553
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1502
 msgid "Open a file"
 msgstr "Åpne en fil"
 
@@ -2139,7 +2155,7 @@ msgstr "Streng du vil søke etter"
 msgid "Line you want to move the cursor to"
 msgstr "Linje du vil flytte markøren til"
 
-#: ../gedit/gedit-window.c:1008
+#: ../gedit/gedit-window.c:957
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Bruk uthevingsmodus %s"
@@ -2147,7 +2163,7 @@ msgstr "Bruk uthevingsmodus %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1113 ../gedit/gedit-window.c:2152
+#: ../gedit/gedit-window.c:1062 ../gedit/gedit-window.c:2108
 #: ../plugins/externaltools/tools/manager.py:138
 #: ../plugins/externaltools/tools/manager.py:442
 #: ../plugins/externaltools/tools/manager.py:553
@@ -2155,66 +2171,62 @@ msgstr "Bruk uthevingsmodus %s"
 msgid "Plain Text"
 msgstr "Vanlig tekst"
 
-#: ../gedit/gedit-window.c:1114
+#: ../gedit/gedit-window.c:1063
 msgid "Disable syntax highlighting"
 msgstr "Deaktiver syntaksutheving"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1431
+#: ../gedit/gedit-window.c:1380
 #, c-format
 msgid "Open '%s'"
 msgstr "Åpne «%s»"
 
-#: ../gedit/gedit-window.c:1555
+#: ../gedit/gedit-window.c:1504
 msgid "Open a recently used file"
 msgstr "Åpne nylig brukt fil"
 
-#: ../gedit/gedit-window.c:1561
+#: ../gedit/gedit-window.c:1510
 msgid "Open"
 msgstr "Åpne"
 
-#: ../gedit/gedit-window.c:1619
+#: ../gedit/gedit-window.c:1568
 msgid "Save"
 msgstr "Lagre"
 
-#: ../gedit/gedit-window.c:1621
+#: ../gedit/gedit-window.c:1570
 msgid "Print"
 msgstr "Skriv ut"
 
-#: ../gedit/gedit-window.c:1623
+#: ../gedit/gedit-window.c:1572
 msgid "Find"
 msgstr "Finn"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1783
+#: ../gedit/gedit-window.c:1732
 #, c-format
 msgid "Activate '%s'"
 msgstr "Aktiver «%s»"
 
-#: ../gedit/gedit-window.c:2133
+#: ../gedit/gedit-window.c:2089
 msgid "Use Spaces"
 msgstr "Bruk mellomrom"
 
-#: ../gedit/gedit-window.c:2206
+#: ../gedit/gedit-window.c:2162
 msgid "Tab Width"
 msgstr "Tabulatorbredde"
 
-#: ../gedit/gedit-window.c:2315
+#: ../gedit/gedit-window.c:2271
 msgid "Bracket match is out of range"
 msgstr "Søk etter sammenhørende hakeparantes utenfor gyldig område"
 
-#: ../gedit/gedit-window.c:2320
+#: ../gedit/gedit-window.c:2276
 msgid "Bracket match not found"
 msgstr "Fant ingen sammenhørende hakeparanteser"
 
-#: ../gedit/gedit-window.c:2325
+#: ../gedit/gedit-window.c:2281
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Sammenhørende hakeparantes funnet på linje: %d"
-
-#: ../gedit/gedit-window.c:4113
-msgid "About gedit"
-msgstr "Om gedit"
 
 #. ex:set ts=8 noet:
 #: ../plugins/changecase/changecase.plugin.desktop.in.h:1
@@ -2270,23 +2282,23 @@ msgstr "Sjekk oppdatering"
 msgid "Check for latest version of gedit"
 msgstr "Se etter siste versjon av gedit"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:256
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:257
 msgid "There was an error displaying the URI."
 msgstr "Det oppsto en feil under visning av URI."
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:293
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:294
 msgid "_Download"
 msgstr "Last ne_d"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:301
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:302
 msgid "_Ignore Version"
 msgstr "_Ignorer versjon"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:316
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:317
 msgid "There is a new version of gedit"
 msgstr "Det finnes en ny versjon av gedit"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:320
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:321
 msgid ""
 "You can download the new version of gedit by clicking on the download button "
 "or ignore that version and wait for a new one"
@@ -3374,8 +3386,8 @@ msgstr "Stavekontroll fullført"
 #. * the second %s is the locale name. Example:
 #. * "French (France)"
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:373
-#: ../plugins/spell/gedit-spell-checker-language.c:379
+#: ../plugins/spell/gedit-spell-checker-language.c:378
+#: ../plugins/spell/gedit-spell-checker-language.c:384
 #, c-format
 msgctxt "language"
 msgid "%s (%s)"
@@ -3384,7 +3396,7 @@ msgstr "%s (%s)"
 #. Translators: this refers to an unknown language code
 #. * (one which isn't in our built-in list).
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:388
+#: ../plugins/spell/gedit-spell-checker-language.c:393
 #, c-format
 msgctxt "language"
 msgid "Unknown (%s)"
@@ -3393,7 +3405,7 @@ msgstr "Ukjent (%s)"
 #. Translators: this refers the Default language used by the
 #. * spell checker
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:494
+#: ../plugins/spell/gedit-spell-checker-language.c:499
 msgctxt "language"
 msgid "Default"
 msgstr "Forvalgt"
