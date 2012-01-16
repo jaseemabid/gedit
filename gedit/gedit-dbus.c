@@ -101,14 +101,17 @@ struct _GeditDBusPrivate
 
 	guint32 next_wait_id;
 
+#ifdef G_OS_UNIX
 	GeditFifo *stdin_fifo;
 	GInputStream *stdin_in_stream;
 	GOutputStream *stdin_out_stream;
 	GCancellable *stdin_cancellable;
+#endif
 };
 
 G_DEFINE_TYPE (GeditDBus, gedit_dbus, G_TYPE_OBJECT)
 
+#ifdef G_OS_UNIX
 static void
 async_window_destroyed (AsyncData *async,
                         GObject   *where_the_object_was)
@@ -146,10 +149,12 @@ async_data_new (GeditDBus *dbus)
 
 	return async;
 }
+#endif
 
 static void
 gedit_dbus_dispose (GObject *object)
 {
+#ifdef G_OS_UNIX
 	GeditDBus *dbus = GEDIT_DBUS (object);
 
 	if (dbus->priv->stdin_cancellable)
@@ -163,6 +168,7 @@ gedit_dbus_dispose (GObject *object)
 	g_clear_object (&dbus->priv->stdin_fifo);
 	g_clear_object (&dbus->priv->stdin_out_stream);
 	g_clear_object (&dbus->priv->stdin_in_stream);
+#endif
 
 	G_OBJECT_CLASS (gedit_dbus_parent_class)->dispose (object);
 }
@@ -323,6 +329,7 @@ compose_open_parameters (GeditDBus *dbus)
 	/* Compose additional options */
 	g_variant_builder_init (&options, G_VARIANT_TYPE ("a{sv}"));
 
+#ifdef G_OS_UNIX
 	/* see if we need to add the pipe_path */
 	if (dbus->priv->stdin_fifo)
 	{
@@ -340,6 +347,7 @@ compose_open_parameters (GeditDBus *dbus)
 		g_object_unref (file);
 		g_free (path);
 	}
+#endif
 
 	/* add the encoding, line position, column position */
 	encoding = gedit_command_line_get_encoding (command_line);
