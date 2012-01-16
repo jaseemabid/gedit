@@ -105,8 +105,8 @@ struct _GeditDBusPrivate
 	GeditFifo *stdin_fifo;
 	GInputStream *stdin_in_stream;
 	GOutputStream *stdin_out_stream;
-	GCancellable *stdin_cancellable;
 #endif
+	GCancellable *stdin_cancellable;
 };
 
 G_DEFINE_TYPE (GeditDBus, gedit_dbus, G_TYPE_OBJECT)
