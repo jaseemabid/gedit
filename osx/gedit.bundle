@@ -73,6 +73,7 @@
   <!-- DBUS -->
   <binary>${prefix}/bin/dbus-*</binary>
   <data>${prefix}/etc/dbus-1</data>
+  <data>${prefix}/share/dbus-1</data>
   <binary>${prefix}/libexec/dbus-daemon-launch-helper</binary>
 
   <!-- Copy in peas modules -->
@@ -88,6 +89,7 @@
   <data>${prefix}/lib/python2.7/site-packages/cairo</data>
   <data>${prefix}/lib/python2.7/site-packages/gi</data>
   <data>${prefix}/lib/python2.7/site-packages/libxml2.py</data>
+  <data>${prefix}/include/python2.7/pyconfig.h</data>
 
   <binary>${prefix}/lib/python2.7/lib-dynload/*.so</binary>
   <data>${prefix}/lib/python2.7</data>

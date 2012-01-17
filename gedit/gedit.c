@@ -228,6 +228,11 @@ main (int argc, char *argv[])
 	GeditDBusResult dbusret;
 #endif
 
+#ifdef OS_OSX
+	GPollFunc orig_poll_func;
+	GPollFunc gdk_poll_func;
+#endif
+
 #ifndef ENABLE_GVFS_METADATA
 	const gchar *cache_dir;
 	gchar *metadata_filename;
@@ -262,6 +267,10 @@ main (int argc, char *argv[])
 	g_free (metadata_filename);
 #endif
 
+#ifdef OS_OSX
+	orig_poll_func = g_main_context_get_poll_func (NULL);
+#endif
+
 	/* Parse command line arguments */
 	command_line = gedit_command_line_get_default ();
 
@@ -274,9 +283,31 @@ main (int argc, char *argv[])
 	}
 
 #ifdef G_OS_UNIX
+#ifdef OS_OSX
+	/* Note: this is a bit of a hack. What happens here is that we are going to
+	 * store the poll function installed by gdk (happens in post-parse of options)
+	 * and replace it with the original main loop poll handler. We do this because
+	 * the gedit dbus stuff is going to run some main loops to run async gdbus calls.
+	 * The problem is that for OS X, the gdk poll func in the main context (which
+	 * will be run due to the fact that the main loops in our dbus code iterate the
+	 * main context) is going to process events from NSApp, INCLUDING apple events
+	 * such as OpenFiles. Since we are not setup yet, we are going to miss these
+	 * events. By swapping out the gdk poll func, and swapping it back in later,
+	 * we prevent this from happening. Note that we only do this when building
+	 * on OS X to prevent any possible future problems for other platforms.
+	 * This is a dirty hack, but it works for now.
+	 */
+	gdk_poll_func = g_main_context_get_poll_func (NULL);
+	g_main_context_set_poll_func (NULL, orig_poll_func);
+#endif
+
 	/* Run over dbus */
 	dbus = gedit_dbus_new ();
 	dbusret = gedit_dbus_run (dbus);
+
+#ifdef OS_OSX
+	g_main_context_set_poll_func (NULL, gdk_poll_func);
+#endif
 
 	switch (dbusret)
 	{

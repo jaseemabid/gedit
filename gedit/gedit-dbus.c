@@ -31,6 +31,10 @@
 #include "gedit-window.h"
 #include "gedit-utils.h"
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #ifdef GDK_WINDOWING_X11
 #include <gdk/gdkx.h>
 #endif
@@ -292,7 +296,12 @@ get_display_arguments (GeditDBus         *dbus,
 	screen = gdk_screen_get_default ();
 	display = gdk_screen_get_display (screen);
 
+#ifdef OS_OSX
+	/* On OS X gdk_display_get_name seems to block... */
+	dparams->display_name = NULL;
+#else
 	dparams->display_name = g_strdup (gdk_display_get_name (display));
+#endif
 	dparams->screen_number = gdk_screen_get_number (screen);
 
 	dparams->workspace = gedit_utils_get_current_workspace (screen);
@@ -396,10 +405,13 @@ compose_open_parameters (GeditDBus *dbus)
 	/* display parameters like display name, screen, workspace, viewport */
 	get_display_arguments (dbus, &dparams);
 
-	g_variant_builder_add (&options,
-	                       "{sv}",
-	                       "display_name",
-	                       g_variant_new_string (dparams.display_name));
+	if (dparams.display_name)
+	{
+		g_variant_builder_add (&options,
+		                       "{sv}",
+		                       "display_name",
+		                       g_variant_new_string (dparams.display_name));
+	}
 
 	g_free (dparams.display_name);
 
@@ -1664,6 +1676,8 @@ gedit_dbus_run (GeditDBus *dbus)
 		}
 	}
 
+	dbus->priv->main_loop = g_main_loop_new (NULL, FALSE);
+
 	g_bus_own_name (G_BUS_TYPE_SESSION,
 	                "org.gnome.gedit",
 	                G_BUS_NAME_OWNER_FLAGS_NONE,
@@ -1675,7 +1689,6 @@ gedit_dbus_run (GeditDBus *dbus)
 
 	gedit_debug_message (DEBUG_DBUS, "Own name org.gnome.gedit\n");
 
-	dbus->priv->main_loop = g_main_loop_new (NULL, FALSE);
 	g_main_loop_run (dbus->priv->main_loop);
 	g_main_loop_unref (dbus->priv->main_loop);
 

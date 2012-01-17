@@ -1,10 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ -d gedit.app ] && [ "$1x" = "-fx" ]; then
 	rm -rf gedit.app
 fi
 
-gtk-mac-bundler gedit.bundle
+if [ ! -d gedit.app ]; then
+    gtk-mac-bundler gedit.bundle
+else
+	echo "Note gedit.app bundle already exists, only stripping it..."
+fi
 
 function do_strip {
     tp=$(file -b --mime-type "$1")
@@ -18,9 +22,9 @@ function do_strip {
     
     strip -o "$name" -S "$1"
     mv -f "$name" "$1"
-    
+
     chmod "$st" "$1"
-	chmod u+w "$1"
+    chmod u+w "$1"
 }
 
 echo "Removing unneeded files from bundle"
@@ -33,7 +37,7 @@ done
 echo "Strip debug symbols from bundle binaries"
 
 # Strip debug symbols
-for i in $(find gedit.app/Contents/Resources -type f -regex '\.(so|dylib)$'); do
+for i in $(find -E gedit.app/Contents/Resources -type f -regex '.*\.(so|dylib)$'); do
     do_strip "$i"
 done
 

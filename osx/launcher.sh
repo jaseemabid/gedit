@@ -33,10 +33,12 @@ export GTK_PATH="$bundle_res"
 export GDK_PIXBUF_MODULE_FILE="$bundle_lib/gdk-pixbuf-2.0/2.10.0/loaders.cache"
 export GIO_EXTRA_MODULES="$bundle_lib/gio/modules"
 export GI_TYPELIB_PATH="$bundle_lib/girepository-1.0"
-export PYTHONPATH="$bundle_lib/python2.6/site-packages:$PYTHONPATH"
+export PYTHONPATH="$bundle_lib/python2.7/site-packages:$PYTHONPATH"
+export PYTHONHOME="$bundle_res"
 export PANGO_LIBDIR="$bundle_lib"
 export PANGO_SYSCONFDIR="$bundle_etc"
 export PEAS_PLUGIN_LOADERS_DIR="$bundle_lib/libpeas-1.0/loaders"
+export DBUS_REPLACE_INSTALL_PREFIX="$bundle_res/"
 
 if test -f "$bundle_lib/charset.alias"; then
 	export CHARSETALIASDIR="$bundle_lib"

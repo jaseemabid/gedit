@@ -5,7 +5,7 @@
 pushd $(dirname $0) &>/dev/null
 
 echo "Generating bundle..."
-./makebundle.sh -f
+./makebundle.sh
 
 VOLUME_NAME=gedit
 
