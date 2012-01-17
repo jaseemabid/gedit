@@ -371,7 +371,7 @@ on_osx_open_files (GtkOSXApplication  *osxapp,
 	while (paths && *paths)
 	{
 		locations = g_slist_prepend (locations,
-		                             g_file_new_for_uri (*paths));
+		                             g_file_new_for_path (*paths));
 		++paths;
 	}
 	
