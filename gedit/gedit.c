@@ -222,9 +222,11 @@ main (int argc, char *argv[])
 	const gchar *dir;
 	GeditCommandLine *command_line;
 	gboolean ret;
+	gboolean service = FALSE;
+#ifdef G_OS_UNIX
 	GeditDBus *dbus;
 	GeditDBusResult dbusret;
-	gboolean service = FALSE;
+#endif
 
 #ifndef ENABLE_GVFS_METADATA
 	const gchar *cache_dir;
@@ -271,6 +273,7 @@ main (int argc, char *argv[])
 		return 1;
 	}
 
+#ifdef G_OS_UNIX
 	/* Run over dbus */
 	dbus = gedit_dbus_new ();
 	dbusret = gedit_dbus_run (dbus);
@@ -290,10 +293,13 @@ main (int argc, char *argv[])
 		case GEDIT_DBUS_RESULT_PROCEED:
 		break;
 	}
+#endif
 
 	gedit_main (service);
 
+#ifdef G_OS_UNIX
 	g_object_unref (dbus);
+#endif
 	g_object_unref (command_line);
 
 	return 0;
