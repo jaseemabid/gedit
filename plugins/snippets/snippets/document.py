@@ -358,7 +358,7 @@ class Document(GObject.Object, Gedit.ViewActivatable, Signals):
         def env_get_document_path(self, buf):
                 location = buf.get_location()
 
-                if location:
+                if location and Gedit.utils_location_has_file_scheme(location):
                         return location.get_path()
                 else:
                         return ''
