@@ -42,13 +42,14 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
         drag_icons = ('gnome-mime-application-x-tarz', 'gnome-package', 'package')
         default_export_name = _('Snippets archive') + '.tar.gz'
         dragging = False
-        dnd_target_list = [Gtk.TargetEntry.new('text/uri-list', 0, TARGET_URI)]
 
         def __init__(self):
                 self.snippet = None
                 self._temp_export = None
 
                 self.key_press_id = 0
+                self.dnd_target_list = Gtk.TargetList.new([])
+                self.dnd_target_list.add(Gdk.atom_intern("text/uri-list", True), 0, self.TARGET_URI)
 
         def get_language_snippets(self, path, name = None):
                 library = Library()
@@ -231,11 +232,14 @@ class Manager(Gtk.Dialog, Gtk.Buildable):
                 tv = self.tree_view
 
                 # Set it as a drag source for exporting snippets
-                tv.drag_source_set(Gdk.ModifierType.BUTTON1_MASK, self.dnd_target_list, Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
+                tv.drag_source_set(Gdk.ModifierType.BUTTON1_MASK, [], Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
+                tv.drag_source_set_target_list(self.dnd_target_list)
 
                 # Set it as a drag destination for importing snippets
                 tv.drag_dest_set(Gtk.DestDefaults.HIGHLIGHT | Gtk.DestDefaults.DROP,
-                                 self.dnd_target_list, Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
+                                 [], Gdk.DragAction.DEFAULT | Gdk.DragAction.COPY)
+
+                tv.drag_dest_set_target_list(self.dnd_target_list)
 
                 tv.connect('drag_data_get', self.on_tree_view_drag_data_get)
                 tv.connect('drag_begin', self.on_tree_view_drag_begin)
