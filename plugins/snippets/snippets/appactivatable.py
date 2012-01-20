@@ -37,19 +37,15 @@ class AppActivatable(GObject.Object, Gedit.AppActivatable):
                 # Initialize snippets library
                 library = Library()
 
-                if platform.platform() == 'Windows':
+                if platform.system() == 'Windows':
                         snippetsdir = os.path.expanduser('~/gedit/snippets')
                 else:
-                        userdir = os.getenv('GNOME22_USER_DIR')
-                        if userdir:
-                                snippetsdir = os.path.join(userdir, 'gedit/snippets')
-                        else:
-                                snippetsdir = os.path.join(GLib.get_user_config_dir(), 'gedit/snippets')
+                        snippetsdir = os.path.join(GLib.get_user_config_dir(), 'gedit/snippets')
 
                 library.set_dirs(snippetsdir, self.system_dirs())
 
         def system_dirs(self):
-                if platform.platform() != 'Windows':
+                if platform.system() != 'Windows':
                         if 'XDG_DATA_DIRS' in os.environ:
                                 datadirs = os.environ['XDG_DATA_DIRS']
                         else:
