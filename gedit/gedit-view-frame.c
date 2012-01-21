@@ -908,7 +908,7 @@ search_entry_focus_out_event (GtkWidget      *widget,
 }
 
 static GtkWidget *
-create_button_from_stock (const gchar *stock_id)
+create_button_from_symbolic (const gchar *icon_name)
 {
 	GtkWidget *button;
 
@@ -916,8 +916,8 @@ create_button_from_stock (const gchar *stock_id)
 	gtk_widget_set_can_focus (button, FALSE);
 	gtk_button_set_relief (GTK_BUTTON (button), GTK_RELIEF_NONE);
 	gtk_button_set_image (GTK_BUTTON (button),
-			      gtk_image_new_from_stock (stock_id,
-							GTK_ICON_SIZE_MENU));
+	                      gtk_image_new_from_icon_name (icon_name,
+	                                                    GTK_ICON_SIZE_MENU));
 
 	return button;
 }
@@ -985,7 +985,7 @@ create_search_widget (GeditViewFrame *frame)
 	customize_for_search_mode (frame);
 
 	/* Up/Down buttons */
-	button = create_button_from_stock (GTK_STOCK_GO_UP);
+	button = create_button_from_symbolic ("go-up-symbolic");
 	gtk_widget_show (button);
 
 	gtk_box_pack_start (GTK_BOX (search_widget), button, FALSE, FALSE, 0);
@@ -995,7 +995,7 @@ create_search_widget (GeditViewFrame *frame)
 	                  G_CALLBACK (on_go_up_button_clicked),
 	                  frame);
 
-	button = create_button_from_stock (GTK_STOCK_GO_DOWN);
+	button = create_button_from_symbolic ("go-down-symbolic");
 	gtk_widget_show (button);
 
 	gtk_box_pack_start (GTK_BOX (search_widget), button, FALSE, FALSE, 0);
