@@ -92,7 +92,7 @@ class Importer:
                 shutil.rmtree(dirname)
 
                 if len(errors) > 0:
-                        return _('The following files could not be imported: %s') % ', '.join(errors)
+                        return _('The following files could not be imported: %s') % u', '.join(errors)
 
         def import_targz(self):
                 self.import_archive('tar -x --gzip -f')

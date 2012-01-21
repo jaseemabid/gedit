@@ -312,24 +312,24 @@ class Document(GObject.Object, Gedit.ViewActivatable, Signals):
                 bounds = buf.get_selection_bounds()
 
                 if bounds:
-                        return buf.get_text(bounds[0], bounds[1], False)
+                        return unicode(buf.get_text(bounds[0], bounds[1], False), 'utf-8')
                 else:
                         return ''
 
         def env_get_current_word(self, buf):
                 start, end = buffer_word_boundary(buf)
 
-                return buf.get_text(start, end, False)
+                return unicode(buf.get_text(start, end, False), 'utf-8')
 
         def env_get_current_line(self, buf):
                 start, end = buffer_line_boundary(buf)
 
-                return buf.get_text(start, end, False)
+                return unicode(buf.get_text(start, end, False), 'utf-8')
 
         def env_get_current_line_number(self, buf):
                 start, end = buffer_line_boundary(buf)
 
-                return str(start.get_line() + 1)
+                return unicode(start.get_line() + 1)
 
         def env_get_document_uri(self, buf):
                 location = buf.get_location()
@@ -389,7 +389,7 @@ class Document(GObject.Object, Gedit.ViewActivatable, Signals):
                 else:
                         documents_uri = []
 
-                return ' '.join(documents_uri)
+                return u' '.join(documents_uri)
 
         def env_get_documents_path(self, buf):
                 toplevel = self.view.get_toplevel()
@@ -405,7 +405,7 @@ class Document(GObject.Object, Gedit.ViewActivatable, Signals):
                 else:
                         documents_path = []
 
-                return ' '.join(documents_path)
+                return u' '.join(documents_path)
 
         def update_environment(self):
                 buf = self.view.get_buffer()
@@ -534,7 +534,7 @@ class Document(GObject.Object, Gedit.ViewActivatable, Signals):
                         tmp.forward_word_end()
 
                         if tmp.equal(end):
-                                word = buf.get_text(start, end, False)
+                                word = unicode(buf.get_text(start, end, False), 'utf-8')
                         else:
                                 start = end.copy()
                 else:

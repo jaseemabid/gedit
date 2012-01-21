@@ -138,7 +138,7 @@ class SnippetData:
                         return
 
                 if isinstance(value, list):
-                        value = ','.join(value)
+                        value = u','.join(value)
 
                 if not self.can_modify() and self.properties[prop] != value:
                         # ohoh, this is not can_modify, but it needs to be changed...
@@ -951,7 +951,7 @@ class Library(Singleton):
                 self.check_buffer.set_text(trigger)
 
                 start, end = self.check_buffer.get_bounds()
-                text = self.check_buffer.get_text(start, end, False)
+                text = unicode(self.check_buffer.get_text(start, end, False), 'utf-8')
 
                 s = start.copy()
                 e = end.copy()

@@ -83,7 +83,7 @@ class Provider(GObject.Object, GtkSource.CompletionProvider):
 
                 if start.backward_word_start():
                         self.mark_position(start)
-                        return start.get_text(it)
+                        return unicode(start.get_text(it), 'utf-8')
                 else:
                         return None
 

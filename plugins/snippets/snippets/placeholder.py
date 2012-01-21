@@ -138,7 +138,7 @@ class Placeholder:
                         eiter = self.end_iter()
 
                         if biter and eiter:
-                                return self.buf.get_text(self.begin_iter(), self.end_iter(), False)
+                                return unicode(self.buf.get_text(self.begin_iter(), self.end_iter(), False), 'utf-8')
                         else:
                                 return ''
                 else:
@@ -414,7 +414,7 @@ class PlaceholderShell(PlaceholderExpand):
                 self.close_shell()
                 self.remove_timeout()
 
-                self.set_text(str.join('', self.shell_output).rstrip('\n'))
+                self.set_text(unicode.join(u'', self.shell_output).rstrip('\n'))
 
                 if self.default == None:
                         self.default = self.get_text()
@@ -564,7 +564,7 @@ class PlaceholderEval(PlaceholderExpand):
                         self.set_text('')
                         return
 
-                text = "def process_snippet():\n\t" + "\n\t".join(text.split("\n"))
+                text = "def process_snippet():\n\t" + u"\n\t".join(text.split("\n"))
 
                 if 'process_snippet' in self.namespace:
                         del self.namespace['process_snippet']
