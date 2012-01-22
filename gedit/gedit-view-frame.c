@@ -1305,6 +1305,7 @@ gedit_view_frame_init (GeditViewFrame *frame)
 
 	/* Add slider */
 	frame->priv->slider = gedit_floating_slider_new ();
+	gtk_widget_set_name (frame->priv->slider, "search-slider");
 	gtk_widget_set_halign (frame->priv->slider, GTK_ALIGN_END);
 	gtk_widget_set_valign (frame->priv->slider, GTK_ALIGN_START);
 
