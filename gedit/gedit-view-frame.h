@@ -40,7 +40,6 @@ G_BEGIN_DECLS
 typedef struct _GeditViewFrame			GeditViewFrame;
 typedef struct _GeditViewFramePrivate		GeditViewFramePrivate;
 typedef struct _GeditViewFrameClass		GeditViewFrameClass;
-typedef struct _GeditViewFrameClassPrivate	GeditViewFrameClassPrivate;
 
 struct _GeditViewFrame
 {
@@ -52,8 +51,6 @@ struct _GeditViewFrame
 struct _GeditViewFrameClass
 {
 	GtkBoxClass parent_class;
-
-	GeditViewFrameClassPrivate *priv;
 };
 
 GType		 gedit_view_frame_get_type	(void) G_GNUC_CONST;
