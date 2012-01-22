@@ -939,10 +939,15 @@ on_go_down_button_clicked (GtkWidget      *button,
 static GtkWidget *
 create_search_widget (GeditViewFrame *frame)
 {
-	GtkWidget          *search_widget;
-	GtkWidget          *button;
+	GtkWidget *search_widget;
+	GtkWidget *button;
+	GtkStyleContext *context;
 
-	search_widget = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+	search_widget = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+
+	context = gtk_widget_get_style_context (search_widget);
+	gtk_style_context_add_class (context, GTK_STYLE_CLASS_LINKED);
+
 	gtk_widget_show (search_widget);
 
 	g_signal_connect (search_widget, "key-press-event",
