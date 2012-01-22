@@ -1,0 +1,46 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="gedit-plugins-join-split-lines">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision version="3.4" date="2012-01-22" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Join several lines of text, or split long lines</desc>
+  </info>
+
+  <title>Join&#47;Split lines</title>
+
+  <p>The <app>Join&#47;Split Lines</app> plugin can join shorter lines into one 
+  longer line, or can split a long line into multiple shorter lines.</p>
+  
+  <p>To enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</gui>
+  <gui>Plugins</gui><gui>Join/Split Lines</gui></guiseq>.</p>
+
+  <steps>
+    <title>To join multiple lines into one longer line:</title>
+    <item><p>Select the lines that you want to join. To do this, you can use 
+    the mouse, or you can press <keyseq><key>Shift</key><key>Up Arrow</key>
+    </keyseq> or <keyseq><key>Shift</key><key>Down Arrow</key></keyseq>.</p>
+    </item>
+    <item><p>Press <keyseq><key>Ctrl</key><key>J</key></keyseq>.</p>
+    <p>The lines that you selected will be joined into one longer line.</p>
+    </item>
+  </steps>
+
+  <steps>
+    <title>To split one line into multiple lines:</title>
+    <item><p>Select the line that you want to split by placing your cursor 
+    anywhere on that line.</p></item>
+    <item><p>Press <keyseq><key>Ctrl</key><key>Shift</key><key>J</key></keyseq>.
+    </p>
+    <p>The line will be split into multiple lines. Spaces are used to determine 
+    where it is safe to split a line, and the length of each line will 
+    not exceed 80 characters.</p></item>
+  </steps>
+
+</page>
