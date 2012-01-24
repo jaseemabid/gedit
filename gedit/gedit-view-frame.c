@@ -905,7 +905,6 @@ create_button_from_symbolic (const gchar *icon_name)
 
 	button = gtk_button_new ();
 	gtk_widget_set_can_focus (button, FALSE);
-	gtk_button_set_relief (GTK_BUTTON (button), GTK_RELIEF_NONE);
 	gtk_button_set_image (GTK_BUTTON (button),
 	                      gtk_image_new_from_icon_name (icon_name,
 	                                                    GTK_ICON_SIZE_MENU));
