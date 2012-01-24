@@ -554,7 +554,7 @@ build_vertical_panel (GeditPanel *panel)
 
 	/* Create title hbox */
 	title_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-	gtk_container_set_border_width (GTK_CONTAINER (title_hbox), 6);
+	gtk_widget_set_name (title_hbox, "panel-title");
 
 	gtk_box_pack_start (GTK_BOX (panel->priv->main_box), title_hbox,
 	                             FALSE, FALSE, 0);
