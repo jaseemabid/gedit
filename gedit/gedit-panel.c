@@ -554,7 +554,7 @@ build_vertical_panel (GeditPanel *panel)
 
 	/* Create title hbox */
 	title_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-	gtk_container_set_border_width (GTK_CONTAINER (title_hbox), 5);
+	gtk_container_set_border_width (GTK_CONTAINER (title_hbox), 6);
 
 	gtk_box_pack_start (GTK_BOX (panel->priv->main_box), title_hbox,
 	                             FALSE, FALSE, 0);
@@ -566,9 +566,8 @@ build_vertical_panel (GeditPanel *panel)
 			    TRUE,
 			    0);
 
-	panel->priv->title_image =
-				gtk_image_new_from_stock (GTK_STOCK_FILE,
-							  GTK_ICON_SIZE_MENU);
+	panel->priv->title_image = gtk_image_new_from_stock (GTK_STOCK_FILE,
+	                                                     GTK_ICON_SIZE_MENU);
 	gtk_box_pack_start (GTK_BOX (icon_name_hbox),
 			    panel->priv->title_image,
 			    FALSE,
