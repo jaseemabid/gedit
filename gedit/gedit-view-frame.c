@@ -937,7 +937,6 @@ create_search_widget (GeditViewFrame *frame)
 
 	context = gtk_widget_get_style_context (search_widget);
 	gtk_style_context_add_class (context, GTK_STYLE_CLASS_LINKED);
-	gtk_style_context_add_class (context, GTK_STYLE_CLASS_RAISED);
 
 	gtk_widget_show (search_widget);
 
