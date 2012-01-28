@@ -308,124 +308,190 @@ class Document(GObject.Object, Gedit.ViewActivatable, Signals):
                 (current, prev) = self.previous_placeholder()
                 return self.goto_placeholder(current, prev)
 
+        def string_in_native_doc_encoding(self, buf, s):
+                enc = buf.get_encoding()
+
+                if not enc or enc.get_charset() == 'UTF-8':
+                        return s
+
+                try:
+                        cv = GLib.convert(s, -1, enc.get_charset(), 'UTF-8')
+                        return cv[0]
+                except GLib.GError:
+                        pass
+
+                return s
+
         def env_get_selected_text(self, buf):
                 bounds = buf.get_selection_bounds()
 
                 if bounds:
-                        return unicode(buf.get_text(bounds[0], bounds[1], False), 'utf-8')
+                        u8 = unicode(buf.get_text(bounds[0], bounds[1], False), 'utf-8')
+
+                        return {'utf8': u8, 'noenc': self.string_in_native_doc_encoding(buf, u8)}
                 else:
-                        return ''
+                        return u''
 
         def env_get_current_word(self, buf):
                 start, end = buffer_word_boundary(buf)
+                enc = buf.get_encoding()
 
-                return unicode(buf.get_text(start, end, False), 'utf-8')
+                u8 = unicode(buf.get_text(start, end, False), 'utf-8')
+
+                return {'utf8': u8, 'noenc': self.string_in_native_doc_encoding(buf, u8)}
 
         def env_get_current_line(self, buf):
                 start, end = buffer_line_boundary(buf)
 
-                return unicode(buf.get_text(start, end, False), 'utf-8')
+                u8 = unicode(buf.get_text(start, end, False), 'utf-8')
+
+                return {'utf8': u8, 'noenc': self.string_in_native_doc_encoding(buf, u8)}
 
         def env_get_current_line_number(self, buf):
                 start, end = buffer_line_boundary(buf)
 
-                return unicode(start.get_line() + 1)
+                return unicode(str(start.get_line() + 1), 'utf-8')
 
-        def env_get_document_uri(self, buf):
-                location = buf.get_location()
+        def location_uri_for_env(self, location):
+                if not location:
+                        return {'utf8': u'', 'noenc': u''}
 
+                u8 = unicode(location.get_parse_name(), 'utf-8')
+
+                if location.has_uri_scheme('file'):
+                        u8 = "file://" + u8
+
+                return {'utf8': u8, 'noenc': location.get_uri()}
+
+        def location_name_for_env(self, location):
                 if location:
-                        return location.get_uri()
+                        info = location.query_info("standard::display-name", 0, None)
+
+                        return {'utf8': unicode(info.get_display_name(), 'utf-8'),
+                                'noenc': location.get_basename()}
                 else:
-                        return ''
+                        return u''
 
-        def env_get_document_name(self, buf):
-                location = buf.get_location()
-
+        def location_scheme_for_env(self, location):
                 if location:
-                        return location.get_basename()
+                        return unicode(location.get_uri_scheme(), 'utf-8')
                 else:
-                        return ''
+                        return u''
 
-        def env_get_document_scheme(self, buf):
-                location = buf.get_location()
+        def location_path_for_env(self, location):
+                if location and location.has_uri_scheme('file'):
+                        return {'utf8': unicode(location.get_parse_name(), 'utf-8'),
+                                'noenc': location.get_path()}
+                else:
+                        return u''
 
+        def location_dir_for_env(self, location):
                 if location:
-                        return location.get_uri_scheme()
-                else:
-                        return ''
+                        parent = location.get_parent()
 
-        def env_get_document_path(self, buf):
-                location = buf.get_location()
+                        if parent and parent.has_uri_scheme('file'):
+                                return {'utf8': parent.get_parse_name(),
+                                        'noenc': parent.get_path()}
 
-                if location and Gedit.utils_location_has_file_scheme(location):
-                        return location.get_path()
-                else:
-                        return ''
+                return u''
 
-        def env_get_document_dir(self, buf):
-                location = buf.get_location()
+        def env_add_for_location(self, environ, location, prefix):
+                parts = {'URI': self.location_uri_for_env,
+                         'NAME': self.location_name_for_env,
+                         'SCHEME': self.location_scheme_for_env,
+                         'PATH': self.location_path_for_env,
+                         'DIR': self.location_dir_for_env}
 
-                if location:
-                        return location.get_parent().get_path() or ''
-                else:
-                        return ''
+                for k in parts:
+                        v = parts[k](location)
+                        key = prefix + '_' + k
+
+                        if isinstance(v, dict):
+                                environ['utf8'][key] = v['utf8']
+                                environ['noenc'][key] = v['noenc']
+                        else:
+                                environ['utf8'][key] = v
+                                environ['noenc'][key] = str(v)
+
+                return environ
 
         def env_get_document_type(self, buf):
                 typ = buf.get_mime_type()
 
                 if typ:
-                        return typ
+                        return unicode(typ, 'utf-8')
                 else:
-                        return ''
+                        return u''
 
         def env_get_documents_uri(self, buf):
                 toplevel = self.view.get_toplevel()
 
-                if isinstance(toplevel, Gedit.Window):
-                        documents_uri = [doc.get_location().get_uri()
-                                         for doc in toplevel.get_documents()
-                                         if doc.get_location() is not None]
-                else:
-                        documents_uri = []
+                documents_uri = {'utf8': [], 'noenc': []}
 
-                return u' '.join(documents_uri)
+                if isinstance(toplevel, Gedit.Window):
+                        for doc in toplevel.get_documents():
+                                r = self.location_uri_for_env(doc.get_location())
+
+                                if isinstance(r, dict):
+                                        documents_uri['utf8'].append(r['utf8'])
+                                        documents_uri['noenc'].append(r['noenc'])
+                                else:
+                                        documents_uri['utf8'].append(r)
+                                        documents_uri['noenc'].append(str(r))
+
+                return {'utf8': u' '.join(documents_uri['utf8']),
+                        'noenc': ' '.join(documents_uri['noenc'])}
 
         def env_get_documents_path(self, buf):
                 toplevel = self.view.get_toplevel()
 
+                documents_path = {'utf8': [], 'noenc': []}
+
                 if isinstance(toplevel, Gedit.Window):
-                        documents_location = [doc.get_location()
-                                              for doc in toplevel.get_documents()
-                                              if doc.get_location() is not None]
+                        for doc in toplevel.get_documents():
+                                r = self.location_path_for_env(doc.get_location())
 
-                        documents_path = [location.get_path()
-                                          for location in documents_location
-                                          if Gedit.utils_location_has_file_scheme(location)]
-                else:
-                        documents_path = []
+                                if isinstance(r, dict):
+                                        documents_path['utf8'].append(r['utf8'])
+                                        documents_path['noenc'].append(r['noenc'])
+                                else:
+                                        documents_path['utf8'].append(r)
+                                        documents_path['noenc'].append(str(r))
 
-                return u' '.join(documents_path)
+                return {'utf8': u' '.join(documents_path['utf8']),
+                        'noenc': ' '.join(documents_path['noenc'])}
 
-        def update_environment(self):
+        def get_environment(self):
                 buf = self.view.get_buffer()
+                environ = {'utf8': {}, 'noenc': {}}
 
-                variables = {'GEDIT_SELECTED_TEXT': self.env_get_selected_text,
-                             'GEDIT_CURRENT_WORD': self.env_get_current_word,
-                             'GEDIT_CURRENT_LINE': self.env_get_current_line,
-                             'GEDIT_CURRENT_LINE_NUMBER': self.env_get_current_line_number,
-                             'GEDIT_CURRENT_DOCUMENT_URI': self.env_get_document_uri,
-                             'GEDIT_CURRENT_DOCUMENT_NAME': self.env_get_document_name,
-                             'GEDIT_CURRENT_DOCUMENT_SCHEME': self.env_get_document_scheme,
-                             'GEDIT_CURRENT_DOCUMENT_PATH': self.env_get_document_path,
-                             'GEDIT_CURRENT_DOCUMENT_DIR': self.env_get_document_dir,
-                             'GEDIT_CURRENT_DOCUMENT_TYPE': self.env_get_document_type,
-                             'GEDIT_DOCUMENTS_URI': self.env_get_documents_uri,
-                             'GEDIT_DOCUMENTS_PATH': self.env_get_documents_path,
-                             }
+                for k in os.environ:
+                        # Get the original environment, as utf-8
+                        v = os.environ[k]
+                        environ['noenc'][k] = v
+                        environ['utf8'][k] = unicode(os.environ[k], 'utf-8')
+
+                variables = {u'GEDIT_SELECTED_TEXT': self.env_get_selected_text,
+                             u'GEDIT_CURRENT_WORD': self.env_get_current_word,
+                             u'GEDIT_CURRENT_LINE': self.env_get_current_line,
+                             u'GEDIT_CURRENT_LINE_NUMBER': self.env_get_current_line_number,
+                             u'GEDIT_CURRENT_DOCUMENT_TYPE': self.env_get_document_type,
+                             u'GEDIT_DOCUMENTS_URI': self.env_get_documents_uri,
+                             u'GEDIT_DOCUMENTS_PATH': self.env_get_documents_path}
 
                 for var in variables:
-                        os.environ[var] = variables[var](buf)
+                        v = variables[var](buf)
+
+                        if isinstance(v, dict):
+                                environ['utf8'][var] = v['utf8']
+                                environ['noenc'][var] = v['noenc']
+                        else:
+                                environ['utf8'][var] = v
+                                environ['noenc'][var] = str(v)
+
+                self.env_add_for_location(environ, buf.get_location(), 'GEDIT_CURRENT_DOCUMENT')
+
+                return environ
 
         def uses_current_word(self, snippet):
                 matches = re.findall('(\\\\*)\\$GEDIT_CURRENT_WORD', snippet['text'])
@@ -445,12 +511,22 @@ class Document(GObject.Object, Gedit.ViewActivatable, Signals):
 
                 return False
 
-        def apply_snippet(self, snippet, start = None, end = None):
+        def apply_snippet(self, snippet, start = None, end = None, environ = {}):
                 if not snippet.valid:
                         return False
 
+                # Set environmental variables
+                env = self.get_environment()
+
+                if environ:
+                        for k in environ['utf8']:
+                                env['utf8'][k] = environ['utf8'][k]
+
+                        for k in environ['noenc']:
+                                env['noenc'][k] = environ['noenc'][k]
+
                 buf = self.view.get_buffer()
-                s = Snippet(snippet)
+                s = Snippet(snippet, env)
 
                 if not start:
                         start = buf.get_iter_at_mark(buf.get_insert())
@@ -468,9 +544,6 @@ class Document(GObject.Object, Gedit.ViewActivatable, Signals):
                         # the current line. Set start and end to the line boundary so that
                         # it will be removed
                         start, end = buffer_line_boundary(buf)
-
-                # Set environmental variables
-                self.update_environment()
 
                 # You know, we could be in an end placeholder
                 (current, next) = self.next_placeholder()
@@ -770,78 +843,23 @@ class Document(GObject.Object, Gedit.ViewActivatable, Signals):
                 else:
                         return components
 
-        def relative_path(self, first, second, mime):
-                prot1 = re.match('(^[a-z]+:\/\/|\/)(.*)', first)
-                prot2 = re.match('(^[a-z]+:\/\/|\/)(.*)', second)
-
-                if not prot1 or not prot2:
-                        return second
-
-                # Different protocols
-                if prot1.group(1) != prot2.group(1):
-                        return second
-
-                # Split on backslash
-                path1 = self.path_split(prot1.group(2))
-                path2 = self.path_split(prot2.group(2))
-
-                # Remove as long as common
-                while path1 and path2 and path1[0] == path2[0]:
-                        path1.pop(0)
-                        path2.pop(0)
-
-                # If we need to ../ more than 3 times, then just return
-                # the absolute path
-                if len(path1) - 1 > 3:
-                        return second
-
-                if mime.startswith('x-directory'):
-                        # directory, special case
-                        if not path2:
-                                result = './'
-                        else:
-                                result = '../' * (len(path1) - 1)
-                else:
-                        # Insert ../
-                        result = '../' * (len(path1) - 1)
-
-                        if not path2:
-                                result = os.path.basename(second)
-
-                if path2:
-                        result += os.path.join(*path2)
-
-                return result
-
         def apply_uri_snippet(self, snippet, mime, uri):
                 # Remove file scheme
                 gfile = Gio.file_new_for_uri(uri)
-                pathname = ''
-                dirname = ''
-                ruri = ''
 
-                if Gedit.utils_location_has_file_scheme(gfile):
-                        pathname = gfile.get_path()
-                        dirname = gfile.get_parent().get_path()
+                environ = {'utf8': {'GEDIT_DROP_DOCUMENT_TYPE': unicode(mime, 'utf-8')},
+                           'noenc': {'GEDIT_DROP_DOCUMENT_TYPE': mime}}
 
-                name = gfile.get_basename()
-                scheme = gfile.get_uri_scheme()
-
-                os.environ['GEDIT_DROP_DOCUMENT_URI'] = uri
-                os.environ['GEDIT_DROP_DOCUMENT_NAME'] = name
-                os.environ['GEDIT_DROP_DOCUMENT_SCHEME'] = scheme
-                os.environ['GEDIT_DROP_DOCUMENT_PATH'] = pathname
-                os.environ['GEDIT_DROP_DOCUMENT_DIR'] = dirname
-                os.environ['GEDIT_DROP_DOCUMENT_TYPE'] = mime
+                self.env_add_for_location(environ, gfile, 'GEDIT_DROP_DOCUMENT')
 
                 buf = self.view.get_buffer()
                 location = buf.get_location()
-                if location:
-                        ruri = location.get_uri()
 
-                relpath = self.relative_path(ruri, uri, mime)
+                relpath = location.get_relative_path(gfile)
 
-                os.environ['GEDIT_DROP_DOCUMENT_RELATIVE_PATH'] = relpath
+                # CHECK: what is the encoding of relpath?
+                environ['utf8']['GEDIT_DROP_DOCUMENT_RELATIVE_PATH'] = unicode(relpath, 'utf-8')
+                environ['noenc']['GEDIT_DROP_DOCUMENT_RELATIVE_PATH'] = relpath
 
                 mark = buf.get_mark('gtk_drag_target')
 
@@ -849,7 +867,7 @@ class Document(GObject.Object, Gedit.ViewActivatable, Signals):
                         mark = buf.get_insert()
 
                 piter = buf.get_iter_at_mark(mark)
-                self.apply_snippet(snippet, piter, piter)
+                self.apply_snippet(snippet, piter, piter, environ)
 
         def in_bounds(self, x, y):
                 rect = self.view.get_visible_rect()
