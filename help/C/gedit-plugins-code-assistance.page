@@ -1,0 +1,51 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="gedit-plugins-code-assistance">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>  
+    <revision version="3.4" date="2011-01-28" status="draft"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+
+    <desc>Real-time error highlighting for supported languages</desc>
+  </info>
+
+  <title>Code assistance</title>
+  
+  <!-- NOTE: This is draft documentation. It is not yet ready for translation. 
+  Thank you! -->
+
+  <p>The <app>gedit-code-assistance</app> plugin provides real-time error 
+  highlighting for C, C++ and Objective-C. To enable this plugin, select 
+  <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Code 
+  Assistance</gui></guiseq>.</p>
+  
+  <!--
+  <section id="code-assistance-features">
+    <title>Code assistance features</title>
+    <list>
+      <item><p>Feature #1</p></item>
+      <item><p>Feature #2</p></item>
+      <item><p>Feature #3</p></item>
+      <item><p>Feature #4</p></item>
+    </list>
+  </section>
+  -->
+  
+  <section id="how-gedit-code-assistance-works">
+    <title>How the code assistance plugin works</title>
+  
+    <p>The plugin currently relies on information in the makefile to deduce the 
+    Clang error-highlighting rules. It examines the <code>make</code> rules 
+    and determines which targets depend on the the file that is being parsed. 
+    The plugin then extracts the compiler flags by simulating an 
+    execution of those targets.</p>
+  
+    <p>This is not completely fool proof, of course. In the future, the plugin 
+    will allow you to manually specify the compile flags.</p>
+  </section>
+  
+</page>
