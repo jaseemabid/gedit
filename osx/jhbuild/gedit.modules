@@ -20,9 +20,6 @@
               href="http://www.abisource.com/downloads/enchant/" />
   <repository type="tarball" name="sourceware.org"
                 href="ftp://sourceware.org/pub/"/>
-  <repository type="tarball" name="dbus.freedesktop.org"
-	      href="http://dbus.freedesktop.org/releases/"/>
-
   <autotools id="iso-codes" autogen-sh="configure" >
     <branch repo="iso-codes" version="3.32"
             module="iso-codes-3.32.tar.bz2"/>
@@ -107,7 +104,7 @@
     </dependencies>
   </autotools>
 
-  <autotools id="dconf" autogen-sh="autoreconf">
+  <autotools id="dconf">
     <branch module="dconf/0.10/dconf-0.10.0.tar.bz2"
             version="0.10.0"
             hash="sha256:4b034e9e5560ab703f60bb2b6dc1ada7856416660af7dd1207c2c3ab9c9d533b">
@@ -259,20 +256,6 @@
     </dependencies>
   </autotools>
 
-  <autotools id="dbus" autogen-sh='configure'
-	   autogenargs="--disable-selinux --without-x --disable-launchd
-	   --with-session-socket-dir=/var/tmp">
-    <branch module="dbus/dbus-1.4.1.tar.gz"  version="1.4.1"
-	    repo="dbus.freedesktop.org">
-      <patch file="http://git.gnome.org/browse/gtk-osx/plain/patches/dbus-install.patch"/>
-      <patch file="http://git.gnome.org/browse/gtk-osx/plain/patches/dbus-msg-nosignal.patch" strip="1"/>
-      <patch file="http://git.gnome.org/browse/gedit/plain/osx/jhbuild/patches/dbus-relocatable-services.patch" strip="1"/>
-    </branch>
-    <after>
-      <dep package="gtk+-3.0"/>
-    </after>
-  </autotools>
- 
   <autotools id="libgcrypt" autogen-sh="configure" autogenargs="--disable-asm --disable-aesni-support">
     <branch repo='ftp.gnupg.org' version='1.5.0'
 	    module='gcrypt/libgcrypt/libgcrypt-1.5.0.tar.bz2'/>
@@ -282,7 +265,7 @@
   </autotools>
 
   <autotools id="gedit" autogenargs="DATADIRNAME=share">
-    <branch repo="git.gnome.org" module="gedit" revision="gnome-3-2-osx"/>
+    <branch module="gedit" revision="3.2.6-osx-2"/>
     <dependencies>
       <dep package="meta-gtk-osx-bootstrap"/>
       <dep package="meta-gtk-osx-gtk3"/>

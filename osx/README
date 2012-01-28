@@ -1,6 +1,6 @@
 This is a guide to building gedit on OS X. This guide assumes that you are
 already familiar with building gtk+ software on OS X (natively) using jhbuild.
-Please make sure to read https://live.gnome.org/GTK%2B/OSX/Building
+Please make sure to read http://sourceforge.net/apps/trac/gtk-osx/wiki/Build
 before proceeding.
 
 Note: Terminal commands are preceded by dollar signs.
@@ -14,19 +14,9 @@ http://git.gnome.org/browse/gtk-osx/plain/gtk-osx-build-setup.sh
 $ curl -O http://git.gnome.org/browse/gtk-osx/plain/gtk-osx-build-setup.sh
 $ sh gtk-osx-build-setup.sh
 
-Some of the newer releases of gnome software are only providing .xz packages.
-To be able to extract the contents of these packages, you will need to install
-xz utils. The easiest way to install is to use a dmg package available on:
-
-http://macpkg.sourceforge.net/
-
-Make sure to include /usr/local/bin in your PATH and alsothat you are not
-conflicting anything from fink/macports. If you are using fink/macports, you
-can add the following to your ~/.bashrc to remove any PATHS related to 
-fink/macports when using jhbuild:
-
-    # Add /usr/local/bin
-    export PATH="$PATH:/usr/local/bin"
+Make sure that you are not conflicting anything from fink/macports. If you
+are using fink/macports, you can add the following to your ~/.bashrc to
+remove any PATHS related to fink/macports when using jhbuild:
 
     # Remove fink/macports path from PATH and store in local var origpath
     origpath=$(echo $PATH | sed -E -e 's;:?/opt/local/bin;;' -e 's;:?/opt/local/sbin;;')

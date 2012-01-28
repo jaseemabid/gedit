@@ -1639,7 +1639,6 @@ GeditDBusResult
 gedit_dbus_run (GeditDBus *dbus)
 {
 	GeditCommandLine *command_line;
-	GMainContext *ctx;
 
 	g_return_val_if_fail (GEDIT_IS_DBUS (dbus), GEDIT_DBUS_RESULT_PROCEED);
 
@@ -1665,11 +1664,6 @@ gedit_dbus_run (GeditDBus *dbus)
 		}
 	}
 
-	ctx = g_main_context_new ();
-	g_main_context_push_thread_default (ctx);
-
-	dbus->priv->main_loop = g_main_loop_new (ctx, FALSE);
-
 	g_bus_own_name (G_BUS_TYPE_SESSION,
 	                "org.gnome.gedit",
 	                G_BUS_NAME_OWNER_FLAGS_NONE,
@@ -1681,11 +1675,9 @@ gedit_dbus_run (GeditDBus *dbus)
 
 	gedit_debug_message (DEBUG_DBUS, "Own name org.gnome.gedit\n");
 
+	dbus->priv->main_loop = g_main_loop_new (NULL, FALSE);
 	g_main_loop_run (dbus->priv->main_loop);
 	g_main_loop_unref (dbus->priv->main_loop);
-
-	g_main_context_pop_thread_default (ctx);
-	g_main_context_unref (ctx);
 
 	switch (dbus->priv->result)
 	{
