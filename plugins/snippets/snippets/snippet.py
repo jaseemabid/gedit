@@ -113,9 +113,9 @@ class Snippet:
 
                 if accel:
                         keyval, mod = Gtk.accelerator_parse(accel)
-                        accel = Gtk.accelerator_get_label(keyval, mod)
+                        accel = unicode(Gtk.accelerator_get_label(keyval, mod), 'utf-8')
 
-                return accel or ''
+                return accel or u''
 
         def display(self):
                 nm = markup_escape(self['description'])

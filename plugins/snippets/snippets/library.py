@@ -87,7 +87,7 @@ class SnippetData:
                                         keyval, mod = Gtk.accelerator_parse(child.text)
 
                                         if Gtk.accelerator_valid(keyval, mod):
-                                                child.text = Gtk.accelerator_name(keyval, mod)
+                                                child.text = unicode(Gtk.accelerator_name(keyval, mod), 'utf-8')
                                         else:
                                                 child.text = ''
 
