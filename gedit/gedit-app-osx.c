@@ -362,6 +362,26 @@ on_osx_will_terminate (GtkOSXApplication *osxapp,
 }
 
 static gboolean
+on_osx_block_termination (GtkOSXApplication *osxapp,
+                          GeditAppOSX       *app)
+{
+	GtkUIManager *manager;
+	GtkAction *action;
+	GeditWindow *window;
+
+	window = gedit_app_get_active_window (GEDIT_APP (app));
+
+	// Synthesize quit-all
+	manager = gedit_window_get_ui_manager (window);
+
+	action = gtk_ui_manager_get_action (manager,
+	                                    "/ui/MenuBar/FileMenu/FileQuitMenu");
+
+	_gedit_cmd_file_quit (action, window);
+	return TRUE;
+}
+
+static gboolean
 on_osx_open_files (GtkOSXApplication  *osxapp,
                    gchar const       **paths,
                    GeditAppOSX        *app)
@@ -411,6 +431,11 @@ gedit_app_osx_init (GeditAppOSX *app)
 	g_signal_connect (osxapp,
 	                  "NSApplicationWillTerminate",
 	                  G_CALLBACK (on_osx_will_terminate),
+	                  app);
+
+	g_signal_connect (osxapp,
+	                  "NSApplicationBlockTermination",
+	                  G_CALLBACK (on_osx_block_termination),
 	                  app);
 
 	g_signal_connect (osxapp,
