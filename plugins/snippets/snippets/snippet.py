@@ -243,8 +243,8 @@ class Snippet:
                                        'eval': self._create_eval,
                                        'regex': self._create_regex,
                                        'text': self._create_text}[token.klass](token.data)
-                        except:
-                                sys.stderr.write('Token class not supported: %s\n' % token.klass)
+                        except KeyError:
+                                sys.stderr.write('Token class not supported: %s (%s)\n' % token.klass)
                                 continue
 
                         if isinstance(val, basestring):

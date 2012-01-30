@@ -39,11 +39,10 @@ class Placeholder:
                 self.mirrors = []
                 self.leave_mirrors = []
                 self.tabstop = tabstop
+                self.environ = environ
                 self.set_default(defaults)
                 self.prev_contents = self.default
                 self.set_mark_gravity()
-                self.environ = environ
-                self.envkey = 'utf8'
 
                 if begin:
                         self.begin = self.buf.create_mark(None, begin, self.mark_gravity[0])
@@ -53,7 +52,7 @@ class Placeholder:
                 self.end = None
 
         def get_environ(self):
-                return self.environ[self.envkey]
+                return self.environ['utf8']
 
         def __str__(self):
                 return '%s (%s)' % (str(self.__class__), str(self.default))
@@ -392,7 +391,9 @@ class PlaceholderShell(PlaceholderExpand):
 
                 self.shell = None
                 self.remove_me = False
-                self.envkey = 'noenc'
+
+        def get_environ(self):
+                return self.environ['noenc']
 
         def close_shell(self):
                 self.shell.stdout.close()
