@@ -45,7 +45,7 @@ test_consecutive_read (const gchar *inbuf,
 	gtk_text_buffer_set_text (buf, inbuf, -1);
 
 	b = g_malloc (200);
-	in = gedit_document_input_stream_new (buf, type);
+	in = gedit_document_input_stream_new (buf, type, TRUE);
 
 	outlen = strlen (outbuf);
 	n = 0;

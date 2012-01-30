@@ -44,7 +44,7 @@ test_consecutive_write (const gchar *inbuf,
 
 	doc = gedit_document_new ();
 	encodings = g_slist_prepend (encodings, (gpointer)gedit_encoding_get_utf8 ());
-	out = gedit_document_output_stream_new (doc, encodings);
+	out = gedit_document_output_stream_new (doc, encodings, TRUE);
 
 	n = 0;
 
@@ -128,7 +128,7 @@ test_boundary ()
 
 	doc = gedit_document_new ();
 	encodings = g_slist_prepend (encodings, (gpointer)gedit_encoding_get_utf8 ());
-	out = gedit_document_output_stream_new (doc, encodings);
+	out = gedit_document_output_stream_new (doc, encodings, TRUE);
 
 	g_output_stream_write (out, "\r", 1, NULL, NULL);
 	g_output_stream_write (out, "\n", 1, NULL, NULL);
@@ -295,7 +295,7 @@ do_test (const gchar *inbuf,
 	}
 
 	doc = gedit_document_new ();
-	out = gedit_document_output_stream_new (doc, encodings);
+	out = gedit_document_output_stream_new (doc, encodings, TRUE);
 
 	n = 0;
 
