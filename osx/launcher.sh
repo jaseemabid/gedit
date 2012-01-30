@@ -38,7 +38,7 @@ export PYTHONHOME="$bundle_res"
 export PANGO_LIBDIR="$bundle_lib"
 export PANGO_SYSCONFDIR="$bundle_etc"
 export PEAS_PLUGIN_LOADERS_DIR="$bundle_lib/libpeas-1.0/loaders"
-export DBUS_REPLACE_INSTALL_PREFIX="$bundle_res/"
+export DBUS_REPLACE_INSTALL_PREFIX=$(printf '%q' "$bundle_res/")
 
 if test -f "$bundle_lib/charset.alias"; then
 	export CHARSETALIASDIR="$bundle_lib"
