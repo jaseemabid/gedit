@@ -691,6 +691,7 @@ async_replace_ready_callback (GFile        *source,
 	GOutputStream *base_stream;
 	gchar *content_type;
 	GError *error = NULL;
+	gboolean ensure_trailing_newline;
 
 	gedit_debug (DEBUG_SAVER);
 
@@ -757,8 +758,13 @@ async_replace_ready_callback (GFile        *source,
 		saver->priv->stream = G_OUTPUT_STREAM (base_stream);
 	}
 
+	ensure_trailing_newline = g_settings_get_boolean (saver->priv->editor_settings,
+	                                                  "ensure-trailing-newline");
+
+
 	saver->priv->input = gedit_document_input_stream_new (GTK_TEXT_BUFFER (saver->priv->document),
-								saver->priv->newline_type);
+								saver->priv->newline_type,
+								ensure_trailing_newline);
 
 	saver->priv->size = gedit_document_input_stream_get_total_size (GEDIT_DOCUMENT_INPUT_STREAM (saver->priv->input));
 

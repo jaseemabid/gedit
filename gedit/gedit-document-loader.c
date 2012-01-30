@@ -99,6 +99,7 @@ static void open_async_read (AsyncData *async);
 struct _GeditDocumentLoaderPrivate
 {
 	GSettings		 *enc_settings;
+	GSettings		 *editor_settings;
 
 	GeditDocument		 *document;
 	gboolean		  used;
@@ -218,6 +219,12 @@ gedit_document_loader_dispose (GObject *object)
 	g_clear_object (&priv->location);
 	g_clear_object (&priv->enc_settings);
 
+	if (priv->editor_settings != NULL)
+	{
+		g_object_unref (priv->editor_settings);
+		priv->editor_settings = NULL;
+	}
+
 	G_OBJECT_CLASS (gedit_document_loader_parent_class)->dispose (object);
 }
 
@@ -311,6 +318,7 @@ gedit_document_loader_init (GeditDocumentLoader *loader)
 	loader->priv = GEDIT_DOCUMENT_LOADER_GET_PRIVATE (loader);
 
 	loader->priv->enc_settings = g_settings_new ("org.gnome.gedit.preferences.encodings");
+	loader->priv->editor_settings = g_settings_new ("org.gnome.gedit.preferences.editor");
 }
 
 GeditDocumentLoader *
@@ -677,6 +685,7 @@ start_stream_read (AsyncData *async)
 	GeditDocumentLoader *loader;
 	GInputStream *base_stream = NULL;
 	GFileInfo *info;
+	gboolean ensure_trailing_newline;
 
 	loader = async->loader;
 	info = loader->priv->info;
@@ -715,9 +724,13 @@ start_stream_read (AsyncData *async)
 		candidate_encodings = g_slist_prepend (NULL, (gpointer)loader->priv->encoding);
 	}
 
+	ensure_trailing_newline = g_settings_get_boolean (loader->priv->editor_settings,
+	                                                  "ensure-trailing-newline");
+
 	/* Output stream */
 	loader->priv->output = gedit_document_output_stream_new (loader->priv->document,
-	                                                         candidate_encodings);
+	                                                         candidate_encodings,
+	                                                         ensure_trailing_newline);
 
 	g_slist_free (candidate_encodings);
 

@@ -57,7 +57,8 @@ struct _GeditDocumentInputStreamClass
 GType			 gedit_document_input_stream_get_type		(void) G_GNUC_CONST;
 
 GInputStream		*gedit_document_input_stream_new		(GtkTextBuffer           *buffer,
-									 GeditDocumentNewlineType type);
+									 GeditDocumentNewlineType type,
+									 gboolean                 ensure_trailing_newline);
 
 gsize			 gedit_document_input_stream_get_total_size	(GeditDocumentInputStream *stream);
 

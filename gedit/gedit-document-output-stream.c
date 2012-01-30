@@ -75,12 +75,15 @@ struct _GeditDocumentOutputStreamPrivate
 
 	guint is_initialized : 1;
 	guint is_closed : 1;
+
+	guint ensure_trailing_newline : 1;
 };
 
 enum
 {
 	PROP_0,
-	PROP_DOCUMENT
+	PROP_DOCUMENT,
+	PROP_ENSURE_TRAILING_NEWLINE
 };
 
 G_DEFINE_TYPE (GeditDocumentOutputStream, gedit_document_output_stream, G_TYPE_OUTPUT_STREAM)
@@ -113,6 +116,10 @@ gedit_document_output_stream_set_property (GObject      *object,
 			stream->priv->doc = GEDIT_DOCUMENT (g_value_get_object (value));
 			break;
 
+		case PROP_ENSURE_TRAILING_NEWLINE:
+			stream->priv->ensure_trailing_newline = g_value_get_boolean (value);
+			break;
+
 		default:
 			G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
 			break;
@@ -131,6 +138,10 @@ gedit_document_output_stream_get_property (GObject    *object,
 	{
 		case PROP_DOCUMENT:
 			g_value_set_object (value, stream->priv->doc);
+			break;
+
+		case PROP_ENSURE_TRAILING_NEWLINE:
+			g_value_set_boolean (value, stream->priv->ensure_trailing_newline);
 			break;
 
 		default:
@@ -209,6 +220,22 @@ gedit_document_output_stream_class_init (GeditDocumentOutputStreamClass *klass)
 							      GEDIT_TYPE_DOCUMENT,
 							      G_PARAM_READWRITE |
 							      G_PARAM_CONSTRUCT_ONLY));
+
+	/**
+	 *
+	 * The :ensure-trailing-newline property specifies whether or not to
+	 * ensure (enforce) the document ends with a trailing newline.
+	 */
+	g_object_class_install_property (object_class,
+	                                 PROP_ENSURE_TRAILING_NEWLINE,
+	                                 g_param_spec_boolean ("ensure-trailing-newline",
+	                                                       "Ensure Trailing Newline",
+	                                                       "Ensure the document ends with a trailing newline",
+	                                                       TRUE,
+	                                                       G_PARAM_READWRITE |
+	                                                       G_PARAM_STATIC_NAME |
+	                                                       G_PARAM_STATIC_BLURB |
+	                                                       G_PARAM_CONSTRUCT_ONLY));
 
 	g_type_class_add_private (object_class, sizeof (GeditDocumentOutputStreamPrivate));
 }
@@ -450,12 +477,15 @@ get_newline_type (GtkTextIter *end)
 
 GOutputStream *
 gedit_document_output_stream_new (GeditDocument *doc,
-                                  GSList        *candidate_encodings)
+                                  GSList        *candidate_encodings,
+                                  gboolean       ensure_trailing_newline)
 {
 	GeditDocumentOutputStream *stream;
 
 	stream = g_object_new (GEDIT_TYPE_DOCUMENT_OUTPUT_STREAM,
-	                       "document", doc, NULL);
+	                       "document", doc,
+	                       "ensure-trailing-newline", ensure_trailing_newline,
+	                       NULL);
 
 	stream->priv->encodings = g_slist_copy (candidate_encodings);
 
@@ -668,7 +698,10 @@ remove_ending_newline (GeditDocumentOutputStream *stream)
 static void
 end_append_text_to_document (GeditDocumentOutputStream *stream)
 {
-	remove_ending_newline (stream);
+	if (stream->priv->ensure_trailing_newline)
+	{
+		remove_ending_newline (stream);
+	}
 
 	gtk_text_buffer_set_modified (GTK_TEXT_BUFFER (stream->priv->doc),
 	                              FALSE);

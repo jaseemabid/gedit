@@ -141,6 +141,11 @@
       <_summary>Enable Search Highlighting</_summary>
       <_description>Whether gedit should highlight all the occurrences of the searched text.</_description>
     </key>
+    <key name="ensure-trailing-newline" type="b">
+      <default>true</default>
+      <_summary>Ensure Trailing Newline</_summary>
+      <_description>Whether gedit will ensure that documents always end with a trailing newline.</_description>
+    </key>
   </schema>
   <schema gettext-domain="@GETTEXT_PACKAGE@" id="org.gnome.gedit.preferences.ui" path="/org/gnome/gedit/preferences/ui/">
     <key name="toolbar-visible" type="b">

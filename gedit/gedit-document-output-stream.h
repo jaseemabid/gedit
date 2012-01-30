@@ -57,7 +57,8 @@ struct _GeditDocumentOutputStreamClass
 GType			 gedit_document_output_stream_get_type		(void) G_GNUC_CONST;
 
 GOutputStream		*gedit_document_output_stream_new		(GeditDocument *doc,
-									 GSList        *candidate_encodings);
+									 GSList        *candidate_encodings,
+									 gboolean       ensure_trailing_newline);
 
 GeditDocumentNewlineType gedit_document_output_stream_detect_newline_type (GeditDocumentOutputStream *stream);
 

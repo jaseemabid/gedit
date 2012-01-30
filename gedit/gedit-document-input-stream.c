@@ -47,13 +47,15 @@ struct _GeditDocumentInputStreamPrivate
 
 	guint newline_added : 1;
 	guint is_initialized : 1;
+	guint ensure_trailing_newline : 1;
 };
 
 enum
 {
 	PROP_0,
 	PROP_BUFFER,
-	PROP_NEWLINE_TYPE
+	PROP_NEWLINE_TYPE,
+	PROP_ENSURE_TRAILING_NEWLINE
 };
 
 static gssize     gedit_document_input_stream_read     (GInputStream      *stream,
@@ -83,6 +85,10 @@ gedit_document_input_stream_set_property (GObject      *object,
 			stream->priv->newline_type = g_value_get_enum (value);
 			break;
 
+		case PROP_ENSURE_TRAILING_NEWLINE:
+			stream->priv->ensure_trailing_newline = g_value_get_boolean (value);
+			break;
+
 		default:
 			G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
 			break;
@@ -105,6 +111,10 @@ gedit_document_input_stream_get_property (GObject    *object,
 
 		case PROP_NEWLINE_TYPE:
 			g_value_set_enum (value, stream->priv->newline_type);
+			break;
+
+		case PROP_ENSURE_TRAILING_NEWLINE:
+			g_value_set_boolean (value, stream->priv->ensure_trailing_newline);
 			break;
 
 		default:
@@ -153,6 +163,22 @@ gedit_document_input_stream_class_init (GeditDocumentInputStreamClass *klass)
 							    G_PARAM_STATIC_NAME |
 							    G_PARAM_STATIC_BLURB |
 							    G_PARAM_CONSTRUCT_ONLY));
+
+	/**
+	 *
+	 * The :ensure-trailing-newline property specifies whether or not to
+	 * ensure (enforce) the document ends with a trailing newline.
+	 */
+	g_object_class_install_property (gobject_class,
+	                                 PROP_ENSURE_TRAILING_NEWLINE,
+	                                 g_param_spec_boolean ("ensure-trailing-newline",
+	                                                       "Ensure Trailing Newline",
+	                                                       "Ensure the document ends with a trailing newline",
+	                                                       TRUE,
+	                                                       G_PARAM_READWRITE |
+	                                                       G_PARAM_STATIC_NAME |
+	                                                       G_PARAM_STATIC_BLURB |
+	                                                       G_PARAM_CONSTRUCT_ONLY));
 }
 
 static void
@@ -198,7 +224,8 @@ get_new_line_size (GeditDocumentInputStream *stream)
  */
 GInputStream *
 gedit_document_input_stream_new (GtkTextBuffer            *buffer,
-				 GeditDocumentNewlineType  type)
+				 GeditDocumentNewlineType  type,
+				 gboolean                  ensure_trailing_newline)
 {
 	GeditDocumentInputStream *stream;
 
@@ -207,6 +234,7 @@ gedit_document_input_stream_new (GtkTextBuffer            *buffer,
 	stream = g_object_new (GEDIT_TYPE_DOCUMENT_INPUT_STREAM,
 			       "buffer", buffer,
 			       "newline-type", type,
+			       "ensure-trailing-newline", ensure_trailing_newline,
 			       NULL);
 
 	return G_INPUT_STREAM (stream);
@@ -438,7 +466,8 @@ gedit_document_input_stream_read (GInputStream  *stream,
 					  dstream->priv->pos);
 
 	if (gtk_text_iter_is_end (&iter) &&
-	    !gtk_text_iter_is_start (&iter))
+	    !gtk_text_iter_is_start (&iter) &&
+	    dstream->priv->ensure_trailing_newline)
 	{
 		gssize newline_size;
 
