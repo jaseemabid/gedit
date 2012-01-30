@@ -308,11 +308,10 @@ static GeditWindow *
 gedit_app_osx_create_window_impl (GeditApp *app)
 {
 	GeditWindow *window;
-	
+
 	window = GEDIT_APP_CLASS (gedit_app_osx_parent_class)->create_window (app);
 
 	setup_mac_menu (window);
-
 
 	return window;
 }
@@ -323,18 +322,29 @@ gedit_app_osx_process_window_event_impl (GeditApp    *app,
                                          GdkEvent    *event)
 {
 	NSEvent *nsevent;
-	
+
 	/* For OS X we will propagate the event to NSApp, which handles some OS X
 	 * specific keybindings and the accelerators for the menu
 	 */
 	nsevent = gdk_quartz_event_get_nsevent (event);
 	[NSApp sendEvent:nsevent];
-	
+
 	/* It does not really matter what we return here since it's the last thing
 	 * in the chain. Also we can't get from sendEvent whether the event was
 	 * actually handled by NSApp anyway
 	 */
 	return TRUE;
+}
+
+static void
+gedit_app_osx_ready_impl (GeditApp *app)
+{
+	GtkOSXApplication *osxapp;
+
+	osxapp = g_object_new (GTK_TYPE_OSX_APPLICATION, NULL);
+	gtk_osxapplication_ready (osxapp);
+
+	GEDIT_APP_CLASS (gedit_app_osx_parent_class)->ready (app);
 }
 
 static void
@@ -352,6 +362,7 @@ gedit_app_osx_class_init (GeditAppOSXClass *klass)
 	app_class->quit = gedit_app_osx_quit_impl;
 	app_class->create_window = gedit_app_osx_create_window_impl;
 	app_class->process_window_event = gedit_app_osx_process_window_event_impl;
+	app_class->ready = gedit_app_osx_ready_impl;
 }
 
 static void
@@ -444,7 +455,6 @@ gedit_app_osx_init (GeditAppOSX *app)
 	                  app);
 
 	gtk_osxapplication_set_use_quartz_accelerators (osxapp, FALSE);
-	gtk_osxapplication_ready (osxapp);
 }
 
 /* ex:set ts=8 noet: */

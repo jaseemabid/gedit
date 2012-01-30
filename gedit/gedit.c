@@ -199,6 +199,8 @@ gedit_main (gboolean service)
 		}
 	}
 
+	_gedit_app_ready (app);
+
 	gedit_debug_message (DEBUG_APP, "Start gtk-main");
 	gtk_main ();
 

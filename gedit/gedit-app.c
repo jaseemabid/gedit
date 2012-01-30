@@ -533,6 +533,11 @@ gedit_app_create_window_impl (GeditApp *app)
 }
 
 static void
+gedit_app_ready_impl (GeditApp *app)
+{
+}
+
+static void
 gedit_app_class_init (GeditAppClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
@@ -549,6 +554,7 @@ gedit_app_class_init (GeditAppClass *klass)
 	klass->set_window_title = gedit_app_set_window_title_impl;
 	klass->quit = gedit_app_quit_impl;
 	klass->create_window = gedit_app_create_window_impl;
+	klass->ready = gedit_app_ready_impl;
 
 	g_object_class_install_property (object_class,
 					 PROP_LOCKDOWN,
@@ -1177,6 +1183,14 @@ _gedit_app_get_settings (GeditApp *app)
 	g_return_val_if_fail (GEDIT_IS_APP (app), NULL);
 
 	return app->priv->settings;
+}
+
+void
+_gedit_app_ready (GeditApp *app)
+{
+	g_return_if_fail (GEDIT_IS_APP (app));
+
+	GEDIT_APP_GET_CLASS (app)->ready (app);
 }
 
 /* ex:set ts=8 noet: */
