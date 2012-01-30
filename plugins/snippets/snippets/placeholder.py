@@ -441,10 +441,10 @@ class PlaceholderShell(PlaceholderExpand):
                                         line = unicode(line, locale.getdefaultlocale()[1],
                                                         'replace')
 
-                        self.shell_output += line
-                        self.install_timeout()
+                                self.shell_output += line
+                                self.install_timeout()
 
-                        return True
+                                return True
 
                 self.process_close()
                 return False
