@@ -261,8 +261,6 @@ gedit_zeitgeist_plugin_view_deactivate (GeditViewActivatable *activatable)
 
 	gedit_zeitgeist_plugin_send_event (GEDIT_ZEITGEIST_PLUGIN (activatable),
 	                                   doc, ZEITGEIST_ZG_LEAVE_EVENT);
-
-	g_object_unref (zg_log);
 }
 
 static void
