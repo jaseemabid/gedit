@@ -119,7 +119,7 @@ gedit_app_osx_set_window_title_impl (GeditApp    *app,
 #if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5
 			[native setRepresentedURL:nil];
 #else
-			[native setRepresentedFilename:nil];
+			[native setRepresentedFilename:@""];
 #endif
 		}
 		else
@@ -156,7 +156,7 @@ gedit_app_osx_set_window_title_impl (GeditApp    *app,
 #if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5
 		[native setRepresentedURL:nil];
 #else
-		[native setRepresentedFilename:nil];
+		[native setRepresentedFilename:@""];
 #endif
 		[native setDocumentEdited:false];
 	}
