@@ -71,6 +71,8 @@ struct _GeditViewFramePrivate
 
 	GtkWidget   *slider;
 	GtkWidget   *search_entry;
+	GtkWidget   *go_up_button;
+	GtkWidget   *go_down_button;
 
 	guint        typeselect_flush_timeout;
 	glong        view_scroll_event_id;
@@ -763,6 +765,9 @@ customize_for_search_mode (GeditViewFrame *frame)
 
 		gtk_widget_set_tooltip_text (frame->priv->search_entry,
 		                             _("String you want to search for"));
+
+		gtk_widget_show (frame->priv->go_up_button);
+		gtk_widget_show (frame->priv->go_down_button);
 	}
 	else
 	{
@@ -770,6 +775,9 @@ customize_for_search_mode (GeditViewFrame *frame)
 
 		gtk_widget_set_tooltip_text (frame->priv->search_entry,
 		                             _("Line you want to move the cursor to"));
+
+		gtk_widget_hide (frame->priv->go_up_button);
+		gtk_widget_hide (frame->priv->go_down_button);
 	}
 
 	gtk_entry_set_icon_from_gicon (GTK_ENTRY (frame->priv->search_entry),
@@ -930,7 +938,6 @@ static GtkWidget *
 create_search_widget (GeditViewFrame *frame)
 {
 	GtkWidget *search_widget;
-	GtkWidget *button;
 	GtkStyleContext *context;
 
 	search_widget = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
@@ -977,25 +984,19 @@ create_search_widget (GeditViewFrame *frame)
 	gtk_container_add (GTK_CONTAINER (search_widget),
 	                   frame->priv->search_entry);
 
-	customize_for_search_mode (frame);
-
 	/* Up/Down buttons */
-	button = create_button_from_symbolic ("go-up-symbolic");
-	gtk_widget_show (button);
-
-	gtk_box_pack_start (GTK_BOX (search_widget), button, FALSE, FALSE, 0);
-
-	g_signal_connect (button,
+	frame->priv->go_up_button = create_button_from_symbolic ("go-up-symbolic");
+	gtk_box_pack_start (GTK_BOX (search_widget), frame->priv->go_up_button,
+	                    FALSE, FALSE, 0);
+	g_signal_connect (frame->priv->go_up_button,
 	                  "clicked",
 	                  G_CALLBACK (on_go_up_button_clicked),
 	                  frame);
 
-	button = create_button_from_symbolic ("go-down-symbolic");
-	gtk_widget_show (button);
-
-	gtk_box_pack_start (GTK_BOX (search_widget), button, FALSE, FALSE, 0);
-
-	g_signal_connect (button,
+	frame->priv->go_down_button = create_button_from_symbolic ("go-down-symbolic");
+	gtk_box_pack_start (GTK_BOX (search_widget), frame->priv->go_down_button,
+	                    FALSE, FALSE, 0);
+	g_signal_connect (frame->priv->go_down_button,
 	                  "clicked",
 	                  G_CALLBACK (on_go_down_button_clicked),
 	                  frame);
