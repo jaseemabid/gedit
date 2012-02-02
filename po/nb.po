@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit 3.3.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-25 12:55+0100\n"
-"PO-Revision-Date: 2012-01-25 12:56+0100\n"
+"POT-Creation-Date: 2012-02-02 18:27+0100\n"
+"PO-Revision-Date: 2012-02-02 18:28+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -265,18 +265,27 @@ msgid ""
 msgstr "Om gedit skal utheve tekst i søket."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
+msgid "Ensure Trailing Newline"
+msgstr "Sikre slutt med linjeskift"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
+msgid ""
+"Whether gedit will ensure that documents always end with a trailing newline."
+msgstr "Hvorvidt gedit skal sikre at dokumenter alltid slutter med linjeskift."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
 msgid "Toolbar is Visible"
 msgstr "Verktøylinjen er synlig"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
 msgid "Whether the toolbar should be visible in editing windows."
 msgstr "Om verktøylinjen i redigeringsvinduet skal være synlig."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
 msgid "Notebook Show Tabs Mode"
 msgstr "Vis faner i notisblokk"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
 msgid ""
 "Specifies when to show the notebook tabs. Use \"never\" to never show the "
 "tabs, \"always\" to always show the tabs, and \"auto\" to show the tabs only "
@@ -289,29 +298,29 @@ msgstr ""
 "mellom store og små bokstaver, så sørg for at de oppgis eksakt som de "
 "beskrives her."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
 msgid "Status Bar is Visible"
 msgstr "Statuslinjen er synlig"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
 msgid ""
 "Whether the status bar at the bottom of editing windows should be visible."
 msgstr "Om statuslinjen nederst i redigeringsvinduet skal være synlig."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
 msgid "Side panel is Visible"
 msgstr "Sidelinjen er synlig"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
 msgid ""
 "Whether the side panel at the left of editing windows should be visible."
 msgstr "Om sidelinjen til venstre i redigeringsvinduet skal være synlig."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
 msgid "Maximum Recent Files"
 msgstr "Maksimalt antall nylig åpnede filer"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
 msgid ""
 "Specifies the maximum number of recently opened files that will be displayed "
 "in the \"Recent Files\" submenu."
@@ -319,27 +328,27 @@ msgstr ""
 "Spesifiserer maksimalt antall nylig åpnede filer som vil vises i «Nylig "
 "åpnede filer» undermenyen."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
 msgid "Print Syntax Highlighting"
 msgstr "Skriv ut syntaksutheving"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
 msgid "Whether gedit should print syntax highlighting when printing documents."
 msgstr "Om gedit skal ta med en syntaksutheving ved utskrift av dokumenter."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
 msgid "Print Header"
 msgstr "Skriv ut topptekst"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
 msgid "Whether gedit should include a document header when printing documents."
 msgstr "Om gedig skal ta med en topptekst ved utskrift av dokumenter."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
 msgid "Printing Line Wrapping Mode"
 msgstr "Linjebrytingsmodus ved utskrift"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
 msgid ""
 "Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
 "\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
@@ -351,11 +360,11 @@ msgstr ""
 "hvis du ønsker bryting på tegnnivå. Merk at det skilles mellom store og små "
 "bokstaver så sørg for at de oppgis eksakt som de beskrives her."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
 msgid "Print Line Numbers"
 msgstr "Skriv ut linjenummer"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
 msgid ""
 "If this value is 0, then no line numbers will be inserted when printing a "
 "document. Otherwise, gedit will print line numbers every such number of "
@@ -364,21 +373,21 @@ msgstr ""
 "Hvis verdien er 0 vil ikke linjenummer settes inn ved utskrift av et "
 "dokument. Ellers vil gedit skrive ut linjenummer ved verdiens antall linjer."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
 msgid "Body Font for Printing"
 msgstr "Skrift for kropp ved utskrift"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
 msgid ""
 "Specifies the font to use for a document's body when printing documents."
 msgstr ""
 "Spesifiserer skriften som skal brukes for et dokuments kropp ved utskrift."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
 msgid "Header Font for Printing"
 msgstr "Skrift for topptekst ved utskrift"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
 msgid ""
 "Specifies the font to use for page headers when printing a document. This "
 "will only take effect if the \"Print Header\" option is turned on."
@@ -386,11 +395,11 @@ msgstr ""
 "Spesifiserer skriften som skal brukes for topptekst ved utskrift av et "
 "dokument. Denne vil kun brukes hvis «Skriv ut topptekst» er slått på."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
 msgid "Line Number Font for Printing"
 msgstr "Skrift for linjenummer ved utskrift"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
 msgid ""
 "Specifies the font to use for line numbers when printing. This will only "
 "take effect if the \"Print Line Numbers\" option is non-zero."
@@ -398,11 +407,11 @@ msgstr ""
 "Spesifiserer skriften som skal brukes for linjenummer ved utskrift. Denne "
 "vil kun brukes hvis «Skriv ut linjenummer» er ulik null."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
 msgid "Automatically Detected Encodings"
 msgstr "Automatisk gjenkjente kodinger"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
 msgid ""
 "Sorted list of encodings used by gedit for automatically detecting the "
 "encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
@@ -412,11 +421,11 @@ msgstr ""
 "av kodinger for en fil. «CURRENT» er aktivt locale's koding. Kun gjenkjente "
 "kodinger vil brukes."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
 msgid "Encodings shown in menu"
 msgstr "Kodinger som vises i menyen"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
 msgid ""
 "List of encodings shown in the Character Encoding menu in open/save file "
 "selector. Only recognized encodings are used."
@@ -424,11 +433,11 @@ msgstr ""
 "Liste med kodinger som vises i menyen Tegnkoding i filvelger for åpning/"
 "lagring. Kun gjenkjente kodinger brukes."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:73
 msgid "Active plugins"
 msgstr "Aktive tillegg"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:74
 msgid ""
 "List of active plugins. It contains the \"Location\" of the active plugins. "
 "See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
@@ -1064,7 +1073,7 @@ msgstr "Ikke-lagret dokument %d"
 msgid "Read-Only"
 msgstr "Skrivebeskyttet"
 
-#: ../gedit/gedit-documents-panel.c:1145 ../gedit/gedit-window.c:3848
+#: ../gedit/gedit-documents-panel.c:1143 ../gedit/gedit-window.c:3848
 msgid "Documents"
 msgstr "Dokumenter"
 
@@ -2133,25 +2142,25 @@ msgid "/ on %s"
 msgstr "/ på %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:544
+#: ../gedit/gedit-view-frame.c:546
 msgid "_Wrap Around"
 msgstr "_Bryting"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:554
+#: ../gedit/gedit-view-frame.c:556
 msgid "Match _Entire Word Only"
 msgstr "Kun treff på _hele ord"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:564
+#: ../gedit/gedit-view-frame.c:566
 msgid "_Match Case"
 msgstr "_Skill mellom små/store bokstaver"
 
-#: ../gedit/gedit-view-frame.c:765
+#: ../gedit/gedit-view-frame.c:767
 msgid "String you want to search for"
 msgstr "Streng du vil søke etter"
 
-#: ../gedit/gedit-view-frame.c:772
+#: ../gedit/gedit-view-frame.c:777
 msgid "Line you want to move the cursor to"
 msgstr "Linje du vil flytte markøren til"
 
@@ -3228,7 +3237,7 @@ msgstr "Skriv inn en ny snarvei eller trykk slett for å tømme"
 msgid "Type a new shortcut"
 msgstr "Skriv inn en ny snarvei"
 
-#: ../plugins/snippets/snippets/placeholder.py:594
+#: ../plugins/snippets/snippets/placeholder.py:602
 #, python-format
 msgid ""
 "Execution of the Python command (%s) exceeds the maximum time, execution "
@@ -3236,7 +3245,7 @@ msgid ""
 msgstr ""
 "Kjøring av Python-kommando (%s) overstiger maksimal tid. Kjøring avbrutt."
 
-#: ../plugins/snippets/snippets/placeholder.py:602
+#: ../plugins/snippets/snippets/placeholder.py:610
 #, python-format
 msgid "Execution of the Python command (%s) failed: %s"
 msgstr "Kjøring av Python-kommando (%s) feilet: %s"
