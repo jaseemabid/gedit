@@ -32,6 +32,7 @@
 
 static gchar *user_config_dir        = NULL;
 static gchar *user_cache_dir         = NULL;
+static gchar *user_styles_dir        = NULL;
 static gchar *user_plugins_dir       = NULL;
 static gchar *gedit_data_dir         = NULL;
 static gchar *gedit_locale_dir       = NULL;
@@ -101,6 +102,10 @@ gedit_dirs_init ()
 	user_config_dir = g_build_filename (g_get_user_config_dir (),
 					    "gedit",
 					    NULL);
+	user_styles_dir = g_build_filename (g_get_user_data_dir (),
+					    "gedit",
+					    "styles",
+					    NULL);
 	user_plugins_dir = g_build_filename (g_get_user_data_dir (),
 					     "gedit",
 					     "plugins",
@@ -136,6 +141,12 @@ const gchar *
 gedit_dirs_get_user_cache_dir (void)
 {
 	return user_cache_dir;
+}
+
+const gchar *
+gedit_dirs_get_user_styles_dir (void)
+{
+	return user_styles_dir;
 }
 
 const gchar *

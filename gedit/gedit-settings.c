@@ -23,13 +23,14 @@
 
 #include <string.h>
 
+#include <gtksourceview/gtksourcestyleschememanager.h>
+
 #include "gedit-settings.h"
 #include "gedit-app.h"
 #include "gedit-debug.h"
 #include "gedit-view.h"
 #include "gedit-window.h"
 #include "gedit-plugins-engine.h"
-#include "gedit-style-scheme-manager.h"
 #include "gedit-dirs.h"
 #include "gedit-utils.h"
 #include "gedit-window-private.h"
@@ -209,6 +210,7 @@ on_scheme_changed (GSettings     *settings,
 		   const gchar   *key,
 		   GeditSettings *gs)
 {
+	GtkSourceStyleSchemeManager *manager;
 	GtkSourceStyleScheme *style;
 	gchar *scheme;
 	GList *docs;
@@ -226,18 +228,13 @@ on_scheme_changed (GSettings     *settings,
 	g_free (gs->priv->old_scheme);
 	gs->priv->old_scheme = scheme;
 
-	style = gtk_source_style_scheme_manager_get_scheme (
-			gedit_get_style_scheme_manager (),
-			scheme);
-
+	manager = gtk_source_style_scheme_manager_get_default ();
+	style = gtk_source_style_scheme_manager_get_scheme (manager, scheme);
 	if (style == NULL)
 	{
 		g_warning ("Default style scheme '%s' not found, falling back to 'classic'", scheme);
-		
-		style = gtk_source_style_scheme_manager_get_scheme (
-			gedit_get_style_scheme_manager (),
-			"classic");
 
+		style = gtk_source_style_scheme_manager_get_scheme (manager, "classic");
 		if (style == NULL) 
 		{
 			g_warning ("Style scheme 'classic' cannot be found, check your GtkSourceView installation.");

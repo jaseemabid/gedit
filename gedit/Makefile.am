@@ -123,7 +123,6 @@ NOINST_H_FILES =			\
 	gedit-session.h			\
 	gedit-settings.h		\
 	gedit-status-combo-box.h	\
-	gedit-style-scheme-manager.h	\
 	gedit-tab-label.h		\
 	gedittextregion.h		\
 	gedit-ui.h			\
@@ -208,7 +207,6 @@ libgedit_c_files =			\
 	gedit-settings.c		\
 	gedit-statusbar.c		\
 	gedit-status-combo-box.c	\
-	gedit-style-scheme-manager.c	\
 	gedit-tab.c 			\
 	gedit-tab-label.c		\
 	gedit-utils.c 			\

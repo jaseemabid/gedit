@@ -38,13 +38,13 @@
 #include <stdlib.h>
 
 #include <glib/gi18n.h>
+#include <gtksourceview/gtksourcestyleschememanager.h>
 
 #include "gedit-settings.h"
 #include "gedit-document.h"
 #include "gedit-debug.h"
 #include "gedit-utils.h"
 #include "gedit-language-manager.h"
-#include "gedit-style-scheme-manager.h"
 #include "gedit-document-loader.h"
 #include "gedit-document-saver.h"
 #include "gedit-marshal.h"
@@ -795,15 +795,13 @@ set_encoding (GeditDocument       *doc,
 static GtkSourceStyleScheme *
 get_default_style_scheme (GSettings *editor_settings)
 {
+	GtkSourceStyleSchemeManager *manager;
 	gchar *scheme_id;
 	GtkSourceStyleScheme *def_style;
-	GtkSourceStyleSchemeManager *manager;
 
-	manager = gedit_get_style_scheme_manager ();
+	manager = gtk_source_style_scheme_manager_get_default ();
 	scheme_id = g_settings_get_string (editor_settings, GEDIT_SETTINGS_SCHEME);
-	def_style = gtk_source_style_scheme_manager_get_scheme (manager,
-								scheme_id);
-
+	def_style = gtk_source_style_scheme_manager_get_scheme (manager, scheme_id);
 	if (def_style == NULL)
 	{
 		g_warning ("Default style scheme '%s' cannot be found, falling back to 'classic' style scheme ", scheme_id);

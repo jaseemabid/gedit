@@ -37,6 +37,7 @@
 
 #include <glib/gi18n.h>
 #include <libpeas/peas-extension-set.h>
+#include <gtksourceview/gtksourcestyleschememanager.h>
 
 #include "gedit-app.h"
 #include "gedit-commands.h"
@@ -652,6 +653,8 @@ extension_removed (PeasExtensionSet *extensions,
 static void
 gedit_app_init (GeditApp *app)
 {
+	GtkSourceStyleSchemeManager *manager;
+
 	app->priv = GEDIT_APP_GET_PRIVATE (app);
 
 	/* Load settings */
@@ -660,6 +663,15 @@ gedit_app_init (GeditApp *app)
 
 	/* initial lockdown state */
 	app->priv->lockdown = gedit_settings_get_lockdown (GEDIT_SETTINGS (app->priv->settings));
+
+	/*
+	 * We use the default gtksourceview style scheme manager so that plugins
+	 * can obtain it easily without a gedit specific api, but we need to
+	 * add our search path at startup before the manager is actually used.
+	 */
+	manager = gtk_source_style_scheme_manager_get_default ();
+	gtk_source_style_scheme_manager_append_search_path (manager,
+							    gedit_dirs_get_user_styles_dir ());
 
 	app->priv->extensions = peas_extension_set_new (PEAS_ENGINE (gedit_plugins_engine_get_default ()),
 							GEDIT_TYPE_APP_ACTIVATABLE,
