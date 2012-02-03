@@ -41,7 +41,17 @@ class LanguagesPopup(Gtk.Window):
         self.build()
         self.init_languages(languages)
 
+        self.view.get_selection().select_path((0,))
+
+    def attach_to_widget(self, widget):
+        self.attach_widget = widget
+
+    def popup(self):
+        # show after moving the window to not produce visual flickering
         self.show()
+
+        origin = self.attach_widget.get_window().get_origin()
+        self.move(origin[1], origin[2] - self.get_allocation().height)
 
         self.grab_add()
 
@@ -71,8 +81,6 @@ class LanguagesPopup(Gtk.Window):
                           Gdk.EventMask.PROXIMITY_OUT_MASK |
                           Gdk.EventMask.SCROLL_MASK,
                           None, Gdk.CURRENT_TIME)
-
-        self.view.get_selection().select_path((0,))
 
     def build(self):
         self.model = Gtk.ListStore(str, str, bool)
@@ -970,8 +978,8 @@ class Manager:
         popup = LanguagesPopup(self.current_node.languages)
         popup.set_transient_for(self.dialog)
 
-        origin = button.get_window().get_origin()
-        popup.move(origin[1], origin[2] - popup.get_allocation().height)
+        popup.attach_to_widget(button)
+        popup.popup()
 
         popup.connect('destroy', self.update_languages)
 
