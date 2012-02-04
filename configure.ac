@@ -276,7 +276,7 @@ dnl ================================================================
 LIBZEITGEIST_REQUIRED=0.3.2
 
 AC_ARG_ENABLE([zeitgeist],
-	AS_HELP_STRING([--enable-indicator[=@<:@no/auto/yes@:>@]],[Build with zeitgeist support]),
+	AS_HELP_STRING([--enable-zeitgeist[=@<:@no/auto/yes@:>@]],[Build with zeitgeist support]),
 	[enable_zeitgeist=$enableval],
 	[enable_zeitgeist="auto"])
 
