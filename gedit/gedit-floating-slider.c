@@ -326,11 +326,11 @@ gedit_floating_slider_class_init (GeditFloatingSliderClass *klass)
 	                                    "from (shade (@notebook_tab_gradient_a, 0.97)),\n"
 	                                    "to (shade (@notebook_tab_gradient_b, 0.90)));\n"
 
-	  "padding: 6;\n"
+	  "padding: 6px;\n"
 	  "border-color: shade (@notebook_tab_gradient_b, 0.80);\n"
 
-	  "border-radius: 0 0 3 3;\n"
-	  "border-width: 0 1 1 1;\n"
+	  "border-radius: 0 0 3px 3px;\n"
+	  "border-width: 0 1px 1px 1px;\n"
 	  "border-style: solid;\n"
 	"}\n"
 
