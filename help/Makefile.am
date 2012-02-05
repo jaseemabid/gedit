@@ -65,7 +65,7 @@ DOC_PAGES = \
 	gedit-tabs.page \
 	gedit-undo-recent-action.page \
 	gedit-view-open-files-in-sidepane.page \
-	index.page \
+	index.page
 
 DOC_LINGUAS = ar bg ca cs da de el es eu fi fr gl hu it ja ko oc pt_BR ru sl sv th uk zh_CN zh_HK zh_TW
 dist-hook: doc-dist-hook
