@@ -99,6 +99,29 @@ out:
 	return;
 }
 
+void gedit_debug (GeditDebugSection  section,
+		  const gchar       *file,
+		  gint               line,
+		  const gchar       *function)
+{
+	if (G_UNLIKELY (debug & section))
+	{
+#ifdef ENABLE_PROFILING
+		gdouble seconds;
+
+		g_return_if_fail (timer != NULL);
+
+		seconds = g_timer_elapsed (timer, NULL);
+		g_print ("[%f (%f)] %s:%d (%s)\n",
+			 seconds, seconds - last, file, line, function);
+		last = seconds;
+#else
+		g_print ("%s:%d (%s)\n", file, line, function);
+#endif
+		fflush (stdout);
+	}
+}
+
 void
 gedit_debug_message (GeditDebugSection  section,
 		     const gchar       *file,
@@ -135,29 +158,6 @@ gedit_debug_message (GeditDebugSection  section,
 		fflush (stdout);
 
 		g_free (msg);
-	}
-}
-
-void gedit_debug (GeditDebugSection  section,
-		  const gchar       *file,
-		  gint               line,
-		  const gchar       *function)
-{
-	if (G_UNLIKELY (debug & section))
-	{
-#ifdef ENABLE_PROFILING
-		gdouble seconds;
-
-		g_return_if_fail (timer != NULL);
-
-		seconds = g_timer_elapsed (timer, NULL);		
-		g_print ("[%f (%f)] %s:%d (%s)\n", 
-			 seconds, seconds - last, file, line, function);
-		last = seconds;
-#else
-		g_print ("%s:%d (%s)\n", file, line, function);
-#endif
-		fflush (stdout);
 	}
 }
 
