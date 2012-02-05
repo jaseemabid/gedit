@@ -163,13 +163,15 @@ items = [ \
 
 return align(items) >
 
-struct _$<[1]: return camel_str > {
+struct _$<[1]: return camel_str >
+{
 	${7:GObject} parent;
 
 	$<[1]: return camel_str >Private *priv;
 };
 
-struct _$<[1]: return camel_str >Class {
+struct _$<[1]: return camel_str >Class
+{
 	$7Class parent_class;
 };
 
