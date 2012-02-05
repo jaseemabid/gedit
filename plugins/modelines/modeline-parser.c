@@ -123,6 +123,7 @@ load_language_mappings_group (GKeyFile *key_file, const gchar *group)
 
 	for (i = 0; i < length; i++)
 	{
+		/* steal the name string */
 		gchar *name = keys[i];
 		gchar *id = g_key_file_get_string (key_file, group, name, NULL);
 		g_hash_table_insert (table, name, id);
