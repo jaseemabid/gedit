@@ -42,7 +42,7 @@
  *
  * Debugging output for a section is enabled by setting an environment variable
  * of the same name. For example, setting the <code>GEDIT_DEBUG_PLUGINS</code>
- * environment variable enables all debugging output for the #GEDIT_DEBUG_PLUGINS
+ * environment variable enables all debugging output for the %GEDIT_DEBUG_PLUGINS
  * section. Setting the special environment variable <code>GEDIT_DEBUG</code>
  * enables output for all sections.
  */
@@ -87,52 +87,13 @@ typedef enum {
 #define	DEBUG_PANEL	GEDIT_DEBUG_PANEL,   __FILE__, __LINE__, G_STRFUNC
 #define	DEBUG_DBUS	GEDIT_DEBUG_DBUS,    __FILE__, __LINE__, G_STRFUNC
 
-/**
- * gedit_debug_init:
- *
- * Initializes the debugging subsystem of Gedit.
- *
- * The function checks for the existence of certain environment variables to
- * determine whether to enable output for a debug section. To enable output
- * for a specific debug section, set an environment variable of the same name;
- * e.g. to enable output for the #GEDIT_DEBUG_PLUGINS section, set a
- * <code>GEDIT_DEBUG_PLUGINS</code> environment variable. To enable output
- * for all debug sections, set the <code>GEDIT_DEBUG</code> environment
- * variable.
- *
- * This function must be called before any of the other debug functions are
- * called. It must only be called once.
- */
 void gedit_debug_init (void);
 
-/**
- * gedit_debug:
- * @section: Debug section.
- * @file: Name of the source file containing the call to gedit_debug().
- * @line: Line number within the file named by @file of the call to gedit_debug().
- * @function: Name of the function that is calling gedit_debug().
- *
- * If output for debug section @section is enabled, then logs the trace
- * information @file, @line, and @function.
- */
 void gedit_debug (GeditDebugSection  section,
 		  const gchar       *file,
 		  gint               line,
 		  const gchar       *function);
 
-/**
- * gedit_debug_message:
- * @section: Debug section.
- * @file: Name of the source file containing the call to gedit_debug_message().
- * @line: Line number within the file named by @file of the call to gedit_debug_message().
- * @function: Name of the function that is calling gedit_debug_message().
- * @format: A g_vprintf() format string.
- * @...: The format string arguments.
- *
- * If output for debug section @section is enabled, then logs the trace
- * information @file, @line, and @function along with the message obtained by
- * formatting @format with the given format string arguments.
- */
 void gedit_debug_message (GeditDebugSection  section,
 			  const gchar       *file,
 			  gint               line,
