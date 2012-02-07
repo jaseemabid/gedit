@@ -544,7 +544,7 @@ populate_popup (GtkTextView *textview, GtkMenu *menu, GeditAutomaticSpellChecker
 		return; /* word wasn't misspelled. */
 
 	/* menu separator comes first. */
-	mi = gtk_menu_item_new ();
+	mi = gtk_separator_menu_item_new ();
 	gtk_widget_show (mi);
 	gtk_menu_shell_prepend (GTK_MENU_SHELL (menu), mi);
 
