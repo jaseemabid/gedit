@@ -54,7 +54,7 @@ static GeditDebugSection debug = GEDIT_NO_DEBUG;
  * The function checks for the existence of certain environment variables to
  * determine whether to enable output for a debug section. To enable output
  * for a specific debug section, set an environment variable of the same name;
- * e.g. to enable output for the #GEDIT_DEBUG_PLUGINS section, set a
+ * e.g. to enable output for the %GEDIT_DEBUG_PLUGINS section, set a
  * <code>GEDIT_DEBUG_PLUGINS</code> environment variable. To enable output
  * for all debug sections, set the <code>GEDIT_DEBUG</code> environment
  * variable.
