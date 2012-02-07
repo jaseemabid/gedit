@@ -4,7 +4,7 @@
  *
  * Copyright (C) 1998, 1999 Alex Roberts, Evan Lawrence
  * Copyright (C) 2000, 2001 Chema Celorio, Paolo Maggi
- * Copyright (C) 2002 - 2005 Paolo Maggi  
+ * Copyright (C) 2002 - 2005 Paolo Maggi
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,13 +18,13 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, 
+ * Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA 02111-1307, USA.
  */
- 
+
 /*
- * Modified by the gedit Team, 1998-2005. See the AUTHORS file for a 
- * list of people on the gedit Team.  
+ * Modified by the gedit Team, 1998-2005. See the AUTHORS file for a
+ * list of people on the gedit Team.
  * See the ChangeLog files for a list of changes.
  *
  * $Id$
@@ -169,7 +169,7 @@ gedit_debug_message (GeditDebugSection  section,
 		     const gchar       *format, ...)
 {
 	if (G_UNLIKELY (debug & section))
-	{	
+	{
 		va_list args;
 		gchar *msg;
 
@@ -187,11 +187,11 @@ gedit_debug_message (GeditDebugSection  section,
 
 #ifdef ENABLE_PROFILING
 		seconds = g_timer_elapsed (timer, NULL);
-		g_print ("[%f (%f)] %s:%d (%s) %s\n", 
+		g_print ("[%f (%f)] %s:%d (%s) %s\n",
 			 seconds, seconds - last,  file, line, function, msg);
-		last = seconds;			 
+		last = seconds;
 #else
-		g_print ("%s:%d (%s) %s\n", file, line, function, msg);	
+		g_print ("%s:%d (%s) %s\n", file, line, function, msg);
 #endif
 
 		fflush (stdout);
