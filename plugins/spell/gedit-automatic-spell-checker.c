@@ -437,7 +437,7 @@ build_suggestion_menu (GeditAutomaticSpellChecker *spell, const gchar *word)
 			if (count == 10) 
 			{
 				/* Separator */
-				mi = gtk_menu_item_new ();
+				mi = gtk_separator_menu_item_new ();
 				gtk_widget_show (mi);
 				gtk_menu_shell_append (GTK_MENU_SHELL (menu), mi);
 	
@@ -491,7 +491,7 @@ build_suggestion_menu (GeditAutomaticSpellChecker *spell, const gchar *word)
 	g_slist_free (suggestions);
 
 	/* Separator */
-	mi = gtk_menu_item_new ();
+	mi = gtk_separator_menu_item_new ();
 	gtk_widget_show (mi);
 	gtk_menu_shell_append (GTK_MENU_SHELL (topmenu), mi);
 
