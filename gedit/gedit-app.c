@@ -176,11 +176,11 @@ gedit_app_help_link_id_impl (GeditApp    *app,
 {
 	if (link_id)
 	{
-		return g_strdup_printf ("ghelp:%s?%s", name, link_id);
+		return g_strdup_printf ("help:%s?%s", name, link_id);
 	}
 	else
 	{
-		return g_strdup_printf ("ghelp:%s", name);
+		return g_strdup_printf ("help:%s", name);
 	}
 }
 

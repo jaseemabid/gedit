@@ -1,7 +1,7 @@
-include $(top_srcdir)/gnome-doc-utils.make
+@YELP_HELP_RULES@
 
-DOC_ID = gedit
-DOC_FIGURES = \
+HELP_ID = gedit
+HELP_MEDIA = \
 	figures/gedit-icon.png \
 	figures/gedit-new-external-tool.png \
 	figures/gedit-open-location.png \
@@ -10,7 +10,7 @@ DOC_FIGURES = \
 	figures/gedit-side-pane2.png \
 	figures/gedit-side-pane3.png
 
-DOC_PAGES = \
+HELP_FILES = \
 	gedit-change-color-scheme.page \
 	gedit-change-default-font.page \
 	gedit-close-file.page \
@@ -66,8 +66,5 @@ DOC_PAGES = \
 	gedit-undo-recent-action.page \
 	gedit-view-open-files-in-sidepane.page \
 	index.page
-
-DOC_LINGUAS = ar bg ca cs da de el es eu fi fr gl hu it ja ko oc pt_BR ru sl sv th uk zh_CN zh_HK zh_TW
-dist-hook: doc-dist-hook
 
 -include $(top_srcdir)/git.mk

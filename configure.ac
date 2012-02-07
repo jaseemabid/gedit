@@ -428,8 +428,7 @@ AC_SUBST(GEDIT_PLUGINS_DATA_DIR)
 GEDIT_PLUGINS_LIBS_DIR="$libdir/gedit/plugins"
 AC_SUBST(GEDIT_PLUGINS_LIBS_DIR)
 
-GNOME_DOC_INIT([0.9.0],,
-  [AC_MSG_WARN([[gnome-doc-utils not found: documentation will not be built.]])])
+YELP_HELP_INIT
 
 # Introspection
 GOBJECT_INTROSPECTION_CHECK([0.9.3])

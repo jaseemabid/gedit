@@ -19,7 +19,6 @@ EXTRA_DIST = 			\
 	gedit.doap		\
 	xmldocs.make 		\
 	omf.make		\
-	gnome-doc-utils.make    \
 	intltool-extract.in 	\
 	intltool-merge.in 	\
 	intltool-update.in
