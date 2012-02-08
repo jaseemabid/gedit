@@ -24,6 +24,7 @@
 #include <stdio.h>
 #include <gedit/gedit-language-manager.h>
 #include <gedit/gedit-debug.h>
+#include <gedit/gedit-document.h>
 #include <gedit/gedit-settings.h>
 #include <gedit/gedit-utils.h>
 #include "modeline-parser.h"
@@ -680,7 +681,7 @@ modeline_parser_apply_modeline (GtkSourceView *view)
 	GtkTextIter iter, liter;
 	gint line_count;
 	GSettings *settings;
-	
+
 	options.language_id = NULL;
 	options.set = MODELINE_SET_NONE;
 
@@ -749,17 +750,31 @@ modeline_parser_apply_modeline (GtkSourceView *view)
 	/* Try to set language */
 	if (has_option (&options, MODELINE_SET_LANGUAGE) && options.language_id)
 	{
-		GtkSourceLanguageManager *manager;
-		GtkSourceLanguage *language;
-
-		manager = gedit_get_language_manager ();
-		language = gtk_source_language_manager_get_language
-				(manager, options.language_id);
-
-		if (language != NULL)
+		if (g_ascii_strcasecmp (options.language_id, "text") == 0)
 		{
-			gtk_source_buffer_set_language (GTK_SOURCE_BUFFER (buffer),
-							language);
+			gedit_document_set_language (GEDIT_DOCUMENT (buffer),
+			                             NULL);
+		}
+		else
+		{
+		        GtkSourceLanguageManager *manager;
+		        GtkSourceLanguage *language;
+
+		        manager = gedit_get_language_manager ();
+
+			language = gtk_source_language_manager_get_language
+					(manager, options.language_id);
+			if (language != NULL)
+			{
+				gedit_document_set_language (GEDIT_DOCUMENT (buffer),
+				                             language);
+			}
+			else
+			{
+				gedit_debug_message (DEBUG_PLUGINS,
+						     "Unknown language `%s'",
+						     options.language_id);
+			}
 		}
 	}
 
