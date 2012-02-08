@@ -16,8 +16,8 @@ msgstr ""
 "Project-Id-Version: gedit MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-01-01 14:55+0000\n"
-"PO-Revision-Date: 2012-01-01 23:40+0200\n"
+"POT-Creation-Date: 2012-02-07 21:25+0000\n"
+"PO-Revision-Date: 2012-02-08 00:18+0200\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
@@ -28,17 +28,33 @@ msgstr ""
 "X-Poedit-Language: Estonian\n"
 "X-Poedit-Country: ESTONIA\n"
 
-msgid "Edit text files"
-msgstr "Tekstifailide redigeerimine"
+msgid "gedit"
+msgstr "gedit"
 
 msgid "Text Editor"
 msgstr "Tekstiredaktor"
 
-msgid "gedit"
-msgstr "gedit"
+msgid "Edit text files"
+msgstr "Tekstifailide redigeerimine"
 
 msgid "gedit Text Editor"
 msgstr "Tekstiredaktor gedit"
+
+msgid "Use Default Font"
+msgstr "Vaikekirjatüüpide kasutamine"
+
+msgid ""
+"Whether to use the system's default fixed width font for editing text "
+"instead of a font specific to gedit. If this option is turned off, then the "
+"font named in the \"Editor Font\" option will be used instead of the system "
+"font."
+msgstr ""
+"Kas redigeeritava teksti jaoks kasutatakse gedit'is määratud kirjatüübi "
+"asemel süsteemi vaikimisi kindla laiusega kirjatüüpi. Kui see on märkimata, "
+"siis kasutatakse valikus \"Redaktori kirjatüüp\" määratud kirjatüüpi."
+
+msgid "Editor Font"
+msgstr "Redaktori kirjatüüp"
 
 msgid ""
 "A custom font that will be used for the editing area. This will only take "
@@ -47,110 +63,35 @@ msgstr ""
 "Kohandatud kirjatüüp, mida kasutatakse redaktoris. See väärtus kehtib vaid "
 "siis, kui \"Kasuta teema vaikimisi kirjatüüpi\" on välja lülitatud."
 
-msgid "Active plugins"
-msgstr "Aktiivsed pluginad"
+msgid "Style Scheme"
+msgstr "Laadi skeem"
 
-msgid "Automatic indent"
-msgstr "Automaatne taane"
-
-msgid "Automatically Detected Encodings"
-msgstr "Automaattuvastatud kodeeringud"
-
-msgid "Autosave"
-msgstr "Automaatne salvestamine"
-
-msgid "Autosave Interval"
-msgstr "Automaatse salvestuse intervall"
-
-msgid "Body Font for Printing"
-msgstr "Sisu kirjatüüp printimisel"
+msgid "The ID of a GtkSourceView Style Scheme used to color the text."
+msgstr "Teksti värvimiseks kasutatava GtkSourceView laadiskeemi ID."
 
 msgid "Create Backup Copies"
 msgstr "Varukoopiate loomine"
 
-msgid "Display Line Numbers"
-msgstr "Reanumbrite kuvamine"
+msgid ""
+"Whether gedit should create backup copies for the files it saves. You can "
+"set the backup file extension with the \"Backup Copy Extension\" option."
+msgstr ""
+"Kas gedit peab faili salvestamisel sellest varukoopia tegema või mitte. "
+"Varukoopia faili laiendit saab määrata valikust \"Varukoopia laiend\"."
 
-msgid "Display Right Margin"
-msgstr "Paremveerise kuvamine"
-
-msgid "Editor Font"
-msgstr "Redaktori kirjatüüp"
-
-msgid "Enable Search Highlighting"
-msgstr "Otsingu esiletõstmine lubatud"
-
-msgid "Enable Syntax Highlighting"
-msgstr "Süntaksi esiletõstmine lubatud"
-
-msgid "Encodings shown in menu"
-msgstr "Menüüs näidatavad kooditabelid"
-
-msgid "Header Font for Printing"
-msgstr "Päise kirjatüüp printimisel"
-
-msgid "Highlight Current Line"
-msgstr "Käesolev rida tõstetakse esile"
-
-msgid "Highlight Matching Brackets"
-msgstr "Vastavate sulgude esiletõstmine"
+msgid "Autosave"
+msgstr "Automaatne salvestamine"
 
 msgid ""
-"If this value is 0, then no line numbers will be inserted when printing a "
-"document. Otherwise, gedit will print line numbers every such number of "
-"lines."
+"Whether gedit should automatically save modified files after a time "
+"interval. You can set the time interval with the \"Autosave Interval\" "
+"option."
 msgstr ""
-"Kui selle väärtus on 0, siis dokumendile ei lisata printimisel reanumbreid. "
-"Vastasel juhul lisab gedit dokumendi printimisel reanumbreid siin määratud "
-"sammuga."
+"Kas gedit peab faile etteantud ajaintervalliga automaatselt salvestama. "
+"Intervalli saad määrata sättega \"Automaatse salvestamise intervall\"."
 
-msgid "Insert spaces"
-msgstr "Lisa tühikud"
-
-msgid "Line Number Font for Printing"
-msgstr "Reanumbrite kirjatüüp printimisel"
-
-msgid "Line Wrapping Mode"
-msgstr "Reamurdmisrežiim"
-
-msgid ""
-"List of active plugins. It contains the \"Location\" of the active plugins. "
-"See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
-msgstr ""
-"Aktiivsete pluginate loetelu. See sisaldab aktiivsete pluginate \"asukohti"
-"\". Mida see \"asukoht\" iga plugina jaoks tähendab, seda saab vaadata ."
-"gedit-plugin failist."
-
-msgid ""
-"List of encodings shown in the Character Encoding menu in open/save file "
-"selector. Only recognized encodings are used."
-msgstr ""
-"Kooditabelite menüüs faili avamisel ja salvestamisel näidatavate "
-"kooditabelite loetelu. Kasutatakse ainult teadaolevaid kooditabeleid."
-
-msgid "Maximum Number of Undo Actions"
-msgstr "Suurim tagasivõetavate toimingute arv"
-
-msgid "Maximum Recent Files"
-msgstr "Suurim hiljutiste failide arv"
-
-msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use "
-"\"-1\" for unlimited number of actions."
-msgstr ""
-"Suurim toimingute arv, mida gedit laseb unustada või uuesti täita. Piiramatu "
-"arvu toimingute jaoks kasuta väärtust \"-1\"."
-
-msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use "
-"\"-1\" for unlimited number of actions. Deprecated since 2.12.0"
-msgstr ""
-"Suurim toimingute arv, mida gedit laseb unustada või uuesti täita. Piiramatu "
-"arvu toimingute jaoks kasuta väärtust \"-1\". Aegunud alates versioonist "
-"2.12.0."
-
-msgid "Notebook Show Tabs Mode"
-msgstr "Märkmiku sakkide kuvamine"
+msgid "Autosave Interval"
+msgstr "Automaatse salvestuse intervall"
 
 msgid ""
 "Number of minutes after which gedit will automatically save modified files. "
@@ -159,38 +100,93 @@ msgstr ""
 "Mitmeminutilise intervalliga salvestab gedit failid automaatselt. See kehtib "
 "vaid juhul, kui on sisse lülitatud valik \"Automaatne salvestamine\"."
 
-msgid "Print Header"
-msgstr "Prindi päis"
+msgid "Undo Actions Limit (DEPRECATED)"
+msgstr "Tagasivõetavate toimingute piirang (AEGUNUD)"
 
-msgid "Print Line Numbers"
-msgstr "Prindi reanumbrid"
+msgid ""
+"Maximum number of actions that gedit will be able to undo or redo. Use "
+"\"-1\" for unlimited number of actions. Deprecated since 2.12.0"
+msgstr ""
+"Suurim toimingute arv, mida gedit laseb tagasi võtta või uuesti täita. "
+"Piiramatu arvu toimingute jaoks kasuta väärtust \"-1\". Aegunud alates "
+"versioonist 2.12.0."
 
-msgid "Print Syntax Highlighting"
-msgstr "Süntaksi esiletõstmine printimisel"
+msgid "Maximum Number of Undo Actions"
+msgstr "Suurim tagasivõetavate toimingute arv"
 
-msgid "Printing Line Wrapping Mode"
-msgstr "Reamurdmine printimisel"
+msgid ""
+"Maximum number of actions that gedit will be able to undo or redo. Use "
+"\"-1\" for unlimited number of actions."
+msgstr ""
+"Suurim toimingute arv, mida gedit laseb tagasi võtta või uuesti täita. "
+"Piiramatu arvu toimingute jaoks kasuta väärtust \"-1\"."
 
-msgid "Restore Previous Cursor Position"
-msgstr "Kursori eelmise asukoha taastamine"
+msgid "Line Wrapping Mode"
+msgstr "Reamurdmisrežiim"
+
+msgid ""
+"Specifies how to wrap long lines in the editing area. Use \"none\" for no "
+"wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
+"wrapping at individual character boundaries. Note that the values are case-"
+"sensitive, so make sure they appear exactly as mentioned here."
+msgstr ""
+"Pikkade ridade murdmise määramine redigeerimisel. Väärtuse \"none\" korral "
+"murdmist ei toimu, väärtuse \"word\" korral murtakse sõnavahedest ja "
+"väärtuse \"char\" korral murtakse murdmispiiril asuvast märgist. NB! "
+"Väärtused on tõstutundlikud!"
+
+msgid "Tab Size"
+msgstr "Saki suurus"
+
+msgid ""
+"Specifies the number of spaces that should be displayed instead of Tab "
+"characters."
+msgstr "Tabulaatorimärgi asemel kuvatavate tühikute arvu määramine."
+
+msgid "Insert spaces"
+msgstr "Lisa tühikud"
+
+msgid "Whether gedit should insert spaces instead of tabs."
+msgstr "Kas gedit peab tabulaatorite asemel lisama tühikuid."
+
+msgid "Automatic indent"
+msgstr "Automaatne taane"
+
+msgid "Whether gedit should enable automatic indentation."
+msgstr "Kas gedit peab automaatse taande lubama."
+
+msgid "Display Line Numbers"
+msgstr "Reanumbrite kuvamine"
+
+msgid "Whether gedit should display line numbers in the editing area."
+msgstr "Kas gedit peab redaktoris reanumbreid näitama."
+
+msgid "Highlight Current Line"
+msgstr "Käesolev rida tõstetakse esile"
+
+msgid "Whether gedit should highlight the current line."
+msgstr "Kas gedit peab käesolevat rida esile tõstma."
+
+msgid "Highlight Matching Brackets"
+msgstr "Vastavate sulgude esiletõstmine"
+
+msgid "Whether gedit should highlight matching brackets."
+msgstr "Kas gedit peab vastavuses olevaid sulge esile tõstma."
+
+msgid "Display Right Margin"
+msgstr "Paremveerise kuvamine"
+
+msgid "Whether gedit should display the right margin in the editing area."
+msgstr "Kas gedit peab redigeerimisalas kuvama paremveerist."
 
 msgid "Right Margin Position"
 msgstr "Paremveerise asukoht"
 
-msgid "Side panel is Visible"
-msgstr "Külgpaneel on nähtav"
+msgid "Specifies the position of the right margin."
+msgstr "Paremveerise asukoha määramine."
 
 msgid "Smart Home End"
 msgstr "Nutikad Home/End klahvid"
-
-msgid ""
-"Sorted list of encodings used by gedit for automatically detecting the "
-"encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
-"recognized encodings are used."
-msgstr ""
-"Gediti poolt faili kooditabeli tuvastamiseks kasutatavate kooditabelite "
-"sorditud loetelu. \"CURRENT\" on praegusest lokaadist tulenev kooditabel. "
-"Kasutatakse ainult teadaolevaid kooditabeleid."
 
 msgid ""
 "Specifies how the cursor moves when the HOME and END keys are pressed. Use "
@@ -209,60 +205,42 @@ msgstr ""
 "lõppu, teistkordsel rea algusesse/lõppu, väärtuse \"always\" korral liigub "
 "aga lihtsalt teksti algusesse/lõppu."
 
-msgid ""
-"Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
-"\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
-"individual character boundaries. Note that the values are case-sensitive, so "
-"make sure they appear exactly as mentioned here."
-msgstr ""
-"Pikkade ridade murdmise määramine printimisel. Väärtuse \"none\" korral "
-"murdmist ei toimu, väärtuse \"word\" korral murtakse sõnavahedest ja "
-"väärtuse \"char\" korral murtakse murdmispiiril asuvast märgist. NB! "
-"Väärtused on tõstutundlikud!"
+msgid "Restore Previous Cursor Position"
+msgstr "Kursori eelmise asukoha taastamine"
 
 msgid ""
-"Specifies how to wrap long lines in the editing area. Use \"none\" for no "
-"wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
-"wrapping at individual character boundaries. Note that the values are case-"
-"sensitive, so make sure they appear exactly as mentioned here."
-msgstr ""
-"Pikkade ridade murdmise määramine redigeerimisel. Väärtuse \"none\" korral "
-"murdmist ei toimu, väärtuse \"word\" korral murtakse sõnavahedest ja "
-"väärtuse \"char\" korral murtakse murdmispiiril asuvast märgist. NB! "
-"Väärtused on tõstutundlikud!"
+"Whether gedit should restore the previous cursor position when a file is "
+"loaded."
+msgstr "Kas gedit peab faili laadimisel taastama kursori eelmise asukoha."
+
+msgid "Enable Syntax Highlighting"
+msgstr "Süntaksi esiletõstmine lubatud"
+
+msgid "Whether gedit should enable syntax highlighting."
+msgstr "Kas gedit peab lubama süntaksi esiletõstmist."
+
+msgid "Enable Search Highlighting"
+msgstr "Otsingu esiletõstmine lubatud"
 
 msgid ""
-"Specifies the font to use for a document's body when printing documents."
-msgstr "Dokumendi sisu printimiseks kasutatav kirjatüüp."
+"Whether gedit should highlight all the occurrences of the searched text."
+msgstr "Kas gedit peab kõiki otsitava teksi vastavusi esile tõstma."
+
+msgid "Ensure Trailing Newline"
+msgstr "Faili lõpus on alati reavahetus"
 
 msgid ""
-"Specifies the font to use for line numbers when printing. This will only "
-"take effect if the \"Print Line Numbers\" option is non-zero."
-msgstr ""
-"Printimisel reanumbrite jaoks kasutatav kirjatüüp. Seda kasutatakse ainult "
-"juhul, kui valiku \"Prindi reanumbrid\" väärtus erineb nullist."
+"Whether gedit will ensure that documents always end with a trailing newline."
+msgstr "Kas gedit igal juhul jätab faili lõppu reavahetuse."
 
-msgid ""
-"Specifies the font to use for page headers when printing a document. This "
-"will only take effect if the \"Print Header\" option is turned on."
-msgstr ""
-"Printimisel lehekülje päise jaoks kasutatav kirjatüüp. Seda kasutatakse "
-"ainult juhul, kui valiku \"Prindi päis\" väärtus on märgitud."
+msgid "Toolbar is Visible"
+msgstr "Tööriistariba on nähtav"
 
-msgid ""
-"Specifies the maximum number of recently opened files that will be displayed "
-"in the \"Recent Files\" submenu."
-msgstr ""
-"Suurim hiljuti avatud failide arv, mis kuvatakse \"Hiljutiste failide\" "
-"alammenüüs."
+msgid "Whether the toolbar should be visible in editing windows."
+msgstr "Kas tööriistariba peab redigeerimisaknas nähtav olema."
 
-msgid ""
-"Specifies the number of spaces that should be displayed instead of Tab "
-"characters."
-msgstr "Tabulaatorimärgi asemel kuvatavate tühikute arvu määramine."
-
-msgid "Specifies the position of the right margin."
-msgstr "Paremveerise asukoha määramine."
+msgid "Notebook Show Tabs Mode"
+msgstr "Märkmiku sakkide kuvamine"
 
 msgid ""
 "Specifies when to show the notebook tabs. Use \"never\" to never show the "
@@ -278,95 +256,124 @@ msgstr ""
 msgid "Status Bar is Visible"
 msgstr "Olekuriba on nähtav"
 
-msgid "Style Scheme"
-msgstr "Laadi skeem"
-
-msgid "Tab Size"
-msgstr "Saki suurus"
-
-msgid "The ID of a GtkSourceView Style Scheme used to color the text."
-msgstr "Teksti värvimiseks kasutatava GtkSourceView laadiskeemi ID."
-
-msgid "Toolbar is Visible"
-msgstr "Tööriistariba on nähtav"
-
-msgid "Undo Actions Limit (DEPRECATED)"
-msgstr "Unustatavate toimingute piirang (AEGUNUD)"
-
-msgid "Use Default Font"
-msgstr "Vaikekirjatüüpide kasutamine"
-
 msgid ""
-"Whether gedit should automatically save modified files after a time "
-"interval. You can set the time interval with the \"Autosave Interval\" "
-"option."
-msgstr ""
-"Kas gedit peab faile etteantud ajaintervalliga automaatselt salvestama. "
-"Intervalli saad määrata sättega \"Automaatse salvestamise intervall\"."
+"Whether the status bar at the bottom of editing windows should be visible."
+msgstr "Kas redaktoriaknast allpool olev olekuriba peab olema nähtav."
 
-msgid ""
-"Whether gedit should create backup copies for the files it saves. You can "
-"set the backup file extension with the \"Backup Copy Extension\" option."
-msgstr ""
-"Kas gedit peab faili salvestamisel sellest varukoopia tegema või mitte. "
-"Varukoopia faili laiendit saab määrata valikust \"Varukoopia laiend\"."
-
-msgid "Whether gedit should display line numbers in the editing area."
-msgstr "Kas gedit peab redaktoris reanumbreid näitama."
-
-msgid "Whether gedit should display the right margin in the editing area."
-msgstr "Kas gedit peab redigeerimisalas kuvama paremveerist."
-
-msgid "Whether gedit should enable automatic indentation."
-msgstr "Kas gedit peab automaatse taande lubama."
-
-msgid "Whether gedit should enable syntax highlighting."
-msgstr "Kas gedit peab lubama süntaksi esiletõstmist."
-
-msgid ""
-"Whether gedit should highlight all the occurrences of the searched text."
-msgstr "Kas gedit peab kõiki otsitava teksi vastavusi esile tõstma."
-
-msgid "Whether gedit should highlight matching brackets."
-msgstr "Kas gedit peab vastavuses olevaid sulge esile tõstma."
-
-msgid "Whether gedit should highlight the current line."
-msgstr "Kas gedit peab käesolevat rida esile tõstma."
-
-msgid "Whether gedit should include a document header when printing documents."
-msgstr "Kas gedit peab kaasama printimisel ka dokumendi päise."
-
-msgid "Whether gedit should insert spaces instead of tabs."
-msgstr "Kas gedit peab tabulaatorite asemel lisama tühikuid."
-
-msgid "Whether gedit should print syntax highlighting when printing documents."
-msgstr "Kas gedit peab printimisel kasutama süntaksi esiletõstmist."
-
-msgid ""
-"Whether gedit should restore the previous cursor position when a file is "
-"loaded."
-msgstr "Kas gedit peab faili laadimisel taastama kursori eelmise asukoha."
+msgid "Side panel is Visible"
+msgstr "Külgpaneel on nähtav"
 
 msgid ""
 "Whether the side panel at the left of editing windows should be visible."
 msgstr "Kas redaktoriaknast vasakul pool olev külgpaneel peab olema nähtav."
 
-msgid ""
-"Whether the status bar at the bottom of editing windows should be visible."
-msgstr "Kas redaktoriaknast allpool olev olekuriba peab olema nähtav."
-
-msgid "Whether the toolbar should be visible in editing windows."
-msgstr "Kas tööriistariba peab redigeerimisaknas nähtav olema."
+msgid "Maximum Recent Files"
+msgstr "Suurim hiljutiste failide arv"
 
 msgid ""
-"Whether to use the system's default fixed width font for editing text "
-"instead of a font specific to gedit. If this option is turned off, then the "
-"font named in the \"Editor Font\" option will be used instead of the system "
-"font."
+"Specifies the maximum number of recently opened files that will be displayed "
+"in the \"Recent Files\" submenu."
 msgstr ""
-"Kas redigeeritava teksti jaoks kasutatakse gedit'is määratud kirjatüübi "
-"asemel süsteemi vaikimisi kindla laiusega kirjatüüpi. Kui see on märkimata, "
-"siis kasutatakse valikus \"Redaktori kirjatüüp\" määratud kirjatüüpi."
+"Suurim hiljuti avatud failide arv, mis kuvatakse \"Hiljutiste failide\" "
+"alammenüüs."
+
+msgid "Print Syntax Highlighting"
+msgstr "Süntaksi esiletõstmine printimisel"
+
+msgid "Whether gedit should print syntax highlighting when printing documents."
+msgstr "Kas gedit peab printimisel kasutama süntaksi esiletõstmist."
+
+msgid "Print Header"
+msgstr "Prindi päis"
+
+msgid "Whether gedit should include a document header when printing documents."
+msgstr "Kas gedit peab kaasama printimisel ka dokumendi päise."
+
+msgid "Printing Line Wrapping Mode"
+msgstr "Reamurdmine printimisel"
+
+msgid ""
+"Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
+"\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
+"individual character boundaries. Note that the values are case-sensitive, so "
+"make sure they appear exactly as mentioned here."
+msgstr ""
+"Pikkade ridade murdmise määramine printimisel. Väärtuse \"none\" korral "
+"murdmist ei toimu, väärtuse \"word\" korral murtakse sõnavahedest ja "
+"väärtuse \"char\" korral murtakse murdmispiiril asuvast märgist. NB! "
+"Väärtused on tõstutundlikud!"
+
+msgid "Print Line Numbers"
+msgstr "Prindi reanumbrid"
+
+msgid ""
+"If this value is 0, then no line numbers will be inserted when printing a "
+"document. Otherwise, gedit will print line numbers every such number of "
+"lines."
+msgstr ""
+"Kui selle väärtus on 0, siis dokumendile ei lisata printimisel reanumbreid. "
+"Vastasel juhul lisab gedit dokumendi printimisel reanumbreid siin määratud "
+"sammuga."
+
+msgid "Body Font for Printing"
+msgstr "Sisu kirjatüüp printimisel"
+
+msgid ""
+"Specifies the font to use for a document's body when printing documents."
+msgstr "Dokumendi sisu printimiseks kasutatav kirjatüüp."
+
+msgid "Header Font for Printing"
+msgstr "Päise kirjatüüp printimisel"
+
+msgid ""
+"Specifies the font to use for page headers when printing a document. This "
+"will only take effect if the \"Print Header\" option is turned on."
+msgstr ""
+"Printimisel lehekülje päise jaoks kasutatav kirjatüüp. Seda kasutatakse "
+"ainult juhul, kui valiku \"Prindi päis\" väärtus on märgitud."
+
+msgid "Line Number Font for Printing"
+msgstr "Reanumbrite kirjatüüp printimisel"
+
+msgid ""
+"Specifies the font to use for line numbers when printing. This will only "
+"take effect if the \"Print Line Numbers\" option is non-zero."
+msgstr ""
+"Printimisel reanumbrite jaoks kasutatav kirjatüüp. Seda kasutatakse ainult "
+"juhul, kui valiku \"Prindi reanumbrid\" väärtus erineb nullist."
+
+msgid "Automatically Detected Encodings"
+msgstr "Automaattuvastatud kodeeringud"
+
+msgid ""
+"Sorted list of encodings used by gedit for automatically detecting the "
+"encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
+"recognized encodings are used."
+msgstr ""
+"Gediti poolt faili kooditabeli tuvastamiseks kasutatavate kooditabelite "
+"sorditud loetelu. \"CURRENT\" on praegusest lokaadist tulenev kooditabel. "
+"Kasutatakse ainult teadaolevaid kooditabeleid."
+
+msgid "Encodings shown in menu"
+msgstr "Menüüs näidatavad kooditabelid"
+
+msgid ""
+"List of encodings shown in the Character Encoding menu in open/save file "
+"selector. Only recognized encodings are used."
+msgstr ""
+"Kooditabelite menüüs faili avamisel ja salvestamisel näidatavate "
+"kooditabelite loetelu. Kasutatakse ainult teadaolevaid kooditabeleid."
+
+msgid "Active plugins"
+msgstr "Aktiivsed pluginad"
+
+msgid ""
+"List of active plugins. It contains the \"Location\" of the active plugins. "
+"See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
+msgstr ""
+"Aktiivsete pluginate loetelu. See sisaldab aktiivsete pluginate \"asukohti"
+"\". Mida see \"asukoht\" iga plugina jaoks tähendab, seda saab vaadata ."
+"gedit-plugin failist."
 
 msgid "Log Out _without Saving"
 msgstr "Logi välja _ilma salvestamata"
@@ -504,11 +511,11 @@ msgid "_Encoding"
 msgstr "_Kodeering"
 
 #. ex:set ts=8 noet:
-msgid "A_vailable encodings:"
-msgstr "_Saadaolevad kooditabelid:"
-
 msgid "Character encodings"
 msgstr "Kooditabelid"
+
+msgid "A_vailable encodings:"
+msgstr "_Saadaolevad kooditabelid:"
 
 msgid "E_ncodings shown in menu:"
 msgstr "_Menüüs näidatavad kooditabelid:"
@@ -519,6 +526,12 @@ msgstr "Redaktoris kasutatava kirjatüübi valimiseks klõpsa sellel nupul"
 #, c-format
 msgid "_Use the system fixed width font (%s)"
 msgstr "Kasutatakse süsteemset fikseeritud laiusega _kirjatüüpi (%s)"
+
+#, c-format
+msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
+msgstr ""
+"Kataloogi '%s' pole võimalik luua: tõrge funktsioonis g_mkdir_with_parents"
+"(): %s"
 
 msgid "The selected color scheme cannot be installed."
 msgstr "Valitud värviskeemi pole võimalik paigaldada."
@@ -543,36 +556,26 @@ msgid "gedit Preferences"
 msgstr "gedit'i eelistused"
 
 #. ex:set ts=8 noet:
-msgid "Color Scheme"
-msgstr "Värviskeem"
+msgid "Preferences"
+msgstr "Eelistused"
 
-msgid "Create a _backup copy of files before saving"
-msgstr "Failist tehakse enne salvestamist _varukoopia"
+msgid "_Display line numbers"
+msgstr "_Reanumbrid on nähtaval"
 
 msgid "Display right _margin at column:"
 msgstr "_Paremveeris on nähtaval veerus:"
 
-#. ex:set ts=8 noet:
-msgid "Do not _split words over two lines"
-msgstr "Üle _kahe rea sõnu ei murta"
-
-msgid "Editor"
-msgstr "Redaktor"
-
-msgid "Editor _font: "
-msgstr "_Redaktori kirjatüüp: "
+msgid "Text Wrapping"
+msgstr "Tekstimurdmine"
 
 msgid "Enable text _wrapping"
 msgstr "_Tekstmurdmine on lubatud"
 
-msgid "File Saving"
-msgstr "Failide salvestamine"
+msgid "Do not _split words over two lines"
+msgstr "Üle _kahe rea sõnu ei murta"
 
-msgid "Font"
-msgstr "Kirjatüüp"
-
-msgid "Font & Colors"
-msgstr "Kirjatüübid ja värvused"
+msgid "Highlighting"
+msgstr "Esiletõstmine"
 
 msgid "Highlight current _line"
 msgstr "Käesolev rida tõstetakse _esile"
@@ -580,48 +583,67 @@ msgstr "Käesolev rida tõstetakse _esile"
 msgid "Highlight matching _brackets"
 msgstr "Vastavuses olevate sul_gude esiletõstmine"
 
-msgid "Highlighting"
-msgstr "Esiletõstmine"
-
-msgid "Insert _spaces instead of tabs"
-msgstr "Tabulaatorite ase_mel lisatakse tühikud"
-
-msgid "Pick the editor font"
-msgstr "Redaktori kirjatüübi valimine"
-
-msgid "Plugins"
-msgstr "Pluginad"
-
-msgid "Preferences"
-msgstr "Eelistused"
+msgid "View"
+msgstr "Vaade"
 
 msgid "Tab Stops"
 msgstr "Tabelduse sammud"
 
-msgid "Text Wrapping"
-msgstr "Tekstimurdmine"
+msgid "_Tab width:"
+msgstr "_Tabulaatori laius:"
 
-msgid "View"
-msgstr "Vaade"
-
-msgid "_Add..."
-msgstr "_Lisa..."
-
-msgid "_Autosave files every"
-msgstr "Failid salvestatakse _automaatselt iga"
-
-msgid "_Display line numbers"
-msgstr "_Reanumbrid on nähtaval"
+msgid "Insert _spaces instead of tabs"
+msgstr "Tabulaatorite ase_mel lisatakse tühikud"
 
 msgid "_Enable automatic indentation"
 msgstr "Automaatne taa_ne on lubatud"
 
-msgid "_Tab width:"
-msgstr "_Tabulaatori laius:"
+msgid "File Saving"
+msgstr "Failide salvestamine"
+
+msgid "Create a _backup copy of files before saving"
+msgstr "Failist tehakse enne salvestamist _varukoopia"
+
+msgid "_Autosave files every"
+msgstr "Failid salvestatakse _automaatselt iga"
 
 msgid "_minutes"
 msgstr "minuti _järel"
 
+msgid "Editor"
+msgstr "Redaktor"
+
+msgid "Font"
+msgstr "Kirjatüüp"
+
+msgid "Editor _font: "
+msgstr "_Redaktori kirjatüüp: "
+
+msgid "Pick the editor font"
+msgstr "Redaktori kirjatüübi valimine"
+
+msgid "Color Scheme"
+msgstr "Värviskeem"
+
+msgid "Install scheme"
+msgstr "Skeemi paigaldamine"
+
+msgid "toolbutton1"
+msgstr "tööriistanupp1"
+
+msgid "Uninstall scheme"
+msgstr "Skeemi eemaldamine"
+
+msgid "toolbutton2"
+msgstr "tööriistanupp2"
+
+msgid "Font & Colors"
+msgstr "Kirjatüübid ja värvused"
+
+msgid "Plugins"
+msgstr "Pluginad"
+
+#. ex:set ts=8 noet:
 msgid "Replace"
 msgstr "Asenda"
 
@@ -631,30 +653,32 @@ msgstr "Asenda _kõik"
 msgid "_Replace"
 msgstr "_Asenda"
 
-#. ex:set ts=8 noet:
-msgid "Match _entire word only"
-msgstr "Kogu sõ_na peab vastavuses olema"
-
 msgid "Replace All"
 msgstr "Asenda kõik"
+
+msgid "_Search for: "
+msgstr "_Otsitav tekst:"
 
 msgid "Replace _with: "
 msgstr "Asendada _tekstiga:"
 
-msgid "Search _backwards"
-msgstr "Otsitakse tagantpoolt _ettepoole"
-
 msgid "_Match case"
 msgstr "_Tõstutundlik"
 
-msgid "_Search for: "
-msgstr "_Otsitav tekst:"
+msgid "Match _entire word only"
+msgstr "Kogu sõ_na peab vastavuses olema"
+
+msgid "Search _backwards"
+msgstr "Otsitakse tagantpoolt _ettepoole"
 
 msgid "_Wrap around"
 msgstr "_Lõppu (või algusese) jõudmisel otsingut ei katkestata"
 
 msgid "There was an error displaying the help."
 msgstr "Abiteabe kuvamisel tekkis viga."
+
+msgid "About gedit"
+msgstr "Geditist lähemalt"
 
 #, c-format
 msgid "%s: invalid encoding.\n"
@@ -1296,29 +1320,35 @@ msgstr "Lehekülg %N/%Q"
 msgid "Preparing..."
 msgstr "Ettevalmistused..."
 
-msgid "Fonts"
-msgstr "Kirjatüübid"
-
-msgid "He_aders and footers:"
-msgstr "Päised ja _jalused:"
-
-msgid "Line Numbers"
-msgstr "Reanumbrid"
-
-msgid "Page header"
-msgstr "Lehekülje päis"
-
-msgid "Print line nu_mbers"
-msgstr "Prinditakse koos rea_numbritega"
-
-msgid "Print page _headers"
-msgstr "Prinditakse koos lehekülje _päistega"
+#. ex:set ts=8 noet:
+msgid "Syntax Highlighting"
+msgstr "Süntaksi esiletõstmine"
 
 msgid "Print synta_x highlighting"
 msgstr "Printimine _esiletõstetud süntaksiga"
 
-msgid "Syntax Highlighting"
-msgstr "Süntaksi esiletõstmine"
+msgid "Line Numbers"
+msgstr "Reanumbrid"
+
+msgid "Print line nu_mbers"
+msgstr "Prinditakse koos rea_numbritega"
+
+#. 'Number every' from 'Number every 3 lines' in the 'Text Editor' tab of the print preferences.
+msgid "_Number every"
+msgstr "_Nummerdamine üle"
+
+#. 'lines' from 'Number every 3 lines' in the 'Text Editor' tab of the print preferences.
+msgid "lines"
+msgstr "rea"
+
+msgid "Page header"
+msgstr "Lehekülje päis"
+
+msgid "Print page _headers"
+msgstr "Prinditakse koos lehekülje _päistega"
+
+msgid "Fonts"
+msgstr "Kirjatüübid"
 
 msgid "_Body:"
 msgstr "S_isu:"
@@ -1326,16 +1356,11 @@ msgstr "S_isu:"
 msgid "_Line numbers:"
 msgstr "_Reanumbrid:"
 
-#. 'Number every' from 'Number every 3 lines' in the 'Text Editor' tab of the print preferences.
-msgid "_Number every"
-msgstr "_Nummerdamine üle"
+msgid "He_aders and footers:"
+msgstr "Päised ja _jalused:"
 
 msgid "_Restore Default Fonts"
 msgstr "_Taasta vaikimisi kirjatüübid"
-
-#. 'lines' from 'Number every 3 lines' in the 'Text Editor' tab of the print preferences.
-msgid "lines"
-msgstr "rea"
 
 msgid "Show the previous page"
 msgstr "Eelmise lehekülje näitamine"
@@ -1405,12 +1430,6 @@ msgid "There is a tab with errors"
 msgid_plural "There are %d tabs with errors"
 msgstr[0] "Ühes sakis esinesid vead"
 msgstr[1] "%d sakis esinesid vead"
-
-#, c-format
-msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
-msgstr ""
-"Kataloogi '%s' pole võimalik luua: tõrge funktsioonis g_mkdir_with_parents"
-"(): %s"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
@@ -1543,10 +1562,10 @@ msgid "Print the current page"
 msgstr "Käesoleva lehekülje printimine"
 
 msgid "Undo the last action"
-msgstr "Viimase tegevuse unustamine"
+msgstr "Viimase tegevuse tagasivõtmine"
 
 msgid "Redo the last undone action"
-msgstr "Unustatud tegevuse uuestitegemine"
+msgstr "Tagasi võetud tegevuse uuesti tegemine"
 
 msgid "Cut the selection"
 msgstr "Valiku lõikamine"
@@ -1774,9 +1793,6 @@ msgstr "Sulgude vastavusi ei leitud"
 msgid "Bracket match found on line: %d"
 msgstr "Sulgude vastavus leiti real %d"
 
-msgid "About gedit"
-msgstr "Geditist lähemalt"
-
 #. ex:set ts=8 noet:
 msgid "Change Case"
 msgstr "Suur- ja väiketähtede muutmine"
@@ -1812,11 +1828,11 @@ msgid "Capitalize the first letter of each selected word"
 msgstr "Iga valitud sõna esitähe muutmine suurtäheks"
 
 #. ex:set ts=8 noet:
-msgid "Check for latest version of gedit"
-msgstr "Viimase Gediti versiooni kontrollimine"
-
 msgid "Check update"
 msgstr "Uuenduse kontrollimine"
+
+msgid "Check for latest version of gedit"
+msgstr "Viimase Gediti versiooni kontrollimine"
 
 msgid "There was an error displaying the URI."
 msgstr "URI kuvamisel tekkis viga."
@@ -1845,6 +1861,10 @@ msgstr "Eiratav versioon"
 msgid "Version to ignore until a newer version is released."
 msgstr "Kuni uuema versiooni väljastamiseni eiratav versioon"
 
+#. ex:set ts=8 noet:
+msgid "Document Statistics"
+msgstr "Dokumendi statistika"
+
 msgid ""
 "Analyzes the current document and reports the number of words, lines, "
 "characters and non-space characters in it."
@@ -1852,47 +1872,41 @@ msgstr ""
 "Käesoleva dokumendi analüüsimine, selles sõnade, ridade, märkide ja mitte-"
 "tühik märkide arvu leidmine ning tulemuse väljastamine."
 
-msgid "Document Statistics"
-msgstr "Dokumendi statistika"
-
 msgid "_Document Statistics"
 msgstr "_Dokumendi statistika"
 
 msgid "Get statistical information on the current document"
 msgstr "Käesoleva dokumendi kohta statistiliste andmete hankimine"
 
-#. ex:set ts=8 noet:
-#. ex:ts=4:et:
-#. ex:ts=8:noet:
-msgid "    "
-msgstr "    "
-
-msgid "Bytes"
-msgstr "Baite"
-
-msgid "Characters (no spaces)"
-msgstr "Märke (tühikuteta)"
-
-msgid "Characters (with spaces)"
-msgstr "Märke (tühikutega)"
-
-msgid "Document"
-msgstr "Dokumendis"
+msgid "_Update"
+msgstr "_Uuenda"
 
 msgid "File Name"
 msgstr "Faili nimi"
 
-msgid "Lines"
-msgstr "Ridu"
+msgid "    "
+msgstr "    "
+
+msgid "Document"
+msgstr "Dokumendis"
 
 msgid "Selection"
 msgstr "Valikus"
 
+msgid "Lines"
+msgstr "Ridu"
+
 msgid "Words"
 msgstr "Sõnu"
 
-msgid "_Update"
-msgstr "_Uuenda"
+msgid "Characters (with spaces)"
+msgstr "Märke (tühikutega)"
+
+msgid "Characters (no spaces)"
+msgstr "Märke (tühikuteta)"
+
+msgid "Bytes"
+msgstr "Baite"
 
 msgid "Build"
 msgstr "Ehitamine"
@@ -1900,11 +1914,11 @@ msgstr "Ehitamine"
 msgid "Run \"make\" in the document directory"
 msgstr "\"make\" käivitamine dokumendikataloogis"
 
-msgid "Open a terminal in the document location"
-msgstr "Terminali avamine dokumendi kataloogis"
-
 msgid "Open terminal here"
 msgstr "Terminali avamine siin"
+
+msgid "Open a terminal in the document location"
+msgstr "Terminali avamine dokumendi kataloogis"
 
 msgid "Remove trailing spaces"
 msgstr "Eemalda realõputühikud"
@@ -1912,20 +1926,20 @@ msgstr "Eemalda realõputühikud"
 msgid "Remove useless trailing spaces in your file"
 msgstr "Kasutute realõputühikute eemaldamine failist"
 
-msgid "Execute a custom command and put its output in a new document"
-msgstr "Kohandatud käsu käivitamine ja selle väljundi lisamine dokumendile"
-
 msgid "Run command"
 msgstr "Käivita käsk"
 
-msgid "Execute external commands and shell scripts."
-msgstr "Väliste käskude ja skriptide käivitamine."
+msgid "Execute a custom command and put its output in a new document"
+msgstr "Kohandatud käsu käivitamine ja selle väljundi lisamine dokumendile"
 
 msgid "External Tools"
 msgstr "Välised tööriistad"
 
-msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
-msgstr "Pango kirjatüübi nimi. Näiteks \"Sans 12\" või \"Monospace Bold 14\"."
+msgid "Execute external commands and shell scripts."
+msgstr "Väliste käskude ja skriptide käivitamine."
+
+msgid "Whether to use the system font"
+msgstr "Kas kasutatakse süsteemset kirjatüüpi või mitte"
 
 msgid ""
 "If true, the external tools will use the desktop-global standard font if "
@@ -1934,8 +1948,8 @@ msgstr ""
 "Kui märgitud, kasutavad välised tööriistad ületöölaualist standardfonti, kui "
 "see on püsisammfont (või muul juhul kõige sarnasema nimega püsisammfonti)."
 
-msgid "Whether to use the system font"
-msgstr "Kas kasutatakse süsteemset kirjatüüpi või mitte"
+msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
+msgstr "Pango kirjatüübi nimi. Näiteks \"Sans 12\" või \"Monospace Bold 14\"."
 
 #, python-format
 msgid "Could not execute command: %s"
@@ -1975,29 +1989,27 @@ msgstr "Sisesta uus kiirklahv"
 msgid "Stopped."
 msgstr "Seisatud."
 
-msgid "Add Tool"
-msgstr "Tööriista lisamine"
-
-msgid "Add a new tool"
-msgstr "Uue tööriista lisamine"
-
+#. ex:ts=4:et:
 msgid "All documents"
 msgstr "Kõigile dokumentidele"
 
 msgid "All documents except untitled ones"
 msgstr "Nimega dokumentidele"
 
-msgid "Append to current document"
-msgstr "Lisatakse käesoleva dokumendi lõppu"
+msgid "Local files only"
+msgstr "Kohalikele failidele"
 
-msgid "Create new document"
-msgstr "Moodustab uue dokumendi"
+msgid "Remote files only"
+msgstr "Kaugfailidele"
+
+msgid "Untitled documents only"
+msgstr "Pealkirjata dokumentidele"
+
+msgid "Nothing"
+msgstr "Puudub"
 
 msgid "Current document"
 msgstr "Käesolev dokument"
-
-msgid "Current line"
-msgstr "Käesolev rida"
 
 msgid "Current selection"
 msgstr "Käesolev valik"
@@ -2005,32 +2017,20 @@ msgstr "Käesolev valik"
 msgid "Current selection (default to document)"
 msgstr "Käesolev valik (dokumendile vaikimisi)"
 
+msgid "Current line"
+msgstr "Käesolev rida"
+
 msgid "Current word"
 msgstr "Käesolev sõna"
 
 msgid "Display in bottom pane"
 msgstr "Kuvatakse alumisel paanil"
 
-msgid "Insert at cursor position"
-msgstr "Lisatakse kursori asukohale"
+msgid "Create new document"
+msgstr "Moodustab uue dokumendi"
 
-msgid "Local files only"
-msgstr "Kohalikele failidele"
-
-msgid "Manage External Tools"
-msgstr "Väliste tööriistade haldamine"
-
-msgid "Nothing"
-msgstr "Puudub"
-
-msgid "Remote files only"
-msgstr "Kaugfailidele"
-
-msgid "Remove Tool"
-msgstr "Tööriista eemaldamine"
-
-msgid "Remove selected tool"
-msgstr "Valitud tööriista eemaldamine"
+msgid "Append to current document"
+msgstr "Lisatakse käesoleva dokumendi lõppu"
 
 msgid "Replace current document"
 msgstr "Asendab käesoleva dokumendi"
@@ -2038,35 +2038,50 @@ msgstr "Asendab käesoleva dokumendi"
 msgid "Replace current selection"
 msgstr "Asendab käesoleva valiku"
 
-msgid "Revert Tool"
-msgstr "Tööriista taastamine"
+msgid "Insert at cursor position"
+msgstr "Lisatakse kursori asukohale"
+
+msgid "Manage External Tools"
+msgstr "Väliste tööriistade haldamine"
+
+msgid "_Tools:"
+msgstr "_Tööriistad:"
+
+msgid "Add a new tool"
+msgstr "Uue tööriista lisamine"
+
+msgid "Add Tool"
+msgstr "Tööriista lisamine"
+
+msgid "Remove selected tool"
+msgstr "Valitud tööriista eemaldamine"
+
+msgid "Remove Tool"
+msgstr "Tööriista eemaldamine"
 
 msgid "Revert tool"
 msgstr "Tööriista taastamine"
 
-msgid "Untitled documents only"
-msgstr "Pealkirjata dokumentidele"
-
-msgid "_Applicability:"
-msgstr "_Rakendub:"
+msgid "Revert Tool"
+msgstr "Tööriista taastamine"
 
 msgid "_Edit:"
 msgstr "_Redaktor:"
 
-msgid "_Input:"
-msgstr "S_isend:"
+msgid "_Applicability:"
+msgstr "_Rakendub:"
 
 msgid "_Output:"
 msgstr "_Väljund:"
 
+msgid "_Input:"
+msgstr "S_isend:"
+
 msgid "_Save:"
 msgstr "_Salvesta:"
 
-msgid "_Shortcut Key:"
+msgid "Shortcut _Key:"
 msgstr "_Kiirklahv:"
-
-msgid "_Tools:"
-msgstr "_Tööriistad:"
 
 msgid "Manage _External Tools..."
 msgstr "Halda _väliseid tööriistu..."
@@ -2084,11 +2099,11 @@ msgid "Shell Output"
 msgstr "Kestprogrammi väljund"
 
 #. ex:ts=4:et:
-msgid "Easy file access from the side panel"
-msgstr "Külgpaneeli kaudu hõlbus ligipääs failidele"
-
 msgid "File Browser Panel"
 msgstr "Failisirvimispaneel"
+
+msgid "Easy file access from the side panel"
+msgstr "Külgpaneeli kaudu hõlbus ligipääs failidele"
 
 msgid "File System"
 msgstr "Failisüsteem"
@@ -2286,20 +2301,45 @@ msgid "Could not mount volume: %s"
 msgstr "Ketast pole võimalik haakida: %s"
 
 #. ex:ts=8:noet:
-msgid "Enable Restore of Remote Locations"
-msgstr "Võrgukohtadelt taastamise lubamine"
+msgid "Open With Tree View"
+msgstr "Avamine koos puuvaatega"
 
-msgid "File Browser Filter Mode"
-msgstr "Failisirvija filtreerimisrežiim"
-
-msgid "File Browser Filter Pattern"
-msgstr "Failisirvija filtrimuster"
+msgid ""
+"Open the tree view when the file browser plugin gets loaded instead of the "
+"bookmarks view"
+msgstr ""
+"Järjehoidjate vaate asemel puuvaate avamine failisirvija plugina laadimisel"
 
 msgid "File Browser Root Directory"
 msgstr "Failisirvija juurkataloog"
 
+msgid ""
+"The file browser root directory to use when loading the file browser plugin "
+"and onload/tree_view is TRUE."
+msgstr ""
+"Failisirvija juurkataloog, mida kasutatakse failisirvija laadimise ajal "
+"juhul, kui võtmed onload/tree_view on märgitud."
+
 msgid "File Browser Virtual Root Directory"
 msgstr "Failisirvija virtuaalne juurkataloog"
+
+msgid ""
+"The file browser virtual root directory to use when loading the file browser "
+"plugin when onload/tree_view is TRUE. The virtual root must always be below "
+"the actual root."
+msgstr ""
+"Failisirvija virtuaalne juurkataloog, mida kasutatakse failisirvija "
+"laadimise ajal juhul, kui võtmed onload/tree_view on märgitud. Virtuaalne "
+"juurkataloog peab alati kuuluma tegeliku juurkataloogi alla."
+
+msgid "Enable Restore of Remote Locations"
+msgstr "Võrgukohtadelt taastamise lubamine"
+
+msgid "Sets whether to enable restoring of remote locations."
+msgstr "Kas võrgus asuvatelt kohtadelt taastamine on lubatud või mitte."
+
+msgid "Set Location to First Document"
+msgstr "Asukoha määramine esimese dokumendi järgi"
 
 msgid ""
 "If TRUE the file browser plugin will view the directory of the first opened "
@@ -2312,43 +2352,8 @@ msgstr ""
 "kasutust tavaliselt juhul, kui dokument avatakse käsurealt, Nautiluse abil "
 "või muudel sarnastel juhtudel)"
 
-msgid "Open With Tree View"
-msgstr "Avamine koos puuvaatega"
-
-msgid ""
-"Open the tree view when the file browser plugin gets loaded instead of the "
-"bookmarks view"
-msgstr ""
-"Järjehoidjate vaate asemel puuvaate avamine failisirvija plugina laadimisel"
-
-msgid "Set Location to First Document"
-msgstr "Asukoha määramine esimese dokumendi järgi"
-
-msgid "Sets whether to enable restoring of remote locations."
-msgstr "Kas võrgus asuvatelt kohtadelt taastamine on lubatud või mitte."
-
-msgid ""
-"The file browser root directory to use when loading the file browser plugin "
-"and onload/tree_view is TRUE."
-msgstr ""
-"Failisirvija juurkataloog, mida kasutatakse failisirvija laadimise ajal "
-"juhul, kui võtmed onload/tree_view on märgitud."
-
-msgid ""
-"The file browser virtual root directory to use when loading the file browser "
-"plugin when onload/tree_view is TRUE. The virtual root must always be below "
-"the actual root."
-msgstr ""
-"Failisirvija virtuaalne juurkataloog, mida kasutatakse failisirvija "
-"laadimise ajal juhul, kui võtmed onload/tree_view on märgitud. Virtuaalne "
-"juurkataloog peab alati kuuluma tegeliku juurkataloogi alla."
-
-msgid ""
-"The filter pattern to filter the file browser with. This filter works on top "
-"of the filter_mode."
-msgstr ""
-"Failisirvija filtri muster. See seda filtrit kasutatakse koos filter_mode "
-"võtmes määratud režiimiga."
+msgid "File Browser Filter Mode"
+msgstr "Failisirvija filtreerimisrežiim"
 
 msgid ""
 "This value determines what files get filtered from the file browser. Valid "
@@ -2359,16 +2364,32 @@ msgstr ""
 "Võimalikud väärtused on: none (ei filtreerita midagi), hide-hidden (peidetud "
 "failide filtreerimine) ja hide-binary (binaarfailide filtreerimine)."
 
-msgid "Emacs, Kate and Vim-style modelines support for gedit."
-msgstr "Emacsi, Kate'i ja Vim'ilaadsed režiimiread geditile."
+msgid "File Browser Filter Pattern"
+msgstr "Failisirvija filtrimuster"
+
+msgid ""
+"The filter pattern to filter the file browser with. This filter works on top "
+"of the filter_mode."
+msgstr ""
+"Failisirvija filtri muster. See seda filtrit kasutatakse koos filter_mode "
+"võtmes määratud režiimiga."
 
 msgid "Modelines"
 msgstr "Režiimiread"
 
+msgid "Emacs, Kate and Vim-style modelines support for gedit."
+msgstr "Emacsi, Kate'i ja Vim'ilaadsed režiimiread geditile."
+
 msgid "Command Color Text"
 msgstr "Käsu teksti värvus"
 
+msgid "The command color text"
+msgstr "Käsu teksti värvus"
+
 msgid "Error Color Text"
+msgstr "Vea teksti värvus"
+
+msgid "The error color text"
 msgstr "Vea teksti värvus"
 
 msgid ""
@@ -2378,25 +2399,26 @@ msgstr ""
 "Kui märgitud, kasutab terminal ületöölaualist standardfonti, kui see on "
 "püsisammfont (või muul juhul kõige sarnasema nimega püsisammfonti)."
 
-msgid "The command color text"
-msgstr "Käsu teksti värvus"
-
-msgid "The error color text"
-msgstr "Vea teksti värvus"
-
 msgid "C_ommand color:"
 msgstr "_Käsu värvus:"
 
 msgid "_Error color:"
 msgstr "_Vea värvus:"
 
+#. ex:et:ts=4:
 msgid "Python Console"
 msgstr "Pythoni konsool"
 
-#. ex:et:ts=4:
 msgid "Interactive Python console standing in the bottom panel"
 msgstr "Pythoni interaktiivse konsooli avamine alumisel paneelil"
 
+msgid "Quick open"
+msgstr "Kiiravamine"
+
+msgid "Quickly open documents"
+msgstr "Failide kiiravamine"
+
+#. ex:ts=4:et:
 msgid "Quick Open"
 msgstr "Kiiravamine"
 
@@ -2406,6 +2428,7 @@ msgstr "Failide kiiravamine"
 msgid "Type to search..."
 msgstr "Otsimiseks kirjuta siia..."
 
+#. ex:ts=8:et:
 msgid "Snippets"
 msgstr "Tekstijupid"
 
@@ -2535,33 +2558,39 @@ msgstr ""
 msgid "Execution of the Python command (%s) failed: %s"
 msgstr "Pythoni käsu (%s) täitmine nurjus: %s"
 
-#. ex:ts=8:et:
 msgid "Insert often-used pieces of text in a fast way"
 msgstr "Tihti kasutatavate tükkide kiire lisamine tekstile"
-
-msgid "Activation"
-msgstr "Aktiveerimine"
-
-msgid "Add Snippet"
-msgstr "Tekstijupi lisamine"
-
-msgid "Create new snippet"
-msgstr "Uue tekstijupi loomine"
-
-msgid "Export Snippets"
-msgstr "Tekstijuppide eksportimine"
-
-msgid "Export selected snippets"
-msgstr "Valitud tekstijuppide eksportimine"
-
-msgid "Import Snippets"
-msgstr "Tekstijuppide importimine"
 
 msgid "Manage Snippets"
 msgstr "Tekstijuppide haldamine"
 
+msgid "_Snippets:"
+msgstr "_Tekstijupid:"
+
+msgid "Create new snippet"
+msgstr "Uue tekstijupi loomine"
+
+msgid "Add Snippet"
+msgstr "Tekstijupi lisamine"
+
 msgid "Remove Snippet"
 msgstr "Tekstijuppide eemaldamine"
+
+msgid "Import Snippets"
+msgstr "Tekstijuppide importimine"
+
+msgid "Export selected snippets"
+msgstr "Valitud tekstijuppide eksportimine"
+
+msgid "Export Snippets"
+msgstr "Tekstijuppide eksportimine"
+
+msgid "Activation"
+msgstr "Aktiveerimine"
+
+#. "tab" here means the tab key, not the notebook tab!
+msgid "_Tab trigger:"
+msgstr "_Tabulaatori väljakutse:"
 
 msgid "S_hortcut key:"
 msgstr "_Kiirklahv:"
@@ -2571,13 +2600,6 @@ msgstr "Kiirklahv, millele vajutamisel tekstijupp aktiveeritakse"
 
 msgid "_Drop targets:"
 msgstr "_Aknasse lohistamisel:"
-
-msgid "_Snippets:"
-msgstr "_Tekstijupid:"
-
-#. "tab" here means the tab key, not the notebook tab!
-msgid "_Tab trigger:"
-msgstr "_Tabulaatori väljakutse:"
 
 msgid "Manage _Snippets..."
 msgstr "_Halda tekstijuppe..."
@@ -2592,26 +2614,26 @@ msgid "Sort the current document or selection"
 msgstr "Käesoleva dokumendi või valiku sortimine."
 
 #. ex:ts=8:noet:
-msgid "R_emove duplicates"
-msgstr "Kordused _eemaldatakse"
-
-msgid "S_tart at column:"
-msgstr "Al_ustades veerust:"
-
 msgid "Sort"
 msgstr "Sortimine"
 
-msgid "You cannot undo a sort operation"
-msgstr "Sortimisoperatsiooni pole võimalik tagasi võtta"
-
-msgid "_Ignore case"
-msgstr "_Tõstutundetu"
+msgid "_Sort"
+msgstr "_Sordi"
 
 msgid "_Reverse order"
 msgstr "_Pööratud järjestuses"
 
-msgid "_Sort"
-msgstr "_Sordi"
+msgid "R_emove duplicates"
+msgstr "Kordused _eemaldatakse"
+
+msgid "_Ignore case"
+msgstr "_Tõstutundetu"
+
+msgid "S_tart at column:"
+msgstr "Al_ustades veerust:"
+
+msgid "You cannot undo a sort operation"
+msgstr "Sortimisoperatsiooni pole võimalik tagasi võtta"
 
 msgid "Sorts a document or selected text."
 msgstr "Dokumendi või valitud teksti sortimine."
@@ -2673,6 +2695,7 @@ msgctxt "language"
 msgid "Default"
 msgstr "Vaikimisi"
 
+#. ex:ts=8:noet:
 msgid "Set language"
 msgstr "Keele määramine"
 
@@ -2703,18 +2726,17 @@ msgstr "Dokument on tühi."
 msgid "No misspelled words"
 msgstr "Probleemseid sõnu pole"
 
-#. ex:ts=8:noet:
 msgid "Select the _language of the current document."
 msgstr "_Vali käesoleva dokumendi keel."
 
-msgid "Add w_ord"
-msgstr "L_isa sõna"
+msgid "Check spelling"
+msgstr "Õigekirjakontroll"
 
-msgid "Cha_nge"
-msgstr "_Muuda"
+msgid "Misspelled word:"
+msgstr "Probleemne sõna:"
 
-msgid "Change A_ll"
-msgstr "M_uuda kõiki"
+msgid "word"
+msgstr "sõna"
 
 msgid "Change _to:"
 msgstr "Mi_lleks muuta:"
@@ -2722,38 +2744,50 @@ msgstr "Mi_lleks muuta:"
 msgid "Check _Word"
 msgstr "K_ontrolli sõna"
 
-msgid "Check spelling"
-msgstr "Õigekirjakontroll"
-
-msgid "Ignore _All"
-msgstr "Eira _kõiki"
-
-msgid "Language"
-msgstr "Keel"
-
-msgid "Language:"
-msgstr "Keel:"
-
-msgid "Misspelled word:"
-msgstr "Probleemne sõna:"
-
-msgid "User dictionary:"
-msgstr "Kasutaja sõnaraamat:"
+msgid "_Suggestions:"
+msgstr "_Soovitused:"
 
 msgid "_Ignore"
 msgstr "_Eira"
 
-msgid "_Suggestions:"
-msgstr "_Soovitused:"
+msgid "Cha_nge"
+msgstr "_Muuda"
 
-msgid "word"
-msgstr "sõna"
+msgid "Ignore _All"
+msgstr "Eira _kõiki"
+
+msgid "Change A_ll"
+msgstr "M_uuda kõiki"
+
+msgid "User dictionary:"
+msgstr "Kasutaja sõnaraamat:"
+
+msgid "Add w_ord"
+msgstr "L_isa sõna"
+
+msgid "Language:"
+msgstr "Keel:"
+
+msgid "Language"
+msgstr "Keel"
+
+msgid "Spell Checker"
+msgstr "Õigekirjakontroll"
 
 msgid "Checks the spelling of the current document."
 msgstr "Käesoleva dokumendi õigekirja kontrollimine."
 
-msgid "Spell Checker"
-msgstr "Õigekirjakontroll"
+msgid "Insert Date and Time"
+msgstr "Kuupäeva ja kellaaja lisamine"
+
+msgid "_Insert"
+msgstr "L_isa"
+
+msgid "Use the _selected format"
+msgstr "Kasutatakse _valitud vormingut"
+
+msgid "_Use custom format"
+msgstr "Kasutatakse o_ma vormingut"
 
 #. Translators: Use the more common date format in your locale
 #, no-c-format
@@ -2764,18 +2798,6 @@ msgstr "%d.%m.%Y %H:%M:%S"
 msgid "01/11/2009 17:52:00"
 msgstr "01/11/2009 17:52:00"
 
-msgid "Insert Date and Time"
-msgstr "Kuupäeva ja kellaaja lisamine"
-
-msgid "Use the _selected format"
-msgstr "Kasutatakse _valitud vormingut"
-
-msgid "_Insert"
-msgstr "L_isa"
-
-msgid "_Use custom format"
-msgstr "Kasutatakse o_ma vormingut"
-
 msgid "In_sert Date and Time..."
 msgstr "Lisa kuupäev/kellaae_g..."
 
@@ -2785,6 +2807,7 @@ msgstr "Praeguse kuupäeva ja kellaaja lisamine kursori asukohta"
 msgid "Available formats"
 msgstr "Saadaval vormingud"
 
+#. ex:ts=8:noet:
 msgid "Configure date/time plugin"
 msgstr "\"Kuupäeva/kellaaja\" plugina seadistamine"
 
@@ -2794,8 +2817,8 @@ msgstr "\"Kuupäeva/kellaaja\" sisestamisel..."
 msgid "_Prompt for a format"
 msgstr "_Küsitakse vormingut"
 
-msgid "Custom Format"
-msgstr "Kohandatud vorming"
+msgid "Prompt Type"
+msgstr "Viiba liik"
 
 msgid ""
 "If the user should be prompted for a format or if the selected or custom "
@@ -2804,17 +2827,17 @@ msgstr ""
 "Kas kohandatud või valitud vormingu kasutamisel tuleb kasutaja käest "
 "kinnitust küsida."
 
-msgid "Prompt Type"
-msgstr "Viiba liik"
-
 msgid "Selected Format"
 msgstr "Valitud vorming"
 
-msgid "The custom format used when inserting the date/time."
-msgstr "Kuupäeva ja kellaaja sisestamisel kasutatav kohandatud vorming."
-
 msgid "The selected format used when inserting the date/time."
 msgstr "Kuupäeva ja kellaaja lisamiseks kasutatav valitud vorming."
+
+msgid "Custom Format"
+msgstr "Kohandatud vorming"
+
+msgid "The custom format used when inserting the date/time."
+msgstr "Kuupäeva ja kellaaja sisestamisel kasutatav kohandatud vorming."
 
 msgid "Insert Date/Time"
 msgstr "Kuupäeva/kellaaja lisamine"
@@ -2822,8 +2845,11 @@ msgstr "Kuupäeva/kellaaja lisamine"
 msgid "Inserts current date and time at the cursor position."
 msgstr "Praeguse kuupäeva ja kellaaaja lisamine kursori asukohta."
 
+msgid "Zeitgeist dataprovider"
+msgstr "Zeitgeisti andmevarustaja"
+
 msgid "Logs access and leave event for documents used with gedit"
 msgstr "Logib geditiga avatud dokumentide avamise ja sulgemise sündmuseid"
 
-msgid "Zeitgeist dataprovider"
-msgstr "Zeitgeisti andmevarustaja"
+#~ msgid "_Add..."
+#~ msgstr "_Lisa..."
