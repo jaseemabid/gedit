@@ -67,8 +67,6 @@ typedef enum {
 	GEDIT_DEBUG_DBUS     = 1 << 16
 } GeditDebugSection;
 
-
-/* FIXME this is an issue for introspection */
 #define	DEBUG_VIEW	GEDIT_DEBUG_VIEW,    __FILE__, __LINE__, G_STRFUNC
 #define	DEBUG_SEARCH	GEDIT_DEBUG_SEARCH,  __FILE__, __LINE__, G_STRFUNC
 #define	DEBUG_PRINT	GEDIT_DEBUG_PRINT,   __FILE__, __LINE__, G_STRFUNC
@@ -100,6 +98,10 @@ void gedit_debug_message (GeditDebugSection  section,
 			  const gchar       *function,
 			  const gchar       *format, ...) G_GNUC_PRINTF(5, 6);
 
+void gedit_debug_plugin_message (const gchar       *file,
+				 gint               line,
+				 const gchar       *function,
+				 const gchar       *message);
 
 #endif /* __GEDIT_DEBUG_H__ */
 /* ex:set ts=8 noet: */

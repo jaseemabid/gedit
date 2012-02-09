@@ -46,6 +46,8 @@ static gdouble last = 0.0;
 
 static GeditDebugSection debug = GEDIT_NO_DEBUG;
 
+#define DEBUG_IS_ENABLED(section_rval) (debug & (section_rval))
+
 /**
  * gedit_debug_init:
  *
@@ -130,7 +132,7 @@ void gedit_debug (GeditDebugSection  section,
 		  gint               line,
 		  const gchar       *function)
 {
-	if (G_UNLIKELY (debug & section))
+	if (G_UNLIKELY (DEBUG_IS_ENABLED (section)))
 	{
 #ifdef ENABLE_PROFILING
 		gdouble seconds;
@@ -144,6 +146,7 @@ void gedit_debug (GeditDebugSection  section,
 #else
 		g_print ("%s:%d (%s)\n", file, line, function);
 #endif
+
 		fflush (stdout);
 	}
 }
@@ -168,7 +171,7 @@ gedit_debug_message (GeditDebugSection  section,
 		     const gchar       *function,
 		     const gchar       *format, ...)
 {
-	if (G_UNLIKELY (debug & section))
+	if (G_UNLIKELY (DEBUG_IS_ENABLED (section)))
 	{
 		va_list args;
 		gchar *msg;
@@ -177,6 +180,8 @@ gedit_debug_message (GeditDebugSection  section,
 		gdouble seconds;
 
 		g_return_if_fail (timer != NULL);
+
+		seconds = g_timer_elapsed (timer, NULL);
 #endif
 
 		g_return_if_fail (format != NULL);
@@ -186,9 +191,8 @@ gedit_debug_message (GeditDebugSection  section,
 		va_end (args);
 
 #ifdef ENABLE_PROFILING
-		seconds = g_timer_elapsed (timer, NULL);
 		g_print ("[%f (%f)] %s:%d (%s) %s\n",
-			 seconds, seconds - last,  file, line, function, msg);
+			 seconds, seconds - last, file, line, function, msg);
 		last = seconds;
 #else
 		g_print ("%s:%d (%s) %s\n", file, line, function, msg);
@@ -198,6 +202,47 @@ gedit_debug_message (GeditDebugSection  section,
 
 		g_free (msg);
 	}
+}
+
+/**
+ * gedit_debug_plugin_message:
+ * @file: Name of the source file containing the call to gedit_debug_plugin_message().
+ * @line: Line number within the file named by @file of the call to gedit_debug_plugin_message().
+ * @function: Name of the function that is calling gedit_debug_plugin_message().
+ * @message: An informational message.
+ *
+ * If output for debug section %GEDIT_DEBUG_PLUGINS is enabled, then logs the trace
+ * information @file, @line, and @function along with the informational message
+ * @message.
+ *
+ * This function may be overridden by GObject Introspection language bindings
+ * to be more language-specific.
+ *
+ * <emphasis>Python</emphasis>
+ *
+ * A PyGObject override is provided that has the following signature:
+ * <informalexample>
+ *   <programlisting>
+ *     def debug_plugin_message(format_str, *format_args):
+ *         #...
+ *   </programlisting>
+ * </informalexample>
+ *
+ * It automatically supplies parameters @file, @line, and @function, and it
+ * formats <code>format_str</code> with the given format arguments. The syntax
+ * of the format string is the usual Python string formatting syntax described
+ * by <ulink url="http://docs.python.org/library/stdtypes.html#string-formatting">5.6.2. String Formatting Operations</ulink>.
+ *
+ * Since: 3.4
+ */
+void
+gedit_debug_plugin_message (const gchar       *file,
+			    gint               line,
+			    const gchar       *function,
+			    const gchar       *message)
+{
+	gedit_debug_message (GEDIT_DEBUG_PLUGINS, file, line, function, "%s",
+			     message);
 }
 
 /* ex:set ts=8 noet: */

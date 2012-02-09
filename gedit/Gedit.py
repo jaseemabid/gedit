@@ -1,4 +1,6 @@
 from gi.repository import GObject
+import inspect
+
 from ..overrides import override
 from ..importer import modules
 
@@ -41,5 +43,38 @@ class Message(Gedit.Message):
 
 Message = override(Message)
 __all__.append('Message')
+
+
+def get_trace_info(num_back_frames=0):
+    frame = inspect.currentframe().f_back
+    try:
+        for i in range(num_back_frames):
+            frame = frame.f_back
+
+        filename = frame.f_code.co_filename
+
+        # http://code.activestate.com/recipes/145297-grabbing-the-current-line-number-easily/
+        lineno = frame.f_lineno
+
+        func_name = frame.f_code.co_name
+        try:
+            # http://stackoverflow.com/questions/2203424/python-how-to-retrieve-class-information-from-a-frame-object
+            cls_name = frame.f_locals["self"].__class__.__name__
+        except:
+            pass
+        else:
+            func_name = "%s.%s" % (cls_name, func_name)
+
+        return (filename, lineno, func_name)
+    finally:
+        frame = None
+
+orig_debug_plugin_message_func = Gedit.debug_plugin_message
+
+@override(Gedit.debug_plugin_message)
+def debug_plugin_message(format, *format_args):
+    filename, lineno, func_name = get_trace_info(2)
+    orig_debug_plugin_message_func(filename, lineno, func_name, format % format_args)
+__all__.append(debug_plugin_message)
 
 # vi:ex:ts=4:et
