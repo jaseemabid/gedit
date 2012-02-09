@@ -1383,12 +1383,15 @@ _gedit_document_check_externally_modified (GeditDocument *doc)
 			GTimeVal timeval;
 
 			g_file_info_get_modification_time (info, &timeval);
+
 			g_object_unref (info);
 	
 			return (timeval.tv_sec > doc->priv->mtime.tv_sec) ||
 			       (timeval.tv_sec == doc->priv->mtime.tv_sec && 
 			       timeval.tv_usec > doc->priv->mtime.tv_usec);
 		}
+
+		g_object_unref (info);
 	}
 
 	return FALSE;
