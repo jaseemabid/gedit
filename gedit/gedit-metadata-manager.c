@@ -323,7 +323,10 @@ gedit_metadata_manager_get (GFile       *location,
 		res = load_values ();
 
 		if (!res)
+		{
+			g_free (uri);
 			return NULL;
+		}
 	}
 
 	item = (Item *)g_hash_table_lookup (gedit_metadata_manager->items,
