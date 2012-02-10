@@ -1817,6 +1817,8 @@ gedit_document_save_real (GeditDocument                *doc,
 		               document_signals[SAVED],
 		               0,
 		               error);
+
+		g_error_free (error);
 	}
 	else
 	{
@@ -1911,6 +1913,11 @@ gedit_document_save_as (GeditDocument                *doc,
 		       compression_type,
 		       flags | GEDIT_DOCUMENT_SAVE_IGNORE_MTIME,
 		       error);
+
+	if (error != NULL)
+	{
+		g_error_free (error);
+	}
 }
 
 gboolean
