@@ -218,12 +218,7 @@ gedit_document_loader_dispose (GObject *object)
 	g_clear_object (&priv->info);
 	g_clear_object (&priv->location);
 	g_clear_object (&priv->enc_settings);
-
-	if (priv->editor_settings != NULL)
-	{
-		g_object_unref (priv->editor_settings);
-		priv->editor_settings = NULL;
-	}
+	g_clear_object (&priv->editor_settings);
 
 	G_OBJECT_CLASS (gedit_document_loader_parent_class)->dispose (object);
 }
