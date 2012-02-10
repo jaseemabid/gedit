@@ -679,7 +679,6 @@ save_dialog_response_cb (GeditFileChooserDialog *dialog,
                          gint                    response_id,
                          GeditWindow            *window)
 {
-	GFile *file;
 	GeditTab *tab;
 	gpointer data;
 	GSList *tabs_to_save_as;
@@ -696,11 +695,9 @@ save_dialog_response_cb (GeditFileChooserDialog *dialog,
 		goto save_next_tab;
 	}
 
-	file = gtk_file_chooser_get_file (GTK_FILE_CHOOSER (dialog));
-	g_return_if_fail (file != NULL);
-
 	if (tab != NULL)
 	{
+		GFile *file;
 		GeditDocument *doc;
 		gchar *parse_name;
 		GeditDocumentNewlineType newline_type;
@@ -709,6 +706,10 @@ save_dialog_response_cb (GeditFileChooserDialog *dialog,
 		const GeditEncoding *encoding;
 
 		doc = gedit_tab_get_document (tab);
+
+		file = gtk_file_chooser_get_file (GTK_FILE_CHOOSER (dialog));
+		g_return_if_fail (file != NULL);
+
 		compression_type = get_compression_type_from_file (file);
 		current_compression_type = gedit_document_get_compression_type (doc);
 
@@ -720,6 +721,7 @@ save_dialog_response_cb (GeditFileChooserDialog *dialog,
 			                         compression_type != GEDIT_DOCUMENT_COMPRESSION_TYPE_NONE))
 			{
 				gtk_widget_destroy (GTK_WIDGET (dialog));
+				g_object_unref (file);
 
 				goto save_next_tab;
 			}
@@ -747,9 +749,9 @@ save_dialog_response_cb (GeditFileChooserDialog *dialog,
 		 _gedit_window_set_default_location (window, file);
 
 		_gedit_tab_save_as (tab, file, encoding, newline_type, compression_type);
-	}
 
-	g_object_unref (file);
+		g_object_unref (file);
+	}
 
 save_next_tab:
 
