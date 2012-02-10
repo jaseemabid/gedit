@@ -123,6 +123,7 @@ gedit_dirs_shutdown ()
 {
 	g_free (user_config_dir);
 	g_free (user_cache_dir);
+	g_free (user_styles_dir);
 	g_free (user_plugins_dir);
 	g_free (gedit_data_dir);
 	g_free (gedit_locale_dir);
