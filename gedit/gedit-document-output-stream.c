@@ -1006,9 +1006,15 @@ gedit_document_output_stream_flush (GOutputStream  *stream,
 		gchar *outbuf;
 		gsize outbuf_len;
 
-		convert_text (ostream, NULL, 0, &outbuf, &outbuf_len, error);
-		validate_and_insert (ostream, outbuf, outbuf_len);
-		g_free (outbuf);
+		if (convert_text (ostream, NULL, 0, &outbuf, &outbuf_len, error))
+		{
+			validate_and_insert (ostream, outbuf, outbuf_len);
+			g_free (outbuf);
+		}
+		else
+		{
+			return FALSE;
+		}
 	}
 
 	if (ostream->priv->buflen > 0 && *ostream->priv->buffer != '\r')
