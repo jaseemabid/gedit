@@ -834,6 +834,7 @@ gedit_document_output_stream_write (GOutputStream            *stream,
 			g_set_error_literal (error, GEDIT_DOCUMENT_ERROR,
 			                     GEDIT_DOCUMENT_ERROR_ENCODING_AUTO_DETECTION_FAILED,
 			                     _("It is not possible to detect the encoding automatically"));
+
 			return -1;
 		}
 
@@ -865,6 +866,7 @@ gedit_document_output_stream_write (GOutputStream            *stream,
 				}
 
 				g_free (from_charset);
+				g_clear_object (&ostream->priv->charset_conv);
 
 				return -1;
 			}
