@@ -617,9 +617,11 @@ treeview_selection_changed (GtkTreeSelection    *selection,
 		{
 			gedit_multi_notebook_set_active_tab (panel->priv->mnb,
 							     tab);
+			if (notebook != NULL)
+				g_object_unref (notebook);
 			g_object_unref (tab);
 		}
-		else
+		else if (notebook != NULL)
 		{
 			panel->priv->setting_active_notebook = TRUE;
 			gtk_widget_grab_focus (GTK_WIDGET (notebook));
@@ -633,6 +635,8 @@ treeview_selection_changed (GtkTreeSelection    *selection,
 						  G_CALLBACK (document_changed),
 						  panel);
 			}
+
+			g_object_unref (notebook);
 		}
 	}
 }
