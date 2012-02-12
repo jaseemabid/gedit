@@ -771,18 +771,16 @@ menu_position (GtkMenu             *menu,
 	w = panel->priv->treeview;
 
 	path = get_current_path (panel);
-
 	gtk_tree_view_get_cell_area (GTK_TREE_VIEW (w),
 				     path,
 				     NULL,
 				     &rect);
+	gtk_tree_path_free (path);
 
 	wy = rect.y;
 
 	gdk_window_get_origin (gtk_widget_get_window (w), x, y);
-
 	gtk_widget_get_preferred_size (GTK_WIDGET (menu), &requisition, NULL);
-
 	gtk_widget_get_allocation (w, &allocation);
 
 	if (gtk_widget_get_direction (w) == GTK_TEXT_DIR_RTL)
