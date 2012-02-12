@@ -37,6 +37,7 @@
 #include "gedit-utils.h"
 #include "gedit-multi-notebook.h"
 #include "gedit-notebook.h"
+#include "gedit-notebook-popup-menu.h"
 #include "gedit-cell-renderer-button.h"
 
 #include <glib/gi18n.h>
@@ -802,15 +803,14 @@ menu_position (GtkMenu             *menu,
 
 static gboolean
 show_tab_popup_menu (GeditDocumentsPanel *panel,
+		     GeditTab            *tab,
 		     GdkEventButton      *event)
 {
 	GtkWidget *menu;
 
 	gedit_debug (DEBUG_PANEL);
 
-	menu = gtk_ui_manager_get_widget (gedit_window_get_ui_manager (panel->priv->window),
-					  "/NotebookPopup");
-	g_return_val_if_fail (menu != NULL, FALSE);
+	menu = gedit_notebook_popup_menu_new (panel->priv->window, tab);
 
 	if (event != NULL)
 	{
@@ -847,8 +847,9 @@ panel_button_press_event (GtkTreeView         *treeview,
 
 	gedit_debug (DEBUG_PANEL);
 
-	if (event->type == GDK_BUTTON_PRESS && event->button == 3 &&
-	    event->window == gtk_tree_view_get_bin_window (treeview))
+	if ((event->type == GDK_BUTTON_PRESS) &&
+	    (gdk_event_triggers_context_menu ((GdkEvent *) event)) &&
+	    (event->window == gtk_tree_view_get_bin_window (treeview)))
 	{
 		GtkTreePath *path = NULL;
 
@@ -885,7 +886,7 @@ panel_button_press_event (GtkTreeView         *treeview,
 								  FALSE);
 
 					/* A row exists at the mouse position */
-					ret = show_tab_popup_menu (panel, event);
+					ret = show_tab_popup_menu (panel, tab, event);
 
 					g_object_unref (tab);
 				}
