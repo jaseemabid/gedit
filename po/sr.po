@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&"
 "keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-01-30 15:33+0000\n"
-"PO-Revision-Date: 2012-02-12 15:53+0200\n"
+"POT-Creation-Date: 2012-02-12 14:59+0000\n"
+"PO-Revision-Date: 2012-02-12 16:04+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -24,22 +24,42 @@ msgstr ""
 "X-Project-Style: gnome\n"
 
 #: ../data/gedit.desktop.in.in.h:1
-msgid "Edit text files"
-msgstr "Уређујте текстуалне документе"
+msgid "gedit"
+msgstr "Вилењакова бележница"
 
 #: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:799
 msgid "Text Editor"
 msgstr "Уређивач текста"
 
 #: ../data/gedit.desktop.in.in.h:3
-msgid "gedit"
-msgstr "Вилењакова бележница"
+msgid "Edit text files"
+msgstr "Уређујте текстуалне документе"
 
 #: ../data/gedit.desktop.in.in.h:4
 msgid "gedit Text Editor"
 msgstr "Вилењакова бележница — уређивач текста"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:1
+msgid "Use Default Font"
+msgstr "Коришћење основног словног лика"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:2
+msgid ""
+"Whether to use the system's default fixed width font for editing text "
+"instead of a font specific to gedit. If this option is turned off, then the "
+"font named in the \"Editor Font\" option will be used instead of the system "
+"font."
+msgstr ""
+"Да ли ће бити коришћен основни словни лик система сталне ширине за приказ "
+"текста уместо словног лика наведеног у подешавањима програма Вилењакова "
+"бележница. Ако је ова опција искључена, словни лик наведен у опцији „Словни "
+"лик уређивача“ ће бити коришћен уместо словног лика система."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:3
+msgid "Editor Font"
+msgstr "Словни лик уређивача"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:4
 msgid ""
 "A custom font that will be used for the editing area. This will only take "
 "effect if the \"Use Default Font\" option is turned off."
@@ -48,140 +68,47 @@ msgstr ""
 "ће једино имати ефекта ако је штиклирана кућица „Користи пороизвољни словни "
 "лик“."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:2
-msgid "Active plugins"
-msgstr "Покренути додаци"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:3
-msgid "Automatic indent"
-msgstr "Самоувлачење у раду"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:4
-msgid "Automatically Detected Encodings"
-msgstr "Самостално откривање кодних распореда"
-
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:5
-msgid "Autosave"
-msgstr "Периодично чување"
+msgid "Style Scheme"
+msgstr "Поставке стила"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:6
-msgid "Autosave Interval"
-msgstr "Време периодичног чувања"
+msgid "The ID of a GtkSourceView Style Scheme used to color the text."
+msgstr ""
+"ИД поставке стила Прегледа Гтк извора који се користи за бојење текста."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:7
-msgid "Body Font for Printing"
-msgstr "Словни лик за штампање"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:8
 msgid "Create Backup Copies"
 msgstr "Прављење резервних примерака"
 
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:8
+msgid ""
+"Whether gedit should create backup copies for the files it saves. You can "
+"set the backup file extension with the \"Backup Copy Extension\" option."
+msgstr ""
+"Да ли програм треба да прави резервну копију за датотеке које чува. Можете "
+"поставити проширење датотеке са резервном копијом помоћу опције „Екстензија "
+"резервне копије“."
+
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:9
-msgid "Display Line Numbers"
-msgstr "Приказ бројева редова"
+msgid "Autosave"
+msgstr "Периодично чување"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:10
-msgid "Display Right Margin"
-msgstr "Приказ десне маргине"
+msgid ""
+"Whether gedit should automatically save modified files after a time "
+"interval. You can set the time interval with the \"Autosave Interval\" "
+"option."
+msgstr ""
+"Да ли ће програм сам да сачува измењену датотеку после одређеног временског "
+"интервала. Можете поставити временски интервал помоћу опције „Време "
+"периодичног чувања“."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:11
-msgid "Editor Font"
-msgstr "Словни лик уређивача"
+msgid "Autosave Interval"
+msgstr "Време периодичног чувања"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:12
-msgid "Enable Search Highlighting"
-msgstr "Укључивање истицања претраге"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:13
-msgid "Enable Syntax Highlighting"
-msgstr "Укључивање истицања синтаксе"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:14
-msgid "Encodings shown in menu"
-msgstr "Кодни распореди приказани у изборнику"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:15
-msgid "Ensure Trailing Newline"
-msgstr "Осигурава праћење новог реда"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:16
-msgid "Header Font for Printing"
-msgstr "Словни лик за штампање заглавља"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:17
-msgid "Highlight Current Line"
-msgstr "Истицање текућег реда"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:18
-msgid "Highlight Matching Brackets"
-msgstr "Истицање упарених заграда"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:19
-msgid ""
-"If this value is 0, then no line numbers will be inserted when printing a "
-"document. Otherwise, gedit will print line numbers every such number of "
-"lines."
-msgstr ""
-"Уколико је вредност 0, програм неће уметати бројеве редова приликом штампања "
-"документа. У супротном, програм ће штампати број реда за сваки број реда."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:20
-msgid "Insert spaces"
-msgstr "Уметање размака"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:21
-msgid "Line Number Font for Printing"
-msgstr "Словни лик за штампање броја реда"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
-msgid "Line Wrapping Mode"
-msgstr "Начин прелома реда"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
-msgid ""
-"List of active plugins. It contains the \"Location\" of the active plugins. "
-"See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
-msgstr ""
-"Списак активних додатака. Садржи „путању“ активних додатака. Погледајте "
-"датотеку „.gedit-plugin“ да сазнате „путању“ датог додатка."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
-msgid ""
-"List of encodings shown in the Character Encoding menu in open/save file "
-"selector. Only recognized encodings are used."
-msgstr ""
-"Списак кодирања приказаних у изборнику за кодирање знакова при избору "
-"датотека. Користе се само препознати кодни распореди."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
-msgid "Maximum Number of Undo Actions"
-msgstr "Највећи број опозваних радњи"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
-msgid "Maximum Recent Files"
-msgstr "Највећи број скоро отвараних датотека"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
-msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
-"\" for unlimited number of actions."
-msgstr ""
-"Највећи број радњи које ће програм моћи да опозове или понови. Користите „-"
-"1“ за неограничени број радњи."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
-msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
-"\" for unlimited number of actions. Deprecated since 2.12.0"
-msgstr ""
-"Највећи број радњи које ће програм моћи да опозове или понови. Користите „-"
-"1“ за неограничени број радњи. Застарело почевши од 2.12.0."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
-msgid "Notebook Show Tabs Mode"
-msgstr "Режим приказивања језичака бележнице"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
 msgid ""
 "Number of minutes after which gedit will automatically save modified files. "
 "This will only take effect if the \"Autosave\" option is turned on."
@@ -189,49 +116,119 @@ msgstr ""
 "Број минута након којих ће програм аутоматски сачувати измењену датотеку. "
 "Ово ће једино имати ефекта уколико је опција „Периодично чување“ укључена."
 
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:13
+msgid "Undo Actions Limit (DEPRECATED)"
+msgstr "Ограничење опозива радњи (ЗАСТАРЕЛО)"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:14
+msgid ""
+"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
+"\" for unlimited number of actions. Deprecated since 2.12.0"
+msgstr ""
+"Највећи број радњи које ће програм моћи да опозове или понови. Користите „-"
+"1“ за неограничени број радњи. Застарело почевши од 2.12.0."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:15
+msgid "Maximum Number of Undo Actions"
+msgstr "Највећи број опозваних радњи"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:16
+msgid ""
+"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
+"\" for unlimited number of actions."
+msgstr ""
+"Највећи број радњи које ће програм моћи да опозове или понови. Користите „-"
+"1“ за неограничени број радњи."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:17
+msgid "Line Wrapping Mode"
+msgstr "Начин прелома реда"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:18
+msgid ""
+"Specifies how to wrap long lines in the editing area. Use \"none\" for no "
+"wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
+"wrapping at individual character boundaries. Note that the values are case-"
+"sensitive, so make sure they appear exactly as mentioned here."
+msgstr ""
+"Одређује начин прелома дугих редова у области за уређивање. Користите „none“ "
+"за искључивање прелома, „word“ за прелом на крају речи, и „char“ за прелом "
+"између знакова. Обратите пажњу да су вредности осетљиве на велика или мала "
+"слова, па се уверите да их користите на исти начин као што су овде наведене."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:19
+msgid "Tab Size"
+msgstr "Величина језичка"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:20
+msgid ""
+"Specifies the number of spaces that should be displayed instead of Tab "
+"characters."
+msgstr "Одређује број размака који ће бити приказани уместо знака табулатора."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:21
+msgid "Insert spaces"
+msgstr "Уметање размака"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
+msgid "Whether gedit should insert spaces instead of tabs."
+msgstr "Да ли програм треба да уметне размаке уместо табулатора."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
+msgid "Automatic indent"
+msgstr "Самоувлачење у раду"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
+msgid "Whether gedit should enable automatic indentation."
+msgstr "Да ли програм треба да омогући аутоматско увлачење."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
+msgid "Display Line Numbers"
+msgstr "Приказ бројева редова"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
+msgid "Whether gedit should display line numbers in the editing area."
+msgstr ""
+"Да ли програм треба да прикаже бројеве линија у простору за уређивање текста."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
+msgid "Highlight Current Line"
+msgstr "Истицање текућег реда"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
+msgid "Whether gedit should highlight the current line."
+msgstr "Да ли програм треба да истиче текући ред."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
+msgid "Highlight Matching Brackets"
+msgstr "Истицање упарених заграда"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
+msgid "Whether gedit should highlight matching brackets."
+msgstr "Да ли програм треба да истакне упарене заграде."
+
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
-msgid "Print Header"
-msgstr "Штампање заглавља"
+msgid "Display Right Margin"
+msgstr "Приказ десне маргине"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
-msgid "Print Line Numbers"
-msgstr "Штампање бројева редова"
+msgid "Whether gedit should display the right margin in the editing area."
+msgstr ""
+"Да ли програм треба да прикаже десну маргину у простору за уређивање текста."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
-msgid "Print Syntax Highlighting"
-msgstr "Штампање истицања синтаксе"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
-msgid "Printing Line Wrapping Mode"
-msgstr "Начин прелома штампаног реда"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
-msgid "Restore Previous Cursor Position"
-msgstr "Враћање претходног положаја курсора"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
 msgid "Right Margin Position"
 msgstr "Положај десне маргине"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
-msgid "Side panel is Visible"
-msgstr "Приказ бочне површи"
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
+msgid "Specifies the position of the right margin."
+msgstr "Одређује положај десне маргине."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
 msgid "Smart Home End"
 msgstr "Паметне типке „Почетак/Крај“"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
-msgid ""
-"Sorted list of encodings used by gedit for automatically detecting the "
-"encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
-"recognized encodings are used."
-msgstr ""
-"Уређени списак кодних распореда које програм користи за самопрепознавање "
-"кодног распореда датотеке. „CURRENT“ означава текући кодни распоред "
-"локалитета. Користе се једино препознати кодни распореди."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
 msgid ""
 "Specifies how the cursor moves when the HOME and END keys are pressed. Use "
 "\"disabled\" to always move at the start/end of the line, \"after\" to move "
@@ -248,73 +245,59 @@ msgstr ""
 "крај текста пре померања на почетак/крај реда и „always“ за померање на "
 "почетак/крај текста уместо на почетак/крај реда."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
+msgid "Restore Previous Cursor Position"
+msgstr "Враћање претходног положаја курсора"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
 msgid ""
-"Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
-"\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
-"individual character boundaries. Note that the values are case-sensitive, so "
-"make sure they appear exactly as mentioned here."
+"Whether gedit should restore the previous cursor position when a file is "
+"loaded."
 msgstr ""
-"Одређује начин преламања дугих редова за штампање. Користите „none“ за "
-"искључивање прелома, „word“ за прелом на крају речи, и „char“ за прелом "
-"између знакова. Обратите пажњу да су вредности осетљиве на велика или мала "
-"слова, па се уверите да их користите на исти начин као што су овде наведене."
+"Да ли програм треба да поврати претходну позицију курсора након учитавања "
+"датотеке."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
+msgid "Enable Syntax Highlighting"
+msgstr "Укључивање истицања синтаксе"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
+msgid "Whether gedit should enable syntax highlighting."
+msgstr "Да ли програм треба да омогући истицање синтаксе."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
+msgid "Enable Search Highlighting"
+msgstr "Укључивање истицања претраге"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
 msgid ""
-"Specifies how to wrap long lines in the editing area. Use \"none\" for no "
-"wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
-"wrapping at individual character boundaries. Note that the values are case-"
-"sensitive, so make sure they appear exactly as mentioned here."
-msgstr ""
-"Одређује начин прелома дугих редова у области за уређивање. Користите „none“ "
-"за искључивање прелома, „word“ за прелом на крају речи, и „char“ за прелом "
-"између знакова. Обратите пажњу да су вредности осетљиве на велика или мала "
-"слова, па се уверите да их користите на исти начин као што су овде наведене."
+"Whether gedit should highlight all the occurrences of the searched text."
+msgstr "Да ли програм треба да истакне све појаве пронађеног текста."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
-msgid ""
-"Specifies the font to use for a document's body when printing documents."
-msgstr ""
-"Одређује који ће словни лик бити коришћен за тело документа приликом "
-"штампања."
+msgid "Ensure Trailing Newline"
+msgstr "Осигурава праћење новог реда"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
 msgid ""
-"Specifies the font to use for line numbers when printing. This will only "
-"take effect if the \"Print Line Numbers\" option is non-zero."
+"Whether gedit will ensure that documents always end with a trailing newline."
 msgstr ""
-"Одређује који ће словни лик бити коришћен за штампање бројева редова. Ово ће "
-"једино имати ефекта уколико опција „Штампање бројева редова“ није постављена "
-"на 0."
+"Да ли програм треба да осигура да се документи увек завршавају пратећим "
+"новим редом."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
-msgid ""
-"Specifies the font to use for page headers when printing a document. This "
-"will only take effect if the \"Print Header\" option is turned on."
-msgstr ""
-"Одређује који ће словни лик бити коришћен за штампање заглавља странице. Ово "
-"ће једино имати ефекта ако је укључена опција „Штампање заглавља“."
+msgid "Toolbar is Visible"
+msgstr "Приказ линије алата"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
-msgid ""
-"Specifies the maximum number of recently opened files that will be displayed "
-"in the \"Recent Files\" submenu."
-msgstr ""
-"Одређује највећи број скоро отворених датотека које ће бити приказане у "
-"подизборнику „Скоро отворене датотеке“."
+msgid "Whether the toolbar should be visible in editing windows."
+msgstr "Да ли линија алата треба да буде видљива."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
-msgid ""
-"Specifies the number of spaces that should be displayed instead of Tab "
-"characters."
-msgstr "Одређује број размака који ће бити приказани уместо знака табулатора."
+msgid "Notebook Show Tabs Mode"
+msgstr "Режим приказивања језичака бележнице"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
-msgid "Specifies the position of the right margin."
-msgstr "Одређује положај десне маргине."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
 msgid ""
 "Specifies when to show the notebook tabs. Use \"never\" to never show the "
 "tabs, \"always\" to always show the tabs, and \"auto\" to show the tabs only "
@@ -327,142 +310,157 @@ msgstr ""
 "вредности осетљиве на велика или мала слова, па се уверите да их користите "
 "на исти начин као што су овде наведене."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
 msgid "Status Bar is Visible"
 msgstr "Приказ линије стања"
 
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
+msgid ""
+"Whether the status bar at the bottom of editing windows should be visible."
+msgstr ""
+"Да ли линија стања на дну прозора за уређивање текста треба да буде видљива."
+
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
-msgid "Style Scheme"
-msgstr "Поставке стила"
+msgid "Side panel is Visible"
+msgstr "Приказ бочне површи"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
-msgid "Tab Size"
-msgstr "Величина језичка"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
-msgid "The ID of a GtkSourceView Style Scheme used to color the text."
-msgstr ""
-"ИД поставке стила Прегледа Гтк извора који се користи за бојење текста."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
-msgid "Toolbar is Visible"
-msgstr "Приказ линије алата"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
-msgid "Undo Actions Limit (DEPRECATED)"
-msgstr "Ограничење опозива радњи (ЗАСТАРЕЛО)"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
-msgid "Use Default Font"
-msgstr "Коришћење основног словног лика"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
-msgid ""
-"Whether gedit should automatically save modified files after a time "
-"interval. You can set the time interval with the \"Autosave Interval\" "
-"option."
-msgstr ""
-"Да ли ће програм сам да сачува измењену датотеку после одређеног временског "
-"интервала. Можете поставити временски интервал помоћу опције „Време "
-"периодичног чувања“."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
-msgid ""
-"Whether gedit should create backup copies for the files it saves. You can "
-"set the backup file extension with the \"Backup Copy Extension\" option."
-msgstr ""
-"Да ли програм треба да прави резервну копију за датотеке које чува. Можете "
-"поставити проширење датотеке са резервном копијом помоћу опције „Екстензија "
-"резервне копије“."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
-msgid "Whether gedit should display line numbers in the editing area."
-msgstr ""
-"Да ли програм треба да прикаже бројеве линија у простору за уређивање текста."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
-msgid "Whether gedit should display the right margin in the editing area."
-msgstr ""
-"Да ли програм треба да прикаже десну маргину у простору за уређивање текста."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
-msgid "Whether gedit should enable automatic indentation."
-msgstr "Да ли програм треба да омогући аутоматско увлачење."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
-msgid "Whether gedit should enable syntax highlighting."
-msgstr "Да ли програм треба да омогући истицање синтаксе."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
-msgid ""
-"Whether gedit should highlight all the occurrences of the searched text."
-msgstr "Да ли програм треба да истакне све појаве пронађеног текста."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
-msgid "Whether gedit should highlight matching brackets."
-msgstr "Да ли програм треба да истакне упарене заграде."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
-msgid "Whether gedit should highlight the current line."
-msgstr "Да ли програм треба да истиче текући ред."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
-msgid "Whether gedit should include a document header when printing documents."
-msgstr "Да ли програм треба да укључи заглавље документа приликом штампања."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
-msgid "Whether gedit should insert spaces instead of tabs."
-msgstr "Да ли програм треба да уметне размаке уместо табулатора."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
-msgid "Whether gedit should print syntax highlighting when printing documents."
-msgstr "Да ли програм треба да истиче синтаксу приликом штампања докумената."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
-msgid ""
-"Whether gedit should restore the previous cursor position when a file is "
-"loaded."
-msgstr ""
-"Да ли програм треба да поврати претходну позицију курсора након учитавања "
-"датотеке."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
-#| msgid ""
-#| "Whether gedit should include a document header when printing documents."
-msgid ""
-"Whether gedit will ensure that documents always end with a trailing newline."
-msgstr ""
-"Да ли програм треба да осигура да се документи увек завршавају пратећим "
-"новим редом."
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
 msgid ""
 "Whether the side panel at the left of editing windows should be visible."
 msgstr ""
 "Да ли бочна површ на левој страни прозора за уређивање текста треба да буде "
 "видљива."
 
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
+msgid "Maximum Recent Files"
+msgstr "Највећи број скоро отвараних датотека"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
+msgid ""
+"Specifies the maximum number of recently opened files that will be displayed "
+"in the \"Recent Files\" submenu."
+msgstr ""
+"Одређује највећи број скоро отворених датотека које ће бити приказане у "
+"подизборнику „Скоро отворене датотеке“."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
+msgid "Print Syntax Highlighting"
+msgstr "Штампање истицања синтаксе"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
+msgid "Whether gedit should print syntax highlighting when printing documents."
+msgstr "Да ли програм треба да истиче синтаксу приликом штампања докумената."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
+msgid "Print Header"
+msgstr "Штампање заглавља"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
+msgid "Whether gedit should include a document header when printing documents."
+msgstr "Да ли програм треба да укључи заглавље документа приликом штампања."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
+msgid "Printing Line Wrapping Mode"
+msgstr "Начин прелома штампаног реда"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
+msgid ""
+"Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
+"\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
+"individual character boundaries. Note that the values are case-sensitive, so "
+"make sure they appear exactly as mentioned here."
+msgstr ""
+"Одређује начин преламања дугих редова за штампање. Користите „none“ за "
+"искључивање прелома, „word“ за прелом на крају речи, и „char“ за прелом "
+"између знакова. Обратите пажњу да су вредности осетљиве на велика или мала "
+"слова, па се уверите да их користите на исти начин као што су овде наведене."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
+msgid "Print Line Numbers"
+msgstr "Штампање бројева редова"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
+msgid ""
+"If this value is 0, then no line numbers will be inserted when printing a "
+"document. Otherwise, gedit will print line numbers every such number of "
+"lines."
+msgstr ""
+"Уколико је вредност 0, програм неће уметати бројеве редова приликом штампања "
+"документа. У супротном, програм ће штампати број реда за сваки број реда."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
+msgid "Body Font for Printing"
+msgstr "Словни лик за штампање"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
+msgid ""
+"Specifies the font to use for a document's body when printing documents."
+msgstr ""
+"Одређује који ће словни лик бити коришћен за тело документа приликом "
+"штампања."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
+msgid "Header Font for Printing"
+msgstr "Словни лик за штампање заглавља"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
+msgid ""
+"Specifies the font to use for page headers when printing a document. This "
+"will only take effect if the \"Print Header\" option is turned on."
+msgstr ""
+"Одређује који ће словни лик бити коришћен за штампање заглавља странице. Ово "
+"ће једино имати ефекта ако је укључена опција „Штампање заглавља“."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
+msgid "Line Number Font for Printing"
+msgstr "Словни лик за штампање броја реда"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
+msgid ""
+"Specifies the font to use for line numbers when printing. This will only "
+"take effect if the \"Print Line Numbers\" option is non-zero."
+msgstr ""
+"Одређује који ће словни лик бити коришћен за штампање бројева редова. Ово ће "
+"једино имати ефекта уколико опција „Штампање бројева редова“ није постављена "
+"на 0."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
+msgid "Automatically Detected Encodings"
+msgstr "Самостално откривање кодних распореда"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
+msgid ""
+"Sorted list of encodings used by gedit for automatically detecting the "
+"encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
+"recognized encodings are used."
+msgstr ""
+"Уређени списак кодних распореда које програм користи за самопрепознавање "
+"кодног распореда датотеке. „CURRENT“ означава текући кодни распоред "
+"локалитета. Користе се једино препознати кодни распореди."
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
+msgid "Encodings shown in menu"
+msgstr "Кодни распореди приказани у изборнику"
+
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
 msgid ""
-"Whether the status bar at the bottom of editing windows should be visible."
+"List of encodings shown in the Character Encoding menu in open/save file "
+"selector. Only recognized encodings are used."
 msgstr ""
-"Да ли линија стања на дну прозора за уређивање текста треба да буде видљива."
+"Списак кодирања приказаних у изборнику за кодирање знакова при избору "
+"датотека. Користе се само препознати кодни распореди."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:73
-msgid "Whether the toolbar should be visible in editing windows."
-msgstr "Да ли линија алата треба да буде видљива."
+msgid "Active plugins"
+msgstr "Покренути додаци"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:74
 msgid ""
-"Whether to use the system's default fixed width font for editing text "
-"instead of a font specific to gedit. If this option is turned off, then the "
-"font named in the \"Editor Font\" option will be used instead of the system "
-"font."
+"List of active plugins. It contains the \"Location\" of the active plugins. "
+"See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
 msgstr ""
-"Да ли ће бити коришћен основни словни лик система сталне ширине за приказ "
-"текста уместо словног лика наведеног у подешавањима програма Вилењакова "
-"бележница. Ако је ова опција искључена, словни лик наведен у опцији „Словни "
-"лик уређивача“ ће бити коришћен уместо словног лика система."
+"Списак активних додатака. Садржи „путању“ активних додатака. Погледајте "
+"датотеку „.gedit-plugin“ да сазнате „путању“ датог додатка."
 
 #: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
 msgid "Log Out _without Saving"
@@ -641,188 +639,193 @@ msgstr "_Кодни распоред"
 
 #. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-encodings-dialog.ui.h:1
-msgid "A_vailable encodings:"
-msgstr "Дос_тупни кодни распореди:"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:2
 msgid "Character encodings"
 msgstr "Кодирања знакова"
+
+#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:2
+msgid "A_vailable encodings:"
+msgstr "Дос_тупни кодни распореди:"
 
 #: ../gedit/dialogs/gedit-encodings-dialog.ui.h:3
 msgid "E_ncodings shown in menu:"
 msgstr "Кодни _распореди приказани у изборнику:"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:421
+#: ../gedit/dialogs/gedit-preferences-dialog.c:423
 msgid "Click on this button to select the font to be used by the editor"
 msgstr ""
 "Кликните на ово дугме да изаберете словни лик који ће бити коришћен у "
 "уређивачу"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:436
+#: ../gedit/dialogs/gedit-preferences-dialog.c:438
 #, c-format
 msgid "_Use the system fixed width font (%s)"
 msgstr "_Користи словни лик система сталне ширине (%s)"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:631
+#: ../gedit/dialogs/gedit-preferences-dialog.c:676
+#, c-format
+msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
+msgstr ""
+"Не могу да направим фасциклу „%s“: „g_mkdir_with_parents()“ позив није "
+"успео: %s"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.c:860
 msgid "The selected color scheme cannot be installed."
 msgstr "Одабрана поставка боја не може бити постављена."
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:658
+#: ../gedit/dialogs/gedit-preferences-dialog.c:887
 msgid "Add Scheme"
 msgstr "Додајте поставку боја"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:665
+#: ../gedit/dialogs/gedit-preferences-dialog.c:894
 msgid "A_dd Scheme"
 msgstr "_Додај поставку боја"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:673
+#: ../gedit/dialogs/gedit-preferences-dialog.c:902
 msgid "Color Scheme Files"
 msgstr "Датотеке са поставкама боја"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:680
+#: ../gedit/dialogs/gedit-preferences-dialog.c:909
 #: ../gedit/gedit-file-chooser-dialog.c:52
 msgid "All Files"
 msgstr "Све датотеке"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:725
+#: ../gedit/dialogs/gedit-preferences-dialog.c:954
 #, c-format
 msgid "Could not remove color scheme \"%s\"."
 msgstr "Не могу да уклоним поставку боја „%s“."
 
-#: ../gedit/dialogs/gedit-preferences-dialog.c:951
+#: ../gedit/dialogs/gedit-preferences-dialog.c:1180
 msgid "gedit Preferences"
 msgstr "Поставке Вилењакове бележнице"
 
 #. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:1
-msgid "Color Scheme"
-msgstr "Шема боја"
+msgid "Preferences"
+msgstr "Поставке"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:2
-msgid "Create a _backup copy of files before saving"
-msgstr "Направи _резервни примерак датотека пре снимања"
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:2 ../gedit/gedit-view.c:552
+msgid "_Display line numbers"
+msgstr "Прикажи бројеве ре_дова"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:3
 msgid "Display right _margin at column:"
 msgstr "Прикажи десну _маргину у колони:"
 
-#. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:4
-#: ../gedit/gedit-print-preferences.ui.h:1
-msgid "Do not _split words over two lines"
-msgstr "Не д_ели реч у две линије"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:5
-msgid "Editor"
-msgstr "Уређивач"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:6
-msgid "Editor _font: "
-msgstr "Словни лик _уређивача:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:7
-#: ../gedit/gedit-print-preferences.ui.h:2
-msgid "Enable text _wrapping"
-msgstr "Омогући _прелом текста"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:8
-msgid "File Saving"
-msgstr "Снимање датотеке"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:9
-#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:2
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:4
-msgid "Font"
-msgstr "Словни лик"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:10
-msgid "Font & Colors"
-msgstr "Словни лик и боје"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:11
-msgid "Highlight current _line"
-msgstr "Ист_акни текући ред"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
-msgid "Highlight matching _brackets"
-msgstr "Истакни упарене за_граде"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:13
-msgid "Highlighting"
-msgstr "Истицање"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:14
-msgid "Insert _spaces instead of tabs"
-msgstr "Уметни размаке уме_сто табулатора"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:15
-#| msgid "Content scheme"
-msgid "Install scheme"
-msgstr "Инсталирајте шему"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:16
-msgid "Pick the editor font"
-msgstr "Изаберите словни лик уређивача"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:17
-msgid "Plugins"
-msgstr "Додаци"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:18
-msgid "Preferences"
-msgstr "Поставке"
-
-# bug(slobo):nesigurno: da li su ovo jezicci ili tabulatori?
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:19
-msgid "Tab Stops"
-msgstr "Табулатори"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:20
-#: ../gedit/gedit-print-preferences.ui.h:11
+#: ../gedit/gedit-print-preferences.ui.h:9
 msgid "Text Wrapping"
 msgstr "Прелом текста"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:21
-#| msgid "Content scheme"
-msgid "Uninstall scheme"
-msgstr "Уклоните шему"
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:5
+#: ../gedit/gedit-print-preferences.ui.h:10
+msgid "Enable text _wrapping"
+msgstr "Омогући _прелом текста"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:22
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:6
+#: ../gedit/gedit-print-preferences.ui.h:11
+msgid "Do not _split words over two lines"
+msgstr "Не д_ели реч у две линије"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:7
+msgid "Highlighting"
+msgstr "Истицање"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:8
+msgid "Highlight current _line"
+msgstr "Ист_акни текући ред"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:9
+msgid "Highlight matching _brackets"
+msgstr "Истакни упарене за_граде"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:10
 msgid "View"
 msgstr "Преглед"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23
-msgid "_Autosave files every"
-msgstr "С_ам сачувај датотеке сваких"
+# bug(slobo):nesigurno: da li su ovo jezicci ili tabulatori?
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:11
+msgid "Tab Stops"
+msgstr "Табулатори"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:24 ../gedit/gedit-view.c:552
-msgid "_Display line numbers"
-msgstr "Прикажи бројеве ре_дова"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:25
-msgid "_Enable automatic indentation"
-msgstr "Омогући _аутоматско увлачење"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:26
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
 msgid "_Tab width:"
 msgstr "Ширина _табулатора:"
 
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:27
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:13
+msgid "Insert _spaces instead of tabs"
+msgstr "Уметни размаке уме_сто табулатора"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:14
+msgid "_Enable automatic indentation"
+msgstr "Омогући _аутоматско увлачење"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:15
+msgid "File Saving"
+msgstr "Снимање датотеке"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:16
+msgid "Create a _backup copy of files before saving"
+msgstr "Направи _резервни примерак датотека пре снимања"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:17
+msgid "_Autosave files every"
+msgstr "С_ам сачувај датотеке сваких"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:18
 msgid "_minutes"
 msgstr "_минута"
 
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:19
+msgid "Editor"
+msgstr "Уређивач"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:20
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
+msgid "Font"
+msgstr "Словни лик"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:21
+msgid "Editor _font: "
+msgstr "Словни лик _уређивача:"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:22
+msgid "Pick the editor font"
+msgstr "Изаберите словни лик уређивача"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23
+msgid "Color Scheme"
+msgstr "Шема боја"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:24
+msgid "Install scheme"
+msgstr "Инсталирајте шему"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:25
+#| msgid "Install scheme"
+msgid "Install Scheme"
+msgstr "Инсталирај шему"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:26
+msgid "Uninstall scheme"
+msgstr "Уклоните шему"
+
+#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:27
+#| msgid "Uninstall scheme"
+msgid "Uninstall Scheme"
+msgstr "Уклони шему"
+
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:28
-#| msgid "button1"
-msgid "toolbutton1"
-msgstr "дугме_алата1"
+msgid "Font & Colors"
+msgstr "Словни лик и боје"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:29
-#| msgid "button1"
-msgid "toolbutton2"
-msgstr "дугме_алата2"
+msgid "Plugins"
+msgstr "Додаци"
 
+#. ex:set ts=8 noet:
 #: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1559
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:1 ../gedit/gedit-window.c:1559
 msgid "Replace"
 msgstr "Замени"
 
@@ -835,36 +838,35 @@ msgstr "З_амени све"
 msgid "_Replace"
 msgstr "_Замени"
 
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:1
-msgid "Match _entire word only"
-msgstr "Упор_еди само целе речи"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:3
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2
 msgid "Replace All"
 msgstr "Замени све"
+
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:3
+msgid "_Search for: "
+msgstr "_Потражи: "
 
 #: ../gedit/dialogs/gedit-replace-dialog.ui.h:4
 msgid "Replace _with: "
 msgstr "_Замени са: "
 
 #: ../gedit/dialogs/gedit-replace-dialog.ui.h:5
-msgid "Search _backwards"
-msgstr "Тражи у_назад"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:6
 msgid "_Match case"
 msgstr "_Упореди величину слова"
 
+#: ../gedit/dialogs/gedit-replace-dialog.ui.h:6
+msgid "Match _entire word only"
+msgstr "Упор_еди само целе речи"
+
 #: ../gedit/dialogs/gedit-replace-dialog.ui.h:7
-msgid "_Search for: "
-msgstr "_Потражи: "
+msgid "Search _backwards"
+msgstr "Тражи у_назад"
 
 #: ../gedit/dialogs/gedit-replace-dialog.ui.h:8
 msgid "_Wrap around"
 msgstr "Пре_ламај около"
 
-#: ../gedit/gedit-app.c:223
+#: ../gedit/gedit-app.c:224
 msgid "There was an error displaying the help."
 msgstr "Дошло је до грешке при приказивању помоћи."
 
@@ -906,7 +908,6 @@ msgid "Create a new document in an existing instance of gedit"
 msgstr "Прави нови документ у постојећој Вилењаковој бележници"
 
 #: ../gedit/gedit-command-line.c:294
-#| msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
 msgid "Set the size and position of the window (WIDTHxHEIGHT+X+Y)"
 msgstr "Поставља величину и положај прозора (ШИРИНАxВИСИНА+X+Y)"
 
@@ -1006,26 +1007,26 @@ msgstr ""
 msgid "_Save As Plain Text"
 msgstr "_Сачувај као обичан текст"
 
-#: ../gedit/gedit-commands-file.c:740 ../gedit/gedit-commands-file.c:957
+#: ../gedit/gedit-commands-file.c:742 ../gedit/gedit-commands-file.c:959
 #, c-format
 msgid "Saving file '%s'…"
 msgstr "Чувам датотеку „%s“…"
 
-#: ../gedit/gedit-commands-file.c:844
+#: ../gedit/gedit-commands-file.c:846
 msgid "Save As"
 msgstr "Сачувај као"
 
-#: ../gedit/gedit-commands-file.c:1171
+#: ../gedit/gedit-commands-file.c:1173
 #, c-format
 msgid "Reverting the document '%s'…"
 msgstr "Вршим повраћај документа „%s“…"
 
-#: ../gedit/gedit-commands-file.c:1216
+#: ../gedit/gedit-commands-file.c:1218
 #, c-format
 msgid "Revert unsaved changes to document '%s'?"
 msgstr "Да повратим несачуване измене у документу „%s“?"
 
-#: ../gedit/gedit-commands-file.c:1225
+#: ../gedit/gedit-commands-file.c:1227
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld second will be permanently lost."
@@ -1041,13 +1042,13 @@ msgstr[2] ""
 msgstr[3] ""
 "Измене учињене у документу у последњој секунди ће бити трајно одбачене."
 
-#: ../gedit/gedit-commands-file.c:1234
+#: ../gedit/gedit-commands-file.c:1236
 msgid ""
 "Changes made to the document in the last minute will be permanently lost."
 msgstr "Измене учињене у документу у последњем минуту ће бити трајно одбачене."
 
 # можда „за последњи минут и %ld секунде“?
-#: ../gedit/gedit-commands-file.c:1240
+#: ../gedit/gedit-commands-file.c:1242
 #, c-format
 msgid ""
 "Changes made to the document in the last minute and %ld second will be "
@@ -1067,7 +1068,7 @@ msgstr[2] ""
 msgstr[3] ""
 "Измене учињене у документу у последњем минуту ће бити трајно одбачене."
 
-#: ../gedit/gedit-commands-file.c:1250
+#: ../gedit/gedit-commands-file.c:1252
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld minute will be permanently lost."
@@ -1083,12 +1084,12 @@ msgstr[2] ""
 msgstr[3] ""
 "Измене учињене у документу у последњем минуту ће бити трајно одбачене."
 
-#: ../gedit/gedit-commands-file.c:1265
+#: ../gedit/gedit-commands-file.c:1267
 msgid "Changes made to the document in the last hour will be permanently lost."
 msgstr ""
 "Измене учињене у документу током последњег часа ће бити трајно одбачене."
 
-#: ../gedit/gedit-commands-file.c:1271
+#: ../gedit/gedit-commands-file.c:1273
 #, c-format
 msgid ""
 "Changes made to the document in the last hour and %d minute will be "
@@ -1108,7 +1109,7 @@ msgstr[2] ""
 msgstr[3] ""
 "Измене учињене у документу у последњем часу ће бити трајно одбачене."
 
-#: ../gedit/gedit-commands-file.c:1286
+#: ../gedit/gedit-commands-file.c:1288
 #, c-format
 msgid ""
 "Changes made to the document in the last %d hour will be permanently lost."
@@ -1123,7 +1124,7 @@ msgstr[2] ""
 msgstr[3] ""
 "Измене учињене у документу у последњем часу ће бити трајно одбачене."
 
-#: ../gedit/gedit-commands-file.c:1312
+#: ../gedit/gedit-commands-file.c:1314
 msgid "_Revert"
 msgstr "Пов_рати"
 
@@ -1163,17 +1164,17 @@ msgstr "Пронашао сам и заменио једну појаву"
 msgid "\"%s\" not found"
 msgstr "Нисам пронашао „%s“"
 
-#: ../gedit/gedit-document.c:1224 ../gedit/gedit-document.c:1250
+#: ../gedit/gedit-document.c:1222 ../gedit/gedit-document.c:1248
 #, c-format
 msgid "Unsaved Document %d"
 msgstr "Несачуван документ „%d“"
 
-#: ../gedit/gedit-documents-panel.c:122 ../gedit/gedit-documents-panel.c:136
+#: ../gedit/gedit-documents-panel.c:123 ../gedit/gedit-documents-panel.c:137
 #: ../gedit/gedit-window.c:2399 ../gedit/gedit-window.c:2406
 msgid "Read-Only"
 msgstr "Само читање"
 
-#: ../gedit/gedit-documents-panel.c:1143 ../gedit/gedit-window.c:3848
+#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3848
 msgid "Documents"
 msgstr "Документи"
 
@@ -1714,60 +1715,61 @@ msgstr "Страница %N од %Q"
 msgid "Preparing..."
 msgstr "Припремам..."
 
-#: ../gedit/gedit-print-preferences.ui.h:3
-msgid "Fonts"
-msgstr "Словни ликови"
-
-#: ../gedit/gedit-print-preferences.ui.h:4
-msgid "He_aders and footers:"
-msgstr "За_главља и подножја:"
-
-#: ../gedit/gedit-print-preferences.ui.h:5
-msgid "Line Numbers"
-msgstr "Бројеви редова"
-
-#: ../gedit/gedit-print-preferences.ui.h:6
-msgid "Page header"
-msgstr "Заглавље стране"
-
-#: ../gedit/gedit-print-preferences.ui.h:7
-msgid "Print line nu_mbers"
-msgstr "Штампај бројеве _редова"
-
-#: ../gedit/gedit-print-preferences.ui.h:8
-msgid "Print page _headers"
-msgstr "Штам_пај заглавља страница"
-
-#: ../gedit/gedit-print-preferences.ui.h:9
-msgid "Print synta_x highlighting"
-msgstr "Штампај истицање синта_ксе"
-
-#: ../gedit/gedit-print-preferences.ui.h:10
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-print-preferences.ui.h:1
 msgid "Syntax Highlighting"
 msgstr "Истицање синтаксе"
 
-#: ../gedit/gedit-print-preferences.ui.h:12
-msgid "_Body:"
-msgstr "Те_ло:"
+#: ../gedit/gedit-print-preferences.ui.h:2
+msgid "Print synta_x highlighting"
+msgstr "Штампај истицање синта_ксе"
 
-#: ../gedit/gedit-print-preferences.ui.h:13
-msgid "_Line numbers:"
-msgstr "Бројеви _редова:"
+#: ../gedit/gedit-print-preferences.ui.h:3
+msgid "Line Numbers"
+msgstr "Бројеви редова"
+
+#: ../gedit/gedit-print-preferences.ui.h:4
+msgid "Print line nu_mbers"
+msgstr "Штампај бројеве _редова"
 
 #. 'Number every' from 'Number every 3 lines' in the 'Text Editor' tab of the print preferences.
-#: ../gedit/gedit-print-preferences.ui.h:15
+#: ../gedit/gedit-print-preferences.ui.h:6
 msgid "_Number every"
 msgstr "Испиши _број након"
 
-#: ../gedit/gedit-print-preferences.ui.h:16
-msgid "_Restore Default Fonts"
-msgstr "Пов_рати основне словне ликове"
-
 # bug(slobo): plural-forms?
 #. 'lines' from 'Number every 3 lines' in the 'Text Editor' tab of the print preferences.
-#: ../gedit/gedit-print-preferences.ui.h:18
+#: ../gedit/gedit-print-preferences.ui.h:8
 msgid "lines"
 msgstr "реда"
+
+#: ../gedit/gedit-print-preferences.ui.h:12
+msgid "Page header"
+msgstr "Заглавље стране"
+
+#: ../gedit/gedit-print-preferences.ui.h:13
+msgid "Print page _headers"
+msgstr "Штам_пај заглавља страница"
+
+#: ../gedit/gedit-print-preferences.ui.h:14
+msgid "Fonts"
+msgstr "Словни ликови"
+
+#: ../gedit/gedit-print-preferences.ui.h:15
+msgid "_Body:"
+msgstr "Те_ло:"
+
+#: ../gedit/gedit-print-preferences.ui.h:16
+msgid "_Line numbers:"
+msgstr "Бројеви _редова:"
+
+#: ../gedit/gedit-print-preferences.ui.h:17
+msgid "He_aders and footers:"
+msgstr "За_главља и подножја:"
+
+#: ../gedit/gedit-print-preferences.ui.h:18
+msgid "_Restore Default Fonts"
+msgstr "Пов_рати основне словне ликове"
 
 #: ../gedit/gedit-print-preview.c:582
 msgid "Show the previous page"
@@ -1859,13 +1861,6 @@ msgstr[0] "Постоје грешке у %d листу"
 msgstr[1] "Постоје грешке у %d листа"
 msgstr[2] "Постоје грешке у %d листова"
 msgstr[3] "Постоје грешке у једном листу"
-
-#: ../gedit/gedit-style-scheme-manager.c:176
-#, c-format
-msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
-msgstr ""
-"Не могу да направим фасциклу „%s“: „g_mkdir_with_parents()“ позив није "
-"успео: %s"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
@@ -2246,25 +2241,25 @@ msgid "/ on %s"
 msgstr "/ на „%s“"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:544
+#: ../gedit/gedit-view-frame.c:546
 msgid "_Wrap Around"
 msgstr "Преламај _около"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:554
+#: ../gedit/gedit-view-frame.c:556
 msgid "Match _Entire Word Only"
 msgstr "Упореди само целе _речи"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:564
+#: ../gedit/gedit-view-frame.c:566
 msgid "_Match Case"
 msgstr "Упореди _величину слова"
 
-#: ../gedit/gedit-view-frame.c:765
+#: ../gedit/gedit-view-frame.c:767
 msgid "String you want to search for"
 msgstr "Ниска коју желите да потражите"
 
-#: ../gedit/gedit-view-frame.c:772
+#: ../gedit/gedit-view-frame.c:777
 msgid "Line you want to move the cursor to"
 msgstr "Ред у који желите да померите курсор"
 
@@ -2277,10 +2272,10 @@ msgstr "Користи „%s“ режим истицања"
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
 #: ../gedit/gedit-window.c:1047 ../gedit/gedit-window.c:2093
-#: ../plugins/externaltools/tools/manager.py:138
-#: ../plugins/externaltools/tools/manager.py:442
-#: ../plugins/externaltools/tools/manager.py:553
-#: ../plugins/externaltools/tools/manager.py:874
+#: ../plugins/externaltools/tools/manager.py:146
+#: ../plugins/externaltools/tools/manager.py:450
+#: ../plugins/externaltools/tools/manager.py:561
+#: ../plugins/externaltools/tools/manager.py:882
 msgid "Plain Text"
 msgstr "Обичан текст"
 
@@ -2388,12 +2383,12 @@ msgstr "Испишите великим словом прво слово сва�
 
 #. ex:set ts=8 noet:
 #: ../plugins/checkupdate/checkupdate.plugin.desktop.in.h:1
-msgid "Check for latest version of gedit"
-msgstr "Проверите да ли је изашло ново издање Вилењакове бележнице"
-
-#: ../plugins/checkupdate/checkupdate.plugin.desktop.in.h:2
 msgid "Check update"
 msgstr "Проверите издања"
+
+#: ../plugins/checkupdate/checkupdate.plugin.desktop.in.h:2
+msgid "Check for latest version of gedit"
+msgstr "Проверите да ли је изашло ново издање Вилењакове бележнице"
 
 #: ../plugins/checkupdate/gedit-check-update-plugin.c:257
 msgid "There was an error displaying the URI."
@@ -2429,18 +2424,19 @@ msgstr "Издања за занемаривање"
 msgid "Version to ignore until a newer version is released."
 msgstr "Издања која треба занемарити док не изађе новије издање."
 
+#. ex:set ts=8 noet:
 #: ../plugins/docinfo/docinfo.plugin.desktop.in.h:1
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
+msgid "Document Statistics"
+msgstr "Статистика документа"
+
+#: ../plugins/docinfo/docinfo.plugin.desktop.in.h:2
 msgid ""
 "Analyzes the current document and reports the number of words, lines, "
 "characters and non-space characters in it."
 msgstr ""
 "Анализира тренутни документ и извештава о броју речи, редова, знакова, и "
 "знакова без размака."
-
-#: ../plugins/docinfo/docinfo.plugin.desktop.in.h:2
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:6
-msgid "Document Statistics"
-msgstr "Статистика документа"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.c:451
 msgid "_Document Statistics"
@@ -2450,51 +2446,48 @@ msgstr "Статистика _документа"
 msgid "Get statistical information on the current document"
 msgstr "добавите статистичке податке о тренутном документу"
 
-#. ex:set ts=8 noet:
-#. ex:ts=4:et:
-#. ex:ts=8:noet:
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
-#: ../plugins/externaltools/tools/tools.ui.h:1
-#: ../plugins/snippets/snippets/snippets.ui.h:1
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:1
-msgid "    "
-msgstr "    "
-
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:2
-msgid "Bytes"
-msgstr "Бајтова"
+msgid "_Update"
+msgstr "_Освежи"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:3
-msgid "Characters (no spaces)"
-msgstr "Знакова (без размака)"
+msgid "File Name"
+msgstr "Назив датотеке"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:4
-msgid "Characters (with spaces)"
-msgstr "Знакова (са размацима)"
+#: ../plugins/externaltools/tools/tools.ui.h:27
+#: ../plugins/snippets/snippets/snippets.ui.h:13
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
+msgid "    "
+msgstr "    "
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:5
 msgid "Document"
 msgstr "Документ"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:7
-msgid "File Name"
-msgstr "Назив датотеке"
-
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:8
-msgid "Lines"
-msgstr "Редови"
-
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:9
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:6
 msgid "Selection"
 msgstr "Избор"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:10
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:7
+msgid "Lines"
+msgstr "Редови"
+
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:8
 msgid "Words"
 msgstr "Речи"
 
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:9
+msgid "Characters (with spaces)"
+msgstr "Знакова (са размацима)"
+
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:10
+msgid "Characters (no spaces)"
+msgstr "Знакова (без размака)"
+
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:11
-msgid "_Update"
-msgstr "_Освежи"
+msgid "Bytes"
+msgstr "Бајтова"
 
 #: ../plugins/externaltools/data/build.desktop.in.h:1
 msgid "Build"
@@ -2506,13 +2499,13 @@ msgstr "Изврши наредбу „make“ у фасцикли докуме�
 
 #: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:1
 #: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
-msgid "Open a terminal in the document location"
-msgstr "Отворите терминал са почетком у отвореној фасцикли"
+msgid "Open terminal here"
+msgstr "Овде отвори терминал"
 
 #: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:2
 #: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:2
-msgid "Open terminal here"
-msgstr "Овде отвори терминал"
+msgid "Open a terminal in the document location"
+msgstr "Отворите терминал са почетком у отвореној фасцикли"
 
 #: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:1
 msgid "Remove trailing spaces"
@@ -2523,27 +2516,27 @@ msgid "Remove useless trailing spaces in your file"
 msgstr "Уклања бескорисне размаке и празнине на крају реда у датотеци"
 
 #: ../plugins/externaltools/data/run-command.desktop.in.h:1
-msgid "Execute a custom command and put its output in a new document"
-msgstr "Покреће команду и смешта њен излаз у нови документ"
-
-#: ../plugins/externaltools/data/run-command.desktop.in.h:2
 msgid "Run command"
 msgstr "Извршите наредбу"
 
-#: ../plugins/externaltools/externaltools.plugin.desktop.in.h:1
-msgid "Execute external commands and shell scripts."
-msgstr "Извршава спољне наредбе и скрипте љуске."
+#: ../plugins/externaltools/data/run-command.desktop.in.h:2
+msgid "Execute a custom command and put its output in a new document"
+msgstr "Покреће команду и смешта њен излаз у нови документ"
 
-#: ../plugins/externaltools/externaltools.plugin.desktop.in.h:2
+#: ../plugins/externaltools/externaltools.plugin.desktop.in.h:1
 msgid "External Tools"
 msgstr "Спољни алати"
 
-#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
-msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
-msgstr "Назив Панго словног лика. Примери су „Sans 12“ или „Monospace Bold 14“"
+#: ../plugins/externaltools/externaltools.plugin.desktop.in.h:2
+msgid "Execute external commands and shell scripts."
+msgstr "Извршава спољне наредбе и скрипте љуске."
 
-#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:5
+msgid "Whether to use the system font"
+msgstr "Да ли ће бити коришћен словни лик система"
+
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:2
 msgid ""
 "If true, the external tools will use the desktop-global standard font if "
 "it's monospace (and the most similar font it can come up with otherwise)."
@@ -2553,8 +2546,8 @@ msgstr ""
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
-msgid "Whether to use the system font"
-msgstr "Да ли ће бити коришћен словни лик система"
+msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
+msgstr "Назив Панго словног лика. Примери су „Sans 12“ или „Monospace Bold 14“"
 
 #: ../plugins/externaltools/tools/capture.py:92
 #, python-format
@@ -2577,31 +2570,31 @@ msgstr "Урађено."
 msgid "Exited"
 msgstr "Изашао"
 
-#: ../plugins/externaltools/tools/manager.py:136
+#: ../plugins/externaltools/tools/manager.py:144
 msgid "All languages"
 msgstr "Сви језици"
 
-#: ../plugins/externaltools/tools/manager.py:542
-#: ../plugins/externaltools/tools/manager.py:546
-#: ../plugins/externaltools/tools/manager.py:872
-#: ../plugins/externaltools/tools/tools.ui.h:4
+#: ../plugins/externaltools/tools/manager.py:550
+#: ../plugins/externaltools/tools/manager.py:554
+#: ../plugins/externaltools/tools/manager.py:880
+#: ../plugins/externaltools/tools/tools.ui.h:28
 msgid "All Languages"
 msgstr "Сви језици"
 
-#: ../plugins/externaltools/tools/manager.py:659
+#: ../plugins/externaltools/tools/manager.py:667
 msgid "New tool"
 msgstr "Нови алат"
 
-#: ../plugins/externaltools/tools/manager.py:790
+#: ../plugins/externaltools/tools/manager.py:798
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr "Ова пречица је већ везана за „%s“"
 
-#: ../plugins/externaltools/tools/manager.py:834
+#: ../plugins/externaltools/tools/manager.py:842
 msgid "Type a new accelerator, or press Backspace to clear"
 msgstr "Упишите нову пречицу или очистите тастером за брисање"
 
-#: ../plugins/externaltools/tools/manager.py:836
+#: ../plugins/externaltools/tools/manager.py:844
 msgid "Type a new accelerator"
 msgstr "Унесите нову пречицу"
 
@@ -2609,131 +2602,131 @@ msgstr "Унесите нову пречицу"
 msgid "Stopped."
 msgstr "Заустављен."
 
-#: ../plugins/externaltools/tools/tools.ui.h:2
-msgid "Add Tool"
-msgstr "Додај алат"
-
-#: ../plugins/externaltools/tools/tools.ui.h:3
-msgid "Add a new tool"
-msgstr "Додајте нови алат"
-
-#: ../plugins/externaltools/tools/tools.ui.h:5
+#. ex:ts=4:et:
+#: ../plugins/externaltools/tools/tools.ui.h:1
 msgid "All documents"
 msgstr "Сви документи"
 
-#: ../plugins/externaltools/tools/tools.ui.h:6
+#: ../plugins/externaltools/tools/tools.ui.h:2
 msgid "All documents except untitled ones"
 msgstr "Сви документи изузев оних без наслова"
 
+#: ../plugins/externaltools/tools/tools.ui.h:3
+msgid "Local files only"
+msgstr "Само локалне датотеке"
+
+#: ../plugins/externaltools/tools/tools.ui.h:4
+msgid "Remote files only"
+msgstr "Само удаљене датотеке"
+
+#: ../plugins/externaltools/tools/tools.ui.h:5
+msgid "Untitled documents only"
+msgstr "Само ненасловљени документи"
+
+#: ../plugins/externaltools/tools/tools.ui.h:6
+msgid "Nothing"
+msgstr "Ништа"
+
 #: ../plugins/externaltools/tools/tools.ui.h:7
-msgid "Append to current document"
-msgstr "Припојте тренутном документу"
-
-#: ../plugins/externaltools/tools/tools.ui.h:8
-msgid "Create new document"
-msgstr "Направите нови документ"
-
-#: ../plugins/externaltools/tools/tools.ui.h:9
 msgid "Current document"
 msgstr "Текући документ"
+
+#: ../plugins/externaltools/tools/tools.ui.h:8
+msgid "Current selection"
+msgstr "Тренутно изабрано"
+
+#: ../plugins/externaltools/tools/tools.ui.h:9
+msgid "Current selection (default to document)"
+msgstr "Тренутно изабрано (подразумевано у документу)"
 
 #: ../plugins/externaltools/tools/tools.ui.h:10
 msgid "Current line"
 msgstr "Текући ред"
 
 #: ../plugins/externaltools/tools/tools.ui.h:11
-msgid "Current selection"
-msgstr "Тренутно изабрано"
-
-#: ../plugins/externaltools/tools/tools.ui.h:12
-msgid "Current selection (default to document)"
-msgstr "Тренутно изабрано (подразумевано у документу)"
-
-#: ../plugins/externaltools/tools/tools.ui.h:13
 msgid "Current word"
 msgstr "Текућа реч"
 
-#: ../plugins/externaltools/tools/tools.ui.h:14
+#: ../plugins/externaltools/tools/tools.ui.h:12
 msgid "Display in bottom pane"
 msgstr "Прикажите у области на дну"
 
+#: ../plugins/externaltools/tools/tools.ui.h:13
+msgid "Create new document"
+msgstr "Направите нови документ"
+
+#: ../plugins/externaltools/tools/tools.ui.h:14
+msgid "Append to current document"
+msgstr "Припојте тренутном документу"
+
 #: ../plugins/externaltools/tools/tools.ui.h:15
-msgid "Insert at cursor position"
-msgstr "Уметните на позицију курсора"
-
-#: ../plugins/externaltools/tools/tools.ui.h:16
-msgid "Local files only"
-msgstr "Само локалне датотеке"
-
-#: ../plugins/externaltools/tools/tools.ui.h:17
-msgid "Manage External Tools"
-msgstr "Управљај спољним алатима"
-
-#: ../plugins/externaltools/tools/tools.ui.h:18
-msgid "Nothing"
-msgstr "Ништа"
-
-#: ../plugins/externaltools/tools/tools.ui.h:19
-msgid "Remote files only"
-msgstr "Само удаљене датотеке"
-
-#: ../plugins/externaltools/tools/tools.ui.h:20
-msgid "Remove Tool"
-msgstr "Уклони алат"
-
-#: ../plugins/externaltools/tools/tools.ui.h:21
-msgid "Remove selected tool"
-msgstr "Уклоните изабрани алат"
-
-#: ../plugins/externaltools/tools/tools.ui.h:22
 msgid "Replace current document"
 msgstr "Замените текући документ"
 
-#: ../plugins/externaltools/tools/tools.ui.h:23
+#: ../plugins/externaltools/tools/tools.ui.h:16
 msgid "Replace current selection"
 msgstr "Замените тренутно означени текст"
 
-#: ../plugins/externaltools/tools/tools.ui.h:24
-msgid "Revert Tool"
-msgstr "Врати алат"
+#: ../plugins/externaltools/tools/tools.ui.h:17
+msgid "Insert at cursor position"
+msgstr "Уметните на позицију курсора"
 
-#: ../plugins/externaltools/tools/tools.ui.h:25
+#: ../plugins/externaltools/tools/tools.ui.h:18
+msgid "Manage External Tools"
+msgstr "Управљај спољним алатима"
+
+#: ../plugins/externaltools/tools/tools.ui.h:19
+msgid "_Tools:"
+msgstr "_Алати:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:20
+msgid "Add a new tool"
+msgstr "Додајте нови алат"
+
+#: ../plugins/externaltools/tools/tools.ui.h:21
+msgid "Add Tool"
+msgstr "Додај алат"
+
+#: ../plugins/externaltools/tools/tools.ui.h:22
+msgid "Remove selected tool"
+msgstr "Уклоните изабрани алат"
+
+#: ../plugins/externaltools/tools/tools.ui.h:23
+msgid "Remove Tool"
+msgstr "Уклони алат"
+
+#: ../plugins/externaltools/tools/tools.ui.h:24
 msgid "Revert tool"
 msgstr "Вратите алат"
 
+#: ../plugins/externaltools/tools/tools.ui.h:25
+msgid "Revert Tool"
+msgstr "Врати алат"
+
 #: ../plugins/externaltools/tools/tools.ui.h:26
-#| msgid "_Shortcut Key:"
-msgid "Shortcut _Key:"
-msgstr "Тастер _пречице:"
-
-#: ../plugins/externaltools/tools/tools.ui.h:27
-msgid "Untitled documents only"
-msgstr "Само ненасловљени документи"
-
-#: ../plugins/externaltools/tools/tools.ui.h:28
-msgid "_Applicability:"
-msgstr "П_рименљивост:"
-
-#: ../plugins/externaltools/tools/tools.ui.h:29
-#: ../plugins/snippets/snippets/snippets.ui.h:16
+#: ../plugins/snippets/snippets/snippets.ui.h:11
 msgid "_Edit:"
 msgstr "_Уреди:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:30
-msgid "_Input:"
-msgstr "У_лаз:"
+#: ../plugins/externaltools/tools/tools.ui.h:29
+msgid "_Applicability:"
+msgstr "П_рименљивост:"
 
-#: ../plugins/externaltools/tools/tools.ui.h:31
+#: ../plugins/externaltools/tools/tools.ui.h:30
 msgid "_Output:"
 msgstr "И_злаз:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:31
+msgid "_Input:"
+msgstr "У_лаз:"
 
 #: ../plugins/externaltools/tools/tools.ui.h:32
 msgid "_Save:"
 msgstr "_Сачувај:"
 
 #: ../plugins/externaltools/tools/tools.ui.h:33
-msgid "_Tools:"
-msgstr "_Алати:"
+msgid "Shortcut _Key:"
+msgstr "Тастер _пречице:"
 
 #: ../plugins/externaltools/tools/windowactivatable.py:179
 msgid "Manage _External Tools..."
@@ -2757,12 +2750,12 @@ msgstr "Излаз љуске"
 
 #. ex:ts=4:et:
 #: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:1
-msgid "Easy file access from the side panel"
-msgstr "Лак приступ датотекама из бочне области"
-
-#: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:2
 msgid "File Browser Panel"
 msgstr "Површ са прегледачем датотека"
+
+#: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:2
+msgid "Easy file access from the side panel"
+msgstr "Лак приступ датотекама из бочне области"
 
 #: ../plugins/filebrowser/gedit-file-bookmarks-store.c:239
 msgid "File System"
@@ -3000,7 +2993,6 @@ msgid "Show binary files"
 msgstr "Прикажите извршне датотеке"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:1207
-#| msgid "_Match Filename"
 msgid "Match Filename"
 msgstr "Подудари назив датотеке"
 
@@ -3021,26 +3013,56 @@ msgstr "Не могу да монтирам диск: %s"
 
 #. ex:ts=8:noet:
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:1
-msgid "Enable Restore of Remote Locations"
-msgstr "Омогући обнављање удаљених локација"
+msgid "Open With Tree View"
+msgstr "Отварање у прегледу стаблом"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:2
-msgid "File Browser Filter Mode"
-msgstr "Режим филтрирања у прегледачу датотека"
+msgid ""
+"Open the tree view when the file browser plugin gets loaded instead of the "
+"bookmarks view"
+msgstr ""
+"Приказује стабло када се прегледач датотека учита уместо прегледа обележивача"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:3
-msgid "File Browser Filter Pattern"
-msgstr "Маска филтера у прегледачу датотека"
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:4
 msgid "File Browser Root Directory"
 msgstr "Корени директоријум у прегледачу датотека"
+
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:4
+msgid ""
+"The file browser root directory to use when loading the file browser plugin "
+"and onload/tree_view is TRUE."
+msgstr ""
+"Корени директоријум прегледника датотека који ће бити коришћен приликом "
+"учитавања прикључка прегледника датотека и када је изабрано „onload/"
+"tree_view“."
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:5
 msgid "File Browser Virtual Root Directory"
 msgstr "Замишљени корени директоријум у прегледачу датотека"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:6
+msgid ""
+"The file browser virtual root directory to use when loading the file browser "
+"plugin when onload/tree_view is TRUE. The virtual root must always be below "
+"the actual root."
+msgstr ""
+"Виртуелни корени директоријум прегледника датотека који ће бити коришћен "
+"приликом учитавања прикључка прегледника датотека и када је изабрано „onload/"
+"tree_view“. Виртуелни корени директоријум мора увек бити унутар стварног."
+
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:7
+msgid "Enable Restore of Remote Locations"
+msgstr "Омогући обнављање удаљених локација"
+
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:8
+msgid "Sets whether to enable restoring of remote locations."
+msgstr "Да ли треба омогућити обнављање удаљених локација."
+
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:9
+msgid "Set Location to First Document"
+msgstr "Постављање почетка на први документ"
+
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:10
 msgid ""
 "If TRUE the file browser plugin will view the directory of the first opened "
 "document given that the file browser hasn't been used yet. (Thus this "
@@ -3051,54 +3073,11 @@ msgstr ""
 "документа који је први отворен, уколико прегледач није већ коришћен. Ово "
 "обично вреди када се документ отвара из командне линије, у Наутилусу, итд."
 
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:7
-msgid "Open With Tree View"
-msgstr "Отварање у прегледу стаблом"
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:8
-msgid ""
-"Open the tree view when the file browser plugin gets loaded instead of the "
-"bookmarks view"
-msgstr ""
-"Приказује стабло када се прегледач датотека учита уместо прегледа обележивача"
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:9
-msgid "Set Location to First Document"
-msgstr "Постављање почетка на први документ"
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:10
-msgid "Sets whether to enable restoring of remote locations."
-msgstr "Да ли треба омогућити обнављање удаљених локација."
-
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:11
-msgid ""
-"The file browser root directory to use when loading the file browser plugin "
-"and onload/tree_view is TRUE."
-msgstr ""
-"Корени директоријум прегледника датотека који ће бити коришћен приликом "
-"учитавања прикључка прегледника датотека и када је изабрано „onload/"
-"tree_view“."
+msgid "File Browser Filter Mode"
+msgstr "Режим филтрирања у прегледачу датотека"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:12
-msgid ""
-"The file browser virtual root directory to use when loading the file browser "
-"plugin when onload/tree_view is TRUE. The virtual root must always be below "
-"the actual root."
-msgstr ""
-"Виртуелни корени директоријум прегледника датотека који ће бити коришћен "
-"приликом учитавања прикључка прегледника датотека и када је изабрано "
-"„onload/tree_view“. Виртуелни корени директоријум мора увек бити унутар "
-"стварног."
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:13
-msgid ""
-"The filter pattern to filter the file browser with. This filter works on top "
-"of the filter_mode."
-msgstr ""
-"Маска филтера за примену у прегледнику датотека. Филтер ради по режиму из "
-"„filter_mode“."
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:14
 msgid ""
 "This value determines what files get filtered from the file browser. Valid "
 "values are: none (filter nothing), hide-hidden (filter hidden files) and "
@@ -3109,37 +3088,49 @@ msgstr ""
 "датотеке), „binary“ (филтрирај извршне датотеке) и y"
 "„hidden_and_binar“ (филтрирај скривене и извршне датотеке)."
 
-#: ../plugins/modelines/modelines.plugin.desktop.in.h:1
-msgid "Emacs, Kate and Vim-style modelines support for gedit."
-msgstr "Емакс, Кејт и Вим подршка за линије режима у Вилењаковој бележници."
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:13
+msgid "File Browser Filter Pattern"
+msgstr "Маска филтера у прегледачу датотека"
 
-#: ../plugins/modelines/modelines.plugin.desktop.in.h:2
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:14
+msgid ""
+"The filter pattern to filter the file browser with. This filter works on top "
+"of the filter_mode."
+msgstr ""
+"Маска филтера за примену у прегледнику датотека. Филтер ради по режиму из "
+"„filter_mode“."
+
+#: ../plugins/modelines/modelines.plugin.desktop.in.h:1
 msgid "Modelines"
 msgstr "Линије режима"
 
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:2
+#: ../plugins/modelines/modelines.plugin.desktop.in.h:2
+msgid "Emacs, Kate and Vim-style modelines support for gedit."
+msgstr "Емакс, Кејт и Вим подршка за линије режима у Вилењаковој бележници."
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "Command Color Text"
 msgstr "Боја текста наредбе"
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:2
+msgid "The command color text"
+msgstr "Боја текста за наредбе"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:3
 msgid "Error Color Text"
 msgstr "Боја текста грешке"
 
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:5
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:4
+msgid "The error color text"
+msgstr "Боја текста за грешке"
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
 msgstr ""
 "Ако је изабрано, терминал ће користити десктоп-глобал стандардна слова ако "
 "је моноспејс (и већина сличних слова може да дође у обзир)."
-
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
-msgid "The command color text"
-msgstr "Боја текста за наредбе"
-
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
-msgid "The error color text"
-msgstr "Боја текста за грешке"
 
 #: ../plugins/pythonconsole/pythonconsole/config.ui.h:1
 msgid "C_ommand color:"
@@ -3149,13 +3140,13 @@ msgstr "Боја _наредбе:"
 msgid "_Error color:"
 msgstr "Боја _грешке:"
 
+#. ex:et:ts=4:
 #: ../plugins/pythonconsole/pythonconsole/__init__.py:52
-#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
 msgid "Python Console"
 msgstr "Конзола Питона"
 
-#. ex:et:ts=4:
-#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
 msgid "Interactive Python console standing in the bottom panel"
 msgstr "Интерактивна конзола питона која стоји у панелу на дну"
 
@@ -3181,8 +3172,9 @@ msgstr "Брзо отворите датотеке"
 msgid "Type to search..."
 msgstr "Упишите да потражите..."
 
+#. ex:ts=8:et:
 #: ../plugins/snippets/snippets/document.py:56
-#: ../plugins/snippets/snippets.plugin.desktop.in.h:2
+#: ../plugins/snippets/snippets.plugin.desktop.in.h:1
 msgid "Snippets"
 msgstr "Исечци"
 
@@ -3265,7 +3257,7 @@ msgstr ""
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/manager.py:670
-#: ../plugins/snippets/snippets/snippets.ui.h:14
+#: ../plugins/snippets/snippets/snippets.ui.h:16
 msgid "Single word the snippet is activated with after pressing Tab"
 msgstr "Реч на коју се активира исечак након притиска на тастер табулатора"
 
@@ -3279,7 +3271,7 @@ msgid "Import successfully completed"
 msgstr "Увоз је успешно завршен"
 
 #: ../plugins/snippets/snippets/manager.py:780
-#: ../plugins/snippets/snippets/snippets.ui.h:9
+#: ../plugins/snippets/snippets/snippets.ui.h:7
 msgid "Import snippets"
 msgstr "Увезите исечке"
 
@@ -3358,63 +3350,62 @@ msgstr ""
 msgid "Execution of the Python command (%s) failed: %s"
 msgstr "Извршавање наредбе Питона (%s) није успело: %s"
 
-#. ex:ts=8:et:
-#: ../plugins/snippets/snippets.plugin.desktop.in.h:1
+#: ../plugins/snippets/snippets.plugin.desktop.in.h:2
 msgid "Insert often-used pieces of text in a fast way"
 msgstr "Уметните реченице које често користите на брз начин"
 
+#: ../plugins/snippets/snippets/snippets.ui.h:1
+msgid "Manage Snippets"
+msgstr "Управљај исечцима"
+
 #: ../plugins/snippets/snippets/snippets.ui.h:2
-msgid "Activation"
-msgstr "Покретање"
+msgid "_Snippets:"
+msgstr "_Исечци:"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:3
-msgid "Add Snippet"
-msgstr "Додај исечак"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:4
 msgid "Create new snippet"
 msgstr "Направите нови исечак"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:6
-msgid "Export Snippets"
-msgstr "Извези исечке"
+#: ../plugins/snippets/snippets/snippets.ui.h:4
+msgid "Add Snippet"
+msgstr "Додај исечак"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:7
-msgid "Export selected snippets"
-msgstr "Извезите одабране исечке"
+#: ../plugins/snippets/snippets/snippets.ui.h:6
+msgid "Remove Snippet"
+msgstr "Уклони исечак"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:8
 msgid "Import Snippets"
 msgstr "Увези исечке"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:10
-msgid "Manage Snippets"
-msgstr "Управљај исечцима"
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+msgid "Export selected snippets"
+msgstr "Извезите одабране исечке"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:11
-msgid "Remove Snippet"
-msgstr "Уклони исечак"
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+msgid "Export Snippets"
+msgstr "Извези исечке"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:12
+msgid "Activation"
+msgstr "Покретање"
+
+#. "tab" here means the tab key, not the notebook tab!
+#: ../plugins/snippets/snippets/snippets.ui.h:15
+msgid "_Tab trigger:"
+msgstr "Оки_дач за језичак:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:17
 msgid "S_hortcut key:"
 msgstr "Преч_ица:"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:13
+#: ../plugins/snippets/snippets/snippets.ui.h:18
 msgid "Shortcut key with which the snippet is activated"
 msgstr "Пречица са тастатуре која активира исечак"
 
-#: ../plugins/snippets/snippets/snippets.ui.h:15
+#: ../plugins/snippets/snippets/snippets.ui.h:19
 msgid "_Drop targets:"
 msgstr "О_дредиште:"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:17
-msgid "_Snippets:"
-msgstr "_Исечци:"
-
-#. "tab" here means the tab key, not the notebook tab!
-#: ../plugins/snippets/snippets/snippets.ui.h:19
-msgid "_Tab trigger:"
-msgstr "Оки_дач за језичак:"
 
 #: ../plugins/snippets/snippets/windowactivatable.py:154
 msgid "Manage _Snippets..."
@@ -3434,33 +3425,33 @@ msgstr "Поређајте текући документ или означени
 
 #. ex:ts=8:noet:
 #: ../plugins/sort/gedit-sort-plugin.ui.h:1
-msgid "R_emove duplicates"
-msgstr "Уклони дупли_кате"
-
-#: ../plugins/sort/gedit-sort-plugin.ui.h:2
-msgid "S_tart at column:"
-msgstr "Почни са колоном:"
-
-#: ../plugins/sort/gedit-sort-plugin.ui.h:3
 #: ../plugins/sort/sort.plugin.desktop.in.h:1
 msgid "Sort"
 msgstr "Поређај"
 
+#: ../plugins/sort/gedit-sort-plugin.ui.h:2
+msgid "_Sort"
+msgstr "Пор_еђај"
+
+#: ../plugins/sort/gedit-sort-plugin.ui.h:3
+msgid "_Reverse order"
+msgstr "О_брни редослед"
+
 #: ../plugins/sort/gedit-sort-plugin.ui.h:4
-msgid "You cannot undo a sort operation"
-msgstr "Не можете поништити ређање"
+msgid "R_emove duplicates"
+msgstr "Уклони дупли_кате"
 
 #: ../plugins/sort/gedit-sort-plugin.ui.h:5
 msgid "_Ignore case"
 msgstr "_Занемари величину слова"
 
 #: ../plugins/sort/gedit-sort-plugin.ui.h:6
-msgid "_Reverse order"
-msgstr "О_брни редослед"
+msgid "S_tart at column:"
+msgstr "Почни са колоном:"
 
 #: ../plugins/sort/gedit-sort-plugin.ui.h:7
-msgid "_Sort"
-msgstr "Пор_еђај"
+msgid "You cannot undo a sort operation"
+msgstr "Не можете поништити ређање"
 
 #: ../plugins/sort/sort.plugin.desktop.in.h:2
 msgid "Sorts a document or selected text."
@@ -3537,8 +3528,9 @@ msgctxt "language"
 msgid "Default"
 msgstr "Основни"
 
+#. ex:ts=8:noet:
 #: ../plugins/spell/gedit-spell-language-dialog.c:142
-#: ../plugins/spell/languages-dialog.ui.h:2
+#: ../plugins/spell/languages-dialog.ui.h:1
 msgid "Set language"
 msgstr "Поставите језик"
 
@@ -3578,22 +3570,21 @@ msgstr "Документ је празан."
 msgid "No misspelled words"
 msgstr "Нема погрешно написаних речи"
 
-#. ex:ts=8:noet:
-#: ../plugins/spell/languages-dialog.ui.h:1
+#: ../plugins/spell/languages-dialog.ui.h:2
 msgid "Select the _language of the current document."
 msgstr "Изабери је_зик тренутног документа."
 
 #: ../plugins/spell/spell-checker.ui.h:1
-msgid "Add w_ord"
-msgstr "Д_одај реч"
+msgid "Check spelling"
+msgstr "Провера писања"
 
 #: ../plugins/spell/spell-checker.ui.h:2
-msgid "Cha_nge"
-msgstr "Изме_ни"
+msgid "Misspelled word:"
+msgstr "Погрешно откуцане речи:"
 
 #: ../plugins/spell/spell-checker.ui.h:3
-msgid "Change A_ll"
-msgstr "И_змени све"
+msgid "word"
+msgstr "реч"
 
 #: ../plugins/spell/spell-checker.ui.h:4
 msgid "Change _to:"
@@ -3604,79 +3595,79 @@ msgid "Check _Word"
 msgstr "Провери ре_ч"
 
 #: ../plugins/spell/spell-checker.ui.h:6
-msgid "Check spelling"
-msgstr "Провера писања"
+msgid "_Suggestions:"
+msgstr "Предло_зи:"
 
 #: ../plugins/spell/spell-checker.ui.h:7
+msgid "_Ignore"
+msgstr "_Занемари"
+
+#: ../plugins/spell/spell-checker.ui.h:8
+msgid "Cha_nge"
+msgstr "Изме_ни"
+
+#: ../plugins/spell/spell-checker.ui.h:9
 msgid "Ignore _All"
 msgstr "_Занемари све"
 
-#: ../plugins/spell/spell-checker.ui.h:8
-msgid "Language"
-msgstr "Језик"
-
-#: ../plugins/spell/spell-checker.ui.h:9
-msgid "Language:"
-msgstr "Језик:"
-
 #: ../plugins/spell/spell-checker.ui.h:10
-msgid "Misspelled word:"
-msgstr "Погрешно откуцане речи:"
+msgid "Change A_ll"
+msgstr "И_змени све"
 
 #: ../plugins/spell/spell-checker.ui.h:11
 msgid "User dictionary:"
 msgstr "Кориснички речник:"
 
 #: ../plugins/spell/spell-checker.ui.h:12
-msgid "_Ignore"
-msgstr "_Занемари"
+msgid "Add w_ord"
+msgstr "Д_одај реч"
 
 #: ../plugins/spell/spell-checker.ui.h:13
-msgid "_Suggestions:"
-msgstr "Предло_зи:"
+msgid "Language:"
+msgstr "Језик:"
 
 #: ../plugins/spell/spell-checker.ui.h:14
-msgid "word"
-msgstr "реч"
+msgid "Language"
+msgstr "Језик"
 
 #: ../plugins/spell/spell.plugin.desktop.in.h:1
-msgid "Checks the spelling of the current document."
-msgstr "Проверите писање у тренутном документу."
-
-#: ../plugins/spell/spell.plugin.desktop.in.h:2
 msgid "Spell Checker"
 msgstr "Провера правописа"
 
-#. Translators: Use the more common date format in your locale
+#: ../plugins/spell/spell.plugin.desktop.in.h:2
+msgid "Checks the spelling of the current document."
+msgstr "Проверите писање у тренутном документу."
+
+#: ../plugins/time/gedit-time-dialog.ui.h:1
+msgid "Insert Date and Time"
+msgstr "Уметни датум и време"
+
 #: ../plugins/time/gedit-time-dialog.ui.h:2
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
+msgid "_Insert"
+msgstr "У_метни"
+
+#: ../plugins/time/gedit-time-dialog.ui.h:3
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
+msgid "Use the _selected format"
+msgstr "Користи изабрани фо_рмат"
+
+#: ../plugins/time/gedit-time-dialog.ui.h:4
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
+msgid "_Use custom format"
+msgstr "Кори_сти произвољан формат"
+
+#. Translators: Use the more common date format in your locale
+#: ../plugins/time/gedit-time-dialog.ui.h:6
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%d.%m.%Y, %H:%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
-#: ../plugins/time/gedit-time-dialog.ui.h:3
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
-msgid "01/11/2009 17:52:00"
-msgstr "01.11.2009, 17:52:00"
-
-#: ../plugins/time/gedit-time-dialog.ui.h:4
-msgid "Insert Date and Time"
-msgstr "Уметни датум и време"
-
-#: ../plugins/time/gedit-time-dialog.ui.h:5
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
-msgid "Use the _selected format"
-msgstr "Користи изабрани фо_рмат"
-
-#: ../plugins/time/gedit-time-dialog.ui.h:6
-msgid "_Insert"
-msgstr "У_метни"
-
 #: ../plugins/time/gedit-time-dialog.ui.h:7
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:11
-msgid "_Use custom format"
-msgstr "Кори_сти произвољан формат"
+msgid "01/11/2009 17:52:00"
+msgstr "01.11.2009, 17:52:00"
 
 #: ../plugins/time/gedit-time-plugin.c:188
 msgid "In_sert Date and Time..."
@@ -3690,21 +3681,22 @@ msgstr "Уметните тренутни датум и време на пози
 msgid "Available formats"
 msgstr "Доступни формати"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:7
+#. ex:ts=8:noet:
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "Configure date/time plugin"
 msgstr "Подесите додатак за датум/време"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:2
 msgid "When inserting date/time..."
 msgstr "Када се убацује датум/време..."
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
 msgid "_Prompt for a format"
 msgstr "У_питај за формат"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:1
-msgid "Custom Format"
-msgstr "Произвољни формат"
+msgid "Prompt Type"
+msgstr "Упитна порука"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:2
 msgid ""
@@ -3715,20 +3707,20 @@ msgstr ""
 "формат треба да се користи."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
-msgid "Prompt Type"
-msgstr "Упитна порука"
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
 msgid "Selected Format"
 msgstr "Изабрани формат"
 
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
-msgid "The custom format used when inserting the date/time."
-msgstr "Произвољни формат који се користи приликом уметања датума/времена."
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
 msgid "The selected format used when inserting the date/time."
 msgstr "Изабрани формат који се користи приликом уметања датума/времена."
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
+msgid "Custom Format"
+msgstr "Произвољни формат"
+
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
+msgid "The custom format used when inserting the date/time."
+msgstr "Произвољни формат који се користи приликом уметања датума/времена."
 
 #: ../plugins/time/time.plugin.desktop.in.h:1
 msgid "Insert Date/Time"
@@ -3739,14 +3731,22 @@ msgid "Inserts current date and time at the cursor position."
 msgstr "Умеће тренутни датум и време на позицију курсора."
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
+msgid "Zeitgeist dataprovider"
+msgstr "Цајтгајст достављач датума"
+
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Logs access and leave event for documents used with gedit"
 msgstr ""
 "Пријављује приступ и оставља догађај за документа коришћена Вилењаковом "
 "бележницом"
 
-#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
-msgid "Zeitgeist dataprovider"
-msgstr "Цајтгајст достављач датума"
+#~| msgid "button1"
+#~ msgid "toolbutton1"
+#~ msgstr "дугме_алата1"
+
+#~| msgid "button1"
+#~ msgid "toolbutton2"
+#~ msgstr "дугме_алата2"
 
 #~ msgid "_Add..."
 #~ msgstr "Дод_ај..."
