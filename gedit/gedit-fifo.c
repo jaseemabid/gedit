@@ -161,6 +161,7 @@ init_fifo (GeditFifo *fifo)
 
 	if (g_unlink (tmp) == -1)
 	{
+		g_free (tmp);
 		return;
 	}
 
@@ -168,10 +169,12 @@ init_fifo (GeditFifo *fifo)
 	{
 		g_warning ("Could not create named pipe for standard in: %s",
 		           strerror (errno));
+		g_free (tmp);
 		return;
 	}
 
 	fifo->priv->file = g_file_new_for_path (tmp);
+	g_free (tmp);
 }
 
 static void
