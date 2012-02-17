@@ -99,6 +99,7 @@ typedef struct
 
 struct _GeditDBusPrivate
 {
+	guint owner_id;
 	GeditDBusResult result;
 	GMainLoop *main_loop;
 	guint32 wait_id;
@@ -173,6 +174,12 @@ gedit_dbus_dispose (GObject *object)
 	g_clear_object (&dbus->priv->stdin_out_stream);
 	g_clear_object (&dbus->priv->stdin_in_stream);
 #endif
+
+	if (dbus->priv->owner_id != 0)
+	{
+		g_bus_unown_name (dbus->priv->owner_id);
+		dbus->priv->owner_id = 0;
+	}
 
 	G_OBJECT_CLASS (gedit_dbus_parent_class)->dispose (object);
 }
@@ -1678,16 +1685,18 @@ gedit_dbus_run (GeditDBus *dbus)
 
 	dbus->priv->main_loop = g_main_loop_new (NULL, FALSE);
 
-	g_bus_own_name (G_BUS_TYPE_SESSION,
-	                "org.gnome.gedit",
-	                G_BUS_NAME_OWNER_FLAGS_NONE,
-	                (GBusAcquiredCallback)bus_acquired_cb,
-	                (GBusNameAcquiredCallback)name_acquired_cb,
-	                (GBusNameLostCallback)name_lost_cb,
-	                dbus,
-	                NULL);
+	dbus->priv->owner_id = g_bus_own_name (G_BUS_TYPE_SESSION,
+					       "org.gnome.gedit",
+					       G_BUS_NAME_OWNER_FLAGS_NONE,
+					       (GBusAcquiredCallback)bus_acquired_cb,
+					       (GBusNameAcquiredCallback)name_acquired_cb,
+					       (GBusNameLostCallback)name_lost_cb,
+					       dbus,
+					       NULL);
 
-	gedit_debug_message (DEBUG_DBUS, "Own name org.gnome.gedit\n");
+	gedit_debug_message (DEBUG_DBUS,
+			     "Own name org.gnome.gedit (owner_id = %d)",
+			     dbus->priv->owner_id);
 
 	g_main_loop_run (dbus->priv->main_loop);
 	g_main_loop_unref (dbus->priv->main_loop);
