@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.help.master\n"
-"POT-Creation-Date: 2012-02-19 23:11+0000\n"
-"PO-Revision-Date: 2012-02-20 16:20+0100\n"
+"POT-Creation-Date: 2012-02-20 16:02+0000\n"
+"PO-Revision-Date: 2012-02-21 17:59+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -98,7 +98,7 @@ msgstr "Editor de textos gedit"
 #: C/gedit-quickstart.page:11(credit/name)
 #: C/gedit-replace.page:10(credit/name) C/gedit-save-file.page:9(credit/name)
 #: C/gedit-search.page:10(credit/name)
-#: C/gedit-shortcut-keys.page:9(credit/name)
+#: C/gedit-shortcut-keys.page:10(credit/name)
 #: C/gedit-spellcheck.page:10(credit/name)
 #: C/gedit-syntax-highlighting.page:9(credit/name)
 #: C/gedit-tabs-moving.page:9(credit/name) C/gedit-tabs.page:10(credit/name)
@@ -439,17 +439,24 @@ msgid "Turn off fullscreen mode"
 msgstr "Desactivar el modo a pantalla completa"
 
 #: C/gedit-full-screen.page:28(section/p)
+#| msgid ""
+#| "To turn off fullscreen mode and return to the standard <app>gedit</app> "
+#| "window, move your mouse cursor to the top of the screen, and wait for the "
+#| "<gui>menu bar</gui> to appear. When the <gui>menu bar</gui> appears, "
+#| "select <gui>Leave Fullscreen</gui>."
 msgid ""
 "To turn off fullscreen mode and return to the standard <app>gedit</app> "
 "window, move your mouse cursor to the top of the screen, and wait for the "
 "<gui>menu bar</gui> to appear. When the <gui>menu bar</gui> appears, select "
-"<gui>Leave Fullscreen</gui>."
+"<gui>Leave Fullscreen</gui>. You can also press <key>F11</key> to turn off "
+"fullscreen mode."
 msgstr ""
 "Para salir del modo a pantalla completa y volver a la ventana estándar de "
 "<app>gedit</app>, mueva el cursor del ratón hasta la parte superior de la "
 "pantalla y espere a que aparezca la <gui>barra de menú</gui>. Cuando la "
 "<gui>barra de menú</gui> aparezca, seleccione <gui>Salir del modo a pantalla "
-"completa</gui>."
+"completa</gui>. También puede pulsar <key>F11</key> para salir del modo a "
+"pantalla completa."
 
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
@@ -540,13 +547,14 @@ msgstr ""
 "archivos</gui> en la parte inferior del panel."
 
 #: C/gedit-open-files-from-sidepane.page:39(section/p)
+#: C/gedit-plugins-file-browser.page:35(section/p)
 msgid ""
-"This will activate the <em>file-browser</em> mode of the <app>side panel</"
+"This will activate the <em>file-browser</em> mode of the <app>side pane</"
 "app>. You can then use the navigation buttons at the top of the pane to "
 "locate and open your desired files."
 msgstr ""
-"Esto activará el modo <em>examinador de archivos</em> del <app>panel "
-"lateral</app>. Después puede usar los botones de navegación en la parte "
+"Esto activará el modo <em>examinador de archivos</em> del <app>panel "
+"lateral</app>. Después puede usar los botones de navegación en la parte "
 "superior del panel para ubicar y abrir los archivos que quiera."
 
 #: C/gedit-open-files-from-sidepane.page:45(section/title)
@@ -1341,17 +1349,17 @@ msgstr ""
 msgid "The last key in the above key combination is a period."
 msgstr "La última tecla de la combinación de teclas indicada es un punto («.»)."
 
-#: C/gedit-plugins-commander.page:33(td/p) C/gedit-shortcut-keys.page:53(td/p)
-#: C/gedit-shortcut-keys.page:85(td/p) C/gedit-shortcut-keys.page:123(td/p)
-#: C/gedit-shortcut-keys.page:164(td/p) C/gedit-shortcut-keys.page:184(td/p)
-#: C/gedit-shortcut-keys.page:216(td/p) C/gedit-shortcut-keys.page:242(td/p)
+#: C/gedit-plugins-commander.page:33(td/p) C/gedit-shortcut-keys.page:56(td/p)
+#: C/gedit-shortcut-keys.page:88(td/p) C/gedit-shortcut-keys.page:124(td/p)
+#: C/gedit-shortcut-keys.page:168(td/p) C/gedit-shortcut-keys.page:186(td/p)
+#: C/gedit-shortcut-keys.page:217(td/p) C/gedit-shortcut-keys.page:243(td/p)
 msgid "To Do This"
 msgstr "Para hacer esto"
 
-#: C/gedit-plugins-commander.page:33(td/p) C/gedit-shortcut-keys.page:53(td/p)
-#: C/gedit-shortcut-keys.page:85(td/p) C/gedit-shortcut-keys.page:123(td/p)
-#: C/gedit-shortcut-keys.page:164(td/p) C/gedit-shortcut-keys.page:184(td/p)
-#: C/gedit-shortcut-keys.page:216(td/p) C/gedit-shortcut-keys.page:242(td/p)
+#: C/gedit-plugins-commander.page:33(td/p) C/gedit-shortcut-keys.page:56(td/p)
+#: C/gedit-shortcut-keys.page:88(td/p) C/gedit-shortcut-keys.page:124(td/p)
+#: C/gedit-shortcut-keys.page:168(td/p) C/gedit-shortcut-keys.page:186(td/p)
+#: C/gedit-shortcut-keys.page:217(td/p) C/gedit-shortcut-keys.page:243(td/p)
 msgid "Press This"
 msgstr "Pulsar esto"
 
@@ -1716,16 +1724,6 @@ msgstr ""
 "<guiseq><gui>Ver</gui><gui>Panel lateral</gui></guiseq> (o pulse<key>F9</"
 "key>), y pulse el icono <gui>examinador de archivos</gui> en la parte "
 "inferior del panel."
-
-#: C/gedit-plugins-file-browser.page:35(section/p)
-msgid ""
-"This will activate the <em>file-browser</em> mode of the <app>side pane</"
-"app>. You can then use the navigation buttons at the top of the pane to "
-"locate and open your desired files."
-msgstr ""
-"Esto activará el modo <em>examinador de archivos</em> del <app>panel "
-"lateral</app>. Después puede usar los botones de navegación en la parte "
-"superior del panel para ubicar y abrir los archivos que quiera."
 
 #: C/gedit-plugins-insert-date-time.page:17(info/desc)
 msgid "Insert the current date/time at the cursor position"
@@ -3433,27 +3431,27 @@ msgstr ""
 "gui><gui>Quitar resaltado</gui></guiseq>, o pulse <keyseq><key>Ctrl</"
 "key><key>Mayús</key><key>K</key></keyseq>."
 
-#: C/gedit-shortcut-keys.page:13(credit/name)
+#: C/gedit-shortcut-keys.page:14(credit/name)
 msgid "Paolo Borelli"
 msgstr "Paolo Borelli"
 
-#: C/gedit-shortcut-keys.page:16(credit/name)
+#: C/gedit-shortcut-keys.page:17(credit/name)
 msgid "Jesse van den Kieboom"
 msgstr "Jesse van den Kieboom"
 
-#: C/gedit-shortcut-keys.page:19(credit/name)
+#: C/gedit-shortcut-keys.page:20(credit/name)
 msgid "Steve Frécinaux"
 msgstr "Steve Frécinaux"
 
-#: C/gedit-shortcut-keys.page:22(credit/name)
+#: C/gedit-shortcut-keys.page:23(credit/name)
 msgid "Ignacio Casal Quinteiro"
 msgstr "Ignacio Casal Quinteiro"
 
-#: C/gedit-shortcut-keys.page:26(page/title)
+#: C/gedit-shortcut-keys.page:27(page/title)
 msgid "Shortcut keys"
 msgstr "Teclas rápidas"
 
-#: C/gedit-shortcut-keys.page:28(page/p)
+#: C/gedit-shortcut-keys.page:29(page/p)
 msgid ""
 "Use <gui>shortcut keys</gui> to perform common tasks more quickly than with "
 "the mouse and menus. The following tables list all of <app>gedit's</app> "
@@ -3463,315 +3461,315 @@ msgstr ""
 "rápidamente que con el ratón y los menús. Las siguientes tablas listan todas "
 "las teclas rápidas de <application>gedit</application>."
 
-#: C/gedit-shortcut-keys.page:46(section/title)
+#: C/gedit-shortcut-keys.page:53(table/title)
 msgid "Tab-related Shortcut keys"
 msgstr "Tecla rápidas relacionadas con las pestañas"
 
-#: C/gedit-shortcut-keys.page:58(td/p)
+#: C/gedit-shortcut-keys.page:61(td/p)
 msgid "Switch to the next tab to the left"
 msgstr "Cambiar a la siguiente pestaña a la izquierda"
 
-#: C/gedit-shortcut-keys.page:58(td/p)
+#: C/gedit-shortcut-keys.page:61(td/p)
 msgid "Ctrl + Alt + PageUp"
 msgstr "Ctrl + Alt + Re Pág"
 
-#: C/gedit-shortcut-keys.page:61(td/p)
+#: C/gedit-shortcut-keys.page:65(td/p)
 msgid "Switch to the next tab to the right"
 msgstr "Cambiar a la siguiente pestaña a la derecha"
 
-#: C/gedit-shortcut-keys.page:61(td/p)
+#: C/gedit-shortcut-keys.page:65(td/p)
 msgid "Ctrl + Alt + PageDown"
 msgstr "Ctrl + Alt + Av Pág"
 
-#: C/gedit-shortcut-keys.page:64(td/p)
+#: C/gedit-shortcut-keys.page:69(td/p)
 msgid "Close tab"
 msgstr "Cerrar pestaña"
 
-#: C/gedit-shortcut-keys.page:64(td/p) C/gedit-shortcut-keys.page:108(td/p)
+#: C/gedit-shortcut-keys.page:69(td/p) C/gedit-shortcut-keys.page:112(td/p)
 msgid "Ctrl + W"
 msgstr "Ctrl + W"
 
-#: C/gedit-shortcut-keys.page:67(td/p)
+#: C/gedit-shortcut-keys.page:72(td/p)
 msgid "Save all tabs"
 msgstr "Guardar todas las pestañas."
 
-#: C/gedit-shortcut-keys.page:67(td/p)
+#: C/gedit-shortcut-keys.page:72(td/p)
 msgid "Ctrl + Shift + L"
 msgstr "Ctrl + Mayús. + L"
 
-#: C/gedit-shortcut-keys.page:70(td/p)
+#: C/gedit-shortcut-keys.page:75(td/p)
 msgid "Close all tabs"
 msgstr "Cerrar todas las pestañas."
 
-#: C/gedit-shortcut-keys.page:70(td/p)
+#: C/gedit-shortcut-keys.page:75(td/p)
 msgid "Ctrl + Shift + W"
 msgstr "Ctrl + Mayús. + W"
 
-#: C/gedit-shortcut-keys.page:73(td/p)
+#: C/gedit-shortcut-keys.page:78(td/p)
 msgid "Jump to <var>n</var>th tab"
 msgstr "Saltar a la <var>n</var>a pestaña."
 
-#: C/gedit-shortcut-keys.page:73(td/p)
+#: C/gedit-shortcut-keys.page:78(td/p)
 msgid "Alt + <var>n</var>"
 msgstr "Alt + <var>n</var>"
 
-#: C/gedit-shortcut-keys.page:80(section/title)
+#: C/gedit-shortcut-keys.page:85(table/title)
 msgid "Shortcut keys for working with files"
 msgstr "Teclas rápidas para trabajar con archivos"
 
-#: C/gedit-shortcut-keys.page:90(td/p)
+#: C/gedit-shortcut-keys.page:93(td/p)
 msgid "Create a new document"
 msgstr "Crear un documento nuevo"
 
-#: C/gedit-shortcut-keys.page:90(td/p)
+#: C/gedit-shortcut-keys.page:93(td/p)
 msgid "Ctrl + N"
 msgstr "Ctrl + N"
 
-#: C/gedit-shortcut-keys.page:93(td/p)
+#: C/gedit-shortcut-keys.page:96(td/p)
 msgid "Open a document"
 msgstr "Abrir un documento"
 
-#: C/gedit-shortcut-keys.page:93(td/p)
+#: C/gedit-shortcut-keys.page:96(td/p)
 msgid "Ctrl + O"
 msgstr "Ctrl + O"
 
-#: C/gedit-shortcut-keys.page:96(td/p)
+#: C/gedit-shortcut-keys.page:99(td/p)
 msgid "Save the current document"
 msgstr "Guardar el documento actual"
 
-#: C/gedit-shortcut-keys.page:96(td/p)
+#: C/gedit-shortcut-keys.page:99(td/p)
 msgid "Ctrl + S"
 msgstr "Ctrl + S"
 
-#: C/gedit-shortcut-keys.page:99(td/p)
+#: C/gedit-shortcut-keys.page:102(td/p)
 msgid "Save the current document with a new filename"
 msgstr "Guardar el documento actual con un nombre de archivo nuevo"
 
-#: C/gedit-shortcut-keys.page:99(td/p)
+#: C/gedit-shortcut-keys.page:102(td/p)
 msgid "Ctrl + Shift + S"
 msgstr "Ctrl + Mayús. + S"
 
-#: C/gedit-shortcut-keys.page:102(td/p)
+#: C/gedit-shortcut-keys.page:106(td/p)
 msgid "Print the current document"
 msgstr "Imprimir el documento actual"
 
-#: C/gedit-shortcut-keys.page:102(td/p)
+#: C/gedit-shortcut-keys.page:106(td/p)
 msgid "Ctrl + P"
 msgstr "Ctrl + P"
 
-#: C/gedit-shortcut-keys.page:105(td/p)
+#: C/gedit-shortcut-keys.page:109(td/p)
 msgid "Print preview"
 msgstr "Vista previa de impresión"
 
-#: C/gedit-shortcut-keys.page:105(td/p)
+#: C/gedit-shortcut-keys.page:109(td/p)
 msgid "Ctrl + Shift + P"
 msgstr "Ctrl + Mayús. + P"
 
-#: C/gedit-shortcut-keys.page:108(td/p)
+#: C/gedit-shortcut-keys.page:112(td/p)
 msgid "Close the current document"
 msgstr "Cerrar el documento actual"
 
-#: C/gedit-shortcut-keys.page:111(td/p)
+#: C/gedit-shortcut-keys.page:115(td/p)
 msgid "Quit gedit"
 msgstr "Salir de gedit"
 
-#: C/gedit-shortcut-keys.page:111(td/p)
+#: C/gedit-shortcut-keys.page:115(td/p)
 msgid "Ctrl + Q"
 msgstr "Ctrl + Q"
 
-#: C/gedit-shortcut-keys.page:118(section/title)
+#: C/gedit-shortcut-keys.page:121(table/title)
 msgid "Shortcut keys for editing files"
 msgstr "Teclas rápidas para editar archivos"
 
-#: C/gedit-shortcut-keys.page:128(td/p)
+#: C/gedit-shortcut-keys.page:129(td/p)
 msgid "Undo the last action"
 msgstr "Deshacer la última acción"
 
-#: C/gedit-shortcut-keys.page:128(td/p)
+#: C/gedit-shortcut-keys.page:129(td/p)
 msgid "Ctrl + Z"
 msgstr "Ctrl + Z"
 
-#: C/gedit-shortcut-keys.page:131(td/p)
+#: C/gedit-shortcut-keys.page:132(td/p)
 msgid "Redo the last undone action"
 msgstr "Rehacer la última acción deshecha"
 
-#: C/gedit-shortcut-keys.page:131(td/p)
+#: C/gedit-shortcut-keys.page:132(td/p)
 msgid "Ctrl + Shift + Z"
 msgstr "Ctrl + Mayús. + Z"
 
-#: C/gedit-shortcut-keys.page:134(td/p)
+#: C/gedit-shortcut-keys.page:136(td/p)
 msgid "Cut the selected text or region and place it on the clipboard"
 msgstr "Cortar el texto o región seleccionada y ubicarlo en el portapapeles"
 
-#: C/gedit-shortcut-keys.page:134(td/p)
+#: C/gedit-shortcut-keys.page:137(td/p)
 msgid "Ctrl + X"
 msgstr "Ctrl + X"
 
-#: C/gedit-shortcut-keys.page:137(td/p)
+#: C/gedit-shortcut-keys.page:140(td/p)
 msgid "Copy the selected text or region onto the clipboard"
 msgstr "Copiar el texto o región seleccionado al portapapeles"
 
-#: C/gedit-shortcut-keys.page:137(td/p)
+#: C/gedit-shortcut-keys.page:141(td/p)
 msgid "Ctrl + C"
 msgstr "Ctrl + C"
 
-#: C/gedit-shortcut-keys.page:140(td/p)
+#: C/gedit-shortcut-keys.page:144(td/p)
 msgid "Paste the contents of the clipboard"
 msgstr "Pegar el contenido del portapapeles"
 
-#: C/gedit-shortcut-keys.page:140(td/p)
+#: C/gedit-shortcut-keys.page:144(td/p)
 msgid "Ctrl + V"
 msgstr "Ctrl + V"
 
-#: C/gedit-shortcut-keys.page:143(td/p)
+#: C/gedit-shortcut-keys.page:148(td/p)
 msgid "Select all text in the file"
 msgstr "Seleccionar todo el texto en el archivo"
 
-#: C/gedit-shortcut-keys.page:143(td/p)
+#: C/gedit-shortcut-keys.page:148(td/p)
 msgid "Ctrl + A"
 msgstr "Ctrl + A"
 
-#: C/gedit-shortcut-keys.page:146(td/p)
+#: C/gedit-shortcut-keys.page:151(td/p)
 msgid "Delete the current line"
 msgstr "Eliminar la línea actual"
 
-#: C/gedit-shortcut-keys.page:146(td/p)
+#: C/gedit-shortcut-keys.page:151(td/p)
 msgid "Ctrl + D"
 msgstr "Ctrl + D"
 
-#: C/gedit-shortcut-keys.page:149(td/p)
+#: C/gedit-shortcut-keys.page:154(td/p)
 msgid "Move the selected line up one line"
 msgstr "Mover la línea seleccionada una línea arriba"
 
-#: C/gedit-shortcut-keys.page:149(td/p)
+#: C/gedit-shortcut-keys.page:154(td/p)
 msgid "Alt + Up Arrow"
 msgstr "Alt + flecha arriba"
 
-#: C/gedit-shortcut-keys.page:152(td/p)
+#: C/gedit-shortcut-keys.page:158(td/p)
 msgid "Move the selected line down one line"
 msgstr "Mover la línea seleccionada una línea abajo"
 
-#: C/gedit-shortcut-keys.page:152(td/p)
+#: C/gedit-shortcut-keys.page:158(td/p)
 msgid "Alt + Down Arrow"
 msgstr "Alt + flecha abajo"
 
-#: C/gedit-shortcut-keys.page:159(section/title)
+#: C/gedit-shortcut-keys.page:165(table/title)
 msgid "Shortcut keys for showing and hiding panes"
 msgstr "Teclas rápidas para mostrar y ocultar paneles"
 
-#: C/gedit-shortcut-keys.page:169(td/p)
+#: C/gedit-shortcut-keys.page:173(td/p)
 msgid "Show / hide the side pane"
 msgstr "Mostrar/ocultar el panel lateral"
 
-#: C/gedit-shortcut-keys.page:169(td/p)
+#: C/gedit-shortcut-keys.page:173(td/p)
 msgid "F9"
 msgstr "F9"
 
-#: C/gedit-shortcut-keys.page:172(td/p)
+#: C/gedit-shortcut-keys.page:176(td/p)
 msgid "Show / hide the bottom pane."
 msgstr "Mostrar/ocultar el panel inferior"
 
-#: C/gedit-shortcut-keys.page:172(td/p)
+#: C/gedit-shortcut-keys.page:176(td/p)
 msgid "Ctrl + F9"
 msgstr "Ctrl + F9"
 
-#: C/gedit-shortcut-keys.page:179(section/title)
+#: C/gedit-shortcut-keys.page:183(table/title)
 msgid "Shortcut keys for searching"
 msgstr "Teclas rápidas para búsquedas"
 
-#: C/gedit-shortcut-keys.page:189(td/p)
+#: C/gedit-shortcut-keys.page:191(td/p)
 msgid "Find a string"
 msgstr "Buscar una cadena"
 
-#: C/gedit-shortcut-keys.page:189(td/p)
+#: C/gedit-shortcut-keys.page:191(td/p)
 msgid "Ctrl + F"
 msgstr "Ctrl + F"
 
-#: C/gedit-shortcut-keys.page:192(td/p)
+#: C/gedit-shortcut-keys.page:194(td/p)
 msgid "Find the next instance of the string"
 msgstr "Buscar la siguiente instancia de la cadena"
 
-#: C/gedit-shortcut-keys.page:192(td/p)
+#: C/gedit-shortcut-keys.page:194(td/p)
 msgid "Ctrl + G"
 msgstr "Ctrl + G"
 
-#: C/gedit-shortcut-keys.page:195(td/p)
+#: C/gedit-shortcut-keys.page:198(td/p)
 msgid "Find the previous instance of the string"
 msgstr "Buscar la instancia anterior de la cadena"
 
-#: C/gedit-shortcut-keys.page:195(td/p)
+#: C/gedit-shortcut-keys.page:198(td/p)
 msgid "Ctrl + Shift + G"
 msgstr "Ctrl + Mayús. + G"
 
-#: C/gedit-shortcut-keys.page:198(td/p)
+#: C/gedit-shortcut-keys.page:202(td/p)
 msgid "Search and Replace"
 msgstr "Buscar y reemplazar"
 
-#: C/gedit-shortcut-keys.page:198(td/p)
+#: C/gedit-shortcut-keys.page:202(td/p)
 msgid "Ctrl + H"
 msgstr "Ctrl + H"
 
-#: C/gedit-shortcut-keys.page:201(td/p)
+#: C/gedit-shortcut-keys.page:205(td/p)
 msgid "Clear highlight"
 msgstr "Limpiar el resaltado"
 
-#: C/gedit-shortcut-keys.page:201(td/p)
+#: C/gedit-shortcut-keys.page:205(td/p)
 msgid "Ctrl + Shift + K"
 msgstr "Ctrl + Mayús. + K"
 
-#: C/gedit-shortcut-keys.page:204(td/p)
+#: C/gedit-shortcut-keys.page:208(td/p)
 msgid "Goto line"
 msgstr "Ir a la línea"
 
-#: C/gedit-shortcut-keys.page:204(td/p)
+#: C/gedit-shortcut-keys.page:208(td/p)
 msgid "Ctrl + I"
 msgstr "Ctrl + I"
 
-#: C/gedit-shortcut-keys.page:211(section/title)
+#: C/gedit-shortcut-keys.page:214(table/title)
 msgid "Shortcut keys for tools"
 msgstr "Teclas rápidas para las herramientas"
 
-#: C/gedit-shortcut-keys.page:221(td/p)
+#: C/gedit-shortcut-keys.page:222(td/p)
 msgid "Check spelling"
 msgstr "Comprobar ortografía"
 
-#: C/gedit-shortcut-keys.page:221(td/p)
+#: C/gedit-shortcut-keys.page:222(td/p)
 msgid "Shift + F7"
 msgstr "Mayús. + F7"
 
-#: C/gedit-shortcut-keys.page:224(td/p)
+#: C/gedit-shortcut-keys.page:225(td/p)
 msgid "Remove trailing spaces (with plugin)"
 msgstr "Eliminar espacios finales (con complemento)"
 
-#: C/gedit-shortcut-keys.page:224(td/p)
+#: C/gedit-shortcut-keys.page:225(td/p)
 msgid "Alt + F12"
 msgstr "Alt + F12"
 
-#: C/gedit-shortcut-keys.page:227(td/p)
+#: C/gedit-shortcut-keys.page:229(td/p)
 msgid "Run \"make\" in the current directory (with plugin)"
 msgstr "Ejecutar «make» en la carpeta actual (con complemento)"
 
-#: C/gedit-shortcut-keys.page:227(td/p)
+#: C/gedit-shortcut-keys.page:230(td/p)
 msgid "F8"
 msgstr "F8"
 
-#: C/gedit-shortcut-keys.page:230(td/p)
+#: C/gedit-shortcut-keys.page:233(td/p)
 msgid "Directory listing (with plugin)"
 msgstr "Listado de directorio (con complemento)"
 
-#: C/gedit-shortcut-keys.page:230(td/p)
+#: C/gedit-shortcut-keys.page:233(td/p)
 msgid "Ctrl + Shift + D"
 msgstr "Ctrl + Mayús. + D"
 
-#: C/gedit-shortcut-keys.page:237(section/title)
+#: C/gedit-shortcut-keys.page:240(table/title)
 msgid "Shortcut keys for user help"
 msgstr "Teclas rápidas para la ayuda"
 
-#: C/gedit-shortcut-keys.page:247(td/p)
+#: C/gedit-shortcut-keys.page:248(td/p)
 msgid "Open the gedit user guide"
 msgstr "Abrir la guía de usuario de gedit"
 
-#: C/gedit-shortcut-keys.page:247(td/p)
+#: C/gedit-shortcut-keys.page:248(td/p)
 msgid "F1"
 msgstr "F1"
 
@@ -3780,11 +3778,6 @@ msgid "Spell-check your document"
 msgstr "Comprobar la ortografía de su documento"
 
 #: C/gedit-spellcheck.page:16(page/p)
-#| msgid ""
-#| "Using the spell-check feature in <app>gedit</app> requires that you first "
-#| "enable the spell-check plugin. To enable the plugin, select "
-#| "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Spell "
-#| "Checker</gui></guiseq>."
 msgid ""
 "Using the spell-check feature in <app>gedit</app> requires that you first "
 "enable the spell-check plugin. To enable the plugin, select "
@@ -3893,24 +3886,18 @@ msgid "To drag a tab into a new window:"
 msgstr "Arrastrar una pestaña a una ventana nueva:"
 
 #: C/gedit-tabs-moving.page:47(item/p)
-#| msgid "Click and hold the mouse button on the tab"
 msgid "Click and hold the mouse button on the tab."
 msgstr "Pulse y mantenga pulsado el botón del ratón en la pestaña."
 
 #: C/gedit-tabs-moving.page:48(item/p)
-#| msgid "Drag the tab to the new window"
 msgid "Drag the tab out of the <app>gedit</app> window."
 msgstr "Arrastre la pestaña fuera de la ventana de <app>gedit</app>."
 
 #: C/gedit-tabs-moving.page:49(item/p)
-#| msgid "Release the mouse button"
 msgid "Release the mouse button."
 msgstr "Suelte el botón del ratón."
 
 #: C/gedit-tabs-moving.page:52(section/p)
-#| msgid ""
-#| "or, while the tab to be moved is open, choose <guiseq><gui>Documents</"
-#| "gui><gui>Move to New Window</gui></guiseq>"
 msgid ""
 "or, while the tab to be moved is open, choose <guiseq><gui>Documents </"
 "gui><gui>Move to New Window</gui></guiseq>"
@@ -4072,6 +4059,15 @@ msgstr ""
 "El panel lateral sólo muestra los archivos abiertos en la ventana actual. "
 "Cuando hay varias ventanas abiertas, en el panel lateral sólo se muestran "
 "los archivos abiertos en la ventana actual."
+
+#~ msgid ""
+#~ "This will activate the <em>file-browser</em> mode of the <app>side panel</"
+#~ "app>. You can then use the navigation buttons at the top of the pane to "
+#~ "locate and open your desired files."
+#~ msgstr ""
+#~ "Esto activará el modo <em>examinador de archivos</em> del <app>panel "
+#~ "lateral</app>. Después puede usar los botones de navegación en la parte "
+#~ "superior del panel para ubicar y abrir los archivos que quiera."
 
 #~ msgid "Drag the tab out of the space it occupies"
 #~ msgstr "Arrastre la pestaña fuera del espacio que ocupa"
