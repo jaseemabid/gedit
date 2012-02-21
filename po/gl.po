@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit-master-po-gl-116402.merged\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-06 11:50+0100\n"
-"PO-Revision-Date: 2012-02-06 11:51+0100\n"
+"POT-Creation-Date: 2012-02-21 11:49+0100\n"
+"PO-Revision-Date: 2012-02-21 11:49+0100\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <gnome-l10n-gl@gnome.org>\n"
 "Language: gl\n"
@@ -797,16 +797,16 @@ msgid "Install scheme"
 msgstr "Instalar esquema"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:25
-msgid "toolbutton1"
-msgstr "botonferramenta1"
+msgid "Install Scheme"
+msgstr "Instalar esquema"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:26
 msgid "Uninstall scheme"
 msgstr "Desinstalar esquema"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:27
-msgid "toolbutton2"
-msgstr "botonferramenta2"
+msgid "Uninstall Scheme"
+msgstr "Desinstalar esquema"
 
 #: ../gedit/dialogs/gedit-preferences-dialog.ui.h:28
 msgid "Font & Colors"
@@ -1001,26 +1001,26 @@ msgstr ""
 msgid "_Save As Plain Text"
 msgstr "Gardar como te_xto plano"
 
-#: ../gedit/gedit-commands-file.c:740 ../gedit/gedit-commands-file.c:957
+#: ../gedit/gedit-commands-file.c:742 ../gedit/gedit-commands-file.c:959
 #, c-format
 msgid "Saving file '%s'…"
 msgstr "Gardando o ficheiro '%s'…"
 
-#: ../gedit/gedit-commands-file.c:844
+#: ../gedit/gedit-commands-file.c:846
 msgid "Save As"
 msgstr "Gardar como"
 
-#: ../gedit/gedit-commands-file.c:1171
+#: ../gedit/gedit-commands-file.c:1173
 #, c-format
 msgid "Reverting the document '%s'…"
 msgstr "Recuperando o documento '%s'…"
 
-#: ../gedit/gedit-commands-file.c:1216
+#: ../gedit/gedit-commands-file.c:1218
 #, c-format
 msgid "Revert unsaved changes to document '%s'?"
 msgstr "Quere recuperar os cambios non gardados no documento '%s'?"
 
-#: ../gedit/gedit-commands-file.c:1225
+#: ../gedit/gedit-commands-file.c:1227
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld second will be permanently lost."
@@ -1034,14 +1034,14 @@ msgstr[1] ""
 "Os cambios realizados no documento nos últimos %ld segundos perderanse "
 "permanentemente."
 
-#: ../gedit/gedit-commands-file.c:1234
+#: ../gedit/gedit-commands-file.c:1236
 msgid ""
 "Changes made to the document in the last minute will be permanently lost."
 msgstr ""
 "Os cambios realizados no documento no último minuto perderanse "
 "permanentemente."
 
-#: ../gedit/gedit-commands-file.c:1240
+#: ../gedit/gedit-commands-file.c:1242
 #, c-format
 msgid ""
 "Changes made to the document in the last minute and %ld second will be "
@@ -1056,7 +1056,7 @@ msgstr[1] ""
 "Os cambios realizados no documento no último minuto e %ld segundos "
 "perderanse permanentemente."
 
-#: ../gedit/gedit-commands-file.c:1250
+#: ../gedit/gedit-commands-file.c:1252
 #, c-format
 msgid ""
 "Changes made to the document in the last %ld minute will be permanently lost."
@@ -1070,12 +1070,12 @@ msgstr[1] ""
 "Os cambios realizados no documento nos últimos %ld minutos perderanse "
 "permanentemente."
 
-#: ../gedit/gedit-commands-file.c:1265
+#: ../gedit/gedit-commands-file.c:1267
 msgid "Changes made to the document in the last hour will be permanently lost."
 msgstr ""
 "Os cambios realizados no documento na última hora perderanse permanentemente."
 
-#: ../gedit/gedit-commands-file.c:1271
+#: ../gedit/gedit-commands-file.c:1273
 #, c-format
 msgid ""
 "Changes made to the document in the last hour and %d minute will be "
@@ -1090,7 +1090,7 @@ msgstr[1] ""
 "Os cambios realizados no documento na última hora e %d minutos perderanse "
 "permanentemente."
 
-#: ../gedit/gedit-commands-file.c:1286
+#: ../gedit/gedit-commands-file.c:1288
 #, c-format
 msgid ""
 "Changes made to the document in the last %d hour will be permanently lost."
@@ -1103,7 +1103,7 @@ msgstr[1] ""
 "Os cambios realizados no documento nas últimas %d horas perderanse "
 "permanentemente."
 
-#: ../gedit/gedit-commands-file.c:1312
+#: ../gedit/gedit-commands-file.c:1314
 msgid "_Revert"
 msgstr "_Recuperar"
 
@@ -1147,12 +1147,12 @@ msgstr "Non se atopou «%s»"
 msgid "Unsaved Document %d"
 msgstr "Documento non gardado %d"
 
-#: ../gedit/gedit-documents-panel.c:122 ../gedit/gedit-documents-panel.c:136
+#: ../gedit/gedit-documents-panel.c:123 ../gedit/gedit-documents-panel.c:137
 #: ../gedit/gedit-window.c:2399 ../gedit/gedit-window.c:2406
 msgid "Read-Only"
 msgstr "Só de lectura"
 
-#: ../gedit/gedit-documents-panel.c:1143 ../gedit/gedit-window.c:3848
+#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3848
 msgid "Documents"
 msgstr "Documentos"
 
@@ -3727,6 +3727,12 @@ msgstr "Fornecedor de datos Zeitgeist"
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Logs access and leave event for documents used with gedit"
 msgstr "Rexistra o acceso e peche dos documentos usados en gedit"
+
+#~ msgid "toolbutton1"
+#~ msgstr "botonferramenta1"
+
+#~ msgid "toolbutton2"
+#~ msgstr "botonferramenta2"
 
 #~ msgid "_Add..."
 #~ msgstr "_Engadir…"
