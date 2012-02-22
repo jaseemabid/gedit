@@ -37,7 +37,7 @@
 #include <gtk/gtk.h>
 
 #include <gedit/gedit-encodings-combo-box.h>
-#include <gedit/dialogs/gedit-encodings-dialog.h>
+#include <gedit/gedit-encodings-dialog.h>
 #include "gedit-settings.h"
 #include "gedit-utils.h"
 

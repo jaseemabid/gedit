@@ -50,7 +50,7 @@
 #include "gedit-window.h"
 #include "gedit-app.h"
 #include "gedit-commands.h"
-#include "dialogs/gedit-close-confirmation-dialog.h"
+#include "gedit-close-confirmation-dialog.h"
 #include "smclient/eggsmclient.h"
 
 /* The master client we use for SM */

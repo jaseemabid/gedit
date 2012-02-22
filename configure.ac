@@ -448,7 +448,6 @@ data/org.gnome.gedit.gschema.xml.in
 data/Makefile
 docs/Makefile
 docs/reference/Makefile
-gedit/dialogs/Makefile
 gedit/smclient/Makefile
 gedit/theatrics/Makefile
 gedit/Makefile

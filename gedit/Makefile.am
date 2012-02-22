@@ -1,5 +1,5 @@
 ## Process this file with automake to produce Makefile.in
-SUBDIRS = dialogs smclient theatrics
+SUBDIRS = smclient theatrics
 
 bin_PROGRAMS = gedit
 
@@ -101,6 +101,7 @@ NOINST_H_FILES =			\
 	gedit-animated-overlay.h        \
 	gedit-cell-renderer-button.h	\
 	gedit-close-button.h		\
+	gedit-close-confirmation-dialog.h \
 	gedit-command-line.h		\
 	gedit-dbus.h			\
 	gedit-dirs.h			\
@@ -109,6 +110,7 @@ NOINST_H_FILES =			\
 	gedit-document-output-stream.h	\
 	gedit-document-saver.h		\
 	gedit-documents-panel.h		\
+	gedit-encodings-dialog.h	\
 	gedit-file-chooser-dialog.h	\
 	gedit-floating-slider.h		\
 	gedit-history-entry.h		\
@@ -118,8 +120,10 @@ NOINST_H_FILES =			\
 	gedit-notebook.h		\
 	gedit-notebook-popup-menu.h	\
 	gedit-plugins-engine.h		\
+	gedit-preferences-dialog.h	\
 	gedit-print-job.h		\
 	gedit-print-preview.h		\
+	gedit-replace-dialog.h		\
 	gedit-session.h			\
 	gedit-settings.h		\
 	gedit-status-combo-box.h	\
@@ -169,6 +173,7 @@ libgedit_c_files =			\
 	gedit-app.c               	\
 	gedit-cell-renderer-button.c	\
 	gedit-close-button.c		\
+	gedit-close-confirmation-dialog.c \
 	gedit-command-line.c		\
 	gedit-commands-documents.c	\
 	gedit-commands-edit.c		\
@@ -188,6 +193,7 @@ libgedit_c_files =			\
 	gedit-documents-panel.c		\
 	gedit-encodings.c		\
 	gedit-encodings-combo-box.c	\
+	gedit-encodings-dialog.c	\
 	gedit-file-chooser-dialog.c	\
 	gedit-floating-slider.c		\
 	gedit-history-entry.c		\
@@ -200,9 +206,11 @@ libgedit_c_files =			\
 	gedit-notebook-popup-menu.c	\
 	gedit-panel.c			\
 	gedit-plugins-engine.c		\
+	gedit-preferences-dialog.c	\
 	gedit-print-job.c		\
 	gedit-print-preview.c		\
 	gedit-progress-info-bar.c	\
+	gedit-replace-dialog.c		\
 	gedit-session.c			\
 	gedit-settings.c		\
 	gedit-statusbar.c		\
@@ -250,7 +258,10 @@ gedit-marshal.c: gedit-marshal.list $(GLIB_GENMARSHAL)
 uidir = $(datadir)/gedit/ui/
 ui_DATA = 				\
 	gedit-ui.xml			\
-	gedit-print-preferences.ui
+	gedit-print-preferences.ui	\
+	gedit-encodings-dialog.ui	\
+	gedit-preferences-dialog.ui	\
+	gedit-replace-dialog.ui
 
 if ENABLE_PYTHON
 overridesdir = $(pyoverridesdir)

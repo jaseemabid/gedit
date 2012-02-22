@@ -47,7 +47,7 @@
 #include "gedit-debug.h"
 #include "gedit-utils.h"
 #include "gedit-file-chooser-dialog.h"
-#include "dialogs/gedit-close-confirmation-dialog.h"
+#include "gedit-close-confirmation-dialog.h"
 
 
 /* Defined constants */
