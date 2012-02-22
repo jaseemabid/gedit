@@ -39,7 +39,6 @@ endif
 libgedit_la_LDFLAGS = -export-dynamic -no-undefined -export-symbols-regex "^[[^_]].*"
 
 libgedit_la_LIBADD = \
-	dialogs/libdialogs.la		\
 	smclient/libeggsmclient.la	\
 	theatrics/libtheatrics.la
 
