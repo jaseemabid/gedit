@@ -547,15 +547,17 @@ build_horizontal_panel (GeditPanel *panel)
 static void
 build_vertical_panel (GeditPanel *panel)
 {
-	GtkWidget *close_button;
+	GtkStyleContext *context;
 	GtkWidget *title_hbox;
 	GtkWidget *icon_name_hbox;
 	GtkWidget *dummy_label;
+	GtkWidget *close_button;
+
+	context = gtk_widget_get_style_context (GTK_WIDGET (panel));
+	gtk_style_context_add_class (context, "title");
 
 	/* Create title hbox */
 	title_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-	gtk_widget_set_name (title_hbox, "gedit-panel-title");
-
 	gtk_box_pack_start (GTK_BOX (panel->priv->main_box), title_hbox,
 	                             FALSE, FALSE, 0);
 
