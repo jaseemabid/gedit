@@ -323,7 +323,7 @@ PKG_CHECK_MODULES(GEDIT, [
 	libxml-2.0 >= 2.5.0
 	glib-2.0 >= 2.28.0
 	gio-2.0 >= 2.26.0
-	gtk+-3.0 >= 3.1.6
+	gtk+-3.0 >= 3.3.15
 	gtksourceview-3.0 >= 3.0.0
 	libpeas-1.0 >= 0.7.3
 	libpeas-gtk-1.0 >= 1.1.0
@@ -374,6 +374,12 @@ dnl GSettings stuff
 dnl ================================================================
 
 GLIB_GSETTINGS
+
+dnl ================================================================
+dnl GResource stuff
+dnl ================================================================
+GLIB_COMPILE_RESOURCES=`$PKG_CONFIG --variable glib_compile_resources gio-2.0`
+AC_SUBST(GLIB_COMPILE_RESOURCES)
 
 dnl ================================================================
 dnl Misc

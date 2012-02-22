@@ -194,9 +194,7 @@ static void
 gedit_replace_dialog_init (GeditReplaceDialog *dlg)
 {
 	GtkWidget *content;
-	GtkWidget *error_widget;
-	gboolean ret;
-	gchar *file;
+	GtkBuilder *builder;
 	gchar *root_objects[] = {
 		"replace_dialog_content",
 		NULL
@@ -221,35 +219,19 @@ gedit_replace_dialog_init (GeditReplaceDialog *dlg)
 	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_action_area (GTK_DIALOG (dlg))),
 			     6);
 
-	file = gedit_dirs_get_ui_file ("gedit-replace-dialog.ui");
-	ret = gedit_utils_get_ui_objects (file,
-					  root_objects,
-					  &error_widget,
-					  "replace_dialog_content", &content,
-					  "grid", &dlg->priv->grid,
-					  "search_label", &dlg->priv->search_label,
-					  "replace_with_label", &dlg->priv->replace_label,
-					  "match_case_checkbutton", &dlg->priv->match_case_checkbutton,
-					  "entire_word_checkbutton", &dlg->priv->entire_word_checkbutton,
-					  "search_backwards_checkbutton", &dlg->priv->backwards_checkbutton,
-					  "wrap_around_checkbutton", &dlg->priv->wrap_around_checkbutton,
-					  NULL);
-	g_free (file);
-
-	if (!ret)
-	{
-		gtk_widget_show (error_widget);
-
-		gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dlg))),
-		                    error_widget,
-		                    TRUE, TRUE, 0);
-		gtk_container_set_border_width (GTK_CONTAINER (error_widget),
-						5);
-
-		dlg->priv->ui_error = TRUE;
-
-		return;
-	}
+	builder = gtk_builder_new ();
+	gtk_builder_add_objects_from_resource (builder, "/org/gnome/gedit/ui/gedit-replace-dialog.ui",
+	                                       root_objects, NULL);
+	content = GTK_WIDGET (gtk_builder_get_object (builder, "replace_dialog_content"));
+	g_object_ref (content);
+	dlg->priv->grid = GTK_WIDGET (gtk_builder_get_object (builder, "grid"));
+	dlg->priv->search_label = GTK_WIDGET (gtk_builder_get_object (builder, "search_label"));
+	dlg->priv->replace_label = GTK_WIDGET (gtk_builder_get_object (builder, "replace_with_label"));
+	dlg->priv->match_case_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "match_case_checkbutton"));
+	dlg->priv->entire_word_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "entire_word_checkbutton"));
+	dlg->priv->backwards_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "search_backwards_checkbutton"));
+	dlg->priv->wrap_around_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "wrap_around_checkbutton"));
+	g_object_unref (builder);
 
 	dlg->priv->search_entry = gedit_history_entry_new ("search-for-entry", TRUE);
 	gtk_widget_set_size_request (dlg->priv->search_entry, 300, -1);

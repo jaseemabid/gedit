@@ -164,7 +164,8 @@ header_DATA = 				\
 libgedit_private_la_SOURCES =		\
 	gedit-app-activatable.c		\
 	gedit-view-activatable.c	\
-	gedit-window-activatable.c
+	gedit-window-activatable.c	\
+	gedit-resources.c
 
 libgedit_c_files =			\
 	gedit-animatable.c		\
@@ -254,6 +255,9 @@ gedit-marshal.c: gedit-marshal.list $(GLIB_GENMARSHAL)
 	$(AM_V_GEN) echo "#include \"gedit-marshal.h\"" > $@ && \
 	$(GLIB_GENMARSHAL) $< --body --prefix=gedit_marshal >> $@
 
+gedit-resources.c: gedit.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies gedit.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source gedit.gresource.xml
+
 uidir = $(datadir)/gedit/ui/
 ui_DATA = 				\
 	gedit-ui.xml			\
@@ -273,7 +277,8 @@ EXTRA_DIST = 				\
 	gedit-enum-types.h.template	\
 	gedit-enum-types.c.template	\
 	gedit-marshal.list		\
-	gedit.rc
+	gedit.rc			\
+	gedit.gresource.xml
 
 CLEANFILES = $(BUILT_SOURCES)
 

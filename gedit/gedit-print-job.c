@@ -320,12 +320,10 @@ static GObject *
 create_custom_widget_cb (GtkPrintOperation *operation, 
 			 GeditPrintJob     *job)
 {
-	gboolean ret;
-	GtkWidget *widget;
-	GtkWidget *error_widget;
+	GtkBuilder *builder;
+	GtkWidget *contents;
 	gint line_numbers;
 	GtkWrapMode wrap_mode;
-	gchar *file;
 	gboolean syntax_hl;
 	gboolean print_header;
 	gchar *font_body, *font_header, *font_numbers;
@@ -335,32 +333,26 @@ create_custom_widget_cb (GtkPrintOperation *operation,
 		NULL
 	};
 
-	file = gedit_dirs_get_ui_file ("gedit-print-preferences.ui");
-	ret = gedit_utils_get_ui_objects (file,
-					  root_objects,
-					  &error_widget,
-					  "contents", &widget,
-					  "syntax_checkbutton", &job->priv->syntax_checkbutton,
-					  "line_numbers_checkbutton", &job->priv->line_numbers_checkbutton,
-					  "line_numbers_hbox", &job->priv->line_numbers_hbox,
-					  "line_numbers_spinbutton", &job->priv->line_numbers_spinbutton,
-					  "page_header_checkbutton", &job->priv->page_header_checkbutton,
-					  "text_wrapping_checkbutton", &job->priv->text_wrapping_checkbutton,
-					  "do_not_split_checkbutton", &job->priv->do_not_split_checkbutton,
-					  "body_font_label", &job->priv->body_font_label,
-					  "body_fontbutton", &job->priv->body_fontbutton,
-					  "headers_font_label", &job->priv->headers_font_label,
-					  "headers_fontbutton", &job->priv->headers_fontbutton,
-					  "numbers_font_label", &job->priv->numbers_font_label,
-					  "numbers_fontbutton", &job->priv->numbers_fontbutton,
-					  "restore_button", &job->priv->restore_button,
-					  NULL);
-	g_free (file);
-
-	if (!ret)
-	{
-		return G_OBJECT (error_widget);
-	}
+	builder = gtk_builder_new ();
+	gtk_builder_add_objects_from_resource (builder, "/org/gnome/gedit/ui/gedit-print-preferences.ui",
+	                                       root_objects, NULL);
+	contents = GTK_WIDGET (gtk_builder_get_object (builder, "contents"));
+	g_object_ref (contents);
+	job->priv->syntax_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "syntax_checkbutton"));
+	job->priv->line_numbers_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "line_numbers_checkbutton"));
+	job->priv->line_numbers_hbox = GTK_WIDGET (gtk_builder_get_object (builder, "line_numbers_hbox"));
+	job->priv->line_numbers_spinbutton = GTK_WIDGET (gtk_builder_get_object (builder, "line_numbers_spinbutton"));
+	job->priv->page_header_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "page_header_checkbutton"));
+	job->priv->text_wrapping_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "text_wrapping_checkbutton"));
+	job->priv->do_not_split_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "do_not_split_checkbutton"));
+	job->priv->body_font_label = GTK_WIDGET (gtk_builder_get_object (builder, "body_font_label"));
+	job->priv->body_fontbutton = GTK_WIDGET (gtk_builder_get_object (builder, "body_fontbutton"));
+	job->priv->headers_font_label = GTK_WIDGET (gtk_builder_get_object (builder, "headers_font_label"));
+	job->priv->headers_fontbutton = GTK_WIDGET (gtk_builder_get_object (builder, "headers_fontbutton"));
+	job->priv->numbers_font_label = GTK_WIDGET (gtk_builder_get_object (builder, "numbers_font_label"));
+	job->priv->numbers_fontbutton = GTK_WIDGET (gtk_builder_get_object (builder, "numbers_fontbutton"));
+	job->priv->restore_button = GTK_WIDGET (gtk_builder_get_object (builder, "restore_button"));
+	g_object_unref (builder);
 
 	/* Get all settings values */
 	syntax_hl = g_settings_get_boolean (job->priv->print_settings,
@@ -459,7 +451,7 @@ create_custom_widget_cb (GtkPrintOperation *operation,
 			  G_CALLBACK (restore_button_clicked),
 			  job);
 
-	return G_OBJECT (widget);
+	return G_OBJECT (contents);
 }
 
 static void
