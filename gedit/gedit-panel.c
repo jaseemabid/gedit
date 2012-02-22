@@ -749,7 +749,6 @@ gedit_panel_add_item (GeditPanel  *panel,
 	GeditPanelItem *data;
 	GtkWidget *tab_label;
 	GtkWidget *menu_label;
-	GtkStyleContext *context;
 	gint w, h;
 
 	g_return_val_if_fail (GEDIT_IS_PANEL (panel), FALSE);
