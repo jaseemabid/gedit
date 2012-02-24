@@ -260,11 +260,7 @@ gedit-resources.c: gedit.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --gener
 
 uidir = $(datadir)/gedit/ui/
 ui_DATA = 				\
-	gedit-ui.xml			\
-	gedit-print-preferences.ui	\
-	gedit-encodings-dialog.ui	\
-	gedit-preferences-dialog.ui	\
-	gedit-replace-dialog.ui
+	gedit-ui.xml
 
 if ENABLE_PYTHON
 overridesdir = $(pyoverridesdir)
