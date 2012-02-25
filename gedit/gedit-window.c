@@ -63,7 +63,6 @@
 #include "gedit-marshal.h"
 
 #define LANGUAGE_NONE (const gchar *)"LangNone"
-#define GEDIT_UIFILE "gedit-ui.xml"
 #define TAB_WIDTH_DATA "GeditWindowTabWidthData"
 #define LANGUAGE_DATA "GeditWindowLanguageData"
 #define FULLSCREEN_ANIMATION_SPEED 4
@@ -1513,7 +1512,6 @@ create_menu_bar_and_toolbar (GeditWindow *window,
 	GtkUIManager *manager;
 	GtkRecentManager *recent_manager;
 	GError *error = NULL;
-	gchar *ui_file;
 
 	gedit_debug (DEBUG_WINDOW);
 
@@ -1597,12 +1595,12 @@ create_menu_bar_and_toolbar (GeditWindow *window,
 	g_object_unref (action_group);
 	window->priv->panels_action_group = action_group;
 
-	/* now load the UI definition */
-	ui_file = gedit_dirs_get_ui_file (GEDIT_UIFILE);
-	gtk_ui_manager_add_ui_from_file (manager, ui_file, &error);
+	gtk_ui_manager_add_ui_from_resource (manager,
+					     "/org/gnome/gedit/ui/gedit-ui.xml",
+					     &error);
 	if (error != NULL)
 	{
-		g_warning ("Could not merge %s: %s", ui_file, error->message);
+		g_warning ("Could not add ui definition: %s", error->message);
 		g_error_free (error);
 	}
 	g_free (ui_file);

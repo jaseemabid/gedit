@@ -258,10 +258,6 @@ gedit-marshal.c: gedit-marshal.list $(GLIB_GENMARSHAL)
 gedit-resources.c: gedit.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies gedit.gresource.xml)
 	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source gedit.gresource.xml
 
-uidir = $(datadir)/gedit/ui/
-ui_DATA = 				\
-	gedit-ui.xml
-
 if ENABLE_PYTHON
 overridesdir = $(pyoverridesdir)
 overrides_PYTHON =			\
