@@ -1603,7 +1603,6 @@ create_menu_bar_and_toolbar (GeditWindow *window,
 		g_warning ("Could not add ui definition: %s", error->message);
 		g_error_free (error);
 	}
-	g_free (ui_file);
 
 	/* show tooltips in the statusbar */
 	g_signal_connect (manager,

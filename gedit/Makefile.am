@@ -265,7 +265,6 @@ overrides_PYTHON =			\
 endif
 
 EXTRA_DIST = 				\
-	$(ui_DATA)			\
 	gedit-enum-types.h.template	\
 	gedit-enum-types.c.template	\
 	gedit-marshal.list		\
