@@ -11,13 +11,14 @@ plugin_LTLIBRARIES = libdocinfo.la
 
 libdocinfo_la_SOURCES = \
 	gedit-docinfo-plugin.h	\
-	gedit-docinfo-plugin.c
+	gedit-docinfo-plugin.c	\
+	gedit-docinfo-resources.c
 
 libdocinfo_la_LDFLAGS = $(PLUGIN_LIBTOOL_FLAGS)
 libdocinfo_la_LIBADD  = $(GEDIT_LIBS)
 
-uidir = $(GEDIT_PLUGINS_DATA_DIR)/docinfo
-ui_DATA = gedit-docinfo-plugin.ui
+gedit-docinfo-resources.c: gedit-docinfo.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies gedit-docinfo.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source gedit-docinfo.gresource.xml
 
 plugin_in_files = docinfo.plugin.desktop.in
 
@@ -25,7 +26,7 @@ plugin_in_files = docinfo.plugin.desktop.in
 
 plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
-EXTRA_DIST = $(ui_DATA) $(plugin_in_files)
+EXTRA_DIST = $(plugin_in_files)
 
 CLEANFILES = $(plugin_DATA)
 DISTCLEANFILES = $(plugin_DATA)
