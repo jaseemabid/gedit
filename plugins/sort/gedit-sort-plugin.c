@@ -148,42 +148,20 @@ static void
 create_sort_dialog (GeditSortPlugin *plugin)
 {
 	GeditSortPluginPrivate *priv;
-	GtkWidget *error_widget;
-	gboolean ret;
-	gchar *data_dir;
-	gchar *ui_file;
+	GtkBuilder *builder;
 
 	gedit_debug (DEBUG_PLUGINS);
 
 	priv = plugin->priv;
 
-	data_dir = peas_extension_base_get_data_dir (PEAS_EXTENSION_BASE (plugin));
-	ui_file = g_build_filename (data_dir, "gedit-sort-plugin.ui", NULL);
-
-	ret = gedit_utils_get_ui_objects (ui_file,
-					  NULL,
-					  &error_widget,
-					  "sort_dialog", &priv->dialog,
-					  "reverse_order_checkbutton", &priv->reverse_order_checkbutton,
-					  "col_num_spinbutton", &priv->col_num_spinbutton,
-					  "ignore_case_checkbutton", &priv->ignore_case_checkbutton,
-					  "remove_dups_checkbutton", &priv->remove_dups_checkbutton,
-					  NULL);
-	g_free (data_dir);
-	g_free (ui_file);
-
-	if (!ret)
-	{
-		const gchar *err_message;
-
-		err_message = gtk_label_get_label (GTK_LABEL (error_widget));
-		gedit_warning (GTK_WINDOW (priv->window),
-			       "%s", err_message);
-
-		gtk_widget_destroy (error_widget);
-
-		return;
-	}
+	builder = gtk_builder_new ();
+	gtk_builder_add_from_resource (builder, "/org/gnome/gedit/plugins/sort/ui/gedit-sort-plugin.ui", NULL);
+	priv->dialog = GTK_WIDGET (gtk_builder_get_object (builder, "sort_dialog"));
+	priv->reverse_order_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "reverse_order_checkbutton"));
+	priv->col_num_spinbutton = GTK_WIDGET (gtk_builder_get_object (builder, "col_num_spinbutton"));
+	priv->ignore_case_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "ignore_case_checkbutton"));
+	priv->remove_dups_checkbutton = GTK_WIDGET (gtk_builder_get_object (builder, "remove_dups_checkbutton"));
+	g_object_unref (builder);
 
 	gtk_dialog_set_default_response (GTK_DIALOG (priv->dialog),
 					 GTK_RESPONSE_OK);

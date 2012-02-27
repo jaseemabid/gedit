@@ -11,13 +11,14 @@ plugin_LTLIBRARIES = libsort.la
 
 libsort_la_SOURCES = \
 	gedit-sort-plugin.h	\
-	gedit-sort-plugin.c
+	gedit-sort-plugin.c	\
+	gedit-sort-resources.c
 
 libsort_la_LDFLAGS = $(PLUGIN_LIBTOOL_FLAGS)
 libsort_la_LIBADD  = $(GEDIT_LIBS)
 
-uidir = $(GEDIT_PLUGINS_DATA_DIR)/sort
-ui_DATA = gedit-sort-plugin.ui
+gedit-sort-resources.c: gedit-sort.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies gedit-sort.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source gedit-sort.gresource.xml
 
 plugin_in_files = sort.plugin.desktop.in
 
@@ -25,7 +26,7 @@ plugin_in_files = sort.plugin.desktop.in
 
 plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
-EXTRA_DIST = $(ui_DATA) $(plugin_in_files)
+EXTRA_DIST = $(plugin_in_files)
 
 CLEANFILES = $(plugin_DATA)
 DISTCLEANFILES = $(plugin_DATA)
