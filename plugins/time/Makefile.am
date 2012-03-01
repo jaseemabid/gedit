@@ -9,17 +9,19 @@ INCLUDES = \
 
 plugin_LTLIBRARIES = libtime.la
 
+BUILT_SOURCES = \
+	gedit-time-resources.c
+
 libtime_la_SOURCES = \
 	gedit-time-plugin.h	\
-	gedit-time-plugin.c
+	gedit-time-plugin.c	\
+	$(BUILT_SOURCES)
 
 libtime_la_LDFLAGS = $(PLUGIN_LIBTOOL_FLAGS)
 libtime_la_LIBADD  = $(GEDIT_LIBS)
 
-uidir = $(GEDIT_PLUGINS_DATA_DIR)/time
-ui_DATA = \
-	gedit-time-dialog.ui				\
-	gedit-time-setup-dialog.ui
+gedit-time-resources.c: gedit-time.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies gedit-time.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source gedit-time.gresource.xml
 
 plugin_in_files = time.plugin.desktop.in
 
@@ -35,12 +37,12 @@ gsettings_SCHEMAS = org.gnome.gedit.plugins.time.gschema.xml
 @GSETTINGS_RULES@
 
 EXTRA_DIST =					\
-	$(ui_DATA)				\
 	$(plugin_in_files)			\
-	org.gnome.gedit.plugins.time.gschema.xml.in.in
+	org.gnome.gedit.plugins.time.gschema.xml.in.in \
+	gedit-time.gresource.xml
 
-CLEANFILES = $(plugin_DATA) $(gsettings_SCHEMAS)
-DISTCLEANFILES = $(plugin_DATA) $(gsettings_SCHEMAS)
+CLEANFILES = $(plugin_DATA) $(gsettings_SCHEMAS) $(BUILT_SOURCES)
+DISTCLEANFILES = $(plugin_DATA) $(gsettings_SCHEMAS) $(BUILT_SOURCES)
 
 MAINTAINERCLEANFILES = $(gsettings_SCHEMAS:.xml=.valid)
 

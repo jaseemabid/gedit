@@ -691,13 +691,10 @@ get_configure_widget (GeditTimePlugin *plugin)
 {
 	TimeConfigureWidget *widget;
 	GtkTreeSelection *selection;
-	gchar *data_dir;
-	gchar *ui_file;
 	GtkWidget *viewport;
 	GeditTimePluginPromptType prompt_type;
 	gchar *sf;
-	GtkWidget *error_widget;
-	gboolean ret;
+	GtkBuilder *builder;
 	gchar *root_objects[] = {
 		"time_dialog_content",
 		NULL
@@ -708,28 +705,19 @@ get_configure_widget (GeditTimePlugin *plugin)
 	widget = g_slice_new (TimeConfigureWidget);
 	widget->settings = g_object_ref (plugin->priv->settings);
 
-	data_dir = peas_extension_base_get_data_dir (PEAS_EXTENSION_BASE (plugin));
-	ui_file = g_build_filename (data_dir, "gedit-time-setup-dialog.ui", NULL);
-	ret = gedit_utils_get_ui_objects (ui_file,
-					  root_objects,
-					  &error_widget,
-					  "time_dialog_content", &widget->content,
-					  "formats_viewport", &viewport,
-					  "formats_tree", &widget->list,
-					  "always_prompt", &widget->prompt,
-					  "never_prompt", &widget->use_list,
-					  "use_custom", &widget->custom,
-					  "custom_entry", &widget->custom_entry,
-					  "custom_format_example", &widget->custom_format_example,
-					  NULL);
-
-	g_free (data_dir);
-	g_free (ui_file);
-
-	if (!ret)
-	{
-		return NULL;
-	}
+	builder = gtk_builder_new ();
+	gtk_builder_add_objects_from_resource (builder, "/org/gnome/gedit/plugins/time/ui/gedit-time-setup-dialog.ui",
+	                                       root_objects, NULL);
+	widget->content = GTK_WIDGET (gtk_builder_get_object (builder, "time_dialog_content"));
+	g_object_ref (widget->content);
+	viewport = GTK_WIDGET (gtk_builder_get_object (builder, "formats_viewport"));
+	widget->list = GTK_WIDGET (gtk_builder_get_object (builder, "formats_tree"));
+	widget->prompt = GTK_WIDGET (gtk_builder_get_object (builder, "always_prompt"));
+	widget->use_list = GTK_WIDGET (gtk_builder_get_object (builder, "never_prompt"));
+	widget->custom = GTK_WIDGET (gtk_builder_get_object (builder, "use_custom"));
+	widget->custom_entry = GTK_WIDGET (gtk_builder_get_object (builder, "custom_entry"));
+	widget->custom_format_example = GTK_WIDGET (gtk_builder_get_object (builder, "custom_format_example"));
+	g_object_unref (builder);
 
 	sf = get_selected_format (plugin);
 	create_formats_list (widget->list, sf, plugin);
@@ -852,10 +840,7 @@ get_choose_format_dialog (GtkWindow                 *parent,
 			  GeditTimePlugin           *plugin)
 {
 	ChooseFormatDialog *dialog;
-	gchar *data_dir;
-	gchar *ui_file;
-	GtkWidget *error_widget;
-	gboolean ret;
+	GtkBuilder *builder;
 	gchar *sf, *cf;
 	GtkWindowGroup *wg = NULL;
 	
@@ -865,50 +850,16 @@ get_choose_format_dialog (GtkWindow                 *parent,
 	dialog = g_slice_new (ChooseFormatDialog);
 	dialog->settings = plugin->priv->settings;
 
-	data_dir = peas_extension_base_get_data_dir (PEAS_EXTENSION_BASE (plugin));
-	ui_file = g_build_filename (data_dir, "gedit-time-dialog.ui", NULL);
-	ret = gedit_utils_get_ui_objects (ui_file,
-					  NULL,
-					  &error_widget,
-					  "choose_format_dialog", &dialog->dialog,
-					  "choice_list", &dialog->list,
-					  "use_sel_format_radiobutton", &dialog->use_list,
-					  "use_custom_radiobutton", &dialog->custom,
-					  "custom_entry", &dialog->custom_entry,
-					  "custom_format_example", &dialog->custom_format_example,
-					  NULL);
-
-	g_free (data_dir);
-	g_free (ui_file);
-
-	if (!ret)
-	{
-		GtkWidget *err_dialog;
-
-		err_dialog = gtk_dialog_new_with_buttons (NULL,
-			parent,
-			GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
-			GTK_STOCK_OK, GTK_RESPONSE_ACCEPT,
-			NULL);
-
-		if (wg != NULL)
-			gtk_window_group_add_window (wg, GTK_WINDOW (err_dialog));
-
-		gtk_window_set_resizable (GTK_WINDOW (err_dialog), FALSE);
-		gtk_dialog_set_default_response (GTK_DIALOG (err_dialog), GTK_RESPONSE_OK);
-
-		gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (err_dialog))),
-				   error_widget);
-
-		g_signal_connect (G_OBJECT (err_dialog),
-				  "response",
-				  G_CALLBACK (gtk_widget_destroy),
-				  NULL);
-
-		gtk_widget_show_all (err_dialog);
-
-		return NULL;
-	}
+	builder = gtk_builder_new ();
+	gtk_builder_add_from_resource (builder, "/org/gnome/gedit/plugins/time/ui/gedit-time-dialog.ui",
+	                               NULL);
+	dialog->dialog = GTK_WIDGET (gtk_builder_get_object (builder, "choose_format_dialog"));
+	dialog->list = GTK_WIDGET (gtk_builder_get_object (builder, "choice_list"));
+	dialog->use_list = GTK_WIDGET (gtk_builder_get_object (builder, "use_sel_format_radiobutton"));
+	dialog->custom = GTK_WIDGET (gtk_builder_get_object (builder, "use_custom_radiobutton"));
+	dialog->custom_entry = GTK_WIDGET (gtk_builder_get_object (builder, "custom_entry"));
+	dialog->custom_format_example = GTK_WIDGET (gtk_builder_get_object (builder, "custom_format_example"));
+	g_object_unref (builder);
 
 	gtk_window_group_add_window (wg,
 				     GTK_WINDOW (dialog->dialog));
