@@ -119,12 +119,10 @@ static void
 create_dialog (GeditSpellLanguageDialog *dlg,
 	       const gchar *data_dir)
 {
-	GtkWidget *error_widget;
+	GtkBuilder *builder;
 	GtkWidget *content;
-	gboolean ret;
 	GtkCellRenderer *cell;
 	GtkTreeViewColumn *column;
-	gchar *ui_file;
 	gchar *root_objects[] = {
 		"content",
 		NULL
@@ -157,25 +155,13 @@ create_dialog (GeditSpellLanguageDialog *dlg,
 			  G_CALLBACK (dialog_response_handler),
 			  NULL);
 
-	ui_file = g_build_filename (data_dir, "languages-dialog.ui", NULL);
-	ret = gedit_utils_get_ui_objects (ui_file,
-					  root_objects,	
-					  &error_widget,
-					  "content", &content,
-					  "languages_treeview", &dlg->languages_treeview,
-					  NULL);
-	g_free (ui_file);
-	
-	if (!ret)
-	{
-		gtk_widget_show (error_widget);
-
-		gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dlg))),
-		                    error_widget,
-		                    TRUE, TRUE, 0);
-
-		return;
-	}
+	builder = gtk_builder_new ();
+	gtk_builder_add_objects_from_resource (builder, "/org/gnome/gedit/plugins/spell/ui/languages-dialog.ui",
+	                                       root_objects, NULL);
+	content = GTK_WIDGET (gtk_builder_get_object (builder, "content"));
+	g_object_ref (content);
+	dlg->languages_treeview = GTK_WIDGET (gtk_builder_get_object (builder, "languages_treeview"));
+	g_object_unref (builder);
 
 	gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dlg))),
 			    content, TRUE, TRUE, 0);

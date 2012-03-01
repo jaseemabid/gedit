@@ -207,7 +207,7 @@ static void
 create_dialog (GeditSpellCheckerDialog *dlg,
 	       const gchar *data_dir)
 {
-	GtkWidget *error_widget;
+	GtkBuilder *builder;
 	GtkWidget *content;
 	GtkTreeViewColumn *column;
 	GtkCellRenderer *cell;
@@ -216,49 +216,35 @@ create_dialog (GeditSpellCheckerDialog *dlg,
 		"content",
 		"check_word_image",
 		"add_word_image",
-                "ignore_image",
-                "change_image",
-                "ignore_all_image",
-                "change_all_image",
+		"ignore_image",
+		"change_image",
+		"ignore_all_image",
+		"change_all_image",
 		NULL
 	};
-	gboolean ret;
-	gchar *ui_file;
 	
 	g_return_if_fail (dlg != NULL);
 
 	dlg->spell_checker = NULL;
 	dlg->misspelled_word = NULL;
 
-	ui_file = g_build_filename (data_dir, "spell-checker.ui", NULL);
-	ret = gedit_utils_get_ui_objects (ui_file,
-		root_objects,
-		&error_widget,
-
-		"content", &content,
-		"misspelled_word_label", &dlg->misspelled_word_label,
-		"word_entry", &dlg->word_entry,
-		"check_word_button", &dlg->check_word_button,
-		"ignore_button", &dlg->ignore_button,
-		"ignore_all_button", &dlg->ignore_all_button,
-		"change_button", &dlg->change_button,
-		"change_all_button", &dlg->change_all_button,
-		"add_word_button", &dlg->add_word_button,
-		"close_button", &dlg->close_button,
-		"suggestions_list", &dlg->suggestions_list,
-		"language_label", &dlg->language_label,
-		NULL);
-	g_free (ui_file);
-
-	if (!ret)
-	{
-		gtk_widget_show (error_widget);
-
-		gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dlg))),
-				    error_widget, TRUE, TRUE, 0);
-
-		return;
-	}
+	builder = gtk_builder_new ();
+	gtk_builder_add_objects_from_resource (builder, "/org/gnome/gedit/plugins/spell/ui/spell-checker.ui",
+	                                       root_objects, NULL);
+	content = GTK_WIDGET (gtk_builder_get_object (builder, "content"));
+	g_object_ref (content);
+	dlg->misspelled_word_label = GTK_WIDGET (gtk_builder_get_object (builder, "misspelled_word_label"));
+	dlg->word_entry = GTK_WIDGET (gtk_builder_get_object (builder, "word_entry"));
+	dlg->check_word_button = GTK_WIDGET (gtk_builder_get_object (builder, "check_word_button"));
+	dlg->ignore_button = GTK_WIDGET (gtk_builder_get_object (builder, "ignore_button"));
+	dlg->ignore_all_button = GTK_WIDGET (gtk_builder_get_object (builder, "ignore_all_button"));
+	dlg->change_button = GTK_WIDGET (gtk_builder_get_object (builder, "change_button"));
+	dlg->change_all_button = GTK_WIDGET (gtk_builder_get_object (builder, "change_all_button"));
+	dlg->add_word_button = GTK_WIDGET (gtk_builder_get_object (builder, "add_word_button"));
+	dlg->close_button = GTK_WIDGET (gtk_builder_get_object (builder, "close_button"));
+	dlg->suggestions_list = GTK_WIDGET (gtk_builder_get_object (builder, "suggestions_list"));
+	dlg->language_label = GTK_WIDGET (gtk_builder_get_object (builder, "language_label"));
+	g_object_unref (builder);
 
 	gtk_label_set_label (GTK_LABEL (dlg->misspelled_word_label), "");
 	gtk_widget_set_sensitive (dlg->word_entry, FALSE);
