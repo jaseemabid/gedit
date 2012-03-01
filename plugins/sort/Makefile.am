@@ -9,10 +9,13 @@ INCLUDES = \
 
 plugin_LTLIBRARIES = libsort.la
 
+BUILT_SOURCES = \
+	gedit-sort-resources.c
+
 libsort_la_SOURCES = \
 	gedit-sort-plugin.h	\
 	gedit-sort-plugin.c	\
-	gedit-sort-resources.c
+	$(BUILT_SOURCES)
 
 libsort_la_LDFLAGS = $(PLUGIN_LIBTOOL_FLAGS)
 libsort_la_LIBADD  = $(GEDIT_LIBS)
@@ -28,8 +31,8 @@ plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
 EXTRA_DIST = $(plugin_in_files)
 
-CLEANFILES = $(plugin_DATA)
-DISTCLEANFILES = $(plugin_DATA)
+CLEANFILES = $(BUILT_SOURCES) $(plugin_DATA)
+DISTCLEANFILES = $(BUILT_SOURCES) $(plugin_DATA)
 
 
 -include $(top_srcdir)/git.mk

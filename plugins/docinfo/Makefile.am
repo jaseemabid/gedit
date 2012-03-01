@@ -9,10 +9,13 @@ INCLUDES = \
 
 plugin_LTLIBRARIES = libdocinfo.la
 
+BUILT_SOURCES = \
+	gedit-docinfo-resources.c
+
 libdocinfo_la_SOURCES = \
 	gedit-docinfo-plugin.h	\
 	gedit-docinfo-plugin.c	\
-	gedit-docinfo-resources.c
+	$(BUILT_SOURCES)
 
 libdocinfo_la_LDFLAGS = $(PLUGIN_LIBTOOL_FLAGS)
 libdocinfo_la_LIBADD  = $(GEDIT_LIBS)
@@ -27,9 +30,7 @@ plugin_in_files = docinfo.plugin.desktop.in
 plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
 EXTRA_DIST = $(plugin_in_files)
-
-CLEANFILES = $(plugin_DATA)
-DISTCLEANFILES = $(plugin_DATA)
-
+CLEANFILES = $(BUILT_SOURCES) $(plugin_DATA)
+DISTCLEANFILES = $(BUILT_SOURCES) $(plugin_DATA)
 
 -include $(top_srcdir)/git.mk
