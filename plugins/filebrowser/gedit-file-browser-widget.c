@@ -44,7 +44,6 @@
 						      GEDIT_TYPE_FILE_BROWSER_WIDGET, \
 						      GeditFileBrowserWidgetPrivate))
 
-#define XML_UI_FILE "gedit-file-browser-widget-ui.xml"
 #define LOCATION_DATA_KEY "gedit-file-browser-widget-location"
 
 enum
@@ -902,20 +901,16 @@ create_toolbar (GeditFileBrowserWidget *obj,
 	GtkActionGroup *action_group;
 	GtkWidget *toolbar;
 	GtkAction *action;
-	gchar *ui_file;
 
 	manager = gtk_ui_manager_new ();
 	obj->priv->manager = manager;
 
-	ui_file = g_build_filename (data_dir, XML_UI_FILE, NULL);
-	gtk_ui_manager_add_ui_from_file (manager, ui_file, &error);
-
-	g_free (ui_file);
-
+	gtk_ui_manager_add_ui_from_resource (manager,
+					     "/org/gnome/gedit/plugins/file-browser/ui/gedit-file-browser-widget-ui.xml",
+					     &error);
 	if (error != NULL)
 	{
-		g_warning ("Error in adding ui from file %s: %s",
-			   XML_UI_FILE, error->message);
+		g_warning ("Could not add ui definition: %s", error->message);
 		g_error_free (error);
 		return;
 	}

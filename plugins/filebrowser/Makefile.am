@@ -9,6 +9,7 @@ INCLUDES = \
 	$(DISABLE_DEPRECATED_CFLAGS)
 
 BUILT_SOURCES = \
+	gedit-file-browser-resources.c		\
 	gedit-file-browser-enum-types.h		\
 	gedit-file-browser-enum-types.c		\
 	gedit-file-browser-marshal.h 		\
@@ -59,13 +60,12 @@ libfilebrowser_la_SOURCES = \
 libfilebrowser_la_LDFLAGS = $(PLUGIN_LIBTOOL_FLAGS)
 libfilebrowser_la_LIBADD = $(GEDIT_LIBS)
 
-# UI files (if you use ui for your plugin, list those files here)
-uidir = $(GEDIT_PLUGINS_DATA_DIR)/filebrowser
-ui_DATA = gedit-file-browser-widget-ui.xml
-
 plugin_in_files = filebrowser.plugin.desktop.in
 
 %.plugin: %.plugin.desktop.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache
+
+gedit-file-browser-resources.c: gedit-file-browser.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies gedit-file-browser.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source gedit-file-browser.gresource.xml
 
 gedit-file-browser-enum-types.h: gedit-file-browser-enum-types.h.template $(NOINST_H_FILES) $(GLIB_MKENUMS)
 	(cd $(srcdir) && $(GLIB_MKENUMS) --template gedit-file-browser-enum-types.h.template $(NOINST_H_FILES)) > $@
@@ -96,8 +96,8 @@ update-messages:
 	$(top_srcdir)/tools/generate-message.py --output-directory $(builddir)/messages/  --gpl --program gedit $(srcdir)/messages.xml
 
 EXTRA_DIST = \
-	$(ui_DATA)					\
 	$(plugin_in_files)				\
+	gedit-file-browser.gresource.xml		\
 	gedit-file-browser-enum-types.h.template	\
 	gedit-file-browser-enum-types.c.template	\
 	gedit-file-browser-enum-register.c.template	\
