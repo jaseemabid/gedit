@@ -321,10 +321,7 @@ gedit_floating_slider_class_init (GeditFloatingSliderClass *klass)
 	GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 	static const gchar style[] =
 	"* {"
-	  "background-image: -gtk-gradient (linear,\n"
-	                                    "left top, left bottom,\n"
-	                                    "from (shade (@notebook_tab_gradient_a, 0.97)),\n"
-	                                    "to (shade (@notebook_tab_gradient_b, 0.90)));\n"
+	  "background-color: @theme_base_color;\n"
 
 	  "padding: 6px;\n"
 	  "border-color: shade (@notebook_tab_gradient_b, 0.80);\n"
@@ -332,18 +329,6 @@ gedit_floating_slider_class_init (GeditFloatingSliderClass *klass)
 	  "border-radius: 0 0 3px 3px;\n"
 	  "border-width: 0 1px 1px 1px;\n"
 	  "border-style: solid;\n"
-	"}\n"
-
-	".button {"
-	  "background-color: alpha (@theme_base_color, 0.0);"
-	  "background-image: none;"
-
-	  "padding: 0;\n"
-	  "border-style: none;"
-	  "border-image: none;"
-
-	  "-GtkButton-image-spacing: 0;"
-	  "-GtkButton-inner-border: 0;"
 	"}";
 
 	object_class->finalize = gedit_floating_slider_finalize;
