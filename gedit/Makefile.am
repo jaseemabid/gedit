@@ -161,6 +161,9 @@ headerdir = $(prefix)/include/gedit-$(GEDIT_API_VERSION)/gedit
 header_DATA = 				\
 	$(INST_H_FILES)
 
+BUILT_SOURCES_PRIVATE = \
+	gedit-resources.c
+
 libgedit_private_la_SOURCES =		\
 	gedit-app-activatable.c		\
 	gedit-view-activatable.c	\
@@ -271,7 +274,7 @@ EXTRA_DIST = 				\
 	gedit.rc			\
 	gedit.gresource.xml
 
-CLEANFILES = $(BUILT_SOURCES)
+CLEANFILES = $(BUILT_SOURCES) $(BUILT_SOURCES_PRIVATE)
 
 if HAVE_INTROSPECTION
 -include $(INTROSPECTION_MAKEFILE)
@@ -297,7 +300,7 @@ CLEANFILES +=			\
 endif
 
 dist-hook:
-	cd $(distdir); rm -f $(BUILT_SOURCES)
+	cd $(distdir); rm -f $(BUILT_SOURCES) $(BUILT_SOURCES_PRIVATE)
 
 install-exec-hook:
 if PLATFORM_WIN32
