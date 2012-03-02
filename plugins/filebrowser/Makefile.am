@@ -64,8 +64,8 @@ plugin_in_files = filebrowser.plugin.desktop.in
 
 %.plugin: %.plugin.desktop.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache
 
-gedit-file-browser-resources.c: gedit-file-browser.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies gedit-file-browser.gresource.xml)
-	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source gedit-file-browser.gresource.xml
+gedit-file-browser-resources.c: gedit-file-browser.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --sourcedir=$(srcdir) --generate-dependencies $(srcdir)/gedit-file-browser.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source $(srcdir)/gedit-file-browser.gresource.xml
 
 gedit-file-browser-enum-types.h: gedit-file-browser-enum-types.h.template $(NOINST_H_FILES) $(GLIB_MKENUMS)
 	(cd $(srcdir) && $(GLIB_MKENUMS) --template gedit-file-browser-enum-types.h.template $(NOINST_H_FILES)) > $@
@@ -102,7 +102,8 @@ EXTRA_DIST = \
 	gedit-file-browser-enum-types.c.template	\
 	gedit-file-browser-enum-register.c.template	\
 	gedit-file-browser-marshal.list			\
-	org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in
+	org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in \
+	gedit-file-browser-widget-ui.xml
 
 CLEANFILES = \
 	$(plugin_DATA)		\

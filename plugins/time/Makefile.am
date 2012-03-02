@@ -20,8 +20,8 @@ libtime_la_SOURCES = \
 libtime_la_LDFLAGS = $(PLUGIN_LIBTOOL_FLAGS)
 libtime_la_LIBADD  = $(GEDIT_LIBS)
 
-gedit-time-resources.c: gedit-time.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies gedit-time.gresource.xml)
-	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source gedit-time.gresource.xml
+gedit-time-resources.c: gedit-time.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies $(srcdir)/gedit-time.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source $(srcdir)/gedit-time.gresource.xml
 
 plugin_in_files = time.plugin.desktop.in
 
@@ -39,7 +39,9 @@ gsettings_SCHEMAS = org.gnome.gedit.plugins.time.gschema.xml
 EXTRA_DIST =					\
 	$(plugin_in_files)			\
 	org.gnome.gedit.plugins.time.gschema.xml.in.in \
-	gedit-time.gresource.xml
+	gedit-time.gresource.xml		\
+	gedit-time-dialog.ui			\
+	gedit-time-setup-dialog.ui
 
 CLEANFILES = $(plugin_DATA) $(gsettings_SCHEMAS) $(BUILT_SOURCES)
 DISTCLEANFILES = $(plugin_DATA) $(gsettings_SCHEMAS) $(BUILT_SOURCES)

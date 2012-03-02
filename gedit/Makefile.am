@@ -258,8 +258,8 @@ gedit-marshal.c: gedit-marshal.list $(GLIB_GENMARSHAL)
 	$(AM_V_GEN) echo "#include \"gedit-marshal.h\"" > $@ && \
 	$(GLIB_GENMARSHAL) $< --body --prefix=gedit_marshal >> $@
 
-gedit-resources.c: gedit.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies gedit.gresource.xml)
-	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source gedit.gresource.xml
+gedit-resources.c: gedit.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --sourcedir=$(srcdir) --generate-dependencies $(srcdir)/gedit.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source $(srcdir)/gedit.gresource.xml
 
 if ENABLE_PYTHON
 overridesdir = $(pyoverridesdir)
@@ -272,7 +272,12 @@ EXTRA_DIST = 				\
 	gedit-enum-types.c.template	\
 	gedit-marshal.list		\
 	gedit.rc			\
-	gedit.gresource.xml
+	gedit.gresource.xml		\
+	gedit-ui.xml			\
+	gedit-encodings-dialog.ui	\
+	gedit-preferences-dialog.ui	\
+	gedit-replace-dialog.ui		\
+	gedit-print-preferences.ui
 
 CLEANFILES = $(BUILT_SOURCES) $(BUILT_SOURCES_PRIVATE)
 

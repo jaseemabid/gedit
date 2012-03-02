@@ -20,8 +20,8 @@ libdocinfo_la_SOURCES = \
 libdocinfo_la_LDFLAGS = $(PLUGIN_LIBTOOL_FLAGS)
 libdocinfo_la_LIBADD  = $(GEDIT_LIBS)
 
-gedit-docinfo-resources.c: gedit-docinfo.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies gedit-docinfo.gresource.xml)
-	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source gedit-docinfo.gresource.xml
+gedit-docinfo-resources.c: gedit-docinfo.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --sourcedir=$(srcdir) --generate-dependencies $(srcdir)/gedit-docinfo.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source $(srcdir)/gedit-docinfo.gresource.xml
 
 plugin_in_files = docinfo.plugin.desktop.in
 
@@ -29,7 +29,11 @@ plugin_in_files = docinfo.plugin.desktop.in
 
 plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 
-EXTRA_DIST = $(plugin_in_files)
+EXTRA_DIST = \
+	$(plugin_in_files) \
+	gedit-docinfo.gresource.xml \
+	gedit-docinfo-plugin.ui
+
 CLEANFILES = $(BUILT_SOURCES) $(plugin_DATA)
 DISTCLEANFILES = $(BUILT_SOURCES) $(plugin_DATA)
 

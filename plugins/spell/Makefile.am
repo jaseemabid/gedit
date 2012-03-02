@@ -58,8 +58,8 @@ gedit-spell-marshal.c: gedit-spell-marshal.list $(GLIB_GENMARSHAL)
 	$(AM_V_GEN) echo "#include \"gedit-spell-marshal.h\"" > $@ && \
 	$(GLIB_GENMARSHAL) $< --body --prefix=gedit_marshal >> $@
 
-gedit-spell-resources.c: gedit-spell.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies gedit-spell.gresource.xml)
-	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source gedit-spell.gresource.xml
+gedit-spell-resources.c: gedit-spell.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --sourcedir=$(srcdir) --generate-dependencies $(srcdir)/gedit-spell.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source $(srcdir)/gedit-spell.gresource.xml
 
 plugin_in_files = spell.plugin.desktop.in
 
@@ -70,7 +70,9 @@ plugin_DATA = $(plugin_in_files:.plugin.desktop.in=.plugin)
 EXTRA_DIST = 					\
 	$(plugin_in_files)			\
 	gedit-spell-marshal.list		\
-	gedit-spell.gresource.xml
+	gedit-spell.gresource.xml		\
+	spell-checker.ui			\
+	languages-dialog.ui
 
 CLEANFILES = $(BUILT_SOURCES) $(plugin_DATA)
 
