@@ -45,6 +45,8 @@ libgedit_la_LIBADD = \
 # GEDIT_LIBS must be the last to ensure correct order on some platforms
 libgedit_la_LIBADD += $(GEDIT_LIBS) $(GTK_MAC_LIBS)
 
+libgedit_private_la_LIBADD = libgedit.la $(GEDIT_LIBS)
+
 # Mac OSX convenience library and ldflags
 if OS_OSX
 noinst_LTLIBRARIES += libosx.la
