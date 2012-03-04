@@ -943,7 +943,7 @@ choose_format_dialog_response_cb (GtkWidget          *widget,
 			gedit_app_show_help (gedit_app_get_default (),
 					     GTK_WINDOW (widget),
 					     NULL,
-					     "gedit-insert-date-time-plugin");
+					     "gedit-plugins-insert-date-time");
 			break;
 		}
 		case GTK_RESPONSE_OK:
