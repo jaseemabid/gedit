@@ -925,7 +925,6 @@ update_ui (GeditSpellPlugin *plugin)
 {
 	GeditSpellPluginPrivate *priv;
 	GeditView *view;
-	GtkAction *action;
 
 	gedit_debug (DEBUG_PLUGINS);
 
@@ -933,12 +932,17 @@ update_ui (GeditSpellPlugin *plugin)
 
 	view = gedit_window_get_active_view (priv->window);
 
+	gtk_action_group_set_sensitive (priv->action_group,
+					(view != NULL) &&
+					gtk_text_view_get_editable (GTK_TEXT_VIEW (view)));
+
 	if (view != NULL)
 	{
 		GeditDocument *doc;
 		GeditTab *tab;
 		GeditTabState state;
 		gboolean autospell;
+		GtkAction *action;
 
 		doc = GEDIT_DOCUMENT (gtk_text_view_get_buffer (GTK_TEXT_VIEW (view)));
 		tab = gedit_window_get_active_tab (priv->window);
@@ -952,7 +956,7 @@ update_ui (GeditSpellPlugin *plugin)
 		{
 			action = gtk_action_group_get_action (priv->action_group,
 							      "AutoSpell");
-	
+
 			g_signal_handlers_block_by_func (action, auto_spell_cb,
 							 priv->window);
 			set_auto_spell (priv->window, view, autospell);
@@ -961,11 +965,12 @@ update_ui (GeditSpellPlugin *plugin)
 			g_signal_handlers_unblock_by_func (action, auto_spell_cb,
 							   priv->window);
 		}
-	}
 
-	gtk_action_group_set_sensitive (priv->action_group,
-					(view != NULL) &&
-					gtk_text_view_get_editable (GTK_TEXT_VIEW (view)));
+		action = gtk_action_group_get_action (priv->action_group,
+						      "CheckSpell");
+		gtk_action_set_sensitive (action,
+					  gtk_text_buffer_get_char_count (GTK_TEXT_BUFFER (doc)) > 0);
+	}
 }
 
 static void
