@@ -99,11 +99,6 @@ gedit_app_finalize (GObject *object)
 
 	g_list_free (app->priv->windows);
 
-	if (app->priv->page_setup)
-		g_object_unref (app->priv->page_setup);
-	if (app->priv->print_settings)
-		g_object_unref (app->priv->print_settings);
-
 	G_OBJECT_CLASS (gedit_app_parent_class)->finalize (object);
 }
 
@@ -114,6 +109,9 @@ gedit_app_dispose (GObject *object)
 
 	g_clear_object (&app->priv->window_settings);
 	g_clear_object (&app->priv->settings);
+
+	g_clear_object (app->priv->page_setup);
+	g_clear_object (app->priv->print_settings);
 
 	/* Note that unreffing the extensions will automatically remove
 	   all extensions which in turn will deactivate the extension */
