@@ -587,7 +587,7 @@ static gboolean
 gedit_view_button_press_event (GtkWidget *widget, GdkEventButton *event)
 {
 	if ((event->type == GDK_BUTTON_PRESS) && 
-	    (event->button == 3) &&
+	    (event->button == GDK_BUTTON_SECONDARY) &&
 	    (event->window == gtk_text_view_get_window (GTK_TEXT_VIEW (widget),
 						        GTK_TEXT_WINDOW_LEFT)))
 	{

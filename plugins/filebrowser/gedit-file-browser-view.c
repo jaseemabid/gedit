@@ -583,7 +583,7 @@ button_press_event (GtkWidget      *widget,
 			 * click to apply to everything that's currently selected. */
 			selected = gtk_tree_selection_path_is_selected (selection, path);
 
-			if (event->button == 3 && selected)
+			if (event->button == GDK_BUTTON_SECONDARY && selected)
 				call_parent = FALSE;
 
 			if ((event->button == 1 || event->button == 2) &&

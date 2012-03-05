@@ -616,7 +616,7 @@ button_press_event (GtkTextView *view,
 		    GdkEventButton *event,
 		    GeditAutomaticSpellChecker *spell) 
 {
-	if (event->button == 3) 
+	if (event->button == GDK_BUTTON_SECONDARY) 
 	{
 		gint x, y;
 		GtkTextIter iter;

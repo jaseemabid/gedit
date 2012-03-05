@@ -250,7 +250,7 @@ gedit_notebook_button_press (GtkWidget      *widget,
 	GtkNotebook *nb = GTK_NOTEBOOK (widget);
 
 	if (event->type == GDK_BUTTON_PRESS &&
-	    event->button == 3 &&
+	    event->button == GDK_BUTTON_SECONDARY &&
 	    (event->state & gtk_accelerator_get_default_mod_mask ()) == 0)
 	{
 		gint tab_clicked;

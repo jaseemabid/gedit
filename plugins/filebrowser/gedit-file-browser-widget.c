@@ -2607,7 +2607,7 @@ on_treeview_button_press_event (GeditFileBrowserView   *treeview,
 				GdkEventButton         *event,
 				GeditFileBrowserWidget *obj)
 {
-	if (event->type == GDK_BUTTON_PRESS && event->button == 3)
+	if (event->type == GDK_BUTTON_PRESS && event->button == GDK_BUTTON_SECONDARY)
 		return popup_menu (obj, event,
 				   gtk_tree_view_get_model (GTK_TREE_VIEW (treeview)));
 
