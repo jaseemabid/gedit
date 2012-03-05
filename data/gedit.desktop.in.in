@@ -9,6 +9,18 @@ StartupNotify=true
 MimeType=text/plain;
 Icon=accessories-text-editor
 Categories=GNOME;GTK;Utility;TextEditor;
+Actions=Window;Document;
+
+[Desktop Action Window]
+_Name=Open a New Window
+Exec=gedit --new-window
+OnlyShowIn=Unity;
+
+[Desktop Action Document]
+_Name=Open a New Document
+Exec=gedit --new-window
+OnlyShowIn=Unity;
+
 X-GNOME-DocPath=gedit/gedit.xml
 _X-GNOME-FullName=gedit Text Editor
 X-GNOME-Bugzilla-Bugzilla=GNOME
