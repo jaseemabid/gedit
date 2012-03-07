@@ -27,8 +27,8 @@ msgstr ""
 "Project-Id-Version: gedit HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-03-01 17:16+0000\n"
-"PO-Revision-Date: 2012-03-04 21:29+0100\n"
+"POT-Creation-Date: 2012-03-06 21:42+0000\n"
+"PO-Revision-Date: 2012-03-07 12:38+0100\n"
 "Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -50,6 +50,14 @@ msgid "Edit text files"
 msgstr "Éditer des fichiers texte"
 
 #: ../data/gedit.desktop.in.in.h:4
+msgid "Open a New Window"
+msgstr "Ouvrir une nouvelle fenêtre"
+
+#: ../data/gedit.desktop.in.in.h:5
+msgid "Open a New Document"
+msgstr "Ouvrir un nouveau document"
+
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "Éditeur de texte gedit"
 
@@ -495,7 +503,7 @@ msgstr ""
 "Consultez le fichier .gedit-plugin pour obtenir l'« emplacement » (Location) "
 "d'un greffon donné."
 
-#: ../gedit/gedit-app.c:224
+#: ../gedit/gedit-app.c:222
 msgid "There was an error displaying the help."
 msgstr "Une erreur s'est produite lors de l'affichage de l'aide."
 
@@ -946,11 +954,11 @@ msgid "Unsaved Document %d"
 msgstr "Document %d non enregistré"
 
 #: ../gedit/gedit-documents-panel.c:123 ../gedit/gedit-documents-panel.c:137
-#: ../gedit/gedit-window.c:2396 ../gedit/gedit-window.c:2403
+#: ../gedit/gedit-window.c:2397 ../gedit/gedit-window.c:2404
 msgid "Read-Only"
 msgstr "Lecture seule"
 
-#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3845
+#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3846
 msgid "Documents"
 msgstr "Documents"
 
@@ -2283,7 +2291,7 @@ msgstr "Utilise le mode de coloration %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1046 ../gedit/gedit-window.c:2090
+#: ../gedit/gedit-window.c:1046 ../gedit/gedit-window.c:2091
 #: ../plugins/externaltools/tools/manager.py:146
 #: ../plugins/externaltools/tools/manager.py:450
 #: ../plugins/externaltools/tools/manager.py:561
@@ -2322,28 +2330,28 @@ msgid "Find"
 msgstr "Rechercher"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1714
+#: ../gedit/gedit-window.c:1715
 #, c-format
 msgid "Activate '%s'"
 msgstr "Active « %s »"
 
-#: ../gedit/gedit-window.c:2071
+#: ../gedit/gedit-window.c:2072
 msgid "Use Spaces"
 msgstr "Utiliser des espaces"
 
-#: ../gedit/gedit-window.c:2144
+#: ../gedit/gedit-window.c:2145
 msgid "Tab Width"
 msgstr "Largeur des tabulations"
 
-#: ../gedit/gedit-window.c:2253
+#: ../gedit/gedit-window.c:2254
 msgid "Bracket match is out of range"
 msgstr "La correspondance des parenthèses est hors de portée"
 
-#: ../gedit/gedit-window.c:2258
+#: ../gedit/gedit-window.c:2259
 msgid "Bracket match not found"
 msgstr "Parenthèse correspondante introuvable"
 
-#: ../gedit/gedit-window.c:2263
+#: ../gedit/gedit-window.c:2264
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Parenthèse correspondante trouvée à la ligne : %d"
@@ -2469,7 +2477,6 @@ msgstr "Nom du fichier"
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:4
 #: ../plugins/externaltools/tools/tools.ui.h:27
 #: ../plugins/snippets/snippets/snippets.ui.h:13
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 msgid "    "
 msgstr "    "
 
@@ -2905,131 +2912,131 @@ msgstr ""
 "Le nouveau dossier est actuellement filtré. Ajustez les paramètres de votre "
 "filtre pour rendre le dossier visible"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:734
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:733
 msgid "Bookmarks"
 msgstr "Signets"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:822
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:821
 msgid "_Filter"
 msgstr "_Filtrer"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:826
 msgid "_Move to Trash"
 msgstr "_Mettre à la corbeille"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:828
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
 msgid "Move selected file or folder to trash"
 msgstr "Met le fichier ou dossier sélectionné à la corbeille"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:829
 msgid "_Delete"
 msgstr "_Supprimer"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:831
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
 msgid "Delete selected file or folder"
 msgstr "Supprime le fichier ou dossier sélectionné"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:838
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:837
 msgid "Open selected file"
 msgstr "Ouvre le fichier sélectionné"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:843
 msgid "Up"
 msgstr "Haut"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:845
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
 msgid "Open the parent folder"
 msgstr "Ouvre le dossier parent"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:849
 msgid "_New Folder"
 msgstr "_Nouveau dossier"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:851
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
 msgid "Add new empty folder"
 msgstr "Ajoute un nouveau dossier vide"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:852
 msgid "New F_ile"
 msgstr "Nouveau f_ichier"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:854
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
 msgid "Add new empty file"
 msgstr "Ajoute un nouveau fichier vide"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:858
 msgid "_Rename"
 msgstr "_Renommer"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:860
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
 msgid "Rename selected file or folder"
 msgstr "Renomme le fichier ou le dossier sélectionné"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:866
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:865
 msgid "_Previous Location"
 msgstr "Emplacement _précédent"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:867
 msgid "Go to the previous visited location"
 msgstr "Va à l'emplacement visité précédent"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:869
 msgid "_Next Location"
 msgstr "Emplacement _suivant"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
 msgid "Go to the next visited location"
 msgstr "Va à l'emplacement visité suivant"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
 msgid "Re_fresh View"
 msgstr "_Actualiser l'affichage"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
 msgid "Refresh the view"
 msgstr "Actualise l'affichage"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:891
 msgid "_View Folder"
 msgstr "A_fficher le dossier"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:875
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:893
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
 msgid "View folder in file manager"
 msgstr "Affiche le répertoire dans le gestionnaire de fichiers"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:881
 msgid "Show _Hidden"
 msgstr "Afficher les fichiers _cachés"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:883
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
 msgid "Show hidden files and folders"
 msgstr "Affiche les fichiers et dossiers cachés"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:884
 msgid "Show _Binary"
 msgstr "Afficher les _binaires"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:886
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
 msgid "Show binary files"
 msgstr "Affiche les fichiers binaires"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1207
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1202
 msgid "Match Filename"
 msgstr "Filtre de nom de fichiers"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2009
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2004
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "Aucun objet monté pour le volume monté : « %s »"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2086
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2081
 #, c-format
 msgid "Could not open media: %s"
 msgstr "Impossible d'ouvrir le média : « %s »"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2133
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2128
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "Impossible de monter le volume « %s »"
@@ -3675,31 +3682,31 @@ msgid "Insert Date and Time"
 msgstr "Insérer la date et l'heure"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:2
-msgid "_Insert"
-msgstr "_Insertion"
-
-#: ../plugins/time/gedit-time-dialog.ui.h:3
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
 msgid "Use the _selected format"
 msgstr "Utiliser le format _sélectionné"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:4
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
+#: ../plugins/time/gedit-time-dialog.ui.h:3
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
 msgid "_Use custom format"
 msgstr "_Utiliser un format personnalisé"
 
 #. Translators: Use the more common date format in your locale
-#: ../plugins/time/gedit-time-dialog.ui.h:6
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
+#: ../plugins/time/gedit-time-dialog.ui.h:5
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%d/%m/%Y %H:%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
-#: ../plugins/time/gedit-time-dialog.ui.h:7
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:11
+#: ../plugins/time/gedit-time-dialog.ui.h:6
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "01/11/2009 17:52:00"
 msgstr "01/11/2009 17:52:00"
+
+#: ../plugins/time/gedit-time-dialog.ui.h:7
+msgid "_Insert"
+msgstr "_Insertion"
 
 #: ../plugins/time/gedit-time-plugin.c:188
 msgid "In_sert Date and Time..."
@@ -3722,7 +3729,7 @@ msgstr "Configurer le greffon d'insertion de date et d'heure"
 msgid "When inserting date/time..."
 msgstr "Lors de l'insertion de la date et de l'heure..."
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 msgid "_Prompt for a format"
 msgstr "_Demander un format"
 
@@ -3771,4 +3778,3 @@ msgid "Logs access and leave event for documents used with gedit"
 msgstr ""
 "Journalise les événements accéder et quitter relatifs aux documents traités "
 "par gedit"
-
