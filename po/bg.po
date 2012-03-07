@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-23 07:26+0200\n"
-"PO-Revision-Date: 2012-02-23 07:26+0200\n"
+"POT-Creation-Date: 2012-03-07 06:45+0200\n"
+"PO-Revision-Date: 2012-03-07 06:45+0200\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:799
+#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:791
 msgid "Text Editor"
 msgstr "Текстов редактор"
 
@@ -37,6 +37,14 @@ msgid "Edit text files"
 msgstr "Редактиране на текстови файлове"
 
 #: ../data/gedit.desktop.in.in.h:4
+msgid "Open a New Window"
+msgstr "Отваряне на нов прозорец"
+
+#: ../data/gedit.desktop.in.in.h:5
+msgid "Open a New Document"
+msgstr "Отваряне на нов документ"
+
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "Текстов редактор (gedit)"
 
@@ -459,7 +467,7 @@ msgstr ""
 "приставки. Погледнете файла .gedit-plugin, за да намерите „местоположението“ "
 "на дадена приставка."
 
-#: ../gedit/gedit-app.c:224
+#: ../gedit/gedit-app.c:222
 msgid "There was an error displaying the help."
 msgstr "Грешка при изобразяване на ръководството."
 
@@ -718,7 +726,7 @@ msgstr "Файлът „%s“ е само за четене."
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr "Искате ли да се опитате да го замените с този, който записвате сега?"
 
-#: ../gedit/gedit-commands-file.c:570 ../gedit/gedit-replace-dialog.c:288
+#: ../gedit/gedit-commands-file.c:570 ../gedit/gedit-replace-dialog.c:270
 msgid "_Replace"
 msgstr "_Замяна"
 
@@ -904,11 +912,11 @@ msgid "Unsaved Document %d"
 msgstr "Незапазен документ %d"
 
 #: ../gedit/gedit-documents-panel.c:123 ../gedit/gedit-documents-panel.c:137
-#: ../gedit/gedit-window.c:2399 ../gedit/gedit-window.c:2406
+#: ../gedit/gedit-window.c:2397 ../gedit/gedit-window.c:2404
 msgid "Read-Only"
 msgstr "(само за четене)"
 
-#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3848
+#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3846
 msgid "Documents"
 msgstr "Документи"
 
@@ -1042,15 +1050,15 @@ msgstr "Текущ локал (%s)"
 msgid "Add or Remove..."
 msgstr "Добавяне или премахване…"
 
-#: ../gedit/gedit-encodings-dialog.c:347
+#: ../gedit/gedit-encodings-dialog.c:345
 msgid "Character Encodings"
 msgstr "Кодиране на знаците"
 
-#: ../gedit/gedit-encodings-dialog.c:410 ../gedit/gedit-encodings-dialog.c:471
+#: ../gedit/gedit-encodings-dialog.c:395 ../gedit/gedit-encodings-dialog.c:456
 msgid "_Description"
 msgstr "_Описание"
 
-#: ../gedit/gedit-encodings-dialog.c:419 ../gedit/gedit-encodings-dialog.c:480
+#: ../gedit/gedit-encodings-dialog.c:404 ../gedit/gedit-encodings-dialog.c:465
 msgid "_Encoding"
 msgstr "_Кодиране"
 
@@ -1509,7 +1517,7 @@ msgstr "Файлове на цветова схема"
 msgid "Could not remove color scheme \"%s\"."
 msgstr "Цветовата схема „%s“ не може да бъде изтрита."
 
-#: ../gedit/gedit-preferences-dialog.c:1180
+#: ../gedit/gedit-preferences-dialog.c:1177
 msgid "gedit Preferences"
 msgstr "Настройки на gedit"
 
@@ -1635,16 +1643,16 @@ msgstr "Шрифт и цветове"
 msgid "Plugins"
 msgstr "Приставки"
 
-#: ../gedit/gedit-print-job.c:580
+#: ../gedit/gedit-print-job.c:572
 #, c-format
 msgid "File: %s"
 msgstr "Файл: %s"
 
-#: ../gedit/gedit-print-job.c:589
+#: ../gedit/gedit-print-job.c:581
 msgid "Page %N of %Q"
 msgstr "Страница %N от %Q"
 
-#: ../gedit/gedit-print-job.c:851
+#: ../gedit/gedit-print-job.c:843
 msgid "Preparing..."
 msgstr "Подготовка…"
 
@@ -1770,12 +1778,12 @@ msgid "The preview of a page in the document to be printed"
 msgstr "Преглед как ще изглежда отпечатана страницата от документа"
 
 #. ex:set ts=8 noet:
-#: ../gedit/gedit-replace-dialog.c:209 ../gedit/gedit-replace-dialog.ui.h:1
-#: ../gedit/gedit-window.c:1559
+#: ../gedit/gedit-replace-dialog.c:207 ../gedit/gedit-replace-dialog.ui.h:1
+#: ../gedit/gedit-window.c:1557
 msgid "Replace"
 msgstr "Замяна"
 
-#: ../gedit/gedit-replace-dialog.c:287
+#: ../gedit/gedit-replace-dialog.c:269
 msgid "Replace _All"
 msgstr "Замяна на _всички"
 
@@ -1943,7 +1951,7 @@ msgstr "Създаване на нов документ"
 msgid "_Open..."
 msgstr "_Отваряне…"
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1487
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1486
 msgid "Open a file"
 msgstr "Отваряне на файл"
 
@@ -2231,7 +2239,7 @@ msgstr "Низ, който да бъде търсен"
 msgid "Line you want to move the cursor to"
 msgstr "Ред, на който искате да преместите курсора"
 
-#: ../gedit/gedit-window.c:942
+#: ../gedit/gedit-window.c:941
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Използване на режим на оцветяване „%s“"
@@ -2239,7 +2247,7 @@ msgstr "Използване на режим на оцветяване „%s“"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1047 ../gedit/gedit-window.c:2093
+#: ../gedit/gedit-window.c:1046 ../gedit/gedit-window.c:2091
 #: ../plugins/externaltools/tools/manager.py:146
 #: ../plugins/externaltools/tools/manager.py:450
 #: ../plugins/externaltools/tools/manager.py:561
@@ -2247,59 +2255,59 @@ msgstr "Използване на режим на оцветяване „%s“"
 msgid "Plain Text"
 msgstr "Обикновен текст"
 
-#: ../gedit/gedit-window.c:1048
+#: ../gedit/gedit-window.c:1047
 msgid "Disable syntax highlighting"
 msgstr "Изключване на оцветяването на синтаксиса"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1365
+#: ../gedit/gedit-window.c:1364
 #, c-format
 msgid "Open '%s'"
 msgstr "Отваряне на „%s“"
 
-#: ../gedit/gedit-window.c:1489
+#: ../gedit/gedit-window.c:1488
 msgid "Open a recently used file"
 msgstr "Отваряне на скоро използван файл"
 
-#: ../gedit/gedit-window.c:1495
+#: ../gedit/gedit-window.c:1494
 msgid "Open"
 msgstr "Отваряне"
 
-#: ../gedit/gedit-window.c:1553
+#: ../gedit/gedit-window.c:1551
 msgid "Save"
 msgstr "Запазване"
 
-#: ../gedit/gedit-window.c:1555
+#: ../gedit/gedit-window.c:1553
 msgid "Print"
 msgstr "Печат"
 
-#: ../gedit/gedit-window.c:1557
+#: ../gedit/gedit-window.c:1555
 msgid "Find"
 msgstr "Търсене"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1717
+#: ../gedit/gedit-window.c:1715
 #, c-format
 msgid "Activate '%s'"
 msgstr "Отваряне на „%s“"
 
-#: ../gedit/gedit-window.c:2074
+#: ../gedit/gedit-window.c:2072
 msgid "Use Spaces"
 msgstr "Използване на интервали"
 
-#: ../gedit/gedit-window.c:2147
+#: ../gedit/gedit-window.c:2145
 msgid "Tab Width"
 msgstr "Широчина на табулатора"
 
-#: ../gedit/gedit-window.c:2256
+#: ../gedit/gedit-window.c:2254
 msgid "Bracket match is out of range"
 msgstr "Съответстващата скоба е извън обхвата"
 
-#: ../gedit/gedit-window.c:2261
+#: ../gedit/gedit-window.c:2259
 msgid "Bracket match not found"
 msgstr "Няма съответстваща скоба"
 
-#: ../gedit/gedit-window.c:2266
+#: ../gedit/gedit-window.c:2264
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Открита е скоба на ред: %d"
@@ -2403,11 +2411,11 @@ msgid ""
 "characters and non-space characters in it."
 msgstr "Анализира текущия документ и определя броя думи, редове, знаци в него."
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:427
 msgid "_Document Statistics"
 msgstr "_Статистика за документа"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:429
 msgid "Get statistical information on the current document"
 msgstr "Статистическа информация за текущия документ"
 
@@ -2422,7 +2430,6 @@ msgstr "Файл"
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:4
 #: ../plugins/externaltools/tools/tools.ui.h:27
 #: ../plugins/snippets/snippets/snippets.ui.h:13
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 msgid "    "
 msgstr "    "
 
@@ -2848,131 +2855,131 @@ msgstr ""
 "Новата папка в момента не преминава през филтъра. За да я направите видима, "
 "трябва да промените филтъра си"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:734
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:733
 msgid "Bookmarks"
 msgstr "Отметки"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:822
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:821
 msgid "_Filter"
 msgstr "_Филтър"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:826
 msgid "_Move to Trash"
 msgstr "Преместване в _кошчето"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:828
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
 msgid "Move selected file or folder to trash"
 msgstr "Преместване на избрания файл или папка в кошчето"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:829
 msgid "_Delete"
 msgstr "_Изтриване"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:831
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
 msgid "Delete selected file or folder"
 msgstr "Изтриване на избрания файл или папка"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:838
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:837
 msgid "Open selected file"
 msgstr "Отваряне на файла"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:843
 msgid "Up"
 msgstr "Нагоре"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:845
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
 msgid "Open the parent folder"
 msgstr "Отваряне на горната папка"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:849
 msgid "_New Folder"
 msgstr "_Нова папка"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:851
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
 msgid "Add new empty folder"
 msgstr "Добавяне на нова, празна папка"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:852
 msgid "New F_ile"
 msgstr "Нов _файл"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:854
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
 msgid "Add new empty file"
 msgstr "Добавяне на нов, празен файл"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:858
 msgid "_Rename"
 msgstr "_Преименуване"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:860
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
 msgid "Rename selected file or folder"
 msgstr "Преименуване на избрания файл или папка"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:866
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:865
 msgid "_Previous Location"
 msgstr "_Предишно местоположение"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:867
 msgid "Go to the previous visited location"
 msgstr "Отиване на предишното посетено местоположение"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:869
 msgid "_Next Location"
 msgstr "_Следващо местоположение"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
 msgid "Go to the next visited location"
 msgstr "Отиване на следващото посетено местоположение"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
 msgid "Re_fresh View"
 msgstr "_Обновяване на изгледа"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
 msgid "Refresh the view"
 msgstr "Обновяване на изгледа"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:891
 msgid "_View Folder"
 msgstr "_Преглед на папка"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:875
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:893
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
 msgid "View folder in file manager"
 msgstr "Преглед на папка във файловия мениджър"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:881
 msgid "Show _Hidden"
 msgstr "Показване на _скритите"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:883
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
 msgid "Show hidden files and folders"
 msgstr "Показване на скритите файлове и папки"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:884
 msgid "Show _Binary"
 msgstr "Показване на _двоичните"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:886
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
 msgid "Show binary files"
 msgstr "Показване на двоичните файлове"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1207
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1202
 msgid "Match Filename"
 msgstr "Напасване на името на файла"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2009
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2004
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "Липсва обект представляващ монтирания том: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2086
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2081
 #, c-format
 msgid "Could not open media: %s"
 msgstr "Носителят не може да се отвори: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2133
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2128
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "Томът не може да се монтира: %s"
@@ -3429,7 +3436,7 @@ msgstr "Подреждане на документ или избран текс�
 #. Translators: Displayed in the "Check Spelling" dialog if there are no suggestions
 #. * for the current misspelled word
 #: ../plugins/spell/gedit-automatic-spell-checker.c:420
-#: ../plugins/spell/gedit-spell-checker-dialog.c:458
+#: ../plugins/spell/gedit-spell-checker-dialog.c:444
 msgid "(no suggested words)"
 msgstr "(няма предположения)"
 
@@ -3451,20 +3458,20 @@ msgstr "_Добавяне"
 msgid "_Spelling Suggestions..."
 msgstr "Предло_жения за правопис…"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:278
+#: ../plugins/spell/gedit-spell-checker-dialog.c:264
 msgid "Check Spelling"
 msgstr "Проверка на правописа"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:289
+#: ../plugins/spell/gedit-spell-checker-dialog.c:275
 msgid "Suggestions"
 msgstr "Предложения"
 
 #. Translators: Displayed in the "Check Spelling" dialog if the current word isn't misspelled
-#: ../plugins/spell/gedit-spell-checker-dialog.c:565
+#: ../plugins/spell/gedit-spell-checker-dialog.c:551
 msgid "(correct spelling)"
 msgstr "(няма правописни грешки)"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:706
+#: ../plugins/spell/gedit-spell-checker-dialog.c:692
 msgid "Completed spell checking"
 msgstr "Проверката на правописа приключи"
 
@@ -3497,12 +3504,12 @@ msgid "Default"
 msgstr "Стандартен език"
 
 #. ex:ts=8:noet:
-#: ../plugins/spell/gedit-spell-language-dialog.c:142
+#: ../plugins/spell/gedit-spell-language-dialog.c:140
 #: ../plugins/spell/languages-dialog.ui.h:1
 msgid "Set language"
 msgstr "Избор на език"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:196
+#: ../plugins/spell/gedit-spell-language-dialog.c:182
 msgid "Languages"
 msgstr "Езици"
 
@@ -3611,31 +3618,31 @@ msgid "Insert Date and Time"
 msgstr "Вмъкване на дата/време"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:2
-msgid "_Insert"
-msgstr "_Вмъкване"
-
-#: ../plugins/time/gedit-time-dialog.ui.h:3
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
 msgid "Use the _selected format"
 msgstr "Използване на _избрания формат"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:4
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
+#: ../plugins/time/gedit-time-dialog.ui.h:3
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
 msgid "_Use custom format"
 msgstr "Използване на потре_бителски формат"
 
 #. Translators: Use the more common date format in your locale
-#: ../plugins/time/gedit-time-dialog.ui.h:6
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
+#: ../plugins/time/gedit-time-dialog.ui.h:5
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%d.%m.%Y %H:%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
-#: ../plugins/time/gedit-time-dialog.ui.h:7
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:11
+#: ../plugins/time/gedit-time-dialog.ui.h:6
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "01/11/2009 17:52:00"
 msgstr "01.11.2002 17:52:00"
+
+#: ../plugins/time/gedit-time-dialog.ui.h:7
+msgid "_Insert"
+msgstr "_Вмъкване"
 
 #: ../plugins/time/gedit-time-plugin.c:188
 msgid "In_sert Date and Time..."
@@ -3658,7 +3665,7 @@ msgstr "Настройка на приставката дата/време"
 msgid "When inserting date/time..."
 msgstr "При вмъкване на дата/време…"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 msgid "_Prompt for a format"
 msgstr "Посочване на _формат"
 
