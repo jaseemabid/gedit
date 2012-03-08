@@ -5,16 +5,16 @@
 # Amitakhya Phukan <aphukan@redhat.com>, 2008.
 # Amitakhya Phukan <amitakhya@svn.gnome.org>, 2008.
 # Amitakhya Phukan <aphukan@fedoraproject.org>, 2009.
-# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011.
+# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: as\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
 "cgi?product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-08-04 09:27+0000\n"
-"PO-Revision-Date: 2011-09-22 21:00+0530\n"
+"POT-Creation-Date: 2012-03-06 18:26+0000\n"
+"PO-Revision-Date: 2012-03-08 20:30+0530\n"
 "Last-Translator: Nilamdyuti Goswami <ngoswami@redhat.com>\n"
-"Language-Team: Assamese <kde-i18n-doc@kde.org>\n"
+"Language-Team: as_IN <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,22 +22,52 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 
 #: ../data/gedit.desktop.in.in.h:1
-msgid "Edit text files"
-msgstr "টেক্সট নথিপত্ৰ সম্পাদনা"
+msgid "gedit"
+msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:805
+#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:791
 msgid "Text Editor"
 msgstr "টেক্সট সম্পাদক"
 
 #: ../data/gedit.desktop.in.in.h:3
-msgid "gedit"
-msgstr "gedit"
+msgid "Edit text files"
+msgstr "টেক্সট নথিপত্ৰ সম্পাদনা"
 
 #: ../data/gedit.desktop.in.in.h:4
+#| msgid "_Move to New Window"
+msgid "Open a New Window"
+msgstr "এটা নতুন উইন্ডো খোলক"
+
+#: ../data/gedit.desktop.in.in.h:5
+#| msgid "Create a new document"
+msgid "Open a New Document"
+msgstr "এটা নতুন দস্তাবেজ খোলক"
+
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "gedit টেক্সট সম্পাদক"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:1
+msgid "Use Default Font"
+msgstr "অবিকল্পিত আখৰ ব্যৱহাৰ কৰা হ'ব"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:2
+msgid ""
+"Whether to use the system's default fixed width font for editing text "
+"instead of a font specific to gedit. If this option is turned off, then the "
+"font named in the \"Editor Font\" option will be used instead of the system "
+"font."
+msgstr ""
+"টেক্সট সম্পাদনাৰ কামত gedit-ৰ বাবে সুনিশ্চিত কোনো আখৰৰ পৰিবৰ্তে ব্যৱস্থাপ্ৰণালীৰ "
+"অবিকল্পিত আখৰ ব্যৱহাৰ কৰা হ'ব নে নহয়  । এই বিকল্পটো নিষ্ক্ৰিয় কৰা হ'লে "
+"ব্যৱস্থাপ্ৰণালী আখৰৰ পৰিবৰ্তে \"সম্পাদকত ব্যৱহৃত আখৰ\" বিকল্পত চিহ্নিত আখৰ ব্যৱহৃত হ'ব  "
+"।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:3
+msgid "Editor Font"
+msgstr "সম্পাদকৰ আখৰ"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:4
 msgid ""
 "A custom font that will be used for the editing area. This will only take "
 "effect if the \"Use Default Font\" option is turned off."
@@ -45,136 +75,46 @@ msgstr ""
 "সম্পাদন ক্ষেত্ৰত ব্যৱহাৰৰ কৰিব লগা আপোনাৰ পছন্দৰ কোনো আখৰ  । এইটো প্ৰয়োগ কৰাৰ বাবে "
 "\"অবিকল্পিত আখৰ ব্যৱহাৰ কৰক\" বিকল্পটো বন্ধ থকা আৱশ্যক  ।"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:2
-msgid "Active plugins"
-msgstr "সক্ৰিয় প্লাগ-ইন"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:3
-msgid "Automatic indent"
-msgstr "স্বয়ংক্ৰিয় প্ৰান্ত নিৰ্ধাৰণ"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:4
-msgid "Automatically Detected Encodings"
-msgstr "স্বয়ংক্ৰিয়ভাবে চিনাক্ত কৰা এনকোডিং"
-
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:5
-msgid "Autosave"
-msgstr "স্বয়ংক্ৰিয় সংৰক্ষণ ব্যৱস্থা"
+msgid "Style Scheme"
+msgstr "ধৰণৰ শৈলী"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:6
-msgid "Autosave Interval"
-msgstr "অন্তৰাল স্বয়ংক্ৰিয়ভাবে সংৰক্ষণ কৰক"
+msgid "The ID of a GtkSourceView Style Scheme used to color the text."
+msgstr "লিপিত ৰং দিবলৈ ব্যৱহাৰ কৰা এটা GtkSourceView Style Scheme ৰ ID।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:7
-msgid "Body Font for Printing"
-msgstr "মূদ্ৰণৰ সময়ত ব্যৱহৃত মূল আখৰ"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:8
 msgid "Create Backup Copies"
 msgstr "বেক-আপ নকল নিৰ্মাণ কৰক"
 
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:8
+msgid ""
+"Whether gedit should create backup copies for the files it saves. You can "
+"set the backup file extension with the \"Backup Copy Extension\" option."
+msgstr ""
+"gedit-ৰ দ্বাৰা সংৰক্ষিত নথিপত্ৰৰ বেক-আপ নকল নিৰ্মিত হ'ব নে নহয়  । \"বেক-আপ নকলৰ "
+"বাবে ব্যৱহৃত সম্প্ৰসাৰণ\" বিকল্পৰ সহায়ত আপুনি বেক-আপ নথিপত্ৰৰ সম্প্ৰসাৰণ নিৰ্ধাৰণ কৰিব "
+"পাৰিব  ।"
+
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:9
-msgid "Display Line Numbers"
-msgstr "শাৰী সংখ্যা প্ৰদৰ্শন কৰক"
+msgid "Autosave"
+msgstr "স্বয়ংক্ৰিয় সংৰক্ষণ ব্যৱস্থা"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:10
-msgid "Display Right Margin"
-msgstr "সোঁ মাৰ্জিন দেখাওক"
+msgid ""
+"Whether gedit should automatically save modified files after a time "
+"interval. You can set the time interval with the \"Autosave Interval\" "
+"option."
+msgstr ""
+"নিৰ্দিষ্ট সময়ৰ অন্তৰালত gedit-ৰ দ্বাৰা স্বয়ংক্ৰিয়ভাবে পৰিবৰ্তিত নথিপত্ৰ সংৰক্ষণ কৰা "
+"হ'ব নে নহয়  । \"স্বয়ংক্ৰিয় সংৰক্ষণৰ অন্তৰাল\" বিকল্পৰ সহায়ত আপুনি সময়ৰ ব্যৱধান "
+"নিৰ্ধাৰণ কৰিব পাৰিব  ।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:11
-msgid "Editor Font"
-msgstr "সম্পাদকৰ আখৰ"
+msgid "Autosave Interval"
+msgstr "অন্তৰাল স্বয়ংক্ৰিয়ভাবে সংৰক্ষণ কৰক"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:12
-msgid "Enable Search Highlighting"
-msgstr "অনুসন্ধানৰ সময়ত আখৰৰ আলোকপাত সক্ৰিয় কৰা হ'ব"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:13
-msgid "Enable Syntax Highlighting"
-msgstr "বাক্যবিন্যাসৰ আলোকপাত সক্ৰিয় কৰক"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:14
-msgid "Encodings shown in menu"
-msgstr "তালিকাত প্ৰদৰ্শিত এনকোডিং"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:15
-msgid "Header Font for Printing"
-msgstr "মূদ্ৰণৰ বাবে হেডাৰৰ আখৰ"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:16
-msgid "Highlight Current Line"
-msgstr "বৰ্ত্তমানৰ শাৰী উজ্জ্বল কৰক"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:17
-msgid "Highlight Matching Brackets"
-msgstr "অনুৰূপ বন্ধনীচিহ্ন উজ্জ্বল কৰক"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:18
-msgid ""
-"If this value is 0, then no line numbers will be inserted when printing a "
-"document. Otherwise, gedit will print line numbers every such number of "
-"lines."
-msgstr ""
-"মান ০ হ'লে, মূদ্ৰণৰ সময়ত আলেখ্যনত কোনো শাৰী সংখ্যা উল্লেখ কৰা ন'হ'ব  । নহ'লে, "
-"প্ৰতি শাৰীৰ বাবে gedit এ সংখ্যা মূদ্ৰণ কৰিব  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:19
-msgid "Insert spaces"
-msgstr "শূণ্যস্থান ভৰাওক"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:20
-msgid "Line Number Font for Printing"
-msgstr "মূদ্ৰণৰ সময়ত শাৰী সংখ্যাৰ বাবে ব্যৱহৃত আখৰ"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:21
-msgid "Line Wrapping Mode"
-msgstr "শাৰী বিভাজন ধৰণ"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
-msgid ""
-"List of active plugins. It contains the \"Location\" of the active plugins. "
-"See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
-msgstr ""
-"সক্ৰিয় প্লাগ-ইনৰ তালিকা  । ইয়াত সক্ৰিয় প্লাগ-ইনৰ \"স্থান\" আছে  । কোনো নিৰ্দিষ্ট "
-"প্লাগ-ইনৰ \"অৱস্থান\" জানিবলৈ .gedit-plugin নথিপত্ৰ চাওক  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
-msgid ""
-"List of encodings shown in the Character Encoding menu in open/save file "
-"selector. Only recognized encodings are used."
-msgstr ""
-"নথিপত্ৰ খোলা/সংৰক্ষণ নিৰ্ব্বাচনৰ কেৰেক্টাৰ এনকোডিংৰ তালিকাত দেখুৱা এনকোডিংৰ "
-"তালিকা। অকল পৰিচিত এনকোডিং ব্যৱহৃত হ'ব।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
-msgid "Maximum Number of Undo Actions"
-msgstr "বাতিলৰ পূৰ্বে সম্পন্ন কৰ্মৰ সৰ্বাধিক সংখ্যা"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
-msgid "Maximum Recent Files"
-msgstr "সম্প্ৰতি খোলা নথিপত্ৰৰ সৰ্বাধিক সংখ্যা"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
-msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
-"\" for unlimited number of actions."
-msgstr ""
-"gedit-ৰ দ্বাৰা সৰ্বাধিক যি সংখ্যক কৰ্ম বাতিল বা পুনঃ কৰা সম্ভৱ হ'ব  । অসীমিত কৰ্ম "
-"বাতিল কৰাৰ উদ্দেশ্যে \"-1\" মান প্ৰয়োগ কৰক  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
-msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
-"\" for unlimited number of actions. Deprecated since 2.12.0"
-msgstr ""
-"gedit-ৰ দ্বাৰা সৰ্বাধিক যি সংখ্যক কৰ্ম বাতিল বা পুনঃ কৰা সম্ভৱ হ'ব  । অসীমিত কৰ্ম "
-"বাতিল কৰাৰ উদ্দেশ্যে \"-1\" মান প্ৰয়োগ কৰক  । 2.12.0 সংস্কৰণৰ পৰা হ্ৰাস কৰা হৈছে"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
-msgid "Notebook Show Tabs Mode"
-msgstr "নটবুকে টেব অৱস্থা দেখুৱায়"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
 msgid ""
 "Number of minutes after which gedit will automatically save modified files. "
 "This will only take effect if the \"Autosave\" option is turned on."
@@ -183,49 +123,117 @@ msgstr ""
 "হ'ব  । এইটো কাৰ্যকৰি কৰাৰ বাবে \"স্বয়ংক্ৰিয় সংৰক্ষণ ব্যৱস্থা\" বিকল্পটো সক্ৰিয় "
 "অৱস্থাত আৱশ্যক  ।"
 
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:13
+msgid "Undo Actions Limit (DEPRECATED)"
+msgstr "সৰ্বাধিক যি সংখ্যক পৰিবৰ্তন বাতিল কৰা যাব (অবচিত)"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:14
+msgid ""
+"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
+"\" for unlimited number of actions. Deprecated since 2.12.0"
+msgstr ""
+"gedit-ৰ দ্বাৰা সৰ্বাধিক যি সংখ্যক কৰ্ম বাতিল বা পুনঃ কৰা সম্ভৱ হ'ব  । অসীমিত কৰ্ম "
+"বাতিল কৰাৰ উদ্দেশ্যে \"-1\" মান প্ৰয়োগ কৰক  । 2.12.0 সংস্কৰণৰ পৰা হ্ৰাস কৰা হৈছে"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:15
+msgid "Maximum Number of Undo Actions"
+msgstr "বাতিলৰ পূৰ্বে সম্পন্ন কৰ্মৰ সৰ্বাধিক সংখ্যা"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:16
+msgid ""
+"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
+"\" for unlimited number of actions."
+msgstr ""
+"gedit-ৰ দ্বাৰা সৰ্বাধিক যি সংখ্যক কৰ্ম বাতিল বা পুনঃ কৰা সম্ভৱ হ'ব  । অসীমিত কৰ্ম "
+"বাতিল কৰাৰ উদ্দেশ্যে \"-1\" মান প্ৰয়োগ কৰক  ।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:17
+msgid "Line Wrapping Mode"
+msgstr "শাৰী বিভাজন ধৰণ"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:18
+msgid ""
+"Specifies how to wrap long lines in the editing area. Use \"none\" for no "
+"wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
+"wrapping at individual character boundaries. Note that the values are case-"
+"sensitive, so make sure they appear exactly as mentioned here."
+msgstr ""
+"সম্পাদন ক্ষেত্ৰত দীঘল শাৰী কি পদ্ধতিত বিভক্ত কৰা হ'ব সেইটো নিৰ্ধাৰণ কৰে। বিভাজন "
+"নকৰিলে \"none\" ব্যৱহাৰ কৰক, শব্দৰ শেষত বিভাজন কৰোঁতে \"word\" আৰু অক্ষৰৰ প্ৰান্তে "
+"বিভাজন কৰোঁতে \"char\" ব্যৱহাৰ কৰক  । উল্লেখ্য এই মানসমূহ লিখোঁতে অক্ষৰৰ কেছ অক্ষুন্ন "
+"ৰখা আৱশ্যক, এই কাৰণে উল্লিখিত বিৱৰণ অনুযায়ী মান লিখা উচিত।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:19
+msgid "Tab Size"
+msgstr "টেবৰ আকাৰ"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:20
+msgid ""
+"Specifies the number of spaces that should be displayed instead of Tab "
+"characters."
+msgstr "টেব অক্ষৰৰ পৰিবৰ্তে যি সংখ্যক শূণ্যস্থান ব্যৱহৃত হ'ব সেইটো উল্লেখ কৰি  ।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:21
+msgid "Insert spaces"
+msgstr "শূণ্যস্থান ভৰাওক"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:22
+msgid "Whether gedit should insert spaces instead of tabs."
+msgstr "টেবৰ পৰিবৰ্তে gedit-ৰ দ্বাৰা শূণ্যস্থান সন্নিবেশ কৰা হ'ব নে নহয়  ।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:23
+msgid "Automatic indent"
+msgstr "স্বয়ংক্ৰিয় প্ৰান্ত নিৰ্ধাৰণ"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:24
+msgid "Whether gedit should enable automatic indentation."
+msgstr "gedit-ৰ দ্বাৰা স্বয়ংক্ৰিয় প্ৰান্ত নিৰ্ধাৰণ ব্যৱস্থা সক্ৰিয় কৰা হ'ব নে নহয়  ।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:25
+msgid "Display Line Numbers"
+msgstr "শাৰী সংখ্যা প্ৰদৰ্শন কৰক"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:26
+msgid "Whether gedit should display line numbers in the editing area."
+msgstr "সম্পাদনাৰ স্থানত gedit-ৰ দ্বাৰা শাৰী সংখ্যা প্ৰদৰ্শিত হ'ব নে নহয়  ।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
+msgid "Highlight Current Line"
+msgstr "বৰ্ত্তমানৰ শাৰী উজ্জ্বল কৰক"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
+msgid "Whether gedit should highlight the current line."
+msgstr "gedit-ৰ দ্বাৰা বৰ্ত্তমান শাৰী উজ্জ্বল কৰা হ'ব নে নহয়  ।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
+msgid "Highlight Matching Brackets"
+msgstr "অনুৰূপ বন্ধনীচিহ্ন উজ্জ্বল কৰক"
+
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:30
-msgid "Print Header"
-msgstr "হেডাৰ মূদ্ৰণ কৰক"
+msgid "Whether gedit should highlight matching brackets."
+msgstr "gedit-ৰ দ্বাৰা অনুৰূপ বন্ধনীচিহ্ন উজ্জ্বল কৰা হ'ব নে নহয়  ।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:31
-msgid "Print Line Numbers"
-msgstr "শাৰী সংখ্যা মূদ্ৰণ কৰা হ'ব"
+msgid "Display Right Margin"
+msgstr "সোঁ মাৰ্জিন দেখাওক"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:32
-msgid "Print Syntax Highlighting"
-msgstr "শব্দবিন্যাসৰ আলোকপাত মূদ্ৰণ কৰক"
+msgid "Whether gedit should display the right margin in the editing area."
+msgstr "সম্পাদন ক্ষেত্ৰত gedit-ৰ দ্বাৰা সোঁ ফালৰ প্ৰান্ত প্ৰদৰ্শিত হ'ব নে নহয়  ।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:33
-msgid "Printing Line Wrapping Mode"
-msgstr "শাৰী বিভাজন ধৰণত মূদ্ৰণ কৰক"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
-msgid "Restore Previous Cursor Position"
-msgstr "কাৰ্ছাৰক আগৰ অৱস্থাত পুনঃস্থাপন কৰক"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
 msgid "Right Margin Position"
 msgstr "সোঁ ফালৰ স্থান"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
-msgid "Side panel is Visible"
-msgstr "কাষৰ পেন দৃশ্যমান"
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:34
+msgid "Specifies the position of the right margin."
+msgstr "সোঁ ফালৰ অৱস্থান নিৰ্ধাৰণ কৰি  ।"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:35
 msgid "Smart Home End"
 msgstr "Smart Home End"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
-msgid ""
-"Sorted list of encodings used by gedit for automatically detecting the "
-"encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
-"recognized encodings are used."
-msgstr ""
-"নথিপত্ৰৰ এনকোডিং স্বয়ংক্ৰিয়ভাবে উদ্ধাৰ কৰোঁতে gedit-ৰ দ্বাৰা ব্যৱহৃত এনকোডিং-ৰ "
-"সুবিন্যস্ত তালিকা  । বৰ্ত্তমান লোকেল এনকোডিং \"CURRENT\"-ৰ দ্বাৰা চিহ্নিত হয়  । অকল "
-"মানপ্ৰাপ্ত এনকোডিং প্ৰয়োগ কৰা হয়  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
 msgid ""
 "Specifies how the cursor moves when the HOME and END keys are pressed. Use "
 "\"disabled\" to always move at the start/end of the line, \"after\" to move "
@@ -242,67 +250,56 @@ msgstr ""
 "আৰম্ভনি/অন্তলৈ যাবলৈ আৰু \"ALWAYS\" শাৰীৰ আৰম্ভনি/অন্তলৈ যোৱাৰ আগতে সদায়ে "
 "লিপিৰআৰম্ভনি/অন্তলৈ যাবলৈ  ।"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
+msgid "Restore Previous Cursor Position"
+msgstr "কাৰ্ছাৰক আগৰ অৱস্থাত পুনঃস্থাপন কৰক"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:38
 msgid ""
-"Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
-"\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
-"individual character boundaries. Note that the values are case-sensitive, so "
-"make sure they appear exactly as mentioned here."
+"Whether gedit should restore the previous cursor position when a file is "
+"loaded."
 msgstr ""
-"মূদ্ৰণ কৰাৰ সময় দীঘল শাৰী কি পদ্ধতিতে বিভক্ত কৰা হ'ব সেইটো নিৰ্ধাৰণ কৰে। বিভাজন "
-"নকৰিলে \"none\" ব্যৱহাৰ কৰক, শব্দৰ শেষত বিভাজন কৰোঁতে \"word\" আৰু অক্ষৰৰ প্ৰান্তে "
-"বিভাজন কৰোঁতে \"char\" ব্যৱহাৰ কৰক। উল্লেখ্য এই মানসমূহ লিখোঁতে অক্ষৰৰ কেছ অক্ষুন্ন "
-"ৰখা আৱশ্যক, এই কাৰণে উল্লিখিত বিৱৰণ অনুযায়ী মান লিখা উচিত।"
+"নথিপত্ৰ লোড কৰা হ'লে gedit দ্বাৰা পূৰ্ববৰ্তী কাৰ্ছাৰৰ অৱস্থালৈ অক্ষুন্ন ৰখা হ'ব নে "
+"নহয়  ।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
+msgid "Enable Syntax Highlighting"
+msgstr "বাক্যবিন্যাসৰ আলোকপাত সক্ৰিয় কৰক"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
+msgid "Whether gedit should enable syntax highlighting."
+msgstr "gedit-ৰ দ্বাৰা শব্দবিন্যাসৰ বিভিন্ন অংশ পৃথকৰূপে প্ৰদৰ্শিত হ'ব নে নহয়  ।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
-msgid ""
-"Specifies how to wrap long lines in the editing area. Use \"none\" for no "
-"wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
-"wrapping at individual character boundaries. Note that the values are case-"
-"sensitive, so make sure they appear exactly as mentioned here."
-msgstr ""
-"সম্পাদন ক্ষেত্ৰত দীঘল শাৰী কি পদ্ধতিত বিভক্ত কৰা হ'ব সেইটো নিৰ্ধাৰণ কৰে। বিভাজন "
-"নকৰিলে \"none\" ব্যৱহাৰ কৰক, শব্দৰ শেষত বিভাজন কৰোঁতে \"word\" আৰু অক্ষৰৰ প্ৰান্তে "
-"বিভাজন কৰোঁতে \"char\" ব্যৱহাৰ কৰক  । উল্লেখ্য এই মানসমূহ লিখোঁতে অক্ষৰৰ কেছ অক্ষুন্ন "
-"ৰখা আৱশ্যক, এই কাৰণে উল্লিখিত বিৱৰণ অনুযায়ী মান লিখা উচিত।"
+msgid "Enable Search Highlighting"
+msgstr "অনুসন্ধানৰ সময়ত আখৰৰ আলোকপাত সক্ৰিয় কৰা হ'ব"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
-msgid "Specifies the font to use for a document's body when printing documents."
-msgstr "নথি পত্ৰ মূদ্ৰণ কৰাৰ সময় মূল অংশত ব্যৱহৃত আখৰ নিৰ্ধাৰণ কৰি  ।"
+msgid "Whether gedit should highlight all the occurrences of the searched text."
+msgstr "অনুসন্ধান কৰা টেক্সটৰ উপস্থিতি gedit দ্বাৰা উজ্জ্বল কৰা হ'ব নে নহয়  ।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
-msgid ""
-"Specifies the font to use for line numbers when printing. This will only "
-"take effect if the \"Print Line Numbers\" option is non-zero."
-msgstr ""
-"শাৰী সংখ্যা মূদ্ৰণ কৰোঁতে ব্যৱহৃত আখৰ নিৰ্ধাৰণ কৰি  । এইটো প্ৰয়োগ কৰাৰ বাবে \"শাৰী "
-"সংখ্যা মূদ্ৰণ কৰক\" বিকল্পত শূণ্য নোহোৱা মান ব্যৱহাৰ কৰা আৱশ্যক  ।"
+msgid "Ensure Trailing Newline"
+msgstr "অনুকৰণ কৰা নতুন শাৰী সুনিশ্চিত কৰক"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
-msgid ""
-"Specifies the font to use for page headers when printing a document. This "
-"will only take effect if the \"Print Header\" option is turned on."
+#| msgid ""
+#| "Whether gedit should include a document header when printing documents."
+msgid "Whether gedit will ensure that documents always end with a trailing newline."
 msgstr ""
-"আলেখ্যন মূদ্ৰণ কৰাৰ সময় পৃষ্ঠাৰ হেডাৰ মূদ্ৰণ কৰোঁতে ব্যৱহৃত আখৰ নিৰ্ধাৰণ কৰি  । এইটো "
-"প্ৰয়োগ কৰাৰ বাবে \"হেডাৰ মূদ্ৰণ কৰা হ'ব\" বিকল্পটো সক্ৰিয় অৱস্থাত আৱশ্যক  ।"
+"দস্তাবেজসমূহ সদায় এটা অনুকৰণ কৰা নতুন শাৰীৰ সৈতে শেষ হবনে gedit এ সেয়া সুনিশ্চিত কৰিব নে।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
-msgid ""
-"Specifies the maximum number of recently opened files that will be displayed "
-"in the \"Recent Files\" submenu."
-msgstr ""
-"\"সম্প্ৰতি ব্যৱহৃত নথিপত্ৰ\" উপতালিকাত সম্প্ৰতি ব্যৱহৃত সৰ্বাধিক যি সংখ্যক নথিপত্ৰ "
-"প্ৰদৰ্শিত হ'ব সেইটো উল্লেখ কৰি  ।"
+msgid "Toolbar is Visible"
+msgstr "টুল-বাৰ প্ৰদৰ্শন কৰা হ'ব"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:46
-msgid ""
-"Specifies the number of spaces that should be displayed instead of Tab "
-"characters."
-msgstr "টেব অক্ষৰৰ পৰিবৰ্তে যি সংখ্যক শূণ্যস্থান ব্যৱহৃত হ'ব সেইটো উল্লেখ কৰি  ।"
+msgid "Whether the toolbar should be visible in editing windows."
+msgstr "সম্পাদন ক্ষেত্ৰৰ সংযোগক্ষেত্ৰত টুল-বাৰ প্ৰদৰ্শিত হ'ব নে নহয়  ।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:47
-msgid "Specifies the position of the right margin."
-msgstr "সোঁ ফালৰ অৱস্থান নিৰ্ধাৰণ কৰি  ।"
+msgid "Notebook Show Tabs Mode"
+msgstr "নটবুকে টেব অৱস্থা দেখুৱায়"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
 msgid ""
@@ -321,139 +318,171 @@ msgid "Status Bar is Visible"
 msgstr "অৱস্থা-বাৰ প্ৰদৰ্শন কৰা হ'ব"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
-msgid "Style Scheme"
-msgstr "ধৰণৰ শৈলী"
+msgid "Whether the status bar at the bottom of editing windows should be visible."
+msgstr "সম্পাদন ক্ষেত্ৰৰ সংযোগক্ষেত্ৰৰ তলত অৱস্থা-বাৰ প্ৰদৰ্শিত হ'ব নে নহয়  ।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
-msgid "Tab Size"
-msgstr "টেবৰ আকাৰ"
+msgid "Side panel is Visible"
+msgstr "কাষৰ পেন দৃশ্যমান"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
-msgid "The ID of a GtkSourceView Style Scheme used to color the text."
-msgstr "লিপিত ৰং দিবলৈ ব্যৱহাৰ কৰা এটা GtkSourceView Style Scheme ৰ ID।"
+msgid "Whether the side panel at the left of editing windows should be visible."
+msgstr "সম্পাদন ক্ষেত্ৰৰ বাওঁ ফালে কাষৰ পেইন প্ৰদৰ্শিত হ'ব নে নহয়  ।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
-msgid "Toolbar is Visible"
-msgstr "টুল-বাৰ প্ৰদৰ্শন কৰা হ'ব"
+msgid "Maximum Recent Files"
+msgstr "সম্প্ৰতি খোলা নথিপত্ৰৰ সৰ্বাধিক সংখ্যা"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
-msgid "Undo Actions Limit (DEPRECATED)"
-msgstr "সৰ্বাধিক যি সংখ্যক পৰিবৰ্তন বাতিল কৰা যাব (অবচিত)"
+msgid ""
+"Specifies the maximum number of recently opened files that will be displayed "
+"in the \"Recent Files\" submenu."
+msgstr ""
+"\"সম্প্ৰতি ব্যৱহৃত নথিপত্ৰ\" উপতালিকাত সম্প্ৰতি ব্যৱহৃত সৰ্বাধিক যি সংখ্যক নথিপত্ৰ "
+"প্ৰদৰ্শিত হ'ব সেইটো উল্লেখ কৰি  ।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
-msgid "Use Default Font"
-msgstr "অবিকল্পিত আখৰ ব্যৱহাৰ কৰা হ'ব"
+msgid "Print Syntax Highlighting"
+msgstr "শব্দবিন্যাসৰ আলোকপাত মূদ্ৰণ কৰক"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
-msgid ""
-"Whether gedit should automatically save modified files after a time "
-"interval. You can set the time interval with the \"Autosave Interval\" "
-"option."
-msgstr ""
-"নিৰ্দিষ্ট সময়ৰ অন্তৰালত gedit-ৰ দ্বাৰা স্বয়ংক্ৰিয়ভাবে পৰিবৰ্তিত নথিপত্ৰ সংৰক্ষণ কৰা "
-"হ'ব নে নহয়  । \"স্বয়ংক্ৰিয় সংৰক্ষণৰ অন্তৰাল\" বিকল্পৰ সহায়ত আপুনি সময়ৰ ব্যৱধান "
-"নিৰ্ধাৰণ কৰিব পাৰিব  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
-msgid ""
-"Whether gedit should create backup copies for the files it saves. You can "
-"set the backup file extension with the \"Backup Copy Extension\" option."
-msgstr ""
-"gedit-ৰ দ্বাৰা সংৰক্ষিত নথিপত্ৰৰ বেক-আপ নকল নিৰ্মিত হ'ব নে নহয়  । \"বেক-আপ নকলৰ "
-"বাবে ব্যৱহৃত সম্প্ৰসাৰণ\" বিকল্পৰ সহায়ত আপুনি বেক-আপ নথিপত্ৰৰ সম্প্ৰসাৰণ নিৰ্ধাৰণ কৰিব "
-"পাৰিব  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
-msgid "Whether gedit should display line numbers in the editing area."
-msgstr "সম্পাদনাৰ স্থানত gedit-ৰ দ্বাৰা শাৰী সংখ্যা প্ৰদৰ্শিত হ'ব নে নহয়  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
-msgid "Whether gedit should display the right margin in the editing area."
-msgstr "সম্পাদন ক্ষেত্ৰত gedit-ৰ দ্বাৰা সোঁ ফালৰ প্ৰান্ত প্ৰদৰ্শিত হ'ব নে নহয়  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
-msgid "Whether gedit should enable automatic indentation."
-msgstr "gedit-ৰ দ্বাৰা স্বয়ংক্ৰিয় প্ৰান্ত নিৰ্ধাৰণ ব্যৱস্থা সক্ৰিয় কৰা হ'ব নে নহয়  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
-msgid "Whether gedit should enable syntax highlighting."
-msgstr "gedit-ৰ দ্বাৰা শব্দবিন্যাসৰ বিভিন্ন অংশ পৃথকৰূপে প্ৰদৰ্শিত হ'ব নে নহয়  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
-msgid "Whether gedit should highlight all the occurrences of the searched text."
-msgstr "অনুসন্ধান কৰা টেক্সটৰ উপস্থিতি gedit দ্বাৰা উজ্জ্বল কৰা হ'ব নে নহয়  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
-msgid "Whether gedit should highlight matching brackets."
-msgstr "gedit-ৰ দ্বাৰা অনুৰূপ বন্ধনীচিহ্ন উজ্জ্বল কৰা হ'ব নে নহয়  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
-msgid "Whether gedit should highlight the current line."
-msgstr "gedit-ৰ দ্বাৰা বৰ্ত্তমান শাৰী উজ্জ্বল কৰা হ'ব নে নহয়  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
-msgid "Whether gedit should include a document header when printing documents."
-msgstr "নথিপত্ৰ মূদ্ৰণ কৰাৰ সময় gedit-ৰ দ্বাৰা আলেখ্যনৰ হেডাৰ মূদ্ৰণ কৰা হ'ব নে নহয়  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
-msgid "Whether gedit should insert spaces instead of tabs."
-msgstr "টেবৰ পৰিবৰ্তে gedit-ৰ দ্বাৰা শূণ্যস্থান সন্নিবেশ কৰা হ'ব নে নহয়  ।"
-
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
 msgid "Whether gedit should print syntax highlighting when printing documents."
 msgstr ""
 "নথিপত্ৰ মূদ্ৰণ কৰাৰ সময় gedit-ৰ দ্বাৰা শব্দবিন্যাসৰ পৃথক বিন্যাস মূদ্ৰণ কৰা হ'ব নে "
 "নহয়  ।"
 
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
+msgid "Print Header"
+msgstr "হেডাৰ মূদ্ৰণ কৰক"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
+msgid "Whether gedit should include a document header when printing documents."
+msgstr "নথিপত্ৰ মূদ্ৰণ কৰাৰ সময় gedit-ৰ দ্বাৰা আলেখ্যনৰ হেডাৰ মূদ্ৰণ কৰা হ'ব নে নহয়  ।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
+msgid "Printing Line Wrapping Mode"
+msgstr "শাৰী বিভাজন ধৰণত মূদ্ৰণ কৰক"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
+msgid ""
+"Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
+"\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
+"individual character boundaries. Note that the values are case-sensitive, so "
+"make sure they appear exactly as mentioned here."
+msgstr ""
+"মূদ্ৰণ কৰাৰ সময় দীঘল শাৰী কি পদ্ধতিতে বিভক্ত কৰা হ'ব সেইটো নিৰ্ধাৰণ কৰে। বিভাজন "
+"নকৰিলে \"none\" ব্যৱহাৰ কৰক, শব্দৰ শেষত বিভাজন কৰোঁতে \"word\" আৰু অক্ষৰৰ প্ৰান্তে "
+"বিভাজন কৰোঁতে \"char\" ব্যৱহাৰ কৰক। উল্লেখ্য এই মানসমূহ লিখোঁতে অক্ষৰৰ কেছ অক্ষুন্ন "
+"ৰখা আৱশ্যক, এই কাৰণে উল্লিখিত বিৱৰণ অনুযায়ী মান লিখা উচিত।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
+msgid "Print Line Numbers"
+msgstr "শাৰী সংখ্যা মূদ্ৰণ কৰা হ'ব"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:62
+msgid ""
+"If this value is 0, then no line numbers will be inserted when printing a "
+"document. Otherwise, gedit will print line numbers every such number of "
+"lines."
+msgstr ""
+"মান ০ হ'লে, মূদ্ৰণৰ সময়ত আলেখ্যনত কোনো শাৰী সংখ্যা উল্লেখ কৰা ন'হ'ব  । নহ'লে, "
+"প্ৰতি শাৰীৰ বাবে gedit এ সংখ্যা মূদ্ৰণ কৰিব  ।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
+msgid "Body Font for Printing"
+msgstr "মূদ্ৰণৰ সময়ত ব্যৱহৃত মূল আখৰ"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
+msgid "Specifies the font to use for a document's body when printing documents."
+msgstr "নথি পত্ৰ মূদ্ৰণ কৰাৰ সময় মূল অংশত ব্যৱহৃত আখৰ নিৰ্ধাৰণ কৰি  ।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
+msgid "Header Font for Printing"
+msgstr "মূদ্ৰণৰ বাবে হেডাৰৰ আখৰ"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
+msgid ""
+"Specifies the font to use for page headers when printing a document. This "
+"will only take effect if the \"Print Header\" option is turned on."
+msgstr ""
+"আলেখ্যন মূদ্ৰণ কৰাৰ সময় পৃষ্ঠাৰ হেডাৰ মূদ্ৰণ কৰোঁতে ব্যৱহৃত আখৰ নিৰ্ধাৰণ কৰি  । এইটো "
+"প্ৰয়োগ কৰাৰ বাবে \"হেডাৰ মূদ্ৰণ কৰা হ'ব\" বিকল্পটো সক্ৰিয় অৱস্থাত আৱশ্যক  ।"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
+msgid "Line Number Font for Printing"
+msgstr "মূদ্ৰণৰ সময়ত শাৰী সংখ্যাৰ বাবে ব্যৱহৃত আখৰ"
+
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:68
 msgid ""
-"Whether gedit should restore the previous cursor position when a file is "
-"loaded."
+"Specifies the font to use for line numbers when printing. This will only "
+"take effect if the \"Print Line Numbers\" option is non-zero."
 msgstr ""
-"নথিপত্ৰ লোড কৰা হ'লে gedit দ্বাৰা পূৰ্ববৰ্তী কাৰ্ছাৰৰ অৱস্থালৈ অক্ষুন্ন ৰখা হ'ব নে "
-"নহয়  ।"
+"শাৰী সংখ্যা মূদ্ৰণ কৰোঁতে ব্যৱহৃত আখৰ নিৰ্ধাৰণ কৰি  । এইটো প্ৰয়োগ কৰাৰ বাবে \"শাৰী "
+"সংখ্যা মূদ্ৰণ কৰক\" বিকল্পত শূণ্য নোহোৱা মান ব্যৱহাৰ কৰা আৱশ্যক  ।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
-msgid "Whether the side panel at the left of editing windows should be visible."
-msgstr "সম্পাদন ক্ষেত্ৰৰ বাওঁ ফালে কাষৰ পেইন প্ৰদৰ্শিত হ'ব নে নহয়  ।"
+msgid "Automatically Detected Encodings"
+msgstr "স্বয়ংক্ৰিয়ভাবে চিনাক্ত কৰা এনকোডিং"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
-msgid "Whether the status bar at the bottom of editing windows should be visible."
-msgstr "সম্পাদন ক্ষেত্ৰৰ সংযোগক্ষেত্ৰৰ তলত অৱস্থা-বাৰ প্ৰদৰ্শিত হ'ব নে নহয়  ।"
+msgid ""
+"Sorted list of encodings used by gedit for automatically detecting the "
+"encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
+"recognized encodings are used."
+msgstr ""
+"নথিপত্ৰৰ এনকোডিং স্বয়ংক্ৰিয়ভাবে উদ্ধাৰ কৰোঁতে gedit-ৰ দ্বাৰা ব্যৱহৃত এনকোডিং-ৰ "
+"সুবিন্যস্ত তালিকা  । বৰ্ত্তমান লোকেল এনকোডিং \"CURRENT\"-ৰ দ্বাৰা চিহ্নিত হয়  । অকল "
+"মানপ্ৰাপ্ত এনকোডিং প্ৰয়োগ কৰা হয়  ।"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
-msgid "Whether the toolbar should be visible in editing windows."
-msgstr "সম্পাদন ক্ষেত্ৰৰ সংযোগক্ষেত্ৰত টুল-বাৰ প্ৰদৰ্শিত হ'ব নে নহয়  ।"
+msgid "Encodings shown in menu"
+msgstr "তালিকাত প্ৰদৰ্শিত এনকোডিং"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
 msgid ""
-"Whether to use the system's default fixed width font for editing text "
-"instead of a font specific to gedit. If this option is turned off, then the "
-"font named in the \"Editor Font\" option will be used instead of the system "
-"font."
+"List of encodings shown in the Character Encoding menu in open/save file "
+"selector. Only recognized encodings are used."
 msgstr ""
-"টেক্সট সম্পাদনাৰ কামত gedit-ৰ বাবে সুনিশ্চিত কোনো আখৰৰ পৰিবৰ্তে ব্যৱস্থাপ্ৰণালীৰ "
-"অবিকল্পিত আখৰ ব্যৱহাৰ কৰা হ'ব নে নহয়  । এই বিকল্পটো নিষ্ক্ৰিয় কৰা হ'লে "
-"ব্যৱস্থাপ্ৰণালী আখৰৰ পৰিবৰ্তে \"সম্পাদকত ব্যৱহৃত আখৰ\" বিকল্পত চিহ্নিত আখৰ ব্যৱহৃত হ'ব  "
-"।"
+"নথিপত্ৰ খোলা/সংৰক্ষণ নিৰ্ব্বাচনৰ কেৰেক্টাৰ এনকোডিংৰ তালিকাত দেখুৱা এনকোডিংৰ "
+"তালিকা। অকল পৰিচিত এনকোডিং ব্যৱহৃত হ'ব।"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:73
+msgid "Active plugins"
+msgstr "সক্ৰিয় প্লাগ-ইন"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:74
+msgid ""
+"List of active plugins. It contains the \"Location\" of the active plugins. "
+"See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
+msgstr ""
+"সক্ৰিয় প্লাগ-ইনৰ তালিকা  । ইয়াত সক্ৰিয় প্লাগ-ইনৰ \"স্থান\" আছে  । কোনো নিৰ্দিষ্ট "
+"প্লাগ-ইনৰ \"অৱস্থান\" জানিবলৈ .gedit-plugin নথিপত্ৰ চাওক  ।"
+
+#: ../gedit/gedit-app.c:222
+msgid "There was an error displaying the help."
+msgstr "সহায়িকা প্ৰদৰ্শনত এটা ত্ৰুটি হৈছিল।"
+
+#: ../gedit/gedit-app-osx.c:274
+msgid "About gedit"
+msgstr "gedit -ৰ বিষয়ে"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:141
 msgid "Log Out _without Saving"
 msgstr "সংৰক্ষণ নকৰি প্ৰস্থান কৰা হ'ব (_w)"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:145
+#: ../gedit/gedit-close-confirmation-dialog.c:145
 msgid "_Cancel Logout"
 msgstr "প্ৰস্থান বাতিল কৰা হ'ব (_C)"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:152
+#: ../gedit/gedit-close-confirmation-dialog.c:152
 msgid "Close _without Saving"
 msgstr "সংৰক্ষণ নকৰি বন্ধ কৰা হ'ব (_w)"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:214
+#: ../gedit/gedit-close-confirmation-dialog.c:214
 msgid "Question"
 msgstr "প্ৰশ্ন"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:414
+#: ../gedit/gedit-close-confirmation-dialog.c:414
 #, c-format
 msgid "If you don't save, changes from the last %ld second will be permanently lost."
 msgid_plural ""
@@ -462,11 +491,11 @@ msgid_plural ""
 msgstr[0] "সংৰক্ষণ নকৰিলে সৰ্বশেষ %ld ছেকেণ্ডত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 msgstr[1] "সংৰক্ষণ নকৰিলে সৰ্বশেষ %ld ছেকেণ্ডত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:423
+#: ../gedit/gedit-close-confirmation-dialog.c:423
 msgid "If you don't save, changes from the last minute will be permanently lost."
 msgstr "সংৰক্ষণ নকৰিলে যোৱা এক মিনিটত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:429
+#: ../gedit/gedit-close-confirmation-dialog.c:429
 #, c-format
 msgid ""
 "If you don't save, changes from the last minute and %ld second will be "
@@ -481,7 +510,7 @@ msgstr[1] ""
 "সংৰক্ষণ নকৰিলে যোৱা এক মিনিট আৰু %ld ছেকেণ্ডত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা "
 "যাব  ।"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:439
+#: ../gedit/gedit-close-confirmation-dialog.c:439
 #, c-format
 msgid "If you don't save, changes from the last %ld minute will be permanently lost."
 msgid_plural ""
@@ -490,11 +519,11 @@ msgid_plural ""
 msgstr[0] "সংৰক্ষণ নকৰিলে যোৱা %ld মিনিটত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 msgstr[1] "সংৰক্ষণ নকৰিলে যোৱা %ld মিনিটত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:454
+#: ../gedit/gedit-close-confirmation-dialog.c:454
 msgid "If you don't save, changes from the last hour will be permanently lost."
 msgstr "সংৰক্ষণ নকৰিলে যোৱা এক ঘন্টাত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:460
+#: ../gedit/gedit-close-confirmation-dialog.c:460
 #, c-format
 msgid ""
 "If you don't save, changes from the last hour and %d minute will be "
@@ -509,36 +538,36 @@ msgstr[1] ""
 "সংৰক্ষণ নকৰিলে যোৱা এক ঘন্টা আৰু %d মিনিটত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  "
 "।"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:475
+#: ../gedit/gedit-close-confirmation-dialog.c:475
 #, c-format
 msgid "If you don't save, changes from the last %d hour will be permanently lost."
 msgid_plural "If you don't save, changes from the last %d hours will be permanently lost."
 msgstr[0] "সংৰক্ষণ নকৰিলে যোৱা %d ঘন্টাত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 msgstr[1] "সংৰক্ষণ নকৰিলে যোৱা %d ঘন্টাত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:519
+#: ../gedit/gedit-close-confirmation-dialog.c:519
 #, c-format
 msgid "Changes to document \"%s\" will be permanently lost."
 msgstr "\"%s\" আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:524
+#: ../gedit/gedit-close-confirmation-dialog.c:524
 #, c-format
 msgid "Save changes to document \"%s\" before closing?"
 msgstr "বন্ধ কৰাৰ আগতে \"%s\" আলেখ্যনত কৰা পৰিবৰ্তনসমূহ সংৰক্ষণ কৰা হ'ব নেকি ?"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:538
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:755
+#: ../gedit/gedit-close-confirmation-dialog.c:538
+#: ../gedit/gedit-close-confirmation-dialog.c:755
 msgid "Saving has been disabled by the system administrator."
 msgstr "ব্যৱস্থাপ্ৰণালী প্ৰশাসক দ্বাৰা সংৰক্ষণৰ বৈশিষ্ট্য নিষ্ক্ৰিয় কৰা হৈছে  ।"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:706
+#: ../gedit/gedit-close-confirmation-dialog.c:706
 #, c-format
 msgid "Changes to %d document will be permanently lost."
 msgid_plural "Changes to %d documents will be permanently lost."
 msgstr[0] "%d আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 msgstr[1] "%d আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:714
+#: ../gedit/gedit-close-confirmation-dialog.c:714
 #, c-format
 msgid "There is %d document with unsaved changes. Save changes before closing?"
 msgid_plural "There are %d documents with unsaved changes. Save changes before closing?"
@@ -549,241 +578,17 @@ msgstr[1] ""
 "%d আলেখ্যনত কিছু পৰিবৰ্তন কৰা হৈছে আৰু সেইটো সংৰক্ষণ কৰা নহয়  । বন্ধ কৰাৰ পূৰ্বে "
 "আলেখ্যন সংৰক্ষণ কৰা হ'ব নেকি?"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:733
+#: ../gedit/gedit-close-confirmation-dialog.c:733
 msgid "Docum_ents with unsaved changes:"
 msgstr "অসংৰক্ষিত পৰিবৰ্তনসহ আলেখ্যন:(_e)"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:735
+#: ../gedit/gedit-close-confirmation-dialog.c:735
 msgid "S_elect the documents you want to save:"
 msgstr "যি আলেখ্যনসমূহ সংৰক্ষণ কৰা হ'ব সেইসমূহ নিৰ্ব্বাচন কৰক: (_e)"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:759
+#: ../gedit/gedit-close-confirmation-dialog.c:759
 msgid "If you don't save, all your changes will be permanently lost."
 msgstr "সংৰক্ষণ নকৰিলে সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:351
-msgid "Character Encodings"
-msgstr "কেৰেক্টাৰ এনকোডিংসমূহ"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:414
-#: ../gedit/dialogs/gedit-encodings-dialog.c:475
-msgid "_Description"
-msgstr "বিৱৰণ (_D)"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:423
-#: ../gedit/dialogs/gedit-encodings-dialog.c:484
-msgid "_Encoding"
-msgstr "এনকোডিং (_E)"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:1
-msgid "A_vailable encodings:"
-msgstr "উপস্থিত এনকোডিং: (_v)"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:2
-msgid "Character encodings"
-msgstr "কেৰেক্টাৰ এনকোডিংসমূহ"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:3
-msgid "E_ncodings shown in menu:"
-msgstr "মেনুত প্ৰদৰ্শিত এনকোডিং: (_n)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:423
-msgid "Click on this button to select the font to be used by the editor"
-msgstr "সম্পাদকত ব্যৱহৃত আখৰ নিৰ্ব্বাচন কৰোঁতে এই বুটামত ক্লিক কৰক"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:438
-#, c-format
-msgid "_Use the system fixed width font (%s)"
-msgstr "ব্যৱস্থাপ্ৰণালীত স্থায়ী দৈঘ্যেৰ আখৰ ব্যৱহাৰ কৰা হ'ব (%s) (_U)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:634
-msgid "The selected color scheme cannot be installed."
-msgstr "নিৰ্ব্বাচিত ৰঙৰ আঁচনি সংস্থাপন কৰিব নোৱাৰি  ।"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:661
-msgid "Add Scheme"
-msgstr "যোজনা যোগ কৰক"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:668
-msgid "A_dd Scheme"
-msgstr "যোজনা যোগ কৰক (_d)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:676
-msgid "Color Scheme Files"
-msgstr "ৰঙৰ যোজনাৰ নথিপত্ৰ"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:683
-#: ../gedit/gedit-file-chooser-dialog.c:52
-msgid "All Files"
-msgstr "সৰ্বধৰনৰ নথিপত্ৰ"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:728
-#, c-format
-msgid "Could not remove color scheme \"%s\"."
-msgstr "\"%s\" ৰঙৰ যোজনা আঁতৰাব পৰা ন'গ'ল  ।"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:947
-msgid "gedit Preferences"
-msgstr "gedit সংক্ৰান্ত পছন্দ"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:1
-msgid "Color Scheme"
-msgstr "ৰঙৰ যোজনা"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:2
-msgid "Create a _backup copy of files before saving"
-msgstr "সংৰক্ষণ কৰাৰ পূৰ্বে নথিপত্ৰৰ বেক-আপ নকল নিৰ্মাণ কৰক (_b)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:3
-msgid "Display right _margin at column:"
-msgstr "সোঁ ফালৰ প্ৰান্ত স্তম্ভত প্ৰদৰ্শন কৰক (_m)"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:4
-#: ../gedit/gedit-print-preferences.ui.h:1
-msgid "Do not _split words over two lines"
-msgstr "কোনো শব্দ দুই শাৰীত বিভক্ত কৰা ন'হ'ব (_s)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:5
-msgid "Editor"
-msgstr "সম্পাদক"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:6
-msgid "Editor _font: "
-msgstr "সম্পাদকত ব্যৱহৃত আখৰ: (_f)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:7
-#: ../gedit/gedit-print-preferences.ui.h:2
-msgid "Enable text _wrapping"
-msgstr "টেক্সট বিভাজন ব্যৱস্থা সক্ৰিয় কৰক (_w)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:8
-msgid "File Saving"
-msgstr "নথিপত্ৰ সংৰক্ষণ"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:9
-#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:2
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:4
-msgid "Font"
-msgstr "আখৰ"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:10
-msgid "Font & Colors"
-msgstr "আখৰ আৰু ৰং"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:11
-msgid "Highlight current _line"
-msgstr "বৰ্ত্তমানৰ শাৰী উজ্জ্বল কৰক (_l)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
-msgid "Highlight matching _brackets"
-msgstr "অনুৰূপ বন্ধনীচিহ্ন উজ্জ্বল কৰk"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:13
-msgid "Highlighting"
-msgstr "উজ্জ্বল কৰা হৈ আছে"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:14
-msgid "Insert _spaces instead of tabs"
-msgstr "টেবৰ পৰিবৰ্তে শূণ্যস্থান সন্নিবেশ কৰা হ'ব (_s)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:15
-msgid "Pick the editor font"
-msgstr "সম্পাদকত ব্যৱহাৰৰ বাবে কোনো আখৰ নিৰ্ব্বাচন কৰক"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:16
-msgid "Plugins"
-msgstr "প্লাগ-ইন"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:17
-msgid "Preferences"
-msgstr "বৈশিষ্টসমূহ"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:18
-msgid "Tab Stops"
-msgstr "টেব বন্ধসমূহ"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:19
-#: ../gedit/gedit-print-preferences.ui.h:11
-msgid "Text Wrapping"
-msgstr "টেক্সট বিভাজন"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:20
-msgid "View"
-msgstr "ভিউ"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:21
-msgid "_Add..."
-msgstr "যোগ  কৰক...(_A)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:22
-msgid "_Autosave files every"
-msgstr "স্বয়ংক্ৰিয়ৰূপে নথিপত্ৰ সংৰক্ষণ কৰা হ'ব প্ৰতি (_A)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23 ../gedit/gedit-view.c:561
-msgid "_Display line numbers"
-msgstr "শাৰী সংখ্যা প্ৰদৰ্শন কৰা হ'ব (_D)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:24
-msgid "_Enable automatic indentation"
-msgstr "স্বয়ংক্ৰিয় প্ৰান্তৰেখা নিৰ্ধাৰণ ব্যৱস্থা সক্ৰিয় কৰক (_E)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:25
-msgid "_Tab width:"
-msgstr "টেবৰ দৈৰ্ঘ্য: (_T)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:26
-msgid "_minutes"
-msgstr "মিনিট (_m)"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1626
-msgid "Replace"
-msgstr "প্ৰতিস্থাপন"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:291
-msgid "Replace _All"
-msgstr "সমস্ত প্ৰতিস্থাপন কৰা হ'ব (_A)"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:292
-#: ../gedit/gedit-commands-file.c:572
-msgid "_Replace"
-msgstr "প্ৰতিস্থাপন (_R)"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:1
-msgid "Match _entire word only"
-msgstr "অকল সম্পূৰ্ণ শব্দ অনুসন্ধান কৰা হ'ব (_e)"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:3
-msgid "Replace All"
-msgstr "সমগ্ৰ প্ৰতিস্থাপন কৰা হ'ব"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:4
-msgid "Replace _with: "
-msgstr "উল্লিখিত বিষয়বস্তু দ্বাৰা প্ৰতিস্থাপন কৰা হ'ব (_w): "
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:5
-msgid "Search _backwards"
-msgstr "বিপৰীত দিশায় অনুসন্ধান কৰা হ'ব (_b)"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:6
-msgid "_Match case"
-msgstr "কেছ মিলোৱা হ'ব (_M)"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:7
-msgid "_Search for: "
-msgstr "অনুসন্ধান কৰা হ'ব (_S): "
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:8
-msgid "_Wrap around"
-msgstr "বিভাজন কৰা হ'ব (_W)"
-
-#: ../gedit/gedit-app.c:235
-msgid "There was an error displaying the help."
-msgstr "সহায়িকা প্ৰদৰ্শনত এটা ত্ৰুটি হৈছিল।"
 
 #: ../gedit/gedit-command-line.c:232
 #, c-format
@@ -817,8 +622,9 @@ msgid "Create a new document in an existing instance of gedit"
 msgstr "বৰ্ত্তমানে চলমান gedit-ৰ কোনো চানেকিত এটা নতুন আলেখ্যন নিৰ্মাণ কৰক"
 
 #: ../gedit/gedit-command-line.c:294
-msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
-msgstr "X জ্যামিতি উইন্ডোৰ আকাৰ (WIDTHxHEIGHT+X+Y) স্থাপন কৰক"
+#| msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
+msgid "Set the size and position of the window (WIDTHxHEIGHT+X+Y)"
+msgstr "উইন্ডো (WIDTHxHEIGHT+X+Y) ৰ আকাৰ আৰু অৱস্থান সংহতি কৰক"
 
 #: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
@@ -871,20 +677,24 @@ msgstr[1] "%d নথিপত্ৰ লোড কৰা হৈছে..."
 msgid "Open Files"
 msgstr "নথিপত্ৰ খোলক"
 
-#: ../gedit/gedit-commands-file.c:559
+#: ../gedit/gedit-commands-file.c:557
 #, c-format
 msgid "The file \"%s\" is read-only."
 msgstr "\"%s\" নথিপত্ৰ অকল পাঠযোগ্য  ।"
 
-#: ../gedit/gedit-commands-file.c:564
+#: ../gedit/gedit-commands-file.c:562
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr "আপুনি উপস্থিত নথিপত্ৰৰ পৰিবৰ্তে নতুন নথিপত্ৰত সংৰক্ষণ কৰাৰ চেষ্টা কৰিব বিচাৰে নে ?"
 
-#: ../gedit/gedit-commands-file.c:614
+#: ../gedit/gedit-commands-file.c:570 ../gedit/gedit-replace-dialog.c:270
+msgid "_Replace"
+msgstr "প্ৰতিস্থাপন (_R)"
+
+#: ../gedit/gedit-commands-file.c:612
 msgid "Save the file using compression?"
 msgstr "সংকোচন ব্যৱহাৰ কৰি নথিপত্ৰ সঞ্চয় কৰিব নে?"
 
-#: ../gedit/gedit-commands-file.c:615
+#: ../gedit/gedit-commands-file.c:613
 #, c-format
 msgid ""
 "The file \"%s\" was previously saved as plain text and will now be saved "
@@ -893,15 +703,15 @@ msgstr ""
 "\"%s\" নথিপত্ৰটো পূৰ্বতে সমতল লিখনী হিচাপে সঞ্চয় কৰা হৈছিল আৰু এতিয়া সংকোচন "
 "ব্যৱহাৰ কৰি সঞ্চয় কৰা হ'ব।"
 
-#: ../gedit/gedit-commands-file.c:617
+#: ../gedit/gedit-commands-file.c:615
 msgid "_Save Using Compression"
 msgstr "সংকোচন ব্যৱহাৰ কৰি সঞ্চয় কৰক (_S)"
 
-#: ../gedit/gedit-commands-file.c:621
+#: ../gedit/gedit-commands-file.c:619
 msgid "Save the file as plain text?"
 msgstr "নথিপত্ৰটোক সমতল লিখনী হিচাপে সঞ্চয় কৰিব নে?"
 
-#: ../gedit/gedit-commands-file.c:622
+#: ../gedit/gedit-commands-file.c:620
 #, c-format
 msgid ""
 "The file \"%s\" was previously saved using compression and will now be saved "
@@ -910,30 +720,30 @@ msgstr ""
 "\"%s\" নথিপত্ৰটো পূৰ্বতে সংকোচন ব্যৱহাৰ কৰি সঞ্চয় কৰা হৈছিল আৰু এতিয়া সমতল লিখনী "
 "হিচাপে সঞ্চয় কৰা হ'ব।"
 
-#: ../gedit/gedit-commands-file.c:624
+#: ../gedit/gedit-commands-file.c:622
 msgid "_Save As Plain Text"
 msgstr "সমতল লিখনী হিচাপে সঞ্চয় কৰক (_S)"
 
-#: ../gedit/gedit-commands-file.c:742 ../gedit/gedit-commands-file.c:961
+#: ../gedit/gedit-commands-file.c:742 ../gedit/gedit-commands-file.c:959
 #, c-format
 msgid "Saving file '%s'…"
 msgstr "'%s' নথিপত্ৰ সংৰক্ষণ কৰা হৈছে..."
 
-#: ../gedit/gedit-commands-file.c:847
+#: ../gedit/gedit-commands-file.c:846
 msgid "Save As"
 msgstr "নতুন ৰূপে সঞ্চয় কৰক"
 
-#: ../gedit/gedit-commands-file.c:1175
+#: ../gedit/gedit-commands-file.c:1173
 #, c-format
 msgid "Reverting the document '%s'…"
 msgstr "'%s' আলেখ্যনত কৰা পৰিবৰ্তন বাতিল কৰা হৈছে…"
 
-#: ../gedit/gedit-commands-file.c:1220
+#: ../gedit/gedit-commands-file.c:1218
 #, c-format
 msgid "Revert unsaved changes to document '%s'?"
 msgstr "'%s' আলেখ্যনত কৰা পৰিবৰ্তন বাতিল কৰা হ'ব নেকি ?"
 
-#: ../gedit/gedit-commands-file.c:1229
+#: ../gedit/gedit-commands-file.c:1227
 #, c-format
 msgid "Changes made to the document in the last %ld second will be permanently lost."
 msgid_plural ""
@@ -942,11 +752,11 @@ msgid_plural ""
 msgstr[0] "যোৱা %ld ছেকেণ্ডত আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 msgstr[1] "যোৱা %ld ছেকেণ্ডত আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/gedit-commands-file.c:1238
+#: ../gedit/gedit-commands-file.c:1236
 msgid "Changes made to the document in the last minute will be permanently lost."
 msgstr "যোৱা এক মিনিটত আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/gedit-commands-file.c:1244
+#: ../gedit/gedit-commands-file.c:1242
 #, c-format
 msgid ""
 "Changes made to the document in the last minute and %ld second will be "
@@ -959,7 +769,7 @@ msgstr[0] ""
 msgstr[1] ""
 "যোৱা এক মিনিট আৰু %ld ছেকেণ্ডত আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/gedit-commands-file.c:1254
+#: ../gedit/gedit-commands-file.c:1252
 #, c-format
 msgid "Changes made to the document in the last %ld minute will be permanently lost."
 msgid_plural ""
@@ -968,11 +778,11 @@ msgid_plural ""
 msgstr[0] "যোৱা %ld মিনিটত আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 msgstr[1] "যোৱা %ld মিনিটত আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/gedit-commands-file.c:1269
+#: ../gedit/gedit-commands-file.c:1267
 msgid "Changes made to the document in the last hour will be permanently lost."
 msgstr "যোৱা এক ঘন্টাত আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/gedit-commands-file.c:1275
+#: ../gedit/gedit-commands-file.c:1273
 #, c-format
 msgid ""
 "Changes made to the document in the last hour and %d minute will be "
@@ -983,14 +793,14 @@ msgid_plural ""
 msgstr[0] "যোৱা এক ঘন্টা আৰু %d মিনিটত আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 msgstr[1] "যোৱা এক ঘন্টা আৰু %d মিনিটত আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/gedit-commands-file.c:1290
+#: ../gedit/gedit-commands-file.c:1288
 #, c-format
 msgid "Changes made to the document in the last %d hour will be permanently lost."
 msgid_plural "Changes made to the document in the last %d hours will be permanently lost."
 msgstr[0] "যোৱা %d ঘন্টাত আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 msgstr[1] "যোৱা %d ঘন্টাত আলেখ্যনত কৰা সমস্ত পৰিবৰ্তন স্থায়ীৰূপে আঁতৰুৱা যাব  ।"
 
-#: ../gedit/gedit-commands-file.c:1316
+#: ../gedit/gedit-commands-file.c:1314
 msgid "_Revert"
 msgstr "পৰিবৰ্তন বাতিল কৰক (_R)"
 
@@ -1000,7 +810,9 @@ msgstr "GNOME Desktop ত ব্যৱহাৰৰ বাবে gedit এটা 
 
 #: ../gedit/gedit-commands-help.c:113
 msgid "translator-credits"
-msgstr "অমিতাক্ষ ফুকন (aphukan@fedoraproject.org), নীলমদ্যুতি গোস্বামী (ngoswami@redhat.com)"
+msgstr ""
+"অমিতাক্ষ ফুকন (aphukan@fedoraproject.org), নীলমদ্যুতি গোস্বামী (ngoswami@redhat."
+"com)"
 
 #: ../gedit/gedit-commands-search.c:112
 #, c-format
@@ -1020,17 +832,17 @@ msgstr "এবাৰ চিনাক্ত কৰি প্ৰতিস্থা
 msgid "\"%s\" not found"
 msgstr "\"%s\" পোৱা নাযায়"
 
-#: ../gedit/gedit-document.c:1241 ../gedit/gedit-document.c:1267
+#: ../gedit/gedit-document.c:1222 ../gedit/gedit-document.c:1248
 #, c-format
 msgid "Unsaved Document %d"
 msgstr "অসংৰক্ষিত আলেখ্যন %d"
 
-#: ../gedit/gedit-documents-panel.c:121 ../gedit/gedit-documents-panel.c:135
-#: ../gedit/gedit-window.c:2459 ../gedit/gedit-window.c:2466
+#: ../gedit/gedit-documents-panel.c:123 ../gedit/gedit-documents-panel.c:137
+#: ../gedit/gedit-window.c:2397 ../gedit/gedit-window.c:2404
 msgid "Read-Only"
 msgstr "অকল পাঠযোগ্য"
 
-#: ../gedit/gedit-documents-panel.c:1142 ../gedit/gedit-window.c:3907
+#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3846
 msgid "Documents"
 msgstr "আলেখ্যন"
 
@@ -1150,41 +962,71 @@ msgstr "থাই"
 msgid "Unknown"
 msgstr "অজ্ঞাত"
 
-#: ../gedit/gedit-encodings-combo-box.c:310
+#: ../gedit/gedit-encodings-combo-box.c:301
 msgid "Automatically Detected"
 msgstr "স্বয়ংক্ৰিয়ভাবে চিনাক্ত"
 
-#: ../gedit/gedit-encodings-combo-box.c:329
-#: ../gedit/gedit-encodings-combo-box.c:345
+#: ../gedit/gedit-encodings-combo-box.c:320
+#: ../gedit/gedit-encodings-combo-box.c:336
 #, c-format
 msgid "Current Locale (%s)"
 msgstr "বৰ্ত্তমান লোকেইল (%s)"
 
-#: ../gedit/gedit-encodings-combo-box.c:397
+#: ../gedit/gedit-encodings-combo-box.c:388
 msgid "Add or Remove..."
 msgstr "যোগ বা অপসাৰণ কৰক"
+
+#: ../gedit/gedit-encodings-dialog.c:345
+msgid "Character Encodings"
+msgstr "কেৰেক্টাৰ এনকোডিংসমূহ"
+
+#: ../gedit/gedit-encodings-dialog.c:395 ../gedit/gedit-encodings-dialog.c:456
+msgid "_Description"
+msgstr "বিৱৰণ (_D)"
+
+#: ../gedit/gedit-encodings-dialog.c:404 ../gedit/gedit-encodings-dialog.c:465
+msgid "_Encoding"
+msgstr "এনকোডিং (_E)"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-encodings-dialog.ui.h:1
+msgid "Character encodings"
+msgstr "কেৰেক্টাৰ এনকোডিংসমূহ"
+
+#: ../gedit/gedit-encodings-dialog.ui.h:2
+msgid "A_vailable encodings:"
+msgstr "উপস্থিত এনকোডিং: (_v)"
+
+#: ../gedit/gedit-encodings-dialog.ui.h:3
+msgid "E_ncodings shown in menu:"
+msgstr "মেনুত প্ৰদৰ্শিত এনকোডিং: (_n)"
+
+#: ../gedit/gedit-file-chooser-dialog.c:52
+#: ../gedit/gedit-preferences-dialog.c:909
+msgid "All Files"
+msgstr "সৰ্বধৰনৰ নথিপত্ৰ"
 
 #: ../gedit/gedit-file-chooser-dialog.c:53
 msgid "All Text Files"
 msgstr "সমস্ত টেক্সট নথিপত্ৰ"
 
-#: ../gedit/gedit-file-chooser-dialog.c:99
+#: ../gedit/gedit-file-chooser-dialog.c:95
 msgid "C_haracter Encoding:"
 msgstr "কেৰেক্টাৰ এনকোডিং: (_h)"
 
-#: ../gedit/gedit-file-chooser-dialog.c:158
+#: ../gedit/gedit-file-chooser-dialog.c:154
 msgid "L_ine Ending:"
 msgstr "শাৰী সমাপ্তি (_i):"
 
-#: ../gedit/gedit-file-chooser-dialog.c:177
+#: ../gedit/gedit-file-chooser-dialog.c:173
 msgid "Unix/Linux"
 msgstr "Unix/Linux"
 
-#: ../gedit/gedit-file-chooser-dialog.c:183
+#: ../gedit/gedit-file-chooser-dialog.c:179
 msgid "Mac OS Classic"
 msgstr "Mac OS Classic"
 
-#: ../gedit/gedit-file-chooser-dialog.c:189
+#: ../gedit/gedit-file-chooser-dialog.c:185
 msgid "Windows"
 msgstr "Windows"
 
@@ -1533,7 +1375,20 @@ msgstr ""
 "আপুনি যদি এইখন নথিপত্ৰৰ সঞ্চয় প্ৰক্ৰিয়া অব্যাহত ৰাখিব বিচাৰে তেনেহলে দস্তাবেজখন "
 "ক্ষতিগ্ৰস্থ হ'ব পাৰে। তথাপিও সঞ্চয় কৰিব?"
 
-#: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:586
+#. Keep in sync with the respective GtkActions
+#: ../gedit/gedit-notebook-popup-menu.c:172 ../gedit/gedit-ui.h:140
+msgid "_Move to New Window"
+msgstr "নুতন সংযোগক্ষেত্ৰত স্থানান্তৰ কৰক (_M)"
+
+#: ../gedit/gedit-notebook-popup-menu.c:190 ../gedit/gedit-ui.h:78
+msgid "Save _As..."
+msgstr "নতুন নামে সংৰক্ষণ কৰক (_A)..."
+
+#: ../gedit/gedit-notebook-popup-menu.c:203 ../gedit/gedit-ui.h:84
+msgid "_Print..."
+msgstr "মূদ্ৰণ কৰক (_P)..."
+
+#: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:587
 msgid "Empty"
 msgstr "ফাঁকা"
 
@@ -1541,72 +1396,238 @@ msgstr "ফাঁকা"
 msgid "Hide panel"
 msgstr "পেনেল আড়াল কৰা হ'ব"
 
-#: ../gedit/gedit-print-job.c:586
+#: ../gedit/gedit-preferences-dialog.c:423
+msgid "Click on this button to select the font to be used by the editor"
+msgstr "সম্পাদকত ব্যৱহৃত আখৰ নিৰ্ব্বাচন কৰোঁতে এই বুটামত ক্লিক কৰক"
+
+#: ../gedit/gedit-preferences-dialog.c:438
+#, c-format
+msgid "_Use the system fixed width font (%s)"
+msgstr "ব্যৱস্থাপ্ৰণালীত স্থায়ী দৈঘ্যেৰ আখৰ ব্যৱহাৰ কৰা হ'ব (%s) (_U)"
+
+#: ../gedit/gedit-preferences-dialog.c:676
+#, c-format
+msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
+msgstr "'%s' পঞ্জিকা সৃষ্ কৰিব পৰা ন'গ'ল: g_mkdir_with_parents() বিফল: %s"
+
+#: ../gedit/gedit-preferences-dialog.c:860
+msgid "The selected color scheme cannot be installed."
+msgstr "নিৰ্ব্বাচিত ৰঙৰ আঁচনি সংস্থাপন কৰিব নোৱাৰি  ।"
+
+#: ../gedit/gedit-preferences-dialog.c:887
+msgid "Add Scheme"
+msgstr "যোজনা যোগ কৰক"
+
+#: ../gedit/gedit-preferences-dialog.c:894
+msgid "A_dd Scheme"
+msgstr "যোজনা যোগ কৰক (_d)"
+
+#: ../gedit/gedit-preferences-dialog.c:902
+msgid "Color Scheme Files"
+msgstr "ৰঙৰ যোজনাৰ নথিপত্ৰ"
+
+#: ../gedit/gedit-preferences-dialog.c:954
+#, c-format
+msgid "Could not remove color scheme \"%s\"."
+msgstr "\"%s\" ৰঙৰ যোজনা আঁতৰাব পৰা ন'গ'ল  ।"
+
+#: ../gedit/gedit-preferences-dialog.c:1177
+msgid "gedit Preferences"
+msgstr "gedit সংক্ৰান্ত পছন্দ"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-preferences-dialog.ui.h:1
+msgid "Preferences"
+msgstr "বৈশিষ্টসমূহ"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:2 ../gedit/gedit-view.c:552
+msgid "_Display line numbers"
+msgstr "শাৰী সংখ্যা প্ৰদৰ্শন কৰা হ'ব (_D)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:3
+msgid "Display right _margin at column:"
+msgstr "সোঁ ফালৰ প্ৰান্ত স্তম্ভত প্ৰদৰ্শন কৰক (_m)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:4
+#: ../gedit/gedit-print-preferences.ui.h:9
+msgid "Text Wrapping"
+msgstr "টেক্সট বিভাজন"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:5
+#: ../gedit/gedit-print-preferences.ui.h:10
+msgid "Enable text _wrapping"
+msgstr "টেক্সট বিভাজন ব্যৱস্থা সক্ৰিয় কৰক (_w)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:6
+#: ../gedit/gedit-print-preferences.ui.h:11
+msgid "Do not _split words over two lines"
+msgstr "কোনো শব্দ দুই শাৰীত বিভক্ত কৰা ন'হ'ব (_s)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:7
+msgid "Highlighting"
+msgstr "উজ্জ্বল কৰা হৈ আছে"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:8
+msgid "Highlight current _line"
+msgstr "বৰ্ত্তমানৰ শাৰী উজ্জ্বল কৰক (_l)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:9
+msgid "Highlight matching _brackets"
+msgstr "অনুৰূপ বন্ধনীচিহ্ন উজ্জ্বল কৰk"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:10
+msgid "View"
+msgstr "ভিউ"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:11
+msgid "Tab Stops"
+msgstr "টেব বন্ধসমূহ"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:12
+msgid "_Tab width:"
+msgstr "টেবৰ দৈৰ্ঘ্য: (_T)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:13
+msgid "Insert _spaces instead of tabs"
+msgstr "টেবৰ পৰিবৰ্তে শূণ্যস্থান সন্নিবেশ কৰা হ'ব (_s)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:14
+msgid "_Enable automatic indentation"
+msgstr "স্বয়ংক্ৰিয় প্ৰান্তৰেখা নিৰ্ধাৰণ ব্যৱস্থা সক্ৰিয় কৰক (_E)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:15
+msgid "File Saving"
+msgstr "নথিপত্ৰ সংৰক্ষণ"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:16
+msgid "Create a _backup copy of files before saving"
+msgstr "সংৰক্ষণ কৰাৰ পূৰ্বে নথিপত্ৰৰ বেক-আপ নকল নিৰ্মাণ কৰক (_b)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:17
+msgid "_Autosave files every"
+msgstr "স্বয়ংক্ৰিয়ৰূপে নথিপত্ৰ সংৰক্ষণ কৰা হ'ব প্ৰতি (_A)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:18
+msgid "_minutes"
+msgstr "মিনিট (_m)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:19
+msgid "Editor"
+msgstr "সম্পাদক"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:20
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
+msgid "Font"
+msgstr "আখৰ"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:21
+msgid "Editor _font: "
+msgstr "সম্পাদকত ব্যৱহৃত আখৰ: (_f)"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:22
+msgid "Pick the editor font"
+msgstr "সম্পাদকত ব্যৱহাৰৰ বাবে কোনো আখৰ নিৰ্ব্বাচন কৰক"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:23
+msgid "Color Scheme"
+msgstr "ৰঙৰ যোজনা"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:24
+#| msgid "Content scheme"
+msgid "Install scheme"
+msgstr "ইনস্টল আঁচনি"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:25
+#| msgid "Style Scheme"
+msgid "Install Scheme"
+msgstr "ইনস্টল আঁচনি"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:26
+#| msgid "Content scheme"
+msgid "Uninstall scheme"
+msgstr "আনইনস্টল আঁচনি"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:27
+#| msgid "Style Scheme"
+msgid "Uninstall Scheme"
+msgstr "আনইনস্টল আঁচনি"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:28
+msgid "Font & Colors"
+msgstr "আখৰ আৰু ৰং"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:29
+msgid "Plugins"
+msgstr "প্লাগ-ইন"
+
+#: ../gedit/gedit-print-job.c:572
 #, c-format
 msgid "File: %s"
 msgstr "নথিপত্ৰ: %s"
 
-#: ../gedit/gedit-print-job.c:595
+#: ../gedit/gedit-print-job.c:581
 msgid "Page %N of %Q"
 msgstr "পৃষ্ঠা %N, সৰ্বমোট %Q"
 
-#: ../gedit/gedit-print-job.c:857
+#: ../gedit/gedit-print-job.c:843
 msgid "Preparing..."
 msgstr "প্ৰস্তুত কৰা হৈছে..."
 
-#: ../gedit/gedit-print-preferences.ui.h:3
-msgid "Fonts"
-msgstr "আখৰ"
-
-#: ../gedit/gedit-print-preferences.ui.h:4
-msgid "He_aders and footers:"
-msgstr "হেডাৰ আৰু ফুটাৰ: (_a)"
-
-#: ../gedit/gedit-print-preferences.ui.h:5
-msgid "Line Numbers"
-msgstr "শাৰী সংখ্যাসমূহ"
-
-#: ../gedit/gedit-print-preferences.ui.h:6
-msgid "Page header"
-msgstr "পেইজ হেডাৰ"
-
-#: ../gedit/gedit-print-preferences.ui.h:7
-msgid "Print line nu_mbers"
-msgstr "শাৰী সংখ্যা মূদ্ৰণ কৰা হ'ব (_m)"
-
-#: ../gedit/gedit-print-preferences.ui.h:8
-msgid "Print page _headers"
-msgstr "পৃষ্ঠাৰ হেডাৰ মূদ্ৰণ কৰা হ'ব (_h)"
-
-#: ../gedit/gedit-print-preferences.ui.h:9
-msgid "Print synta_x highlighting"
-msgstr "মূদ্ৰণ কৰক"
-
-#: ../gedit/gedit-print-preferences.ui.h:10
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-print-preferences.ui.h:1
 msgid "Syntax Highlighting"
 msgstr "চিনটেক্স উজ্বলকৰণ"
 
-#: ../gedit/gedit-print-preferences.ui.h:12
-msgid "_Body:"
-msgstr "মূল অংশ: (_B)"
+#: ../gedit/gedit-print-preferences.ui.h:2
+msgid "Print synta_x highlighting"
+msgstr "মূদ্ৰণ কৰক"
 
-#: ../gedit/gedit-print-preferences.ui.h:13
-msgid "_Line numbers:"
-msgstr "শাৰী সংখ্যা: (_L)"
+#: ../gedit/gedit-print-preferences.ui.h:3
+msgid "Line Numbers"
+msgstr "শাৰী সংখ্যাসমূহ"
+
+#: ../gedit/gedit-print-preferences.ui.h:4
+msgid "Print line nu_mbers"
+msgstr "শাৰী সংখ্যা মূদ্ৰণ কৰা হ'ব (_m)"
 
 #. 'Number every' from 'Number every 3 lines' in the 'Text Editor' tab of the print preferences.
-#: ../gedit/gedit-print-preferences.ui.h:15
+#: ../gedit/gedit-print-preferences.ui.h:6
 msgid "_Number every"
 msgstr "সংখ্যা উল্লেখ কৰা হ'ব প্ৰতি (_N)"
 
-#: ../gedit/gedit-print-preferences.ui.h:16
-msgid "_Restore Default Fonts"
-msgstr "অবিকল্পিত আখৰ পুনঃ স্থাপন কৰা হ'ব (_R)"
-
 #. 'lines' from 'Number every 3 lines' in the 'Text Editor' tab of the print preferences.
-#: ../gedit/gedit-print-preferences.ui.h:18
+#: ../gedit/gedit-print-preferences.ui.h:8
 msgid "lines"
 msgstr "খানি শাৰীৰ বাবে"
+
+#: ../gedit/gedit-print-preferences.ui.h:12
+msgid "Page header"
+msgstr "পেইজ হেডাৰ"
+
+#: ../gedit/gedit-print-preferences.ui.h:13
+msgid "Print page _headers"
+msgstr "পৃষ্ঠাৰ হেডাৰ মূদ্ৰণ কৰা হ'ব (_h)"
+
+#: ../gedit/gedit-print-preferences.ui.h:14
+msgid "Fonts"
+msgstr "আখৰ"
+
+#: ../gedit/gedit-print-preferences.ui.h:15
+msgid "_Body:"
+msgstr "মূল অংশ: (_B)"
+
+#: ../gedit/gedit-print-preferences.ui.h:16
+msgid "_Line numbers:"
+msgstr "শাৰী সংখ্যা: (_L)"
+
+#: ../gedit/gedit-print-preferences.ui.h:17
+msgid "He_aders and footers:"
+msgstr "হেডাৰ আৰু ফুটাৰ: (_a)"
+
+#: ../gedit/gedit-print-preferences.ui.h:18
+msgid "_Restore Default Fonts"
+msgstr "অবিকল্পিত আখৰ পুনঃ স্থাপন কৰা হ'ব (_R)"
 
 #: ../gedit/gedit-print-preview.c:582
 msgid "Show the previous page"
@@ -1674,6 +1695,44 @@ msgstr "পৃষ্ঠাৰ পূৰ্বৰূপ"
 msgid "The preview of a page in the document to be printed"
 msgstr "মূদ্ৰণ কৰাৰ বাবে চিহ্নিত পৃষ্ঠাৰ পূৰ্বৰূপ"
 
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-replace-dialog.c:207 ../gedit/gedit-replace-dialog.ui.h:1
+#: ../gedit/gedit-window.c:1557
+msgid "Replace"
+msgstr "প্ৰতিস্থাপন"
+
+#: ../gedit/gedit-replace-dialog.c:269
+msgid "Replace _All"
+msgstr "সমস্ত প্ৰতিস্থাপন কৰা হ'ব (_A)"
+
+#: ../gedit/gedit-replace-dialog.ui.h:2
+msgid "Replace All"
+msgstr "সমগ্ৰ প্ৰতিস্থাপন কৰা হ'ব"
+
+#: ../gedit/gedit-replace-dialog.ui.h:3
+msgid "_Search for: "
+msgstr "অনুসন্ধান কৰা হ'ব (_S): "
+
+#: ../gedit/gedit-replace-dialog.ui.h:4
+msgid "Replace _with: "
+msgstr "উল্লিখিত বিষয়বস্তু দ্বাৰা প্ৰতিস্থাপন কৰা হ'ব (_w): "
+
+#: ../gedit/gedit-replace-dialog.ui.h:5
+msgid "_Match case"
+msgstr "কেছ মিলোৱা হ'ব (_M)"
+
+#: ../gedit/gedit-replace-dialog.ui.h:6
+msgid "Match _entire word only"
+msgstr "অকল সম্পূৰ্ণ শব্দ অনুসন্ধান কৰা হ'ব (_e)"
+
+#: ../gedit/gedit-replace-dialog.ui.h:7
+msgid "Search _backwards"
+msgstr "বিপৰীত দিশায় অনুসন্ধান কৰা হ'ব (_b)"
+
+#: ../gedit/gedit-replace-dialog.ui.h:8
+msgid "_Wrap around"
+msgstr "বিভাজন কৰা হ'ব (_W)"
+
 #. Use spaces to leave padding proportional to the font size
 #: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
 msgid "OVR"
@@ -1697,43 +1756,38 @@ msgid_plural "There are %d tabs with errors"
 msgstr[0] "ত্ৰুযুক্ত টেব উপস্থিত"
 msgstr[1] "%d ত্ৰুযুক্ত টেব উপস্থিত"
 
-#: ../gedit/gedit-style-scheme-manager.c:210
-#, c-format
-msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
-msgstr "'%s' পঞ্জিকা সৃষ্ কৰিব পৰা ন'গ'ল: g_mkdir_with_parents() বিফল: %s"
-
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:744
+#: ../gedit/gedit-tab.c:734
 #, c-format
 msgid "Reverting %s from %s"
 msgstr "%s, %sৰ পৰা প্ৰত্যাবৰ্তন কৰা হৈছে"
 
-#: ../gedit/gedit-tab.c:751
+#: ../gedit/gedit-tab.c:741
 #, c-format
 msgid "Reverting %s"
 msgstr "%s প্ৰত্যাবৰ্তন কৰা হৈছে"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:767
+#: ../gedit/gedit-tab.c:757
 #, c-format
 msgid "Loading %s from %s"
 msgstr "%s, %sৰ পৰা লোড কৰা হৈছে"
 
-#: ../gedit/gedit-tab.c:774
+#: ../gedit/gedit-tab.c:764
 #, c-format
 msgid "Loading %s"
 msgstr "%s লোড কৰা হৈছে"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
-#: ../gedit/gedit-tab.c:855
+#: ../gedit/gedit-tab.c:845
 #, c-format
 msgid "Saving %s to %s"
 msgstr "%s, %s'এ সংৰক্ষণ কৰা হৈছে"
 
-#: ../gedit/gedit-tab.c:862
+#: ../gedit/gedit-tab.c:852
 #, c-format
 msgid "Saving %s"
 msgstr "%s সংৰক্ষণ কৰা হৈছে"
@@ -1815,7 +1869,7 @@ msgstr "নতুন আলেখ্যন নিৰ্মাণ কৰক"
 msgid "_Open..."
 msgstr "খোলক(_O)..."
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1554
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1486
 msgid "Open a file"
 msgstr "এটা নথিপত্ৰ খোলো"
 
@@ -1849,10 +1903,6 @@ msgstr "পূৰ্ণপৰ্দা ধৰণৰ পৰা প্ৰস্থ
 msgid "Save the current file"
 msgstr "বৰ্ত্তমান নথিপত্ৰ সংৰক্ষণ কৰক"
 
-#: ../gedit/gedit-ui.h:78
-msgid "Save _As..."
-msgstr "নতুন নামে সংৰক্ষণ কৰক (_A)..."
-
 #: ../gedit/gedit-ui.h:79
 msgid "Save the current file with a different name"
 msgstr "বৰ্ত্তমান নথিপত্ৰ এটা পৃথক নামে সংৰক্ষণ কৰক"
@@ -1868,10 +1918,6 @@ msgstr "মূদ্ৰণৰ পূৰ্বৰূপ(_w)"
 #: ../gedit/gedit-ui.h:83
 msgid "Print preview"
 msgstr "মূদ্ৰণৰ পূৰ্বৰূপ"
-
-#: ../gedit/gedit-ui.h:84
-msgid "_Print..."
-msgstr "মূদ্ৰণ কৰক (_P)..."
 
 #: ../gedit/gedit-ui.h:85
 msgid "Print the current page"
@@ -2020,10 +2066,6 @@ msgstr "পৰবৰ্তী আলেখ্যন (_e)"
 msgid "Activate next document"
 msgstr "পৰবৰ্তী আলেখ্যন সক্ৰিয় কৰক"
 
-#: ../gedit/gedit-ui.h:140
-msgid "_Move to New Window"
-msgstr "নুতন সংযোগক্ষেত্ৰত স্থানান্তৰ কৰক (_M)"
-
 #: ../gedit/gedit-ui.h:141
 msgid "Move the current document to a new window"
 msgstr "বৰ্ত্তমান আলেখ্যন এটা নতুন সংযোগক্ষেত্ৰত স্থানান্তৰ কৰক"
@@ -2076,46 +2118,46 @@ msgstr "বৰ্ত্তমান সংযোগক্ষেত্ৰত ন�
 msgid "Please check your installation."
 msgstr "অনুগ্ৰহ কৰি ইনস্টলেশন পৰীক্ষা কৰক  ।"
 
-#: ../gedit/gedit-utils.c:1087
+#: ../gedit/gedit-utils.c:1075
 #, c-format
 msgid "Unable to open UI file %s. Error: %s"
 msgstr "UI নথিপত্ৰ %s খুলিব নোৱাৰি। ত্ৰুটি: %s"
 
-#: ../gedit/gedit-utils.c:1107
+#: ../gedit/gedit-utils.c:1094
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
 msgstr "'%s' বস্তুক %s নথিপত্ৰৰ ভিতৰত পোৱা নাযায়  ।"
 
 #. Translators: '/ on <remote-share>'
-#: ../gedit/gedit-utils.c:1252
+#: ../gedit/gedit-utils.c:1316
 #, c-format
 msgid "/ on %s"
 msgstr "/ %s ৰ ওপৰত"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:624
+#: ../gedit/gedit-view-frame.c:546
 msgid "_Wrap Around"
 msgstr "বিভাজন কৰা হ'ব (_W)"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:634
+#: ../gedit/gedit-view-frame.c:556
 msgid "Match _Entire Word Only"
 msgstr "অকল সম্পূৰ্ণ শব্দ অনুসন্ধান কৰা হ'ব (_E)"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:644
+#: ../gedit/gedit-view-frame.c:566
 msgid "_Match Case"
 msgstr "হৰফেৰ কেছ মিলোৱা হ'ব (_M)"
 
-#: ../gedit/gedit-view-frame.c:903
+#: ../gedit/gedit-view-frame.c:767
 msgid "String you want to search for"
 msgstr "অনুসন্ধানৰ উদ্দেশ্যে শাৰী"
 
-#: ../gedit/gedit-view-frame.c:912
+#: ../gedit/gedit-view-frame.c:777
 msgid "Line you want to move the cursor to"
 msgstr "কাৰ্ছাৰ স্থানান্তৰণৰ বাবে চিহ্নিত শাৰী সংখ্যা"
 
-#: ../gedit/gedit-window.c:1040
+#: ../gedit/gedit-window.c:941
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "%s উজ্জ্বলতাৰ ধৰণ ব্যৱহাৰ কৰা হ'ব"
@@ -2123,74 +2165,70 @@ msgstr "%s উজ্জ্বলতাৰ ধৰণ ব্যৱহাৰ কৰ
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1107 ../gedit/gedit-window.c:2156
-#: ../plugins/externaltools/tools/manager.py:138
-#: ../plugins/externaltools/tools/manager.py:441
-#: ../plugins/externaltools/tools/manager.py:552
-#: ../plugins/externaltools/tools/manager.py:871
+#: ../gedit/gedit-window.c:1046 ../gedit/gedit-window.c:2091
+#: ../plugins/externaltools/tools/manager.py:146
+#: ../plugins/externaltools/tools/manager.py:450
+#: ../plugins/externaltools/tools/manager.py:561
+#: ../plugins/externaltools/tools/manager.py:882
 msgid "Plain Text"
 msgstr "উকা টেক্সট  "
 
-#: ../gedit/gedit-window.c:1108
+#: ../gedit/gedit-window.c:1047
 msgid "Disable syntax highlighting"
 msgstr "শব্দবিন্যাসৰ বিভিন্ন অংশ পৃথকৰূপে প্ৰদৰ্শন কৰা ন'হ'ব"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1433
+#: ../gedit/gedit-window.c:1364
 #, c-format
 msgid "Open '%s'"
 msgstr "'%s' খোলক"
 
-#: ../gedit/gedit-window.c:1556
+#: ../gedit/gedit-window.c:1488
 msgid "Open a recently used file"
 msgstr "সম্প্ৰতি ব্যৱহৃত কোনো নথিপত্ৰ খোলক"
 
-#: ../gedit/gedit-window.c:1562
+#: ../gedit/gedit-window.c:1494
 msgid "Open"
 msgstr "খোলক"
 
-#: ../gedit/gedit-window.c:1620
+#: ../gedit/gedit-window.c:1551
 msgid "Save"
 msgstr "সংৰক্ষণ কৰক"
 
-#: ../gedit/gedit-window.c:1622
+#: ../gedit/gedit-window.c:1553
 msgid "Print"
 msgstr "মূদ্ৰণ কৰক"
 
-#: ../gedit/gedit-window.c:1624
+#: ../gedit/gedit-window.c:1555
 msgid "Find"
 msgstr "অনুসন্ধান"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1784
+#: ../gedit/gedit-window.c:1715
 #, c-format
 msgid "Activate '%s'"
 msgstr "'%s' সক্ৰিয় কৰক"
 
-#: ../gedit/gedit-window.c:2134
+#: ../gedit/gedit-window.c:2072
 msgid "Use Spaces"
 msgstr "শূণ্যস্থান ব্যৱহাৰ কৰক"
 
-#: ../gedit/gedit-window.c:2207
+#: ../gedit/gedit-window.c:2145
 msgid "Tab Width"
 msgstr "টেবৰ প্ৰস্থ"
 
-#: ../gedit/gedit-window.c:2316
+#: ../gedit/gedit-window.c:2254
 msgid "Bracket match is out of range"
 msgstr "বন্ধনী সাদৃশ্য সীমাৰ বাহিৰ"
 
-#: ../gedit/gedit-window.c:2321
+#: ../gedit/gedit-window.c:2259
 msgid "Bracket match not found"
 msgstr "বন্ধনী সাদৃশ্য পোৱা নগল"
 
-#: ../gedit/gedit-window.c:2326
+#: ../gedit/gedit-window.c:2264
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "শাৰী: %d -ত বন্ধনী সাদৃশ্য পোৱা গল"
-
-#: ../gedit/gedit-window.c:4113
-msgid "About gedit"
-msgstr "gedit -ৰ বিষয়ে"
 
 #. ex:set ts=8 noet:
 #: ../plugins/changecase/changecase.plugin.desktop.in.h:1
@@ -2239,30 +2277,30 @@ msgstr "প্ৰতি নিৰ্বাচিত শব্দেৰ অধ্
 
 #. ex:set ts=8 noet:
 #: ../plugins/checkupdate/checkupdate.plugin.desktop.in.h:1
-msgid "Check for latest version of gedit"
-msgstr "gedit-ৰ সৰ্বশেষ সংস্কৰণৰ উপস্থিতি পৰীক্ষা কৰক"
-
-#: ../plugins/checkupdate/checkupdate.plugin.desktop.in.h:2
 msgid "Check update"
 msgstr "আপডেট পৰীক্ষা কৰক"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:270
+#: ../plugins/checkupdate/checkupdate.plugin.desktop.in.h:2
+msgid "Check for latest version of gedit"
+msgstr "gedit-ৰ সৰ্বশেষ সংস্কৰণৰ উপস্থিতি পৰীক্ষা কৰক"
+
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:257
 msgid "There was an error displaying the URI."
 msgstr "URL প্ৰদৰ্শনত এটা ত্ৰুটি হৈছিল।"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:307
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:294
 msgid "_Download"
 msgstr "ডাউনলোড (_D)"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:315
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:302
 msgid "_Ignore Version"
 msgstr "সংস্কৰণ অগ্ৰায্য কৰক (_I)"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:330
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:317
 msgid "There is a new version of gedit"
 msgstr "gedit-ৰ নতুন সংস্কৰণ উপলব্ধ আছে"
 
-#: ../plugins/checkupdate/gedit-check-update-plugin.c:334
+#: ../plugins/checkupdate/gedit-check-update-plugin.c:321
 msgid ""
 "You can download the new version of gedit by clicking on the download button "
 "or ignore that version and wait for a new one"
@@ -2280,7 +2318,13 @@ msgstr "অগ্ৰায্য কৰিব পৰা সংস্কৰণ"
 msgid "Version to ignore until a newer version is released."
 msgstr "অগ্ৰায্য কৰিব লগা সংস্কৰণ যেতিয়া লৈকে এটা নতুন সংস্কৰণৰ উন্মেচন নহয়।"
 
+#. ex:set ts=8 noet:
 #: ../plugins/docinfo/docinfo.plugin.desktop.in.h:1
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
+msgid "Document Statistics"
+msgstr "আলেখ্যন সংক্ৰান্ত পৰিসংখ্যান"
+
+#: ../plugins/docinfo/docinfo.plugin.desktop.in.h:2
 msgid ""
 "Analyzes the current document and reports the number of words, lines, "
 "characters and non-space characters in it."
@@ -2288,88 +2332,104 @@ msgstr ""
 "বৰ্ত্তমান আলেখ্যনত উপস্থিত শব্দ, শাৰী, অক্ষৰ আৰু শূণ্যস্থান ব্যতীত অন্য অক্ষৰৰ সংখ্যা গণনা "
 "আৰু প্ৰদৰ্শন কৰি  ।"
 
-#: ../plugins/docinfo/docinfo.plugin.desktop.in.h:2
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:6
-msgid "Document Statistics"
-msgstr "আলেখ্যন সংক্ৰান্ত পৰিসংখ্যান"
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:427
+msgid "_Document Statistics"
+msgstr "আলেখ্যন সংক্ৰান্ত পৰিসংখ্যান (_D)"
 
-#. ex:ts=4:et:
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
-#: ../plugins/externaltools/tools/tools.ui.h:1
-#: ../plugins/snippets/snippets/snippets.ui.h:1
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:1
-msgid "    "
-msgstr "    "
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:429
+msgid "Get statistical information on the current document"
+msgstr "বৰ্ত্তমান আলেখ্যনৰ বিভিন্ন পৰিসংখ্যান প্ৰাপ্ত কৰক"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:2
-msgid "Bytes"
-msgstr "বাইট"
+msgid "_Update"
+msgstr "আপডেট কৰক (_U)"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:3
-msgid "Characters (no spaces)"
-msgstr "অক্ষৰ (শূণ্যস্থানবিহীন)"
+msgid "File Name"
+msgstr "নথিপত্ৰৰ নাম"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:4
-msgid "Characters (with spaces)"
-msgstr "অক্ষৰ (শূণ্যস্থান সহ)"
+#: ../plugins/externaltools/tools/tools.ui.h:27
+#: ../plugins/snippets/snippets/snippets.ui.h:13
+msgid "    "
+msgstr "    "
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:5
 msgid "Document"
 msgstr "আলেখ্যন"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:7
-msgid "File Name"
-msgstr "নথিপত্ৰৰ নাম"
-
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:8
-msgid "Lines"
-msgstr "শাৰী"
-
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:9
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:6
 msgid "Selection"
 msgstr "নিৰ্ব্বাচন"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:10
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:7
+msgid "Lines"
+msgstr "শাৰী"
+
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:8
 msgid "Words"
 msgstr "শব্দ"
 
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:9
+msgid "Characters (with spaces)"
+msgstr "অক্ষৰ (শূণ্যস্থান সহ)"
+
+#: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:10
+msgid "Characters (no spaces)"
+msgstr "অক্ষৰ (শূণ্যস্থানবিহীন)"
+
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:11
-msgid "_Update"
-msgstr "আপডেট কৰক (_U)"
+msgid "Bytes"
+msgstr "বাইট"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
-msgid "_Document Statistics"
-msgstr "আলেখ্যন সংক্ৰান্ত পৰিসংখ্যান (_D)"
+#: ../plugins/externaltools/data/build.desktop.in.h:1
+msgid "Build"
+msgstr "বিল্ড"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
-msgid "Get statistical information on the current document"
-msgstr "বৰ্ত্তমান আলেখ্যনৰ বিভিন্ন পৰিসংখ্যান প্ৰাপ্ত কৰক"
+#: ../plugins/externaltools/data/build.desktop.in.h:2
+msgid "Run \"make\" in the document directory"
+msgstr "আলেখ্যন ধাৰণকাৰী পঞ্জিকাত \"make\" আদেশ সঞ্চালন কৰক"
 
-#. ex:set ts=8 noet:
-#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
 #: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:1
-msgid "Open a terminal in the document location"
-msgstr "বৰ্ত্তমানে খোলা পঞ্জিকাতে টাৰ্মিনাল খোলা হ'ব"
-
-#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:2
-#: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:2
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
 msgid "Open terminal here"
 msgstr "এই স্থানত টাৰ্মিনাল খোলা হ'ব"
 
-#: ../plugins/externaltools/externaltools.plugin.desktop.in.h:1
-msgid "Execute external commands and shell scripts."
-msgstr "বাহিৰৰ আদেশ আৰু শেল স্ক্ৰিপ্ট সঞ্চালন কৰা হ'ব  ।"
+#: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:2
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:2
+msgid "Open a terminal in the document location"
+msgstr "বৰ্ত্তমানে খোলা পঞ্জিকাতে টাৰ্মিনাল খোলা হ'ব"
 
-#: ../plugins/externaltools/externaltools.plugin.desktop.in.h:2
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:1
+msgid "Remove trailing spaces"
+msgstr "অন্তে উপস্থিত শূণ্যস্থান আঁতৰুৱা ফেলা হ'ব"
+
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:2
+msgid "Remove useless trailing spaces in your file"
+msgstr "নথিপত্ৰত উপস্থিত অপ্ৰয়োজনীয় অন্তে শূণ্যস্থান আঁতৰুৱা ফেলুন"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:1
+msgid "Run command"
+msgstr "আদেশ সঞ্চালন"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:2
+msgid "Execute a custom command and put its output in a new document"
+msgstr "স্বনিৰ্ধাৰিত আদেশ প্ৰয়োগ কৰি উৎপন্ন ফলাফল এটা নতুন আলেখ্যনত যোগ কৰক"
+
+#: ../plugins/externaltools/externaltools.plugin.desktop.in.h:1
 msgid "External Tools"
 msgstr "বাহিৰৰ সৰঞ্জাম"
 
-#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
-msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
-msgstr "এটা Pango ফন্ট নাম। উদাহৰণসমূহ হল \"Sans 12\" বা \"Monospace Bold 14\"।"
+#: ../plugins/externaltools/externaltools.plugin.desktop.in.h:2
+msgid "Execute external commands and shell scripts."
+msgstr "বাহিৰৰ আদেশ আৰু শেল স্ক্ৰিপ্ট সঞ্চালন কৰা হ'ব  ।"
 
-#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:1
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:5
+msgid "Whether to use the system font"
+msgstr "চিস্টেম ফন্ট ব্যৱহাৰ কৰা হব নে"
+
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:2
 msgid ""
 "If true, the external tools will use the desktop-global standard font if "
 "it's monospace (and the most similar font it can come up with otherwise)."
@@ -2379,8 +2439,8 @@ msgstr ""
 
 #: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:4
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:8
-msgid "Whether to use the system font"
-msgstr "চিস্টেম ফন্ট ব্যৱহাৰ কৰা হব নে"
+msgid "A Pango font name. Examples are \"Sans 12\" or \"Monospace Bold 14\"."
+msgstr "এটা Pango ফন্ট নাম। উদাহৰণসমূহ হল \"Sans 12\" বা \"Monospace Bold 14\"।"
 
 #: ../plugins/externaltools/tools/capture.py:92
 #, python-format
@@ -2403,31 +2463,31 @@ msgstr "সম্পন্ন  ।"
 msgid "Exited"
 msgstr "প্ৰস্থান কৰা হৈছে"
 
-#: ../plugins/externaltools/tools/manager.py:136
+#: ../plugins/externaltools/tools/manager.py:144
 msgid "All languages"
 msgstr "সকলো ভাষা"
 
-#: ../plugins/externaltools/tools/manager.py:541
-#: ../plugins/externaltools/tools/manager.py:545
-#: ../plugins/externaltools/tools/manager.py:869
-#: ../plugins/externaltools/tools/tools.ui.h:4
+#: ../plugins/externaltools/tools/manager.py:550
+#: ../plugins/externaltools/tools/manager.py:554
+#: ../plugins/externaltools/tools/manager.py:880
+#: ../plugins/externaltools/tools/tools.ui.h:28
 msgid "All Languages"
 msgstr "সকলো ভাষা"
 
-#: ../plugins/externaltools/tools/manager.py:652
+#: ../plugins/externaltools/tools/manager.py:667
 msgid "New tool"
 msgstr "নতুন সৰঞ্জাম"
 
-#: ../plugins/externaltools/tools/manager.py:783
+#: ../plugins/externaltools/tools/manager.py:798
 #, python-format
 msgid "This accelerator is already bound to %s"
 msgstr "চিহ্নিত অ্যাকসেলেৰেটৰ %s'ৰ সাথে বৰ্ত্তমানে সংযুক্ত "
 
-#: ../plugins/externaltools/tools/manager.py:834
+#: ../plugins/externaltools/tools/manager.py:842
 msgid "Type a new accelerator, or press Backspace to clear"
 msgstr "নতুন অ্যাকসেলেৰেটৰ লিখুন, বা বেক-স্পেস পে আঁতৰুৱা ফেলুন"
 
-#: ../plugins/externaltools/tools/manager.py:836
+#: ../plugins/externaltools/tools/manager.py:844
 msgid "Type a new accelerator"
 msgstr "নতুন অ্যাকসেলেৰেটৰ লিখুন"
 
@@ -2435,246 +2495,219 @@ msgstr "নতুন অ্যাকসেলেৰেটৰ লিখুন"
 msgid "Stopped."
 msgstr "স্থগিত  ।"
 
-#: ../plugins/externaltools/tools/tools.ui.h:2
-msgid "Add Tool"
-msgstr "সঁজুলি যোগ কৰক"
-
-#: ../plugins/externaltools/tools/tools.ui.h:3
-#| msgid "A Brand New Tool"
-msgid "Add a new tool"
-msgstr "এটা নতুন সঁজুলি যোগ কৰক"
-
-#: ../plugins/externaltools/tools/tools.ui.h:5
+#. ex:ts=4:et:
+#: ../plugins/externaltools/tools/tools.ui.h:1
 msgid "All documents"
 msgstr "সৰ্বধৰনৰ আলেখ্যন"
 
-#: ../plugins/externaltools/tools/tools.ui.h:6
+#: ../plugins/externaltools/tools/tools.ui.h:2
 msgid "All documents except untitled ones"
 msgstr "নামবিহীন আলেখ্যন ব্যতীত অন্যান্য সৰ্বধৰনৰ আলেখ্যন"
 
+#: ../plugins/externaltools/tools/tools.ui.h:3
+msgid "Local files only"
+msgstr "অকল স্থানীয় নথিপত্ৰ"
+
+#: ../plugins/externaltools/tools/tools.ui.h:4
+msgid "Remote files only"
+msgstr "অকল দূৰবৰ্তী নথিপত্ৰ"
+
+#: ../plugins/externaltools/tools/tools.ui.h:5
+msgid "Untitled documents only"
+msgstr "অকল নামবিহীন আলেখ্যন"
+
+#: ../plugins/externaltools/tools/tools.ui.h:6
+msgid "Nothing"
+msgstr "শূণ্য"
+
 #: ../plugins/externaltools/tools/tools.ui.h:7
-msgid "Append to current document"
-msgstr "বৰ্ত্তমান আলেখ্যনৰ শেষে"
-
-#: ../plugins/externaltools/tools/tools.ui.h:8
-msgid "Create new document"
-msgstr "নতুন আলেখ্যন নিৰ্মাণ কৰক"
-
-#: ../plugins/externaltools/tools/tools.ui.h:9
 msgid "Current document"
 msgstr "বৰ্ত্তমান আলেখ্যন"
+
+#: ../plugins/externaltools/tools/tools.ui.h:8
+msgid "Current selection"
+msgstr "বৰ্ত্তমান নিৰ্ব্বাচন"
+
+#: ../plugins/externaltools/tools/tools.ui.h:9
+msgid "Current selection (default to document)"
+msgstr "বৰ্তমান নিৰ্বাচন (নথিপত্ৰক অবিকল্পিত ধাৰ্য কৰা হয়)"
 
 #: ../plugins/externaltools/tools/tools.ui.h:10
 msgid "Current line"
 msgstr "বৰ্ত্তমান শাৰী"
 
 #: ../plugins/externaltools/tools/tools.ui.h:11
-msgid "Current selection"
-msgstr "বৰ্ত্তমান নিৰ্ব্বাচন"
-
-#: ../plugins/externaltools/tools/tools.ui.h:12
-msgid "Current selection (default to document)"
-msgstr "বৰ্তমান নিৰ্বাচন (নথিপত্ৰক অবিকল্পিত ধাৰ্য কৰা হয়)"
-
-#: ../plugins/externaltools/tools/tools.ui.h:13
 msgid "Current word"
 msgstr "বৰ্ত্তমান শব্দ"
 
-#: ../plugins/externaltools/tools/tools.ui.h:14
+#: ../plugins/externaltools/tools/tools.ui.h:12
 msgid "Display in bottom pane"
 msgstr "নিম্নবৰ্তী পেইনে প্ৰদৰ্শন কৰা হ'ব"
 
+#: ../plugins/externaltools/tools/tools.ui.h:13
+msgid "Create new document"
+msgstr "নতুন আলেখ্যন নিৰ্মাণ কৰক"
+
+#: ../plugins/externaltools/tools/tools.ui.h:14
+msgid "Append to current document"
+msgstr "বৰ্ত্তমান আলেখ্যনৰ শেষে"
+
 #: ../plugins/externaltools/tools/tools.ui.h:15
-msgid "Insert at cursor position"
-msgstr "কাৰ্ছাৰৰ অৱস্থানত সন্নিবেশ কৰা হ'ব"
-
-#: ../plugins/externaltools/tools/tools.ui.h:16
-msgid "Local files only"
-msgstr "অকল স্থানীয় নথিপত্ৰ"
-
-#: ../plugins/externaltools/tools/tools.ui.h:17
-#| msgid "Manage _External Tools..."
-msgid "Manage External Tools"
-msgstr "বহিৰ্তম সঁজুলিসমূহ ব্যৱস্থাপনা কৰক"
-
-#: ../plugins/externaltools/tools/tools.ui.h:18
-msgid "Nothing"
-msgstr "শূণ্য"
-
-#: ../plugins/externaltools/tools/tools.ui.h:19
-msgid "Remote files only"
-msgstr "অকল দূৰবৰ্তী নথিপত্ৰ"
-
-#: ../plugins/externaltools/tools/tools.ui.h:20
-msgid "Remove Tool"
-msgstr "সঁজুলি আতৰাওক"
-
-#: ../plugins/externaltools/tools/tools.ui.h:21
-#| msgid "Revert selected snippet"
-msgid "Remove selected tool"
-msgstr "নিৰ্বাচিত সঁজুলি আতৰাওক"
-
-#: ../plugins/externaltools/tools/tools.ui.h:22
 msgid "Replace current document"
 msgstr "বৰ্ত্তমান আলেখ্যন প্ৰতিস্থাপন কৰক"
 
-#: ../plugins/externaltools/tools/tools.ui.h:23
+#: ../plugins/externaltools/tools/tools.ui.h:16
 msgid "Replace current selection"
 msgstr "নিৰ্বাচিত অংশ প্ৰতিস্থাপন কৰক"
 
-#: ../plugins/externaltools/tools/tools.ui.h:24
-#| msgid "_Revert"
-msgid "Revert Tool"
-msgstr "সঁজুলি উলোটাওক"
+#: ../plugins/externaltools/tools/tools.ui.h:17
+msgid "Insert at cursor position"
+msgstr "কাৰ্ছাৰৰ অৱস্থানত সন্নিবেশ কৰা হ'ব"
 
-#: ../plugins/externaltools/tools/tools.ui.h:25
-#| msgid "_Revert"
+#: ../plugins/externaltools/tools/tools.ui.h:18
+msgid "Manage External Tools"
+msgstr "বহিৰ্তম সঁজুলিসমূহ ব্যৱস্থাপনা কৰক"
+
+#: ../plugins/externaltools/tools/tools.ui.h:19
+msgid "_Tools:"
+msgstr "সৰঞ্জাম: (_T)"
+
+#: ../plugins/externaltools/tools/tools.ui.h:20
+msgid "Add a new tool"
+msgstr "এটা নতুন সঁজুলি যোগ কৰক"
+
+#: ../plugins/externaltools/tools/tools.ui.h:21
+msgid "Add Tool"
+msgstr "সঁজুলি যোগ কৰক"
+
+#: ../plugins/externaltools/tools/tools.ui.h:22
+msgid "Remove selected tool"
+msgstr "নিৰ্বাচিত সঁজুলি আতৰাওক"
+
+#: ../plugins/externaltools/tools/tools.ui.h:23
+msgid "Remove Tool"
+msgstr "সঁজুলি আতৰাওক"
+
+#: ../plugins/externaltools/tools/tools.ui.h:24
 msgid "Revert tool"
 msgstr "সঁজুলি উলোটাওক"
 
+#: ../plugins/externaltools/tools/tools.ui.h:25
+msgid "Revert Tool"
+msgstr "সঁজুলি উলোটাওক"
+
 #: ../plugins/externaltools/tools/tools.ui.h:26
-msgid "Untitled documents only"
-msgstr "অকল নামবিহীন আলেখ্যন"
-
-#: ../plugins/externaltools/tools/tools.ui.h:27
-msgid "_Applicability:"
-msgstr "প্ৰয়োজনীয়তা: (_A)"
-
-#: ../plugins/externaltools/tools/tools.ui.h:28
-#: ../plugins/snippets/snippets/snippets.ui.h:16
+#: ../plugins/snippets/snippets/snippets.ui.h:11
 msgid "_Edit:"
 msgstr "সম্পাদন:"
 
 #: ../plugins/externaltools/tools/tools.ui.h:29
-msgid "_Input:"
-msgstr "ইনপুট:(_I)"
+msgid "_Applicability:"
+msgstr "প্ৰয়োজনীয়তা: (_A)"
 
 #: ../plugins/externaltools/tools/tools.ui.h:30
 msgid "_Output:"
 msgstr "আউটপুট: (_O)"
 
 #: ../plugins/externaltools/tools/tools.ui.h:31
+msgid "_Input:"
+msgstr "ইনপুট:(_I)"
+
+#: ../plugins/externaltools/tools/tools.ui.h:32
 msgid "_Save:"
 msgstr "সংৰক্ষণ: (_S)"
 
-#: ../plugins/externaltools/tools/tools.ui.h:32
-msgid "_Shortcut Key:"
-msgstr "শৰ্টকাট-কি:(_S)"
-
 #: ../plugins/externaltools/tools/tools.ui.h:33
-msgid "_Tools:"
-msgstr "সৰঞ্জাম: (_T)"
+#| msgid "_Shortcut Key:"
+msgid "Shortcut _Key:"
+msgstr "শৰ্টকাট কি (_K):"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:176
+#: ../plugins/externaltools/tools/windowactivatable.py:179
 msgid "Manage _External Tools..."
 msgstr "বহিস্থিত সৰঞ্জাম পৰিচালনা..(_E)"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:177
+#: ../plugins/externaltools/tools/windowactivatable.py:180
 msgid "Opens the External Tools Manager"
 msgstr "বাহিৰৰ সৰঞ্জাম পৰিচালনব্যৱস্থা খোলে"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:180
+#: ../plugins/externaltools/tools/windowactivatable.py:183
 msgid "External _Tools"
 msgstr "বহিস্থিত সৰঞ্জাম (_T)"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:181
+#: ../plugins/externaltools/tools/windowactivatable.py:184
 msgid "External tools"
 msgstr "বহিস্থিত সৰঞ্জাম"
 
-#: ../plugins/externaltools/tools/windowactivatable.py:215
+#: ../plugins/externaltools/tools/windowactivatable.py:218
 msgid "Shell Output"
 msgstr "শেলৰ পৰা প্ৰাপ্ত আউটপুট"
 
 #. ex:ts=4:et:
-#: ../plugins/externaltools/data/build.desktop.in.h:1
-msgid "Build"
-msgstr "বিল্ড"
-
-#: ../plugins/externaltools/data/build.desktop.in.h:2
-msgid "Run \"make\" in the document directory"
-msgstr "আলেখ্যন ধাৰণকাৰী পঞ্জিকাত \"make\" আদেশ সঞ্চালন কৰক"
-
-#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:1
-msgid "Remove trailing spaces"
-msgstr "অন্তে উপস্থিত শূণ্যস্থান আঁতৰুৱা ফেলা হ'ব"
-
-#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:2
-msgid "Remove useless trailing spaces in your file"
-msgstr "নথিপত্ৰত উপস্থিত অপ্ৰয়োজনীয় অন্তে শূণ্যস্থান আঁতৰুৱা ফেলুন"
-
-#: ../plugins/externaltools/data/run-command.desktop.in.h:1
-msgid "Execute a custom command and put its output in a new document"
-msgstr "স্বনিৰ্ধাৰিত আদেশ প্ৰয়োগ কৰি উৎপন্ন ফলাফল এটা নতুন আলেখ্যনত যোগ কৰক"
-
-#: ../plugins/externaltools/data/run-command.desktop.in.h:2
-msgid "Run command"
-msgstr "আদেশ সঞ্চালন"
-
 #: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:1
-msgid "Easy file access from the side panel"
-msgstr "কাষৰ পেনেলৰ পৰা নথিপত্ৰ ব্যৱহাৰৰে সুবিধাজনক প্ৰণালী"
-
-#: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:2
 msgid "File Browser Panel"
 msgstr "নথিপত্ৰ ব্ৰাউছাৰ পেনেল"
 
-#: ../plugins/filebrowser/gedit-file-bookmarks-store.c:243
+#: ../plugins/filebrowser/filebrowser.plugin.desktop.in.h:2
+msgid "Easy file access from the side panel"
+msgstr "কাষৰ পেনেলৰ পৰা নথিপত্ৰ ব্যৱহাৰৰে সুবিধাজনক প্ৰণালী"
+
+#: ../plugins/filebrowser/gedit-file-bookmarks-store.c:239
 msgid "File System"
 msgstr "নথিপত্ৰৰপ্ৰণালী"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:577
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:558
 msgid "_Set root to active document"
 msgstr "সক্ৰিয় আলেখ্যন অনুসাৰে root ধাৰ্য কৰা হ'ব (_S"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:579
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:560
 msgid "Set the root to the active document location"
 msgstr "বৰ্ত্তমানে সক্ৰিয় অৱস্থানত root নিৰ্ধাৰণ কৰা হ'ব"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:584
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:565
 msgid "_Open terminal here"
 msgstr "এই স্থানত টাৰ্মিনাল খোলা হ'ব (_O)"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:586
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:567
 msgid "Open a terminal at the currently opened directory"
 msgstr "বৰ্ত্তমানে খোলা পঞ্জিকাতে টাৰ্মিনাল খোলা হ'ব"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:724
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:705
 msgid "File Browser"
 msgstr "নথিপত্ৰ ব্ৰাউজাৰ"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:867
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:848
 msgid "An error occurred while creating a new directory"
 msgstr "নতুন পঞ্জিকা নিৰ্মাণৰ সময় ত্ৰু উৎ‌পন্ন হৈছে  ।"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:870
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:851
 msgid "An error occurred while creating a new file"
 msgstr "নতুন নথিপত্ৰ নিৰ্ব্বাচনৰ সময় ত্ৰু উৎ‌পন্ন হৈছে  ।"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:873
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:854
 msgid "An error occurred while renaming a file or directory"
 msgstr "নিৰ্বাচিত আদেশ চালানোৰ সময় ত্ৰু উৎ‌পন্ন হৈছে  ।"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:876
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:857
 msgid "An error occurred while deleting a file or directory"
 msgstr "নথিপত্ৰ বা পঞ্জিকা আঁতৰুৱা ফেলাৰ সময় ত্ৰু উৎ‌পন্ন হৈছে  ।"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:879
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:860
 msgid "An error occurred while opening a directory in the file manager"
 msgstr "নথিপত্ৰ পৰিচালনব্যৱস্থাত এটা পঞ্জিকা খোলাৰ সময় সমস্যা উৎপন্ন হৈছে"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:882
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:863
 msgid "An error occurred while setting a root directory"
 msgstr "প্ৰধান পঞ্জিকা (root) সময় ত্ৰু উৎ‌পন্ন হৈছে  ।"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:885
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:866
 msgid "An error occurred while loading a directory"
 msgstr "পঞ্জিকা লোড কৰাৰ সময় সমস্যা উৎপন্ন হৈছে"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:888
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:869
 msgid "An error occurred"
 msgstr "সমস্যা উৎপন্ন হৈছে"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1104
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1085
 msgid ""
 "Cannot move file to trash, do you\n"
 "want to delete permanently?"
@@ -2682,25 +2715,25 @@ msgstr ""
 "আবৰ্জনাৰ বাক্সে নথিপত্ৰ সৰিয়ে নেওয়া নাযায়,\n"
 "এই মুহূৰ্তে আঁতৰুৱা ফেলতে ইচ্ছুক কি?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1109
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1090
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
 msgstr "\"%s\" নথিপত্ৰ আবৰ্জনাৰ বাক্সে সৰিয়ে নেওয়া সম্ভৱ নহয়  ।"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1114
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1095
 msgid "The selected files cannot be moved to the trash."
 msgstr "নিৰ্বাচিত নথিপত্ৰসমূহ আবৰ্জনাৰ বাক্সে সৰিয়ে নেওয়া সম্ভৱ নহয়  ।"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1146
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1127
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
 msgstr "আপুনি স্থায়ীভাবে \"%s\" আঁতৰাবলৈ নিশ্চিত নে?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1151
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1132
 msgid "Are you sure you want to permanently delete the selected files?"
 msgstr "নিৰ্বাচিত নথিপত্ৰ স্থায়ীভাবো আঁতৰাবলৈ আপুনি নিশ্চিত নে ?"
 
-#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1154
+#: ../plugins/filebrowser/gedit-file-browser-plugin.c:1135
 msgid "If you delete an item, it is permanently lost."
 msgstr "হ'লো."
 
@@ -2742,180 +2775,188 @@ msgstr ""
 "নতুন পঞ্জিকা বৰ্ত্তমানে ফিল্টাৰ কৰা হৈছে  । পঞ্জিকা প্ৰদৰ্শন কৰাৰ বাবে আপোনাৰ "
 "ফিল্টাৰৰ বৈশিষ্ট্য পৰিবৰ্তন কৰক"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:743
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:733
 msgid "Bookmarks"
 msgstr "বুকমাৰ্ক"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:831
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:821
 msgid "_Filter"
 msgstr "ফিল্টাৰ (_F)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:836
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:826
 msgid "_Move to Trash"
 msgstr "আবৰ্জনাৰ বাকচত লৈ যাওক (_M)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:837
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
 msgid "Move selected file or folder to trash"
 msgstr "নিৰ্বাচিত নথিপত্ৰ বা ফোল্ডাৰ আবৰ্জনাৰ বাক্সে স্থানান্তৰ কৰা হ'ব"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:839
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:829
 msgid "_Delete"
 msgstr "আঁতৰুৱা ফেলুন (_D)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:840
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
 msgid "Delete selected file or folder"
 msgstr "নিৰ্বাচিত নথিপত্ৰ বা ফোল্ডাৰ আঁতৰুৱা ফেলুন"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:847
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:837
 msgid "Open selected file"
 msgstr "বাচি লোৱা নথিপত্ৰ খোলক"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:843
 msgid "Up"
 msgstr "ওপৰত"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:854
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
 msgid "Open the parent folder"
 msgstr "ঊৰ্ধ্বস্থ ফোল্ডাৰ খোলক"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:849
 msgid "_New Folder"
 msgstr "নতুন ফোল্ডাৰ (_N)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:860
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
 msgid "Add new empty folder"
 msgstr "এটা নতুন ফাঁকা ফোল্ডাৰ যোগ কৰক"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:862
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:852
 msgid "New F_ile"
 msgstr "নতুন নথিপত্ৰ (_i)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:863
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
 msgid "Add new empty file"
 msgstr "এটা নতুন ফাঁকা নথিপত্ৰ যোগ কৰক"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:858
 msgid "_Rename"
 msgstr "নাম পৰিবৰ্তন কৰক (_R)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:869
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
 msgid "Rename selected file or folder"
 msgstr "নিৰ্বাচিত নথিপত্ৰ বা ফোল্ডাৰৰ নাম পৰিবৰ্তন কৰক"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:875
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:865
 msgid "_Previous Location"
 msgstr "পূৰ্ববৰ্তী অৱস্থান (_P)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:877
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:867
 msgid "Go to the previous visited location"
 msgstr "পূৰ্বে পৰিদৰ্শিত অৱস্থানত চলুন"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:879
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:869
 msgid "_Next Location"
 msgstr "পৰবৰ্তী অৱস্থান (_N)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:880
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
 msgid "Go to the next visited location"
 msgstr "পৰবৰ্তী পৰিদৰ্শিত অৱস্থানত চলুন"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:881
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
 msgid "Re_fresh View"
 msgstr "নতুন কৰি প্ৰদৰ্শন (_f)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
 msgid "Refresh the view"
 msgstr "নতুন কৰি প্ৰদৰ্শন"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:883
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:901
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:891
 msgid "_View Folder"
 msgstr "ফোল্ডাৰ প্ৰদৰ্শন (_V)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:884
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:902
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
 msgid "View folder in file manager"
 msgstr "নথিপত্ৰ পৰিচালন ব্যৱস্থায় ফোল্ডাৰ প্ৰদৰ্শন কৰা হ'ব"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:891
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:881
 msgid "Show _Hidden"
 msgstr "আড়াল কৰা নথিপত্ৰ আৰু পঞ্জিকা প্ৰদৰ্শন (_H)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
 msgid "Show hidden files and folders"
 msgstr "আড়াল কৰা নথিপত্ৰ আৰু ফোল্ডাৰ প্ৰদৰ্শন কৰা হ'ব"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:894
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:884
 msgid "Show _Binary"
 msgstr "বাইনাৰি নথিপত্ৰ আৰু পঞ্জিকা প্ৰদৰ্শন (_B)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:895
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
 msgid "Show binary files"
 msgstr "বাইনাৰি নথিপত্ৰ আৰু পঞ্জিকা প্ৰদৰ্শন কৰা হ'ব"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1028
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1037
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1058
-msgid "Previous location"
-msgstr "পূৰ্ববৰ্তী অৱস্থান"
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1202
+#| msgid "_Match Filename"
+msgid "Match Filename"
+msgstr "নথিপত্ৰৰ নাম মিলাই চাওক"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1030
-msgid "Go to previous location"
-msgstr "পূৰ্ববৰ্তী অৱস্থানত চলুন"
-
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1032
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1053
-msgid "Go to a previously opened location"
-msgstr "পূৰ্বে পৰিদৰ্শিত অৱস্থানত চলুন"
-
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1049
-msgid "Next location"
-msgstr "পৰবৰ্তী অৱস্থান"
-
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1051
-msgid "Go to next location"
-msgstr "পৰবৰ্তী অৱস্থানত চলুন"
-
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1261
-msgid "_Match Filename"
-msgstr "নথিপত্ৰৰ নাম মিলোৱা হ'ব (_M)"
-
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2187
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2004
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "তুলি লোৱা আয়তনৰ কাৰণো কোনো তুলি লোৱা বস্তু নাই: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2264
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2081
 #, c-format
 msgid "Could not open media: %s"
 msgstr "মিডিয়া খুলিব নোৱাৰি: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2311
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2128
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "আয়তন তুলি ল'ব নোৱাৰি: %s"
 
 #. ex:ts=8:noet:
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:1
-msgid "Enable Restore of Remote Locations"
-msgstr "দূৰবৰ্তী অৱস্থান পুনৰুদ্ধাৰৰ বৈশিষ্ট্য সক্ৰিয় কৰক"
+msgid "Open With Tree View"
+msgstr "ট্ৰি অনুযায়ী প্ৰদৰ্শনত খোলা হ'ব"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:2
-msgid "File Browser Filter Mode"
-msgstr "নথিপত্ৰ ব্ৰাউজাৰ ফিল্টাৰৰ ধৰণ"
+msgid ""
+"Open the tree view when the file browser plugin gets loaded instead of the "
+"bookmarks view"
+msgstr ""
+"নথিপত্ৰ ব্ৰাউজাৰ প্লাগ-ইন লোড কৰা হ'লে বুকমাৰ্ক প্ৰদৰ্শনৰ পৰিবৰ্তে ট্ৰি অনুযায়ী প্ৰদৰ্শন "
+"কৰা হ'ব"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:3
-msgid "File Browser Filter Pattern"
-msgstr "নথিপত্ৰ ব্ৰাউজাৰ ফিল্টাৰৰ বিন্যাস"
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:4
 msgid "File Browser Root Directory"
 msgstr "নথিপত্ৰ ব্ৰাউজাৰৰ প্ৰধান (root) পঞ্জিকা"
+
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:4
+msgid ""
+"The file browser root directory to use when loading the file browser plugin "
+"and onload/tree_view is TRUE."
+msgstr ""
+"নথিপত্ৰ ব্ৰাউজাৰ প্লাগ-ইন লোড কৰাৰ সময় আৰু onload/tree_view'ৰ মান TRUE (সত্য) "
+"হ'লে ব্যৱহাৰৰ বাবে চিহ্নিত নথিপত্ৰ ব্ৰাউজাৰৰ root পঞ্জিকা  ।"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:5
 msgid "File Browser Virtual Root Directory"
 msgstr "নথিপত্ৰ ব্ৰাউজাৰৰ ভাৰ্চুয়াল root পঞ্জিকা"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:6
+msgid ""
+"The file browser virtual root directory to use when loading the file browser "
+"plugin when onload/tree_view is TRUE. The virtual root must always be below "
+"the actual root."
+msgstr ""
+"নথিপত্ৰ ব্ৰাউজাৰ প্লাগ-ইন লোড কৰাৰ সময় আৰু onload/tree_view'ৰ মান TRUE (সত্য) "
+"হ'লে ব্যৱহাৰৰ বাবে চিহ্নিত নথিপত্ৰ ব্ৰাউজাৰৰ ভাৰ্চুয়াল root পঞ্জিকা  । ভাৰ্চুয়াল root "
+"পঞ্জিকা সৰ্বদা প্ৰকৃত root পঞ্জিকাৰ অধীন হওয়া আৱশ্যক  ।"
+
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:7
+msgid "Enable Restore of Remote Locations"
+msgstr "দূৰবৰ্তী অৱস্থান পুনৰুদ্ধাৰৰ বৈশিষ্ট্য সক্ৰিয় কৰক"
+
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:8
+msgid "Sets whether to enable restoring of remote locations."
+msgstr "দূৰবৰ্তী অৱস্থান পুনৰুদ্ধাৰৰ বৈশিষ্ট্য সক্ৰিয় কৰা হ'ব নে নহয়  সেইটো নিৰ্ধাৰিত হয়  ।"
+
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:9
+msgid "Set Location to First Document"
+msgstr "সৰ্বপ্ৰথম আলেখ্যনr অৱস্থান নিৰ্ধাৰণ কৰক"
+
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:10
 msgid ""
 "If TRUE the file browser plugin will view the directory of the first opened "
 "document given that the file browser hasn't been used yet. (Thus this "
@@ -2926,53 +2967,11 @@ msgstr ""
 "ব্ৰাউজাৰ দ্বাৰা প্ৰথম খোলা পঞ্জিকা প্ৰদৰ্শিত হ'ব  । (অৰ্থাৎ এইটোমূলত আদেশ-লাইন বা "
 "Nautilus প্ৰভৃতি সহযোগ খোলা আলেখ্যনৰ ক্ষেত্ৰত প্ৰযোজ্য)"
 
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:7
-msgid "Open With Tree View"
-msgstr "ট্ৰি অনুযায়ী প্ৰদৰ্শনত খোলা হ'ব"
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:8
-msgid ""
-"Open the tree view when the file browser plugin gets loaded instead of the "
-"bookmarks view"
-msgstr ""
-"নথিপত্ৰ ব্ৰাউজাৰ প্লাগ-ইন লোড কৰা হ'লে বুকমাৰ্ক প্ৰদৰ্শনৰ পৰিবৰ্তে ট্ৰি অনুযায়ী প্ৰদৰ্শন "
-"কৰা হ'ব"
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:9
-msgid "Set Location to First Document"
-msgstr "সৰ্বপ্ৰথম আলেখ্যনr অৱস্থান নিৰ্ধাৰণ কৰক"
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:10
-msgid "Sets whether to enable restoring of remote locations."
-msgstr "দূৰবৰ্তী অৱস্থান পুনৰুদ্ধাৰৰ বৈশিষ্ট্য সক্ৰিয় কৰা হ'ব নে নহয়  সেইটো নিৰ্ধাৰিত হয়  ।"
-
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:11
-msgid ""
-"The file browser root directory to use when loading the file browser plugin "
-"and onload/tree_view is TRUE."
-msgstr ""
-"নথিপত্ৰ ব্ৰাউজাৰ প্লাগ-ইন লোড কৰাৰ সময় আৰু onload/tree_view'ৰ মান TRUE (সত্য) "
-"হ'লে ব্যৱহাৰৰ বাবে চিহ্নিত নথিপত্ৰ ব্ৰাউজাৰৰ root পঞ্জিকা  ।"
+msgid "File Browser Filter Mode"
+msgstr "নথিপত্ৰ ব্ৰাউজাৰ ফিল্টাৰৰ ধৰণ"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:12
-msgid ""
-"The file browser virtual root directory to use when loading the file browser "
-"plugin when onload/tree_view is TRUE. The virtual root must always be below "
-"the actual root."
-msgstr ""
-"নথিপত্ৰ ব্ৰাউজাৰ প্লাগ-ইন লোড কৰাৰ সময় আৰু onload/tree_view'ৰ মান TRUE (সত্য) "
-"হ'লে ব্যৱহাৰৰ বাবে চিহ্নিত নথিপত্ৰ ব্ৰাউজাৰৰ ভাৰ্চুয়াল root পঞ্জিকা  । ভাৰ্চুয়াল root "
-"পঞ্জিকা সৰ্বদা প্ৰকৃত root পঞ্জিকাৰ অধীন হওয়া আৱশ্যক  ।"
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:13
-msgid ""
-"The filter pattern to filter the file browser with. This filter works on top "
-"of the filter_mode."
-msgstr ""
-"নথিপত্ৰ ব্ৰাউজাৰ ফিল্টাৰ কৰাৰ বাবে ব্যৱহৃত ফিল্টাৰ বিন্যাস  । চিহ্নিত ফোল্ডাৰ "
-"filter_mode'ৰ উপৰ সঞ্চালিত হয়  ।"
-
-#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:14
 msgid ""
 "This value determines what files get filtered from the file browser. Valid "
 "values are: none (filter nothing), hide-hidden (filter hidden files) and "
@@ -2982,23 +2981,43 @@ msgstr ""
 "হ'ল: none (ফিল্টাৰ প্ৰয়োগ কৰা ন'হ'ব), hide-hidden (অকল লুকাই থোৱা নথিপত্ৰসমুহ "
 "ফিল্টাৰ কৰা হ'ব)  আৰু binary (অকল বাইনাৰি নথিপত্ৰসমূহ ফিল্টাৰ কৰা হ'ব)।"
 
-#: ../plugins/modelines/modelines.plugin.desktop.in.h:1
-msgid "Emacs, Kate and Vim-style modelines support for gedit."
-msgstr "gedit'এ ব্যৱহাযোগ্য Emacs, Kate আৰু Vim-ৰ বিন্যাসৰ ধৰণ-লাইন  ।"
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:13
+msgid "File Browser Filter Pattern"
+msgstr "নথিপত্ৰ ব্ৰাউজাৰ ফিল্টাৰৰ বিন্যাস"
 
-#: ../plugins/modelines/modelines.plugin.desktop.in.h:2
+#: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:14
+msgid ""
+"The filter pattern to filter the file browser with. This filter works on top "
+"of the filter_mode."
+msgstr ""
+"নথিপত্ৰ ব্ৰাউজাৰ ফিল্টাৰ কৰাৰ বাবে ব্যৱহৃত ফিল্টাৰ বিন্যাস  । চিহ্নিত ফোল্ডাৰ "
+"filter_mode'ৰ উপৰ সঞ্চালিত হয়  ।"
+
+#: ../plugins/modelines/modelines.plugin.desktop.in.h:1
 msgid "Modelines"
 msgstr "ধৰণ-লাইন"
 
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:2
+#: ../plugins/modelines/modelines.plugin.desktop.in.h:2
+msgid "Emacs, Kate and Vim-style modelines support for gedit."
+msgstr "gedit'এ ব্যৱহাযোগ্য Emacs, Kate আৰু Vim-ৰ বিন্যাসৰ ধৰণ-লাইন  ।"
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "Command Color Text"
 msgstr "কমান্ড ৰঙ লিখনী"
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:2
+msgid "The command color text"
+msgstr "কমান্ড ৰঙ লিখনীটো"
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:3
 msgid "Error Color Text"
 msgstr "ত্ৰুটি ৰঙ লিখনী"
 
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:5
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:4
+msgid "The error color text"
+msgstr "ত্ৰুটিপূৰ্ণ ৰঙৰ লিখনী"
+
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
 msgid ""
 "If true, the terminal will use the desktop-global standard font if it's "
 "monospace (and the most similar font it can come up with otherwise)."
@@ -3006,24 +3025,6 @@ msgstr ""
 "যদি সত্য, টাৰমিনেলে ডেস্কটপ গ্লবেল প্ৰামাণিক ফন্ট ব্যৱহাৰ কৰিব যদি ই মনোস্পেইচ (আৰু "
 "নহলে আটাইতকৈ সাদৃশ্য ফন্ট যোনটো ই দিব পাৰিব)।"
 
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:6
-msgid "The command color text"
-msgstr "কমান্ড ৰঙ লিখনীটো"
-
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
-msgid "The error color text"
-msgstr "ত্ৰুটিপূৰ্ণ ৰঙৰ লিখনী"
-
-#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
-msgid "Interactive Python console standing in the bottom panel"
-msgstr "নিম্নবৰ্তী পেনেলত অৱস্থিত ইন্টাৰেক্ভ python কনসোল"
-
-#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
-#: ../plugins/pythonconsole/pythonconsole/__init__.py:52
-msgid "Python Console"
-msgstr "Python কনসোল"
-
-#. ex:et:ts=4:
 #: ../plugins/pythonconsole/pythonconsole/config.ui.h:1
 msgid "C_ommand color:"
 msgstr "আদেশৰ ৰং (_o):"
@@ -3032,9 +3033,27 @@ msgstr "আদেশৰ ৰং (_o):"
 msgid "_Error color:"
 msgstr "ভুলৰ ৰং (_E):"
 
+#. ex:et:ts=4:
+#: ../plugins/pythonconsole/pythonconsole/__init__.py:52
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:1
+msgid "Python Console"
+msgstr "Python কনসোল"
+
+#: ../plugins/pythonconsole/pythonconsole.plugin.desktop.in.h:2
+msgid "Interactive Python console standing in the bottom panel"
+msgstr "নিম্নবৰ্তী পেনেলত অৱস্থিত ইন্টাৰেক্ভ python কনসোল"
+
+#: ../plugins/quickopen/quickopen/__init__.py:71
+msgid "Quick open"
+msgstr "সঘনে প্ৰদৰ্শন"
+
+#: ../plugins/quickopen/quickopen/__init__.py:72
+msgid "Quickly open documents"
+msgstr "দ্ৰুত নতিপত্ৰ খোলক"
+
 #. ex:ts=4:et:
-#: ../plugins/quickopen/quickopen/popup.py:31
 #: ../plugins/quickopen/quickopen.plugin.desktop.in.h:1
+#: ../plugins/quickopen/quickopen/popup.py:31
 msgid "Quick Open"
 msgstr "সঘনে প্ৰদৰ্শন"
 
@@ -3042,193 +3061,15 @@ msgstr "সঘনে প্ৰদৰ্শন"
 msgid "Quickly open files"
 msgstr "দ্ৰুত নথিপত্ৰ খোলক"
 
-#: ../plugins/snippets/snippets.plugin.desktop.in.h:1
-msgid "Insert often-used pieces of text in a fast way"
-msgstr "নিয়মিতৰূপে ব্যৱহৃত শাৰী দ্ৰুত সন্নিবেশেৰ প্ৰণালী"
+#: ../plugins/quickopen/quickopen/popup.py:72
+msgid "Type to search..."
+msgstr "বিচাৰিবলে টাইপ কৰক..."
 
-#: ../plugins/snippets/snippets.plugin.desktop.in.h:2
+#. ex:ts=8:et:
 #: ../plugins/snippets/snippets/document.py:56
+#: ../plugins/snippets/snippets.plugin.desktop.in.h:1
 msgid "Snippets"
 msgstr "Snippets"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:2
-msgid "Activation"
-msgstr "সক্ৰিয়কৰণ"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:3
-#| msgid "Snippets"
-msgid "Add Snippet"
-msgstr "স্নিপেট যোগ কৰক"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:4
-msgid "Create new snippet"
-msgstr "তৈৰি কৰক"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:5
-#: ../plugins/snippets/snippets/manager.py:399
-msgid "Delete selected snippet"
-msgstr "আঁতৰুৱা ফেলুন"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:6
-#| msgid "Export snippets"
-msgid "Export Snippets"
-msgstr "স্নিপেট এক্সপোৰ্ট কৰক"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:7
-msgid "Export selected snippets"
-msgstr "নিৰ্বাচিত অংশ ৰপ্তানি কৰক"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:8
-#| msgid "Import snippets"
-msgid "Import Snippets"
-msgstr "স্নিপেটসমূহ ইনপোৰ্ট কৰক"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:9
-#: ../plugins/snippets/snippets/manager.py:776
-msgid "Import snippets"
-msgstr "ইম্পোৰ্ট কৰক"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:10
-#| msgid "Manage snippets"
-msgid "Manage Snippets"
-msgstr "স্নিপেটসমূহ ব্যৱস্থাপনা কৰক"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:11
-#| msgid "Snippets"
-msgid "Remove Snippet"
-msgstr "স্নিপেটসমূহ আতৰাওক"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:12
-msgid "S_hortcut key:"
-msgstr "শৰ্টকাট-কি:(_h)"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:13
-msgid "Shortcut key with which the snippet is activated"
-msgstr "হ'লো"
-
-#. self['hbox_tab_trigger'].set_spacing(0)
-#: ../plugins/snippets/snippets/snippets.ui.h:14
-#: ../plugins/snippets/snippets/manager.py:666
-msgid "Single word the snippet is activated with after pressing Tab"
-msgstr "টেব দবোৱাৰ পাছত এটা শব্দৰে সক্ৰিয় হোৱা স্নিপেট"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:15
-msgid "_Drop targets:"
-msgstr "লক্ষ্য ড্ৰ'প কৰক (_D):"
-
-#: ../plugins/snippets/snippets/snippets.ui.h:17
-msgid "_Snippets:"
-msgstr "_Snippets:"
-
-#. "tab" here means the tab key, not the notebook tab!
-#: ../plugins/snippets/snippets/snippets.ui.h:19
-msgid "_Tab trigger:"
-msgstr "Tab-কি ট্ৰিগাৰ:(_T)"
-
-#: ../plugins/snippets/snippets/windowactivatable.py:143
-msgid "Manage _Snippets..."
-msgstr "Snippet পৰিচালনা...(_S)"
-
-#: ../plugins/snippets/snippets/windowactivatable.py:144
-msgid "Manage snippets"
-msgstr "স্নিপেট পৰিচালনা"
-
-#: ../plugins/snippets/snippets/manager.py:43
-msgid "Snippets archive"
-msgstr "Snippets"
-
-#: ../plugins/snippets/snippets/manager.py:62
-msgid "Add a new snippet..."
-msgstr "নতুন স্নিপেট যোগ কৰক..."
-
-#: ../plugins/snippets/snippets/manager.py:115
-msgid "Global"
-msgstr "গ্ৰোবাল"
-
-#: ../plugins/snippets/snippets/manager.py:396
-msgid "Revert selected snippet"
-msgstr "নিৰ্বাচিত অংশ ওভটাই দিয়ক"
-
-#. self['hbox_tab_trigger'].set_spacing(3)
-#: ../plugins/snippets/snippets/manager.py:659
-msgid ""
-"This is not a valid Tab trigger. Triggers can either contain letters or a "
-"single (non-alphanumeric) character like: {, [, etc."
-msgstr ""
-"tab ট্ৰিগাৰ বৈধ নহয়। ট্ৰিগাৰৰ ক্ষেত্ৰত অক্ষৰ  বা অকল এটা আলফা-নিউমেৰিক ব্যতীত অক্ষৰ "
-"যেমন  {, [, প্ৰভৃতি ব্যৱহাৰ কৰা যাব।"
-
-#: ../plugins/snippets/snippets/manager.py:755
-#, python-format
-msgid "The following error occurred while importing: %s"
-msgstr "ৰপ্তানি কৰোঁতে এই ভুল হ'ল: %s"
-
-#: ../plugins/snippets/snippets/manager.py:762
-msgid "Import successfully completed"
-msgstr "আমদানি সফলভাবে সম্পূৰ্ণ হ'ল"
-
-#: ../plugins/snippets/snippets/manager.py:781
-#: ../plugins/snippets/snippets/manager.py:867
-#: ../plugins/snippets/snippets/manager.py:930
-msgid "All supported archives"
-msgstr "সকলো সমৰ্থিত আৰকাইভ"
-
-#: ../plugins/snippets/snippets/manager.py:782
-#: ../plugins/snippets/snippets/manager.py:868
-#: ../plugins/snippets/snippets/manager.py:931
-msgid "Gzip compressed archive"
-msgstr "Gzip এৰে সৰু কৰা আৰ্কাইভ"
-
-#: ../plugins/snippets/snippets/manager.py:783
-#: ../plugins/snippets/snippets/manager.py:869
-#: ../plugins/snippets/snippets/manager.py:932
-msgid "Bzip2 compressed archive"
-msgstr "Bzip2 ৰে সৰু কৰা আৰ্কাইভ"
-
-#: ../plugins/snippets/snippets/manager.py:784
-msgid "Single snippets file"
-msgstr "নথিপত্ৰ"
-
-#: ../plugins/snippets/snippets/manager.py:785
-#: ../plugins/snippets/snippets/manager.py:871
-#: ../plugins/snippets/snippets/manager.py:934
-msgid "All files"
-msgstr "সৰ্বধৰনৰ নথিপত্ৰ"
-
-#: ../plugins/snippets/snippets/manager.py:797
-#, python-format
-msgid "The following error occurred while exporting: %s"
-msgstr "ৰপ্তানি কৰোঁতে এই ভুল হ'ল: %s"
-
-#: ../plugins/snippets/snippets/manager.py:801
-msgid "Export successfully completed"
-msgstr "ৰপ্তানি সফলভাবে সম্পূৰ্ণ হ'ল"
-
-#. Ask if system snippets should also be exported
-#: ../plugins/snippets/snippets/manager.py:841
-#: ../plugins/snippets/snippets/manager.py:908
-msgid "Do you want to include selected <b>system</b> snippets in your export?"
-msgstr ""
-"আপুনি নিজৰ ৰপ্তানিত নিৰ্বাচিত <b>ব্যৱস্থাপ্ৰণালী</b>ৰ অংশ অন্তৰ্ভুক্ত কৰিব বিচাৰে "
-"নেকি ?"
-
-#: ../plugins/snippets/snippets/manager.py:856
-#: ../plugins/snippets/snippets/manager.py:926
-msgid "There are no snippets selected to be exported"
-msgstr "ৰপ্তানি কৰিবলৈ কোনো অংশ নিৰ্ব্বাচন কৰা হোৱা নাই"
-
-#: ../plugins/snippets/snippets/manager.py:861
-#: ../plugins/snippets/snippets/manager.py:899
-msgid "Export snippets"
-msgstr "অংশ ৰপ্তানি কৰক"
-
-#: ../plugins/snippets/snippets/manager.py:1040
-msgid "Type a new shortcut, or press Backspace to clear"
-msgstr "নতুন শৰ্ট-কাট লিখুন, বা বেক-স্পেস পে আঁতৰুৱা ফেলুন"
-
-#: ../plugins/snippets/snippets/manager.py:1042
-msgid "Type a new shortcut"
-msgstr "নতুন শৰ্ট-কাট লিখুন"
 
 #: ../plugins/snippets/snippets/exporter.py:82
 #, python-format
@@ -3277,7 +3118,120 @@ msgstr "এই নথিপত্ৰসমূহৰ আমাদানি কৰ
 msgid "File \"%s\" is not a valid snippets archive"
 msgstr "\"%s\" নথিপত্ৰ এটা বৈধ স্নিপেট আৰ্কাইভ নহয়"
 
-#: ../plugins/snippets/snippets/placeholder.py:594
+#: ../plugins/snippets/snippets/manager.py:43
+msgid "Snippets archive"
+msgstr "Snippets"
+
+#: ../plugins/snippets/snippets/manager.py:63
+msgid "Add a new snippet..."
+msgstr "নতুন স্নিপেট যোগ কৰক..."
+
+#: ../plugins/snippets/snippets/manager.py:116
+msgid "Global"
+msgstr "গ্ৰোবাল"
+
+#: ../plugins/snippets/snippets/manager.py:400
+msgid "Revert selected snippet"
+msgstr "নিৰ্বাচিত অংশ ওভটাই দিয়ক"
+
+#: ../plugins/snippets/snippets/manager.py:403
+#: ../plugins/snippets/snippets/snippets.ui.h:5
+msgid "Delete selected snippet"
+msgstr "আঁতৰুৱা ফেলুন"
+
+#. self['hbox_tab_trigger'].set_spacing(3)
+#: ../plugins/snippets/snippets/manager.py:663
+msgid ""
+"This is not a valid Tab trigger. Triggers can either contain letters or a "
+"single (non-alphanumeric) character like: {, [, etc."
+msgstr ""
+"tab ট্ৰিগাৰ বৈধ নহয়। ট্ৰিগাৰৰ ক্ষেত্ৰত অক্ষৰ  বা অকল এটা আলফা-নিউমেৰিক ব্যতীত অক্ষৰ "
+"যেমন  {, [, প্ৰভৃতি ব্যৱহাৰ কৰা যাব।"
+
+#. self['hbox_tab_trigger'].set_spacing(0)
+#: ../plugins/snippets/snippets/manager.py:670
+#: ../plugins/snippets/snippets/snippets.ui.h:16
+msgid "Single word the snippet is activated with after pressing Tab"
+msgstr "টেব দবোৱাৰ পাছত এটা শব্দৰে সক্ৰিয় হোৱা স্নিপেট"
+
+#: ../plugins/snippets/snippets/manager.py:759
+#, python-format
+msgid "The following error occurred while importing: %s"
+msgstr "ৰপ্তানি কৰোঁতে এই ভুল হ'ল: %s"
+
+#: ../plugins/snippets/snippets/manager.py:766
+msgid "Import successfully completed"
+msgstr "আমদানি সফলভাবে সম্পূৰ্ণ হ'ল"
+
+#: ../plugins/snippets/snippets/manager.py:780
+#: ../plugins/snippets/snippets/snippets.ui.h:7
+msgid "Import snippets"
+msgstr "ইম্পোৰ্ট কৰক"
+
+#: ../plugins/snippets/snippets/manager.py:785
+#: ../plugins/snippets/snippets/manager.py:871
+#: ../plugins/snippets/snippets/manager.py:934
+msgid "All supported archives"
+msgstr "সকলো সমৰ্থিত আৰকাইভ"
+
+#: ../plugins/snippets/snippets/manager.py:786
+#: ../plugins/snippets/snippets/manager.py:872
+#: ../plugins/snippets/snippets/manager.py:935
+msgid "Gzip compressed archive"
+msgstr "Gzip এৰে সৰু কৰা আৰ্কাইভ"
+
+#: ../plugins/snippets/snippets/manager.py:787
+#: ../plugins/snippets/snippets/manager.py:873
+#: ../plugins/snippets/snippets/manager.py:936
+msgid "Bzip2 compressed archive"
+msgstr "Bzip2 ৰে সৰু কৰা আৰ্কাইভ"
+
+#: ../plugins/snippets/snippets/manager.py:788
+msgid "Single snippets file"
+msgstr "নথিপত্ৰ"
+
+#: ../plugins/snippets/snippets/manager.py:789
+#: ../plugins/snippets/snippets/manager.py:875
+#: ../plugins/snippets/snippets/manager.py:938
+msgid "All files"
+msgstr "সৰ্বধৰনৰ নথিপত্ৰ"
+
+#: ../plugins/snippets/snippets/manager.py:801
+#, python-format
+msgid "The following error occurred while exporting: %s"
+msgstr "ৰপ্তানি কৰোঁতে এই ভুল হ'ল: %s"
+
+#: ../plugins/snippets/snippets/manager.py:805
+msgid "Export successfully completed"
+msgstr "ৰপ্তানি সফলভাবে সম্পূৰ্ণ হ'ল"
+
+#. Ask if system snippets should also be exported
+#: ../plugins/snippets/snippets/manager.py:845
+#: ../plugins/snippets/snippets/manager.py:912
+msgid "Do you want to include selected <b>system</b> snippets in your export?"
+msgstr ""
+"আপুনি নিজৰ ৰপ্তানিত নিৰ্বাচিত <b>ব্যৱস্থাপ্ৰণালী</b>ৰ অংশ অন্তৰ্ভুক্ত কৰিব বিচাৰে "
+"নেকি ?"
+
+#: ../plugins/snippets/snippets/manager.py:860
+#: ../plugins/snippets/snippets/manager.py:930
+msgid "There are no snippets selected to be exported"
+msgstr "ৰপ্তানি কৰিবলৈ কোনো অংশ নিৰ্ব্বাচন কৰা হোৱা নাই"
+
+#: ../plugins/snippets/snippets/manager.py:865
+#: ../plugins/snippets/snippets/manager.py:903
+msgid "Export snippets"
+msgstr "অংশ ৰপ্তানি কৰক"
+
+#: ../plugins/snippets/snippets/manager.py:1044
+msgid "Type a new shortcut, or press Backspace to clear"
+msgstr "নতুন শৰ্ট-কাট লিখুন, বা বেক-স্পেস পে আঁতৰুৱা ফেলুন"
+
+#: ../plugins/snippets/snippets/manager.py:1046
+msgid "Type a new shortcut"
+msgstr "নতুন শৰ্ট-কাট লিখুন"
+
+#: ../plugins/snippets/snippets/placeholder.py:602
 #, python-format
 msgid ""
 "Execution of the Python command (%s) exceeds the maximum time, execution "
@@ -3286,10 +3240,75 @@ msgstr ""
 "python কমান্ড(%s) সঞ্চালনৰ বাবে সৰ্বাধিক অনুমোদিত সময়সীমা উলঙ্ঘন কৰিছে, কৰ্ম "
 "সঞ্চালন পৰিত্যাগ কৰা হ'ল।"
 
-#: ../plugins/snippets/snippets/placeholder.py:602
+#: ../plugins/snippets/snippets/placeholder.py:610
 #, python-format
 msgid "Execution of the Python command (%s) failed: %s"
 msgstr "python কমান্ড (%s) সঞ্চালনত ব্যৰ্থ: %s"
+
+#: ../plugins/snippets/snippets.plugin.desktop.in.h:2
+msgid "Insert often-used pieces of text in a fast way"
+msgstr "নিয়মিতৰূপে ব্যৱহৃত শাৰী দ্ৰুত সন্নিবেশেৰ প্ৰণালী"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:1
+msgid "Manage Snippets"
+msgstr "স্নিপেটসমূহ ব্যৱস্থাপনা কৰক"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:2
+msgid "_Snippets:"
+msgstr "_Snippets:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:3
+msgid "Create new snippet"
+msgstr "তৈৰি কৰক"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:4
+msgid "Add Snippet"
+msgstr "স্নিপেট যোগ কৰক"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:6
+msgid "Remove Snippet"
+msgstr "স্নিপেটসমূহ আতৰাওক"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:8
+msgid "Import Snippets"
+msgstr "স্নিপেটসমূহ ইনপোৰ্ট কৰক"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+msgid "Export selected snippets"
+msgstr "নিৰ্বাচিত অংশ ৰপ্তানি কৰক"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+msgid "Export Snippets"
+msgstr "স্নিপেট এক্সপোৰ্ট কৰক"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:12
+msgid "Activation"
+msgstr "সক্ৰিয়কৰণ"
+
+#. "tab" here means the tab key, not the notebook tab!
+#: ../plugins/snippets/snippets/snippets.ui.h:15
+msgid "_Tab trigger:"
+msgstr "Tab-কি ট্ৰিগাৰ:(_T)"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:17
+msgid "S_hortcut key:"
+msgstr "শৰ্টকাট-কি:(_h)"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:18
+msgid "Shortcut key with which the snippet is activated"
+msgstr "হ'লো"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:19
+msgid "_Drop targets:"
+msgstr "লক্ষ্য ড্ৰ'প কৰক (_D):"
+
+#: ../plugins/snippets/snippets/windowactivatable.py:154
+msgid "Manage _Snippets..."
+msgstr "Snippet পৰিচালনা...(_S)"
+
+#: ../plugins/snippets/snippets/windowactivatable.py:155
+msgid "Manage snippets"
+msgstr "স্নিপেট পৰিচালনা"
 
 #: ../plugins/sort/gedit-sort-plugin.c:88
 msgid "S_ort..."
@@ -3301,33 +3320,33 @@ msgstr "বৰ্ত্তমান আলেখ্যন বা নিৰ্ব
 
 #. ex:ts=8:noet:
 #: ../plugins/sort/gedit-sort-plugin.ui.h:1
-msgid "R_emove duplicates"
-msgstr "প্ৰতিলিপি আঁতৰুৱা ফেলুন (_e)"
-
-#: ../plugins/sort/gedit-sort-plugin.ui.h:2
-msgid "S_tart at column:"
-msgstr "উল্লিখিত স্তম্ভৰ পৰা আৰম্ভ কৰক (_t):"
-
-#: ../plugins/sort/gedit-sort-plugin.ui.h:3
 #: ../plugins/sort/sort.plugin.desktop.in.h:1
 msgid "Sort"
 msgstr "ক্ৰমানুযায়ী বিন্যাস"
 
+#: ../plugins/sort/gedit-sort-plugin.ui.h:2
+msgid "_Sort"
+msgstr "ক্ৰমবিন্যাস (_S)"
+
+#: ../plugins/sort/gedit-sort-plugin.ui.h:3
+msgid "_Reverse order"
+msgstr "বিপৰীত ক্ৰম (_R)"
+
 #: ../plugins/sort/gedit-sort-plugin.ui.h:4
-msgid "You cannot undo a sort operation"
-msgstr "ক্ৰমবিন্যাস কৰ্ম পৰিবৰ্তন কৰা সম্ভৱ নহয়"
+msgid "R_emove duplicates"
+msgstr "প্ৰতিলিপি আঁতৰুৱা ফেলুন (_e)"
 
 #: ../plugins/sort/gedit-sort-plugin.ui.h:5
 msgid "_Ignore case"
 msgstr "হৰফেৰ কেছ অগ্ৰাহ্য কৰা হ'ব (_I)"
 
 #: ../plugins/sort/gedit-sort-plugin.ui.h:6
-msgid "_Reverse order"
-msgstr "বিপৰীত ক্ৰম (_R)"
+msgid "S_tart at column:"
+msgstr "উল্লিখিত স্তম্ভৰ পৰা আৰম্ভ কৰক (_t):"
 
 #: ../plugins/sort/gedit-sort-plugin.ui.h:7
-msgid "_Sort"
-msgstr "ক্ৰমবিন্যাস (_S)"
+msgid "You cannot undo a sort operation"
+msgstr "ক্ৰমবিন্যাস কৰ্ম পৰিবৰ্তন কৰা সম্ভৱ নহয়"
 
 #: ../plugins/sort/sort.plugin.desktop.in.h:2
 msgid "Sorts a document or selected text."
@@ -3337,7 +3356,7 @@ msgstr "আলেখ্যন বা নিৰ্বাচিত অংশতৰ
 #. Translators: Displayed in the "Check Spelling" dialog if there are no suggestions
 #. * for the current misspelled word
 #: ../plugins/spell/gedit-automatic-spell-checker.c:420
-#: ../plugins/spell/gedit-spell-checker-dialog.c:451
+#: ../plugins/spell/gedit-spell-checker-dialog.c:444
 msgid "(no suggested words)"
 msgstr "(প্ৰস্তাব কৰাৰ যোগ্য শব্দ উপস্থিত নাই)"
 
@@ -3359,20 +3378,20 @@ msgstr "যোগ কৰক (_A)"
 msgid "_Spelling Suggestions..."
 msgstr "বানান সংক্ৰান্ত প্ৰস্তাবনা (_S)..."
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:271
+#: ../plugins/spell/gedit-spell-checker-dialog.c:264
 msgid "Check Spelling"
 msgstr "বানান পৰীক্ষণ"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:282
+#: ../plugins/spell/gedit-spell-checker-dialog.c:275
 msgid "Suggestions"
 msgstr "প্ৰস্তাবনা"
 
 #. Translators: Displayed in the "Check Spelling" dialog if the current word isn't misspelled
-#: ../plugins/spell/gedit-spell-checker-dialog.c:558
+#: ../plugins/spell/gedit-spell-checker-dialog.c:551
 msgid "(correct spelling)"
 msgstr "(সঠিক বানান)"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:699
+#: ../plugins/spell/gedit-spell-checker-dialog.c:692
 msgid "Completed spell checking"
 msgstr "বানান পৰীক্ষণ সমাপ্ত"
 
@@ -3380,8 +3399,8 @@ msgstr "বানান পৰীক্ষণ সমাপ্ত"
 #. * the second %s is the locale name. Example:
 #. * "French (France)"
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:373
-#: ../plugins/spell/gedit-spell-checker-language.c:379
+#: ../plugins/spell/gedit-spell-checker-language.c:378
+#: ../plugins/spell/gedit-spell-checker-language.c:384
 #, c-format
 msgctxt "language"
 msgid "%s (%s)"
@@ -3390,7 +3409,7 @@ msgstr "%s (%s)"
 #. Translators: this refers to an unknown language code
 #. * (one which isn't in our built-in list).
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:388
+#: ../plugins/spell/gedit-spell-checker-language.c:393
 #, c-format
 msgctxt "language"
 msgid "Unknown (%s)"
@@ -3399,17 +3418,18 @@ msgstr "অজ্ঞাত (%s)"
 #. Translators: this refers the Default language used by the
 #. * spell checker
 #.
-#: ../plugins/spell/gedit-spell-checker-language.c:494
+#: ../plugins/spell/gedit-spell-checker-language.c:499
 msgctxt "language"
 msgid "Default"
 msgstr "অবিকল্পিত"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:142
-#: ../plugins/spell/languages-dialog.ui.h:2
+#. ex:ts=8:noet:
+#: ../plugins/spell/gedit-spell-language-dialog.c:140
+#: ../plugins/spell/languages-dialog.ui.h:1
 msgid "Set language"
 msgstr "ভাষা নিৰ্ধাৰণ কৰক"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:196
+#: ../plugins/spell/gedit-spell-language-dialog.c:182
 msgid "Languages"
 msgstr "ভাষা"
 
@@ -3437,30 +3457,29 @@ msgstr "ভুলভাৱে বানান কৰা শব্দসমূহ
 msgid "Automatically spell-check the current document"
 msgstr "স্বয়ংক্ৰিয়ভাবে বৰ্ত্তমান আলেখ্যনৰ বানান পৰীক্ষা কৰা হ'ব"
 
-#: ../plugins/spell/gedit-spell-plugin.c:819
+#: ../plugins/spell/gedit-spell-plugin.c:810
 msgid "The document is empty."
 msgstr "আলেখ্যন ফাঁকা  ।"
 
-#: ../plugins/spell/gedit-spell-plugin.c:844
+#: ../plugins/spell/gedit-spell-plugin.c:835
 msgid "No misspelled words"
 msgstr "ভুল বানান নাই"
 
-#. ex:ts=8:noet:
-#: ../plugins/spell/languages-dialog.ui.h:1
+#: ../plugins/spell/languages-dialog.ui.h:2
 msgid "Select the _language of the current document."
 msgstr "বৰ্ত্তমান আলেখ্যনৰ ভাষা নিৰ্ব্বাচন কৰক (_l)"
 
 #: ../plugins/spell/spell-checker.ui.h:1
-msgid "Add w_ord"
-msgstr "শব্দ যোগ কৰক (_o)"
+msgid "Check spelling"
+msgstr "বানান পৰীক্ষা কৰক"
 
 #: ../plugins/spell/spell-checker.ui.h:2
-msgid "Cha_nge"
-msgstr "পৰিবৰ্তন কৰক (_n)"
+msgid "Misspelled word:"
+msgstr "ভুল বানান:"
 
 #: ../plugins/spell/spell-checker.ui.h:3
-msgid "Change A_ll"
-msgstr "সমগ্ৰ পৰিবৰ্তন কৰক (_l)"
+msgid "word"
+msgstr "শব্দ"
 
 #: ../plugins/spell/spell-checker.ui.h:4
 msgid "Change _to:"
@@ -3471,48 +3490,79 @@ msgid "Check _Word"
 msgstr "শব্দ পৰীক্ষা কৰক (_W)"
 
 #: ../plugins/spell/spell-checker.ui.h:6
-msgid "Check spelling"
-msgstr "বানান পৰীক্ষা কৰক"
+msgid "_Suggestions:"
+msgstr "প্ৰস্তাব (_S):"
 
 #: ../plugins/spell/spell-checker.ui.h:7
+msgid "_Ignore"
+msgstr "অগ্ৰাহ্য কৰা হ'ব (_I)"
+
+#: ../plugins/spell/spell-checker.ui.h:8
+msgid "Cha_nge"
+msgstr "পৰিবৰ্তন কৰক (_n)"
+
+#: ../plugins/spell/spell-checker.ui.h:9
 msgid "Ignore _All"
 msgstr "সমগ্ৰ অগ্ৰাহ্য কৰক (_A)"
 
-#: ../plugins/spell/spell-checker.ui.h:8
-msgid "Language"
-msgstr "ভাষা"
-
-#: ../plugins/spell/spell-checker.ui.h:9
-msgid "Language:"
-msgstr "ভাষা:"
-
 #: ../plugins/spell/spell-checker.ui.h:10
-msgid "Misspelled word:"
-msgstr "ভুল বানান:"
+msgid "Change A_ll"
+msgstr "সমগ্ৰ পৰিবৰ্তন কৰক (_l)"
 
 #: ../plugins/spell/spell-checker.ui.h:11
 msgid "User dictionary:"
 msgstr "ব্যৱহাৰকাৰীৰ অভিধান:"
 
 #: ../plugins/spell/spell-checker.ui.h:12
-msgid "_Ignore"
-msgstr "অগ্ৰাহ্য কৰা হ'ব (_I)"
+msgid "Add w_ord"
+msgstr "শব্দ যোগ কৰক (_o)"
 
 #: ../plugins/spell/spell-checker.ui.h:13
-msgid "_Suggestions:"
-msgstr "প্ৰস্তাব (_S):"
+msgid "Language:"
+msgstr "ভাষা:"
 
 #: ../plugins/spell/spell-checker.ui.h:14
-msgid "word"
-msgstr "শব্দ"
+msgid "Language"
+msgstr "ভাষা"
 
 #: ../plugins/spell/spell.plugin.desktop.in.h:1
+msgid "Spell Checker"
+msgstr "বানান সংশোধন"
+
+#: ../plugins/spell/spell.plugin.desktop.in.h:2
 msgid "Checks the spelling of the current document."
 msgstr "বৰ্ত্তমান আলেখ্যনত বানান পৰীক্ষা কৰক  ।"
 
-#: ../plugins/spell/spell.plugin.desktop.in.h:2
-msgid "Spell Checker"
-msgstr "বানান সংশোধন"
+#: ../plugins/time/gedit-time-dialog.ui.h:1
+msgid "Insert Date and Time"
+msgstr "তাৰিখ আৰু সময় সন্নিবেশ কৰক"
+
+#: ../plugins/time/gedit-time-dialog.ui.h:2
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
+msgid "Use the _selected format"
+msgstr "নিৰ্বাচিত বিন্যাস ব্যৱহাৰ কৰা হ'ব (_s)"
+
+#: ../plugins/time/gedit-time-dialog.ui.h:3
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
+msgid "_Use custom format"
+msgstr "স্বনিৰ্বাচিত বিন্যাস ব্যৱহাৰ কৰা হ'ব (_U)"
+
+#. Translators: Use the more common date format in your locale
+#: ../plugins/time/gedit-time-dialog.ui.h:5
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
+#, no-c-format
+msgid "%d/%m/%Y %H:%M:%S"
+msgstr "%d/%m/%Y %H:%M:%S"
+
+#. Translators: This example should follow the date format defined in the entry above
+#: ../plugins/time/gedit-time-dialog.ui.h:6
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
+msgid "01/11/2009 17:52:00"
+msgstr "০১/১১/২০০৯ ১৭:৫২:০০"
+
+#: ../plugins/time/gedit-time-dialog.ui.h:7
+msgid "_Insert"
+msgstr "সন্নিবেশ কৰক (_I)"
 
 #: ../plugins/time/gedit-time-plugin.c:188
 msgid "In_sert Date and Time..."
@@ -3522,22 +3572,26 @@ msgstr "সময় আৰু তাৰিখ সন্নিবেশ কৰা �
 msgid "Insert current date and time at the cursor position"
 msgstr "কাৰ্ছাৰৰ অৱস্থানত বৰ্ত্তমান তাৰিখ আৰু সময় সন্নিবেশ কৰক"
 
-#: ../plugins/time/gedit-time-plugin.c:551
+#: ../plugins/time/gedit-time-plugin.c:537
 msgid "Available formats"
 msgstr "উপলব্ধ বিন্যাস"
 
 #. ex:ts=8:noet:
-#: ../plugins/time/time.plugin.desktop.in.h:1
-msgid "Insert Date/Time"
-msgstr "তাৰিখ/সময় সন্নিবেশ কৰক"
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:1
+msgid "Configure date/time plugin"
+msgstr "সময়/তাৰিখ সংক্ৰান্ত প্লাগ-ইন কনফিগাৰ কৰক"
 
-#: ../plugins/time/time.plugin.desktop.in.h:2
-msgid "Inserts current date and time at the cursor position."
-msgstr "কাৰ্ছাৰৰ অৱস্থানত বৰ্ত্তমান তাৰিখ আৰু সময় সন্নিবেশ কৰি  ।"
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:2
+msgid "When inserting date/time..."
+msgstr "তাৰিখ/সময় সোমোৱাৰ সময়ত..."
+
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
+msgid "_Prompt for a format"
+msgstr "বিন্যাস জানতে অনুৰোধ কৰা হ'ব (_P)"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:1
-msgid "Custom Format"
-msgstr "স্বনিৰ্বাচিত বিন্যাস"
+msgid "Prompt Type"
+msgstr "প্ৰমপ্টৰ ধৰণ"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:2
 msgid ""
@@ -3548,71 +3602,54 @@ msgstr ""
 "ব্যৱহাৰ কৰা হ'ব।"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
-msgid "Prompt Type"
-msgstr "প্ৰমপ্টৰ ধৰণ"
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
 msgid "Selected Format"
 msgstr "নিৰ্বাচিত বিন্যাস"
 
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
-msgid "The custom format used when inserting the date/time."
-msgstr "তাৰিখ/সময় সোমোৱাৰ সময়ত ব্যৱহৃত স্বনিৰ্বাচিত বিন্যাস।"
-
-#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
 msgid "The selected format used when inserting the date/time."
 msgstr "তাৰিখ/সময় সোমোৱাৰ সময়ত ব্যৱহৃত নিৰ্বাচিত বিন্যাস।"
 
-#. Translators: Use the more common date format in your locale
-#: ../plugins/time/gedit-time-dialog.ui.h:2
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
-#, no-c-format
-msgid "%d/%m/%Y %H:%M:%S"
-msgstr "%d/%m/%Y %H:%M:%S"
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
+msgid "Custom Format"
+msgstr "স্বনিৰ্বাচিত বিন্যাস"
 
-#. Translators: This example should follow the date format defined in the entry above
-#: ../plugins/time/gedit-time-dialog.ui.h:3
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
-msgid "01/11/2009 17:52:00"
-msgstr "০১/১১/২০০৯ ১৭:৫২:০০"
+#: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
+msgid "The custom format used when inserting the date/time."
+msgstr "তাৰিখ/সময় সোমোৱাৰ সময়ত ব্যৱহৃত স্বনিৰ্বাচিত বিন্যাস।"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:4
-msgid "Insert Date and Time"
-msgstr "তাৰিখ আৰু সময় সন্নিবেশ কৰক"
+#: ../plugins/time/time.plugin.desktop.in.h:1
+msgid "Insert Date/Time"
+msgstr "তাৰিখ/সময় সন্নিবেশ কৰক"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:5
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
-msgid "Use the _selected format"
-msgstr "নিৰ্বাচিত বিন্যাস ব্যৱহাৰ কৰা হ'ব (_s)"
-
-#: ../plugins/time/gedit-time-dialog.ui.h:6
-msgid "_Insert"
-msgstr "সন্নিবেশ কৰক (_I)"
-
-#: ../plugins/time/gedit-time-dialog.ui.h:7
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:11
-msgid "_Use custom format"
-msgstr "স্বনিৰ্বাচিত বিন্যাস ব্যৱহাৰ কৰা হ'ব (_U)"
-
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:7
-msgid "Configure date/time plugin"
-msgstr "সময়/তাৰিখ সংক্ৰান্ত প্লাগ-ইন কনফিগাৰ কৰক"
-
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
-msgid "When inserting date/time..."
-msgstr "তাৰিখ/সময় সোমোৱাৰ সময়ত..."
-
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
-msgid "_Prompt for a format"
-msgstr "বিন্যাস জানতে অনুৰোধ কৰা হ'ব (_P)"
+#: ../plugins/time/time.plugin.desktop.in.h:2
+msgid "Inserts current date and time at the cursor position."
+msgstr "কাৰ্ছাৰৰ অৱস্থানত বৰ্ত্তমান তাৰিখ আৰু সময় সন্নিবেশ কৰি  ।"
 
 #: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:1
+msgid "Zeitgeist dataprovider"
+msgstr "Zeitgeist dataprovider"
+
+#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
 msgid "Logs access and leave event for documents used with gedit"
 msgstr "gedit -ৰ সৈতে ব্যৱহৃত দস্তাবেজসমূহৰ কাৰণে প্ৰবেশাধিকাৰ লগ কৰে আৰু ঘটনাসমূহ এৰে"
 
-#: ../plugins/zeitgeist/zeitgeist.plugin.desktop.in.h:2
-msgid "Zeitgeist dataprovider"
-msgstr "Zeitgeist dataprovider"
+#~ msgid "_Add..."
+#~ msgstr "যোগ  কৰক...(_A)"
+
+#~ msgid "Previous location"
+#~ msgstr "পূৰ্ববৰ্তী অৱস্থান"
+
+#~ msgid "Go to previous location"
+#~ msgstr "পূৰ্ববৰ্তী অৱস্থানত চলুন"
+
+#~ msgid "Go to a previously opened location"
+#~ msgstr "পূৰ্বে পৰিদৰ্শিত অৱস্থানত চলুন"
+
+#~ msgid "Next location"
+#~ msgstr "পৰবৰ্তী অৱস্থান"
+
+#~ msgid "Go to next location"
+#~ msgstr "পৰবৰ্তী অৱস্থানত চলুন"
 
 #~ msgid ""
 #~ "List of VFS schemes gedit supports in write mode. The 'file' scheme is "
@@ -3793,13 +3830,6 @@ msgstr "Zeitgeist dataprovider"
 #~ msgid "Indents or un-indents selected lines."
 #~ msgstr "নিৰ্বাচিত শাৰীৰ প্ৰান্ত নিৰ্ধাৰণ বা বাতিল কৰি  ।"
 
-#~ msgid "Quick open"
-#~ msgstr "সঘনে প্ৰদৰ্শন"
-
-#~| msgid "Close document"
-#~ msgid "Quickly open documents"
-#~ msgstr "দ্ৰুত নতিপত্ৰ খোলক"
-
 #~ msgid "Snippets Manager"
 #~ msgstr "Snippets Manager"
 
@@ -3961,9 +3991,6 @@ msgstr "Zeitgeist dataprovider"
 
 #~ msgid "Computer code fragment"
 #~ msgstr "Computer code fragment"
-
-#~ msgid "Content scheme"
-#~ msgstr "বিষয়বস্তুৰ সূচি:"
 
 #~ msgid "Content type"
 #~ msgstr "বিষয়ৰ প্ৰকাৰ"
