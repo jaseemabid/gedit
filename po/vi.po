@@ -1,6 +1,6 @@
 # Vietnamese translation for GEdit.
 # Copyright © 2009 GNOME i18n Project for Vietnamese.
-# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2002-2004,2007,2010-2011.
+# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2002-2004,2007,2010-2012.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
 #
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2012-03-06 18:26+0000\n"
-"PO-Revision-Date: 2012-03-08 19:13+0700\n"
+"PO-Revision-Date: 2012-03-08 19:15+0700\n"
 "Last-Translator: Nguyễn Thái Ngọc Duy <pclouds@gmail.com>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -31,16 +31,14 @@ msgid "Edit text files"
 msgstr "Soạn thảo tập tin văn bản"
 
 #: ../data/gedit.desktop.in.in.h:4
-#, fuzzy
 #| msgid "_Move to New Window"
 msgid "Open a New Window"
-msgstr "Chu_yển vào cửa sổ mới"
+msgstr "Mở cửa sổ mới"
 
 #: ../data/gedit.desktop.in.in.h:5
-#, fuzzy
 #| msgid "Create a new document"
 msgid "Open a New Document"
-msgstr "Tạo tài liệu mới"
+msgstr "Mở tài liệu mới"
 
 #: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
@@ -280,15 +278,14 @@ msgstr "Gedit có nên tô sáng mọi lần gặp đoạn đã tìm kiếm hay 
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
 msgid "Ensure Trailing Newline"
-msgstr ""
+msgstr "Bảo đảm có dòng trống theo sau"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
-#, fuzzy
 #| msgid ""
 #| "Whether gedit should include a document header when printing documents."
 msgid ""
 "Whether gedit will ensure that documents always end with a trailing newline."
-msgstr "Gedit sẽ in đầu trang khi in tài liệu hay không."
+msgstr "Gedit có bảo đảm tài liệu luôn kết thúc bằng ký tự xuống dòng không."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
 msgid "Toolbar is Visible"
@@ -623,10 +620,9 @@ msgid "Create a new document in an existing instance of gedit"
 msgstr "Tạo tài liệu mới trong một trình gedit đang chạy"
 
 #: ../gedit/gedit-command-line.c:294
-#, fuzzy
 #| msgid "Set the X geometry window size (WIDTHxHEIGHT+X+Y)"
 msgid "Set the size and position of the window (WIDTHxHEIGHT+X+Y)"
-msgstr "Đặt toạ độ và kích thước cửa sổ (WIDTHxHEIGHT+X+Y)"
+msgstr "Đặt vị trí và kích thước cửa sổ (WIDTHxHEIGHT+X+Y)"
 
 #: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
@@ -1528,28 +1524,24 @@ msgid "Color Scheme"
 msgstr "Bộ màu"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:24
-#, fuzzy
 #| msgid "Content scheme"
 msgid "Install scheme"
-msgstr "Sơ đồ nội dung"
+msgstr "Cài đặt lược đồ"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:25
-#, fuzzy
 #| msgid "Style Scheme"
 msgid "Install Scheme"
-msgstr "Lược đồ Kiểu dáng"
+msgstr "Cài đặt lược đồ"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:26
-#, fuzzy
 #| msgid "Content scheme"
 msgid "Uninstall scheme"
-msgstr "Sơ đồ nội dung"
+msgstr "Gỡ cài đặt lược đồ"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:27
-#, fuzzy
 #| msgid "Style Scheme"
 msgid "Uninstall Scheme"
-msgstr "Lược đồ Kiểu dáng"
+msgstr "Gỡ cài đặt lược đồ"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:28
 msgid "Font & Colors"
@@ -2616,7 +2608,6 @@ msgid "_Save:"
 msgstr "_Lưu :"
 
 #: ../plugins/externaltools/tools/tools.ui.h:33
-#, fuzzy
 #| msgid "_Shortcut Key:"
 msgid "Shortcut _Key:"
 msgstr "_Phím tắt:"
@@ -2885,10 +2876,9 @@ msgid "Show binary files"
 msgstr "Hiển thị các tập tin kiểu nhị phân"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:1202
-#, fuzzy
 #| msgid "_Match Filename"
 msgid "Match Filename"
-msgstr "_Khớp tên tập tin"
+msgstr "Khớp tên tập tin"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:2004
 #, c-format
@@ -3062,7 +3052,7 @@ msgstr "Mở tập tin một cách nhanh chóng"
 
 #: ../plugins/quickopen/quickopen/popup.py:72
 msgid "Type to search..."
-msgstr ""
+msgstr "Nhập để tìm..."
 
 #. ex:ts=8:et:
 #: ../plugins/snippets/snippets/document.py:56
