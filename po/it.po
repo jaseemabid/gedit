@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-01 22:11+0100\n"
-"PO-Revision-Date: 2012-03-01 22:32+0100\n"
+"POT-Creation-Date: 2012-03-08 21:29+0100\n"
+"PO-Revision-Date: 2012-03-08 21:30+0100\n"
 "Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "Language: it\n"
@@ -25,15 +25,23 @@ msgstr ""
 msgid "Edit text files"
 msgstr "Modifica file di testo"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:791
+#: ../data/gedit.desktop.in.in.h:2
+msgid "Open a New Document"
+msgstr "Apri un nuovo documento"
+
+#: ../data/gedit.desktop.in.in.h:3
+msgid "Open a New Window"
+msgstr "Apri una nuova finestra"
+
+#: ../data/gedit.desktop.in.in.h:4 ../gedit/gedit-print-job.c:791
 msgid "Text Editor"
 msgstr "Editor di testo"
 
-#: ../data/gedit.desktop.in.in.h:3
+#: ../data/gedit.desktop.in.in.h:5
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:4
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "Editor di testo gedit"
 
@@ -487,7 +495,7 @@ msgstr ""
 "dell'opzione «Carattere dell'editor» verrà utilizzato invece del carattere "
 "di sistema."
 
-#: ../gedit/gedit-app.c:224
+#: ../gedit/gedit-app.c:222
 msgid "There was an error displaying the help."
 msgstr "Si è verificato un errore nel mostrare l'aiuto."
 
@@ -2447,11 +2455,9 @@ msgstr "Generazione di informazioni statistiche riguardo il documento"
 
 #. ex:set ts=8 noet:
 #. ex:ts=4:et:
-#. ex:ts=8:noet:
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 #: ../plugins/externaltools/tools/tools.ui.h:1
 #: ../plugins/snippets/snippets/snippets.ui.h:1
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "    "
 msgstr "    "
 
@@ -3653,16 +3659,17 @@ msgstr "Controlla l'ortografia del documento corrente."
 msgid "Spell Checker"
 msgstr "Correttore ortografico"
 
+#. ex:ts=8:noet:
 #. Translators: Use the more common date format in your locale
 #: ../plugins/time/gedit-time-dialog.ui.h:2
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%d/%m/%Y %H.%M.%S"
 
 #. Translators: This example should follow the date format defined in the entry above
 #: ../plugins/time/gedit-time-dialog.ui.h:3
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
 msgid "01/11/2009 17:52:00"
 msgstr "01/11/2009 17.52.00"
 
@@ -3671,7 +3678,7 @@ msgid "Insert Date and Time"
 msgstr "Inserisci data e ora"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:5
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:7
 msgid "Use the _selected format"
 msgstr "Usare il formato _selezionato"
 
@@ -3680,7 +3687,7 @@ msgid "_Insert"
 msgstr "_Inserisci"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:7
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:11
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "_Use custom format"
 msgstr "_Usare un formato personalizzato"
 
@@ -3696,15 +3703,15 @@ msgstr "Inserisce la data e l'ora attuale nella posizione corrente"
 msgid "Available formats"
 msgstr "Formati disponibili"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:7
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
 msgid "Configure date/time plugin"
 msgstr "Configura il plugin «Inserisci data e ora»"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 msgid "When inserting date/time..."
 msgstr "All'inserimento di data e ora..."
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
 msgid "_Prompt for a format"
 msgstr "_Chiedere il formato"
 
