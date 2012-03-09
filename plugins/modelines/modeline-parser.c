@@ -879,7 +879,8 @@ modeline_parser_apply_modeline (GtkSourceView *view)
 		                        previous,
 		                        (GDestroyNotify)free_modeline_options);
 	}
-	
+
+	g_object_unref (settings);
 	g_free (options.language_id);
 }
 
