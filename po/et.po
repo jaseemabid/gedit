@@ -16,14 +16,14 @@ msgstr ""
 "Project-Id-Version: gedit MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-02-16 11:04+0000\n"
-"PO-Revision-Date: 2012-02-16 13:28+0200\n"
+"POT-Creation-Date: 2012-03-08 20:31+0000\n"
+"PO-Revision-Date: 2012-03-09 11:07+0200\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bits\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Poedit-Language: Estonian\n"
 "X-Poedit-Country: ESTONIA\n"
@@ -36,6 +36,12 @@ msgstr "Tekstiredaktor"
 
 msgid "Edit text files"
 msgstr "Tekstifailide redigeerimine"
+
+msgid "Open a New Window"
+msgstr "Uue akna avamine"
+
+msgid "Open a New Document"
+msgstr "Uue dokumendi avamine"
 
 msgid "gedit Text Editor"
 msgstr "Tekstiredaktor gedit"
@@ -375,6 +381,12 @@ msgstr ""
 "\". Mida see \"asukoht\" iga plugina jaoks tähendab, seda saab vaadata ."
 "gedit-plugin failist."
 
+msgid "There was an error displaying the help."
+msgstr "Abiteabe kuvamisel tekkis viga."
+
+msgid "About gedit"
+msgstr "Geditist lähemalt"
+
 msgid "Log Out _without Saving"
 msgstr "Logi välja _ilma salvestamata"
 
@@ -501,185 +513,6 @@ msgstr "_Vali dokumendid, mida soovid salvestada:"
 msgid "If you don't save, all your changes will be permanently lost."
 msgstr "Kui Sa ei salvesta, siis lähevad kõik muudatused kaotsi."
 
-msgid "Character Encodings"
-msgstr "Kooditabelid"
-
-msgid "_Description"
-msgstr "K_irjeldus"
-
-msgid "_Encoding"
-msgstr "_Kodeering"
-
-#. ex:set ts=8 noet:
-msgid "Character encodings"
-msgstr "Kooditabelid"
-
-msgid "A_vailable encodings:"
-msgstr "_Saadaolevad kooditabelid:"
-
-msgid "E_ncodings shown in menu:"
-msgstr "_Menüüs näidatavad kooditabelid:"
-
-msgid "Click on this button to select the font to be used by the editor"
-msgstr "Redaktoris kasutatava kirjatüübi valimiseks klõpsa sellel nupul"
-
-#, c-format
-msgid "_Use the system fixed width font (%s)"
-msgstr "Kasutatakse süsteemset fikseeritud laiusega _kirjatüüpi (%s)"
-
-#, c-format
-msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
-msgstr ""
-"Kataloogi '%s' pole võimalik luua: tõrge funktsioonis g_mkdir_with_parents"
-"(): %s"
-
-msgid "The selected color scheme cannot be installed."
-msgstr "Valitud värviskeemi pole võimalik paigaldada."
-
-msgid "Add Scheme"
-msgstr "Skeemi lisamine"
-
-msgid "A_dd Scheme"
-msgstr "Lisa s_keem"
-
-msgid "Color Scheme Files"
-msgstr "Värviskeemi failid"
-
-msgid "All Files"
-msgstr "Kõik failid"
-
-#, c-format
-msgid "Could not remove color scheme \"%s\"."
-msgstr "Värviskeemi \"%s\" pole võimalik eemaldada."
-
-msgid "gedit Preferences"
-msgstr "gedit'i eelistused"
-
-#. ex:set ts=8 noet:
-msgid "Preferences"
-msgstr "Eelistused"
-
-msgid "_Display line numbers"
-msgstr "_Reanumbrid on nähtaval"
-
-msgid "Display right _margin at column:"
-msgstr "_Paremveeris on nähtaval veerus:"
-
-msgid "Text Wrapping"
-msgstr "Tekstimurdmine"
-
-msgid "Enable text _wrapping"
-msgstr "_Tekstmurdmine on lubatud"
-
-msgid "Do not _split words over two lines"
-msgstr "Üle _kahe rea sõnu ei murta"
-
-msgid "Highlighting"
-msgstr "Esiletõstmine"
-
-msgid "Highlight current _line"
-msgstr "Käesolev rida tõstetakse _esile"
-
-msgid "Highlight matching _brackets"
-msgstr "Vastavuses olevate sul_gude esiletõstmine"
-
-msgid "View"
-msgstr "Vaade"
-
-msgid "Tab Stops"
-msgstr "Tabelduse sammud"
-
-msgid "_Tab width:"
-msgstr "_Tabulaatori laius:"
-
-msgid "Insert _spaces instead of tabs"
-msgstr "Tabulaatorite ase_mel lisatakse tühikud"
-
-msgid "_Enable automatic indentation"
-msgstr "Automaatne taa_ne on lubatud"
-
-msgid "File Saving"
-msgstr "Failide salvestamine"
-
-msgid "Create a _backup copy of files before saving"
-msgstr "Failist tehakse enne salvestamist _varukoopia"
-
-msgid "_Autosave files every"
-msgstr "Failid salvestatakse _automaatselt iga"
-
-msgid "_minutes"
-msgstr "minuti _järel"
-
-msgid "Editor"
-msgstr "Redaktor"
-
-msgid "Font"
-msgstr "Kirjatüüp"
-
-msgid "Editor _font: "
-msgstr "_Redaktori kirjatüüp: "
-
-msgid "Pick the editor font"
-msgstr "Redaktori kirjatüübi valimine"
-
-msgid "Color Scheme"
-msgstr "Värviskeem"
-
-msgid "Install scheme"
-msgstr "Skeemi paigaldamine"
-
-msgid "Install Scheme"
-msgstr "Skeemi paigaldamine"
-
-msgid "Uninstall scheme"
-msgstr "Skeemi eemaldamine"
-
-msgid "Uninstall Scheme"
-msgstr "Skeemi eemaldamine"
-
-msgid "Font & Colors"
-msgstr "Kirjatüübid ja värvused"
-
-msgid "Plugins"
-msgstr "Pluginad"
-
-#. ex:set ts=8 noet:
-msgid "Replace"
-msgstr "Asenda"
-
-msgid "Replace _All"
-msgstr "Asenda _kõik"
-
-msgid "_Replace"
-msgstr "_Asenda"
-
-msgid "Replace All"
-msgstr "Asenda kõik"
-
-msgid "_Search for: "
-msgstr "_Otsitav tekst:"
-
-msgid "Replace _with: "
-msgstr "Asendada _tekstiga:"
-
-msgid "_Match case"
-msgstr "_Tõstutundlik"
-
-msgid "Match _entire word only"
-msgstr "Kogu sõ_na peab vastavuses olema"
-
-msgid "Search _backwards"
-msgstr "Otsitakse tagantpoolt _ettepoole"
-
-msgid "_Wrap around"
-msgstr "_Lõppu (või algusese) jõudmisel otsingut ei katkestata"
-
-msgid "There was an error displaying the help."
-msgstr "Abiteabe kuvamisel tekkis viga."
-
-msgid "About gedit"
-msgstr "Geditist lähemalt"
-
 #, c-format
 msgid "%s: invalid encoding.\n"
 msgstr "%s: vigane kodeering.\n"
@@ -754,6 +587,9 @@ msgstr "Fail \"%s\" on kirjutuskaitsega."
 
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr "Kas tahad üritada seda salvestatava failiga asendada?"
+
+msgid "_Replace"
+msgstr "_Asenda"
 
 msgid "Save the file using compression?"
 msgstr "Kas salvestada fail pakituna?"
@@ -996,6 +832,28 @@ msgstr "Käesolev lokaat (%s)"
 
 msgid "Add or Remove..."
 msgstr "Lisa või eemalda..."
+
+msgid "Character Encodings"
+msgstr "Kooditabelid"
+
+msgid "_Description"
+msgstr "K_irjeldus"
+
+msgid "_Encoding"
+msgstr "_Kodeering"
+
+#. ex:set ts=8 noet:
+msgid "Character encodings"
+msgstr "Kooditabelid"
+
+msgid "A_vailable encodings:"
+msgstr "_Saadaolevad kooditabelid:"
+
+msgid "E_ncodings shown in menu:"
+msgstr "_Menüüs näidatavad kooditabelid:"
+
+msgid "All Files"
+msgstr "Kõik failid"
 
 msgid "All Text Files"
 msgstr "Kõik tekstifailid"
@@ -1310,6 +1168,126 @@ msgstr "Tühi"
 msgid "Hide panel"
 msgstr "Peida paneel"
 
+msgid "Click on this button to select the font to be used by the editor"
+msgstr "Redaktoris kasutatava kirjatüübi valimiseks klõpsa sellel nupul"
+
+#, c-format
+msgid "_Use the system fixed width font (%s)"
+msgstr "Kasutatakse süsteemset fikseeritud laiusega _kirjatüüpi (%s)"
+
+#, c-format
+msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
+msgstr ""
+"Kataloogi '%s' pole võimalik luua: tõrge funktsioonis g_mkdir_with_parents"
+"(): %s"
+
+msgid "The selected color scheme cannot be installed."
+msgstr "Valitud värviskeemi pole võimalik paigaldada."
+
+msgid "Add Scheme"
+msgstr "Skeemi lisamine"
+
+msgid "A_dd Scheme"
+msgstr "Lisa s_keem"
+
+msgid "Color Scheme Files"
+msgstr "Värviskeemi failid"
+
+#, c-format
+msgid "Could not remove color scheme \"%s\"."
+msgstr "Värviskeemi \"%s\" pole võimalik eemaldada."
+
+msgid "gedit Preferences"
+msgstr "gedit'i eelistused"
+
+#. ex:set ts=8 noet:
+msgid "Preferences"
+msgstr "Eelistused"
+
+msgid "_Display line numbers"
+msgstr "_Reanumbrid on nähtaval"
+
+msgid "Display right _margin at column:"
+msgstr "_Paremveeris on nähtaval veerus:"
+
+msgid "Text Wrapping"
+msgstr "Tekstimurdmine"
+
+msgid "Enable text _wrapping"
+msgstr "_Tekstmurdmine on lubatud"
+
+msgid "Do not _split words over two lines"
+msgstr "Üle _kahe rea sõnu ei murta"
+
+msgid "Highlighting"
+msgstr "Esiletõstmine"
+
+msgid "Highlight current _line"
+msgstr "Käesolev rida tõstetakse _esile"
+
+msgid "Highlight matching _brackets"
+msgstr "Vastavuses olevate sul_gude esiletõstmine"
+
+msgid "View"
+msgstr "Vaade"
+
+msgid "Tab Stops"
+msgstr "Tabelduse sammud"
+
+msgid "_Tab width:"
+msgstr "_Tabulaatori laius:"
+
+msgid "Insert _spaces instead of tabs"
+msgstr "Tabulaatorite ase_mel lisatakse tühikud"
+
+msgid "_Enable automatic indentation"
+msgstr "Automaatne taa_ne on lubatud"
+
+msgid "File Saving"
+msgstr "Failide salvestamine"
+
+msgid "Create a _backup copy of files before saving"
+msgstr "Failist tehakse enne salvestamist _varukoopia"
+
+msgid "_Autosave files every"
+msgstr "Failid salvestatakse _automaatselt iga"
+
+msgid "_minutes"
+msgstr "minuti _järel"
+
+msgid "Editor"
+msgstr "Redaktor"
+
+msgid "Font"
+msgstr "Kirjatüüp"
+
+msgid "Editor _font: "
+msgstr "_Redaktori kirjatüüp: "
+
+msgid "Pick the editor font"
+msgstr "Redaktori kirjatüübi valimine"
+
+msgid "Color Scheme"
+msgstr "Värviskeem"
+
+msgid "Install scheme"
+msgstr "Skeemi paigaldamine"
+
+msgid "Install Scheme"
+msgstr "Skeemi paigaldamine"
+
+msgid "Uninstall scheme"
+msgstr "Skeemi eemaldamine"
+
+msgid "Uninstall Scheme"
+msgstr "Skeemi eemaldamine"
+
+msgid "Font & Colors"
+msgstr "Kirjatüübid ja värvused"
+
+msgid "Plugins"
+msgstr "Pluginad"
+
 #, c-format
 msgid "File: %s"
 msgstr "Fail: %s"
@@ -1411,6 +1389,34 @@ msgstr "Lehekülje eelvaade"
 
 msgid "The preview of a page in the document to be printed"
 msgstr "Prinditava dokumendi eelvaade"
+
+#. ex:set ts=8 noet:
+msgid "Replace"
+msgstr "Asenda"
+
+msgid "Replace _All"
+msgstr "Asenda _kõik"
+
+msgid "Replace All"
+msgstr "Asenda kõik"
+
+msgid "_Search for: "
+msgstr "_Otsitav tekst:"
+
+msgid "Replace _with: "
+msgstr "Asendada _tekstiga:"
+
+msgid "_Match case"
+msgstr "_Tõstutundlik"
+
+msgid "Match _entire word only"
+msgstr "Kogu sõ_na peab vastavuses olema"
+
+msgid "Search _backwards"
+msgstr "Otsitakse tagantpoolt _ettepoole"
+
+msgid "_Wrap around"
+msgstr "_Lõppu (või algusese) jõudmisel otsingut ei katkestata"
 
 #. Use spaces to leave padding proportional to the font size
 msgid "OVR"
@@ -2780,9 +2786,6 @@ msgstr "Käesoleva dokumendi õigekirja kontrollimine."
 msgid "Insert Date and Time"
 msgstr "Kuupäeva ja kellaaja lisamine"
 
-msgid "_Insert"
-msgstr "L_isa"
-
 msgid "Use the _selected format"
 msgstr "Kasutatakse _valitud vormingut"
 
@@ -2797,6 +2800,9 @@ msgstr "%d.%m.%Y %H:%M:%S"
 #. Translators: This example should follow the date format defined in the entry above
 msgid "01/11/2009 17:52:00"
 msgstr "01/11/2009 17:52:00"
+
+msgid "_Insert"
+msgstr "L_isa"
 
 msgid "In_sert Date and Time..."
 msgstr "Lisa kuupäev/kellaae_g..."
