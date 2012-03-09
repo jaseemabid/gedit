@@ -35,9 +35,9 @@
 static gchar *modelines_data_dir;
 
 /* Mappings: language name -> Gedit language ID */
-static GHashTable *vim_languages;
-static GHashTable *emacs_languages;
-static GHashTable *kate_languages;
+static GHashTable *vim_languages = NULL;
+static GHashTable *emacs_languages = NULL;
+static GHashTable *kate_languages = NULL;
 
 typedef enum
 {
