@@ -883,12 +883,4 @@ modeline_parser_apply_modeline (GtkSourceView *view)
 	g_free (options.language_id);
 }
 
-void
-modeline_parser_deactivate (GtkSourceView *view)
-{
-	g_object_set_data (G_OBJECT (gtk_text_view_get_buffer (GTK_TEXT_VIEW (view))),
-	                   MODELINE_OPTIONS_DATA_KEY,
-	                   NULL);
-}
-
 /* vi:ts=8 */
