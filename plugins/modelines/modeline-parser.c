@@ -155,7 +155,7 @@ load_language_mappings (void)
 				     fname);
 
 		vim_languages = load_language_mappings_group (mappings, "vim");
-		emacs_languages	= load_language_mappings_group (mappings, "emacs");
+		emacs_languages = load_language_mappings_group (mappings, "emacs");
 		kate_languages = load_language_mappings_group (mappings, "kate");
 	}
 	else
@@ -175,22 +175,23 @@ static gchar *
 get_language_id (const gchar *language_name, GHashTable *mapping)
 {
 	gchar *name;
-	gchar *language_id;
+	gchar *language_id = NULL;
 
 	name = g_ascii_strdown (language_name, -1);
 
-	language_id = g_hash_table_lookup (mapping, name);
+	if (mapping != NULL)
+	{
+		language_id = g_hash_table_lookup (mapping, name);
 
-	if (language_id != NULL)
-	{
-		g_free (name);
-		return g_strdup (language_id);
+		if (language_id != NULL)
+		{
+			g_free (name);
+			return g_strdup (language_id);
+		}
 	}
-	else
-	{
-		/* by default assume that the gtksourcevuew id is the same */
-		return name;
-	}
+
+	/* by default assume that the gtksourcevuew id is the same */
+	return name;
 }
 
 static gchar *
