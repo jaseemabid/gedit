@@ -90,13 +90,13 @@ void
 modeline_parser_shutdown ()
 {
 	if (vim_languages != NULL)
-		g_hash_table_destroy (vim_languages);
+		g_hash_table_unref (vim_languages);
 
 	if (emacs_languages != NULL)
-		g_hash_table_destroy (emacs_languages);
+		g_hash_table_unref (emacs_languages);
 
 	if (kate_languages != NULL)
-		g_hash_table_destroy (kate_languages);
+		g_hash_table_unref (kate_languages);
 	
 	vim_languages = NULL;
 	emacs_languages = NULL;
