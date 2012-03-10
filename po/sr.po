@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gedit&"
 "keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-02-12 14:59+0000\n"
-"PO-Revision-Date: 2012-02-12 16:04+0200\n"
+"POT-Creation-Date: 2012-03-09 16:31+0000\n"
+"PO-Revision-Date: 2012-03-10 22:15+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "gedit"
 msgstr "Вилењакова бележница"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:799
+#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:791
 msgid "Text Editor"
 msgstr "Уређивач текста"
 
@@ -36,6 +36,16 @@ msgid "Edit text files"
 msgstr "Уређујте текстуалне документе"
 
 #: ../data/gedit.desktop.in.in.h:4
+#| msgid "Open a new window"
+msgid "Open a New Window"
+msgstr "Отворите нови прозор"
+
+#: ../data/gedit.desktop.in.in.h:5
+#| msgid "Create a new document"
+msgid "Open a New Document"
+msgstr "Отворите нови документ"
+
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "Вилењакова бележница — уређивач текста"
 
@@ -462,23 +472,31 @@ msgstr ""
 "Списак активних додатака. Садржи „путању“ активних додатака. Погледајте "
 "датотеку „.gedit-plugin“ да сазнате „путању“ датог додатка."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
+#: ../gedit/gedit-app.c:222
+msgid "There was an error displaying the help."
+msgstr "Дошло је до грешке при приказивању помоћи."
+
+#: ../gedit/gedit-app-osx.c:274
+msgid "About gedit"
+msgstr "О програму"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:141
 msgid "Log Out _without Saving"
 msgstr "Одјави се без _чувања рада"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:145
+#: ../gedit/gedit-close-confirmation-dialog.c:145
 msgid "_Cancel Logout"
 msgstr "Поништи _одјаву"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:152
+#: ../gedit/gedit-close-confirmation-dialog.c:152
 msgid "Close _without Saving"
 msgstr "Затвори _без снимања"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:214
+#: ../gedit/gedit-close-confirmation-dialog.c:214
 msgid "Question"
 msgstr "Питање"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:414
+#: ../gedit/gedit-close-confirmation-dialog.c:414
 #, c-format
 msgid ""
 "If you don't save, changes from the last %ld second will be permanently lost."
@@ -494,12 +512,12 @@ msgstr[2] ""
 msgstr[3] ""
 "Измене у последњој секунди ће бити трајно одбачене уколико не сачувате."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:423
+#: ../gedit/gedit-close-confirmation-dialog.c:423
 msgid ""
 "If you don't save, changes from the last minute will be permanently lost."
 msgstr "Измене у последњем минуту ће бити трајно одбачене уколико не сачувате."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:429
+#: ../gedit/gedit-close-confirmation-dialog.c:429
 #, c-format
 msgid ""
 "If you don't save, changes from the last minute and %ld second will be "
@@ -519,7 +537,7 @@ msgstr[2] ""
 msgstr[3] ""
 "Измене у последњем минуту ће бити трајно одбачене уколико не сачувате."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:439
+#: ../gedit/gedit-close-confirmation-dialog.c:439
 #, c-format
 msgid ""
 "If you don't save, changes from the last %ld minute will be permanently lost."
@@ -535,12 +553,12 @@ msgstr[2] ""
 msgstr[3] ""
 "Измене у последњем минуту ће бити трајно одбачене уколико не сачувате."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:454
+#: ../gedit/gedit-close-confirmation-dialog.c:454
 msgid "If you don't save, changes from the last hour will be permanently lost."
 msgstr ""
 "Измене током последњег часа ће бити трајно одбачене уколико не сачувате."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:460
+#: ../gedit/gedit-close-confirmation-dialog.c:460
 #, c-format
 msgid ""
 "If you don't save, changes from the last hour and %d minute will be "
@@ -560,7 +578,7 @@ msgstr[2] ""
 msgstr[3] ""
 "Измене у последњем часу ће бити трајно одбачене уколико не сачувате."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:475
+#: ../gedit/gedit-close-confirmation-dialog.c:475
 #, c-format
 msgid ""
 "If you don't save, changes from the last %d hour will be permanently lost."
@@ -575,22 +593,22 @@ msgstr[2] ""
 msgstr[3] ""
 "Измене у последњем часу ће бити трајно одбачене уколико не сачувате."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:519
+#: ../gedit/gedit-close-confirmation-dialog.c:519
 #, c-format
 msgid "Changes to document \"%s\" will be permanently lost."
 msgstr "Измене учињене у документу „%s“ ће бити трајно одбачене."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:524
+#: ../gedit/gedit-close-confirmation-dialog.c:524
 #, c-format
 msgid "Save changes to document \"%s\" before closing?"
 msgstr "Да сачувам измене у документу „%s“ пре затварања?"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:538
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:755
+#: ../gedit/gedit-close-confirmation-dialog.c:538
+#: ../gedit/gedit-close-confirmation-dialog.c:755
 msgid "Saving has been disabled by the system administrator."
 msgstr "Чување је онемогућено од стране администратора система."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:706
+#: ../gedit/gedit-close-confirmation-dialog.c:706
 #, c-format
 msgid "Changes to %d document will be permanently lost."
 msgid_plural "Changes to %d documents will be permanently lost."
@@ -599,7 +617,7 @@ msgstr[1] "Измене учињене у %d документа ће бити т
 msgstr[2] "Измене учињене у %d докумената ће бити трајно одбачене."
 msgstr[3] "Измене учињене у документу ће бити трајно одбачене."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:714
+#: ../gedit/gedit-close-confirmation-dialog.c:714
 #, c-format
 msgid "There is %d document with unsaved changes. Save changes before closing?"
 msgid_plural ""
@@ -611,268 +629,17 @@ msgstr[2] ""
 "%d докумената има несачуване измене. Да сачувам измене пре затварања?"
 msgstr[3] "Документ има несачуване измене. Да сачувам измене пре затварања?"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:733
+#: ../gedit/gedit-close-confirmation-dialog.c:733
 msgid "Docum_ents with unsaved changes:"
 msgstr "Документи са несачуваним изменама:"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:735
+#: ../gedit/gedit-close-confirmation-dialog.c:735
 msgid "S_elect the documents you want to save:"
 msgstr "Изаберите _документе које желите да сачувате:"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:759
+#: ../gedit/gedit-close-confirmation-dialog.c:759
 msgid "If you don't save, all your changes will be permanently lost."
 msgstr "Уколико не сачувате, све ваше измене ће бити трајно одбачене."
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:347
-msgid "Character Encodings"
-msgstr "Кодирања знакова"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:410
-#: ../gedit/dialogs/gedit-encodings-dialog.c:471
-msgid "_Description"
-msgstr "_Опис"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:419
-#: ../gedit/dialogs/gedit-encodings-dialog.c:480
-msgid "_Encoding"
-msgstr "_Кодни распоред"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:1
-msgid "Character encodings"
-msgstr "Кодирања знакова"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:2
-msgid "A_vailable encodings:"
-msgstr "Дос_тупни кодни распореди:"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:3
-msgid "E_ncodings shown in menu:"
-msgstr "Кодни _распореди приказани у изборнику:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:423
-msgid "Click on this button to select the font to be used by the editor"
-msgstr ""
-"Кликните на ово дугме да изаберете словни лик који ће бити коришћен у "
-"уређивачу"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:438
-#, c-format
-msgid "_Use the system fixed width font (%s)"
-msgstr "_Користи словни лик система сталне ширине (%s)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:676
-#, c-format
-msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
-msgstr ""
-"Не могу да направим фасциклу „%s“: „g_mkdir_with_parents()“ позив није "
-"успео: %s"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:860
-msgid "The selected color scheme cannot be installed."
-msgstr "Одабрана поставка боја не може бити постављена."
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:887
-msgid "Add Scheme"
-msgstr "Додајте поставку боја"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:894
-msgid "A_dd Scheme"
-msgstr "_Додај поставку боја"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:902
-msgid "Color Scheme Files"
-msgstr "Датотеке са поставкама боја"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:909
-#: ../gedit/gedit-file-chooser-dialog.c:52
-msgid "All Files"
-msgstr "Све датотеке"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:954
-#, c-format
-msgid "Could not remove color scheme \"%s\"."
-msgstr "Не могу да уклоним поставку боја „%s“."
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:1180
-msgid "gedit Preferences"
-msgstr "Поставке Вилењакове бележнице"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:1
-msgid "Preferences"
-msgstr "Поставке"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:2 ../gedit/gedit-view.c:552
-msgid "_Display line numbers"
-msgstr "Прикажи бројеве ре_дова"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:3
-msgid "Display right _margin at column:"
-msgstr "Прикажи десну _маргину у колони:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:4
-#: ../gedit/gedit-print-preferences.ui.h:9
-msgid "Text Wrapping"
-msgstr "Прелом текста"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:5
-#: ../gedit/gedit-print-preferences.ui.h:10
-msgid "Enable text _wrapping"
-msgstr "Омогући _прелом текста"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:6
-#: ../gedit/gedit-print-preferences.ui.h:11
-msgid "Do not _split words over two lines"
-msgstr "Не д_ели реч у две линије"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:7
-msgid "Highlighting"
-msgstr "Истицање"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:8
-msgid "Highlight current _line"
-msgstr "Ист_акни текући ред"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:9
-msgid "Highlight matching _brackets"
-msgstr "Истакни упарене за_граде"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:10
-msgid "View"
-msgstr "Преглед"
-
-# bug(slobo):nesigurno: da li su ovo jezicci ili tabulatori?
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:11
-msgid "Tab Stops"
-msgstr "Табулатори"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
-msgid "_Tab width:"
-msgstr "Ширина _табулатора:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:13
-msgid "Insert _spaces instead of tabs"
-msgstr "Уметни размаке уме_сто табулатора"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:14
-msgid "_Enable automatic indentation"
-msgstr "Омогући _аутоматско увлачење"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:15
-msgid "File Saving"
-msgstr "Снимање датотеке"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:16
-msgid "Create a _backup copy of files before saving"
-msgstr "Направи _резервни примерак датотека пре снимања"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:17
-msgid "_Autosave files every"
-msgstr "С_ам сачувај датотеке сваких"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:18
-msgid "_minutes"
-msgstr "_минута"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:19
-msgid "Editor"
-msgstr "Уређивач"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:20
-#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
-msgid "Font"
-msgstr "Словни лик"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:21
-msgid "Editor _font: "
-msgstr "Словни лик _уређивача:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:22
-msgid "Pick the editor font"
-msgstr "Изаберите словни лик уређивача"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23
-msgid "Color Scheme"
-msgstr "Шема боја"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:24
-msgid "Install scheme"
-msgstr "Инсталирајте шему"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:25
-#| msgid "Install scheme"
-msgid "Install Scheme"
-msgstr "Инсталирај шему"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:26
-msgid "Uninstall scheme"
-msgstr "Уклоните шему"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:27
-#| msgid "Uninstall scheme"
-msgid "Uninstall Scheme"
-msgstr "Уклони шему"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:28
-msgid "Font & Colors"
-msgstr "Словни лик и боје"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:29
-msgid "Plugins"
-msgstr "Додаци"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:1 ../gedit/gedit-window.c:1559
-msgid "Replace"
-msgstr "Замени"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:287
-msgid "Replace _All"
-msgstr "З_амени све"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:288
-#: ../gedit/gedit-commands-file.c:570
-msgid "_Replace"
-msgstr "_Замени"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2
-msgid "Replace All"
-msgstr "Замени све"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:3
-msgid "_Search for: "
-msgstr "_Потражи: "
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:4
-msgid "Replace _with: "
-msgstr "_Замени са: "
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:5
-msgid "_Match case"
-msgstr "_Упореди величину слова"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:6
-msgid "Match _entire word only"
-msgstr "Упор_еди само целе речи"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:7
-msgid "Search _backwards"
-msgstr "Тражи у_назад"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:8
-msgid "_Wrap around"
-msgstr "Пре_ламај около"
-
-#: ../gedit/gedit-app.c:224
-msgid "There was an error displaying the help."
-msgstr "Дошло је до грешке при приказивању помоћи."
-
-#: ../gedit/gedit-app-osx.c:274
-msgid "About gedit"
-msgstr "О програму"
 
 #: ../gedit/gedit-command-line.c:232
 #, c-format
@@ -972,6 +739,10 @@ msgstr "Датотека „%s“ је само за читање."
 #: ../gedit/gedit-commands-file.c:562
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr "Да ли желите да покушате да је замените оном коју снимате?"
+
+#: ../gedit/gedit-commands-file.c:570 ../gedit/gedit-replace-dialog.c:270
+msgid "_Replace"
+msgstr "_Замени"
 
 #: ../gedit/gedit-commands-file.c:612
 msgid "Save the file using compression?"
@@ -1170,11 +941,11 @@ msgid "Unsaved Document %d"
 msgstr "Несачуван документ „%d“"
 
 #: ../gedit/gedit-documents-panel.c:123 ../gedit/gedit-documents-panel.c:137
-#: ../gedit/gedit-window.c:2399 ../gedit/gedit-window.c:2406
+#: ../gedit/gedit-window.c:2397 ../gedit/gedit-window.c:2404
 msgid "Read-Only"
 msgstr "Само читање"
 
-#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3848
+#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3846
 msgid "Documents"
 msgstr "Документи"
 
@@ -1307,6 +1078,36 @@ msgstr "Текући локалитет (%s)"
 #: ../gedit/gedit-encodings-combo-box.c:388
 msgid "Add or Remove..."
 msgstr "Додај или уклони..."
+
+#: ../gedit/gedit-encodings-dialog.c:345
+msgid "Character Encodings"
+msgstr "Кодирања знакова"
+
+#: ../gedit/gedit-encodings-dialog.c:395 ../gedit/gedit-encodings-dialog.c:456
+msgid "_Description"
+msgstr "_Опис"
+
+#: ../gedit/gedit-encodings-dialog.c:404 ../gedit/gedit-encodings-dialog.c:465
+msgid "_Encoding"
+msgstr "_Кодни распоред"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-encodings-dialog.ui.h:1
+msgid "Character encodings"
+msgstr "Кодирања знакова"
+
+#: ../gedit/gedit-encodings-dialog.ui.h:2
+msgid "A_vailable encodings:"
+msgstr "Дос_тупни кодни распореди:"
+
+#: ../gedit/gedit-encodings-dialog.ui.h:3
+msgid "E_ncodings shown in menu:"
+msgstr "Кодни _распореди приказани у изборнику:"
+
+#: ../gedit/gedit-file-chooser-dialog.c:52
+#: ../gedit/gedit-preferences-dialog.c:909
+msgid "All Files"
+msgstr "Све датотеке"
 
 #: ../gedit/gedit-file-chooser-dialog.c:53
 msgid "All Text Files"
@@ -1694,7 +1495,7 @@ msgstr "Сачувај _као..."
 msgid "_Print..."
 msgstr "_Штампај..."
 
-#: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:585
+#: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:587
 msgid "Empty"
 msgstr "Празно"
 
@@ -1702,16 +1503,182 @@ msgstr "Празно"
 msgid "Hide panel"
 msgstr "Сакриј панел"
 
-#: ../gedit/gedit-print-job.c:580
+#: ../gedit/gedit-preferences-dialog.c:423
+msgid "Click on this button to select the font to be used by the editor"
+msgstr ""
+"Кликните на ово дугме да изаберете словни лик који ће бити коришћен у "
+"уређивачу"
+
+#: ../gedit/gedit-preferences-dialog.c:438
+#, c-format
+msgid "_Use the system fixed width font (%s)"
+msgstr "_Користи словни лик система сталне ширине (%s)"
+
+#: ../gedit/gedit-preferences-dialog.c:676
+#, c-format
+msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
+msgstr ""
+"Не могу да направим фасциклу „%s“: „g_mkdir_with_parents()“ позив није "
+"успео: %s"
+
+#: ../gedit/gedit-preferences-dialog.c:860
+msgid "The selected color scheme cannot be installed."
+msgstr "Одабрана поставка боја не може бити постављена."
+
+#: ../gedit/gedit-preferences-dialog.c:887
+msgid "Add Scheme"
+msgstr "Додајте поставку боја"
+
+#: ../gedit/gedit-preferences-dialog.c:894
+msgid "A_dd Scheme"
+msgstr "_Додај поставку боја"
+
+#: ../gedit/gedit-preferences-dialog.c:902
+msgid "Color Scheme Files"
+msgstr "Датотеке са поставкама боја"
+
+#: ../gedit/gedit-preferences-dialog.c:954
+#, c-format
+msgid "Could not remove color scheme \"%s\"."
+msgstr "Не могу да уклоним поставку боја „%s“."
+
+#: ../gedit/gedit-preferences-dialog.c:1177
+msgid "gedit Preferences"
+msgstr "Поставке Вилењакове бележнице"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-preferences-dialog.ui.h:1
+msgid "Preferences"
+msgstr "Поставке"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:2 ../gedit/gedit-view.c:552
+msgid "_Display line numbers"
+msgstr "Прикажи бројеве ре_дова"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:3
+msgid "Display right _margin at column:"
+msgstr "Прикажи десну _маргину у колони:"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:4
+#: ../gedit/gedit-print-preferences.ui.h:9
+msgid "Text Wrapping"
+msgstr "Прелом текста"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:5
+#: ../gedit/gedit-print-preferences.ui.h:10
+msgid "Enable text _wrapping"
+msgstr "Омогући _прелом текста"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:6
+#: ../gedit/gedit-print-preferences.ui.h:11
+msgid "Do not _split words over two lines"
+msgstr "Не д_ели реч у две линије"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:7
+msgid "Highlighting"
+msgstr "Истицање"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:8
+msgid "Highlight current _line"
+msgstr "Ист_акни текући ред"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:9
+msgid "Highlight matching _brackets"
+msgstr "Истакни упарене за_граде"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:10
+msgid "View"
+msgstr "Преглед"
+
+# bug(slobo):nesigurno: da li su ovo jezicci ili tabulatori?
+#: ../gedit/gedit-preferences-dialog.ui.h:11
+msgid "Tab Stops"
+msgstr "Табулатори"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:12
+msgid "_Tab width:"
+msgstr "Ширина _табулатора:"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:13
+msgid "Insert _spaces instead of tabs"
+msgstr "Уметни размаке уме_сто табулатора"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:14
+msgid "_Enable automatic indentation"
+msgstr "Омогући _аутоматско увлачење"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:15
+msgid "File Saving"
+msgstr "Снимање датотеке"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:16
+msgid "Create a _backup copy of files before saving"
+msgstr "Направи _резервни примерак датотека пре снимања"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:17
+msgid "_Autosave files every"
+msgstr "С_ам сачувај датотеке сваких"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:18
+msgid "_minutes"
+msgstr "_минута"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:19
+msgid "Editor"
+msgstr "Уређивач"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:20
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
+msgid "Font"
+msgstr "Словни лик"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:21
+msgid "Editor _font: "
+msgstr "Словни лик _уређивача:"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:22
+msgid "Pick the editor font"
+msgstr "Изаберите словни лик уређивача"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:23
+msgid "Color Scheme"
+msgstr "Шема боја"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:24
+msgid "Install scheme"
+msgstr "Инсталирајте шему"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:25
+msgid "Install Scheme"
+msgstr "Инсталирај шему"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:26
+msgid "Uninstall scheme"
+msgstr "Уклоните шему"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:27
+msgid "Uninstall Scheme"
+msgstr "Уклони шему"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:28
+msgid "Font & Colors"
+msgstr "Словни лик и боје"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:29
+msgid "Plugins"
+msgstr "Додаци"
+
+#: ../gedit/gedit-print-job.c:572
 #, c-format
 msgid "File: %s"
 msgstr "Датотека: %s"
 
-#: ../gedit/gedit-print-job.c:589
+#: ../gedit/gedit-print-job.c:581
 msgid "Page %N of %Q"
 msgstr "Страница %N од %Q"
 
-#: ../gedit/gedit-print-job.c:851
+#: ../gedit/gedit-print-job.c:843
 msgid "Preparing..."
 msgstr "Припремам..."
 
@@ -1836,6 +1803,44 @@ msgstr "Преглед пред штампу"
 #: ../gedit/gedit-print-preview.c:968
 msgid "The preview of a page in the document to be printed"
 msgstr "Прегледајте страну документа коју желите да одштампате"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-replace-dialog.c:207 ../gedit/gedit-replace-dialog.ui.h:1
+#: ../gedit/gedit-window.c:1557
+msgid "Replace"
+msgstr "Замени"
+
+#: ../gedit/gedit-replace-dialog.c:269
+msgid "Replace _All"
+msgstr "З_амени све"
+
+#: ../gedit/gedit-replace-dialog.ui.h:2
+msgid "Replace All"
+msgstr "Замени све"
+
+#: ../gedit/gedit-replace-dialog.ui.h:3
+msgid "_Search for: "
+msgstr "_Потражи: "
+
+#: ../gedit/gedit-replace-dialog.ui.h:4
+msgid "Replace _with: "
+msgstr "_Замени са: "
+
+#: ../gedit/gedit-replace-dialog.ui.h:5
+msgid "_Match case"
+msgstr "_Упореди величину слова"
+
+#: ../gedit/gedit-replace-dialog.ui.h:6
+msgid "Match _entire word only"
+msgstr "Упор_еди само целе речи"
+
+#: ../gedit/gedit-replace-dialog.ui.h:7
+msgid "Search _backwards"
+msgstr "Тражи у_назад"
+
+#: ../gedit/gedit-replace-dialog.ui.h:8
+msgid "_Wrap around"
+msgstr "Пре_ламај около"
 
 #. Use spaces to leave padding proportional to the font size
 #: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
@@ -1975,7 +1980,7 @@ msgstr "Направите нови документ"
 msgid "_Open..."
 msgstr "_Отвори..."
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1487
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1486
 msgid "Open a file"
 msgstr "Отворите датотеку"
 
@@ -2263,7 +2268,7 @@ msgstr "Ниска коју желите да потражите"
 msgid "Line you want to move the cursor to"
 msgstr "Ред у који желите да померите курсор"
 
-#: ../gedit/gedit-window.c:942
+#: ../gedit/gedit-window.c:941
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Користи „%s“ режим истицања"
@@ -2271,7 +2276,7 @@ msgstr "Користи „%s“ режим истицања"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1047 ../gedit/gedit-window.c:2093
+#: ../gedit/gedit-window.c:1046 ../gedit/gedit-window.c:2091
 #: ../plugins/externaltools/tools/manager.py:146
 #: ../plugins/externaltools/tools/manager.py:450
 #: ../plugins/externaltools/tools/manager.py:561
@@ -2279,59 +2284,59 @@ msgstr "Користи „%s“ режим истицања"
 msgid "Plain Text"
 msgstr "Обичан текст"
 
-#: ../gedit/gedit-window.c:1048
+#: ../gedit/gedit-window.c:1047
 msgid "Disable syntax highlighting"
 msgstr "Искључите истицање синтаксе"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1365
+#: ../gedit/gedit-window.c:1364
 #, c-format
 msgid "Open '%s'"
 msgstr "Отвори „%s“"
 
-#: ../gedit/gedit-window.c:1489
+#: ../gedit/gedit-window.c:1488
 msgid "Open a recently used file"
 msgstr "Отворите скоро коришћену датотеку"
 
-#: ../gedit/gedit-window.c:1495
+#: ../gedit/gedit-window.c:1494
 msgid "Open"
 msgstr "Отвори"
 
-#: ../gedit/gedit-window.c:1553
+#: ../gedit/gedit-window.c:1551
 msgid "Save"
 msgstr "Сачувај"
 
-#: ../gedit/gedit-window.c:1555
+#: ../gedit/gedit-window.c:1553
 msgid "Print"
 msgstr "Штампај"
 
-#: ../gedit/gedit-window.c:1557
+#: ../gedit/gedit-window.c:1555
 msgid "Find"
 msgstr "Пронађи"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1717
+#: ../gedit/gedit-window.c:1715
 #, c-format
 msgid "Activate '%s'"
 msgstr "Активирај „%s“"
 
-#: ../gedit/gedit-window.c:2074
+#: ../gedit/gedit-window.c:2072
 msgid "Use Spaces"
 msgstr "Користи размаке"
 
-#: ../gedit/gedit-window.c:2147
+#: ../gedit/gedit-window.c:2145
 msgid "Tab Width"
 msgstr "Ширина табулатора"
 
-#: ../gedit/gedit-window.c:2256
+#: ../gedit/gedit-window.c:2254
 msgid "Bracket match is out of range"
 msgstr "Поклапање заграда је изван опсега"
 
-#: ../gedit/gedit-window.c:2261
+#: ../gedit/gedit-window.c:2259
 msgid "Bracket match not found"
 msgstr "Нисам пронашао поклапање заграда"
 
-#: ../gedit/gedit-window.c:2266
+#: ../gedit/gedit-window.c:2264
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Поклапање заграда се налазе у реду: %d"
@@ -2438,11 +2443,11 @@ msgstr ""
 "Анализира тренутни документ и извештава о броју речи, редова, знакова, и "
 "знакова без размака."
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:427
 msgid "_Document Statistics"
 msgstr "Статистика _документа"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:429
 msgid "Get statistical information on the current document"
 msgstr "добавите статистичке податке о тренутном документу"
 
@@ -2457,7 +2462,6 @@ msgstr "Назив датотеке"
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:4
 #: ../plugins/externaltools/tools/tools.ui.h:27
 #: ../plugins/snippets/snippets/snippets.ui.h:13
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 msgid "    "
 msgstr "    "
 
@@ -2882,131 +2886,131 @@ msgstr ""
 "Нови директоријум је одстрањен филтером. Морате прилагодити подешавања "
 "филтрирања како бисте га учинили видљивим."
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:734
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:733
 msgid "Bookmarks"
 msgstr "Обележивачи"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:822
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:821
 msgid "_Filter"
 msgstr "_Филтер"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:826
 msgid "_Move to Trash"
 msgstr "Пре_мести у смеће"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:828
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
 msgid "Move selected file or folder to trash"
 msgstr "Преместите изабрану датотеку или фасциклу у смеће"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:829
 msgid "_Delete"
 msgstr "О_бриши"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:831
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
 msgid "Delete selected file or folder"
 msgstr "Обришите означену датотеку или фасциклу"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:838
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:837
 msgid "Open selected file"
 msgstr "Отворите изабрану датотеку"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:843
 msgid "Up"
 msgstr "Горе"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:845
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
 msgid "Open the parent folder"
 msgstr "Отворите надфасциклу"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:849
 msgid "_New Folder"
 msgstr "_Нова фасцикла"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:851
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
 msgid "Add new empty folder"
 msgstr "Додајте нову празну фасциклу"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:852
 msgid "New F_ile"
 msgstr "Нова датотека"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:854
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
 msgid "Add new empty file"
 msgstr "Додајте нову празну датотеку"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:858
 msgid "_Rename"
 msgstr "П_реименуј"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:860
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
 msgid "Rename selected file or folder"
 msgstr "Преименујте изабрану датотеку или фасциклу"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:866
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:865
 msgid "_Previous Location"
 msgstr "_Претходно место"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:867
 msgid "Go to the previous visited location"
 msgstr "Идите на претходно посећено место"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:869
 msgid "_Next Location"
 msgstr "_Наредно место"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
 msgid "Go to the next visited location"
 msgstr "Идите на следеће посећено место"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
 msgid "Re_fresh View"
 msgstr "_Освежи преглед"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
 msgid "Refresh the view"
 msgstr "Освежите преглед"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:891
 msgid "_View Folder"
 msgstr "_Прикажи фасциклу"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:875
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:893
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
 msgid "View folder in file manager"
 msgstr "Прикажите фасциклу у прегледачу датотека"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:881
 msgid "Show _Hidden"
 msgstr "Прикажи с_кривене"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:883
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
 msgid "Show hidden files and folders"
 msgstr "Прикажите скривене датотеке и фасцикле"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:884
 msgid "Show _Binary"
 msgstr "Прикажи _извршне"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:886
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
 msgid "Show binary files"
 msgstr "Прикажите извршне датотеке"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1207
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1202
 msgid "Match Filename"
 msgstr "Подудари назив датотеке"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2009
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2004
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "Не постоји објекат монтирања за монтирани диск: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2086
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2081
 #, c-format
 msgid "Could not open media: %s"
 msgstr "Не могу да отворим медијум: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2133
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2128
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "Не могу да монтирам диск: %s"
@@ -3461,7 +3465,7 @@ msgstr "Поређајте документ или изабрани текст."
 #. Translators: Displayed in the "Check Spelling" dialog if there are no suggestions
 #. * for the current misspelled word
 #: ../plugins/spell/gedit-automatic-spell-checker.c:420
-#: ../plugins/spell/gedit-spell-checker-dialog.c:458
+#: ../plugins/spell/gedit-spell-checker-dialog.c:444
 msgid "(no suggested words)"
 msgstr "(нема предлога речи)"
 
@@ -3483,20 +3487,20 @@ msgstr "Дод_ај"
 msgid "_Spelling Suggestions..."
 msgstr "Предлози провере пи_сања..."
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:278
+#: ../plugins/spell/gedit-spell-checker-dialog.c:264
 msgid "Check Spelling"
 msgstr "Провери писање"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:289
+#: ../plugins/spell/gedit-spell-checker-dialog.c:275
 msgid "Suggestions"
 msgstr "Предлози"
 
 #. Translators: Displayed in the "Check Spelling" dialog if the current word isn't misspelled
-#: ../plugins/spell/gedit-spell-checker-dialog.c:565
+#: ../plugins/spell/gedit-spell-checker-dialog.c:551
 msgid "(correct spelling)"
 msgstr "(исправно писање)"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:706
+#: ../plugins/spell/gedit-spell-checker-dialog.c:692
 msgid "Completed spell checking"
 msgstr "Провера писања је завршена"
 
@@ -3529,12 +3533,12 @@ msgid "Default"
 msgstr "Основни"
 
 #. ex:ts=8:noet:
-#: ../plugins/spell/gedit-spell-language-dialog.c:142
+#: ../plugins/spell/gedit-spell-language-dialog.c:140
 #: ../plugins/spell/languages-dialog.ui.h:1
 msgid "Set language"
 msgstr "Поставите језик"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:196
+#: ../plugins/spell/gedit-spell-language-dialog.c:182
 msgid "Languages"
 msgstr "Језици"
 
@@ -3643,31 +3647,31 @@ msgid "Insert Date and Time"
 msgstr "Уметни датум и време"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:2
-msgid "_Insert"
-msgstr "У_метни"
-
-#: ../plugins/time/gedit-time-dialog.ui.h:3
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
 msgid "Use the _selected format"
 msgstr "Користи изабрани фо_рмат"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:4
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
+#: ../plugins/time/gedit-time-dialog.ui.h:3
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
 msgid "_Use custom format"
 msgstr "Кори_сти произвољан формат"
 
 #. Translators: Use the more common date format in your locale
-#: ../plugins/time/gedit-time-dialog.ui.h:6
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
+#: ../plugins/time/gedit-time-dialog.ui.h:5
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%d.%m.%Y, %H:%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
-#: ../plugins/time/gedit-time-dialog.ui.h:7
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:11
+#: ../plugins/time/gedit-time-dialog.ui.h:6
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "01/11/2009 17:52:00"
 msgstr "01.11.2009, 17:52:00"
+
+#: ../plugins/time/gedit-time-dialog.ui.h:7
+msgid "_Insert"
+msgstr "У_метни"
 
 #: ../plugins/time/gedit-time-plugin.c:188
 msgid "In_sert Date and Time..."
@@ -3690,7 +3694,7 @@ msgstr "Подесите додатак за датум/време"
 msgid "When inserting date/time..."
 msgstr "Када се убацује датум/време..."
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 msgid "_Prompt for a format"
 msgstr "У_питај за формат"
 
@@ -3765,10 +3769,6 @@ msgstr ""
 
 #~ msgid "Go to next location"
 #~ msgstr "Идите на следеће место"
-
-#~| msgid "_Move to New Window"
-#~ msgid "Open a new window"
-#~ msgstr "Отворите нови прозор"
 
 #~ msgid "External Tools Manager"
 #~ msgstr "Управник спољних алата"
