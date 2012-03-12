@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-19 11:03+0100\n"
-"PO-Revision-Date: 2012-02-19 11:27+0100\n"
+"POT-Creation-Date: 2012-03-12 18:14+0100\n"
+"PO-Revision-Date: 2012-03-12 18:14+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -25,7 +25,7 @@ msgid "gedit"
 msgstr "gedit"
 
 #: ../data/gedit.desktop.in.in.h:2
-#: ../gedit/gedit-print-job.c:799
+#: ../gedit/gedit-print-job.c:791
 msgid "Text Editor"
 msgstr "Textredigerare"
 
@@ -34,6 +34,14 @@ msgid "Edit text files"
 msgstr "Redigera textfiler"
 
 #: ../data/gedit.desktop.in.in.h:4
+msgid "Open a New Window"
+msgstr "Öppna ett nytt fönster"
+
+#: ../data/gedit.desktop.in.in.h:5
+msgid "Open a New Document"
+msgstr "Öppna ett nytt dokument"
+
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "Textredigeraren gedit"
 
@@ -334,352 +342,113 @@ msgstr "Aktiva insticksmoduler"
 msgid "List of active plugins. It contains the \"Location\" of the active plugins. See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
 msgstr "Lista med aktiva insticksmoduler. Den innehåller \"platsen\" för de aktiva insticksmodulerna. Se filen .gedit-plugin för att få tag i \"platsen\" för en given insticksmodul."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
-msgid "Log Out _without Saving"
-msgstr "Logga ut _utan att spara"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:145
-msgid "_Cancel Logout"
-msgstr "Avbryt _utloggning"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:152
-msgid "Close _without Saving"
-msgstr "Stäng _utan att spara"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:214
-msgid "Question"
-msgstr "Fråga"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:414
-#, c-format
-msgid "If you don't save, changes from the last %ld second will be permanently lost."
-msgid_plural "If you don't save, changes from the last %ld seconds will be permanently lost."
-msgstr[0] "Om du inte sparar kommer ändringar gjorda under den senaste sekunden att vara borta för alltid."
-msgstr[1] "Om du inte sparar kommer ändringar gjorda under de senaste %ld sekunderna att vara borta för alltid."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:423
-msgid "If you don't save, changes from the last minute will be permanently lost."
-msgstr "Om du inte sparar kommer ändringar gjorda under den senaste minuten att vara borta för alltid."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:429
-#, c-format
-msgid "If you don't save, changes from the last minute and %ld second will be permanently lost."
-msgid_plural "If you don't save, changes from the last minute and %ld seconds will be permanently lost."
-msgstr[0] "Om du inte sparar kommer ändringar gjorda under den senaste minuten och sekunden att vara borta för alltid."
-msgstr[1] "Om du inte sparar kommer ändringar gjorda under den senaste minuten och %ld sekunderna att vara borta för alltid."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:439
-#, c-format
-msgid "If you don't save, changes from the last %ld minute will be permanently lost."
-msgid_plural "If you don't save, changes from the last %ld minutes will be permanently lost."
-msgstr[0] "Om du inte sparar kommer ändringar gjorda under den senaste minuten att vara borta för alltid."
-msgstr[1] "Om du inte sparar kommer ändringar gjorda under de senaste %ld minuterna att vara borta för alltid."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:454
-msgid "If you don't save, changes from the last hour will be permanently lost."
-msgstr "Om du inte sparar kommer ändringar gjorda under den senaste timmen att vara borta för alltid."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:460
-#, c-format
-msgid "If you don't save, changes from the last hour and %d minute will be permanently lost."
-msgid_plural "If you don't save, changes from the last hour and %d minutes will be permanently lost."
-msgstr[0] "Om du inte sparar kommer ändringar gjorda under den senaste timmen och minuten att vara borta för alltid."
-msgstr[1] "Om du inte sparar kommer ändringar gjorda under den senaste timmen och %d minuterna att vara borta för alltid."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:475
-#, c-format
-msgid "If you don't save, changes from the last %d hour will be permanently lost."
-msgid_plural "If you don't save, changes from the last %d hours will be permanently lost."
-msgstr[0] "Om du inte sparar kommer ändringar gjorda under den senaste timmen att vara borta för alltid."
-msgstr[1] "Om du inte sparar kommer ändringar gjorda under de senaste %d timmarna att vara borta för alltid."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:519
-#, c-format
-msgid "Changes to document \"%s\" will be permanently lost."
-msgstr "Ändringar i dokumentet \"%s\" kommer att vara borta för alltid."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:524
-#, c-format
-msgid "Save changes to document \"%s\" before closing?"
-msgstr "Spara ändringarna i dokumentet \"%s\" innan stängning?"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:538
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:755
-msgid "Saving has been disabled by the system administrator."
-msgstr "Sparning har inaktiverats av systemadministratören."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:706
-#, c-format
-msgid "Changes to %d document will be permanently lost."
-msgid_plural "Changes to %d documents will be permanently lost."
-msgstr[0] "Ändringar i %d dokument kommer att vara borta för alltid."
-msgstr[1] "Ändringar i %d dokument kommer att vara borta för alltid."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:714
-#, c-format
-msgid "There is %d document with unsaved changes. Save changes before closing?"
-msgid_plural "There are %d documents with unsaved changes. Save changes before closing?"
-msgstr[0] "Det finns ett dokument med osparade ändringar. Spara ändringar innan avslutande?"
-msgstr[1] "Det finns %d dokument med osparade ändringar. Spara ändringar innan avslutande?"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:733
-msgid "Docum_ents with unsaved changes:"
-msgstr "Dokum_ent med osparade ändringar:"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:735
-msgid "S_elect the documents you want to save:"
-msgstr "_Välj de dokument som du vill spara:"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:759
-msgid "If you don't save, all your changes will be permanently lost."
-msgstr "Om du inte sparar kommer alla dina ändringar att vara borta för alltid."
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:347
-msgid "Character Encodings"
-msgstr "Teckenkodningar"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:410
-#: ../gedit/dialogs/gedit-encodings-dialog.c:471
-msgid "_Description"
-msgstr "_Beskrivning"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:419
-#: ../gedit/dialogs/gedit-encodings-dialog.c:480
-msgid "_Encoding"
-msgstr "_Kodning"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:1
-msgid "Character encodings"
-msgstr "Teckenkodningar"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:2
-msgid "A_vailable encodings:"
-msgstr "Till_gängliga kodningar:"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:3
-msgid "E_ncodings shown in menu:"
-msgstr "Kod_ningar som visas i menyn:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:423
-msgid "Click on this button to select the font to be used by the editor"
-msgstr "Tryck på denna knapp för att välja det typsnitt som ska användas av redigeraren"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:438
-#, c-format
-msgid "_Use the system fixed width font (%s)"
-msgstr "_Använd systemets typsnitt med fast breddsteg (%s)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:676
-#, c-format
-msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
-msgstr "Katalogen \"%s\" kunde inte skapas: g_mkdir_with_parents() misslyckades: %s"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:860
-msgid "The selected color scheme cannot be installed."
-msgstr "Det valda färgschemat kan inte installeras."
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:887
-msgid "Add Scheme"
-msgstr "Lägg till schema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:894
-msgid "A_dd Scheme"
-msgstr "Lä_gg till schema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:902
-msgid "Color Scheme Files"
-msgstr "Färgschemafiler"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:909
-#: ../gedit/gedit-file-chooser-dialog.c:52
-msgid "All Files"
-msgstr "Alla filer"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:954
-#, c-format
-msgid "Could not remove color scheme \"%s\"."
-msgstr "Kunde inte ta bort färgschemat \"%s\"."
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:1180
-msgid "gedit Preferences"
-msgstr "Inställningar för gedit"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:1
-msgid "Preferences"
-msgstr "Inställningar"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:2
-#: ../gedit/gedit-view.c:552
-msgid "_Display line numbers"
-msgstr "_Visa radnummer"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:3
-msgid "Display right _margin at column:"
-msgstr "Visa höger_marginal på kolumn:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:4
-#: ../gedit/gedit-print-preferences.ui.h:9
-msgid "Text Wrapping"
-msgstr "Textradbrytning"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:5
-#: ../gedit/gedit-print-preferences.ui.h:10
-msgid "Enable text _wrapping"
-msgstr "Aktivera text_radbrytning"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:6
-#: ../gedit/gedit-print-preferences.ui.h:11
-msgid "Do not _split words over two lines"
-msgstr "_Dela inte ord över två rader"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:7
-msgid "Highlighting"
-msgstr "Färgmarkering"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:8
-msgid "Highlight current _line"
-msgstr "Färgmarkera a_ktuell rad"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:9
-msgid "Highlight matching _brackets"
-msgstr "Färgmarkera matchande _klammrar"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:10
-msgid "View"
-msgstr "Visa"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:11
-msgid "Tab Stops"
-msgstr "Tabulatorstopp"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
-msgid "_Tab width:"
-msgstr "_Tabulatorbredd:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:13
-msgid "Insert _spaces instead of tabs"
-msgstr "Infoga _blanksteg istället för tabulatortecken"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:14
-msgid "_Enable automatic indentation"
-msgstr "_Aktivera automatisk indentering"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:15
-msgid "File Saving"
-msgstr "Filsparning"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:16
-msgid "Create a _backup copy of files before saving"
-msgstr "Skapa en s_äkerhetskopia av filen innan den sparas"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:17
-msgid "_Autosave files every"
-msgstr "Spara filer _automatiskt var"
-
-# Antar att detta är i "... var [ ] minut", alltså inte plural på svenska
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:18
-msgid "_minutes"
-msgstr "_minut"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:19
-msgid "Editor"
-msgstr "Redigerare"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:20
-#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
-msgid "Font"
-msgstr "Typsnitt"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:21
-msgid "Editor _font: "
-msgstr "Redigerar_typsnitt: "
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:22
-msgid "Pick the editor font"
-msgstr "Välj redigerartypsnittet"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23
-msgid "Color Scheme"
-msgstr "Färgschema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:24
-msgid "Install scheme"
-msgstr "Installera schema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:25
-msgid "Install Scheme"
-msgstr "Installera schema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:26
-msgid "Uninstall scheme"
-msgstr "Avinstallera schema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:27
-msgid "Uninstall Scheme"
-msgstr "Avinstallera schema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:28
-msgid "Font & Colors"
-msgstr "Typsnitt och färger"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:29
-msgid "Plugins"
-msgstr "Insticksmoduler"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:1
-#: ../gedit/gedit-window.c:1559
-msgid "Replace"
-msgstr "Ersätt"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:287
-msgid "Replace _All"
-msgstr "Ersätt _alla"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:288
-#: ../gedit/gedit-commands-file.c:570
-msgid "_Replace"
-msgstr "_Ersätt"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2
-msgid "Replace All"
-msgstr "Ersätt alla"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:3
-msgid "_Search for: "
-msgstr "_Sök efter: "
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:4
-msgid "Replace _with: "
-msgstr "Ersätt _med: "
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:5
-msgid "_Match case"
-msgstr "_Gör skillnad på gemener/VERSALER"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:6
-msgid "Match _entire word only"
-msgstr "Sök endast _hela ord"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:7
-msgid "Search _backwards"
-msgstr "Sök _baklänges"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:8
-msgid "_Wrap around"
-msgstr "_Börja om från början"
-
-#: ../gedit/gedit-app.c:224
+#: ../gedit/gedit-app.c:222
 msgid "There was an error displaying the help."
 msgstr "Ett fel inträffade vid visning av hjälpen."
 
 #: ../gedit/gedit-app-osx.c:274
 msgid "About gedit"
 msgstr "Om gedit"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:141
+msgid "Log Out _without Saving"
+msgstr "Logga ut _utan att spara"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:145
+msgid "_Cancel Logout"
+msgstr "Avbryt _utloggning"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:152
+msgid "Close _without Saving"
+msgstr "Stäng _utan att spara"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:214
+msgid "Question"
+msgstr "Fråga"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:414
+#, c-format
+msgid "If you don't save, changes from the last %ld second will be permanently lost."
+msgid_plural "If you don't save, changes from the last %ld seconds will be permanently lost."
+msgstr[0] "Om du inte sparar kommer ändringar gjorda under den senaste sekunden att vara borta för alltid."
+msgstr[1] "Om du inte sparar kommer ändringar gjorda under de senaste %ld sekunderna att vara borta för alltid."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:423
+msgid "If you don't save, changes from the last minute will be permanently lost."
+msgstr "Om du inte sparar kommer ändringar gjorda under den senaste minuten att vara borta för alltid."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:429
+#, c-format
+msgid "If you don't save, changes from the last minute and %ld second will be permanently lost."
+msgid_plural "If you don't save, changes from the last minute and %ld seconds will be permanently lost."
+msgstr[0] "Om du inte sparar kommer ändringar gjorda under den senaste minuten och sekunden att vara borta för alltid."
+msgstr[1] "Om du inte sparar kommer ändringar gjorda under den senaste minuten och %ld sekunderna att vara borta för alltid."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:439
+#, c-format
+msgid "If you don't save, changes from the last %ld minute will be permanently lost."
+msgid_plural "If you don't save, changes from the last %ld minutes will be permanently lost."
+msgstr[0] "Om du inte sparar kommer ändringar gjorda under den senaste minuten att vara borta för alltid."
+msgstr[1] "Om du inte sparar kommer ändringar gjorda under de senaste %ld minuterna att vara borta för alltid."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:454
+msgid "If you don't save, changes from the last hour will be permanently lost."
+msgstr "Om du inte sparar kommer ändringar gjorda under den senaste timmen att vara borta för alltid."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:460
+#, c-format
+msgid "If you don't save, changes from the last hour and %d minute will be permanently lost."
+msgid_plural "If you don't save, changes from the last hour and %d minutes will be permanently lost."
+msgstr[0] "Om du inte sparar kommer ändringar gjorda under den senaste timmen och minuten att vara borta för alltid."
+msgstr[1] "Om du inte sparar kommer ändringar gjorda under den senaste timmen och %d minuterna att vara borta för alltid."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:475
+#, c-format
+msgid "If you don't save, changes from the last %d hour will be permanently lost."
+msgid_plural "If you don't save, changes from the last %d hours will be permanently lost."
+msgstr[0] "Om du inte sparar kommer ändringar gjorda under den senaste timmen att vara borta för alltid."
+msgstr[1] "Om du inte sparar kommer ändringar gjorda under de senaste %d timmarna att vara borta för alltid."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:519
+#, c-format
+msgid "Changes to document \"%s\" will be permanently lost."
+msgstr "Ändringar i dokumentet \"%s\" kommer att vara borta för alltid."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:524
+#, c-format
+msgid "Save changes to document \"%s\" before closing?"
+msgstr "Spara ändringarna i dokumentet \"%s\" innan stängning?"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:538
+#: ../gedit/gedit-close-confirmation-dialog.c:755
+msgid "Saving has been disabled by the system administrator."
+msgstr "Sparning har inaktiverats av systemadministratören."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:706
+#, c-format
+msgid "Changes to %d document will be permanently lost."
+msgid_plural "Changes to %d documents will be permanently lost."
+msgstr[0] "Ändringar i %d dokument kommer att vara borta för alltid."
+msgstr[1] "Ändringar i %d dokument kommer att vara borta för alltid."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:714
+#, c-format
+msgid "There is %d document with unsaved changes. Save changes before closing?"
+msgid_plural "There are %d documents with unsaved changes. Save changes before closing?"
+msgstr[0] "Det finns ett dokument med osparade ändringar. Spara ändringar innan avslutande?"
+msgstr[1] "Det finns %d dokument med osparade ändringar. Spara ändringar innan avslutande?"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:733
+msgid "Docum_ents with unsaved changes:"
+msgstr "Dokum_ent med osparade ändringar:"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:735
+msgid "S_elect the documents you want to save:"
+msgstr "_Välj de dokument som du vill spara:"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:759
+msgid "If you don't save, all your changes will be permanently lost."
+msgstr "Om du inte sparar kommer alla dina ändringar att vara borta för alltid."
 
 #: ../gedit/gedit-command-line.c:232
 #, c-format
@@ -773,6 +542,11 @@ msgstr "Filen \"%s\" är skrivskyddad."
 #: ../gedit/gedit-commands-file.c:562
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr "Vill du försöka ersätta den med den fil som du vill spara?"
+
+#: ../gedit/gedit-commands-file.c:570
+#: ../gedit/gedit-replace-dialog.c:270
+msgid "_Replace"
+msgstr "_Ersätt"
 
 #: ../gedit/gedit-commands-file.c:612
 msgid "Save the file using compression?"
@@ -909,13 +683,13 @@ msgstr "Osparat dokument %d"
 
 #: ../gedit/gedit-documents-panel.c:123
 #: ../gedit/gedit-documents-panel.c:137
-#: ../gedit/gedit-window.c:2399
-#: ../gedit/gedit-window.c:2406
+#: ../gedit/gedit-window.c:2397
+#: ../gedit/gedit-window.c:2404
 msgid "Read-Only"
 msgstr "Skrivskyddad"
 
 #: ../gedit/gedit-documents-panel.c:1146
-#: ../gedit/gedit-window.c:3848
+#: ../gedit/gedit-window.c:3846
 msgid "Documents"
 msgstr "Dokument"
 
@@ -1070,6 +844,38 @@ msgstr "Aktuell lokal (%s)"
 #: ../gedit/gedit-encodings-combo-box.c:388
 msgid "Add or Remove..."
 msgstr "Lägg till eller ta bort..."
+
+#: ../gedit/gedit-encodings-dialog.c:345
+msgid "Character Encodings"
+msgstr "Teckenkodningar"
+
+#: ../gedit/gedit-encodings-dialog.c:395
+#: ../gedit/gedit-encodings-dialog.c:456
+msgid "_Description"
+msgstr "_Beskrivning"
+
+#: ../gedit/gedit-encodings-dialog.c:404
+#: ../gedit/gedit-encodings-dialog.c:465
+msgid "_Encoding"
+msgstr "_Kodning"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-encodings-dialog.ui.h:1
+msgid "Character encodings"
+msgstr "Teckenkodningar"
+
+#: ../gedit/gedit-encodings-dialog.ui.h:2
+msgid "A_vailable encodings:"
+msgstr "Till_gängliga kodningar:"
+
+#: ../gedit/gedit-encodings-dialog.ui.h:3
+msgid "E_ncodings shown in menu:"
+msgstr "Kod_ningar som visas i menyn:"
+
+#: ../gedit/gedit-file-chooser-dialog.c:52
+#: ../gedit/gedit-preferences-dialog.c:909
+msgid "All Files"
+msgstr "Alla filer"
 
 #: ../gedit/gedit-file-chooser-dialog.c:53
 msgid "All Text Files"
@@ -1390,7 +1196,7 @@ msgid "_Print..."
 msgstr "Skriv _ut..."
 
 #: ../gedit/gedit-panel.c:409
-#: ../gedit/gedit-panel.c:585
+#: ../gedit/gedit-panel.c:587
 msgid "Empty"
 msgstr "Tom"
 
@@ -1398,16 +1204,179 @@ msgstr "Tom"
 msgid "Hide panel"
 msgstr "Dölj panel"
 
-#: ../gedit/gedit-print-job.c:580
+#: ../gedit/gedit-preferences-dialog.c:423
+msgid "Click on this button to select the font to be used by the editor"
+msgstr "Tryck på denna knapp för att välja det typsnitt som ska användas av redigeraren"
+
+#: ../gedit/gedit-preferences-dialog.c:438
+#, c-format
+msgid "_Use the system fixed width font (%s)"
+msgstr "_Använd systemets typsnitt med fast breddsteg (%s)"
+
+#: ../gedit/gedit-preferences-dialog.c:676
+#, c-format
+msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
+msgstr "Katalogen \"%s\" kunde inte skapas: g_mkdir_with_parents() misslyckades: %s"
+
+#: ../gedit/gedit-preferences-dialog.c:860
+msgid "The selected color scheme cannot be installed."
+msgstr "Det valda färgschemat kan inte installeras."
+
+#: ../gedit/gedit-preferences-dialog.c:887
+msgid "Add Scheme"
+msgstr "Lägg till schema"
+
+#: ../gedit/gedit-preferences-dialog.c:894
+msgid "A_dd Scheme"
+msgstr "Lä_gg till schema"
+
+#: ../gedit/gedit-preferences-dialog.c:902
+msgid "Color Scheme Files"
+msgstr "Färgschemafiler"
+
+#: ../gedit/gedit-preferences-dialog.c:954
+#, c-format
+msgid "Could not remove color scheme \"%s\"."
+msgstr "Kunde inte ta bort färgschemat \"%s\"."
+
+#: ../gedit/gedit-preferences-dialog.c:1177
+msgid "gedit Preferences"
+msgstr "Inställningar för gedit"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-preferences-dialog.ui.h:1
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:2
+#: ../gedit/gedit-view.c:552
+msgid "_Display line numbers"
+msgstr "_Visa radnummer"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:3
+msgid "Display right _margin at column:"
+msgstr "Visa höger_marginal på kolumn:"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:4
+#: ../gedit/gedit-print-preferences.ui.h:9
+msgid "Text Wrapping"
+msgstr "Textradbrytning"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:5
+#: ../gedit/gedit-print-preferences.ui.h:10
+msgid "Enable text _wrapping"
+msgstr "Aktivera text_radbrytning"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:6
+#: ../gedit/gedit-print-preferences.ui.h:11
+msgid "Do not _split words over two lines"
+msgstr "_Dela inte ord över två rader"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:7
+msgid "Highlighting"
+msgstr "Färgmarkering"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:8
+msgid "Highlight current _line"
+msgstr "Färgmarkera a_ktuell rad"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:9
+msgid "Highlight matching _brackets"
+msgstr "Färgmarkera matchande _klammrar"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:10
+msgid "View"
+msgstr "Visa"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:11
+msgid "Tab Stops"
+msgstr "Tabulatorstopp"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:12
+msgid "_Tab width:"
+msgstr "_Tabulatorbredd:"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:13
+msgid "Insert _spaces instead of tabs"
+msgstr "Infoga _blanksteg istället för tabulatortecken"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:14
+msgid "_Enable automatic indentation"
+msgstr "_Aktivera automatisk indentering"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:15
+msgid "File Saving"
+msgstr "Filsparning"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:16
+msgid "Create a _backup copy of files before saving"
+msgstr "Skapa en s_äkerhetskopia av filen innan den sparas"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:17
+msgid "_Autosave files every"
+msgstr "Spara filer _automatiskt var"
+
+# Antar att detta är i "... var [ ] minut", alltså inte plural på svenska
+#: ../gedit/gedit-preferences-dialog.ui.h:18
+msgid "_minutes"
+msgstr "_minut"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:19
+msgid "Editor"
+msgstr "Redigerare"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:20
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:3
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:7
+msgid "Font"
+msgstr "Typsnitt"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:21
+msgid "Editor _font: "
+msgstr "Redigerar_typsnitt: "
+
+#: ../gedit/gedit-preferences-dialog.ui.h:22
+msgid "Pick the editor font"
+msgstr "Välj redigerartypsnittet"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:23
+msgid "Color Scheme"
+msgstr "Färgschema"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:24
+msgid "Install scheme"
+msgstr "Installera schema"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:25
+msgid "Install Scheme"
+msgstr "Installera schema"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:26
+msgid "Uninstall scheme"
+msgstr "Avinstallera schema"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:27
+msgid "Uninstall Scheme"
+msgstr "Avinstallera schema"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:28
+msgid "Font & Colors"
+msgstr "Typsnitt och färger"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:29
+msgid "Plugins"
+msgstr "Insticksmoduler"
+
+#: ../gedit/gedit-print-job.c:572
 #, c-format
 msgid "File: %s"
 msgstr "Fil: %s"
 
-#: ../gedit/gedit-print-job.c:589
+#: ../gedit/gedit-print-job.c:581
 msgid "Page %N of %Q"
 msgstr "Sida %N av %Q"
 
-#: ../gedit/gedit-print-job.c:851
+#: ../gedit/gedit-print-job.c:843
 msgid "Preparing..."
 msgstr "Förbereder..."
 
@@ -1531,6 +1500,45 @@ msgstr "Förhandsvisning"
 #: ../gedit/gedit-print-preview.c:968
 msgid "The preview of a page in the document to be printed"
 msgstr "Förhandsgranskningen av dokumentsidan som ska skrivas ut"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-replace-dialog.c:207
+#: ../gedit/gedit-replace-dialog.ui.h:1
+#: ../gedit/gedit-window.c:1557
+msgid "Replace"
+msgstr "Ersätt"
+
+#: ../gedit/gedit-replace-dialog.c:269
+msgid "Replace _All"
+msgstr "Ersätt _alla"
+
+#: ../gedit/gedit-replace-dialog.ui.h:2
+msgid "Replace All"
+msgstr "Ersätt alla"
+
+#: ../gedit/gedit-replace-dialog.ui.h:3
+msgid "_Search for: "
+msgstr "_Sök efter: "
+
+#: ../gedit/gedit-replace-dialog.ui.h:4
+msgid "Replace _with: "
+msgstr "Ersätt _med: "
+
+#: ../gedit/gedit-replace-dialog.ui.h:5
+msgid "_Match case"
+msgstr "_Gör skillnad på gemener/VERSALER"
+
+#: ../gedit/gedit-replace-dialog.ui.h:6
+msgid "Match _entire word only"
+msgstr "Sök endast _hela ord"
+
+#: ../gedit/gedit-replace-dialog.ui.h:7
+msgid "Search _backwards"
+msgstr "Sök _baklänges"
+
+#: ../gedit/gedit-replace-dialog.ui.h:8
+msgid "_Wrap around"
+msgstr "_Börja om från början"
 
 #. Use spaces to leave padding proportional to the font size
 #: ../gedit/gedit-statusbar.c:70
@@ -1671,7 +1679,7 @@ msgid "_Open..."
 msgstr "_Öppna..."
 
 #: ../gedit/gedit-ui.h:55
-#: ../gedit/gedit-window.c:1487
+#: ../gedit/gedit-window.c:1486
 msgid "Open a file"
 msgstr "Öppna en fil"
 
@@ -1961,7 +1969,7 @@ msgstr "Sträng du vill söka efter"
 msgid "Line you want to move the cursor to"
 msgstr "Rad du vill flytta markören till"
 
-#: ../gedit/gedit-window.c:942
+#: ../gedit/gedit-window.c:941
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Använd färgmarkeringsläge för %s"
@@ -1969,8 +1977,8 @@ msgstr "Använd färgmarkeringsläge för %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1047
-#: ../gedit/gedit-window.c:2093
+#: ../gedit/gedit-window.c:1046
+#: ../gedit/gedit-window.c:2091
 #: ../plugins/externaltools/tools/manager.py:146
 #: ../plugins/externaltools/tools/manager.py:450
 #: ../plugins/externaltools/tools/manager.py:561
@@ -1978,59 +1986,59 @@ msgstr "Använd färgmarkeringsläge för %s"
 msgid "Plain Text"
 msgstr "Oformaterad text"
 
-#: ../gedit/gedit-window.c:1048
+#: ../gedit/gedit-window.c:1047
 msgid "Disable syntax highlighting"
 msgstr "Inaktivera syntaxmarkering"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1365
+#: ../gedit/gedit-window.c:1364
 #, c-format
 msgid "Open '%s'"
 msgstr "Öppna \"%s\""
 
-#: ../gedit/gedit-window.c:1489
+#: ../gedit/gedit-window.c:1488
 msgid "Open a recently used file"
 msgstr "Öppna en nyligen använd fil"
 
-#: ../gedit/gedit-window.c:1495
+#: ../gedit/gedit-window.c:1494
 msgid "Open"
 msgstr "Öppna"
 
-#: ../gedit/gedit-window.c:1553
+#: ../gedit/gedit-window.c:1551
 msgid "Save"
 msgstr "Spara"
 
-#: ../gedit/gedit-window.c:1555
+#: ../gedit/gedit-window.c:1553
 msgid "Print"
 msgstr "Skriv ut"
 
-#: ../gedit/gedit-window.c:1557
+#: ../gedit/gedit-window.c:1555
 msgid "Find"
 msgstr "Sök"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1717
+#: ../gedit/gedit-window.c:1715
 #, c-format
 msgid "Activate '%s'"
 msgstr "Aktivera \"%s\""
 
-#: ../gedit/gedit-window.c:2074
+#: ../gedit/gedit-window.c:2072
 msgid "Use Spaces"
 msgstr "Använd blanksteg"
 
-#: ../gedit/gedit-window.c:2147
+#: ../gedit/gedit-window.c:2145
 msgid "Tab Width"
 msgstr "Tabulatorbredd"
 
-#: ../gedit/gedit-window.c:2256
+#: ../gedit/gedit-window.c:2254
 msgid "Bracket match is out of range"
 msgstr "Klammermatchning är utanför intervallet"
 
-#: ../gedit/gedit-window.c:2261
+#: ../gedit/gedit-window.c:2259
 msgid "Bracket match not found"
 msgstr "Klammermatchning hittades inte"
 
-#: ../gedit/gedit-window.c:2266
+#: ../gedit/gedit-window.c:2264
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Klammarmatchning hittades på rad: %d"
@@ -2133,11 +2141,11 @@ msgstr "Dokumentstatistik"
 msgid "Analyzes the current document and reports the number of words, lines, characters and non-space characters in it."
 msgstr "Analyserar det aktuella dokumentet och rapporterar antalet ord, rader, tecken och icke-blanka tecken i det."
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:427
 msgid "_Document Statistics"
 msgstr "_Dokumentstatistik"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:429
 msgid "Get statistical information on the current document"
 msgstr "Få statistikinformation om det aktuella dokumentet"
 
@@ -2152,7 +2160,6 @@ msgstr "Filnamn"
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:4
 #: ../plugins/externaltools/tools/tools.ui.h:27
 #: ../plugins/snippets/snippets/snippets.ui.h:13
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 msgid "    "
 msgstr "    "
 
@@ -2560,131 +2567,131 @@ msgstr "katalog"
 msgid "The new directory is currently filtered out. You need to adjust your filter settings to make the directory visible"
 msgstr "Den nya katalogen är för närvarande bortfiltrerad. Du behöver justera dina filterinställningar för att göra katalogen synlig"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:734
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:733
 msgid "Bookmarks"
 msgstr "Bokmärken"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:822
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:821
 msgid "_Filter"
 msgstr "_Filter"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:826
 msgid "_Move to Trash"
 msgstr "_Flytta till papperskorg"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:828
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
 msgid "Move selected file or folder to trash"
 msgstr "Flytta markerad fil eller mapp till papperskorgen"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:829
 msgid "_Delete"
 msgstr "_Ta bort"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:831
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
 msgid "Delete selected file or folder"
 msgstr "Ta bort markerad fil eller mapp"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:838
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:837
 msgid "Open selected file"
 msgstr "Öppna markerad fil"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:843
 msgid "Up"
 msgstr "Upp"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:845
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
 msgid "Open the parent folder"
 msgstr "Öppna föräldramappen"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:849
 msgid "_New Folder"
 msgstr "_Ny mapp"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:851
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
 msgid "Add new empty folder"
 msgstr "Lägg till ny tom mapp"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:852
 msgid "New F_ile"
 msgstr "Ny f_il"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:854
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
 msgid "Add new empty file"
 msgstr "Lägg till en ny tom fil"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:858
 msgid "_Rename"
 msgstr "_Byt namn"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:860
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
 msgid "Rename selected file or folder"
 msgstr "Byt namn på markerad fil eller mapp"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:866
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:865
 msgid "_Previous Location"
 msgstr "_Föregående plats"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:867
 msgid "Go to the previous visited location"
 msgstr "Gå till föregående besökt plats"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:869
 msgid "_Next Location"
 msgstr "_Nästa plats"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
 msgid "Go to the next visited location"
 msgstr "Gå till nästa besökta plats"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
 msgid "Re_fresh View"
 msgstr "Upp_datera vy"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
 msgid "Refresh the view"
 msgstr "Uppdatera vyn"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:891
 msgid "_View Folder"
 msgstr "_Visa mapp"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:875
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:893
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
 msgid "View folder in file manager"
 msgstr "Visa mapp i filhanterare"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:881
 msgid "Show _Hidden"
 msgstr "Visa _dolda"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:883
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
 msgid "Show hidden files and folders"
 msgstr "Visa dolda filer och mappar"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:884
 msgid "Show _Binary"
 msgstr "Visa _binära"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:886
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
 msgid "Show binary files"
 msgstr "Visa binära filer"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1207
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1202
 msgid "Match Filename"
 msgstr "Matcha filnamn"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2009
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2004
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "Inga monteringsobjekt för monterad volym: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2086
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2081
 #, c-format
 msgid "Could not open media: %s"
 msgstr "Kunde inte öppna media: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2133
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2128
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "Kunde inte montera volym: %s"
@@ -3095,7 +3102,7 @@ msgstr "Sorterar ett dokument eller markerad text."
 #. Translators: Displayed in the "Check Spelling" dialog if there are no suggestions
 #. * for the current misspelled word
 #: ../plugins/spell/gedit-automatic-spell-checker.c:420
-#: ../plugins/spell/gedit-spell-checker-dialog.c:458
+#: ../plugins/spell/gedit-spell-checker-dialog.c:444
 msgid "(no suggested words)"
 msgstr "(inga föreslagna ord)"
 
@@ -3117,20 +3124,20 @@ msgstr "_Lägg till"
 msgid "_Spelling Suggestions..."
 msgstr "_Stavningsförslag..."
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:278
+#: ../plugins/spell/gedit-spell-checker-dialog.c:264
 msgid "Check Spelling"
 msgstr "Kontrollera stavning"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:289
+#: ../plugins/spell/gedit-spell-checker-dialog.c:275
 msgid "Suggestions"
 msgstr "Förslag"
 
 #. Translators: Displayed in the "Check Spelling" dialog if the current word isn't misspelled
-#: ../plugins/spell/gedit-spell-checker-dialog.c:565
+#: ../plugins/spell/gedit-spell-checker-dialog.c:551
 msgid "(correct spelling)"
 msgstr "(korrekt stavning)"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:706
+#: ../plugins/spell/gedit-spell-checker-dialog.c:692
 msgid "Completed spell checking"
 msgstr "Stavningskontrollen färdig"
 
@@ -3163,12 +3170,12 @@ msgid "Default"
 msgstr "Standard"
 
 #. ex:ts=8:noet:
-#: ../plugins/spell/gedit-spell-language-dialog.c:142
+#: ../plugins/spell/gedit-spell-language-dialog.c:140
 #: ../plugins/spell/languages-dialog.ui.h:1
 msgid "Set language"
 msgstr "Ställ in språk"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:196
+#: ../plugins/spell/gedit-spell-language-dialog.c:182
 msgid "Languages"
 msgstr "Språk"
 
@@ -3277,31 +3284,31 @@ msgid "Insert Date and Time"
 msgstr "Infoga datum och tid"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:2
-msgid "_Insert"
-msgstr "_Infoga"
-
-#: ../plugins/time/gedit-time-dialog.ui.h:3
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
 msgid "Use the _selected format"
 msgstr "Använd det _valda formatet"
 
-#: ../plugins/time/gedit-time-dialog.ui.h:4
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
+#: ../plugins/time/gedit-time-dialog.ui.h:3
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
 msgid "_Use custom format"
 msgstr "_Använd anpassat format"
 
 #. Translators: Use the more common date format in your locale
-#: ../plugins/time/gedit-time-dialog.ui.h:6
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
+#: ../plugins/time/gedit-time-dialog.ui.h:5
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%Y-%m-%d %H.%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
-#: ../plugins/time/gedit-time-dialog.ui.h:7
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:11
+#: ../plugins/time/gedit-time-dialog.ui.h:6
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "01/11/2009 17:52:00"
 msgstr "2009-01-11 17.52:00"
+
+#: ../plugins/time/gedit-time-dialog.ui.h:7
+msgid "_Insert"
+msgstr "_Infoga"
 
 #: ../plugins/time/gedit-time-plugin.c:188
 msgid "In_sert Date and Time..."
@@ -3324,7 +3331,7 @@ msgstr "Konfigurera insticksmodulen Infoga datum/tid"
 msgid "When inserting date/time..."
 msgstr "När datum/tid infogas..."
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 msgid "_Prompt for a format"
 msgstr "_Fråga efter ett format"
 
@@ -3373,9 +3380,6 @@ msgstr "Loggar åtkomst och lämna händelser för dokument som används med ged
 
 #~ msgid "toolbutton2"
 #~ msgstr "verktygsknapp2"
-
-#~ msgid "Open a new window"
-#~ msgstr "Öppna ett nytt fönster"
 
 #~ msgid "_Add..."
 #~ msgstr "_Lägg till..."
