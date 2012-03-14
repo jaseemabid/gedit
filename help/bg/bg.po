@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gedit manual\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-09 07:16+0200\n"
-"PO-Revision-Date: 2012-03-12 06:58+0200\n"
+"PO-Revision-Date: 2012-03-14 07:36+0200\n"
 "Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -358,13 +358,12 @@ msgstr "Отмяна"
 #. I think we should also include a note about how many "undo's" you can do, and that you can't
 #. undo something once you've saved the file.
 #: gedit-undo-recent-action.page:28(p)
-#, fuzzy
 msgid ""
 "We all make mistakes. Even <placeholder-1/> users make mistakes. "
 "Fortunately, <placeholder-2/> can help you recover from mistakes. To undo an "
 "action in <placeholder-3/>, press <keyseq><placeholder-4/><placeholder-5/></"
 "keyseq>, or click <guiseq><placeholder-6/><placeholder-7/></guiseq>."
-msgstr "Всички правим грешки. Дори потребителите на <placeholder-1/> правят грешки. За да отмените действие в <placeholder-2/>, натиснете <keyseq><key>Ctrl</key><key>Z</key></keyseq> или натиснете <guiseq><gui>Редактиране</gui><gui>Отмяна</gui></guiseq>."
+msgstr "Всички правим грешки. Дори потребителите на <placeholder-1/> правят грешки. За щастие <placeholder-2/> улеснява поправката им. За да отмените действие в <placeholder-3/>, натиснете <keyseq><placeholder-4/><placeholder-5/></keyseq> или натиснете <guiseq><placeholder-6/><placeholder-7/>/guiseq>."
 
 #: gedit-undo-recent-action.page:30(p)
 msgid ""
@@ -495,7 +494,7 @@ msgstr "Отпуснете бутона на мишката."
 
 #: gedit-tabs-moving.page:53(gui)
 msgid "Move to New Window"
-msgstr ""
+msgstr "Преминаване към нов прозорец"
 
 #: gedit-tabs-moving.page:52(p)
 msgid ""
@@ -551,7 +550,7 @@ msgstr "<placeholder-1/> предоставя оцветяване на синт
 
 #: gedit-syntax-highlighting.page:20(gui)
 msgid "Highlight Mode"
-msgstr ""
+msgstr "Режим на оцветяване"
 
 #: gedit-syntax-highlighting.page:20(p)
 msgid ""
@@ -591,7 +590,7 @@ msgstr "Проверка на правописа"
 #: gedit-plugins-bookmarks.page:22(gui) gedit-change-default-font.page:24(key)
 #: gedit-change-color-scheme.page:20(gui)
 msgid "Preferences"
-msgstr ""
+msgstr "Настройки"
 
 #: gedit-spellcheck.page:18(gui) gedit-plugins-word-completion.page:25(gui)
 #: gedit-plugins-text-size.page:21(gui) gedit-plugins-terminal.page:20(gui)
@@ -734,7 +733,7 @@ msgstr "Ctrl + Shift + W"
 
 #: gedit-shortcut-keys.page:78(var)
 msgid "n"
-msgstr ""
+msgstr "n"
 
 #: gedit-shortcut-keys.page:78(p)
 msgid "Jump to <placeholder-1/>th tab"
@@ -1029,7 +1028,7 @@ msgstr "Търсене на текст"
 #: gedit-search.page:32(gui) gedit-search.page:42(gui)
 #: gedit-search.page:52(gui)
 msgid "search window"
-msgstr ""
+msgstr "прозорец за търсене"
 
 #: gedit-search.page:28(gui) gedit-search.page:67(gui)
 #: gedit-replace.page:26(gui) gedit-plugins-dashboard.page:25(gui)
@@ -1192,17 +1191,12 @@ msgid "S"
 msgstr "S"
 
 #: gedit-save-file.page:16(p)
-#, fuzzy
 msgid ""
 "To save a file in <placeholder-1/>, click on the disk-drive icon with the "
 "word <placeholder-2/> next to it. You may also select <guiseq><placeholder-3/"
 "><placeholder-4/></guiseq>, or just press <keyseq><placeholder-5/"
 "><placeholder-6/></keyseq>."
-msgstr ""
-"За да запазите файл, натиснете иконата, която изглежда на шкаф със стрелка "
-"сочеща надолу и с думата <gui>Запазване</gui> до нея. Също можете да "
-"изберете <guiseq><gui>Файл</gui><gui>Запазване</gui></guiseq> или просто да "
-"натиснете <keyseq><key>Ctrl</key><key>S</key></keyseq>."
+msgstr "За да запазите файл в <placeholder-1/>, натиснете иконата, която изглежда на шкаф със стрелка сочеща надолу и с думата <placeholder-2/> до нея. Също можете да изберете <guiseq><placeholder-3/><placeholder-4/></guiseq> или просто да натиснете <keyseq><placeholder-5/><placeholder-6/></keyseq>."
 
 #: gedit-save-file.page:17(gui)
 msgid "Save File"
@@ -1237,7 +1231,7 @@ msgstr "Замяна на текст в <app>gedit</app>"
 
 #: gedit-replace.page:26(key) gedit-plugins-install.page:54(key)
 msgid "H"
-msgstr ""
+msgstr "H"
 
 #: gedit-replace.page:26(p)
 msgid ""
@@ -1309,18 +1303,16 @@ msgid "Match entire word only"
 msgstr "Ако съвпада само с цяла дума"
 
 #: gedit-replace.page:51(em)
-#, fuzzy
 msgid "and"
 msgstr "шок"
 
 #: gedit-replace.page:51(p)
-#, fuzzy
 msgid ""
 "Use this option to search for a specific word without including fragments of "
 "other words. For example, if you searched for the word 'and' with this "
 "option selected, the word 'and' would be matched, but the words "
 "'s<placeholder-1/>' and 'comm<placeholder-2/>er' would not be matched."
-msgstr "Използвайте тази опция за търсене на конкретна дума, която не е част от други думи. Например, ако сте търсили за думата „шок“ с тази опция включена, думата „шок“ ще съвпадне, но думите „<em>шок</em>олад“ и „арти<em>шок</em>“ няма да съвпаднат."
+msgstr "Използвайте тази опция за търсене на конкретна дума, която не е част от други думи. Например, ако сте търсили за думата „шок“ с тази опция включена, думата „шок“ ще съвпадне, но думите „<placeholder-1/>“ и „арти<placeholder-2/>“ няма да съвпаднат."
 
 #: gedit-replace.page:54(title)
 msgid "Search backwards"
@@ -1560,7 +1552,7 @@ msgstr "Пол Уйвър"
 #: gedit-plugins-word-completion.page:15(email)
 #: gedit-plugins-character-map.page:15(email)
 msgid "ch3pjw@bath.ac.uk"
-msgstr ""
+msgstr "ch3pjw@bath.ac.uk"
 
 #: gedit-plugins-word-completion.page:18(desc)
 msgid "Autocomplete words or portions of code as you type"
@@ -1585,17 +1577,12 @@ msgid ""
 msgstr "Приставката <placeholder-1/> може да ускори редактирането като предлага довършване на думи докато ги пишете. За да включите приставката изберете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
 
 #: gedit-plugins-word-completion.page:28(p)
-#, fuzzy
 msgid ""
 "While editing, the <placeholder-1/> plugin will automatically display a pop-"
 "up list of words that begin with the letters you have already typed. Word "
 "suggestions are based upon words that appear elsewhere in your document and "
 "upon pre-defined keywords if your document is of a recognised format."
-msgstr ""
-"Приставката <app>Довършване на дума</app> автоматично ще покаже списък с "
-"думи, които започват с буквите, които вече сте въвели. Предложените думи са "
-"базирани на думи, които са срещнати на други места из документа или "
-"предварително зададени думи, ако формата на документа е разпознат."
+msgstr "Приставката <placeholder-1/> автоматично ще покаже списък с думи, които започват с буквите, които вече сте въвели. Предложените думи са базирани на думи, които са срещнати на други места из документа или предварително зададени думи, ако формата на документа е разпознат."
 
 #: gedit-plugins-word-completion.page:35(key)
 #: gedit-plugins-quick-open.page:27(key) gedit-plugins-bookmarks.page:30(key)
@@ -1605,18 +1592,14 @@ msgstr "Alt"
 
 #: gedit-plugins-word-completion.page:35(key)
 msgid "Num"
-msgstr ""
+msgstr "цифра"
 
 #: gedit-plugins-word-completion.page:34(p)
-#, fuzzy
 msgid ""
 "To insert a suggested word, double-click on it in the pop-up list or press "
 "<keyseq><placeholder-1/><placeholder-2/></keyseq>, where <placeholder-3/> is "
 "the number displayed next to your desired word."
-msgstr ""
-"За вмъкване на предложена дума, щракнете я двукратно от списъка или "
-"натиснете <keyseq><key>Alt</key><key>Номер</key></keyseq>, където "
-"<key>Номер</key> е номерът показан до желаната дума."
+msgstr "За вмъкване на предложена дума, щракнете я двукратно от списъка или натиснете <keyseq><placeholder-1/><placeholder-2/></keyseq>, където <placeholder-3/>-та е номерът показан до желаната дума."
 
 #: gedit-plugins-text-size.page:14(desc)
 msgid "Increase or decrease the text size"
@@ -1627,18 +1610,12 @@ msgid "Text Size"
 msgstr "Размер на текст"
 
 #: gedit-plugins-text-size.page:19(p)
-#, fuzzy
 msgid ""
 "The text size plugin allows you to temporarily change the text size in "
 "<placeholder-1/> without changing the program's default text size. To enable "
 "this plugin, select <guiseq><placeholder-2/><placeholder-3/><placeholder-4/"
 "><placeholder-5/></guiseq>."
-msgstr ""
-"Тази приставка ви позволява временно да промените размера на текста в "
-"<app>gedit</app> без да се променят настройките на текущо избрания шрифт. За "
-"да включите приставката, изберете <guiseq><gui>Редактиране</"
-"gui><gui>Настройки</gui><gui>Приставки</gui><gui>Размер на текст</gui></"
-"guiseq>."
+msgstr "Тази приставка ви позволява временно да промените размера на текста в <placeholder-1/> без да се променят настройките на текущо избрания шрифт. За да включите приставката, изберете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
 
 #: gedit-plugins-text-size.page:25(title)
 msgid ""
@@ -1677,13 +1654,10 @@ msgid "0"
 msgstr "0"
 
 #: gedit-plugins-text-size.page:31(p)
-#, fuzzy
 msgid ""
 "To <placeholder-1/> the text size to the default size, select "
 "<keyseq><placeholder-2/><placeholder-3/></keyseq>."
-msgstr ""
-"За <em>изчистване</em> на промените, натиснете <keyseq><key>Ctrl</"
-"key><key>0</key></keyseq>."
+msgstr "За <placeholder-1/> на промените, натиснете <keyseq><placeholder-2/><placeholder-3/></keyseq>."
 
 #: gedit-plugins-terminal.page:13(desc)
 msgid "Add a terminal console to the bottom pane"
@@ -1694,9 +1668,8 @@ msgid "Embedded terminal"
 msgstr "Вграден терминал"
 
 #: gedit-plugins-terminal.page:18(app)
-#, fuzzy
 msgid "Gnome Terminal"
-msgstr "Вграден терминал"
+msgstr "Терминал на GNOME"
 
 #: gedit-plugins-terminal.page:18(p)
 #, fuzzy
@@ -1711,7 +1684,6 @@ msgstr ""
 "тествате вашата програма без да напускате <app>gedit</app>."
 
 #: gedit-plugins-terminal.page:20(gui)
-#, fuzzy
 msgid "Embedded Terminal"
 msgstr "Вграден терминал"
 
@@ -1719,22 +1691,18 @@ msgstr "Вграден терминал"
 msgid ""
 "To enable this plugin, select <guiseq><placeholder-1/><placeholder-2/"
 "><placeholder-3/><placeholder-4/></guiseq>."
-msgstr ""
+msgstr "За да включите приставката, изберете <guiseq><placeholder-1/><placeholder-2/><placeholder-3/><placeholder-4/></guiseq>."
 
 #: gedit-plugins-terminal.page:22(gui) gedit-plugins-pyconsole.page:19(gui)
 msgid "Bottom Pane"
-msgstr ""
+msgstr "Долен панел"
 
 #: gedit-plugins-terminal.page:22(p)
-#, fuzzy
 msgid ""
 "Once you have enabled the plugin, add the terminal to the bottom pane by "
 "selecting <guiseq><placeholder-1/><placeholder-2/></guiseq>, or just press "
 "<keyseq><placeholder-3/><placeholder-4/></keyseq>."
-msgstr ""
-"След като включите приставката, добавете терминал в долния панел като "
-"изберете  <guiseq><gui>Изглед</gui><gui>Долен панел</gui></guiseq> или "
-"просто натиснете <keyseq><key>Ctrl</key><key>F9</key></keyseq>."
+msgstr "След като включите приставката, добавете терминал в долния панел като изберете <guiseq><placeholder-1/><placeholder-2/></guiseq> или просто натиснете <keyseq><placeholder-3/><placeholder-4/></keyseq>."
 
 #: gedit-plugins-tag-list.page:16(desc)
 msgid ""
@@ -1747,68 +1715,48 @@ msgstr "Списък с етикети"
 
 #: gedit-plugins-tag-list.page:21(app) gedit-plugins-tag-list.page:26(app)
 #: gedit-plugins-tag-list.page:30(gui)
-#, fuzzy
 msgid "Tag List"
 msgstr "Списък с етикети"
 
 #: gedit-plugins-tag-list.page:21(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> plugin allows you to insert common tags and special "
 "characters from a list in the side pane. By default, the plugin can insert "
 "tags and special characters for HTML, XHTML, XSLT, XUL and LaTeX."
-msgstr ""
-"Приставката <app>Списък с етикети</app> ви позволява да вмъквате често "
-"използвани етикети и специални знаци от списък в страничния панел. "
-"Приставката може да вмъква етикети и специални знаци за HTML, XHTML, XSLT, "
-"XUL и LaTeX."
+msgstr "Приставката <placeholder-1/> ви позволява да вмъквате често използвани етикети и специални знаци от списък в страничния панел. Приставката може да вмъква етикети и специални знаци за HTML, XHTML, XSLT, XUL и LaTeX."
 
 #: gedit-plugins-tag-list.page:24(title)
 msgid "Using the Tag List plugin"
 msgstr "Използване на приставката за списък с етикети"
 
 #: gedit-plugins-tag-list.page:26(p)
-#, fuzzy
 msgid ""
 "To use the <placeholder-1/> plugin, you will need to enable the plugin, and "
 "then activate the tag-list portion of the side pane."
-msgstr ""
-"За да използвате приставката <app>Списък с етикети</app> трябва да я "
-"включите и да активирате списъка с етикети в страничния панел."
+msgstr "За да използвате приставката <placeholder-1/> трябва да я включите и да активирате списъка с етикети в страничния панел."
 
 #: gedit-plugins-tag-list.page:29(title)
 msgid "Enabling the Plugin"
 msgstr "Включване на приставката"
 
 #: gedit-plugins-tag-list.page:30(p)
-#, fuzzy
 msgid ""
 "You can activate the plugin by selecting <guiseq><placeholder-1/"
 "><placeholder-2/><placeholder-3/><placeholder-4/></guiseq>. Once you have "
 "activated the plugin, access it by selecting <guiseq><placeholder-5/"
 "><placeholder-6/></guiseq>, or by pressing <placeholder-7/>."
-msgstr ""
-"Можете да включите приставката като изберете <guiseq><gui>Редактиране</"
-"gui><gui>Настройки</gui><gui>Приставки</gui><gui>Списък с етикети</gui></"
-"guiseq>. След като включите приставката, можете да я използвате като "
-"изберете <guiseq><gui>Изглед</gui><gui>Страничен панел</gui></guiseq> или "
-"като натиснете <key>F9</key>."
+msgstr "Можете да включите приставката като изберете <guiseq><placeholder-1/><placeholder-2/><placeholder-3/><placeholder-4/></guiseq>. След като включите приставката, можете да я използвате като изберете <guiseq><placeholder-5/><placeholder-6/></guiseq> или като натиснете <key>F9</key>."
 
 #: gedit-plugins-tag-list.page:32(app) gedit-plugins-tag-list.page:41(app)
-#, fuzzy
 msgid "tag list"
-msgstr "Списък с етикети"
+msgstr "списък с етикети"
 
 #: gedit-plugins-tag-list.page:32(p)
-#, fuzzy
 msgid ""
 "The side pane initially shows a list of open documents, so to view and use "
 "the <placeholder-1/>, you will need to click on the tab showing the \"plus\" "
 "icon at the bottom of the side pane. The icon will look similar to this:"
-msgstr ""
-"Първоначално страничният панел показва списък с отворените документи, така "
-"че, за да видите <app>Списък с етикети</app>, трябва да щракнете на раздела "
-"с икона \"плюс\" в страничния панел. Иконата ще изглежда подобно на тази:"
+msgstr "Първоначално страничният панел показва списък с отворените документи, така че, за да видите <placeholder-1/>, трябва да щракнете на раздела с икона „+“ в страничния панел. Иконата ще изглежда подобно на тази:"
 
 #: gedit-plugins-tag-list.page:39(title)
 msgid "Inserting Tags and Special Characters"
@@ -1816,17 +1764,13 @@ msgstr "Вмъкване на етикети и специални знаци"
 
 #: gedit-plugins-tag-list.page:41(gui)
 msgid "HTML - Tags"
-msgstr ""
+msgstr "Елементи на HTML"
 
 #: gedit-plugins-tag-list.page:41(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> uses a drop-down menu to let you choose from the "
 "different types of tags. For example, one tag option is <placeholder-2/>."
-msgstr ""
-"<app>Списък с етикети</app> използва падащо меню, от което можете да "
-"изберете измежду различни видове етикети. Например една от опциите е "
-"<gui>HTML - Етикети</gui>."
+msgstr "<placeholder-1/> използва падащо меню, от което можете да изберете измежду различни видове етикети. Например една от опциите е <placeholder-2/>."
 
 #: gedit-plugins-tag-list.page:43(p)
 msgid "To start inserting tags, complete the following:"
@@ -1868,49 +1812,36 @@ msgstr "Съвети за Списък с етикети"
 
 #: gedit-plugins-tag-list.page:57(key) gedit-plugins-tag-list.page:58(key)
 msgid "Return"
-msgstr ""
+msgstr "Return"
 
 #: gedit-plugins-tag-list.page:57(p)
-#, fuzzy
 msgid ""
 "You can also insert a tag by pressing <placeholder-1/> or "
 "<keyseq><placeholder-2/><placeholder-3/></keyseq>."
-msgstr ""
-"Също можете да вмъкнете етикет като натиснете <key>Return</key> или "
-"<keyseq><key>Shift</key><key>Return</key></keyseq>."
+msgstr "Също можете да вмъкнете етикет като натиснете <placeholder-1/> или <keyseq><placeholder-2/><placeholder-3/></keyseq>."
 
 #: gedit-plugins-tag-list.page:58(app)
-#, fuzzy
 msgid "tag-list"
-msgstr "Списък с етикети"
+msgstr "списък с етикети"
 
 #: gedit-plugins-tag-list.page:58(p)
-#, fuzzy
 msgid ""
 "Pressing the <placeholder-1/> key will insert the tag at the cursor "
 "position, and then return focus to the document. Pressing "
 "<keyseq><placeholder-2/><placeholder-3/></keyseq> will insert the tag at the "
 "cursor position, but will keep the focus on the <placeholder-4/>."
-msgstr ""
-"Натискането на клавиша <key>Return</key> ще вмъкне етикета в позицията на "
-"курсора и после ще върне фокуса върху документа. Натискането на "
-"<keyseq><key>Shift</key><key>Return</key></keyseq> ще вмъкне етикета в "
-"позицията на курсора, но ще остави фокуса върху <app>Списък с етикети</app>."
+msgstr "Натискането на клавиша <placeholder-1/> ще вмъкне етикета в позицията на курсора и после ще върне фокуса върху документа. Натискането на <keyseq><placeholder-2/><placeholder-3/></keyseq> ще вмъкне етикета в позицията на курсора, но ще остави фокуса върху <placeholder-4/>."
 
 #: gedit-plugins-tag-list.page:60(gui)
-#, fuzzy
 msgid "Preview"
 msgstr "Преглед за печат"
 
 #: gedit-plugins-tag-list.page:60(p)
-#, fuzzy
 msgid ""
 "You can see a preview of what text will be inserted for each tag and special "
 "character by clicking on the word the <placeholder-1/> at the bottom of the "
 "side pane."
-msgstr ""
-"Можете предварително да видите какъв текст ще бъде вмъкнат като натиснете "
-"думата <gui>Преглед</gui> в долната част на страничния панел."
+msgstr "Можете предварително да видите какъв текст ще бъде вмъкнат като натиснете думата <placeholder-1/> в долната част на страничния панел."
 
 #: gedit-plugins-sort.page:16(desc)
 msgid "Sort lines of text into alphabetical order"
@@ -1952,7 +1883,7 @@ msgstr ""
 msgid ""
 "To enable the <placeholder-1/> plugin, select <guiseq><placeholder-2/"
 "><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
-msgstr ""
+msgstr "За да включите приставката <placeholder-1/>, изберете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
 
 #: gedit-plugins-sort.page:27(p)
 #, fuzzy
@@ -1974,25 +1905,20 @@ msgstr ""
 "подреждане:"
 
 #: gedit-plugins-sort.page:31(em)
-#, fuzzy
 msgid "Reverse order"
-msgstr "За отпечатване в обратен ред:"
+msgstr "Отпечатване в обратен ред"
 
 #: gedit-plugins-sort.page:31(p)
-#, fuzzy
 msgid "<placeholder-1/> will arrange the text in reverse alphabetical order."
-msgstr "<em>Обратен ред</em> ще подреди текста в обратен азбучен ред."
+msgstr "<placeholder-1/> ще подреди текста в обратен азбучен ред."
 
 #: gedit-plugins-sort.page:32(em)
 msgid "Remove duplicates"
-msgstr ""
+msgstr "Премахване на повтарящите се"
 
 #: gedit-plugins-sort.page:32(p)
-#, fuzzy
 msgid "<placeholder-1/> will remove duplicate values from the list."
-msgstr ""
-"<em>Премахване на повтарящите се</em> ще премахне повтарящите се стойности "
-"от списъка."
+msgstr "<placeholder-1/> ще премахне повтарящите се стойности от списъка."
 
 #: gedit-plugins-sort.page:33(em)
 #, fuzzy
@@ -2008,23 +1934,18 @@ msgstr ""
 
 #: gedit-plugins-sort.page:34(em)
 msgid "Start at"
-msgstr ""
+msgstr "Започване от колона"
 
 #: gedit-plugins-sort.page:34(p)
-#, fuzzy
 msgid ""
 "To have the sort ignore the characters at the start of the lines, set the "
 "first character that should be used for sorting in the <placeholder-1/> "
 "column spin box."
-msgstr ""
-"За игнориране на знаци в началото на линиите, задайте първия знак, който "
-"трябва да се използва за подреждане в полето <em>Започване от колона</em>."
+msgstr "За игнориране на знаци в началото на линиите, задайте първия знак, който трябва да се използва за подреждане в полето <placeholder-1/>."
 
 #: gedit-plugins-sort.page:36(p)
-#, fuzzy
 msgid "To perform the sort operation, click <placeholder-1/>."
-msgstr ""
-"За да се извърши операцията по подреждане, натиснете <gui>Подреждане</gui>."
+msgstr "За да се извърши операцията по подреждане, натиснете <placeholder-1/>."
 
 #: gedit-plugins-snippets.page:16(desc)
 msgid "Inserting snippets of text into your files"
@@ -2045,7 +1966,7 @@ msgstr "Уверете се, че е избран коректен синтак�
 #: gedit-plugins-snippets.page:27(app) gedit-plugins-doc-stats.page:28(app)
 #: gedit-plugins-code-comment.page:39(app)
 msgid "Gedit"
-msgstr ""
+msgstr "Gedit"
 
 #: gedit-plugins-snippets.page:25(p)
 #, fuzzy
@@ -2071,21 +1992,15 @@ msgid "Review the default snippets."
 msgstr "Прегледайте стандартните изрезки."
 
 #: gedit-plugins-snippets.page:41(gui)
-#, fuzzy
 msgid "Manage Snippets"
 msgstr "Изрезки"
 
 #: gedit-plugins-snippets.page:41(p)
-#, fuzzy
 msgid ""
 "Select <guiseq><placeholder-1/><placeholder-2/></guiseq>. Review the "
 "snippets that are available for your language or syntax. Find some basic "
 "snippets that you think might be useful for you."
-msgstr ""
-"Изберете <guiseq><gui>Инструменти</gui><gui>Управление на изрезки</gui></"
-"guiseq>. Прегледайте изрезките, които са налични за вашия език или "
-"синтаксис. Намерете някои прости изрезки, които смятате, че ще ви бъдат от "
-"полза."
+msgstr "Изберете <guiseq><placeholder-1/><placeholder-2/></guiseq>. Прегледайте изрезките, които са налични за вашия език или синтаксис. Намерете някои прости изрезки, които смятате, че ще ви бъдат от полза."
 
 #: gedit-plugins-snippets.page:45(p)
 msgid "Try using some of the snippets."
@@ -2093,11 +2008,11 @@ msgstr "Изпробване на изрезките."
 
 #: gedit-plugins-snippets.page:46(em)
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #: gedit-plugins-snippets.page:46(code)
 msgid "head"
-msgstr ""
+msgstr "заглавна часта"
 
 #: gedit-plugins-snippets.page:47(key)
 #, fuzzy
@@ -2155,17 +2070,12 @@ msgid "Session Saver"
 msgstr "Запазване на сесия"
 
 #: gedit-plugins-session-saver.page:18(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> plugin saves groups of files together so that you can "
 "open them together at a later time. To enable the plugin, select "
 "<guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/></"
 "guiseq>."
-msgstr ""
-"Приставката <em>Запазване на сесия</em> запазва всички текущо отворени "
-"документи. За да включите приставката натиснете <guiseq><gui>Редактиране</"
-"gui><gui>Настройки</gui><gui>Приставки</gui> <gui>Запазване на сесия</gui></"
-"guiseq>."
+msgstr "Приставката <placeholder-1/> запазва всички текущо отворени документи. За да включите приставката натиснете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
 
 #: gedit-plugins-session-saver.page:24(title)
 msgid "To save a new session:"
@@ -2175,44 +2085,40 @@ msgstr "За запазване на нова сесия:"
 #: gedit-plugins-session-saver.page:34(gui)
 #: gedit-plugins-session-saver.page:41(gui)
 msgid "Saved Sessions"
-msgstr ""
+msgstr "Запазени сесии"
 
 #: gedit-plugins-session-saver.page:25(gui)
-#, fuzzy
 msgid "Save current session"
-msgstr "Запазване на текущия документ"
+msgstr "Запазване на текущата сесия"
 
 #: gedit-plugins-session-saver.page:25(p)
 #: gedit-plugins-session-saver.page:41(p) gedit-change-color-scheme.page:20(p)
 msgid ""
 "Select <guiseq><placeholder-1/><placeholder-2/><placeholder-3/></guiseq>."
-msgstr ""
+msgstr "Изберете <guiseq><placeholder-1/><placeholder-2/><placeholder-3/></guiseq>."
 
 #: gedit-plugins-session-saver.page:27(gui)
-#, fuzzy
 msgid "Save session"
-msgstr "За запазване на нова сесия:"
+msgstr "Запазване на сесия"
 
 #: gedit-plugins-session-saver.page:27(p)
-#, fuzzy
 msgid "Type a session name in the <placeholder-1/> dialog box."
-msgstr "Въведете име в прозореца <gui>Запазване на сесия</gui>."
+msgstr "Въведете име в прозореца <placeholder-1/>."
 
 #: gedit-plugins-session-saver.page:29(p)
 #: gedit-plugins-session-saver.page:45(p)
 #: gedit-plugins-session-saver.page:46(p) gedit-plugins-quick-open.page:37(p)
 #: gedit-plugins-install.page:45(p) gedit-open-on-server.page:28(p)
 msgid "Click <placeholder-1/>."
-msgstr ""
+msgstr "Натиснете <placeholder-1/>."
 
 #: gedit-plugins-session-saver.page:33(title)
 msgid "To open an existing session:"
 msgstr "Отваряне на съществуваща сесия:"
 
 #: gedit-plugins-session-saver.page:34(p)
-#, fuzzy
 msgid "Select <guiseq><placeholder-1/><placeholder-2/></guiseq>."
-msgstr "Изберете <guiseq><gui>Файл</gui><gui>Запазени сесии</gui></guiseq>."
+msgstr "Изберете <guiseq><placeholder-1/><placeholder-2/></guiseq>."
 
 #: gedit-plugins-session-saver.page:36(p)
 msgid "Click the name of your desired session."
@@ -2223,9 +2129,8 @@ msgid "To delete an existing session:"
 msgstr "Изтриване на сесия:"
 
 #: gedit-plugins-session-saver.page:41(gui)
-#, fuzzy
 msgid "Manage saved sessions"
-msgstr "За запазване на нова сесия:"
+msgstr "Управление на запазени сесии"
 
 #: gedit-plugins-session-saver.page:43(p)
 msgid "Select the name of the session that you want to delete."
@@ -2233,14 +2138,13 @@ msgstr "Изберете сесията, която желаете да изтр
 
 #: gedit-plugins-session-saver.page:45(gui)
 msgid "Delete"
-msgstr ""
+msgstr "Изтриване"
 
 #: gedit-plugins-session-saver.page:46(gui) gedit-plugins-install.page:45(gui)
 #: gedit-plugins-color-picker.page:42(gui) gedit-close-file.page:17(gui)
 #: gedit-change-default-font.page:30(gui)
-#, fuzzy
 msgid "Close"
-msgstr "Затваряне на раздел"
+msgstr "Затваряне"
 
 #: gedit-plugins-session-saver.page:47(p)
 #, fuzzy
@@ -2260,22 +2164,16 @@ msgstr "Бързо отваряне"
 #: gedit-plugins-quick-open.page:18(app) gedit-plugins-quick-open.page:21(gui)
 #: gedit-plugins-quick-open.page:26(app) gedit-plugins-quick-open.page:28(gui)
 #: gedit-plugins-quick-open.page:29(gui) gedit-plugins-quick-open.page:40(app)
-#, fuzzy
 msgid "Quick Open"
 msgstr "Бързо отваряне"
 
 #: gedit-plugins-quick-open.page:18(p)
-#, fuzzy
 msgid ""
 "As the name of this plugin would imply, the <placeholder-1/> plugin helps "
 "you to open files more quickly than the regular way of opening files. To "
 "enable this plugin, select <guiseq><placeholder-2/><placeholder-3/"
 "><placeholder-4/><placeholder-5/></guiseq>."
-msgstr ""
-"Както името подсказва, приставката <app>Бързо отваряне</app> помага за по-"
-"бързо отваряне на файлове. За да използвате приставката, изберете "
-"<guiseq><gui>Редактиране</gui><gui>Настройки</gui><gui>Приставки</"
-"gui><gui>Бързо отваряне</gui></guiseq>."
+msgstr "Както името подсказва, приставката <placeholder-1/> помага за по-бързо отваряне на файлове. За да използвате приставката, изберете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
 
 #: gedit-plugins-quick-open.page:23(p)
 msgid "Once you've enabled it, here is how to use the plugin:"
@@ -2283,62 +2181,48 @@ msgstr "Ето как да използвате приставката:"
 
 #: gedit-plugins-quick-open.page:27(key) gedit-open-files.page:20(key)
 msgid "O"
-msgstr ""
+msgstr "O"
 
 #: gedit-plugins-quick-open.page:26(p)
-#, fuzzy
 msgid ""
 "Open the <placeholder-1/> dialog by pressing <keyseq><placeholder-2/"
 "><placeholder-3/><placeholder-4/></keyseq>, or by selecting "
 "<guiseq><placeholder-5/><placeholder-6/></guiseq>."
-msgstr ""
-"Отворете прозореца на <app>Бързо отваряне</app> като натиснете "
-"<keyseq><key>Ctrl</key><key>Alt</key><key>O</key></keyseq> или като изберете "
-"<guiseq> <gui>Файл</gui><gui>Бързо отваряне</gui></guiseq>."
+msgstr "Отворете прозореца на <placeholder-1/> като натиснете <keyseq><placeholder-2/><placeholder-3/><placeholder-4/></keyseq> или като изберете <guiseq><placeholder-5/><placeholder-6/></guiseq>."
 
 #: gedit-plugins-quick-open.page:29(p)
-#, fuzzy
 msgid "The <placeholder-1/> file dialog will appear."
-msgstr "Ще се покаже прозорецът <gui>Бързо отваряне</gui>."
+msgstr "Ще се покаже прозорецът <placeholder-1/>."
 
 #: gedit-plugins-quick-open.page:30(p)
 msgid "Use your mouse to select the file or files that you want to open."
 msgstr "С мишката изберете файла или файловете, които искате да отворите."
 
 #: gedit-plugins-quick-open.page:32(p)
-#, fuzzy
 msgid ""
 "To select several individual files, hold down your <placeholder-1/> key "
 "while you click on the files that you want to open."
-msgstr ""
-"За да изберете индивидуални файлове, задръжте клавиша <key>Ctrl</key> и "
-"после щракнете върху тях."
+msgstr "За да изберете индивидуални файлове, задръжте клавиша <placeholder-1/> и после щракнете върху тях."
 
 #: gedit-plugins-quick-open.page:34(p)
-#, fuzzy
 msgid ""
 "To select a group of files, click on the first file that you want to open, "
 "hold down the <placeholder-1/> key, and then click on the last file in the "
 "list that you want to open."
-msgstr ""
-"За да изберете група от файлове, изберете първия файл, задръжте клавиша "
-"<key>Shift</key> и после изберете последния файл от желания списък."
+msgstr "За да изберете група от файлове, изберете първия файл, задръжте клавиша <placeholder-1/> и после изберете последния файл от желания списък."
 
 #: gedit-plugins-quick-open.page:37(gui) gedit-open-recent.page:18(gui)
 #: gedit-open-on-server.page:23(gui) gedit-open-on-server.page:28(gui)
 #: gedit-open-files.page:20(gui) gedit-open-files.page:21(gui)
 #: gedit-open-files.page:24(gui)
 msgid "Open"
-msgstr ""
+msgstr "Отваряне"
 
 #: gedit-plugins-quick-open.page:40(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> plugin will only display files that you have previously "
 "opened."
-msgstr ""
-"Приставката <app>Бързо отваряне</app> ще показва само файлове, които сте "
-"отваряли преди."
+msgstr "Приставката <placeholder-1/> ще показва само файлове, които вече сте отваряли."
 
 #: gedit-plugins-pyconsole.page:12(desc)
 msgid "Add an interactive Python console to the bottom pane"
@@ -2349,48 +2233,33 @@ msgid "Python console"
 msgstr "Конзола на Питон"
 
 #: gedit-plugins-pyconsole.page:17(gui) gedit-plugins-pyconsole.page:21(gui)
-#, fuzzy
 msgid "Python Console"
 msgstr "Конзола на Питон"
 
 #: gedit-plugins-pyconsole.page:17(p)
-#, fuzzy
 msgid ""
 "You can add a Python console to the bottom pane, allowing you to test Python "
 "scripts without leaving <placeholder-1/>. To enable the Python console, "
 "select <guiseq><placeholder-2/><placeholder-3/><placeholder-4/"
 "><placeholder-5/></guiseq>."
-msgstr ""
-"Можете да добавите <gui>Конзола на Питон</gui> в долния панел, която ви "
-"позволява да изпробвате Питон скриптове без да напускате <app>gedit</app>. "
-"За да включите <gui>Конзола на Питон</gui>, изберете "
-"<guiseq><gui>Редактиране</gui><gui>Настройки</gui><gui>Приставки</"
-"gui><gui>Конзола на Питон</gui></guiseq>."
+msgstr "Можете да добавите конзола на Питон в долния панел, която ви позволява да изпробвате Питон скриптове без да напускате <placeholder-1/>. За да включите конзолата на Питон, изберете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
 
 #: gedit-plugins-pyconsole.page:19(p)
-#, fuzzy
 msgid ""
 "Once the Python console is enabled, you can open it by selecting "
 "<guiseq><placeholder-1/><placeholder-2/></guiseq>, or just press "
 "<keyseq><placeholder-3/><placeholder-4/></keyseq>."
-msgstr ""
-"Щом <gui>Конзола на Питон</gui> е включена, можете да я отворите като "
-"натиснете  <guiseq><gui>Изглед</gui><gui>Долен панел</gui></guiseq> или "
-"просто като натиснете  <keyseq><key>Shift</key><key>F9</key></keyseq>."
+msgstr "Щом конзолата на Питон е включена, можете да я отворите като натиснете <guiseq><placeholder-1/><placeholder-2/></guiseq> или просто като натиснете  <keyseq><placeholder-3/><placeholder-4/></keyseq>."
 
 #: gedit-plugins-pyconsole.page:21(gui)
-#, fuzzy
 msgid "Embeded Terminal"
 msgstr "Вграден терминал"
 
 #: gedit-plugins-pyconsole.page:21(p)
-#, fuzzy
 msgid ""
 "If you have also enabled the <placeholder-1/> plugin, the <placeholder-2/> "
 "will appear as a separate tab in the bottom pane."
-msgstr ""
-"Ако също сте включили приставката <gui>Вграден терминал</gui>, <gui>Конзола "
-"на Питон</gui> ще се покаже в отделен раздел в долния панел."
+msgstr "Ако също сте включили приставката <placeholder-1/>, <placeholder-2/> ще се покаже в отделен раздел в долния панел."
 
 #: gedit-plugins-multi-edit.page:11(years)
 msgid "2011"
@@ -2405,27 +2274,20 @@ msgid "Multi edit"
 msgstr "Множествено редактиране"
 
 #: gedit-plugins-multi-edit.page:19(app) gedit-plugins-multi-edit.page:22(gui)
-#, fuzzy
 msgid "Multi Edit"
 msgstr "Множествено редактиране"
 
 #: gedit-plugins-multi-edit.page:19(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> plugin allows you to edit a document in multiple places "
 "at once. This can be helpful when performing tedious editing tasks. To "
 "enable the Multi Edit plugin, select <guiseq><placeholder-2/><placeholder-3/"
 "><placeholder-4/><placeholder-5/></guiseq>."
-msgstr ""
-"Приставката <app>Множествено редактиране</app> ви позволява да редактирате "
-"документ на множество места едновременно. Това може да е полезно, когато "
-"трябва да свършите досадни редакторски задачи. За да включите приставката, "
-"изберете <guiseq><gui>Редактиране</gui><gui>Настройки</gui><gui>Приставки</"
-"gui><gui>Множествено редактиране</gui></guiseq>."
+msgstr "Приставката <placeholder-1/> ви позволява да редактирате документ на множество места едновременно. Това може да е полезно, когато трябва да свършите досадни редакторски задачи. За да включите приставката, изберете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
 
 #: gedit-plugins-multi-edit.page:25(key)
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #: gedit-plugins-multi-edit.page:26(gui)
 #, fuzzy
@@ -2433,18 +2295,12 @@ msgid "Multi Edit Mode"
 msgstr "Множествено редактиране"
 
 #: gedit-plugins-multi-edit.page:24(p)
-#, fuzzy
 msgid ""
 "After you have enabled the plugin, turn-on Multi Edit mode by pressing "
 "<keyseq><placeholder-1/><placeholder-2/><placeholder-3/></keyseq>, or "
 "clicking <guiseq><placeholder-4/><placeholder-5/></guiseq>. You can then "
 "select the points in your file that you would like start editing."
-msgstr ""
-"След като включите приставката, включете режима „Мнжествено редактиране“ "
-"като натиснете <keyseq><key>Ctrl</key><key>Shift</key><key>C</key></keyseq> "
-"или изберете <guiseq><gui>Редактиране</gui><gui>Множествено редактиране</"
-"gui></guiseq>. Можете да изберете местата във вашия документ, които искате "
-"да редактирате."
+msgstr "След като включите приставката, включете режима „Множествено редактиране“ като натиснете <keyseq><placeholder-1/><placeholder-2/><placeholder-3/></keyseq> или изберете <guiseq><placeholder-4/><placeholder-5/></guiseq>. Можете да изберете местата във вашия документ, които искате да редактирате."
 
 #: gedit-plugins-multi-edit.page:29(p)
 msgid "To insert editing points in your file:"
@@ -2456,22 +2312,18 @@ msgstr "Поставете курсора в началото на текста.
 
 #: gedit-plugins-multi-edit.page:32(key) gedit-plugins-multi-edit.page:34(key)
 msgid "E"
-msgstr ""
+msgstr "E"
 
 #: gedit-plugins-multi-edit.page:32(p)
 #: gedit-plugins-join-split-lines.page:30(p)
-#, fuzzy
 msgid "Press <keyseq><placeholder-1/><placeholder-2/></keyseq>."
-msgstr "Натиснете <keyseq><key>Ctrl</key><key>J</key></keyseq>."
+msgstr "Натиснете <keyseq><placeholder-1/><placeholder-2/></keyseq>."
 
 #: gedit-plugins-multi-edit.page:33(p)
-#, fuzzy
 msgid ""
 "Move to your next editing point, and press <keyseq><placeholder-1/"
 "><placeholder-2/></keyseq> again."
-msgstr ""
-"Преместете курсора в края на текста и отново натиснете <keyseq><key>Ctrl</"
-"key><key>E</key></keyseq>."
+msgstr "Преместете курсора в края на текста и отново натиснете <keyseq><placeholder-1/><placeholder-2/></keyseq>."
 
 #: gedit-plugins-multi-edit.page:35(p)
 msgid "Continue inserting editing points, adding as many as you need."
@@ -2486,15 +2338,11 @@ msgstr ""
 "редактирането."
 
 #: gedit-plugins-multi-edit.page:42(p)
-#, fuzzy
 msgid ""
 "To remove editing points, press the <placeholder-1/> key. This will remove "
 "all of the editing points. Pressing the <placeholder-2/> key again will turn "
 "off Multi Edit mode, returning the editor back to its normal state."
-msgstr ""
-"За да премахнете отбелязването на текста за редактиране, натиснете клавиша "
-"<key>Esc</key>. При следващото натискане на клавиша <key>Esc</key>, режимът "
-"„Множествено редактиране“ ще бъде изключен."
+msgstr "За да премахнете отбелязването на текста за редактиране, натиснете клавиша <placeholder-1/>. При следващото натискане на клавиша <placeholder-2/>, режимът „Множествено редактиране“ ще бъде изключен."
 
 #: gedit-plugins-modelines.page:16(desc)
 msgid "Emacs, Kate and Vim-style modelines support for gedit"
@@ -2508,40 +2356,34 @@ msgstr "Линии за режима"
 #: gedit-plugins-modelines.page:21(app) gedit-plugins-modelines.page:42(app)
 #: gedit-plugins-modelines.page:49(app)
 msgid "Emacs"
-msgstr ""
+msgstr "Emacs"
 
 #: gedit-plugins-modelines.page:21(app) gedit-plugins-modelines.page:55(app)
 #: gedit-plugins-modelines.page:65(app)
 msgid "Kate"
-msgstr ""
+msgstr "Kate"
 
 #: gedit-plugins-modelines.page:21(app) gedit-plugins-modelines.page:70(app)
 #: gedit-plugins-modelines.page:80(app)
 msgid "Vim"
-msgstr ""
+msgstr "Vim"
 
 #: gedit-plugins-modelines.page:21(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> plugin allows <placeholder-2/> to analyze the lines of "
 "text at the start and end of a file, and then apply a set of document "
 "preferences to the file. The <placeholder-3/> plugin supports a subset of "
 "the options used by the <placeholder-4/>, <placeholder-5/> and "
 "<placeholder-6/> text editors."
-msgstr ""
-"Приставката <app>Линии за режима</app> позволява на <app>gedit</app> да "
-"анализира линиите на текст в началото и края на файл и да му приложи "
-"различни форматиращи схеми. Приставката поддържа опции използвани от "
-"текстовите редактори <app>Emacs</app>, <app>Kate</app> и <app>Vim</app>."
+msgstr "Приставката <placeholder-1/> позволява на <placeholder-2/> да анализира линиите на текст в началото и края на файл и да му приложи различни форматиращи схеми. Приставката <placeholder-3/> поддържа опции използвани от текстовите редактори <placeholder-4/>, <placeholder-5/> и <placeholder-6/>."
 
 #: gedit-plugins-modelines.page:26(title)
 msgid "General Modeline Options"
 msgstr "Общи опции"
 
 #: gedit-plugins-modelines.page:27(p)
-#, fuzzy
 msgid "The following options can be set using <placeholder-1/> modelines:"
-msgstr "Могат да се зададат следните опции:"
+msgstr "Могат да се зададат следните опции чрез <placeholder-1/>:"
 
 #: gedit-plugins-modelines.page:29(p)
 msgid "Tab width"
@@ -2576,14 +2418,11 @@ msgid "Emacs Modelines"
 msgstr "Линии на режима на Emacs"
 
 #: gedit-plugins-modelines.page:42(p)
-#, fuzzy
 msgid ""
 "The first two lines of a document are scanned for <placeholder-1/> "
 "modelines, and <placeholder-2/> supports the following <placeholder-3/> "
 "modeline options:"
-msgstr ""
-"Първите две линии на документ се анализират за линии на режима на "
-"<app>Emacs</app>.  Поддържат се следните опции:"
+msgstr "Първите две линии на документ се анализират за линии на режима на <placeholder-1/>. <placeholder-2/> поддържа следните опции на <placeholder-3/>:"
 
 #: gedit-plugins-modelines.page:44(p)
 msgid "Tab-width"
@@ -2603,30 +2442,24 @@ msgstr "Text auto-wrap"
 
 #: gedit-plugins-modelines.page:49(link)
 msgid "GNU Emacs Manual"
-msgstr ""
+msgstr "Ръководство на GNU Emacs"
 
 #: gedit-plugins-modelines.page:49(p) gedit-plugins-modelines.page:80(p)
-#, fuzzy
 msgid ""
 "For more information on <placeholder-1/> modelines, visit the <placeholder-2/"
 ">."
-msgstr ""
-"За повече информация относно линии на режима на <app>Vim</app>, посетете "
-"<link href=\"http://www.vim.org/\">уеб сайта на Vim</link>."
+msgstr "За повече информация относно линии на режима на <placeholder-1/>, посетете <placeholder-2/>."
 
 #: gedit-plugins-modelines.page:53(title)
 msgid "Kate Modelines"
 msgstr "Линии на режима на Kate"
 
 #: gedit-plugins-modelines.page:55(p)
-#, fuzzy
 msgid ""
 "The first and last ten lines a document are scanned for <placeholder-1/> "
 "modelines, and <placeholder-2/> supports the following <placeholder-3/> "
 "modeline options:"
-msgstr ""
-"Анализират се първите и последните десет линии на документ за линии на "
-"режима на  <app>Kate</app>. Поддържат се следните опции:"
+msgstr "Анализират се първите и последните десет линии на документ за линии на режима на <placeholder-1/>. <placeholder-2/> поддържа следните опции на <placeholder-3/>:"
 
 #: gedit-plugins-modelines.page:58(p)
 msgid "tab-width"
@@ -2698,7 +2531,7 @@ msgstr "textwidth"
 
 #: gedit-plugins-modelines.page:80(link)
 msgid "Vim website"
-msgstr ""
+msgstr "Сайт на Vim"
 
 #: gedit-plugins-join-split-lines.page:13(desc)
 msgid "Join several lines of text, or split long lines"
@@ -2751,7 +2584,7 @@ msgstr ""
 #: gedit-plugins-join-split-lines.page:30(key)
 #: gedit-plugins-join-split-lines.page:39(key)
 msgid "J"
-msgstr ""
+msgstr "J"
 
 #: gedit-plugins-join-split-lines.page:31(p)
 msgid "The lines that you selected will be joined into one longer line."
@@ -2771,7 +2604,7 @@ msgstr ""
 #: gedit-plugins-join-split-lines.page:39(p)
 msgid ""
 "Press <keyseq><placeholder-1/><placeholder-2/><placeholder-3/></keyseq>."
-msgstr ""
+msgstr "Натиснете <keyseq><placeholder-1/><placeholder-2/><placeholder-3/></keyseq>."
 
 #: gedit-plugins-join-split-lines.page:41(p)
 msgid ""
@@ -2792,26 +2625,20 @@ msgid "Additional gedit plugins"
 msgstr "Допълнителни приставки за gedit"
 
 #: gedit-plugins-install.page:22(app) gedit-plugin-guide.page:20(app)
-#, fuzzy
 msgid "gedit-plugins"
-msgstr "Приставки"
+msgstr "приставки"
 
 #: gedit-plugins-install.page:24(link)
 msgid "kept here"
-msgstr ""
+msgstr "държани тук"
 
 #: gedit-plugins-install.page:20(p)
-#, fuzzy
 msgid ""
 "Installing third-party plugins gives you extra functionality that isn't "
 "available in default <placeholder-1/> plugins, or even the extra plugins "
 "that are part of the <placeholder-2/> package. An online list of third-party "
 "plugins is <placeholder-3/>."
-msgstr ""
-"Инсталирането на приставки от трети страни ви дава допълнителна "
-"функционалност, която не е включена в стандартните или дори допълнителни "
-"приставки за <app>gedit</app>. Списък с приставките можете да намерите <link "
-"href=\"http://live.gnome.org/Gedit/Plugins#third_party\">тук</link>."
+msgstr "Инсталирането на приставки от трети страни ви дава допълнителна функционалност, която не е включена в стандартните приставки на <placeholder-1/> както и в допълнителните приставки от пакета <placeholder-2/>. Списък с приставките можете да намерите на <placeholder-3/>."
 
 #: gedit-plugins-install.page:27(p)
 msgid ""
@@ -2846,7 +2673,7 @@ msgstr ""
 
 #: gedit-plugins-install.page:37(var) gedit-plugins-install.page:39(var)
 msgid "username"
-msgstr ""
+msgstr "име на потребителя"
 
 #: gedit-plugins-install.page:37(file)
 msgid "/home/<placeholder-1/>/.local/share/gedit/plugins"
@@ -2988,7 +2815,6 @@ msgstr ""
 "бърз достъп до вашите често използвани файлове."
 
 #: gedit-plugins-file-browser.page:23(gui)
-#, fuzzy
 msgid "File Browser Pane"
 msgstr "Панел на файловия браузър"
 
@@ -2996,7 +2822,7 @@ msgstr "Панел на файловия браузър"
 msgid ""
 "You can enable the <placeholder-1/> by selecting <guiseq><placeholder-2/"
 "><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
-msgstr ""
+msgstr "Можете да включите <placeholder-1/> като изберете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
 
 #: gedit-plugins-file-browser.page:26(title)
 #: gedit-open-files-from-sidepane.page:30(title)
@@ -3014,43 +2840,33 @@ msgstr "Отваряне на файлове от страничния пане�
 #: gedit-open-files-from-sidepane.page:47(gui)
 #: gedit-open-files-from-sidepane.page:55(gui)
 msgid "side pane"
-msgstr ""
+msgstr "страничен панел"
 
 #: gedit-plugins-file-browser.page:28(gui)
 msgid "Side pane"
-msgstr ""
+msgstr "Страничен панел"
 
 #: gedit-plugins-file-browser.page:28(gui)
 #: gedit-plugins-file-browser.page:36(em)
 #: gedit-open-files-from-sidepane.page:32(gui)
 #: gedit-open-files-from-sidepane.page:40(em)
-#, fuzzy
 msgid "file-browser"
-msgstr "Панел на файловия браузър"
+msgstr "файлов браузър"
 
 #: gedit-plugins-file-browser.page:27(p)
-#, fuzzy
 msgid ""
 "To activate and use the <placeholder-1/>, select <guiseq><placeholder-2/"
 "><placeholder-3/></guiseq> (or just press <placeholder-4/>), and then click "
 "on the <placeholder-5/> icon at the bottom of the pane."
-msgstr ""
-"За да активирате и използвате <gui>страничния панел</gui>, изберете "
-"<guiseq><gui>Изглед</gui><gui>Страничен панел</gui></guiseq> (или просто "
-"натиснете <key>F9</key>) и после натиснете иконата <gui>Файлов браузър</gui> "
-"в долната част на панела."
+msgstr "За да активирате и използвате <placeholder-1/>, изберете <guiseq><placeholder-2/><placeholder-3/></guiseq> (или просто натиснете <placeholder-4/>) и после натиснете иконата <placeholder-5/> в долната част на панела."
 
 #: gedit-plugins-file-browser.page:35(p)
 #: gedit-open-files-from-sidepane.page:39(p)
-#, fuzzy
 msgid ""
 "This will activate the <placeholder-1/> mode of the <placeholder-2/>. You "
 "can then use the navigation buttons at the top of the pane to locate and "
 "open your desired files."
-msgstr ""
-"Това ще активира режима <em>Файлов браузър</em> в <app>страничния панел</"
-"app>. После можете да използвате бутоните за навигация в горната част на "
-"панела, за да намерите и отворите вашите файлове."
+msgstr "Това ще активира режима <placeholder-1/> в <placeholder-2/>. После можете да използвате бутоните за навигация в горната част на панела, за да намерите и отворите вашите файлове."
 
 #: gedit-plugins-external-tools.page:18(desc)
 msgid "Run scripts on your current files, and interact with other applications"
@@ -3316,54 +3132,38 @@ msgstr "Последно отваряни файлове"
 
 #: gedit-plugins-dashboard.page:30(gui) gedit-plugins-dashboard.page:32(gui)
 #: gedit-plugins-dashboard.page:38(gui) gedit-plugins-dashboard.page:39(gui)
-#, fuzzy
 msgid "empty document"
-msgstr "Отваряне на документ"
+msgstr "празен документ"
 
 #: gedit-plugins-dashboard.page:30(p)
-#, fuzzy
 msgid ""
 "The dashboard will initially display a shortcut for an <placeholder-1/> and "
 "seven of your most recently-used files. Click on the <placeholder-2/> to "
 "create a new file. Click on any of the other files to open that file."
-msgstr ""
-"Първоначално ще видите препратка към <gui>празен документ</gui> и седем от "
-"последно отваряните файлове. Щракнете <gui>празен документ</gui>, за да "
-"създадете нов файл. Щракнете върху някой от другите файлове, за да го "
-"отворите."
+msgstr "Първоначално ще видите препратка към <placeholder-1/> и седем от последно отваряните файлове. Щракнете <placeholder-2/>, за да създадете нов файл. Щракнете върху някой от другите файлове, за да го отворите."
 
 #: gedit-plugins-dashboard.page:37(title)
 msgid "Most frequently-used files"
 msgstr "Най-често отваряни файлове"
 
 #: gedit-plugins-dashboard.page:38(p)
-#, fuzzy
 msgid ""
 "Similarly, the dashboard displays a shortcut for an <placeholder-1/> and "
 "seven of your most frequently-used files. Click on the <placeholder-2/> to "
 "create a new file. Click on any of the other files to open that file."
-msgstr ""
-"Подобно, таблото показва препратка към <gui>празен документ</gui> и седем от "
-"най-често отваряните файлове. Щракнете <gui>празен документ</gui>, за да "
-"създадете нов файл. Щракнете върху някой от другите файлове, за да го "
-"отворите."
+msgstr "Подобно, таблото показва препратка към <placeholder-1/> и седем от най-често отваряните файлове. Щракнете <placeholder-2/>, за да създадете нов файл. Щракнете върху някой от другите файлове, за да го отворите."
 
 #: gedit-plugins-dashboard.page:45(gui) gedit-create-new-file.page:16(gui)
 msgid "New"
-msgstr ""
+msgstr "Нов"
 
 #: gedit-plugins-dashboard.page:43(p)
-#, fuzzy
 msgid ""
 "Once activated, the <placeholder-1/> will be displayed by default when you "
 "open <placeholder-2/>. You can also open the <placeholder-3/> by clicking "
 "<guiseq><placeholder-4/><placeholder-5/></guiseq>, or by pressing "
 "<keyseq><placeholder-6/><placeholder-7/></keyseq>."
-msgstr ""
-"След включване на приставката, <app>таблото</app> ще се показва по "
-"подразбиране при стартиране на <app>gedit</app>. Също можете да отворите "
-"<app>таблото</app> като изберете <guiseq><gui>Файл</gui><gui>Нов</gui> </"
-"guiseq> или натиснете <keyseq><key>Ctrl</key><key>N</key></keyseq>."
+msgstr "След включване на приставката, <placeholder-1/> ще се показва по подразбиране при стартиране на <placeholder-2/>. Също можете да отворите <placeholder-3/> като изберете <guiseq><placeholder-4/><placeholder-5/></guiseq> или натиснете <keyseq><placeholder-6/><placeholder-7/></keyseq>."
 
 #: gedit-plugins-commander.page:13(desc)
 msgid "Use a command-line interface for advanced editing"
@@ -3375,30 +3175,22 @@ msgid "Commander"
 msgstr "От командния ред"
 
 #: gedit-plugins-commander.page:19(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> plugin is a plugin for advanced <placeholder-2/> users "
 "that allows you to perform command-line actions on the current file. To "
 "enable the commander plugin, select <guiseq><placeholder-3/><placeholder-4/"
 "><placeholder-5/><placeholder-6/></guiseq>."
-msgstr ""
-"Приставката <app>От командния ред</app> е за напреднали потребители на "
-"<app>gedit</app>, която позволява да се изпълняват команди върху текущия "
-"файл от командния ред. За да включите приставката, изберете "
-"<guiseq><gui>Редактиране</gui><gui>Настройки</gui><gui>Приставки</"
-"gui><gui>От командния ред</gui></guiseq>."
+msgstr "Приставката <placeholder-1/> е за напреднали потребители на <placeholder-1/>, която позволява да се изпълняват команди върху текущия файл от командния ред. За да включите приставката, изберете <guiseq><placeholder-3/><placeholder-4/><placeholder-5/><placeholder-6/></guiseq>."
 
 #: gedit-plugins-commander.page:25(key)
 msgid "."
-msgstr ""
+msgstr "."
 
 #: gedit-plugins-commander.page:24(p)
-#, fuzzy
 msgid ""
 "Once you have enabled the plugin, activate it by pressing "
 "<keyseq><placeholder-1/><placeholder-2/></keyseq>."
-msgstr ""
-"За да я използвате, натиснете <keyseq><key>Ctrl</key><key>.</key></keyseq>."
+msgstr "За да я използвате, натиснете <keyseq><placeholder-1/><placeholder-2/></keyseq>."
 
 #: gedit-plugins-commander.page:27(p)
 msgid "The last key in the above key combination is a period."
@@ -3419,16 +3211,15 @@ msgstr "Намиране на дума във файла"
 #: gedit-plugins-commander.page:42(em) gedit-plugins-commander.page:44(em)
 #: gedit-plugins-commander.page:49(em)
 msgid "foo"
-msgstr ""
+msgstr "foo"
 
 #: gedit-plugins-commander.page:42(p)
 msgid "/ <placeholder-1/>"
-msgstr ""
+msgstr "/ <placeholder-1/>"
 
 #: gedit-plugins-commander.page:44(p)
-#, fuzzy
 msgid "This will find the word <placeholder-1/>."
-msgstr "Намиране на думата <em>foo</em>."
+msgstr "Намиране на думата <placeholder-1/>."
 
 #: gedit-plugins-commander.page:47(p)
 msgid "Replace a word within the current file"
@@ -3440,30 +3231,27 @@ msgstr "// foo bar"
 
 #: gedit-plugins-commander.page:49(em)
 msgid "bar"
-msgstr ""
+msgstr "bar"
 
 #: gedit-plugins-commander.page:49(p)
-#, fuzzy
 msgid "This will replace <placeholder-1/> with <placeholder-2/>."
-msgstr "Заменяне на <em>foo</em> с <em>bar</em>."
+msgstr "Заменяне на <placeholder-1/> с <placeholder-2/>."
 
 #: gedit-plugins-commander.page:52(p)
 msgid "Move the cursor to a certain line number in your file"
 msgstr "Преместване на курсора на указан ред"
 
 #: gedit-plugins-commander.page:53(em) gedit-plugins-commander.page:58(em)
-#, fuzzy
 msgid "or"
-msgstr "Подреждане"
+msgstr "или"
 
 #: gedit-plugins-commander.page:53(em)
 msgid "g"
-msgstr ""
+msgstr "g"
 
 #: gedit-plugins-commander.page:53(p)
-#, fuzzy
 msgid "go [line number] <placeholder-1/> just <placeholder-2/> [line number]"
-msgstr "go [номер на ред] <em>или</em> просто <em>g</em> [номер на ред]"
+msgstr "go [номер на ред] <placeholder-1/> или просто <placeholder-1/> [номер на ред]"
 
 #: gedit-plugins-commander.page:57(p)
 msgid "Toggle the bookmark indicator for the current line"
@@ -3471,29 +3259,23 @@ msgstr "Добавяне/премахване на отметка за теку�
 
 #: gedit-plugins-commander.page:58(em)
 msgid "b"
-msgstr ""
+msgstr "b"
 
 #: gedit-plugins-commander.page:58(p)
-#, fuzzy
 msgid "bookmark <placeholder-1/> just <placeholder-2/>"
-msgstr "bookmark <em>или</em> просто <em>b</em>"
+msgstr "bookmark <placeholder-1/> или просто <placeholder-2/>"
 
 #: gedit-plugins-commander.page:63(app)
-#, fuzzy
 msgid "bookmark"
-msgstr "Отметки"
+msgstr "bookmark"
 
 #: gedit-plugins-commander.page:63(p)
-#, fuzzy
 msgid ""
 "Some commands, such as the <placeholder-1/> command require that the "
 "appropriate plugin be installed and activated. If you do not have the "
 "appropriate plugin installed and activated, you will receive an error "
 "message."
-msgstr ""
-"Някои команди като <app>bookmark</app> изискват да бъде инсталирана и "
-"включена съответната приставка. Ако приставката липсва или е изключена, ще "
-"получите съобщение за грешка."
+msgstr "Някои команди като <placeholder-1/> изискват да бъде инсталирана и включена съответната приставка. Ако приставката липсва или е изключена, ще получите съобщение за грешка."
 
 #: gedit-plugins-color-picker.page:13(desc)
 msgid "Pick a color from a dialog and insert its hexadecimal representation"
@@ -3505,35 +3287,25 @@ msgstr "Избор на цвят"
 
 #: gedit-plugins-color-picker.page:18(app)
 #: gedit-plugins-color-picker.page:42(app)
-#, fuzzy
 msgid "color picker"
 msgstr "Избор на цвят"
 
 #: gedit-plugins-color-picker.page:18(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> plugin helps you to insert the character codes that "
 "represent a certain color. This can make it easier to choose and use the "
 "correct color in your programs."
-msgstr ""
-"Приставката <app>Избор на цвят</app> улеснява вмъкването на код на определен "
-"цвят. По този начин може да се улесни избора и употребата на точен код във "
-"вашите програми."
+msgstr "Приставката <placeholder-1/> улеснява вмъкването на код на определен цвят. По този начин може да се улесни избора и употребата на точен код във вашите програми."
 
 #: gedit-plugins-color-picker.page:23(gui)
-#, fuzzy
 msgid "Color Picker"
 msgstr "Избор на цвят"
 
 #: gedit-plugins-color-picker.page:22(p)
-#, fuzzy
 msgid ""
 "To enable the color picker plugin, select <guiseq><placeholder-1/"
 "><placeholder-2/><placeholder-3/><placeholder-4/></guiseq>."
-msgstr ""
-"За да включите приставката <app>Избор на цвят</app>, изберете "
-"<guiseq><gui>Редактиране</gui><gui>Настройки</gui><gui>Приставки</"
-"gui><gui>Избор на цвят</gui></guiseq>."
+msgstr "За да включите приставката <placeholder-1/>, изберете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/></guiseq>."
 
 #: gedit-plugins-color-picker.page:26(p)
 msgid "To open and use the color picker:"
@@ -3549,16 +3321,13 @@ msgstr ""
 
 #: gedit-plugins-color-picker.page:30(gui)
 msgid "Pick Color..."
-msgstr ""
+msgstr "Избор на цвят…"
 
 #: gedit-plugins-color-picker.page:30(p)
-#, fuzzy
 msgid ""
 "Select <guiseq><placeholder-1/><placeholder-2/></guiseq>. The color picker "
 "dialog will appear."
-msgstr ""
-"Изберете <guiseq><gui>Инструменти</gui><gui>Избор на цвят...</gui></guiseq>. "
-"Ще се покаже прозореца за избор на цвят."
+msgstr "Изберете <guiseq><placeholder-1/><placeholder-2/></guiseq>. Ще се покаже прозореца за избор на цвят."
 
 #: gedit-plugins-color-picker.page:32(p)
 msgid ""
@@ -3584,20 +3353,17 @@ msgstr ""
 
 #: gedit-plugins-color-picker.page:39(gui)
 msgid "Insert"
-msgstr ""
+msgstr "Вмъкване"
 
 #: gedit-plugins-color-picker.page:39(p)
-#, fuzzy
 msgid ""
 "To insert that color code into your document, click <placeholder-1/>. The "
 "code will be inserted where you had placed your cursor."
-msgstr ""
-"За да вмъкнете кода на този цвят в документа, натиснете <gui>Вмъкване</gui>. "
+msgstr "За да вмъкнете кода на този цвят в документа, натиснете <placeholder-1/>. "
 
 #: gedit-plugins-color-picker.page:42(p)
-#, fuzzy
 msgid "To close the <placeholder-1/>, click <placeholder-2/>."
-msgstr "За да затворите прозореца, натиснете <gui>Затваряне</gui>."
+msgstr "За да затворите прозореца <placeholder-1/>, натиснете <placeholder-2/>."
 
 #: gedit-plugins-color-picker.page:46(p)
 msgid ""
@@ -3608,20 +3374,15 @@ msgstr ""
 "Нюанс, Наситеност, Стойност, Червено, Зелено или Синьо."
 
 #: gedit-plugins-color-picker.page:49(gui)
-#, fuzzy
 msgid "Save color here"
-msgstr "Промяна на цветова схема"
+msgstr "Заразване на цветова схема"
 
 #: gedit-plugins-color-picker.page:48(p)
-#, fuzzy
 msgid ""
 "Additionally, you can save colors by right-clicking on any of the colored "
 "boxes in the color picker, and selecting <placeholder-1/>. This will make it "
 "easier to insert commonly-used colors later."
-msgstr ""
-"Можете да запазите цвят като щракнете с десния бутон върху някоя от "
-"оцветените кутии и изберете <gui>Запазване на цвета тук</gui>. Така по-лесно "
-"ще можете да вмъквате често използвани кодове."
+msgstr "Можете да запазите цвят като щракнете с десния бутон върху някоя от оцветените кутии и изберете <placeholder-1/>. Така по-лесно ще можете да вмъквате често използвани кодове."
 
 #: gedit-plugins-code-comment.page:13(desc)
 msgid "Comment-out or uncomment a block of code"
@@ -3643,21 +3404,15 @@ msgstr ""
 "отделени от другите части на програмата със специални знаци."
 
 #: gedit-plugins-code-comment.page:23(app)
-#, fuzzy
 msgid "code comment"
 msgstr "Коментиране на код"
 
 #: gedit-plugins-code-comment.page:23(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> plugin makes it easier to quickly create or remove code "
 "comments. To enable the code comment plugin, select <guiseq><placeholder-2/"
 "><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
-msgstr ""
-"С тази приставка можете бързо и лесно да създавате и премахвате коментари. "
-"За да включите приставката изберете <guiseq><gui>Редактиране</"
-"gui><gui>Настройки</gui><gui>Приставки</gui><gui>Коментиране на код</gui> </"
-"guiseq>."
+msgstr "С приставката <placeholder-1/> можете бързо и лесно да създавате и премахвате коментари. За да включите приставката изберете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
 
 #: gedit-plugins-code-comment.page:28(p)
 msgid "To create or remove a comment:"
@@ -3669,56 +3424,42 @@ msgid ""
 msgstr "Оцветете текста, за който искате да добавите или премахнете коментар."
 
 #: gedit-plugins-code-comment.page:32(gui)
-#, fuzzy
 msgid "Comment Code"
-msgstr "От командния ред"
+msgstr "Коментиране на кода"
 
 #: gedit-plugins-code-comment.page:32(key)
 #: gedit-plugins-code-comment.page:36(key)
 msgid "M"
-msgstr ""
+msgstr "M"
 
 #: gedit-plugins-code-comment.page:32(p)
-#, fuzzy
 msgid ""
 "To add a comment, click <guiseq><placeholder-1/><placeholder-2/></guiseq>, "
 "or press <keyseq><placeholder-3/><placeholder-4/></keyseq>."
-msgstr ""
-"За да добавите коментар, натиснете <guiseq><gui>Редактиране</"
-"gui><gui>Коментиране на кода</gui></guiseq> или натиснете <keyseq><key>Ctrl</"
-"key><key>M</key></keyseq>."
+msgstr "За да добавите коментар, натиснете <guiseq><placeholder-1/><placeholder-2/></guiseq> или натиснете <keyseq><placeholder-3/><placeholder-4/></keyseq>."
 
 #: gedit-plugins-code-comment.page:34(gui)
 msgid "Uncomment Code"
-msgstr ""
+msgstr "Премахване на коментара"
 
 #: gedit-plugins-code-comment.page:34(p)
-#, fuzzy
 msgid ""
 "To remove a comment, click <guiseq><placeholder-1/><placeholder-2/></"
 "guiseq>, or press <keyseq><placeholder-3/><placeholder-4/><placeholder-5/></"
 "keyseq>."
-msgstr ""
-"За да премахнете коментар, натиснете <guiseq><gui>Редактиране</"
-"gui><gui>Премахване на коментара</gui></guiseq> или натиснете "
-"<keyseq><key>Shift</key><key>Ctrl</key><key>M</key></keyseq>."
+msgstr "За да премахнете коментар, натиснете <guiseq><placeholder-1/><placeholder-2/></guiseq> или натиснете <keyseq><placeholder-3/><placeholder-4/><placeholder-5/></keyseq>."
 
 #: gedit-plugins-code-comment.page:42(gui)
 msgid "Status bar"
-msgstr ""
+msgstr "Лента за състоянието"
 
 #: gedit-plugins-code-comment.page:39(p)
-#, fuzzy
 msgid ""
 "<placeholder-1/> will automatically use the correct style of comment based "
 "on the language or syntax of the file. If <placeholder-2/> doesn't identify "
 "your language or syntax, you can select it from the language list in the "
 "bottom <placeholder-3/>."
-msgstr ""
-"<app>Gedit</app> автоматично ще използва правилния стил коментар на база "
-"езика или синтаксиса на документа. Ако <app>gedit</app> не разпознае езика "
-"или синтаксиса, можете да го изберете от списъка с езици в <gui>лентата за "
-"състояние</gui> в долната част на прозореца."
+msgstr "<placeholder-1/> автоматично ще използва правилния стил коментар на база езика или синтаксиса на документа. Ако <placeholder-2/> не разпознае езика или синтаксиса, можете да го изберете от списъка с езици в <placeholder-3/> в долната част на прозореца."
 
 #: gedit-plugins-code-assistance.page:13(desc)
 msgid "Real-time error highlighting for supported languages"
@@ -3758,21 +3499,16 @@ msgstr "Как работи"
 
 #: gedit-plugins-code-assistance.page:42(code)
 msgid "make"
-msgstr ""
+msgstr "make"
 
 #: gedit-plugins-code-assistance.page:41(p)
-#, fuzzy
 msgid ""
 "The plugin currently relies on information in the makefile to deduce the "
 "Clang error-highlighting rules. It examines the <placeholder-1/> rules and "
 "determines which targets depend on the the file that is being parsed. The "
 "plugin then extracts the compiler flags by simulating an execution of those "
 "targets."
-msgstr ""
-"В момента приставката разчита на информацията във файла Makefile, за да "
-"извлече правилата за оцветяване на грешки. Анализира <code>make</code> "
-"правилата и определя кои цели зависят от файла. После приставката извлича "
-"флаговете на компилатора като симулира изпълнението на тези цели."
+msgstr "В момента приставката разчита на информацията във файла Makefile, за да извлече правилата за оцветяване на грешки. Анализира правилата на <placeholder-1/> и определя кои цели зависят от файла. После приставката извлича флаговете на компилатора като симулира изпълнението на тези цели."
 
 #: gedit-plugins-code-assistance.page:47(p)
 msgid ""
@@ -3795,29 +3531,23 @@ msgid ""
 "This assumes the reader knows how to use gedit in general. By the end of "
 "this page, the reader will be able to use the character map plugin to insert "
 "characters into their documents."
-msgstr ""
+msgstr "Предполага се, че потребителят като цяло знае как се работи с gedit. След прочитането на тази страница потребителят ще знае как да използва приставката, за да вмъква знаци в документа."
 
 #: gedit-plugins-character-map.page:29(app)
 #: gedit-plugins-character-map.page:29(gui)
 #: gedit-plugins-character-map.page:34(em)
 #: gedit-plugins-character-map.page:39(em)
 #: gedit-plugins-character-map.page:40(em)
-#, fuzzy
 msgid "Character Map"
 msgstr "Таблица със знаци"
 
 #: gedit-plugins-character-map.page:29(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> plugin enables you to insert characters into your "
 "document that you may not be able to type easily using your keyboard. To "
 "enable this plugin, select <guiseq><placeholder-2/><placeholder-3/"
 "><placeholder-4/><placeholder-5/></guiseq>."
-msgstr ""
-"Приставката <app>Таблица със знаци</app> ви помага да вмъкнете знаци в "
-"документ, които е трудно да се въведат чрез клавиатура. За да включите "
-"приставката, изберете <guiseq><gui>Редактиране</gui><gui>Настройки</"
-"gui><gui>Приставки</gui><gui>Таблица със знаци</gui></guiseq>."
+msgstr "Приставката <placeholder-1/> ви помага да вмъкнете знаци в документ, които е трудно да се въведат чрез клавиатура. За да включите приставката, изберете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/></guiseq>."
 
 #: gedit-plugins-character-map.page:32(title)
 msgid "Using Character Map"
@@ -3826,17 +3556,13 @@ msgstr "Употреба на таблицата със знаци"
 #: gedit-plugins-character-map.page:34(gui)
 #: gedit-plugins-character-map.page:38(gui)
 msgid "Side Panel"
-msgstr ""
+msgstr "Страничен панел"
 
 #: gedit-plugins-character-map.page:34(p)
-#, fuzzy
 msgid ""
 "Once the plugin is enabled, you can add characters from the <placeholder-1/> "
 "tab of the side panel (<guiseq><placeholder-2/><placeholder-3/></guiseq>)."
-msgstr ""
-"След като включите приставката можете да добавите знаци от раздела "
-"<em>Таблица със знаци</em> в страничния панел (<guiseq><gui>Изглед</"
-"gui><gui>Страничен панел</gui></guiseq>)."
+msgstr "След като включите приставката можете да добавите знаци от раздела <placeholder-1/> в страничния панел (<guiseq><placeholder-2/><placeholder-3/></guiseq>)."
 
 #: gedit-plugins-character-map.page:37(p)
 msgid ""
@@ -3927,7 +3653,7 @@ msgstr "Оцветете текста, който искате да промен
 
 #: gedit-plugins-change-case.page:27(p)
 msgid "Select <guiseq><placeholder-1/><placeholder-2/></guiseq>"
-msgstr ""
+msgstr "Изберете <guiseq><placeholder-1/><placeholder-2/></guiseq>"
 
 #: gedit-plugins-change-case.page:28(p)
 msgid "Choose your desired text-formatting option."
@@ -3939,29 +3665,23 @@ msgstr "Текстът ще бъде форматиран веднага."
 
 #: gedit-plugins-change-case.page:33(gui)
 msgid "Invert Case"
-msgstr ""
+msgstr "Обръщане на региктъра"
 
 #: gedit-plugins-change-case.page:33(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> option will convert all lower case letters to upper "
 "case, and will convert all upper case letters to lower case."
-msgstr ""
-"Опцията <gui>Обръщане на регистъра</gui> ще преобразува всички малки букви в "
-"главни и всички главни букви в малки."
+msgstr "Опцията <placeholder-1/> ще преобразува всички малки букви в главни и всички главни букви в малки."
 
 #: gedit-plugins-change-case.page:34(gui)
 msgid "Title Case"
-msgstr ""
+msgstr "Регистър за заглавие"
 
 #: gedit-plugins-change-case.page:34(p)
-#, fuzzy
 msgid ""
 "The <placeholder-1/> option will convert the first letter of each word to "
 "upper case. All other letters will be converted to lower case."
-msgstr ""
-"Опцията <gui>Регистър за заглавие</gui> ще преобразува първата буква на "
-"всяка дума в главна буква. Всички други букви ще бъдат преобразувани в млаки."
+msgstr "Опцията <placeholder-1/> ще преобразува първата буква на всяка дума в главна буква. Всички други букви ще бъдат преобразувани в млаки."
 
 #: gedit-plugins-change-case.page:36(p)
 #, fuzzy
@@ -4000,7 +3720,7 @@ msgstr ""
 msgid ""
 "To enable the plugin, select <guiseq><placeholder-1/><placeholder-2/"
 "><placeholder-3/><placeholder-4/></guiseq>."
-msgstr ""
+msgstr "За да включите приставката <guiseq><placeholder-1/><placeholder-2/><placeholder-3/><placeholder-4/></guiseq>."
 
 #: gedit-plugins-bracket-comp.page:21(p)
 msgid "This plugin does not automatically insert closing HTML or XML tags."
@@ -4029,7 +3749,7 @@ msgstr ""
 msgid ""
 "To enable the bookmark plugin, select <guiseq><placeholder-1/><placeholder-2/"
 "><placeholder-3/><placeholder-4/></guiseq>."
-msgstr ""
+msgstr "За да включите приставката за отметките, натиснете <guiseq><placeholder-1/><placeholder-2/><placeholder-3/><placeholder-4/></guiseq>."
 
 #: gedit-plugins-bookmarks.page:26(title)
 msgid ""
@@ -4048,18 +3768,17 @@ msgstr ""
 #: gedit-plugins-bookmarks.page:30(key) gedit-plugins-bookmarks.page:37(key)
 #: gedit-plugins-bookmarks.page:39(key)
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: gedit-plugins-bookmarks.page:31(gui)
-#, fuzzy
 msgid "Toggle Bookmark"
-msgstr "Отметки"
+msgstr "Отметка"
 
 #: gedit-plugins-bookmarks.page:30(p)
 msgid ""
 "Press <keyseq><placeholder-1/><placeholder-2/><placeholder-3/></keyseq>, or "
 "click <guiseq><placeholder-4/><placeholder-5/></guiseq>."
-msgstr ""
+msgstr "Натиснете <keyseq><placeholder-1/><placeholder-2/><placeholder-3/></keyseq> или <guiseq><placeholder-4/><placeholder-5/></guiseq>."
 
 #: gedit-plugins-bookmarks.page:36(title)
 msgid "To move between bookmarks:"
@@ -4084,13 +3803,12 @@ msgstr ""
 "да отидете на предишната отметка."
 
 #: gedit-plugins-bookmarks.page:42(gui)
-#, fuzzy
 msgid "Go to Next Bookmark"
-msgstr "За предвижване между отметки:"
+msgstr "Към следващата отметка"
 
 #: gedit-plugins-bookmarks.page:42(gui)
 msgid "Go to Previous Bookmark"
-msgstr ""
+msgstr "Към предишната отметка"
 
 #: gedit-plugins-bookmarks.page:41(p)
 #, fuzzy
@@ -4171,7 +3889,7 @@ msgstr "Изберете желания файл и той ще бъде отв�
 
 #: gedit-open-recent.page:23(app) gedit-open-recent.page:25(app)
 msgid "gconf-editor"
-msgstr ""
+msgstr "gconf-editor"
 
 #: gedit-open-recent.page:23(p)
 #, fuzzy
@@ -4184,42 +3902,39 @@ msgstr ""
 
 #: gedit-open-recent.page:25(gui)
 msgid "apps"
-msgstr ""
+msgstr "програми"
 
 #: gedit-open-recent.page:25(gui)
 msgid "gedit-2"
-msgstr ""
+msgstr "gedit-2"
 
 #: gedit-open-recent.page:25(gui)
 msgid "preferences"
-msgstr ""
+msgstr "настройки"
 
 #: gedit-open-recent.page:25(gui)
 msgid "ui"
-msgstr ""
+msgstr "потребителски интерфейс"
 
 #: gedit-open-recent.page:25(gui)
 msgid "recents"
-msgstr ""
+msgstr "скорошни"
 
 #: gedit-open-recent.page:25(p)
 msgid ""
 "Launch <placeholder-1/> and select <guiseq><placeholder-2/><placeholder-3/"
 "><placeholder-4/><placeholder-5/><placeholder-6/></guiseq>."
-msgstr ""
+msgstr "Стартирайте <placeholder-1/> и изберете <guiseq><placeholder-2/><placeholder-3/><placeholder-4/><placeholder-5/><placeholder-6/></guiseq>."
 
 #: gedit-open-recent.page:26(gui)
 msgid "max_recents"
-msgstr ""
+msgstr "Брой скорошни"
 
 #: gedit-open-recent.page:26(p)
-#, fuzzy
 msgid ""
 "Double-click on the number next to <placeholder-1/> and change the number to "
 "your desired value."
-msgstr ""
-"Щракнете двукратно върху броя до <gui>max_recents</gui> и задайте желаната "
-"стойност."
+msgstr "Щракнете двукратно върху броя до <placeholder-1/> и задайте желаната стойност."
 
 #: gedit-open-on-server.page:14(title)
 msgid "Open a file that is located on a server"
@@ -4260,7 +3975,7 @@ msgstr ""
 #: gedit-open-on-server.page:23(gui) gedit-open-on-server.page:24(gui)
 #: gedit-open-files.page:21(gui) gedit-open-files.page:22(gui)
 msgid "Open Files"
-msgstr ""
+msgstr "Отваряне на файлове"
 
 #: gedit-open-on-server.page:23(p)
 #, fuzzy
@@ -4273,7 +3988,7 @@ msgstr ""
 
 #: gedit-open-on-server.page:24(gui)
 msgid "Pencil"
-msgstr ""
+msgstr "Молив"
 
 #: gedit-open-on-server.page:24(p)
 #, fuzzy
@@ -4301,7 +4016,7 @@ msgstr ""
 
 #: gedit-open-on-server.page:31(app)
 msgid "gvfs"
-msgstr ""
+msgstr "gvfs"
 
 #: gedit-open-on-server.page:31(p)
 #, fuzzy
@@ -4352,7 +4067,7 @@ msgstr ""
 
 #: gedit-open-files.page:22(gui)
 msgid "Cancel"
-msgstr ""
+msgstr "Отмяна"
 
 #: gedit-open-files.page:22(p)
 #, fuzzy
@@ -4684,12 +4399,12 @@ msgstr "За да изберете шрифт в <app>gedit</app>"
 #: gedit-change-default-font.page:24(key)
 #: gedit-change-color-scheme.page:20(gui)
 msgid "Font &amp; Colors"
-msgstr ""
+msgstr "Шрифт и цветове"
 
 #: gedit-change-default-font.page:24(p)
 msgid ""
 "Select <keyseq><placeholder-1/><placeholder-2/><placeholder-3/></keyseq>."
-msgstr ""
+msgstr "Изберете <keyseq><placeholder-1/><placeholder-2/><placeholder-3/></keyseq>."
 
 #: gedit-change-default-font.page:26(p)
 msgid ""
