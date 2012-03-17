@@ -9,11 +9,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gedit 3.3.2\n"
+"Project-Id-Version: gedit 3.3.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-25 10:40+0800\n"
-"PO-Revision-Date: 2012-02-24 23:09+0800\n"
-"Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
+"POT-Creation-Date: 2012-03-17 14:18+0800\n"
+"PO-Revision-Date: 2012-03-15 12:47+0800\n"
+"Last-Translator: Pin-hsien Li <pspeter9931@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) <zh-l10n@lists.linux.org.tw>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -25,15 +25,23 @@ msgstr ""
 msgid "Edit text files"
 msgstr "編輯文字檔"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:791
+#: ../data/gedit.desktop.in.in.h:2
+msgid "Open a New Document"
+msgstr "開啟新的文件"
+
+#: ../data/gedit.desktop.in.in.h:3
+msgid "Open a New Window"
+msgstr "開啟新的視窗"
+
+#: ../data/gedit.desktop.in.in.h:4 ../gedit/gedit-print-job.c:791
 msgid "Text Editor"
 msgstr "文字編輯器"
 
-#: ../data/gedit.desktop.in.in.h:3
+#: ../data/gedit.desktop.in.in.h:5
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:4
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "gedit 文字編輯器"
 
@@ -444,7 +452,7 @@ msgstr ""
 "gedit 是否使用系統預設的固定寬度字型作為編輯文字使用，而不用 gedit 指定的字"
 "型。如果關閉本選項，則會使用「編輯器字型」選項中的字型，而不用系統字型。"
 
-#: ../gedit/gedit-app.c:224
+#: ../gedit/gedit-app.c:222
 msgid "There was an error displaying the help."
 msgstr "顯示說明文件時發生錯誤。"
 
@@ -588,11 +596,11 @@ msgstr "編碼"
 
 #: ../gedit/gedit-command-line.c:278
 msgid "Create a new top-level window in an existing instance of gedit"
-msgstr "開啟一個屬於執行中的 gedit 實體的新的頂層視窗"
+msgstr "建立一個屬於執行中的 gedit 實體的新的頂層視窗"
 
 #: ../gedit/gedit-command-line.c:286
 msgid "Create a new document in an existing instance of gedit"
-msgstr "在執行中的 gedit 開啟新的文件"
+msgstr "在執行中的 gedit 建立新的文件"
 
 #: ../gedit/gedit-command-line.c:294
 msgid "Set the size and position of the window (WIDTHxHEIGHT+X+Y)"
@@ -808,11 +816,11 @@ msgid "Unsaved Document %d"
 msgstr "未儲存文件 %d"
 
 #: ../gedit/gedit-documents-panel.c:123 ../gedit/gedit-documents-panel.c:137
-#: ../gedit/gedit-window.c:2399 ../gedit/gedit-window.c:2406
+#: ../gedit/gedit-window.c:2397 ../gedit/gedit-window.c:2404
 msgid "Read-Only"
 msgstr "唯讀"
 
-#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3848
+#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3846
 msgid "Documents"
 msgstr "文件"
 
@@ -1639,7 +1647,7 @@ msgid "The preview of a page in the document to be printed"
 msgstr "將會列印的文件的預覽"
 
 #: ../gedit/gedit-replace-dialog.c:207 ../gedit/gedit-replace-dialog.ui.h:2
-#: ../gedit/gedit-window.c:1559
+#: ../gedit/gedit-window.c:1557
 msgid "Replace"
 msgstr "取代"
 
@@ -1805,13 +1813,13 @@ msgstr "求助(_H)"
 
 #: ../gedit/gedit-ui.h:53
 msgid "Create a new document"
-msgstr "新增文件"
+msgstr "建立新的文件"
 
 #: ../gedit/gedit-ui.h:54
 msgid "_Open..."
 msgstr "開啟(_O)…"
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1487
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1486
 msgid "Open a file"
 msgstr "開啟檔案"
 
@@ -2100,7 +2108,7 @@ msgstr "要搜尋的字串"
 msgid "Line you want to move the cursor to"
 msgstr "游標要移至的行"
 
-#: ../gedit/gedit-window.c:942
+#: ../gedit/gedit-window.c:941
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "使用 %s 標示模式"
@@ -2108,7 +2116,7 @@ msgstr "使用 %s 標示模式"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1047 ../gedit/gedit-window.c:2093
+#: ../gedit/gedit-window.c:1046 ../gedit/gedit-window.c:2091
 #: ../plugins/externaltools/tools/manager.py:146
 #: ../plugins/externaltools/tools/manager.py:450
 #: ../plugins/externaltools/tools/manager.py:561
@@ -2116,59 +2124,59 @@ msgstr "使用 %s 標示模式"
 msgid "Plain Text"
 msgstr "純文字"
 
-#: ../gedit/gedit-window.c:1048
+#: ../gedit/gedit-window.c:1047
 msgid "Disable syntax highlighting"
 msgstr "停用語法標示"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1365
+#: ../gedit/gedit-window.c:1364
 #, c-format
 msgid "Open '%s'"
 msgstr "開啟「%s」"
 
-#: ../gedit/gedit-window.c:1489
+#: ../gedit/gedit-window.c:1488
 msgid "Open a recently used file"
 msgstr "開啟最近使用過的檔案"
 
-#: ../gedit/gedit-window.c:1495
+#: ../gedit/gedit-window.c:1494
 msgid "Open"
 msgstr "開啟"
 
-#: ../gedit/gedit-window.c:1553
+#: ../gedit/gedit-window.c:1551
 msgid "Save"
 msgstr "儲存"
 
-#: ../gedit/gedit-window.c:1555
+#: ../gedit/gedit-window.c:1553
 msgid "Print"
 msgstr "列印"
 
-#: ../gedit/gedit-window.c:1557
+#: ../gedit/gedit-window.c:1555
 msgid "Find"
 msgstr "尋找"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1717
+#: ../gedit/gedit-window.c:1715
 #, c-format
 msgid "Activate '%s'"
 msgstr "開啟‘%s’"
 
-#: ../gedit/gedit-window.c:2074
+#: ../gedit/gedit-window.c:2072
 msgid "Use Spaces"
 msgstr "使用空格"
 
-#: ../gedit/gedit-window.c:2147
+#: ../gedit/gedit-window.c:2145
 msgid "Tab Width"
 msgstr "Tab 字元寬度"
 
-#: ../gedit/gedit-window.c:2256
+#: ../gedit/gedit-window.c:2254
 msgid "Bracket match is out of range"
 msgstr "對稱括號超出範圍"
 
-#: ../gedit/gedit-window.c:2261
+#: ../gedit/gedit-window.c:2259
 msgid "Bracket match not found"
 msgstr "找不到成對括弧"
 
-#: ../gedit/gedit-window.c:2266
+#: ../gedit/gedit-window.c:2264
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "對稱括弧於行：%d"
@@ -2271,21 +2279,19 @@ msgstr ""
 msgid "Document Statistics"
 msgstr "文件統計"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:427
 msgid "_Document Statistics"
 msgstr "文件統計(_D)"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:429
 msgid "Get statistical information on the current document"
 msgstr "獲取有關目前文件的統計資訊"
 
 #. ex:set ts=8 noet:
 #. ex:ts=4:et:
-#. ex:ts=8:noet:
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 #: ../plugins/externaltools/tools/tools.ui.h:1
 #: ../plugins/snippets/snippets/snippets.ui.h:1
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "    "
 msgstr "    "
 
@@ -2710,131 +2716,131 @@ msgid ""
 "settings to make the directory visible"
 msgstr "目前新的目錄已被過濾。您需要調整過濾器設定來使目錄重新顯示"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:734
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:733
 msgid "Bookmarks"
 msgstr "書籤"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:822
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:821
 msgid "_Filter"
 msgstr "過濾條件(_F)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:826
 msgid "_Move to Trash"
 msgstr "移至回收筒(_M)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:828
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
 msgid "Move selected file or folder to trash"
 msgstr "將已選的檔案或資料夾移至回收筒"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:829
 msgid "_Delete"
 msgstr "刪除(_D)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:831
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
 msgid "Delete selected file or folder"
 msgstr "刪除已選的檔案或資料夾"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:838
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:837
 msgid "Open selected file"
 msgstr "開啟選取的檔案"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:843
 msgid "Up"
 msgstr "上"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:845
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
 msgid "Open the parent folder"
 msgstr "開啟主資料夾"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:849
 msgid "_New Folder"
 msgstr "新增資料夾(_N)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:851
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
 msgid "Add new empty folder"
 msgstr "加入新的資料夾"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:852
 msgid "New F_ile"
 msgstr "新增檔案(_I)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:854
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
 msgid "Add new empty file"
 msgstr "加入新的檔案"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:858
 msgid "_Rename"
 msgstr "重新命名(_R)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:860
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
 msgid "Rename selected file or folder"
 msgstr "變更已選檔案或資料夾的名稱"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:866
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:865
 msgid "_Previous Location"
 msgstr "上一個位置(_P)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:867
 msgid "Go to the previous visited location"
 msgstr "回到上一個已造訪位置"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:869
 msgid "_Next Location"
 msgstr "下一個位置(_N)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
 msgid "Go to the next visited location"
 msgstr "前往下一個已造訪位置"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
 msgid "Re_fresh View"
 msgstr "重新整理(_F)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
 msgid "Refresh the view"
 msgstr "重新整理畫面"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:891
 msgid "_View Folder"
 msgstr "檢視資料夾(_V)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:875
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:893
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
 msgid "View folder in file manager"
 msgstr "在檔案管理員中檢視資料夾"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:881
 msgid "Show _Hidden"
 msgstr "顯示隱藏檔(_H)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:883
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
 msgid "Show hidden files and folders"
 msgstr "顯示的隱藏檔案及資料夾"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:884
 msgid "Show _Binary"
 msgstr "顯示二位元檔(_B)"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:886
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
 msgid "Show binary files"
 msgstr "顯示二位元檔"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1207
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1202
 msgid "Match Filename"
 msgstr "相符檔名"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2009
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2004
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "掛載的儲存裝置沒有掛載物件：%s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2086
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2081
 #, c-format
 msgid "Could not open media: %s"
 msgstr "無法開啟媒體：%s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2133
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2128
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "無法掛載儲存裝置：%s"
@@ -3279,13 +3285,13 @@ msgstr "將整份文件或將已選的文字排序。"
 #. Translators: Displayed in the "Check Spelling" dialog if there are no suggestions
 #. * for the current misspelled word
 #: ../plugins/spell/gedit-automatic-spell-checker.c:420
-#: ../plugins/spell/gedit-spell-checker-dialog.c:458
+#: ../plugins/spell/gedit-spell-checker-dialog.c:444
 msgid "(no suggested words)"
 msgstr "（不提供任何建議）"
 
 #: ../plugins/spell/gedit-automatic-spell-checker.c:444
 msgid "_More..."
-msgstr "還有(_M)…"
+msgstr "更多(_M)…"
 
 #. Ignore all
 #: ../plugins/spell/gedit-automatic-spell-checker.c:499
@@ -3301,20 +3307,20 @@ msgstr "加入(_A)"
 msgid "_Spelling Suggestions..."
 msgstr "拼字建議(_S)…"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:278
+#: ../plugins/spell/gedit-spell-checker-dialog.c:264
 msgid "Check Spelling"
 msgstr "拼字檢查"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:289
+#: ../plugins/spell/gedit-spell-checker-dialog.c:275
 msgid "Suggestions"
 msgstr "建議"
 
 #. Translators: Displayed in the "Check Spelling" dialog if the current word isn't misspelled
-#: ../plugins/spell/gedit-spell-checker-dialog.c:565
+#: ../plugins/spell/gedit-spell-checker-dialog.c:551
 msgid "(correct spelling)"
 msgstr "（拼字正確）"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:706
+#: ../plugins/spell/gedit-spell-checker-dialog.c:692
 msgid "Completed spell checking"
 msgstr "拼字檢查完成"
 
@@ -3346,12 +3352,12 @@ msgctxt "language"
 msgid "Default"
 msgstr "預設值"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:142
+#: ../plugins/spell/gedit-spell-language-dialog.c:140
 #: ../plugins/spell/languages-dialog.ui.h:2
 msgid "Set language"
 msgstr "設定語言"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:196
+#: ../plugins/spell/gedit-spell-language-dialog.c:182
 msgid "Languages"
 msgstr "語言"
 
@@ -3456,16 +3462,17 @@ msgstr "檢查目前文件中的拼字。"
 msgid "Spell Checker"
 msgstr "拼字檢查程式"
 
+#. ex:ts=8:noet:
 #. Translators: Use the more common date format in your locale
 #: ../plugins/time/gedit-time-dialog.ui.h:2
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%Y/%m/%d %H:%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
 #: ../plugins/time/gedit-time-dialog.ui.h:3
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
 msgid "01/11/2009 17:52:00"
 msgstr "2009/11/01 17:52:00"
 
@@ -3474,7 +3481,7 @@ msgid "Insert Date and Time"
 msgstr "插入日期及時間"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:5
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:7
 msgid "Use the _selected format"
 msgstr "使用指定的格式(_S)"
 
@@ -3483,7 +3490,7 @@ msgid "_Insert"
 msgstr "插入(_I)"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:7
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:11
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "_Use custom format"
 msgstr "使用自訂格式(_U)"
 
@@ -3499,15 +3506,15 @@ msgstr "在游標目前的位置加入現在的日期及時間"
 msgid "Available formats"
 msgstr "可用的格式"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:7
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
 msgid "Configure date/time plugin"
 msgstr "設定「加入日期及時間」外掛程式"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 msgid "When inserting date/time..."
 msgstr "當加入日期及時間…"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
 msgid "_Prompt for a format"
 msgstr "提示可使用的格式(_P)"
 
