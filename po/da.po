@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit.gnome-2-16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-20 23:07+0100\n"
-"PO-Revision-Date: 2012-02-19 19:57+0100\n"
+"POT-Creation-Date: 2012-03-19 10:03+0100\n"
+"PO-Revision-Date: 2012-03-18 18:18+0100\n"
 "Last-Translator: Kenneth Nielsen <k.nielsen81@gmail.com>\n"
 "Language-Team: Dansk <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -38,15 +38,23 @@ msgstr ""
 msgid "Edit text files"
 msgstr "Redigér tekstfiler"
 
-#: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:799
+#: ../data/gedit.desktop.in.in.h:2
+msgid "Open a New Document"
+msgstr "Åbn et nyt dokument"
+
+#: ../data/gedit.desktop.in.in.h:3
+msgid "Open a New Window"
+msgstr "Åbn et nyt vindue"
+
+#: ../data/gedit.desktop.in.in.h:4 ../gedit/gedit-print-job.c:791
 msgid "Text Editor"
 msgstr "Tekstredigering"
 
-#: ../data/gedit.desktop.in.in.h:3
+#: ../data/gedit.desktop.in.in.h:5
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:4
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "Tekstredigeringen gedit"
 
@@ -464,23 +472,31 @@ msgstr ""
 "Hvis dette er slået fra, bliver den skrifttype der er angivet under "
 "\"Redigeringsskrifttype\", brugt i stedet."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
+#: ../gedit/gedit-app.c:222
+msgid "There was an error displaying the help."
+msgstr "Der opstod en fejl ved visning af hjælp."
+
+#: ../gedit/gedit-app-osx.c:274
+msgid "About gedit"
+msgstr "Om gedit"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:141
 msgid "Log Out _without Saving"
 msgstr "Log ud _uden at gemme"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:145
+#: ../gedit/gedit-close-confirmation-dialog.c:145
 msgid "_Cancel Logout"
 msgstr "_Annullér logud"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:152
+#: ../gedit/gedit-close-confirmation-dialog.c:152
 msgid "Close _without Saving"
 msgstr "Luk _uden at gemme"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:214
+#: ../gedit/gedit-close-confirmation-dialog.c:214
 msgid "Question"
 msgstr "Spørgsmål"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:414
+#: ../gedit/gedit-close-confirmation-dialog.c:414
 #, c-format
 msgid ""
 "If you don't save, changes from the last %ld second will be permanently lost."
@@ -492,12 +508,12 @@ msgstr[0] ""
 msgstr[1] ""
 "Hvis du ikke gemmer, vil ændringer fra de sidste %ld sekunder gå tabt."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:423
+#: ../gedit/gedit-close-confirmation-dialog.c:423
 msgid ""
 "If you don't save, changes from the last minute will be permanently lost."
 msgstr "Hvis du ikke gemmer, vil ændringer fra det sidste minut gå tabt."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:429
+#: ../gedit/gedit-close-confirmation-dialog.c:429
 #, c-format
 msgid ""
 "If you don't save, changes from the last minute and %ld second will be "
@@ -512,7 +528,7 @@ msgstr[1] ""
 "Hvis du ikke gemmer, vil ændringer fra det sidste minut og %ld sekunder gå "
 "tabt."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:439
+#: ../gedit/gedit-close-confirmation-dialog.c:439
 #, c-format
 msgid ""
 "If you don't save, changes from the last %ld minute will be permanently lost."
@@ -524,11 +540,11 @@ msgstr[0] ""
 msgstr[1] ""
 "Hvis du ikke gemmer, vil ændringer fra de sidste %ld minutter gå tabt."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:454
+#: ../gedit/gedit-close-confirmation-dialog.c:454
 msgid "If you don't save, changes from the last hour will be permanently lost."
 msgstr "Hvis du ikke gemmer, vil ændringer fra den sidste time gå tabt."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:460
+#: ../gedit/gedit-close-confirmation-dialog.c:460
 #, c-format
 msgid ""
 "If you don't save, changes from the last hour and %d minute will be "
@@ -542,7 +558,7 @@ msgstr[1] ""
 "Hvis du ikke gemmer, vil ændringer fra den sidste time og %d minutter gå "
 "tabt."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:475
+#: ../gedit/gedit-close-confirmation-dialog.c:475
 #, c-format
 msgid ""
 "If you don't save, changes from the last %d hour will be permanently lost."
@@ -551,29 +567,29 @@ msgid_plural ""
 msgstr[0] "Hvis du ikke gemmer, vil ændringer fra den sidste time gå tabt."
 msgstr[1] "Hvis du ikke gemmer, vil ændringer fra de sidste %d timer gå tabt."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:519
+#: ../gedit/gedit-close-confirmation-dialog.c:519
 #, c-format
 msgid "Changes to document \"%s\" will be permanently lost."
 msgstr "Ændringer foretaget i dokumentet \"%s\" vil gå tabt."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:524
+#: ../gedit/gedit-close-confirmation-dialog.c:524
 #, c-format
 msgid "Save changes to document \"%s\" before closing?"
 msgstr "Gem ændringer i dokumentet \"%s\" før programmet lukkes?"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:538
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:755
+#: ../gedit/gedit-close-confirmation-dialog.c:538
+#: ../gedit/gedit-close-confirmation-dialog.c:755
 msgid "Saving has been disabled by the system administrator."
 msgstr "Gemning er deaktiveret af systemadministratoren."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:706
+#: ../gedit/gedit-close-confirmation-dialog.c:706
 #, c-format
 msgid "Changes to %d document will be permanently lost."
 msgid_plural "Changes to %d documents will be permanently lost."
 msgstr[0] "Ændringer foretaget i %d dokument vil gå tabt."
 msgstr[1] "Ændringer foretaget i %d dokumenter vil gå tabt."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:714
+#: ../gedit/gedit-close-confirmation-dialog.c:714
 #, c-format
 msgid "There is %d document with unsaved changes. Save changes before closing?"
 msgid_plural ""
@@ -583,263 +599,17 @@ msgstr[0] ""
 msgstr[1] ""
 "Der er %d dokumenter med ugemte ændringer. Gem ændringer før lukning?"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:733
+#: ../gedit/gedit-close-confirmation-dialog.c:733
 msgid "Docum_ents with unsaved changes:"
 msgstr "Dokum_enter med ændringer som ikke er gemt:"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:735
+#: ../gedit/gedit-close-confirmation-dialog.c:735
 msgid "S_elect the documents you want to save:"
 msgstr "_Vælg de dokumenter du ønsker at gemme:"
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:759
+#: ../gedit/gedit-close-confirmation-dialog.c:759
 msgid "If you don't save, all your changes will be permanently lost."
 msgstr "Hvis du ikke gemmer, vil alle dine ændringer gå tabt."
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:347
-msgid "Character Encodings"
-msgstr "Tegnkodninger"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:410
-#: ../gedit/dialogs/gedit-encodings-dialog.c:471
-msgid "_Description"
-msgstr "_Beskrivelse"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:419
-#: ../gedit/dialogs/gedit-encodings-dialog.c:480
-msgid "_Encoding"
-msgstr "_Kodning"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:1
-msgid "A_vailable encodings:"
-msgstr "_Tilgængelige kodninger:"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:2
-msgid "Character encodings"
-msgstr "Tegnkodninger"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:3
-msgid "E_ncodings shown in menu:"
-msgstr "_Kodninger der vises i menu:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:423
-msgid "Click on this button to select the font to be used by the editor"
-msgstr "Klik på denne knap for at vælge redigeringsprogrammets skrifttype"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:438
-#, c-format
-msgid "_Use the system fixed width font (%s)"
-msgstr "Br_ug systemets fastbredde-skrifttype (%s)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:676
-#, c-format
-msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
-msgstr ""
-"Mappen \"%s\" kunne ikke blive oprettet: g_mkdir_with_parents() fejlede: %s"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:860
-msgid "The selected color scheme cannot be installed."
-msgstr "Det valgte farveskema kan ikke installeres."
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:887
-msgid "Add Scheme"
-msgstr "Tilføj skema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:894
-msgid "A_dd Scheme"
-msgstr "_Tilføj skema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:902
-msgid "Color Scheme Files"
-msgstr "Farveskemafiler"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:909
-#: ../gedit/gedit-file-chooser-dialog.c:52
-msgid "All Files"
-msgstr "Alle filer"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:954
-#, c-format
-msgid "Could not remove color scheme \"%s\"."
-msgstr "Kunne ikke fjerne farveskemaet \"%s\"."
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:1180
-msgid "gedit Preferences"
-msgstr "Indstillinger for gedit"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:1
-msgid "Color Scheme"
-msgstr "Farveskema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:2
-msgid "Create a _backup copy of files before saving"
-msgstr "Opret en _sikkerhedskopi af filer før gemning"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:3
-msgid "Display right _margin at column:"
-msgstr "Vis højre _margen ved kolonne:"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:4
-#: ../gedit/gedit-print-preferences.ui.h:1
-msgid "Do not _split words over two lines"
-msgstr "_Del ikke ord over to linjer"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:5
-msgid "Editor"
-msgstr "Redigering"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:6
-msgid "Editor _font: "
-msgstr "_Skrifttype for tekst: "
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:7
-#: ../gedit/gedit-print-preferences.ui.h:2
-msgid "Enable text _wrapping"
-msgstr "Aktivér _tekstombrydning"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:8
-msgid "File Saving"
-msgstr "Filgemning"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:9
-#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:2
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:4
-msgid "Font"
-msgstr "Skrifttype"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:10
-msgid "Font & Colors"
-msgstr "Skrifttyper og farver"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:11
-msgid "Highlight current _line"
-msgstr "Fremhæv aktuel _linje"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
-msgid "Highlight matching _brackets"
-msgstr "Fremhæv modsvarende _parenteser"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:13
-msgid "Highlighting"
-msgstr "Fremhævning"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:14
-msgid "Insert _spaces instead of tabs"
-msgstr "Indsæt _mellemrum i stedet for tabulatorer"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:15
-msgid "Install Scheme"
-msgstr "Installer skema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:16
-msgid "Install scheme"
-msgstr "Installer skema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:17
-msgid "Pick the editor font"
-msgstr "Vælg redigeringsskrifttypen"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:18
-msgid "Plugins"
-msgstr "Udvidelsesmoduler"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:19
-msgid "Preferences"
-msgstr "Indstillinger"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:20
-msgid "Tab Stops"
-msgstr "Tabulatorstop"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:21
-#: ../gedit/gedit-print-preferences.ui.h:11
-msgid "Text Wrapping"
-msgstr "Tekstombrydning"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:22
-msgid "Uninstall Scheme"
-msgstr "Afinstaller skema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23
-msgid "Uninstall scheme"
-msgstr "Afinstaller skema"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:24
-msgid "View"
-msgstr "Vis"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:25
-msgid "_Autosave files every"
-msgstr "_Gem automatisk filer hver"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:26 ../gedit/gedit-view.c:552
-msgid "_Display line numbers"
-msgstr "Vis linje_numre"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:27
-msgid "_Enable automatic indentation"
-msgstr "_Aktivér automatisk indrykning"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:28
-msgid "_Tab width:"
-msgstr "_Tabulatorbredde:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:29
-msgid "_minutes"
-msgstr "_minutter"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2 ../gedit/gedit-window.c:1559
-msgid "Replace"
-msgstr "Erstat"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:287
-msgid "Replace _All"
-msgstr "Erstat _alle"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:288
-#: ../gedit/gedit-commands-file.c:570
-msgid "_Replace"
-msgstr "_Erstat"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:1
-msgid "Match _entire word only"
-msgstr "Søg kun efter _hele ord"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:3
-msgid "Replace All"
-msgstr "Erstat alle"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:4
-msgid "Replace _with: "
-msgstr "Erstat _med: "
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:5
-msgid "Search _backwards"
-msgstr "Søg _bagud"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:6
-msgid "_Match case"
-msgstr "_Forskel på små/store bogstaver"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:7
-msgid "_Search for: "
-msgstr "_Søg efter: "
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:8
-msgid "_Wrap around"
-msgstr "_Begynd forfra ved slut"
-
-#: ../gedit/gedit-app.c:224
-msgid "There was an error displaying the help."
-msgstr "Der opstod en fejl ved visning af hjælp."
-
-#: ../gedit/gedit-app-osx.c:274
-msgid "About gedit"
-msgstr "Om gedit"
 
 #: ../gedit/gedit-command-line.c:232
 #, c-format
@@ -937,6 +707,10 @@ msgstr "Filen \"%s\" er skrivebeskyttet."
 #: ../gedit/gedit-commands-file.c:562
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr "Vil du forsøge at erstatte den med den du er ved at gemme?"
+
+#: ../gedit/gedit-commands-file.c:570 ../gedit/gedit-replace-dialog.c:270
+msgid "_Replace"
+msgstr "_Erstat"
 
 #: ../gedit/gedit-commands-file.c:612
 msgid "Save the file using compression?"
@@ -1117,11 +891,11 @@ msgid "Unsaved Document %d"
 msgstr "Ugemt dokument %d"
 
 #: ../gedit/gedit-documents-panel.c:123 ../gedit/gedit-documents-panel.c:137
-#: ../gedit/gedit-window.c:2399 ../gedit/gedit-window.c:2406
+#: ../gedit/gedit-window.c:2397 ../gedit/gedit-window.c:2404
 msgid "Read-Only"
 msgstr "Skrivebeskyttet"
 
-#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3848
+#: ../gedit/gedit-documents-panel.c:1146 ../gedit/gedit-window.c:3846
 msgid "Documents"
 msgstr "Dokumenter"
 
@@ -1254,6 +1028,36 @@ msgstr "Aktuel region (%s)"
 #: ../gedit/gedit-encodings-combo-box.c:388
 msgid "Add or Remove..."
 msgstr "Tilføj eller fjern..."
+
+#: ../gedit/gedit-encodings-dialog.c:345
+msgid "Character Encodings"
+msgstr "Tegnkodninger"
+
+#: ../gedit/gedit-encodings-dialog.c:395 ../gedit/gedit-encodings-dialog.c:456
+msgid "_Description"
+msgstr "_Beskrivelse"
+
+#: ../gedit/gedit-encodings-dialog.c:404 ../gedit/gedit-encodings-dialog.c:465
+msgid "_Encoding"
+msgstr "_Kodning"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-encodings-dialog.ui.h:1
+msgid "A_vailable encodings:"
+msgstr "_Tilgængelige kodninger:"
+
+#: ../gedit/gedit-encodings-dialog.ui.h:2
+msgid "Character encodings"
+msgstr "Tegnkodninger"
+
+#: ../gedit/gedit-encodings-dialog.ui.h:3
+msgid "E_ncodings shown in menu:"
+msgstr "_Kodninger der vises i menu:"
+
+#: ../gedit/gedit-file-chooser-dialog.c:52
+#: ../gedit/gedit-preferences-dialog.c:909
+msgid "All Files"
+msgstr "Alle filer"
 
 #: ../gedit/gedit-file-chooser-dialog.c:53
 msgid "All Text Files"
@@ -1641,7 +1445,7 @@ msgstr "Gem _som..."
 msgid "_Print..."
 msgstr "_Udskriv..."
 
-#: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:585
+#: ../gedit/gedit-panel.c:409 ../gedit/gedit-panel.c:587
 msgid "Empty"
 msgstr "Tom"
 
@@ -1649,16 +1453,179 @@ msgstr "Tom"
 msgid "Hide panel"
 msgstr "Skjul panel"
 
-#: ../gedit/gedit-print-job.c:580
+#: ../gedit/gedit-preferences-dialog.c:423
+msgid "Click on this button to select the font to be used by the editor"
+msgstr "Klik på denne knap for at vælge redigeringsprogrammets skrifttype"
+
+#: ../gedit/gedit-preferences-dialog.c:438
+#, c-format
+msgid "_Use the system fixed width font (%s)"
+msgstr "Br_ug systemets fastbredde-skrifttype (%s)"
+
+#: ../gedit/gedit-preferences-dialog.c:676
+#, c-format
+msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
+msgstr ""
+"Mappen \"%s\" kunne ikke blive oprettet: g_mkdir_with_parents() fejlede: %s"
+
+#: ../gedit/gedit-preferences-dialog.c:860
+msgid "The selected color scheme cannot be installed."
+msgstr "Det valgte farveskema kan ikke installeres."
+
+#: ../gedit/gedit-preferences-dialog.c:887
+msgid "Add Scheme"
+msgstr "Tilføj skema"
+
+#: ../gedit/gedit-preferences-dialog.c:894
+msgid "A_dd Scheme"
+msgstr "_Tilføj skema"
+
+#: ../gedit/gedit-preferences-dialog.c:902
+msgid "Color Scheme Files"
+msgstr "Farveskemafiler"
+
+#: ../gedit/gedit-preferences-dialog.c:954
+#, c-format
+msgid "Could not remove color scheme \"%s\"."
+msgstr "Kunne ikke fjerne farveskemaet \"%s\"."
+
+#: ../gedit/gedit-preferences-dialog.c:1177
+msgid "gedit Preferences"
+msgstr "Indstillinger for gedit"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-preferences-dialog.ui.h:1
+msgid "Color Scheme"
+msgstr "Farveskema"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:2
+msgid "Create a _backup copy of files before saving"
+msgstr "Opret en _sikkerhedskopi af filer før gemning"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:3
+msgid "Display right _margin at column:"
+msgstr "Vis højre _margen ved kolonne:"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-preferences-dialog.ui.h:4
+#: ../gedit/gedit-print-preferences.ui.h:1
+msgid "Do not _split words over two lines"
+msgstr "_Del ikke ord over to linjer"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:5
+msgid "Editor"
+msgstr "Redigering"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:6
+msgid "Editor _font: "
+msgstr "_Skrifttype for tekst: "
+
+#: ../gedit/gedit-preferences-dialog.ui.h:7
+#: ../gedit/gedit-print-preferences.ui.h:2
+msgid "Enable text _wrapping"
+msgstr "Aktivér _tekstombrydning"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:8
+msgid "File Saving"
+msgstr "Filgemning"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:9
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:2
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:4
+msgid "Font"
+msgstr "Skrifttype"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:10
+msgid "Font & Colors"
+msgstr "Skrifttyper og farver"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:11
+msgid "Highlight current _line"
+msgstr "Fremhæv aktuel _linje"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:12
+msgid "Highlight matching _brackets"
+msgstr "Fremhæv modsvarende _parenteser"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:13
+msgid "Highlighting"
+msgstr "Fremhævning"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:14
+msgid "Insert _spaces instead of tabs"
+msgstr "Indsæt _mellemrum i stedet for tabulatorer"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:15
+msgid "Install Scheme"
+msgstr "Installer skema"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:16
+msgid "Install scheme"
+msgstr "Installer skema"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:17
+msgid "Pick the editor font"
+msgstr "Vælg redigeringsskrifttypen"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:18
+msgid "Plugins"
+msgstr "Udvidelsesmoduler"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:19
+msgid "Preferences"
+msgstr "Indstillinger"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:20
+msgid "Tab Stops"
+msgstr "Tabulatorstop"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:21
+#: ../gedit/gedit-print-preferences.ui.h:11
+msgid "Text Wrapping"
+msgstr "Tekstombrydning"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:22
+msgid "Uninstall Scheme"
+msgstr "Afinstaller skema"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:23
+msgid "Uninstall scheme"
+msgstr "Afinstaller skema"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:24
+msgid "View"
+msgstr "Vis"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:25
+msgid "_Autosave files every"
+msgstr "_Gem automatisk filer hver"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:26 ../gedit/gedit-view.c:552
+msgid "_Display line numbers"
+msgstr "Vis linje_numre"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:27
+msgid "_Enable automatic indentation"
+msgstr "_Aktivér automatisk indrykning"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:28
+msgid "_Tab width:"
+msgstr "_Tabulatorbredde:"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:29
+msgid "_minutes"
+msgstr "_minutter"
+
+#: ../gedit/gedit-print-job.c:572
 #, c-format
 msgid "File: %s"
 msgstr "Fil: %s"
 
-#: ../gedit/gedit-print-job.c:589
+#: ../gedit/gedit-print-job.c:581
 msgid "Page %N of %Q"
 msgstr "Side %N af %Q"
 
-#: ../gedit/gedit-print-job.c:851
+#: ../gedit/gedit-print-job.c:843
 msgid "Preparing..."
 msgstr "Klargører..."
 
@@ -1781,6 +1748,44 @@ msgstr "Vis udskrift"
 #: ../gedit/gedit-print-preview.c:968
 msgid "The preview of a page in the document to be printed"
 msgstr "Forhåndsvisningen af en side dokumentet der skal udskrives"
+
+#: ../gedit/gedit-replace-dialog.c:207 ../gedit/gedit-replace-dialog.ui.h:2
+#: ../gedit/gedit-window.c:1557
+msgid "Replace"
+msgstr "Erstat"
+
+#: ../gedit/gedit-replace-dialog.c:269
+msgid "Replace _All"
+msgstr "Erstat _alle"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-replace-dialog.ui.h:1
+msgid "Match _entire word only"
+msgstr "Søg kun efter _hele ord"
+
+#: ../gedit/gedit-replace-dialog.ui.h:3
+msgid "Replace All"
+msgstr "Erstat alle"
+
+#: ../gedit/gedit-replace-dialog.ui.h:4
+msgid "Replace _with: "
+msgstr "Erstat _med: "
+
+#: ../gedit/gedit-replace-dialog.ui.h:5
+msgid "Search _backwards"
+msgstr "Søg _bagud"
+
+#: ../gedit/gedit-replace-dialog.ui.h:6
+msgid "_Match case"
+msgstr "_Forskel på små/store bogstaver"
+
+#: ../gedit/gedit-replace-dialog.ui.h:7
+msgid "_Search for: "
+msgstr "_Søg efter: "
+
+#: ../gedit/gedit-replace-dialog.ui.h:8
+msgid "_Wrap around"
+msgstr "_Begynd forfra ved slut"
 
 #. Use spaces to leave padding proportional to the font size
 #: ../gedit/gedit-statusbar.c:70 ../gedit/gedit-statusbar.c:76
@@ -1919,7 +1924,7 @@ msgstr "Opret et nyt dokument"
 msgid "_Open..."
 msgstr "_Åbn..."
 
-#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1487
+#: ../gedit/gedit-ui.h:55 ../gedit/gedit-window.c:1486
 msgid "Open a file"
 msgstr "Åbn en fil"
 
@@ -2207,7 +2212,7 @@ msgstr "Tekst der skal søges efter"
 msgid "Line you want to move the cursor to"
 msgstr "Linje som markøren skal flyttes til"
 
-#: ../gedit/gedit-window.c:942
+#: ../gedit/gedit-window.c:941
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "Benyt fremhævningstilstanden %s"
@@ -2215,7 +2220,7 @@ msgstr "Benyt fremhævningstilstanden %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1047 ../gedit/gedit-window.c:2093
+#: ../gedit/gedit-window.c:1046 ../gedit/gedit-window.c:2091
 #: ../plugins/externaltools/tools/manager.py:146
 #: ../plugins/externaltools/tools/manager.py:450
 #: ../plugins/externaltools/tools/manager.py:561
@@ -2223,59 +2228,59 @@ msgstr "Benyt fremhævningstilstanden %s"
 msgid "Plain Text"
 msgstr "Almindelig tekst"
 
-#: ../gedit/gedit-window.c:1048
+#: ../gedit/gedit-window.c:1047
 msgid "Disable syntax highlighting"
 msgstr "Deaktivér syntaksfremhævning"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1365
+#: ../gedit/gedit-window.c:1364
 #, c-format
 msgid "Open '%s'"
 msgstr "Åbn \"%s\""
 
-#: ../gedit/gedit-window.c:1489
+#: ../gedit/gedit-window.c:1488
 msgid "Open a recently used file"
 msgstr "Åbn en senest benyttet fil"
 
-#: ../gedit/gedit-window.c:1495
+#: ../gedit/gedit-window.c:1494
 msgid "Open"
 msgstr "Åbn"
 
-#: ../gedit/gedit-window.c:1553
+#: ../gedit/gedit-window.c:1551
 msgid "Save"
 msgstr "Gem"
 
-#: ../gedit/gedit-window.c:1555
+#: ../gedit/gedit-window.c:1553
 msgid "Print"
 msgstr "Udskriv"
 
-#: ../gedit/gedit-window.c:1557
+#: ../gedit/gedit-window.c:1555
 msgid "Find"
 msgstr "Find"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1717
+#: ../gedit/gedit-window.c:1715
 #, c-format
 msgid "Activate '%s'"
 msgstr "Aktivér \"%s\""
 
-#: ../gedit/gedit-window.c:2074
+#: ../gedit/gedit-window.c:2072
 msgid "Use Spaces"
 msgstr "Brug mellemrum"
 
-#: ../gedit/gedit-window.c:2147
+#: ../gedit/gedit-window.c:2145
 msgid "Tab Width"
 msgstr "Tabulatorbredde"
 
-#: ../gedit/gedit-window.c:2256
+#: ../gedit/gedit-window.c:2254
 msgid "Bracket match is out of range"
 msgstr "Parentesmodpart uden for gyldigt interval"
 
-#: ../gedit/gedit-window.c:2261
+#: ../gedit/gedit-window.c:2259
 msgid "Bracket match not found"
 msgstr "Parentesmodpart ikke fundet"
 
-#: ../gedit/gedit-window.c:2266
+#: ../gedit/gedit-window.c:2264
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "Parentesmodpart fundet på linje %d"
@@ -2381,21 +2386,19 @@ msgstr ""
 msgid "Document Statistics"
 msgstr "Dokumentstatistik"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:427
 msgid "_Document Statistics"
 msgstr "_Dokumentstatistik"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:429
 msgid "Get statistical information on the current document"
 msgstr "Vis statistiske oplysninger om det aktuelle dokument"
 
 #. ex:set ts=8 noet:
 #. ex:ts=4:et:
-#. ex:ts=8:noet:
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 #: ../plugins/externaltools/tools/tools.ui.h:1
 #: ../plugins/snippets/snippets/snippets.ui.h:1
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "    "
 msgstr "    "
 
@@ -2830,131 +2833,131 @@ msgstr ""
 "Den nye mappe er på nuværende tidspunkt filtreret fra. Du skal ændre dine "
 "filterindstillinger for at gøre mappen synlig"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:734
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:733
 msgid "Bookmarks"
 msgstr "Bogmærker"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:822
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:821
 msgid "_Filter"
 msgstr "_Filter"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:826
 msgid "_Move to Trash"
 msgstr "_Flyt til papirkurv"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:828
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
 msgid "Move selected file or folder to trash"
 msgstr "Flyt den valgte fil eller mappe til papirkurven"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:829
 msgid "_Delete"
 msgstr "_Slet"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:831
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
 msgid "Delete selected file or folder"
 msgstr "Slet den valgte fil eller mappe"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:838
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:837
 msgid "Open selected file"
 msgstr "Åbn den valgte fil"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:843
 msgid "Up"
 msgstr "Op"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:845
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
 msgid "Open the parent folder"
 msgstr "Åben den underliggende mappe"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:849
 msgid "_New Folder"
 msgstr "Ny _mappe"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:851
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
 msgid "Add new empty folder"
 msgstr "Tilføj ny tom mappe"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:852
 msgid "New F_ile"
 msgstr "Ny F_il"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:854
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
 msgid "Add new empty file"
 msgstr "Tilføj ny tom fil"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:858
 msgid "_Rename"
 msgstr "_Omdøb"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:860
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
 msgid "Rename selected file or folder"
 msgstr "Omdøb den valgte fil eller mappe"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:866
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:865
 msgid "_Previous Location"
 msgstr "_Forrige sted"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:867
 msgid "Go to the previous visited location"
 msgstr "Gå til det sidst besøgte sted"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:869
 msgid "_Next Location"
 msgstr "_Næste sted"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
 msgid "Go to the next visited location"
 msgstr "Gå til det næste besøgte sted"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
 msgid "Re_fresh View"
 msgstr "Op_datér visningen"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
 msgid "Refresh the view"
 msgstr "Opdatér visningen"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:891
 msgid "_View Folder"
 msgstr "_Vis mappe"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:875
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:893
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
 msgid "View folder in file manager"
 msgstr "Vis mappe i filvælgeren"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:881
 msgid "Show _Hidden"
 msgstr "Vis s_kjulte"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:883
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
 msgid "Show hidden files and folders"
 msgstr "Vis skjulte filer og mapper"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:884
 msgid "Show _Binary"
 msgstr "Vis _binære filer"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:886
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
 msgid "Show binary files"
 msgstr "Vis binære filer"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1207
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1202
 msgid "Match Filename"
 msgstr "Match filnavn"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2009
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2004
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "Intet monteringsobjekt for den monterede dataenhed: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2086
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2081
 #, c-format
 msgid "Could not open media: %s"
 msgstr "Kunne ikke åbne mediet: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2133
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2128
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "Kunne ikke åbne dataenhed: %s"
@@ -3413,7 +3416,7 @@ msgstr "Sortér et dokument eller det markerede tekst."
 #. Translators: Displayed in the "Check Spelling" dialog if there are no suggestions
 #. * for the current misspelled word
 #: ../plugins/spell/gedit-automatic-spell-checker.c:420
-#: ../plugins/spell/gedit-spell-checker-dialog.c:458
+#: ../plugins/spell/gedit-spell-checker-dialog.c:444
 msgid "(no suggested words)"
 msgstr "(ingen foreslåede ord)"
 
@@ -3435,20 +3438,20 @@ msgstr "_Tilføj"
 msgid "_Spelling Suggestions..."
 msgstr "_Stavningsforslag..."
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:278
+#: ../plugins/spell/gedit-spell-checker-dialog.c:264
 msgid "Check Spelling"
 msgstr "Kontrollér stavning"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:289
+#: ../plugins/spell/gedit-spell-checker-dialog.c:275
 msgid "Suggestions"
 msgstr "Forslag"
 
 #. Translators: Displayed in the "Check Spelling" dialog if the current word isn't misspelled
-#: ../plugins/spell/gedit-spell-checker-dialog.c:565
+#: ../plugins/spell/gedit-spell-checker-dialog.c:551
 msgid "(correct spelling)"
 msgstr "(korrekt stavning)"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:706
+#: ../plugins/spell/gedit-spell-checker-dialog.c:692
 msgid "Completed spell checking"
 msgstr "Stavekontrol færdig"
 
@@ -3480,12 +3483,12 @@ msgctxt "language"
 msgid "Default"
 msgstr "Forvalgt"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:142
+#: ../plugins/spell/gedit-spell-language-dialog.c:140
 #: ../plugins/spell/languages-dialog.ui.h:2
 msgid "Set language"
 msgstr "Vælg sprog"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:196
+#: ../plugins/spell/gedit-spell-language-dialog.c:182
 msgid "Languages"
 msgstr "Sprog"
 
@@ -3590,16 +3593,17 @@ msgstr "Kontrollér stavningen i det aktuelle dokument."
 msgid "Spell Checker"
 msgstr "Stavekontrol"
 
+#. ex:ts=8:noet:
 #. Translators: Use the more common date format in your locale
 #: ../plugins/time/gedit-time-dialog.ui.h:2
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%d/%m %Y %H:%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
 #: ../plugins/time/gedit-time-dialog.ui.h:3
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
 msgid "01/11/2009 17:52:00"
 msgstr "01/11 2009 17:52:00"
 
@@ -3608,7 +3612,7 @@ msgid "Insert Date and Time"
 msgstr "Indsæt dato og klokkeslæt"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:5
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:7
 msgid "Use the _selected format"
 msgstr "Benyt det _valgte format"
 
@@ -3617,7 +3621,7 @@ msgid "_Insert"
 msgstr "_Indsæt"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:7
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:11
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "_Use custom format"
 msgstr "Benyt _brugerdefineret format"
 
@@ -3633,15 +3637,15 @@ msgstr "Indsæt den aktuelle dato og tid ved markørpositionen"
 msgid "Available formats"
 msgstr "Tilgængelige formater"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:7
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
 msgid "Configure date/time plugin"
 msgstr "Konfigurér dato/tid-modulet"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 msgid "When inserting date/time..."
 msgstr "Ved indsætning af dato/tid..."
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
 msgid "_Prompt for a format"
 msgstr "_Spørg efter et format"
 
