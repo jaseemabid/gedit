@@ -7,7 +7,7 @@
 # Youssef Chahibi <chahibi@gmail.com>, 2006.
 # Djihed Afifi <djihed@gmail.com>, 2006.
 # Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2009, 2010, 2011.
-# Abderrahim Kitouni <a.kitouni@gmail.com>, 2006.
+# Abderrahim Kitouni <a.kitouni@gmail.com>, 2006, 2012.
 # Sohaib Afifi <sohaibafifi@gmail.com>, 2007.
 # Anas Afif Emad <anas.e87@gmail.com>, 2008, 2009.
 # Osama Khalid <osamak.wfm@gmail.com>, 2009.
@@ -15,19 +15,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-03-10 22:09+0000\n"
-"PO-Revision-Date: 2012-03-11 15:22+0200\n"
-"Last-Translator: Ibrahim Saed <ibraheem5000@gmail.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-23 23:05+0100\n"
+"PO-Revision-Date: 2012-03-23 23:04+0100\n"
+"Last-Translator: Abderrahim Kitouni <a.kitouni@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Virtaal 0.7.0\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/gedit.desktop.in.in.h:1
@@ -43,16 +42,16 @@ msgid "Edit text files"
 msgstr "حرّر الملفات النصية"
 
 #: ../data/gedit.desktop.in.in.h:4
+msgid "gedit Text Editor"
+msgstr "محرّر النصوص ج‌إدِت"
+
+#: ../data/gedit.desktop.in.in.h:5
 msgid "Open a New Window"
 msgstr "افتح نافذة جديدة"
 
-#: ../data/gedit.desktop.in.in.h:5
+#: ../data/gedit.desktop.in.in.h:6
 msgid "Open a New Document"
 msgstr "افتح مستندا جديدا"
-
-#: ../data/gedit.desktop.in.in.h:6
-msgid "gedit Text Editor"
-msgstr "محرّر النصوص ج‌إدِت"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:1
 msgid "Use Default Font"
@@ -132,8 +131,8 @@ msgstr "حد تراجع الأفعال (مهجور)"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:14
 msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
-"\" for unlimited number of actions. Deprecated since 2.12.0"
+"Maximum number of actions that gedit will be able to undo or redo. Use "
+"\"-1\" for unlimited number of actions. Deprecated since 2.12.0"
 msgstr ""
 "عدد العمليات الأقصى التي سيتمكّن محرر النصوص من التراجع فيها أو إعادتها .  "
 "استعمل \"-1\" لعدد غير محدود من الأفعال. مهجور منذ 2.12.0"
@@ -144,8 +143,8 @@ msgstr "العدد الأقصى من أفعال التراجع"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:16
 msgid ""
-"Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
-"\" for unlimited number of actions."
+"Maximum number of actions that gedit will be able to undo or redo. Use "
+"\"-1\" for unlimited number of actions."
 msgstr ""
 "عدد العمليات الأقصى التي يمكن لمحرر النصوص من التراجع فيها أو إعادتها. "
 "استعمل \"-1\" لعدد غير محدود من الأفعال."
@@ -155,17 +154,15 @@ msgid "Line Wrapping Mode"
 msgstr "نمط لف السطر"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:18
-#, fuzzy
 msgid ""
 "Specifies how to wrap long lines in the editing area. Use \"none\" for no "
 "wrapping, \"word\" for wrapping at word boundaries, and \"char\" for "
 "wrapping at individual character boundaries. Note that the values are case-"
 "sensitive, so make sure they appear exactly as mentioned here."
 msgstr ""
-"يحدد كيف تلف السطور الطويلة في منطقة التحرير. استعمل \"none\" لمنع "
-"اللف،واستخدم \"word\" للف عند حدود الكلمات، و \"char\" للف عند الحدود "
-"الفردية للكلمات. لاحظ أن القيم تتغير بحسب الحالة، لذلك تأكّد من ظهورها مطابقة "
-"لما ذُكِر هنا."
+"يحدد كيف تلف السطور الطويلة في منطقة التحرير. استعمل \"none\" لمنع اللف، "
+"واستخدم \"word\" للف عند حدود الكلمات، و \"char\" للف عند حدود المحارف. لاحظ "
+"أن القيم حساسة لحالة الأحرف، لذلك تأكّد من ظهورها مطابقة لما ذُكِر هنا."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:19
 msgid "Tab Size"
@@ -238,7 +235,6 @@ msgid "Smart Home End"
 msgstr "نهاية المنزل الذكي"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:36
-#, fuzzy
 msgid ""
 "Specifies how the cursor moves when the HOME and END keys are pressed. Use "
 "\"disabled\" to always move at the start/end of the line, \"after\" to move "
@@ -248,12 +244,12 @@ msgid ""
 "the start/end of the line and \"always\" to always move to the start/end of "
 "the text instead of the start/end of the line."
 msgstr ""
-"تحديد كيفية تحريك المؤشر عند ضغط زري HOME و END .استعمل \"معطل\" للتحريك "
-"دائما في بداية/نهاية السطر ,أو\"بعد\" للتحريك إلى بداية/نهاية السطر عند أول "
-"ضغط لاحد الزرين و إلى بداية / نهاية النص مع تجاهل الفراغات عند ثاني ضغط ,أو "
-"استعمل \"قبل\" للتحريك إلى بداية/نهاية النص قبل التحريك إلى بداية/نهاية "
-"السطر, و\"دائما\" للتحريك دائما إلى بداية/نهاية النص عوضا عن التحريك إلى "
-"بداية/نهاية السطر."
+"تحدد كيفية تحريك المؤشر عند ضغط زري HOME و END. استعمل \"disabled\" للتحريك "
+"دائما إلى بداية أو نهاية السطر ,أو \"after\" للتحريك إلى بداية أو نهاية "
+"السطر عند أول ضغط لأحد الزرين وإلى بداية أو نهاية النص مع تجاهل الفراغات عند "
+"ثاني ضغط، أو استعمل \"before\" للتحريك إلى بداية أو نهاية النص قبل التحريك "
+"إلى بداية أو نهاية السطر, و\"always\" للتحريك دائما إلى بداية أو نهاية النص "
+"عوضا عن التحريك إلى بداية أو نهاية السطر."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:37
 msgid "Restore Previous Cursor Position"
@@ -289,8 +285,6 @@ msgstr "أكّد سطر جديد متأخر"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
 #, fuzzy
-#| msgid ""
-#| "Whether gedit should include a document header when printing documents."
 msgid ""
 "Whether gedit will ensure that documents always end with a trailing newline."
 msgstr "ما إذا وجب لمحرر النصوص ضمان أن المستند ينتهي دائمًا بسطر جديد متأخر."
@@ -372,17 +366,15 @@ msgid "Printing Line Wrapping Mode"
 msgstr "نمط لف السطور في الطباعة"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
-#, fuzzy
 msgid ""
 "Specifies how to wrap long lines for printing. Use \"none\" for no wrapping, "
 "\"word\" for wrapping at word boundaries, and \"char\" for wrapping at "
 "individual character boundaries. Note that the values are case-sensitive, so "
 "make sure they appear exactly as mentioned here."
 msgstr ""
-"يحدد كيف تلف السطور الطويلة عند الطباعة. يستعمل \"GTK_WRAP_NONE\" لمنع اللف،"
-"\"GTK_WRAP_WORD\" للف عند حدود الكلمات، و \"GTK_WRAP_CHAR\" للف عند الحدود "
-"الفردية للكلمات. لاحظ أن القيم تتغير بحسب الحالة، لذلك تأكّد من ظهورهامطابقة "
-"لما ذُكِر هنا."
+"يحدد كيف تلف السطور الطويلة عند الطباعة. استعمل \"none\" لمنع اللف، واستخدم "
+"\"word\" للف عند حدود الكلمات، و \"char\" للف عند حدود المحارف. لاحظ أن "
+"القيم حساسة لحالة الأحرف، لذلك تأكّد من ظهورها مطابقة لما ذُكِر هنا."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
 msgid "Print Line Numbers"
@@ -658,18 +650,16 @@ msgid "Create a new document in an existing instance of gedit"
 msgstr "أنشئ مستندا جديدا في سيرورة موجودة من محرر النصوص"
 
 #: ../gedit/gedit-command-line.c:294
-#, fuzzy
 msgid "Set the size and position of the window (WIDTHxHEIGHT+X+Y)"
-msgstr "عيّن الحجم والموضع للنافذة (WIDTHxHEIGHT+X+Y)"
+msgstr "عيّن حجم وموضع للنافذة (WIDTHxHEIGHT+X+Y)"
 
 #: ../gedit/gedit-command-line.c:295
 msgid "GEOMETRY"
-msgstr ""
+msgstr "الأبعاد"
 
 #: ../gedit/gedit-command-line.c:302
-#, fuzzy
 msgid "Open files and block process until files are closed"
-msgstr "افتح الملفات وامنع المعالجة حتى تُغلق الملفات"
+msgstr "افتح الملفات وانتظر حتى تُغلق الملفات"
 
 #: ../gedit/gedit-command-line.c:310
 msgid "Run gedit in the background"
@@ -681,7 +671,7 @@ msgstr "شغّل محرر النصوص في النمط المستقل"
 
 #: ../gedit/gedit-command-line.c:327
 msgid "[FILE...] [+LINE[:COLUMN]]"
-msgstr ""
+msgstr "[ملف...] [+سطر[:عمود]]"
 
 #. Setup command line options
 #: ../gedit/gedit-command-line.c:334
