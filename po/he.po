@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-17 14:55+0200\n"
-"PO-Revision-Date: 2012-02-17 14:56+0200\n"
+"POT-Creation-Date: 2012-03-24 19:14+0200\n"
+"PO-Revision-Date: 2012-03-24 19:14+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "Language: he\n"
@@ -26,15 +26,23 @@ msgid "Edit text files"
 msgstr "עריכת קובצי טקסט"
 
 #: ../data/gedit.desktop.in.in.h:2
-#: ../gedit/gedit-print-job.c:799
+msgid "Open a New Document"
+msgstr "יצירת מסמך חדש"
+
+#: ../data/gedit.desktop.in.in.h:3
+msgid "Open a New Window"
+msgstr "פתיחת חלון חדש"
+
+#: ../data/gedit.desktop.in.in.h:4
+#: ../gedit/gedit-print-job.c:791
 msgid "Text Editor"
 msgstr "עורך טקסט"
 
-#: ../data/gedit.desktop.in.in.h:3
+#: ../data/gedit.desktop.in.in.h:5
 msgid "gedit"
 msgstr "gedit"
 
-#: ../data/gedit.desktop.in.in.h:4
+#: ../data/gedit.desktop.in.in.h:6
 msgid "gedit Text Editor"
 msgstr "עורך הטקסט gedit"
 
@@ -334,353 +342,114 @@ msgstr "Whether the toolbar should be visible in editing windows."
 msgid "Whether to use the system's default fixed width font for editing text instead of a font specific to gedit. If this option is turned off, then the font named in the \"Editor Font\" option will be used instead of the system font."
 msgstr "Whether to use the system's default fixed width font for editing text instead of a font specific to gedit. If this option is turned off, then the font named in the \"Editor Font\" option will be used instead of the system font."
 
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:141
-msgid "Log Out _without Saving"
-msgstr "יציאה _ללא שמירה"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:145
-msgid "_Cancel Logout"
-msgstr "_ביטול יציאה"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:152
-msgid "Close _without Saving"
-msgstr "סגירה _ללא שמירה"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:214
-msgid "Question"
-msgstr "שאלה"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:414
-#, c-format
-msgid "If you don't save, changes from the last %ld second will be permanently lost."
-msgid_plural "If you don't save, changes from the last %ld seconds will be permanently lost."
-msgstr[0] "אם לא תתבצע שמירה, כל השינויים מהשנייה האחרונה יאבדו."
-msgstr[1] "אם לא תתבצע שמירה, כל השינויים מ־%ld השניות האחרונות יאבדו."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:423
-msgid "If you don't save, changes from the last minute will be permanently lost."
-msgstr "אם לא תתבצע שמירה, שינויים מהדקה האחרונה יאבדו."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:429
-#, c-format
-msgid "If you don't save, changes from the last minute and %ld second will be permanently lost."
-msgid_plural "If you don't save, changes from the last minute and %ld seconds will be permanently lost."
-msgstr[0] "אם לא תתבצע שמירה, כל השינויים מהדקה והשנייה האחרונות יאבדו."
-msgstr[1] "אם לא תתבצע שמירה, כל השינויים מהדקה ו־%ld השניות האחרונות יאבדו."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:439
-#, c-format
-msgid "If you don't save, changes from the last %ld minute will be permanently lost."
-msgid_plural "If you don't save, changes from the last %ld minutes will be permanently lost."
-msgstr[0] "אם לא תתבצע שמירה, השינויים מהדקה האחרונה יאבדו."
-msgstr[1] "אם לא תתבצע שמירה, השינויים מ־%ld הדקות האחרונות יאבדו."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:454
-msgid "If you don't save, changes from the last hour will be permanently lost."
-msgstr "אם לא תתבצע שמירה, השינויים מהשעה האחרונה יאבדו."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:460
-#, c-format
-msgid "If you don't save, changes from the last hour and %d minute will be permanently lost."
-msgid_plural "If you don't save, changes from the last hour and %d minutes will be permanently lost."
-msgstr[0] "אם לא תתבצע שמירה, שינויים מהשעה והדקה האחרונות יאבדו."
-msgstr[1] "אם לא תתבצע שמירה, השינויים מהשעה ו־%d הדקות האחרונות יאבדו."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:475
-#, c-format
-msgid "If you don't save, changes from the last %d hour will be permanently lost."
-msgid_plural "If you don't save, changes from the last %d hours will be permanently lost."
-msgstr[0] "אם לא תתבצע שמירה, השינויים מהשעה האחרונה יאבדו."
-msgstr[1] "אם לא תתבצע שמירה, השינויים מ־%d השעות האחרונות יאבדו."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:519
-#, c-format
-msgid "Changes to document \"%s\" will be permanently lost."
-msgstr "שינויים שנערכו בקובץ ״%s״ בשעה האחרונה יאבדו."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:524
-#, c-format
-msgid "Save changes to document \"%s\" before closing?"
-msgstr "האם לשמור את השינויים למסמך ״%s״ לפני הסגירה?"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:538
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:755
-msgid "Saving has been disabled by the system administrator."
-msgstr "אפשרות השמירה בוטלה על ידי מנהל מערכת."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:706
-#, c-format
-msgid "Changes to %d document will be permanently lost."
-msgid_plural "Changes to %d documents will be permanently lost."
-msgstr[0] "השינויים למסמך אחד יאבדו."
-msgstr[1] "השינויים ל־%d מסמכים יאבדו."
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:714
-#, c-format
-msgid "There is %d document with unsaved changes. Save changes before closing?"
-msgid_plural "There are %d documents with unsaved changes. Save changes before closing?"
-msgstr[0] "יש מסמך עם שינויים לא שמורים. האם לשמור את השינויים לפני הסגירה?"
-msgstr[1] "יש %d מסמכים עם שינויים לא שמורים. האם לשמור את השינויים לפני הסגירה?"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:733
-msgid "Docum_ents with unsaved changes:"
-msgstr "מסמכים עם _שינויים לא שמורים:"
-
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:735
-msgid "S_elect the documents you want to save:"
-msgstr "נא ל_בחור את הקובץ שברצונך לשמור:"
-
-#  Secondary label
-#: ../gedit/dialogs/gedit-close-confirmation-dialog.c:759
-msgid "If you don't save, all your changes will be permanently lost."
-msgstr "אם לא תתבצע שמירה, כל השינויים יאבדו."
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:347
-msgid "Character Encodings"
-msgstr "קידוד תווים"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:410
-#: ../gedit/dialogs/gedit-encodings-dialog.c:471
-msgid "_Description"
-msgstr "_תיאור"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.c:419
-#: ../gedit/dialogs/gedit-encodings-dialog.c:480
-msgid "_Encoding"
-msgstr "_קידוד"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:1
-msgid "A_vailable encodings:"
-msgstr "קידודים _זמינים:"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:2
-msgid "Character encodings"
-msgstr "קידוד תווים"
-
-#: ../gedit/dialogs/gedit-encodings-dialog.ui.h:3
-msgid "E_ncodings shown in menu:"
-msgstr "ק_ידודים המופיעים בתפריט:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:423
-msgid "Click on this button to select the font to be used by the editor"
-msgstr "יש ללחוץ על כפתור זה כדי לבחור גופן לשימוש על־ידי העורך"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:438
-#, c-format
-msgid "_Use the system fixed width font (%s)"
-msgstr "יש ל_השתמש בגופן המערכת בעל רוחב קבוע (%s)"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:676
-#, c-format
-msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
-msgstr "לא ניתן ליצור את התיקייה '%s'‏:‏ ()g_mkdir_with_parents נכשלה: %s"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:860
-msgid "The selected color scheme cannot be installed."
-msgstr "לא ניתן להתקין את סכימת הצבעים שנבחרה."
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:887
-msgid "Add Scheme"
-msgstr "הוספת סכימה"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:894
-msgid "A_dd Scheme"
-msgstr "ה_וספת סכימה"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:902
-msgid "Color Scheme Files"
-msgstr "קובצי סכימת צבעים"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:909
-#: ../gedit/gedit-file-chooser-dialog.c:52
-msgid "All Files"
-msgstr "כל הקבצים"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:954
-#, c-format
-msgid "Could not remove color scheme \"%s\"."
-msgstr "לא ניתן להסיר את סכימת הצבעים \"%s\"."
-
-#: ../gedit/dialogs/gedit-preferences-dialog.c:1180
-msgid "gedit Preferences"
-msgstr "העדפות gedit"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:1
-msgid "Color Scheme"
-msgstr "סכימת צבעים"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:2
-msgid "Create a _backup copy of files before saving"
-msgstr "יש ליצור עותק _גיבוי של הקבצים לפני השמירה"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:3
-msgid "Display right _margin at column:"
-msgstr "_הצגת השוליים הימניים בעמודה:"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:4
-#: ../gedit/gedit-print-preferences.ui.h:1
-msgid "Do not _split words over two lines"
-msgstr "אין ל_פצל מילים ליותר משתי שורות"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:5
-msgid "Editor"
-msgstr "עורך"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:6
-msgid "Editor _font: "
-msgstr "_גופן העורך: "
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:7
-#: ../gedit/gedit-print-preferences.ui.h:2
-msgid "Enable text _wrapping"
-msgstr "אפשור _גלישת טקסט"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:8
-msgid "File Saving"
-msgstr "שמירת קובץ"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:9
-#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:2
-#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:4
-msgid "Font"
-msgstr "גופן"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:10
-msgid "Font & Colors"
-msgstr "גופן וצבעים"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:11
-msgid "Highlight current _line"
-msgstr "ה_דגשת את השורה הנוכחית"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:12
-msgid "Highlight matching _brackets"
-msgstr "הדגשת ה_סוגר התואם"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:13
-msgid "Highlighting"
-msgstr "הדגשה"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:14
-msgid "Insert _spaces instead of tabs"
-msgstr "הוספת _רווחים במקום טאבים"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:15
-msgid "Install Scheme"
-msgstr "התקנת ערכה"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:16
-msgid "Install scheme"
-msgstr "התקנת ערכה"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:17
-msgid "Pick the editor font"
-msgstr "בחירת גופן לעורך"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:18
-msgid "Plugins"
-msgstr "תוספים"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:19
-msgid "Preferences"
-msgstr "העדפות"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:20
-msgid "Tab Stops"
-msgstr "עצירות טאב"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:21
-#: ../gedit/gedit-print-preferences.ui.h:11
-msgid "Text Wrapping"
-msgstr "גלישת טקסט"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:22
-msgid "Uninstall Scheme"
-msgstr "הסרת ערכה"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:23
-msgid "Uninstall scheme"
-msgstr "הסרת ערכה"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:24
-msgid "View"
-msgstr "תצוגה"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:25
-msgid "_Autosave files every"
-msgstr "שמירה _אוטומטית בכול"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:26
-#: ../gedit/gedit-view.c:552
-msgid "_Display line numbers"
-msgstr "_הצגת מספרי שורות"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:27
-msgid "_Enable automatic indentation"
-msgstr "_אפשור הזחה אוטומטית"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:28
-msgid "_Tab width:"
-msgstr "_רוחב טאב:"
-
-#: ../gedit/dialogs/gedit-preferences-dialog.ui.h:29
-msgid "_minutes"
-msgstr "_דקות"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:209
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:2
-#: ../gedit/gedit-window.c:1559
-msgid "Replace"
-msgstr "החלפה"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:287
-msgid "Replace _All"
-msgstr "החלפה ב_כול"
-
-#: ../gedit/dialogs/gedit-replace-dialog.c:288
-#: ../gedit/gedit-commands-file.c:570
-msgid "_Replace"
-msgstr "ה_חלפה"
-
-#. ex:set ts=8 noet:
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:1
-msgid "Match _entire word only"
-msgstr "התאמת מילים _שלמות בלבד"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:3
-msgid "Replace All"
-msgstr "החלפת הכול"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:4
-msgid "Replace _with: "
-msgstr "החלפה _עם: "
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:5
-msgid "Search _backwards"
-msgstr "חיפוש _אחורה"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:6
-msgid "_Match case"
-msgstr "הת_אמת רישיות"
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:7
-msgid "_Search for: "
-msgstr "_חיפוש אחר: "
-
-#: ../gedit/dialogs/gedit-replace-dialog.ui.h:8
-msgid "_Wrap around"
-msgstr "_גלישה מסביב"
-
-#: ../gedit/gedit-app.c:224
+#: ../gedit/gedit-app.c:222
 msgid "There was an error displaying the help."
 msgstr "ארעה שגיאה בהצגת העזרה."
 
 #: ../gedit/gedit-app-osx.c:274
 msgid "About gedit"
 msgstr "על אודות gedit"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:141
+msgid "Log Out _without Saving"
+msgstr "יציאה _ללא שמירה"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:145
+msgid "_Cancel Logout"
+msgstr "_ביטול יציאה"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:152
+msgid "Close _without Saving"
+msgstr "סגירה _ללא שמירה"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:214
+msgid "Question"
+msgstr "שאלה"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:414
+#, c-format
+msgid "If you don't save, changes from the last %ld second will be permanently lost."
+msgid_plural "If you don't save, changes from the last %ld seconds will be permanently lost."
+msgstr[0] "אם לא תתבצע שמירה, כל השינויים מהשנייה האחרונה יאבדו."
+msgstr[1] "אם לא תתבצע שמירה, כל השינויים מ־%ld השניות האחרונות יאבדו."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:423
+msgid "If you don't save, changes from the last minute will be permanently lost."
+msgstr "אם לא תתבצע שמירה, שינויים מהדקה האחרונה יאבדו."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:429
+#, c-format
+msgid "If you don't save, changes from the last minute and %ld second will be permanently lost."
+msgid_plural "If you don't save, changes from the last minute and %ld seconds will be permanently lost."
+msgstr[0] "אם לא תתבצע שמירה, כל השינויים מהדקה והשנייה האחרונות יאבדו."
+msgstr[1] "אם לא תתבצע שמירה, כל השינויים מהדקה ו־%ld השניות האחרונות יאבדו."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:439
+#, c-format
+msgid "If you don't save, changes from the last %ld minute will be permanently lost."
+msgid_plural "If you don't save, changes from the last %ld minutes will be permanently lost."
+msgstr[0] "אם לא תתבצע שמירה, השינויים מהדקה האחרונה יאבדו."
+msgstr[1] "אם לא תתבצע שמירה, השינויים מ־%ld הדקות האחרונות יאבדו."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:454
+msgid "If you don't save, changes from the last hour will be permanently lost."
+msgstr "אם לא תתבצע שמירה, השינויים מהשעה האחרונה יאבדו."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:460
+#, c-format
+msgid "If you don't save, changes from the last hour and %d minute will be permanently lost."
+msgid_plural "If you don't save, changes from the last hour and %d minutes will be permanently lost."
+msgstr[0] "אם לא תתבצע שמירה, שינויים מהשעה והדקה האחרונות יאבדו."
+msgstr[1] "אם לא תתבצע שמירה, השינויים מהשעה ו־%d הדקות האחרונות יאבדו."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:475
+#, c-format
+msgid "If you don't save, changes from the last %d hour will be permanently lost."
+msgid_plural "If you don't save, changes from the last %d hours will be permanently lost."
+msgstr[0] "אם לא תתבצע שמירה, השינויים מהשעה האחרונה יאבדו."
+msgstr[1] "אם לא תתבצע שמירה, השינויים מ־%d השעות האחרונות יאבדו."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:519
+#, c-format
+msgid "Changes to document \"%s\" will be permanently lost."
+msgstr "שינויים שנערכו בקובץ ״%s״ בשעה האחרונה יאבדו."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:524
+#, c-format
+msgid "Save changes to document \"%s\" before closing?"
+msgstr "האם לשמור את השינויים למסמך ״%s״ לפני הסגירה?"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:538
+#: ../gedit/gedit-close-confirmation-dialog.c:755
+msgid "Saving has been disabled by the system administrator."
+msgstr "אפשרות השמירה בוטלה על ידי מנהל מערכת."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:706
+#, c-format
+msgid "Changes to %d document will be permanently lost."
+msgid_plural "Changes to %d documents will be permanently lost."
+msgstr[0] "השינויים למסמך אחד יאבדו."
+msgstr[1] "השינויים ל־%d מסמכים יאבדו."
+
+#: ../gedit/gedit-close-confirmation-dialog.c:714
+#, c-format
+msgid "There is %d document with unsaved changes. Save changes before closing?"
+msgid_plural "There are %d documents with unsaved changes. Save changes before closing?"
+msgstr[0] "יש מסמך עם שינויים לא שמורים. האם לשמור את השינויים לפני הסגירה?"
+msgstr[1] "יש %d מסמכים עם שינויים לא שמורים. האם לשמור את השינויים לפני הסגירה?"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:733
+msgid "Docum_ents with unsaved changes:"
+msgstr "מסמכים עם _שינויים לא שמורים:"
+
+#: ../gedit/gedit-close-confirmation-dialog.c:735
+msgid "S_elect the documents you want to save:"
+msgstr "נא ל_בחור את הקובץ שברצונך לשמור:"
+
+#  Secondary label
+#: ../gedit/gedit-close-confirmation-dialog.c:759
+msgid "If you don't save, all your changes will be permanently lost."
+msgstr "אם לא תתבצע שמירה, כל השינויים יאבדו."
 
 #: ../gedit/gedit-command-line.c:232
 #, c-format
@@ -774,6 +543,11 @@ msgstr "הקובץ \"%s\" הנו לקריאה בלבד."
 #: ../gedit/gedit-commands-file.c:562
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr "האם ברצונך לנסות להחליפו עם הקובץ שנשמר?"
+
+#: ../gedit/gedit-commands-file.c:570
+#: ../gedit/gedit-replace-dialog.c:270
+msgid "_Replace"
+msgstr "ה_חלפה"
 
 #: ../gedit/gedit-commands-file.c:612
 msgid "Save the file using compression?"
@@ -910,13 +684,13 @@ msgstr "מסמך שלא נשמר %d"
 
 #: ../gedit/gedit-documents-panel.c:123
 #: ../gedit/gedit-documents-panel.c:137
-#: ../gedit/gedit-window.c:2399
-#: ../gedit/gedit-window.c:2406
+#: ../gedit/gedit-window.c:2397
+#: ../gedit/gedit-window.c:2404
 msgid "Read-Only"
 msgstr "(קריאה בלבד)"
 
 #: ../gedit/gedit-documents-panel.c:1146
-#: ../gedit/gedit-window.c:3848
+#: ../gedit/gedit-window.c:3846
 msgid "Documents"
 msgstr "מסמכים"
 
@@ -1071,6 +845,38 @@ msgstr "מיקום נוכחי (%s)"
 #: ../gedit/gedit-encodings-combo-box.c:388
 msgid "Add or Remove..."
 msgstr "הוספה או הסרה..."
+
+#: ../gedit/gedit-encodings-dialog.c:345
+msgid "Character Encodings"
+msgstr "קידוד תווים"
+
+#: ../gedit/gedit-encodings-dialog.c:395
+#: ../gedit/gedit-encodings-dialog.c:456
+msgid "_Description"
+msgstr "_תיאור"
+
+#: ../gedit/gedit-encodings-dialog.c:404
+#: ../gedit/gedit-encodings-dialog.c:465
+msgid "_Encoding"
+msgstr "_קידוד"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-encodings-dialog.ui.h:1
+msgid "A_vailable encodings:"
+msgstr "קידודים _זמינים:"
+
+#: ../gedit/gedit-encodings-dialog.ui.h:2
+msgid "Character encodings"
+msgstr "קידוד תווים"
+
+#: ../gedit/gedit-encodings-dialog.ui.h:3
+msgid "E_ncodings shown in menu:"
+msgstr "ק_ידודים המופיעים בתפריט:"
+
+#: ../gedit/gedit-file-chooser-dialog.c:52
+#: ../gedit/gedit-preferences-dialog.c:909
+msgid "All Files"
+msgstr "כל הקבצים"
 
 #: ../gedit/gedit-file-chooser-dialog.c:53
 msgid "All Text Files"
@@ -1394,7 +1200,7 @@ msgid "_Print..."
 msgstr "ה_דפסה..."
 
 #: ../gedit/gedit-panel.c:409
-#: ../gedit/gedit-panel.c:585
+#: ../gedit/gedit-panel.c:587
 msgid "Empty"
 msgstr "ריק"
 
@@ -1402,16 +1208,179 @@ msgstr "ריק"
 msgid "Hide panel"
 msgstr "הסתרת הלוח"
 
-#: ../gedit/gedit-print-job.c:580
+#: ../gedit/gedit-preferences-dialog.c:423
+msgid "Click on this button to select the font to be used by the editor"
+msgstr "יש ללחוץ על כפתור זה כדי לבחור גופן לשימוש על־ידי העורך"
+
+#: ../gedit/gedit-preferences-dialog.c:438
+#, c-format
+msgid "_Use the system fixed width font (%s)"
+msgstr "יש ל_השתמש בגופן המערכת בעל רוחב קבוע (%s)"
+
+#: ../gedit/gedit-preferences-dialog.c:676
+#, c-format
+msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
+msgstr "לא ניתן ליצור את התיקייה '%s'‏:‏ ()g_mkdir_with_parents נכשלה: %s"
+
+#: ../gedit/gedit-preferences-dialog.c:860
+msgid "The selected color scheme cannot be installed."
+msgstr "לא ניתן להתקין את סכימת הצבעים שנבחרה."
+
+#: ../gedit/gedit-preferences-dialog.c:887
+msgid "Add Scheme"
+msgstr "הוספת סכימה"
+
+#: ../gedit/gedit-preferences-dialog.c:894
+msgid "A_dd Scheme"
+msgstr "ה_וספת סכימה"
+
+#: ../gedit/gedit-preferences-dialog.c:902
+msgid "Color Scheme Files"
+msgstr "קובצי סכימת צבעים"
+
+#: ../gedit/gedit-preferences-dialog.c:954
+#, c-format
+msgid "Could not remove color scheme \"%s\"."
+msgstr "לא ניתן להסיר את סכימת הצבעים \"%s\"."
+
+#: ../gedit/gedit-preferences-dialog.c:1177
+msgid "gedit Preferences"
+msgstr "העדפות gedit"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-preferences-dialog.ui.h:1
+msgid "Color Scheme"
+msgstr "סכימת צבעים"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:2
+msgid "Create a _backup copy of files before saving"
+msgstr "יש ליצור עותק _גיבוי של הקבצים לפני השמירה"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:3
+msgid "Display right _margin at column:"
+msgstr "_הצגת השוליים הימניים בעמודה:"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-preferences-dialog.ui.h:4
+#: ../gedit/gedit-print-preferences.ui.h:1
+msgid "Do not _split words over two lines"
+msgstr "אין ל_פצל מילים ליותר משתי שורות"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:5
+msgid "Editor"
+msgstr "עורך"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:6
+msgid "Editor _font: "
+msgstr "_גופן העורך: "
+
+#: ../gedit/gedit-preferences-dialog.ui.h:7
+#: ../gedit/gedit-print-preferences.ui.h:2
+msgid "Enable text _wrapping"
+msgstr "אפשור _גלישת טקסט"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:8
+msgid "File Saving"
+msgstr "שמירת קובץ"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:9
+#: ../plugins/externaltools/org.gnome.gedit.plugins.externaltools.gschema.xml.in.in.h:2
+#: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:4
+msgid "Font"
+msgstr "גופן"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:10
+msgid "Font & Colors"
+msgstr "גופן וצבעים"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:11
+msgid "Highlight current _line"
+msgstr "ה_דגשת את השורה הנוכחית"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:12
+msgid "Highlight matching _brackets"
+msgstr "הדגשת ה_סוגר התואם"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:13
+msgid "Highlighting"
+msgstr "הדגשה"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:14
+msgid "Insert _spaces instead of tabs"
+msgstr "הוספת _רווחים במקום טאבים"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:15
+msgid "Install Scheme"
+msgstr "התקנת ערכה"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:16
+msgid "Install scheme"
+msgstr "התקנת ערכה"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:17
+msgid "Pick the editor font"
+msgstr "בחירת גופן לעורך"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:18
+msgid "Plugins"
+msgstr "תוספים"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:19
+msgid "Preferences"
+msgstr "העדפות"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:20
+msgid "Tab Stops"
+msgstr "עצירות טאב"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:21
+#: ../gedit/gedit-print-preferences.ui.h:11
+msgid "Text Wrapping"
+msgstr "גלישת טקסט"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:22
+msgid "Uninstall Scheme"
+msgstr "הסרת ערכה"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:23
+msgid "Uninstall scheme"
+msgstr "הסרת ערכה"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:24
+msgid "View"
+msgstr "תצוגה"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:25
+msgid "_Autosave files every"
+msgstr "שמירה _אוטומטית בכול"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:26
+#: ../gedit/gedit-view.c:552
+msgid "_Display line numbers"
+msgstr "_הצגת מספרי שורות"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:27
+msgid "_Enable automatic indentation"
+msgstr "_אפשור הזחה אוטומטית"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:28
+msgid "_Tab width:"
+msgstr "_רוחב טאב:"
+
+#: ../gedit/gedit-preferences-dialog.ui.h:29
+msgid "_minutes"
+msgstr "_דקות"
+
+#: ../gedit/gedit-print-job.c:572
 #, c-format
 msgid "File: %s"
 msgstr "קובץ: %s"
 
-#: ../gedit/gedit-print-job.c:589
+#: ../gedit/gedit-print-job.c:581
 msgid "Page %N of %Q"
 msgstr "עמוד %N מתוך %Q"
 
-#: ../gedit/gedit-print-job.c:851
+#: ../gedit/gedit-print-job.c:843
 msgid "Preparing..."
 msgstr "בהכנה..."
 
@@ -1534,6 +1503,45 @@ msgstr "תצוגה מקדימה"
 #: ../gedit/gedit-print-preview.c:968
 msgid "The preview of a page in the document to be printed"
 msgstr "תצוגה מקדימה של דף מהמסמך המיועד להדפסה"
+
+#: ../gedit/gedit-replace-dialog.c:207
+#: ../gedit/gedit-replace-dialog.ui.h:2
+#: ../gedit/gedit-window.c:1557
+msgid "Replace"
+msgstr "החלפה"
+
+#: ../gedit/gedit-replace-dialog.c:269
+msgid "Replace _All"
+msgstr "החלפה ב_כול"
+
+#. ex:set ts=8 noet:
+#: ../gedit/gedit-replace-dialog.ui.h:1
+msgid "Match _entire word only"
+msgstr "התאמת מילים _שלמות בלבד"
+
+#: ../gedit/gedit-replace-dialog.ui.h:3
+msgid "Replace All"
+msgstr "החלפת הכול"
+
+#: ../gedit/gedit-replace-dialog.ui.h:4
+msgid "Replace _with: "
+msgstr "החלפה _עם: "
+
+#: ../gedit/gedit-replace-dialog.ui.h:5
+msgid "Search _backwards"
+msgstr "חיפוש _אחורה"
+
+#: ../gedit/gedit-replace-dialog.ui.h:6
+msgid "_Match case"
+msgstr "הת_אמת רישיות"
+
+#: ../gedit/gedit-replace-dialog.ui.h:7
+msgid "_Search for: "
+msgstr "_חיפוש אחר: "
+
+#: ../gedit/gedit-replace-dialog.ui.h:8
+msgid "_Wrap around"
+msgstr "_גלישה מסביב"
 
 #. Use spaces to leave padding proportional to the font size
 #: ../gedit/gedit-statusbar.c:70
@@ -1675,7 +1683,7 @@ msgid "_Open..."
 msgstr "_פתיחה..."
 
 #: ../gedit/gedit-ui.h:55
-#: ../gedit/gedit-window.c:1487
+#: ../gedit/gedit-window.c:1486
 msgid "Open a file"
 msgstr "פתיחת קובץ"
 
@@ -1965,7 +1973,7 @@ msgstr "המחרוזת שברצונך לחפש"
 msgid "Line you want to move the cursor to"
 msgstr "השורה אליה להעביר את הסמן"
 
-#: ../gedit/gedit-window.c:942
+#: ../gedit/gedit-window.c:941
 #, c-format
 msgid "Use %s highlight mode"
 msgstr "שימוש במצב הדגשה %s"
@@ -1973,8 +1981,8 @@ msgstr "שימוש במצב הדגשה %s"
 #. add the "Plain Text" item before all the others
 #. Translators: "Plain Text" means that no highlight mode is selected in the
 #. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
-#: ../gedit/gedit-window.c:1047
-#: ../gedit/gedit-window.c:2093
+#: ../gedit/gedit-window.c:1046
+#: ../gedit/gedit-window.c:2091
 #: ../plugins/externaltools/tools/manager.py:146
 #: ../plugins/externaltools/tools/manager.py:450
 #: ../plugins/externaltools/tools/manager.py:561
@@ -1982,60 +1990,60 @@ msgstr "שימוש במצב הדגשה %s"
 msgid "Plain Text"
 msgstr "טקסט פשוט"
 
-#: ../gedit/gedit-window.c:1048
+#: ../gedit/gedit-window.c:1047
 msgid "Disable syntax highlighting"
 msgstr "_ביטול הדגשת תחביר"
 
 #  Translators: %s is a URI
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1365
+#: ../gedit/gedit-window.c:1364
 #, c-format
 msgid "Open '%s'"
 msgstr "פתיחת '%s'"
 
-#: ../gedit/gedit-window.c:1489
+#: ../gedit/gedit-window.c:1488
 msgid "Open a recently used file"
 msgstr "פתיחת קובץ שהיה בשימוש לאחרונה"
 
-#: ../gedit/gedit-window.c:1495
+#: ../gedit/gedit-window.c:1494
 msgid "Open"
 msgstr "פתיחה"
 
-#: ../gedit/gedit-window.c:1553
+#: ../gedit/gedit-window.c:1551
 msgid "Save"
 msgstr "שמירה"
 
-#: ../gedit/gedit-window.c:1555
+#: ../gedit/gedit-window.c:1553
 msgid "Print"
 msgstr "הדפסה"
 
-#: ../gedit/gedit-window.c:1557
+#: ../gedit/gedit-window.c:1555
 msgid "Find"
 msgstr "חיפוש"
 
 #. Translators: %s is a URI
-#: ../gedit/gedit-window.c:1717
+#: ../gedit/gedit-window.c:1715
 #, c-format
 msgid "Activate '%s'"
 msgstr "הפעלת '%s'"
 
-#: ../gedit/gedit-window.c:2074
+#: ../gedit/gedit-window.c:2072
 msgid "Use Spaces"
 msgstr "שימוש ברווחים"
 
-#: ../gedit/gedit-window.c:2147
+#: ../gedit/gedit-window.c:2145
 msgid "Tab Width"
 msgstr "רוחב טאב"
 
-#: ../gedit/gedit-window.c:2256
+#: ../gedit/gedit-window.c:2254
 msgid "Bracket match is out of range"
 msgstr "הסוגר התואם הוא מחוץ לטווח"
 
-#: ../gedit/gedit-window.c:2261
+#: ../gedit/gedit-window.c:2259
 msgid "Bracket match not found"
 msgstr "הסוגר התואם לא נמצא"
 
-#: ../gedit/gedit-window.c:2266
+#: ../gedit/gedit-window.c:2264
 #, c-format
 msgid "Bracket match found on line: %d"
 msgstr "הסוגר התואם נמצא בשורה: %d"
@@ -2133,21 +2141,19 @@ msgstr "תוסף סטטיסטיקות המסמך מנתח את המסמך הנו
 msgid "Document Statistics"
 msgstr "סטטיסטיקת המסמך"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:451
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:427
 msgid "_Document Statistics"
 msgstr "סטטיסטיקת ה_מסמך"
 
-#: ../plugins/docinfo/gedit-docinfo-plugin.c:453
+#: ../plugins/docinfo/gedit-docinfo-plugin.c:429
 msgid "Get statistical information on the current document"
 msgstr "קבלת מידע סטטיסטי על המסמך הנוכחי"
 
 #. ex:set ts=8 noet:
 #. ex:ts=4:et:
-#. ex:ts=8:noet:
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 #: ../plugins/externaltools/tools/tools.ui.h:1
 #: ../plugins/snippets/snippets/snippets.ui.h:1
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "    "
 msgstr "    "
 
@@ -2562,131 +2568,131 @@ msgstr "תיקייה"
 msgid "The new directory is currently filtered out. You need to adjust your filter settings to make the directory visible"
 msgstr "התיקייה החדשה לא נכללת עקב סינון. יהיה עליך להתאים את הגדרות המסנן שלך כך שהתיקייה תופיע"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:734
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:733
 msgid "Bookmarks"
 msgstr "סימניות"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:822
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:821
 msgid "_Filter"
 msgstr "_מסנן"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:826
 msgid "_Move to Trash"
 msgstr "העברה ל_אשפה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:828
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:827
 msgid "Move selected file or folder to trash"
 msgstr "העברת הקובץ או התיקייה הנבחרים לאשפה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:829
 msgid "_Delete"
 msgstr "_מחיקה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:831
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:830
 msgid "Delete selected file or folder"
 msgstr "מחיקת הקובץ או התיקייה הנבחרים"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:838
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:837
 msgid "Open selected file"
 msgstr "פתיחת הקובץ הנבחר"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:843
 msgid "Up"
 msgstr "למעלה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:845
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:844
 msgid "Open the parent folder"
 msgstr "פתיחת תיקיית ההורה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:849
 msgid "_New Folder"
 msgstr "_תיקייה חדשה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:851
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:850
 msgid "Add new empty folder"
 msgstr "הוספת תיקייה ריקה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:852
 msgid "New F_ile"
 msgstr "_קובץ חדש"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:854
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:853
 msgid "Add new empty file"
 msgstr "הוספת קובץ ריק"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:858
 msgid "_Rename"
 msgstr "ה_חלפת שם"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:860
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:859
 msgid "Rename selected file or folder"
 msgstr "שינוי שם הקובץ או התיקייה שנבחרו"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:866
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:865
 msgid "_Previous Location"
 msgstr "המיקום ה_קודם"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:868
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:867
 msgid "Go to the previous visited location"
 msgstr "מעבר למיקום הקודם בו ביקרת"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:869
 msgid "_Next Location"
 msgstr "המיקום ה_בא"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:870
 msgid "Go to the next visited location"
 msgstr "מעבר למיקום הבא בו ביקרת"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:871
 msgid "Re_fresh View"
 msgstr "ר_ענון התצוגה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:872
 msgid "Refresh the view"
 msgstr "רענון התצוגה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:873
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:891
 msgid "_View Folder"
 msgstr "_הצגת תיקיה"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:875
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:893
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:874
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:892
 msgid "View folder in file manager"
 msgstr "הצגת התיקייה במנהל הקבצים"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:881
 msgid "Show _Hidden"
 msgstr "הצגת _נסתרים"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:883
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:882
 msgid "Show hidden files and folders"
 msgstr "הצגת קבצים ותיקיות נסתרים"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:884
 msgid "Show _Binary"
 msgstr "הצגה _בינרית"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:886
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:885
 msgid "Show binary files"
 msgstr "הצגת קבצים בינריים"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:1207
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:1202
 msgid "Match Filename"
 msgstr "התאמת שם קובץ"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2009
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2004
 #, c-format
 msgid "No mount object for mounted volume: %s"
 msgstr "אין פריט עגינה עבור הכרך שעוגן: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2086
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2081
 #, c-format
 msgid "Could not open media: %s"
 msgstr "לא ניתן לפתוח את המדיה: %s"
 
-#: ../plugins/filebrowser/gedit-file-browser-widget.c:2133
+#: ../plugins/filebrowser/gedit-file-browser-widget.c:2128
 #, c-format
 msgid "Could not mount volume: %s"
 msgstr "לא ניתן לעגון את הכרך: %s"
@@ -3097,7 +3103,7 @@ msgstr "ממיין מסמך או טקסט מסומן."
 #. Translators: Displayed in the "Check Spelling" dialog if there are no suggestions
 #. * for the current misspelled word
 #: ../plugins/spell/gedit-automatic-spell-checker.c:420
-#: ../plugins/spell/gedit-spell-checker-dialog.c:458
+#: ../plugins/spell/gedit-spell-checker-dialog.c:444
 msgid "(no suggested words)"
 msgstr "(אין מילים מוצעות)"
 
@@ -3119,20 +3125,20 @@ msgstr "_הוספה"
 msgid "_Spelling Suggestions..."
 msgstr "ה_צעות איות..."
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:278
+#: ../plugins/spell/gedit-spell-checker-dialog.c:264
 msgid "Check Spelling"
 msgstr "בדיקת איות"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:289
+#: ../plugins/spell/gedit-spell-checker-dialog.c:275
 msgid "Suggestions"
 msgstr "הצעות"
 
 #. Translators: Displayed in the "Check Spelling" dialog if the current word isn't misspelled
-#: ../plugins/spell/gedit-spell-checker-dialog.c:565
+#: ../plugins/spell/gedit-spell-checker-dialog.c:551
 msgid "(correct spelling)"
 msgstr "(איות נכון)"
 
-#: ../plugins/spell/gedit-spell-checker-dialog.c:706
+#: ../plugins/spell/gedit-spell-checker-dialog.c:692
 msgid "Completed spell checking"
 msgstr "בדיקת האיות הסתיימה"
 
@@ -3164,12 +3170,12 @@ msgctxt "language"
 msgid "Default"
 msgstr "ברירת מחדל"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:142
+#: ../plugins/spell/gedit-spell-language-dialog.c:140
 #: ../plugins/spell/languages-dialog.ui.h:2
 msgid "Set language"
 msgstr "הגדרת שפה"
 
-#: ../plugins/spell/gedit-spell-language-dialog.c:196
+#: ../plugins/spell/gedit-spell-language-dialog.c:182
 msgid "Languages"
 msgstr "שפות"
 
@@ -3274,16 +3280,17 @@ msgstr "בדיקת האיות במסמך הנוכחי."
 msgid "Spell Checker"
 msgstr "בודק איות"
 
+#. ex:ts=8:noet:
 #. Translators: Use the more common date format in your locale
 #: ../plugins/time/gedit-time-dialog.ui.h:2
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:4
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 #, no-c-format
 msgid "%d/%m/%Y %H:%M:%S"
 msgstr "%d/%m/%Y %H:%M:%S"
 
 #. Translators: This example should follow the date format defined in the entry above
 #: ../plugins/time/gedit-time-dialog.ui.h:3
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:5
 msgid "01/11/2009 17:52:00"
 msgstr "01/11/2009 17:52:00"
 
@@ -3292,7 +3299,7 @@ msgid "Insert Date and Time"
 msgstr "הוספת תאריך ושעה"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:5
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:7
 msgid "Use the _selected format"
 msgstr "שימוש ב_מבנה הנבחר"
 
@@ -3301,7 +3308,7 @@ msgid "_Insert"
 msgstr "הו_ספה"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:7
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:11
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
 msgid "_Use custom format"
 msgstr "שימוש במבנה _מותאם"
 
@@ -3317,15 +3324,15 @@ msgstr "הוספת התאריך והשעה הנוכחיים במיקום הסמ�
 msgid "Available formats"
 msgstr "מבנים זמינים"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:7
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:6
 msgid "Configure date/time plugin"
 msgstr "תצורת התוסף תאריך/שעה"
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:8
 msgid "When inserting date/time..."
 msgstr "בעת הוספת תאריך/שעה..."
 
-#: ../plugins/time/gedit-time-setup-dialog.ui.h:10
+#: ../plugins/time/gedit-time-setup-dialog.ui.h:9
 msgid "_Prompt for a format"
 msgstr "הצגת _שאלה על המבנה"
 
@@ -3392,9 +3399,6 @@ msgstr "ספק נתוני שימוש"
 
 #~ msgid "Go to next location"
 #~ msgstr "מעבר למיקום הבא"
-
-#~ msgid "Open a new window"
-#~ msgstr "פתיחת חלון חדש"
 
 #~ msgid ""
 #~ "List of VFS schemes gedit supports in write mode. The 'file' scheme is "
