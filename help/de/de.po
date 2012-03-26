@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit help\n"
-"POT-Creation-Date: 2012-02-07 20:37+0000\n"
-"PO-Revision-Date: 2012-02-12 23:13+0100\n"
+"POT-Creation-Date: 2012-03-17 10:31+0000\n"
+"PO-Revision-Date: 2012-03-17 23:08+0100\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -54,7 +54,8 @@ msgctxt "text"
 msgid "gedit Text Editor"
 msgstr "gedit Texteditor"
 
-#: C/index.page:12(credit/name) C/gedit-change-color-scheme.page:9(credit/name)
+#: C/index.page:12(credit/name)
+#: C/gedit-change-color-scheme.page:9(credit/name)
 #: C/gedit-change-default-font.page:11(credit/name)
 #: C/gedit-close-file.page:9(credit/name)
 #: C/gedit-create-new-file.page:9(credit/name)
@@ -95,9 +96,10 @@ msgstr "gedit Texteditor"
 #: C/gedit-plugins-text-size.page:10(credit/name)
 #: C/gedit-plugins-word-completion.page:9(credit/name)
 #: C/gedit-printing.page:11(credit/name)
-#: C/gedit-quickstart.page:11(credit/name) C/gedit-replace.page:10(credit/name)
-#: C/gedit-save-file.page:9(credit/name) C/gedit-search.page:10(credit/name)
-#: C/gedit-shortcut-keys.page:9(credit/name)
+#: C/gedit-quickstart.page:11(credit/name)
+#: C/gedit-replace.page:10(credit/name) C/gedit-save-file.page:9(credit/name)
+#: C/gedit-search.page:10(credit/name)
+#: C/gedit-shortcut-keys.page:10(credit/name)
 #: C/gedit-spellcheck.page:10(credit/name)
 #: C/gedit-syntax-highlighting.page:9(credit/name)
 #: C/gedit-tabs-moving.page:9(credit/name) C/gedit-tabs.page:10(credit/name)
@@ -120,8 +122,8 @@ msgid ""
 "Welcome to the <app>gedit</app> help guide. For a quick introduction into "
 "both <app>gedit's</app> most basic features, as well as some advanced "
 "keyboard shortcuts, visit the <link xref=\"gedit-quickstart\">Get started "
-"with gedit</link> and <link xref=\"gedit-shortcut-keys\">Shortcut keys</link> "
-"pages."
+"with gedit</link> and <link xref=\"gedit-shortcut-keys\">Shortcut keys</"
+"link> pages."
 msgstr ""
 "Willkommen zur Hilfedokumentation von <app>gedit</app>. Lesen Sie für eine "
 "schnelle Einführung in die grundlegenden Funktionen von <app>gedit</app> und "
@@ -162,8 +164,8 @@ msgid ""
 "<app>gedit</app> includes several different color schemes, allowing you to "
 "change the appearance of the main text window."
 msgstr ""
-"<app>gedit</app> liefert bereits verschiedene Farbschemata mit, wodurch Ihnen "
-"die Änderung des Erscheinungsbilds des Textfensters ermöglicht wird."
+"<app>gedit</app> liefert bereits verschiedene Farbschemata mit, wodurch "
+"Ihnen die Änderung des Erscheinungsbilds des Textfensters ermöglicht wird."
 
 #: C/gedit-change-color-scheme.page:18(page/p)
 msgid "To change the color scheme, complete the following steps:"
@@ -194,8 +196,8 @@ msgid ""
 "You can also use color schemes that have been created by others, or create "
 "and use your own color schemes."
 msgstr ""
-"Sie können Farbschemata verwenden, die von anderen erstellt wurden, oder Ihre "
-"eigenen Farbschemata erstellen und verwenden."
+"Sie können Farbschemata verwenden, die von anderen erstellt wurden, oder "
+"Ihre eigenen Farbschemata erstellen und verwenden."
 
 #: C/gedit-change-color-scheme.page:30(section/p)
 msgid ""
@@ -213,8 +215,8 @@ msgstr "Ändrn der vorgegebenen Schriftgröße"
 
 #: C/gedit-change-default-font.page:18(page/p)
 msgid ""
-"<app>gedit</app> will use the system fixed-width font by default, but you can "
-"change the default <app>gedit</app> font to suit your preferences."
+"<app>gedit</app> will use the system fixed-width font by default, but you "
+"can change the default <app>gedit</app> font to suit your preferences."
 msgstr ""
 "<app>gedit</app> verwendet standardmäßig die dicktengleiche Schrift des "
 "Systems, aber Sie können die Standardschrift nach Ihren Wünschen ändern."
@@ -232,7 +234,8 @@ msgstr ""
 "und Farben</gui></guiseq>."
 
 #: C/gedit-change-default-font.page:26(item/p)
-msgid "Uncheck the box next to the phrase, \"Use the system fixed-width font.\""
+msgid ""
+"Uncheck the box next to the phrase, \"Use the system fixed-width font.\""
 msgstr ""
 "Deaktivieren Sie das Ankreuzfeld <gui>Dicktengleiche Schrift des Systems "
 "benutzen</gui>."
@@ -259,8 +262,8 @@ msgstr "Eine Datei schließen"
 msgid ""
 "To close a file in <app>gedit</app>, select <guiseq><gui>File</gui> "
 "<gui>Close</gui></guiseq>. Alternately, you can click the small \"X\" that "
-"appears on the right-side of the file's tab, or press <keyseq><key>Ctrl</key> "
-"<key>W</key></keyseq>."
+"appears on the right-side of the file's tab, or press <keyseq><key>Ctrl</"
+"key> <key>W</key></keyseq>."
 msgstr ""
 "Um eine Datei in <app>gedit</app> zu schließen, wählen Sie "
 "<guiseq><gui>Datei</gui><gui>Schließen</gui></guiseq>. Alternativ können Sie "
@@ -316,7 +319,8 @@ msgid ""
 msgstr ""
 "Bearbeiten von Dateien mit den Rechten des Systemverwalters kann potenziell "
 "gefährlich sein. Ihr System könnte auf unvorhersehbare Weise beschädigt "
-"werden. Lassen Sie die nötige Vorsicht walten, wenn Sie Dateien so bearbeiten."
+"werden. Lassen Sie die nötige Vorsicht walten, wenn Sie Dateien so "
+"bearbeiten."
 
 #: C/gedit-edit-as-root.page:18(page/p)
 msgid ""
@@ -363,8 +367,8 @@ msgid ""
 "Once you have opened <app>gedit</app> with administrative privileges, the "
 "application will retain those privileges until you close it."
 msgstr ""
-"Sobald Sie <app>gedit</app> mit Systemverwalterrechten geöffnet haben, werden "
-"diese Rechte beibehalten, bis Sie die Anwendung schließen."
+"Sobald Sie <app>gedit</app> mit Systemverwalterrechten geöffnet haben, "
+"werden diese Rechte beibehalten, bis Sie die Anwendung schließen."
 
 #: C/gedit-files-basic.page:14(page/title)
 msgid "File basics: Open, close, and save files"
@@ -372,8 +376,8 @@ msgstr "Grundlagen zu Dateien: Öffnen, Schließen und Speichern"
 
 #: C/gedit-files-basic.page:16(page/p)
 msgid ""
-"If you are new to <app>gedit</app>, these topics will help you with creating, "
-"saving, and opening and closing files."
+"If you are new to <app>gedit</app>, these topics will help you with "
+"creating, saving, and opening and closing files."
 msgstr ""
 "Falls Sie noch nicht mit <app>gedit</app> vertraut sind, helfen Ihnen diese "
 "Themen beim Erstellen, Speichern, Öffnen und Schließen von Dateien."
@@ -391,8 +395,8 @@ msgid ""
 "your tasks."
 msgstr ""
 "Beim Arbeiten mit großen Dokumenten ist es möglicherweise sinnvoll, im "
-"Vollbildmodus zu arbeiten. Im Vollbildmodus werden die <gui>Menüleiste</gui>, "
-"die <gui>Reiterleiste</gui> und die <gui>Werkzeugleiste</gui> nicht "
+"Vollbildmodus zu arbeiten. Im Vollbildmodus werden die <gui>Menüleiste</"
+"gui>, die <gui>Reiterleiste</gui> und die <gui>Werkzeugleiste</gui> nicht "
 "angezeigt. Auf diese Weise ist mehr Text sichtbar und Sie können sich besser "
 "auf Ihre Aufgaben konzentrieren."
 
@@ -414,10 +418,10 @@ msgstr ""
 
 #: C/gedit-full-screen.page:21(section/p)
 msgid ""
-"If you need to perform an action from the <app>gedit</app> menu while working "
-"in fullscreen mode, move your mouse pointer to the top of the screen. The "
-"<app>gedit</app> menu bar will reappear, and you can select your desired "
-"action."
+"If you need to perform an action from the <app>gedit</app> menu while "
+"working in fullscreen mode, move your mouse pointer to the top of the "
+"screen. The <app>gedit</app> menu bar will reappear, and you can select your "
+"desired action."
 msgstr ""
 "Falls Sie eine Aktion ausführen wollen, während sich <app>gedit</app> im "
 "Vollbildmodus befindet, bewegen Sie den Mauszeiger an den oberen Rand des "
@@ -444,12 +448,14 @@ msgid ""
 "To turn off fullscreen mode and return to the standard <app>gedit</app> "
 "window, move your mouse cursor to the top of the screen, and wait for the "
 "<gui>menu bar</gui> to appear. When the <gui>menu bar</gui> appears, select "
-"<gui>Leave Fullscreen</gui>."
+"<gui>Leave Fullscreen</gui>. You can also press <key>F11</key> to turn off "
+"fullscreen mode."
 msgstr ""
 "Um aus dem Vollbildmodus in die Standardansicht von <app>gedit</app> "
 "zurückzukehren, bewegen Sie den Mauszeiger an den oberen Rand des "
 "Bildschirms, um die <gui>Menüleiste</gui> anzuzeigen. Klicken Sie dann auf "
-"<gui>Vollbild verlassen</gui>."
+"<gui>Vollbild verlassen</gui>. Sie können auch <key>F11</key> drücken, um "
+"den Vollbildmodus zu verlassen."
 
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
@@ -496,16 +502,16 @@ msgid ""
 "particularly when you are working with a large number of open files, you may "
 "find it easier to use the <app>side pane</app>."
 msgstr ""
-"Der am häufigsten verwendete Weg zum Wechseln zwischen Dateien in <app>gedit</"
-"app> ist das Anklicken der Reiter im oberen Teil des <app>gedit</app>-"
-"Fensters. In bestimmten Fällen kann es jedoch sinnvoll sein, die "
+"Der am häufigsten verwendete Weg zum Wechseln zwischen Dateien in "
+"<app>gedit</app> ist das Anklicken der Reiter im oberen Teil des <app>gedit</"
+"app>-Fensters. In bestimmten Fällen kann es jedoch sinnvoll sein, die "
 "<app>Seitenleiste</app> zu verwenden, insbesondere dann, wenn Sie eine "
 "größere Anzahl von Dateien geöffnet haben."
 
 #: C/gedit-open-files-from-sidepane.page:19(page/p)
 msgid ""
-"To activate the <app>side pane</app>, select <guiseq><gui>View</gui><gui>Side "
-"Pane</gui></guiseq>, or just press the <key>F9</key> key."
+"To activate the <app>side pane</app>, select <guiseq><gui>View</"
+"gui><gui>Side Pane</gui></guiseq>, or just press the <key>F9</key> key."
 msgstr ""
 "Um die Seitenleiste zu aktivieren, wählen Sie <guiseq><gui>Ansicht</"
 "gui><gui>Seitenleiste</gui></guiseq> oder drücken Sie <key>F9</key>."
@@ -536,14 +542,15 @@ msgstr ""
 "Seitenleiste."
 
 #: C/gedit-open-files-from-sidepane.page:39(section/p)
+#: C/gedit-plugins-file-browser.page:35(section/p)
 msgid ""
-"This will activate the <em>file-browser</em> mode of the <app>side panel</"
+"This will activate the <em>file-browser</em> mode of the <app>side pane</"
 "app>. You can then use the navigation buttons at the top of the pane to "
 "locate and open your desired files."
 msgstr ""
 "Dadurch wird der <em>Dateiverwaltungsmodus</em> der <app>Seitenleiste</app> "
-"aktiviert. Sie können dann die Navigationsknöpfe im oberen Bereich der Leiste "
-"verwenden, um nach den gewünschten Dateien zu suchen und sie zu öffnen."
+"aktiviert. Sie können dann die Navigationsknöpfe oben in der Seitenleiste "
+"verwenden, um die gewünschten Dateien zu suchen und zu öffnen."
 
 #: C/gedit-open-files-from-sidepane.page:45(section/title)
 msgid "Using the side pane to switch between open files"
@@ -551,9 +558,10 @@ msgstr "Verwenden der Seitenleiste zum Wechsel zwischen geöffneten Dateien"
 
 #: C/gedit-open-files-from-sidepane.page:46(section/p)
 msgid ""
-"Once you have several files open, you can use the side pane to switch between "
-"open files. To activate the file browser portion of the <app>side pane</app>, "
-"click on the <gui>file</gui> icon at the bottom of the <gui>side pane</gui>."
+"Once you have several files open, you can use the side pane to switch "
+"between open files. To activate the file browser portion of the <app>side "
+"pane</app>, click on the <gui>file</gui> icon at the bottom of the <gui>side "
+"pane</gui>."
 msgstr ""
 "Wenn mehrere Dateien geöffnet sind, können Sie die Seitenleiste zum Wechseln "
 "zwischen den geöffneten Dateien verwenden. Um die Dateiverwaltung in der "
@@ -562,8 +570,8 @@ msgstr ""
 
 #: C/gedit-open-files-from-sidepane.page:54(section/p)
 msgid ""
-"Clicking on any file name in the <gui>side pane</gui> will open that file for "
-"editing."
+"Clicking on any file name in the <gui>side pane</gui> will open that file "
+"for editing."
 msgstr ""
 "Durch Anklicken eines Dateinamens in der <gui>Seitenleiste</gui> wird diese "
 "Datei zur Bearbeitung geöffnet."
@@ -583,9 +591,9 @@ msgstr ""
 
 #: C/gedit-open-files.page:21(page/p)
 msgid ""
-"This will cause the <gui>Open Files</gui> dialog to appear. Use your mouse or "
-"keyboard to select the file that you wish to open, and then click <gui>Open</"
-"gui>. The file that you've selected will open in a new tab."
+"This will cause the <gui>Open Files</gui> dialog to appear. Use your mouse "
+"or keyboard to select the file that you wish to open, and then click "
+"<gui>Open</gui>. The file that you've selected will open in a new tab."
 msgstr ""
 "Daraufhin wird der <gui>Dateien öffnen</gui>-Dialog geöffnet. Wählen Sie mit "
 "der Maus oder der Tastatur die zu öffnende Datei aus und klicken Sie "
@@ -603,9 +611,9 @@ msgstr ""
 #: C/gedit-open-files.page:24(note/p)
 msgid ""
 "You can use the <key>Ctrl</key> and <key>Shift</key> keys to open more than "
-"one file at a time. If you hold down the <key>Ctrl</key> key while you select "
-"multiple files, clicking <gui>Open</gui> will open each of the files that you "
-"have selected."
+"one file at a time. If you hold down the <key>Ctrl</key> key while you "
+"select multiple files, clicking <gui>Open</gui> will open each of the files "
+"that you have selected."
 msgstr ""
 "Sie können mit der <key>Strg</key>-Taste und der <key>Umschalttaste</key> "
 "mehrere Dateien gleichzeitig öffnen. Halten Sie die <key>Strg</key>-Taste "
@@ -615,12 +623,12 @@ msgstr ""
 #: C/gedit-open-files.page:28(note/p)
 msgid ""
 "Holding down the <key>Shift</key> while you select multiple files will open "
-"the first file that you select, the last file that you select, and all of the "
-"files in between."
+"the first file that you select, the last file that you select, and all of "
+"the files in between."
 msgstr ""
 "Durch Gedrückthalten der <key>Umschalttaste</key> werden die erste gewählte "
-"Datei, die letzte gewählte Datei und alle in der Ansicht dazwischen liegenden "
-"Dateien geöffnet."
+"Datei, die letzte gewählte Datei und alle in der Ansicht dazwischen "
+"liegenden Dateien geöffnet."
 
 #: C/gedit-open-on-server.page:14(page/title)
 msgid "Open a file that is located on a server"
@@ -628,10 +636,10 @@ msgstr "Öffnen einer Datei auf einem Server"
 
 #: C/gedit-open-on-server.page:16(page/p)
 msgid ""
-"Prior to opening a file on a server from within <app>gedit</app>, you need to "
-"know some technical information about the server. For example, you will need "
-"to know the IP Address or URL of the server, and may need to know what kind "
-"of server it is (e.g., HTTP, FTP, etc.)."
+"Prior to opening a file on a server from within <app>gedit</app>, you need "
+"to know some technical information about the server. For example, you will "
+"need to know the IP Address or URL of the server, and may need to know what "
+"kind of server it is (e.g., HTTP, FTP, etc.)."
 msgstr ""
 "Vor dem Öffnen einer Datei in <app>gedit</app>, die sich auf einem Server "
 "befindet, sollten Sie über einige technische Informationen über den Server "
@@ -640,9 +648,9 @@ msgstr ""
 
 #: C/gedit-open-on-server.page:18(page/p)
 msgid ""
-"Also, some types of servers impose restrictions on what you can do with files "
-"stored on the server. For example, you may be able to open a file from a "
-"server, but may need to save any changes to the file locally, on your own "
+"Also, some types of servers impose restrictions on what you can do with "
+"files stored on the server. For example, you may be able to open a file from "
+"a server, but may need to save any changes to the file locally, on your own "
 "computer."
 msgstr ""
 "Außerdem schränken einige Servertypen die Nutzung der auf dem Server "
@@ -652,8 +660,8 @@ msgstr ""
 
 #: C/gedit-open-on-server.page:20(page/p)
 msgid ""
-"With these caveats in mind, perform the following steps to open a file from a "
-"server using <app>gedit</app>:"
+"With these caveats in mind, perform the following steps to open a file from "
+"a server using <app>gedit</app>:"
 msgstr ""
 "Führen Sie unter Beachtung dieser Beschränkungen die folgenden Schritte aus, "
 "um mit <app>gedit</app> eine Datei auf einem Server zu öffnen:"
@@ -672,8 +680,8 @@ msgid ""
 "Select the <gui>Pencil</gui> icon near the top of the <gui>Open Files</gui> "
 "dialog."
 msgstr ""
-"Wählen Sie das <gui>Bleistift</gui>-Symbol im oberen Bereich des <gui>Dateien "
-"auswählen</gui>-Dialogs."
+"Wählen Sie das <gui>Bleistift</gui>-Symbol im oberen Bereich des "
+"<gui>Dateien auswählen</gui>-Dialogs."
 
 #: C/gedit-open-on-server.page:25(item/p)
 msgid "Enter the IP Address or URL of the appropriate server."
@@ -762,9 +770,8 @@ msgstr ""
 
 #: C/gedit-open-recent.page:25(item/p)
 msgid ""
-"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</"
-"gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></"
-"guiseq>."
+"Launch <app>gconf-editor</app> and select <guiseq><gui>apps</gui><gui>gedit-"
+"2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></guiseq>."
 msgstr ""
 "Starten Sie <app>gconf-editor</app> und wählen Sie <guiseq><gui>apps</"
 "gui><gui>gedit-2</gui><gui>preferences</gui><gui>ui</gui><gui>recents</gui></"
@@ -789,8 +796,8 @@ msgid ""
 "separately."
 msgstr ""
 "Sie können mit Hilfe von Plugins mehr mit <app>gedit</app> tun. Verschiedene "
-"Plugins sind bereits standardmäßig installiert, außerdem sind weitere Plugins "
-"separat erhältlich."
+"Plugins sind bereits standardmäßig installiert, außerdem sind weitere "
+"Plugins separat erhältlich."
 
 #: C/gedit-plugin-guide.page:19(note/p)
 msgid ""
@@ -821,13 +828,13 @@ msgstr "Lesezeichen"
 #: C/gedit-plugins-bookmarks.page:18(page/p)
 msgid ""
 "Gedit bookmarks allow you to highlight important lines of text within your "
-"document or program, making them easier to find. You can also move up or down "
-"between bookmarks, making document navigation a bit faster."
+"document or program, making them easier to find. You can also move up or "
+"down between bookmarks, making document navigation a bit faster."
 msgstr ""
 "Lesezeichen in gedit ermöglichen Ihnen die Hervorhebung wichtiger Textzeilen "
-"innerhalb Ihres Dokuments oder Programms, um diese leichter finden zu können. "
-"Sie können auch innerhalb der Lesezeichen hin- und herblättern, wodurch die "
-"Navigation im Dokument etwas beschleunigt wird."
+"innerhalb Ihres Dokuments oder Programms, um diese leichter finden zu "
+"können. Sie können auch innerhalb der Lesezeichen hin- und herblättern, "
+"wodurch die Navigation im Dokument etwas beschleunigt wird."
 
 #: C/gedit-plugins-bookmarks.page:22(page/p)
 msgid ""
@@ -835,15 +842,16 @@ msgid ""
 "Preferences</gui><gui>Plugins</gui><gui>Bookmarks</gui></guiseq>."
 msgstr ""
 "Um das Lesezeichen-Plugin zu aktivieren, wählen Sie <guiseq><gui>Bearbeiten</"
-"gui><gui>Einstellungen</gui><gui>Plugins</gui><gui>Lesezeichen</gui></guiseq>."
+"gui><gui>Einstellungen</gui><gui>Plugins</gui><gui>Lesezeichen</gui></"
+"guiseq>."
 
 #: C/gedit-plugins-bookmarks.page:26(steps/title)
 msgid ""
 "Bookmarks are inserted and removed by completing the same action. To insert "
 "or remove bookmarks:"
 msgstr ""
-"Lesezeichen werden mit der gleichen Aktion hinzugefügt und entfernt. So fügen "
-"Sie Lesezeichen hinzu oder entfernen Sie sie:"
+"Lesezeichen werden mit der gleichen Aktion hinzugefügt und entfernt. So "
+"fügen Sie Lesezeichen hinzu oder entfernen Sie sie:"
 
 #: C/gedit-plugins-bookmarks.page:28(item/p)
 msgid "Navigate to the line where you want to insert or remove the bookmark."
@@ -874,8 +882,8 @@ msgstr ""
 
 #: C/gedit-plugins-bookmarks.page:39(item/p)
 msgid ""
-"Press <keyseq><key>Ctrl</key><key>Shift</key><key>B</key></keyseq> to move to "
-"the previous bookmark."
+"Press <keyseq><key>Ctrl</key><key>Shift</key><key>B</key></keyseq> to move "
+"to the previous bookmark."
 msgstr ""
 "Drücken Sie <keyseq><key>Strg</key><key>Umschalttaste</key><key>B</key></"
 "keyseq>, um zum vorigen Lesezeichen zu springen."
@@ -883,8 +891,8 @@ msgstr ""
 #: C/gedit-plugins-bookmarks.page:41(note/p)
 msgid ""
 "If you prefer using the mouse, you can click <guiseq><gui>Edit</gui> <gui>Go "
-"to Next Bookmark</gui></guiseq> or <guiseq><gui>Edit</gui><gui>Go to Previous "
-"Bookmark</gui></guiseq>."
+"to Next Bookmark</gui></guiseq> or <guiseq><gui>Edit</gui><gui>Go to "
+"Previous Bookmark</gui></guiseq>."
 msgstr ""
 "Falls Sie die Maus bevorzugen, wählen Sie <guiseq><gui>Bearbeiten</"
 "gui><gui>Nächstes Lesezeichen</gui></guiseq> oder <guiseq><gui>Bearbeiten</"
@@ -912,8 +920,8 @@ msgid ""
 "gui><gui>Plugins</gui><gui>Bracket Completion</gui></guiseq>."
 msgstr ""
 "Um das Plugin zu aktivieren, wählen Sie <guiseq><gui>Bearbeiten</"
-"gui><gui>Einstellungen</gui><gui>Plugins</gui><gui>Klammer-Vervollständigung</"
-"gui></guiseq>."
+"gui><gui>Einstellungen</gui><gui>Plugins</gui><gui>Klammer-"
+"Vervollständigung</gui></guiseq>."
 
 #: C/gedit-plugins-bracket-comp.page:21(note/p)
 msgid "This plugin does not automatically insert closing HTML or XML tags."
@@ -948,25 +956,26 @@ msgstr "Groß-/Kleinschreibung verändern"
 #: C/gedit-plugins-change-case.page:22(page/p)
 msgid ""
 "This plugin helps you to change the case of selected portions of text. You "
-"can use it to change text to be all lower case, all upper case, to invert the "
-"case, or apply title case. To enable this plugin, select <guiseq><gui>Edit</"
-"gui><gui>Preferences</gui><gui>Plugins</gui><gui>Change Case</gui></guiseq>."
+"can use it to change text to be all lower case, all upper case, to invert "
+"the case, or apply title case. To enable this plugin, select "
+"<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Change "
+"Case</gui></guiseq>."
 msgstr ""
 "Dieses Plugin hilft Ihnen dabei, für einen ausgewählten Textteil die Groß- "
-"und Kleinschreibung zu ändern. Sie können dabei alles in Kleinschreibung oder "
-"auch in Großschreibung ändern lassen, die Schreibweise umkehren oder auch nur "
-"die Anfangsbuchstaben jedes Wortes als Großbuchstaben darstellen lassen. Um "
-"dieses Plugin zu aktivieren, wählen Sie <guiseq><gui>Bearbeiten</"
+"und Kleinschreibung zu ändern. Sie können dabei alles in Kleinschreibung "
+"oder auch in Großschreibung ändern lassen, die Schreibweise umkehren oder "
+"auch nur die Anfangsbuchstaben jedes Wortes als Großbuchstaben darstellen "
+"lassen. Um dieses Plugin zu aktivieren, wählen Sie <guiseq><gui>Bearbeiten</"
 "gui><gui>Einstellungen</gui><gui>Plugins</gui><gui>Groß-/Kleinschreibung "
 "ändern</gui></guiseq>."
 
 #: C/gedit-plugins-change-case.page:24(page/p)
 msgid ""
-"Once the <em>Change Case</em> plugin is enabled, you can use it by completing "
-"the following steps:"
+"Once the <em>Change Case</em> plugin is enabled, you can use it by "
+"completing the following steps:"
 msgstr ""
-"Sobald das Plugin <em>Groß-/Kleinschreibung ändern</em> aktiviert ist, können "
-"Sie es zur Ausführung folgender Aufgaben verwenden:"
+"Sobald das Plugin <em>Groß-/Kleinschreibung ändern</em> aktiviert ist, "
+"können Sie es zur Ausführung folgender Aufgaben verwenden:"
 
 #: C/gedit-plugins-change-case.page:26(item/p)
 msgid "Highlight the portion of text that you want to change."
@@ -1001,8 +1010,8 @@ msgid ""
 "to upper case. All other letters will be converted to lower case."
 msgstr ""
 "Mit der Option <gui>Anfangsbuchstaben in Großschreibung</gui> wird jeder "
-"Anfangsbuchstabe eines Wortes groß geschrieben. Alle anderen Buchstaben eines "
-"Wortes werden dagegen klein geschrieben."
+"Anfangsbuchstabe eines Wortes groß geschrieben. Alle anderen Buchstaben "
+"eines Wortes werden dagegen klein geschrieben."
 
 #: C/gedit-plugins-change-case.page:36(note/p)
 msgid ""
@@ -1030,8 +1039,8 @@ msgstr "Zeichentabelle"
 #: C/gedit-plugins-character-map.page:29(page/p)
 msgid ""
 "The <app>Character Map</app> plugin enables you to insert characters into "
-"your document that you may not be able to type easily using your keyboard. To "
-"enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</"
+"your document that you may not be able to type easily using your keyboard. "
+"To enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</"
 "gui><gui>Plugins</gui><gui>Character Map</gui></guiseq>."
 msgstr ""
 "Das <app>Zeichentabelle</app>-Plugin ermöglicht Ihnen das Einfügen von "
@@ -1047,8 +1056,8 @@ msgstr "Die Zeichentabelle verwenden"
 #: C/gedit-plugins-character-map.page:34(section/p)
 msgid ""
 "Once the plugin is enabled, you can add characters from the <em>Character "
-"Map</em> tab of the side panel (<guiseq><gui>View</gui><gui>Side Panel</gui></"
-"guiseq>)."
+"Map</em> tab of the side panel (<guiseq><gui>View</gui><gui>Side Panel</"
+"gui></guiseq>)."
 msgstr ""
 "Sobald das Plugin aktiviert ist, können Sie Zeichen aus dem Reiter "
 "<em>Zeichentabelle</em> der Seitenleiste einfügen (<guiseq><gui>Ansicht</"
@@ -1080,7 +1089,8 @@ msgid ""
 "the list at the top of the <em>Character Map</em> tab (e.g., Arabic)."
 msgstr ""
 "Wenn nötig, wählen Sie in der Liste oben im Reiter <em>Zeichentabelle</em> "
-"den Zeichensatz aus, der Ihr Sonderzeichen enthält (beispielsweise Arabisch). "
+"den Zeichensatz aus, der Ihr Sonderzeichen enthält (beispielsweise "
+"Arabisch). "
 
 #: C/gedit-plugins-character-map.page:41(item/p)
 msgid "Double click your desired character to insert it."
@@ -1146,21 +1156,21 @@ msgid ""
 "understand a program's code, but they don't affect how a program works. "
 "Comments are separated from other parts of a program by special characters."
 msgstr ""
-"Quelltextkommentare sind Textbestandteile, die das Verstehen von Programmcode "
-"erleichtern, aber die Wirkungsweise eines Programms nicht beeinflussen. "
-"Kommentare werden von anderen Teilen eines Programms durch Sonderzeichen "
-"abgegrenzt."
+"Quelltextkommentare sind Textbestandteile, die das Verstehen von "
+"Programmcode erleichtern, aber die Wirkungsweise eines Programms nicht "
+"beeinflussen. Kommentare werden von anderen Teilen eines Programms durch "
+"Sonderzeichen abgegrenzt."
 
 #: C/gedit-plugins-code-comment.page:23(page/p)
 msgid ""
 "The <app>code comment</app> plugin makes it easier to quickly create or "
-"remove code comments. To enable the code comment plugin, select <guiseq><gui> "
-"Edit</gui><gui> Preferences</gui><gui>Plugins</gui><gui>Code comment</gui> </"
-"guiseq>."
+"remove code comments. To enable the code comment plugin, select "
+"<guiseq><gui> Edit</gui><gui> Preferences</gui><gui>Plugins</gui><gui>Code "
+"comment</gui> </guiseq>."
 msgstr ""
 "Das <app>Quelltextkommentar</app>-Plugin erleichtert Ihnen die Erstellung "
-"oder Entfernung von Quelltextkommentaren. Um das Quelltextkommentar-Plugin zu "
-"aktivieren, wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</"
+"oder Entfernung von Quelltextkommentaren. Um das Quelltextkommentar-Plugin "
+"zu aktivieren, wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</"
 "gui><gui>Plugins</gui><gui>Quelltextkommentar</gui></guiseq>."
 
 #: C/gedit-plugins-code-comment.page:28(page/p)
@@ -1168,7 +1178,8 @@ msgid "To create or remove a comment:"
 msgstr "So erzeugen oder entfernen Sie einen Kommentar:"
 
 #: C/gedit-plugins-code-comment.page:30(item/p)
-msgid "Highlight the portion of text where you want to add or remove a comment."
+msgid ""
+"Highlight the portion of text where you want to add or remove a comment."
 msgstr ""
 "Markieren Sie den Bereich des Texts, wo Sie einen Kommentar hinzufügen oder "
 "entfernen wollen."
@@ -1194,20 +1205,21 @@ msgstr ""
 
 #: C/gedit-plugins-code-comment.page:39(note/p)
 msgid ""
-"<app>Gedit</app> will automatically use the correct style of comment based on "
-"the language or syntax of the file. If <app>gedit </app> doesn't identify "
+"<app>Gedit</app> will automatically use the correct style of comment based "
+"on the language or syntax of the file. If <app>gedit </app> doesn't identify "
 "your language or syntax, you can select it from the language list in the "
 "bottom <gui>Status bar</gui>."
 msgstr ""
-"<app>Gedit</app> verwendet automatisch den korrekten Kommentarstil, ausgehend "
-"von der Sprache oder der Syntax der Datei. Falls <app>gedit</app> die Sprache "
-"oder Syntax nicht erkennt, dann können Sie sie in einer Liste in der "
-"<gui>Statusleiste</gui> unten auswählen."
+"<app>Gedit</app> verwendet automatisch den korrekten Kommentarstil, "
+"ausgehend von der Sprache oder der Syntax der Datei. Falls <app>gedit</app> "
+"die Sprache oder Syntax nicht erkennt, dann können Sie sie in einer Liste in "
+"der <gui>Statusleiste</gui> unten auswählen."
 
 #: C/gedit-plugins-color-picker.page:13(info/desc)
 msgid "Pick a color from a dialog and insert its hexadecimal representation"
 msgstr ""
-"Eine Farbe in einem Dialog auswählen und deren Hexadezimaldarstellung einfügen"
+"Eine Farbe in einem Dialog auswählen und deren Hexadezimaldarstellung "
+"einfügen"
 
 #: C/gedit-plugins-color-picker.page:16(page/title)
 msgid "Color picker"
@@ -1216,8 +1228,8 @@ msgstr "Farbwähler"
 #: C/gedit-plugins-color-picker.page:18(page/p)
 msgid ""
 "The <app>color picker</app> plugin helps you to insert the character codes "
-"that represent a certain color. This can make it easier to choose and use the "
-"correct color in your programs."
+"that represent a certain color. This can make it easier to choose and use "
+"the correct color in your programs."
 msgstr ""
 "Das <app>Farbwähler</app>-Plugin hilft Ihnen dabei, Zeichencodes einzufügen, "
 "die eine bestimmte Farbe darstellen. Dadurch wird die richtige Auswahl der "
@@ -1226,7 +1238,8 @@ msgstr ""
 #: C/gedit-plugins-color-picker.page:22(page/p)
 msgid ""
 "To enable the color picker plugin, select <guiseq><gui> Edit</"
-"gui><gui>Preferences</gui><gui>Plugins</gui><gui>Color Picker</gui> </guiseq>."
+"gui><gui>Preferences</gui><gui>Plugins</gui><gui>Color Picker</gui> </"
+"guiseq>."
 msgstr ""
 "Um das Farbwähler-Plugin zu aktivieren, wählen Sie <guiseq><gui>Bearbeiten</"
 "gui><gui>Einstellungen</gui><gui>Plugins</gui><gui>Farbwähler</gui></guiseq>."
@@ -1267,8 +1280,8 @@ msgstr "Ihr Mauszeiger verändert nun sein Aussehen in eine Farbpipette."
 #: C/gedit-plugins-color-picker.page:36(item/p)
 msgid ""
 "Use the eyedropper and click on the portion of your screen that contains the "
-"color you want to use. The color code for that color will appear in the color "
-"picker window."
+"color you want to use. The color code for that color will appear in the "
+"color picker window."
 msgstr ""
 "Klicken Sie mit der Pipette auf jenen Teil des Bildschirms, der die zu "
 "verwendende Farbe enthält. Der Code für diese Farbe wird im Farbwähler-"
@@ -1279,8 +1292,9 @@ msgid ""
 "To insert that color code into your document, click <gui> Insert</gui>. The "
 "code will be inserted where you had placed your cursor."
 msgstr ""
-"Um diesen Farbcode in Ihr Dokument einzufügen, klicken Sie auf <gui>Einfügen</"
-"gui>. Der Code wird an der Position der Eingabemarke eingefügt."
+"Um diesen Farbcode in Ihr Dokument einzufügen, klicken Sie auf "
+"<gui>Einfügen</gui>. Der Code wird an der Position der Eingabemarke "
+"eingefügt."
 
 #: C/gedit-plugins-color-picker.page:42(item/p)
 msgid "To close the <app>color picker</app>, click <gui>Close</gui>."
@@ -1319,20 +1333,20 @@ msgstr "Commander"
 #: C/gedit-plugins-commander.page:19(page/p)
 msgid ""
 "The <app>Commander</app> plugin is a plugin for advanced <app>gedit</app> "
-"users that allows you to perform command-line actions on the current file. To "
-"enable the commander plugin, select <guiseq><gui>Edit</gui><gui> Preferences</"
-"gui><gui>Plugins</gui><gui>Commander</gui></guiseq>."
+"users that allows you to perform command-line actions on the current file. "
+"To enable the commander plugin, select <guiseq><gui>Edit</gui><gui> "
+"Preferences</gui><gui>Plugins</gui><gui>Commander</gui></guiseq>."
 msgstr ""
-"Das <app>Commander</app>-Plugin richtet sich an fortgeschrittene Benutzer von "
-"<app>gedit</app>. Es ermöglicht Ihnen die Ausführung von "
+"Das <app>Commander</app>-Plugin richtet sich an fortgeschrittene Benutzer "
+"von <app>gedit</app>. Es ermöglicht Ihnen die Ausführung von "
 "Befehlszeilenaktionen für die aktuell geöffnete Datei. Um dieses Plugin zu "
 "aktivieren, wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</"
 "gui><gui>Plugins</gui><gui>Commander</gui></guiseq>."
 
 #: C/gedit-plugins-commander.page:24(page/p)
 msgid ""
-"Once you have enabled the plugin, activate it by pressing <keyseq><key> Ctrl</"
-"key><key>.</key></keyseq>."
+"Once you have enabled the plugin, activate it by pressing <keyseq><key> "
+"Ctrl</key><key>.</key></keyseq>."
 msgstr ""
 "Sobald das Plugin eingerichtet ist, aktivieren Sie es durch Drücken von "
 "<keyseq><key>Strg</key><key>.</key></keyseq>."
@@ -1341,17 +1355,17 @@ msgstr ""
 msgid "The last key in the above key combination is a period."
 msgstr "Die letzte Taste in der genannten Tastenkombination ist ein Punkt."
 
-#: C/gedit-plugins-commander.page:33(td/p) C/gedit-shortcut-keys.page:53(td/p)
-#: C/gedit-shortcut-keys.page:85(td/p) C/gedit-shortcut-keys.page:123(td/p)
-#: C/gedit-shortcut-keys.page:164(td/p) C/gedit-shortcut-keys.page:184(td/p)
-#: C/gedit-shortcut-keys.page:216(td/p) C/gedit-shortcut-keys.page:242(td/p)
+#: C/gedit-plugins-commander.page:33(td/p) C/gedit-shortcut-keys.page:56(td/p)
+#: C/gedit-shortcut-keys.page:88(td/p) C/gedit-shortcut-keys.page:124(td/p)
+#: C/gedit-shortcut-keys.page:168(td/p) C/gedit-shortcut-keys.page:186(td/p)
+#: C/gedit-shortcut-keys.page:217(td/p) C/gedit-shortcut-keys.page:243(td/p)
 msgid "To Do This"
 msgstr "Um dies zu tun"
 
-#: C/gedit-plugins-commander.page:33(td/p) C/gedit-shortcut-keys.page:53(td/p)
-#: C/gedit-shortcut-keys.page:85(td/p) C/gedit-shortcut-keys.page:123(td/p)
-#: C/gedit-shortcut-keys.page:164(td/p) C/gedit-shortcut-keys.page:184(td/p)
-#: C/gedit-shortcut-keys.page:216(td/p) C/gedit-shortcut-keys.page:242(td/p)
+#: C/gedit-plugins-commander.page:33(td/p) C/gedit-shortcut-keys.page:56(td/p)
+#: C/gedit-shortcut-keys.page:88(td/p) C/gedit-shortcut-keys.page:124(td/p)
+#: C/gedit-shortcut-keys.page:168(td/p) C/gedit-shortcut-keys.page:186(td/p)
+#: C/gedit-shortcut-keys.page:217(td/p) C/gedit-shortcut-keys.page:243(td/p)
 msgid "Press This"
 msgstr "Drücken Sie dies"
 
@@ -1407,11 +1421,12 @@ msgstr "bookmark <em>oder</em> einfach <em>b</em>"
 msgid ""
 "Some commands, such as the <app>bookmark</app> command require that the "
 "appropriate plugin be installed and activated. If you do not have the "
-"appropriate plugin installed and activated, you will receive an error message."
+"appropriate plugin installed and activated, you will receive an error "
+"message."
 msgstr ""
 "Einige Befehle, wie beispielsweise <app>bookmark</app>, setzen voraus, das "
-"das entsprechende Plugin installiert und aktiviert ist. Sollte dies nicht der "
-"Fall sein, erhalten Sie eine Fehlermeldung."
+"das entsprechende Plugin installiert und aktiviert ist. Sollte dies nicht "
+"der Fall sein, erhalten Sie eine Fehlermeldung."
 
 #: C/gedit-plugins-dashboard.page:13(info/desc)
 msgid "Display recently-used and most-used files on startup"
@@ -1426,8 +1441,8 @@ msgid ""
 "The <app>Dashboard</app> plugin provides quick access to your most recently-"
 "used files and most-frequently used files. To activate the <app>Dashboard</"
 "app> plugin, select <keyseq><key>Edit</key><key> Preferences</"
-"key><key>Plugins</key><key>Dashboard</key></keyseq>. You will need to restart "
-"<app>gedit</app> to activate the <app>Dashboard</app> plugin."
+"key><key>Plugins</key><key>Dashboard</key></keyseq>. You will need to "
+"restart <app>gedit</app> to activate the <app>Dashboard</app> plugin."
 msgstr ""
 
 #: C/gedit-plugins-dashboard.page:25(page/p)
@@ -1461,17 +1476,12 @@ msgid ""
 msgstr ""
 
 #: C/gedit-plugins-dashboard.page:43(note/p)
-#, fuzzy
 msgid ""
 "Once activated, the <app>dashboard</app> will be displayed by default when "
 "you open <app>gedit</app>. You can also open the <app>dashboard</app> by "
 "clicking <guiseq><gui>File</gui><gui>New</gui> </guiseq>, or by pressing "
 "<keyseq><key>Ctrl</key><key>N</key></keyseq>."
 msgstr ""
-"Um eine Datei in <app>gedit</app> zu speichern, klicken Sie auf das "
-"Laufwerkssymbol mit der Beschriftung <gui>Speichern</gui>. Sie können auch "
-"direkt <guiseq><gui>Datei</gui><gui>Speichern</gui></guiseq> wählen oder "
-"<keyseq><key>Strg</key><key>S</key></keyseq> drücken."
 
 #: C/gedit-plugins-doc-stats.page:16(info/desc)
 msgid "View document statistics"
@@ -1483,10 +1493,10 @@ msgstr "Statistiken zum Dokument"
 
 #: C/gedit-plugins-doc-stats.page:21(page/p)
 msgid ""
-"The <em>Document Statistics</em> plugin can show you various statistics about "
-"your current document. To enable this plugin, select <guiseq><gui>Edit</"
-"gui><gui>Preferences</gui><gui>Plugins</gui><gui>Document Statisics</gui></"
-"guiseq>."
+"The <em>Document Statistics</em> plugin can show you various statistics "
+"about your current document. To enable this plugin, select "
+"<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Document "
+"Statisics</gui></guiseq>."
 msgstr ""
 "Das <em>Statistik zum Dokument</em>-Plugin zeigt Ihnen verschiedene "
 "statistische Werte zu Ihrem aktuell geöffneten Dokument an. Um dieses Plugin "
@@ -1523,9 +1533,9 @@ msgstr ""
 "Informationen nur über einen bestimmten Teil eines Dokuments anzuzeigen. "
 "Markieren Sie hierzu mit der Maus den Teil des Textes, der untersucht werden "
 "soll. Wählen Sie anschließend <guiseq><gui>Werkzeuge</gui><gui>Statistik zum "
-"Dokument</gui></guiseq>. <app>Gedit</app> zeigt daraufhin sowohl statistische "
-"Informationen für das gesamte Dokument als auch für den von Ihnen markierten "
-"Teil an."
+"Dokument</gui></guiseq>. <app>Gedit</app> zeigt daraufhin sowohl "
+"statistische Informationen für das gesamte Dokument als auch für den von "
+"Ihnen markierten Teil an."
 
 #: C/gedit-plugins-draw-spaces.page:13(info/desc)
 msgid "Show white space between words or portions of code"
@@ -1551,14 +1561,15 @@ msgstr ""
 #: C/gedit-plugins-draw-spaces.page:23(page/p)
 msgid ""
 "To enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</gui> "
-"<gui>Plugins</gui><gui>Draw Spaces</gui></guiseq>. After you have enabled the "
-"plugin, you can set its options by highlighting the plugin and selecting "
+"<gui>Plugins</gui><gui>Draw Spaces</gui></guiseq>. After you have enabled "
+"the plugin, you can set its options by highlighting the plugin and selecting "
 "<gui>Preferences</gui>."
 msgstr ""
 "Um dieses Plugin zu aktivieren, wählen Sie <guiseq><gui>Bearbeiten</"
 "gui><gui>Einstellungen</gui><gui>Plugins</gui><gui>Leerzeichen darstellen</"
 "gui></guiseq>. Sobald Sie das Plugin aktiviert haben, können Sie dessen "
-"Optionen anpassen, indem Sie es markieren und <gui>Einstellungen</gui> wählen."
+"Optionen anpassen, indem Sie es markieren und <gui>Einstellungen</gui> "
+"wählen."
 
 #: C/gedit-plugins-draw-spaces.page:27(list/title)
 msgid ""
@@ -1612,8 +1623,8 @@ msgstr ""
 #: C/gedit-plugins-external-tools.page:18(info/desc)
 msgid "Run scripts on your current files, and interact with other applications"
 msgstr ""
-"Skripte mit Ihren gegenwärtigen Dateien ausführen und mit anderen Anwendungen "
-"interagieren"
+"Skripte mit Ihren gegenwärtigen Dateien ausführen und mit anderen "
+"Anwendungen interagieren"
 
 #: C/gedit-plugins-external-tools.page:22(page/title)
 msgid "External tools"
@@ -1630,8 +1641,8 @@ msgid ""
 msgstr ""
 "Das Plugin <em>Externe Werkzeuge</em> kann Ihnen dabei helfen, häufig "
 "wiederkehrende Aufgaben zu vereinfachen. Im einzelnen handelt es sich dabei "
-"um Erweiterungen für <app>gedit</app> zum Anwenden von Skripten beim Arbeiten "
-"mit Dateien oder für die Interaktion mit anderen auf Ihrem Rechner "
+"um Erweiterungen für <app>gedit</app> zum Anwenden von Skripten beim "
+"Arbeiten mit Dateien oder für die Interaktion mit anderen auf Ihrem Rechner "
 "installierten Programmen. Um das <em>Externe Werkzeuge</em>-Plugin zu "
 "aktivieren, wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</"
 "gui><gui>Plugins</gui><gui>Externe Werkzeuge</gui></guiseq>."
@@ -1671,9 +1682,10 @@ msgstr "Dateiverwaltungsleiste"
 
 #: C/gedit-plugins-file-browser.page:21(page/p)
 msgid ""
-"Depending on how you use <app>gedit</app>, you may find it helpful to use the "
-"<app>File Browser pane</app> plugin. This plugin embeds a <app>file browser</"
-"app> in the side pane, giving you easy access to your frequently-used files."
+"Depending on how you use <app>gedit</app>, you may find it helpful to use "
+"the <app>File Browser pane</app> plugin. This plugin embeds a <app>file "
+"browser</app> in the side pane, giving you easy access to your frequently-"
+"used files."
 msgstr ""
 "Abhängig davon, wie Sie <app>gedit</app> verwenden, könnte das "
 "<app>Dateiverwaltungsleiste</app>-Plugin nützlich sein. Dieses Plugin bettet "
@@ -1701,16 +1713,6 @@ msgstr ""
 "<key>F9</key>. Dann klicken Sie an der Unterseite der Seitenleiste auf den "
 "Reiter mit dem <gui>Dateiverwaltung</gui>-Symbol."
 
-#: C/gedit-plugins-file-browser.page:35(section/p)
-msgid ""
-"This will activate the <em>file-browser</em> mode of the <app>side pane</"
-"app>. You can then use the navigation buttons at the top of the pane to "
-"locate and open your desired files."
-msgstr ""
-"Dadurch wird der <em>Dateiverwaltungsmodus</em> der <app>Seitenleiste</app> "
-"aktiviert. Sie können dann die Navigationsknöpfe oben in der Seitenleiste "
-"verwenden, um die gewünschten Dateien zu suchen und zu öffnen."
-
 #: C/gedit-plugins-insert-date-time.page:17(info/desc)
 msgid "Insert the current date/time at the cursor position"
 msgstr ""
@@ -1726,15 +1728,16 @@ msgid ""
 "allows you to insert the date and/or time at the current cursor position. To "
 "enable this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</"
 "gui><gui>Plugins</gui><gui>Insert Date/Time</gui></guiseq>. To use the "
-"plugin, press <guiseq><gui>Edit</gui><gui>Insert Date and Time</gui></guiseq>."
-msgstr ""
-"Wie der Name bereits andeutet, ermöglicht Ihnen das Plugin <gui>Datum/Uhrzeit "
-"einfügen</gui> das Einfügen des aktuellen Datums und/oder der Uhrzeit an der "
-"Position der Eingabemarke. Um das Plugin zu aktivieren, wählen Sie "
-"<guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>Plugins</"
-"gui><gui>Datum/Uhrzeit einfügen</gui></guiseq>. Um das Plugin zu verwenden, "
-"wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Datum/Uhrzeit einfügen</gui></"
+"plugin, press <guiseq><gui>Edit</gui><gui>Insert Date and Time</gui></"
 "guiseq>."
+msgstr ""
+"Wie der Name bereits andeutet, ermöglicht Ihnen das Plugin <gui>Datum/"
+"Uhrzeit einfügen</gui> das Einfügen des aktuellen Datums und/oder der "
+"Uhrzeit an der Position der Eingabemarke. Um das Plugin zu aktivieren, "
+"wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</"
+"gui><gui>Plugins</gui><gui>Datum/Uhrzeit einfügen</gui></guiseq>. Um das "
+"Plugin zu verwenden, wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Datum/"
+"Uhrzeit einfügen</gui></guiseq>."
 
 #: C/gedit-plugins-insert-date-time.page:24(page/p)
 msgid ""
@@ -1762,10 +1765,10 @@ msgstr "Zusätzliche gedit-Plugins"
 #: C/gedit-plugins-install.page:20(page/p)
 msgid ""
 "Installing third-party plugins gives you extra functionality that isn't "
-"available in default <app>gedit</app> plugins, or even the extra plugins that "
-"are part of the <app>gedit-plugins</app> package. An online list of third-"
-"party plugins is <link href=\"http://live.gnome.org/Gedit/Plugins#third_party"
-"\">kept here</link>."
+"available in default <app>gedit</app> plugins, or even the extra plugins "
+"that are part of the <app>gedit-plugins</app> package. An online list of "
+"third-party plugins is <link href=\"http://live.gnome.org/Gedit/"
+"Plugins#third_party\">kept here</link>."
 msgstr ""
 "Durch Installation von Plugins von Drittanbietern wird zusätzliche "
 "Funktionalität ermöglicht, die standardmäßig nicht in <app>gedit</app> oder "
@@ -1778,8 +1781,8 @@ msgid ""
 "Installing a third-party plugin involves downloading the plugin, placing the "
 "plugin files in the right directory, and activating the plugin."
 msgstr ""
-"Um ein Drittanbieter-Plugin zu installieren, müssen Sie es herunterladen, die "
-"Dateien am richtigen Ort platzieren und das Plugin aktivieren."
+"Um ein Drittanbieter-Plugin zu installieren, müssen Sie es herunterladen, "
+"die Dateien am richtigen Ort platzieren und das Plugin aktivieren."
 
 #: C/gedit-plugins-install.page:31(item/p)
 msgid ""
@@ -1791,8 +1794,8 @@ msgid ""
 msgstr ""
 "Üblicherweise können Sie ein Plugin von dessen Webseite herunterladen, wofür "
 "eventuell ein Versionsverwaltungsprogramm wie <app>git</app>, <app>bazaar</"
-"app> oder <app>subversion</app> nötig sein könnte, um den Softwarebestand des "
-"Plugins aus dem Internet kopieren zu können. Schauen Sie für weitere "
+"app> oder <app>subversion</app> nötig sein könnte, um den Softwarebestand "
+"des Plugins aus dem Internet kopieren zu können. Schauen Sie für weitere "
 "Informationen in der Dokumentation zu dem Plugin nach."
 
 #: C/gedit-plugins-install.page:36(item/p)
@@ -1811,15 +1814,15 @@ msgstr ""
 
 #: C/gedit-plugins-install.page:41(item/p)
 msgid ""
-"After you have placed the plugin files into the correct directory, the plugin "
-"will appear in the Preferences menu. Select <guiseq><gui>Edit </"
+"After you have placed the plugin files into the correct directory, the "
+"plugin will appear in the Preferences menu. Select <guiseq><gui>Edit </"
 "gui><gui>Preferences</gui><gui>Plugins</gui><gui>[Name of Plugin]</gui> </"
 "guiseq> to enable the plugin."
 msgstr ""
 "Sobald Sie die Plugin-Dateien im richtigen Ordner installiert haben, "
-"erscheint das Plugin im Einstellungsmenü. Wählen Sie <guiseq><gui>Bearbeiten</"
-"gui><gui>Einstellungen</gui><gui>Plugins</gui><gui>[Name des Plugins]</gui></"
-"guiseq>, um es zu aktivieren."
+"erscheint das Plugin im Einstellungsmenü. Wählen Sie "
+"<guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>Plugins</gui><gui>"
+"[Name des Plugins]</gui></guiseq>, um es zu aktivieren."
 
 #: C/gedit-plugins-install.page:45(item/p)
 #: C/gedit-plugins-session-saver.page:46(item/p)
@@ -1838,10 +1841,10 @@ msgid ""
 "hidden files, select <guiseq><gui>View</gui><gui>Show Hidden Files</gui></"
 "guiseq>, or press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
 msgstr ""
-"Der Ordner <file>.local</file> ist standardmäßig verborgen. Um ihn und andere "
-"verborgene Dateien sichtbar zu machen, wählen Sie <guiseq><gui>Ansicht</"
-"gui><gui>Verborgene Dateien anzeigen</gui></guiseq> oder drücken Sie "
-"<keyseq><key>Strg</key><key>H</key></keyseq>."
+"Der Ordner <file>.local</file> ist standardmäßig verborgen. Um ihn und "
+"andere verborgene Dateien sichtbar zu machen, wählen Sie "
+"<guiseq><gui>Ansicht</gui><gui>Verborgene Dateien anzeigen</gui></guiseq> "
+"oder drücken Sie <keyseq><key>Strg</key><key>H</key></keyseq>."
 
 #: C/gedit-plugins-install.page:59(note/p)
 msgid ""
@@ -1861,8 +1864,8 @@ msgstr "Zeilen zusammenfügen/umbrechen"
 
 #: C/gedit-plugins-join-split-lines.page:18(page/p)
 msgid ""
-"The <app>Join/Split Lines</app> plugin can join shorter lines into one longer "
-"line, or can split a long line into multiple shorter lines."
+"The <app>Join/Split Lines</app> plugin can join shorter lines into one "
+"longer line, or can split a long line into multiple shorter lines."
 msgstr ""
 "Das <app>Zeilen zusammenfügen/umbrechen</app>-Plugin kann kurze Zeilen zu "
 "einer längeren Zeile zusammenfassen oder längere Zeilen in kürzere Zeilen "
@@ -1883,8 +1886,8 @@ msgstr "So fügen Sie mehrere Zeilen zu einer längeren Zeile zusammen:"
 
 #: C/gedit-plugins-join-split-lines.page:26(item/p)
 msgid ""
-"Select the lines that you want to join. To do this, you can use the mouse, or "
-"you can press <keyseq><key>Shift</key><key>Up Arrow</key> </keyseq> or "
+"Select the lines that you want to join. To do this, you can use the mouse, "
+"or you can press <keyseq><key>Shift</key><key>Up Arrow</key> </keyseq> or "
 "<keyseq><key>Shift</key><key>Down Arrow</key></keyseq>."
 msgstr ""
 "Wählen Sie die Zeilen, die Sie zusammenführen wollen. Dazu können Sie "
@@ -1921,8 +1924,8 @@ msgstr ""
 #: C/gedit-plugins-join-split-lines.page:41(item/p)
 msgid ""
 "The line will be split into multiple lines. Spaces are used to determine "
-"where it is safe to split a line, and the length of each line will not exceed "
-"80 characters."
+"where it is safe to split a line, and the length of each line will not "
+"exceed 80 characters."
 msgstr ""
 "Die Zeile wird in mehrere Zeilen unterteilt. Leerzeichen werden dazu "
 "verwendet, einen sicheren Platz zum Teilen der Zeile zu finden. Die Länge "
@@ -1940,13 +1943,13 @@ msgstr "Modelines"
 msgid ""
 "The <app>Modelines</app> plugin allows <app>gedit</app> to analyze the lines "
 "of text at the start and end of a file, and then apply a set of document "
-"preferences to the file. The <app>Modelines</app> plugin supports a subset of "
-"the options used by the <app>Emacs</app>, <app>Kate</app> and <app>Vim</app> "
-"text editors."
+"preferences to the file. The <app>Modelines</app> plugin supports a subset "
+"of the options used by the <app>Emacs</app>, <app>Kate</app> and <app>Vim</"
+"app> text editors."
 msgstr ""
 "Das <app>Modelines</app>-Plugin ermöglicht <app>gedit</app> die Analyse von "
-"bestimmten Textzeilen am Beginn und Ende einer Datei, wodurch dort enthaltene "
-"Dokumenteinstellungen auf die Datei angewendet werden können. Das "
+"bestimmten Textzeilen am Beginn und Ende einer Datei, wodurch dort "
+"enthaltene Dokumenteinstellungen auf die Datei angewendet werden können. Das "
 "<app>Modelines</app>-Plugin unterstützt einen Teil der von den Editoren "
 "<app>Emacs</app>, <app>Kate</app> und <app>Vim</app> verwendeten Optionen."
 
@@ -2003,8 +2006,9 @@ msgstr "Emacs-Modelines"
 
 #: C/gedit-plugins-modelines.page:42(section/p)
 msgid ""
-"The first two lines of a document are scanned for <app>Emacs</app> modelines, "
-"and <app>gedit</app> supports the following <app>Emacs</app> modeline options:"
+"The first two lines of a document are scanned for <app>Emacs</app> "
+"modelines, and <app>gedit</app> supports the following <app>Emacs</app> "
+"modeline options:"
 msgstr ""
 "Die ersten zwei Zeilen eines Dokuments werden für <app>Emacs</app>-Modelines "
 "eingelesen, wobei <app>gedit</app> die folgenden Modelines von <app>Emacs</"
@@ -2075,8 +2079,8 @@ msgid ""
 "For more information about <app>Kate</app> modelines, visit the <link href="
 "\"http://kate-editor.org/\">Kate website</link>."
 msgstr ""
-"Weitere Informationen über <app>Kate</app>-Modelines finden Sie auf der <link "
-"href=\"http://kate-editor.org/\">Kate-Website</link>."
+"Weitere Informationen über <app>Kate</app>-Modelines finden Sie auf der "
+"<link href=\"http://kate-editor.org/\">Kate-Website</link>."
 
 #: C/gedit-plugins-modelines.page:69(section/title)
 msgid "Vim Modelines"
@@ -2135,8 +2139,8 @@ msgstr "Mehrfachbearbeitung"
 #: C/gedit-plugins-multi-edit.page:19(page/p)
 msgid ""
 "The <app>Multi Edit</app> plugin allows you to edit a document in multiple "
-"places at once. This can be helpful when performing tedious editing tasks. To "
-"enable the Multi Edit plugin, select <guiseq><gui>Edit</gui><gui> "
+"places at once. This can be helpful when performing tedious editing tasks. "
+"To enable the Multi Edit plugin, select <guiseq><gui>Edit</gui><gui> "
 "Preferences</gui><gui>Plugins</gui><gui>Multi Edit</gui></guiseq>."
 msgstr ""
 "Das <app>Mehrfachbearbeitung</app>-Plugin ermöglicht Ihnen die Bearbeitung "
@@ -2166,7 +2170,8 @@ msgstr "So fügen Sie Bearbeitungspunkte in Ihre Datei ein:"
 #: C/gedit-plugins-multi-edit.page:31(item/p)
 msgid "Place your cursor at your first desired editing point."
 msgstr ""
-"Platzieren Sie den Eingabezeiger am ersten der gewünschten Bearbeitungspunkte."
+"Platzieren Sie den Eingabezeiger am ersten der gewünschten "
+"Bearbeitungspunkte."
 
 #: C/gedit-plugins-multi-edit.page:32(item/p)
 msgid "Press <keyseq><key>Ctrl</key><key>E</key></keyseq>."
@@ -2285,7 +2290,8 @@ msgstr "Der Dialog <gui>Schnelles Öffnen</gui> erscheint."
 #: C/gedit-plugins-quick-open.page:30(item/p)
 msgid "Use your mouse to select the file or files that you want to open."
 msgstr ""
-"Wählen Sie mit der Maus die Datei oder die Dateien aus, die Sie öffnen wollen."
+"Wählen Sie mit der Maus die Datei oder die Dateien aus, die Sie öffnen "
+"wollen."
 
 #: C/gedit-plugins-quick-open.page:32(item/p)
 msgid ""
@@ -2301,9 +2307,9 @@ msgid ""
 "hold down the <key>Shift</key> key, and then click on the last file in the "
 "list that you want to open."
 msgstr ""
-"Um eine Gruppe von Dateien auszuwählen, klicken Sie auf die erste zu öffnende "
-"Datei, halten Sie die <key>Umschalttaste</key> gedrückt und klicken Sie dann "
-"auf die letzte Datei in der Liste, die Sie auswählen wollen."
+"Um eine Gruppe von Dateien auszuwählen, klicken Sie auf die erste zu "
+"öffnende Datei, halten Sie die <key>Umschalttaste</key> gedrückt und klicken "
+"Sie dann auf die letzte Datei in der Liste, die Sie auswählen wollen."
 
 #: C/gedit-plugins-quick-open.page:40(note/p)
 msgid ""
@@ -2362,7 +2368,8 @@ msgstr "So öffnen Sie eine existierende Sitzung:"
 #: C/gedit-plugins-session-saver.page:34(item/p)
 msgid "Select <guiseq><gui>File</gui><gui>Saved Sessions</gui></guiseq>."
 msgstr ""
-"Wählen Sie <guiseq><gui>Datei</gui><gui>Gespeicherte Sitzungen</gui></guiseq>."
+"Wählen Sie <guiseq><gui>Datei</gui><gui>Gespeicherte Sitzungen</gui></"
+"guiseq>."
 
 #: C/gedit-plugins-session-saver.page:36(item/p)
 msgid "Click the name of your desired session."
@@ -2406,11 +2413,11 @@ msgstr "Schnipsel"
 
 #: C/gedit-plugins-snippets-guide.page:16(page/p)
 msgid ""
-"<app>Snippets</app> provide a convenient way of inserting repetitive portions "
-"of code into your files. For example, an HTML snippet for the <code>&lt;"
-"img&gt;</code> tag would insert the opening and closing portions of the tag, "
-"as well as fixed places where you can enter image attributes. This can make "
-"writing code easier and faster."
+"<app>Snippets</app> provide a convenient way of inserting repetitive "
+"portions of code into your files. For example, an HTML snippet for the "
+"<code>&lt;img&gt;</code> tag would insert the opening and closing portions "
+"of the tag, as well as fixed places where you can enter image attributes. "
+"This can make writing code easier and faster."
 msgstr ""
 "<app>Schnipsel</app> bieten eine bequeme Möglichkeit, wiederkehrende Code-"
 "Teile in Ihre Dateien einzufügen. Beispielsweise fügt ein HTML-Schnipsel für "
@@ -2499,11 +2506,11 @@ msgstr "Probieren Sie einige der Schnipsel aus."
 
 #: C/gedit-plugins-snippets.page:46(item/p)
 msgid ""
-"For example, if you set the syntax to <em>HTML</em>, type <code>head </code>, "
-"and press the <key>Tab</key> key, you should see something like this:"
+"For example, if you set the syntax to <em>HTML</em>, type <code>head </"
+"code>, and press the <key>Tab</key> key, you should see something like this:"
 msgstr ""
-"Wenn Sie die Syntax beispielsweise auf <em>HTML</em> gesetzt haben, geben Sie "
-"<code>head</code> ein und drücken Sie die <key>Tabulatortaste</key>, "
+"Wenn Sie die Syntax beispielsweise auf <em>HTML</em> gesetzt haben, geben "
+"Sie <code>head</code> ein und drücken Sie die <key>Tabulatortaste</key>, "
 "woraufhin Folgendes erscheinen sollte:"
 
 #: C/gedit-plugins-snippets.page:51(page/code)
@@ -2534,7 +2541,8 @@ msgid "Sort"
 msgstr "Sortieren"
 
 #: C/gedit-plugins-sort.page:21(page/p)
-msgid "The Sort plugin arranges selected lines of text into alphabetical order."
+msgid ""
+"The Sort plugin arranges selected lines of text into alphabetical order."
 msgstr ""
 "Das Plugin <app>Sortieren</app> sortiert ausgewählte Textzeilen in "
 "alphabetischer Reihenfolge."
@@ -2549,8 +2557,9 @@ msgid ""
 msgstr ""
 "Der Sortiervorgang kann nicht rückgängig gemacht werden. Es empfiehlt sich "
 "daher, die Datei vor dem Sortieren zu speichern. Um nach dem Sortiervorgang "
-"gegebenenfalls die zuletzt gespeicherte Version der Datei wiederherzustellen, "
-"wählen Sie <guiseq><gui>Datei</gui><gui>Zurücksetzen</gui></guiseq>."
+"gegebenenfalls die zuletzt gespeicherte Version der Datei "
+"wiederherzustellen, wählen Sie <guiseq><gui>Datei</gui><gui>Zurücksetzen</"
+"gui></guiseq>."
 
 #: C/gedit-plugins-sort.page:25(page/p)
 msgid ""
@@ -2567,8 +2576,8 @@ msgid ""
 "lines of text you want to sort, and then clicking <guiseq><gui>Edit</"
 "gui><gui>Sort</gui></guiseq>."
 msgstr ""
-"Sobald Sie das <gui>Sortieren</gui>-Plugin aktiviert haben, wählen Sie die zu "
-"sortierenden Textzeilen aus und klicken Sie auf <guiseq><gui>Bearbeiten</"
+"Sobald Sie das <gui>Sortieren</gui>-Plugin aktiviert haben, wählen Sie die "
+"zu sortierenden Textzeilen aus und klicken Sie auf <guiseq><gui>Bearbeiten</"
 "gui><gui>Sortieren</gui></guiseq>."
 
 #: C/gedit-plugins-sort.page:29(page/p)
@@ -2583,8 +2592,8 @@ msgstr ""
 msgid ""
 "<em>Reverse order</em> will arrange the text in reverse alphabetical order."
 msgstr ""
-"<em>Reihenfolge umkehren</em> sortiert den Text in umgekehrter alphabetischer "
-"Reihenfolge."
+"<em>Reihenfolge umkehren</em> sortiert den Text in umgekehrter "
+"alphabetischer Reihenfolge."
 
 #: C/gedit-plugins-sort.page:32(item/p)
 msgid "<em>Remove duplicates</em> will remove duplicate values from the list."
@@ -2605,8 +2614,8 @@ msgid ""
 "column spin box."
 msgstr ""
 "Damit die Sortierung die Zeichen am Beginn der Zeile unberücksichtigt lässt, "
-"legen Sie das erste für die Sortierung zu verwendende Zeichen im Einstellfeld "
-"<gui>Beginnen bei Spalte:</gui> fest."
+"legen Sie das erste für die Sortierung zu verwendende Zeichen im "
+"Einstellfeld <gui>Beginnen bei Spalte:</gui> fest."
 
 #: C/gedit-plugins-sort.page:36(page/p)
 msgid "To perform the sort operation, click <gui>Sort</gui>."
@@ -2644,8 +2653,8 @@ msgid ""
 msgstr ""
 "Das <app>Floskellisten</app>-Plugin ermöglicht Ihnen das Einfügen üblicher "
 "Markierungen und Sonderzeichen aus einer Liste in der Seitenleiste. "
-"Standardmäßig fügt das Plugin Markierungen und Sonderzeichen für HTML, XHTML, "
-"XSLT, XUL und LaTeX ein."
+"Standardmäßig fügt das Plugin Markierungen und Sonderzeichen für HTML, "
+"XHTML, XSLT, XUL und LaTeX ein."
 
 #: C/gedit-plugins-tag-list.page:24(section/title)
 msgid "Using the Tag List plugin"
@@ -2668,14 +2677,15 @@ msgstr "Aktivieren des Plugins"
 msgid ""
 "You can activate the plugin by selecting <guiseq><gui>Edit</"
 "gui><gui>Preferences</gui><gui>Plugins</gui><gui>Tag List</gui></guiseq>. "
-"Once you have activated the plugin, access it by selecting <guiseq><gui>View</"
-"gui><gui>Side Pane</gui></guiseq>, or by pressing <key>F9</key>."
+"Once you have activated the plugin, access it by selecting "
+"<guiseq><gui>View</gui><gui>Side Pane</gui></guiseq>, or by pressing "
+"<key>F9</key>."
 msgstr ""
 "Um das Plugin zu aktivieren, wählen Sie <guiseq><gui>Bearbeiten</"
 "gui><gui>Einstellungen</gui><gui>Plugins</gui><gui>Floskelliste</gui></"
 "guiseq>. Sobald Sie das Plugin aktiviert haben, können Sie über das Menü "
-"<guiseq><gui>Ansicht</gui><gui>Seitenleiste</gui></guiseq> oder durch Drücken "
-"von <key>F9</key> darauf zugreifen."
+"<guiseq><gui>Ansicht</gui><gui>Seitenleiste</gui></guiseq> oder durch "
+"Drücken von <key>F9</key> darauf zugreifen."
 
 #: C/gedit-plugins-tag-list.page:32(section/p)
 msgid ""
@@ -2708,7 +2718,8 @@ msgstr "Eine neue Markierung können Sie auf die folgende Weise erstellen:"
 
 #: C/gedit-plugins-tag-list.page:46(item/p)
 msgid ""
-"Move the cursor to where you will want to insert the tag or special character."
+"Move the cursor to where you will want to insert the tag or special "
+"character."
 msgstr ""
 "Bewegen Sie die Eingabemarke dahin, wo Sie die Markierung oder das "
 "Sonderzeichen einfügen wollen."
@@ -2749,31 +2760,32 @@ msgid ""
 "<keyseq><key>Shift</key><key>Return</key></keyseq>."
 msgstr ""
 "Sie können eine Markierung auch durch Drücken der <key>Eingabetaste</key> "
-"oder der Tastenkombination <keyseq><key>Umschalttaste</key><key>Eingabetaste</"
-"key></keyseq> einfügen."
+"oder der Tastenkombination <keyseq><key>Umschalttaste</"
+"key><key>Eingabetaste</key></keyseq> einfügen."
 
 #: C/gedit-plugins-tag-list.page:58(note/p)
 msgid ""
 "Pressing the <key>Return</key> key will insert the tag at the cursor "
-"position, and then return focus to the document. Pressing <keyseq><key>Shift</"
-"key><key>Return</key></keyseq> will insert the tag at the cursor position, "
-"but will keep the focus on the <app>tag-list</app>."
+"position, and then return focus to the document. Pressing "
+"<keyseq><key>Shift</key><key>Return</key></keyseq> will insert the tag at "
+"the cursor position, but will keep the focus on the <app>tag-list</app>."
 msgstr ""
 "Ein Druck auf die <key>Eingabetaste</key> fügt die Floskel an der Position "
-"der Eingabemarke ein und gibt den Fokus an das Dokument zurück. Durch Drücken "
-"der Tastenkombination <keyseq><key>Umschalttaste</key><key>Eingabetaste</"
-"key></keyseq> wird die Floskel ebenfalls an der Eingabemarke eingefügt, aber "
-"der Fokus verbleibt in der <app>Floskelliste</app>."
+"der Eingabemarke ein und gibt den Fokus an das Dokument zurück. Durch "
+"Drücken der Tastenkombination <keyseq><key>Umschalttaste</"
+"key><key>Eingabetaste</key></keyseq> wird die Floskel ebenfalls an der "
+"Eingabemarke eingefügt, aber der Fokus verbleibt in der <app>Floskelliste</"
+"app>."
 
 #: C/gedit-plugins-tag-list.page:60(note/p)
 msgid ""
 "You can see a preview of what text will be inserted for each tag and special "
-"character by clicking on the word the <gui>Preview</gui> at the bottom of the "
-"side pane."
+"character by clicking on the word the <gui>Preview</gui> at the bottom of "
+"the side pane."
 msgstr ""
-"Klicken Sie auf <gui>Vorschau</gui> am unteren Ende der Seitenleiste, um eine "
-"Vorschau auf den einzufügenden Text oder das einzufügende Sonderzeichen zu "
-"erhalten."
+"Klicken Sie auf <gui>Vorschau</gui> am unteren Ende der Seitenleiste, um "
+"eine Vorschau auf den einzufügenden Text oder das einzufügende Sonderzeichen "
+"zu erhalten."
 
 #: C/gedit-plugins-terminal.page:13(info/desc)
 msgid "Add a terminal console to the bottom pane"
@@ -2790,11 +2802,11 @@ msgid ""
 "pane of the <app>gedit</app> window. This will let you run scripts, install "
 "needed software, or test your program without leaving <app>gedit</app>."
 msgstr ""
-"<app>gedit</app> kann eine eingebettete Version von <app>Gnome Terminal</app> "
-"anzeigen, der Befehlszeilenanwendung in GNOME. Diese wird am unteren Rand des "
-"<app>gedit</app>-Hauptfensters angezeigt. Auf diese Weise können Sie Skripte "
-"ausführen, benötigte Software installieren oder Ihr Programm testen, ohne "
-"<app>gedit</app> zu verlassen."
+"<app>gedit</app> kann eine eingebettete Version von <app>Gnome Terminal</"
+"app> anzeigen, der Befehlszeilenanwendung in GNOME. Diese wird am unteren "
+"Rand des <app>gedit</app>-Hauptfensters angezeigt. Auf diese Weise können "
+"Sie Skripte ausführen, benötigte Software installieren oder Ihr Programm "
+"testen, ohne <app>gedit</app> zu verlassen."
 
 #: C/gedit-plugins-terminal.page:20(page/p)
 msgid ""
@@ -2827,8 +2839,8 @@ msgstr "Textgröße"
 msgid ""
 "The text size plugin allows you to temporarily change the text size in "
 "<app>gedit</app> without changing the program's default text size. To enable "
-"this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins "
-"</gui><gui>Text Size</gui></guiseq>."
+"this plugin, select <guiseq><gui>Edit</gui><gui>Preferences</"
+"gui><gui>Plugins </gui><gui>Text Size</gui></guiseq>."
 msgstr ""
 "Das <app>Textgröße</app>-Plugin ermöglicht das vorübergehende Ändern der "
 "Textgröße in <app>gedit</app>, ohne die vorgegebene Textgröße des Programms "
@@ -2849,8 +2861,8 @@ msgid ""
 "To <em>increase</em> the text size, select <keyseq><key>Ctrl</key> <key>+</"
 "key></keyseq>."
 msgstr ""
-"Um die Textgröße zu <em>erhöhen</em>, drücken Sie <keyseq><key>Strg</key><key>"
-"+</key></keyseq>."
+"Um die Textgröße zu <em>erhöhen</em>, drücken Sie <keyseq><key>Strg</"
+"key><key>+</key></keyseq>."
 
 #: C/gedit-plugins-text-size.page:29(item/p)
 msgid ""
@@ -2879,16 +2891,16 @@ msgstr "Wortvervollständigung"
 
 #: C/gedit-plugins-word-completion.page:23(page/p)
 msgid ""
-"The <app>Word Completion</app> plugin can speed up your editing by suggesting "
-"completions of words as you type. To enable the plugin, select "
+"The <app>Word Completion</app> plugin can speed up your editing by "
+"suggesting completions of words as you type. To enable the plugin, select "
 "<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Word "
 "Completion</gui></guiseq>."
 msgstr ""
-"Das <em>Wortvervollständigung</em>-Plugin beschleunigt die Bearbeitung, indem "
-"die Vervollständigung von Wörtern bereits bei der Eingabe vorgeschlagen wird. "
-"Um dieses Plugin zu aktivieren, wählen Sie <guiseq><gui>Bearbeiten</"
-"gui><gui>Einstellungen</gui><gui>Plugins</gui><gui>Wortvervollständigung</"
-"gui></guiseq>."
+"Das <em>Wortvervollständigung</em>-Plugin beschleunigt die Bearbeitung, "
+"indem die Vervollständigung von Wörtern bereits bei der Eingabe "
+"vorgeschlagen wird. Um dieses Plugin zu aktivieren, wählen Sie "
+"<guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>Plugins</"
+"gui><gui>Wortvervollständigung</gui></guiseq>."
 
 #: C/gedit-plugins-word-completion.page:28(page/p)
 msgid ""
@@ -2912,8 +2924,8 @@ msgid ""
 msgstr ""
 "Um ein vorgeschlagenes Wort einzufügen, doppelklicken Sie in der "
 "Einblendliste darauf oder drücken Sie <keyseq><key>Alt</key><key>Zahl</key></"
-"keyseq>, wobei <key>Zahl</key> die Nummer ist, die neben dem gewünschten Wort "
-"angezeigt wird."
+"keyseq>, wobei <key>Zahl</key> die Nummer ist, die neben dem gewünschten "
+"Wort angezeigt wird."
 
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
@@ -2948,8 +2960,8 @@ msgid ""
 "pages end up in reverse order when you pick them up."
 msgstr ""
 "Drucker geben üblicherweise die erste Seite auch zuerst aus, und die letzte "
-"Seite zuletzt. Auf diese Weise gelangen die Seiten in umgekehrter Reihenfolge "
-"in den sich ergebenden Papierstapel."
+"Seite zuletzt. Auf diese Weise gelangen die Seiten in umgekehrter "
+"Reihenfolge in den sich ergebenden Papierstapel."
 
 #: C/gedit-printing-order.page:28(section/p)
 msgid "To reverse the order:"
@@ -2995,8 +3007,8 @@ msgstr "Wählen Sie <guiseq><gui>Datei</gui><gui>Drucken</gui></guiseq>"
 
 #: C/gedit-printing-order.page:51(item/p)
 msgid ""
-"In the <gui>General</gui> tab of the Print window under <em>Copies</em> check "
-"<gui>Collate</gui>."
+"In the <gui>General</gui> tab of the Print window under <em>Copies</em> "
+"check <gui>Collate</gui>."
 msgstr ""
 "Aktivieren Sie im Reiter <gui>Allgemein</gui> des Druckfensters unter "
 "<em>Kopien</em> das Ankreuzfeld <gui>Zusammentragen</gui>."
@@ -3008,8 +3020,8 @@ msgid ""
 "printing help documentation for your desktop environment."
 msgstr ""
 "Drucken mit <app>gedit</app> erfordert einen bereits angeschlossenen und "
-"eingerichteten Drucker. Falls dies noch nicht geschehen ist, ziehen Sie bitte "
-"die Hilfedokumentation zum Drucken in Ihrer Arbeitsumgebung zu Rate."
+"eingerichteten Drucker. Falls dies noch nicht geschehen ist, ziehen Sie "
+"bitte die Hilfedokumentation zum Drucken in Ihrer Arbeitsumgebung zu Rate."
 
 #: C/gedit-printing.page:22(page/p)
 msgid ""
@@ -3037,8 +3049,8 @@ msgid ""
 "<guiseq><gui>File</gui><gui>Print</gui><gui>Print to File</gui></guiseq>."
 msgstr ""
 "Sie können <app>gedit</app> zum Drucken in eine Datei verwenden. Wählen Sie "
-"hierzu <guiseq><gui>Datei</gui><gui>Drucken</gui><gui>In Datei drucken</gui></"
-"guiseq>."
+"hierzu <guiseq><gui>Datei</gui><gui>Drucken</gui><gui>In Datei drucken</"
+"gui></guiseq>."
 
 #: C/gedit-printing.page:32(section/p)
 msgid "Printing is enabled for the following file formats:"
@@ -3082,8 +3094,8 @@ msgid ""
 "In the <gui>General</gui> tab in the Print window choose <gui>Pages</gui> "
 "from the <gui>Range</gui> section."
 msgstr ""
-"Wählen Sie im Reiter <gui>Allgemein</gui> des Druckfensters <gui>Seiten</gui> "
-"im Abschnitt <gui>Bereich</gui>."
+"Wählen Sie im Reiter <gui>Allgemein</gui> des Druckfensters <gui>Seiten</"
+"gui> im Abschnitt <gui>Bereich</gui>."
 
 #: C/gedit-printing-select.page:26(item/p)
 msgid ""
@@ -3091,8 +3103,8 @@ msgid ""
 "commas. Use a dash to denote a range of pages."
 msgstr ""
 "Geben Sie die Nummern der zu druckenden Seiten in das Textfeld ein, durch "
-"Kommata getrennt. Verwenden Sie einen Bindestrich, um einen zusammenhängenden "
-"Bereich anzugeben."
+"Kommata getrennt. Verwenden Sie einen Bindestrich, um einen "
+"zusammenhängenden Bereich anzugeben."
 
 #: C/gedit-printing-select.page:31(note/p)
 msgid ""
@@ -3120,9 +3132,9 @@ msgstr "Erste Schritte mit Gedit"
 #: C/gedit-quickstart.page:17(page/p)
 msgid ""
 "<app>gedit</app> is a full-featured text editor for the GNOME desktop "
-"environment. You can use it to prepare simple notes and documents, or you can "
-"use some of its advanced features, making it your own software development "
-"environment."
+"environment. You can use it to prepare simple notes and documents, or you "
+"can use some of its advanced features, making it your own software "
+"development environment."
 msgstr ""
 "<app>gedit</app> ist ein voll ausgestatteter Texteditor für die GNOME-"
 "Arbeitsumgebung. Sie können damit einfache Notizen und Dokumente bearbeiten, "
@@ -3144,8 +3156,9 @@ msgid ""
 "portions</link> of the <app>gedit</app> help."
 msgstr ""
 "Um mehr über zusätzliche Funktionsmerkmale von <app>gedit</app> zu erfahren "
-"und Hilfe bei der Ausführung zusätzlicher Aufgaben zu erhalten, lesen Sie die "
-"<link xref=\"index\">anderen Abschnitte</link> der Hilfe zu <app>gedit</app>."
+"und Hilfe bei der Ausführung zusätzlicher Aufgaben zu erhalten, lesen Sie "
+"die <link xref=\"index\">anderen Abschnitte</link> der Hilfe zu <app>gedit</"
+"app>."
 
 #: C/gedit-replace.page:20(page/title)
 msgid "Replace text"
@@ -3153,13 +3166,13 @@ msgstr "Ersetzen von Text"
 
 #: C/gedit-replace.page:22(page/p)
 msgid ""
-"Editing text can be time consuming. To save time, <app>gedit</app> includes a "
-"<app>Replace</app> function that helps you to find and replace portions of "
+"Editing text can be time consuming. To save time, <app>gedit</app> includes "
+"a <app>Replace</app> function that helps you to find and replace portions of "
 "text."
 msgstr ""
 "Die Bearbeitung von Text kann recht viel Zeit in Anspruch nehmen. Um Zeit zu "
-"sparen, bietet <app>gedit</app> eine <app>Ersetzungsfunktion</app>, die Ihnen "
-"beim Auffinden und Ersetzen von Textbestandteilen hilft."
+"sparen, bietet <app>gedit</app> eine <app>Ersetzungsfunktion</app>, die "
+"Ihnen beim Auffinden und Ersetzen von Textbestandteilen hilft."
 
 #: C/gedit-replace.page:25(steps/title)
 msgid "Replace text in <app>gedit</app>"
@@ -3203,8 +3216,8 @@ msgid ""
 "To replace <em>all occurrences</em> of the searched-for text, click "
 "<gui>Replace All</gui>."
 msgstr ""
-"Um <em>jedes Auftreten</em> der Zeichenkette im Dokument zu ersetzen, klicken "
-"Sie auf <gui>Alle ersetzen</gui>."
+"Um <em>jedes Auftreten</em> der Zeichenkette im Dokument zu ersetzen, "
+"klicken Sie auf <gui>Alle ersetzen</gui>."
 
 #: C/gedit-replace.page:39(note/p)
 msgid ""
@@ -3234,8 +3247,8 @@ msgstr ""
 "Die Option <em>Groß-/Kleinschreibung berücksichtigen</em> ermöglicht Ihnen "
 "anzugeben, ob Sie bei der Suche Groß- und Kleinschreibung berücksichtigen "
 "wollen. Wenn diese Option aktiviert ist, wird Groß- und Kleinschreibung "
-"berücksichtigt. Falls nicht, wird beim Suchen Groß- und Kleinschreibung nicht "
-"berücksichtigt."
+"berücksichtigt. Falls nicht, wird beim Suchen Groß- und Kleinschreibung "
+"nicht berücksichtigt."
 
 #: C/gedit-replace.page:50(item/title)
 msgid "Match entire word only"
@@ -3244,9 +3257,9 @@ msgstr "Nur vollständige Wörter berücksichtigen"
 #: C/gedit-replace.page:51(item/p)
 msgid ""
 "Use this option to search for a specific word without including fragments of "
-"other words. For example, if you searched for the word 'and' with this option "
-"selected, the word 'and' would be matched, but the words 's<em>and</em>' and "
-"'comm<em>and</em>er' would not be matched."
+"other words. For example, if you searched for the word 'and' with this "
+"option selected, the word 'and' would be matched, but the words 's<em>and</"
+"em>' and 'comm<em>and</em>er' would not be matched."
 msgstr ""
 "Verwenden Sie diese Option, um nach einem bestimmten Wort zu suchen, ohne "
 "Teile anderer Worte zu berücksichtigen. Wenn Sie beispielsweise bei "
@@ -3259,8 +3272,8 @@ msgstr "Rückwärts suchen"
 
 #: C/gedit-replace.page:55(item/p)
 msgid ""
-"This command behaves identically to the Find Previous command. If you wish to "
-"step through search results from end to beginning, select this option."
+"This command behaves identically to the Find Previous command. If you wish "
+"to step through search results from end to beginning, select this option."
 msgstr ""
 "Dieser Befehl verhält sich ähnlich wie der Befehl <gui>Rückwärts suchen</"
 "gui>. Wenn Sie Schritt für Schritt vom Ende bis zum Anfang durch die "
@@ -3280,8 +3293,8 @@ msgid ""
 msgstr ""
 "Wenn die Option <app>Suche beim Erreichen des Endes am Anfang fortsetzen</"
 "app> aktiviert ist, startet <app>gedit</app> die Aktion zum Suchen und "
-"Ersetzen am Anfang der Datei neu, sobald das Ende der Datei erreicht ist. Das "
-"stellt sicher, dass das Suchen und Ersetzen die gesamte Datei einbezieht."
+"Ersetzen am Anfang der Datei neu, sobald das Ende der Datei erreicht ist. "
+"Das stellt sicher, dass das Suchen und Ersetzen die gesamte Datei einbezieht."
 
 #: C/gedit-save-file.page:14(page/title)
 msgid "Save a file"
@@ -3383,8 +3396,8 @@ msgid ""
 "feature to move up or down through the text."
 msgstr ""
 "Drücken Sie die <key>Strg</key>-Taste und verwenden Sie die <key>Bildlauf</"
-"key>-Funktion der Maus oder des Touchpads, um sich nach oben oder unten durch "
-"den Text zu bewegen."
+"key>-Funktion der Maus oder des Touchpads, um sich nach oben oder unten "
+"durch den Text zu bewegen."
 
 #: C/gedit-search.page:52(page/p)
 msgid ""
@@ -3415,8 +3428,8 @@ msgstr ""
 
 #: C/gedit-search.page:62(item/p)
 msgid ""
-"For advanced search options, you can click on the <gui>Magnifying Glass</gui> "
-"icon in the search window, or you can right-click on any portion of the "
+"For advanced search options, you can click on the <gui>Magnifying Glass</"
+"gui> icon in the search window, or you can right-click on any portion of the "
 "search window."
 msgstr ""
 "Erweiterte Suchoptionen erreichen Sie, indem Sie auf das <gui>Lupensymbol</"
@@ -3430,33 +3443,33 @@ msgid ""
 "<guiseq><gui>Search</gui><gui>Clear Highlight</gui></guiseq>, or press "
 "<keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq>."
 msgstr ""
-"Der von Ihnen gesuchte Text wird weiterhin in <app>gedit</app> hervorgehoben, "
-"auch nachdem die Suche abgeschlossen ist. Um die Hervorhebung zu entfernen, "
-"klicken Sie auf <guiseq><gui>Suchen</gui><gui>Hervorhebung zurücksetzen</"
-"gui></guiseq> oder drücken Sie <keyseq><key>Strg</key><key>Umschalttaste</"
-"key><key>K</key></keyseq>."
+"Der von Ihnen gesuchte Text wird weiterhin in <app>gedit</app> "
+"hervorgehoben, auch nachdem die Suche abgeschlossen ist. Um die Hervorhebung "
+"zu entfernen, klicken Sie auf <guiseq><gui>Suchen</gui><gui>Hervorhebung "
+"zurücksetzen</gui></guiseq> oder drücken Sie <keyseq><key>Strg</"
+"key><key>Umschalttaste</key><key>K</key></keyseq>."
 
-#: C/gedit-shortcut-keys.page:13(credit/name)
+#: C/gedit-shortcut-keys.page:14(credit/name)
 msgid "Paolo Borelli"
 msgstr "Paolo Borelli"
 
-#: C/gedit-shortcut-keys.page:16(credit/name)
+#: C/gedit-shortcut-keys.page:17(credit/name)
 msgid "Jesse van den Kieboom"
 msgstr "Jesse van den Kieboom"
 
-#: C/gedit-shortcut-keys.page:19(credit/name)
+#: C/gedit-shortcut-keys.page:20(credit/name)
 msgid "Steve Frécinaux"
 msgstr "Steve Frécinaux"
 
-#: C/gedit-shortcut-keys.page:22(credit/name)
+#: C/gedit-shortcut-keys.page:23(credit/name)
 msgid "Ignacio Casal Quinteiro"
 msgstr "Ignacio Casal Quinteiro"
 
-#: C/gedit-shortcut-keys.page:26(page/title)
+#: C/gedit-shortcut-keys.page:27(page/title)
 msgid "Shortcut keys"
 msgstr "Tastenkombinationen"
 
-#: C/gedit-shortcut-keys.page:28(page/p)
+#: C/gedit-shortcut-keys.page:29(page/p)
 msgid ""
 "Use <gui>shortcut keys</gui> to perform common tasks more quickly than with "
 "the mouse and menus. The following tables list all of <app>gedit's</app> "
@@ -3466,318 +3479,319 @@ msgstr ""
 "schneller als mit der Maus oder über die Menüs auszuführen. In den folgenden "
 "Tabellen werden alle Tastenkürzel von <app>gedit</app> aufgelistet."
 
-#: C/gedit-shortcut-keys.page:46(section/title)
+#: C/gedit-shortcut-keys.page:53(table/title)
 msgid "Tab-related Shortcut keys"
 msgstr "Tastenkombinationen für Reiter"
 
-#: C/gedit-shortcut-keys.page:58(td/p)
+#: C/gedit-shortcut-keys.page:61(td/p)
 msgid "Switch to the next tab to the left"
 msgstr "Zum nächsten Reiter links wechseln"
 
-#: C/gedit-shortcut-keys.page:58(td/p)
+#: C/gedit-shortcut-keys.page:61(td/p)
 msgid "Ctrl + Alt + PageUp"
 msgstr "Strg+Alt+Bild auf"
 
-#: C/gedit-shortcut-keys.page:61(td/p)
+#: C/gedit-shortcut-keys.page:65(td/p)
 msgid "Switch to the next tab to the right"
 msgstr "Zum nächsten Reiter rechts wechseln"
 
-#: C/gedit-shortcut-keys.page:61(td/p)
+#: C/gedit-shortcut-keys.page:65(td/p)
 msgid "Ctrl + Alt + PageDown"
 msgstr "Strg + Alt + Bild_Ab"
 
-#: C/gedit-shortcut-keys.page:64(td/p)
+#: C/gedit-shortcut-keys.page:69(td/p)
 msgid "Close tab"
 msgstr "Reiter schließen"
 
-#: C/gedit-shortcut-keys.page:64(td/p) C/gedit-shortcut-keys.page:108(td/p)
+#: C/gedit-shortcut-keys.page:69(td/p) C/gedit-shortcut-keys.page:112(td/p)
 msgid "Ctrl + W"
 msgstr "Strg + W"
 
-#: C/gedit-shortcut-keys.page:67(td/p)
+#: C/gedit-shortcut-keys.page:72(td/p)
 msgid "Save all tabs"
 msgstr "Alle Reiter speichern"
 
-#: C/gedit-shortcut-keys.page:67(td/p)
+#: C/gedit-shortcut-keys.page:72(td/p)
 msgid "Ctrl + Shift + L"
 msgstr "Umschalt + Strg + L"
 
-#: C/gedit-shortcut-keys.page:70(td/p)
+#: C/gedit-shortcut-keys.page:75(td/p)
 msgid "Close all tabs"
 msgstr "Alle Reiter schließen"
 
-#: C/gedit-shortcut-keys.page:70(td/p)
+#: C/gedit-shortcut-keys.page:75(td/p)
 msgid "Ctrl + Shift + W"
 msgstr "Umschalt + Strg + W"
 
-#: C/gedit-shortcut-keys.page:73(td/p)
+#: C/gedit-shortcut-keys.page:78(td/p)
 msgid "Jump to <var>n</var>th tab"
 msgstr "Den <var>n</var>-ten Reiter aktivieren"
 
-#: C/gedit-shortcut-keys.page:73(td/p)
+#: C/gedit-shortcut-keys.page:78(td/p)
 msgid "Alt + <var>n</var>"
 msgstr "Alt + <var>n</var>"
 
-#: C/gedit-shortcut-keys.page:80(section/title)
+#: C/gedit-shortcut-keys.page:85(table/title)
 msgid "Shortcut keys for working with files"
 msgstr "Tastenkombinationen zum Arbeiten mit Dateien"
 
-#: C/gedit-shortcut-keys.page:90(td/p)
+#: C/gedit-shortcut-keys.page:93(td/p)
 msgid "Create a new document"
 msgstr "Eine neues Dokument anlegen"
 
-#: C/gedit-shortcut-keys.page:90(td/p)
+#: C/gedit-shortcut-keys.page:93(td/p)
 msgid "Ctrl + N"
 msgstr "Strg + N"
 
-#: C/gedit-shortcut-keys.page:93(td/p)
+#: C/gedit-shortcut-keys.page:96(td/p)
 msgid "Open a document"
 msgstr "Ein Dokument öffnen"
 
-#: C/gedit-shortcut-keys.page:93(td/p)
+#: C/gedit-shortcut-keys.page:96(td/p)
 msgid "Ctrl + O"
 msgstr "Strg + O"
 
-#: C/gedit-shortcut-keys.page:96(td/p)
+#: C/gedit-shortcut-keys.page:99(td/p)
 msgid "Save the current document"
 msgstr "Das aktuelle Dokument speichern"
 
-#: C/gedit-shortcut-keys.page:96(td/p)
+#: C/gedit-shortcut-keys.page:99(td/p)
 msgid "Ctrl + S"
 msgstr "Strg + S"
 
-#: C/gedit-shortcut-keys.page:99(td/p)
+#: C/gedit-shortcut-keys.page:102(td/p)
 msgid "Save the current document with a new filename"
 msgstr "Das aktuelle Dokument unter einem anderen Dateinamen speichern"
 
-#: C/gedit-shortcut-keys.page:99(td/p)
+#: C/gedit-shortcut-keys.page:102(td/p)
 msgid "Ctrl + Shift + S"
 msgstr "Umschalt + Strg + S"
 
-#: C/gedit-shortcut-keys.page:102(td/p)
+#: C/gedit-shortcut-keys.page:106(td/p)
 msgid "Print the current document"
 msgstr "Das aktuelle Dokument drucken"
 
-#: C/gedit-shortcut-keys.page:102(td/p)
+#: C/gedit-shortcut-keys.page:106(td/p)
 msgid "Ctrl + P"
 msgstr "Strg + P"
 
-#: C/gedit-shortcut-keys.page:105(td/p)
+#: C/gedit-shortcut-keys.page:109(td/p)
 msgid "Print preview"
 msgstr "Druckvorschau"
 
-#: C/gedit-shortcut-keys.page:105(td/p)
+#: C/gedit-shortcut-keys.page:109(td/p)
 msgid "Ctrl + Shift + P"
 msgstr "Umschalt + Strg + P"
 
-#: C/gedit-shortcut-keys.page:108(td/p)
+#: C/gedit-shortcut-keys.page:112(td/p)
 msgid "Close the current document"
 msgstr "Das aktuelle Dokument schließen"
 
-#: C/gedit-shortcut-keys.page:111(td/p)
+#: C/gedit-shortcut-keys.page:115(td/p)
 msgid "Quit gedit"
 msgstr "Gedit beenden"
 
-#: C/gedit-shortcut-keys.page:111(td/p)
+#: C/gedit-shortcut-keys.page:115(td/p)
 msgid "Ctrl + Q"
 msgstr "Strg + Q"
 
-#: C/gedit-shortcut-keys.page:118(section/title)
+#: C/gedit-shortcut-keys.page:121(table/title)
 msgid "Shortcut keys for editing files"
 msgstr "Tastenkombinationen zum Bearbeiten von Dokumenten"
 
-#: C/gedit-shortcut-keys.page:128(td/p)
+#: C/gedit-shortcut-keys.page:129(td/p)
 msgid "Undo the last action"
 msgstr "Den letzten Vorgang rückgängig machen"
 
-#: C/gedit-shortcut-keys.page:128(td/p)
+#: C/gedit-shortcut-keys.page:129(td/p)
 msgid "Ctrl + Z"
 msgstr "Strg + Z"
 
-#: C/gedit-shortcut-keys.page:131(td/p)
+#: C/gedit-shortcut-keys.page:132(td/p)
 msgid "Redo the last undone action"
 msgstr "Den rückgängig gemachten Vorgang wiederholen"
 
-#: C/gedit-shortcut-keys.page:131(td/p)
+#: C/gedit-shortcut-keys.page:132(td/p)
 msgid "Ctrl + Shift + Z"
 msgstr "Umschalt + Strg + Z"
 
-#: C/gedit-shortcut-keys.page:134(td/p)
+#: C/gedit-shortcut-keys.page:136(td/p)
 msgid "Cut the selected text or region and place it on the clipboard"
 msgstr ""
 "Den markierten Text oder die markierte Region ausschneiden und in die "
 "Zwischenablage verschieben"
 
-#: C/gedit-shortcut-keys.page:134(td/p)
+#: C/gedit-shortcut-keys.page:137(td/p)
 msgid "Ctrl + X"
 msgstr "Strg + X"
 
-#: C/gedit-shortcut-keys.page:137(td/p)
+#: C/gedit-shortcut-keys.page:140(td/p)
 msgid "Copy the selected text or region onto the clipboard"
 msgstr ""
-"Den markierten Text oder den markierten Bereich in die Zwischenablage kopieren"
+"Den markierten Text oder den markierten Bereich in die Zwischenablage "
+"kopieren"
 
-#: C/gedit-shortcut-keys.page:137(td/p)
+#: C/gedit-shortcut-keys.page:141(td/p)
 msgid "Ctrl + C"
 msgstr "Strg + C"
 
-#: C/gedit-shortcut-keys.page:140(td/p)
+#: C/gedit-shortcut-keys.page:144(td/p)
 msgid "Paste the contents of the clipboard"
 msgstr "Den Inhalt der Zwischenablage einfügen"
 
-#: C/gedit-shortcut-keys.page:140(td/p)
+#: C/gedit-shortcut-keys.page:144(td/p)
 msgid "Ctrl + V"
 msgstr "Strg + V"
 
-#: C/gedit-shortcut-keys.page:143(td/p)
+#: C/gedit-shortcut-keys.page:148(td/p)
 msgid "Select all text in the file"
 msgstr "Sämtlichen Text in der Datei auswählen"
 
-#: C/gedit-shortcut-keys.page:143(td/p)
+#: C/gedit-shortcut-keys.page:148(td/p)
 msgid "Ctrl + A"
 msgstr "Strg + A"
 
-#: C/gedit-shortcut-keys.page:146(td/p)
+#: C/gedit-shortcut-keys.page:151(td/p)
 msgid "Delete the current line"
 msgstr "Die aktuelle Zeile löschen"
 
-#: C/gedit-shortcut-keys.page:146(td/p)
+#: C/gedit-shortcut-keys.page:151(td/p)
 msgid "Ctrl + D"
 msgstr "Strg + D"
 
-#: C/gedit-shortcut-keys.page:149(td/p)
+#: C/gedit-shortcut-keys.page:154(td/p)
 msgid "Move the selected line up one line"
 msgstr "Die markierte Zeile um eine Position nach oben verschieben"
 
-#: C/gedit-shortcut-keys.page:149(td/p)
+#: C/gedit-shortcut-keys.page:154(td/p)
 msgid "Alt + Up Arrow"
 msgstr "Alt + Pfeiltaste hoch"
 
-#: C/gedit-shortcut-keys.page:152(td/p)
+#: C/gedit-shortcut-keys.page:158(td/p)
 msgid "Move the selected line down one line"
 msgstr "Die markierte Zeile um eine Position nach unten verschieben"
 
-#: C/gedit-shortcut-keys.page:152(td/p)
+#: C/gedit-shortcut-keys.page:158(td/p)
 msgid "Alt + Down Arrow"
 msgstr "Alt + Pfeiltaste runter"
 
-#: C/gedit-shortcut-keys.page:159(section/title)
+#: C/gedit-shortcut-keys.page:165(table/title)
 msgid "Shortcut keys for showing and hiding panes"
 msgstr "Tastenkombinationen zum Anzeigen und Verbergen von Leisten"
 
-#: C/gedit-shortcut-keys.page:169(td/p)
+#: C/gedit-shortcut-keys.page:173(td/p)
 msgid "Show / hide the side pane"
 msgstr "Die Seitenleiste anzeigen/verbergen"
 
-#: C/gedit-shortcut-keys.page:169(td/p)
+#: C/gedit-shortcut-keys.page:173(td/p)
 msgid "F9"
 msgstr "F9"
 
-#: C/gedit-shortcut-keys.page:172(td/p)
+#: C/gedit-shortcut-keys.page:176(td/p)
 msgid "Show / hide the bottom pane."
 msgstr "Die Fußleiste anzeigen/verbergen"
 
-#: C/gedit-shortcut-keys.page:172(td/p)
+#: C/gedit-shortcut-keys.page:176(td/p)
 msgid "Ctrl + F9"
 msgstr "Strg + F9"
 
-#: C/gedit-shortcut-keys.page:179(section/title)
+#: C/gedit-shortcut-keys.page:183(table/title)
 msgid "Shortcut keys for searching"
 msgstr "Tastenkombinationen zum Suchen"
 
-#: C/gedit-shortcut-keys.page:189(td/p)
+#: C/gedit-shortcut-keys.page:191(td/p)
 msgid "Find a string"
 msgstr "Eine Zeichenkette suchen"
 
-#: C/gedit-shortcut-keys.page:189(td/p)
+#: C/gedit-shortcut-keys.page:191(td/p)
 msgid "Ctrl + F"
 msgstr "Strg + F"
 
-#: C/gedit-shortcut-keys.page:192(td/p)
+#: C/gedit-shortcut-keys.page:194(td/p)
 msgid "Find the next instance of the string"
 msgstr "Das nächste Vorkommen der Zeichenkette suchen"
 
-#: C/gedit-shortcut-keys.page:192(td/p)
+#: C/gedit-shortcut-keys.page:194(td/p)
 msgid "Ctrl + G"
 msgstr "Strg + G"
 
-#: C/gedit-shortcut-keys.page:195(td/p)
+#: C/gedit-shortcut-keys.page:198(td/p)
 msgid "Find the previous instance of the string"
 msgstr "Das vorherige Vorkommen der Zeichenkette suchen"
 
-#: C/gedit-shortcut-keys.page:195(td/p)
+#: C/gedit-shortcut-keys.page:198(td/p)
 msgid "Ctrl + Shift + G"
 msgstr "Umschalt + Strg + G"
 
-#: C/gedit-shortcut-keys.page:198(td/p)
+#: C/gedit-shortcut-keys.page:202(td/p)
 msgid "Search and Replace"
 msgstr "Suchen und ersetzen"
 
-#: C/gedit-shortcut-keys.page:198(td/p)
+#: C/gedit-shortcut-keys.page:202(td/p)
 msgid "Ctrl + H"
 msgstr "Strg + H"
 
-#: C/gedit-shortcut-keys.page:201(td/p)
+#: C/gedit-shortcut-keys.page:205(td/p)
 msgid "Clear highlight"
 msgstr "Hervorhebung zurücksetzen"
 
-#: C/gedit-shortcut-keys.page:201(td/p)
+#: C/gedit-shortcut-keys.page:205(td/p)
 msgid "Ctrl + Shift + K"
 msgstr "Umschalt + Strg + K"
 
-#: C/gedit-shortcut-keys.page:204(td/p)
+#: C/gedit-shortcut-keys.page:208(td/p)
 msgid "Goto line"
 msgstr "Zu einer bestimmten Zeile gehen"
 
-#: C/gedit-shortcut-keys.page:204(td/p)
+#: C/gedit-shortcut-keys.page:208(td/p)
 msgid "Ctrl + I"
 msgstr "Strg + I"
 
-#: C/gedit-shortcut-keys.page:211(section/title)
+#: C/gedit-shortcut-keys.page:214(table/title)
 msgid "Shortcut keys for tools"
 msgstr "Tastenkombinationen für Werkzeuge"
 
-#: C/gedit-shortcut-keys.page:221(td/p)
+#: C/gedit-shortcut-keys.page:222(td/p)
 msgid "Check spelling"
 msgstr "Rechtschreibprüfung"
 
-#: C/gedit-shortcut-keys.page:221(td/p)
+#: C/gedit-shortcut-keys.page:222(td/p)
 msgid "Shift + F7"
 msgstr "Umschalt + F7"
 
-#: C/gedit-shortcut-keys.page:224(td/p)
+#: C/gedit-shortcut-keys.page:225(td/p)
 msgid "Remove trailing spaces (with plugin)"
 msgstr "Unnötige Leerzeichen am Zeilenende entfernen (mit Plugin)"
 
-#: C/gedit-shortcut-keys.page:224(td/p)
+#: C/gedit-shortcut-keys.page:225(td/p)
 msgid "Alt + F12"
 msgstr "Alt + F12"
 
-#: C/gedit-shortcut-keys.page:227(td/p)
+#: C/gedit-shortcut-keys.page:229(td/p)
 msgid "Run \"make\" in the current directory (with plugin)"
 msgstr "»make« im aktuellen Ordner ausführen (mit Plugin)"
 
-#: C/gedit-shortcut-keys.page:227(td/p)
+#: C/gedit-shortcut-keys.page:230(td/p)
 msgid "F8"
 msgstr "F8"
 
-#: C/gedit-shortcut-keys.page:230(td/p)
+#: C/gedit-shortcut-keys.page:233(td/p)
 msgid "Directory listing (with plugin)"
 msgstr "Ordnerinhalt anzeigen (mit Plugin)"
 
-#: C/gedit-shortcut-keys.page:230(td/p)
+#: C/gedit-shortcut-keys.page:233(td/p)
 msgid "Ctrl + Shift + D"
 msgstr "Umschalt + Strg + D"
 
-#: C/gedit-shortcut-keys.page:237(section/title)
+#: C/gedit-shortcut-keys.page:240(table/title)
 msgid "Shortcut keys for user help"
 msgstr "Tastenkombinationen für Hilfe"
 
-#: C/gedit-shortcut-keys.page:247(td/p)
+#: C/gedit-shortcut-keys.page:248(td/p)
 msgid "Open the gedit user guide"
 msgstr "Das Benutzerhandbuch von gedit öffnen"
 
-#: C/gedit-shortcut-keys.page:247(td/p)
+#: C/gedit-shortcut-keys.page:248(td/p)
 msgid "F1"
 msgstr "F1"
 
@@ -3789,22 +3803,22 @@ msgstr "Das Dokument auf Rechtschreibfehler prüfen"
 msgid ""
 "Using the spell-check feature in <app>gedit</app> requires that you first "
 "enable the spell-check plugin. To enable the plugin, select "
-"<guiseq><gui>Edit</gui><gui>Preferences</gui><gui>Plugins</gui><gui>Spell "
-"Checker</gui></guiseq>."
+"<guiseq><gui>Edit </gui><gui>Preferences</gui><gui>Plugins</gui><gui>Spell "
+"Checker</gui> </guiseq>."
 msgstr ""
-"Wenn Sie die Rechtschreibprüfung in <app>gedit</app> verwenden wollen, müssen "
-"Sie zunächst das Rechtschreibprüfung-Plugin aktivieren. Wählen Sie hierzu "
-"<guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>Plugins</"
+"Wenn Sie die Rechtschreibprüfung in <app>gedit</app> verwenden wollen, "
+"müssen Sie zunächst das Rechtschreibprüfung-Plugin aktivieren. Wählen Sie "
+"hierzu <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui><gui>Plugins</"
 "gui><gui>Rechtschreibprüfung</gui></guiseq>."
 
-#: C/gedit-spellcheck.page:19(note/p)
+#: C/gedit-spellcheck.page:22(note/p)
 msgid ""
-"Select <guiseq><gui>Tools</gui><gui>Autocheck Spelling</gui></guiseq> to make "
-"<app>gedit</app> highlight spelling errors while you type."
+"Select <guiseq><gui>Tools</gui><gui>Autocheck Spelling</gui></guiseq> to "
+"make <app>gedit</app> highlight spelling errors while you type."
 msgstr ""
-"Wählen Sie <guiseq><gui>Werkzeuge</gui><gui>Automatische Rechtschreibprüfung</"
-"gui></guiseq>, damit <app>gedit</app> Rechtschreibfehler bereits während der "
-"Eingabe hervorhebt."
+"Wählen Sie <guiseq><gui>Werkzeuge</gui><gui>Automatische "
+"Rechtschreibprüfung</gui></guiseq>, damit <app>gedit</app> "
+"Rechtschreibfehler bereits während der Eingabe hervorhebt."
 
 #: C/gedit-syntax-highlighting.page:14(page/title)
 msgid "Turn on syntax highlighting"
@@ -3830,9 +3844,9 @@ msgstr ""
 msgid ""
 "If your syntax or language is not highlighted upon startup, you can select "
 "the appropriate syntax or language by clicking <guiseq><gui>View</"
-"gui><gui>Highlight Mode</gui></guiseq>, and then choosing the desired syntax. "
-"Alternately, you can select the syntax name from a list at the bottom of the "
-"<app>gedit</app> window."
+"gui><gui>Highlight Mode</gui></guiseq>, and then choosing the desired "
+"syntax. Alternately, you can select the syntax name from a list at the "
+"bottom of the <app>gedit</app> window."
 msgstr ""
 "Falls die gewünschte Syntax oder Sprache nicht sofort beim Start angezeigt "
 "wird, können Sie die entsprechende Syntax oder Sprache auswählen, indem Sie "
@@ -3849,8 +3863,8 @@ msgstr "Reiter verschieben und neu anordnen"
 msgid ""
 "Tabs in <app>gedit</app> can be moved, making it easier to work with your "
 "files. Tabs can be can re-ordered within the same window, moved outside of "
-"<app>gedit</app> (creating a new <app>gedit</app> window), and moved from one "
-"window to another."
+"<app>gedit</app> (creating a new <app>gedit</app> window), and moved from "
+"one window to another."
 msgstr ""
 "Reiter in <app>gedit</app> können verschoben werden, wodurch die Arbeit mit "
 "Ihren Dateien erleichtert wird. Die Reiter können im gleichen Fenster neu "
@@ -3858,31 +3872,29 @@ msgstr ""
 "wodurch ein neues Fenster geöffnet wird. Es ist auch möglich, einen Reiter "
 "aus einem Fenster in ein anderes Fenster zu verschieben."
 
-#: C/gedit-tabs-moving.page:23(section/title)
+#: C/gedit-tabs-moving.page:26(section/title)
 msgid "Change the order of tabs in the gedit window"
 msgstr "Die Anordnung der Reiter im gedit-Fenster ändern"
 
-#: C/gedit-tabs-moving.page:25(section/p)
+#: C/gedit-tabs-moving.page:28(section/p)
 msgid "To change the ordering of tabs in a window:"
 msgstr "So ändern Sie die Anordnung der Reiter in einem Fenster:"
 
-#: C/gedit-tabs-moving.page:28(item/p) C/gedit-tabs-moving.page:42(item/p)
-#: C/gedit-tabs-moving.page:62(item/p)
+#: C/gedit-tabs-moving.page:31(item/p) C/gedit-tabs-moving.page:67(item/p)
 msgid "Click and hold the mouse button on the tab"
 msgstr ""
 "Klicken Sie mit der Maustaste auf den Reiter und halten Sie sie gedrückt"
 
-#: C/gedit-tabs-moving.page:29(item/p)
+#: C/gedit-tabs-moving.page:32(item/p)
 msgid "Move the tab to the desired position among the other tabs"
 msgstr ""
 "Verschieben Sie den Reiter an die gewünschte Position zwischen andere Reiter"
 
-#: C/gedit-tabs-moving.page:30(item/p) C/gedit-tabs-moving.page:44(item/p)
-#: C/gedit-tabs-moving.page:65(item/p)
+#: C/gedit-tabs-moving.page:34(item/p) C/gedit-tabs-moving.page:70(item/p)
 msgid "Release the mouse button"
 msgstr "Lassen Sie die Maustaste los"
 
-#: C/gedit-tabs-moving.page:33(section/p)
+#: C/gedit-tabs-moving.page:37(section/p)
 msgid ""
 "The tab will be placed in the position closest to where you release the tab, "
 "immediately beside other opened tabs."
@@ -3890,58 +3902,66 @@ msgstr ""
 "Der Reiter wird an der Position platziert, wo Sie den Reiter ablegen, "
 "unmittelbar neben anderen geöffneten Reitern."
 
-#: C/gedit-tabs-moving.page:38(section/title)
+#: C/gedit-tabs-moving.page:43(section/title)
 msgid "Move a tab, creating a new gedit window"
 msgstr "Einen Reiter in ein neues gedit-Fenster verschieben"
 
-#: C/gedit-tabs-moving.page:39(section/p)
+#: C/gedit-tabs-moving.page:44(section/p)
 msgid "To drag a tab into a new window:"
 msgstr "So verschieben Sie einen Reiter in ein neues Fenster:"
 
-#: C/gedit-tabs-moving.page:43(item/p)
-msgid "Drag the tab out of the space it occupies"
-msgstr "Ziehen Sie den Reiter aus dem Bereich heraus, den er belegt"
+#: C/gedit-tabs-moving.page:47(item/p)
+msgid "Click and hold the mouse button on the tab."
+msgstr ""
+"Klicken Sie mit der Maustaste auf den Reiter und halten Sie sie gedrückt."
 
-#: C/gedit-tabs-moving.page:47(section/p)
+#: C/gedit-tabs-moving.page:48(item/p)
+msgid "Drag the tab out of the <app>gedit</app> window."
+msgstr "Ziehen Sie den Reiter in ein neues <app>gedit</app>-Fenster."
+
+#: C/gedit-tabs-moving.page:49(item/p)
+msgid "Release the mouse button."
+msgstr "Lassen Sie die Maustaste los."
+
+#: C/gedit-tabs-moving.page:52(section/p)
 msgid ""
-"or, while the tab to be moved is open, choose <guiseq><gui>Documents</"
+"or, while the tab to be moved is open, choose <guiseq><gui>Documents </"
 "gui><gui>Move to New Window</gui></guiseq>"
 msgstr ""
 "Oder wählen Sie, während der gewünschte Reiter geöffnet ist, "
-"<guiseq><gui>Dokumente</gui><gui>In neues Fenster verschieben</gui></guiseq>."
+"<guiseq><gui>Dokumente</gui><gui>In neues Fenster verschieben</gui></guiseq>"
 
-#: C/gedit-tabs-moving.page:50(note/p)
+#: C/gedit-tabs-moving.page:56(note/p)
 msgid ""
-"It's difficult to drag a tab into a new window when either the old or new "
-"window is maximized. For best results, un-maximize the windows before "
-"dragging the tab."
+"To move a tab into a new window when <app>gedit</app> is maximized, drag the "
+"tab onto the top bar at the top of the screen."
 msgstr ""
-"Es ist schwierig, einen Reiter in ein neues Fenster zu verschieben, wenn "
-"eines der beiden Fenster maximiert ist. Stellen Sie zunächst die "
-"Originalgröße des Fensters wieder her, bevor Sie den Reiter verschieben."
+"Um einen Reiter in ein neues Fenster zu verschieben, wenn <app>gedit</app> "
+"im maximierten Zustand ist, ziehen Sie den Reiter auf das obere Panel auf "
+"dem Bildschirm."
 
-#: C/gedit-tabs-moving.page:57(section/title)
+#: C/gedit-tabs-moving.page:62(section/title)
 msgid "Move a tab to another gedit window"
 msgstr "Einen Reiter in ein anderes gedit-Fenster verschieben"
 
-#: C/gedit-tabs-moving.page:59(section/p)
+#: C/gedit-tabs-moving.page:64(section/p)
 msgid "If you want to move a tab from one window to another:"
 msgstr ""
 "Wenn Sie einen Reiter von einem Fenster in ein anderes Fenster verschieben "
 "wollen:"
 
-#: C/gedit-tabs-moving.page:63(item/p)
+#: C/gedit-tabs-moving.page:68(item/p)
 msgid "Drag the tab to the new window"
 msgstr "Ziehen Sie den Reiter in ein neues Fenster"
 
-#: C/gedit-tabs-moving.page:64(item/p)
+#: C/gedit-tabs-moving.page:69(item/p)
 msgid "Place it beside other tabs in the new window"
 msgstr "Setzen Sie ihn neben andere Reiter im neuen Fenster"
 
-#: C/gedit-tabs-moving.page:68(section/p)
+#: C/gedit-tabs-moving.page:73(section/p)
 msgid ""
-"See <link xref=\"gedit-shortcut-keys#gedit-tab-shortcuts\"/> for shortcuts to "
-"make it easier to manage your tabs."
+"See <link xref=\"gedit-shortcut-keys#gedit-tab-shortcuts\"/> for shortcuts "
+"to make it easier to manage your tabs."
 msgstr ""
 "In <link xref=\"gedit-shortcut-keys#gedit-tab-shortcuts\"/> finden Sie "
 "Tastenkombinationen, welche die Verwaltung Ihrer Reiter erleichtern."
@@ -3958,10 +3978,10 @@ msgid ""
 "files that are available to work on."
 msgstr ""
 "Das Arbeiten mit Reitern in <app>gedit</app> ermöglicht es Ihnen, "
-"verschiedene Dateien in einem einzigen Fenster im Auge zu behalten. Einer der "
-"Reiter ist größer als die anderen Reiter, wodurch angezeigt wird, dass es "
-"sich um die aktuell geöffnete Datei handelt. Die kleineren Reiter bezeichnen "
-"andere Dateien, die zur Bearbeitung bereitstehen."
+"verschiedene Dateien in einem einzigen Fenster im Auge zu behalten. Einer "
+"der Reiter ist größer als die anderen Reiter, wodurch angezeigt wird, dass "
+"es sich um die aktuell geöffnete Datei handelt. Die kleineren Reiter "
+"bezeichnen andere Dateien, die zur Bearbeitung bereitstehen."
 
 #: C/gedit-tabs.page:25(section/title)
 msgid "Adding tabs"
@@ -3969,8 +3989,8 @@ msgstr "Hinzufügen von Reitern"
 
 #: C/gedit-tabs.page:26(section/p)
 msgid ""
-"To add a new tab, create a new file with <keyseq><key>Ctrl</key><key>N</key></"
-"keyseq>. The tab will be added to the right side of any other tabs."
+"To add a new tab, create a new file with <keyseq><key>Ctrl</key><key>N</"
+"key></keyseq>. The tab will be added to the right side of any other tabs."
 msgstr ""
 "Um einen neuen Reiter hinzuzufügen, erstellen Sie eine neue Datei mit "
 "<keyseq><key>Strg</key><key>N</key></keyseq>. Der Reiter wird an der rechten "
@@ -3997,22 +4017,22 @@ msgstr "Eine kürzlich ausgeführte Aktion rückgängig machen"
 
 #: C/gedit-undo-recent-action.page:28(page/p)
 msgid ""
-"We all make mistakes. Even <app>gedit</app> users make mistakes. Fortunately, "
-"<app>gedit</app> can help you recover from mistakes. To undo an action in "
-"<app>gedit</app>, press <keyseq><key>Ctrl</key><key>Z</key></keyseq>, or "
-"click <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq>."
+"We all make mistakes. Even <app>gedit</app> users make mistakes. "
+"Fortunately, <app>gedit</app> can help you recover from mistakes. To undo an "
+"action in <app>gedit</app>, press <keyseq><key>Ctrl</key><key>Z</key></"
+"keyseq>, or click <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq>."
 msgstr ""
-"Wir machen alle Fehler. Sogar <app>gedit</app>-Benutzer sind nicht unfehlbar. "
-"Glücklicherweise kann <app>gedit</app> Ihnen helfen, Fehler "
+"Wir machen alle Fehler. Sogar <app>gedit</app>-Benutzer sind nicht "
+"unfehlbar. Glücklicherweise kann <app>gedit</app> Ihnen helfen, Fehler "
 "wiedergutzumachen. Um eine Aktion in <app>gedit</app> rückgängig zu machen, "
-"drücken Sie <keyseq><key>Strg</key><key>Z</key></keyseq> oder klicken Sie auf "
-"<guiseq><gui>Bearbeiten</gui><gui>Rückgängig</gui></guiseq>."
+"drücken Sie <keyseq><key>Strg</key><key>Z</key></keyseq> oder klicken Sie "
+"auf <guiseq><gui>Bearbeiten</gui><gui>Rückgängig</gui></guiseq>."
 
 #: C/gedit-undo-recent-action.page:30(page/p)
 msgid ""
-"<app>gedit</app> will undo one action every time you press <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> or select <guiseq><gui>Edit</gui><gui>Undo</gui></"
-"guiseq>."
+"<app>gedit</app> will undo one action every time you press "
+"<keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</"
+"gui><gui>Undo</gui></guiseq>."
 msgstr ""
 "Bei jeder Ausführung der Tastenkombination <keyseq><key>Strg</key><key>Z</"
 "key></keyseq> oder beim Wählen von <guiseq><gui>Bearbeiten</"
@@ -4024,14 +4044,16 @@ msgstr "Eine Liste geöffneter Dateien in der Seitenleiste anzeigen"
 
 #: C/gedit-view-open-files-in-sidepane.page:21(page/p)
 msgid ""
-"Keeping track of a large number of files using tabs can be difficult. One way "
-"of managing large numbers of files is viewing them in a side pane. Side panes "
-"allow you to view more files at a time than is possible using tabs alone."
+"Keeping track of a large number of files using tabs can be difficult. One "
+"way of managing large numbers of files is viewing them in a side pane. Side "
+"panes allow you to view more files at a time than is possible using tabs "
+"alone."
 msgstr ""
 "Eine große Anzahl von Dateien in Reitern im Auge zu behalten kann schwierig "
 "sein. Eine Möglichkeit, die Übersicht über mehrere Dateien zu behalten, ist "
-"die Betrachtung in einer Seitenleiste. Solche Seitenleisten ermöglichen Ihnen "
-"die Ansicht von mehr Dateien gleichzeitig, als es mit Reitern möglich wäre."
+"die Betrachtung in einer Seitenleiste. Solche Seitenleisten ermöglichen "
+"Ihnen die Ansicht von mehr Dateien gleichzeitig, als es mit Reitern möglich "
+"wäre."
 
 #: C/gedit-view-open-files-in-sidepane.page:23(page/p)
 msgid ""
@@ -4072,6 +4094,28 @@ msgstr ""
 "sind. Wenn mehrere Fenster geöffnet sind, dann werden nur die Dateien des "
 "aktuellen Fensters in der Seitenleiste angezeigt."
 
+#~ msgid ""
+#~ "This will activate the <em>file-browser</em> mode of the <app>side panel</"
+#~ "app>. You can then use the navigation buttons at the top of the pane to "
+#~ "locate and open your desired files."
+#~ msgstr ""
+#~ "Dadurch wird der <em>Dateiverwaltungsmodus</em> der <app>Seitenleiste</"
+#~ "app> aktiviert. Sie können dann die Navigationsknöpfe im oberen Bereich "
+#~ "der Leiste verwenden, um nach den gewünschten Dateien zu suchen und sie "
+#~ "zu öffnen."
+
+#~ msgid "Drag the tab out of the space it occupies"
+#~ msgstr "Ziehen Sie den Reiter aus dem Bereich heraus, den er belegt"
+
+#~ msgid ""
+#~ "It's difficult to drag a tab into a new window when either the old or new "
+#~ "window is maximized. For best results, un-maximize the windows before "
+#~ "dragging the tab."
+#~ msgstr ""
+#~ "Es ist schwierig, einen Reiter in ein neues Fenster zu verschieben, wenn "
+#~ "eines der beiden Fenster maximiert ist. Stellen Sie zunächst die "
+#~ "Originalgröße des Fensters wieder her, bevor Sie den Reiter verschieben."
+
 #~ msgid "jwcampbell@gmail.com"
 #~ msgstr "jwcampbell@gmail.com"
 
@@ -4102,8 +4146,9 @@ msgstr ""
 #~ "insert characters into their documents."
 #~ msgstr ""
 #~ "Dies setzt voraus, dass der Leser mit der grundlegenden Bedienung von "
-#~ "gedit vertraut ist. Am Ende der Seite wird der Leser in der Lage sein, das "
-#~ "Zeichentabelle-Plugin zum Einfügen von Zeichen in Dokumente zu verwenden."
+#~ "gedit vertraut ist. Am Ende der Seite wird der Leser in der Lage sein, "
+#~ "das Zeichentabelle-Plugin zum Einfügen von Zeichen in Dokumente zu "
+#~ "verwenden."
 
 #~ msgid ""
 #~ "To enable the commander plugin, select <guiseq><gui>Edit</gui><gui> "
@@ -4147,9 +4192,9 @@ msgstr ""
 #~ msgstr ""
 #~ "Der erste Schritt zur Installation eines Plugins in <app>gedit</app> ist "
 #~ "die Besorgung. Meist lässt sich ein Plugin von einer Webseite "
-#~ "herunterladen. Lesen Sie die entsprechende Dokumentation, um Informationen "
-#~ "zur Besorgung des Plugins zu erhalten. Die Anweisungen zur Besorgung "
-#~ "können variieren."
+#~ "herunterladen. Lesen Sie die entsprechende Dokumentation, um "
+#~ "Informationen zur Besorgung des Plugins zu erhalten. Die Anweisungen zur "
+#~ "Besorgung können variieren."
 
 #~ msgid "Install"
 #~ msgstr "Installieren"
