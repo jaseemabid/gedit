@@ -376,14 +376,9 @@ dnl ================================================================
 GLIB_GSETTINGS
 
 dnl ================================================================
-dnl GResource stuff
-dnl ================================================================
-GLIB_COMPILE_RESOURCES=`$PKG_CONFIG --variable glib_compile_resources gio-2.0`
-AC_SUBST(GLIB_COMPILE_RESOURCES)
-
-dnl ================================================================
 dnl Misc
 dnl ================================================================
+AC_PATH_PROG(GLIB_COMPILE_RESOURCES, glib-compile-resources)
 AC_PATH_PROG(GLIB_GENMARSHAL, glib-genmarshal)
 AC_PATH_PROG(GLIB_MKENUMS, glib-mkenums)
 
