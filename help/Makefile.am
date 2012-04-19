@@ -2,6 +2,7 @@
 
 HELP_ID = gedit
 HELP_MEDIA = \
+	figures/gedit-html-snippet.png \
 	figures/gedit-icon.png \
 	figures/gedit-new-external-tool.png \
 	figures/gedit-open-location.png \
