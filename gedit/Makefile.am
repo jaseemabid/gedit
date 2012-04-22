@@ -5,7 +5,7 @@ bin_PROGRAMS = gedit
 
 noinst_LTLIBRARIES = libgedit.la
 
-lib_LTLIBRARIES = libgedit-private.la
+pkglib_LTLIBRARIES = libgedit-private.la
 
 INCLUDES =								\
 	-I$(top_srcdir)							\
@@ -46,6 +46,8 @@ libgedit_la_LIBADD = \
 libgedit_la_LIBADD += $(GEDIT_LIBS) $(GTK_MAC_LIBS)
 
 libgedit_private_la_LIBADD = libgedit.la $(GEDIT_LIBS)
+
+libgedit_private_la_LDFLAGS = -avoid-version
 
 # Mac OSX convenience library and ldflags
 if OS_OSX
