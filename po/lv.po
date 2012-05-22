@@ -9,18 +9,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
-"cgi?product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-03-16 20:08+0000\n"
-"PO-Revision-Date: 2012-03-24 19:51+0200\n"
-"Last-Translator: Anita Reitere <nitalynx@gmail.com>\n"
-"Language-Team: Latviešu <>\n"
-"Language: lv\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=gedit&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-04-05 20:29+0000\n"
+"PO-Revision-Date: 2012-05-22 23:56+0300\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
-"X-Generator: Lokalize 1.0\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 1.4\n"
 
 #: ../data/gedit.desktop.in.in.h:1
 msgid "gedit"
@@ -48,7 +49,7 @@ msgstr "Atvērt jaunu dokumentu"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:1
 msgid "Use Default Font"
-msgstr "Lietot noklusēto fontu"
+msgstr "Lietot noklusējuma fontu"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:2
 msgid ""
@@ -58,8 +59,8 @@ msgid ""
 "font."
 msgstr ""
 "Vai teksta rediģēšanai lietot sistēmas noklusēto fiksēta platuma fontu nevis "
-"gedit specifisko fontu. Ja šī iespēja ir izslēgta, tad opcijā \"Redaktora "
-"fonts\" norādītais fonts tiks lietots sistēmas fonta vietā."
+"gedit specifisko fontu. Ja šī iespēja ir izslēgta, tad opcijā “Redaktora "
+"fonts” norādītais fonts tiks lietots sistēmas fonta vietā."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:3
 msgid "Editor Font"
@@ -71,11 +72,11 @@ msgid ""
 "effect if the \"Use Default Font\" option is turned off."
 msgstr ""
 "Pielāgots fonts, kas tiks izmantos rediģēšanas laukā. Šī iespēja darbosies "
-"tikai tad, ja būs izslēgta \"Lietot Noklusēto Fontu\" iespēja."
+"tikai tad, ja būs izslēgta “Lietot noklusējuma fontu” iespēja."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:5
 msgid "Style Scheme"
-msgstr "Stili"
+msgstr "Stila shēma"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:6
 msgid "The ID of a GtkSourceView Style Scheme used to color the text."
@@ -91,8 +92,8 @@ msgid ""
 "set the backup file extension with the \"Backup Copy Extension\" option."
 msgstr ""
 "Vai gedit vajadzētu izveidot rezerves kopijas failiem, kurus tas saglabā. "
-"Jūs varat iestādīt rezerves faila paplašinājumu ar \"Rezerves kopijas "
-"paplašinājums\" iespēju."
+"Jūs varat iestādīt rezerves faila paplašinājumu ar “Rezerves kopijas "
+"paplašinājums” opciju."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:9
 msgid "Autosave"
@@ -105,8 +106,8 @@ msgid ""
 "option."
 msgstr ""
 "Vai gedit automātiski jāsaglabā izmainītos failus pēc laika intervāla. Jūs "
-"varat iestatīt šo laika intervālu ar \"Automātiskās saglabāšanas intervāls\" "
-"iespēju."
+"varat iestatīt šo laika intervālu ar “Automātiskās saglabāšanas intervāls” "
+"opciju."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:11
 msgid "Autosave Interval"
@@ -118,11 +119,11 @@ msgid ""
 "This will only take effect if the \"Autosave\" option is turned on."
 msgstr ""
 "Minūšu skaits, pēc kurām gedit automātiski saglabās izmainītos failus. Šī "
-"funkcija strādās tikai tad, ja iespēja \"Automātiski saglabāt\" būs ieslēgta."
+"funkcija strādās tikai tad, ja opcija “Automātiski saglabāt” būs ieslēgta."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:13
 msgid "Undo Actions Limit (DEPRECATED)"
-msgstr "Atsaucamo darbību limits"
+msgstr "Atsaucamo darbību limits (NOVECOJIS)"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:14
 msgid ""
@@ -134,15 +135,15 @@ msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:15
 msgid "Maximum Number of Undo Actions"
-msgstr "Maksimālais \"Atsaukt\" darbību skaits"
+msgstr "Maksimālais “Atsaukt” darbību skaits"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:16
 msgid ""
 "Maximum number of actions that gedit will be able to undo or redo. Use \"-1"
 "\" for unlimited number of actions."
 msgstr ""
-"Maksimums darbību, ko gedit var atsaukt vai atcelt atsaukšanu. Lietojiet "
-"\"-1\" neierobežotam darbību skaitam."
+"Maksimums darbību, ko gedit var atsaukt vai atcelt atsaukšanu. Lietojiet “-1” "
+"neierobežotam darbību skaitam."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:17
 msgid "Line Wrapping Mode"
@@ -196,11 +197,11 @@ msgstr "Vai gedit rediģēšanas laukā būtu jārāda rindu numuri."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:27
 msgid "Highlight Current Line"
-msgstr "Iekrāsot aktīvo rindu"
+msgstr "Izcelt aktīvo rindu"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:28
 msgid "Whether gedit should highlight the current line."
-msgstr "Vai gedit būtu jāizceļ tekošā rindiņa."
+msgstr "Vai gedit būtu jāizceļ tekošā rinda."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:29
 msgid "Highlight Matching Brackets"
@@ -241,9 +242,9 @@ msgid ""
 "the text instead of the start/end of the line."
 msgstr ""
 "Nosaka, kā pārvietosies kursors nospiežot HOME un END pogas. Izmantojiet "
-"\"disabled\", lai vienmēr pārvietotos uz rindiņas sākumu/beigām; \"after\", lai "
-"pārvietotos uz rindiņas sākumu pirmo reizi, kad tiek nospiesta poga un uz "
-"teksta sākumu, ignorējot tukšos simbolus, kad poga tiek nospiesta otro "
+"\"disabled\", lai vienmēr pārvietotos uz rindiņas sākumu / beigām; \"after\", "
+"lai pārvietotos uz rindiņas sākumu pirmo reizi, kad tiek nospiesta poga un "
+"uz teksta sākumu, ignorējot tukšos simbolus, kad poga tiek nospiesta otro "
 "reizi; \"before\", lai vispirms pārietu uz teksta sākumu un tikai pēc tam uz "
 "rindiņas sākumu. Izmantojiet \"always\", lai vienmēr pārietu uz teksta "
 "sākumu/beigām, nevis rindiņas sākumu/beigām."
@@ -262,18 +263,19 @@ msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:39
 msgid "Enable Syntax Highlighting"
-msgstr "Aktivizēt sintakses iekrāsošanu"
+msgstr "Aktivēt sintakses iekrāsošanu"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:40
 msgid "Whether gedit should enable syntax highlighting."
-msgstr "Vai gedit būtu jāaktivizē sintakses iekrāsošana."
+msgstr "Vai gedit būtu jāaktivē sintakses iekrāsošana."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:41
 msgid "Enable Search Highlighting"
-msgstr "Aktivizēt meklēšanas iekrāsošanu"
+msgstr "Aktivēt meklēšanas iekrāsošanu"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:42
-msgid "Whether gedit should highlight all the occurrences of the searched text."
+msgid ""
+"Whether gedit should highlight all the occurrences of the searched text."
 msgstr "Vai gedit gūtu jāiekrāso visi atrastie meklējamā teksta fragmenti."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
@@ -307,8 +309,8 @@ msgid ""
 "make sure they appear exactly as mentioned here."
 msgstr ""
 "Nosaka, kad rādīt piezīmju bloka cilnes. Lietojiet \"never\" , lai nekad "
-"nerādītu cilnes,\"always\", lai vienmēr rādītu cilnes, un \"auto\", lai rādītu "
-"cilnes tikai tad, kad to ir vairāk kā viena. Atceries, ka vērtības ir "
+"nerādītu cilnes,\"always\", lai vienmēr rādītu cilnes, un \"auto\", lai "
+"rādītu cilnes tikai tad, kad to ir vairāk kā viena. Atceries, ka vērtības ir "
 "reģistrjutīgas, tāpēc pārliecinies, ka tās parādās tieši tāpat kā šeit."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
@@ -316,7 +318,8 @@ msgid "Status Bar is Visible"
 msgstr "Statusa josla ir redzama"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:50
-msgid "Whether the status bar at the bottom of editing windows should be visible."
+msgid ""
+"Whether the status bar at the bottom of editing windows should be visible."
 msgstr "Vai statusa joslai rediģēšanas logu apakšā būtu jābūt redzamai."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:51
@@ -324,19 +327,20 @@ msgid "Side panel is Visible"
 msgstr "Sānu rūts ir redzama"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:52
-msgid "Whether the side panel at the left of editing windows should be visible."
+msgid ""
+"Whether the side panel at the left of editing windows should be visible."
 msgstr "Vai rūtij rediģēšanas loga kreisajā malā būtu jābūt redzamai."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:53
 msgid "Maximum Recent Files"
-msgstr "Maksimums Neseno Failu"
+msgstr "Maksimums neseno failu"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:54
 msgid ""
 "Specifies the maximum number of recently opened files that will be displayed "
 "in the \"Recent Files\" submenu."
 msgstr ""
-"Nosaka maksimālo nesen atvērto failu skaitu, ko rādīt \"Nesenie Faili\" "
+"Nosaka maksimālo nesen atvērto failu skaitu, ko rādīt \"Nesenie faili\" "
 "apakšizvēlnē."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:55
@@ -345,19 +349,20 @@ msgstr "Drukāt iekrāsoto sintaksi"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:56
 msgid "Whether gedit should print syntax highlighting when printing documents."
-msgstr "Vai drukājot dokumentus gedit būtu jārāda teksta sintakses iekrāsojumi."
+msgstr ""
+"Vai, drukājot dokumentus, gedit būtu jārāda teksta sintakses iekrāsojumi."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:57
 msgid "Print Header"
-msgstr "Drukāt galvu"
+msgstr "Drukāt galveni"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:58
 msgid "Whether gedit should include a document header when printing documents."
-msgstr "Vai gedit būtu jāiekļauj dokumenta galva drukājot dokumentu."
+msgstr "Vai gedit būtu jāiekļauj dokumenta galvene, drukājot dokumentu."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:59
 msgid "Printing Line Wrapping Mode"
-msgstr "Drukāšanas Rindu Aplaušanas Režīms"
+msgstr "Drukāšanas rindu aplaušanas režīms"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:60
 msgid ""
@@ -367,9 +372,9 @@ msgid ""
 "make sure they appear exactly as mentioned here."
 msgstr ""
 "Nosaka, kā aplauzt garas rindas drukājot. Lietojiet \"none\" neaplaušanai, "
-"\"word\" aplaušanai vārdu robežās, un \"char\" aplaušanai atsevišķu rakstzīmju "
-"robežās. Atceries, ka vērtības ir reģistrjutīgas, tāpēc pārliecinies, ka tās "
-"parādās tieši tāpat kā šeit."
+"“word” aplaušanai vārdu robežās, un “char” aplaušanai atsevišķu "
+"rakstzīmju robežās. Atceries, ka vērtības ir reģistrjutīgas, tāpēc "
+"pārliecinies, ka tās parādās tieši tāpat kā šeit."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:61
 msgid "Print Line Numbers"
@@ -382,27 +387,29 @@ msgid ""
 "lines."
 msgstr ""
 "Ja vērtība ir 0, tad rindu numuri netiks iekļauti, drukājot dokumentu. "
-"Citādi, gedit drukās rindu numurus katras tik rindas."
+"Citādi gedit drukās rindu numurus katras tik rindas."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:63
 msgid "Body Font for Printing"
-msgstr "Rumpja fonts drukāšanai"
+msgstr "Pamatteksta drukāšanas fonts"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:64
-msgid "Specifies the font to use for a document's body when printing documents."
-msgstr "Nosaka lietojamo dokumenta rumpja fontu pie dokumentu drukāšanas."
+msgid ""
+"Specifies the font to use for a document's body when printing documents."
+msgstr "Nosaka dokumenta pamatteksta fontu, ko izmantot drukājot dokumentu."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:65
 msgid "Header Font for Printing"
-msgstr "Galvas fonti drukāšanai"
+msgstr "Galvenes fonti drukāšanai"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:66
 msgid ""
 "Specifies the font to use for page headers when printing a document. This "
 "will only take effect if the \"Print Header\" option is turned on."
 msgstr ""
-"Nosaka lietojamo fontu lapu galvās drukājot dokumentu. Šī iespēja darbosies "
-"tikai tad, ja iespēja \"Drukāt Galvas\" būs ieslēgta."
+"Nosaka fontu lapu galvenēm, ko izmantot drukājot dokumentu. Šī iespēja "
+"darbosies "
+"tikai tad, ja iespēja “Drukāt galvenes” būs ieslēgta."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:67
 msgid "Line Number Font for Printing"
@@ -413,8 +420,8 @@ msgid ""
 "Specifies the font to use for line numbers when printing. This will only "
 "take effect if the \"Print Line Numbers\" option is non-zero."
 msgstr ""
-"Nosaka lietojamo rindu numuru fontu pie dokumentu drukāšanas. Šī iespēja "
-"darbosies tikai tad, ja iespēja \"Drukāt rindu numurus\" nebūs nulle."
+"Nosaka rindu numuru fontu, ko lietot drukājot dokumentu. Šī iespēja "
+"darbosies tikai tad, ja iespēja “Drukāt rindu numurus” nebūs nulle."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
 msgid "Automatically Detected Encodings"
@@ -427,7 +434,7 @@ msgid ""
 "recognized encodings are used."
 msgstr ""
 "Gedit izmantoto kodējumu saraksts. Tie tiek lietoti, lai automātiski "
-"noteiktu faila kodējumu. \"Pašreizējais\" ir pašreizējās kodējums. Tiek "
+"noteiktu faila kodējumu. “CURRENT” ir pašreizējās kodējums. Tiek "
 "izmantoti tikai atpazīti kodējumi."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
@@ -439,7 +446,7 @@ msgid ""
 "List of encodings shown in the Character Encoding menu in open/save file "
 "selector. Only recognized encodings are used."
 msgstr ""
-"Burtu Kodējuma izvēlnē (faila atvēršanas/saglabāšanas dialogā) rādīto "
+"Rakstzīmju kodējuma izvēlnē (faila atvēršanas / saglabāšanas dialogā) rādīto "
 "kodējumu saraksts. Tiek lietoti tikai atpazītie kodējumi."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:73
@@ -451,12 +458,12 @@ msgid ""
 "List of active plugins. It contains the \"Location\" of the active plugins. "
 "See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
 msgstr ""
-"Aktīvo spraudņu saraksts. Tas satur aktīvo spraudņu \"Atrašanās vietu\". "
-"Skatiet .gedit-plugin failu, lai uzzinātu spraudņa \"Atrašanās vietu\"."
+"Aktīvo spraudņu saraksts. Tas satur aktīvo spraudņu “Atrašanās vietu”. "
+"Skatiet .gedit-plugin failu, lai uzzinātu spraudņa “Atrašanās vietu”."
 
 #: ../gedit/gedit-app.c:222
 msgid "There was an error displaying the help."
-msgstr "Parādot palīdzību, gadījās kļūda."
+msgstr "Gadījās kļūda, parādot palīdzību."
 
 #: ../gedit/gedit-app-osx.c:274
 msgid "About gedit"
@@ -464,11 +471,11 @@ msgstr "Par gedit"
 
 #: ../gedit/gedit-close-confirmation-dialog.c:141
 msgid "Log Out _without Saving"
-msgstr "Iziet _bez saglabāšanas"
+msgstr "Izrakstīties _bez saglabāšanas"
 
 #: ../gedit/gedit-close-confirmation-dialog.c:145
 msgid "_Cancel Logout"
-msgstr "_Atsaukt iziešanu"
+msgstr "At_celt izrakstīšanos"
 
 #: ../gedit/gedit-close-confirmation-dialog.c:152
 msgid "Close _without Saving"
@@ -496,7 +503,8 @@ msgstr[2] ""
 "neatgriezeniski zaudētas."
 
 #: ../gedit/gedit-close-confirmation-dialog.c:423
-msgid "If you don't save, changes from the last minute will be permanently lost."
+msgid ""
+"If you don't save, changes from the last minute will be permanently lost."
 msgstr ""
 "Ja nesaglabāsiet, pēdējās minūtes laikā veiktās izmaiņas tiks "
 "neatgriezeniski zaudētas."
@@ -562,7 +570,8 @@ msgstr[2] ""
 
 #: ../gedit/gedit-close-confirmation-dialog.c:475
 #, c-format
-msgid "If you don't save, changes from the last %d hour will be permanently lost."
+msgid ""
+"If you don't save, changes from the last %d hour will be permanently lost."
 msgid_plural ""
 "If you don't save, changes from the last %d hours will be permanently lost."
 msgstr[0] ""
@@ -578,25 +587,25 @@ msgstr[2] ""
 #: ../gedit/gedit-close-confirmation-dialog.c:519
 #, c-format
 msgid "Changes to document \"%s\" will be permanently lost."
-msgstr "Dokumentā \"%s\" veiktās izmaiņas tiks neatgriezeniski pazaudētas."
+msgstr "Dokumentā “%s” veiktās izmaiņas tiks neatgriezeniski zaudētas."
 
 #: ../gedit/gedit-close-confirmation-dialog.c:524
 #, c-format
 msgid "Save changes to document \"%s\" before closing?"
-msgstr "Vai pirms aizvēršanas saglabāt izmaiņas dokumentā \"%s\"?"
+msgstr "Vai pirms aizvēršanas saglabāt izmaiņas dokumentā “%s”?"
 
 #: ../gedit/gedit-close-confirmation-dialog.c:538
 #: ../gedit/gedit-close-confirmation-dialog.c:755
 msgid "Saving has been disabled by the system administrator."
-msgstr "Sistēmas administrators ir atslēdzis saglabāšanas iespēju."
+msgstr "Sistēmas administrators ir deaktivējis saglabāšanas iespēju."
 
 #: ../gedit/gedit-close-confirmation-dialog.c:706
 #, c-format
 msgid "Changes to %d document will be permanently lost."
 msgid_plural "Changes to %d documents will be permanently lost."
-msgstr[0] "Izmaiņas %d dokumentā tiks neatgriezeniski pazaudētas."
-msgstr[1] "Izmaiņas %d dokumentos tiks neatgriezeniski pazaudētas."
-msgstr[2] "Izmaiņas %d dokumentos tiks neatgriezeniski pazaudētas."
+msgstr[0] "Izmaiņas %d dokumentā tiks neatgriezeniski zaudētas."
+msgstr[1] "Izmaiņas %d dokumentos tiks neatgriezeniski zaudētas."
+msgstr[2] "Izmaiņas %d dokumentos tiks neatgriezeniski zaudētas."
 
 #: ../gedit/gedit-close-confirmation-dialog.c:714
 #, c-format
@@ -610,7 +619,7 @@ msgstr[1] ""
 "Ir %d dokumenti ar nesaglabātām izmaiņām. Saglabāt izmaiņas pirms "
 "aizvēršanas?"
 msgstr[2] ""
-"Ir %d dokuments ar nesaglabātām izmaiņām. Saglabāt izmaiņas pirms "
+"Ir %d dokumentu ar nesaglabātām izmaiņām. Saglabāt izmaiņas pirms "
 "aizvēršanas?"
 
 #: ../gedit/gedit-close-confirmation-dialog.c:733
@@ -628,7 +637,7 @@ msgstr "Ja nesaglabāsiet, visas izmaiņas tiks neatgriezeniski zaudētas."
 #: ../gedit/gedit-command-line.c:232
 #, c-format
 msgid "%s: invalid encoding.\n"
-msgstr "%s: nederīgs kodējums.\n"
+msgstr "%s — nederīgs kodējums.\n"
 
 #: ../gedit/gedit-command-line.c:256
 msgid "Show the application's version"
@@ -672,7 +681,7 @@ msgstr "Atvērt failus un bloķēt procesu līdz faili ir aizvērti"
 
 #: ../gedit/gedit-command-line.c:310
 msgid "Run gedit in the background"
-msgstr "Palaists gedit fonā"
+msgstr "Palaist gedit fonā"
 
 #: ../gedit/gedit-command-line.c:318
 msgid "Run gedit in standalone mode"
@@ -694,13 +703,13 @@ msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 "%s\n"
-"Palaidiet '%s --help' lai redzētu visu pieejamo komandrindas iespēju "
-"sarakstu.\n"
+"Palaidiet '%s --help', lai redzētu pilnu sarakstu ar pieejamajām "
+"komandrindas opcijām.\n"
 
 #: ../gedit/gedit-commands-file.c:272
 #, c-format
 msgid "Loading file '%s'…"
-msgstr "Ielādē failu '%s'…"
+msgstr "Ielādē failu “%s”…"
 
 #: ../gedit/gedit-commands-file.c:281
 #, c-format
@@ -718,11 +727,11 @@ msgstr "Atvērt failus"
 #: ../gedit/gedit-commands-file.c:557
 #, c-format
 msgid "The file \"%s\" is read-only."
-msgstr "Fails \"%s\" ir tikai-lasāms."
+msgstr "Fails “%s” ir tikai lasāms."
 
 #: ../gedit/gedit-commands-file.c:562
 msgid "Do you want to try to replace it with the one you are saving?"
-msgstr "Vai jūs vēlaties mēģināt aizvietot to ar šobrīd saglabājamo?"
+msgstr "Vai vēlaties mēģināt aizvietot to ar šobrīd saglabājamo?"
 
 #: ../gedit/gedit-commands-file.c:570 ../gedit/gedit-replace-dialog.c:270
 msgid "_Replace"
@@ -738,7 +747,7 @@ msgid ""
 "The file \"%s\" was previously saved as plain text and will now be saved "
 "using compression."
 msgstr ""
-"Fails \"%s\" pirmīt tika saglabāts kā vienkārša teksta fails un tagad tiks "
+"Fails “%s” pirmīt tika saglabāts kā vienkārša teksta fails un tagad tiks "
 "saglabāts, izmantojot saspiešanu."
 
 #: ../gedit/gedit-commands-file.c:615
@@ -755,7 +764,7 @@ msgid ""
 "The file \"%s\" was previously saved using compression and will now be saved "
 "as plain text."
 msgstr ""
-"Fails \"%s\" pirmīt tika saglabāts, izmantojot saspiešanu, un tagad tiks "
+"Fails “%s” pirmīt tika saglabāts, izmantojot saspiešanu, un tagad tiks "
 "saglabāts ka vienkāršs teksts."
 
 #: ../gedit/gedit-commands-file.c:622
@@ -765,7 +774,7 @@ msgstr "_Saglabāt kā vienkāršu tekstu"
 #: ../gedit/gedit-commands-file.c:742 ../gedit/gedit-commands-file.c:959
 #, c-format
 msgid "Saving file '%s'…"
-msgstr "Saglabā failu '%s'…"
+msgstr "Saglabā failu “%s”…"
 
 #: ../gedit/gedit-commands-file.c:846
 msgid "Save As"
@@ -774,12 +783,12 @@ msgstr "Saglabāt kā"
 #: ../gedit/gedit-commands-file.c:1173
 #, c-format
 msgid "Reverting the document '%s'…"
-msgstr "Atgriežu dokumentu '%s'…"
+msgstr "Atgriež dokumentu “%s”…"
 
 #: ../gedit/gedit-commands-file.c:1218
 #, c-format
 msgid "Revert unsaved changes to document '%s'?"
-msgstr "Atgriezt nesaglabātās izmaiņas failu dokumentam '%s'?"
+msgstr "Atgriezt nesaglabātās izmaiņas failu dokumentam “%s”?"
 
 #: ../gedit/gedit-commands-file.c:1227
 #, c-format
@@ -796,8 +805,10 @@ msgstr[2] ""
 "Pēdējo %ld sekunžu laikā veiktās izmaiņas tiks neatgriezeniski pazaudētas."
 
 #: ../gedit/gedit-commands-file.c:1236
-msgid "Changes made to the document in the last minute will be permanently lost."
-msgstr "Pēdējās minūtes laikā veiktās izmaiņas tiks neatgriezeniski pazaudētas."
+msgid ""
+"Changes made to the document in the last minute will be permanently lost."
+msgstr ""
+"Pēdējās minūtes laikā veiktās izmaiņas tiks neatgriezeniski pazaudētas."
 
 #: ../gedit/gedit-commands-file.c:1242
 #, c-format
@@ -833,7 +844,8 @@ msgstr[2] ""
 
 #: ../gedit/gedit-commands-file.c:1267
 msgid "Changes made to the document in the last hour will be permanently lost."
-msgstr "Pēdējās stundas laikā veiktās izmaiņas tiks neatgriezeniski pazaudētas."
+msgstr ""
+"Pēdējās stundas laikā veiktās izmaiņas tiks neatgriezeniski pazaudētas."
 
 #: ../gedit/gedit-commands-file.c:1273
 #, c-format
@@ -855,7 +867,8 @@ msgstr[2] ""
 
 #: ../gedit/gedit-commands-file.c:1288
 #, c-format
-msgid "Changes made to the document in the last %d hour will be permanently lost."
+msgid ""
+"Changes made to the document in the last %d hour will be permanently lost."
 msgid_plural ""
 "Changes made to the document in the last %d hours will be permanently lost."
 msgstr[0] ""
@@ -871,7 +884,7 @@ msgstr "_Atgriezt"
 
 #: ../gedit/gedit-commands-help.c:88
 msgid "gedit is a small and lightweight text editor for the GNOME Desktop"
-msgstr "gedit ir mazs un ātrs teksta redaktors Gnome videi"
+msgstr "gedit ir mazs un ātrs teksta redaktors GNOME videi"
 
 #: ../gedit/gedit-commands-help.c:113
 msgid "translator-credits"
@@ -896,12 +909,12 @@ msgstr "Atrada un aizvietoja vienā vietā"
 #: ../gedit/gedit-commands-search.c:144
 #, c-format
 msgid "\"%s\" not found"
-msgstr "\"%s\" nav atrasts"
+msgstr "“%s” nav atrasts"
 
 #: ../gedit/gedit-document.c:1222 ../gedit/gedit-document.c:1248
 #, c-format
 msgid "Unsaved Document %d"
-msgstr "Nesaglabāts dokuments nr.%d"
+msgstr "Nesaglabāts dokuments nr. %d"
 
 #: ../gedit/gedit-documents-panel.c:123 ../gedit/gedit-documents-panel.c:137
 #: ../gedit/gedit-window.c:2397 ../gedit/gedit-window.c:2404
@@ -955,7 +968,7 @@ msgstr "Grieķu"
 
 #: ../gedit/gedit-encodings.c:169
 msgid "Hebrew Visual"
-msgstr "Ivrits Vizuāls"
+msgstr "Ivrita vizuālais"
 
 #: ../gedit/gedit-encodings.c:171 ../gedit/gedit-encodings.c:235
 #: ../gedit/gedit-encodings.c:276
@@ -981,11 +994,11 @@ msgstr "Armēņu"
 #: ../gedit/gedit-encodings.c:201 ../gedit/gedit-encodings.c:203
 #: ../gedit/gedit-encodings.c:217
 msgid "Chinese Traditional"
-msgstr "Ķīniešu Tradicionālā"
+msgstr "Ķīniešu tradicionālā"
 
 #: ../gedit/gedit-encodings.c:205
 msgid "Cyrillic/Russian"
-msgstr "Kirilica/Krievu"
+msgstr "Kirilica / krievu"
 
 #: ../gedit/gedit-encodings.c:208 ../gedit/gedit-encodings.c:210
 #: ../gedit/gedit-encodings.c:212 ../gedit/gedit-encodings.c:242
@@ -1001,11 +1014,11 @@ msgstr "Korejiešu"
 #: ../gedit/gedit-encodings.c:220 ../gedit/gedit-encodings.c:222
 #: ../gedit/gedit-encodings.c:224
 msgid "Chinese Simplified"
-msgstr "Ķīniešu Vienkāršotā"
+msgstr "Ķīniešu vienkāršotā"
 
 #: ../gedit/gedit-encodings.c:226
 msgid "Georgian"
-msgstr "Gruzīņu"
+msgstr "Gruzīnu"
 
 #: ../gedit/gedit-encodings.c:237 ../gedit/gedit-encodings.c:278
 msgid "Hebrew"
@@ -1013,7 +1026,7 @@ msgstr "Ivrits"
 
 #: ../gedit/gedit-encodings.c:254
 msgid "Cyrillic/Ukrainian"
-msgstr "Kirilica/Ukraiņu"
+msgstr "Kirilica / ukraiņu"
 
 #: ../gedit/gedit-encodings.c:259 ../gedit/gedit-encodings.c:265
 #: ../gedit/gedit-encodings.c:284
@@ -1022,7 +1035,7 @@ msgstr "Vjetnamiešu"
 
 #: ../gedit/gedit-encodings.c:261
 msgid "Thai"
-msgstr "Taizemiešu"
+msgstr "Taju"
 
 #: ../gedit/gedit-encodings.c:435
 msgid "Unknown"
@@ -1040,7 +1053,7 @@ msgstr "Pašreizējais kodējums (%s)"
 
 #: ../gedit/gedit-encodings-combo-box.c:388
 msgid "Add or Remove..."
-msgstr "Pievienot vai noņemt..."
+msgstr "Pievienot vai izņemt..."
 
 #: ../gedit/gedit-encodings-dialog.c:345
 msgid "Character Encodings"
@@ -1052,7 +1065,7 @@ msgstr "A_praksts"
 
 #: ../gedit/gedit-encodings-dialog.c:404 ../gedit/gedit-encodings-dialog.c:465
 msgid "_Encoding"
-msgstr "Kod_ējums"
+msgstr "_Kodējums"
 
 #. ex:set ts=8 noet:
 #: ../gedit/gedit-encodings-dialog.ui.h:1
@@ -1086,7 +1099,7 @@ msgstr "R_indas beigas:"
 
 #: ../gedit/gedit-file-chooser-dialog.c:173
 msgid "Unix/Linux"
-msgstr "Unix/Linux"
+msgstr "Unix / Linux"
 
 #: ../gedit/gedit-file-chooser-dialog.c:179
 msgid "Mac OS Classic"
@@ -1148,7 +1161,7 @@ msgid ""
 "Host %s could not be found. Please check that your proxy settings are "
 "correct and try again."
 msgstr ""
-"Nevar atrast resursdatoru %s. Lūdzu, pārbaudiet jūsu starpniekservera "
+"Nevar atrast resursdatoru %s. Lūdzu, pārbaudiet sava starpniekservera "
 "iestatījumus un mēģiniet vēlreiz."
 
 #: ../gedit/gedit-io-error-info-bar.c:304
@@ -1176,7 +1189,7 @@ msgstr "Fails ir pārāk liels."
 #: ../gedit/gedit-io-error-info-bar.c:381
 #, c-format
 msgid "Unexpected error: %s"
-msgstr "Negaidīta kļūda: %s"
+msgstr "Negaidīta kļūda — %s"
 
 #: ../gedit/gedit-io-error-info-bar.c:417
 msgid "gedit cannot find the file. Perhaps it has recently been deleted."
@@ -1203,7 +1216,7 @@ msgid ""
 "The number of followed links is limited and the actual file could not be "
 "found within this limit."
 msgstr ""
-"Sekojamo saišu skaits ir ierobežots un meklējamais fails šī limita ietvaros "
+"Sekojamo saišu skaits ir ierobežots, un meklējamais fails šī limita ietvaros "
 "netika atrasts."
 
 #: ../gedit/gedit-io-error-info-bar.c:612
@@ -1291,7 +1304,7 @@ msgstr ""
 #: ../gedit/gedit-io-error-info-bar.c:971
 #: ../gedit/gedit-io-error-info-bar.c:1260
 msgid "S_ave Anyway"
-msgstr "S_aglabāt tāpat"
+msgstr "Tomēr s_aglabāt"
 
 #: ../gedit/gedit-io-error-info-bar.c:877
 #: ../gedit/gedit-io-error-info-bar.c:975
@@ -1311,18 +1324,18 @@ msgstr "Fails %s kopš lasīšanas ir ticis rediģēts."
 #: ../gedit/gedit-io-error-info-bar.c:910
 msgid "If you save it, all the external changes could be lost. Save it anyway?"
 msgstr ""
-"Ja saglabāsiet to visas citur veiktās izmaiņas varētu tikt pazaudētas. Vai "
+"Ja to saglabāsiet, visas citur veiktās izmaiņas varētu tikt pazaudētas. Vai "
 "tomēr saglabāt?"
 
 #: ../gedit/gedit-io-error-info-bar.c:998
 #, c-format
 msgid "Could not create a backup file while saving %s"
-msgstr "Saglabājot %s nevar izveidot rezerves failu"
+msgstr "Saglabājot %s, nevar izveidot rezerves failu"
 
 #: ../gedit/gedit-io-error-info-bar.c:1003
 #, c-format
 msgid "Could not create a temporary backup file while saving %s"
-msgstr "Saglabājot %s nevar izveidot pagaidu rezerves failu"
+msgstr "Saglabājot %s, nevar izveidot pagaidu rezerves failu"
 
 #: ../gedit/gedit-io-error-info-bar.c:1020
 msgid ""
@@ -1331,9 +1344,9 @@ msgid ""
 "while saving, you could lose the old copy of the file. Save anyway?"
 msgstr ""
 "gedit nevar saglabāt veco faila versiju pirms jaunās saglabāšanas. Jūs varat "
-"ignorēt šo brīdinājumu un saglabāt failu, bet ņemiet vērā, ka, ja "
-"saglabājot jauno versiju radīsies kāda kļūme, jūs varat zaudēt arī veco "
-"versiju. Vai tomēr vēlaties saglabāt?"
+"ignorēt šo brīdinājumu un saglabāt failu, bet ņemiet vērā, ka, ja saglabājot "
+"jauno versiju radīsies kāda kļūme, jūs varat zaudēt arī veco versiju. Vai "
+"tomēr vēlaties saglabāt?"
 
 #. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
 #: ../gedit/gedit-io-error-info-bar.c:1080
@@ -1388,7 +1401,8 @@ msgstr ""
 
 #: ../gedit/gedit-io-error-info-bar.c:1121
 msgid "A file with the same name already exists. Please use a different name."
-msgstr "Fails ar šādu vārdu jau eksistē. Lūdzu, izvēlieties citu faila vārdu."
+msgstr ""
+"Fails ar šādu nosaukumu jau eksistē. Lūdzu, izvēlieties citu faila nosaukumu."
 
 #: ../gedit/gedit-io-error-info-bar.c:1126
 msgid ""
@@ -1411,7 +1425,7 @@ msgstr ""
 #: ../gedit/gedit-io-error-info-bar.c:1149
 #, c-format
 msgid "Could not save the file %s."
-msgstr "Nevar saglabāt failu %s."
+msgstr "Nevarēja saglabāt failu %s."
 
 #. FIXME: review this message, it's not clear since for the user the "modification"
 #. * could be interpreted as the changes he made in the document. beside "reading" is
@@ -1432,7 +1446,7 @@ msgstr "Vai vēlaties vēlreiz ielādēt šo failu?"
 
 #: ../gedit/gedit-io-error-info-bar.c:1206
 msgid "_Reload"
-msgstr "_Ielādēt"
+msgstr "Pā_rlādēt"
 
 #: ../gedit/gedit-io-error-info-bar.c:1278
 #, c-format
@@ -1443,8 +1457,7 @@ msgstr "Saglabājot %s, tika atrastas dažas nederīgas rakstzīmes."
 msgid ""
 "If you continue saving this file you can corrupt the document.  Save anyway?"
 msgstr ""
-"Ja turpināsiet saglabāt šo failu, jūs varat sabojāt dokumentu. Saglabāt tik "
-"un tā?"
+"Ja turpināsiet saglabāt šo failu, jūs varat sabojāt dokumentu. Tomēr saglabāt?"
 
 #. Keep in sync with the respective GtkActions
 #: ../gedit/gedit-notebook-popup-menu.c:172 ../gedit/gedit-ui.h:140
@@ -1453,7 +1466,7 @@ msgstr "_Pārvietot uz jaunu logu"
 
 #: ../gedit/gedit-notebook-popup-menu.c:190 ../gedit/gedit-ui.h:78
 msgid "Save _As..."
-msgstr "Saglabāt _kā..."
+msgstr "S_aglabāt kā..."
 
 #: ../gedit/gedit-notebook-popup-menu.c:203 ../gedit/gedit-ui.h:84
 msgid "_Print..."
@@ -1465,21 +1478,21 @@ msgstr "Tukšs"
 
 #: ../gedit/gedit-panel.c:475
 msgid "Hide panel"
-msgstr "Paslēpt rūti"
+msgstr "Slēpt rūti"
 
 #: ../gedit/gedit-preferences-dialog.c:423
 msgid "Click on this button to select the font to be used by the editor"
-msgstr "Spiediet šo pogu, lai izvēlētos jūsu redaktora lietojamo fontu"
+msgstr "Spiediet šo pogu, lai izvēlētos fontu, ko lietot redaktoram"
 
 #: ../gedit/gedit-preferences-dialog.c:438
 #, c-format
 msgid "_Use the system fixed width font (%s)"
-msgstr "_Izmantot sistēmas fiksētā platuma fontu (%s)"
+msgstr "Izmantot sistēmas fiksētā platuma font_u (%s)"
 
 #: ../gedit/gedit-preferences-dialog.c:676
 #, c-format
 msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
-msgstr "Mapi '%s' nevar izveidot: g_mkdir_with_parents() kļūda: %s"
+msgstr "Mapi “%s“ nevar izveidot — g_mkdir_with_parents() kļūda: %s"
 
 #: ../gedit/gedit-preferences-dialog.c:860
 msgid "The selected color scheme cannot be installed."
@@ -1487,11 +1500,11 @@ msgstr "Izvēlēto krāsu saskaņu nevar uzinstalēt."
 
 #: ../gedit/gedit-preferences-dialog.c:887
 msgid "Add Scheme"
-msgstr "Pievienot stilu"
+msgstr "Pievienot shēmu"
 
 #: ../gedit/gedit-preferences-dialog.c:894
 msgid "A_dd Scheme"
-msgstr "_Pievienot stilu"
+msgstr "Pievienot s_hēmu"
 
 #: ../gedit/gedit-preferences-dialog.c:902
 msgid "Color Scheme Files"
@@ -1500,7 +1513,7 @@ msgstr "Krāsu saskaņas faili"
 #: ../gedit/gedit-preferences-dialog.c:954
 #, c-format
 msgid "Could not remove color scheme \"%s\"."
-msgstr "Nevar noņemt krāsu saskaņu \"%s\"."
+msgstr "Nevar izņemt krāsu saskaņu “%s”."
 
 #: ../gedit/gedit-preferences-dialog.c:1177
 msgid "gedit Preferences"
@@ -1513,7 +1526,7 @@ msgstr "Iestatījumi"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:2 ../gedit/gedit-view.c:552
 msgid "_Display line numbers"
-msgstr "_Rādīt rindu numurus"
+msgstr "Rādīt rin_du numurus"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:3
 msgid "Display right _margin at column:"
@@ -1527,7 +1540,7 @@ msgstr "Teksta aplaušana"
 #: ../gedit/gedit-preferences-dialog.ui.h:5
 #: ../gedit/gedit-print-preferences.ui.h:10
 msgid "Enable text _wrapping"
-msgstr "Aktivizēt teksta _aplaušanu"
+msgstr "Aktivēt teksta _aplaušanu"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:6
 #: ../gedit/gedit-print-preferences.ui.h:11
@@ -1544,7 +1557,7 @@ msgstr "Izcelt aktīvo _rindu"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:9
 msgid "Highlight matching _brackets"
-msgstr "Izcelt atbilstošās _iekavas"
+msgstr "Izcelt savstarpēji saistītās _iekavas"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:10
 msgid "View"
@@ -1560,11 +1573,11 @@ msgstr "_Tabulācijas platums:"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:13
 msgid "Insert _spaces instead of tabs"
-msgstr "Ievietot _atstarpes tabulāciju vietā"
+msgstr "Ievietot at_starpes tabulāciju vietā"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:14
 msgid "_Enable automatic indentation"
-msgstr "Aktivizēt automātiskās atkāp_es"
+msgstr "Aktivēt automātiskās atkāp_es"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:15
 msgid "File Saving"
@@ -1572,7 +1585,7 @@ msgstr "Failu saglabāšana"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:16
 msgid "Create a _backup copy of files before saving"
-msgstr "Pirms saglabāšanas izveidot faila _rezerves kopiju"
+msgstr "Pirms sagla_bāšanas izveidot faila rezerves kopiju"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:17
 msgid "_Autosave files every"
@@ -1622,7 +1635,7 @@ msgstr "Atinstalēt shēmu"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:28
 msgid "Font & Colors"
-msgstr "Fonts un Krāsas"
+msgstr "Fonts un krāsas"
 
 #: ../gedit/gedit-preferences-dialog.ui.h:29
 msgid "Plugins"
@@ -1631,7 +1644,7 @@ msgstr "Spraudņi"
 #: ../gedit/gedit-print-job.c:572
 #, c-format
 msgid "File: %s"
-msgstr "Fails: %s"
+msgstr "Fails — %s"
 
 #: ../gedit/gedit-print-job.c:581
 msgid "Page %N of %Q"
@@ -1661,7 +1674,7 @@ msgstr "Drukāt rindu nu_murus"
 #. 'Number every' from 'Number every 3 lines' in the 'Text Editor' tab of the print preferences.
 #: ../gedit/gedit-print-preferences.ui.h:6
 msgid "_Number every"
-msgstr "_Numurēt katru"
+msgstr "_Numurēt katras"
 
 #. 'lines' from 'Number every 3 lines' in the 'Text Editor' tab of the print preferences.
 #: ../gedit/gedit-print-preferences.ui.h:8
@@ -1670,11 +1683,11 @@ msgstr "rindas"
 
 #: ../gedit/gedit-print-preferences.ui.h:12
 msgid "Page header"
-msgstr "Lapas galva"
+msgstr "Lapas galvene"
 
 #: ../gedit/gedit-print-preferences.ui.h:13
 msgid "Print page _headers"
-msgstr "Drukāt lap_u galvas"
+msgstr "Drukāt lap_u galvenes"
 
 #: ../gedit/gedit-print-preferences.ui.h:14
 msgid "Fonts"
@@ -1682,7 +1695,7 @@ msgstr "Fonti"
 
 #: ../gedit/gedit-print-preferences.ui.h:15
 msgid "_Body:"
-msgstr "_Rumpis:"
+msgstr "_Pamatteksts:"
 
 #: ../gedit/gedit-print-preferences.ui.h:16
 msgid "_Line numbers:"
@@ -1690,11 +1703,11 @@ msgstr "_Rindu numuri:"
 
 #: ../gedit/gedit-print-preferences.ui.h:17
 msgid "He_aders and footers:"
-msgstr "G_alvas un pēdas:"
+msgstr "G_alvenes un kājenes:"
 
 #: ../gedit/gedit-print-preferences.ui.h:18
 msgid "_Restore Default Fonts"
-msgstr "_Atjaunot noklusētos fontus"
+msgstr "_Atjaunot noklusējuma fontus"
 
 #: ../gedit/gedit-print-preview.c:582
 msgid "Show the previous page"
@@ -1719,7 +1732,7 @@ msgstr "Lapas kopā"
 
 #: ../gedit/gedit-print-preview.c:642
 msgid "The total number of pages in the document"
-msgstr "Dokumenta kopējais lappušu skaits"
+msgstr "Dokumenta kopējais lapu skaits"
 
 #: ../gedit/gedit-print-preview.c:659
 msgid "Show multiple pages"
@@ -1727,19 +1740,19 @@ msgstr "Rādīt vairākas lapas"
 
 #: ../gedit/gedit-print-preview.c:672
 msgid "Zoom 1:1"
-msgstr "Palielinājums 1:1"
+msgstr "Mērogs 1:1"
 
 #: ../gedit/gedit-print-preview.c:681
 msgid "Zoom to fit the whole page"
-msgstr "Piekārtot palielinājumu, lai ietilptu vesela lappuse"
+msgstr "Piekārtot palielinājumu, lai ietilptu vesela lapa"
 
 #: ../gedit/gedit-print-preview.c:690
 msgid "Zoom the page in"
-msgstr "Pietuvina lapu"
+msgstr "Pietuvināt lapu"
 
 #: ../gedit/gedit-print-preview.c:699
 msgid "Zoom the page out"
-msgstr "Attālina lapu"
+msgstr "Attālināt lapu"
 
 #: ../gedit/gedit-print-preview.c:711
 msgid "_Close Preview"
@@ -1790,7 +1803,7 @@ msgstr "_Reģistrjutīgs"
 
 #: ../gedit/gedit-replace-dialog.ui.h:6
 msgid "Match _entire word only"
-msgstr "Atrast tikai _veselus vārds"
+msgstr "Atrast tikai v_eselus vārds"
 
 #: ../gedit/gedit-replace-dialog.ui.h:7
 msgid "Search _backwards"
@@ -1820,21 +1833,21 @@ msgstr "  Rin %d, Kol %d"
 #, c-format
 msgid "There is a tab with errors"
 msgid_plural "There are %d tabs with errors"
-msgstr[0] "Ir %d kļūdaina cilne"
-msgstr[1] "Ir %d kļūdainas cilnes"
-msgstr[2] "Ir %d kļūdainas cilnes"
+msgstr[0] "Ir %d cilne ar kļūdām"
+msgstr[1] "Ir %d cilnes ar kļūdām"
+msgstr[2] "Ir %d ciļņu ar kļūdām"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
 #: ../gedit/gedit-tab.c:734
 #, c-format
 msgid "Reverting %s from %s"
-msgstr "Atgriežu %s no %s"
+msgstr "Atgriež %s no %s"
 
 #: ../gedit/gedit-tab.c:741
 #, c-format
 msgid "Reverting %s"
-msgstr "Atgriežu %s"
+msgstr "Atgriež %s"
 
 #. Translators: the first %s is a file name (e.g. test.txt) the second one
 #. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
@@ -1868,17 +1881,17 @@ msgstr "TL"
 #: ../gedit/gedit-tab.c:1882
 #, c-format
 msgid "Error opening file %s"
-msgstr "Kļūda atverot failu %s"
+msgstr "Kļūda, atverot failu %s"
 
 #: ../gedit/gedit-tab.c:1887
 #, c-format
 msgid "Error reverting file %s"
-msgstr "Kļūda atkārtoti atverot failu %s"
+msgstr "Kļūda, atgriežot failu %s"
 
 #: ../gedit/gedit-tab.c:1892
 #, c-format
 msgid "Error saving file %s"
-msgstr "Kļūda saglabājot failu %s"
+msgstr "Kļūda, saglabājot failu %s"
 
 #: ../gedit/gedit-tab.c:1913
 msgid "Unicode (UTF-8)"
@@ -1977,7 +1990,7 @@ msgstr "Saglabāt pašreizējo failu ar citu nosaukumu"
 
 #: ../gedit/gedit-ui.h:81
 msgid "Revert to a saved version of the file"
-msgstr "Atgriezt faila saglabāto versiju"
+msgstr "Atgriezties uz faila saglabāto versiju"
 
 #: ../gedit/gedit-ui.h:82
 msgid "Print Previe_w"
@@ -2001,32 +2014,32 @@ msgstr "Atcelt darbības atsaukšanu"
 
 #: ../gedit/gedit-ui.h:93
 msgid "Cut the selection"
-msgstr "Izgriezt atlasīto"
+msgstr "Izgriezt izvēlēto"
 
 #: ../gedit/gedit-ui.h:95
 msgid "Copy the selection"
-msgstr "Kopēt atlasīto"
+msgstr "Kopēt izvēlēto"
 
 #: ../gedit/gedit-ui.h:97
 msgid "Paste the clipboard"
-msgstr "Ielīmēt starpliktuvi"
+msgstr "Ielīmēt starpliktuves saturu"
 
 #: ../gedit/gedit-ui.h:99
 msgid "Delete the selected text"
-msgstr "Dzēst atlasīto tekstu"
+msgstr "Dzēst izvēlēto tekstu"
 
 #: ../gedit/gedit-ui.h:100
 msgid "Select _All"
-msgstr "Atlasīt _Visu"
+msgstr "Izvēlēties _visu"
 
 #: ../gedit/gedit-ui.h:101
 msgid "Select the entire document"
-msgstr "Atlasīt visu dokumentu"
+msgstr "Izvēlēties visu dokumentu"
 
 #. View menu
 #: ../gedit/gedit-ui.h:104
 msgid "_Highlight Mode"
-msgstr "_Iekrāsošanas veids"
+msgstr "_Izcelšanas veids"
 
 #. Search menu
 #: ../gedit/gedit-ui.h:107
@@ -2035,7 +2048,7 @@ msgstr "_Meklēt..."
 
 #: ../gedit/gedit-ui.h:108
 msgid "Search for text"
-msgstr "Meklēt sekojošu tekstu"
+msgstr "Meklēt tekstu"
 
 #: ../gedit/gedit-ui.h:109
 msgid "Find Ne_xt"
@@ -2059,11 +2072,11 @@ msgstr "_Aizvietot..."
 
 #: ../gedit/gedit-ui.h:115 ../gedit/gedit-ui.h:118
 msgid "Search for and replace text"
-msgstr "Meklēt un aizvietot virkni"
+msgstr "Meklēt un aizvietot tekstu"
 
 #: ../gedit/gedit-ui.h:120
 msgid "_Clear Highlight"
-msgstr "At_celt iekrāsošanu"
+msgstr "_Noņemt iekrāsošanu"
 
 #: ../gedit/gedit-ui.h:121
 msgid "Clear highlighting of search matches"
@@ -2075,12 +2088,12 @@ msgstr "Iet uz _rindu..."
 
 #: ../gedit/gedit-ui.h:123
 msgid "Go to a specific line"
-msgstr "Pāriet uz konkrētu rindiņu"
+msgstr "Pāriet uz noteiktu rindu"
 
 #. Documents menu
 #: ../gedit/gedit-ui.h:126
 msgid "_Save All"
-msgstr "_Saglabāt visu"
+msgstr "_Saglabāt visus"
 
 #: ../gedit/gedit-ui.h:127
 msgid "Save all open files"
@@ -2088,7 +2101,7 @@ msgstr "Saglabāt visus atvērtos failus"
 
 #: ../gedit/gedit-ui.h:128
 msgid "_Close All"
-msgstr "_Aizvērt Visu"
+msgstr "_Aizvērt visus"
 
 #: ../gedit/gedit-ui.h:129
 msgid "Close all open files"
@@ -2152,7 +2165,7 @@ msgstr "_Rīkjosla"
 
 #: ../gedit/gedit-ui.h:161
 msgid "Show or hide the toolbar in the current window"
-msgstr "Rādīt vai paslēpt pašreizējā loga rīkjoslu"
+msgstr "Rādīt vai slēpt rīkjoslu pašreizējā logā"
 
 #: ../gedit/gedit-ui.h:163
 msgid "_Statusbar"
@@ -2160,7 +2173,7 @@ msgstr "_Statusa josla"
 
 #: ../gedit/gedit-ui.h:164
 msgid "Show or hide the statusbar in the current window"
-msgstr "Parādīt vai paslēpt pašreizējā logā statusa joslas"
+msgstr "Rādīt vai slēpt statusa joslu pašreizējā logā"
 
 #: ../gedit/gedit-ui.h:167
 msgid "Edit text in fullscreen"
@@ -2180,7 +2193,7 @@ msgstr "_Apakšējā rūts"
 
 #: ../gedit/gedit-ui.h:178
 msgid "Show or hide the bottom panel in the current window"
-msgstr "Rādīt vai paslēpt pašreizējā loga apakšējo rūti"
+msgstr "Rādīt vai slēpt pašreizējā loga apakšējo rūti"
 
 #: ../gedit/gedit-utils.c:1017
 msgid "Please check your installation."
@@ -2189,12 +2202,12 @@ msgstr "Lūdzu, pārbaudiet savu instalāciju."
 #: ../gedit/gedit-utils.c:1075
 #, c-format
 msgid "Unable to open UI file %s. Error: %s"
-msgstr "Nevar atvērt UI failu %s. Kļūda: %s"
+msgstr "Nevar atvērt UI failu %s. Kļūda — %s"
 
 #: ../gedit/gedit-utils.c:1094
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
-msgstr "Nevar atrast objektu '%s' failā %s."
+msgstr "Nevar atrast objektu “%s” failā %s."
 
 #. Translators: '/ on <remote-share>'
 #: ../gedit/gedit-utils.c:1316
@@ -2205,25 +2218,25 @@ msgstr "/ uz %s"
 #. create "Wrap Around" menu item.
 #: ../gedit/gedit-view-frame.c:546
 msgid "_Wrap Around"
-msgstr "Apliekt"
+msgstr "_Aplauzt"
 
 #. create "Match Entire Word Only" menu item.
 #: ../gedit/gedit-view-frame.c:556
 msgid "Match _Entire Word Only"
-msgstr "Atlasīt tikai v_eselus vārdus"
+msgstr " Atlasīt tikai v_eselus vārdus"
 
 #. create "Match Case" menu item.
 #: ../gedit/gedit-view-frame.c:566
 msgid "_Match Case"
-msgstr "Precīzs _meklējums"
+msgstr "_Reģistrjutīgs"
 
 #: ../gedit/gedit-view-frame.c:767
 msgid "String you want to search for"
-msgstr "Simbolu virkne kuru vēlaties meklēt"
+msgstr "Simbolu virkne, kuru vēlaties meklēt"
 
 #: ../gedit/gedit-view-frame.c:777
 msgid "Line you want to move the cursor to"
-msgstr "Rindiņa uz kuru vēlaties pārcelt kursoru"
+msgstr "Rinda, uz kuru vēlaties pārcelt kursoru"
 
 #: ../gedit/gedit-window.c:941
 #, c-format
@@ -2243,13 +2256,13 @@ msgstr "Vienkāršs teksts"
 
 #: ../gedit/gedit-window.c:1047
 msgid "Disable syntax highlighting"
-msgstr "Atslēgt sintakses iekrāsošanu"
+msgstr "Deaktivēt sintakses iekrāsošanu"
 
 #. Translators: %s is a URI
 #: ../gedit/gedit-window.c:1364
 #, c-format
 msgid "Open '%s'"
-msgstr "Atvērt '%s'"
+msgstr "Atvērt “%s”"
 
 #: ../gedit/gedit-window.c:1488
 msgid "Open a recently used file"
@@ -2265,7 +2278,7 @@ msgstr "Saglabāt"
 
 #: ../gedit/gedit-window.c:1553
 msgid "Print"
-msgstr "_Drukāt"
+msgstr "Drukāt"
 
 #: ../gedit/gedit-window.c:1555
 msgid "Find"
@@ -2275,7 +2288,7 @@ msgstr "Meklēt"
 #: ../gedit/gedit-window.c:1715
 #, c-format
 msgid "Activate '%s'"
-msgstr "Aktivizēt '%s'"
+msgstr "Aktivizēt “%s”"
 
 #: ../gedit/gedit-window.c:2072
 msgid "Use Spaces"
@@ -2287,7 +2300,7 @@ msgstr "Tabulācijas platums"
 
 #: ../gedit/gedit-window.c:2254
 msgid "Bracket match is out of range"
-msgstr "Iekavas pāris ir ārpus apgabala"
+msgstr "Iekavu pāris ir ārpus apgabala"
 
 #: ../gedit/gedit-window.c:2259
 msgid "Bracket match not found"
@@ -2296,7 +2309,7 @@ msgstr "Iekavu pāris nav atrasts"
 #: ../gedit/gedit-window.c:2264
 #, c-format
 msgid "Bracket match found on line: %d"
-msgstr "Iekāvu pāris atrasts rindā: %d"
+msgstr "Iekavu pāris atrasts rindā: %d"
 
 #. ex:set ts=8 noet:
 #: ../plugins/changecase/changecase.plugin.desktop.in.h:1
@@ -2313,7 +2326,7 @@ msgstr "M_ainīt reģistru"
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:243
 msgid "All _Upper Case"
-msgstr "Visi lielie b_utri"
+msgstr "Visi lielie b_urti"
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:244
 msgid "Change selected text to upper case"
@@ -2329,7 +2342,7 @@ msgstr "Pārvērst izvēlēto tekstu par mazajiem burtiem"
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:249
 msgid "_Invert Case"
-msgstr "_Pārslēgt reģistru"
+msgstr "Pārslēgt reģ_istru"
 
 #: ../plugins/changecase/gedit-changecase-plugin.c:250
 msgid "Invert the case of selected text"
@@ -2354,7 +2367,7 @@ msgstr "Pārbaudīt, vai ir jaunāka gedit versija"
 
 #: ../plugins/checkupdate/gedit-check-update-plugin.c:257
 msgid "There was an error displaying the URI."
-msgstr "Parādot URI, gadījās kļūda."
+msgstr "Gadījās kļūda, parādot URI."
 
 #: ../plugins/checkupdate/gedit-check-update-plugin.c:294
 msgid "_Download"
@@ -2390,7 +2403,7 @@ msgstr "Versija, kuru ignorēt līdz jaunākas versijas izlaišanai."
 #: ../plugins/docinfo/docinfo.plugin.desktop.in.h:1
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:1
 msgid "Document Statistics"
-msgstr "Dokumenta Statistika"
+msgstr "Dokumenta statistika"
 
 #: ../plugins/docinfo/docinfo.plugin.desktop.in.h:2
 msgid ""
@@ -2398,19 +2411,19 @@ msgid ""
 "characters and non-space characters in it."
 msgstr ""
 "Analizē tekošo dokumentu un nosaka vārdu, rindiņu, rakstzīmju un neatstarpju "
-"skaitu tajā."
+"rakstzīmju skaitu tajā."
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.c:427
 msgid "_Document Statistics"
-msgstr "_Dokumenta Statistika"
+msgstr "_Dokumenta statistika"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.c:429
 msgid "Get statistical information on the current document"
-msgstr "Iegūt statistikas informāciju par pašreizējo dokumentu"
+msgstr "Iegūt statistisku informāciju par pašreizējo dokumentu"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:2
 msgid "_Update"
-msgstr "_Atjaunināt"
+msgstr "Atja_unināt"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:3
 msgid "File Name"
@@ -2428,7 +2441,7 @@ msgstr "Dokuments"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:6
 msgid "Selection"
-msgstr "Atlasītais"
+msgstr "Izvēle"
 
 #: ../plugins/docinfo/gedit-docinfo-plugin.ui.h:7
 msgid "Lines"
@@ -2456,7 +2469,7 @@ msgstr "Būvējums"
 
 #: ../plugins/externaltools/data/build.desktop.in.h:2
 msgid "Run \"make\" in the document directory"
-msgstr "Palaist \"make\" dokumenta mapē"
+msgstr "Palaist “make” dokumenta direktorijā"
 
 #: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:1
 #: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
@@ -2513,7 +2526,7 @@ msgstr "Pango fonta nosaukums. Piemēri: \"Sans 12\" vai \"Monospace Bold 14\"."
 #: ../plugins/externaltools/tools/capture.py:92
 #, python-format
 msgid "Could not execute command: %s"
-msgstr "Izpildīt komandu: %s"
+msgstr "Nevarēja izpildīt komandu — %s"
 
 #: ../plugins/externaltools/tools/functions.py:159
 msgid "You must be inside a word to run this command"
@@ -2570,7 +2583,7 @@ msgstr "Visi dokumenti"
 
 #: ../plugins/externaltools/tools/tools.ui.h:2
 msgid "All documents except untitled ones"
-msgstr "Visi dokumenti izņemot nenosauktos"
+msgstr "Visi dokumenti, izņemot nenosauktos"
 
 #: ../plugins/externaltools/tools/tools.ui.h:3
 msgid "Local files only"
@@ -2594,15 +2607,15 @@ msgstr "Pašreizējais dokuments"
 
 #: ../plugins/externaltools/tools/tools.ui.h:8
 msgid "Current selection"
-msgstr "Pašreizējai atlasei"
+msgstr "Pašreizējai izvēlei"
 
 #: ../plugins/externaltools/tools/tools.ui.h:9
 msgid "Current selection (default to document)"
-msgstr "Pašreizējai atlasei (noklusētā dokumentam)"
+msgstr "Pašreizējai izvēlei (noklusētā dokumentam)"
 
 #: ../plugins/externaltools/tools/tools.ui.h:10
 msgid "Current line"
-msgstr "Pašreizējā rindiņa"
+msgstr "Pašreizējā rinda"
 
 #: ../plugins/externaltools/tools/tools.ui.h:11
 msgid "Current word"
@@ -2626,7 +2639,7 @@ msgstr "Aizvietot pašreizējo dokumentu"
 
 #: ../plugins/externaltools/tools/tools.ui.h:16
 msgid "Replace current selection"
-msgstr "Aizvietot pašreiz atlasīto"
+msgstr "Aizvietot pašreizējo izvēli"
 
 #: ../plugins/externaltools/tools/tools.ui.h:17
 msgid "Insert at cursor position"
@@ -2658,11 +2671,11 @@ msgstr "Izņemt rīku"
 
 #: ../plugins/externaltools/tools/tools.ui.h:24
 msgid "Revert tool"
-msgstr "Atgriešanas rīks"
+msgstr "Atgriezt rīku"
 
 #: ../plugins/externaltools/tools/tools.ui.h:25
 msgid "Revert Tool"
-msgstr "Atgriešanas rīks"
+msgstr "Atgriezt rīku"
 
 #: ../plugins/externaltools/tools/tools.ui.h:26
 #: ../plugins/snippets/snippets/snippets.ui.h:11
@@ -2675,7 +2688,7 @@ msgstr "Pielietoj_amība:"
 
 #: ../plugins/externaltools/tools/tools.ui.h:30
 msgid "_Output:"
-msgstr "_Izvade:"
+msgstr "Iz_vade:"
 
 #: ../plugins/externaltools/tools/tools.ui.h:31
 msgid "_Input:"
@@ -2724,7 +2737,7 @@ msgstr "Failu sistēma"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:558
 msgid "_Set root to active document"
-msgstr "Uz_stādīt sakni uz aktīvo dokumentu"
+msgstr "Ie_statīt sakni uz aktīvo dokumentu"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:560
 msgid "Set the root to the active document location"
@@ -2744,35 +2757,35 @@ msgstr "Failu pārlūks"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:848
 msgid "An error occurred while creating a new directory"
-msgstr "Izveidojot jaunu mapi radusies kļūda"
+msgstr "Gadījās kļūda, izveidojot jaunu direktoriju"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:851
 msgid "An error occurred while creating a new file"
-msgstr "Izveidojot jaunu failu radusies kļūda"
+msgstr "Gadījās kļūda, izveidojot jaunu failu"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:854
 msgid "An error occurred while renaming a file or directory"
-msgstr "Pārsaucot failu vai mapi radusies kļūda"
+msgstr "Gadījās kļūda, pārsaucot failu vai direktoriju"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:857
 msgid "An error occurred while deleting a file or directory"
-msgstr "Dzēšot failu vai mapi radusies kļūda"
+msgstr "Gadījās kļūda, dzēšot failu vai direktoriju"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:860
 msgid "An error occurred while opening a directory in the file manager"
-msgstr "Atverot mapi failu pārlūkā radusies kļūda"
+msgstr "Gadījās kļūda, atverot mapi failu pārlūkā"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:863
 msgid "An error occurred while setting a root directory"
-msgstr "Iestatot saknes mapi radusies kļūda"
+msgstr "Gadījās kļūda, iestatot saknes direktoriju"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:866
 msgid "An error occurred while loading a directory"
-msgstr "Ielādējot mapi radusies kļūda"
+msgstr "Gadījās kļūda, ielādējot direktoriju"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:869
 msgid "An error occurred"
-msgstr "Radusies kļūda"
+msgstr "Gadījās kļūda"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:1085
 msgid ""
@@ -2780,12 +2793,12 @@ msgid ""
 "want to delete permanently?"
 msgstr ""
 "Nevar pārvietot failu uz miskasti, vai\n"
-"vēlaties to neatgriezenski dzēst?"
+"vēlaties to neatgriezeniski dzēst?"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:1090
 #, c-format
 msgid "The file \"%s\" cannot be moved to the trash."
-msgstr "Failu \"%s\" nevar pārvietot uz miskasti."
+msgstr "Failu “%s” nevar pārvietot uz miskasti."
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:1095
 msgid "The selected files cannot be moved to the trash."
@@ -2794,7 +2807,7 @@ msgstr "Izvēlēto failu nevar pārvietot uz miskasti."
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:1127
 #, c-format
 msgid "Are you sure you want to permanently delete \"%s\"?"
-msgstr "Vai tiešām vēlaties neatgriezeniski dzēst \"%s\"?"
+msgstr "Vai tiešām vēlaties neatgriezeniski dzēst “%s”?"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:1132
 msgid "Are you sure you want to permanently delete the selected files?"
@@ -2802,7 +2815,7 @@ msgstr "Vai tiešām vēlaties neatgriezeniski dzēst izvēlētos failus?"
 
 #: ../plugins/filebrowser/gedit-file-browser-plugin.c:1135
 msgid "If you delete an item, it is permanently lost."
-msgstr "Dzēšot vienību, tā tiks neatgriezeniski pazaudēta."
+msgstr "Dzēšot vienumu, tā tiks neatgriezeniski zaudēta."
 
 #: ../plugins/filebrowser/gedit-file-browser-store.c:1722
 msgid "(Empty)"
@@ -2813,7 +2826,7 @@ msgid ""
 "The renamed file is currently filtered out. You need to adjust your filter "
 "settings to make the file visible"
 msgstr ""
-"Jaunais fails šobrīd ir izfiltrēts. Lai padarītu to redzamu, jums "
+"Jaunais fails šobrīd ir atfiltrēts. Lai padarītu to redzamu, jums "
 "jāpiekoriģē filtra iestatījumi"
 
 #. Translators: This is the default name of new files created by the file browser pane.
@@ -2839,7 +2852,7 @@ msgid ""
 "The new directory is currently filtered out. You need to adjust your filter "
 "settings to make the directory visible"
 msgstr ""
-"Jaunā direktorija šobrīd ir izfiltrēta. Lai padarītu to redzamu, jums "
+"Jaunā direktorija šobrīd ir atfiltrēta. Lai padarītu to redzamu, jums "
 "jāpiekoriģē filtra iestatījumi"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:733
@@ -2920,11 +2933,11 @@ msgstr "Doties uz nākamo apmeklēto vietu"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:871
 msgid "Re_fresh View"
-msgstr "Atjaunināt skatu"
+msgstr "Atsvai_dzināt skatu"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:872
 msgid "Refresh the view"
-msgstr "Atjaunināt skatu"
+msgstr "Atsvaidzināt skatu"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:873
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:891
@@ -2959,17 +2972,17 @@ msgstr "Faila nosaukums"
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:2004
 #, c-format
 msgid "No mount object for mounted volume: %s"
-msgstr "Piemontētajam sējumam nav montēšanas objekta: %s"
+msgstr "Piemontētajam sējumam nav montēšanas objekta — %s"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:2081
 #, c-format
 msgid "Could not open media: %s"
-msgstr "Nevar atvērt datu nesēju: %s"
+msgstr "Nevar atvērt datu nesēju — %s"
 
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:2128
 #, c-format
 msgid "Could not mount volume: %s"
-msgstr "Nevar pieontēt sējumu: %s"
+msgstr "Nevar piemontēt sējumu  — %s"
 
 #. ex:ts=8:noet:
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:1
@@ -2981,7 +2994,7 @@ msgid ""
 "Open the tree view when the file browser plugin gets loaded instead of the "
 "bookmarks view"
 msgstr ""
-"Ielādējot failu pārlūka spraudni atvērt koka skatu nevis grāmatzīmju skatu"
+"Ielādējot failu pārlūka spraudni, atvērt koka skatu nevis grāmatzīmju skatu"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:3
 msgid "File Browser Root Directory"
@@ -2992,8 +3005,8 @@ msgid ""
 "The file browser root directory to use when loading the file browser plugin "
 "and onload/tree_view is TRUE."
 msgstr ""
-"Failu pārlūka saknes direktorija, kas tiks izmantota ielādējot failu pārluka "
-"spraudni, ja onload/tree_view ir TRUE."
+"Failu pārlūka saknes direktorija, kas tiks izmantota, ielādējot failu pārlūka "
+"spraudni, ja onload / tree_view ir TRUE."
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:5
 msgid "File Browser Virtual Root Directory"
@@ -3005,17 +3018,17 @@ msgid ""
 "plugin when onload/tree_view is TRUE. The virtual root must always be below "
 "the actual root."
 msgstr ""
-"Failu pārlūka virtuālā saknes direktorija, kas tiks izmantota ielādējot "
-"failu pārluka spraudni, ja onload/tree_view ir TRUE. Virtuālajai saknes "
-"direktorijai vinmēr jābūt zem īstās."
+"Failu pārlūka virtuālā saknes direktorija, kas tiks izmantota, ielādējot "
+"failu pārlūka spraudni, ja onload / tree_view ir TRUE. Virtuālajai saknes "
+"direktorijai vienmēr jābūt zem īstās."
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:7
 msgid "Enable Restore of Remote Locations"
-msgstr "Aktivizēt attālināto atrašanās vietu atjaunošanu"
+msgstr "Aktivēt attālināto atrašanās vietu atjaunošanu"
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:8
 msgid "Sets whether to enable restoring of remote locations."
-msgstr "Iestata vai vajadzētu atjaunot attālinātās atrašanās vietas."
+msgstr "Iestata, vai vajadzētu atjaunot attālinātās atrašanās vietas."
 
 #: ../plugins/filebrowser/org.gnome.gedit.plugins.filebrowser.gschema.xml.in.in.h:9
 msgid "Set Location to First Document"
@@ -3042,7 +3055,7 @@ msgid ""
 "values are: none (filter nothing), hide-hidden (filter hidden files) and "
 "hide-binary (filter binary files)."
 msgstr ""
-"Šī vērtība nosaka kādi faili tiks atlasīti failu pārlūkā. Pieļaujamās "
+"Šī vērtība nosaka kādi faili tiks atfiltrēti failu pārlūkā. Pieļaujamās "
 "vērtības: none (nefiltrē neko), hide-hidden (filtrē slēptos failus), hide-"
 "binary (filtrē bināros failus)."
 
@@ -3055,7 +3068,7 @@ msgid ""
 "The filter pattern to filter the file browser with. This filter works on top "
 "of the filter_mode."
 msgstr ""
-"Filtrēšanas šablons, ko izmantot failu pārlūkā. Šis filtrs darbojas pāri "
+"Filtrēšanas šablons, ko izmantot failu pārlūkā. Šis filtrs darbojas uz "
 "filter_mode."
 
 #: ../plugins/modelines/modelines.plugin.desktop.in.h:1
@@ -3064,7 +3077,7 @@ msgstr "Modelines"
 
 #: ../plugins/modelines/modelines.plugin.desktop.in.h:2
 msgid "Emacs, Kate and Vim-style modelines support for gedit."
-msgstr "Emacs, Kate un Vim-stila modeline atbalsts geditam."
+msgstr "Emacs, Kate un Vim-stila modeline atbalsts gedit redaktoram."
 
 #: ../plugins/pythonconsole/org.gnome.gedit.plugins.pythonconsole.gschema.xml.in.in.h:1
 msgid "Command Color Text"
@@ -3139,49 +3152,49 @@ msgstr "Fragmenti"
 #: ../plugins/snippets/snippets/exporter.py:82
 #, python-format
 msgid "The archive \"%s\" could not be created"
-msgstr "Arhīvu \"%s\" nevar izveidot"
+msgstr "Nevar izveidot arhīvu “%s”"
 
 #: ../plugins/snippets/snippets/exporter.py:99
 #, python-format
 msgid "Target directory \"%s\" does not exist"
-msgstr "Mērķa mape \"%s\" neeksistē"
+msgstr "Mērķa direktorija “%s” neeksistē"
 
 #: ../plugins/snippets/snippets/exporter.py:102
 #, python-format
 msgid "Target directory \"%s\" is not a valid directory"
-msgstr "Mērķa mape \"%s\" nav korekta mape"
+msgstr "Mērķa direktorija “%s” nav derīga direktorija"
 
 #: ../plugins/snippets/snippets/importer.py:47
 #: ../plugins/snippets/snippets/importer.py:108
 #, python-format
 msgid "File \"%s\" does not exist"
-msgstr "Fails \"%s\" neeksistē"
+msgstr "Fails “%s” neeksistē"
 
 #: ../plugins/snippets/snippets/importer.py:50
 #, python-format
 msgid "File \"%s\" is not a valid snippets file"
-msgstr "Fails \"%s\" nav derīgs fragmenta fails"
+msgstr "Fails “%s” nav derīgs fragmenta fails"
 
 #: ../plugins/snippets/snippets/importer.py:67
 #, python-format
 msgid "Imported file \"%s\" is not a valid snippets file"
-msgstr "Importētais fails \"%s\" nav derīgs fragmenta fails"
+msgstr "Importētais fails “%s” nav derīgs fragmenta fails"
 
 #: ../plugins/snippets/snippets/importer.py:77
 #, python-format
 msgid "The archive \"%s\" could not be extracted"
-msgstr "Arhīvu \"%s\" nevar atpakot"
+msgstr "Nevar atpakot arhīvu “%s”"
 
 #: ../plugins/snippets/snippets/importer.py:95
 #, python-format
 msgid "The following files could not be imported: %s"
-msgstr "Sekojošus failus nevar importēt: %s"
+msgstr "Sekojošus failus nevar importēt — %s"
 
 #: ../plugins/snippets/snippets/importer.py:111
 #: ../plugins/snippets/snippets/importer.py:124
 #, python-format
 msgid "File \"%s\" is not a valid snippets archive"
-msgstr "Fails \"%s\" nav derīgs fragmentu arhīvs"
+msgstr "Fails “%s” nav derīgs fragmentu arhīvs"
 
 #: ../plugins/snippets/snippets/manager.py:43
 msgid "Snippets archive"
@@ -3210,8 +3223,8 @@ msgid ""
 "This is not a valid Tab trigger. Triggers can either contain letters or a "
 "single (non-alphanumeric) character like: {, [, etc."
 msgstr ""
-"Nav norādīts derīgs tabulātoru trigeris. Trigeri var sastāvēt no burtiem vai "
-"viena ne-burtcipara rakstzīmes, piem. {, [, utt."
+"Nav norādīts derīgs tabulatoru trigeris. Trigeri var sastāvēt no burtiem vai "
+"viena ne-burtcipara rakstzīmes, piem., {, [, utt."
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/manager.py:670
@@ -3222,7 +3235,7 @@ msgstr "Viens vārds, kas aktivizē fragmentu, ja pēc tā nospiež Tab"
 #: ../plugins/snippets/snippets/manager.py:759
 #, python-format
 msgid "The following error occurred while importing: %s"
-msgstr "Importējot radusies sekojoša kļūda: %s"
+msgstr "Importējot gadījās sekojoša kļūda — %s"
 
 #: ../plugins/snippets/snippets/manager.py:766
 msgid "Import successfully completed"
@@ -3243,13 +3256,13 @@ msgstr "Visi atbalstītie arhīvi"
 #: ../plugins/snippets/snippets/manager.py:872
 #: ../plugins/snippets/snippets/manager.py:935
 msgid "Gzip compressed archive"
-msgstr "Gzip kompresēts arhīvs"
+msgstr "Ar Gzip saspiests arhīvs"
 
 #: ../plugins/snippets/snippets/manager.py:787
 #: ../plugins/snippets/snippets/manager.py:873
 #: ../plugins/snippets/snippets/manager.py:936
 msgid "Bzip2 compressed archive"
-msgstr "Bzip2 kompresēts arhīvs"
+msgstr "Ar Bzip2 saspiests arhīvs"
 
 #: ../plugins/snippets/snippets/manager.py:788
 msgid "Single snippets file"
@@ -3264,7 +3277,7 @@ msgstr "Visi faili"
 #: ../plugins/snippets/snippets/manager.py:801
 #, python-format
 msgid "The following error occurred while exporting: %s"
-msgstr "Eksportējot notikusi sekojoša kļūda: %s"
+msgstr "Eksportējot gadījās sekojoša kļūda — %s"
 
 #: ../plugins/snippets/snippets/manager.py:805
 msgid "Export successfully completed"
@@ -3274,7 +3287,8 @@ msgstr "Eksportēšana veiksmīgi pabeigta"
 #: ../plugins/snippets/snippets/manager.py:845
 #: ../plugins/snippets/snippets/manager.py:912
 msgid "Do you want to include selected <b>system</b> snippets in your export?"
-msgstr "Vai vēlaties iekļaut sekojošus <b>sistēmas</b> fragmentus savā eksportā?"
+msgstr ""
+"Vai vēlaties iekļaut sekojošus <b>sistēmas</b> fragmentus savā eksportā?"
 
 #: ../plugins/snippets/snippets/manager.py:860
 #: ../plugins/snippets/snippets/manager.py:930
@@ -3306,7 +3320,7 @@ msgstr ""
 #: ../plugins/snippets/snippets/placeholder.py:610
 #, python-format
 msgid "Execution of the Python command (%s) failed: %s"
-msgstr "Python komandas (%s) izpilde neizdevās: %s"
+msgstr "Python komandas (%s) izpilde neizdevās — %s"
 
 #: ../plugins/snippets/snippets.plugin.desktop.in.h:2
 msgid "Insert often-used pieces of text in a fast way"
@@ -3355,7 +3369,7 @@ msgstr "_Tabulācijas trigeris:"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:17
 msgid "S_hortcut key:"
-msgstr "Īzinājuma taustiņš:"
+msgstr "Īsinā_jumtaustiņš:"
 
 #: ../plugins/snippets/snippets/snippets.ui.h:18
 msgid "Shortcut key with which the snippet is activated"
@@ -3367,15 +3381,15 @@ msgstr "_Nomest mērķus:"
 
 #: ../plugins/snippets/snippets/windowactivatable.py:154
 msgid "Manage _Snippets..."
-msgstr "Parvaldīt _fragmentus..."
+msgstr "Pārvaldīt fragmentu_s..."
 
 #: ../plugins/snippets/snippets/windowactivatable.py:155
 msgid "Manage snippets"
-msgstr "Parvaldīt fragmentus"
+msgstr "Pārvaldīt fragmentus"
 
 #: ../plugins/sort/gedit-sort-plugin.c:88
 msgid "S_ort..."
-msgstr "_Kārtot..."
+msgstr "Kārt_ot..."
 
 #: ../plugins/sort/gedit-sort-plugin.c:90
 msgid "Sort the current document or selection"
@@ -3393,11 +3407,11 @@ msgstr "_Kārtot"
 
 #: ../plugins/sort/gedit-sort-plugin.ui.h:3
 msgid "_Reverse order"
-msgstr "_Apgriezta kārtība"
+msgstr "Apg_rieztā secībā"
 
 #: ../plugins/sort/gedit-sort-plugin.ui.h:4
 msgid "R_emove duplicates"
-msgstr "_Izņemt dublikātus"
+msgstr "Izņ_emt dublikātus"
 
 #: ../plugins/sort/gedit-sort-plugin.ui.h:5
 msgid "_Ignore case"
@@ -3409,7 +3423,7 @@ msgstr "Sāk_t kolonnā:"
 
 #: ../plugins/sort/gedit-sort-plugin.ui.h:7
 msgid "You cannot undo a sort operation"
-msgstr "Jūs nevarat atsaukt kārtošanas operāciju"
+msgstr "Jūs nevarat atsaukt kārtošanas darbību"
 
 #: ../plugins/sort/sort.plugin.desktop.in.h:2
 msgid "Sorts a document or selected text."
@@ -3439,11 +3453,11 @@ msgstr "_Pievienot"
 
 #: ../plugins/spell/gedit-automatic-spell-checker.c:553
 msgid "_Spelling Suggestions..."
-msgstr "_Pareizrakstības ieteikumi..."
+msgstr "Pareizrak_stības ieteikumi..."
 
 #: ../plugins/spell/gedit-spell-checker-dialog.c:264
 msgid "Check Spelling"
-msgstr "Pārbaudīt Pareizrakstību"
+msgstr "Pārbaudīt pareizrakstību"
 
 #: ../plugins/spell/gedit-spell-checker-dialog.c:275
 msgid "Suggestions"
@@ -3506,7 +3520,7 @@ msgstr "Pārbaudīt pareizrakstību pašreizējā dokumentā"
 
 #: ../plugins/spell/gedit-spell-plugin.c:115
 msgid "Set _Language..."
-msgstr "Iestatīt _valodu..."
+msgstr "Iestatīt va_lodu..."
 
 #: ../plugins/spell/gedit-spell-plugin.c:117
 msgid "Set the language of the current document"
@@ -3514,7 +3528,7 @@ msgstr "Iestatīt pašreizējā dokumenta valodu"
 
 #: ../plugins/spell/gedit-spell-plugin.c:126
 msgid "_Highlight Misspelled Words"
-msgstr "_Iekrāsot nepareizos vārdus"
+msgstr "_Izcelt nepareizi uzrakstītos vārdus"
 
 #: ../plugins/spell/gedit-spell-plugin.c:128
 msgid "Automatically spell-check the current document"
@@ -3546,7 +3560,7 @@ msgstr "vārds"
 
 #: ../plugins/spell/spell-checker.ui.h:4
 msgid "Change _to:"
-msgstr "Mainīt _uz:"
+msgstr "Mainī_t uz:"
 
 #: ../plugins/spell/spell-checker.ui.h:5
 msgid "Check _Word"
@@ -3554,7 +3568,7 @@ msgstr "Pārbaudīt _vārdu"
 
 #: ../plugins/spell/spell-checker.ui.h:6
 msgid "_Suggestions:"
-msgstr "_Ieteikumi:"
+msgstr "Ieteik_umi:"
 
 #: ../plugins/spell/spell-checker.ui.h:7
 msgid "_Ignore"
@@ -3603,12 +3617,12 @@ msgstr "Ievietot datumu un laiku"
 #: ../plugins/time/gedit-time-dialog.ui.h:2
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:4
 msgid "Use the _selected format"
-msgstr "Lietot _izvēlēto formātu"
+msgstr "Lietot i_zvēlēto formātu"
 
 #: ../plugins/time/gedit-time-dialog.ui.h:3
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:5
 msgid "_Use custom format"
-msgstr "_Lietot pielāgotu formātu"
+msgstr "Lietot pielāgot_u formātu"
 
 #. Translators: Use the more common date format in your locale
 #: ../plugins/time/gedit-time-dialog.ui.h:5
@@ -3642,11 +3656,11 @@ msgstr "Pieejamie formāti"
 #. ex:ts=8:noet:
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:1
 msgid "Configure date/time plugin"
-msgstr "Konfigurēt datuma/laika spraudni"
+msgstr "Konfigurēt datuma / laika spraudni"
 
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:2
 msgid "When inserting date/time..."
-msgstr "Kad ievieto datumu/laiku..."
+msgstr "Kad ievieto datumu / laiku..."
 
 #: ../plugins/time/gedit-time-setup-dialog.ui.h:3
 msgid "_Prompt for a format"
@@ -3665,11 +3679,11 @@ msgstr ""
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:3
 msgid "Selected Format"
-msgstr "Izvēlēties formātu"
+msgstr "Izvēlētais formāts"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:4
 msgid "The selected format used when inserting the date/time."
-msgstr "Izvēlētais formāts, ko izmantot, ievietojot datumu/laiku."
+msgstr "Izvēlētais formāts, ko izmantot, ievietojot datumu / laiku."
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:5
 msgid "Custom Format"
@@ -3677,11 +3691,11 @@ msgstr "Pielāgots formāts"
 
 #: ../plugins/time/org.gnome.gedit.plugins.time.gschema.xml.in.in.h:6
 msgid "The custom format used when inserting the date/time."
-msgstr "Pielāgotais formāts, ko izmantot, ievietojot datumu/laiku."
+msgstr "Pielāgotais formāts, ko izmantot, ievietojot datumu / laiku."
 
 #: ../plugins/time/time.plugin.desktop.in.h:1
 msgid "Insert Date/Time"
-msgstr "Ievietot Datumu/Laiku"
+msgstr "Ievietot datumu / laiku"
 
 #: ../plugins/time/time.plugin.desktop.in.h:2
 msgid "Inserts current date and time at the cursor position."
