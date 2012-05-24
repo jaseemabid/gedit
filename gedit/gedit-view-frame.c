@@ -1247,6 +1247,7 @@ gedit_view_frame_init (GeditViewFrame *frame)
 {
 	GeditDocument *doc;
 	GtkWidget *sw;
+	GdkRGBA transparent = {0, 0, 0, 0};
 
 	frame->priv = GEDIT_VIEW_FRAME_GET_PRIVATE (frame);
 
@@ -1281,6 +1282,7 @@ gedit_view_frame_init (GeditViewFrame *frame)
 
 	frame->priv->overlay = gedit_animated_overlay_new ();
 	gtk_container_add (GTK_CONTAINER (frame->priv->overlay), sw);
+	gtk_widget_override_background_color (frame->priv->overlay, 0, &transparent);
 	gtk_widget_show (frame->priv->overlay);
 
 	gtk_box_pack_start (GTK_BOX (frame), frame->priv->overlay, TRUE, TRUE, 0);
