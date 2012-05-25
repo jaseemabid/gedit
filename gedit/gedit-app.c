@@ -937,7 +937,7 @@ is_in_viewport (GeditWindow  *window,
 }
 
 /**
- * _gedit_app_get_window_in_viewport
+ * _gedit_app_get_window_in_viewport:
  * @app: the #GeditApp
  * @screen: the #GdkScreen
  * @workspace: the workspace number

@@ -222,6 +222,7 @@ gedit_document_output_stream_class_init (GeditDocumentOutputStreamClass *klass)
 							      G_PARAM_CONSTRUCT_ONLY));
 
 	/**
+	 * GeditDocumentOutputStream:ensure-trailing-newline:
 	 *
 	 * The :ensure-trailing-newline property specifies whether or not to
 	 * ensure (enforce) the document ends with a trailing newline.

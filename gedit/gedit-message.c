@@ -272,7 +272,7 @@ gedit_message_type_identifier (const gchar *object_path,
  *
  * Check if a message has a certain property.
  *
- * @returns: %TRUE if message has @propname, %FALSE otherwise
+ * Return Value: %TRUE if message has @propname, %FALSE otherwise
  *
  */
 gboolean

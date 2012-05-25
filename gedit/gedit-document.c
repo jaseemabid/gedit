@@ -1611,7 +1611,7 @@ gedit_document_load_real (GeditDocument       *doc,
  * @doc:
  * @stream:
  * @encoding: (allow-none):
- * @line_pop:
+ * @line_pos:
  * @column_pos:
  **/
 void
@@ -2086,7 +2086,7 @@ to_search_region_range (GeditDocument *doc,
 }
 
 /**
- * gedit_document_set_search_text"
+ * gedit_document_set_search_text:
  * @doc:
  * @text: (allow-none):
  * @flags:
