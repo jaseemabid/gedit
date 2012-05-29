@@ -171,6 +171,13 @@ gedit_utils_menu_position_under_tree_view (GtkMenu  *menu,
 	}
 }
 
+/**
+ * gedit_gtk_button_new_with_stock_icon:
+ * @label:
+ * @stock_id:
+ *
+ * Returns: (transfer full):
+ */
 GtkWidget *
 gedit_gtk_button_new_with_stock_icon (const gchar *label,
 				      const gchar *stock_id)
@@ -185,6 +192,15 @@ gedit_gtk_button_new_with_stock_icon (const gchar *label,
 	return button;
 }
 
+/**
+ * gedit_dialog_add_button:
+ * @dialog:
+ * @text:
+ * @stock_id:
+ * @response_id:
+ *
+ * Returns: (transfer none):
+ */
 GtkWidget *
 gedit_dialog_add_button (GtkDialog   *dialog,
 			 const gchar *text,
