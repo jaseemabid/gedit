@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: gedit.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-03-06 18:26+0000\n"
+"POT-Creation-Date: 2012-04-05 20:29+0000\n"
 "PO-Revision-Date: 2012-03-07 10:28+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
@@ -43,18 +43,16 @@ msgid "Edit text files"
 msgstr "Edite archivos de texto"
 
 #: ../data/gedit.desktop.in.in.h:4
-#| msgid "Open a new window"
+msgid "gedit Text Editor"
+msgstr "Editor de textos gedit"
+
+#: ../data/gedit.desktop.in.in.h:5
 msgid "Open a New Window"
 msgstr "Abrir una ventana nueva"
 
-#: ../data/gedit.desktop.in.in.h:5
-#| msgid "Create a new document"
+#: ../data/gedit.desktop.in.in.h:6
 msgid "Open a New Document"
 msgstr "Abrir un documento nuevo"
-
-#: ../data/gedit.desktop.in.in.h:6
-msgid "gedit Text Editor"
-msgstr "Editor de textos gedit"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:1
 msgid "Use Default Font"
@@ -645,7 +643,7 @@ msgstr "Si no guarda, todos sus cambios se perderán para siempre."
 #: ../gedit/gedit-command-line.c:232
 #, c-format
 msgid "%s: invalid encoding.\n"
-msgstr "%s: codificación inválida.\n"
+msgstr "%s: codificación no válida.\n"
 
 #: ../gedit/gedit-command-line.c:256
 msgid "Show the application's version"
