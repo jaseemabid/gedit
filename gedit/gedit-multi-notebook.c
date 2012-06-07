@@ -700,9 +700,6 @@ gedit_multi_notebook_set_current_page (GeditMultiNotebook *mnb,
 
 	g_return_if_fail (GEDIT_IS_MULTI_NOTEBOOK (mnb));
 
-	if (mnb->priv->notebooks == NULL)
-		return;
-
 	for (l = mnb->priv->notebooks; l != NULL; l = g_list_next (l))
 	{
 		gint p;
@@ -715,6 +712,9 @@ gedit_multi_notebook_set_current_page (GeditMultiNotebook *mnb,
 
 		single_num -= p;
 	}
+
+	if (l == NULL)
+		return;
 
 	if (GTK_WIDGET (l->data) != mnb->priv->active_notebook)
 	{
