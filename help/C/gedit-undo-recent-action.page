@@ -22,11 +22,15 @@
 
   <title>Undo a recent action</title>
 
-  <!-- TODO: Maybe include a note about how gedit undoes sequences of "similar" actions, rather than every individual keystroke? For example, whole words are deleted rather than letters.
-I think we should also include a note about how many "undo's" you can do, and that you can't
-undo something once you've saved the file.-->
-  <p>We all make mistakes. Even <app>gedit</app> users make mistakes. Fortunately, <app>gedit</app> can help you recover from mistakes. To undo an action in <app>gedit</app>, press <keyseq><key>Ctrl</key><key>Z</key></keyseq>, or click <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq>.</p>
-
-  <p><app>gedit</app> will undo one action every time you press <keyseq><key>Ctrl</key><key>Z</key></keyseq> or select <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq>.</p>
-
+  <p>If you make a mistake while using <app>gedit</app>, you can undo it by 
+  pressing <keyseq><key>Ctrl</key><key>Z</key></keyseq>, or by clicking 
+  <guiseq><gui>Edit</gui><gui>Undo</gui></guiseq>. Doing so will cause 
+  <app>gedit</app> to undo one set of similar actions.</p>
+  
+  <note><p>Undoing a "set of similar actions" means, for example, that 
+  <app>gedit</app> will remove an entire word rather than removing each 
+  character in the word one at a time. This makes <app>gedit</app>'s <em>undo
+  </em> feature more efficient.</p></note>
+  
+  <note><p>You cannot undo a change after you have saved it.</p></note>
 </page>
