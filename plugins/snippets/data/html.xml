@@ -172,16 +172,14 @@ $0]]></text>
     <description>Option</description>
   </snippet>
   <snippet id="script">
-    <text><![CDATA[<script type="text/javascript" language="javascript" charset="utf-8">
-// <![CDATA[
+    <text><![CDATA[<script type="text/javascript">
 	$0
-// ]]]]><![CDATA[>
 </script>]]></text>
     <description>Script</description>
     <tag>script</tag>
   </snippet>
   <snippet id="scriptsrc">
-    <text><![CDATA[<script src="$1" type="text/javascript" language="${2:javascript}" charset="${3:utf-8}" />]]></text>
+    <text><![CDATA[<script src="$1" type="text/javascript"></script>]]></text>
     <description>Script With External Source</description>
     <tag>scriptsrc</tag>
   </snippet>
