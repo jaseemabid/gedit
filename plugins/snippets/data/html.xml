@@ -137,7 +137,7 @@ $0]]></text>
     <description>Image</description>
   </snippet>
   <snippet id="input">
-    <text><![CDATA[<input type="${1:[button,checkbox,file,hidden,image,password,radio,reset,submit,text]}" name="${2:some_name}" value="$3" id="${5}" />]]></text>
+    <text><![CDATA[<input type="${1:[button,checkbox,color,date,datetime,datetime-local,email,file,hidden,image,month,number,password,radio,range,reset,search,submit,tel,text,url,week]}" name="${2:some_name}" value="${3:default_value}" placeholder="${4:default_placeholder}" id="$5" />]]></text>
     <description>Input</description>
     <tag>input</tag>
   </snippet>
