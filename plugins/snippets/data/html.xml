@@ -153,12 +153,14 @@ $0]]></text>
     <description>List Element</description>
   </snippet>
   <snippet id="link">
-    <text><![CDATA[<link rel="${1:stylesheet}" href="${2:/css/master.css}">]]></text>
+    <text><![CDATA[<link rel="${1:stylesheet}" href="${2:/css/master.css}">
+$0]]></text>
     <description>Link</description>
     <tag>link</tag>
   </snippet>
   <snippet id="meta">
-    <text><![CDATA[<meta name="${1:name}" content="${2:content}" />]]></text>
+    <text><![CDATA[<meta name="${1:name}" content="${2:content}" />
+$0]]></text>
     <description>Meta</description>
     <tag>meta</tag>
   </snippet>
@@ -226,7 +228,8 @@ $0]]></text>
     <tag>textarea</tag>
   </snippet>
   <snippet id="title">
-    <text><![CDATA[<title>${1:Page Title}</title>]]></text>
+    <text><![CDATA[<title>${1:Page Title}</title>
+$0]]></text>
     <description>Title</description>
     <tag>title</tag>
   </snippet>
