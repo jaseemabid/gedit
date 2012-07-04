@@ -147,7 +147,7 @@ $0]]></text>
     <description>List Element</description>
   </snippet>
   <snippet id="link">
-    <text><![CDATA[<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}" title="${4:no title}" charset="${5:utf-8}" />]]></text>
+    <text><![CDATA[<link rel="${1:stylesheet}" href="${2:/css/master.css}">]]></text>
     <description>Link</description>
     <tag>link</tag>
   </snippet>
@@ -199,9 +199,7 @@ $0]]></text>
   </snippet>
   <snippet id="style">
     <text><![CDATA[<style type="text/css" media="screen">
-/* <![CDATA[ */
 	$0
-/* ]]]]><![CDATA[> */
 </style>
 ]]></text>
     <description>Style</description>
