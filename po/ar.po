@@ -6,7 +6,7 @@
 # Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
 # Youssef Chahibi <chahibi@gmail.com>, 2006.
 # Djihed Afifi <djihed@gmail.com>, 2006.
-# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2009, 2010, 2011.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
 # Abderrahim Kitouni <a.kitouni@gmail.com>, 2006, 2012.
 # Sohaib Afifi <sohaibafifi@gmail.com>, 2007.
 # Anas Afif Emad <anas.e87@gmail.com>, 2008, 2009.
@@ -16,9 +16,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-23 23:05+0100\n"
-"PO-Revision-Date: 2012-03-23 23:04+0100\n"
-"Last-Translator: Abderrahim Kitouni <a.kitouni@gmail.com>\n"
+"POT-Creation-Date: 2012-07-05 02:56+0200\n"
+"PO-Revision-Date: 2012-07-05 02:56+0200\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Virtaal 0.7.0\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/gedit.desktop.in.in.h:1
@@ -35,7 +35,7 @@ msgstr "محرر جنوم"
 
 #: ../data/gedit.desktop.in.in.h:2 ../gedit/gedit-print-job.c:791
 msgid "Text Editor"
-msgstr "محرّر نصوص"
+msgstr "محرّر النصوص"
 
 #: ../data/gedit.desktop.in.in.h:3
 msgid "Edit text files"
@@ -279,15 +279,13 @@ msgid ""
 msgstr "فيما إذا كان على محرر النصوص إبراز جميع حالات وجود النص المبحوث."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
-#, fuzzy
 msgid "Ensure Trailing Newline"
-msgstr "أكّد سطر جديد متأخر"
+msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
-#, fuzzy
 msgid ""
 "Whether gedit will ensure that documents always end with a trailing newline."
-msgstr "ما إذا وجب لمحرر النصوص ضمان أن المستند ينتهي دائمًا بسطر جديد متأخر."
+msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:45
 msgid "Toolbar is Visible"
@@ -302,17 +300,12 @@ msgid "Notebook Show Tabs Mode"
 msgstr ""
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:48
-#, fuzzy
 msgid ""
 "Specifies when to show the notebook tabs. Use \"never\" to never show the "
 "tabs, \"always\" to always show the tabs, and \"auto\" to show the tabs only "
 "when there is more than one tab. Note that the values are case-sensitive, so "
 "make sure they appear exactly as mentioned here."
 msgstr ""
-"يحدد كيف تلف السطور الطويلة عند الطباعة. يستعمل \"GTK_WRAP_NONE\" لمنع اللف،"
-"\"GTK_WRAP_WORD\" للف عند حدود الكلمات، و \"GTK_WRAP_CHAR\" للف عند الحدود "
-"الفردية للكلمات. لاحظ أن القيم تتغير بحسب الحالة، لذلك تأكّد من ظهورهامطابقة "
-"لما ذُكِر هنا."
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:49
 msgid "Status Bar is Visible"
@@ -2180,22 +2173,22 @@ msgstr "اللوحة ال_سفلية"
 msgid "Show or hide the bottom panel in the current window"
 msgstr "أظهر أو اخف اللوحة السفلية في النافذة الحالية "
 
-#: ../gedit/gedit-utils.c:1017
+#: ../gedit/gedit-utils.c:1033
 msgid "Please check your installation."
 msgstr "رجاء تأكد من تثبيتك."
 
-#: ../gedit/gedit-utils.c:1075
+#: ../gedit/gedit-utils.c:1091
 #, c-format
 msgid "Unable to open UI file %s. Error: %s"
 msgstr "غير قادر على فتح ملف الواجهة %s. خطأ: %s"
 
-#: ../gedit/gedit-utils.c:1094
+#: ../gedit/gedit-utils.c:1110
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
 msgstr "غير قادر على إيجاد الكائن '%s' ضمن الملف %s."
 
 #. Translators: '/ on <remote-share>'
-#: ../gedit/gedit-utils.c:1316
+#: ../gedit/gedit-utils.c:1332
 #, c-format
 msgid "/ on %s"
 msgstr "/ على %s"
