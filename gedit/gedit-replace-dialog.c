@@ -79,10 +79,53 @@ gedit_replace_dialog_present_with_time (GeditReplaceDialog *dialog,
 	gtk_widget_grab_focus (dialog->priv->search_text_entry);
 }
 
+static void
+gedit_replace_dialog_response (GtkDialog *dialog,
+                               gint       response_id)
+{
+	GeditReplaceDialog *dlg = GEDIT_REPLACE_DIALOG (dialog);
+	const gchar *str;
+
+	switch (response_id)
+	{
+		case GEDIT_REPLACE_DIALOG_REPLACE_RESPONSE:
+		case GEDIT_REPLACE_DIALOG_REPLACE_ALL_RESPONSE:
+			str = gtk_entry_get_text (GTK_ENTRY (dlg->priv->replace_text_entry));
+			if (*str != '\0')
+			{
+				gchar *text;
+
+				text = gedit_utils_unescape_search_text (str);
+				gedit_history_entry_prepend_text
+						(GEDIT_HISTORY_ENTRY (dlg->priv->replace_entry),
+						 text);
+
+				g_free (text);
+			}
+			/* fall through, so that we also save the find entry */
+		case GEDIT_REPLACE_DIALOG_FIND_RESPONSE:
+			str = gtk_entry_get_text (GTK_ENTRY (dlg->priv->search_text_entry));
+			if (*str != '\0')
+			{
+				gchar *text;
+
+				text = gedit_utils_unescape_search_text (str);
+				gedit_history_entry_prepend_text
+						(GEDIT_HISTORY_ENTRY (dlg->priv->search_entry),
+						 text);
+
+				g_free (text);
+			}
+	}
+}
+
 static void 
 gedit_replace_dialog_class_init (GeditReplaceDialogClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
+	GtkDialogClass *gtkdialog_class = GTK_DIALOG_CLASS (klass);
+
+	gtkdialog_class->response = gedit_replace_dialog_response;
 
 	g_type_class_add_private (object_class, sizeof (GeditReplaceDialogPrivate));
 }
@@ -147,46 +190,6 @@ search_text_entry_changed (GtkEditable        *editable,
 			GEDIT_REPLACE_DIALOG_REPLACE_RESPONSE, FALSE);
 		gtk_dialog_set_response_sensitive (GTK_DIALOG (dialog), 
 			GEDIT_REPLACE_DIALOG_REPLACE_ALL_RESPONSE, FALSE);
-	}
-}
-
-static void
-response_handler (GeditReplaceDialog *dialog,
-		  gint                response_id,
-		  gpointer            data)
-{
-	const gchar *str;
-
-	switch (response_id)
-	{
-		case GEDIT_REPLACE_DIALOG_REPLACE_RESPONSE:
-		case GEDIT_REPLACE_DIALOG_REPLACE_ALL_RESPONSE:
-			str = gtk_entry_get_text (GTK_ENTRY (dialog->priv->replace_text_entry));
-			if (*str != '\0')
-			{
-				gchar *text;
-
-				text = gedit_utils_unescape_search_text (str);
-				gedit_history_entry_prepend_text
-						(GEDIT_HISTORY_ENTRY (dialog->priv->replace_entry),
-						 text);
-
-				g_free (text);
-			}
-			/* fall through, so that we also save the find entry */
-		case GEDIT_REPLACE_DIALOG_FIND_RESPONSE:
-			str = gtk_entry_get_text (GTK_ENTRY (dialog->priv->search_text_entry));
-			if (*str != '\0')
-			{
-				gchar *text;
-
-				text = gedit_utils_unescape_search_text (str);
-				gedit_history_entry_prepend_text
-						(GEDIT_HISTORY_ENTRY (dialog->priv->search_entry),
-						 text);
-
-				g_free (text);
-			}
 	}
 }
 
@@ -314,11 +317,6 @@ gedit_replace_dialog_init (GeditReplaceDialog *dlg)
 			  "changed",
 			  G_CALLBACK (search_text_entry_changed),
 			  dlg);
-
-	g_signal_connect (dlg,
-			  "response",
-			  G_CALLBACK (response_handler),
-			  NULL);
 
 	gtk_widget_show_all (GTK_WIDGET (dlg));
 }
