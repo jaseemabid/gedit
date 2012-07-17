@@ -79,6 +79,14 @@ gedit_replace_dialog_present_with_time (GeditReplaceDialog *dialog,
 	gtk_widget_grab_focus (dialog->priv->search_text_entry);
 }
 
+static gboolean
+gedit_replace_dialog_delete_event (GtkWidget   *widget,
+                                   GdkEventAny *event)
+{
+	/* prevent destruction */
+	return TRUE;
+}
+
 static void
 gedit_replace_dialog_response (GtkDialog *dialog,
                                gint       response_id)
@@ -123,8 +131,10 @@ static void
 gedit_replace_dialog_class_init (GeditReplaceDialogClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
+	GtkWidgetClass *gtkwidget_class = GTK_WIDGET_CLASS (klass);
 	GtkDialogClass *gtkdialog_class = GTK_DIALOG_CLASS (klass);
 
+	gtkwidget_class->delete_event = gedit_replace_dialog_delete_event;
 	gtkdialog_class->response = gedit_replace_dialog_response;
 
 	g_type_class_add_private (object_class, sizeof (GeditReplaceDialogPrivate));

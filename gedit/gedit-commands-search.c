@@ -499,17 +499,6 @@ replace_dialog_response_cb (GeditReplaceDialog *dialog,
 	}
 }
 
-static gboolean
-replace_dialog_delete_event_cb (GtkWidget   *widget,
-			        GdkEventAny *event,
-			        gpointer     user_data)
-{
-	gedit_debug (DEBUG_COMMANDS);
-
-	/* prevent destruction */
-	return TRUE;
-}
-
 static void
 replace_dialog_destroyed (GeditWindow        *window,
 			  GeditReplaceDialog *dialog)
@@ -535,10 +524,6 @@ create_dialog (GeditWindow *window)
 			  "response",
 			  G_CALLBACK (replace_dialog_response_cb),
 			  window);
-	g_signal_connect (dialog,
-			 "delete-event",
-			 G_CALLBACK (replace_dialog_delete_event_cb),
-			 NULL);
 
 	g_object_set_data (G_OBJECT (window),
 			   GEDIT_REPLACE_DIALOG_KEY,
