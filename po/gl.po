@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit-master-po-gl-116402.merged\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-06 21:37+0100\n"
+"POT-Creation-Date: 2012-07-17 19:34+0200\n"
 "PO-Revision-Date: 2012-03-06 21:37+0100\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <gnome-l10n-gl@gnome.org>\n"
@@ -42,16 +42,16 @@ msgid "Edit text files"
 msgstr "Editar ficheiros de texto"
 
 #: ../data/gedit.desktop.in.in.h:4
+msgid "gedit Text Editor"
+msgstr "Editor de texto gedit"
+
+#: ../data/gedit.desktop.in.in.h:5
 msgid "Open a New Window"
 msgstr "Abrir unha nova xanela"
 
-#: ../data/gedit.desktop.in.in.h:5
+#: ../data/gedit.desktop.in.in.h:6
 msgid "Open a New Document"
 msgstr "Abrir un novo documento"
-
-#: ../data/gedit.desktop.in.in.h:6
-msgid "gedit Text Editor"
-msgstr "Editor de texto gedit"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:1
 msgid "Use Default Font"
@@ -738,7 +738,7 @@ msgstr "O ficheiro \"%s\" é só de lectura."
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr "Quere tentar substituílo co que está gardando agora?"
 
-#: ../gedit/gedit-commands-file.c:570 ../gedit/gedit-replace-dialog.c:270
+#: ../gedit/gedit-commands-file.c:570 ../gedit/gedit-replace-dialog.c:273
 msgid "_Replace"
 msgstr "_Substituír"
 
@@ -1790,12 +1790,12 @@ msgid "The preview of a page in the document to be printed"
 msgstr "Previsualización dunha páxina no documento que se vai imprimir"
 
 #. ex:set ts=8 noet:
-#: ../gedit/gedit-replace-dialog.c:207 ../gedit/gedit-replace-dialog.ui.h:1
+#: ../gedit/gedit-replace-dialog.c:210 ../gedit/gedit-replace-dialog.ui.h:1
 #: ../gedit/gedit-window.c:1557
 msgid "Replace"
 msgstr "Substituír"
 
-#: ../gedit/gedit-replace-dialog.c:269
+#: ../gedit/gedit-replace-dialog.c:272
 msgid "Replace _All"
 msgstr "Substituír _todo"
 
@@ -2209,22 +2209,22 @@ msgstr "Panel _inferior"
 msgid "Show or hide the bottom panel in the current window"
 msgstr "Mostrar ou ocultar o panel inferior na xanela actual"
 
-#: ../gedit/gedit-utils.c:1017
+#: ../gedit/gedit-utils.c:1033
 msgid "Please check your installation."
 msgstr "Verifique a súa instalación."
 
-#: ../gedit/gedit-utils.c:1075
+#: ../gedit/gedit-utils.c:1091
 #, c-format
 msgid "Unable to open UI file %s. Error: %s"
 msgstr "Non é posíbel abrir o ficheiro de IU %s. Erro: %s"
 
-#: ../gedit/gedit-utils.c:1094
+#: ../gedit/gedit-utils.c:1110
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
 msgstr "Non é posíbel atopar o obxecto '%s' dentro do ficheiro %s."
 
 #. Translators: '/ on <remote-share>'
-#: ../gedit/gedit-utils.c:1316
+#: ../gedit/gedit-utils.c:1332
 #, c-format
 msgid "/ on %s"
 msgstr "/ en %s"
